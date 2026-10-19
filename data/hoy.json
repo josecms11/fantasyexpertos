@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-19T13:49:31.194Z",
+  "actualizado": "2026-10-19T14:08:46.023Z",
   "semana": 6,
   "temporada": "2026",
   "semanas": [
@@ -9,193 +9,10 @@
     5,
     6
   ],
-  "noticias": [
-    {
-      "id": "n20261019121000",
-      "fecha": "2026-10-19T12:10:47.317Z",
-      "semana": 6,
-      "titulo": "Jameis Winston va a la banca neoyorquina",
-      "claves": [
-        "Banquillazo inmediato tras otra costosa entrega de balón",
-        "J.J. McCarthy toma el control definitivo del ataque",
-        "Pierde todo su valor en formatos de Superflex"
-      ],
-      "cuerpo": "La paciencia se agotó en la Gran Manzana con Jameis Winston. Tras otra exhibición plagada de pérdidas de balón que costaron puntos vitales, el veterano fue enviado al banquillo sin miramientos. Para el fantasy, esto destruye por completo su viabilidad como mariscal de respaldo o streaming en ligas de Superflex. Si lo tienes en tu plantilla, es momento de soltarlo sin remordimiento alguno, ya que el equipo busca evaluar el talento joven de cara al futuro.",
-      "etiqueta": "BANCA",
-      "impacto": "BAJA",
-      "equipo": "NYG",
-      "jugadores": [
-        "11565"
-      ]
-    },
-    {
-      "id": "n20261019121001",
-      "fecha": "2026-10-19T12:10:47.317Z",
-      "semana": 6,
-      "titulo": "Lamar Jackson enciende alarmas serias en Baltimore",
-      "claves": [
-        "Molestias físicas limitan la movilidad del mariscal estelar",
-        "Ofensiva de Ravens pierde dinamismo sin sus acarreos",
-        "Mantén listo a un mariscal suplente de emergencia"
-      ],
-      "cuerpo": "El reporte médico de Baltimore preocupa demasiado a la comunidad de fantasy. Las dolencias de Lamar Jackson amenazan con recortar su volumen por tierra, faceta donde radica su techo astronómico semana tras semana. Ante una defensiva divisional sumamente ruda, cualquier limitación física transforma a un semental indiscutible en una opción de riesgo elevado. Debes monitorear su estado hasta los calentamientos previos y preparar urgentemente un plan de contingencia confiable en waivers por si decide no forzar.",
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "BAL",
-      "jugadores": [
-        "4881"
-      ]
-    },
-    {
-      "id": "n20261019121002",
-      "fecha": "2026-10-19T12:10:47.317Z",
-      "semana": 6,
-      "titulo": "Deebo Samuel genera dudas con dolencia física",
-      "claves": [
-        "Lesión reciente compromete su disponibilidad para el lunes",
-        "Baja sensible para el diseño ofensivo de Shanahan",
-        "Su ausencia impulsaría el volumen de otros receptores"
-      ],
-      "cuerpo": "Los 49ers vuelven a lidiar con bajas clave y Deebo Samuel encabeza la lista de dudas para el duelo estelar. La versatilidad del receptor es fundamental tanto por aire como en acarreos diseñados, pero su cuerpo sigue acumulando castigo. En caso de no superar las pruebas finales, su ausencia abrirá una tonelada de toques para sus compañeros de backfield y receptores secundarios. Si eres dueño de Deebo, ten una alternativa de lunes por la noche lista.",
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "SF",
-      "jugadores": [
-        "5872"
-      ]
-    },
-    {
-      "id": "n20261019121003",
-      "fecha": "2026-10-19T12:10:47.317Z",
-      "semana": 6,
-      "titulo": "Roschon Johnson escala peldaños en backfield terrestre",
-      "claves": [
-        "Lesión de Kyle Monangai abre enorme oportunidad inmediata",
-        "Especialista indiscutible en situaciones de línea de gol",
-        "Prioridad absoluta en la lista de waivers semanal"
-      ],
-      "cuerpo": "Con los problemas físicos mermando el backfield de Chicago, Roschon Johnson toma el papel protagónico que muchos proyectaban. El corredor potente ofrece ese perfil castigador ideal para asegurar yardas en terceras oportunidades y monopolizar los acarreos dentro de la yarda cinco rival. Esto lo catapulta automáticamente como una adquisición obligatoria en waivers. Su suelo en ligas estándar es muy seguro y tiene credenciales claras de flex rentable con alta probabilidad de touchdown en los próximos encuentros.",
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "CHI",
-      "jugadores": [
-        "10235",
-        "12534"
-      ]
-    },
-    {
-      "id": "n20261019121004",
-      "fecha": "2026-10-19T12:10:47.317Z",
-      "semana": 6,
-      "titulo": "Aaron Jones vuelve a batallar con problemas físicos",
-      "claves": [
-        "Molestia muscular reduce sus toques en las prácticas",
-        "Historial de lesiones obliga a máxima cautela médica",
-        "Respaldo directo adquiere valor inmediato en la liga"
-      ],
-      "cuerpo": "La fragilidad física vuelve a perseguir a Aaron Jones en un momento crucial del calendario de fantasy. Aunque su eficiencia por toque sigue siendo de élite, Minnesota no puede darse el lujo de sobrecargarlo si no está al cien por ciento. Esta situación reduce drásticamente su proyección de volumen terrestre para la próxima semana, convirtiéndolo en un RB2 sumamente volátil. Resulta mandatorio esposar su backfield de inmediato antes de que el reporte final dicte su descanso.",
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "MIN",
-      "jugadores": [
-        "4199"
-      ]
-    },
-    {
-      "id": "n20261019121005",
-      "fecha": "2026-10-19T12:10:47.317Z",
-      "semana": 6,
-      "titulo": "Alvin Kamara enciende focos rojos en Saints",
-      "claves": [
-        "Dolencias físicas amenazan su carga de trabajo total",
-        "Su rol receptor salva su suelo en PPR",
-        "Conviene protegerse con alternativas en el alambre semanal"
-      ],
-      "cuerpo": "El caballo de batalla de Nueva Orleans aparece entre los tocados tras un desgaste constante en las últimas semanas. Alvin Kamara es el motor indiscutible del esquema ofensivo de los Saints, acaparando recepciones y toques en zona roja, pero sus molestias podrían forzar al cuerpo técnico a limitar sus repeticiones. En formatos PPR mantiene un piso decente por sus rutas cortas, aunque su techo explosivo queda en duda. Necesitas monitorearlo de cerca para no llevarte sorpresas.",
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "NO",
-      "jugadores": [
-        "4035"
-      ]
-    },
-    {
-      "id": "n20261019121006",
-      "fecha": "2026-10-19T12:10:47.317Z",
-      "semana": 6,
-      "titulo": "Ryan Flournoy surge como arma sorpresa en Dallas",
-      "claves": [
-        "Aumenta su participación en paquetes de pase profundo",
-        "Oportunidades frescas ante coberturas centradas en Lamb",
-        "Apuesta especulativa atractiva para ligas muy profundas"
-      ],
-      "cuerpo": "El receptor novato Ryan Flournoy empieza a ganarse la confianza del cuerpo técnico de Dallas con jugadas grandes y recepciones de alto impacto. Ante defensivas que sobrecargan la cobertura sobre CeeDee Lamb, Flournoy se beneficia encontrando espacios aislados en campo abierto. Aunque todavía no goza de un volumen estable de objetivos, su tendencia va en ascenso vertical. Si juegas en ligas profundas o dinastía, vale la pena invertir un lugar al final de tu banca.",
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "DAL",
-      "jugadores": [
-        "11783",
-        "6786"
-      ]
-    },
-    {
-      "id": "n20261019121007",
-      "fecha": "2026-10-19T12:10:47.317Z",
-      "semana": 6,
-      "titulo": "Omar Cooper despierta interés en la agencia libre",
-      "claves": [
-        "Ganó volumen y rutas en ofensiva aérea necesitada",
-        "Destaca por su habilidad para ganar yardas extra",
-        "Reclamo interesante para banquillo en ligas competitivas"
-      ],
-      "cuerpo": "La rotación de receptores en Nueva York sigue abriendo puertas insospechadas y Omar Cooper es el nuevo beneficiado del esquema. Con actuaciones consistentes y buena química cuando entra al campo, se ha posicionado como un objetivo viable en rutas intermedias. Su valor fantasy todavía está en desarrollo, pero en ligas de doce o más equipos donde escasean receptores sanos, reclamarlo en waivers representa un movimiento inteligente y de bajo costo para anticipar un rol mayor.",
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "NYJ",
-      "jugadores": [
-        "13276"
-      ]
-    },
-    {
-      "id": "n20261019121008",
-      "fecha": "2026-10-19T12:10:47.317Z",
-      "semana": 6,
-      "titulo": "Tre Tucker explota su velocidad vertical en Las Vegas",
-      "claves": [
-        "Especialista en jugadas de largo kilometraje y anotación",
-        "Se afianza como el velocista principal del ataque",
-        "Opción de alto riesgo pero techo descomunal semanal"
-      ],
-      "cuerpo": "Tre Tucker está demostrando que no necesita decenas de envíos para cambiar el rumbo de un duelo de fantasy. El veloz receptor de los Raiders capitaliza jugadas de pase profundo gracias a su aceleración élite, convirtiendo recepciones rutinarias en escapadas a las diagonales. Para fantasy es el clásico perfil boom or bust: te puede dar un cero o ganar la semana con dos bombazos. Úsalo como flex arriesgado si buscas puntos desesperadamente ante rivales difíciles.",
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "LV",
-      "jugadores": [
-        "10213"
-      ]
-    },
-    {
-      "id": "n20261019121009",
-      "fecha": "2026-10-19T12:10:47.317Z",
-      "semana": 6,
-      "titulo": "Romeo Doubs frena su ritmo por percance físico",
-      "claves": [
-        "Nueva molestia física frena su integración y producción",
-        "Inestabilidad constante en el cuerpo aéreo del equipo",
-        "Mandatorio sentarlo mientras recupera plenitud física comprobada"
-      ],
-      "cuerpo": "Las lesiones vuelven a interrumpir la campaña de Romeo Doubs justo cuando comenzaba a establecerse en las lecturas de pase de su ofensiva. El receptor arrastra dolencias que condicionan su capacidad de separación y explosividad en las rutas perimetrales. En este estado, arriesgarse a alinearlo en fantasy es una trampa mortal con un piso de cero puntos. Lo más sensato es mantenerlo en la banca o buscar opciones con roles asegurados en el alambre de despidos.",
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "NE",
-      "jugadores": [
-        "8121"
-      ]
-    }
-  ],
+  "noticias": [],
   "lesionados": [
     {
-      "id": "6904",
+      "id": "9226",
       "estatus": "Fuera"
     },
     {
@@ -203,79 +20,15 @@
       "estatus": "Fuera"
     },
     {
-      "id": "2216",
-      "estatus": "Duda"
-    },
-    {
-      "id": "4199",
-      "estatus": "Duda"
-    },
-    {
-      "id": "12518",
+      "id": "4866",
       "estatus": "Fuera"
-    },
-    {
-      "id": "11559",
-      "estatus": "Duda"
-    },
-    {
-      "id": "10236",
-      "estatus": "Duda"
-    },
-    {
-      "id": "5872",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "12534",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "8121",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "12512",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "7526",
-      "estatus": "Duda"
-    },
-    {
-      "id": "9486",
-      "estatus": "Duda"
-    },
-    {
-      "id": "2449",
-      "estatus": "Duda"
-    },
-    {
-      "id": "4035",
-      "estatus": "Duda"
     },
     {
       "id": "13287",
       "estatus": "Fuera"
     },
     {
-      "id": "5844",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "5892",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "7571",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "12533",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "11630",
+      "id": "6904",
       "estatus": "Fuera"
     },
     {
@@ -283,25 +36,69 @@
       "estatus": "Fuera"
     },
     {
-      "id": "11635",
-      "estatus": "Fuera"
-    },
-    {
       "id": "10229",
       "estatus": "Fuera"
     },
     {
-      "id": "12509",
+      "id": "7543",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "11635",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "7526",
+      "estatus": "Duda"
+    },
+    {
+      "id": "5892",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12508",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "9499",
+      "estatus": "Duda"
+    },
+    {
+      "id": "12512",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12518",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "4983",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "13286",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "2216",
+      "estatus": "Duda"
+    },
+    {
+      "id": "12534",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "13281",
       "estatus": "Fuera"
     }
   ],
   "agregados": [
     "3271",
-    "7528",
     "13276",
+    "7528",
     "11439",
-    "8129",
     "10235",
+    "8129",
     "11637",
     "2505",
     "11783",
@@ -329,8 +126,8 @@
     "5012"
   ],
   "duelo": {
-    "a": "James Cook",
-    "b": "Kyren Williams",
-    "veredicto": "Arranca a Cook sin titubear. Mientras Williams batalla con el desplome de toques en un ataque de Rams en crisis, Cook cuenta con volumen garantizado e involucramiento aéreo en la maquinaria ofensiva de Búfalo."
+    "a": "—",
+    "b": "—",
+    "veredicto": ""
   }
 }
