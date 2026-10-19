@@ -165,7 +165,7 @@ function inicio() {
     <section class="block"><div class="head"><div><h2 class="px">EN VIVO <span>· SEMANA ${esc(G[0] ? G[0].semana : D.semana)}</span></h2><p class="hsub">Marcadores, posesión y puntos de fantasy al momento.</p></div><a class="all" href="#/partidos">TODOS LOS PARTIDOS ›</a></div>
       <div id="home-matches">${homeMatches()}</div></section>
 
-    ${SEMNUM ? `<section class="block"><div class="head"><div><h2 class="px">LOS MEJORES <span>DE LA SEMANA ${esc(SEMNUM)}</span></h2><p class="hsub">El Nº1 en puntos PPR de cada posición.</p></div><a class="all" href="#/lideres">TODOS LOS LÍDERES ›</a></div>${liderSemana()}</section>` : ''}
+    ${SEMNUM ? `<section class="block"><div class="head"><div><h2 class="px">LOS MEJORES <span>DE LA SEMANA ${esc(SEMNUM)}</span></h2><p class="hsub">El Nº1 en puntos ${FMTS[FMT]} de cada posición.</p></div><a class="all" href="#/lideres">TODOS LOS LÍDERES ›</a></div>${liderSemana()}</section>` : ''}
 
     <section class="block"><div class="head"><div><h2 class="px">LAS JUGADAS <span>DEL DÍA</span></h2><p class="hsub">Cada noticia aterrizada a tu alineación.</p></div><a class="all" href="#/noticias">VER LAS ${D.noticias.length} ›</a></div>
       <div class="news stagger">${top ? newsCard(top, true) : '<div class="empty">Las noticias llegan en el próximo ciclo.</div>'}${D.noticias.slice(1, 4).map(n => newsCard(n)).join('')}</div></section>
@@ -204,12 +204,6 @@ function duelo() {
         <span style="display:flex;flex-wrap:wrap;gap:10px">${a ? `<a class="btn ghost" href="#/jugador/${a.id}">FICHA ${esc(a.n.split(' ').pop().toUpperCase())}</a>` : ''}${b ? `<a class="btn ghost" href="#/jugador/${b.id}">FICHA ${esc(b.n.split(' ').pop().toUpperCase())}</a>` : ''}${a && b ? `<a class="btn" href="#/comparar/${a.id}/${b.id}">COMPARAR A FONDO</a>` : ''}</span></div>
     </div></section>`;
 }
-function teamGrid() {
-  const conteo = {};
-  P.forEach(j => { if (EQUIPOS[j.team]) { conteo[j.team] = conteo[j.team] || { n: 0, les: 0 }; conteo[j.team].n++; if (estatus(j) !== 'Sano') conteo[j.team].les++; } });
-  return `<div class="teamgrid stagger">${Object.keys(EQUIPOS).sort().map(t => `<a class="teamtile" href="#/equipo/${t}" style="${vars(t)}">${helmet(t, '', 52)}<span class="tt"><b>${t}</b><span>${EQUIPOS[t]}</span><small>${conteo[t] ? conteo[t].n + ' jugadores' + (conteo[t].les ? ' · ' + conteo[t].les + ' lesionados' : '') : '—'}</small></span></a>`).join('')}</div>`;
-}
-
 function noticias(q) {
   titulo('Noticias');
   const f = q.get('tipo') || 'TODO';
@@ -248,54 +242,157 @@ function noticia(id) {
   </div></div>`;
 }
 
+/* ---------- FORMATOS, CALENDARIO, RIVALES Y START/SIT FX ---------- */
+const FMTS = ['PPR', 'HALF PPR', 'STANDARD'];
+let FMT = 0; try { FMT = +(localStorage.getItem('fx-fmt') || 0) || 0; } catch (e) {}
+const DIVS = { AFC: { ESTE: ['BUF', 'MIA', 'NE', 'NYJ'], NORTE: ['BAL', 'CIN', 'CLE', 'PIT'], SUR: ['HOU', 'IND', 'JAX', 'TEN'], OESTE: ['DEN', 'KC', 'LV', 'LAC'] },
+  NFC: { ESTE: ['DAL', 'NYG', 'PHI', 'WAS'], NORTE: ['CHI', 'DET', 'GB', 'MIN'], SUR: ['ATL', 'CAR', 'NO', 'TB'], OESTE: ['ARI', 'LAR', 'SF', 'SEA'] } };
+const fxLogo = (s = 22) => `<svg width="${s}" height="${Math.round(s * .67)}" viewBox="20 55 150 100" aria-hidden="true"><polygon points="69,58.5 166.5,58.5 153.5,82.2 83.5,82.2 49,151.7 23.7,151.7" fill="#E8E8E8"/><polygon points="90.5,94.5 146.2,94.5 133,118 79.2,118" fill="#4A9A68"/></svg>`;
+function aplicaFormato() {
+  P.forEach(j => {
+    if (!j.log) return;
+    j.temp = j.log.map(l => l.f ? l.f[FMT] : null);
+    const jug = j.temp.filter(v => v != null);
+    j.total = jug.length ? Math.round(jug.reduce((a, b) => a + b, 0) * 10) / 10 : null;
+    j.prom = jug.length ? Math.round(j.total / jug.length * 10) / 10 : null;
+    const sem = D0.semanas || [];
+    j.hist = sem.map(w => { const l = j.log.find(x => x.w === w); return l && l.f ? l.f[FMT] : null; });
+  });
+  RANKPOS = {};
+  Object.keys(POSICIONES).forEach(p => P.filter(j => j.pos === p && j.total).sort((a, b) => b.total - a.total).forEach((j, i) => RANKPOS[j.id] = i + 1));
+  document.querySelectorAll('.fmt button').forEach((b, i) => b.classList.toggle('on', i === FMT));
+}
+let _semObj = null;
+const semActual = () => {
+  if (_semObj) return _semObj;
+  const c = D.cal && D.cal.cal; if (!c) return D.semana;
+  // la semana a analizar es la primera donde la mayoría de los juegos aún no termina
+  for (let w = 1; w <= 18; w++) { let tot = 0, pend = 0; Object.values(c).forEach(t => { if (t[w]) { tot++; if (!t[w].fin) pend++; } }); if (tot && pend / tot > .5) return (_semObj = w); }
+  return (_semObj = 18);
+};
+const rivalDe = (team, w = semActual()) => D.cal && D.cal.cal && D.cal.cal[team] ? D.cal.cal[team][w] || null : null;
+function estrellas(opp, pos) {
+  const d = D.cal && D.cal.dvp && D.cal.dvp[opp] && D.cal.dvp[opp][pos];
+  if (!d) return null;
+  return { n: Math.max(1, Math.min(5, Math.ceil((33 - d.rank) / 6.4))), rank: d.rank, prom: d.prom };
+}
+const pintaEstrellas = e => e ? `<span class="stars s${e.n}" title="Defensa Nº${e.rank} en puntos permitidos (${n1(e.prom)} por juego)">${'★'.repeat(e.n)}<i>${'★'.repeat(5 - e.n)}</i></span>` : '<span class="stars">–</span>';
+const rivalTxt = (team, w) => { const r = rivalDe(team, w); return r ? `${r.home ? 'vs' : '@'} ${r.opp}` : 'BYE'; };
+const UMBRAL = { QB: [12, 18], RB: [24, 36], WR: [30, 42], TE: [12, 18], K: [12, 16] };
+function veredicto(j) {
+  const razones = []; const st = estatus(j);
+  const r = rivalDe(j.team);
+  if (!r) return { v: 'SIT', razones: ['Semana de descanso (BYE): no juega.'], e: null };
+  if (st === 'Fuera') return { v: 'SIT', razones: ['Está fuera por lesión' + (j.injParte ? ' (' + j.injParte + ')' : '') + '.'], e: null };
+  const mismos = P.filter(x => x.pos === j.pos && x.prom != null).sort((a, b) => b.prom - a.prom);
+  let base = mismos.indexOf(j) + 1; if (!base) base = 99;
+  let m = 1;
+  const e = estrellas(r.opp, j.pos);
+  if (e) { m *= [1.25, 1.1, 1, .9, .8][e.n - 1]; razones.push(`Rival ${r.home ? 'en casa' : 'de visita'} ${r.opp}: ${e.n >= 4 ? 'defensa que regala puntos' : e.n <= 2 ? 'defensa dura' : 'matchup neutral'} a ${j.pos} (Nº${e.rank} en puntos permitidos).`); }
+  const h = (j.temp || []).filter(v => v != null), u3 = h.slice(-3);
+  if (u3.length >= 2 && j.prom) { const f = u3.reduce((a, b) => a + b, 0) / u3.length / j.prom; if (f > 1.2) { m *= .9; razones.push('Viene en racha: sus últimas semanas superan su promedio.'); } else if (f < .8) { m *= 1.1; razones.push('Viene a la baja en sus últimas semanas.'); } }
+  const nota = D.noticias.find(n => (n.jugadores || [])[0] === j.id);
+  if (nota && nota.impacto === 'SUBE') { m *= .9; razones.push('Las noticias del día lo favorecen: «' + nota.titulo + '».'); }
+  if (nota && nota.impacto === 'BAJA') { m *= 1.12; razones.push('Las noticias del día le pegan: «' + nota.titulo + '».'); }
+  if (j.add && D.agregados.indexOf(j.id) > -1 && D.agregados.indexOf(j.id) < 8) { m *= .95; razones.push('La comunidad lo está agregando fuerte en las últimas 24 h.'); }
+  if (j.drop) { m *= 1.05; razones.push('Lo están soltando en muchas ligas.'); }
+  if (st === 'Duda') { m *= 1.2; razones.push('Está en duda: confirma su estatus antes del kickoff.'); }
+  const adj = base * m, [t1, t2] = UMBRAL[j.pos] || [12, 18];
+  razones.unshift(`Es el ${j.pos}${base} por promedio de puntos ${FMTS[FMT]} esta temporada.`);
+  return { v: adj <= t1 ? 'START' : adj <= t2 ? 'FLEX' : 'SIT', razones, e, adj };
+}
+const fxPill = j => { const v = veredicto(j); return `<span class="fxv ${v.v}">${fxLogo(16)}${v.v === 'FLEX' ? 'FLEX' : v.v}</span>`; };
+function recordDe(t) {
+  const c = D.cal && D.cal.cal && D.cal.cal[t]; if (!c) return '';
+  let g = 0, p = 0, e = 0; Object.values(c).forEach(x => { if (x.fin) { if (x.pf > x.pc) g++; else if (x.pf < x.pc) p++; else e++; } });
+  return g + '-' + p + (e ? '-' + e : '');
+}
+
+function teamGrid() {
+  const conteo = {};
+  P.forEach(j => { if (EQUIPOS[j.team]) { conteo[j.team] = conteo[j.team] || { les: 0 }; if (estatus(j) !== 'Sano') conteo[j.team].les++; } });
+  return `<div class="confs">${Object.entries(DIVS).map(([conf, divs]) => `<div class="conf"><h3 class="px conf-t">${conf}</h3>
+    <div class="divs">${Object.entries(divs).map(([d, ts]) => `<div class="div"><h4 class="px">${conf} ${d}</h4>
+      ${ts.slice().sort((a, b) => { const w = x => +(recordDe(x).split('-')[0] || 0); return w(b) - w(a); }).map(t => {
+        const r = rivalDe(t);
+        return `<a class="trow" href="#/equipo/${t}" style="${vars(t)}">${helmet(t, '', 40)}<span class="tt"><b>${EQUIPOS[t]}</b><small>${r ? 'S' + semActual() + ' ' + (r.home ? 'vs ' : '@ ') + r.opp : 'BYE'}${conteo[t] && conteo[t].les ? ' · ' + conteo[t].les + ' lesionados' : ''}</small></span><span class="rec n">${recordDe(t) || '–'}</span></a>`;
+      }).join('')}</div>`).join('')}</div></div>`).join('')}</div>`;
+}
+
 function jugador(id) {
   const j = J[id];
   if (!j) return noEncontrado();
   titulo(j.n);
-  const st = estatus(j);
+  const st = estatus(j), v = veredicto(j);
   const notas = noticiasDe(id);
   const comp = P.filter(x => x.team === j.team && x.id !== id).sort((a, b) => (b.total || 0) - (a.total || 0)).slice(0, 6);
   const mismos = P.filter(x => x.pos === j.pos).sort((a, b) => (b.total || 0) - (a.total || 0));
   const k = mismos.indexOf(j);
   const vecinos = mismos.slice(Math.max(0, k - 3), k + 4).filter(x => x.id !== id).slice(0, 6);
-  const hist = j.hist || [], semanas = D.semanas || hist.map((_, i) => i + 1);
-  const max = Math.max(10, ...hist.filter(v => v != null));
-  const kpiSt = st === 'Sano' ? '' : st === 'Duda' ? 'warn' : 'bad';
+  const log = (j.log || []).slice().reverse();
+  const hist = j.hist || [], semanas = D.semanas || [];
+  const max = Math.max(10, ...hist.filter(x => x != null));
+  const r = rivalDe(j.team);
+  const prox = []; for (let w = semActual(); w < semActual() + 5 && w <= 18; w++) prox.push(w);
+  const cols = j.pos === 'QB' ? [['py', 'YDS PASE'], ['ptd', 'TD P'], ['int', 'INT'], ['ry', 'YDS CAR'], ['rtd', 'TD C']]
+    : j.pos === 'K' ? [['fgm', 'FG'], ['xpm', 'PAT']]
+    : j.pos === 'RB' ? [['ra', 'ACAR'], ['ry', 'YDS CAR'], ['rtd', 'TD C'], ['rec', 'REC'], ['recy', 'YDS REC'], ['rectd', 'TD R']]
+    : [['tg', 'TGT'], ['rec', 'REC'], ['recy', 'YDS REC'], ['rectd', 'TD R'], ['ry', 'YDS CAR']];
+  const res = (w) => { const c = rivalDe(j.team, w); return c && c.fin ? `<span class="${c.pf > c.pc ? 'g' : c.pf < c.pc ? 'p' : ''}">${c.pf > c.pc ? 'G' : c.pf < c.pc ? 'P' : 'E'} ${c.pf}-${c.pc}</span>` : ''; };
   return `<div class="page">${crumbs([['#/posicion/' + j.pos, POSICIONES[j.pos] || j.pos], ['', j.n]])}<div class="wrap">
     <div class="pcard" style="${vars(j.team)}">
-      <div class="art"><span class="bignum">${esc(j.num ?? '')}</span>${helmet(j.team, j.num, 230, false, 'bob')}</div>
+      <div class="art"><span class="bignum">${esc(j.num ?? '')}</span>${helmet(j.team, j.num, 220, false, 'bob')}</div>
       <div class="info">
         <div class="tags"><a class="pos" href="#/posicion/${j.pos}">${esc(rp(j))}</a>${EQUIPOS[j.team] ? `<a class="team" href="#/equipo/${j.team}">${esc(EQUIPOS[j.team])} ›</a>` : '<span class="team">Agente libre</span>'}${pillSt(j)}</div>
         <h1>${esc(j.n)}</h1>
         <div class="meters">${medidores(j, mismos)}</div>
-        <p class="meter-note">Niveles calculados con datos reales: producción = promedio PPR contra su posición · forma = último partido contra su promedio · demanda = agregados en 24 h · salud = reporte de lesiones.</p>
         <div class="actions" style="margin:0">${vecinos[0] ? `<a class="btn" href="#/comparar/${id}/${vecinos[0].id}">⚔ COMPARAR</a>` : ''}<a class="btn ghost" href="#/posicion/${j.pos}">RANKING ${esc(j.pos)}</a></div>
       </div>
     </div>
     ${st !== 'Sano' ? `<div class="alert ${st}"><b>${st === 'Duda' ? 'EN DUDA' : 'FUERA'}${j.injParte ? ' · ' + esc(j.injParte).toUpperCase() : ''}</b><p>${esc(j.injNota || 'Sin detalle adicional del reporte de lesiones.')}</p></div>` : ''}
+
+    <section class="block"><div class="ssfx ${v.v}">
+      <div class="ss-head">${fxLogo(54)}<div><small class="px">START / SIT FX · SEMANA ${esc(semActual())}</small><b class="px">${v.v === 'START' ? 'ARRÁNCALO' : v.v === 'FLEX' ? 'OPCIÓN FLEX' : 'A LA BANCA'}</b></div>
+        <div class="ss-riv">${r ? `${helmet(r.opp, '', 56, true)}<span><small>RIVAL</small><b>${r.home ? 'vs' : '@'} ${esc(r.opp)}</b>${pintaEstrellas(v.e)}</span>` : '<span><b>BYE</b></span>'}</div></div>
+      <ul class="ss-why">${v.razones.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+      <p class="ss-note">Veredicto calculado con puntos reales, dificultad del rival, racha, noticias del día y movimiento de la comunidad.</p>
+    </div></section>
+
     <div class="kpis stagger">
-      <div class="kpi"><b>${esc(rp(j))}</b><span>RANKING EN SU POSICIÓN</span></div>
-      <div class="kpi"><b>${n1(j.prom)}</b><span>PROMEDIO PPR · ${hist.filter(v => v != null).length} SEM</span></div>
+      <div class="kpi"><b>${esc(rp(j))}</b><span>RANKING · ${FMTS[FMT]}</span></div>
+      <div class="kpi"><b>${n1(j.total)}</b><span>PUNTOS EN LA TEMPORADA</span></div>
+      <div class="kpi"><b>${n1(j.prom)}</b><span>PROMEDIO POR PARTIDO</span></div>
       <div class="kpi"><b>${n1(ultima(j))}</b><span>ÚLTIMO PARTIDO</span></div>
-      <div class="kpi ${j.add ? '' : j.drop ? 'bad' : ''}"><b>${j.add ? '▲ ' + nf.format(j.add) : j.drop ? '▼ ' + nf.format(j.drop) : '–'}</b><span>${j.add ? 'AGREGADO EN 24 H' : j.drop ? 'SOLTADO EN 24 H' : 'SIN MOVIMIENTO HOY'}</span></div>
-      <div class="kpi ${kpiSt}"><b>${st.toUpperCase()}</b><span>ESTATUS</span></div>
+      <div class="kpi"><b>${(j.log || []).filter(l => l.f).length}</b><span>PARTIDOS JUGADOS</span></div>
     </div>
-    <div class="grid g2">
-      <div class="card"><h3 class="px">PUNTOS POR SEMANA</h3><p class="sub">Formato PPR. Barra gris = no jugó o sin puntos.</p>
-        <div class="chart">${hist.map(v => `<div class="col"><em>${v == null ? '–' : n1(v)}</em><i class="${v ? '' : 'zero'}" style="${v ? 'height:' + Math.round(v / max * 150) + 'px' : ''}"></i></div>`).join('')}</div>
+
+    <section class="block" style="padding-top:20px"><div class="head"><div><h2 class="px">PARTIDO POR <span>PARTIDO</span></h2><p class="hsub">Rival, resultado, puntos en los 3 formatos y estadísticas clave.</p></div></div>
+      <div class="card scroll"><table class="tbl glog"><thead><tr><th>SEM</th><th>RIVAL</th><th>RES</th><th class="${FMT === 0 ? 'hl' : ''}">PPR</th><th class="${FMT === 1 ? 'hl' : ''}">HALF</th><th class="${FMT === 2 ? 'hl' : ''}">STD</th>${cols.map(c => `<th>${c[1]}</th>`).join('')}</tr></thead>
+      <tbody>${log.map(l => { const c = rivalDe(j.team, l.w); return `<tr class="nolink"><td class="n">${l.w}</td><td>${c ? `<a class="team" href="#/equipo/${c.opp}">${c.home ? 'vs' : '@'} ${c.opp}</a>` : '<span class="team">BYE</span>'}</td><td class="n res">${res(l.w)}</td>
+        ${[0, 1, 2].map(i => `<td class="n ${FMT === i ? 'hl' : ''}">${l.f ? n1(l.f[i]) : '–'}</td>`).join('')}${cols.map(cc => `<td class="n">${l.st && l.st[cc[0]] != null ? l.st[cc[0]] : l.f ? 0 : '–'}</td>`).join('')}</tr>`; }).join('')}</tbody></table></div></section>
+
+    <div class="grid g2" style="margin-top:20px">
+      <div class="card"><h3 class="px">PUNTOS POR SEMANA</h3><p class="sub">Formato ${FMTS[FMT]}. Gris = no jugó.</p>
+        <div class="chart">${hist.map(x => `<div class="col"><em>${x == null ? '–' : n1(x)}</em><i class="${x ? '' : 'zero'}" style="${x ? 'height:' + Math.round(x / max * 150) + 'px' : ''}"></i></div>`).join('')}</div>
         <div class="chart-x">${semanas.map(w => `<span>S${w}</span>`).join('')}</div></div>
-      <div class="card"><h3 class="px">FICHA</h3><p class="sub">Datos del jugador.</p>
+      <div class="card"><h3 class="px">PRÓXIMOS RIVALES</h3><p class="sub">Dificultad para un ${j.pos}: más estrellas = más fácil.</p>
+        <div class="plist">${prox.map(w => { const c = rivalDe(j.team, w); return `<div class="prow nolink"><span class="rk">S${w}</span>${c ? helmet(c.opp, '', 34) : ''}<span class="meta"><span class="pname">${c ? (c.home ? 'vs ' : '@ ') + esc(EQUIPOS[c.opp] || c.opp) : 'BYE'}</span><small>${c ? new Date(c.fecha).toLocaleDateString('es-MX', { weekday: 'short', day: 'numeric', month: 'short' }) : 'Descanso'}</small></span><span class="right">${c ? pintaEstrellas(estrellas(c.opp, j.pos)) : ''}</span></div>`; }).join('')}</div></div>
+    </div>
+    <div class="grid g2" style="margin-top:20px">
+      <div class="card"><h3 class="px">FICHA</h3>
         <div class="bio"><div><small>EDAD</small><b>${esc(j.edad ?? '–')}</b></div><div><small>EXPERIENCIA</small><b>${j.exp != null ? (j.exp === 0 ? 'Novato' : esc(j.exp) + ' años') : '–'}</b></div>
         <div><small>ESTATURA</small><b>${altura(j.alt)}</b></div><div><small>PESO</small><b>${j.peso ? esc(j.peso) + ' lb' : '–'}</b></div>
         <div style="grid-column:1/-1"><small>UNIVERSIDAD</small><b>${esc(j.col || '–')}</b></div></div></div>
+      <div class="card"><h3 class="px">MOVIMIENTO EN LIGAS</h3><p class="sub">Últimas 24 horas en Sleeper.</p>
+        <div class="kpis" style="margin:0"><div class="kpi"><b style="color:var(--accent)">${j.add ? '▲ ' + nf.format(j.add) : '–'}</b><span>AGREGADO</span></div><div class="kpi"><b style="color:var(--bad)">${j.drop ? '▼ ' + nf.format(j.drop) : '–'}</b><span>SOLTADO</span></div></div></div>
     </div>
     <section class="block"><div class="head"><h2 class="px">NOTICIAS <span>SOBRE ÉL</span></h2></div>
       <div class="news stagger">${notas.map(n => newsCard(n)).join('') || '<div class="empty">Hoy no hay noticias sobre este jugador.</div>'}</div></section>
     <section class="block grid g2">
       <div class="card"><h3 class="px" style="color:var(--accent)">${esc(j.pos)} CERCA EN EL RANKING</h3><p class="sub">Alternativas parecidas. Toca para comparar.</p>
-        <div class="plist">${vecinos.map(v => prow(v, `<a class="chip" href="#/comparar/${id}/${v.id}" onclick="event.stopPropagation()">VS</a>`)).join('')}</div></div>
+        <div class="plist">${vecinos.map(x => prow(x, `<a class="chip" href="#/comparar/${id}/${x.id}" onclick="event.stopPropagation()">VS</a>`)).join('')}</div></div>
       <div class="card"><h3 class="px">COMPAÑEROS EN ${esc(j.team)}</h3><p class="sub">Su ofensiva en fantasy.</p>
-        <div class="plist">${comp.map(c => prow(c, pillSt(c))).join('') || '<p class="sub">Sin compañeros registrados.</p>'}</div></div>
+        <div class="plist">${comp.map(c => prow(c, fxPill(c))).join('') || '<p class="sub">Sin compañeros registrados.</p>'}</div></div>
     </section>
   </div></div>`;
 }
@@ -352,43 +449,52 @@ function comparar(a, b) {
 
 function posicion(p, q) {
   if (!POSICIONES[p]) return noEncontrado();
-  titulo(POSICIONES[p]);
-  return `<div class="page">${crumbs([['', POSICIONES[p]]])}<div class="wrap"><section class="block">
-    <div class="head"><h2 class="px">RANKING <span>${p}</span></h2><small class="px">${esc(actualizado())}</small></div>
+  titulo('Ranking ' + p);
+  const w = semActual(), ult = (D.semanas || []).slice(-3);
+  return `<div class="page">${crumbs([['', 'Rankings ' + p]])}<div class="wrap"><section class="block">
+    <div class="head"><div><h2 class="px">RANKING <span>${p} · SEMANA ${esc(w)}</span></h2><p class="hsub">Ordenado por puntos ${FMTS[FMT]} de la temporada, con rival, dificultad y el veredicto Start/Sit FX.</p></div><small class="px">${esc(actualizado())}</small></div>
     <div class="chips">${Object.keys(POSICIONES).map(x => `<a class="chip ${x === p ? 'on' : ''}" href="#/posicion/${x}">${x}</a>`).join('')}</div>
-    <div class="tools"><input id="filtro" type="search" placeholder="Filtrar por nombre o equipo…" aria-label="Filtrar jugadores">
-      <span class="chips" style="margin:0" id="fst">${['TODOS', 'Sano', 'Duda', 'Fuera'].map((s, i) => `<button type="button" class="chip ${i ? '' : 'on'}" data-s="${s}">${s.toUpperCase()}</button>`).join('')}</span></div>
-    <div class="card scroll"><table class="tbl"><thead><tr>
-      <th><button data-k="rank" class="on">#</button></th><th>JUGADOR</th><th><button data-k="team">EQUIPO</button></th><th>ESTATUS</th>
-      <th><button data-k="prom">PROM</button></th><th><button data-k="ult">ÚLTIMO</button></th><th>TENDENCIA</th><th><button data-k="add">AGREGADO</button></th>
+    <div class="tools"><input id="filtro" type="search" placeholder="Filtrar por nombre, equipo o rival…" aria-label="Filtrar jugadores">
+      <span class="chips" style="margin:0" id="fst">${['TODOS', 'START', 'FLEX', 'SIT'].map((s, i) => `<button type="button" class="chip ${i ? '' : 'on'}" data-s="${s}">${s}</button>`).join('')}</span></div>
+    <div class="card scroll"><table class="tbl rank"><thead><tr>
+      <th><button data-k="rank" class="on">#</button></th><th>JUGADOR</th><th><button data-k="team">EQUIPO</button></th>
+      <th>RIVAL S${esc(w)}</th><th><button data-k="mu">DIFICULTAD</button></th>
+      ${ult.map(x => `<th>S${x}</th>`).join('')}<th><button data-k="prom">PROM</button></th><th><button data-k="total">TOTAL</button></th><th>TENDENCIA</th>
+      <th class="fxh"><button data-k="fx">${fxLogo(18)} START/SIT</button></th>
     </tr></thead><tbody id="tb"></tbody></table></div>
+    <p class="ss-note">Dificultad = puntos que la defensa rival permite a la posición (★★★★★ = matchup ideal). Start/Sit FX combina puntos reales, rival, racha, noticias y la comunidad.</p>
   </section></div></div>`;
 }
 function montaTabla(p) {
-  let orden = 'rank', est = 'TODOS';
-  const base = P.filter(j => j.pos === p);
+  let orden = 'rank', filtroV = 'TODOS';
+  const ult = (D.semanas || []).slice(-3);
+  const base = P.filter(j => j.pos === p).map(j => ({ j, v: veredicto(j), r: rivalDe(j.team) }));
+  const pesoV = { START: 3, FLEX: 2, SIT: 1 };
   const pinta = () => {
     const f = ($('#filtro').value || '').toLowerCase();
-    const val = (j, k) => k === 'ult' ? (ultima(j) ?? -1) : k === 'rank' ? (j.total || 0) : k === 'team' ? j.team : (j[k] ?? -1);
-    const lista = base.filter(j => (est === 'TODOS' || estatus(j) === est) && (!f || j.n.toLowerCase().includes(f) || j.team.toLowerCase().includes(f) || (EQUIPOS[j.team] || '').toLowerCase().includes(f)))
+    const val = (x, k) => k === 'rank' ? (x.j.total || 0) : k === 'team' ? x.j.team : k === 'mu' ? (x.v.e ? x.v.e.n : 0) : k === 'fx' ? pesoV[x.v.v] * 1000 - (x.v.adj || 999) : (x.j[k] ?? -1);
+    const lista = base.filter(x => (filtroV === 'TODOS' || x.v.v === filtroV) && (!f || x.j.n.toLowerCase().includes(f) || x.j.team.toLowerCase().includes(f) || (x.r && x.r.opp.toLowerCase().includes(f)) || (EQUIPOS[x.j.team] || '').toLowerCase().includes(f)))
       .sort((a, b) => { const va = val(a, orden), vb = val(b, orden); return orden === 'team' ? String(va).localeCompare(vb) : vb - va; });
-    $('#tb').innerHTML = lista.map(j => `<tr data-id="${j.id}"><td class="n">${RANKPOS[j.id] || '–'}</td>
-      <td><span style="display:flex;align-items:center;gap:10px">${helmet(j.team, j.num, 30)}<span class="pname">${esc(j.n)}</span></span></td>
-      <td><a class="team" href="#/equipo/${j.team}" onclick="event.stopPropagation()">${esc(j.team)}</a></td><td>${pillSt(j)}</td>
-      <td class="n">${n1(j.prom)}</td><td class="n">${n1(ultima(j))}</td><td>${spark(j.hist)}</td>
-      <td class="n" style="color:${j.add ? 'var(--accent)' : j.drop ? 'var(--bad)' : 'var(--mute)'}">${j.add ? '▲' + nf.format(j.add) : j.drop ? '▼' + nf.format(j.drop) : '–'}</td></tr>`).join('')
-      || '<tr><td colspan="8"><div class="empty">Ningún jugador coincide.</div></td></tr>';
+    $('#tb').innerHTML = lista.map(({ j, v, r }) => {
+      const pts = ult.map(w => { const l = (j.log || []).find(x => x.w === w); const c = rivalDe(j.team, w); return `<td class="n wk">${l && l.f ? n1(l.f[FMT]) : c ? '–' : '<small>BYE</small>'}</td>`; }).join('');
+      return `<tr data-id="${j.id}"><td class="n">${RANKPOS[j.id] || '–'}</td>
+      <td><span class="tpl">${helmet(j.team, j.num, 30)}<span><span class="pname">${esc(j.n)}</span>${estatus(j) !== 'Sano' ? ` <span class="pill ${estatus(j)}">${estatus(j).toUpperCase()}</span>` : ''}</span></span></td>
+      <td><a class="team" href="#/equipo/${j.team}" onclick="event.stopPropagation()">${esc(j.team)}</a></td>
+      <td>${r ? `<a class="team riv" href="#/equipo/${r.opp}" onclick="event.stopPropagation()">${helmet(r.opp, '', 22)}${r.home ? 'vs' : '@'} ${r.opp}</a>` : '<span class="team">BYE</span>'}</td>
+      <td>${pintaEstrellas(v.e)}</td>${pts}
+      <td class="n">${n1(j.prom)}</td><td class="n">${n1(j.total)}</td><td>${spark(j.hist)}</td><td>${fxPill(j)}</td></tr>`;
+    }).join('') || '<tr><td colspan="12"><div class="empty">Ningún jugador coincide.</div></td></tr>';
     $('#tb').querySelectorAll('tr[data-id]').forEach(tr => tr.onclick = () => { location.hash = '#/jugador/' + tr.dataset.id; });
   };
   $('#filtro').oninput = pinta;
   document.querySelectorAll('.tbl th button').forEach(b => b.onclick = () => { orden = b.dataset.k; document.querySelectorAll('.tbl th button').forEach(x => x.classList.toggle('on', x === b)); pinta(); });
-  document.querySelectorAll('#fst button').forEach(b => b.onclick = () => { est = b.dataset.s; document.querySelectorAll('#fst button').forEach(x => x.classList.toggle('on', x === b)); pinta(); });
+  document.querySelectorAll('#fst button').forEach(b => b.onclick = () => { filtroV = b.dataset.s; document.querySelectorAll('#fst button').forEach(x => x.classList.toggle('on', x === b)); pinta(); });
   pinta();
 }
 
 function equipos() {
   titulo('Equipos');
-  return `<div class="page">${crumbs([['', 'Equipos']])}<div class="wrap"><section class="block"><div class="head"><h2 class="px">LOS <span>32</span></h2><small class="px">TOCA UN EQUIPO</small></div>${teamGrid()}</section></div></div>`;
+  return `<div class="page">${crumbs([['', 'Equipos']])}<div class="wrap"><section class="block"><div class="head"><div><h2 class="px">LOS <span>32 EQUIPOS</span></h2><p class="hsub">Por conferencia y división, con récord, rival de la semana y lesionados.</p></div></div>${teamGrid()}</section></div></div>`;
 }
 function equipo(t) {
   if (!EQUIPOS[t]) return noEncontrado();
@@ -397,17 +503,24 @@ function equipo(t) {
   const ids = new Set(roster.map(j => j.id));
   const notas = D.noticias.filter(n => (n.jugadores || []).some(id => ids.has(id)));
   const les = roster.filter(j => estatus(j) !== 'Sano');
+  const div = Object.entries(DIVS).flatMap(([c, ds]) => Object.entries(ds).map(([d, ts]) => [c + ' ' + d, ts])).find(x => x[1].includes(t));
+  const cal = (D.cal && D.cal.cal && D.cal.cal[t]) || {};
   const grupos = Object.keys(POSICIONES).map(p => {
     const g = roster.filter(j => j.pos === p);
-    return g.length ? `<div class="card"><h3 class="px" style="color:var(--accent)">${p}</h3><p class="sub">${POSICIONES[p]}</p><div class="plist">${g.map(j => prow(j, `<span class="num">${n1(j.prom)}</span>`)).join('')}</div></div>` : '';
+    return g.length ? `<div class="card"><h3 class="px" style="color:var(--accent)">${p}</h3><p class="sub">${POSICIONES[p]} · promedio ${FMTS[FMT]}</p><div class="plist">${g.map(j => prow(j, `<span class="num">${n1(j.prom)}</span>${fxPill(j)}`)).join('')}</div></div>` : '';
   }).join('');
+  const r = rivalDe(t);
   return `<div class="page">${crumbs([['#/equipos', 'Equipos'], ['', t]])}<div class="wrap">
-    <div class="nhero" style="${vars(t)}"><div class="grid-in"><div class="hels">${helmet(t, '', 170, false, 'bob')}</div><div class="txt"><span class="tagx" style="display:inline-block">${t}</span><h1>${esc(EQUIPOS[t])}</h1><p style="color:#fff;margin:12px 0 0;font-weight:600">${roster.length} jugadores de fantasy · ${les.length} con reporte de lesión</p></div></div></div>
+    <div class="nhero" style="${vars(t)}"><div class="grid-in"><div class="hels">${helmet(t, '', 160, false, 'bob')}</div><div class="txt"><span class="tagx" style="display:inline-block">${div ? div[0] : t}</span><h1>${esc(EQUIPOS[t])}</h1>
+      <p style="color:#fff;margin:12px 0 0;font-weight:600;font-size:18px">Récord <span class="n">${recordDe(t) || '–'}</span> · ${r ? `Semana ${semActual()}: ${r.home ? 'vs' : '@'} ${EQUIPOS[r.opp] || r.opp}` : 'Semana de descanso'}</p></div></div></div>
     ${les.length ? `<div class="alert"><b>REPORTE DE LESIONES</b><p>${les.map(j => `<a href="#/jugador/${j.id}">${esc(j.n)}</a> (${estatus(j)})`).join(' · ')}</p></div>` : ''}
-    <section class="block"><div class="head"><h2 class="px">PLANTEL <span>FANTASY</span></h2><small class="px">PROMEDIO PPR</small></div><div class="grid g3 stagger">${grupos || '<div class="empty">Sin jugadores registrados.</div>'}</div></section>
+    <section class="block"><div class="head"><div><h2 class="px">CALENDARIO <span>${esc(D.cal ? D.cal.temporada : '')}</span></h2><p class="hsub">Resultados y lo que viene, semana por semana.</p></div></div>
+      <div class="sched">${Array.from({ length: 18 }, (_, i) => i + 1).map(w => { const c = cal[w]; return `<a class="sw ${c && c.fin ? (c.pf > c.pc ? 'g' : 'p') : ''} ${w === semActual() ? 'now' : ''}" href="${c ? '#/equipo/' + c.opp : '#/equipos'}"><small class="px">S${w}</small>${c ? helmet(c.opp, '', 36, !c.home) : '<b class="px bye">BYE</b>'}<span>${c ? (c.home ? 'vs ' : '@ ') + c.opp : 'Descanso'}</span><em class="n">${c && c.fin ? (c.pf > c.pc ? 'G ' : c.pf < c.pc ? 'P ' : 'E ') + c.pf + '-' + c.pc : c ? new Date(c.fecha).toLocaleDateString('es-MX', { day: 'numeric', month: 'short' }) : ''}</em></a>`; }).join('')}</div></section>
+    <section class="block"><div class="head"><div><h2 class="px">PLANTEL <span>FANTASY</span></h2><p class="hsub">Con su veredicto Start/Sit FX de esta semana.</p></div></div><div class="grid g3 stagger">${grupos || '<div class="empty">Sin jugadores registrados.</div>'}</div></section>
     <section class="block"><div class="head"><h2 class="px">NOTICIAS <span>DEL EQUIPO</span></h2></div><div class="news stagger">${notas.map(n => newsCard(n)).join('') || '<div class="empty">Hoy no hay noticias de este equipo.</div>'}</div></section>
   </div></div>`;
 }
+
 function tendencias() {
   titulo('Tendencias');
   return `<div class="page">${crumbs([['', 'Tendencias']])}<div class="wrap"><section class="block grid g2">
@@ -459,7 +572,7 @@ function semana(w) {
     <div class="nhero scn" style="${vars(mvp && mvp.team)}">${escena('ARRANCA', mvp && mvp.team, '')}<div class="grid-in"><div class="txt"><span class="tagx" style="display:inline-block">SEMANA ${w}</span><h1>${esc(R.titulo)}</h1></div></div></div>
     <div class="kcards stagger">${(R.claves || []).map((c, k) => `<div class="kcard"><b>${k + 1}</b>${esc(c)}</div>`).join('')}</div>
     ${R.cuerpo ? `<details class="desglose"><summary><span>LEER EL RESUMEN COMPLETO</span><span>›</span></summary><p>${esc(R.cuerpo)}</p></details>` : ''}
-    <section class="block"><div class="head"><h2 class="px">LOS MEJORES <span>DE LA SEMANA</span></h2><small class="px">PUNTOS PPR</small></div>
+    <section class="block"><div class="head"><h2 class="px">LOS MEJORES <span>DE LA SEMANA</span></h2><small class="px">PUNTOS ${FMTS[FMT]}</small></div>
       <div class="grid g3 stagger">${Object.entries(R.top || {}).map(([p, l]) => `<div class="card"><h3 class="px" style="color:var(--accent)">${p}</h3><div class="plist">${l.slice(0, 5).map((x, i) => J[x.id] ? prow(J[x.id], `<span class="num">${n1(x.pts)}</span>`, i + 1) : `<div class="prow"><span class="rk">${i + 1}</span>${helmet(x.team, '', 36)}<span class="meta"><span class="pname">${esc(x.n)}</span><small>${esc(x.team || '')}</small></span><span class="right"><span class="num">${n1(x.pts)}</span></span></div>`).join('')}</div></div>`).join('')}</div></section>
     <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px">${D.resumenes[w - 1] ? `<a class="btn ghost" href="#/semana/${w - 1}">‹ SEMANA ${w - 1}</a>` : ''}${D.resumenes[+w + 1] ? `<a class="btn" href="#/semana/${+w + 1}">SEMANA ${+w + 1} ›</a>` : ''}</div>
   </div></div>`;
@@ -610,7 +723,7 @@ function lideres(q) {
   const modo = q.get('ver') || (SEMNUM ? 'semana' : 'temporada');
   const val = j => modo === 'semana' ? ptsSemana(j) : j.total;
   return `<div class="page">${crumbs([['', 'Líderes fantasy']])}<div class="wrap"><section class="block">
-    <div class="head"><h2 class="px">LÍDERES <span>FANTASY</span></h2><small class="px">PUNTOS PPR</small></div>
+    <div class="head"><h2 class="px">LÍDERES <span>FANTASY</span></h2><small class="px">PUNTOS ${FMTS[FMT]}</small></div>
     <div class="chips"><a class="chip ${modo === 'semana' ? 'on' : ''}" href="#/lideres?ver=semana">SEMANA ${esc(SEMNUM || '')}</a><a class="chip ${modo === 'temporada' ? 'on' : ''}" href="#/lideres?ver=temporada">TEMPORADA</a></div>
     <div class="grid g3 stagger">${Object.keys(POSICIONES).map(p => {
       const L = P.filter(j => j.pos === p && val(j) != null).sort((a, b) => val(b) - val(a)).slice(0, 8);
@@ -729,8 +842,9 @@ Promise.all([
   fetch('data/archivo.json?v=' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
   fetch('data/semanas.json?v=' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({})),
   fetch('data/redes.json?v=' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({})),
-  fetch('data/videos.json?v=' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({}))
-]).then(([hoy, jugadores, archivo, resumenes, redes, videos]) => {
+  fetch('data/videos.json?v=' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({})),
+  fetch('data/calendario.json?v=' + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null)
+]).then(([hoy, jugadores, archivo, resumenes, redes, videos, calendario]) => {
   D0 = hoy;
   P = Array.isArray(jugadores) ? jugadores : [];
   P.forEach(j => J[j.id] = j);
@@ -746,7 +860,9 @@ Promise.all([
   });
   hoy.lesionados = (hoy.lesionados || []).filter(x => x.id);
   hoy.agregados = hoy.agregados || []; hoy.soltados = hoy.soltados || [];
-  D = hoy; D.archivo = Array.isArray(archivo) ? archivo : []; D.resumenes = resumenes || {}; D.redes = redes || {}; D.videos = videos || {};
+  D = hoy; D.archivo = Array.isArray(archivo) ? archivo : []; D.resumenes = resumenes || {}; D.redes = redes || {}; D.videos = videos || {}; D.cal = calendario;
+  aplicaFormato();
+  document.querySelectorAll('.fmt button').forEach((b, i) => b.onclick = () => { FMT = i; try { localStorage.setItem('fx-fmt', i); } catch (e) {} aplicaFormato(); router(); });
   const pie = document.getElementById('pie-redes'); if (pie) pie.innerHTML = `<div class="follow"><div><h3 class="px">SÍGUENOS</h3><p>Tips diarios, el podcast y los videos de cada semana.</p></div>${grupoRedes()}</div>`;
   const ts = document.getElementById('top-social');
   if (ts) ts.innerHTML = [['tiktok', 'tt'], ['youtube', 'yt'], ['instagramFX', 'ig'], ['spotify', 'sp']].map(([k, i]) => D.redes[k] ? `<a href="${esc(D.redes[k].url)}" target="_blank" rel="noopener" aria-label="${k}">${ICO[i]}</a>` : '').join('');
