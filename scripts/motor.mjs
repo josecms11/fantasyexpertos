@@ -4,6 +4,10 @@
 // 3. Gemini escribe noticias propias y notas EXCLUSIVAS a partir del reportero
 // 4. Guarda archivo histórico y resúmenes semanales (catch-up de la temporada)
 import fs from 'node:fs';
+const LOG = []; const t0 = Date.now();
+const log = (...a) => { const m = `[${((Date.now() - t0) / 1000).toFixed(1)}s] ` + a.join(' '); console.log(m); LOG.push(m); fs.mkdirSync('data', { recursive: true }); fs.writeFileSync('data/estado.json', JSON.stringify({ fecha: new Date().toISOString(), log: LOG }, null, 2)); };
+const TO = { signal: undefined };
+const conTiempo = (ms = 25000) => AbortSignal.timeout(ms);
 
 const KEY = process.env.GEMINI_API_KEY;
 const MODELO = process.env.GEMINI_MODEL || 'gemini-3.8-flash';
@@ -11,7 +15,7 @@ const RSS = ['https://www.cbssports.com/rss/headlines/nfl/', 'https://sports.yah
 const TOP = 350, HIST = 5;
 const leer = (f, d) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch { return d; } };
 const guardar = (f, o, pretty) => { fs.mkdirSync(f.split('/').slice(0, -1).join('/'), { recursive: true }); fs.writeFileSync(f, JSON.stringify(o, null, pretty ? 2 : 0)); };
-const get = async u => { try { const r = await fetch(u, { headers: { 'User-Agent': 'FantasyExpertos/1.0' } }); return r.ok ? r.json() : null; } catch { return null; } };
+const get = async u => { try { const r = await fetch(u, { headers: { 'User-Agent': 'FantasyExpertos/1.0' }, signal: conTiempo(40000) }); return r.ok ? r.json() : null; } catch (e) { log('GET falló', u, e.message); return null; } };
 const norm = t => String(t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z]/g, '');
 
 /* ---------- RSS ---------- */
@@ -19,7 +23,7 @@ async function titulares() {
   const out = [];
   for (const u of RSS) {
     try {
-      const xml = await (await fetch(u)).text();
+      const xml = await (await fetch(u, { signal: conTiempo() })).text();
       for (const m of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)) {
         const t = (m[1].match(/<title>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/title>/) || [])[1] || '';
         const d = ((m[1].match(/<description>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/description>/) || [])[1] || '').replace(/<[^>]+>/g, '');
@@ -64,13 +68,13 @@ async function sleeper() {
 /* ---------- Gemini ---------- */
 async function gemini(prompt) {
   if (!KEY) { console.log('Falta GEMINI_API_KEY'); return null; }
-  const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${MODELO}:generateContent?key=${KEY}`, {
-    method: 'POST', headers: { 'Content-Type': 'application/json' },
+  let r; try { r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${MODELO}:generateContent?key=${KEY}`, {
+    signal: conTiempo(120000), method: 'POST', headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: 'application/json', temperature: 0.7, maxOutputTokens: 16000 } })
-  });
+  }); } catch (e) { log('Gemini sin respuesta', e.message); return null; }
   const j = await r.json();
   try { const t = j.candidates[0].content.parts.map(x => x.text || '').join(''); return JSON.parse(t.slice(t.indexOf('{'), t.lastIndexOf('}') + 1)); }
-  catch { console.log('Gemini falló', JSON.stringify(j).slice(0, 600)); return null; }
+  catch { log('Gemini falló', JSON.stringify(j).slice(0, 400)); return null; }
 }
 const FORMATO = '{"noticias":[{"titulo":"titular original y punchy, máximo 8 palabras","claves":["3 puntos clave de máximo 10 palabras"],"cuerpo":"desglose propio de 60 a 90 palabras con el impacto en fantasy","etiqueta":"LESIÓN | WAIVER | ARRANCA | BANCA | TENDENCIA","impacto":"SUBE | BAJA | NEUTRO","equipo":"abreviatura NFL del equipo principal","jugadores":["nombre completo en inglés, el principal primero"]}]}';
 const VOZ = 'Eres el editor de Fantasy Expertos, el rincón de fantasy football para fans de habla hispana. Español de México, tono experto, directo y con personalidad. Escribe con tus propias palabras, nunca copies frases de las fuentes. Todo se aterriza a decisiones de fantasy. Responde SOLO JSON. ';
@@ -78,10 +82,10 @@ const VOZ = 'Eres el editor de Fantasy Expertos, el rincón de fantasy football 
 /* ---------- YouTube (sin clave: página del canal + RSS) ---------- */
 async function videosYT(handle) {
   try {
-    const html = await (await fetch('https://www.youtube.com/' + handle, { headers: { 'User-Agent': 'Mozilla/5.0', 'Accept-Language': 'es' } })).text();
+    const html = await (await fetch('https://www.youtube.com/' + handle, { signal: conTiempo(), headers: { 'User-Agent': 'Mozilla/5.0', 'Accept-Language': 'es' } })).text();
     const cid = (html.match(/"channelId":"(UC[\w-]{22})"/) || html.match(/channel\/(UC[\w-]{22})/) || [])[1];
-    if (!cid) { console.log('No encontré el canal de YouTube'); return null; }
-    const xml = await (await fetch('https://www.youtube.com/feeds/videos.xml?channel_id=' + cid)).text();
+    if (!cid) { log('No encontré el canal de YouTube'); return null; }
+    const xml = await (await fetch('https://www.youtube.com/feeds/videos.xml?channel_id=' + cid, { signal: conTiempo() })).text();
     const vids = [...xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)].map(m => ({
       id: (m[1].match(/<yt:videoId>(.*?)<\/yt:videoId>/) || [])[1],
       titulo: ((m[1].match(/<title>([\s\S]*?)<\/title>/) || [])[1] || '').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'"),
@@ -90,15 +94,18 @@ async function videosYT(handle) {
       corto: /\/shorts\//.test(m[1])
     })).filter(v => v.id);
     return { canal: cid, videos: vids };
-  } catch (e) { console.log('YouTube falló', e.message); return null; }
+  } catch (e) { log('YouTube falló', e.message); return null; }
 }
 
 /* ---------- MAIN ---------- */
+log('Inicio');
 const redes = leer('data/redes.json', {});
 const yt = redes.youtube ? await videosYT(redes.youtube.usuario) : null;
 if (yt) guardar('data/videos.json', { actualizado: new Date().toISOString(), ...yt }, true);
 
+log('YouTube:', yt ? yt.videos.length + ' videos' : 'sin datos');
 const s = await sleeper();
+log('Sleeper:', s.jugadores.length, 'jugadores, semana', s.semana);
 const porNombre = Object.fromEntries(s.jugadores.map(j => [norm(j.n), j.id]));
 const J = Object.fromEntries(s.jugadores.map(j => [j.id, j]));
 const nombres = ids => ids.slice(0, 15).map(id => J[id] ? `${J[id].n} (${J[id].pos}, ${J[id].team})` : '').filter(Boolean);
@@ -133,7 +140,9 @@ if (todasNuevas.length) guardar('data/archivo.json', nuevoArchivo);
 
 // 3) Catch-up: resumen de cada semana que falte
 const resumenes = leer('data/semanas.json', {});
+let hechos = 0;
 for (const w of s.semanas) {
+  if (hechos >= 3) break;
   const st = s.stats[w];
   if (!st || !Object.keys(st).length) continue;
   const cerrada = w < s.semana;
@@ -144,8 +153,9 @@ for (const w of s.semanas) {
       .sort((a, b) => b[1].pts_ppr - a[1].pts_ppr).slice(0, 10).map(([k, v]) => ({ id: k, n: s.todos[k].n, team: s.todos[k].team, pts: Math.round(v.pts_ppr * 10) / 10 }));
   }
   const txt = await gemini(VOZ + `Escribe el resumen de fantasy de la Semana ${w}. Forma: {"titulo":"máximo 8 palabras","claves":["4 puntos clave de máximo 12 palabras"],"cuerpo":"80 a 120 palabras"}. Mejores por posición (PPR): ${JSON.stringify(Object.fromEntries(Object.entries(top).map(([p, l]) => [p, l.slice(0, 5).map(x => x.n + ' ' + x.pts)])))}`);
+  hechos++;
   resumenes[w] = { semana: w, cerrada, fecha: ahora, top, titulo: txt?.titulo || `Semana ${w}`, claves: txt?.claves || [], cuerpo: txt?.cuerpo || '' };
-  console.log('Resumen semana', w);
+  log('Resumen semana', w);
 }
 guardar('data/semanas.json', resumenes);
 
@@ -159,4 +169,4 @@ const hoy = {
 guardar('data/jugadores.json', s.jugadores);
 guardar('data/hoy.json', hoy, true);
 if (pendientes.length && exclusivas.length) { rep.notas.forEach(x => x.procesada = true); guardar('data/reportero.json', rep, true); }
-console.log(`Listo: ${todasNuevas.length} noticias nuevas (${exclusivas.length} exclusivas), ${s.jugadores.length} jugadores, archivo ${nuevoArchivo.length}`);
+log(`Listo: ${todasNuevas.length} noticias nuevas (${exclusivas.length} exclusivas), ${s.jugadores.length} jugadores, archivo ${nuevoArchivo.length}`);
