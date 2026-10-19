@@ -1,0 +1,20 @@
+{
+  "actualizado": "2026-10-19T06:00:00-06:00",
+  "semana": "[N]",
+  "noticias": [
+    "[NOTICIA DE EJEMPLO 1 — aquí llegará el reportaje automático]",
+    "[NOTICIA DE EJEMPLO 2]",
+    "[NOTICIA DE EJEMPLO 3]"
+  ],
+  "lesionados": [
+    { "jugador": "[JUGADOR]", "equipo": "[EQ]", "estatus": "Duda" },
+    { "jugador": "[JUGADOR]", "equipo": "[EQ]", "estatus": "Fuera" },
+    { "jugador": "[JUGADOR]", "equipo": "[EQ]", "estatus": "Juega" }
+  ],
+  "waivers": [
+    { "jugador": "[JUGADOR]", "posicion": "[POS]", "agregados": "[N]" },
+    { "jugador": "[JUGADOR]", "posicion": "[POS]", "agregados": "[N]" },
+    { "jugador": "[JUGADOR]", "posicion": "[POS]", "agregados": "[N]" }
+  ],
+  "duelo": { "a": "[JUGADOR A]", "b": "[JUGADOR B]", "veredicto": "[ANÁLISIS DEL EXPERTO]" }
+}
