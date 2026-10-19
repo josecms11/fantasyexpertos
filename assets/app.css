@@ -343,3 +343,20 @@ details.desglose p{margin:0;padding:0 18px 20px;font-size:18px;line-height:1.7;c
 .teamtile:hover svg{animation:bob .5s steps(2) infinite}
 .teamtile .tt{display:flex;flex-direction:column;gap:2px;min-width:0}
 .ehero{--c1:#4A9A68;--c2:#E8E8E8}
+
+/* ---------- ESCENAS ---------- */
+.cart .band{background:#0A1A10}
+.cart .band svg.scene,.nhero svg.scene{position:absolute;inset:0;width:100%;height:100%;image-rendering:pixelated}
+.cart .band::before{z-index:1;opacity:.5}
+.cart .band .hels{position:relative;z-index:2;display:flex;align-items:flex-end}
+.cart .band .hels svg{filter:drop-shadow(3px 3px 0 rgba(0,0,0,.5))}
+.cart .band .tm,.cart .band .imp{z-index:2}
+.cart.big .band .hels svg:first-child{width:110px}
+.cart.big .band{align-items:flex-end;justify-content:flex-start;padding:16px}
+.excl{--x:#FFD45C}
+.cart.exclusivo{border-color:#FFD45C}
+.cart.exclusivo .tagx{background:#FFD45C}
+.nhero.scn{min-height:280px;display:flex;align-items:flex-end}
+.nhero.scn .grid-in{z-index:2;width:100%;background:linear-gradient(transparent,rgba(5,12,8,.85) 55%)}
+.nhero.scn::before{z-index:1;opacity:.45}
+.nhero.scn .imp{z-index:3}

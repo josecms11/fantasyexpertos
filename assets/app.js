@@ -42,6 +42,69 @@ const impSprite = (imp, s = 22) => imp === 'SUBE'
   : imp === 'BAJA'
   ? `<svg width="${s}" height="${s}" viewBox="0 0 7 7" shape-rendering="crispEdges" aria-hidden="true"><rect x="2" y="0" width="3" height="3" fill="#F08A7A"/><rect x="0" y="3" width="7" height="1" fill="#F08A7A"/><rect x="1" y="4" width="5" height="1" fill="#F08A7A"/><rect x="2" y="5" width="3" height="1" fill="#F08A7A"/><rect x="3" y="6" width="1" height="1" fill="#F08A7A"/></svg>`
   : `<svg width="${s}" height="${s}" viewBox="0 0 7 7" shape-rendering="crispEdges" aria-hidden="true"><rect x="0" y="3" width="7" height="1" fill="#E8E8E8"/></svg>`;
+
+/* ---------- ESCENAS ANIMADAS (pixel art en colores del equipo) ---------- */
+const SPR = {
+  runA: ['..HHHH..', '.HHHHHM.', '.HHHHS..', '.JJJJJJ.', 'SJJNNJJB', '.JJJJJJB', '.JJJJJJ.', '..PPPP..', '..P..P..', '.L....L.', 'K......K'],
+  runB: ['..HHHH..', '.HHHHHM.', '.HHHHS..', '.JJJJJJ.', 'SJJNNJJB', '.JJJJJJB', '.JJJJJJ.', '..PPPP..', '...PP...', '...LL...', '...KK...'],
+  sit:  ['..HHHH..', '.HHHHHM.', '.HHHHS..', '.JJJJJJ.', 'SJJNNJJS', '.JJJJJJ.', '.PPPPPPP', '......LL', '......KK'],
+  cart: ['....WWWW....', '...W....W...', 'WWWWWWWWWWWW', 'WWWWRRWWWWWW', 'WWWRRRRWWWWW', 'WWWWRRWWWWWW', 'WWWWWWWWWWWW', '.KK......KK.']
+};
+function sprite(grid, x, y, c1, c2) {
+  const m = { H: c1, M: '#C9CDD1', S: '#C68B59', J: c1, N: c2, B: '#8B4A2B', P: '#E8E8E8', L: c1, K: '#101820', W: '#F5F3EA', R: '#E2463A' };
+  let out = '';
+  grid.forEach((row, j) => { [...row].forEach((ch, i) => { if (m[ch]) out += `<rect x="${x + i}" y="${y + j}" width="1" height="1" fill="${m[ch]}"/>`; }); });
+  return out;
+}
+const corre = (x, y, c1, c2) => `<g>${sprite(SPR.runA, x, y, c1, c2)}<animate attributeName="opacity" values="1;0" dur=".36s" calcMode="discrete" repeatCount="indefinite"/></g><g opacity="0">${sprite(SPR.runB, x, y, c1, c2)}<animate attributeName="opacity" values="0;1" dur=".36s" calcMode="discrete" repeatCount="indefinite"/></g>`;
+const cancha = (c1) => {
+  let r = `<rect width="80" height="32" fill="#12441F"/>`;
+  for (let i = 0; i < 80; i += 8) r += `<rect x="${i}" y="0" width="4" height="32" fill="#0F3A1E"/><rect x="${i}" y="0" width="1" height="32" fill="#ffffff" opacity=".22"/>`;
+  return r;
+};
+function escena(tipo, team, num) {
+  const [c1, c2] = col(team);
+  const nombre = (EQUIPOS[team] || 'FANTASY EXPERTOS').toUpperCase();
+  const id = 'e' + Math.random().toString(36).slice(2, 7);
+  let z = '';
+  if (tipo === 'ARRANCA') {
+    z = cancha(c1) + `<rect x="66" y="0" width="14" height="32" fill="${c1}"/><rect x="66" y="0" width="1" height="32" fill="#fff"/>
+      <text x="73" y="19" font-size="4" font-family="'Press Start 2P',monospace" fill="${c2}" text-anchor="middle" transform="rotate(-90 73 17)">${esc(team || 'FX')}</text>
+      <g>${corre(0, 14, c1, c2)}<animateTransform attributeName="transform" type="translate" values="-10 0;60 0;60 0" keyTimes="0;.75;1" dur="3.2s" repeatCount="indefinite"/></g>
+      <g opacity="0"><text x="40" y="10" font-size="6" font-family="'Press Start 2P',monospace" fill="${c2}" stroke="#101820" stroke-width=".6" text-anchor="middle" paint-order="stroke">TD!</text>
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;.74;.76;1" dur="3.2s" calcMode="discrete" repeatCount="indefinite"/></g>`;
+  } else if (tipo === 'LESIÓN') {
+    z = cancha(c1) + `<g transform="translate(42 30) rotate(-90)">${sprite(SPR.runA, 0, 0, c1, c2)}</g>
+      <g><rect x="49" y="10" width="2" height="6" fill="#E2463A"/><rect x="47" y="12" width="6" height="2" fill="#E2463A"/><animate attributeName="opacity" values="1;0" dur=".8s" calcMode="discrete" repeatCount="indefinite"/></g>
+      <g><rect x="44" y="18" width="1" height="1" fill="#FFE27A"/><rect x="56" y="17" width="1" height="1" fill="#FFE27A"/>
+        <animateTransform attributeName="transform" type="translate" values="0 0;2 -1;0 -2;-2 -1;0 0" dur="1s" calcMode="discrete" repeatCount="indefinite"/></g>
+      <g>${sprite(SPR.cart, 0, 20, c1, c2)}<animateTransform attributeName="transform" type="translate" values="-14 0;22 0;22 0" keyTimes="0;.6;1" dur="4s" repeatCount="indefinite"/></g>`;
+  } else if (tipo === 'BANCA') {
+    z = `<rect width="80" height="32" fill="#0D2014"/><rect y="22" width="80" height="10" fill="#12441F"/>
+      <rect x="18" y="20" width="44" height="2" fill="#8B4A2B"/><rect x="20" y="22" width="2" height="4" fill="#5A3019"/><rect x="58" y="22" width="2" height="4" fill="#5A3019"/>
+      <rect x="10" y="4" width="60" height="8" fill="${c1}"/><text x="40" y="10" font-size="4" font-family="'Press Start 2P',monospace" fill="${c2}" text-anchor="middle">BANCA</text>
+      ${sprite(SPR.sit, 26, 12, c1, c2)}${sprite(SPR.sit, 44, 12, c1, c2)}
+      <g><text x="38" y="17" font-size="4" font-family="'Press Start 2P',monospace" fill="#E8E8E8">z</text><animateTransform attributeName="transform" type="translate" values="0 0;2 -4;4 -8" dur="1.6s" calcMode="discrete" repeatCount="indefinite"/><animate attributeName="opacity" values="1;.6;0" dur="1.6s" repeatCount="indefinite"/></g>`;
+  } else if (tipo === 'WAIVER') {
+    z = cancha(c1) + `<rect x="36" y="0" width="8" height="32" fill="${c2}" opacity=".25"><animate attributeName="opacity" values=".05;.45;.05" dur="1.4s" repeatCount="indefinite"/></rect>
+      <g>${sprite(SPR.runA, 36, 14, c1, c2)}<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.3;.85;1" dur="2.8s" repeatCount="indefinite"/></g>
+      <g><text x="56" y="14" font-size="5" font-family="'Press Start 2P',monospace" fill="#5BC489" stroke="#101820" stroke-width=".5" paint-order="stroke">+ADD</text>
+      <animateTransform attributeName="transform" type="translate" values="0 4;0 0;0 -2" dur="1.4s" repeatCount="indefinite"/></g>
+      <g fill="#FFE27A"><rect x="32" y="12" width="1" height="1"/><rect x="47" y="18" width="1" height="1"/><rect x="34" y="24" width="1" height="1"/><animate attributeName="opacity" values="1;0" dur=".5s" calcMode="discrete" repeatCount="indefinite"/></g>`;
+  } else {
+    let gente = '';
+    for (let y = 9; y < 22; y += 3) for (let x = 1; x < 80; x += 3) gente += `<rect x="${x}" y="${y + ((x + y) % 2)}" width="2" height="2" fill="${(x + y) % 3 ? c1 : c2}"/>`;
+    z = `<defs><clipPath id="${id}"><rect x="12" y="1" width="56" height="6"/></clipPath></defs>
+      <rect width="80" height="32" fill="#08140D"/>
+      <g>${gente}<animateTransform attributeName="transform" type="translate" values="0 0;0 -1;0 0" dur=".5s" calcMode="discrete" repeatCount="indefinite"/></g>
+      <rect y="24" width="80" height="8" fill="#12441F"/><rect y="24" width="80" height="1" fill="#E8E8E8" opacity=".5"/>
+      <rect x="12" y="1" width="56" height="6" fill="#101820"/>
+      <g clip-path="url(#${id})"><text y="6" font-size="4" font-family="'Press Start 2P',monospace" fill="#FFE27A">${esc(nombre)} · ${esc(nombre)}<animateTransform attributeName="transform" type="translate" values="68 0;-120 0" dur="6s" repeatCount="indefinite"/></text></g>
+      <g fill="#FFF7C2"><rect x="2" y="1" width="3" height="2"/><rect x="75" y="1" width="3" height="2"/><animate attributeName="opacity" values="1;.4;1" dur=".9s" calcMode="discrete" repeatCount="indefinite"/></g>`;
+  }
+  return `<svg class="scene" viewBox="0 0 80 32" preserveAspectRatio="xMidYMid slice" shape-rendering="crispEdges" aria-hidden="true">${z}</svg>`;
+}
+
 const impBadge = imp => `<span class="imp ${imp}">${impSprite(imp)}${imp === 'SUBE' ? 'SUBE' : imp === 'BAJA' ? 'BAJA' : 'ESTABLE'}</span>`;
 function prow(j, right = '', rk = '') {
   if (!j) return '';
@@ -56,9 +119,9 @@ const crumbs = items => `<div class="crumbs wrap">${[['#/', 'Inicio'], ...items]
 const newsCard = (n, big) => {
   const ps = (n.jugadores || []).map(id => J[id]).filter(Boolean);
   const t1 = n.equipo || (ps[0] && ps[0].team), p2 = ps.find(p => p.team !== t1);
-  return `<a class="cart ${esc(n.etiqueta)} ${big ? 'big' : ''}" href="#/noticia/${n.id}" style="${vars(t1)}">
-    <span class="band">${EQUIPOS[t1] ? `<span class="tm">${esc(t1)}</span>` : ''}
-      <span style="display:flex;align-items:flex-end">${helmet(t1, ps[0] && ps[0].num, big ? 200 : 96)}${p2 ? helmet(p2.team, p2.num, big ? 150 : 70, true, 'vs') : ''}</span>
+  return `<a class="cart ${esc(n.etiqueta)} ${big ? 'big' : ''} ${n.exclusivo ? 'exclusivo' : ''}" href="#/noticia/${n.id}" style="${vars(t1)}">
+    <span class="band">${escena(n.etiqueta, t1, ps[0] && ps[0].num)}${EQUIPOS[t1] ? `<span class="tm">${n.exclusivo ? '★ EXCLUSIVO · ' : ''}${esc(t1)}</span>` : n.exclusivo ? '<span class="tm">★ EXCLUSIVO</span>' : ''}
+      <span class="hels">${helmet(t1, ps[0] && ps[0].num, big ? 110 : 54)}${p2 ? helmet(p2.team, p2.num, big ? 84 : 42, true, 'vs') : ''}</span>
       ${impBadge(n.impacto)}</span>
     <span class="in"><span class="tagx">${esc(n.etiqueta)}</span><h3>${esc(n.titulo)}</h3>
       <ul class="claves">${(n.claves || []).slice(0, 3).map(c => `<li>${esc(c)}</li>`).join('')}</ul>
@@ -144,17 +207,17 @@ function noticias(q) {
 }
 
 function noticia(id) {
-  const n = D.noticias.find(x => x.id === id);
+  const n = D.noticias.find(x => x.id === id) || (D.archivo || []).find(x => x.id === id);
   if (!n) return noEncontrado();
   titulo(n.titulo);
   const jug = (n.jugadores || []).map(x => J[x]).filter(Boolean);
   const t1 = n.equipo || (jug[0] && jug[0].team);
   const otros = [...new Set(jug.map(j => j.team).filter(t => t && t !== t1))].slice(0, 2);
   const rel = D.noticias.filter(x => x.id !== id && (x.etiqueta === n.etiqueta || (x.jugadores || []).some(p => (n.jugadores || []).includes(p)))).slice(0, 3);
-  const i = D.noticias.indexOf(n), sig = D.noticias[i + 1], ant = D.noticias[i - 1];
+  const L = D.noticias.includes(n) ? D.noticias : D.archivo, i = L.indexOf(n), sig = L[i + 1], ant = L[i - 1];
   return `<div class="page">${crumbs([['#/noticias', 'Noticias'], ['', n.etiqueta]])}<div class="wrap">
-    <div class="nhero" style="${vars(t1)}"><div class="grid-in">
-      <div class="hels">${helmet(t1, jug[0] && jug[0].num, 180, false, 'bob')}${otros.map(t => helmet(t, '', 120, true)).join('')}</div>
+    <div class="nhero scn" style="${vars(t1)}">${escena(n.etiqueta, t1, jug[0] && jug[0].num)}<div class="grid-in">
+      <div class="hels">${helmet(t1, jug[0] && jug[0].num, 150, false, 'bob')}${otros.map(t => helmet(t, '', 120, true)).join('')}</div>
       <div class="txt"><span class="tagx" style="display:inline-block">${esc(n.etiqueta)}</span>${EQUIPOS[t1] ? ` <a class="px" href="#/equipo/${t1}" style="font-size:9px;color:#fff;background:rgba(0,0,0,.55);padding:6px 8px;text-decoration:none">${esc(EQUIPOS[t1])} ›</a>` : ''}
         <h1>${esc(n.titulo)}</h1></div>
       ${impBadge(n.impacto)}
@@ -348,6 +411,44 @@ function lesionados(q) {
     <div class="card"><div class="plist">${lista.map(j => prow(j, `${j.injParte ? `<span class="team">${esc(j.injParte)}</span>` : ''}${pillSt(j)}`)).join('') || '<div class="empty">Sin lesionados con este estatus.</div>'}</div></div>
   </section></div></div>`;
 }
+
+function exclusivo() {
+  titulo('Exclusivo FX');
+  const L = (D.archivo || []).concat(D.noticias).filter((n, i, a) => n.exclusivo && a.findIndex(x => x.id === n.id) === i);
+  return `<div class="page">${crumbs([['', 'Exclusivo FX']])}<div class="wrap">
+    <div class="nhero scn" style="--c1:#3A2A05;--c2:#FFD45C">${escena('TENDENCIA', '', '')}<div class="grid-in"><div class="txt">
+      <span class="tagx" style="display:inline-block;background:#FFD45C">★ PREMIUM · GRATIS POR AHORA</span>
+      <h1>EXCLUSIVO FX</h1><p style="color:#fff;font-weight:600;font-size:18px;margin:12px 0 0;max-width:560px">Información que no vas a encontrar en otro lado, de nuestra red de reporteros, desarrollada por los expertos.</p></div></div></div>
+    <section class="block"><div class="news stagger">${L.map((n, i) => newsCard(n, i === 0)).join('') || '<div class="empty">La primera nota exclusiva llega muy pronto. Mientras, revisa las <a href="#/noticias">noticias del día</a>.</div>'}</div></section>
+  </div></div>`;
+}
+function temporada() {
+  titulo('Temporada');
+  const S = Object.values(D.resumenes || {}).sort((a, b) => b.semana - a.semana);
+  return `<div class="page">${crumbs([['', 'Temporada ' + (D.temporada || '')]])}<div class="wrap"><section class="block">
+    <div class="head"><h2 class="px">TEMPORADA <span>${esc(D.temporada || '')}</span></h2><small class="px">SEMANA POR SEMANA</small></div>
+    <div class="grid g3 stagger">${S.map(w => {
+      const mvp = Object.values(w.top || {}).flat().sort((a, b) => b.pts - a.pts)[0];
+      return `<a class="cart TENDENCIA" href="#/semana/${w.semana}" style="${vars(mvp && mvp.team)}"><span class="band">${escena('ARRANCA', mvp && mvp.team, '')}<span class="tm">SEMANA ${w.semana}${w.cerrada ? '' : ' · EN CURSO'}</span></span>
+        <span class="in"><h3>${esc(w.titulo)}</h3><ul class="claves">${(w.claves || []).slice(0, 2).map(c => `<li>${esc(c)}</li>`).join('')}</ul>
+        <span class="foot">${mvp ? `<span class="team">MVP: ${esc(mvp.n)} · ${n1(mvp.pts)}</span>` : '<span></span>'}<span class="go">VER SEMANA ›</span></span></span></a>`;
+    }).join('') || '<div class="empty">Generando el resumen de la temporada…</div>'}</div></section></div></div>`;
+}
+function semana(w) {
+  const R = (D.resumenes || {})[w];
+  if (!R) return noEncontrado();
+  titulo('Semana ' + w);
+  const mvp = Object.values(R.top || {}).flat().sort((a, b) => b.pts - a.pts)[0];
+  return `<div class="page">${crumbs([['#/temporada', 'Temporada'], ['', 'Semana ' + w]])}<div class="wrap">
+    <div class="nhero scn" style="${vars(mvp && mvp.team)}">${escena('ARRANCA', mvp && mvp.team, '')}<div class="grid-in"><div class="txt"><span class="tagx" style="display:inline-block">SEMANA ${w}</span><h1>${esc(R.titulo)}</h1></div></div></div>
+    <div class="kcards stagger">${(R.claves || []).map((c, k) => `<div class="kcard"><b>${k + 1}</b>${esc(c)}</div>`).join('')}</div>
+    ${R.cuerpo ? `<details class="desglose"><summary><span>LEER EL RESUMEN COMPLETO</span><span>›</span></summary><p>${esc(R.cuerpo)}</p></details>` : ''}
+    <section class="block"><div class="head"><h2 class="px">LOS MEJORES <span>DE LA SEMANA</span></h2><small class="px">PUNTOS PPR</small></div>
+      <div class="grid g3 stagger">${Object.entries(R.top || {}).map(([p, l]) => `<div class="card"><h3 class="px" style="color:var(--accent)">${p}</h3><div class="plist">${l.slice(0, 5).map((x, i) => J[x.id] ? prow(J[x.id], `<span class="num">${n1(x.pts)}</span>`, i + 1) : `<div class="prow"><span class="rk">${i + 1}</span>${helmet(x.team, '', 36)}<span class="meta"><span class="pname">${esc(x.n)}</span><small>${esc(x.team || '')}</small></span><span class="right"><span class="num">${n1(x.pts)}</span></span></div>`).join('')}</div></div>`).join('')}</div></section>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px">${D.resumenes[w - 1] ? `<a class="btn ghost" href="#/semana/${w - 1}">‹ SEMANA ${w - 1}</a>` : ''}${D.resumenes[+w + 1] ? `<a class="btn" href="#/semana/${+w + 1}">SEMANA ${+w + 1} ›</a>` : ''}</div>
+  </div></div>`;
+}
+
 const noEncontrado = () => { titulo('No encontrado'); return `<div class="page wrap loading"><p class="px" style="color:var(--accent)">FUMBLE</p><p>Esta página no existe o el dato aún no llega.</p><a class="btn" href="#/">VOLVER AL INICIO</a></div>`; };
 const actualizado = () => { const f = new Date(D.actualizado); return 'ACTUALIZADO ' + f.toLocaleString('es-MX', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }).toUpperCase(); };
 
@@ -368,6 +469,9 @@ function router() {
     case 'posicion': html = posicion(a, q); break;
     case 'equipos': html = equipos(); break;
     case 'equipo': html = equipo(a); break;
+    case 'exclusivo': html = exclusivo(); break;
+    case 'temporada': html = temporada(); break;
+    case 'semana': html = semana(a); break;
     case 'tendencias': html = tendencias(); break;
     case 'lesionados': html = lesionados(q); break;
     default: html = noEncontrado();
@@ -428,8 +532,10 @@ function buscador() {
 /* ---------- ARRANQUE ---------- */
 Promise.all([
   fetch('data/hoy.json?v=' + Date.now()).then(r => r.json()),
-  fetch('data/jugadores.json?v=' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => [])
-]).then(([hoy, jugadores]) => {
+  fetch('data/jugadores.json?v=' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
+  fetch('data/archivo.json?v=' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
+  fetch('data/semanas.json?v=' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({}))
+]).then(([hoy, jugadores, archivo, resumenes]) => {
   P = Array.isArray(jugadores) ? jugadores : [];
   P.forEach(j => J[j.id] = j);
   Object.keys(POSICIONES).forEach(p => P.filter(j => j.pos === p && j.rank).sort((a, b) => a.rank - b.rank).forEach((j, i) => RANKPOS[j.id] = i + 1));
@@ -442,7 +548,7 @@ Promise.all([
   });
   hoy.lesionados = (hoy.lesionados || []).filter(x => x.id);
   hoy.agregados = hoy.agregados || []; hoy.soltados = hoy.soltados || [];
-  D = hoy;
+  D = hoy; D.archivo = Array.isArray(archivo) ? archivo : []; D.resumenes = resumenes || {};
   buscador();
   addEventListener('hashchange', router);
   router();
