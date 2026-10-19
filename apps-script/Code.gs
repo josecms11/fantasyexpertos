@@ -134,7 +134,7 @@ function escribirConGemini_(notas, sleeper) {
     'con tono experto, directo y energético. Escribe con tus propias palabras: no copies frases de las fuentes. ' +
     'Enfócate en lo que importa para alineaciones de fantasy. ' +
     'Responde SOLO JSON con esta forma: ' +
-    '{"noticias":["5 titulares-resumen originales de máximo 25 palabras"],' +
+    '{"noticias":[{"titulo":"titular original, máximo 12 palabras","cuerpo":"reportaje propio de 60 a 90 palabras con el impacto en fantasy","etiqueta":"una de: LESIÓN, WAIVER, ARRANCA, BANCA, TENDENCIA"}] (exactamente 10 reportajes),' +
     '"duelo":{"a":"jugador","b":"jugador","veredicto":"a quién arrancar y por qué, máximo 40 palabras"}}\n\n' +
     'Lesionados: ' + JSON.stringify(sleeper.lesionados) + '\nMás agregados: ' + JSON.stringify(sleeper.waivers) +
     '\n\nNOTAS:\n' + notas;
