@@ -161,7 +161,7 @@ const sello = ahora.replace(/\D/g, '').slice(0, 12);
 const prevHoy = leer('data/hoy.json', {});
 const tocaIA = !prevHoy.ultimaIA || Date.now() - Date.parse(prevHoy.ultimaIA) > 55 * 60e3;
 const tit = tocaIA ? await titulares() : [];
-const ia = !tocaIA ? null : await gemini(VOZ + 'Escribe exactamente 10 noticias de fantasy a partir de estos titulares de medios y datos. Forma: ' + FORMATO + ' En el mismo JSON agrega "duelo":{"a":"jugador","b":"jugador","veredicto":"a quién arrancar y por qué, máximo 40 palabras"}.' +
+const ia = !tocaIA ? null : await gemini(VOZ + 'Escribe exactamente 12 noticias de fantasy a partir de estos titulares de medios y datos. Forma: ' + FORMATO + ' En el mismo JSON agrega "duelo":{"a":"jugador","b":"jugador","veredicto":"a quién arrancar y por qué, máximo 40 palabras"}.' +
   `\nLesionados: ${JSON.stringify(nombres(lesionados.map(x => x.id)))}\nMás agregados: ${JSON.stringify(nombres(s.agregados))}\nMás soltados: ${JSON.stringify(nombres(s.soltados))}\nYa publicadas (no repitas): ${JSON.stringify(archivo.slice(0, 25).map(n => n.titulo))}\nTITULARES:\n${tit.join('\n')}`);
 const nuevas = (ia?.noticias || []).map((n, i) => ({ id: `n${sello}${String(i).padStart(2, '0')}`, fecha: ahora, semana: s.semana, ...n, jugadores: liga(n) }));
 

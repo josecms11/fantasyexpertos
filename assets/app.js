@@ -24,10 +24,12 @@ const nf = new Intl.NumberFormat('es-MX');
 
 function helmet(team, num, size = 44, flip = false, cls = '') {
   const [c1, c2] = col(team), t = String(num ?? '').slice(0, 2);
+  const lum = (h => { const v = parseInt(h.slice(1), 16); return ((v >> 16) * .299 + ((v >> 8) & 255) * .587 + (v & 255) * .114); })(c1);
+  const borde = lum < 60 ? '#7C8B83' : '#0A1A10';
   const shell = [[4,1,6],[3,2,9],[2,3,11],[1,4,12],[1,5,12],[1,6,11],[1,7,11],[2,8,9],[3,9,6]]
     .map(([x, y, w]) => `<rect x="${x}" y="${y}" width="${w}" height="1" fill="${c1}"/>`).join('');
   const out = [[4,0,6],[3,1,1],[10,1,1],[2,2,1],[12,2,1],[1,3,1],[13,3,1],[0,4,1],[0,5,1],[0,6,1],[0,7,1],[1,8,1],[2,9,1],[3,10,6],[9,9,1]]
-    .map(([x, y, w]) => `<rect x="${x}" y="${y}" width="${w}" height="1" fill="#0A1A10"/>`).join('');
+    .map(([x, y, w]) => `<rect x="${x}" y="${y}" width="${w}" height="1" fill="${borde}"/>`).join('');
   return `<svg class="hel ${cls}" width="${size}" height="${Math.round(size * 12 / 16)}" viewBox="0 0 16 12" aria-hidden="true" shape-rendering="crispEdges"${flip ? ' style="transform:scaleX(-1)"' : ''}>
     ${out}${shell}
     <rect x="4" y="1" width="6" height="1" fill="${c2}"/><rect x="10" y="2" width="2" height="1" fill="${c2}"/><rect x="12" y="3" width="1" height="1" fill="${c2}"/>
@@ -116,72 +118,57 @@ function prow(j, right = '', rk = '') {
 const pillSt = j => { const s = estatus(j); return `<span class="pill ${s}">${s.toUpperCase()}</span>`; };
 const spark = h => `<span class="spark" aria-hidden="true">${(h || []).map(v => `<i class="${v ? '' : 'z'}" style="height:${v ? Math.max(3, Math.min(22, v)) : 3}px"></i>`).join('')}</span>`;
 const crumbs = items => `<div class="crumbs wrap">${[['#/', 'Inicio'], ...items].map((c, i, a) => i < a.length - 1 ? `<a href="${c[0]}">${esc(c[1])}</a><span>›</span>` : `<b>${esc(c[1])}</b>`).join('')}</div>`;
+/* ---------- MINIATURAS DE NOTICIA: 8 plantillas, cada una cuenta la noticia ---------- */
+const hash = s => { let h = 0; for (const c of String(s)) h = (h * 31 + c.charCodeAt(0)) >>> 0; return h; };
+const apellido = n => { const p = String(n || '').split(' '); return p.length > 1 ? p.slice(1).join(' ') : p[0]; };
+const hace = f => { if (!f) return ''; const m = Math.round((Date.now() - Date.parse(f)) / 60000); return m < 60 ? `hace ${Math.max(1, m)} min` : m < 1440 ? `hace ${Math.round(m / 60)} h` : new Date(f).toLocaleDateString('es-MX', { day: 'numeric', month: 'short' }); };
+const ETQ = { LESIÓN: 'REPORTE MÉDICO', WAIVER: 'WAIVER WIRE', ARRANCA: 'ARRÁNCALO', BANCA: 'A LA BANCA', TENDENCIA: 'TENDENCIA' };
+function plantilla(n, ps) {
+  if (!ps.length) return n.etiqueta === 'LESIÓN' ? 'med' : ['name', 'scene', 'split'][hash(n.id) % 3];
+  const p2 = ps.find(p => p.team !== (ps[0] && ps[0].team));
+  if (n.etiqueta === 'LESIÓN') return 'med';
+  if (n.etiqueta === 'WAIVER') return hash(n.id) % 2 ? 'wire' : 'stat';
+  if (p2 && hash(n.id) % 3 === 0) return 'vs';
+  return ['split', 'name', 'stat', 'trend', 'scene', 'split', 'name'][hash(n.id) % 7];
+}
+function thumb(n, big) {
+  const ps = (n.jugadores || []).map(id => J[id]).filter(Boolean);
+  const p = ps[0], t1 = n.equipo || (p && p.team) || '', p2 = ps.find(x => x.team !== (p && p.team));
+  const tpl = plantilla(n, ps), imp = n.impacto || 'NEUTRO';
+  const nom = p ? apellido(p.n) : (EQUIPOS[t1] || 'FANTASY EXPERTOS').split(' ').pop();
+  const sub = p ? `${p.pos} · ${EQUIPOS[p.team] || p.team}` : (EQUIPOS[t1] || '');
+  const tag = `<span class="th-tag ${esc(n.etiqueta)}">${n.exclusivo ? '★ EXCLUSIVO' : ETQ[n.etiqueta] || n.etiqueta}</span>`;
+  const flecha = `<span class="th-imp ${imp}">${impSprite(imp, 16)}<b>${imp === 'SUBE' ? 'SUBE' : imp === 'BAJA' ? 'BAJA' : 'ESTABLE'}</b></span>`;
+  const brand = `<span class="th-brand">${fxLogo(20)}</span>`;
+  let art = '';
+  if (tpl === 'split') art = `<span class="th-panel">${helmet(t1, p && p.num, big ? 170 : 104, false, 'th-hel')}</span><span class="th-copy"><span class="th-name">${esc(nom)}</span><span class="th-sub">${esc(sub)}</span></span>`;
+  else if (tpl === 'name') art = `<span class="th-ghost">${esc(nom)}</span>${helmet(t1, p && p.num, big ? 190 : 116, false, 'th-hel th-hel-c')}<span class="th-copy th-bottom"><span class="th-name">${esc(nom)}</span><span class="th-sub">${esc(sub)}</span></span>`;
+  else if (tpl === 'stat') {
+    const v = p ? (n.etiqueta === 'WAIVER' && p.add ? nf.format(p.add) : n1(ultima(p) ?? p.prom)) : '–';
+    const l = p && n.etiqueta === 'WAIVER' && p.add ? 'AGREGADOS 24 H' : 'PTS ÚLTIMO JUEGO';
+    art = `${helmet(t1, p && p.num, big ? 150 : 92, true, 'th-hel th-hel-r')}<span class="th-copy"><span class="th-big n">${esc(v)}</span><span class="th-sub">${l}</span><span class="th-name sm">${esc(nom)}</span></span>`;
+  } else if (tpl === 'vs') art = `<span class="th-vs">${helmet(p.team, p.num, big ? 130 : 80)}<b>VS</b>${helmet(p2.team, p2.num, big ? 130 : 80, true)}</span><span class="th-copy th-bottom th-center"><span class="th-name sm">${esc(apellido(p.n))} <i>vs</i> ${esc(apellido(p2.n))}</span></span>`;
+  else if (tpl === 'med') art = `<span class="th-cross"><i></i><i></i></span>${helmet(t1, p && p.num, big ? 160 : 98, false, 'th-hel th-hel-r th-hurt')}<span class="th-copy"><span class="th-name">${esc(nom)}</span><span class="th-sub">${p && p.injParte ? esc(p.injParte) + ' · ' : ''}${p ? estatus(p).toUpperCase() : 'LESIÓN'}</span></span>`;
+  else if (tpl === 'wire') art = `<span class="th-ticket"><b>+ AGRÉGALO</b><span>${p && p.add ? nf.format(p.add) + ' ligas en 24 h' : 'antes que tu liga'}</span></span>${helmet(t1, p && p.num, big ? 150 : 92, true, 'th-hel th-hel-r')}<span class="th-copy th-bottom"><span class="th-name sm">${esc(nom)}</span><span class="th-sub">${esc(sub)}</span></span>`;
+  else if (tpl === 'trend') {
+    const h = (p && p.temp || []).filter(x => x != null).slice(-6), mx = Math.max(10, ...h);
+    const pts = h.map((v, i) => `${Math.round(i / Math.max(1, h.length - 1) * 100)},${Math.round(56 - v / mx * 48)}`).join(' ');
+    art = `<svg class="th-line" viewBox="0 0 100 60" preserveAspectRatio="none" aria-hidden="true"><polyline points="${pts}" fill="none" stroke="var(--c2)" stroke-width="2.4" vector-effect="non-scaling-stroke"/></svg>${helmet(t1, p && p.num, big ? 130 : 80, false, 'th-hel th-hel-tl')}<span class="th-copy th-bottom"><span class="th-name sm">${esc(nom)}</span><span class="th-sub">${p ? 'Promedio ' + n1(p.prom) + ' pts' : ''}</span></span>`;
+  } else art = `${escena(n.etiqueta, t1, p && p.num)}<span class="th-copy th-bottom"><span class="th-name sm">${esc(nom)}</span><span class="th-sub">${esc(sub)}</span></span>`;
+  return `<span class="th th-${tpl} ${big ? 'th-big' : ''} ${esc(n.etiqueta)}" style="${vars(t1)}">${art}${tag}${flecha}${brand}</span>`;
+}
 const newsCard = (n, big) => {
   const ps = (n.jugadores || []).map(id => J[id]).filter(Boolean);
-  const t1 = n.equipo || (ps[0] && ps[0].team), p2 = ps.find(p => p.team !== t1);
-  return `<a class="cart ${esc(n.etiqueta)} ${big ? 'big' : ''} ${n.exclusivo ? 'exclusivo' : ''}" href="#/noticia/${n.id}" style="${vars(t1)}">
-    <span class="band">${escena(n.etiqueta, t1, ps[0] && ps[0].num)}${EQUIPOS[t1] ? `<span class="tm">${n.exclusivo ? '★ EXCLUSIVO · ' : ''}${esc(t1)}</span>` : n.exclusivo ? '<span class="tm">★ EXCLUSIVO</span>' : ''}
-      <span class="hels">${helmet(t1, ps[0] && ps[0].num, big ? 110 : 54)}${p2 ? helmet(p2.team, p2.num, big ? 84 : 42, true, 'vs') : ''}</span>
-      ${impBadge(n.impacto)}</span>
-    <span class="in"><span class="tagx">${esc(n.etiqueta)}</span><h3>${esc(n.titulo)}</h3>
-      <ul class="claves">${(n.claves || []).slice(0, 3).map(c => `<li>${esc(c)}</li>`).join('')}</ul>
-      <span class="foot"><span class="who">${ps.slice(0, 4).map(p => helmet(p.team, p.num, 30)).join('')}</span><span class="go">VER JUGADA ›</span></span></span></a>`;
+  return `<a class="story ${big ? 'big' : ''} ${n.exclusivo ? 'excl' : ''}" href="#/noticia/${n.id}">${thumb(n, big)}
+    <span class="st-body"><span class="st-meta">${esc(ETQ[n.etiqueta] || n.etiqueta)}${n.fecha ? ' · ' + hace(n.fecha) : ''}</span><h3>${esc(n.titulo)}</h3>
+      ${big ? `<ul class="claves">${(n.claves || []).slice(0, 3).map(c => `<li>${esc(c)}</li>`).join('')}</ul>` : `<p class="st-k">${esc((n.claves || [])[0] || '')}</p>`}
+      <span class="st-who">${ps.slice(0, 3).map(x => `<span>${helmet(x.team, x.num, 20)}${esc(apellido(x.n))}</span>`).join('')}</span></span></a>`;
 };
-const noticiasDe = id => D.noticias.filter(n => (n.jugadores || []).includes(id));
+const todasNoticias = () => { const vistos = new Set(); return D.noticias.concat(D.archivo || []).filter(n => !vistos.has(n.id) && vistos.add(n.id)); };
+const noticiasDe = id => todasNoticias().filter(n => (n.jugadores || []).includes(id));
 const titulo = t => { document.title = t ? t + ' · Fantasy Expertos' : 'Fantasy Expertos'; };
 
 /* ---------- PÁGINAS ---------- */
-function bienvenida() {
-  let visto = false; try { visto = localStorage.getItem('fx-bienvenida') === '1'; } catch (e) {}
-  if (visto) return '';
-  return `<section class="welcome" id="welcome">${escena('TENDENCIA', '', '')}
-    <div class="w-in">
-      <svg class="w-logo" width="120" height="80" viewBox="20 55 150 100" aria-hidden="true"><polygon points="69,58.5 166.5,58.5 153.5,82.2 83.5,82.2 49,151.7 23.7,151.7" fill="#E8E8E8"/><polygon points="90.5,94.5 146.2,94.5 133,118 79.2,118" fill="#4A9A68"/></svg>
-      <div><p class="eyebrow px"><i class="blink"></i>BIENVENIDO AL VESTIDOR</p>
-        <h1>El rincón del fan de fantasy football en español.</h1>
-        <p class="lead">Marcadores en vivo, puntos de fantasy, noticias que se convierten en decisiones y herramientas para ganar tu liga. Todo se actualiza solo.</p>
-        <div class="w-cta"><a class="btn" href="#/partidos">VER EN VIVO</a>${redBtn('tiktok', 'tt', 'TIKTOK')}${redBtn('youtube', 'yt', 'YOUTUBE')}${redBtn('instagramFX', 'ig', 'INSTAGRAM')}</div></div>
-      <button class="w-close" type="button" aria-label="Cerrar bienvenida" onclick="try{localStorage.setItem('fx-bienvenida','1')}catch(e){};document.getElementById('welcome').remove()">✕</button>
-    </div></section>`;
-}
-function liderSemana() {
-  if (!SEMNUM) return '';
-  return `<div class="wleaders">${Object.keys(POSICIONES).map(p => {
-    const j = P.filter(x => x.pos === p && ptsSemana(x) != null).sort((a, b) => ptsSemana(b) - ptsSemana(a))[0];
-    return j ? `<a class="wl" href="#/jugador/${j.id}" style="${vars(j.team)}"><span class="wl-pos px">${p}</span>${helmet(j.team, j.num, 52)}<span class="wl-n">${esc(j.n)}</span><span class="wl-t">${esc(j.team)}</span><b class="n">${n1(ptsSemana(j))}<small>PTS</small></b></a>` : '';
-  }).join('')}</div>`;
-}
-function inicio() {
-  titulo('');
-  const top = D.noticias[0];
-  const hubs = Object.keys(POSICIONES).map(p => {
-    const lider = P.filter(j => j.pos === p).sort((a, b) => (b.total || 0) - (a.total || 0))[0];
-    return `<a class="hub" href="#/posicion/${p}"><b>${p}</b><span>${POSICIONES[p]}</span>${lider ? `<small>LÍDER</small><span class="top">${esc(lider.n)}</span>` : ''}</a>`;
-  }).join('');
-  return `<div class="page">
-  <div class="wrap">${bienvenida()}</div>
-  <div class="ticker"><div class="tag px">ÚLTIMA HORA</div><div class="view"><div class="ticker-track">${tickerItems()}${tickerItems()}</div></div></div>
-  <div class="wrap">
-    <section class="block"><div class="head"><div><h2 class="px">EN VIVO <span>· SEMANA ${esc(G[0] ? G[0].semana : D.semana)}</span></h2><p class="hsub">Marcadores, posesión y puntos de fantasy al momento.</p></div><a class="all" href="#/partidos">TODOS LOS PARTIDOS ›</a></div>
-      <div id="home-matches">${homeMatches()}</div></section>
-
-    ${SEMNUM ? `<section class="block"><div class="head"><div><h2 class="px">LOS MEJORES <span>DE LA SEMANA ${esc(SEMNUM)}</span></h2><p class="hsub">El Nº1 en puntos ${FMTS[FMT]} de cada posición.</p></div><a class="all" href="#/lideres">TODOS LOS LÍDERES ›</a></div>${liderSemana()}</section>` : ''}
-
-    <section class="block"><div class="head"><div><h2 class="px">LAS JUGADAS <span>DEL DÍA</span></h2><p class="hsub">Cada noticia aterrizada a tu alineación.</p></div><a class="all" href="#/noticias">VER LAS ${D.noticias.length} ›</a></div>
-      <div class="news stagger">${top ? newsCard(top, true) : '<div class="empty">Las noticias llegan en el próximo ciclo.</div>'}${D.noticias.slice(1, 4).map(n => newsCard(n)).join('')}</div></section>
-
-    <section class="block grid g2">
-      <div class="card"><div class="head"><h3 class="px" style="color:var(--accent)">SUBIENDO ▲</h3><a class="all" href="#/tendencias">TODO ›</a></div><p class="sub">Los más agregados en las últimas 24 horas.</p>
-        <div class="plist">${D.agregados.slice(0, 6).map(id => J[id] && prow(J[id], `<span class="bar"><i style="width:${pct(J[id].add, 'add')}%"></i></span>`)).join('')}</div></div>
-      <div class="card"><div class="head"><h3 class="px" style="color:var(--bad)">LESIONADOS</h3><a class="all" href="#/lesionados">TODO ›</a></div><p class="sub">Los que más impactan tu fantasy, por puntos de temporada.</p>
-        <div class="plist">${D.lesionados.map(x => J[x.id]).filter(Boolean).sort((a, b) => (b.total || 0) - (a.total || 0)).slice(0, 6).map(j => prow(j, pillSt(j))).join('')}</div></div>
-    </section>
-    ${duelo()}
-    ${fxtv()}
-    <section class="block"><div class="head"><div><h2 class="px">PROFUNDIZA <span>POR POSICIÓN</span></h2><p class="hsub">Rankings por puntos reales de la temporada.</p></div><a class="all" href="#/temporada">TEMPORADA COMPLETA ›</a></div><div class="grid g5 stagger">${hubs}</div></section>
-    <section class="block"><div class="head"><div><h2 class="px">LOS <span>32 EQUIPOS</span></h2><p class="hsub">Plantel de fantasy, lesiones y noticias de cada uno.</p></div><a class="all" href="#/equipos">VER TODOS ›</a></div>${teamGrid()}</section>
-  </div></div>`;
-}
 function marcha() {
   const vistos = new Set(), items = [];
   D.noticias.forEach(n => { const ps = (n.jugadores || []).map(x => J[x]).filter(Boolean); const t = n.equipo || (ps[0] && ps[0].team);
@@ -204,14 +191,76 @@ function duelo() {
         <span style="display:flex;flex-wrap:wrap;gap:10px">${a ? `<a class="btn ghost" href="#/jugador/${a.id}">FICHA ${esc(a.n.split(' ').pop().toUpperCase())}</a>` : ''}${b ? `<a class="btn ghost" href="#/jugador/${b.id}">FICHA ${esc(b.n.split(' ').pop().toUpperCase())}</a>` : ''}${a && b ? `<a class="btn" href="#/comparar/${a.id}/${b.id}">COMPARAR A FONDO</a>` : ''}</span></div>
     </div></section>`;
 }
+function bienvenida() {
+  let visto = false; try { visto = localStorage.getItem('fx-bienvenida') === '1'; } catch (e) {}
+  if (visto) return '';
+  return `<div class="hello" id="welcome">${fxLogo(34)}<p><b>Bienvenido a Fantasy Expertos.</b> Marcadores en vivo, puntos en PPR, Half o Standard, Start/Sit con razones y noticias que se vuelven decisiones. Todo se actualiza solo.</p>
+    <button type="button" aria-label="Cerrar" onclick="try{localStorage.setItem('fx-bienvenida','1')}catch(e){};document.getElementById('welcome').remove()">✕</button></div>`;
+}
+function miniScores() {
+  if (!G.length) return '<div class="empty sm">Cargando marcadores…</div>';
+  const L = [...G].sort((a, b) => ({ in: 0, pre: 1, post: 2 }[a.estado] - { in: 0, pre: 1, post: 2 }[b.estado]) || Date.parse(a.fecha) - Date.parse(b.fecha)).slice(0, 6);
+  return L.map(g => `<a class="ms ${g.estado}" href="#/partido/${g.id}">
+    <span class="ms-t ${ganando(g, 0)}">${helmet(g.visita.ab, '', 22)}<b>${g.visita.ab}</b><em class="n">${g.estado === 'pre' ? '' : g.visita.pts}</em></span>
+    <span class="ms-t ${ganando(g, 1)}">${helmet(g.local.ab, '', 22)}<b>${g.local.ab}</b><em class="n">${g.estado === 'pre' ? '' : g.local.pts}</em></span>
+    <small>${esc(g.estado === 'pre' ? horaJuego(g) : g.detalle)}</small></a>`).join('');
+}
+function miniLideres() {
+  if (!SEMNUM) return '';
+  return Object.keys(POSICIONES).map(p => {
+    const j = P.filter(x => x.pos === p && ptsSemana(x) != null).sort((a, b) => ptsSemana(b) - ptsSemana(a))[0];
+    return j ? `<a class="ml" href="#/jugador/${j.id}"><span class="ml-pos">${p}</span>${helmet(j.team, j.num, 30)}<span class="ml-n"><b>${esc(j.n)}</b><small>${esc(j.team)} · ${rivalTxt(j.team, SEMNUM)}</small></span><em class="n">${n1(ptsSemana(j))}</em></a>` : '';
+  }).join('');
+}
+function inicio() {
+  titulo('');
+  const N = todasNoticias(), lead = N[0], sec = N.slice(1, 3), mas = N.slice(3, 9);
+  const hubs = Object.keys(POSICIONES).map(p => {
+    const top3 = P.filter(j => j.pos === p).sort((a, b) => (b.total || 0) - (a.total || 0)).slice(0, 3);
+    return `<a class="hub" href="#/posicion/${p}"><span class="hub-h"><b>${p}</b><span>${POSICIONES[p]}</span></span>${top3.map((j, i) => `<span class="hub-r"><i class="n">${i + 1}</i>${helmet(j.team, j.num, 22)}<span>${esc(j.n)}</span><em class="n">${n1(j.total)}</em></span>`).join('')}<span class="hub-go">VER RANKING ›</span></a>`;
+  }).join('');
+  return `<div class="page">
+  <div class="wrap">
+    ${bienvenida()}
+    <section class="front">
+      <div class="front-main">
+        ${lead ? newsCard(lead, true) : '<div class="empty">Las noticias llegan en el próximo ciclo.</div>'}
+        <div class="front-sec">${sec.map(n => newsCard(n)).join('')}</div>
+      </div>
+      <aside class="front-side">
+        <div class="panel"><div class="panel-h"><b>${enVivo() ? '<i class="dot"></i>EN VIVO' : 'SEMANA ' + esc(G[0] ? G[0].semana : semActual())}</b><a href="#/partidos">Partidos ›</a></div><div id="home-scores">${miniScores()}</div></div>
+        ${SEMNUM ? `<div class="panel"><div class="panel-h"><b>LÍDERES · SEMANA ${esc(SEMNUM)}</b><a href="#/lideres">Todos ›</a></div>${miniLideres()}<p class="panel-f">Puntos ${FMTS[FMT]}</p></div>` : ''}
+      </aside>
+    </section>
+  </div>
+  <div class="ticker"><div class="tag">ÚLTIMA HORA</div><div class="view"><div class="ticker-track">${tickerItems()}${tickerItems()}</div></div></div>
+  <div class="wrap">
+    <section class="block"><div class="head"><div><h2>Matchups de la semana ${esc(G[0] ? G[0].semana : semActual())}</h2><p class="hsub">Posesión, marcador y las estrellas de fantasy de cada lado.</p></div><a class="all" href="#/partidos">Todos los partidos ›</a></div>
+      <div id="home-matches">${homeMatches()}</div></section>
+    ${mas.length ? `<section class="block"><div class="head"><div><h2>Más jugadas</h2><p class="hsub">Lo que mueve tus alineaciones hoy.</p></div><a class="all" href="#/noticias">Todas las noticias ›</a></div><div class="news stagger">${mas.map(n => newsCard(n)).join('')}</div></section>` : ''}
+    <section class="block grid g2">
+      <div class="card"><div class="head"><h3>▲ Subiendo</h3><a class="all" href="#/tendencias">Todo ›</a></div><p class="sub">Los más agregados en las últimas 24 horas.</p>
+        <div class="plist">${D.agregados.slice(0, 6).map(id => J[id] && prow(J[id], `<span class="bar"><i style="width:${pct(J[id].add, 'add')}%"></i></span>`)).join('')}</div></div>
+      <div class="card"><div class="head"><h3>Reporte médico</h3><a class="all" href="#/lesionados">Todo ›</a></div><p class="sub">Los que más impactan tu fantasy.</p>
+        <div class="plist">${D.lesionados.map(x => J[x.id]).filter(Boolean).sort((a, b) => (b.total || 0) - (a.total || 0)).slice(0, 6).map(j => prow(j, pillSt(j))).join('')}</div></div>
+    </section>
+    ${duelo()}
+    <section class="block"><div class="head"><div><h2>Rankings por posición</h2><p class="hsub">Top 3 en puntos ${FMTS[FMT]} de la temporada.</p></div><a class="all" href="#/lideres">Líderes ›</a></div><div class="grid g5 stagger">${hubs}</div></section>
+    ${fxtv()}
+    <section class="block"><div class="head"><div><h2>Los 32 equipos</h2><p class="hsub">Récord, rival de la semana, calendario y plantel de fantasy.</p></div><a class="all" href="#/equipos">Ver todos ›</a></div>${teamGrid()}</section>
+  </div></div>`;
+}
 function noticias(q) {
   titulo('Noticias');
-  const f = q.get('tipo') || 'TODO';
-  const lista = D.noticias.filter(n => f === 'TODO' || n.etiqueta === f);
+  const f = q.get('tipo') || 'TODO', lim = +(q.get('ver') || 30);
+  const L = todasNoticias().filter(n => f === 'TODO' || n.etiqueta === f);
+  const dias = {};
+  L.slice(0, lim).forEach(n => { const d = n.fecha ? new Date(n.fecha).toLocaleDateString('es-MX', { weekday: 'long', day: 'numeric', month: 'long' }) : 'Hoy'; (dias[d] = dias[d] || []).push(n); });
   return `<div class="page">${crumbs([['', 'Noticias']])}<div class="wrap"><section class="block">
-    <div class="head"><h2 class="px">NOTICIAS <span>FX</span></h2><small class="px">${esc(actualizado())}</small></div>
-    <div class="chips">${['TODO', ...ETIQUETAS].map(t => `<a class="chip ${t === f ? 'on' : ''}" href="#/noticias${t === 'TODO' ? '' : '?tipo=' + encodeURIComponent(t)}">${t}</a>`).join('')}</div>
-    <div class="news lista stagger">${lista.map((n, i) => newsCard(n, i === 0 && f === 'TODO')).join('') || '<div class="empty">No hay noticias de este tipo hoy.</div>'}</div>
+    <div class="head"><div><h2>Noticias de fantasy</h2><p class="hsub">${L.length} noticias en el archivo · ${esc(actualizado())}</p></div></div>
+    <div class="chips">${['TODO', ...ETIQUETAS].map(t => `<a class="chip ${t === f ? 'on' : ''}" href="#/noticias${t === 'TODO' ? '' : '?tipo=' + encodeURIComponent(t)}">${t === 'TODO' ? 'TODAS' : ETQ[t]}</a>`).join('')}</div>
+    ${Object.entries(dias).map(([d, ns], k) => `<h3 class="day">${esc(d)}</h3><div class="news ${k ? '' : 'first'} stagger">${ns.map((n, i) => newsCard(n, k === 0 && i === 0 && f === 'TODO')).join('')}</div>`).join('') || '<div class="empty">No hay noticias de este tipo.</div>'}
+    ${L.length > lim ? `<p style="text-align:center;margin-top:24px"><a class="btn ghost" href="#/noticias?${f === 'TODO' ? '' : 'tipo=' + encodeURIComponent(f) + '&'}ver=${lim + 30}">Cargar más noticias</a></p>` : ''}
   </section></div></div>`;
 }
 
@@ -222,8 +271,8 @@ function noticia(id) {
   const jug = (n.jugadores || []).map(x => J[x]).filter(Boolean);
   const t1 = n.equipo || (jug[0] && jug[0].team);
   const otros = [...new Set(jug.map(j => j.team).filter(t => t && t !== t1))].slice(0, 2);
-  const rel = D.noticias.filter(x => x.id !== id && (x.etiqueta === n.etiqueta || (x.jugadores || []).some(p => (n.jugadores || []).includes(p)))).slice(0, 3);
-  const L = D.noticias.includes(n) ? D.noticias : D.archivo, i = L.indexOf(n), sig = L[i + 1], ant = L[i - 1];
+  const rel = todasNoticias().filter(x => x.id !== id && (x.etiqueta === n.etiqueta || (x.jugadores || []).some(p => (n.jugadores || []).includes(p)))).slice(0, 3);
+  const L = todasNoticias(), i = L.indexOf(n), sig = L[i + 1], ant = L[i - 1];
   return `<div class="page">${crumbs([['#/noticias', 'Noticias'], ['', n.etiqueta]])}<div class="wrap">
     <div class="nhero scn" style="${vars(t1)}">${escena(n.etiqueta, t1, jug[0] && jug[0].num)}<div class="grid-in">
       <div class="hels">${helmet(t1, jug[0] && jug[0].num, 150, false, 'bob')}${otros.map(t => helmet(t, '', 120, true)).join('')}</div>
@@ -555,12 +604,13 @@ function temporada() {
   titulo('Temporada');
   const S = Object.values(D.resumenes || {}).sort((a, b) => b.semana - a.semana);
   return `<div class="page">${crumbs([['', 'Temporada ' + (D.temporada || '')]])}<div class="wrap"><section class="block">
-    <div class="head"><h2 class="px">TEMPORADA <span>${esc(D.temporada || '')}</span></h2><small class="px">SEMANA POR SEMANA</small></div>
-    <div class="grid g3 stagger">${S.map(w => {
+    <div class="head"><div><h2>Temporada ${esc(D.temporada || '')}, semana por semana</h2><p class="hsub">Resumen, MVP y los mejores de cada posición en cada jornada.</p></div></div>
+    <div class="news stagger">${S.map(w => {
       const mvp = Object.values(w.top || {}).flat().sort((a, b) => b.pts - a.pts)[0];
-      return `<a class="cart TENDENCIA" href="#/semana/${w.semana}" style="${vars(mvp && mvp.team)}"><span class="band">${escena('ARRANCA', mvp && mvp.team, '')}<span class="tm">SEMANA ${w.semana}${w.cerrada ? '' : ' · EN CURSO'}</span></span>
-        <span class="in"><h3>${esc(w.titulo)}</h3><ul class="claves">${(w.claves || []).slice(0, 2).map(c => `<li>${esc(c)}</li>`).join('')}</ul>
-        <span class="foot">${mvp ? `<span class="team">MVP: ${esc(mvp.n)} · ${n1(mvp.pts)}</span>` : '<span></span>'}<span class="go">VER SEMANA ›</span></span></span></a>`;
+      const fake = { id: 'sem' + w.semana, etiqueta: 'TENDENCIA', impacto: 'SUBE', equipo: mvp && mvp.team, jugadores: mvp && J[mvp.id] ? [mvp.id] : [], titulo: w.titulo };
+      return `<a class="story" href="#/semana/${w.semana}">${thumb(fake).replace('TENDENCIA</span>', 'SEMANA ' + w.semana + '</span>')}
+        <span class="st-body"><span class="st-meta">Semana ${w.semana}${w.cerrada ? '' : ' · en curso'}</span><h3>${esc(w.titulo)}</h3><p class="st-k">${esc((w.claves || [])[0] || '')}</p>
+        ${mvp ? `<span class="st-who"><span>${helmet(mvp.team, '', 20)}MVP: ${esc(mvp.n)} · ${n1(mvp.pts)} pts</span></span>` : ''}</span></a>`;
     }).join('') || '<div class="empty">Generando el resumen de la temporada…</div>'}</div></section></div></div>`;
 }
 function semana(w) {
@@ -601,7 +651,7 @@ function fxtv() {
   if (!V.length) return '';
   return `<section class="block"><div class="head"><div><h2 class="px">FX <span>TV</span></h2><p class="hsub">Lo más reciente del canal y el podcast. Se reproduce aquí mismo.</p></div><a class="all" href="#/media">TODO EL CONTENIDO ›</a></div>
     <div class="tv">${vidCard(V[0], true)}<div class="tv-side">${V.slice(1, 4).map(v => vidCard(v)).join('')}</div></div>
-    <div class="tv-foot">${podcast()}${grupoRedes()}</div></section>`;
+    <div class="tv-foot">${podcast()}</div></section>`;
 }
 function media() {
   titulo('FX Media');
@@ -614,7 +664,7 @@ function media() {
     <section class="block"><div class="head"><div><h2 class="px">SÍGUENOS</h2><p class="hsub">Primero Fantasy Expertos, luego los tips rápidos de Joe NFL.</p></div></div>${grupoRedes()}</section>
   </div></div>`;
 }
-const ctaRedes = () => `<div class="tcta"><div><span class="px" style="font-size:9px;color:#25F4EE">¿LO QUIERES EN VIDEO?</span><h3>Esta y más jugadas, explicadas en 60 segundos</h3><p>Síguenos para no perderte nada antes del kickoff.</p></div><div class="socials">${redBtn('tiktok', 'tt', 'TIKTOK')}${redBtn('youtube', 'yt', 'YOUTUBE')}${redBtn('spotify', 'sp', 'PODCAST')}</div></div>`;
+const ctaRedes = () => D.redes.tiktok ? `<a class="tcta" href="${esc(D.redes.tiktok.url)}" target="_blank" rel="noopener">${ICO.tt}<span><b>¿Lo quieres en 60 segundos?</b> Esta y más jugadas en el TikTok de @joe.nfl</span><em>Seguir ›</em></a>` : '';
 
 
 /* ---------- EN VIVO: marcadores, matchups y jugadas (ESPN, gratis, se refresca solo) ---------- */
@@ -736,7 +786,7 @@ function refrescaVista() {
   const h = location.hash;
   if (/^#\/partidos/.test(h)) { app.innerHTML = partidos(); }
   else if (/^#\/partido\//.test(h)) { app.innerHTML = partido(h.split('/')[2]); }
-  else { const box = document.getElementById('home-matches'); if (box) box.innerHTML = homeMatches(); }
+  else { const box = document.getElementById('home-matches'); if (box) box.innerHTML = homeMatches(); const sc = document.getElementById('home-scores'); if (sc) sc.innerHTML = miniScores(); }
 }
 function homeMatches() {
   if (!G.length) return '<div class="empty">Cargando marcadores…</div>';
@@ -865,7 +915,7 @@ Promise.all([
   document.querySelectorAll('.fmt button').forEach((b, i) => b.onclick = () => { FMT = i; try { localStorage.setItem('fx-fmt', i); } catch (e) {} aplicaFormato(); router(); });
   const pie = document.getElementById('pie-redes'); if (pie) pie.innerHTML = `<div class="follow"><div><h3 class="px">SÍGUENOS</h3><p>Tips diarios, el podcast y los videos de cada semana.</p></div>${grupoRedes()}</div>`;
   const ts = document.getElementById('top-social');
-  if (ts) ts.innerHTML = [['tiktok', 'tt'], ['youtube', 'yt'], ['instagramFX', 'ig'], ['spotify', 'sp']].map(([k, i]) => D.redes[k] ? `<a href="${esc(D.redes[k].url)}" target="_blank" rel="noopener" aria-label="${k}">${ICO[i]}</a>` : '').join('');
+  if (ts && false) ts.innerHTML = [['tiktok', 'tt'], ['youtube', 'yt'], ['instagramFX', 'ig'], ['spotify', 'sp']].map(([k, i]) => D.redes[k] ? `<a href="${esc(D.redes[k].url)}" target="_blank" rel="noopener" aria-label="${k}">${ICO[i]}</a>` : '').join('');
   buscador();
   cargaPartidos();
   const mas = document.getElementById('tb-mas');
