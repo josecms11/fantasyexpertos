@@ -18,11 +18,10 @@ const CFG = {
   REPO: 'josecms11/fantasyexpertos',
   ARCHIVO: 'data/hoy.json',
   RSS: [
-    'https://www.espn.com/espn/rss/nfl/news',
     'https://www.cbssports.com/rss/headlines/nfl/',
     'https://sports.yahoo.com/nfl/rss/'
   ],
-  MODELO: 'gemini-2.5-flash'
+  MODELO: 'gemini-3.8-flash'
 };
 
 /* ---------- Ejecutar UNA vez para dejar todo listo ---------- */
