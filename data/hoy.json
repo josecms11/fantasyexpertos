@@ -1,20 +1,100 @@
 {
-  "actualizado": "2026-10-19T06:00:00-06:00",
-  "semana": "[N]",
+  "actualizado": "2026-10-19T09:14:59.489Z",
+  "semana": 6,
   "noticias": [
-    "[NOTICIA DE EJEMPLO 1 — aquí llegará el reportaje automático]",
-    "[NOTICIA DE EJEMPLO 2]",
-    "[NOTICIA DE EJEMPLO 3]"
+    "Drake Maye sigue encendido: firmó su tercer juego consecutivo con tres pases de anotación y se consolida como opción confiable de QB1 bajo.",
+    "Pese a un susto en la rodilla, Tucker Kraft volvió al emparrillado, sumó cinco recepciones y se mantiene como ala cerrada imprescindible para tu alineación.",
+    "Con Saquon Barkley y Breece Hall fuera, la urgencia en waivers explotó: Najee Harris y Jaleel McLaughlin son parches obligados para rescatar tu semana.",
+    "Jordan Love superó dolorosos pases caídos de sus receptores para generar dos anotaciones; confía plenamente en su brazo para tus duelos de Semana 7.",
+    "TreVeyon Henderson forzó su actividad pese al esguince de tobillo pero apenas logró 40 yardas; déjalo enfriar en la banca hasta verlo totalmente sano."
   ],
   "lesionados": [
-    { "jugador": "[JUGADOR]", "equipo": "[EQ]", "estatus": "Duda" },
-    { "jugador": "[JUGADOR]", "equipo": "[EQ]", "estatus": "Fuera" },
-    { "jugador": "[JUGADOR]", "equipo": "[EQ]", "estatus": "Juega" }
+    {
+      "jugador": "De'Von Achane",
+      "equipo": "MIA",
+      "estatus": "Fuera"
+    },
+    {
+      "jugador": "Lamar Jackson",
+      "equipo": "BAL",
+      "estatus": "Fuera"
+    },
+    {
+      "jugador": "Saquon Barkley",
+      "equipo": "PHI",
+      "estatus": "Fuera"
+    },
+    {
+      "jugador": "Jeremiyah Love",
+      "equipo": "ARI",
+      "estatus": "Fuera"
+    },
+    {
+      "jugador": "Jalen Hurts",
+      "equipo": "PHI",
+      "estatus": "Fuera"
+    },
+    {
+      "jugador": "Breece Hall",
+      "equipo": "NYJ",
+      "estatus": "Fuera"
+    },
+    {
+      "jugador": "Rashee Rice",
+      "equipo": "KC",
+      "estatus": "Fuera"
+    },
+    {
+      "jugador": "Travis Etienne",
+      "equipo": "NO",
+      "estatus": "Fuera"
+    }
   ],
   "waivers": [
-    { "jugador": "[JUGADOR]", "posicion": "[POS]", "agregados": "[N]" },
-    { "jugador": "[JUGADOR]", "posicion": "[POS]", "agregados": "[N]" },
-    { "jugador": "[JUGADOR]", "posicion": "[POS]", "agregados": "[N]" }
+    {
+      "jugador": "Tyler Higbee",
+      "posicion": "TE",
+      "agregados": 867105
+    },
+    {
+      "jugador": "Najee Harris",
+      "posicion": "RB",
+      "agregados": 420590
+    },
+    {
+      "jugador": "Jaleel McLaughlin",
+      "posicion": "RB",
+      "agregados": 374050
+    },
+    {
+      "jugador": "Omar Cooper",
+      "posicion": "WR",
+      "agregados": 308280
+    },
+    {
+      "jugador": "Dameon Pierce",
+      "posicion": "RB",
+      "agregados": 299144
+    },
+    {
+      "jugador": "Roschon Johnson",
+      "posicion": "RB",
+      "agregados": 283320
+    },
+    {
+      "jugador": "Keon Coleman",
+      "posicion": "WR",
+      "agregados": 215352
+    },
+    {
+      "jugador": "Darren Waller",
+      "posicion": "TE",
+      "agregados": 201582
+    }
   ],
-  "duelo": { "a": "[JUGADOR A]", "b": "[JUGADOR B]", "veredicto": "[ANÁLISIS DEL EXPERTO]" }
+  "duelo": {
+    "a": "Najee Harris",
+    "b": "Jaleel McLaughlin",
+    "veredicto": "Arranca a Najee Harris. Con tantas bajas estelares en la posición, el volumen es rey; Harris asegura acarreos en zona roja y castigo terrestre, mientras McLaughlin depende de jugadas explosivas en un rol más limitado."
+  }
 }
