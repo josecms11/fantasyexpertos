@@ -12,7 +12,7 @@ const POSICIONES = { QB: 'Quarterbacks', RB: 'Running backs', WR: 'Receptores', 
 const ESTATUS = { Questionable: 'Duda', Doubtful: 'Duda', Out: 'Fuera', IR: 'Fuera', PUP: 'Fuera', Sus: 'Fuera' };
 const ETIQUETAS = ['LESIÓN', 'WAIVER', 'ARRANCA', 'BANCA', 'TENDENCIA'];
 
-let D = null, P = [], J = {}, RANKPOS = {};
+let D = null, D0 = {}, P = [], J = {}, RANKPOS = {}, SEMIDX = -1, SEMNUM = null;
 
 /* ---------- utilidades ---------- */
 const estatus = j => ESTATUS[j.inj] || 'Sano';
@@ -131,41 +131,55 @@ const noticiasDe = id => D.noticias.filter(n => (n.jugadores || []).includes(id)
 const titulo = t => { document.title = t ? t + ' · Fantasy Expertos' : 'Fantasy Expertos'; };
 
 /* ---------- PÁGINAS ---------- */
+function bienvenida() {
+  let visto = false; try { visto = localStorage.getItem('fx-bienvenida') === '1'; } catch (e) {}
+  if (visto) return '';
+  return `<section class="welcome" id="welcome">${escena('TENDENCIA', '', '')}
+    <div class="w-in">
+      <svg class="w-logo" width="120" height="80" viewBox="20 55 150 100" aria-hidden="true"><polygon points="69,58.5 166.5,58.5 153.5,82.2 83.5,82.2 49,151.7 23.7,151.7" fill="#E8E8E8"/><polygon points="90.5,94.5 146.2,94.5 133,118 79.2,118" fill="#4A9A68"/></svg>
+      <div><p class="eyebrow px"><i class="blink"></i>BIENVENIDO AL VESTIDOR</p>
+        <h1>El rincón del fan de fantasy football en español.</h1>
+        <p class="lead">Marcadores en vivo, puntos de fantasy, noticias que se convierten en decisiones y herramientas para ganar tu liga. Todo se actualiza solo.</p>
+        <div class="w-cta"><a class="btn" href="#/partidos">VER EN VIVO</a>${redBtn('tiktok', 'tt', 'TIKTOK')}${redBtn('youtube', 'yt', 'YOUTUBE')}${redBtn('instagramFX', 'ig', 'INSTAGRAM')}</div></div>
+      <button class="w-close" type="button" aria-label="Cerrar bienvenida" onclick="try{localStorage.setItem('fx-bienvenida','1')}catch(e){};document.getElementById('welcome').remove()">✕</button>
+    </div></section>`;
+}
+function liderSemana() {
+  if (!SEMNUM) return '';
+  return `<div class="wleaders">${Object.keys(POSICIONES).map(p => {
+    const j = P.filter(x => x.pos === p && ptsSemana(x) != null).sort((a, b) => ptsSemana(b) - ptsSemana(a))[0];
+    return j ? `<a class="wl" href="#/jugador/${j.id}" style="${vars(j.team)}"><span class="wl-pos px">${p}</span>${helmet(j.team, j.num, 52)}<span class="wl-n">${esc(j.n)}</span><span class="wl-t">${esc(j.team)}</span><b class="n">${n1(ptsSemana(j))}<small>PTS</small></b></a>` : '';
+  }).join('')}</div>`;
+}
 function inicio() {
   titulo('');
   const top = D.noticias[0];
   const hubs = Object.keys(POSICIONES).map(p => {
-    const lider = P.filter(j => j.pos === p).sort((a, b) => (a.rank || 1e9) - (b.rank || 1e9))[0];
-    return `<a class="hub" href="#/posicion/${p}"><b>${p}</b><span>${POSICIONES[p]}</span>${lider ? `<small>Nº1 · </small><span class="top">${esc(lider.n)}</span>` : ''}</a>`;
+    const lider = P.filter(j => j.pos === p).sort((a, b) => (b.total || 0) - (a.total || 0))[0];
+    return `<a class="hub" href="#/posicion/${p}"><b>${p}</b><span>${POSICIONES[p]}</span>${lider ? `<small>LÍDER</small><span class="top">${esc(lider.n)}</span>` : ''}</a>`;
   }).join('');
   return `<div class="page">
-  <div class="wrap">
-    <div class="jumbo">
-      <div class="jumbo-top px"><span><i class="blink" style="display:inline-block;width:8px;height:8px;background:var(--bad);margin-right:8px"></i>EN VIVO · SEMANA ${esc(D.semana)}</span><span id="crt-n"></span></div>
-      <a class="led" id="crt-link" href="#/noticias"><small id="crt-tag">FX</small><span id="crt-titulo">CARGANDO JUGADAS…</span></a>
-      <div class="field" aria-label="Equipos en las noticias de hoy">${marcha()}</div>
-    </div>
-    <div class="stats stagger">
-      <a class="stat" href="#/noticias"><b>${D.noticias.length}</b><span>NOTICIAS HOY</span></a>
-      <a class="stat" href="#/lesionados"><b>${D.lesionados.length}</b><span>LESIONADOS</span></a>
-      <a class="stat" href="#/tendencias"><b>${D.agregados.length}</b><span>EN TENDENCIA</span></a>
-      <a class="stat" href="#/equipos"><b>${P.length}</b><span>JUGADORES</span></a>
-    </div>
-  </div>
+  <div class="wrap">${bienvenida()}</div>
   <div class="ticker"><div class="tag px">ÚLTIMA HORA</div><div class="view"><div class="ticker-track">${tickerItems()}${tickerItems()}</div></div></div>
   <div class="wrap">
-    <section class="block"><div class="head"><h2 class="px">LAS JUGADAS <span>DEL DÍA</span></h2><a class="all" href="#/noticias">VER LAS ${D.noticias.length} ›</a></div>
+    <section class="block"><div class="head"><div><h2 class="px">EN VIVO <span>· SEMANA ${esc(G[0] ? G[0].semana : D.semana)}</span></h2><p class="hsub">Marcadores, posesión y puntos de fantasy al momento.</p></div><a class="all" href="#/partidos">TODOS LOS PARTIDOS ›</a></div>
+      <div id="home-matches">${homeMatches()}</div></section>
+
+    ${SEMNUM ? `<section class="block"><div class="head"><div><h2 class="px">LOS MEJORES <span>DE LA SEMANA ${esc(SEMNUM)}</span></h2><p class="hsub">El Nº1 en puntos PPR de cada posición.</p></div><a class="all" href="#/lideres">TODOS LOS LÍDERES ›</a></div>${liderSemana()}</section>` : ''}
+
+    <section class="block"><div class="head"><div><h2 class="px">LAS JUGADAS <span>DEL DÍA</span></h2><p class="hsub">Cada noticia aterrizada a tu alineación.</p></div><a class="all" href="#/noticias">VER LAS ${D.noticias.length} ›</a></div>
       <div class="news stagger">${top ? newsCard(top, true) : '<div class="empty">Las noticias llegan en el próximo ciclo.</div>'}${D.noticias.slice(1, 4).map(n => newsCard(n)).join('')}</div></section>
-    <section class="block"><div class="head"><h2 class="px">EXPLORA POR <span>POSICIÓN</span></h2></div><div class="grid g5 stagger">${hubs}</div></section>
+
     <section class="block grid g2">
-      <div class="card"><div class="head"><h3 class="px" style="color:var(--accent)">SUBIENDO ▲</h3><a class="all" href="#/tendencias">TODO ›</a></div>
+      <div class="card"><div class="head"><h3 class="px" style="color:var(--accent)">SUBIENDO ▲</h3><a class="all" href="#/tendencias">TODO ›</a></div><p class="sub">Los más agregados en las últimas 24 horas.</p>
         <div class="plist">${D.agregados.slice(0, 6).map(id => J[id] && prow(J[id], `<span class="bar"><i style="width:${pct(J[id].add, 'add')}%"></i></span>`)).join('')}</div></div>
-      <div class="card"><div class="head"><h3 class="px" style="color:var(--bad)">LESIONADOS</h3><a class="all" href="#/lesionados">TODO ›</a></div>
-        <div class="plist">${D.lesionados.slice(0, 6).map(x => J[x.id] && prow(J[x.id], pillSt(J[x.id]))).join('')}</div></div>
+      <div class="card"><div class="head"><h3 class="px" style="color:var(--bad)">LESIONADOS</h3><a class="all" href="#/lesionados">TODO ›</a></div><p class="sub">Los que más impactan tu fantasy, por puntos de temporada.</p>
+        <div class="plist">${D.lesionados.map(x => J[x.id]).filter(Boolean).sort((a, b) => (b.total || 0) - (a.total || 0)).slice(0, 6).map(j => prow(j, pillSt(j))).join('')}</div></div>
     </section>
     ${duelo()}
     ${fxtv()}
-    <section class="block"><div class="head"><h2 class="px">EQUIPOS</h2><a class="all" href="#/equipos">VER LOS 32 ›</a></div>${teamGrid()}</section>
+    <section class="block"><div class="head"><div><h2 class="px">PROFUNDIZA <span>POR POSICIÓN</span></h2><p class="hsub">Rankings por puntos reales de la temporada.</p></div><a class="all" href="#/temporada">TEMPORADA COMPLETA ›</a></div><div class="grid g5 stagger">${hubs}</div></section>
+    <section class="block"><div class="head"><div><h2 class="px">LOS <span>32 EQUIPOS</span></h2><p class="hsub">Plantel de fantasy, lesiones y noticias de cada uno.</p></div><a class="all" href="#/equipos">VER TODOS ›</a></div>${teamGrid()}</section>
   </div></div>`;
 }
 function marcha() {
@@ -240,8 +254,8 @@ function jugador(id) {
   titulo(j.n);
   const st = estatus(j);
   const notas = noticiasDe(id);
-  const comp = P.filter(x => x.team === j.team && x.id !== id).sort((a, b) => (a.rank || 1e9) - (b.rank || 1e9)).slice(0, 6);
-  const mismos = P.filter(x => x.pos === j.pos).sort((a, b) => (a.rank || 1e9) - (b.rank || 1e9));
+  const comp = P.filter(x => x.team === j.team && x.id !== id).sort((a, b) => (b.total || 0) - (a.total || 0)).slice(0, 6);
+  const mismos = P.filter(x => x.pos === j.pos).sort((a, b) => (b.total || 0) - (a.total || 0));
   const k = mismos.indexOf(j);
   const vecinos = mismos.slice(Math.max(0, k - 3), k + 4).filter(x => x.id !== id).slice(0, 6);
   const hist = j.hist || [], semanas = D.semanas || hist.map((_, i) => i + 1);
@@ -275,7 +289,6 @@ function jugador(id) {
         <div><small>ESTATURA</small><b>${altura(j.alt)}</b></div><div><small>PESO</small><b>${j.peso ? esc(j.peso) + ' lb' : '–'}</b></div>
         <div style="grid-column:1/-1"><small>UNIVERSIDAD</small><b>${esc(j.col || '–')}</b></div></div></div>
     </div>
-    <section class="block"><div class="head"><h2 class="px">MATCHUPS <span>EN VIVO</span></h2><a class="all" href="#/partidos">TODOS LOS PARTIDOS ›</a></div><div id="home-matches">${homeMatches()}</div></section>
     <section class="block"><div class="head"><h2 class="px">NOTICIAS <span>SOBRE ÉL</span></h2></div>
       <div class="news stagger">${notas.map(n => newsCard(n)).join('') || '<div class="empty">Hoy no hay noticias sobre este jugador.</div>'}</div></section>
     <section class="block grid g2">
@@ -356,7 +369,7 @@ function montaTabla(p) {
   const base = P.filter(j => j.pos === p);
   const pinta = () => {
     const f = ($('#filtro').value || '').toLowerCase();
-    const val = (j, k) => k === 'ult' ? (ultima(j) ?? -1) : k === 'rank' ? -(j.rank || 1e9) : k === 'team' ? j.team : (j[k] ?? -1);
+    const val = (j, k) => k === 'ult' ? (ultima(j) ?? -1) : k === 'rank' ? (j.total || 0) : k === 'team' ? j.team : (j[k] ?? -1);
     const lista = base.filter(j => (est === 'TODOS' || estatus(j) === est) && (!f || j.n.toLowerCase().includes(f) || j.team.toLowerCase().includes(f) || (EQUIPOS[j.team] || '').toLowerCase().includes(f)))
       .sort((a, b) => { const va = val(a, orden), vb = val(b, orden); return orden === 'team' ? String(va).localeCompare(vb) : vb - va; });
     $('#tb').innerHTML = lista.map(j => `<tr data-id="${j.id}"><td class="n">${RANKPOS[j.id] || '–'}</td>
@@ -380,7 +393,7 @@ function equipos() {
 function equipo(t) {
   if (!EQUIPOS[t]) return noEncontrado();
   titulo(EQUIPOS[t]);
-  const roster = P.filter(j => j.team === t).sort((a, b) => (a.rank || 1e9) - (b.rank || 1e9));
+  const roster = P.filter(j => j.team === t).sort((a, b) => (b.total || 0) - (a.total || 0));
   const ids = new Set(roster.map(j => j.id));
   const notas = D.noticias.filter(n => (n.jugadores || []).some(id => ids.has(id)));
   const les = roster.filter(j => estatus(j) !== 'Sano');
@@ -407,7 +420,7 @@ function tendencias() {
 function lesionados(q) {
   titulo('Lesionados');
   const f = q.get('estatus') || 'TODOS';
-  const lista = P.filter(j => estatus(j) !== 'Sano' && (f === 'TODOS' || estatus(j) === f)).sort((a, b) => (a.rank || 1e9) - (b.rank || 1e9));
+  const lista = P.filter(j => estatus(j) !== 'Sano' && (f === 'TODOS' || estatus(j) === f)).sort((a, b) => (b.total || 0) - (a.total || 0));
   return `<div class="page">${crumbs([['', 'Lesionados']])}<div class="wrap"><section class="block">
     <div class="head"><h2 class="px">REPORTE DE <span>LESIONES</span></h2><small class="px">${lista.length} JUGADORES</small></div>
     <div class="chips">${['TODOS', 'Duda', 'Fuera'].map(s => `<a class="chip ${s === f ? 'on' : ''}" href="#/lesionados${s === 'TODOS' ? '' : '?estatus=' + s}">${s.toUpperCase()}</a>`).join('')}</div>
@@ -461,26 +474,31 @@ const ICO = {
   sp: '<svg width="20" height="20" viewBox="0 0 8 8" shape-rendering="crispEdges" aria-hidden="true"><rect x="1" y="0" width="6" height="8" fill="#1DB954"/><rect x="0" y="1" width="8" height="6" fill="#1DB954"/><rect x="2" y="2" width="4" height="1" fill="#0A1A10"/><rect x="2" y="4" width="3" height="1" fill="#0A1A10"/><rect x="3" y="6" width="2" height="1" fill="#0A1A10"/></svg>'
 };
 const redBtn = (k, ico, txt) => D.redes[k] ? `<a class="social" href="${esc(D.redes[k].url)}" target="_blank" rel="noopener">${ICO[ico]}<span>${txt}<small>${esc(D.redes[k].usuario || '')}</small></span></a>` : '';
-const redesRow = () => `<div class="socials">${redBtn('tiktok', 'tt', 'TIKTOK')}${redBtn('youtube', 'yt', 'YOUTUBE')}${redBtn('instagram', 'ig', 'INSTAGRAM')}${redBtn('instagramFX', 'ig', 'INSTAGRAM FX')}${redBtn('spotify', 'sp', 'PODCAST')}</div>`;
-const vidCard = (v, big) => `<button class="vid ${big ? 'big' : ''} ${v.corto ? 'short' : ''}" type="button" data-v="${esc(v.id)}" aria-label="Reproducir ${esc(v.titulo)}">
-  <span class="thumb"><img loading="lazy" src="https://i.ytimg.com/vi/${esc(v.id)}/hqdefault.jpg" alt=""><span class="play">${ICO.yt}</span>${v.corto ? '<span class="tm">SHORT</span>' : ''}</span>
-  <span class="vt">${esc(v.titulo)}</span><small>${v.fecha ? new Date(v.fecha).toLocaleDateString('es-MX', { day: 'numeric', month: 'short' }) : ''}${v.vistas ? ' · ' + nf.format(v.vistas) + ' vistas' : ''}</small></button>`;
-const podcast = () => D.redes.spotify ? `<div class="pod"><iframe title="Podcast Fantasy Expertos en Spotify" src="https://open.spotify.com/embed/show/${esc(D.redes.spotify.show)}?theme=0" width="100%" height="232" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>` : '';
+const redesRow = () => grupoRedes(); const _redesRowOld = () => `<div class="socials">${redBtn('tiktok', 'tt', 'TIKTOK')}${redBtn('youtube', 'yt', 'YOUTUBE')}${redBtn('instagram', 'ig', 'INSTAGRAM')}${redBtn('instagramFX', 'ig', 'INSTAGRAM FX')}${redBtn('spotify', 'sp', 'PODCAST')}</div>`;
+const vidCard = (v, big) => `<button class="vid ${big ? 'big' : ''}" type="button" data-v="${esc(v.id)}" aria-label="Reproducir ${esc(v.titulo)}">
+  <span class="thumb"><img loading="lazy" src="https://i.ytimg.com/vi/${esc(v.id)}/${big ? 'maxresdefault' : 'hqdefault'}.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/${esc(v.id)}/hqdefault.jpg'" alt=""><span class="play">${ICO.yt}</span>${v.corto ? '<span class="tm">SHORT</span>' : ''}</span>
+  <span class="vinfo"><span class="vt">${esc(v.titulo)}</span><small>${v.fecha ? new Date(v.fecha).toLocaleDateString('es-MX', { day: 'numeric', month: 'short', year: 'numeric' }) : ''}${v.vistas ? ' · ' + nf.format(v.vistas) + ' vistas' : ''}</small></span></button>`;
+const videosOrdenados = () => (D.videos.videos || []).slice().sort((a, b) => Date.parse(b.fecha || 0) - Date.parse(a.fecha || 0));
+const podcast = () => D.redes.spotify ? `<div class="pod"><iframe title="Podcast Fantasy Expertos en Spotify" src="https://open.spotify.com/embed/show/${esc(D.redes.spotify.show)}?theme=0" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>` : '';
+const grupoRedes = () => `<div class="redgroups">
+  <div class="redgroup"><h4 class="px">FANTASY EXPERTOS</h4><div class="socials">${redBtn('youtube', 'yt', 'YOUTUBE')}${redBtn('spotify', 'sp', 'PODCAST')}${redBtn('instagramFX', 'ig', 'INSTAGRAM')}</div></div>
+  <div class="redgroup"><h4 class="px">JOE NFL</h4><div class="socials">${redBtn('tiktok', 'tt', 'TIKTOK')}${redBtn('instagram', 'ig', 'INSTAGRAM')}</div></div></div>`;
 function fxtv() {
-  const V = (D.videos.videos || []).slice(0, 4);
-  return `<section class="block"><div class="head"><h2 class="px">FX <span>TV</span></h2><a class="all" href="#/media">TODO EL CONTENIDO ›</a></div>
-    <div class="tvgrid">${V.length ? `<div class="vids">${V.map((v, i) => vidCard(v, i === 0)).join('')}</div>` : `<a class="empty" href="${esc(D.redes.youtube ? D.redes.youtube.url : '#')}" target="_blank" rel="noopener">Mira nuestros videos en YouTube ›</a>`}
-    <div class="grid" style="align-content:start">${podcast()}${redesRow()}</div></div></section>`;
+  const V = videosOrdenados();
+  if (!V.length) return '';
+  return `<section class="block"><div class="head"><div><h2 class="px">FX <span>TV</span></h2><p class="hsub">Lo más reciente del canal y el podcast. Se reproduce aquí mismo.</p></div><a class="all" href="#/media">TODO EL CONTENIDO ›</a></div>
+    <div class="tv">${vidCard(V[0], true)}<div class="tv-side">${V.slice(1, 4).map(v => vidCard(v)).join('')}</div></div>
+    <div class="tv-foot">${podcast()}${grupoRedes()}</div></section>`;
 }
 function media() {
   titulo('FX Media');
-  const V = D.videos.videos || [];
+  const V = videosOrdenados();
   return `<div class="page">${crumbs([['', 'FX Media']])}<div class="wrap">
-    <section class="block"><div class="head"><h2 class="px">FX <span>MEDIA</span></h2><small class="px">VIDEOS · PODCAST · REDES</small></div>${redesRow()}</section>
-    <section class="block"><div class="head"><h2 class="px">EL <span>PODCAST</span></h2>${D.redes.spotify ? `<a class="all" href="${esc(D.redes.spotify.url)}" target="_blank" rel="noopener">ABRIR EN SPOTIFY ›</a>` : ''}</div>${podcast()}</section>
-    <section class="block"><div class="head"><h2 class="px">VIDEOS DE <span>YOUTUBE</span></h2>${D.redes.youtube ? `<a class="all" href="${esc(D.redes.youtube.url)}?sub_confirmation=1" target="_blank" rel="noopener">SUSCRÍBETE ›</a>` : ''}</div>
-      <div class="vids">${V.map((v, i) => vidCard(v, i === 0)).join('') || '<div class="empty">Los videos se cargan en el próximo ciclo.</div>'}</div></section>
-    <section class="block"><div class="tcta"><div><span class="px" style="font-size:9px;color:#25F4EE">LO MÁS RÁPIDO</span><h3>Los tips del día en 60 segundos</h3><p>Sigue a @joe.nfl en TikTok: análisis rápidos antes de cada jornada.</p></div>${redBtn('tiktok', 'tt', 'SEGUIR EN TIKTOK')}</div></section>
+    <section class="block"><div class="head"><div><h2 class="px">FX <span>MEDIA</span></h2><p class="hsub">Videos, podcast y redes de Fantasy Expertos y Joe NFL.</p></div>${D.redes.youtube ? `<a class="all" href="${esc(D.redes.youtube.url)}?sub_confirmation=1" target="_blank" rel="noopener">SUSCRÍBETE ›</a>` : ''}</div>
+      ${V.length ? `<div class="tv">${vidCard(V[0], true)}<div class="tv-side">${V.slice(1, 4).map(v => vidCard(v)).join('')}</div></div>` : ''}</section>
+    <section class="block"><div class="head"><div><h2 class="px">EL <span>PODCAST</span></h2><p class="hsub">Fantasy Expertos en Spotify.</p></div>${D.redes.spotify ? `<a class="all" href="${esc(D.redes.spotify.url)}" target="_blank" rel="noopener">ABRIR EN SPOTIFY ›</a>` : ''}</div>${podcast()}</section>
+    ${V.length > 4 ? `<section class="block"><div class="head"><div><h2 class="px">MÁS <span>VIDEOS</span></h2></div></div><div class="vids">${V.slice(4).map(v => vidCard(v)).join('')}</div></section>` : ''}
+    <section class="block"><div class="head"><div><h2 class="px">SÍGUENOS</h2><p class="hsub">Primero Fantasy Expertos, luego los tips rápidos de Joe NFL.</p></div></div>${grupoRedes()}</section>
   </div></div>`;
 }
 const ctaRedes = () => `<div class="tcta"><div><span class="px" style="font-size:9px;color:#25F4EE">¿LO QUIERES EN VIDEO?</span><h3>Esta y más jugadas, explicadas en 60 segundos</h3><p>Síguenos para no perderte nada antes del kickoff.</p></div><div class="socials">${redBtn('tiktok', 'tt', 'TIKTOK')}${redBtn('youtube', 'yt', 'YOUTUBE')}${redBtn('spotify', 'sp', 'PODCAST')}</div></div>`;
@@ -532,8 +550,8 @@ function celebra({ g, t, d }) {
   el.onclick = () => { location.hash = '#/partido/' + g.id; el.remove(); };
   document.body.appendChild(el); setTimeout(() => el.remove(), 5200);
 }
-const fantasyDe = ab => P.filter(j => j.team === ab).sort((a, b) => (a.rank || 1e9) - (b.rank || 1e9)).slice(0, 4);
-const ptsSemana = j => { const h = j.hist || []; return h.length ? h[h.length - 1] : null; };
+const fantasyDe = ab => P.filter(j => j.team === ab).sort((a, b) => (b.total || 0) - (a.total || 0)).slice(0, 4);
+const ptsSemana = j => SEMIDX >= 0 && j.hist ? j.hist[SEMIDX] : null;
 function matchCard(g) {
   const v = g.visita, l = g.local, pos = g.posesion;
   return `<a class="match ${g.estado} ${g.zonaRoja ? 'rz' : ''}" href="#/partido/${g.id}" style="--cv:${col(v.ab)[0]};--cl:${col(l.ab)[0]}">
@@ -589,11 +607,11 @@ function partido(id) {
 }
 function lideres(q) {
   titulo('Líderes');
-  const modo = q.get('ver') || 'temporada';
+  const modo = q.get('ver') || (SEMNUM ? 'semana' : 'temporada');
   const val = j => modo === 'semana' ? ptsSemana(j) : j.total;
   return `<div class="page">${crumbs([['', 'Líderes fantasy']])}<div class="wrap"><section class="block">
     <div class="head"><h2 class="px">LÍDERES <span>FANTASY</span></h2><small class="px">PUNTOS PPR</small></div>
-    <div class="chips"><a class="chip ${modo === 'temporada' ? 'on' : ''}" href="#/lideres">TEMPORADA</a><a class="chip ${modo === 'semana' ? 'on' : ''}" href="#/lideres?ver=semana">ESTA SEMANA</a></div>
+    <div class="chips"><a class="chip ${modo === 'semana' ? 'on' : ''}" href="#/lideres?ver=semana">SEMANA ${esc(SEMNUM || '')}</a><a class="chip ${modo === 'temporada' ? 'on' : ''}" href="#/lideres?ver=temporada">TEMPORADA</a></div>
     <div class="grid g3 stagger">${Object.keys(POSICIONES).map(p => {
       const L = P.filter(j => j.pos === p && val(j) != null).sort((a, b) => val(b) - val(a)).slice(0, 8);
       return `<div class="card"><div class="head"><h3 class="px" style="color:var(--accent)">${p}</h3><a class="all" href="#/posicion/${p}">RANKING ›</a></div>
@@ -689,7 +707,7 @@ function buscador() {
   };
   inp.oninput = () => {
     const v = inp.value.trim().toLowerCase(); sel = -1;
-    res = v.length < 2 ? [] : P.filter(j => j.n.toLowerCase().includes(v)).sort((a, b) => (a.rank || 1e9) - (b.rank || 1e9)).slice(0, 8);
+    res = v.length < 2 ? [] : P.filter(j => j.n.toLowerCase().includes(v)).sort((a, b) => (b.total || 0) - (a.total || 0)).slice(0, 8);
     pinta();
   };
   inp.onkeydown = e => {
@@ -713,9 +731,12 @@ Promise.all([
   fetch('data/redes.json?v=' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({})),
   fetch('data/videos.json?v=' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({}))
 ]).then(([hoy, jugadores, archivo, resumenes, redes, videos]) => {
+  D0 = hoy;
   P = Array.isArray(jugadores) ? jugadores : [];
   P.forEach(j => J[j.id] = j);
-  Object.keys(POSICIONES).forEach(p => P.filter(j => j.pos === p && j.rank).sort((a, b) => a.rank - b.rank).forEach((j, i) => RANKPOS[j.id] = i + 1));
+  Object.keys(POSICIONES).forEach(p => P.filter(j => j.pos === p && j.total).sort((a, b) => b.total - a.total).forEach((j, i) => RANKPOS[j.id] = i + 1));
+  SEMIDX = (() => { for (let i = (D0.semanas || []).length - 1; i >= 0; i--) if (P.some(j => j.hist && j.hist[i] != null)) return i; return -1; })();
+  SEMNUM = SEMIDX >= 0 ? D0.semanas[SEMIDX] : null;
   // Acepta el formato anterior mientras el motor publica el nuevo
   hoy.noticias = (hoy.noticias || []).map((n, i) => {
     if (typeof n === 'string') n = { titulo: n, cuerpo: n, etiqueta: 'TENDENCIA' };
@@ -726,7 +747,9 @@ Promise.all([
   hoy.lesionados = (hoy.lesionados || []).filter(x => x.id);
   hoy.agregados = hoy.agregados || []; hoy.soltados = hoy.soltados || [];
   D = hoy; D.archivo = Array.isArray(archivo) ? archivo : []; D.resumenes = resumenes || {}; D.redes = redes || {}; D.videos = videos || {};
-  const pie = document.getElementById('pie-redes'); if (pie) pie.innerHTML = redesRow();
+  const pie = document.getElementById('pie-redes'); if (pie) pie.innerHTML = `<div class="follow"><div><h3 class="px">SÍGUENOS</h3><p>Tips diarios, el podcast y los videos de cada semana.</p></div>${grupoRedes()}</div>`;
+  const ts = document.getElementById('top-social');
+  if (ts) ts.innerHTML = [['tiktok', 'tt'], ['youtube', 'yt'], ['instagramFX', 'ig'], ['spotify', 'sp']].map(([k, i]) => D.redes[k] ? `<a href="${esc(D.redes[k].url)}" target="_blank" rel="noopener" aria-label="${k}">${ICO[i]}</a>` : '').join('');
   buscador();
   cargaPartidos();
   const mas = document.getElementById('tb-mas');

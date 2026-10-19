@@ -110,7 +110,7 @@ const porNombre = Object.fromEntries(s.jugadores.map(j => [norm(j.n), j.id]));
 const J = Object.fromEntries(s.jugadores.map(j => [j.id, j]));
 const nombres = ids => ids.slice(0, 15).map(id => J[id] ? `${J[id].n} (${J[id].pos}, ${J[id].team})` : '').filter(Boolean);
 const ESTATUS = { Questionable: 'Duda', Doubtful: 'Duda', Out: 'Fuera', IR: 'Fuera', PUP: 'Fuera', Sus: 'Fuera' };
-const lesionados = s.jugadores.filter(j => ESTATUS[j.inj] && j.rank && j.rank < 250).sort((a, b) => a.rank - b.rank).slice(0, 20).map(j => ({ id: j.id, estatus: ESTATUS[j.inj] }));
+const lesionados = s.jugadores.filter(j => ESTATUS[j.inj] && j.team !== 'FA' && (j.total || 0) > 0).sort((a, b) => (b.total || 0) - (a.total || 0)).slice(0, 25).map(j => ({ id: j.id, estatus: ESTATUS[j.inj] }));
 const archivo = leer('data/archivo.json', []);
 const liga = n => (n.jugadores || []).map(x => porNombre[norm(x)]).filter(Boolean);
 const ahora = new Date().toISOString();
