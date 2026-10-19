@@ -1,145 +1,134 @@
 {
-  "actualizado": "2026-10-19T09:23:52.475Z",
+  "actualizado": "2026-10-19T09:31:48.046Z",
   "semana": 6,
-  "noticias": [
-    {
-      "titulo": "Lamar Jackson queda fuera y sacude por completo las alineaciones",
-      "cuerpo": "La confirmación de que Lamar Jackson está fuera representa un golpe devastador para quienes confiaban en su techo como mariscal de élite. Baltimore pierde dinamismo terrestre y vertical, lo cual disminuye el valor general de sus receptores y corredores. Si dependes de Lamar, es momento urgente de explorar opciones en waivers como Drake Maye o Geno Smith. En ligas de un solo mariscal, busca enfrentamientos favorables y no arriesgues alineando alternativas desesperadas sin volumen por tierra.",
-      "etiqueta": "LESIÓN"
-    },
-    {
-      "titulo": "Drake Maye explota con tres pases de anotación consecutivos",
-      "cuerpo": "Drake Maye silenció a los escépticos ligando tres semanas consecutivas con al menos tres envíos a las diagonales. El novato de Nueva Inglaterra muestra aplomo en la bolsa, toma lecturas rápidas y capitaliza en zona roja sin cometer errores costosos. Si perdiste a figuras como Lamar Jackson o Jalen Hurts, Maye se perfila de inmediato como un reemplazo de primer nivel con calibre de mariscal titular. No lo dudes: arráncalo con total confianza para la Semana 7.",
-      "etiqueta": "ARRANCA"
-    },
-    {
-      "titulo": "Tucker Kraft evita lesión grave y mantiene valor titular en Green Bay",
-      "cuerpo": "Tremendo susto pasamos con Tucker Kraft al abandonar el emparrillado por molestias en la rodilla, pero regresó para atrapar cinco envíos y confirmar su estatus como objetivo confiable de Jordan Love. Ante las constantes bajas en el cuerpo de receptores de Green Bay, Kraft goza de rutas garantizadas y presencia constante en zona de anotación. En una posición tan castigada y escasa de consistencia, Kraft debe permanecer fijo en tu alineación titular cada semana.",
-      "etiqueta": "ARRANCA"
-    },
-    {
-      "titulo": "Tyler Higbee es la prioridad número uno en el alambre de waivers",
-      "cuerpo": "Tyler Higbee encabeza las solicitudes de waivers esta semana con más de 800 mil incorporaciones en plataformas de fantasy. El ala cerrada de los Rams resurge como la válvula de escape preferida en una ofensiva angelina que atraviesa momentos de crisis y busca respuestas urgentes. Con defensivas enfocadas en frenar los costados, Higbee garantiza un piso interesante de recepciones en formatos PPR. Vale la pena invertir prioridad alta por él si necesitas cubrir tu vacante de ala cerrada.",
-      "etiqueta": "WAIVER"
-    },
-    {
-      "titulo": "De'Von Achane causa baja y desata caos en el backfield de Miami",
-      "cuerpo": "La baja obligada de De'Von Achane desbarata los esquemas ofensivos de Miami y deja a sus dueños huérfanos de una máquina de puntos explosivos. Achane aportaba un volumen tremendo en recepciones y jugadas grandes, por lo que su ausencia obliga a voltear de inmediato hacia el comité restante del backfield de los Dolphins. Tendrás que ajustar tus alineaciones a la baja y buscar corredores disponibles con toques asegurados en la línea de gol para mitigar este tremendo vacío.",
-      "etiqueta": "LESIÓN"
-    },
-    {
-      "titulo": "TreVeyon Henderson fuerza su regreso del tobillo pero luce limitado",
-      "cuerpo": "Pese a superar milagrosamente el reporte médico con un esguince alto de tobillo, TreVeyon Henderson apenas generó 40 yardas contra los Jets y lució falto de explosividad. Jugar lesionado rara vez da dividendos inmediatos en fantasy, sobre todo para corredores novatos que dependen de cortes rápidos y aceleración. Lo más sensato para la siguiente jornada es sentarlo en la banca; espera a verlo al cien por ciento de salud antes de volver a confiarle un puesto de titular.",
-      "etiqueta": "BANCA"
-    },
-    {
-      "titulo": "Savion Williams toma el control del slot en los Packers",
-      "cuerpo": "Las lesiones de Jayden Reed y Skyy Moore le abrieron la puerta a Savion Williams, quien asumió de lleno el rol en el slot para Green Bay durante el juego estelar. Su incremento drástico en conteo de jugadas lo convierte en una opción sumamente atractiva para añadir gratis o por poco presupuesto FAAB. Jordan Love reparte el balón de maravilla y el puesto interior en este esquema genera múltiples oportunidades. Ve por él antes de que te lo ganen.",
-      "etiqueta": "WAIVER"
-    },
-    {
-      "titulo": "Breece Hall fuera de combate y deja desprotegido el ataque terrestre",
-      "cuerpo": "El panorama de los Jets sufre un revés monumental tras confirmarse que Breece Hall queda marginado por lesión. Hall era el pilar absoluto del volumen terrestre y aéreo en Nueva York, ofreciendo números confiables semana a semana. Con su baja, el ataque neoyorquino pierde potencia en zona roja y obliga a reestructurar expectativas. Busca de inmediato a sus suplentes directos o corredores de rol compartido en waivers como Jaleel McLaughlin o Dameon Pierce para rescatar la posición.",
-      "etiqueta": "LESIÓN"
-    },
-    {
-      "titulo": "Najee Harris revive su protagonismo terrestre y vuela en waivers",
-      "cuerpo": "Najee Harris experimenta un resurgimiento notable en popularidad de waivers con más de 400 mil reclamos en los últimos días. El volumen de toques entre las tacleadas y la insistencia de su equipo por establecer el juego terrestre le otorgan un piso sólido que muchos comités modernos envidian. Aunque su eficiencia no deslumbre, el volumen es el rey en fantasy football. Considéralo un corredor dos o flex bastante seguro si tu plantilla sufre por la plaga de lesiones.",
-      "etiqueta": "TENDENCIA"
-    },
-    {
-      "titulo": "Christian Watson decepciona con costosos errores pese a su volumen profundo",
-      "cuerpo": "Christian Watson volvió a ser un dolor de cabeza para sus dueños tras dejar escapar un pase de anotación cantado contra Dallas. A pesar de registrar 64 yardas, su incapacidad de asegurar jugadas grandes y su bajo volumen de tres recepciones limitan drásticamente su techo semanal. En ligas tradicionales, Watson se ha vuelto un volado incontrolable de 'boom or bust'. Mándalo a la banca hasta que demuestre manos seguras y una química más sólida con Jordan Love.",
-      "etiqueta": "BANCA"
-    }
+  "temporada": "2026",
+  "semanas": [
+    2,
+    3,
+    4,
+    5,
+    6
   ],
+  "noticias": [],
   "lesionados": [
     {
-      "jugador": "De'Von Achane",
-      "equipo": "MIA",
+      "id": "9226",
       "estatus": "Fuera"
     },
     {
-      "jugador": "Lamar Jackson",
-      "equipo": "BAL",
+      "id": "4881",
       "estatus": "Fuera"
     },
     {
-      "jugador": "Saquon Barkley",
-      "equipo": "PHI",
+      "id": "4866",
       "estatus": "Fuera"
     },
     {
-      "jugador": "Jeremiyah Love",
-      "equipo": "ARI",
+      "id": "13287",
       "estatus": "Fuera"
     },
     {
-      "jugador": "Jalen Hurts",
-      "equipo": "PHI",
+      "id": "6904",
       "estatus": "Fuera"
     },
     {
-      "jugador": "Breece Hall",
-      "equipo": "NYJ",
+      "id": "8155",
       "estatus": "Fuera"
     },
     {
-      "jugador": "Rashee Rice",
-      "equipo": "KC",
+      "id": "10229",
       "estatus": "Fuera"
     },
     {
-      "jugador": "Travis Etienne",
-      "equipo": "NO",
+      "id": "7543",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "11635",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "7526",
+      "estatus": "Duda"
+    },
+    {
+      "id": "5892",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12508",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "9499",
+      "estatus": "Duda"
+    },
+    {
+      "id": "12512",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12518",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "4983",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "13286",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "2216",
+      "estatus": "Duda"
+    },
+    {
+      "id": "12534",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "13281",
       "estatus": "Fuera"
     }
   ],
-  "waivers": [
-    {
-      "jugador": "Tyler Higbee",
-      "posicion": "TE",
-      "agregados": 867159
-    },
-    {
-      "jugador": "Najee Harris",
-      "posicion": "RB",
-      "agregados": 420645
-    },
-    {
-      "jugador": "Jaleel McLaughlin",
-      "posicion": "RB",
-      "agregados": 374110
-    },
-    {
-      "jugador": "Omar Cooper",
-      "posicion": "WR",
-      "agregados": 309472
-    },
-    {
-      "jugador": "Dameon Pierce",
-      "posicion": "RB",
-      "agregados": 299240
-    },
-    {
-      "jugador": "Roschon Johnson",
-      "posicion": "RB",
-      "agregados": 283584
-    },
-    {
-      "jugador": "Keon Coleman",
-      "posicion": "WR",
-      "agregados": 215541
-    },
-    {
-      "jugador": "Darren Waller",
-      "posicion": "TE",
-      "agregados": 201591
-    }
+  "agregados": [
+    "3271",
+    "7528",
+    "11439",
+    "13276",
+    "8129",
+    "10235",
+    "11637",
+    "2505",
+    "11783",
+    "11624",
+    "8132",
+    "8136",
+    "8134",
+    "7553",
+    "10213"
+  ],
+  "soltados": [
+    "3321",
+    "13150",
+    "12533",
+    "9511",
+    "11630",
+    "3271",
+    "11539",
+    "2505",
+    "13330",
+    "11637",
+    "11581",
+    "9756",
+    "11610",
+    "5045",
+    "5012"
   ],
   "duelo": {
-    "a": "Drake Maye",
-    "b": "Jordan Love",
-    "veredicto": "Arranca a Drake Maye. Viene encendido con tres semanas al hilo de tres touchdowns y no sufre por drops de sus receptores, a diferencia de Love, quien sigue batallando con la inconsistencia de su perímetro en zona roja."
+    "a": "—",
+    "b": "—",
+    "veredicto": ""
   }
 }
