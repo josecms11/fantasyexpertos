@@ -1,11 +1,11 @@
 {
-  "fecha": "2026-10-19T19:28:09.242Z",
+  "fecha": "2026-10-19T20:02:22.090Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.5s] YouTube: 13 videos",
-    "[1.2s] Sleeper: 356 jugadores, semana 6",
-    "[2.3s] Calendario: 32 equipos, 272 juegos",
-    "[3.2s] Gemini falló {\"error\":{\"code\":503,\"message\":\"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\"status\":\"UNAVAILABLE\"}}",
-    "[3.6s] Listo: 0 noticias nuevas (0 exclusivas), 356 jugadores, archivo 46"
+    "[0.9s] YouTube: 13 videos",
+    "[1.5s] Sleeper: 355 jugadores, semana 6",
+    "[3.3s] Calendario: 32 equipos, 272 juegos",
+    "[42.5s] Gemini falló {\"error\":{\"code\":503,\"message\":\"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\"status\":\"UNAVAILABLE\"}}",
+    "[42.5s] Listo: 0 noticias nuevas (0 exclusivas), 355 jugadores, archivo 46"
   ]
 }
