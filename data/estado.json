@@ -1,11 +1,12 @@
 {
-  "fecha": "2026-10-19T20:37:18.807Z",
+  "fecha": "2026-10-19T21:04:20.041Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.5s] YouTube: 13 videos",
-    "[1.1s] Sleeper: 358 jugadores, semana 6",
-    "[2.3s] Calendario: 32 equipos, 272 juegos",
-    "[122.8s] Gemini sin respuesta The operation was aborted due to timeout",
-    "[122.8s] Listo: 0 noticias nuevas (0 exclusivas), 358 jugadores, archivo 46"
+    "[25.0s] YouTube falló The operation was aborted due to timeout",
+    "[25.0s] YouTube: sin datos",
+    "[26.0s] Sleeper: 358 jugadores, semana 6",
+    "[28.3s] Calendario: 32 equipos, 272 juegos",
+    "[31.9s] Gemini falló {\"error\":{\"code\":503,\"message\":\"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\"status\":\"UNAVAILABLE\"}}",
+    "[31.9s] Listo: 0 noticias nuevas (0 exclusivas), 358 jugadores, archivo 46"
   ]
 }
