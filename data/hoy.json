@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-19T10:30:27.412Z",
+  "actualizado": "2026-10-19T10:37:58.531Z",
   "ultimaIA": "2026-10-19T10:17:51.174Z",
   "semana": 6,
   "temporada": "2026",
@@ -195,7 +195,7 @@
   ],
   "lesionados": [
     {
-      "id": "9226",
+      "id": "6904",
       "estatus": "Fuera"
     },
     {
@@ -203,43 +203,35 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4866",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "13287",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "6904",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "8155",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "10229",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "7543",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "11635",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "7526",
+      "id": "2216",
       "estatus": "Duda"
     },
     {
-      "id": "5892",
+      "id": "4199",
+      "estatus": "Duda"
+    },
+    {
+      "id": "12518",
       "estatus": "Fuera"
     },
     {
-      "id": "12508",
+      "id": "11559",
+      "estatus": "Duda"
+    },
+    {
+      "id": "10236",
+      "estatus": "Duda"
+    },
+    {
+      "id": "5872",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12534",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "8121",
       "estatus": "Fuera"
     },
     {
@@ -247,31 +239,59 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12518",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "4983",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "13286",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "2216",
+      "id": "7526",
       "estatus": "Duda"
     },
     {
-      "id": "12534",
+      "id": "9486",
+      "estatus": "Duda"
+    },
+    {
+      "id": "2449",
+      "estatus": "Duda"
+    },
+    {
+      "id": "4035",
+      "estatus": "Duda"
+    },
+    {
+      "id": "13287",
       "estatus": "Fuera"
     },
     {
-      "id": "13281",
+      "id": "5844",
       "estatus": "Fuera"
     },
     {
-      "id": "4892",
+      "id": "5892",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "7571",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12533",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "11630",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "8155",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "11635",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "10229",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12509",
       "estatus": "Fuera"
     }
   ],
