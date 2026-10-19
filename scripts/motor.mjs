@@ -109,9 +109,11 @@ const liga = n => (n.jugadores || []).map(x => porNombre[norm(x)]).filter(Boolea
 const ahora = new Date().toISOString();
 const sello = ahora.replace(/\D/g, '').slice(0, 12);
 
-// 1) Noticias del ciclo
-const tit = await titulares();
-const ia = await gemini(VOZ + 'Escribe exactamente 10 noticias de fantasy a partir de estos titulares de medios y datos. Forma: ' + FORMATO + ' En el mismo JSON agrega "duelo":{"a":"jugador","b":"jugador","veredicto":"a quién arrancar y por qué, máximo 40 palabras"}.' +
+// 1) Noticias del ciclo (con IA solo una vez por hora para cuidar la cuota gratis)
+const prevHoy = leer('data/hoy.json', {});
+const tocaIA = !prevHoy.ultimaIA || Date.now() - Date.parse(prevHoy.ultimaIA) > 55 * 60e3;
+const tit = tocaIA ? await titulares() : [];
+const ia = !tocaIA ? null : await gemini(VOZ + 'Escribe exactamente 10 noticias de fantasy a partir de estos titulares de medios y datos. Forma: ' + FORMATO + ' En el mismo JSON agrega "duelo":{"a":"jugador","b":"jugador","veredicto":"a quién arrancar y por qué, máximo 40 palabras"}.' +
   `\nLesionados: ${JSON.stringify(nombres(lesionados.map(x => x.id)))}\nMás agregados: ${JSON.stringify(nombres(s.agregados))}\nMás soltados: ${JSON.stringify(nombres(s.soltados))}\nYa publicadas (no repitas): ${JSON.stringify(archivo.slice(0, 25).map(n => n.titulo))}\nTITULARES:\n${tit.join('\n')}`);
 const nuevas = (ia?.noticias || []).map((n, i) => ({ id: `n${sello}${String(i).padStart(2, '0')}`, fecha: ahora, semana: s.semana, ...n, jugadores: liga(n) }));
 
@@ -125,6 +127,7 @@ if (pendientes.length) {
   exclusivas = (ex?.noticias || []).map((n, i) => ({ id: `x${sello}${String(i).padStart(2, '0')}`, fecha: ahora, semana: s.semana, exclusivo: true, ...n, jugadores: liga(n) }));
 }
 const todasNuevas = [...exclusivas, ...nuevas];
+const ultimaIA = nuevas.length ? ahora : prevHoy.ultimaIA;
 const nuevoArchivo = [...todasNuevas, ...archivo].slice(0, 600);
 if (todasNuevas.length) guardar('data/archivo.json', nuevoArchivo);
 
@@ -148,10 +151,10 @@ guardar('data/semanas.json', resumenes);
 
 // 4) Publicar
 const hoy = {
-  actualizado: ahora, semana: s.semana, temporada: s.temporada, semanas: s.semHist,
-  noticias: (todasNuevas.length ? todasNuevas : nuevoArchivo.slice(0, 10)),
+  actualizado: ahora, ultimaIA, semana: s.semana, temporada: s.temporada, semanas: s.semHist,
+  noticias: (todasNuevas.length ? todasNuevas : (prevHoy.noticias && prevHoy.noticias[0] && prevHoy.noticias[0].claves ? prevHoy.noticias : nuevoArchivo.slice(0, 10))),
   lesionados, agregados: s.agregados, soltados: s.soltados,
-  duelo: ia?.duelo || leer('data/hoy.json', {}).duelo || null
+  duelo: ia?.duelo || prevHoy.duelo || null
 };
 guardar('data/jugadores.json', s.jugadores);
 guardar('data/hoy.json', hoy, true);

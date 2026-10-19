@@ -203,7 +203,7 @@ function noticias(q) {
   return `<div class="page">${crumbs([['', 'Noticias']])}<div class="wrap"><section class="block">
     <div class="head"><h2 class="px">NOTICIAS <span>FX</span></h2><small class="px">${esc(actualizado())}</small></div>
     <div class="chips">${['TODO', ...ETIQUETAS].map(t => `<a class="chip ${t === f ? 'on' : ''}" href="#/noticias${t === 'TODO' ? '' : '?tipo=' + encodeURIComponent(t)}">${t}</a>`).join('')}</div>
-    <div class="news stagger">${lista.map((n, i) => newsCard(n, i === 0 && f === 'TODO')).join('') || '<div class="empty">No hay noticias de este tipo hoy.</div>'}</div>
+    <div class="news lista stagger">${lista.map((n, i) => newsCard(n, i === 0 && f === 'TODO')).join('') || '<div class="empty">No hay noticias de este tipo hoy.</div>'}</div>
   </section></div></div>`;
 }
 
@@ -275,6 +275,7 @@ function jugador(id) {
         <div><small>ESTATURA</small><b>${altura(j.alt)}</b></div><div><small>PESO</small><b>${j.peso ? esc(j.peso) + ' lb' : '–'}</b></div>
         <div style="grid-column:1/-1"><small>UNIVERSIDAD</small><b>${esc(j.col || '–')}</b></div></div></div>
     </div>
+    <section class="block"><div class="head"><h2 class="px">MATCHUPS <span>EN VIVO</span></h2><a class="all" href="#/partidos">TODOS LOS PARTIDOS ›</a></div><div id="home-matches">${homeMatches()}</div></section>
     <section class="block"><div class="head"><h2 class="px">NOTICIAS <span>SOBRE ÉL</span></h2></div>
       <div class="news stagger">${notas.map(n => newsCard(n)).join('') || '<div class="empty">Hoy no hay noticias sobre este jugador.</div>'}</div></section>
     <section class="block grid g2">
@@ -421,7 +422,7 @@ function exclusivo() {
     <div class="nhero scn" style="--c1:#3A2A05;--c2:#FFD45C">${escena('TENDENCIA', '', '')}<div class="grid-in"><div class="txt">
       <span class="tagx" style="display:inline-block;background:#FFD45C">★ PREMIUM · GRATIS POR AHORA</span>
       <h1>EXCLUSIVO FX</h1><p style="color:#fff;font-weight:600;font-size:18px;margin:12px 0 0;max-width:560px">Información que no vas a encontrar en otro lado, de nuestra red de reporteros, desarrollada por los expertos.</p></div></div></div>
-    <section class="block"><div class="news stagger">${L.map((n, i) => newsCard(n, i === 0)).join('') || '<div class="empty">La primera nota exclusiva llega muy pronto. Mientras, revisa las <a href="#/noticias">noticias del día</a>.</div>'}</div></section>
+    <section class="block"><div class="news lista stagger">${L.map((n, i) => newsCard(n, i === 0)).join('') || '<div class="empty">La primera nota exclusiva llega muy pronto. Mientras, revisa las <a href="#/noticias">noticias del día</a>.</div>'}</div></section>
   </div></div>`;
 }
 function temporada() {
@@ -484,6 +485,134 @@ function media() {
 }
 const ctaRedes = () => `<div class="tcta"><div><span class="px" style="font-size:9px;color:#25F4EE">¿LO QUIERES EN VIDEO?</span><h3>Esta y más jugadas, explicadas en 60 segundos</h3><p>Síguenos para no perderte nada antes del kickoff.</p></div><div class="socials">${redBtn('tiktok', 'tt', 'TIKTOK')}${redBtn('youtube', 'yt', 'YOUTUBE')}${redBtn('spotify', 'sp', 'PODCAST')}</div></div>`;
 
+
+/* ---------- EN VIVO: marcadores, matchups y jugadas (ESPN, gratis, se refresca solo) ---------- */
+const AB = { WSH: 'WAS', JAC: 'JAX', LA: 'LAR' };
+let G = [], gPrev = {}, gTimer;
+async function cargaPartidos() {
+  try {
+    const r = await fetch('https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard');
+    const j = await r.json();
+    G = (j.events || []).map(e => {
+      const c = e.competitions[0], st = e.status || c.status, sit = c.situation || {};
+      const eq = c.competitors.map(t => ({
+        ab: AB[t.team.abbreviation] || t.team.abbreviation, nombre: t.team.displayName, local: t.homeAway === 'home', id: t.team.id,
+        pts: +t.score || 0, rec: (t.records && t.records[0] && t.records[0].summary) || '',
+        lideres: (t.leaders || []).map(l => ({ cat: l.shortDisplayName || l.name, val: l.leaders && l.leaders[0] && l.leaders[0].displayValue, quien: l.leaders && l.leaders[0] && l.leaders[0].athlete && l.leaders[0].athlete.displayName })).filter(x => x.quien)
+      })).sort((a, b) => a.local - b.local);
+      return { id: e.id, fecha: e.date, estado: st.type.state, detalle: st.type.shortDetail, reloj: st.displayClock, cuarto: st.period,
+        sede: c.venue && c.venue.fullName, tv: (c.broadcasts && c.broadcasts[0] && c.broadcasts[0].names || []).join(', '),
+        visita: eq[0], local: eq[1], posesion: sit.possession, yarda: sit.yardLine, downs: sit.downDistanceText, ultima: sit.lastPlay && sit.lastPlay.text, zonaRoja: sit.isRedZone,
+        semana: j.week && j.week.number };
+    });
+    // detectar anotaciones para animarlas
+    const anot = [];
+    G.forEach(g => { const p = gPrev[g.id]; if (p) [g.visita, g.local].forEach((t, k) => { const d = t.pts - (k ? p.l : p.v); if (d >= 6) anot.push({ g, t, d }); else if (d === 3) anot.push({ g, t, d }); }); gPrev[g.id] = { v: g.visita.pts, l: g.local.pts }; });
+    pintaMarcadores(); anot.forEach(celebra);
+    if (/^#\/(partidos|partido)/.test(location.hash) || !location.hash || location.hash === '#/') refrescaVista();
+  } catch (e) { console.log('Marcadores no disponibles', e); }
+  clearTimeout(gTimer);
+  gTimer = setTimeout(cargaPartidos, G.some(g => g.estado === 'in') ? 20000 : 120000);
+}
+const enVivo = () => { const n = G.filter(g => g.estado === 'in').length; const d = document.querySelector('.tb-live'); if (d) d.classList.toggle('on', n > 0); return n; };
+function pintaMarcadores() {
+  const bar = document.getElementById('scorebar'); if (!bar || !G.length) return;
+  const orden = [...G].sort((a, b) => ({ in: 0, pre: 1, post: 2 }[a.estado] - { in: 0, pre: 1, post: 2 }[b.estado]) || Date.parse(a.fecha) - Date.parse(b.fecha));
+  bar.innerHTML = `<span class="sb-tag px">${enVivo() ? '<i class="blink"></i>EN VIVO' : 'SEMANA ' + (G[0].semana || '')}</span><div class="sb-list">${orden.map(g => `<a class="sb ${g.estado}" href="#/partido/${g.id}">
+    <span class="sb-t ${ganando(g, 0)}">${helmet(g.visita.ab, '', 22)}${esc(g.visita.ab)}<b>${g.estado === 'pre' ? '' : g.visita.pts}</b></span>
+    <span class="sb-t ${ganando(g, 1)}">${helmet(g.local.ab, '', 22)}${esc(g.local.ab)}<b>${g.estado === 'pre' ? '' : g.local.pts}</b></span>
+    <small>${esc(g.estado === 'pre' ? horaJuego(g) : g.detalle)}</small></a>`).join('')}</div>`;
+}
+const ganando = (g, k) => g.estado === 'pre' ? '' : (k ? g.local.pts > g.visita.pts : g.visita.pts > g.local.pts) ? 'gana' : '';
+const horaJuego = g => new Date(g.fecha).toLocaleString('es-MX', { weekday: 'short', hour: 'numeric', minute: '2-digit' }).toUpperCase();
+function celebra({ g, t, d }) {
+  const el = document.createElement('div');
+  el.className = 'celebra'; el.style.cssText = vars(t.ab);
+  el.innerHTML = `${escena('ARRANCA', t.ab, '')}<div class="ce-in">${helmet(t.ab, '', 90, false, 'bob')}<b class="px">${d >= 6 ? 'TOUCHDOWN!' : 'FIELD GOAL!'}</b><span>${esc(t.nombre)} · ${g.visita.ab} ${g.visita.pts} – ${g.local.pts} ${g.local.ab}</span></div>`;
+  el.onclick = () => { location.hash = '#/partido/' + g.id; el.remove(); };
+  document.body.appendChild(el); setTimeout(() => el.remove(), 5200);
+}
+const fantasyDe = ab => P.filter(j => j.team === ab).sort((a, b) => (a.rank || 1e9) - (b.rank || 1e9)).slice(0, 4);
+const ptsSemana = j => { const h = j.hist || []; return h.length ? h[h.length - 1] : null; };
+function matchCard(g) {
+  const v = g.visita, l = g.local, pos = g.posesion;
+  return `<a class="match ${g.estado} ${g.zonaRoja ? 'rz' : ''}" href="#/partido/${g.id}" style="--cv:${col(v.ab)[0]};--cl:${col(l.ab)[0]}">
+    <span class="m-top px"><span>${g.estado === 'in' ? '<i class="blink"></i>EN VIVO · ' + esc(g.detalle) : g.estado === 'post' ? 'FINAL' : esc(horaJuego(g))}</span><span>${esc(g.tv || '')}</span></span>
+    <span class="m-face">
+      <span class="m-team ${ganando(g, 0)}">${helmet(v.ab, '', 84)}<b>${esc(v.ab)}</b><small>${esc(v.rec)}</small>${pos === v.id ? '<i class="ball"></i>' : ''}</span>
+      <span class="m-score px">${g.estado === 'pre' ? 'VS' : `${v.pts}<em>–</em>${l.pts}`}</span>
+      <span class="m-team ${ganando(g, 1)}">${helmet(l.ab, '', 84, true)}<b>${esc(l.ab)}</b><small>${esc(l.rec)}</small>${pos === l.id ? '<i class="ball"></i>' : ''}</span>
+    </span>
+    ${g.estado === 'in' ? `<span class="m-field">${campo(g)}</span><span class="m-play">${esc(g.downs || '')}${g.ultima ? ' · ' + esc(g.ultima) : ''}</span>` : ''}
+    <span class="m-fx"><span>${fantasyDe(v.ab).slice(0, 2).map(j => `${esc(j.n.split(' ').pop())} <b>${n1(g.estado === 'pre' ? j.prom : ptsSemana(j))}</b>`).join(' · ')}</span><span>${fantasyDe(l.ab).slice(0, 2).map(j => `${esc(j.n.split(' ').pop())} <b>${n1(g.estado === 'pre' ? j.prom : ptsSemana(j))}</b>`).join(' · ')}</span></span>
+  </a>`;
+}
+function campo(g) {
+  // yardLine de ESPN: 0–100 desde la zona de anotación del local
+  const y = Math.max(0, Math.min(100, +g.yarda || 50));
+  const x = 8 + y * 0.64;
+  const dueño = g.posesion === g.local.id ? g.local.ab : g.visita.ab;
+  return `<svg viewBox="0 0 80 14" preserveAspectRatio="none" shape-rendering="crispEdges" aria-label="Posición del balón">
+    <rect width="80" height="14" fill="#12441F"/><rect width="8" height="14" fill="${col(g.visita.ab)[0]}"/><rect x="72" width="8" height="14" fill="${col(g.local.ab)[0]}"/>
+    ${Array.from({ length: 11 }, (_, i) => `<rect x="${8 + i * 6.4}" width=".4" height="14" fill="#fff" opacity=".35"/>`).join('')}
+    <rect x="${x - 1.5}" y="5" width="3" height="4" fill="#8B4A2B"><animate attributeName="y" values="5;4;5" dur=".6s" repeatCount="indefinite" calcMode="discrete"/></rect>
+    <rect x="${x}" y="0" width=".5" height="14" fill="${col(dueño)[1]}"/></svg>`;
+}
+function partidos() {
+  titulo('Partidos');
+  const grupos = [['in', 'EN VIVO'], ['pre', 'PRÓXIMOS'], ['post', 'FINALES']];
+  return `<div class="page">${crumbs([['', 'Partidos']])}<div class="wrap"><section class="block">
+    <div class="head"><h2 class="px">MATCHUPS <span>SEMANA ${esc(G[0] ? G[0].semana : D.semana)}</span></h2><small class="px">${enVivo() ? 'SE ACTUALIZA CADA 20 SEG' : 'MARCADORES EN VIVO'}</small></div>
+    ${G.length ? grupos.map(([k, t]) => { const L = G.filter(g => g.estado === k); return L.length ? `<h3 class="px grp">${t} · ${L.length}</h3><div class="matches">${L.map(matchCard).join('')}</div>` : ''; }).join('') : '<div class="empty">Cargando marcadores…</div>'}
+  </section></div></div>`;
+}
+function partido(id) {
+  const g = G.find(x => x.id === id);
+  if (!g) return G.length ? noEncontrado() : '<div class="wrap loading"><p class="px blink">CARGANDO PARTIDO…</p></div>';
+  titulo(`${g.visita.ab} vs ${g.local.ab}`);
+  const lado = t => `<div class="card" style="${vars(t.ab)};border-color:var(--c1)"><div class="head"><h3 class="px" style="color:var(--c2)">${esc(t.nombre).toUpperCase()}</h3><a class="all" href="#/equipo/${t.ab}">EQUIPO ›</a></div>
+    ${t.lideres.length ? `<div class="leaders">${t.lideres.map(l => `<div><small>${esc(l.cat)}</small><b>${esc(l.quien)}</b><span>${esc(l.val || '')}</span></div>`).join('')}</div>` : ''}
+    <p class="sub" style="margin-top:14px">Fantasy: ${g.estado === 'pre' ? 'promedio de la temporada' : 'puntos PPR de esta semana'}</p>
+    <div class="plist">${fantasyDe(t.ab).map(j => prow(j, `<span class="num">${n1(g.estado === 'pre' ? j.prom : ptsSemana(j))}</span>`)).join('')}</div></div>`;
+  return `<div class="page">${crumbs([['#/partidos', 'Partidos'], ['', g.visita.ab + ' vs ' + g.local.ab]])}<div class="wrap">
+    <div class="jumbo game" style="--cv:${col(g.visita.ab)[0]};--cl:${col(g.local.ab)[0]}">
+      <div class="jumbo-top px"><span>${g.estado === 'in' ? '<i class="blink" style="display:inline-block;width:8px;height:8px;background:var(--bad);margin-right:8px"></i>EN VIVO' : g.estado === 'post' ? 'FINAL' : esc(horaJuego(g))}</span><span>${esc(g.sede || '')}</span></div>
+      <div class="g-face">
+        <a class="g-team" href="#/equipo/${g.visita.ab}">${helmet(g.visita.ab, '', 150, false, g.posesion === g.visita.id ? 'bob' : '')}<b>${esc(g.visita.nombre)}</b><small>${esc(g.visita.rec)} · VISITA</small></a>
+        <div class="g-score px"><span class="${ganando(g, 0)}">${g.estado === 'pre' ? '–' : g.visita.pts}</span><em>${g.estado === 'in' ? esc(g.detalle) : g.estado === 'post' ? 'FINAL' : 'VS'}</em><span class="${ganando(g, 1)}">${g.estado === 'pre' ? '–' : g.local.pts}</span></div>
+        <a class="g-team" href="#/equipo/${g.local.ab}">${helmet(g.local.ab, '', 150, true, g.posesion === g.local.id ? 'bob' : '')}<b>${esc(g.local.nombre)}</b><small>${esc(g.local.rec)} · LOCAL</small></a>
+      </div>
+      ${g.estado === 'in' ? `<div class="g-field">${campo(g)}</div><div class="led" style="min-height:auto;font-size:13px"><small>${esc(g.downs || '')}${g.zonaRoja ? ' · ZONA ROJA' : ''}</small>${esc(g.ultima || 'Esperando la siguiente jugada…')}</div>` : ''}
+    </div>
+    <section class="block grid g2">${lado(g.visita)}${lado(g.local)}</section>
+  </div></div>`;
+}
+function lideres(q) {
+  titulo('Líderes');
+  const modo = q.get('ver') || 'temporada';
+  const val = j => modo === 'semana' ? ptsSemana(j) : j.total;
+  return `<div class="page">${crumbs([['', 'Líderes fantasy']])}<div class="wrap"><section class="block">
+    <div class="head"><h2 class="px">LÍDERES <span>FANTASY</span></h2><small class="px">PUNTOS PPR</small></div>
+    <div class="chips"><a class="chip ${modo === 'temporada' ? 'on' : ''}" href="#/lideres">TEMPORADA</a><a class="chip ${modo === 'semana' ? 'on' : ''}" href="#/lideres?ver=semana">ESTA SEMANA</a></div>
+    <div class="grid g3 stagger">${Object.keys(POSICIONES).map(p => {
+      const L = P.filter(j => j.pos === p && val(j) != null).sort((a, b) => val(b) - val(a)).slice(0, 8);
+      return `<div class="card"><div class="head"><h3 class="px" style="color:var(--accent)">${p}</h3><a class="all" href="#/posicion/${p}">RANKING ›</a></div>
+        ${L[0] ? `<a class="lead1" href="#/jugador/${L[0].id}" style="${vars(L[0].team)}">${helmet(L[0].team, L[0].num, 64, false, 'bob')}<span><small class="px">Nº1</small><b>${esc(L[0].n)}</b><em class="px">${n1(val(L[0]))} PTS</em></span></a>` : ''}
+        <div class="plist">${L.slice(1).map((j, i) => prow(j, `<span class="num">${n1(val(j))}</span>`, i + 2)).join('')}</div></div>`;
+    }).join('')}</div></section></div></div>`;
+}
+function refrescaVista() {
+  const h = location.hash;
+  if (/^#\/partidos/.test(h)) { app.innerHTML = partidos(); }
+  else if (/^#\/partido\//.test(h)) { app.innerHTML = partido(h.split('/')[2]); }
+  else { const box = document.getElementById('home-matches'); if (box) box.innerHTML = homeMatches(); }
+}
+function homeMatches() {
+  if (!G.length) return '<div class="empty">Cargando marcadores…</div>';
+  const L = [...G].sort((a, b) => ({ in: 0, pre: 1, post: 2 }[a.estado] - { in: 0, pre: 1, post: 2 }[b.estado]) || Date.parse(a.fecha) - Date.parse(b.fecha)).slice(0, 4);
+  return `<div class="matches">${L.map(matchCard).join('')}</div>`;
+}
+
 const noEncontrado = () => { titulo('No encontrado'); return `<div class="page wrap loading"><p class="px" style="color:var(--accent)">FUMBLE</p><p>Esta página no existe o el dato aún no llega.</p><a class="btn" href="#/">VOLVER AL INICIO</a></div>`; };
 const actualizado = () => { const f = new Date(D.actualizado); return 'ACTUALIZADO ' + f.toLocaleString('es-MX', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }).toUpperCase(); };
 
@@ -504,6 +633,9 @@ function router() {
     case 'posicion': html = posicion(a, q); break;
     case 'equipos': html = equipos(); break;
     case 'equipo': html = equipo(a); break;
+    case 'partidos': html = partidos(); break;
+    case 'partido': html = partido(a); break;
+    case 'lideres': html = lideres(q); break;
     case 'media': html = media(); break;
     case 'exclusivo': html = exclusivo(); break;
     case 'temporada': html = temporada(); break;
@@ -514,6 +646,8 @@ function router() {
   }
   app.innerHTML = html;
   scrollTo({ top: 0 });
+  document.querySelectorAll('.tabbar a').forEach(l => l.classList.toggle('act', l.dataset.s === (seccion || '') || (seccion === 'noticia' && l.dataset.s === 'noticias') || (seccion === 'partido' && l.dataset.s === 'partidos')));
+  document.querySelector('.links').classList.remove('open');
   document.querySelectorAll('.links a').forEach(l => l.classList.toggle('act', l.dataset.s === (seccion || '') || (seccion === 'noticia' && l.dataset.s === 'noticias')));
   if (seccion === 'posicion') montaTabla(a);
   if (!seccion) arrancaCRT();
@@ -594,6 +728,9 @@ Promise.all([
   D = hoy; D.archivo = Array.isArray(archivo) ? archivo : []; D.resumenes = resumenes || {}; D.redes = redes || {}; D.videos = videos || {};
   const pie = document.getElementById('pie-redes'); if (pie) pie.innerHTML = redesRow();
   buscador();
+  cargaPartidos();
+  const mas = document.getElementById('tb-mas');
+  if (mas) mas.onclick = () => { document.querySelector('.links').classList.toggle('open'); mas.classList.toggle('act'); };
   addEventListener('hashchange', router);
   router();
 }).catch(e => { app.innerHTML = '<div class="wrap loading"><p class="px">SIN SEÑAL</p><p>No pudimos cargar los datos. Intenta de nuevo en un momento.</p></div>'; console.error(e); });

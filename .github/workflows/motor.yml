@@ -1,7 +1,7 @@
 name: Motor Fantasy Expertos
 on:
   schedule:
-    - cron: "7 * * * *"   # cada hora
+    - cron: "*/10 * * * *"   # cada 10 min (datos); las noticias con IA se escriben cada hora
   workflow_dispatch:
 permissions:
   contents: write
