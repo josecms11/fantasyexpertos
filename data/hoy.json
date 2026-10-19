@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-19T19:08:48.286Z",
+  "actualizado": "2026-10-19T19:28:07.894Z",
   "semana": 6,
   "temporada": "2026",
   "semanas": [
@@ -9,10 +9,194 @@
     5,
     6
   ],
-  "noticias": [],
+  "noticias": [
+    {
+      "id": "n20261019171300",
+      "fecha": "2026-10-19T17:13:51.331Z",
+      "semana": 6,
+      "titulo": "Jalen Hurts fuera el resto del año",
+      "claves": [
+        "Coágulos en pulmones lo apartan toda la temporada.",
+        "Debe ser cortado de inmediato en ligas redraft.",
+        "El ataque de Philadelphia pierde techo dramáticamente."
+      ],
+      "cuerpo": "La noticia sobre coágulos pulmonares deja fuera a Jalen Hurts el resto de la campaña. Es un golpe brutal si lo tenías comandando tu equipo. En formatos redraft no te tientes el corazón: mándalo a la agencia libre para rescatar un lugar en la banca. Sin su amenaza por tierra y su efectividad en zona roja vía tush push, todo el ecosistema de Philadelphia pierde brillo. AJ Brown baja a rango WR2 alto mientras esperan nuevo pasador.",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "PHI",
+      "jugadores": [
+        "6904",
+        "5859"
+      ]
+    },
+    {
+      "id": "n20261019171301",
+      "fecha": "2026-10-19T17:13:51.331Z",
+      "semana": 6,
+      "titulo": "Kyren Williams reclama volumen en Los Ángeles",
+      "claves": [
+        "Registró apenas 13 toques en la Semana 6.",
+        "Cuestionó públicamente su poca participación ante Arizona.",
+        "Su condición de RB1 confiable entra en duda."
+      ],
+      "cuerpo": "Kyren Williams alzó la voz tras firmar apenas trece toques en la dolorosa caída frente a Arizona. El corredor estelar no ocultó su molestia ante la falta de oportunidades en momentos cruciales. Para nosotros en fantasy, ver a Sean McVay rotando tanto el backfield es una bandera amarilla gigantesca. Williams sigue siendo arrancable por puro talento, pero si no recupera su cuota dominante de toques, su techo caerá inevitablemente a territorio de RB2 bajo.",
+      "etiqueta": "TENDENCIA",
+      "impacto": "BAJA",
+      "equipo": "LAR",
+      "jugadores": [
+        "8150"
+      ]
+    },
+    {
+      "id": "n20261019171302",
+      "fecha": "2026-10-19T17:13:51.331Z",
+      "semana": 6,
+      "titulo": "Brian Thomas Jr. se apaga en Jacksonville",
+      "claves": [
+        "Fue congelado en la segunda mitad del juego.",
+        "Los rumores de canje explotan en la liga.",
+        "Momento de sentarlo hasta ver un rol claro."
+      ],
+      "cuerpo": "La situación con Brian Thomas Jr. se puso color de hormiga. Tras ser borrado por completo en la segunda mitad contra Houston, los rumores sobre un posible traspaso alcanzaron su punto máximo. Aquel novato dinámico que deslumbraba parece atrapado en un esquema inoperante. En este momento es imposible meterlo en tu alineación inicial. Congélalo en la banca o úsalo como carnada barata en un intercambio si algún rival todavía cree en su potencial atlético.",
+      "etiqueta": "BANCA",
+      "impacto": "BAJA",
+      "equipo": "JAX",
+      "jugadores": []
+    },
+    {
+      "id": "n20261019171303",
+      "fecha": "2026-10-19T17:13:51.331Z",
+      "semana": 6,
+      "titulo": "J.J. McCarthy presiona por la titularidad neoyorquina",
+      "claves": [
+        "Los Giants evalúan cambio inmediato en los controles.",
+        "Winston dejó dudas serias en la última derrota.",
+        "Agregado de alto riesgo pero intrigante en Superflex."
+      ],
+      "cuerpo": "La controversia en los controles de los Giants arde con fuerza. Tras las pifias constantes de Jameis Winston, el cuerpo técnico analiza seriamente darle las llaves de la ofensiva al novato J.J. McCarthy de inmediato. En ligas tradicionales de un solo pasador no te apresures, pero en formatos Superflex o dinastía debes correr a la agencia libre por él antes del reporte oficial. Su movilidad y brazo fresco podrían revivir a los receptores del equipo.",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "NYG",
+      "jugadores": [
+        "11565"
+      ]
+    },
+    {
+      "id": "n20261019171304",
+      "fecha": "2026-10-19T17:13:51.331Z",
+      "semana": 6,
+      "titulo": "C.J. Stroud recupera su magia en Houston",
+      "claves": [
+        "Despachó una actuación dominante en la Semana 6.",
+        "Vuelve a perfilarse como titular indiscutible semanal.",
+        "La química con sus receptores luce en plenitud."
+      ],
+      "cuerpo": "C.J. Stroud cambió la narrativa por completo con un despliegue formidable que recordó su mejor versión. El pasador de Houston superó las dudas iniciales de la temporada, conectando pases quirúrgicos y mostrando aplomo bajo presión. Si estabas dudando sobre alinearlo frente a defensivas respetables, respira tranquilo. Stroud vuelve a posicionarse con firmeza en el top 8 de mariscales de campo. Prepárate para mantenerlo en tu alineación titular cada semana sin pensarlo dos veces.",
+      "etiqueta": "ARRANCA",
+      "impacto": "SUBE",
+      "equipo": "HOU",
+      "jugadores": [
+        "9758"
+      ]
+    },
+    {
+      "id": "n20261019171305",
+      "fecha": "2026-10-19T17:13:51.331Z",
+      "semana": 6,
+      "titulo": "Andy Dalton llega al rescate en Atlanta",
+      "claves": [
+        "Firma con Falcons tras corte de Cooper Rush.",
+        "Michael Penix Jr. arrastra problemas físicos recientes.",
+        "Ofrece estabilidad a las armas aéreas del equipo."
+      ],
+      "cuerpo": "Atlanta sacudió su vestidor contratando al veterano Andy Dalton mientras soltó a Cooper Rush, una maniobra que huele a urgencia ante las dolencias de Michael Penix. Para el fantasy esto no es poca cosa: Dalton suele alimentar decentemente a sus armas principales cuando le toca saltar al campo. Si Penix se ausenta, la llegada del Rifle Rojo garantiza un piso de pases mucho más predecible para Drake London y Kyle Pitts en las próximas semanas.",
+      "etiqueta": "TENDENCIA",
+      "impacto": "NEUTRO",
+      "equipo": "ATL",
+      "jugadores": [
+        "11559",
+        "8112",
+        "7553"
+      ]
+    },
+    {
+      "id": "n20261019171306",
+      "fecha": "2026-10-19T17:13:51.331Z",
+      "semana": 6,
+      "titulo": "Brock Bowers se consolida como máquina productora",
+      "claves": [
+        "Fue protagonista clave a pesar de la derrota.",
+        "Acapara targets cruciales en el esquema de Raiders.",
+        "Es un ala cerrada de élite incuestionable."
+      ],
+      "cuerpo": "A pesar del tropezón contra Buffalo y el conato de bronca que provocó la expulsión de Gardner-Johnson, Brock Bowers demostró otra vez que es el alma del ataque aéreo en Las Vegas. El novato sigue devorando targets sin importar el marcador adverso. En una posición tan seca y plagada de dolores de cabeza, Bowers es oro puro. No existe un solo enfrentamiento donde debas considerar sentarlo; su volumen masivo asegura producción semana a semana.",
+      "etiqueta": "ARRANCA",
+      "impacto": "SUBE",
+      "equipo": "LV",
+      "jugadores": [
+        "11604"
+      ]
+    },
+    {
+      "id": "n20261019171307",
+      "fecha": "2026-10-19T17:13:51.331Z",
+      "semana": 6,
+      "titulo": "George Kittle apunta a dominar el lunes",
+      "claves": [
+        "Máximo favorito para anotar en Monday Night Football.",
+        "Washington sufre demasiado defendiendo la posición de ala.",
+        "Su rol en zona roja resulta vital hoy."
+      ],
+      "cuerpo": "El ala cerrada estelar de San Francisco, George Kittle, llega con la mesa servida para el juego estelar de lunes por la noche. Con lesiones rondando a sus compañeros receptores, Brock Purdy buscará obsesivamente a Kittle en las diagonales. Washington concede demasiadas libertades a los alas cerradas rivales, por lo que las probabilidades de que Kittle termine con touchdown y más de setenta yardas son enormes. Arráncalo con total confianza de que traerá puntos masivos.",
+      "etiqueta": "ARRANCA",
+      "impacto": "SUBE",
+      "equipo": "SF",
+      "jugadores": [
+        "4217",
+        "8183"
+      ]
+    },
+    {
+      "id": "n20261019171308",
+      "fecha": "2026-10-19T17:13:51.331Z",
+      "semana": 6,
+      "titulo": "Josh Allen deslumbra con genialidad al ataque",
+      "claves": [
+        "Lanzó un pase de touchdown improvisado y espectacular.",
+        "Guio la victoria de Buffalo con treinta puntos.",
+        "Sigue encendido en la cima de mariscales."
+      ],
+      "cuerpo": "Josh Allen protagonizó una jugada sacada del repertorio de Brett Favre para guiar el triunfo de Buffalo 33-30 ante Raiders. Esa creatividad bajo asedio y su agresividad terrestre lo mantienen como el activo más letal y consistente en el fantasy actual. Mientras otros quarterbacks élite sufren bajas por lesión, Allen ofrece un piso insuperable y un techo altísimo cada domingo. Ponlo a jugar sin dudar un instante frente a cualquier defensiva de la liga.",
+      "etiqueta": "ARRANCA",
+      "impacto": "SUBE",
+      "equipo": "BUF",
+      "jugadores": [
+        "4984"
+      ]
+    },
+    {
+      "id": "n20261019171309",
+      "fecha": "2026-10-19T17:13:51.331Z",
+      "semana": 6,
+      "titulo": "Keon Coleman gana protagonismo entre los waivers",
+      "claves": [
+        "Está entre los jugadores más buscados de la semana.",
+        "Aprovecha la alta anotación del conjunto de Buffalo.",
+        "Alternativa con alto techo para receptores con lesiones."
+      ],
+      "cuerpo": "La ofensiva de Buffalo está carburando a toda máquina tras colgarle 33 puntos a Las Vegas, y Keon Coleman empieza a reclamar un pedazo sabroso de ese pastel. El receptor novato está siendo agregado masivamente en las plataformas de waivers. Aunque todavía comparte targets con el resto de las opciones de Josh Allen, su presencia en zona roja lo convierte en un objetivo imperdible si necesitas parchur tu puesto de Flex de cara a los descansos.",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "BUF",
+      "jugadores": [
+        "11637",
+        "4984"
+      ]
+    }
+  ],
   "lesionados": [
     {
-      "id": "9226",
+      "id": "6904",
       "estatus": "Fuera"
     },
     {
@@ -20,31 +204,39 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4866",
+      "id": "2216",
+      "estatus": "Duda"
+    },
+    {
+      "id": "4199",
+      "estatus": "Duda"
+    },
+    {
+      "id": "12518",
       "estatus": "Fuera"
     },
     {
-      "id": "13287",
+      "id": "11559",
+      "estatus": "Duda"
+    },
+    {
+      "id": "10236",
+      "estatus": "Duda"
+    },
+    {
+      "id": "5872",
       "estatus": "Fuera"
     },
     {
-      "id": "6904",
+      "id": "12534",
       "estatus": "Fuera"
     },
     {
-      "id": "8155",
+      "id": "8121",
       "estatus": "Fuera"
     },
     {
-      "id": "10229",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "7543",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "11635",
+      "id": "12512",
       "estatus": "Fuera"
     },
     {
@@ -52,43 +244,55 @@
       "estatus": "Duda"
     },
     {
+      "id": "9486",
+      "estatus": "Duda"
+    },
+    {
+      "id": "2449",
+      "estatus": "Duda"
+    },
+    {
+      "id": "4035",
+      "estatus": "Duda"
+    },
+    {
+      "id": "13287",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "5844",
+      "estatus": "Fuera"
+    },
+    {
       "id": "5892",
       "estatus": "Fuera"
     },
     {
-      "id": "12508",
+      "id": "7571",
       "estatus": "Fuera"
     },
     {
-      "id": "9499",
-      "estatus": "Duda"
-    },
-    {
-      "id": "12512",
+      "id": "12533",
       "estatus": "Fuera"
     },
     {
-      "id": "12518",
+      "id": "11630",
       "estatus": "Fuera"
     },
     {
-      "id": "4983",
+      "id": "8155",
       "estatus": "Fuera"
     },
     {
-      "id": "13286",
+      "id": "11635",
       "estatus": "Fuera"
     },
     {
-      "id": "2216",
-      "estatus": "Duda"
-    },
-    {
-      "id": "12534",
+      "id": "10229",
       "estatus": "Fuera"
     },
     {
-      "id": "13281",
+      "id": "12509",
       "estatus": "Fuera"
     }
   ],
