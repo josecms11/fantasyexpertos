@@ -1,5 +1,6 @@
 {
-  "actualizado": "2026-10-19T11:11:10.993Z",
+  "actualizado": "2026-10-19T11:37:27.901Z",
+  "ultimaIA": "2026-10-19T11:37:27.901Z",
   "semana": 6,
   "temporada": "2026",
   "semanas": [
@@ -11,102 +12,226 @@
   ],
   "noticias": [
     {
-      "id": "r1",
-      "titulo": "Drake Maye enciende los motores y ya es titular indiscutible en fantasy",
-      "cuerpo": "Vaya salto de calidad que estamos viendo con Drake Maye en New England. El novato sumó su tercer partido consecutivo lanzando al menos tres pases de anotación, destrozando por completo las dudas que dejó en el primer mes de campaña. Aunque la línea ofensiva sufrió tres bajas sensibles ante los Jets, Maye demostró compostura de veterano dentro de la bolsa de protección y generó puntos masivos. Si necesitas cubrir semanas de descanso o tu mariscal estelar está entre algodones, es momento de meter a Maye directo en tus alineaciones de cara a la Semana 7 frente a Chicago. No lo dejes escapar en waivers.",
-      "etiqueta": "ARRANCA",
-      "jugadores": [
-        "11564"
-      ]
-    },
-    {
-      "id": "r2",
-      "titulo": "Tucker Kraft esquiva una lesión grave y mantiene su valor estelar",
-      "cuerpo": "El susto fue mayúsculo cuando Tucker Kraft abandonó momentáneamente el emparrillado por molestias en la rodilla, pero su regreso fue un alivio total para sus dueños. El ala cerrada de Green Bay finalizó la noche con cinco recepciones y 37 yardas, confirmando que sigue siendo el objetivo de máxima seguridad en zona roja para su mariscal de campo. En una posición donde encontrar regularidad semana a semana es una auténtica pesadilla, Kraft te entrega un piso sumamente confiable y el potencial de anotar touchdown en cualquier jugada. No te preocupes por su reporte médico menor; mientras juegue, es titular fijo indiscutible en tu alineación.",
-      "etiqueta": "ARRANCA",
-      "jugadores": [
-        "9484"
-      ]
-    },
-    {
-      "id": "r3",
-      "titulo": "TreVeyon Henderson jugó lesionado y decepcionó por completo en fantasy",
-      "cuerpo": "Forzar a un corredor con un esguince de tobillo alto rara vez sale bien en la NFL, y el caso de TreVeyon Henderson no fue la excepción. Aunque sorprendió al vestirse de corto contra los Jets, el novato lució sin explosividad, promedió números mediocres y se quedó estancado en apenas cuarenta yardas totales. Su volumen disminuyó notablemente para evitar una recaída mayor, quitándole toda viabilidad como titular confiable. Si tienes a Henderson en tu plantilla, debes mandarlo de inmediato a la banca hasta que demuestre que está al cien por ciento de salud y recupere el control mayoritario del backfield. No te arriesgues.",
+      "id": "n20261019113700",
+      "fecha": "2026-10-19T11:37:27.901Z",
+      "semana": 6,
+      "titulo": "Cam Skattebo pierde la titularidad en Nueva York",
+      "claves": [
+        "Cero toques en la Semana 6 ante Saints",
+        "Costosos balones sueltos provocaron su castigo",
+        "Najee Harris asume todo el peso terrestre"
+      ],
+      "cuerpo": "El castigo fue fulminante para Cam Skattebo tras registrar cero toques contra Nueva Orleans. Los errores acarreando el ovoide colmaron la paciencia del cuerpo técnico, que entregó el backfield por completo a Najee Harris. Skattebo pasa de ser una opción prometedora a un riesgo tóxico en cualquier alineación de fantasy. Mándalo directo a la banca de inmediato. Si requieres espacio urgente en tu banca para waivers calientes, no te tiemble el pulso para cortarlo.",
       "etiqueta": "BANCA",
+      "impacto": "BAJA",
+      "equipo": "NYG",
       "jugadores": [
-        "12529"
-      ]
-    },
-    {
-      "id": "r4",
-      "titulo": "Jordan Love supera los costosos errores de Christian Watson en Dallas",
-      "cuerpo": "Jordan Love brilló el domingo por la noche a pesar de que sus números pudieron ser todavía más descomunales. El pasador de Green Bay acumuló 276 yardas y dos anotaciones totales, sobreponiéndose a tres pases de touchdown que sus receptores soltaron increíblemente en la zona prometida. Uno de los mayores villanos fue Christian Watson, quien dejó escapar una recepción cantada antes de maquillar su actuación con 64 yardas. Love ratifica su estatus como un mariscal de élite con enorme volumen de pase, mientras que Watson continúa siendo esa peligrosa moneda al aire: perfil típico de boom o bust para formatos profundos.",
-      "etiqueta": "TENDENCIA",
-      "jugadores": [
-        "6804",
-        "8167"
-      ]
-    },
-    {
-      "id": "r5",
-      "titulo": "Savion Williams emerge en los controles del slot para Green Bay",
-      "cuerpo": "La enfermería de los Packers está repleta tras los golpes sufridos por Jayden Reed, y quien aprovechó al máximo la oportunidad en la Semana 6 fue Savion Williams. El receptor no seleccionado en el draft asumió prácticamente todos los centros en la ranura, registrando una presencia en el campo mucho mayor a la esperada por los analistas. Si compites en ligas de doce o más equipos y buscas un recambio urgente ante las bajas por descanso, Williams es una opción barata en el alambre de waivers. Su rol está creciendo en una ofensiva que lanza bastante el ovoide cada fin de semana.",
-      "etiqueta": "WAIVER",
-      "jugadores": [
-        "10222"
-      ]
-    },
-    {
-      "id": "r6",
-      "titulo": "Lamar Jackson enciende alarmas rojas entre sus dueños de fantasy",
-      "cuerpo": "Preocupación mayúscula en Baltimore por el reporte médico que mantiene a Lamar Jackson condicionado. El mariscal dos veces Jugador Más Valioso arrastra dolencias que podrían limitar drásticamente su movilidad en el campo, el rasgo principal que sustenta su enorme piso de puntos fantasy. Cuando Jackson no puede amenazar por tierra mediante acarreos diseñados, su techo productivo cae de forma estrepitosa frente a defensivas agresivas. Es vital monitorear los entrenamientos de toda la semana; ten preparado un sustituto de garantía en la agencia libre en caso de que el cuerpo técnico decida cuidarlo o dosificar sus jugadas terrestres el domingo próximo.",
-      "etiqueta": "LESIÓN",
-      "jugadores": [
-        "4881"
-      ]
-    },
-    {
-      "id": "r7",
-      "titulo": "La salud de Saquon Barkley condiciona a la ofensiva de Filadelfia",
-      "cuerpo": "El tropezón de las Águilas en la Semana 6 dejó heridas más profundas de lo presupuestado, destacando los problemas físicos que aquejan a Saquon Barkley. El estelar corredor ha absorbido una cantidad brutal de castigo en los primeros compases del calendario y su estado físico empieza a reflejar desgaste. En fantasy football no puedes sentar a un talento de su calibre si los médicos le dan luz verde para jugar, pero resulta indispensable asegurar a su corredor suplente directo en tu banca para evitar una catástrofe. La ofensiva de Nick Sirianni no carbura sin él en el emparrillado.",
-      "etiqueta": "LESIÓN",
-      "jugadores": [
-        "4866"
-      ]
-    },
-    {
-      "id": "r8",
-      "titulo": "Roschon Johnson gana terreno como el waiver prioritario de la semana",
-      "cuerpo": "El mercado de waivers arde tras la Semana 6 y entre los corredores más codiciados aparece Roschon Johnson junto a la revalorización de Najee Harris. Johnson ha demostrado una efectividad brutal en zona de gol durante las últimas fechas, arrebatando acarreos de alto valor que antes pertenecían a otros corredores. Los equipos de fantasy que batallan con lesiones o semanas de descanso deben invertir un porcentaje respetable de su presupuesto de adquisiciones en él. Si está disponible en tu liga, ve por él antes del miércoles: un corredor con toques seguros de touchdown en la línea de gol vale oro puro.",
-      "etiqueta": "WAIVER",
-      "jugadores": [
-        "10235",
+        "12481",
         "7528"
       ]
     },
     {
-      "id": "r9",
-      "titulo": "Breece Hall sufre entre molestias físicas y la inoperancia de Jets",
-      "cuerpo": "Situación muy alarmante la que atraviesa Breece Hall en Nueva York. A sus dolencias físicas recientes se suma el colapso absoluto de la línea ofensiva de los Jets, incapaz de abrirle carriles decentes frente a los Patriotas de Nueva Inglaterra. Aunque el talento atlético de Hall es incuestionable, promediar números pobres por partido con bajo volumen de recepciones arruina semanas enteras en ligas competitivas. Ante rivales con frontales dominantes, considera muy seriamente banquear a Breece si cuentas con corredores suplentes en mejor momento o involucrados en comités más productivos. Su piso nunca había sido tan bajo como ahora.",
-      "etiqueta": "BANCA",
+      "id": "n20261019113701",
+      "fecha": "2026-10-19T11:37:27.901Z",
+      "semana": 6,
+      "titulo": "CeeDee Lamb va por noche explosiva en Lambeau",
+      "claves": [
+        "Duelo estelar de domingo por la noche",
+        "Volumen garantizado de doble dígito de pases",
+        "Esquinero rival diezmado facilita sus recepciones"
+      ],
+      "cuerpo": "El enfrentamiento en Lambeau Field apunta a un tiroteo de puntos ideal para inflar números fantasy. CeeDee Lamb llega con el volumen totalmente asegurado en el plan de juego texano, atacando zonas vulnerables de la secundaria de Green Bay. Aunque la visita al frío suele intimidar, Dallas forzará envíos constantes para seguir el ritmo ofensivo. Pon a CeeDee como tu receptor principal de élite esta semana; su techo de anotaciones múltiples es gigantesco en este entorno.",
+      "etiqueta": "ARRANCA",
+      "impacto": "SUBE",
+      "equipo": "DAL",
       "jugadores": [
-        "8155"
+        "6786"
       ]
     },
     {
-      "id": "r10",
-      "titulo": "Xavier Worthy se afianza tras el golpe de Rashee Rice",
-      "cuerpo": "Con el panorama complicado que sigue rodeando la salud de Rashee Rice, Patrick Mahomes se ha visto obligado a repartir las oportunidades aéreas, catapultando a Xavier Worthy como un arma muy buscada. El novato velocista está capitalizando jugadas diseñadas detrás de la línea de golpeo y rutas verticales profundas, convirtiéndose en un jugador agregado de manera masiva en las ligas de fantasía. Si bien todavía muestra cierta inconsistencia de novato, el volumen proyectado y su capacidad de anotar desde cualquier zona del campo lo colocan firmemente en la conversación de receptor flexible para la Semana 7. Cómpralo mientras puedas.",
-      "etiqueta": "TENDENCIA",
+      "id": "n20261019113702",
+      "fecha": "2026-10-19T11:37:27.901Z",
+      "semana": 6,
+      "titulo": "Christian Watson amenaza profundo la defensiva de Dallas",
+      "claves": [
+        "Oportunidad dorada ante cobertura terrestre de Dallas",
+        "Especialista en jugadas de más de veinte yardas",
+        "Mayor protagonismo en zona roja esta semana"
+      ],
+      "cuerpo": "Christian Watson tiene el escenario perfecto en horario estelar para hacer pagar a los Cowboys por la vía larga. La secundaria de Dallas suele sufrir ante receptores con velocidad pura que estiran el campo verticalmente. Watson solo necesita un par de recepciones profundas para salvar tu jornada o incluso darte la victoria. Con las defensas enfocadas en frenar el ataque terrestre, Watson se perfila como un WR3 o Flex con un potencial absurdo de touchdown.",
+      "etiqueta": "ARRANCA",
+      "impacto": "SUBE",
+      "equipo": "GB",
       "jugadores": [
-        "10229",
+        "8167"
+      ]
+    },
+    {
+      "id": "n20261019113703",
+      "fecha": "2026-10-19T11:37:27.901Z",
+      "semana": 6,
+      "titulo": "Dalton Kincaid enciende alarmas por seria molestia",
+      "claves": [
+        "Problemas físicos limitan su participación reciente",
+        "Objetivos en zona roja caen en Buffalo",
+        "Urgente buscar cobertura temporal en alas cerradas"
+      ],
+      "cuerpo": "La condición física de Dalton Kincaid preocupa gravemente a los entrenadores de Buffalo y a sus dueños de fantasy. El ala cerrada no luce al cien por ciento y su presencia en rutas intermedias se ha reducido, golpeando su piso habitual en formatos PPR. La posición es un campo minado, pero forzarlo en tu alineación sin certezas de salud puede costarte caro el fin de semana. Ten listo un reemplazo en la agencia libre por si no supera las pruebas.",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "BUF",
+      "jugadores": [
+        "10236"
+      ]
+    },
+    {
+      "id": "n20261019113704",
+      "fecha": "2026-10-19T11:37:27.901Z",
+      "semana": 6,
+      "titulo": "Khalil Shakir reclama el protagonismo aéreo en Buffalo",
+      "claves": [
+        "Consistencia y yardas después de la recepción",
+        "Mayor química demostrada con el mariscal titular",
+        "Disponible todavía en varias ligas competitivas"
+      ],
+      "cuerpo": "Con las ausencias y dolencias mermando las opciones en Buffalo, Khalil Shakir se consolida como el blanco de confianza en trayectorias cortas e intermedias. Su capacidad para generar yardas extras tras la atrapada le otorga un piso seguro cada semana. Si alguien lo soltó en tu liga durante semanas recientes, tómalo de inmediato mediante waiver. Shakir opera como un receptor de posesión sumamente valioso que aportará números sólidos de WR3 o Flex en formatos con puntos por recepción.",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "BUF",
+      "jugadores": [
+        "8134"
+      ]
+    },
+    {
+      "id": "n20261019113705",
+      "fecha": "2026-10-19T11:37:27.901Z",
+      "semana": 6,
+      "titulo": "Tyler Higbee se desploma junto con Los Ángeles",
+      "claves": [
+        "Tres derrotas en cuatro partidos hunden opciones",
+        "Ofensiva incapaz de sostener series ofensivas largas",
+        "Caída notable en targets dentro de zona roja"
+      ],
+      "cuerpo": "El desastre de los Rams ante Arizona expuso a un equipo sin ritmo ofensivo, cayendo a marca perdedora. En medio de este bache, Tyler Higbee ha dejado de ser una opción confiable en las alas cerradas. Con menos tiempo en la bolsa para pasar, las oportunidades para Higbee se esfuman rápidamente. No mantengas a un jugador dependiente de milagros en el touchdown cuando la ofensiva completa no camina. Explora mejores opciones en waivers y siéntalo.",
+      "etiqueta": "TENDENCIA",
+      "impacto": "BAJA",
+      "equipo": "LAR",
+      "jugadores": [
+        "3271"
+      ]
+    },
+    {
+      "id": "n20261019113706",
+      "fecha": "2026-10-19T11:37:27.901Z",
+      "semana": 6,
+      "titulo": "Xavier Worthy incrementa valor en Kansas City invicto",
+      "claves": [
+        "Diseño de jugadas específicas para su velocidad",
+        "Aumento progresivo en porcentaje de jugadas ofensivas",
+        "Pieza obligada para buscar en canjes tempranos"
+      ],
+      "cuerpo": "Kansas City mantiene el paso perfecto en la división y Xavier Worthy luce cada vez más desequilibrante en el esquema ofensivo. El veloz novato no solo atrae coberturas profundas, sino que recibe manufacturas de toques mediante reversibles y pantallas. Su techo semanal es tremendo gracias a esa chispa electrizante capaz de resolver un juego en una sola jugada. Considera a Worthy como un WR3 con aspiraciones de WR2 fuerte; su protagonismo irá en aumento constante.",
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "KC",
+      "jugadores": [
         "11624"
+      ]
+    },
+    {
+      "id": "n20261019113707",
+      "fecha": "2026-10-19T11:37:27.901Z",
+      "semana": 6,
+      "titulo": "Tyler Allgeier sorprende y gana relevancia en Arizona",
+      "claves": [
+        "Campanada ante Rams fortalece su uso terrestre",
+        "Toques valiosos en situaciones de corto yardaje",
+        "Adición de alto calibre en waivers semanales"
+      ],
+      "cuerpo": "El sorpresivo triunfo de Arizona sobre los Rams demostró que necesitan presencia física para cerrar los partidos, impulsando el protagonismo de Tyler Allgeier. El corredor aprovecha los toques entre tacleadas y se adueña de jugadas en línea de gol. Aunque comparta el backfield, su eficacia en zona roja lo convierte en un seguro de vida envidiable. Si buscas profundidad para enfrentar semanas de descanso o lesiones imprevistas, Allgeier debe ser un objetivo prioritario en la agencia libre.",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "ARI",
+      "jugadores": [
+        "8132"
+      ]
+    },
+    {
+      "id": "n20261019113708",
+      "fecha": "2026-10-19T11:37:27.901Z",
+      "semana": 6,
+      "titulo": "Stefon Diggs golpeado previo al duelo ante 49ers",
+      "claves": [
+        "Molestias físicas complican su semana de preparación",
+        "Enfrentamiento brutal de visita ante San Francisco",
+        "Recomiendan precaución extrema al alinearlo como titular"
+      ],
+      "cuerpo": "Washington viaja a la bahía para enfrentar a los invictos 49ers con serias dudas sobre el estado de Stefon Diggs. Lastimado y ante una de las defensivas más asfixiantes de la liga, el receptor estrella presenta un panorama complejo. Si bien su talento es innegable, arriesgarlo disminuido físicamente contra coberturas agresivas eleva el riesgo de una actuación pobre. Monitorea los reportes de prácticas; si no entrena completo, considera enviarlo a la banca por precaución.",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "WAS",
+      "jugadores": [
+        "2449"
+      ]
+    },
+    {
+      "id": "n20261019113709",
+      "fecha": "2026-10-19T11:37:27.901Z",
+      "semana": 6,
+      "titulo": "Dameon Pierce emerge como alternativa en backfield golpeado",
+      "claves": [
+        "Bajas críticas abren huecos en el ataque",
+        "Volumen inmediato en situaciones terrestres de poder",
+        "Opción urgente para parchar alineaciones en crisis"
+      ],
+      "cuerpo": "Con el hospital abierto en Filadelfia tras ausencias de mariscal y corredores titulares, Dameon Pierce aparece repentinamente como un salvavidas necesario. El poder de Pierce para romper tacleadas encaja cuando el equipo busca simplificar su sistema y controlar el reloj. No esperes números descomunales ni recepciones constantes, pero el simple volumen proyectado de acarreos lo coloca en el radar. Gasta un porcentaje bajo de tu presupuesto de waivers para asegurarlo como flex de emergencia este fin de semana.",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "PHI",
+      "jugadores": [
+        "8129"
+      ]
+    },
+    {
+      "id": "n20261019113710",
+      "fecha": "2026-10-19T11:37:27.901Z",
+      "semana": 6,
+      "titulo": "Kyle Pitts revive esperanza frente a defensiva vulnerable",
+      "claves": [
+        "Duelo favorable para generar separación ante apoyadores",
+        "Alta demanda de waivers en ligas profundas",
+        "Necesidad de involucrarlo más en esquema aéreo"
+      ],
+      "cuerpo": "El enfrentamiento contra Chicago representa una oportunidad de oro para que Kyle Pitts recupere la confianza de sus entrenadores y de sus manejadores en fantasy. Con escasez brutal de alas cerradas confiables, las cualidades atléticas de Pitts continúan siendo un imán de posibilidades. Si un rival desesperado lo soltó recientemente a waivers, es momento de recogerlo de inmediato. Su techo en zona roja justifica mantenerlo activo frente a una defensiva que concede espacios por el centro.",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "ATL",
+      "jugadores": [
+        "7553"
+      ]
+    },
+    {
+      "id": "n20261019113711",
+      "fecha": "2026-10-19T11:37:27.901Z",
+      "semana": 6,
+      "titulo": "Rachaad White busca revivir su valor en Washington",
+      "claves": [
+        "Incorporación al ataque con rol en recepciones",
+        "Atractivo inmediato en formatos de puntos PPR",
+        "Aprovecha descuidos defensivos en pases pantalla rápidos"
+      ],
+      "cuerpo": "Rachaad White continúa captando la atención de los mánagers inteligentes tras sumar actividad en el esquema de Washington. Aunque el juego por tierra sea compartido y complicado, su habilidad para atrapar pases desde el backfield le otorga un piso semanal decente. Frente a rivales que presionan fuerte, los pases cortos de válvula de escape serán constantes. Levántalo de waivers si requieres estabilidad en ligas con formato PPR; puede salvarte la semana como un corredor flexible.",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "WAS",
+      "jugadores": [
+        "8136"
       ]
     }
   ],
   "lesionados": [
     {
-      "id": "9226",
+      "id": "6904",
       "estatus": "Fuera"
     },
     {
@@ -114,31 +239,39 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4866",
+      "id": "2216",
+      "estatus": "Duda"
+    },
+    {
+      "id": "4199",
+      "estatus": "Duda"
+    },
+    {
+      "id": "12518",
       "estatus": "Fuera"
     },
     {
-      "id": "13287",
+      "id": "11559",
+      "estatus": "Duda"
+    },
+    {
+      "id": "10236",
+      "estatus": "Duda"
+    },
+    {
+      "id": "5872",
       "estatus": "Fuera"
     },
     {
-      "id": "6904",
+      "id": "12534",
       "estatus": "Fuera"
     },
     {
-      "id": "8155",
+      "id": "8121",
       "estatus": "Fuera"
     },
     {
-      "id": "10229",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "7543",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "11635",
+      "id": "12512",
       "estatus": "Fuera"
     },
     {
@@ -146,43 +279,55 @@
       "estatus": "Duda"
     },
     {
+      "id": "9486",
+      "estatus": "Duda"
+    },
+    {
+      "id": "2449",
+      "estatus": "Duda"
+    },
+    {
+      "id": "4035",
+      "estatus": "Duda"
+    },
+    {
+      "id": "13287",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "5844",
+      "estatus": "Fuera"
+    },
+    {
       "id": "5892",
       "estatus": "Fuera"
     },
     {
-      "id": "12508",
+      "id": "7571",
       "estatus": "Fuera"
     },
     {
-      "id": "9499",
-      "estatus": "Duda"
-    },
-    {
-      "id": "12512",
+      "id": "12533",
       "estatus": "Fuera"
     },
     {
-      "id": "12518",
+      "id": "11630",
       "estatus": "Fuera"
     },
     {
-      "id": "4983",
+      "id": "8155",
       "estatus": "Fuera"
     },
     {
-      "id": "13286",
+      "id": "11635",
       "estatus": "Fuera"
     },
     {
-      "id": "2216",
-      "estatus": "Duda"
-    },
-    {
-      "id": "12534",
+      "id": "10229",
       "estatus": "Fuera"
     },
     {
-      "id": "13281",
+      "id": "12509",
       "estatus": "Fuera"
     }
   ],
@@ -197,10 +342,10 @@
     "2505",
     "11783",
     "11624",
-    "8132",
-    "8136",
     "8134",
+    "8132",
     "7553",
+    "8136",
     "10213"
   ],
   "soltados": [
@@ -208,11 +353,11 @@
     "3321",
     "9511",
     "12533",
-    "11630",
     "3271",
+    "11630",
     "11539",
-    "2505",
     "11581",
+    "2505",
     "13330",
     "11637",
     "9756",
@@ -221,8 +366,8 @@
     "5012"
   ],
   "duelo": {
-    "a": "Roschon Johnson",
-    "b": "TreVeyon Henderson",
-    "veredicto": "Arranca a Roschon Johnson. Henderson viene saliendo de un esguince de tobillo alto y su volumen fue limitado. Roschon tiene el rol de zona roja asegurado y ofrece un piso mucho más confiable de puntos esta semana."
+    "a": "Christian Watson",
+    "b": "Xavier Worthy",
+    "veredicto": "Arranca a Xavier Worthy. Su involucramiento en jugadas diseñadas dentro de la ofensiva invicta de Kansas City ofrece mayor consistencia que la volatilidad de Christian Watson dependiendo de atrapadas largas ante la defensiva de Dallas."
   }
 }
