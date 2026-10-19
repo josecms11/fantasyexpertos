@@ -229,3 +229,117 @@ a.stat:hover{border-color:var(--accent);transform:translateY(-3px)}
 .cta .btn{background:var(--bg);color:var(--text)}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;padding:32px 20px;color:var(--mute);font-size:14px}
 .loading{padding:120px 0;text-align:center}
+
+/* =====================================================================
+   v4 · PERSONALIDAD ARCADE: cascos por equipo, cartuchos de noticia,
+   jumbotron LED, cartas de jugador
+   ===================================================================== */
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes shine{from{transform:translateX(-120%) skewX(-20deg)}to{transform:translateX(320%) skewX(-20deg)}}
+@keyframes march{from{transform:translateX(-140px)}to{transform:translateX(calc(100vw + 40px))}}
+@keyframes shake{0%,100%{transform:translate(0)}25%{transform:translate(-2px,1px)}50%{transform:translate(2px,-1px)}75%{transform:translate(-1px,-1px)}}
+@keyframes up{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes down{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
+@keyframes sparkle{0%{opacity:0;transform:scale(.4)}40%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1.4)}}
+@keyframes led{0%,100%{opacity:1}50%{opacity:.82}}
+.bob{animation:bob 1.6s steps(4) infinite}
+
+/* --- JUMBOTRON --- */
+.jumbo{position:relative;margin:28px 0 0;border:4px solid var(--gray);background:#050d08;box-shadow:8px 8px 0 var(--shadow);overflow:hidden}
+.jumbo-top{display:flex;justify-content:space-between;align-items:center;padding:10px 16px;border-bottom:4px solid var(--gray);background:var(--panel2);font-size:9px;color:var(--soft)}
+.jumbo-top b{color:var(--accent)}
+.led{display:block;padding:26px 22px 22px;text-decoration:none;color:#9CF5BF;font-family:'Press Start 2P',monospace;font-size:clamp(16px,2.6vw,28px);line-height:1.5;min-height:150px;background-image:radial-gradient(rgba(91,196,137,.16) 1px,transparent 1.4px);background-size:6px 6px;text-shadow:0 0 10px rgba(91,196,137,.75),0 0 2px #fff;animation:led 2.4s steps(2) infinite}
+.led:hover{color:#fff}
+.led small{display:flex;align-items:center;gap:10px;font-size:10px;color:var(--warn);margin-bottom:16px;text-shadow:none}
+.field{position:relative;height:118px;border-top:4px solid var(--gray);background:repeating-linear-gradient(90deg,#0F3A1E 0 60px,#12441F 60px 120px);overflow:hidden}
+.field::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 59px,rgba(255,255,255,.35) 59px 61px)}
+.field .runner{position:absolute;top:24px;left:0;display:flex;flex-direction:column;align-items:center;gap:4px;text-decoration:none;animation:march 22s linear infinite}
+.field .runner span{font-family:'Press Start 2P',monospace;font-size:8px;color:#fff;background:rgba(0,0,0,.55);padding:3px 5px}
+.field .runner:hover{animation-play-state:paused}
+.field .runner:hover svg{animation:bob .5s steps(2) infinite}
+.field:hover .runner{animation-play-state:paused}
+
+/* --- CARTUCHO DE NOTICIA --- */
+.news{grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.cart{--c1:#4A9A68;--c2:#E8E8E8;position:relative;display:flex;flex-direction:column;background:var(--panel);border:4px solid var(--line);text-decoration:none;color:var(--text);transition:transform .15s steps(3),border-color .15s,box-shadow .15s;transform-style:preserve-3d}
+.cart:hover{border-color:var(--c2);box-shadow:8px 8px 0 var(--c1)}
+.cart .band{position:relative;height:120px;background:linear-gradient(135deg,var(--c1) 0 62%,var(--c2) 62% 66%,var(--c1) 66%);overflow:hidden;display:flex;align-items:flex-end;justify-content:space-between;padding:12px 14px}
+.cart .band::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.14) 0 2px,transparent 2px 6px)}
+.cart .band::after{content:'';position:absolute;top:0;bottom:0;left:0;width:30%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent);transform:translateX(-120%) skewX(-20deg)}
+.cart:hover .band::after{animation:shine .7s steps(7)}
+.cart .band .hel{position:relative;z-index:1;filter:drop-shadow(4px 4px 0 rgba(0,0,0,.45));transition:transform .2s steps(3)}
+.cart:hover .band .hel{transform:translateY(-6px) rotate(-4deg)}
+.cart .band .hel.vs{margin-left:-26px}
+.cart .band .tm{position:absolute;top:10px;left:14px;z-index:1;font-family:'Press Start 2P',monospace;font-size:9px;color:#fff;background:rgba(0,0,0,.55);padding:5px 7px}
+.cart .imp{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:4px;font-family:'Press Start 2P',monospace;font-size:8px;padding:8px 9px;background:rgba(0,0,0,.6);color:#fff}
+.cart .imp svg{display:block}
+.imp.SUBE svg{animation:up 1s steps(2) infinite}.imp.BAJA svg{animation:down 1s steps(2) infinite}
+.cart .in{display:flex;flex-direction:column;gap:12px;padding:18px 18px 16px;flex:1}
+.cart h3{margin:0;font-size:21px;line-height:1.2;font-weight:700}
+.claves{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.claves li{display:flex;gap:10px;align-items:flex-start;color:var(--soft);font-size:15px;line-height:1.35}
+.claves li::before{content:'';flex:none;width:8px;height:8px;margin-top:6px;background:var(--c2,var(--accent));box-shadow:2px 2px 0 var(--c1,var(--shadow))}
+.cart .foot{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto;padding-top:10px;border-top:2px dashed var(--line)}
+.cart .who{display:flex;gap:-6px}
+.cart .who svg{margin-right:-8px}
+.cart .go{font-family:'Press Start 2P',monospace;font-size:8px;color:var(--accent)}
+.cart.big{grid-column:1/-1;flex-direction:row}
+.cart.big .band{flex:0 0 46%;height:auto;min-height:280px;justify-content:center;align-items:center}
+.cart.big .band .hel{width:200px;height:200px}
+.cart.big .band .imp{position:absolute;right:16px;bottom:16px}
+.cart.big .in{padding:28px}
+.cart.big h3{font-size:clamp(26px,3.4vw,40px)}
+.cart.big .claves li{font-size:18px}
+.cart.LESIÓN .tagx{background:var(--bad)}.cart.BANCA .tagx{background:var(--warn)}.cart.WAIVER .tagx{background:var(--sky)}.cart.TENDENCIA .tagx{background:var(--gray)}
+.tagx{align-self:flex-start;font-family:'Press Start 2P',monospace;font-size:8px;padding:6px 8px;color:var(--bg);background:var(--accent)}
+@media (max-width:760px){.cart.big{flex-direction:column}.cart.big .band{min-height:200px}.cart.big .band .hel{width:140px;height:140px}}
+
+/* --- PÁGINA DE NOTICIA --- */
+.nhero{--c1:#4A9A68;--c2:#E8E8E8;position:relative;margin-top:18px;border:4px solid var(--c2);background:linear-gradient(120deg,var(--c1) 0 58%,var(--c2) 58% 61%,var(--c1) 61%);overflow:hidden;box-shadow:8px 8px 0 rgba(0,0,0,.45)}
+.nhero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.16) 0 2px,transparent 2px 6px)}
+.nhero .grid-in{position:relative;display:flex;flex-wrap:wrap;align-items:center;gap:20px;padding:30px}
+.nhero .hels{display:flex;align-items:flex-end}
+.nhero .hels svg{filter:drop-shadow(6px 6px 0 rgba(0,0,0,.45))}
+.nhero .hels svg+svg{margin-left:-40px}
+.nhero .txt{flex:1 1 360px;min-width:0}
+.nhero h1{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:clamp(28px,4.4vw,48px);line-height:1.1;margin:14px 0 0;color:#fff;text-shadow:4px 4px 0 rgba(0,0,0,.5)}
+.nhero .imp{position:absolute;top:18px;right:18px}
+.kcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:22px 0}
+.kcard{position:relative;background:var(--panel);border:4px solid var(--line);padding:18px 18px 18px 58px;font-size:18px;font-weight:600;line-height:1.35}
+.kcard b{position:absolute;left:14px;top:16px;font-family:'Press Start 2P',monospace;font-size:16px;color:var(--accent)}
+details.desglose{background:var(--panel);border:4px solid var(--line);margin-bottom:8px}
+details.desglose summary{cursor:pointer;list-style:none;padding:16px 18px;font-family:'Press Start 2P',monospace;font-size:10px;color:var(--accent);display:flex;justify-content:space-between}
+details.desglose summary::-webkit-details-marker{display:none}
+details.desglose[open] summary span:last-child{transform:rotate(90deg)}
+details.desglose p{margin:0;padding:0 18px 20px;font-size:18px;line-height:1.7;color:var(--soft)}
+.pchips{display:flex;flex-wrap:wrap;gap:10px}
+.pchip{--c1:#4A9A68;display:flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;background:var(--panel);border:3px solid var(--line);text-decoration:none;color:var(--text);font-weight:700;transition:border-color .15s,transform .12s steps(2)}
+.pchip:hover{border-color:var(--c1);transform:translateY(-3px)}
+.pchip small{display:block;font-weight:500;color:var(--mute);font-size:12px}
+
+/* --- CARTA DE JUGADOR --- */
+.pcard{--c1:#4A9A68;--c2:#E8E8E8;position:relative;margin-top:18px;display:grid;grid-template-columns:minmax(220px,340px) 1fr;border:4px solid var(--c2);background:var(--panel);box-shadow:8px 8px 0 rgba(0,0,0,.45);overflow:hidden}
+.pcard .art{position:relative;min-height:300px;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,var(--c1) 0 70%,var(--c2) 70% 73%,var(--c1) 73%);overflow:hidden}
+.pcard .art::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.16) 0 2px,transparent 2px 6px)}
+.pcard .art .bignum{position:absolute;right:-10px;bottom:-34px;font-family:'Press Start 2P',monospace;font-size:150px;color:transparent;-webkit-text-stroke:3px rgba(255,255,255,.28);line-height:1}
+.pcard .art svg{position:relative;filter:drop-shadow(8px 8px 0 rgba(0,0,0,.45))}
+.pcard .info{padding:26px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.pcard h1{font-family:'Chakra Petch',sans-serif;font-weight:700;text-shadow:none;margin:0;font-size:clamp(30px,4.6vw,52px);line-height:1.05}
+.meters{display:grid;gap:12px;margin-top:6px}
+.meter{display:grid;grid-template-columns:120px 1fr 48px;align-items:center;gap:12px}
+.meter span{font-family:'Press Start 2P',monospace;font-size:8px;color:var(--mute)}
+.meter .track{display:grid;grid-template-columns:repeat(20,1fr);gap:3px;height:16px}
+.meter .track i{background:var(--panel2);border:1px solid var(--line)}
+.meter .track i.on{background:var(--accent);border-color:var(--accent);animation:sparkle .3s steps(2) backwards}
+.meter.warn .track i.on{background:var(--warn);border-color:var(--warn)}.meter.bad .track i.on{background:var(--bad);border-color:var(--bad)}
+.meter b{font-family:'Press Start 2P',monospace;font-size:11px;text-align:right}
+.meter-note{font-size:12px;color:var(--mute);margin:0}
+@media (max-width:760px){.pcard{grid-template-columns:1fr}.pcard .art{min-height:220px}.meter{grid-template-columns:90px 1fr 40px}}
+
+/* --- TILE DE EQUIPO CON CASCO --- */
+.teamtile{--c1:#4A9A68;--c2:#E8E8E8;flex-direction:row;align-items:center;gap:10px;position:relative;overflow:hidden}
+.teamtile::after{content:'';position:absolute;right:0;top:0;bottom:0;width:6px;background:var(--c1);box-shadow:-3px 0 0 var(--c2)}
+.teamtile:hover{border-color:var(--c2)}
+.teamtile:hover svg{animation:bob .5s steps(2) infinite}
+.teamtile .tt{display:flex;flex-direction:column;gap:2px;min-width:0}
+.ehero{--c1:#4A9A68;--c2:#E8E8E8}

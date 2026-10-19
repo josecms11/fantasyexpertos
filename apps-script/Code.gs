@@ -45,7 +45,8 @@ function ciclo() {
   s.jugadores.forEach(j => porNombre[normaliza_(j.n)] = j.id);
   const noticias = (ia.noticias || []).map((n, i) => ({
     id: 'r' + (i + 1),
-    titulo: n.titulo, cuerpo: n.cuerpo, etiqueta: n.etiqueta,
+    titulo: n.titulo, claves: n.claves || [], cuerpo: n.cuerpo, etiqueta: n.etiqueta,
+    impacto: n.impacto || 'NEUTRO', equipo: n.equipo || '',
     jugadores: (n.jugadores || []).map(x => porNombre[normaliza_(x)]).filter(Boolean)
   }));
 
@@ -113,7 +114,7 @@ function datosSleeper_() {
 
   // Jugadores con página: los mejor rankeados + cualquiera en tendencia
   const ids = Object.keys(todos)
-    .filter(k => todos[k].rank || addMap[k] || dropMap[k])
+    .filter(k => (todos[k].rank && todos[k].team) || addMap[k] || dropMap[k])
     .sort((a, b) => (todos[a].rank || 9999) - (todos[b].rank || 9999));
   const elegidos = new Set(ids.slice(0, CFG.TOP_JUGADORES));
   Object.keys(addMap).concat(Object.keys(dropMap)).forEach(k => { if (todos[k]) elegidos.add(k); });
@@ -189,10 +190,13 @@ function escribirConGemini_(notas, s) {
     'con tono experto, directo y energético. Escribe con tus propias palabras: no copies frases de las fuentes. ' +
     'Enfócate en lo que importa para alineaciones de fantasy. ' +
     'Responde SOLO JSON con esta forma: ' +
-    '{"noticias":[{"titulo":"titular original, máximo 12 palabras",' +
-    '"cuerpo":"reportaje propio de 80 a 120 palabras con el impacto en fantasy",' +
+    '{"noticias":[{"titulo":"titular original y punchy, máximo 8 palabras",' +
+    '"claves":["3 puntos clave de máximo 10 palabras cada uno"],' +
+    '"cuerpo":"desglose propio de 60 a 90 palabras con el impacto en fantasy",' +
     '"etiqueta":"una de: LESIÓN, WAIVER, ARRANCA, BANCA, TENDENCIA",' +
-    '"jugadores":["nombre completo en inglés de cada jugador mencionado"]}] (exactamente 10 reportajes),' +
+    '"impacto":"SUBE, BAJA o NEUTRO según cómo afecta el valor en fantasy del jugador principal",' +
+    '"equipo":"abreviatura NFL del equipo principal (ej. KC, PHI, DET)",' +
+    '"jugadores":["nombre completo en inglés de cada jugador mencionado, el principal primero"]}] (exactamente 10 noticias),' +
     '"duelo":{"a":"jugador","b":"jugador","veredicto":"a quién arrancar y por qué, máximo 40 palabras"}}\n\n' +
     'Lesionados: ' + JSON.stringify(nombres(s.lesionados.map(x => x.id))) +
     '\nMás agregados: ' + JSON.stringify(nombres(s.agregados)) +
@@ -203,11 +207,13 @@ function escribirConGemini_(notas, s) {
       method: 'post', contentType: 'application/json', muteHttpExceptions: true,
       payload: JSON.stringify({
         contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: { responseMimeType: 'application/json', temperature: 0.7 }
+        generationConfig: { responseMimeType: 'application/json', temperature: 0.7, maxOutputTokens: 16000 }
       })
     });
   try {
-    return JSON.parse(JSON.parse(res.getContentText()).candidates[0].content.parts[0].text);
+    const partes = JSON.parse(res.getContentText()).candidates[0].content.parts;
+    const texto = partes.map(x => x.text || '').join('');
+    return JSON.parse(texto.slice(texto.indexOf('{'), texto.lastIndexOf('}') + 1));
   } catch (e) {
     console.log('Gemini falló: ' + res.getContentText());
     return { noticias: [], duelo: { a: '—', b: '—', veredicto: '' } };
