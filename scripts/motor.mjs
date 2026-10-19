@@ -55,14 +55,38 @@ async function sleeper() {
   const ids = Object.keys(todos).filter(k => (todos[k].rank && todos[k].team) || addM[k] || dropM[k]).sort((a, b) => (todos[a].rank || 1e9) - (todos[b].rank || 1e9));
   const set = new Set(ids.slice(0, TOP)); [...Object.keys(addM), ...Object.keys(dropM)].forEach(k => todos[k] && set.add(k));
   const pts = (w, k) => stats[w]?.[k]?.pts_ppr != null ? Math.round(stats[w][k].pts_ppr * 10) / 10 : null;
+  const r1 = v => v == null ? null : Math.round(v * 10) / 10;
+  const linea = (w, k) => { const x = stats[w]?.[k]; if (!x || x.pts_ppr == null) return null;
+    const st = {}; [['py', 'pass_yd'], ['ptd', 'pass_td'], ['int', 'pass_int'], ['ra', 'rush_att'], ['ry', 'rush_yd'], ['rtd', 'rush_td'], ['tg', 'rec_tgt'], ['rec', 'rec'], ['recy', 'rec_yd'], ['rectd', 'rec_td'], ['fl', 'fum_lost'], ['fgm', 'fgm'], ['xpm', 'xpm']].forEach(([a, b]) => { if (x[b]) st[a] = Math.round(x[b]); });
+    return { f: [r1(x.pts_ppr), r1(x.pts_half_ppr), r1(x.pts_std)], st }; };
   const semHist = semanas.slice(-HIST);
   const jugadores = [...set].map(k => {
     const p = todos[k], temp = semanas.map(w => pts(w, k)), jug = temp.filter(v => v != null);
-    return { id: k, ...p, team: p.team || 'FA', hist: semHist.map(w => pts(w, k)), temp,
+    const log = semanas.map(w => ({ w, ...(linea(w, k) || {}) }));
+    return { id: k, ...p, team: p.team || 'FA', hist: semHist.map(w => pts(w, k)), temp, log,
       total: jug.length ? Math.round(jug.reduce((a, b) => a + b, 0) * 10) / 10 : null,
       prom: jug.length ? Math.round(jug.reduce((a, b) => a + b, 0) / jug.length * 10) / 10 : null, add: addM[k] || 0, drop: dropM[k] || 0 };
   });
   return { temporada, semana, semanas, semHist, stats, todos, jugadores, agregados: add.map(t => t.player_id).filter(k => todos[k]), soltados: drop.map(t => t.player_id).filter(k => todos[k]) };
+}
+
+/* ---------- Calendario completo (ESPN, gratis) ---------- */
+const AB = { WSH: 'WAS', JAC: 'JAX', LA: 'LAR' };
+async function calendario(temporada) {
+  const cal = {}, juegos = [];
+  for (let w = 1; w <= 18; w++) {
+    const j = await get(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?seasontype=2&week=${w}&dates=${temporada}`);
+    for (const e of (j && j.events) || []) {
+      const c = e.competitions[0], t = c.competitors.map(x => ({ ab: AB[x.team.abbreviation] || x.team.abbreviation, home: x.homeAway === 'home', pts: +x.score || 0, rec: x.records && x.records[0] && x.records[0].summary }));
+      const fin = e.status.type.state === 'post';
+      for (const [a, b] of [[t[0], t[1]], [t[1], t[0]]]) {
+        cal[a.ab] = cal[a.ab] || {};
+        cal[a.ab][w] = { opp: b.ab, home: a.home, fecha: e.date, fin, pf: fin ? a.pts : null, pc: fin ? b.pts : null };
+      }
+      juegos.push({ w, id: e.id, fecha: e.date, fin, eq: t });
+    }
+  }
+  return { cal, juegos };
 }
 
 /* ---------- Gemini ---------- */
@@ -106,6 +130,23 @@ if (yt) guardar('data/videos.json', { actualizado: new Date().toISOString(), ...
 log('YouTube:', yt ? yt.videos.length + ' videos' : 'sin datos');
 const s = await sleeper();
 log('Sleeper:', s.jugadores.length, 'jugadores, semana', s.semana);
+const { cal, juegos } = await calendario(s.temporada);
+log('Calendario:', Object.keys(cal).length, 'equipos,', juegos.length, 'juegos');
+// Puntos permitidos por cada defensa a cada posición (para dificultad del rival)
+const permitidos = {};
+for (const w of s.semanas) for (const [k, x] of Object.entries(s.stats[w] || {})) {
+  const p = s.todos[k]; if (!p || !p.team || x.pts_ppr == null) continue;
+  const rival = cal[p.team] && cal[p.team][w] && cal[p.team][w].opp; if (!rival) continue;
+  const d = (permitidos[rival] = permitidos[rival] || {}); const q = (d[p.pos] = d[p.pos] || { pts: 0, juegos: new Set() });
+  q.pts += x.pts_ppr; q.juegos.add(w);
+}
+const dvp = {};
+for (const pos of ['QB', 'RB', 'WR', 'TE', 'K']) {
+  const lista = Object.entries(permitidos).map(([t, d]) => [t, d[pos] ? d[pos].pts / Math.max(1, d[pos].juegos.size) : 0]).sort((a, b) => b[1] - a[1]);
+  lista.forEach(([t, v], i) => { dvp[t] = dvp[t] || {}; dvp[t][pos] = { prom: Math.round(v * 10) / 10, rank: i + 1 }; });
+}
+s.jugadores.forEach(j => j.log.forEach(l => { const c = cal[j.team] && cal[j.team][l.w]; if (c) { l.opp = c.opp; l.home = c.home; } }));
+guardar('data/calendario.json', { temporada: s.temporada, semana: s.semana, cal, dvp });
 const porNombre = Object.fromEntries(s.jugadores.map(j => [norm(j.n), j.id]));
 const J = Object.fromEntries(s.jugadores.map(j => [j.id, j]));
 const nombres = ids => ids.slice(0, 15).map(id => J[id] ? `${J[id].n} (${J[id].pos}, ${J[id].team})` : '').filter(Boolean);
