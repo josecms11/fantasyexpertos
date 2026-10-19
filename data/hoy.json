@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-19T09:31:48.046Z",
+  "actualizado": "2026-10-19T10:13:43.085Z",
   "semana": 6,
   "temporada": "2026",
   "semanas": [
@@ -9,7 +9,104 @@
     5,
     6
   ],
-  "noticias": [],
+  "noticias": [
+    {
+      "id": "r1",
+      "titulo": "Drake Maye está encendido con tres pases de anotación consecutivos",
+      "cuerpo": "Drake Maye vive un momento intratable en New England. Por tercer partido consecutivo, el novato se despachó con tres pases de touchdown, demostrando que sus titubeos de inicio de temporada quedaron en el olvido. Su química con la ofensiva crece cada semana y su capacidad para generar jugadas grandes le da un piso sólido y un techo altísimo. Si buscas solución en el puesto de quarterback ante las lesiones de figuras estelares o semanas de descanso, Maye debe estar alineado como titular indiscutible en ligas de doce o más equipos.",
+      "etiqueta": "ARRANCA",
+      "jugadores": [
+        "11564"
+      ]
+    },
+    {
+      "id": "r2",
+      "titulo": "Jordan Love supera las fallas de sus receptores en Dallas",
+      "cuerpo": "La línea estadística de Jordan Love pudo ser una auténtica barbaridad en el triunfo ante Dallas. El pasador de Green Bay terminó con 276 yardas y un touchdown, pero sus receptores le soltaron tres envíos de anotación cantados, incluyendo una falla garrafal de Christian Watson. Pese a estos errores puntuales de sus compañeros, el volumen aéreo y la agresividad del esquema confirman que Love sigue firme dentro del escalón de QB1 indiscutible. Confía en su talento y no te desanimes si Watson te costó puntos este fin de semana.",
+      "etiqueta": "TENDENCIA",
+      "jugadores": [
+        "6804",
+        "8167"
+      ]
+    },
+    {
+      "id": "r3",
+      "titulo": "Tucker Kraft esquiva lesión grave y salva puntos clave",
+      "cuerpo": "Saltaron todas las alarmas en Green Bay cuando Tucker Kraft debió salir del emparrillado para ser evaluado de la rodilla, pero el ala cerrada demostró su dureza al reingresar al juego. Kraft culminó con cinco recepciones para 37 yardas, manteniéndose involucrado en el plan de juego aéreo de los Packers. Con la conocida escasez de alternativas consistentes en la posición de tight end, que no haya sufrido un daño estructural mayor es un auténtico salvavidas. Si está activo la próxima semana, debes mantenerlo como titular en tu alineación.",
+      "etiqueta": "LESIÓN",
+      "jugadores": [
+        "9484"
+      ]
+    },
+    {
+      "id": "r4",
+      "titulo": "TreVeyon Henderson arriesga en vano con tobillo lesionado",
+      "cuerpo": "Fue una sorpresa mayúscula ver a TreVeyon Henderson uniformado frente a los Jets tras acarrear un esguince alto de tobillo, pero la decisión pasó factura en el fantasy. El corredor lució notablemente disminuido, sin su explosividad habitual para cortar el campo y rindiendo apenas 40 yardas totales. Es momento de dejarlo en la banca hasta que recupere el cien por ciento de movilidad. Forzarlo con estas molestias merma su volumen de toques y destruye su techo de puntos. Búscate un reemplazo confiable de waivers esta semana.",
+      "etiqueta": "BANCA",
+      "jugadores": [
+        "12529"
+      ]
+    },
+    {
+      "id": "r5",
+      "titulo": "Savion Williams asume rol protagónico en la ranura de Packers",
+      "cuerpo": "Ante las bajas consecutivas de Jayden Reed y Skyy Moore, la ofensiva de Green Bay encontró en Savion Williams a su nuevo receptor desde la ranura. El novato tuvo un incremento drástico en tiempo de juego contra Dallas, colocándose de inmediato en el radar de waivers para mánagers necesitados de profundidad en los receptores. En esquemas de puntos por recepción (PPR), adueñarse de esa posición dentro de un ataque liderado por Jordan Love tiene un valor incalculable. Ve por él gastando un presupuesto moderado de FAAB de inmediato.",
+      "etiqueta": "WAIVER",
+      "jugadores": [
+        "10222",
+        "6804"
+      ]
+    },
+    {
+      "id": "r6",
+      "titulo": "Alerta máxima con corredores estelares golpeados en la liga",
+      "cuerpo": "La enfermería está que arde en la posición de corredor con nombres de calibre estelar como De'Von Achane, Breece Hall y Saquon Barkley en el reporte de lesionados. Perder a tus piezas fundamentales de primera o segunda ronda te obliga a moverte agresivamente en el mercado de cambios y waivers. Monitorea las prácticas durante toda la semana para confirmar la gravedad exacta de cada impacto. No arriesgues huecos vacíos en tu alineación y asegura a sus suplentes directos antes de que te los ganen tus rivales de liga.",
+      "etiqueta": "LESIÓN",
+      "jugadores": [
+        "9226",
+        "8155",
+        "4866"
+      ]
+    },
+    {
+      "id": "r7",
+      "titulo": "Jaleel McLaughlin y Roschon Johnson encabezan los reclamos prioritarios",
+      "cuerpo": "Con tantas dudas médicas en los backfields de la liga, las opciones de relevo se vuelven oro puro en los alambres de despecho. Jaleel McLaughlin y Roschon Johnson se posicionan como las adiciones prioritarias de esta semana gracias a su creciente volumen y eficacia en situaciones de zona roja. McLaughlin aporta dinamismo en jugadas diseñadas y recepciones, mientras que Johnson asegura toques pesados en jugadas cortas. Si tienes prioridad número uno o buen presupuesto de puja ciega, invierte con confianza para tapar baches en tu cuadro titular.",
+      "etiqueta": "WAIVER",
+      "jugadores": [
+        "11439",
+        "10235"
+      ]
+    },
+    {
+      "id": "r8",
+      "titulo": "Josh Allen despliega magia de élite ante las adversidades",
+      "cuerpo": "Josh Allen regaló una de las jugadas más espectaculares de la campaña al emular al mítico Brett Favre, eludiendo la captura con un envío de fantasía de revés hacia las diagonales. Más allá de lo vistoso del touchdown, Allen demuestra semana a semana por qué es intocable en cualquier formato de fantasy. Genera puntos masivos tanto por aire como atacando por piernas en zona roja, anulando cualquier enfrentamiento complicado. Jamás pienses en sentarlo; su techo ofensivo es capaz de ganar duelos individuales sin ayuda de nadie.",
+      "etiqueta": "ARRANCA",
+      "jugadores": [
+        "4984"
+      ]
+    },
+    {
+      "id": "r9",
+      "titulo": "Incertidumbre con Lamar Jackson y Jalen Hurts genera dolores",
+      "cuerpo": "Los dos mariscales más letales por la vía terrestre, Lamar Jackson y Jalen Hurts, aparecen con designaciones de lesión que encienden focos rojos en la comunidad fantasy. Ambos basan gran parte de su estratosférico valor en la movilidad y los acarreos cerca de las diagonales, por lo que cualquier problema muscular o articular les resta efectividad inmediatamente. Es vital que comiences a sondear respaldos fiables en el alambre para no quedarte desamparado el domingo. Revisa a conciencia las prácticas del miércoles y jueves antes de proyectar tus puntos.",
+      "etiqueta": "LESIÓN",
+      "jugadores": [
+        "4881",
+        "6904"
+      ]
+    },
+    {
+      "id": "r10",
+      "titulo": "Khalil Shakir gana bonos indispensables para plantillas de PPR",
+      "cuerpo": "El ataque aéreo de Buffalo necesita armas consistentes y Khalil Shakir está levantando la mano como un objetivo altamente confiable entre semana y semana. Aprovechando su gran separación en rutas cortas e intermedias, Shakir se convirtió en una de las incorporaciones más codiciadas de los waivers en ligas con formato de puntos por recepción. Aunque su techo en yardas largas dependa del guion de juego, su volumen de pases atrapables garantiza un piso muy seguro como opción de Flex. Es momento de ficharlo antes de que explote definitivamente.",
+      "etiqueta": "WAIVER",
+      "jugadores": [
+        "8134"
+      ]
+    }
+  ],
   "lesionados": [
     {
       "id": "9226",
@@ -110,25 +207,25 @@
     "10213"
   ],
   "soltados": [
-    "3321",
     "13150",
-    "12533",
+    "3321",
     "9511",
+    "12533",
     "11630",
     "3271",
     "11539",
     "2505",
+    "11581",
     "13330",
     "11637",
-    "11581",
     "9756",
     "11610",
     "5045",
     "5012"
   ],
   "duelo": {
-    "a": "—",
-    "b": "—",
-    "veredicto": ""
+    "a": "Drake Maye",
+    "b": "Jordan Love",
+    "veredicto": "Arranca a Drake Maye. Viene enrachado con tres juegos seguidos de tres anotaciones y ritmo ascendente, mientras que los receptores de Jordan Love han sufrido bajas y soltado pases clave, limitando su techo productivo esta semana."
   }
 }
