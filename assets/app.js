@@ -164,6 +164,7 @@ function inicio() {
         <div class="plist">${D.lesionados.slice(0, 6).map(x => J[x.id] && prow(J[x.id], pillSt(J[x.id]))).join('')}</div></div>
     </section>
     ${duelo()}
+    ${fxtv()}
     <section class="block"><div class="head"><h2 class="px">EQUIPOS</h2><a class="all" href="#/equipos">VER LOS 32 ›</a></div>${teamGrid()}</section>
   </div></div>`;
 }
@@ -228,6 +229,7 @@ function noticia(id) {
       ${jug.length >= 2 ? `<a class="btn" href="#/comparar/${jug[0].id}/${jug[1].id}">⚔ CARA A CARA</a>` : ''}</div></section>` : ''}
     <section class="block" style="padding-top:8px"><details class="desglose"><summary><span>LEER EL DESGLOSE COMPLETO</span><span>›</span></summary><p>${esc(n.cuerpo)}</p></details>
       <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:14px">${ant ? `<a class="btn ghost" href="#/noticia/${ant.id}">‹ ANTERIOR</a>` : ''}${sig ? `<a class="btn" href="#/noticia/${sig.id}">SIGUIENTE JUGADA ›</a>` : ''}</div></section>
+    <section class="block" style="padding-top:12px">${ctaRedes()}</section>
     ${rel.length ? `<section class="block"><div class="head"><h2 class="px">SIGUE LA <span>JUGADA</span></h2></div><div class="news stagger">${rel.map(x => newsCard(x)).join('')}</div></section>` : ''}
   </div></div>`;
 }
@@ -449,6 +451,39 @@ function semana(w) {
   </div></div>`;
 }
 
+
+/* ---------- FX MEDIA: YouTube, podcast y redes ---------- */
+const ICO = {
+  yt: '<svg width="20" height="20" viewBox="0 0 8 8" shape-rendering="crispEdges" aria-hidden="true"><rect x="0" y="1" width="8" height="6" fill="#FF3B30"/><rect x="3" y="2" width="1" height="4" fill="#fff"/><rect x="4" y="3" width="1" height="2" fill="#fff"/></svg>',
+  tt: '<svg width="20" height="20" viewBox="0 0 8 8" shape-rendering="crispEdges" aria-hidden="true"><rect x="4" y="0" width="1" height="6" fill="#fff"/><rect x="5" y="1" width="2" height="1" fill="#25F4EE"/><rect x="2" y="4" width="2" height="1" fill="#fff"/><rect x="1" y="5" width="1" height="2" fill="#FE2C55"/><rect x="2" y="7" width="2" height="1" fill="#fff"/><rect x="4" y="6" width="1" height="1" fill="#fff"/></svg>',
+  ig: '<svg width="20" height="20" viewBox="0 0 8 8" shape-rendering="crispEdges" aria-hidden="true"><rect x="0" y="0" width="8" height="8" fill="#C13584"/><rect x="1" y="1" width="6" height="6" fill="#0A1A10"/><rect x="3" y="3" width="2" height="2" fill="#FCAF45"/><rect x="5" y="2" width="1" height="1" fill="#FCAF45"/></svg>',
+  sp: '<svg width="20" height="20" viewBox="0 0 8 8" shape-rendering="crispEdges" aria-hidden="true"><rect x="1" y="0" width="6" height="8" fill="#1DB954"/><rect x="0" y="1" width="8" height="6" fill="#1DB954"/><rect x="2" y="2" width="4" height="1" fill="#0A1A10"/><rect x="2" y="4" width="3" height="1" fill="#0A1A10"/><rect x="3" y="6" width="2" height="1" fill="#0A1A10"/></svg>'
+};
+const redBtn = (k, ico, txt) => D.redes[k] ? `<a class="social" href="${esc(D.redes[k].url)}" target="_blank" rel="noopener">${ICO[ico]}<span>${txt}<small>${esc(D.redes[k].usuario || '')}</small></span></a>` : '';
+const redesRow = () => `<div class="socials">${redBtn('tiktok', 'tt', 'TIKTOK')}${redBtn('youtube', 'yt', 'YOUTUBE')}${redBtn('instagram', 'ig', 'INSTAGRAM')}${redBtn('instagramFX', 'ig', 'INSTAGRAM FX')}${redBtn('spotify', 'sp', 'PODCAST')}</div>`;
+const vidCard = (v, big) => `<button class="vid ${big ? 'big' : ''} ${v.corto ? 'short' : ''}" type="button" data-v="${esc(v.id)}" aria-label="Reproducir ${esc(v.titulo)}">
+  <span class="thumb"><img loading="lazy" src="https://i.ytimg.com/vi/${esc(v.id)}/hqdefault.jpg" alt=""><span class="play">${ICO.yt}</span>${v.corto ? '<span class="tm">SHORT</span>' : ''}</span>
+  <span class="vt">${esc(v.titulo)}</span><small>${v.fecha ? new Date(v.fecha).toLocaleDateString('es-MX', { day: 'numeric', month: 'short' }) : ''}${v.vistas ? ' · ' + nf.format(v.vistas) + ' vistas' : ''}</small></button>`;
+const podcast = () => D.redes.spotify ? `<div class="pod"><iframe title="Podcast Fantasy Expertos en Spotify" src="https://open.spotify.com/embed/show/${esc(D.redes.spotify.show)}?theme=0" width="100%" height="232" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>` : '';
+function fxtv() {
+  const V = (D.videos.videos || []).slice(0, 4);
+  return `<section class="block"><div class="head"><h2 class="px">FX <span>TV</span></h2><a class="all" href="#/media">TODO EL CONTENIDO ›</a></div>
+    <div class="tvgrid">${V.length ? `<div class="vids">${V.map((v, i) => vidCard(v, i === 0)).join('')}</div>` : `<a class="empty" href="${esc(D.redes.youtube ? D.redes.youtube.url : '#')}" target="_blank" rel="noopener">Mira nuestros videos en YouTube ›</a>`}
+    <div class="grid" style="align-content:start">${podcast()}${redesRow()}</div></div></section>`;
+}
+function media() {
+  titulo('FX Media');
+  const V = D.videos.videos || [];
+  return `<div class="page">${crumbs([['', 'FX Media']])}<div class="wrap">
+    <section class="block"><div class="head"><h2 class="px">FX <span>MEDIA</span></h2><small class="px">VIDEOS · PODCAST · REDES</small></div>${redesRow()}</section>
+    <section class="block"><div class="head"><h2 class="px">EL <span>PODCAST</span></h2>${D.redes.spotify ? `<a class="all" href="${esc(D.redes.spotify.url)}" target="_blank" rel="noopener">ABRIR EN SPOTIFY ›</a>` : ''}</div>${podcast()}</section>
+    <section class="block"><div class="head"><h2 class="px">VIDEOS DE <span>YOUTUBE</span></h2>${D.redes.youtube ? `<a class="all" href="${esc(D.redes.youtube.url)}?sub_confirmation=1" target="_blank" rel="noopener">SUSCRÍBETE ›</a>` : ''}</div>
+      <div class="vids">${V.map((v, i) => vidCard(v, i === 0)).join('') || '<div class="empty">Los videos se cargan en el próximo ciclo.</div>'}</div></section>
+    <section class="block"><div class="tcta"><div><span class="px" style="font-size:9px;color:#25F4EE">LO MÁS RÁPIDO</span><h3>Los tips del día en 60 segundos</h3><p>Sigue a @joe.nfl en TikTok: análisis rápidos antes de cada jornada.</p></div>${redBtn('tiktok', 'tt', 'SEGUIR EN TIKTOK')}</div></section>
+  </div></div>`;
+}
+const ctaRedes = () => `<div class="tcta"><div><span class="px" style="font-size:9px;color:#25F4EE">¿LO QUIERES EN VIDEO?</span><h3>Esta y más jugadas, explicadas en 60 segundos</h3><p>Síguenos para no perderte nada antes del kickoff.</p></div><div class="socials">${redBtn('tiktok', 'tt', 'TIKTOK')}${redBtn('youtube', 'yt', 'YOUTUBE')}${redBtn('spotify', 'sp', 'PODCAST')}</div></div>`;
+
 const noEncontrado = () => { titulo('No encontrado'); return `<div class="page wrap loading"><p class="px" style="color:var(--accent)">FUMBLE</p><p>Esta página no existe o el dato aún no llega.</p><a class="btn" href="#/">VOLVER AL INICIO</a></div>`; };
 const actualizado = () => { const f = new Date(D.actualizado); return 'ACTUALIZADO ' + f.toLocaleString('es-MX', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }).toUpperCase(); };
 
@@ -469,6 +504,7 @@ function router() {
     case 'posicion': html = posicion(a, q); break;
     case 'equipos': html = equipos(); break;
     case 'equipo': html = equipo(a); break;
+    case 'media': html = media(); break;
     case 'exclusivo': html = exclusivo(); break;
     case 'temporada': html = temporada(); break;
     case 'semana': html = semana(a); break;
@@ -481,6 +517,11 @@ function router() {
   document.querySelectorAll('.links a').forEach(l => l.classList.toggle('act', l.dataset.s === (seccion || '') || (seccion === 'noticia' && l.dataset.s === 'noticias')));
   if (seccion === 'posicion') montaTabla(a);
   if (!seccion) arrancaCRT();
+  document.querySelectorAll('.vid').forEach(b => b.onclick = () => {
+    const t = b.querySelector('.thumb');
+    t.innerHTML = `<iframe src="https://www.youtube.com/embed/${b.dataset.v}?autoplay=1&rel=0" title="Video de Fantasy Expertos" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
+    b.onclick = null;
+  });
   document.querySelectorAll('.pick').forEach(btn => btn.onclick = () => {
     document.querySelectorAll('.pick').forEach(x => { x.classList.toggle('win', x === btn); $('small', x).textContent = x === btn ? 'TU ELECCIÓN' : ''; });
     $('#verdict').classList.add('show');
@@ -534,8 +575,10 @@ Promise.all([
   fetch('data/hoy.json?v=' + Date.now()).then(r => r.json()),
   fetch('data/jugadores.json?v=' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
   fetch('data/archivo.json?v=' + Date.now()).then(r => r.ok ? r.json() : []).catch(() => []),
-  fetch('data/semanas.json?v=' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({}))
-]).then(([hoy, jugadores, archivo, resumenes]) => {
+  fetch('data/semanas.json?v=' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({})),
+  fetch('data/redes.json?v=' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({})),
+  fetch('data/videos.json?v=' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({}))
+]).then(([hoy, jugadores, archivo, resumenes, redes, videos]) => {
   P = Array.isArray(jugadores) ? jugadores : [];
   P.forEach(j => J[j.id] = j);
   Object.keys(POSICIONES).forEach(p => P.filter(j => j.pos === p && j.rank).sort((a, b) => a.rank - b.rank).forEach((j, i) => RANKPOS[j.id] = i + 1));
@@ -548,7 +591,8 @@ Promise.all([
   });
   hoy.lesionados = (hoy.lesionados || []).filter(x => x.id);
   hoy.agregados = hoy.agregados || []; hoy.soltados = hoy.soltados || [];
-  D = hoy; D.archivo = Array.isArray(archivo) ? archivo : []; D.resumenes = resumenes || {};
+  D = hoy; D.archivo = Array.isArray(archivo) ? archivo : []; D.resumenes = resumenes || {}; D.redes = redes || {}; D.videos = videos || {};
+  const pie = document.getElementById('pie-redes'); if (pie) pie.innerHTML = redesRow();
   buscador();
   addEventListener('hashchange', router);
   router();

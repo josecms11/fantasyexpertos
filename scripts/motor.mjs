@@ -75,7 +75,29 @@ async function gemini(prompt) {
 const FORMATO = '{"noticias":[{"titulo":"titular original y punchy, máximo 8 palabras","claves":["3 puntos clave de máximo 10 palabras"],"cuerpo":"desglose propio de 60 a 90 palabras con el impacto en fantasy","etiqueta":"LESIÓN | WAIVER | ARRANCA | BANCA | TENDENCIA","impacto":"SUBE | BAJA | NEUTRO","equipo":"abreviatura NFL del equipo principal","jugadores":["nombre completo en inglés, el principal primero"]}]}';
 const VOZ = 'Eres el editor de Fantasy Expertos, el rincón de fantasy football para fans de habla hispana. Español de México, tono experto, directo y con personalidad. Escribe con tus propias palabras, nunca copies frases de las fuentes. Todo se aterriza a decisiones de fantasy. Responde SOLO JSON. ';
 
+/* ---------- YouTube (sin clave: página del canal + RSS) ---------- */
+async function videosYT(handle) {
+  try {
+    const html = await (await fetch('https://www.youtube.com/' + handle, { headers: { 'User-Agent': 'Mozilla/5.0', 'Accept-Language': 'es' } })).text();
+    const cid = (html.match(/"channelId":"(UC[\w-]{22})"/) || html.match(/channel\/(UC[\w-]{22})/) || [])[1];
+    if (!cid) { console.log('No encontré el canal de YouTube'); return null; }
+    const xml = await (await fetch('https://www.youtube.com/feeds/videos.xml?channel_id=' + cid)).text();
+    const vids = [...xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)].map(m => ({
+      id: (m[1].match(/<yt:videoId>(.*?)<\/yt:videoId>/) || [])[1],
+      titulo: ((m[1].match(/<title>([\s\S]*?)<\/title>/) || [])[1] || '').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'"),
+      fecha: (m[1].match(/<published>(.*?)<\/published>/) || [])[1],
+      vistas: +((m[1].match(/views="(\d+)"/) || [])[1] || 0),
+      corto: /\/shorts\//.test(m[1])
+    })).filter(v => v.id);
+    return { canal: cid, videos: vids };
+  } catch (e) { console.log('YouTube falló', e.message); return null; }
+}
+
 /* ---------- MAIN ---------- */
+const redes = leer('data/redes.json', {});
+const yt = redes.youtube ? await videosYT(redes.youtube.usuario) : null;
+if (yt) guardar('data/videos.json', { actualizado: new Date().toISOString(), ...yt }, true);
+
 const s = await sleeper();
 const porNombre = Object.fromEntries(s.jugadores.map(j => [norm(j.n), j.id]));
 const J = Object.fromEntries(s.jugadores.map(j => [j.id, j]));
