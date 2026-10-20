@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-20T19:39:35.069Z",
+  "actualizado": "2026-10-20T20:06:22.502Z",
   "ultimaIA": "2026-10-20T19:07:57.623Z",
   "semana": 7,
   "semanaStats": 7,
@@ -95,12 +95,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "11559",
-      "estatus": "Duda"
-    },
-    {
       "id": "2216",
       "estatus": "Fuera"
+    },
+    {
+      "id": "11559",
+      "estatus": "Duda"
     },
     {
       "id": "5859",
