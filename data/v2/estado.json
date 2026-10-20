@@ -1,15 +1,14 @@
 {
-  "fecha": "2026-10-20T05:58:41.148Z",
+  "fecha": "2026-10-20T06:29:37.651Z",
   "log": [
     "[0.0s] Inicio",
     "[0.1s] YouTube: 0 nuevos, 14 en total",
-    "[0.8s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
-    "[1.6s] ESPN: lesiones 799 · noticias 50",
-    "[2.1s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[5.4s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[15.8s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
-    "[17.9s] IA OK con gemini-3.5-flash-lite",
-    "[17.9s] Resumen semana 4",
-    "[17.9s] Listo: 0 noticias nuevas (0 exclusivas) · 421 jugadores · archivo 110 · semana de juego 7 · IA usada hoy 4/40"
+    "[0.9s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
+    "[2.5s] ESPN: lesiones 799 · noticias 50",
+    "[2.7s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[6.9s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
+    "[22.3s] IA OK con gemini-3.5-flash",
+    "[22.3s] Resumen semana 3",
+    "[22.4s] Listo: 0 noticias nuevas (0 exclusivas) · 421 jugadores · archivo 110 · semana de juego 7 · IA usada hoy 5/40"
   ]
 }
