@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-20T16:19:09.378Z",
-  "ultimaIA": "2026-10-20T14:37:24.781Z",
+  "actualizado": "2026-10-20T16:54:18.879Z",
+  "ultimaIA": "2026-10-20T16:54:18.879Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,51 +13,75 @@
   ],
   "noticias": [
     {
-      "id": "n20261020143705",
-      "fecha": "2026-10-20T14:37:24.781Z",
+      "id": "n20261020165401",
+      "fecha": "2026-10-20T16:54:18.879Z",
       "semana": 7,
-      "titulo": "Kendre Miller asoma como opción en waivers",
+      "titulo": "Najee Harris queda libre tras salir de Giants",
       "claves": [
-        "Kendre Miller destaca entre los recomendados",
-        "Oportunidad de oro en el mercado",
-        "Atención en ligas competitivas"
+        "Cortado tras quejarse de su rol",
+        "Tuvo escasa producción reciente",
+        "Busca nuevo destino en la liga"
       ],
-      "contexto": "Los analistas apuntan a Kendre Miller como uno de los nombres principales a considerar en el mercado de agentes libres de la semana, ideal para quienes buscan alternativas ante las lesiones en la posición de corredor.",
-      "fantasy": "Si necesitas un comodín que pueda incrementar su cuota de toques en las próximas semanas, asegurar a Miller en waivers puede darte dividendos importantes en formato PPR.",
-      "equipo_impacto": "Su rol podría ampliarse dependiendo de los ajustes tácticos de su ofensiva.",
-      "accion": "Puja por él en waivers si necesitas profundidad en la posición.",
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "NO",
+      "contexto": "Los Giants decidieron cortar al corredor Najee Harris pocos días después de que este expresara su frustración pública por el poco protagonismo en la rotación ofensiva tras sumar apenas dos yardas en cuatro acarreos.",
+      "fantasy": "Pierde todo valor actual en fantasy tras quedarse sin equipo, por lo que debes liberarlo de inmediato en ligas estándar o profundas.",
+      "equipo_impacto": "Deja vía libre para que el resto del backfield de Nueva York reajuste sus cargas de trabajo sin su presencia.",
+      "accion": "Corta al jugador de tu plantilla hoy mismo.",
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "NYG",
       "equipos": [
-        "NO"
+        "NYG",
+        "FA"
       ],
       "jugadores": [
-        "9757"
+        "7528"
       ]
     },
     {
-      "id": "n20261020143707",
-      "fecha": "2026-10-20T14:37:24.781Z",
+      "id": "n20261020165407",
+      "fecha": "2026-10-20T16:54:18.879Z",
       "semana": 7,
-      "titulo": "Jaxon Smith-Njigba domina proyecciones de receptores",
+      "titulo": "Jordan Elliott queda fuera de Tennessee",
       "claves": [
-        "Cima absoluta en pronósticos de WR",
-        "Alto volumen de targets asegurado",
-        "Imprescindible en fantasy"
+        "Cortado tras incidente en instalaciones",
+        "Estaba viendo participación regular",
+        "Busca nuevo rumbo profesional"
       ],
-      "contexto": "Las proyecciones estadísticas sitúan a Jaxon Smith-Njigba en la cima de los receptores abiertos para la Semana 7, reflejando el rol protagónico y la confianza que genera dentro de su esquema ofensivo.",
-      "fantasy": "Debes alinear al receptor sin dudarlo en todas tus ligas, ya que su capacidad para acumular recepciones lo convierte en una mina de oro en formatos PPR y estándar por igual.",
-      "equipo_impacto": "Se afianza como la bujía principal del juego aéreo de su equipo.",
-      "accion": "Ponlo en tu alineación estelar como tu WR1.",
+      "contexto": "Los Titans anunciaron la recisión de contrato del tackle defensivo Jordan Elliott de manera abrupta, derivado de un incidente ocurrido en las instalaciones del equipo durante los entrenamientos recientes.",
+      "fantasy": "Sin relevancia directa para ofensivas de fantasy, pero un factor a seguir para las ligas que evalúan unidades defensivas colectivas.",
+      "equipo_impacto": "Debilita la profundidad en la línea defensiva del equipo rumbo a los siguientes compromisos del calendario.",
+      "accion": "Ignora este movimiento en ligas ofensivas tradicionales.",
+      "etiqueta": "WAIVER",
+      "impacto": "NEUTRO",
+      "equipo": "TEN",
+      "equipos": [
+        "TEN"
+      ],
+      "jugadores": []
+    },
+    {
+      "id": "n20261020165409",
+      "fecha": "2026-10-20T16:54:18.879Z",
+      "semana": 7,
+      "titulo": "Zay Flowers brilla en el radar receptor",
+      "claves": [
+        "Proyecciones altas para esta semana",
+        "Arma principal en el juego aéreo",
+        "Consistencia en ofensiva"
+      ],
+      "contexto": "El receptor de Baltimore figura entre los elementos más destacados en las estimaciones previas a la semana 7, consolidándose como la opción predilecta por aire para mover las cadenas.",
+      "fantasy": "Disfruta de un piso de puntos muy seguro en ligas PPR, lo que lo convierte en una opción obligatoria para arrancar.",
+      "equipo_impacto": "Sostiene el peso del ataque aéreo del equipo ante las diversas bajas que han mermado el roster.",
+      "accion": "Inclúyelo en tu cuadro titular como receptor.",
       "etiqueta": "START",
       "impacto": "SUBE",
-      "equipo": "SEA",
+      "equipo": "BAL",
       "equipos": [
-        "SEA"
+        "BAL"
       ],
       "jugadores": [
-        "9488"
+        "9997",
+        "4881"
       ]
     }
   ],
@@ -231,19 +255,19 @@
     "9758",
     "9482",
     "10235",
-    "10213",
     "6650",
+    "10213",
     "12487",
     "7553",
     "11655",
     "11539",
     "11792",
     "11783",
+    "8135",
     "9230",
     "11637",
-    "8135",
-    "11565",
     "8116",
+    "11565",
     "11586"
   ],
   "soltados": [
@@ -267,13 +291,13 @@
     "11439",
     "7042",
     "1166",
-    "11630",
-    "11647"
+    "11647",
+    "11630"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
-    "b": "Bijan Robinson",
-    "veredicto": "Arranca a Jahmyr Gibbs por su enorme techo proyectado en PPR y su capacidad explosiva inigualable con Detroit."
+    "b": "Kyren Williams",
+    "veredicto": "Arranca a Jahmyr Gibbs por su enorme techo de puntos y su rol dominante en las proyecciones PPR de la semana."
   },
   "fuentes": [
     "Sleeper",
