@@ -1,5 +1,6 @@
 {
-  "actualizado": "2026-10-20T00:08:43.178Z",
+  "actualizado": "2026-10-20T00:45:24.301Z",
+  "ultimaIA": "2026-10-20T00:45:24.301Z",
   "semana": 6,
   "temporada": "2026",
   "semanas": [
@@ -9,22 +10,232 @@
     5,
     6
   ],
-  "noticias": [],
+  "noticias": [
+    {
+      "id": "n20261020004500",
+      "fecha": "2026-10-20T00:45:24.301Z",
+      "semana": 6,
+      "titulo": "Jalen Hurts fuera todo el año por coágulos",
+      "claves": [
+        "Coágulos en pulmones finalizan su temporada 2026.",
+        "Descanso médico obligatorio sin contacto físico permitido.",
+        "Drop inmediato en cualquier formato de redraft."
+      ],
+      "cuerpo": "Una noticia devastadora sacude el fantasy. Se detectaron coágulos sanguíneos en los pulmones de Jalen Hurts, dejándolo fuera por el resto de la campaña. Aunque médicamente se reporta estable, no puede recibir golpes. Si juegas en ligas redraft, córtalo hoy mismo sin remordimiento para liberar espacio en la banca. En dynasty reténlo, pero busca urgentemente un reemplazo veterano o transacciona por mariscales confiables para salvar tus aspiraciones al campeonato.",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "PHI",
+      "jugadores": [
+        "6904",
+        "9230"
+      ]
+    },
+    {
+      "id": "n20261020004501",
+      "fecha": "2026-10-20T00:45:24.301Z",
+      "semana": 6,
+      "titulo": "Stefon Diggs en duda para el juego estelar",
+      "claves": [
+        "Molestia en el isquiotibial compromete su participación.",
+        "Estatus cuestionable para el lunes por la noche.",
+        "Ten listo un plan de contingencia urgente."
+      ],
+      "cuerpo": "La presencia de Stefon Diggs en el choque de lunes por la noche cuelga de un hilo por un problema en el isquiotibial. Jugar en el último turno de la semana siempre es peligroso para los managers de fantasy; si se confirma su baja a minutos del juego, quedarás con un cero. Asegura a un receptor de suplencia del mismo partido o muévete por un plan B del domingo para evitar dolores de cabeza innecesarios.",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "WAS",
+      "jugadores": [
+        "2449"
+      ]
+    },
+    {
+      "id": "n20261020004502",
+      "fecha": "2026-10-20T00:45:24.301Z",
+      "semana": 6,
+      "titulo": "Caleb Williams sin restricciones médicas en Chicago",
+      "claves": [
+        "Removido por completo del reporte de lesiones.",
+        "Entrenamiento al parejo rumbo al próximo duelo.",
+        "Opción sólida de QB1 bajo el radar."
+      ],
+      "cuerpo": "Excelentes noticias para los Bears y tu roster. Caleb Williams quedó oficialmente fuera del reporte de lesionados y entrenó al cien por ciento de su capacidad. Esto disipa cualquier duda sobre su movilidad o fuerza en el brazo para la siguiente jornada. Con el juego terrestre funcionando y receptores sanos, Williams ofrece un piso muy decente y un techo prometedor para alinearlo como QB1 bajo en enfrentamientos favorables esta semana. Arráncalo con total confianza.",
+      "etiqueta": "ARRANCA",
+      "impacto": "SUBE",
+      "equipo": "CHI",
+      "jugadores": [
+        "11560"
+      ]
+    },
+    {
+      "id": "n20261020004503",
+      "fecha": "2026-10-20T00:45:24.301Z",
+      "semana": 6,
+      "titulo": "Zach Charbonnet apunta al domingo por la noche",
+      "claves": [
+        "Posible debut en la temporada para semana siete.",
+        "Amenaza real de repartición de toques terrestres.",
+        "Adición prioritaria en ligas de waivers profundas."
+      ],
+      "cuerpo": "Seattle podría recuperar a Zach Charbonnet para el partido de domingo por la noche en la Semana 7. Su regreso cambia la dinámica del backfield de los Seahawks de forma drástica. Si está disponible en el alambre de tu liga, tómalo ya como una póliza de seguro de alto calibre o elemento valioso de cambio. Su presencia reducirá el volumen de toques del titular, convirtiendo el ataque en un comité que debes monitorear muy de cerca.",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "SEA",
+      "jugadores": [
+        "9753"
+      ]
+    },
+    {
+      "id": "n20261020004504",
+      "fecha": "2026-10-20T00:45:24.301Z",
+      "semana": 6,
+      "titulo": "Konata Mumpfield surge como opción en Los Ángeles",
+      "claves": [
+        "La baja de Adams abre rutas inmediatas.",
+        "Candidato prioritario de waiver esta semana.",
+        "Oportunidad de volumen aéreo inesperado."
+      ],
+      "cuerpo": "Tras la aparatosa lesión de Davante Adams que lo marginará casi dos meses, los Rams necesitan manos confiables de manera urgente. Konata Mumpfield se perfila como el receptor que absorberá parte del árbol de rutas en la ofensiva de Sean McVay. No esperes números de superestrella de inmediato, pero el volumen manda en el fantasy. Vale una moneda de FAAB moderada o reclamo de waivers en ligas de doce o más equipos.",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "LAR",
+      "jugadores": [
+        "12718",
+        "2133"
+      ]
+    },
+    {
+      "id": "n20261020004505",
+      "fecha": "2026-10-20T00:45:24.301Z",
+      "semana": 6,
+      "titulo": "Tank Dell incrementa su valor en Houston",
+      "claves": [
+        "Su química con Stroud sigue rindiendo frutos.",
+        "Alta demanda en el alambre de waivers.",
+        "Proyección firme como WR2 con potencial semanal."
+      ],
+      "cuerpo": "La ofensiva de los Texans sigue carburando a gran nivel y Tank Dell es uno de los mayores beneficiados por volumen y separación en rutas profundas. Su habilidad para ganar yardas después de la recepción y la confianza total de su pasador lo colocan en la conversación de titular indiscutible cada semana. Si un mánager impaciente lo soltó o busca negociarlo, es momento de atacar el mercado. Considéralo un WR2 de alto perfil.",
+      "etiqueta": "ARRANCA",
+      "impacto": "SUBE",
+      "equipo": "HOU",
+      "jugadores": [
+        "9502",
+        "9758"
+      ]
+    },
+    {
+      "id": "n20261020004506",
+      "fecha": "2026-10-20T00:45:24.301Z",
+      "semana": 6,
+      "titulo": "Kyle Pitts se reactiva con cambio en Atlanta",
+      "claves": [
+        "Nuevas opciones en el esquema de pase.",
+        "Mayor efectividad en zona de anotación buscada.",
+        "TE1 viable ante la escasez general."
+      ],
+      "cuerpo": "Atlanta movió sus piezas en la posición de quarterback, lo que habitualmente beneficia a los alas cerradas con veteranía y seguridad en rutas intermedias. Kyle Pitts sigue siendo un enigma en cuanto a consistencia, pero su talento atlético y el volumen de rutas corridas justifican mantenerlo como un ala cerrada titular en ligas estándar. Ante el desierto de producción en esta posición, Pitts ofrece suficiente techo para quedarse firme en tu alineación inicial.",
+      "etiqueta": "ARRANCA",
+      "impacto": "SUBE",
+      "equipo": "ATL",
+      "jugadores": [
+        "7553"
+      ]
+    },
+    {
+      "id": "n20261020004507",
+      "fecha": "2026-10-20T00:45:24.301Z",
+      "semana": 6,
+      "titulo": "Tyler Warren sufre molestias físicas con Colts",
+      "claves": [
+        "Reporta dolencias físicas en semana compleja.",
+        "Incertidumbre general en la ofensiva de Indianápolis.",
+        "Recomendable enviarlo a la banca por precaución."
+      ],
+      "cuerpo": "El ala cerrada de Indianápolis arrastra problemas físicos en el peor momento posible, justo cuando el equipo vive momentos de turbulencia directiva y cambios de enfoque ofensivo. Warren venía ganando snaps, pero estas molestias limitan severamente su techo y ponen en riesgo su producción en rutas cortas. Es prudente mandarlo a la banca de fantasy esta semana y buscar un ala cerrada de reemplazo temporal con mejor estado de salud y enfrentamiento favorable.",
+      "etiqueta": "BANCA",
+      "impacto": "BAJA",
+      "equipo": "IND",
+      "jugadores": [
+        "12518"
+      ]
+    },
+    {
+      "id": "n20261020004508",
+      "fecha": "2026-10-20T00:45:24.301Z",
+      "semana": 6,
+      "titulo": "Austin Ekeler gana peso contra San Francisco",
+      "claves": [
+        "Factor clave por pase en horario estelar.",
+        "Oportunidades claras de toques en espacio abierto.",
+        "Opción flexible muy decente en ligas PPR."
+      ],
+      "cuerpo": "Washington enfrenta un compromiso bravísimo ante San Francisco y necesitará válvulas de escape inmediatas para mover las cadenas. Ahí entra Austin Ekeler. Aunque no tenga el volumen terrestre aplastante de antaño, su participación aérea en jugadas de pantalla y tercer intento le brinda un piso sólido en formatos con puntos por recepción. Úsalo como un Flex muy rentable si tienes corredores titulares lesionados o descansando en tu plantilla de fantasy.",
+      "etiqueta": "ARRANCA",
+      "impacto": "SUBE",
+      "equipo": "WAS",
+      "jugadores": [
+        "4663"
+      ]
+    },
+    {
+      "id": "n20261020004509",
+      "fecha": "2026-10-20T00:45:24.301Z",
+      "semana": 6,
+      "titulo": "Dalton Kincaid prende alarmas por desgaste físico",
+      "claves": [
+        "Limitado por dolencias físicas en Buffalo.",
+        "Volumen de pases comprometido a corto plazo.",
+        "Evalúa opciones de relevo en waivers."
+      ],
+      "cuerpo": "Dalton Kincaid aparece con molestias físicas que podrían mermar su participación y explosividad en el ataque de los Bills. En una temporada donde Buffalo distribuye el ovoide entre varias opciones, jugar tocado reduce drásticamente las expectativas sobre su rendimiento de fantasy. Revisa minuciosamente su estatus antes del silbatazo inicial; si no entrena al cien por ciento en los días previos, busca un ala cerrada sustituto con mejores condiciones de juego para tu alineación.",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "BUF",
+      "jugadores": [
+        "10236"
+      ]
+    },
+    {
+      "id": "n20261020004510",
+      "fecha": "2026-10-20T00:45:24.301Z",
+      "semana": 6,
+      "titulo": "Michael Mayer reclama atención como alternativa aérea",
+      "claves": [
+        "Aumento en la búsqueda en el alambre.",
+        "Segundo ala cerrada con potencial en redzone.",
+        "Recomendado para ligas profundas o dinastía."
+      ],
+      "cuerpo": "Mientras la atención mediática se concentra en Brock Bowers y los incidentes defensivos rivales, Michael Mayer continúa trabajando en silencio en Las Vegas. El joven ala cerrada ha visto un aumento en sus asignaciones en zona roja y esquemas con doble ala cerrada. No es una opción estelar inmediata, pero en ligas con dos alas cerradas obligatorias o formatos muy profundos, asegurar su perfil en el alambre puede salvarte de un apuro mayúsculo.",
+      "etiqueta": "WAIVER",
+      "impacto": "NEUTRO",
+      "equipo": "LV",
+      "jugadores": [
+        "9482",
+        "11604"
+      ]
+    },
+    {
+      "id": "n20261020004511",
+      "fecha": "2026-10-20T00:45:24.301Z",
+      "semana": 6,
+      "titulo": "Dontayvion Wicks se frena por problemas físicos",
+      "claves": [
+        "Lesión reciente limita su rol en Filadelfia.",
+        "Ajustes forzados en la rotación de receptores.",
+        "Congela su alineación en tus plantillas activas."
+      ],
+      "cuerpo": "El panorama ofensivo en Filadelfia se complicó todavía más con Dontayvion Wicks lidiando con molestias físicas. Con una ofensiva que ya asimila la dolorosa pérdida de su quarterback estelar, la falta de ritmo del receptor complica su proyección fantasy a corto plazo. No arriesgues tu enfrentamiento semanal esperando un milagro. Mándalo al banquillo de suplentes hasta comprobar que supere la lesión y desarrolle química verdadera con el nuevo mariscal de campo suplente.",
+      "etiqueta": "BANCA",
+      "impacto": "BAJA",
+      "equipo": "PHI",
+      "jugadores": [
+        "9486",
+        "9230"
+      ]
+    }
+  ],
   "lesionados": [
     {
-      "id": "9226",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "4881",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "4866",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "13287",
+      "id": "2133",
       "estatus": "Fuera"
     },
     {
@@ -32,19 +243,39 @@
       "estatus": "Fuera"
     },
     {
-      "id": "8155",
+      "id": "4881",
       "estatus": "Fuera"
     },
     {
-      "id": "10229",
+      "id": "4199",
+      "estatus": "Duda"
+    },
+    {
+      "id": "12518",
       "estatus": "Fuera"
     },
     {
-      "id": "7543",
+      "id": "11559",
+      "estatus": "Duda"
+    },
+    {
+      "id": "10236",
+      "estatus": "Duda"
+    },
+    {
+      "id": "5872",
       "estatus": "Fuera"
     },
     {
-      "id": "11635",
+      "id": "12534",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "8121",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12512",
       "estatus": "Fuera"
     },
     {
@@ -52,56 +283,68 @@
       "estatus": "Duda"
     },
     {
+      "id": "9486",
+      "estatus": "Duda"
+    },
+    {
+      "id": "4035",
+      "estatus": "Duda"
+    },
+    {
+      "id": "13287",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "5844",
+      "estatus": "Fuera"
+    },
+    {
       "id": "5892",
       "estatus": "Fuera"
     },
     {
-      "id": "12508",
+      "id": "7571",
       "estatus": "Fuera"
     },
     {
-      "id": "9499",
-      "estatus": "Duda"
-    },
-    {
-      "id": "12512",
+      "id": "12533",
       "estatus": "Fuera"
     },
     {
-      "id": "12518",
+      "id": "8155",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "11635",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "10229",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12509",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "4892",
       "estatus": "Fuera"
     },
     {
       "id": "4983",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "13286",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "2216",
-      "estatus": "Duda"
-    },
-    {
-      "id": "12534",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "13281",
       "estatus": "Fuera"
     }
   ],
   "agregados": [
     "13276",
     "9758",
-    "7553",
     "9502",
+    "7553",
     "9482",
     "10213",
     "10235",
-    "11637",
     "12718",
+    "11637",
     "4663",
     "11565",
     "11783",
@@ -117,14 +360,15 @@
     "12533",
     "8121",
     "2505",
-    "3321",
     "11435",
+    "3321",
+    "2133",
     "8132",
     "5012"
   ],
   "duelo": {
-    "a": "—",
-    "b": "—",
-    "veredicto": ""
+    "a": "Caleb Williams",
+    "b": "Austin Ekeler",
+    "veredicto": "Arranca a Caleb Williams; completamente sano, su volumen aéreo y proyección de anotaciones ofrecen un techo muy superior frente a un Ekeler limitado a un rol complementario de recepciones."
   }
 }
