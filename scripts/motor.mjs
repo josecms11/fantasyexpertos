@@ -1,25 +1,67 @@
-// FANTASY EXPERTOS – Motor automático (GitHub Actions, cada hora)
-// 1. Noticias de medios (RSS) + notas exclusivas del reportero (data/reportero.json, las sube Apps Script)
-// 2. Datos de Sleeper: jugadores, lesiones, puntos por semana, agregados/soltados
-// 3. Gemini escribe noticias propias y notas EXCLUSIVAS a partir del reportero
-// 4. Guarda archivo histórico y resúmenes semanales (catch-up de la temporada)
+// FANTASY EXPERTOS – Motor automático v2 (GitHub Actions, cada 10 min)
+// Fuentes: Sleeper (jugadores, estadísticas, proyecciones, tendencias), ESPN (calendario, noticias, lesiones),
+// RSS de medios, YouTube y el buzón del reportero. Gemini escribe; reglas propias verifican antes de publicar.
+// Todo se escribe en data/v2/ (la versión vieja de Apps Script escribía en data/ y ya no puede pisar nada).
 import fs from 'node:fs';
-const LOG = []; const t0 = Date.now();
-const log = (...a) => { const m = `[${((Date.now() - t0) / 1000).toFixed(1)}s] ` + a.join(' '); console.log(m); LOG.push(m); fs.mkdirSync('data', { recursive: true }); fs.writeFileSync('data/estado.json', JSON.stringify({ fecha: new Date().toISOString(), log: LOG }, null, 2)); };
-const TO = { signal: undefined };
-const conTiempo = (ms = 25000) => AbortSignal.timeout(ms);
 
+const DIR = 'data/v2';
+const LOG = []; const t0 = Date.now();
+const log = (...a) => { const m = `[${((Date.now() - t0) / 1000).toFixed(1)}s] ` + a.join(' '); console.log(m); LOG.push(m); fs.mkdirSync(DIR, { recursive: true }); fs.writeFileSync(DIR + '/estado.json', JSON.stringify({ fecha: new Date().toISOString(), log: LOG }, null, 2)); };
+const conTiempo = (ms = 25000) => AbortSignal.timeout(ms);
 const KEY = process.env.GEMINI_API_KEY;
-const MODELO = process.env.GEMINI_MODEL || 'gemini-3.8-flash';
 const RSS = ['https://www.cbssports.com/rss/headlines/nfl/', 'https://sports.yahoo.com/nfl/rss/'];
-const TOP = 350, HIST = 5;
+const POS = ['QB', 'RB', 'WR', 'TE', 'K'];
+const TOP = 420, HIST = 5, CUOTA_DIA = 17, CADA_IA_MIN = 115;
 const leer = (f, d) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch { return d; } };
 const guardar = (f, o, pretty) => { fs.mkdirSync(f.split('/').slice(0, -1).join('/'), { recursive: true }); fs.writeFileSync(f, JSON.stringify(o, null, pretty ? 2 : 0)); };
-const get = async u => { try { const r = await fetch(u, { headers: { 'User-Agent': 'FantasyExpertos/1.0' }, signal: conTiempo(40000) }); return r.ok ? r.json() : null; } catch (e) { log('GET falló', u, e.message); return null; } };
-const norm = t => String(t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z]/g, '');
+const get = async (u, ms = 40000) => { try { const r = await fetch(u, { headers: { 'User-Agent': 'Mozilla/5.0 FantasyExpertos' }, signal: conTiempo(ms) }); return r.ok ? r.json() : null; } catch (e) { log('GET falló', u.slice(0, 90), e.message); return null; } };
+const norm = t => String(t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\b(jr|sr|ii|iii|iv)\b/g, '').replace(/[^a-z]/g, '');
+const r1 = v => v == null || isNaN(v) ? null : Math.round(v * 10) / 10;
+const AB = { WSH: 'WAS', JAC: 'JAX', LA: 'LAR' };
+const ESTATUS = { Questionable: 'Duda', Doubtful: 'Duda', Out: 'Fuera', IR: 'Fuera', PUP: 'Fuera', Sus: 'Fuera', NA: 'Fuera' };
 
-/* ---------- RSS ---------- */
-async function titulares() {
+/* ---------- cuota de Gemini (la capa gratis es muy limitada) ---------- */
+const cuota = leer(DIR + '/cuota.json', {});
+const hoyKey = new Date().toISOString().slice(0, 10);
+if (cuota.dia !== hoyKey) { cuota.dia = hoyKey; cuota.usadas = 0; cuota.bloqueado = null; }
+const quedan = () => CUOTA_DIA - (cuota.usadas || 0);
+let MODELOS = null;
+async function modelos() {
+  if (MODELOS) return MODELOS;
+  const pref = process.env.GEMINI_MODEL ? [process.env.GEMINI_MODEL] : [];
+  const l = await get(`https://generativelanguage.googleapis.com/v1beta/models?key=${KEY}&pageSize=200`, 15000);
+  const nombres = ((l && l.models) || []).filter(m => (m.supportedGenerationMethods || []).includes('generateContent')).map(m => m.name.replace('models/', ''));
+  const flash = nombres.filter(n => /flash/.test(n) && !/image|tts|audio|live|exp|preview|thinking/.test(n));
+  const orden = n => { const v = parseFloat((n.match(/gemini-(\d+(\.\d+)?)/) || [])[1] || 0); return v * 10 + (/lite/.test(n) ? 0 : 1); };
+  MODELOS = [...new Set([...pref, ...flash.sort((a, b) => orden(b) - orden(a)), 'gemini-3.8-flash', 'gemini-2.5-flash', 'gemini-2.5-flash-lite'])];
+  log('Modelos disponibles:', MODELOS.slice(0, 6).join(', '));
+  return MODELOS;
+}
+async function gemini(prompt, tokens = 16000) {
+  if (!KEY) { log('Falta GEMINI_API_KEY'); return null; }
+  if (quedan() <= 0) { log('Cuota diaria de IA agotada, se reintenta mañana'); return null; }
+  for (const m of await modelos()) {
+    if (cuota.bloqueado && cuota.bloqueado[m]) continue;
+    let r;
+    try {
+      r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent?key=${KEY}`, {
+        signal: conTiempo(240000), method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: 'application/json', temperature: 0.6, maxOutputTokens: tokens } })
+      });
+    } catch (e) { log('Gemini sin respuesta', m, e.message); continue; }
+    cuota.usadas = (cuota.usadas || 0) + 1; guardar(DIR + '/cuota.json', cuota, true);
+    const j = await r.json().catch(() => ({}));
+    if (r.status === 429 || r.status === 404) { (cuota.bloqueado = cuota.bloqueado || {})[m] = r.status; guardar(DIR + '/cuota.json', cuota, true); log('Modelo no disponible', m, r.status); continue; }
+    try { const t = j.candidates[0].content.parts.map(x => x.text || '').join(''); log('IA OK con', m); return JSON.parse(t.slice(t.indexOf('{'), t.lastIndexOf('}') + 1)); }
+    catch { log('Gemini respuesta inválida', m, JSON.stringify(j).slice(0, 300)); return null; }
+  }
+  return null;
+}
+const VOZ = 'Eres el editor de Fantasy Expertos, el rincón de fantasy football para fans de habla hispana. Español de México, tono experto, directo y con personalidad. Escribe con tus propias palabras, nunca copies frases de las fuentes. Todo se aterriza a decisiones de fantasy. REGLAS DE VERACIDAD: usa SOLO hechos presentes en las fuentes y en la lista de estatus que te doy; si un jugador está OUT o IR jamás lo recomiendes para arrancar; no inventes cifras, fechas ni lesiones; si no estás seguro de un dato, no lo uses. Responde SOLO JSON. ';
+const FORMATO = '{"noticias":[{"titulo":"titular original y punchy, máximo 9 palabras","claves":["3 puntos clave de máximo 12 palabras"],"contexto":"qué pasó y por qué, 50 a 80 palabras","fantasy":"impacto en fantasy: a quién sube o baja, en qué formatos y ligas, 50 a 80 palabras","equipo_impacto":"cómo cambia al equipo y a sus compañeros, 30 a 60 palabras","accion":"qué hacer hoy en tu liga, una frase accionable","etiqueta":"START | SIT | WAIVER | LESIÓN | TENDENCIA","impacto":"SUBE | BAJA | NEUTRO","equipo":"abreviatura NFL del equipo principal","equipos":["todas las abreviaturas NFL relacionadas"],"jugadores":["nombre completo en inglés, el principal primero"]}]}';
+
+/* ---------- Fuentes de texto ---------- */
+async function titularesRSS() {
   const out = [];
   for (const u of RSS) {
     try {
@@ -27,112 +69,117 @@ async function titulares() {
       for (const m of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)) {
         const t = (m[1].match(/<title>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/title>/) || [])[1] || '';
         const d = ((m[1].match(/<description>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/description>/) || [])[1] || '').replace(/<[^>]+>/g, '');
-        if (t) out.push((t + ' — ' + d).slice(0, 500));
-        if (out.length > 40) break;
+        if (t) out.push((t + ' — ' + d).slice(0, 400));
+        if (out.length > 30) break;
       }
-    } catch (e) { console.log('RSS falló', u, e.message); }
+    } catch (e) { log('RSS falló', u, e.message); }
   }
   return out;
 }
-
-/* ---------- Sleeper ---------- */
-async function sleeper() {
-  const estado = await get('https://api.sleeper.app/v1/state/nfl');
-  const temporada = estado.season, semana = estado.week;
-  const raw = await get('https://api.sleeper.app/v1/players/nfl');
-  const todos = {};
-  for (const [k, p] of Object.entries(raw || {})) {
-    if (!p.active || !['QB', 'RB', 'WR', 'TE', 'K'].includes(p.position)) continue;
-    todos[k] = { n: p.full_name, pos: p.position, team: p.team, num: p.number, edad: p.age, exp: p.years_exp, col: p.college, alt: p.height, peso: p.weight,
-      rank: p.search_rank && p.search_rank < 9999999 ? p.search_rank : null, inj: p.injury_status, injParte: p.injury_body_part, injNota: p.injury_notes };
+async function noticiasESPN() {
+  const j = await get('https://site.api.espn.com/apis/site/v2/sports/football/nfl/news?limit=80');
+  return ((j && j.articles) || []).map(a => ({
+    titulo: a.headline, desc: a.description || '', fecha: a.published, url: a.links && a.links.web && a.links.web.href,
+    atletas: (a.categories || []).filter(c => c.type === 'athlete').map(c => String(c.athleteId || (c.athlete && c.athlete.id) || '')).filter(Boolean),
+    equipos: (a.categories || []).filter(c => c.type === 'team').map(c => c.team && c.team.abbreviation ? (AB[c.team.abbreviation] || c.team.abbreviation) : null).filter(Boolean)
+  })).filter(a => a.titulo);
+}
+async function lesionesESPN() {
+  const j = await get('https://site.api.espn.com/apis/site/v2/sports/football/nfl/injuries');
+  const out = {};
+  for (const t of (j && j.injuries) || []) for (const i of t.injuries || []) {
+    const a = i.athlete || {}; const id = String(a.id || ((a.links || []).map(l => (l.href || '').match(/id\/(\d+)/)).find(Boolean) || [])[1] || '');
+    const d = i.details || {};
+    const reg = { st: i.status, fecha: i.date, tipo: d.type || '', lugar: d.location || '', detalle: d.detail || '', lado: d.side || '', regreso: d.returnDate || '', nombre: a.displayName || '' };
+    if (id) out['e' + id] = reg; if (a.displayName) out['n' + norm(a.displayName)] = reg;
   }
-  const semanas = []; for (let w = 1; w <= semana; w++) semanas.push(w);
-  const stats = {};
-  for (const w of semanas) stats[w] = await get(`https://api.sleeper.app/v1/stats/nfl/regular/${temporada}/${w}`) || {};
-  const add = await get('https://api.sleeper.app/v1/players/nfl/trending/add?lookback_hours=24&limit=15') || [];
-  const drop = await get('https://api.sleeper.app/v1/players/nfl/trending/drop?lookback_hours=24&limit=15') || [];
-  const addM = Object.fromEntries(add.map(t => [t.player_id, t.count])), dropM = Object.fromEntries(drop.map(t => [t.player_id, t.count]));
-  const ids = Object.keys(todos).filter(k => (todos[k].rank && todos[k].team) || addM[k] || dropM[k]).sort((a, b) => (todos[a].rank || 1e9) - (todos[b].rank || 1e9));
-  const set = new Set(ids.slice(0, TOP)); [...Object.keys(addM), ...Object.keys(dropM)].forEach(k => todos[k] && set.add(k));
-  const pts = (w, k) => stats[w]?.[k]?.pts_ppr != null ? Math.round(stats[w][k].pts_ppr * 10) / 10 : null;
-  const r1 = v => v == null ? null : Math.round(v * 10) / 10;
-  const linea = (w, k) => { const x = stats[w]?.[k]; if (!x || x.pts_ppr == null) return null;
-    const st = {}; [['py', 'pass_yd'], ['ptd', 'pass_td'], ['int', 'pass_int'], ['ra', 'rush_att'], ['ry', 'rush_yd'], ['rtd', 'rush_td'], ['tg', 'rec_tgt'], ['rec', 'rec'], ['recy', 'rec_yd'], ['rectd', 'rec_td'], ['fl', 'fum_lost'], ['fgm', 'fgm'], ['xpm', 'xpm']].forEach(([a, b]) => { if (x[b]) st[a] = Math.round(x[b]); });
-    return { f: [r1(x.pts_ppr), r1(x.pts_half_ppr), r1(x.pts_std)], st }; };
-  const semHist = semanas.slice(-HIST);
-  const jugadores = [...set].map(k => {
-    const p = todos[k], temp = semanas.map(w => pts(w, k)), jug = temp.filter(v => v != null);
-    const log = semanas.map(w => ({ w, ...(linea(w, k) || {}) }));
-    return { id: k, ...p, team: p.team || 'FA', hist: semHist.map(w => pts(w, k)), temp, log,
-      total: jug.length ? Math.round(jug.reduce((a, b) => a + b, 0) * 10) / 10 : null,
-      prom: jug.length ? Math.round(jug.reduce((a, b) => a + b, 0) / jug.length * 10) / 10 : null, add: addM[k] || 0, drop: dropM[k] || 0 };
-  });
-  return { temporada, semana, semanas, semHist, stats, todos, jugadores, agregados: add.map(t => t.player_id).filter(k => todos[k]), soltados: drop.map(t => t.player_id).filter(k => todos[k]) };
+  return out;
 }
-
-/* ---------- Calendario completo (ESPN, gratis) ---------- */
-const AB = { WSH: 'WAS', JAC: 'JAX', LA: 'LAR' };
-async function calendario(temporada) {
-  const cal = {}, juegos = [];
-  for (let w = 1; w <= 18; w++) {
-    const j = await get(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?seasontype=2&week=${w}&dates=${temporada}`);
-    for (const e of (j && j.events) || []) {
-      const c = e.competitions[0], t = c.competitors.map(x => ({ ab: AB[x.team.abbreviation] || x.team.abbreviation, home: x.homeAway === 'home', pts: +x.score || 0, rec: x.records && x.records[0] && x.records[0].summary }));
-      const fin = e.status.type.state === 'post';
-      for (const [a, b] of [[t[0], t[1]], [t[1], t[0]]]) {
-        cal[a.ab] = cal[a.ab] || {};
-        cal[a.ab][w] = { opp: b.ab, home: a.home, fecha: e.date, fin, pf: fin ? a.pts : null, pc: fin ? b.pts : null };
-      }
-      juegos.push({ w, id: e.id, fecha: e.date, fin, eq: t });
-    }
-  }
-  return { cal, juegos };
-}
-
-/* ---------- Gemini ---------- */
-async function gemini(prompt) {
-  if (!KEY) { console.log('Falta GEMINI_API_KEY'); return null; }
-  let r; try { r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${MODELO}:generateContent?key=${KEY}`, {
-    signal: conTiempo(120000), method: 'POST', headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: 'application/json', temperature: 0.7, maxOutputTokens: 16000 } })
-  }); } catch (e) { log('Gemini sin respuesta', e.message); return null; }
-  const j = await r.json();
-  try { const t = j.candidates[0].content.parts.map(x => x.text || '').join(''); return JSON.parse(t.slice(t.indexOf('{'), t.lastIndexOf('}') + 1)); }
-  catch { log('Gemini falló', JSON.stringify(j).slice(0, 400)); return null; }
-}
-const FORMATO = '{"noticias":[{"titulo":"titular original y punchy, máximo 8 palabras","claves":["3 puntos clave de máximo 10 palabras"],"cuerpo":"desglose propio de 60 a 90 palabras con el impacto en fantasy","etiqueta":"LESIÓN | WAIVER | ARRANCA | BANCA | TENDENCIA","impacto":"SUBE | BAJA | NEUTRO","equipo":"abreviatura NFL del equipo principal","jugadores":["nombre completo en inglés, el principal primero"]}]}';
-const VOZ = 'Eres el editor de Fantasy Expertos, el rincón de fantasy football para fans de habla hispana. Español de México, tono experto, directo y con personalidad. Escribe con tus propias palabras, nunca copies frases de las fuentes. Todo se aterriza a decisiones de fantasy. Responde SOLO JSON. ';
-
-/* ---------- YouTube (sin clave: página del canal + RSS) ---------- */
-async function videosYT(handle) {
+async function videosYT(canal) {
+  if (!canal) return [];
   try {
-    const html = await (await fetch('https://www.youtube.com/' + handle, { signal: conTiempo(), headers: { 'User-Agent': 'Mozilla/5.0', 'Accept-Language': 'es' } })).text();
-    const cid = (html.match(/"channelId":"(UC[\w-]{22})"/) || html.match(/channel\/(UC[\w-]{22})/) || [])[1];
-    if (!cid) { log('No encontré el canal de YouTube'); return null; }
-    const xml = await (await fetch('https://www.youtube.com/feeds/videos.xml?channel_id=' + cid, { signal: conTiempo() })).text();
-    const vids = [...xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)].map(m => ({
+    const xml = await (await fetch('https://www.youtube.com/feeds/videos.xml?channel_id=' + canal, { signal: conTiempo(), headers: { 'User-Agent': 'Mozilla/5.0' } })).text();
+    return [...xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)].map(m => ({
       id: (m[1].match(/<yt:videoId>(.*?)<\/yt:videoId>/) || [])[1],
       titulo: ((m[1].match(/<title>([\s\S]*?)<\/title>/) || [])[1] || '').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'"),
       fecha: (m[1].match(/<published>(.*?)<\/published>/) || [])[1],
       vistas: +((m[1].match(/views="(\d+)"/) || [])[1] || 0),
       corto: /\/shorts\//.test(m[1])
     })).filter(v => v.id);
-    return { canal: cid, videos: vids };
-  } catch (e) { log('YouTube falló', e.message); return null; }
+  } catch (e) { log('YouTube falló', e.message); return []; }
 }
 
-/* ---------- MAIN ---------- */
+/* ---------- Sleeper ---------- */
+function proyeccionesDe(raw) {
+  const out = {};
+  if (Array.isArray(raw)) raw.forEach(x => { if (x && x.player_id && x.stats) out[x.player_id] = x.stats; });
+  else if (raw) Object.entries(raw).forEach(([k, v]) => { out[k] = v && v.stats ? v.stats : v; });
+  return out;
+}
+async function sleeper() {
+  const estado = await get('https://api.sleeper.app/v1/state/nfl');
+  const temporada = estado.season, semana = estado.week;
+  const raw = await get('https://api.sleeper.app/v1/players/nfl', 90000);
+  const todos = {};
+  for (const [k, p] of Object.entries(raw || {})) {
+    if (!p.active || !POS.includes(p.position)) continue;
+    todos[k] = { n: p.full_name, pos: p.position, team: p.team, num: p.number, edad: p.age, exp: p.years_exp, col: p.college, alt: p.height, peso: p.weight, espn: p.espn_id ? String(p.espn_id) : null,
+      rank: p.search_rank && p.search_rank < 9999999 ? p.search_rank : null, inj: p.injury_status, injParte: p.injury_body_part, injNota: p.injury_notes, depth: p.depth_chart_order };
+  }
+  const semanas = []; for (let w = 1; w <= semana; w++) semanas.push(w);
+  const stats = {};
+  for (const w of semanas) stats[w] = await get(`https://api.sleeper.app/v1/stats/nfl/regular/${temporada}/${w}`) || {};
+  // proyecciones de la semana a jugar y la siguiente
+  const proy = {};
+  for (const w of [semana, semana + 1]) {
+    let p = proyeccionesDe(await get(`https://api.sleeper.app/v1/projections/nfl/regular/${temporada}/${w}`));
+    if (!Object.keys(p).length) p = proyeccionesDe(await get(`https://api.sleeper.app/projections/nfl/${temporada}/${w}?season_type=regular&position[]=QB&position[]=RB&position[]=WR&position[]=TE&position[]=K`));
+    proy[w] = p;
+  }
+  const add = await get('https://api.sleeper.app/v1/players/nfl/trending/add?lookback_hours=24&limit=25') || [];
+  const drop = await get('https://api.sleeper.app/v1/players/nfl/trending/drop?lookback_hours=24&limit=25') || [];
+  return { temporada, semana, semanas, stats, proy, todos, add, drop };
+}
+
+/* ---------- Calendario (ESPN) ---------- */
+async function calendario(temporada) {
+  const cal = {}, juegos = [];
+  for (let w = 1; w <= 18; w++) {
+    const j = await get(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?seasontype=2&week=${w}&dates=${temporada}`);
+    for (const e of (j && j.events) || []) {
+      const c = e.competitions[0], t = c.competitors.map(x => ({ ab: AB[x.team.abbreviation] || x.team.abbreviation, home: x.homeAway === 'home', pts: +x.score || 0 }));
+      const fin = e.status.type.state === 'post';
+      for (const [a, b] of [[t[0], t[1]], [t[1], t[0]]]) { cal[a.ab] = cal[a.ab] || {}; cal[a.ab][w] = { opp: b.ab, home: a.home, fecha: e.date, fin, pf: fin ? a.pts : null, pc: fin ? b.pts : null, id: e.id }; }
+      juegos.push({ w, id: e.id, fecha: e.date, fin });
+    }
+  }
+  return { cal, juegos };
+}
+
+/* =================================== MAIN =================================== */
 log('Inicio');
 const redes = leer('data/redes.json', {});
-const yt = redes.youtube ? await videosYT(redes.youtube.usuario) : null;
-if (yt) guardar('data/videos.json', { actualizado: new Date().toISOString(), ...yt }, true);
+const prevVid = leer(DIR + '/videos.json', { videos: [] });
+const nuevosVid = await videosYT(redes.youtube && redes.youtube.canal);
+const mapaV = new Map([...(prevVid.videos || []), ...nuevosVid].map(v => [v.id, v]));
+nuevosVid.forEach(v => mapaV.set(v.id, v));
+const videos = [...mapaV.values()].sort((a, b) => Date.parse(b.fecha || 0) - Date.parse(a.fecha || 0)).slice(0, 60);
+if (videos.length) guardar(DIR + '/videos.json', { actualizado: new Date().toISOString(), canal: redes.youtube && redes.youtube.canal, videos }, true);
+log('YouTube:', nuevosVid.length, 'nuevos,', videos.length, 'en total');
 
-log('YouTube:', yt ? yt.videos.length + ' videos' : 'sin datos');
 const s = await sleeper();
-log('Sleeper:', s.jugadores.length, 'jugadores, semana', s.semana);
-const { cal, juegos } = await calendario(s.temporada);
-log('Calendario:', Object.keys(cal).length, 'equipos,', juegos.length, 'juegos');
-// Puntos permitidos por cada defensa a cada posición (para dificultad del rival)
+log('Sleeper:', Object.keys(s.todos).length, 'activos, semana', s.semana, '· proyecciones S' + s.semana + ':', Object.keys(s.proy[s.semana] || {}).length);
+const { cal } = await calendario(s.temporada);
+const lesE = await lesionesESPN();
+const newsE = await noticiasESPN();
+log('ESPN: lesiones', Object.keys(lesE).length / 2 | 0, '· noticias', newsE.length);
+
+// ¿Qué semana se analiza? la primera donde la mayoría de juegos no ha terminado
+let semJuego = 18;
+for (let w = 1; w <= 18; w++) { let tot = 0, pend = 0; Object.values(cal).forEach(t => { if (t[w]) { tot++; if (!t[w].fin) pend++; } }); if (tot && pend / tot > .5) { semJuego = w; break; } }
+if (!Object.keys(s.proy[semJuego] || {}).length && s.proy[s.semana + 1] && semJuego === s.semana + 1) s.proy[semJuego] = s.proy[s.semana + 1];
+
+// defensa contra posición
 const permitidos = {};
 for (const w of s.semanas) for (const [k, x] of Object.entries(s.stats[w] || {})) {
   const p = s.todos[k]; if (!p || !p.team || x.pts_ppr == null) continue;
@@ -141,73 +188,131 @@ for (const w of s.semanas) for (const [k, x] of Object.entries(s.stats[w] || {})
   q.pts += x.pts_ppr; q.juegos.add(w);
 }
 const dvp = {};
-for (const pos of ['QB', 'RB', 'WR', 'TE', 'K']) {
-  const lista = Object.entries(permitidos).map(([t, d]) => [t, d[pos] ? d[pos].pts / Math.max(1, d[pos].juegos.size) : 0]).sort((a, b) => b[1] - a[1]);
-  lista.forEach(([t, v], i) => { dvp[t] = dvp[t] || {}; dvp[t][pos] = { prom: Math.round(v * 10) / 10, rank: i + 1 }; });
+for (const pos of POS) {
+  Object.entries(permitidos).map(([t, d]) => [t, d[pos] ? d[pos].pts / Math.max(1, d[pos].juegos.size) : 0]).sort((a, b) => b[1] - a[1])
+    .forEach(([t, v], i) => { dvp[t] = dvp[t] || {}; dvp[t][pos] = { prom: r1(v), rank: i + 1 }; });
 }
-s.jugadores.forEach(j => j.log.forEach(l => { const c = cal[j.team] && cal[j.team][l.w]; if (c) { l.opp = c.opp; l.home = c.home; } }));
-guardar('data/calendario.json', { temporada: s.temporada, semana: s.semana, cal, dvp });
-const porNombre = Object.fromEntries(s.jugadores.map(j => [norm(j.n), j.id]));
-const J = Object.fromEntries(s.jugadores.map(j => [j.id, j]));
-const nombres = ids => ids.slice(0, 15).map(id => J[id] ? `${J[id].n} (${J[id].pos}, ${J[id].team})` : '').filter(Boolean);
-const ESTATUS = { Questionable: 'Duda', Doubtful: 'Duda', Out: 'Fuera', IR: 'Fuera', PUP: 'Fuera', Sus: 'Fuera' };
-const lesionados = s.jugadores.filter(j => ESTATUS[j.inj] && j.team !== 'FA' && (j.total || 0) > 0).sort((a, b) => (b.total || 0) - (a.total || 0)).slice(0, 25).map(j => ({ id: j.id, estatus: ESTATUS[j.inj] }));
-const archivo = leer('data/archivo.json', []);
-const liga = n => (n.jugadores || []).map(x => porNombre[norm(x)]).filter(Boolean);
-const ahora = new Date().toISOString();
-const sello = ahora.replace(/\D/g, '').slice(0, 12);
 
-// 1) Noticias del ciclo (con IA solo una vez por hora para cuidar la cuota gratis)
-const prevHoy = leer('data/hoy.json', {});
-const tocaIA = !prevHoy.ultimaIA || Date.now() - Date.parse(prevHoy.ultimaIA) > 55 * 60e3;
-const tit = tocaIA ? await titulares() : [];
-const ia = !tocaIA ? null : await gemini(VOZ + 'Escribe exactamente 12 noticias de fantasy a partir de estos titulares de medios y datos. Forma: ' + FORMATO + ' En el mismo JSON agrega "duelo":{"a":"jugador","b":"jugador","veredicto":"a quién arrancar y por qué, máximo 40 palabras"}.' +
-  `\nLesionados: ${JSON.stringify(nombres(lesionados.map(x => x.id)))}\nMás agregados: ${JSON.stringify(nombres(s.agregados))}\nMás soltados: ${JSON.stringify(nombres(s.soltados))}\nYa publicadas (no repitas): ${JSON.stringify(archivo.slice(0, 25).map(n => n.titulo))}\nTITULARES:\n${tit.join('\n')}`);
-const nuevas = (ia?.noticias || []).map((n, i) => ({ id: `n${sello}${String(i).padStart(2, '0')}`, fecha: ahora, semana: s.semana, ...n, jugadores: liga(n) }));
+// selección de jugadores relevantes
+const addM = Object.fromEntries(s.add.map(t => [t.player_id, t.count])), dropM = Object.fromEntries(s.drop.map(t => [t.player_id, t.count]));
+const PW = s.proy[semJuego] || {};
+const totalPPR = k => s.semanas.reduce((a, w) => a + ((s.stats[w] && s.stats[w][k] && s.stats[w][k].pts_ppr) || 0), 0);
+const candidatos = Object.keys(s.todos).filter(k => s.todos[k].team || addM[k] || dropM[k])
+  .map(k => [k, (PW[k] && PW[k].pts_ppr || 0) * 3 + totalPPR(k) / Math.max(1, s.semanas.length) + (s.todos[k].rank ? Math.max(0, 300 - s.todos[k].rank) / 30 : 0)])
+  .sort((a, b) => b[1] - a[1]).map(x => x[0]);
+const set = new Set(candidatos.slice(0, TOP)); [...Object.keys(addM), ...Object.keys(dropM)].forEach(k => s.todos[k] && set.add(k));
 
-// 2) Exclusivas del reportero (premium)
+const linea = (w, k) => { const x = s.stats[w] && s.stats[w][k]; if (!x || x.pts_ppr == null) return null;
+  const st = {}; [['py', 'pass_yd'], ['ptd', 'pass_td'], ['int', 'pass_int'], ['ra', 'rush_att'], ['ry', 'rush_yd'], ['rtd', 'rush_td'], ['tg', 'rec_tgt'], ['rec', 'rec'], ['recy', 'rec_yd'], ['rectd', 'rec_td'], ['fl', 'fum_lost'], ['fgm', 'fgm'], ['xpm', 'xpm']].forEach(([a, b]) => { if (x[b]) st[a] = Math.round(x[b]); });
+  return { f: [r1(x.pts_ppr), r1(x.pts_half_ppr), r1(x.pts_std)], st }; };
+const espnA = {}; // espn id -> sleeper id
+const jugadores = [...set].map(k => {
+  const p = s.todos[k];
+  if (p.espn) espnA[p.espn] = k;
+  const log_ = s.semanas.map(w => { const l = { w, ...(linea(w, k) || {}) }; const c = cal[p.team] && cal[p.team][w]; if (c) { l.opp = c.opp; l.home = c.home; } return l; });
+  const pr = PW[k];
+  const le = (p.espn && lesE['e' + p.espn]) || lesE['n' + norm(p.n)] || null;
+  return { id: k, ...p, team: p.team || 'FA', log: log_,
+    proy: pr ? [r1(pr.pts_ppr), r1(pr.pts_half_ppr), r1(pr.pts_std)] : null,
+    les: le ? { st: le.st, fecha: le.fecha, tipo: le.tipo || le.lugar, detalle: le.detalle, lado: le.lado, regreso: le.regreso } : null,
+    add: addM[k] || 0, drop: dropM[k] || 0 };
+});
+const J = Object.fromEntries(jugadores.map(j => [j.id, j]));
+const porNombre = {}; jugadores.forEach(j => { porNombre[norm(j.n)] = j.id; });
+Object.entries(s.todos).forEach(([k, p]) => { if (!porNombre[norm(p.n)]) porNombre[norm(p.n)] = k; });
+const fueraTemp = j => ['IR', 'PUP', 'Sus', 'NA'].includes(j.inj) || (j.les && /injured reserve/i.test(j.les.st || ''));
+const estadoTxt = j => j.inj ? `${j.inj}${j.injParte ? ' (' + j.injParte + ')' : ''}` : 'activo';
+
+// noticias externas ligadas a jugadores y equipos (para la ficha de cada jugador y como fuente de la IA)
+const externas = newsE.map(a => ({ t: a.titulo, d: a.desc.slice(0, 220), f: a.fecha, u: a.url, j: a.atletas.map(e => espnA[e]).filter(Boolean), e: a.equipos }));
+guardar(DIR + '/externas.json', externas);
+
+guardar(DIR + '/calendario.json', { temporada: s.temporada, semana: semJuego, semanaStats: s.semana, cal, dvp });
+
+/* ---------- Noticias propias (IA cada ~2 h) ---------- */
+const archivo = leer(DIR + '/archivo.json', []);
+const prevHoy = leer(DIR + '/hoy.json', {});
+const ahora = new Date().toISOString(), sello = ahora.replace(/\D/g, '').slice(0, 12);
+const tocaIA = (!prevHoy.ultimaIA || Date.now() - Date.parse(prevHoy.ultimaIA) > CADA_IA_MIN * 60e3) && quedan() > 2;
+let nuevas = [], duelo = null;
+const palabras = t => new Set(norm2(t).split(' ').filter(w => w.length > 3));
+function norm2(t) { return String(t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9 ]/g, ' '); }
+const parecido = (a, b) => { const A = palabras(a), B = palabras(b); let c = 0; A.forEach(w => B.has(w) && c++); return c / Math.max(1, Math.min(A.size, B.size)); };
+const ligar = n => (n.jugadores || []).map(x => porNombre[norm(x)]).filter(Boolean);
+function verificar(n) {
+  const ids = ligar(n), p = J[ids[0]] || s.todos[ids[0]];
+  const motivo = [];
+  if (p && fueraTemp(p) && ['START', 'WAIVER', 'ARRANCA'].includes(n.etiqueta)) motivo.push(`${p.n} está ${estadoTxt(p)}`);
+  if (p && p.inj === 'Out' && n.etiqueta === 'START') motivo.push(`${p.n} está OUT`);
+  const reciente = archivo.filter(a => Date.now() - Date.parse(a.fecha || 0) < 36 * 3600e3);
+  if (reciente.some(a => parecido(a.titulo, n.titulo) > .6 || (ids[0] && a.jugadores && a.jugadores[0] === ids[0] && a.etiqueta === n.etiqueta))) motivo.push('duplicada');
+  return motivo;
+}
+if (tocaIA) {
+  const relevantes = jugadores.filter(j => j.team !== 'FA' && ((j.proy && j.proy[0] > 6) || (j.rank && j.rank < 200)));
+  const estatus = relevantes.filter(j => j.inj).map(j => `${j.n} (${j.pos}, ${j.team}): ${estadoTxt(j)}`).slice(0, 90);
+  const fuentes = [...newsE.slice(0, 45).map(a => `${a.titulo} — ${a.desc}`.slice(0, 380)), ...(await titularesRSS())];
+  const proyTop = POS.map(pos => pos + ': ' + relevantes.filter(j => j.pos === pos && j.proy).sort((a, b) => b.proy[0] - a.proy[0]).slice(0, 8).map(j => `${j.n} ${j.proy[0]}`).join(', ')).join(' | ');
+  const ia = await gemini(VOZ + `Escribe exactamente 12 noticias de fantasy para la semana ${semJuego}. Varía las etiquetas (al menos 2 START, 2 SIT, 2 WAIVER y lesiones si hay). Forma: ` + FORMATO +
+    ' En el mismo JSON agrega "duelo":{"a":"jugador","b":"jugador","veredicto":"a quién arrancar y por qué, máximo 40 palabras"} con dos jugadores sanos de la misma posición.' +
+    `\nESTATUS OFICIAL (fuente de verdad):\n${estatus.join('\n')}\nPROYECCIONES PPR SEMANA ${semJuego}: ${proyTop}\nMás agregados: ${s.add.slice(0, 12).map(t => s.todos[t.player_id] && s.todos[t.player_id].n).filter(Boolean).join(', ')}\nMás soltados: ${s.drop.slice(0, 10).map(t => s.todos[t.player_id] && s.todos[t.player_id].n).filter(Boolean).join(', ')}\nYa publicadas (NO repitas tema ni jugador principal): ${JSON.stringify(archivo.slice(0, 30).map(n => n.titulo))}\nFUENTES:\n${fuentes.join('\n')}`);
+  duelo = ia && ia.duelo;
+  for (const [i, n] of ((ia && ia.noticias) || []).entries()) {
+    if (n.etiqueta === 'ARRANCA') n.etiqueta = 'START'; if (n.etiqueta === 'BANCA') n.etiqueta = 'SIT';
+    const motivo = verificar(n);
+    if (motivo.length) { log('Descartada:', n.titulo, '→', motivo.join(', ')); continue; }
+    const ids = ligar(n);
+    const equipos = [...new Set([n.equipo, ...(n.equipos || []), ...ids.map(id => (J[id] || s.todos[id] || {}).team)].filter(Boolean))];
+    nuevas.push({ id: `n${sello}${String(i).padStart(2, '0')}`, fecha: ahora, semana: semJuego, ...n, equipos, jugadores: ids });
+  }
+  log('Noticias nuevas verificadas:', nuevas.length);
+}
+
+// Exclusivas del reportero
 const rep = leer('data/reportero.json', { notas: [] });
 const pendientes = (rep.notas || []).filter(x => !x.procesada);
 let exclusivas = [];
-if (pendientes.length) {
-  const ex = await gemini(VOZ + 'Estas son notas EXCLUSIVAS de nuestro reportero. Conviértelas en notas premium "Exclusivo FX": más profundas, con contexto y una recomendación accionable. Forma: ' +
-    FORMATO.replace('"noticias"', '"noticias"') + '\nNOTAS:\n' + pendientes.map(x => x.texto).join('\n---\n').slice(0, 50000));
-  exclusivas = (ex?.noticias || []).map((n, i) => ({ id: `x${sello}${String(i).padStart(2, '0')}`, fecha: ahora, semana: s.semana, exclusivo: true, ...n, jugadores: liga(n) }));
+if (pendientes.length && quedan() > 0) {
+  const ex = await gemini(VOZ + 'Estas son notas EXCLUSIVAS de nuestro reportero. Conviértelas en notas premium "Exclusivo FX": más profundas, con contexto y una recomendación accionable. Forma: ' + FORMATO + '\nNOTAS:\n' + pendientes.map(x => x.texto).join('\n---\n').slice(0, 50000));
+  exclusivas = ((ex && ex.noticias) || []).map((n, i) => { const ids = ligar(n); return { id: `x${sello}${String(i).padStart(2, '0')}`, fecha: ahora, semana: semJuego, exclusivo: true, ...n, equipos: [...new Set([n.equipo, ...(n.equipos || []), ...ids.map(id => (J[id] || {}).team)].filter(Boolean))], jugadores: ids }; });
+  if (exclusivas.length) { rep.notas.forEach(x => x.procesada = true); guardar('data/reportero.json', rep, true); }
 }
+// re-ligar equipos de noticias viejas que no los tenían
+archivo.forEach(n => { if (!n.equipos) n.equipos = [...new Set([n.equipo, ...(n.jugadores || []).map(id => (J[id] || {}).team)].filter(Boolean))]; if (n.etiqueta === 'ARRANCA') n.etiqueta = 'START'; if (n.etiqueta === 'BANCA') n.etiqueta = 'SIT'; });
 const todasNuevas = [...exclusivas, ...nuevas];
-const ultimaIA = nuevas.length ? ahora : prevHoy.ultimaIA;
-const nuevoArchivo = [...todasNuevas, ...archivo].slice(0, 600);
-if (todasNuevas.length) guardar('data/archivo.json', nuevoArchivo);
+const nuevoArchivo = [...todasNuevas, ...archivo].slice(0, 800);
+guardar(DIR + '/archivo.json', nuevoArchivo);
 
-// 3) Catch-up: resumen de cada semana que falte
-const resumenes = leer('data/semanas.json', {});
-let hechos = 0;
-for (const w of s.semanas) {
-  if (hechos >= 3) break;
-  const st = s.stats[w];
-  if (!st || !Object.keys(st).length) continue;
-  const cerrada = w < s.semana;
-  if (resumenes[w] && (resumenes[w].cerrada || !cerrada && Date.now() - Date.parse(resumenes[w].fecha) < 6 * 3600e3)) continue;
+/* ---------- Resúmenes semanales (10 claves), máx. 1 por corrida ---------- */
+const resumenes = leer(DIR + '/semanas.json', {});
+for (const w of s.semanas.slice().reverse()) {
+  if (quedan() <= 3) break;
+  const st = s.stats[w]; if (!st || !Object.keys(st).length) continue;
+  const cerrada = Object.values(cal).every(t => !t[w] || t[w].fin);
+  const r = resumenes[w];
+  if (r && r.v === 2 && (r.cerrada || Date.now() - Date.parse(r.fecha) < 8 * 3600e3)) continue;
   const top = {};
-  for (const pos of ['QB', 'RB', 'WR', 'TE', 'K']) {
-    top[pos] = Object.entries(st).filter(([k, v]) => s.todos[k]?.pos === pos && v.pts_ppr != null)
-      .sort((a, b) => b[1].pts_ppr - a[1].pts_ppr).slice(0, 10).map(([k, v]) => ({ id: k, n: s.todos[k].n, team: s.todos[k].team, pts: Math.round(v.pts_ppr * 10) / 10 }));
-  }
-  const txt = await gemini(VOZ + `Escribe el resumen de fantasy de la Semana ${w}. Forma: {"titulo":"máximo 8 palabras","claves":["4 puntos clave de máximo 12 palabras"],"cuerpo":"80 a 120 palabras"}. Mejores por posición (PPR): ${JSON.stringify(Object.fromEntries(Object.entries(top).map(([p, l]) => [p, l.slice(0, 5).map(x => x.n + ' ' + x.pts)])))}`);
-  hechos++;
-  resumenes[w] = { semana: w, cerrada, fecha: ahora, top, titulo: txt?.titulo || `Semana ${w}`, claves: txt?.claves || [], cuerpo: txt?.cuerpo || '' };
-  log('Resumen semana', w);
+  for (const pos of POS) top[pos] = Object.entries(st).filter(([k, v]) => s.todos[k] && s.todos[k].pos === pos && v.pts_ppr != null).sort((a, b) => b[1].pts_ppr - a[1].pts_ppr).slice(0, 12)
+    .map(([k, v]) => ({ id: k, n: s.todos[k].n, team: s.todos[k].team, pts: r1(v.pts_ppr), f: [r1(v.pts_ppr), r1(v.pts_half_ppr), r1(v.pts_std)] }));
+  const res = Object.values(cal).map(t => t[w]).filter(x => x && x.fin && x.home).map(x => x);
+  const marc = Object.entries(cal).filter(([t, c]) => c[w] && c[w].home && c[w].fin).map(([t, c]) => `${c[w].opp} ${c[w].pc} @ ${t} ${c[w].pf}`).join(', ');
+  const txt = await gemini(VOZ + `Escribe el análisis de fantasy de la Semana ${w}. Forma: {"titulo":"máximo 9 palabras","claves":["exactamente 10 aprendizajes de máximo 16 palabras, concretos y con nombres"],"cuerpo":"120 a 160 palabras","sorpresas":["3 frases cortas"],"decepciones":["3 frases cortas"]}. Marcadores: ${marc}. Mejores por posición (PPR): ${JSON.stringify(Object.fromEntries(Object.entries(top).map(([p, l]) => [p, l.slice(0, 6).map(x => x.n + ' ' + x.pts)])))}`, 6000);
+  if (txt) { resumenes[w] = { v: 2, semana: w, cerrada, fecha: ahora, top, titulo: txt.titulo || `Semana ${w}`, claves: txt.claves || [], cuerpo: txt.cuerpo || '', sorpresas: txt.sorpresas || [], decepciones: txt.decepciones || [] }; log('Resumen semana', w); }
+  else if (!r) resumenes[w] = { v: 1, semana: w, cerrada, fecha: ahora, top, titulo: `Semana ${w}`, claves: [], cuerpo: '' };
+  else r.top = top;
+  break;
 }
-guardar('data/semanas.json', resumenes);
+guardar(DIR + '/semanas.json', resumenes);
 
-// 4) Publicar
+/* ---------- Publicar ---------- */
+const lesionados = jugadores.filter(j => ESTATUS[j.inj] && j.team !== 'FA' && ((j.proy && j.proy[0] > 4) || (j.rank && j.rank < 220) || totalPPR(j.id) > 30))
+  .sort((a, b) => ((b.proy && b.proy[0]) || totalPPR(b.id) / 6) - ((a.proy && a.proy[0]) || totalPPR(a.id) / 6)).slice(0, 40).map(j => ({ id: j.id, estatus: ESTATUS[j.inj] }));
 const hoy = {
-  actualizado: ahora, ultimaIA, semana: s.semana, temporada: s.temporada, semanas: s.semHist,
-  noticias: (todasNuevas.length ? todasNuevas : (prevHoy.noticias && prevHoy.noticias[0] && prevHoy.noticias[0].claves ? prevHoy.noticias : nuevoArchivo.slice(0, 10))),
-  lesionados, agregados: s.agregados, soltados: s.soltados,
-  duelo: ia?.duelo || prevHoy.duelo || null
+  actualizado: ahora, ultimaIA: nuevas.length ? ahora : prevHoy.ultimaIA, semana: semJuego, semanaStats: s.semana, temporada: s.temporada, semanas: s.semanas.slice(-HIST),
+  noticias: todasNuevas.length ? todasNuevas : (prevHoy.noticias || nuevoArchivo.slice(0, 12)),
+  lesionados, agregados: s.add.map(t => t.player_id).filter(k => J[k]), soltados: s.drop.map(t => t.player_id).filter(k => J[k]),
+  duelo: duelo || prevHoy.duelo || null, fuentes: ['Sleeper', 'ESPN', 'CBS Sports', 'Yahoo Sports']
 };
-guardar('data/jugadores.json', s.jugadores);
-guardar('data/hoy.json', hoy, true);
-if (pendientes.length && exclusivas.length) { rep.notas.forEach(x => x.procesada = true); guardar('data/reportero.json', rep, true); }
-log(`Listo: ${todasNuevas.length} noticias nuevas (${exclusivas.length} exclusivas), ${s.jugadores.length} jugadores, archivo ${nuevoArchivo.length}`);
+guardar(DIR + '/jugadores.json', jugadores);
+guardar(DIR + '/hoy.json', hoy, true);
+log(`Listo: ${todasNuevas.length} noticias nuevas (${exclusivas.length} exclusivas) · ${jugadores.length} jugadores · archivo ${nuevoArchivo.length} · semana de juego ${semJuego} · IA usada hoy ${cuota.usadas}/${CUOTA_DIA}`);
