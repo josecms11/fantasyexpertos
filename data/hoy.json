@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-20T03:10:52.568Z",
+  "actualizado": "2026-10-20T03:24:31.231Z",
   "semana": 6,
   "temporada": "2026",
   "semanas": [
@@ -11,119 +11,194 @@
   ],
   "noticias": [
     {
-      "id": "r1",
-      "titulo": "Alarma total: Jalen Hurts fuera el resto del año por coágulos pulmonares",
-      "cuerpo": "Un balde de agua helada cayó sobre la NFL y el fantasy football. Los estudios médicos confirmaron la presencia de coágulos en los pulmones de Jalen Hurts, situación que lo marginará por lo que resta de la campaña. En ligas de un solo quarterback debes cortarlo de inmediato para liberar ese valioso puesto de banca. El impacto en Philadelphia es mayúsculo: Tanner McKee tomará los controles de una ofensiva que sufrirá para mantener el volumen aéreo acostumbrado. Para Saquon Barkley viene una carga de trabajo descomunal por tierra, mientras que el valor de los receptores caerá dramáticamente a territorio de dudas semanales.",
+      "id": "n20261020012000",
+      "fecha": "2026-10-20T01:20:15.271Z",
+      "semana": 6,
+      "titulo": "Davante Adams fuera entre seis y diez semanas",
+      "claves": [
+        "Desgarro severo en tendón de la corva",
+        "Ausencia prolongada golpea duro a los Rams",
+        "Pasa a ser descartable en ligas estándar"
+      ],
+      "cuerpo": "Golpe durísimo para los Rams y para nuestras alineaciones. Davante Adams sufrió un desgarro en el tendón de la corva que lo apartará entre seis y diez semanas de los emparrillados. Con este diagnóstico, el veterano receptor es candidato automático a la reserva de lesionados. Si tu liga no cuenta con casillas de IR ilimitadas, retenerlo será sumamente doloroso para la banca. Los Ángeles tendrá que recargar volumen en piezas secundarias como Tutu Atwell o Jordan Whittington.",
       "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "LAR",
       "jugadores": [
-        "6904",
-        "9230",
-        "4866"
+        "2133"
       ]
     },
     {
-      "id": "r2",
-      "titulo": "Davante Adams sufre rotura de tendón y estará fuera casi dos meses",
-      "cuerpo": "El panorama se oscureció por completo para los angelinos tras confirmarse que Davante Adams sufrió una severa rotura en el tendón de la corva. El receptor estelar estará entre seis y diez semanas en la congeladora, lo cual representa un golpe demoledor si peleas puestos de postemporada. Si cuentas con casillas de reserva por lesión, resérvalo de inmediato; de lo contrario, en ligas cortas sin playoffs tardíos es momento de pensar en soltarlo para encontrar puntos inmediatos. Con Matthew Stafford mostrando un declive preocupante y una línea porosa, toda la ofensiva aérea de los Rams pierde confianza absoluta en nuestros tableros.",
-      "etiqueta": "LESIÓN",
+      "id": "n20261020012001",
+      "fecha": "2026-10-20T01:20:15.271Z",
+      "semana": 6,
+      "titulo": "Brock Purdy perfila festín aéreo en horario estelar",
+      "claves": [
+        "Comanda ofensiva favorita por amplio margen",
+        "Defensiva secundaria rival concede yardas masivas",
+        "Proyección clara como pasador titular élite"
+      ],
+      "cuerpo": "El mariscal de campo de San Francisco llega en un momento inmejorable para liquidar a los Commanders en el cierre semanal. Washington arrastra severas complicaciones para frenar trayectorias intermedias y profundas, convirtiendo a Purdy en una opción indiscutible en ligas de un solo pasador. Su eficiencia dentro del sistema de Shanahan maximiza las jugadas de anotación sin arriesgar el balón. Con George Kittle en ritmo aplastante, Purdy tiene suelo sólido y techo de top cinco semanal garantizado.",
+      "etiqueta": "ARRANCA",
+      "impacto": "SUBE",
+      "equipo": "SF",
       "jugadores": [
-        "2133",
-        "421"
-      ]
-    },
-    {
-      "id": "r3",
-      "titulo": "Mike Evans enciende las alarmas tras salir con lesión en el tendón",
-      "cuerpo": "Noche de pesadilla para los 49ers en el Lunes por la Noche. Mike Evans venía registrando una primera mitad dominante antes de resentirse de una molestia en el tendón de Aquiles que lo mandó a los vestidores sin retorno. Si tienes a Evans en tu plantilla, debes monitorear con lupa los reportes durante la semana corta, pero prepara desde ahora un sustituto en la agencia libre. Esta baja catapultará el volumen de George Kittle en zona roja y obligará a Brock Purdy a involucrar a sus opciones complementarias. Evita alinearlo la próxima jornada a menos que practique de forma completa.",
-      "etiqueta": "LESIÓN",
-      "jugadores": [
-        "2216",
-        "4217",
         "8183"
       ]
     },
     {
-      "id": "r4",
-      "titulo": "Terry McLaurin sale en camilla y genera pánico en Washington",
-      "cuerpo": "Las peores imágenes posibles llegaron para los Commanders cuando Terry McLaurin tuvo que abandonar el emparrillado en camilla con una férula de aire en la rodilla. El panorama luce muy sombrío para el líder del ataque aéreo de Washington, quien se perderá tiempo considerable de juego. Si lo tienes en tu equipo de fantasy, muévelo a la reserva de lesionados en cuanto se abra la designación oficial. Este descalabro perjudica directamente el techo de producción de Jayden Daniels, quien pierde a su objetivo vertical de confianza y tendrá que depender mucho más de sus propios acarreos y envíos de escape.",
+      "id": "n20261020012002",
+      "fecha": "2026-10-20T01:20:15.271Z",
+      "semana": 6,
+      "titulo": "Roschon Johnson reclama prioridad urgente en waivers",
+      "claves": [
+        "Kyle Monangai batalla con dolencias físicas",
+        "Johnson retiene todo el trabajo terrestre clave",
+        "Anotador nato en zona roja para Chicago"
+      ],
+      "cuerpo": "El panorama del backfield en Chicago abre una ventana de oro para Roschon Johnson. Con Kyle Monangai lidiando con molestias físicas tras la última jornada, Johnson se consolida como el perfil más confiable para toques de alto valor. En zona de gol y situaciones de corto yardaje, el producto de Texas impone condiciones con su estilo físico de contacto. Es momento de gastar presupuesto de agencia libre; su potencial de volumen lo perfila como flexible semanal rentable.",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "CHI",
+      "jugadores": [
+        "10235",
+        "12534"
+      ]
+    },
+    {
+      "id": "n20261020012003",
+      "fecha": "2026-10-20T01:20:15.271Z",
+      "semana": 6,
+      "titulo": "Alvin Kamara enciende focos rojos por fatiga",
+      "claves": [
+        "Reporte médico confirma molestias en el corredor",
+        "Volumen excesivo comienza a pasarle factura",
+        "Posible restricción en entrenamientos esta semana"
+      ],
+      "cuerpo": "Los reportes de salud ponen en jaque a Nueva Orleans tras confirmarse que Alvin Kamara arrastra molestias físicas considerables. La carga masiva de trabajo como válvula de escape por aire y principal acarreador terrestre le está cobrando factura al veterano. Aunque los Saints dependen desesperadamente de su versatilidad para mover las cadenas, conviene asegurar de inmediato a su suplente directo en agencias libres. Mantén a Kamara como titular condicionado únicamente si practica con normalidad el viernes.",
       "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "NO",
       "jugadores": [
-        "5927",
-        "11566"
+        "4035"
       ]
     },
     {
-      "id": "r5",
-      "titulo": "Omar Cooper Jr se convierte en la prioridad máxima del waiver semanal",
-      "cuerpo": "Tras dejar atrás un problema en el tobillo, el novato Omar Cooper Jr. explotó en la ofensiva de los Jets liderando al conjunto en recepciones y anotando su primer touchdown profesional. Cooper mostró una química instantánea en trayectorias intermedias y ganó snaps cruciales que lo colocan como la adquisición obligatoria de la semana en el waiver wire. Si compites en ligas de doce o más equipos, gasta de un diez a un quince por ciento de tu presupuesto restante de transferencias por él. Tiene la frescura y explosividad necesarias para consolidarse rápidamente como un receptor flexible de piso seguro.",
+      "id": "n20261020012004",
+      "fecha": "2026-10-20T01:20:15.271Z",
+      "semana": 6,
+      "titulo": "Tre Tucker se destapa como opción vertical",
+      "claves": [
+        "Aceleración constante estira el campo en Vegas",
+        "Incrementa cuota de rutas en primeras oportunidades",
+        "Alternativa llamativa para ligas profundas"
+      ],
+      "cuerpo": "La ofensiva de Las Vegas necesita dinamismo explosivo en el perímetro y Tre Tucker está levantando la mano en grande. El veloz receptor registró un incremento significativo de capturas y snaps durante la última jornada, estableciéndose como el arma predilecta para desmarques profundos. Aunque su suelo suele ser volátil por depender de pocas recepciones de alto yardaje, su rol en expansión lo posiciona como reclamo interesante del alambre para cubrir semanas complicadas de descanso.",
       "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "LV",
       "jugadores": [
-        "13276"
+        "10213"
       ]
     },
     {
-      "id": "r6",
-      "titulo": "Drake Maye explota con tres pases de anotación y enamora al fantasy",
-      "cuerpo": "Ya no quedan dudas de que los tropiezos de las primeras semanas quedaron en el pasado para Drake Maye. El joven mariscal de los Patriots brilló intensamente frente a los Jets al sumar su tercer partido consecutivo lanzando al menos tres envíos de anotación, sobreponiéndose incluso a las múltiples ausencias de su línea ofensiva. Maye está procesando el campo a velocidad élite y utilizando sus piernas para extender jugadas clave. Si estás batallando por ausencias de tus mariscales titulares o sufriendo la baja de Jalen Hurts, Maye se perfila como un arranque mandatorio con etiqueta de top diez.",
+      "id": "n20261020012005",
+      "fecha": "2026-10-20T01:20:15.271Z",
+      "semana": 6,
+      "titulo": "Aaron Jones arrastra desgaste en ofensiva vikinga",
+      "claves": [
+        "Problemas físicos limitan su explosividad habitual",
+        "Cuerpo técnico cuida sus toques por tierra",
+        "Disminuye considerablemente su techo de puntos"
+      ],
+      "cuerpo": "La durabilidad de Aaron Jones vuelve a sembrar dudas serias en Minnesota. El veterano corredor continúa apareciendo en los reportes médicos debido a molestias persistentes que han recortado su explosión atlética y forzado a los entrenadores a rotar toques en series clave. Si bien mantiene utilidad en formatos PPR gracias a sus recepciones saliendo del backfield, ya no podemos proyectarlo con piso seguro de corredor dos. Considéralo un flexible de riesgo medio si no entrena plenamente.",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "MIN",
+      "jugadores": [
+        "4199"
+      ]
+    },
+    {
+      "id": "n20261020012006",
+      "fecha": "2026-10-20T01:20:15.271Z",
+      "semana": 6,
+      "titulo": "Ryan Flournoy gana terreno en ataque vaquero",
+      "claves": [
+        "Lesión de KaVontae Turpin libera oportunidades",
+        "Cowboys necesitan despertar su irregular juego aéreo",
+        "Especulación de bajo costo en el alambre"
+      ],
+      "cuerpo": "La crisis ofensiva de Dallas bajo Brian Schottenheimer exige cambios radicales de personal, especialmente con KaVontae Turpin apuntando a perderse el choque de la Semana 7. Ahí entra en escena Ryan Flournoy, receptor novato que ha dejado gratas impresiones en repeticiones limitadas. Dallas ha mostrado incapacidad para correr el ovoide, lo que forzará un alto volumen aéreo ante Filadelfia. Para ligas profundas o formatos de dinastía, Flournoy representa un tiro a gol baratísimo.",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "DAL",
+      "jugadores": [
+        "11783"
+      ]
+    },
+    {
+      "id": "n20261020012007",
+      "fecha": "2026-10-20T01:20:15.271Z",
+      "semana": 6,
+      "titulo": "Quinshon Judkins enciende alarmas en Cleveland",
+      "claves": [
+        "Molestias físicas merman su volumen de acarreos",
+        "Comité de corredores divide toques terrestres",
+        "Oportunidad de oro para el resto del comité"
+      ],
+      "cuerpo": "La situación del backfield de Cleveland sufre un revés importante con la baja médica de Quinshon Judkins. El novato venía mostrando destellos impresionantes, pero los problemas físicos recientes ponen un freno abrupto a su consolidación como el corredor estelar de los Browns. Con Judkins mermado, el comité se abrirá inevitablemente para alternativas más frescas y receptivas en terceros downs. Es prudente sentarlo hasta verificar que recupere el cien por ciento de sus condiciones atléticas.",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "CLE",
+      "jugadores": [
+        "12512"
+      ]
+    },
+    {
+      "id": "n20261020012008",
+      "fecha": "2026-10-20T01:20:15.271Z",
+      "semana": 6,
+      "titulo": "Deebo Samuel mantiene etiqueta de arma indispensable",
+      "claves": [
+        "Versatilidad aérea y terrestre castiga rivales",
+        "Enfrentamiento favorable contra Washington este lunes",
+        "Pilar indiscutible en alineaciones titulares"
+      ],
+      "cuerpo": "No hay motivo para complicarse con Deebo Samuel en este duelo estelar. La defensiva de los Commanders sufre enormemente ante esquemas que generan yardas después de la recepción, terreno donde el estelar de San Francisco domina a placer en la liga. Con su doble amenaza corriendo desde la formación escopeta y atrapando pases pantalla, Deebo garantiza producción eléctrica constante. Ponlo como tu receptor uno o dos sin dudar un instante en todas las ligas.",
       "etiqueta": "ARRANCA",
+      "impacto": "SUBE",
+      "equipo": "SF",
       "jugadores": [
-        "11564"
+        "5872"
       ]
     },
     {
-      "id": "r7",
-      "titulo": "Tank Dell está listo para debutar y sacudir la ofensiva texana",
-      "cuerpo": "Después de una larguísima rehabilitación por una fractura de rodilla que le costó la campaña previa, Tank Dell reaparecerá este fin de semana frente a los Giants. Esta noticia es música para los oídos de C.J. Stroud, quien recupera a su cómplice favorito en jugadas explosivas. Si Dell está disponible en el alambre de waivers de tu liga, tómalo antes de que sea demasiado tarde. Aunque lo ideal es mantenerlo en la banca durante su primera semana para vigilar el límite de jugadas que le asignen, su potencial de campeonato para el cierre de temporada es altísimo.",
-      "etiqueta": "WAIVER",
-      "jugadores": [
-        "9502",
-        "9758"
-      ]
-    },
-    {
-      "id": "r8",
-      "titulo": "J.J. McCarthy presiona fuerte por la titularidad con los Giants",
-      "cuerpo": "Se prendió la mecha en Nueva York tras el descalabro frente a Nueva Orleans. Jameis Winston fue enviado a la banca tras otra exhibición errática y plagada de entregas de balón, permitiendo que el novato J.J. McCarthy tomara las riendas y luciera con aplomo y precisión en sus series ofensivas. El entrenador en jefe John Harbaugh admitió que la decisión del mariscal abridor para la semana siete está en plena evaluación. En formatos de Superflex o dinastía, McCarthy debe ser añadido inmediatamente; en ligas tradicionales vale la pena agregarlo al fondo de tu banca ante un posible ascenso inminente.",
-      "etiqueta": "WAIVER",
-      "jugadores": [
-        "11565"
-      ]
-    },
-    {
-      "id": "r9",
-      "titulo": "Romeo Doubs a la lista de lesionados tras lastimarse el hombro",
-      "cuerpo": "Las malas noticias no cesan en el cuerpo de receptores de New England. A pesar de haber conseguido un brillante touchdown largo, Romeo Doubs sufrió una lesión de hombro que provocó su ingreso a la reserva de lesionados. El receptor estará fuera de circulación como mínimo durante los próximos cuatro encuentros, lo que hace viable cortarlo sin titubear en ligas de estándar o de bancas reducidas. Esta baja forzará a los Patriots a distribuir el juego aéreo en otras alas, disminuyendo el valor de Doubs a prácticamente cero para quienes buscan victorias inmediatas de cara a postemporada.",
+      "id": "n20261020012009",
+      "fecha": "2026-10-20T01:20:15.271Z",
+      "semana": 6,
+      "titulo": "Michael Penix pierde respaldo como pasador abridor",
+      "claves": [
+        "Lesión acelera firma urgente de veterano",
+        "Atlanta busca estabilidad inmediata bajo centro",
+        "Pierde relevancia total en ligas convencionales"
+      ],
+      "cuerpo": "Las complicaciones físicas de Michael Penix terminaron colmando la paciencia del cuerpo técnico de los Falcons. La gerencia no perdió tiempo y fichó al veterano Andy Dalton para estabilizar una ofensiva con talento élite pero nula consistencia bajo centro. Penix no solo cede terreno en la tabla de profundidad debido a su estado médico, sino que pierde cualquier valor redraft a corto plazo. Si lo guardabas como apuesta a futuro, puedes soltarlo inmediatamente.",
       "etiqueta": "BANCA",
+      "impacto": "BAJA",
+      "equipo": "ATL",
       "jugadores": [
-        "8121"
-      ]
-    },
-    {
-      "id": "r10",
-      "titulo": "Kyren Williams pierde toques y el ataque terrestre angelino toca fondo",
-      "cuerpo": "Los focos rojos están encendidos en Los Ángeles. En una sorpresiva derrota ante los Cardinals, Kyren Williams registró apenas trece toques de balón, su cifra más baja del calendario, quejándose abiertamente de su poca participación al finalizar el encuentro. Los Rams están mostrando grietas profundas: su línea ofensiva sufre colapsos continuos y Matthew Stafford no encuentra ritmo. Aunque Williams mantiene cierto pedigrí de titular obligatorio por su rol en zona de gol, su techo semanal se ha desplomado por completo. Conviértelo en candidato para venta alta si todavía puedes recibir un paquete de talento consistente.",
-      "etiqueta": "TENDENCIA",
-      "jugadores": [
-        "8150",
-        "421"
+        "11559"
       ]
     }
   ],
   "lesionados": [
     {
-      "id": "9226",
+      "id": "2133",
       "estatus": "Fuera"
     },
     {
-      "id": "4881",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "4866",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "13287",
+      "id": "2216",
       "estatus": "Fuera"
     },
     {
@@ -131,19 +206,39 @@
       "estatus": "Fuera"
     },
     {
-      "id": "8155",
+      "id": "4881",
       "estatus": "Fuera"
     },
     {
-      "id": "10229",
+      "id": "4199",
+      "estatus": "Duda"
+    },
+    {
+      "id": "12518",
       "estatus": "Fuera"
     },
     {
-      "id": "7543",
+      "id": "11559",
+      "estatus": "Duda"
+    },
+    {
+      "id": "10236",
+      "estatus": "Duda"
+    },
+    {
+      "id": "5872",
       "estatus": "Fuera"
     },
     {
-      "id": "11635",
+      "id": "12534",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "8121",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12512",
       "estatus": "Fuera"
     },
     {
@@ -151,43 +246,51 @@
       "estatus": "Duda"
     },
     {
+      "id": "9486",
+      "estatus": "Duda"
+    },
+    {
+      "id": "4035",
+      "estatus": "Duda"
+    },
+    {
+      "id": "13287",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "5844",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "5927",
+      "estatus": "Fuera"
+    },
+    {
       "id": "5892",
       "estatus": "Fuera"
     },
     {
-      "id": "12508",
+      "id": "7571",
       "estatus": "Fuera"
     },
     {
-      "id": "9499",
-      "estatus": "Duda"
-    },
-    {
-      "id": "12512",
+      "id": "12533",
       "estatus": "Fuera"
     },
     {
-      "id": "12518",
+      "id": "8155",
       "estatus": "Fuera"
     },
     {
-      "id": "4983",
+      "id": "11635",
       "estatus": "Fuera"
     },
     {
-      "id": "13286",
+      "id": "10229",
       "estatus": "Fuera"
     },
     {
-      "id": "2216",
-      "estatus": "Duda"
-    },
-    {
-      "id": "12534",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "13281",
+      "id": "12509",
       "estatus": "Fuera"
     }
   ],
@@ -202,8 +305,8 @@
     "10235",
     "11637",
     "11565",
-    "4663",
     "11783",
+    "4663",
     "11439",
     "9230"
   ],
