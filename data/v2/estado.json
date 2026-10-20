@@ -1,16 +1,25 @@
 {
-  "fecha": "2026-10-20T11:37:41.372Z",
+  "fecha": "2026-10-20T12:07:07.969Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.4s] YouTube: 14 nuevos, 14 en total",
-    "[1.2s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
+    "[0.2s] YouTube: 14 nuevos, 14 en total",
+    "[1.1s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
     "[2.6s] ESPN: lesiones 799 · noticias 50",
-    "[3.7s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[8.9s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[21.4s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
-    "[39.2s] IA OK con gemini-3.5-flash-lite",
-    "[39.2s] Gemini respuesta inválida gemini-3.5-flash-lite {\"candidates\":[{\"content\":{\"parts\":[{\"text\":\"{\\\"noticias\\\":[{\\\"titulo\\\":\\\"Tank Dell regresa al emparrillado con los Texans\\\",\\\"claves\\\":[\\\"Vuelve tras una larga ausencia\\\",\\\"Enfrenta a los Giants este domingo\\\",\\\"Esperado impacto ofensivo inmediato\\\"],\\\"contexto\\\":\\\"El receptor abierto Tank Dell est",
-    "[39.2s] Noticias nuevas verificadas: 0",
-    "[39.2s] Listo: 0 noticias nuevas (0 exclusivas) · 421 jugadores · archivo 120 · semana de juego 7 · IA usada hoy 10/40"
+    "[3.4s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[9.1s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
+    "[15.2s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
+    "[38.6s] IA OK con gemini-3.5-flash-lite",
+    "[38.6s] Descartada: Davante Adams fuera de combate seis a diez semanas → duplicada",
+    "[38.6s] Descartada: Tank Dell regresa a la acción tras larga ausencia → Tank Dell está IR (Knee - ACL + MCL), duplicada",
+    "[38.7s] Descartada: Daniel Jones se mantiene al mando en Indianápolis → duplicada",
+    "[38.7s] Descartada: Blake Grupe a la reserva por lesión de rodilla → Blake Grupe está IR (Knee), duplicada",
+    "[38.7s] Descartada: C.J. Gardner-Johnson suspendido un partido por escupir → duplicada",
+    "[38.7s] Descartada: Josh Jacobs regresa a las prácticas con Green Bay → Josh Jacobs está NA (Personal), duplicada",
+    "[38.7s] Descartada: Jacory Croskey-Merritt directo a la reserva por lesión → Jacory Croskey-Merritt está IR (Groin), duplicada",
+    "[38.7s] Descartada: Jalen Hurts fuera por el resto de la temporada → duplicada",
+    "[38.7s] Descartada: Mike Evans sufre dolencia en el tendón de Aquiles → duplicada",
+    "[38.7s] Descartada: Terry McLaurin sale lesionado de la rodilla en lunes → duplicada",
+    "[38.7s] Noticias nuevas verificadas: 2",
+    "[38.7s] Listo: 2 noticias nuevas (0 exclusivas) · 420 jugadores · archivo 122 · semana de juego 7 · IA usada hoy 11/40"
   ]
 }

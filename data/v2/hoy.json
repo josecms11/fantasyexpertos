@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-20T11:37:04.885Z",
-  "ultimaIA": "2026-10-20T09:35:46.983Z",
+  "actualizado": "2026-10-20T12:06:31.933Z",
+  "ultimaIA": "2026-10-20T12:06:31.933Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,28 +13,51 @@
   ],
   "noticias": [
     {
-      "id": "n20261020093501",
-      "fecha": "2026-10-20T09:35:46.983Z",
+      "id": "n20261020120607",
+      "fecha": "2026-10-20T12:06:31.933Z",
       "semana": 7,
-      "titulo": "Mike Evans sufre molestias en el tendón",
+      "titulo": "Romeo Doubs añadido a la reserva de lesionados",
       "claves": [
-        "Sintió molestias y no pudo terminar",
-        "Ausente en prácticas de la semana",
-        "Incertidumbre total para los entrenadores"
+        "Problema en el hombro frena al receptor",
+        "Patriotas pierden profundidad en el cuerpo aéreo",
+        "Baja indefinida para el ataque de Nueva Inglaterra"
       ],
-      "contexto": "El veterano receptor de San Francisco, Mike Evans, no logró concluir el duelo de lunes por la noche frente a Washington debido a persistentes molestias en el tendón de Aquiles. Esta situación le impidió participar en las sesiones de entrenamiento de jueves, viernes y sábado, encendiendo las alertas en la organización.",
-      "fantasy": "Al estar descartado por lesión, ningún mánager debe arriesgarse a alinearlo en su plantilla titular para esta semana. Su estatus genera una baja temporal en su valor dentro de formatos PPR y estándar mientras se recupera por completo.",
-      "equipo_impacto": "Su ausencia temporal altera la repartición de pases largos en el ataque de los 49ers, obligando al resto del cuerpo de receptores a asumir mayor protagonismo en el esquema ofensivo.",
-      "accion": "Saca a Mike Evans de tu alineación titular y busca un sustituto sano.",
+      "contexto": "Los New England Patriots tomaron la decisión de colocar al receptor abierto Romeo Doubs en la lista de lesionados a raíz de un problema persistente en el hombro que le impide competir al máximo nivel físico en esta etapa de la temporada.",
+      "fantasy": "Si tenías a Doubs en tu plantilla profunda, es momento de cortar lazos con él o mandarlo directo al espacio de lesionados si tu liga lo permite. No aporta nada a tu alineación actual.",
+      "equipo_impacto": "La ofensiva aérea de Nueva Inglaterra se debilita al perder a una de sus opciones de confianza en rutas intermedias, obligando a buscar alternativas en el resto del personal disponible.",
+      "accion": "Deséchalo de tu plantilla o ponlo en la reserva.",
       "etiqueta": "SIT",
       "impacto": "BAJA",
-      "equipo": "SF",
+      "equipo": "NE",
       "equipos": [
-        "SF",
-        "WAS"
+        "NE"
       ],
       "jugadores": [
-        "2216"
+        "8121"
+      ]
+    },
+    {
+      "id": "n20261020120611",
+      "fecha": "2026-10-20T12:06:31.933Z",
+      "semana": 7,
+      "titulo": "Bo Nix se mantiene firme como mariscal de Denver",
+      "claves": [
+        "Sean Payton descarta cualquier cambio en la titularidad",
+        "Busca corregir los baches ofensivos del equipo",
+        "Confianza total del cuerpo técnico en su desarrollo"
+      ],
+      "contexto": "A pesar de las complicaciones mostradas por la ofensiva de los Broncos en los últimos compromisos, el entrenador en jefe Sean Payton ratificó que no existe ninguna intención de sentar a su mariscal de campo Bo Nix, respaldando su proceso de crecimiento.",
+      "fantasy": "Ofrece un piso decente como QB opción en ligas estándar y Superflex gracias a su volumen de jugadas. Mantenlo como una opción viable si tienes un enfrentamiento favorable en tu calendario.",
+      "equipo_impacto": "La ratificación de Nix le da tranquilidad al vestuario de Denver, permitiendo que el joven pasador se concentre en pulir los errores tácticos sin la presión constante de perder el puesto.",
+      "accion": "Considéralo como titular confiable en ligas de formato Superflex.",
+      "etiqueta": "TENDENCIA",
+      "impacto": "NEUTRO",
+      "equipo": "DEN",
+      "equipos": [
+        "DEN"
+      ],
+      "jugadores": [
+        "11563"
       ]
     }
   ],
@@ -202,26 +225,26 @@
   ],
   "agregados": [
     "13276",
-    "9502",
     "12718",
+    "9502",
     "9758",
     "9482",
-    "7553",
     "5849",
+    "7553",
     "10213",
     "10235",
-    "12487",
     "6650",
+    "12487",
     "11637",
-    "11783",
     "11655",
+    "11783",
     "11792",
     "9230",
     "11565",
     "11539",
     "8116",
     "11439",
-    "4663"
+    "8135"
   ],
   "soltados": [
     "11581",
@@ -236,21 +259,21 @@
     "2505",
     "3321",
     "650",
-    "2133",
     "8132",
+    "2133",
     "12711",
     "9480",
     "7528",
     "5012",
     "5045",
     "11630",
-    "11834",
-    "11439"
+    "11439",
+    "11834"
   ],
   "duelo": {
     "a": "Josh Jacobs",
-    "b": "Kenneth Walker",
-    "veredicto": "Arranca a Kenneth Walker por su alto volumen de uso proyectado frente a Jacobs, quien regresa de la lista exenta y podría tener restricciones de jugadas en su primer partido de la temporada."
+    "b": "Jonathan Taylor",
+    "veredicto": "Arranca a Josh Jacobs por su inminente regreso y alto volumen proyectado en Green Bay, dejando a Jonathan Taylor como una opción ligeramente inferior esta semana debido a los ajustes ofensivos de su equipo."
   },
   "fuentes": [
     "Sleeper",
