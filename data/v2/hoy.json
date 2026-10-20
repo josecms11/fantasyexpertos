@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-20T17:55:50.692Z",
+  "actualizado": "2026-10-20T18:23:06.434Z",
   "ultimaIA": "2026-10-20T16:54:18.879Z",
   "semana": 7,
   "semanaStats": 7,
@@ -126,16 +126,16 @@
       "estatus": "Fuera"
     },
     {
-      "id": "2216",
-      "estatus": "Fuera"
-    },
-    {
       "id": "2133",
       "estatus": "Fuera"
     },
     {
       "id": "11559",
       "estatus": "Duda"
+    },
+    {
+      "id": "2216",
+      "estatus": "Fuera"
     },
     {
       "id": "5859",
@@ -154,12 +154,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "7526",
-      "estatus": "Duda"
-    },
-    {
       "id": "4866",
       "estatus": "Fuera"
+    },
+    {
+      "id": "7526",
+      "estatus": "Duda"
     },
     {
       "id": "10229",
@@ -174,12 +174,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "5844",
-      "estatus": "Fuera"
-    },
-    {
       "id": "4199",
       "estatus": "Duda"
+    },
+    {
+      "id": "5844",
+      "estatus": "Fuera"
     },
     {
       "id": "12518",
@@ -222,6 +222,10 @@
       "estatus": "Duda"
     },
     {
+      "id": "7571",
+      "estatus": "Fuera"
+    },
+    {
       "id": "8188",
       "estatus": "Fuera"
     },
@@ -231,10 +235,6 @@
     },
     {
       "id": "11630",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "7571",
       "estatus": "Fuera"
     },
     {
