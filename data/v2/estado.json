@@ -1,22 +1,10 @@
 {
-  "fecha": "2026-10-20T23:31:35.038Z",
+  "fecha": "2026-10-20T23:58:31.132Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.3s] YouTube: 14 nuevos, 14 en total",
-    "[1.0s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
-    "[2.6s] ESPN: lesiones 799 · noticias 50",
-    "[3.1s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[19.3s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[32.1s] IA OK con gemini-3.5-flash-lite",
-    "[32.1s] Descartada: Brock Purdy consolida su dominio en la NFL → duplicada",
-    "[32.1s] Descartada: Najee Harris busca nuevo destino tras salir de Giants → duplicada",
-    "[32.1s] Descartada: Mike Evans sufre lesión de Aquiles con los 49ers → duplicada",
-    "[32.1s] Descartada: Jahmyr Gibbs encabeza las proyecciones terrestres en la semana → duplicada",
-    "[32.1s] Descartada: George Kittle domina las proyecciones en la posición de ala cerrada → duplicada",
-    "[32.1s] Descartada: Jordan Addison fuera por lesión en los entrenamientos → duplicada",
-    "[32.1s] Descartada: Matthew Stafford se acerca a un récord histórico de derrotas → duplicada",
-    "[32.1s] Descartada: Bo Nix mantiene la confianza como mariscal titular en Denver → duplicada",
-    "[32.1s] Noticias nuevas verificadas: 4",
-    "[32.1s] Listo: 4 noticias nuevas (0 exclusivas) · 421 jugadores · archivo 148 · semana de juego 7 · IA usada hoy 19/40"
+    "[0.2s] YouTube: 14 nuevos, 14 en total",
+    "[0.9s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
+    "[4.1s] ESPN: lesiones 799 · noticias 50",
+    "[4.2s] Listo: 0 noticias nuevas (0 exclusivas) · 421 jugadores · archivo 148 · semana de juego 7 · IA usada hoy 19/40"
   ]
 }
