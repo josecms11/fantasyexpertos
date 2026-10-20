@@ -1,0 +1,17 @@
+{
+  "fecha": "2026-10-20T04:56:49.239Z",
+  "log": [
+    "[0.0s] Inicio",
+    "[0.2s] YouTube: 0 nuevos, 14 en total",
+    "[0.7s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
+    "[1.9s] ESPN: lesiones 799 · noticias 50",
+    "[2.5s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[159.1s] IA OK con gemini-3.8-flash",
+    "[159.1s] Gemini respuesta inválida gemini-3.8-flash {\"candidates\":[{\"content\":{\"parts\":[{\"text\":\"{\\\"noticias\\\":[{\\\"titulo\\\":\\\"Christian McCaffrey retoma el trono con doblete terrestre\\\",\\\"claves\\\":[\\\"Anotó dos touchdowns terrestres en el triunfo ante Washington.\\\",\\\"Proyecta 19.7 puntos en formato PPR para la semana siete.\\\",\\\"Mantiene el invicto de ",
+    "[159.1s] Noticias nuevas verificadas: 0",
+    "[159.3s] Modelo no disponible gemini-3.8-flash 429",
+    "[159.6s] Modelo no disponible gemini-3.7-flash 429",
+    "[161.4s] Gemini respuesta inválida gemini-3.6-flash {\"error\":{\"code\":503,\"message\":\"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\"status\":\"UNAVAILABLE\"}}",
+    "[161.4s] Listo: 0 noticias nuevas (0 exclusivas) · 421 jugadores · archivo 106 · semana de juego 7 · IA usada hoy 4/17"
+  ]
+}
