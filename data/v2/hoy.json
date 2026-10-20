@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-20T22:05:52.302Z",
+  "actualizado": "2026-10-20T22:33:44.953Z",
   "ultimaIA": "2026-10-20T21:06:29.219Z",
   "semana": 7,
   "semanaStats": 7,
@@ -279,16 +279,16 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12495",
-      "estatus": "Duda"
-    },
-    {
       "id": "6904",
       "estatus": "Fuera"
     },
     {
       "id": "4866",
       "estatus": "Fuera"
+    },
+    {
+      "id": "12495",
+      "estatus": "Duda"
     },
     {
       "id": "7526",
@@ -303,15 +303,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12512",
-      "estatus": "Fuera"
-    },
-    {
       "id": "4199",
       "estatus": "Duda"
     },
     {
-      "id": "8408",
+      "id": "12512",
       "estatus": "Fuera"
     },
     {
@@ -327,15 +323,15 @@
       "estatus": "Fuera"
     },
     {
-      "id": "5844",
-      "estatus": "Fuera"
-    },
-    {
       "id": "8121",
       "estatus": "Fuera"
     },
     {
-      "id": "12534",
+      "id": "5844",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "8408",
       "estatus": "Fuera"
     },
     {
@@ -368,6 +364,10 @@
     },
     {
       "id": "11630",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12534",
       "estatus": "Fuera"
     },
     {
@@ -420,8 +420,8 @@
     "12718",
     "5849",
     "9758",
-    "9502",
     "9482",
+    "9502",
     "12487",
     "10235",
     "6650",
