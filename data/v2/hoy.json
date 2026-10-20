@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-20T14:05:06.560Z",
-  "ultimaIA": "2026-10-20T12:06:31.933Z",
+  "actualizado": "2026-10-20T14:37:24.781Z",
+  "ultimaIA": "2026-10-20T14:37:24.781Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,51 +13,51 @@
   ],
   "noticias": [
     {
-      "id": "n20261020120607",
-      "fecha": "2026-10-20T12:06:31.933Z",
+      "id": "n20261020143705",
+      "fecha": "2026-10-20T14:37:24.781Z",
       "semana": 7,
-      "titulo": "Romeo Doubs añadido a la reserva de lesionados",
+      "titulo": "Kendre Miller asoma como opción en waivers",
       "claves": [
-        "Problema en el hombro frena al receptor",
-        "Patriotas pierden profundidad en el cuerpo aéreo",
-        "Baja indefinida para el ataque de Nueva Inglaterra"
+        "Kendre Miller destaca entre los recomendados",
+        "Oportunidad de oro en el mercado",
+        "Atención en ligas competitivas"
       ],
-      "contexto": "Los New England Patriots tomaron la decisión de colocar al receptor abierto Romeo Doubs en la lista de lesionados a raíz de un problema persistente en el hombro que le impide competir al máximo nivel físico en esta etapa de la temporada.",
-      "fantasy": "Si tenías a Doubs en tu plantilla profunda, es momento de cortar lazos con él o mandarlo directo al espacio de lesionados si tu liga lo permite. No aporta nada a tu alineación actual.",
-      "equipo_impacto": "La ofensiva aérea de Nueva Inglaterra se debilita al perder a una de sus opciones de confianza en rutas intermedias, obligando a buscar alternativas en el resto del personal disponible.",
-      "accion": "Deséchalo de tu plantilla o ponlo en la reserva.",
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "NE",
+      "contexto": "Los analistas apuntan a Kendre Miller como uno de los nombres principales a considerar en el mercado de agentes libres de la semana, ideal para quienes buscan alternativas ante las lesiones en la posición de corredor.",
+      "fantasy": "Si necesitas un comodín que pueda incrementar su cuota de toques en las próximas semanas, asegurar a Miller en waivers puede darte dividendos importantes en formato PPR.",
+      "equipo_impacto": "Su rol podría ampliarse dependiendo de los ajustes tácticos de su ofensiva.",
+      "accion": "Puja por él en waivers si necesitas profundidad en la posición.",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "NO",
       "equipos": [
-        "NE"
+        "NO"
       ],
       "jugadores": [
-        "8121"
+        "9757"
       ]
     },
     {
-      "id": "n20261020120611",
-      "fecha": "2026-10-20T12:06:31.933Z",
+      "id": "n20261020143707",
+      "fecha": "2026-10-20T14:37:24.781Z",
       "semana": 7,
-      "titulo": "Bo Nix se mantiene firme como mariscal de Denver",
+      "titulo": "Jaxon Smith-Njigba domina proyecciones de receptores",
       "claves": [
-        "Sean Payton descarta cualquier cambio en la titularidad",
-        "Busca corregir los baches ofensivos del equipo",
-        "Confianza total del cuerpo técnico en su desarrollo"
+        "Cima absoluta en pronósticos de WR",
+        "Alto volumen de targets asegurado",
+        "Imprescindible en fantasy"
       ],
-      "contexto": "A pesar de las complicaciones mostradas por la ofensiva de los Broncos en los últimos compromisos, el entrenador en jefe Sean Payton ratificó que no existe ninguna intención de sentar a su mariscal de campo Bo Nix, respaldando su proceso de crecimiento.",
-      "fantasy": "Ofrece un piso decente como QB opción en ligas estándar y Superflex gracias a su volumen de jugadas. Mantenlo como una opción viable si tienes un enfrentamiento favorable en tu calendario.",
-      "equipo_impacto": "La ratificación de Nix le da tranquilidad al vestuario de Denver, permitiendo que el joven pasador se concentre en pulir los errores tácticos sin la presión constante de perder el puesto.",
-      "accion": "Considéralo como titular confiable en ligas de formato Superflex.",
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "DEN",
+      "contexto": "Las proyecciones estadísticas sitúan a Jaxon Smith-Njigba en la cima de los receptores abiertos para la Semana 7, reflejando el rol protagónico y la confianza que genera dentro de su esquema ofensivo.",
+      "fantasy": "Debes alinear al receptor sin dudarlo en todas tus ligas, ya que su capacidad para acumular recepciones lo convierte en una mina de oro en formatos PPR y estándar por igual.",
+      "equipo_impacto": "Se afianza como la bujía principal del juego aéreo de su equipo.",
+      "accion": "Ponlo en tu alineación estelar como tu WR1.",
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "SEA",
       "equipos": [
-        "DEN"
+        "SEA"
       ],
       "jugadores": [
-        "11563"
+        "9488"
       ]
     }
   ],
@@ -231,8 +231,8 @@
     "5849",
     "9482",
     "10213",
-    "7553",
     "10235",
+    "7553",
     "6650",
     "12487",
     "11539",
@@ -254,8 +254,8 @@
     "8121",
     "13150",
     "11435",
-    "12533",
     "5927",
+    "12533",
     "2505",
     "650",
     "3321",
@@ -268,12 +268,12 @@
     "7042",
     "11630",
     "5045",
-    "5012"
+    "1166"
   ],
   "duelo": {
-    "a": "Josh Jacobs",
-    "b": "Jonathan Taylor",
-    "veredicto": "Arranca a Josh Jacobs por su inminente regreso y alto volumen proyectado en Green Bay, dejando a Jonathan Taylor como una opción ligeramente inferior esta semana debido a los ajustes ofensivos de su equipo."
+    "a": "Jahmyr Gibbs",
+    "b": "Bijan Robinson",
+    "veredicto": "Arranca a Jahmyr Gibbs por su enorme techo proyectado en PPR y su capacidad explosiva inigualable con Detroit."
   },
   "fuentes": [
     "Sleeper",
