@@ -1,26 +1,10 @@
 {
-  "fecha": "2026-10-20T09:36:27.546Z",
+  "fecha": "2026-10-20T10:07:30.843Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 14 nuevos, 14 en total",
     "[0.9s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
-    "[2.3s] ESPN: lesiones 799 · noticias 50",
-    "[2.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[19.5s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[30.0s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
-    "[42.9s] IA OK con gemini-3.5-flash-lite",
-    "[42.9s] Descartada: Davante Adams fuera seis a diez semanas → duplicada",
-    "[42.9s] Descartada: Terry McLaurin enciende alarmas por lesión → duplicada",
-    "[42.9s] Descartada: Tank Dell regresa a la acción dominical → Tank Dell está IR (Knee - ACL + MCL), duplicada",
-    "[42.9s] Descartada: C.J. Gardner-Johnson suspendido un juego → duplicada",
-    "[42.9s] Descartada: Blake Grupe directo a la lista de lesionados → Blake Grupe está IR (Knee)",
-    "[42.9s] Descartada: Andy Dalton firma con los Falcons → duplicada",
-    "[42.9s] Descartada: Josh Jacobs listo para debutar este domingo → Josh Jacobs está NA (Personal), duplicada",
-    "[42.9s] Descartada: Jacory Croskey-Merritt a la reserva de lesionados → Jacory Croskey-Merritt está IR (Groin), duplicada",
-    "[42.9s] Descartada: Daniel Jones se mantiene al mando en Indy → duplicada",
-    "[42.9s] Descartada: Jalen Hurts fuera por el resto del año → duplicada",
-    "[42.9s] Descartada: Brian Thomas Jr. genera dudas tras baja participación → duplicada",
-    "[42.9s] Noticias nuevas verificadas: 1",
-    "[42.9s] Listo: 1 noticias nuevas (0 exclusivas) · 421 jugadores · archivo 120 · semana de juego 7 · IA usada hoy 9/40"
+    "[2.0s] ESPN: lesiones 799 · noticias 50",
+    "[2.0s] Listo: 0 noticias nuevas (0 exclusivas) · 421 jugadores · archivo 120 · semana de juego 7 · IA usada hoy 9/40"
   ]
 }
