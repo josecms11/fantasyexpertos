@@ -1,11 +1,11 @@
 {
-  "fecha": "2026-10-20T02:24:54.180Z",
+  "fecha": "2026-10-20T03:00:17.130Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.5s] YouTube: 14 videos",
+    "[0.4s] YouTube: 0 videos",
     "[1.0s] Sleeper: 358 jugadores, semana 6",
-    "[3.8s] Calendario: 32 equipos, 272 juegos",
-    "[123.9s] Gemini sin respuesta The operation was aborted due to timeout",
-    "[123.9s] Listo: 0 noticias nuevas (0 exclusivas), 358 jugadores, archivo 106"
+    "[2.0s] Calendario: 32 equipos, 272 juegos",
+    "[122.7s] Gemini sin respuesta The operation was aborted due to timeout",
+    "[122.7s] Listo: 0 noticias nuevas (0 exclusivas), 358 jugadores, archivo 106"
   ]
 }
