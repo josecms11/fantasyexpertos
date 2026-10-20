@@ -1,10 +1,16 @@
 {
-  "fecha": "2026-10-20T11:07:26.938Z",
+  "fecha": "2026-10-20T11:37:41.372Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 14 nuevos, 14 en total",
-    "[0.8s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
-    "[2.1s] ESPN: lesiones 799 · noticias 50",
-    "[2.2s] Listo: 0 noticias nuevas (0 exclusivas) · 421 jugadores · archivo 120 · semana de juego 7 · IA usada hoy 9/40"
+    "[0.4s] YouTube: 14 nuevos, 14 en total",
+    "[1.2s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
+    "[2.6s] ESPN: lesiones 799 · noticias 50",
+    "[3.7s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[8.9s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
+    "[21.4s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
+    "[39.2s] IA OK con gemini-3.5-flash-lite",
+    "[39.2s] Gemini respuesta inválida gemini-3.5-flash-lite {\"candidates\":[{\"content\":{\"parts\":[{\"text\":\"{\\\"noticias\\\":[{\\\"titulo\\\":\\\"Tank Dell regresa al emparrillado con los Texans\\\",\\\"claves\\\":[\\\"Vuelve tras una larga ausencia\\\",\\\"Enfrenta a los Giants este domingo\\\",\\\"Esperado impacto ofensivo inmediato\\\"],\\\"contexto\\\":\\\"El receptor abierto Tank Dell est",
+    "[39.2s] Noticias nuevas verificadas: 0",
+    "[39.2s] Listo: 0 noticias nuevas (0 exclusivas) · 421 jugadores · archivo 120 · semana de juego 7 · IA usada hoy 10/40"
   ]
 }
