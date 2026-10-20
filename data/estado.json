@@ -1,11 +1,11 @@
 {
-  "fecha": "2026-10-20T03:24:31.885Z",
+  "fecha": "2026-10-20T03:59:23.889Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.3s] YouTube: 0 videos",
-    "[1.1s] Sleeper: 358 jugadores, semana 6",
-    "[2.1s] Calendario: 32 equipos, 272 juegos",
-    "[2.8s] Gemini falló {\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3",
-    "[2.8s] Listo: 0 noticias nuevas (0 exclusivas), 358 jugadores, archivo 106"
+    "[0.4s] YouTube: 0 videos",
+    "[1.1s] Sleeper: 357 jugadores, semana 6",
+    "[2.6s] Calendario: 32 equipos, 272 juegos",
+    "[5.4s] Gemini falló {\"error\":{\"code\":503,\"message\":\"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\"status\":\"UNAVAILABLE\"}}",
+    "[5.4s] Listo: 0 noticias nuevas (0 exclusivas), 357 jugadores, archivo 106"
   ]
 }
