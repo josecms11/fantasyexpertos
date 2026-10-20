@@ -1,14 +1,27 @@
 {
-  "fecha": "2026-10-20T04:59:33.386Z",
+  "fecha": "2026-10-20T05:05:15.969Z",
   "log": [
     "[0.0s] Inicio",
     "[0.1s] YouTube: 0 nuevos, 14 en total",
-    "[0.6s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
-    "[1.5s] ESPN: lesiones 799 · noticias 50",
-    "[2.3s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[13.2s] Gemini respuesta inválida gemini-3.6-flash {\"error\":{\"code\":503,\"message\":\"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\"status\":\"UNAVAILABLE\"}}",
-    "[13.2s] Noticias nuevas verificadas: 0",
-    "[16.0s] Gemini respuesta inválida gemini-3.6-flash {\"error\":{\"code\":503,\"message\":\"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\"status\":\"UNAVAILABLE\"}}",
-    "[16.2s] Listo: 0 noticias nuevas (0 exclusivas) · 421 jugadores · archivo 106 · semana de juego 7 · IA usada hoy 6/17"
+    "[0.7s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
+    "[1.7s] ESPN: lesiones 799 · noticias 50",
+    "[2.6s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[6.8s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
+    "[10.4s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
+    "[19.1s] IA OK con gemini-3.5-flash-lite",
+    "[19.1s] Descartada: Davante Adams fuera de combate seis semanas → duplicada",
+    "[19.1s] Descartada: Jalen Hurts fuera por el resto del año → duplicada",
+    "[19.1s] Descartada: Tank Dell regresa al emparrillado dominical → Tank Dell está IR (Knee - ACL + MCL)",
+    "[19.1s] Descartada: Josh Jacobs listo para debutar este domingo → Josh Jacobs está NA (Personal), duplicada",
+    "[19.1s] Descartada: Andy Dalton aterriza en Atlanta como opción → duplicada",
+    "[19.1s] Descartada: Mike Evans sufre lesión de tendón → duplicada",
+    "[19.1s] Descartada: Blake Grupe fuera de temporada por lesión → duplicada",
+    "[19.1s] Descartada: Brock Purdy encabeza el ataque de San Francisco → duplicada",
+    "[19.1s] Noticias nuevas verificadas: 4",
+    "[31.9s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
+    "[33.9s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
+    "[36.2s] IA OK con gemini-3.5-flash-lite",
+    "[36.2s] Resumen semana 6",
+    "[36.2s] Listo: 4 noticias nuevas (0 exclusivas) · 421 jugadores · archivo 110 · semana de juego 7 · IA usada hoy 2/40"
   ]
 }
