@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-20T07:15:39.995Z",
+  "actualizado": "2026-10-20T07:54:20.687Z",
   "ultimaIA": "2026-10-20T07:15:39.995Z",
   "semana": 7,
   "semanaStats": 7,
@@ -294,11 +294,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12518",
-      "estatus": "Fuera"
+      "id": "4199",
+      "estatus": "Duda"
     },
     {
-      "id": "8408",
+      "id": "12518",
       "estatus": "Fuera"
     },
     {
@@ -310,10 +310,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4199",
-      "estatus": "Duda"
-    },
-    {
       "id": "8121",
       "estatus": "Fuera"
     },
@@ -322,11 +318,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "5892",
+      "id": "9756",
       "estatus": "Fuera"
     },
     {
-      "id": "9756",
+      "id": "5892",
       "estatus": "Fuera"
     },
     {
@@ -396,6 +392,10 @@
     {
       "id": "9753",
       "estatus": "Fuera"
+    },
+    {
+      "id": "12492",
+      "estatus": "Fuera"
     }
   ],
   "agregados": [
@@ -417,8 +417,8 @@
     "11655",
     "4663",
     "11439",
-    "8116",
     "11792",
+    "8116",
     "1166"
   ],
   "soltados": [
