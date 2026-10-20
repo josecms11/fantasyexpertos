@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-20T09:02:20.237Z",
-  "ultimaIA": "2026-10-20T07:15:39.995Z",
+  "actualizado": "2026-10-20T09:35:46.983Z",
+  "ultimaIA": "2026-10-20T09:35:46.983Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,226 +13,28 @@
   ],
   "noticias": [
     {
-      "id": "n20261020071502",
-      "fecha": "2026-10-20T07:15:39.995Z",
+      "id": "n20261020093501",
+      "fecha": "2026-10-20T09:35:46.983Z",
       "semana": 7,
-      "titulo": "Jalon Daniels se alista para comandar a Buccaneers",
+      "titulo": "Mike Evans sufre molestias en el tendón",
       "claves": [
-        "Baker Mayfield quedó descartado por una lesión de pulgar",
-        "Jalon Daniels tomó los entrenamientos como pasador titular",
-        "Oportunidad de oro para el joven mariscal en Tampa Bay"
+        "Sintió molestias y no pudo terminar",
+        "Ausente en prácticas de la semana",
+        "Incertidumbre total para los entrenadores"
       ],
-      "contexto": "Con Baker Mayfield oficialmente fuera tras sufrir una molestia severa en el pulgar, Tampa Bay ha cambiado sus planes bajo el centro. El entrenador en jefe Todd Bowles confirmó que el equipo está preparando toda la estrategia ofensiva semanal alrededor del joven mariscal Jalon Daniels, quien asumirá la titularidad en este trascendental choque de la conferencia.",
-      "fantasy": "Daniels emerge como una alternativa sumamente atrayente en ligas Superflex o de dos mariscales de campo gracias a su movilidad y potencial terrestre. En formatos de un solo pasador, se mantiene como una opción especulativa en waivers. Sus receptores sufren un ligero bajón en proyección al ajustar el esquema a un pasador con menor experiencia en la liga.",
-      "equipo_impacto": "El esquema ofensivo de los Buccaneers incorporará más lecturas de opción terrestre y pases de desarrollo rápido para proteger y facilitar las decisiones del nuevo mariscal de campo titular.",
-      "accion": "Agrégalo de inmediato en formatos Superflex si necesitas cubrir la baja de tu mariscal titular.",
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "TB",
-      "equipos": [
-        "TB"
-      ],
-      "jugadores": [
-        "13425",
-        "4892"
-      ]
-    },
-    {
-      "id": "n20261020071503",
-      "fecha": "2026-10-20T07:15:39.995Z",
-      "semana": 7,
-      "titulo": "Andy Dalton firma con Falcons como respaldo veterano",
-      "claves": [
-        "Atlanta contrató al experimentado pasador tras ser cortado",
-        "Liberaron al mariscal Cooper Rush para abrirle hueco",
-        "Michael Penix arrastra dudas médicas en la semana"
-      ],
-      "contexto": "Los Atlanta Falcons hicieron movimientos en su profundidad de mariscales de campo al contratar al veterano Andy Dalton apenas diez días después de ser cortado por Filadelfia. Para abrir espacio en la plantilla, el equipo prescindió de Cooper Rush. La llegada del veterano responde a la incertidumbre física que rodea a Michael Penix en este tramo del torneo.",
-      "fantasy": "El movimiento tiene un impacto fantasy puramente protector y de profundidad. Dalton no debe ser reclamado en ligas tradicionales de un solo mariscal de campo, aunque en formatos Superflex profundos representa un seguro valioso si tienes a Penix en plantilla. La presencia de un pasador experimentado evita que el valor fantasy de los receptores caiga drásticamente si hay cambio.",
-      "equipo_impacto": "La directiva de Atlanta asegura calma y veteranía en el banquillo, garantizando que el sistema aéreo mantenga cierta estructura en caso de que Penix deba perderse minutos en el terreno.",
-      "accion": "Asegura a Dalton únicamente como respaldo directo en ligas Superflex si eres dueño de Penix.",
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "ATL",
-      "equipos": [
-        "ATL",
-        "PHI"
-      ],
-      "jugadores": [
-        "829",
-        "11559",
-        "4574"
-      ]
-    },
-    {
-      "id": "n20261020071504",
-      "fecha": "2026-10-20T07:15:39.995Z",
-      "semana": 7,
-      "titulo": "Sean Payton respalda a Bo Nix como titular",
-      "claves": [
-        "Payton descartó enviar a la banca al joven pasador",
-        "Proyección sólida de casi veinte puntos fantasy esta semana",
-        "Denver mantiene la confianza total en su mariscal de campo"
-      ],
-      "contexto": "A pesar de las severas dificultades que ha mostrado la ofensiva de los Broncos en las últimas jornadas, el entrenador Sean Payton dejó claro que no están considerando enviar a la banca a Bo Nix. El estratega enfatizó que confían plenamente en el desarrollo del novato y que mantendrán el plan establecido para la posición durante los próximos partidos.",
-      "fantasy": "Esta ratificación de la titularidad le brinda estabilidad a Nix en fantasy, proyectando 19.7 puntos en formato PPR para la semana siete. Su habilidad para sumar yardas por la vía terrestre le otorga un piso bastante seguro, convirtiéndolo en una opción válida para arrancar en ligas de doce equipos o como pasador número dos en formatos Superflex.",
-      "equipo_impacto": "El respaldo categórico del entrenador le da tranquilidad a todo el grupo de receptores de Denver, evitando incertidumbres en la distribución de pases durante sus próximas series ofensivas.",
-      "accion": "Alinea a Bo Nix con tranquilidad como pasador titular si buscas un piso terrestre estable.",
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "DEN",
-      "equipos": [
-        "DEN"
-      ],
-      "jugadores": [
-        "11563"
-      ]
-    },
-    {
-      "id": "n20261020071505",
-      "fecha": "2026-10-20T07:15:39.995Z",
-      "semana": 7,
-      "titulo": "C.J. Stroud encabeza las prioridades en los waivers",
-      "claves": [
-        "Destacado como uno de los reclamos más valiosos",
-        "Oportunidad de sumar un pasador con alto volumen",
-        "Disponible en varias ligas tras un inicio irregular"
-      ],
-      "contexto": "El mariscal de campo C.J. Stroud se ha posicionado entre las adiciones más cotizadas de la semana en la agencia libre. Luego de un arranque donde varios dueños fantasy lo dejaron en libertad, el pasador de Houston vuelve a captar la atención de los analistas expertos gracias a su constante volumen de pases y emparejamientos favorables en el calendario.",
-      "fantasy": "Stroud es un objetivo prioritario si estás sufriendo por lesiones o descansos en la posición de pasador. Su capacidad para generar yardas aéreas lo convierte en un titular inmediato en ligas de doce o más participantes. Si necesitas un mariscal confiable para encarar esta mitad de temporada, Stroud ofrece la producción suficiente para afianzarse en tu cuadro principal.",
-      "equipo_impacto": "El ataque aéreo de Houston sigue dependiendo del brazo de Stroud para mover las cadenas constantemente y sostener el ritmo anotador en partidos de alta exigencia ofensiva.",
-      "accion": "Invierte una cantidad moderada de tu presupuesto Waiver para asegurar a Stroud hoy mismo.",
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "HOU",
-      "equipos": [
-        "HOU"
-      ],
-      "jugadores": [
-        "9758"
-      ]
-    },
-    {
-      "id": "n20261020071506",
-      "fecha": "2026-10-20T07:15:39.995Z",
-      "semana": 7,
-      "titulo": "Brian Thomas Jr. genera dudas tras ser congelado",
-      "claves": [
-        "No tuvo participación durante toda la segunda mitad",
-        "Rumores de traspaso se intensifican en la liga",
-        "Rendimiento lejos de lo mostrado en su año novato"
-      ],
-      "contexto": "El receptor de segundo año Brian Thomas Jr. vivió un domingo frustrante al no registrar participación durante toda la segunda mitad del partido contra los Texans. Esta situación ha desatado múltiples rumores sobre un posible traspaso antes de la fecha límite, mientras el jugador intenta recuperar la forma explosiva que mostró durante su temporada de novato en la NFL.",
-      "fantasy": "Debes enviar a Thomas a la banca de inmediato. Su falta de involucramiento en el plan de juego y la incertidumbre sobre su rol destruyen su valor fantasy en formatos PPR y estándar. Hasta que no consiga estabilidad o sea cambiado a un entorno más propicio, alinearlo representa un riesgo innecesario que puede costar partidos en tu liga.",
-      "equipo_impacto": "Su menor participación abre oportunidades de objetivos para otros receptores secundarios del plantel, reajustando por completo la distribución del balón en el ataque por aire de Jacksonville.",
-      "accion": "Sienta a Brian Thomas Jr. hasta que su volumen de pases muestre signos claros de recuperación.",
+      "contexto": "El veterano receptor de San Francisco, Mike Evans, no logró concluir el duelo de lunes por la noche frente a Washington debido a persistentes molestias en el tendón de Aquiles. Esta situación le impidió participar en las sesiones de entrenamiento de jueves, viernes y sábado, encendiendo las alertas en la organización.",
+      "fantasy": "Al estar descartado por lesión, ningún mánager debe arriesgarse a alinearlo en su plantilla titular para esta semana. Su estatus genera una baja temporal en su valor dentro de formatos PPR y estándar mientras se recupera por completo.",
+      "equipo_impacto": "Su ausencia temporal altera la repartición de pases largos en el ataque de los 49ers, obligando al resto del cuerpo de receptores a asumir mayor protagonismo en el esquema ofensivo.",
+      "accion": "Saca a Mike Evans de tu alineación titular y busca un sustituto sano.",
       "etiqueta": "SIT",
       "impacto": "BAJA",
-      "equipo": "JAX",
+      "equipo": "SF",
       "equipos": [
-        "JAX",
-        "HOU"
+        "SF",
+        "WAS"
       ],
       "jugadores": [
-        "11631"
-      ]
-    },
-    {
-      "id": "n20261020071507",
-      "fecha": "2026-10-20T07:15:39.995Z",
-      "semana": 7,
-      "titulo": "Chuba Hubbard se afianza como pieza dominante",
-      "claves": [
-        "Elogiado ampliamente por su brillante inicio de campaña",
-        "Consolidado como el corredor titular indiscutible de Carolina",
-        "Volumen garantizado en acarreos y pases atrapados semanalmente"
-      ],
-      "contexto": "El rendimiento del corredor Chuba Hubbard ha sido destacado por analistas de la industria tras un arranque de temporada sumamente consistente. Hubbard se ha adueñado por completo del emparrillado en Carolina, adueñándose de los toques en la zona roja y mostrando una efectividad notable para mover las cadenas tanto por tierra como en pases cortos.",
-      "fantasy": "Hubbard se ha consolidado como un corredor titular indiscutible en formatos PPR y ligas estándar. Su volumen semanal le otorga un piso elevado de puntos, superando las expectativas iniciales de la temporada. Es un elemento obligatorio en tu alineación estelar, capaz de rendir como un corredor de segundo nivel o incluso de primer rango según el duelo.",
-      "equipo_impacto": "La ofensiva de Carolina ha volcado su identidad alrededor del juego terrestre de Hubbard, aliviando de forma drástica la presión sobre el mariscal de campo en momentos clave del encuentro.",
-      "accion": "Mantén a Chuba Hubbard firme en tu alineación titular sin importar el rival en turno.",
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "CAR",
-      "equipos": [
-        "CAR"
-      ],
-      "jugadores": [
-        "7594"
-      ]
-    },
-    {
-      "id": "n20261020071508",
-      "fecha": "2026-10-20T07:15:39.995Z",
-      "semana": 7,
-      "titulo": "C.J. Gardner-Johnson es suspendido por un partido",
-      "claves": [
-        "La NFL lo sancionó por escupir a Brock Bowers",
-        "Fue expulsado durante el encuentro frente a los Raiders",
-        "Baja confirmada para la secundaria defensiva de los Bills"
-      ],
-      "contexto": "La NFL suspendió por un encuentro al profundo C.J. Gardner-Johnson luego de ser captado por las cámaras escupiendo hacia el ala cerrada Brock Bowers durante el partido contra Las Vegas. El defensivo fue expulsado del terreno de juego y perderá su salario semanal tras disculparse públicamente por el incidente ocurrido en la jornada seis.",
-      "fantasy": "Esta suspensión golpea directamente a la unidad defensiva de Buffalo en ligas con formato IDP o donde alineas defensivas por equipo (DST). Si utilizas a los Bills como tu defensa titular, considera buscar una alternativa en la agencia libre para este fin de semana, ya que perder a su profundo estelar debilita la cobertura aérea de la secundaria.",
-      "equipo_impacto": "La ausencia obligada de Gardner-Johnson fuerza a Buffalo a rotar a sus profundos suplentes, lo que podría abrir huecos defensivos importantes en la cobertura sobre el centro del campo.",
-      "accion": "Evita arrancar a la defensiva de Bills si dependes de su cobertura profunda este domingo.",
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "BUF",
-      "equipos": [
-        "BUF",
-        "LV"
-      ],
-      "jugadores": [
-        "11604"
-      ]
-    },
-    {
-      "id": "n20261020071509",
-      "fecha": "2026-10-20T07:15:39.995Z",
-      "semana": 7,
-      "titulo": "Blake Grupe a la reserva tras grave lesión",
-      "claves": [
-        "Sufrió una lesión de rodilla durante una tacleada",
-        "Rams lo colocaron oficialmente en la lista de lesionados",
-        "Los Ángeles deberá contratar un nuevo pateador de lugar"
-      ],
-      "contexto": "El pateador de los Rams, Blake Grupe, fue colocado oficialmente en la lista de lesionados tras sufrir una rotura de ligamento cruzado anterior en la rodilla derecha. La desafortunada jugada ocurrió mientras intentaba realizar una tacleada en un regreso de patada durante el partido de la semana seis frente a los Arizona Cardinals.",
-      "fantasy": "Si tenías a Grupe como tu pateador titular en fantasy, debes cortarlo inmediatamente. Su inclusión en la reserva de lesionados pone fin a su participación utilizable. Los Rams tendrán que contratar un reemplazo de emergencia esta semana, por lo que te conviene buscar un pateador libre con mejor proyección de puntos anotados en la agencia libre.",
-      "equipo_impacto": "Los Rams pierden a su especialista en patadas de campo, obligando a la gerencia angelina a realizar pruebas urgentes durante la semana para firmar un nuevo pateador para el domingo.",
-      "accion": "Suelta a Blake Grupe de inmediato y busca un pateador disponible en tu liga.",
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "LAR",
-      "equipos": [
-        "LAR",
-        "ARI"
-      ],
-      "jugadores": [
-        "11058"
-      ]
-    },
-    {
-      "id": "n20261020071511",
-      "fecha": "2026-10-20T07:15:39.995Z",
-      "semana": 7,
-      "titulo": "Jahmyr Gibbs encabeza las proyecciones en corredores",
-      "claves": [
-        "Lidera a los corredores con veinticinco punto tres puntos",
-        "Rol explosivo en el ataque por tierra y aire",
-        "Titular indiscutible para la jornada siete de la liga"
-      ],
-      "contexto": "El corredor Jahmyr Gibbs llega a la semana siete en la cima de las proyecciones individuales tras consolidarse como un arma letal en el esquema de Detroit. Su capacidad para generar jugadas explosivas tanto en acarreos directos como atrapando pases desde el aire lo convierte en la amenaza principal para las defensas rivales.",
-      "fantasy": "Gibbs es la opción número uno entre los corredores para esta semana con una proyección sobresaliente de 25.3 puntos PPR. Debe estar en tu alineación titular sin importar el formato de tu liga. Su altísimo techo de anotación y piso seguro por recepciones lo colocan como una pieza determinante para asegurar la victoria en tu enfrentamiento.",
-      "equipo_impacto": "El ataque de Detroit basa gran parte de su dinamismo en la versatilidad de Gibbs, abriendo valiosos espacios para el resto de los receptores y corredores del equipo.",
-      "accion": "Asegura a Jahmyr Gibbs en tu alineación titular como un RB1 estelar e inamovible.",
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "DET",
-      "equipos": [
-        "DET"
-      ],
-      "jugadores": [
-        "9221"
+        "2216"
       ]
     }
   ],
@@ -408,16 +210,16 @@
     "10213",
     "10235",
     "5849",
-    "11637",
     "12487",
+    "11637",
     "6650",
     "11783",
     "11565",
     "9230",
     "11655",
+    "11792",
     "11439",
     "4663",
-    "11792",
     "8116",
     "1166"
   ],
@@ -427,12 +229,12 @@
     "3271",
     "9511",
     "13150",
-    "12533",
     "8121",
+    "12533",
     "11435",
     "2505",
-    "3321",
     "5927",
+    "3321",
     "650",
     "2133",
     "8132",
@@ -446,9 +248,9 @@
     "13330"
   ],
   "duelo": {
-    "a": "Jaxon Smith-Njigba",
-    "b": "Puka Nacua",
-    "veredicto": "Arranca a Jaxon Smith-Njigba sobre Puka Nacua. Smith-Njigba lidera las proyecciones de receptores con 22.8 puntos PPR frente a los 22.4 de Nacua, aprovechando un volumen aéreo más consistente en la semana siete."
+    "a": "Josh Jacobs",
+    "b": "Kenneth Walker",
+    "veredicto": "Arranca a Kenneth Walker por su alto volumen de uso proyectado frente a Jacobs, quien regresa de la lista exenta y podría tener restricciones de jugadas en su primer partido de la temporada."
   },
   "fuentes": [
     "Sleeper",
