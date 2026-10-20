@@ -1,10 +1,10 @@
 {
-  "fecha": "2026-10-20T01:21:14.531Z",
+  "fecha": "2026-10-20T01:57:56.734Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.9s] YouTube: 14 videos",
-    "[1.5s] Sleeper: 358 jugadores, semana 6",
-    "[2.8s] Calendario: 32 equipos, 272 juegos",
-    "[62.0s] Listo: 12 noticias nuevas (0 exclusivas), 358 jugadores, archivo 106"
+    "[0.4s] YouTube: 0 videos",
+    "[1.1s] Sleeper: 358 jugadores, semana 6",
+    "[2.1s] Calendario: 32 equipos, 272 juegos",
+    "[2.1s] Listo: 0 noticias nuevas (0 exclusivas), 358 jugadores, archivo 106"
   ]
 }
