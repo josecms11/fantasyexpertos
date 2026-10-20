@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-20T20:36:41.869Z",
-  "ultimaIA": "2026-10-20T19:07:57.623Z",
+  "actualizado": "2026-10-20T21:06:29.219Z",
+  "ultimaIA": "2026-10-20T21:06:29.219Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,76 +13,244 @@
   ],
   "noticias": [
     {
-      "id": "n20261020190702",
-      "fecha": "2026-10-20T19:07:57.623Z",
+      "id": "n20261020210600",
+      "fecha": "2026-10-20T21:06:29.219Z",
       "semana": 7,
-      "titulo": "Matthew Stafford y los Rams buscan salir de la crisis",
+      "titulo": "Breece Hall queda descartado para la Semana 7",
       "claves": [
-        "Los Rams atraviesan un inicio preocupante de temporada",
-        "Stafford acumula derrotas históricas recientes",
-        "La ofensiva sufre por lesiones y falta de profundidad"
+        "Breece Hall fuera por lesión de cuádriceps",
+        "Sin actividad confirmada para la Semana 7",
+        "Baja sensible para el ataque neoyorquino"
       ],
-      "contexto": "Matthew Stafford y los Rams atraviesan un momento muy complicado con un récord adverso de 2-4, combinando problemas en unidades especiales, falta de juego profundo y múltiples lesiones en el plantel. Stafford se encuentra muy cerca de registrar un récord histórico negativo de derrotas para un mariscal de campo.",
-      "fantasy": "Su impacto en fantasy es a la baja para ligas competitivas. Aunque su volumen de lanzamientos puede salvar algunos partidos en formato superflex, confiar en él como mariscal principal representa un riesgo elevado debido a la inestabilidad general de la ofensiva de los Rams.",
-      "equipo_impacto": "El equipo completo resiente la falta de variantes ofensivas y la presión sobre su veterano mariscal aumenta conforme avanzan las semanas del calendario regular.",
-      "accion": "Mantenlo en la banca a menos que no tengas otra alternativa viable en superflex.",
-      "etiqueta": "SIT",
+      "contexto": "El corredor estrella de New York Jets, Breece Hall, fue descartado oficialmente para el partido de la Semana 7 debido a una lesión en el cuádriceps. El cuerpo técnico decidió dejarlo fuera tras no superar las pruebas físicas durante los entrenamientos semanales. Esta baja deja a la ofensiva neoyorquina sin su principal arma terrestre y pilar en el juego aéreo para este importante compromiso.",
+      "fantasy": "En fantasy football, la ausencia de Breece Hall golpea duramente a quienes contaban con él como su RB1 titular en formatos PPR y estándar. Al estar descartado, debes moverlo de inmediato a la banca o al lugar de lesionados. Braelon Allen toma relevancia inmediata como un reemplazo de alto volumen para ligas profundas y formatos de redraft.",
+      "equipo_impacto": "La baja de Breece Hall altera todo el esquema de los Jets. Braelon Allen asumirá el rol principal en el ataque terrestre, recibiendo la mayoría de los acarreos, mientras que los receptores tendrán mayor exigencia en pases cortos.",
+      "accion": "Sienta de inmediato a Breece Hall y busca a su suplente en alambre de waivers.",
+      "etiqueta": "LESIÓN",
       "impacto": "BAJA",
+      "equipo": "NYJ",
+      "equipos": [
+        "NYJ"
+      ],
+      "jugadores": [
+        "8155"
+      ]
+    },
+    {
+      "id": "n20261020210601",
+      "fecha": "2026-10-20T21:06:29.219Z",
+      "semana": 7,
+      "titulo": "Drake Maye proyecta explosión fantástica en Semana 7",
+      "claves": [
+        "Proyección de 21.6 puntos PPR esta semana",
+        "Titularidad sólida en el esquema de New England",
+        "Opciones de pase en ascenso constante"
+      ],
+      "contexto": "El pasador novato de los New England Patriots, Drake Maye, llega a la Semana 7 posicionado como uno de los mariscales de campo con mejores perspectivas en las proyecciones semanales. Maye ha mostrado un crecimiento notable en la lectura de defensas y en la producción de yardas por aire y por tierra en sus recientes apariciones.",
+      "fantasy": "Con una proyección de 21.6 puntos PPR, Drake Maye se consolida como una opción de arranque obligatorio en ligas Superflex y una alternativa sumamente atractiva de QB1 en ligas de 12 equipos de un solo mariscal. Su capacidad para generar puntos por la vía terrestre eleva significativamente su piso semanal frente a rivales permisivos.",
+      "equipo_impacto": "El progreso de Drake Maye beneficia directamente a todo el cuerpo de receptores de New England, elevando el valor de sus objetivos principales y dando estabilidad al ritmo ofensivo del equipo.",
+      "accion": "Alinea a Drake Maye con plena confianza como tu QB1 o Superflex.",
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "NE",
+      "equipos": [
+        "NE"
+      ],
+      "jugadores": [
+        "11564"
+      ]
+    },
+    {
+      "id": "n20261020210602",
+      "fecha": "2026-10-20T21:06:29.219Z",
+      "semana": 7,
+      "titulo": "Puka Nacua perfila jornada estelar para Los Angeles",
+      "claves": [
+        "Proyección estelar de 22.1 puntos en PPR",
+        "Principal objetivo tras ausencias en el ataque",
+        "Volumen masivo garantizado por aire"
+      ],
+      "contexto": "El receptor abierto de Los Angeles Rams, Puka Nacua, encabeza las proyecciones de receptores para la Semana 7 con un pronóstico de 22.1 puntos PPR. Con bajas clave en la ofensiva angelina, el panorama está completamente servido para que el receptor acapare una cuota de objetivos gigantesca en el esquema aéreo.",
+      "fantasy": "Puka Nacua debe ser considerado un WR1 de élite para esta semana en cualquier formato de juego, especialmente en PPR y Half-PPR. Su combinación de volumen proyectado y efectividad tras la recepción lo convierten en un pilar indiscutible para asegurar victorias en ligas de 10 y 12 equipos sin dudar un instante.",
+      "equipo_impacto": "El protagonismo absoluto de Puka Nacua concentrará las lecturas del mariscal de campo, obligando a las defensivas rivales a volcar la cobertura doble sobre él durante todo el encuentro.",
+      "accion": "Alinea a Puka Nacua como tu WR1 estelar sin ningún tipo de duda.",
+      "etiqueta": "START",
+      "impacto": "SUBE",
       "equipo": "LAR",
       "equipos": [
         "LAR"
       ],
       "jugadores": [
-        "421"
+        "9493"
       ]
     },
     {
-      "id": "n20261020190707",
-      "fecha": "2026-10-20T19:07:57.623Z",
+      "id": "n20261020210604",
+      "fecha": "2026-10-20T21:06:29.219Z",
       "semana": 7,
-      "titulo": "Jordan Addison fuera por lesión en el tendón de la corva",
+      "titulo": "Derrick Henry enfrenta panorama complicado sin Lamar Jackson",
       "claves": [
-        "Addison presenta molestias en el tendón de la corva",
-        "Se encuentra descartado para el compromiso",
-        "Los Vikings ajustan su esquema ofensivo"
+        "Proyección de 17.5 puntos PPR en riesgo",
+        "Ausencia de Lamar Jackson afecta cajas defensivas",
+        "Riesgo de menor eficiencia en acarreos"
       ],
-      "contexto": "Jordan Addison figura en el reporte oficial de lesionados con una dolencia en el tendón de la corva que lo margina de toda actividad para el siguiente compromiso de los Minnesota Vikings, restando opciones profundas al ataque aéreo del equipo.",
-      "fantasy": "Baja sensible para los equipos que buscaban su velocidad como opción flexible o número dos en ligas PPR. No puede ser alineado bajo ninguna circunstancia y requiere un espacio libre en tu plantilla mientras se recupera.",
-      "equipo_impacto": "La ausencia de Addison recarga la responsabilidad sobre los demás receptores sanos de Minnesota, alterando las coberturas que enfrentará el resto del cuerpo ofensivo.",
-      "accion": "Sentarlo obligatoriamente en tu alineación y buscar un sustituto disponible.",
+      "contexto": "El corredor veterano de Baltimore Ravens, Derrick Henry, encara un enfrentamiento comprometido en la Semana 7. A pesar de mantener una proyección respetable de 17.5 puntos PPR, la baja confirmada del mariscal Lamar Jackson permitirá a las defensivas rivales llenar la caja defensiva para frenar de golpe el ataque terrestre.",
+      "fantasy": "Aunque Henry sigue siendo difícil de sentar por completo en ligas de 12 equipos, su techo fantasy cae drásticamente. En formatos PPR pasa de ser un RB1 seguro a un RB2 de alto riesgo o una opción de SIT en ligas pequeñas de 8 o 10 equipos con mejores alternativas disponibles.",
+      "equipo_impacto": "La falta de una amenaza por aire sin Lamar Jackson obliga a Derrick Henry a chocar constantemente contra frentes defensivos cargados, reduciendo drásticamente las oportunidades de conseguir escapadas de largo alcance.",
+      "accion": "Evalúa opciones en tu banca antes de arrancar a Derrick Henry este domingo.",
       "etiqueta": "SIT",
       "impacto": "BAJA",
-      "equipo": "MIN",
+      "equipo": "BAL",
       "equipos": [
-        "MIN"
+        "BAL"
       ],
       "jugadores": [
-        "9756"
+        "3198",
+        "4881"
       ]
     },
     {
-      "id": "n20261020190711",
-      "fecha": "2026-10-20T19:07:57.623Z",
+      "id": "n20261020210605",
+      "fecha": "2026-10-20T21:06:29.219Z",
       "semana": 7,
-      "titulo": "Trey McBride aporta consistencia en el ataque aéreo",
+      "titulo": "Travis Kelce genera dudas con baja proyección semanal",
       "claves": [
-        "McBride proyecta 15.4 puntos en formato PPR",
-        "Mantiene un volumen seguro de recepciones",
-        "Es pieza clave en el esquema ofensivo"
+        "Proyección moderada de 11.5 puntos PPR",
+        "Volumen limitado en el esquema aéreo reciente",
+        "Opciones de ala cerrada con mayor techo"
       ],
-      "contexto": "Trey McBride se mantiene firme entre las opciones más productivas de la liga con una proyección de 15.4 puntos PPR para la semana 7, destacando por su habilidad para desmarcarse y capturar envíos en zonas medulares del campo.",
-      "fantasy": "Consolida su estatus como una gran opción para arrancar en ligas de formato PPR y estándar. Su aportación constante garantiza un piso elevado de puntos que ayuda a inclinar la balanza en enfrentamientos cerrados.",
-      "equipo_impacto": "Su efectividad por el centro del campo le da estabilidad al juego ofensivo y otorga opciones claras de conversión en terceras oportunidades.",
-      "accion": "Alinea a McBride con total confianza en tu posición de ala cerrada.",
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "ARI",
+      "contexto": "El ala cerrada de Kansas City Chiefs, Travis Kelce, registra una proyección de apenas 11.5 puntos PPR para la Semana 7. Aunque sigue siendo un pilar histórico de la posición, la distribución de pases y los esquemas defensivos recientes han reducido la frecuencia con la que genera jugadas de gran kilometraje.",
+      "fantasy": "Si cuentas con otra ala cerrada de alto volumen como Brock Bowers o George Kittle, considerar sentar a Travis Kelce es una decisión válida esta semana. Su techo fantasy se ha visto recortado y en formatos PPR ya no garantiza la ventaja semanal dominante de temporadas pasadas.",
+      "equipo_impacto": "El ataque aéreo de Kansas City diversifica mucho más sus pases, repartiendo envíos entre receptores y corredores, lo que disminuye las oportunidades exclusivas de Kelce en trayectorias intermedias.",
+      "accion": "Considera sentar a Travis Kelce si posees un ala cerrada con mejor proyección.",
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "KC",
       "equipos": [
-        "ARI"
+        "KC"
       ],
       "jugadores": [
-        "8130"
+        "1466"
       ]
+    },
+    {
+      "id": "n20261020210606",
+      "fecha": "2026-10-20T21:06:29.219Z",
+      "semana": 7,
+      "titulo": "Isaiah Likely gana valor prioritario en el alambre",
+      "claves": [
+        "Subida fuerte en los rankings rest-of-season",
+        "Proyección atractiva de 12.5 puntos PPR",
+        "Objetivo cotizado en alambre de waivers"
+      ],
+      "contexto": "El ala cerrada de los Baltimore Ravens, Isaiah Likely, ha experimentado un ascenso constante en las valoraciones del resto de la temporada. Con una proyección de 12.5 puntos PPR para la Semana 7, Likely se consolida como una pieza cada vez más involucrada en las jugadas de pase dentro de la zona roja.",
+      "fantasy": "Likely se ha transformado en un reclamo prioritario en la lista de waivers para ligas de 12 o más equipos. Si buscas resolver tus problemas en la posición de TE o necesitas cobertura por semanas de descanso, reclamar a Likely representa una inversión inteligente para el tramo medio del torneo.",
+      "equipo_impacto": "El crecimiento constante de Isaiah Likely le brinda a Baltimore dos amenazas serias en el juego aéreo intermedio, abriendo valiosos espacios para las trayectorias cruzadas de sus receptores abiertos.",
+      "accion": "Invierte presupuesto FAB o tu prioridad para reclamar a Isaiah Likely hoy.",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "BAL",
+      "equipos": [
+        "BAL",
+        "NYG"
+      ],
+      "jugadores": [
+        "8131"
+      ]
+    },
+    {
+      "id": "n20261020210607",
+      "fecha": "2026-10-20T21:06:29.219Z",
+      "semana": 7,
+      "titulo": "Tyrone Tracy emerge como prioridad terrestre tras recortes",
+      "claves": [
+        "Oportunidad abierta en el ataque terrestre neoyorquino",
+        "Liberación de espacio tras la salida de competidores",
+        "Objetivo codiciado para reforzar la banca"
+      ],
+      "contexto": "Tras la reciente salida de Najee Harris del plantel de New York Giants, el novato Tyrone Tracy se perfila como el gran beneficiado en la rotación de corredores. La reorganización del backfield le otorga vía libre para capturar una porción significativa de los acarreos y pases saliendo desde el fondo.",
+      "fantasy": "Tyrone Tracy se convierte de inmediato en un objetivo obligado de waiver wire en todos los formatos PPR y Half-PPR. Su versatilidad como corredor y receptor lo ubica como un excelente elemento de banca con potencial de escalar a RB2 o Flex utilizable en ligas de 12 equipos.",
+      "equipo_impacto": "La presencia activa de Tyrone Tracy aporta un mayor dinamismo y velocidad al ataque terrestre de los Giants, simplificando además la ejecución de pases de pantalla para el mariscal de campo.",
+      "accion": "Agrega a Tyrone Tracy inmediatamente desde el alambre de agentes libres.",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "NYG",
+      "equipos": [
+        "NYG"
+      ],
+      "jugadores": [
+        "11655"
+      ]
+    },
+    {
+      "id": "n20261020210608",
+      "fecha": "2026-10-20T21:06:29.219Z",
+      "semana": 7,
+      "titulo": "Baker Mayfield es baja confirmada por lesión de pulgar",
+      "claves": [
+        "Descartado oficialmente para la Semana 7",
+        "Lesión sufrida en el pulgar de pase",
+        "Afectación directa al ataque de Tampa Bay"
+      ],
+      "contexto": "El mariscal de campo de Tampa Bay Buccaneers, Baker Mayfield, no estará en el campo para el enfrentamiento de la Semana 7 tras ser descartado formalmente debido a una lesión en el pulgar. La dolencia le impide sujetar el balón con firmeza, obligando al cuerpo técnico a pausar su participación.",
+      "fantasy": "Con el estatus de OUT confirmado, Baker Mayfield debe ser retirado de cualquier alineación de fantasy football. En ligas Superflex debes moverlo a la banca o al espacio de lesionados de forma inmediata y buscar un mariscal reemplazo en la lista de agentes libres disponibles.",
+      "equipo_impacto": "La ausencia involuntaria de Baker Mayfield altera el ritmo del ataque de los Buccaneers, forzando al mariscal suplente a comandar la ofensiva y bajando el techo de yardas de todos sus receptores.",
+      "accion": "Envía a Baker Mayfield a tu banca o espacio de IR hoy mismo.",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "TB",
+      "equipos": [
+        "TB"
+      ],
+      "jugadores": [
+        "4892"
+      ]
+    },
+    {
+      "id": "n20261020210610",
+      "fecha": "2026-10-20T21:06:29.219Z",
+      "semana": 7,
+      "titulo": "Dolphins despiden a Riley Patterson tras problemas especiales",
+      "claves": [
+        "Liberado oficialmente tras la Semana 5",
+        "Fallas en la cobertura de patadas de salida",
+        "Baja inmediata en el ranking de pateadores"
+      ],
+      "contexto": "Los Miami Dolphins anunciaron la liberación oficial del pateador Riley Patterson tras los severos inconvenientes sufridos por las unidades especiales durante la quinta semana de competencia. La directiva del equipo decidió tomar medidas drásticas para corregir una de las peores coberturas de patadas de salida en toda la liga, dejando libre al especialista.",
+      "fantasy": "Riley Patterson debe ser cortado de inmediato en cualquier liga de fantasy football donde permanezca en plantilla. Al no pertenecer a ningún equipo activo, su valor es nulo y dejarlo en tu plantilla significa desperdiciar un espacio valioso que podrías aprovechar con otro pateador de proyección aceptable.",
+      "equipo_impacto": "La partida definitiva de Patterson fuerza a la directiva de Miami a buscar de inmediato un nuevo especialista en patadas que brinde mayor alcance y efectividad en los saques iniciales.",
+      "accion": "Suelta a Riley Patterson a la agencia libre sin dudarlo.",
+      "etiqueta": "TENDENCIA",
+      "impacto": "BAJA",
+      "equipo": "MIA",
+      "equipos": [
+        "MIA"
+      ],
+      "jugadores": [
+        "7922"
+      ]
+    },
+    {
+      "id": "n20261020210611",
+      "fecha": "2026-10-20T21:06:29.219Z",
+      "semana": 7,
+      "titulo": "Lions recuperan seguridad defensiva con Kerby Joseph",
+      "claves": [
+        "Regreso esperado a la secundaria de Detroit",
+        "Consolidación de la dupla defensiva estelar",
+        "Impulso significativo para la unidad D/ST"
+      ],
+      "contexto": "La defensiva de los Detroit Lions alista el regreso de su profundo Kerby Joseph para la temporada 2026, mientras Brian Branch también se aproxima a su retorno completo. El restablecimiento de esta dupla de profundos promete transformar el rendimiento de la secundaria y elevar la contención contra el pase.",
+      "fantasy": "Este regreso fortalece de forma directa el atractivo de la defensiva de los Detroit Lions (D/ST) en ligas de formato estándar y IDP. Con profundos capaces de forzar entregas de balón y balones sueltos, la D/ST de Detroit se mete al radar de arrancar en partidos favorables.",
+      "equipo_impacto": "La presencia en cancha de Joseph aporta agresividad inmediata en la cobertura profunda, permitiendo que la línea defensiva de los Lions presione al pasador rival con una libertad mucho mayor.",
+      "accion": "Considera a la defensiva de Lions como una opción titular sólida.",
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "DET",
+      "equipos": [
+        "DET"
+      ],
+      "jugadores": []
     }
   ],
   "lesionados": [
@@ -251,8 +419,8 @@
     "13276",
     "12718",
     "5849",
-    "9502",
     "9758",
+    "9502",
     "9482",
     "12487",
     "10235",
@@ -266,8 +434,8 @@
     "9230",
     "11783",
     "8116",
-    "11637",
     "11565",
+    "11637",
     "11586"
   ],
   "soltados": [
@@ -276,12 +444,12 @@
     "9511",
     "3271",
     "6904",
-    "8121",
     "11435",
+    "8121",
     "13150",
     "7528",
-    "12533",
     "650",
+    "12533",
     "2505",
     "12711",
     "8132",
@@ -295,9 +463,9 @@
     "11630"
   ],
   "duelo": {
-    "a": "Jaxon Smith-Njigba",
-    "b": "Puka Nacua",
-    "veredicto": "Arranca a Jaxon Smith-Njigba por su superior proyección de 23.5 puntos frente a los 22.1 de Puka Nacua, asegurando un techo ofensivo más alto esta semana."
+    "a": "Bijan Robinson",
+    "b": "Christian McCaffrey",
+    "veredicto": "Arranca a Bijan Robinson. Su proyección de 22.7 puntos PPR supera a McCaffrey y llega con carga de trabajo totalmente asegurada sin restricciones de volumen."
   },
   "fuentes": [
     "Sleeper",

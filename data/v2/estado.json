@@ -1,10 +1,15 @@
 {
-  "fecha": "2026-10-20T20:36:41.877Z",
+  "fecha": "2026-10-20T21:07:28.770Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.3s] YouTube: 14 nuevos, 14 en total",
-    "[1.0s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
-    "[2.2s] ESPN: lesiones 799 · noticias 50",
-    "[2.5s] Listo: 0 noticias nuevas (0 exclusivas) · 420 jugadores · archivo 134 · semana de juego 7 · IA usada hoy 16/40"
+    "[0.2s] YouTube: 14 nuevos, 14 en total",
+    "[0.9s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
+    "[2.0s] ESPN: lesiones 799 · noticias 50",
+    "[2.4s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[61.5s] IA OK con gemini-3.6-flash",
+    "[61.5s] Descartada: Saquon Barkley queda fuera por molestia en isquiotibiales → duplicada",
+    "[61.5s] Descartada: George Kittle lidera proyecciones de alas cerradas → duplicada",
+    "[61.5s] Noticias nuevas verificadas: 10",
+    "[61.5s] Listo: 10 noticias nuevas (0 exclusivas) · 420 jugadores · archivo 144 · semana de juego 7 · IA usada hoy 17/40"
   ]
 }
