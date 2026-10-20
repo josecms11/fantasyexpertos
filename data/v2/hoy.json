@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-20T18:23:06.434Z",
-  "ultimaIA": "2026-10-20T16:54:18.879Z",
+  "actualizado": "2026-10-20T19:07:57.623Z",
+  "ultimaIA": "2026-10-20T19:07:57.623Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,110 +13,75 @@
   ],
   "noticias": [
     {
-      "id": "x20261020172800",
-      "fecha": "2026-10-20T17:28:47.256Z",
+      "id": "n20261020190702",
+      "fecha": "2026-10-20T19:07:57.623Z",
       "semana": 7,
-      "exclusivo": true,
-      "titulo": "Keenan Allen supera a Terrell Owens en recepciones históricas",
+      "titulo": "Matthew Stafford y los Rams buscan salir de la crisis",
       "claves": [
-        "Suma 1,080 recepciones en su carrera profesional",
-        "Supera la marca histórica de Terrell Owens",
-        "Ocupa el noveno lugar de todos los tiempos"
+        "Los Rams atraviesan un inicio preocupante de temporada",
+        "Stafford acumula derrotas históricas recientes",
+        "La ofensiva sufre por lesiones y falta de profundidad"
       ],
-      "contexto": "Keenan Allen hizo historia al alcanzar el noveno puesto de todos los tiempos en recepciones acumuladas en la NFL. El veterano receptor superó la marca de 1,079 atrapadas que pertenecía a Terrell Owens. Este logro reafirma la vigencia del receptor en la liga, consolidándose como un objetivo altamente confiable dentro del esquema ofensivo de su equipo en la presente campaña de la NFL.",
-      "fantasy": "En formatos de puntos por recepción como PPR y Half-PPR, Allen mantiene un volumen constante que lo sostiene como un WR2 o Flex muy seguro cada semana. Su habilidad para desmarcarse asegura un piso constante de unidades. Si en tu liga alguien duda de su impacto por edad, aprovecha para ofrecer un intercambio favorable antes de que cotice más alto.",
-      "equipo_impacto": "Su alta cuota de pases atrapados ayuda a mantener vivas las series ofensivas del equipo, abriendo espacios valiosos para los demás receptores del ataque y quitando presión a su mariscal de campo en momentos clave.",
-      "accion": "Alinea a Keenan Allen como titular en ligas de formato PPR.",
-      "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "CHI",
+      "contexto": "Matthew Stafford y los Rams atraviesan un momento muy complicado con un récord adverso de 2-4, combinando problemas en unidades especiales, falta de juego profundo y múltiples lesiones en el plantel. Stafford se encuentra muy cerca de registrar un récord histórico negativo de derrotas para un mariscal de campo.",
+      "fantasy": "Su impacto en fantasy es a la baja para ligas competitivas. Aunque su volumen de lanzamientos puede salvar algunos partidos en formato superflex, confiar en él como mariscal principal representa un riesgo elevado debido a la inestabilidad general de la ofensiva de los Rams.",
+      "equipo_impacto": "El equipo completo resiente la falta de variantes ofensivas y la presión sobre su veterano mariscal aumenta conforme avanzan las semanas del calendario regular.",
+      "accion": "Mantenlo en la banca a menos que no tengas otra alternativa viable en superflex.",
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "LAR",
       "equipos": [
-        "CHI",
-        "NE",
-        "IND"
+        "LAR"
       ],
       "jugadores": [
-        "1479"
+        "421"
       ]
     },
     {
-      "id": "x20261020172801",
-      "fecha": "2026-10-20T17:28:47.256Z",
+      "id": "n20261020190707",
+      "fecha": "2026-10-20T19:07:57.623Z",
       "semana": 7,
-      "exclusivo": true,
-      "titulo": "Alvin Kamara alcanza histórico registro de 5,000 y 5,000",
+      "titulo": "Jordan Addison fuera por lesión en el tendón de la corva",
       "claves": [
-        "Sexto jugador histórico con 5,000 yardas",
-        "Suma yardas por tierra y por aire",
-        "Puntal ofensivo para Saints en la semana"
+        "Addison presenta molestias en el tendón de la corva",
+        "Se encuentra descartado para el compromiso",
+        "Los Vikings ajustan su esquema ofensivo"
       ],
-      "contexto": "Alvin Kamara se convirtió en apenas el sexto jugador en toda la historia de la NFL en registrar al menos 5,000 yardas por tierra y 5,000 yardas por aire. Este logro confirma la versatilidad de Kamara dentro de la liga. Los Saints se alistan para medirse ante Pittsburgh en el Stade de France en Saint-Denis, donde el corredor será el eje central del esquema.",
-      "fantasy": "El valor fantasy de Kamara se mantiene en la cima gracias a su involucramiento masivo por aire y tierra. En ligas PPR es un RB1 insustituible. Si estás considerando venderlo en lo más alto por un paquete extenso de piezas titulares antes de la segunda mitad del calendario, esta histórica marca representa el momento idóneo en el mercado.",
-      "equipo_impacto": "Es el motor indiscutible del ataque de Nueva Orleans. Su capacidad para generar yardas en el juego aéreo alivia la presión sobre su mariscal y genera espacios para los receptores abiertos.",
-      "accion": "Alinea a Kamara como tu corredor principal sin importar el rival.",
+      "contexto": "Jordan Addison figura en el reporte oficial de lesionados con una dolencia en el tendón de la corva que lo margina de toda actividad para el siguiente compromiso de los Minnesota Vikings, restando opciones profundas al ataque aéreo del equipo.",
+      "fantasy": "Baja sensible para los equipos que buscaban su velocidad como opción flexible o número dos en ligas PPR. No puede ser alineado bajo ninguna circunstancia y requiere un espacio libre en tu plantilla mientras se recupera.",
+      "equipo_impacto": "La ausencia de Addison recarga la responsabilidad sobre los demás receptores sanos de Minnesota, alterando las coberturas que enfrentará el resto del cuerpo ofensivo.",
+      "accion": "Sentarlo obligatoriamente en tu alineación y buscar un sustituto disponible.",
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "MIN",
+      "equipos": [
+        "MIN"
+      ],
+      "jugadores": [
+        "9756"
+      ]
+    },
+    {
+      "id": "n20261020190711",
+      "fecha": "2026-10-20T19:07:57.623Z",
+      "semana": 7,
+      "titulo": "Trey McBride aporta consistencia en el ataque aéreo",
+      "claves": [
+        "McBride proyecta 15.4 puntos en formato PPR",
+        "Mantiene un volumen seguro de recepciones",
+        "Es pieza clave en el esquema ofensivo"
+      ],
+      "contexto": "Trey McBride se mantiene firme entre las opciones más productivas de la liga con una proyección de 15.4 puntos PPR para la semana 7, destacando por su habilidad para desmarcarse y capturar envíos en zonas medulares del campo.",
+      "fantasy": "Consolida su estatus como una gran opción para arrancar en ligas de formato PPR y estándar. Su aportación constante garantiza un piso elevado de puntos que ayuda a inclinar la balanza en enfrentamientos cerrados.",
+      "equipo_impacto": "Su efectividad por el centro del campo le da estabilidad al juego ofensivo y otorga opciones claras de conversión en terceras oportunidades.",
+      "accion": "Alinea a McBride con total confianza en tu posición de ala cerrada.",
       "etiqueta": "START",
       "impacto": "SUBE",
-      "equipo": "NO",
+      "equipo": "ARI",
       "equipos": [
-        "NO",
-        "PIT"
+        "ARI"
       ],
       "jugadores": [
-        "4035"
-      ]
-    },
-    {
-      "id": "x20261020172802",
-      "fecha": "2026-10-20T17:28:47.256Z",
-      "semana": 7,
-      "exclusivo": true,
-      "titulo": "DeVonta Smith y Germie Bernard: objetivos de compra fantasy",
-      "claves": [
-        "DeVonta Smith es opción primaria para comprar",
-        "Germie Bernard suma atractivo en el mercado",
-        "Oportunidad para reforzar la posición de receptor"
-      ],
-      "contexto": "Dentro de las recomendaciones exclusivas de cara a los enfrentamientos de la Semana 7, DeVonta Smith y Germie Bernard emergen como receptores prioritarios para adquirir mediante intercambios. Con enfrentamientos clave en la jornada, como el duelo divisional entre Dallas Cowboys y Philadelphia Eagles, conseguir a estos receptores puede transformar el rendimiento aéreo de tu equipo en la liga fantasy.",
-      "fantasy": "DeVonta Smith posee el techo de puntos necesario para ser un WR2 estelar en ligas de 10 y 12 equipos, especialmente en formatos PPR donde sus objetivos están garantizados. Por otro lado, Germie Bernard ofrece un valor especulativo muy rentable a bajo costo en ligas profundas, ideal para cubrir semanas de descanso o reforzar tu banca con potencial alto.",
-      "equipo_impacto": "Smith otorga un dinamismo temible al ataque aéreo de su equipo al quitar coberturas dobles, mientras Bernard gana relevancia progresiva para sostener la fluidez de las series ofensivas.",
-      "accion": "Ofrece un paquete de jugadores secundarios para comprar a DeVonta Smith.",
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "PHI",
-      "equipos": [
-        "PHI",
-        "DAL",
-        "PIT"
-      ],
-      "jugadores": [
-        "7525",
-        "13274"
-      ]
-    },
-    {
-      "id": "x20261020172803",
-      "fecha": "2026-10-20T17:28:47.256Z",
-      "semana": 7,
-      "exclusivo": true,
-      "titulo": "Chris Boswell impone marca histórica de goles de campo",
-      "claves": [
-        "Pateador con más goles de campo Steelers",
-        "Suma 310 goles de campo convertidos",
-        "Pieza clave para el duelo en Francia"
-      ],
-      "contexto": "Chris Boswell hizo historia con los Pittsburgh Steelers al convertirse en el pateador con mayor cantidad de goles de campo anotados en la franquicia, alcanzando la cifra de 310 conversiones. Este registro histórico llega justo antes del duelo internacional contra los New Orleans Saints en el Stade de France, en Saint-Denis, consolidando su relevancia dentro del equipo.",
-      "fantasy": "En ligas fantasy que aún emplean la posición de kicker, Boswell es una opción sumamente confiable semana a semana. La ofensiva de Pittsburgh suele estancarse en zona roja, lo que le otorga múltiples oportunidades de gol de campo. Mantiene un piso muy sólido y un techo alto en enfrentamientos donde se pronostican marcadores apretados o de pocos puntos.",
-      "equipo_impacto": "Boswell representa la principal garantía de puntos para Pittsburgh cuando sus series ofensivas se detienen en territorio enemigo, brindando enorme efectividad y seguridad en juegos altamente disputados.",
-      "accion": "Asegura a Boswell como tu pateador titular para la jornada.",
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "PIT",
-      "equipos": [
-        "PIT",
-        "NO"
-      ],
-      "jugadores": [
-        "1945"
+        "8130"
       ]
     }
   ],
@@ -178,7 +143,7 @@
       "estatus": "Duda"
     },
     {
-      "id": "5844",
+      "id": "8408",
       "estatus": "Fuera"
     },
     {
@@ -194,6 +159,10 @@
       "estatus": "Fuera"
     },
     {
+      "id": "5844",
+      "estatus": "Fuera"
+    },
+    {
       "id": "8121",
       "estatus": "Fuera"
     },
@@ -202,11 +171,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "9756",
+      "id": "5892",
       "estatus": "Fuera"
     },
     {
-      "id": "5892",
+      "id": "9756",
       "estatus": "Fuera"
     },
     {
@@ -220,10 +189,6 @@
     {
       "id": "4035",
       "estatus": "Duda"
-    },
-    {
-      "id": "7571",
-      "estatus": "Fuera"
     },
     {
       "id": "8188",
@@ -274,11 +239,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "9753",
+      "id": "7571",
       "estatus": "Fuera"
     },
     {
-      "id": "12492",
+      "id": "9753",
       "estatus": "Fuera"
     }
   ],
@@ -290,18 +255,18 @@
     "9758",
     "9482",
     "10235",
-    "6650",
     "12487",
+    "6650",
     "10213",
     "11655",
-    "7553",
     "11539",
+    "7553",
     "11792",
     "8135",
-    "11783",
     "9230",
-    "11637",
+    "11783",
     "8116",
+    "11637",
     "11565",
     "11586"
   ],
@@ -315,13 +280,13 @@
     "13150",
     "11435",
     "12533",
-    "650",
     "7528",
+    "650",
     "2505",
     "12711",
     "8132",
-    "3321",
     "9480",
+    "3321",
     "2133",
     "11439",
     "7042",
@@ -330,9 +295,9 @@
     "11630"
   ],
   "duelo": {
-    "a": "Jahmyr Gibbs",
-    "b": "Kyren Williams",
-    "veredicto": "Arranca a Jahmyr Gibbs por su enorme techo de puntos y su rol dominante en las proyecciones PPR de la semana."
+    "a": "Jaxon Smith-Njigba",
+    "b": "Puka Nacua",
+    "veredicto": "Arranca a Jaxon Smith-Njigba por su superior proyección de 23.5 puntos frente a los 22.1 de Puka Nacua, asegurando un techo ofensivo más alto esta semana."
   },
   "fuentes": [
     "Sleeper",

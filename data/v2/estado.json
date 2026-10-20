@@ -1,10 +1,24 @@
 {
-  "fecha": "2026-10-20T18:23:06.439Z",
+  "fecha": "2026-10-20T19:08:34.562Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 14 nuevos, 14 en total",
-    "[0.9s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
-    "[2.3s] ESPN: lesiones 799 · noticias 50",
-    "[2.3s] Listo: 0 noticias nuevas (0 exclusivas) · 420 jugadores · archivo 131 · semana de juego 7 · IA usada hoy 15/40"
+    "[1.0s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
+    "[2.5s] ESPN: lesiones 799 · noticias 50",
+    "[3.5s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[5.7s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
+    "[9.4s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
+    "[39.4s] IA OK con gemini-3.5-flash-lite",
+    "[39.4s] Descartada: Brock Purdy comanda la cima aérea en la semana 7 → duplicada",
+    "[39.4s] Descartada: George Kittle domina las proyecciones en la ala cerrada → duplicada",
+    "[39.4s] Descartada: Najee Harris queda disponible en waivers tras su salida → duplicada",
+    "[39.4s] Descartada: Mike Evans fuera por lesión en el tendón de Aquiles → duplicada",
+    "[39.4s] Descartada: Terry McLaurin enciende alarmas tras lesión de rodilla → duplicada",
+    "[39.4s] Descartada: Jahmyr Gibbs encabeza las proyecciones terrestres de la semana → duplicada",
+    "[39.4s] Descartada: C.J. Stroud surge como opción principal en waivers → duplicada",
+    "[39.4s] Descartada: Brock Bowers mantiene un ritmo estelar en la posición → duplicada",
+    "[39.4s] Descartada: Stefon Diggs enciende dudas por lesión en la corva → duplicada",
+    "[39.4s] Noticias nuevas verificadas: 3",
+    "[39.4s] Listo: 3 noticias nuevas (0 exclusivas) · 420 jugadores · archivo 134 · semana de juego 7 · IA usada hoy 16/40"
   ]
 }
