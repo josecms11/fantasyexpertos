@@ -1,28 +1,12 @@
 {
-  "fecha": "2026-10-20T16:55:59.001Z",
+  "fecha": "2026-10-20T17:29:19.492Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.3s] YouTube: 14 nuevos, 14 en total",
-    "[1.6s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
-    "[4.8s] ESPN: lesiones 799 · noticias 50",
-    "[6.0s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[15.3s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[26.1s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
-    "[73.7s] IA OK con gemini-3.5-flash-lite",
-    "[73.7s] Descartada: Josh Jacobs listo para debutar con Green Bay → Josh Jacobs está NA (Personal), duplicada",
-    "[73.7s] Descartada: Davante Adams fuera seis a diez semanas → duplicada",
-    "[73.7s] Descartada: Brock Purdy comanda la ofensiva de San Francisco → duplicada",
-    "[73.7s] Descartada: Blake Grupe cae lesionado y va a reservas → duplicada",
-    "[73.7s] Descartada: C.J. Gardner-Johnson suspendido un juego por escupir → duplicada",
-    "[73.7s] Descartada: J.J. McCarthy debuta con los Giants → duplicada",
-    "[73.7s] Descartada: Jahmyr Gibbs encabeza proyecciones ofensivas → duplicada",
-    "[73.7s] Descartada: Brock Bowers domina el panorama en la posición → duplicada",
-    "[73.7s] Descartada: Romeo Doubs directo a la lista de lesionados → duplicada",
-    "[73.7s] Noticias nuevas verificadas: 3",
-    "[75.8s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[78.8s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
-    "[105.0s] IA OK con gemini-3.5-flash-lite",
-    "[105.0s] Gemini respuesta inválida gemini-3.5-flash-lite {\"candidates\":[{\"content\":{\"parts\":[{\"text\":\"[\\n  {\\n    \\\"titulo\\\": \\\"Histórico: Keenan Allen supera a Terrell Owens en recepciones\\\",\\n    \\\"claves\\\": [\\n      \\\"Alcanza el noveno puesto histórico en atrapadas.\\\",\\n      \\\"Deja atrás la marca de Terrell Owens con 1,079.\\\",\\n      \\\"Consolida una c",
-    "[105.0s] Listo: 3 noticias nuevas (0 exclusivas) · 420 jugadores · archivo 127 · semana de juego 7 · IA usada hoy 14/40"
+    "[0.2s] YouTube: 14 nuevos, 14 en total",
+    "[1.2s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
+    "[3.1s] ESPN: lesiones 799 · noticias 50",
+    "[3.3s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[35.4s] IA OK con gemini-3.6-flash",
+    "[35.4s] Listo: 4 noticias nuevas (4 exclusivas) · 420 jugadores · archivo 131 · semana de juego 7 · IA usada hoy 15/40"
   ]
 }

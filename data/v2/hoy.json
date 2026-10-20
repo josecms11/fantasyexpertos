@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-20T16:54:18.879Z",
+  "actualizado": "2026-10-20T17:28:47.256Z",
   "ultimaIA": "2026-10-20T16:54:18.879Z",
   "semana": 7,
   "semanaStats": 7,
@@ -13,75 +13,110 @@
   ],
   "noticias": [
     {
-      "id": "n20261020165401",
-      "fecha": "2026-10-20T16:54:18.879Z",
+      "id": "x20261020172800",
+      "fecha": "2026-10-20T17:28:47.256Z",
       "semana": 7,
-      "titulo": "Najee Harris queda libre tras salir de Giants",
+      "exclusivo": true,
+      "titulo": "Keenan Allen supera a Terrell Owens en recepciones históricas",
       "claves": [
-        "Cortado tras quejarse de su rol",
-        "Tuvo escasa producción reciente",
-        "Busca nuevo destino en la liga"
+        "Suma 1,080 recepciones en su carrera profesional",
+        "Supera la marca histórica de Terrell Owens",
+        "Ocupa el noveno lugar de todos los tiempos"
       ],
-      "contexto": "Los Giants decidieron cortar al corredor Najee Harris pocos días después de que este expresara su frustración pública por el poco protagonismo en la rotación ofensiva tras sumar apenas dos yardas en cuatro acarreos.",
-      "fantasy": "Pierde todo valor actual en fantasy tras quedarse sin equipo, por lo que debes liberarlo de inmediato en ligas estándar o profundas.",
-      "equipo_impacto": "Deja vía libre para que el resto del backfield de Nueva York reajuste sus cargas de trabajo sin su presencia.",
-      "accion": "Corta al jugador de tu plantilla hoy mismo.",
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "NYG",
+      "contexto": "Keenan Allen hizo historia al alcanzar el noveno puesto de todos los tiempos en recepciones acumuladas en la NFL. El veterano receptor superó la marca de 1,079 atrapadas que pertenecía a Terrell Owens. Este logro reafirma la vigencia del receptor en la liga, consolidándose como un objetivo altamente confiable dentro del esquema ofensivo de su equipo en la presente campaña de la NFL.",
+      "fantasy": "En formatos de puntos por recepción como PPR y Half-PPR, Allen mantiene un volumen constante que lo sostiene como un WR2 o Flex muy seguro cada semana. Su habilidad para desmarcarse asegura un piso constante de unidades. Si en tu liga alguien duda de su impacto por edad, aprovecha para ofrecer un intercambio favorable antes de que cotice más alto.",
+      "equipo_impacto": "Su alta cuota de pases atrapados ayuda a mantener vivas las series ofensivas del equipo, abriendo espacios valiosos para los demás receptores del ataque y quitando presión a su mariscal de campo en momentos clave.",
+      "accion": "Alinea a Keenan Allen como titular en ligas de formato PPR.",
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "CHI",
       "equipos": [
-        "NYG",
-        "FA"
+        "CHI",
+        "NE",
+        "IND"
       ],
       "jugadores": [
-        "7528"
+        "1479"
       ]
     },
     {
-      "id": "n20261020165407",
-      "fecha": "2026-10-20T16:54:18.879Z",
+      "id": "x20261020172801",
+      "fecha": "2026-10-20T17:28:47.256Z",
       "semana": 7,
-      "titulo": "Jordan Elliott queda fuera de Tennessee",
+      "exclusivo": true,
+      "titulo": "Alvin Kamara alcanza histórico registro de 5,000 y 5,000",
       "claves": [
-        "Cortado tras incidente en instalaciones",
-        "Estaba viendo participación regular",
-        "Busca nuevo rumbo profesional"
+        "Sexto jugador histórico con 5,000 yardas",
+        "Suma yardas por tierra y por aire",
+        "Puntal ofensivo para Saints en la semana"
       ],
-      "contexto": "Los Titans anunciaron la recisión de contrato del tackle defensivo Jordan Elliott de manera abrupta, derivado de un incidente ocurrido en las instalaciones del equipo durante los entrenamientos recientes.",
-      "fantasy": "Sin relevancia directa para ofensivas de fantasy, pero un factor a seguir para las ligas que evalúan unidades defensivas colectivas.",
-      "equipo_impacto": "Debilita la profundidad en la línea defensiva del equipo rumbo a los siguientes compromisos del calendario.",
-      "accion": "Ignora este movimiento en ligas ofensivas tradicionales.",
-      "etiqueta": "WAIVER",
-      "impacto": "NEUTRO",
-      "equipo": "TEN",
-      "equipos": [
-        "TEN"
-      ],
-      "jugadores": []
-    },
-    {
-      "id": "n20261020165409",
-      "fecha": "2026-10-20T16:54:18.879Z",
-      "semana": 7,
-      "titulo": "Zay Flowers brilla en el radar receptor",
-      "claves": [
-        "Proyecciones altas para esta semana",
-        "Arma principal en el juego aéreo",
-        "Consistencia en ofensiva"
-      ],
-      "contexto": "El receptor de Baltimore figura entre los elementos más destacados en las estimaciones previas a la semana 7, consolidándose como la opción predilecta por aire para mover las cadenas.",
-      "fantasy": "Disfruta de un piso de puntos muy seguro en ligas PPR, lo que lo convierte en una opción obligatoria para arrancar.",
-      "equipo_impacto": "Sostiene el peso del ataque aéreo del equipo ante las diversas bajas que han mermado el roster.",
-      "accion": "Inclúyelo en tu cuadro titular como receptor.",
+      "contexto": "Alvin Kamara se convirtió en apenas el sexto jugador en toda la historia de la NFL en registrar al menos 5,000 yardas por tierra y 5,000 yardas por aire. Este logro confirma la versatilidad de Kamara dentro de la liga. Los Saints se alistan para medirse ante Pittsburgh en el Stade de France en Saint-Denis, donde el corredor será el eje central del esquema.",
+      "fantasy": "El valor fantasy de Kamara se mantiene en la cima gracias a su involucramiento masivo por aire y tierra. En ligas PPR es un RB1 insustituible. Si estás considerando venderlo en lo más alto por un paquete extenso de piezas titulares antes de la segunda mitad del calendario, esta histórica marca representa el momento idóneo en el mercado.",
+      "equipo_impacto": "Es el motor indiscutible del ataque de Nueva Orleans. Su capacidad para generar yardas en el juego aéreo alivia la presión sobre su mariscal y genera espacios para los receptores abiertos.",
+      "accion": "Alinea a Kamara como tu corredor principal sin importar el rival.",
       "etiqueta": "START",
       "impacto": "SUBE",
-      "equipo": "BAL",
+      "equipo": "NO",
       "equipos": [
-        "BAL"
+        "NO",
+        "PIT"
       ],
       "jugadores": [
-        "9997",
-        "4881"
+        "4035"
+      ]
+    },
+    {
+      "id": "x20261020172802",
+      "fecha": "2026-10-20T17:28:47.256Z",
+      "semana": 7,
+      "exclusivo": true,
+      "titulo": "DeVonta Smith y Germie Bernard: objetivos de compra fantasy",
+      "claves": [
+        "DeVonta Smith es opción primaria para comprar",
+        "Germie Bernard suma atractivo en el mercado",
+        "Oportunidad para reforzar la posición de receptor"
+      ],
+      "contexto": "Dentro de las recomendaciones exclusivas de cara a los enfrentamientos de la Semana 7, DeVonta Smith y Germie Bernard emergen como receptores prioritarios para adquirir mediante intercambios. Con enfrentamientos clave en la jornada, como el duelo divisional entre Dallas Cowboys y Philadelphia Eagles, conseguir a estos receptores puede transformar el rendimiento aéreo de tu equipo en la liga fantasy.",
+      "fantasy": "DeVonta Smith posee el techo de puntos necesario para ser un WR2 estelar en ligas de 10 y 12 equipos, especialmente en formatos PPR donde sus objetivos están garantizados. Por otro lado, Germie Bernard ofrece un valor especulativo muy rentable a bajo costo en ligas profundas, ideal para cubrir semanas de descanso o reforzar tu banca con potencial alto.",
+      "equipo_impacto": "Smith otorga un dinamismo temible al ataque aéreo de su equipo al quitar coberturas dobles, mientras Bernard gana relevancia progresiva para sostener la fluidez de las series ofensivas.",
+      "accion": "Ofrece un paquete de jugadores secundarios para comprar a DeVonta Smith.",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "PHI",
+      "equipos": [
+        "PHI",
+        "DAL",
+        "PIT"
+      ],
+      "jugadores": [
+        "7525",
+        "13274"
+      ]
+    },
+    {
+      "id": "x20261020172803",
+      "fecha": "2026-10-20T17:28:47.256Z",
+      "semana": 7,
+      "exclusivo": true,
+      "titulo": "Chris Boswell impone marca histórica de goles de campo",
+      "claves": [
+        "Pateador con más goles de campo Steelers",
+        "Suma 310 goles de campo convertidos",
+        "Pieza clave para el duelo en Francia"
+      ],
+      "contexto": "Chris Boswell hizo historia con los Pittsburgh Steelers al convertirse en el pateador con mayor cantidad de goles de campo anotados en la franquicia, alcanzando la cifra de 310 conversiones. Este registro histórico llega justo antes del duelo internacional contra los New Orleans Saints en el Stade de France, en Saint-Denis, consolidando su relevancia dentro del equipo.",
+      "fantasy": "En ligas fantasy que aún emplean la posición de kicker, Boswell es una opción sumamente confiable semana a semana. La ofensiva de Pittsburgh suele estancarse en zona roja, lo que le otorga múltiples oportunidades de gol de campo. Mantiene un piso muy sólido y un techo alto en enfrentamientos donde se pronostican marcadores apretados o de pocos puntos.",
+      "equipo_impacto": "Boswell representa la principal garantía de puntos para Pittsburgh cuando sus series ofensivas se detienen en territorio enemigo, brindando enorme efectividad y seguridad en juegos altamente disputados.",
+      "accion": "Asegura a Boswell como tu pateador titular para la jornada.",
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "PIT",
+      "equipos": [
+        "PIT",
+        "NO"
+      ],
+      "jugadores": [
+        "1945"
       ]
     }
   ],
@@ -262,8 +297,8 @@
     "11655",
     "11539",
     "11792",
-    "11783",
     "8135",
+    "11783",
     "9230",
     "11637",
     "8116",
@@ -275,17 +310,17 @@
     "6904",
     "9511",
     "3271",
-    "8121",
     "5927",
+    "8121",
     "13150",
     "11435",
     "12533",
     "650",
-    "2505",
     "7528",
+    "2505",
     "12711",
-    "3321",
     "8132",
+    "3321",
     "9480",
     "2133",
     "11439",
