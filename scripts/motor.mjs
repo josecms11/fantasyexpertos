@@ -11,7 +11,7 @@ const conTiempo = (ms = 25000) => AbortSignal.timeout(ms);
 const KEY = process.env.GEMINI_API_KEY;
 const RSS = ['https://www.cbssports.com/rss/headlines/nfl/', 'https://sports.yahoo.com/nfl/rss/'];
 const POS = ['QB', 'RB', 'WR', 'TE', 'K'];
-const TOP = 420, HIST = 5, CUOTA_DIA = 17, CADA_IA_MIN = 115;
+const TOP = 420, HIST = 5, CUOTA_DIA = 40, CADA_IA_MIN = 115;
 const leer = (f, d) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch { return d; } };
 const guardar = (f, o, pretty) => { fs.mkdirSync(f.split('/').slice(0, -1).join('/'), { recursive: true }); fs.writeFileSync(f, JSON.stringify(o, null, pretty ? 2 : 0)); };
 const get = async (u, ms = 40000) => { try { const r = await fetch(u, { headers: { 'User-Agent': 'Mozilla/5.0 FantasyExpertos' }, signal: conTiempo(ms) }); return r.ok ? r.json() : null; } catch (e) { log('GET falló', u.slice(0, 90), e.message); return null; } };
@@ -49,9 +49,10 @@ async function gemini(prompt, tokens = 16000) {
         body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: 'application/json', temperature: 0.6, maxOutputTokens: tokens } })
       });
     } catch (e) { log('Gemini sin respuesta', m, e.message); continue; }
-    cuota.usadas = (cuota.usadas || 0) + 1; guardar(DIR + '/cuota.json', cuota, true);
     const j = await r.json().catch(() => ({}));
-    if (r.status === 429 || r.status === 404) { (cuota.bloqueado = cuota.bloqueado || {})[m] = r.status; guardar(DIR + '/cuota.json', cuota, true); log('Modelo no disponible', m, r.status); continue; }
+    if (r.status === 429 || r.status === 404) { (cuota.bloqueado = cuota.bloqueado || {})[m] = r.status; guardar(DIR + '/cuota.json', cuota, true); log('Modelo sin cuota hoy', m, r.status); continue; }
+    if (r.status >= 500) { log('Modelo saturado, pruebo otro', m, r.status); continue; }
+    cuota.usadas = (cuota.usadas || 0) + 1; guardar(DIR + '/cuota.json', cuota, true);
     try { const t = j.candidates[0].content.parts.map(x => x.text || '').join(''); log('IA OK con', m); return JSON.parse(t.slice(t.indexOf('{'), t.lastIndexOf('}') + 1)); }
     catch { log('Gemini respuesta inválida', m, JSON.stringify(j).slice(0, 300)); return null; }
   }
