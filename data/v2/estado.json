@@ -1,14 +1,19 @@
 {
-  "fecha": "2026-10-20T06:29:37.651Z",
+  "fecha": "2026-10-20T07:16:52.353Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.1s] YouTube: 0 nuevos, 14 en total",
+    "[0.2s] YouTube: 14 nuevos, 14 en total",
     "[0.9s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
-    "[2.5s] ESPN: lesiones 799 · noticias 50",
-    "[2.7s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[6.9s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[22.3s] IA OK con gemini-3.5-flash",
-    "[22.3s] Resumen semana 3",
-    "[22.4s] Listo: 0 noticias nuevas (0 exclusivas) · 421 jugadores · archivo 110 · semana de juego 7 · IA usada hoy 5/40"
+    "[2.4s] ESPN: lesiones 799 · noticias 50",
+    "[3.0s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[58.8s] IA OK con gemini-3.6-flash",
+    "[58.8s] Descartada: Mike Evans fuera por lesión en el talón → duplicada",
+    "[58.8s] Descartada: Josh Jacobs entrena y perfila su ansiado regreso → Josh Jacobs está NA (Personal)",
+    "[58.8s] Descartada: George Kittle se proyecta como opción de élite → duplicada",
+    "[58.8s] Noticias nuevas verificadas: 9",
+    "[60.1s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
+    "[74.7s] IA OK con gemini-3.5-flash",
+    "[74.7s] Resumen semana 2",
+    "[74.8s] Listo: 9 noticias nuevas (0 exclusivas) · 421 jugadores · archivo 119 · semana de juego 7 · IA usada hoy 7/40"
   ]
 }
