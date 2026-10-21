@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-20T23:58:31.127Z",
+  "actualizado": "2026-10-21T00:12:56.094Z",
   "ultimaIA": "2026-10-20T23:31:05.525Z",
   "semana": 7,
   "semanaStats": 7,
@@ -13,94 +13,273 @@
   ],
   "noticias": [
     {
-      "id": "n20261020233101",
-      "fecha": "2026-10-20T23:31:05.525Z",
+      "id": "x20261021001200",
+      "fecha": "2026-10-21T00:12:56.094Z",
       "semana": 7,
-      "titulo": "Brandon McManus llega para rescatar a los Rams",
+      "exclusivo": true,
+      "fuente": "2026-10-20T15:49:18.000Z",
+      "titulo": "Previa Semana 7: Cartelera completa y duelos estelares",
       "claves": [
-        "Fichaje oficial como nuevo pateador",
-        "Solución urgente ante problemas de equipos especiales",
-        "Oportunidad inmediata en el sistema de McVay"
+        "Patriots frente a Bears arrancan el jueves",
+        "Steelers y Saints disputan choque internacional en Francia",
+        "Cowboys ante Eagles protagonizan el Monday Night Football"
       ],
-      "contexto": "Los Rams decidieron firmar al veterano pateador agente libre Brandon McManus tras prescindir de Harrison Mevis y lidiar con las lesiones de Blake Grupe, buscando enderezar el rumbo en su unidad especial.",
-      "fantasy": "Representa una alternativa interesante en el mercado de agentes libres para aquellos managers buscando estabilidad y volumen de puntos en la posición de pateador para las próximas semanas.",
-      "equipo_impacto": "Aporta una opción confiable en zona roja y intentos de larga distancia para una ofensiva necesitada de puntos.",
-      "accion": "Monitorea su disponibilidad en waivers si necesitas estabilidad en los pateadores.",
-      "etiqueta": "WAIVER",
+      "contexto": "La cartelera de la Semana 7 viene cargada de compromisos clave en la NFL. Arranca el jueves con Patriots contra Bears, mientras que el domingo incluye juego internacional en el Stade de France entre Steelers y Saints. El turno matutino presenta choques como Bengals ante Ravens, Dolphins contra Jets, Buccaneers vs Panthers, Giants ante Texans, Colts frente a Vikings, Browns contra Titans y 49ers vs Falcons. Cierran Packers contra Lions, Chiefs vs Seahawks y Cowboys ante Eagles.",
+      "fantasy": "Revisa tus alineaciones temprano debido al encuentro internacional matutino en territorio francés. Duelos divisionales de alto octanaje como Bengals frente a Ravens o Cowboys ante Eagles prometen tiroteos favorables para arrancar a tus piezas principales. Por su parte, compromisos interconferencia obligan a evaluar enfrentamientos individuales en ligas redraft y dinastía, cuidando el volumen de toques en ligas PPR y formato estándar.",
+      "equipo_impacto": "El calendario obliga a planificar los descansos y rotaciones ofensivas. Equipos que viajan al extranjero resienten la logística de descanso, alterando la eficiencia de sus unidades titulares.",
+      "accion": "Ajusta tus alineaciones considerando los horarios matutinos del domingo y el choque estelar del jueves.",
+      "etiqueta": "TENDENCIA",
       "impacto": "NEUTRO",
-      "equipo": "LAR",
+      "equipo": "PHI",
       "equipos": [
-        "LAR"
+        "PHI",
+        "NE",
+        "CHI",
+        "PIT",
+        "NO",
+        "CIN",
+        "BAL",
+        "MIA",
+        "NYJ",
+        "TB",
+        "CAR",
+        "NYG",
+        "HOU",
+        "IND",
+        "MIN",
+        "CLE",
+        "TEN",
+        "SF",
+        "ATL",
+        "DEN",
+        "ARI",
+        "GB",
+        "DET",
+        "LAR",
+        "LV",
+        "KC",
+        "SEA",
+        "DAL"
+      ],
+      "jugadores": []
+    },
+    {
+      "id": "x20261021001201",
+      "fecha": "2026-10-21T00:12:56.094Z",
+      "semana": 7,
+      "exclusivo": true,
+      "fuente": "2026-10-20T15:49:18.000Z",
+      "titulo": "Movimientos clave de alas cerradas para Semana 7",
+      "claves": [
+        "Comprar de inmediato a Dallas Goedert",
+        "Vender a Kyle Pitts antes de caídas",
+        "Momento ideal para traspasar a Colston Loveland"
+      ],
+      "contexto": "El mercado de alas cerradas muestra oportunidades muy claras esta semana. En Fantasy Expertos identificamos a Dallas Goedert como el principal objetivo de compra gracias a su rol y cuota de targets dentro del esquema aéreo. Del lado contrario, es el instante adecuado para explorar traspasos por Kyle Pitts y Colston Loveland, dos alas cerradas que puedes soltar a buen precio antes de que su valor sufra un desplome.",
+      "fantasy": "Goedert sube como una compra de valor sólido para dueños buscando estabilidad en ligas redraft y dinastía, especialmente en formatos PPR donde asegura recepciones consistentes. Por otro lado, Pitts y Loveland bajan de categoría en proyecciones futuras; véndelos a rivales que todavía confíen en sus nombres de cartelera y aprovecha para fortalecer otras posiciones de mayor impacto semanal.",
+      "equipo_impacto": "La consolidación de Goedert estabiliza la ofensiva aérea en Filadelfia. En cambio, Pitts y Loveland afrontan esquemas donde su implicación semanal genera demasiada volatilidad.",
+      "accion": "Compra a Dallas Goedert en traspaso y vende ya a Kyle Pitts y Colston Loveland.",
+      "etiqueta": "TRADE",
+      "impacto": "SUBE",
+      "equipo": "PHI",
+      "equipos": [
+        "PHI",
+        "ATL",
+        "CHI"
       ],
       "jugadores": [
-        "1433"
+        "5022",
+        "7553",
+        "12517"
       ]
     },
     {
-      "id": "n20261020233103",
-      "fecha": "2026-10-20T23:31:05.525Z",
+      "id": "x20261021001202",
+      "fecha": "2026-10-21T00:12:56.094Z",
       "semana": 7,
-      "titulo": "Marquez Valdes-Scantling llega a reforzar a los Steelers",
+      "exclusivo": true,
+      "fuente": "2026-10-20T15:49:18.000Z",
+      "titulo": "Corredores élite a comprar en la Semana 7",
       "claves": [
-        "Contratación para aportar profundidad por lesiones",
-        "Experiencia veterana en el cuerpo de receptores",
-        "Respuesta inmediata ante ausencias en Pittsburgh"
+        "Aaron Jones es prioridad absoluta de compra",
+        "Jordan Mason continúa ofreciendo enorme valor terrestre",
+        "Breece Hall representa objetivo estelar para traspaso"
       ],
-      "contexto": "Los Steelers incorporaron al experimentado receptor abierto Marquez Valdes-Scantling debido a las múltiples bajas por lesión que afectan al equipo en la posición.",
-      "fantasy": "Por ahora su impacto fantasy es marginal y limitado a ligas muy profundas, sin asegurar un volumen de targets constante en el esquema ofensivo.",
-      "equipo_impacto": "Ayuda a mitigar la ausencia de piezas importantes en el juego aéreo brindando presencia vertical.",
-      "accion": "Déjalo en la agencia libre por el momento.",
-      "etiqueta": "WAIVER",
-      "impacto": "NEUTRO",
+      "contexto": "Es el momento de reforzar la posición de corredor adquiriendo talento premium. Aaron Jones, Jordan Mason y Breece Hall están catalogados como objetivos obligados de compra. Jones ofrece liderazgo confiable en toques, Mason ha respondido con creces cada oportunidad en el terreno y Hall ostenta el talento estelar capaz de ganar semanas completas si su ofensiva empieza a producir con regularidad.",
+      "fantasy": "Este trío de corredores sube como adquisiciones prioritarias tanto en ligas redraft como en dinastía. Hall y Jones tienen un piso brutal en formatos PPR por su capacidad para atrapar pases, mientras que Mason mantiene un volumen de acarreos codiciado en cualquier liga. Si algún rival en tu liga duda de ellos por calendario o actuaciones recientes, mándales ofertas agresivas.",
+      "equipo_impacto": "Estos corredores son el motor del ataque terrestre en sus plantillas, dictando el ritmo del reloj de juego y facilitando el esquema ofensivo general.",
+      "accion": "Manda ofertas de intercambio hoy mismo por Aaron Jones, Jordan Mason y Breece Hall.",
+      "etiqueta": "TRADE",
+      "impacto": "SUBE",
+      "equipo": "NYJ",
+      "equipos": [
+        "NYJ",
+        "MIN",
+        "SF"
+      ],
+      "jugadores": [
+        "4199",
+        "8408",
+        "8155"
+      ]
+    },
+    {
+      "id": "x20261021001203",
+      "fecha": "2026-10-21T00:12:56.094Z",
+      "semana": 7,
+      "exclusivo": true,
+      "fuente": "2026-10-20T15:49:18.000Z",
+      "titulo": "Receptores a buscar en intercambios de Semana 7",
+      "claves": [
+        "Comprar a DeVonta Smith como prioridad",
+        "Germie Bernard surge como opción de compra",
+        "Talento aéreo con alto potencial de desarrollo"
+      ],
+      "contexto": "Si tu equipo necesita pólvora en el juego aéreo, la ventana de compra está abierta para DeVonta Smith y Germie Bernard. Smith es un receptor consolidado que suele tener tramos explosivos a lo largo de la campaña. Por su parte, el novato Germie Bernard es un elemento atractivo que puedes adquirir a bajo costo antes de que gane más protagonismo en el radar general.",
+      "fantasy": "Ambos receptores suben en valoración de adquisición. Smith es un receptor 2 consolidado con techo de receptor estelar semanal en cualquier formato PPR, ideal para contender por el campeonato. Bernard es una apuesta intrigante para ligas profundas o dinastía donde buscas volumen emergente sin pagar demasiado. Es la fórmula ideal para balancear tu cuerpo de receptores.",
+      "equipo_impacto": "Smith mantiene abierto el campo para complementar el ataque aéreo de su equipo, mientras Bernard busca afianzarse como válvula de escape confiable.",
+      "accion": "Compra en traspasos a DeVonta Smith y añade en negociaciones a Germie Bernard.",
+      "etiqueta": "TRADE",
+      "impacto": "SUBE",
+      "equipo": "PHI",
+      "equipos": [
+        "PHI",
+        "PIT"
+      ],
+      "jugadores": [
+        "7525",
+        "13274"
+      ]
+    },
+    {
+      "id": "x20261021001204",
+      "fecha": "2026-10-21T00:12:56.094Z",
+      "semana": 7,
+      "exclusivo": true,
+      "fuente": "2026-10-20T15:49:18.000Z",
+      "titulo": "Mariscales de campo para comprar en Semana 7",
+      "claves": [
+        "C.J. Stroud se perfila para comprar",
+        "Kirk Cousins ofrece valor accesible por aire",
+        "Oportunidad de reforzar la posición de quarterback"
+      ],
+      "contexto": "Las dudas temporales en el ataque aéreo abren ventanas inmejorables para sumar mariscales productivos. C.J. Stroud y Kirk Cousins son nuestras principales recomendaciones de compra bajo el radar. Ambos pasadores comandan ataques con suficiente talento receptor para sostener actuaciones aéreas destacadas conforme madure el calendario, representando soluciones inmediatas para quienes sufren de inconsistencia en la posición.",
+      "fantasy": "Stroud y Cousins suben como compras atractivas en ligas de un solo mariscal y son piezas indispensables para buscar en formatos Superflex o dinastía. Stroud aporta volumen sostenido con lanzamientos profundos, mientras Cousins garantiza un número confiable de envíos a las diagonales. Aprovecha si sus respectivos dueños se han frustrado para adquirirlos por un precio razonable.",
+      "equipo_impacto": "El rendimiento de estos mariscales define el techo productivo de todos los receptores y alas cerradas dentro de sus esquemas ofensivos.",
+      "accion": "Negocia intercambios para comprar a C.J. Stroud o Kirk Cousins esta misma semana.",
+      "etiqueta": "TRADE",
+      "impacto": "SUBE",
+      "equipo": "HOU",
+      "equipos": [
+        "HOU",
+        "ATL",
+        "LV"
+      ],
+      "jugadores": [
+        "9758",
+        "1166"
+      ]
+    },
+    {
+      "id": "x20261021001205",
+      "fecha": "2026-10-21T00:12:56.094Z",
+      "semana": 7,
+      "exclusivo": true,
+      "fuente": "2026-10-20T15:49:18.000Z",
+      "titulo": "Keenan Allen supera histórico récord de Terrell Owens",
+      "claves": [
+        "Keenan Allen noveno en recepciones históricas",
+        "Supera la marca de Terrell Owens",
+        "Veterano receptor ratifica su vigencia en recepciones"
+      ],
+      "contexto": "Keenan Allen sigue cimentando un legado legendario en la NFL. El veterano receptor se colocó como el noveno jugador con más recepciones en la historia de la liga tras superar la marca de 1,079 recepciones que pertenecía al miembro del Salón de la Fama, Terrell Owens. Una hazaña monumental que refleja la capacidad de Allen para separarse y generar volumen constante de pases a lo largo de su carrera.",
+      "fantasy": "El impacto de Allen en ligas de fantasía sube en prestigio y ratifica su vigencia en formatos PPR y de media unidad por recepción. Aunque su equipo cuente con competencia aérea, Allen demuestra que cuando está en el campo es el imán favorito de pases. En ligas redraft se mantiene como un receptor con piso estable semana a semana.",
+      "equipo_impacto": "El hito confirma la confianza absoluta que tiene su mariscal de campo en Allen en terceras oportunidades y zonas comprometidas.",
+      "accion": "Mantén a Keenan Allen y arráncalo con confianza en ligas con formato PPR.",
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "CHI",
+      "equipos": [
+        "CHI",
+        "IND"
+      ],
+      "jugadores": [
+        "1479"
+      ]
+    },
+    {
+      "id": "x20261021001206",
+      "fecha": "2026-10-21T00:12:56.094Z",
+      "semana": 7,
+      "exclusivo": true,
+      "fuente": "2026-10-20T15:49:18.000Z",
+      "titulo": "Alvin Kamara entra al selecto club 5,000-5,000 histórico",
+      "claves": [
+        "Kamara logra 5,000 yardas terrestres y aéreas",
+        "Sexto corredor en toda la historia NFL",
+        "Consolidado como uno de los mejores duales"
+      ],
+      "contexto": "Alvin Kamara escribió su nombre con letras de oro en los libros de récords de la NFL. El estelar corredor de Nueva Orleans se convirtió en apenas el sexto jugador en la historia de la liga en registrar al menos 5,000 yardas terrestres y 5,000 yardas por recepción. Esta versatilidad élite reafirma su lugar entre los corredores más completos e indescifrables de todas las épocas.",
+      "fantasy": "Para el fantasy football, Kamara sigue siendo oro puro y su valor sube con esta ratificación histórica. En formatos PPR su piso es prácticamente insuperable gracias a su involucramiento en jugadas de pase diseñado y escapadas terrestres. Es un activo indispensable de primera línea en cualquier alineación titular para ligas redraft, dinastía o duelos diarios.",
+      "equipo_impacto": "Su habilidad para alinear dentro del backfield o abierto como receptor transforma por completo la versatilidad táctica de su ofensiva.",
+      "accion": "Mantén a Alvin Kamara como pieza intocable e inamovible en tu alineación titular.",
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "NO",
+      "equipos": [
+        "NO"
+      ],
+      "jugadores": [
+        "4035"
+      ]
+    },
+    {
+      "id": "x20261021001207",
+      "fecha": "2026-10-21T00:12:56.094Z",
+      "semana": 7,
+      "exclusivo": true,
+      "fuente": "2026-10-20T15:49:18.000Z",
+      "titulo": "Chris Boswell es el máximo anotador de Steelers",
+      "claves": [
+        "Boswell rompe récord con 310 goles campo",
+        "Máximo anotador de goles de campo acerero",
+        "Pateador de élite para ligas de fantasía"
+      ],
+      "contexto": "Chris Boswell grabó su nombre como el pateador con más goles de campo anotados en toda la historia de los Pittsburgh Steelers al alcanzar las 310 patadas convertidas. El veterano especialista ha sido un modelo de precisión y sangre fría, rescatando a la ofensiva acerera en innumerables ocasiones a través de patadas lejanas y decisivas a lo largo de su trayectoria.",
+      "fantasy": "En ligas de fantasía que utilizan la posición de pateador, Boswell sube de perfil como una opción titular de primer orden. Pittsburgh suele mover el balón entre las yardas 20 pero a menudo se frena antes de la zona prometida, lo que genera un volumen altísimo de intentos para Boswell en cualquier formato redraft.",
+      "equipo_impacto": "Boswell aporta total certidumbre al cuerpo técnico para asegurar puntos en cualquier avance que cruce la yarda cuarenta rival.",
+      "accion": "Arranca a Chris Boswell o adquiérelo de waivers si necesitas pateador seguro.",
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
       "equipo": "PIT",
       "equipos": [
         "PIT"
       ],
       "jugadores": [
-        "5086"
+        "1945"
       ]
     },
     {
-      "id": "n20261020233104",
-      "fecha": "2026-10-20T23:31:05.525Z",
+      "id": "x20261021001208",
+      "fecha": "2026-10-21T00:12:56.094Z",
       "semana": 7,
-      "titulo": "Kerby Joseph lidera la esperada mejora defensiva de Detroit",
+      "exclusivo": true,
+      "fuente": "2026-10-20T15:49:18.000Z",
+      "titulo": "Travis Hunter logra histórica hazaña bidireccional insólita",
       "claves": [
-        "Regreso clave para la secundaria de los Lions",
-        "Solidez recuperada en el esquema defensivo",
-        "Expectativa alta para el resto de la campaña"
+        "Primer jugador con intercepción y TD recepción",
+        "No ocurría esta marca desde el 2002",
+        "Fenómeno que acapara reflectores del deporte"
       ],
-      "contexto": "Los Lions anticipan la presencia y estabilidad de Kerby Joseph en su defensiva secundaria, apuntalando una unidad que busca corregir errores y cerrar espacios a los rivales.",
-      "fantasy": "Su retorno fortalece el valor de la defensa y equipos especiales de Detroit en formatos IDP o ligas que premian unidades defensivas.",
-      "equipo_impacto": "Devuelve liderazgo y solidez a la parte baja de la defensa, reduciendo jugadas grandes del rival.",
-      "accion": "Considera a la defensiva de Detroit como una opción viable.",
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "DET",
-      "equipos": [
-        "DET"
-      ],
-      "jugadores": []
-    },
-    {
-      "id": "n20261020233107",
-      "fecha": "2026-10-20T23:31:05.525Z",
-      "semana": 7,
-      "titulo": "Jordan Elliott liberado sorpresivamente por los Titans",
-      "claves": [
-        "Salida abrupta del tacle defensivo",
-        "Decisión tomada tras incidente en instalaciones",
-        "Movimiento inesperado en la plantilla de Tennessee"
-      ],
-      "contexto": "Los Titans cortaron de manera abrupta al veterano tacle defensivo Jordan Elliott tras un incidente ocurrido en las instalaciones del equipo en días recientes.",
-      "fantasy": "Sin repercusiones directas en las ofensivas de fantasy, aunque altera ligeramente la solidez de la línea defensiva de Tennessee en ligas IDP.",
-      "equipo_impacto": "Obliga a la franquicia a reorganizar sus rotaciones en la línea frontal defensiva.",
-      "accion": "Ignora este movimiento en ligas ofensivas tradicionales.",
+      "contexto": "El fenómeno bidireccional Travis Hunter concretó una proeza estadística sin precedentes modernos al convertirse en el primer jugador desde el año 2002 en registrar una intercepción en defensa y anotar un touchdown por recepción en un mismo encuentro. Su descomunal habilidad atlética le permite dominar en ambos lados del emparrillado como esquinero y receptor de forma completamente natural.",
+      "fantasy": "Aunque su impacto inmediato pertenece al ámbito colegial y de ligas con formato devy de dinastía, Hunter sube a la cúspide de las evaluaciones a futuro. En ligas IDP con elegibilidad mixta o prospectos de novatos universitarios, su versatilidad romperá esquemas. Es un nombre obligado a seguir de cara a los próximos drafts profesionales.",
+      "equipo_impacto": "Jugar en ambos costados del ovoide revoluciona los planes de juego y exige una condición física superdotada a nivel grupal.",
+      "accion": "Mantén a Travis Hunter en el radar prioritario de tus ligas dinastía devy.",
       "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "TEN",
+      "impacto": "SUBE",
+      "equipo": "JAX",
       "equipos": [
-        "TEN"
+        "JAX"
       ],
       "jugadores": []
     }
