@@ -1,20 +1,10 @@
 {
-  "fecha": "2026-10-21T13:21:26.358Z",
+  "fecha": "2026-10-21T13:59:12.557Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.3s] YouTube: 15 nuevos, 15 en total",
-    "[1.2s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[2.2s] ESPN: lesiones 799 · noticias 50",
-    "[3.4s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[82.1s] IA OK con gemini-3.8-flash",
-    "[82.1s] Descartada: Terry McLaurin queda fuera toda la temporada → duplicada",
-    "[82.1s] Descartada: Brock Purdy es opción titular estelar en Semana 7 → duplicada",
-    "[82.1s] Descartada: Najee Harris cortado sorpresivamente por los Giants → duplicada",
-    "[82.1s] Descartada: C.J. Stroud resurge como adición prioritaria semanal → duplicada",
-    "[82.1s] Descartada: Mike Evans genera dudas por molestia de tendón → duplicada",
-    "[82.1s] Descartada: Jahmyr Gibbs encabeza las proyecciones de corredores → duplicada",
-    "[82.1s] Descartada: Roschon Johnson escala entre los waivers más buscados → duplicada",
-    "[82.1s] Noticias nuevas verificadas: 1",
-    "[82.7s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 161 · semana de juego 7 · IA usada hoy 11/40"
+    "[0.2s] YouTube: 15 nuevos, 15 en total",
+    "[0.9s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[2.1s] ESPN: lesiones 799 · noticias 50",
+    "[2.8s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 161 · semana de juego 7 · IA usada hoy 11/40"
   ]
 }
