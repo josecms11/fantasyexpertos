@@ -1,10 +1,15 @@
 {
-  "fecha": "2026-10-21T06:30:26.758Z",
+  "fecha": "2026-10-21T07:26:34.179Z",
   "log": [
     "[0.0s] Inicio",
-    "[1.1s] YouTube: 0 nuevos, 15 en total",
-    "[2.0s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
-    "[3.4s] ESPN: lesiones 799 · noticias 50",
-    "[3.5s] Listo: 0 noticias nuevas (0 exclusivas) · 420 jugadores · archivo 157 · semana de juego 7 · IA usada hoy 6/40"
+    "[0.2s] YouTube: 15 nuevos, 15 en total",
+    "[0.9s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
+    "[2.8s] ESPN: lesiones 799 · noticias 50",
+    "[3.8s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[240.0s] IA OK con gemini-3.8-flash",
+    "[240.0s] Gemini respuesta inválida gemini-3.8-flash {\"candidates\":[{\"content\":{\"parts\":[{\"text\":\"{\\n  \\\"noticias\\\": [\\n    {\\n      \\\"titulo\\\": \\\"Jahmyr Gibbs lidera las proyecciones terrestres de Semana 7\\\",\\n      \\\"claves\\\": [\\n        \\\"Proyección estelar de 25.5 puntos en formato PPR.\\\",\\n        \\\"Máxima prioridad terrestre para el ataque de De",
+    "[240.0s] Noticias nuevas verificadas: 0",
+    "[240.0s] Notas del archivo corregidas por estatus o protagonista: 2",
+    "[240.0s] Listo: 0 noticias nuevas (0 exclusivas) · 420 jugadores · archivo 157 · semana de juego 7 · IA usada hoy 7/40"
   ]
 }

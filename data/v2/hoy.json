@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-21T06:30:26.750Z",
+  "actualizado": "2026-10-21T07:22:37.154Z",
   "ultimaIA": "2026-10-21T05:26:31.012Z",
   "semana": 7,
   "semanaStats": 7,
@@ -42,19 +42,15 @@
   "lesionados": [
     {
       "id": "4881",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "2133",
       "estatus": "Fuera"
     },
     {
-      "id": "11559",
-      "estatus": "Duda"
-    },
-    {
       "id": "2216",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "5859",
@@ -62,7 +58,7 @@
     },
     {
       "id": "8155",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "6904",
@@ -70,35 +66,19 @@
     },
     {
       "id": "4866",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "12495",
-      "estatus": "Duda"
-    },
-    {
-      "id": "7526",
       "estatus": "Duda"
     },
     {
       "id": "10229",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "5850",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "4199",
       "estatus": "Duda"
     },
     {
       "id": "12512",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "12518",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "10236",
@@ -114,7 +94,7 @@
     },
     {
       "id": "5844",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "8408",
@@ -122,23 +102,19 @@
     },
     {
       "id": "5892",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "9756",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "13287",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "5927",
       "estatus": "Fuera"
-    },
-    {
-      "id": "4035",
-      "estatus": "Duda"
     },
     {
       "id": "8188",
@@ -154,15 +130,11 @@
     },
     {
       "id": "12534",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "11635",
       "estatus": "Fuera"
-    },
-    {
-      "id": "9486",
-      "estatus": "Duda"
     },
     {
       "id": "12509",
@@ -170,11 +142,11 @@
     },
     {
       "id": "4892",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "13296",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "4983",
@@ -185,20 +157,48 @@
       "estatus": "Fuera"
     },
     {
-      "id": "13294",
-      "estatus": "Duda"
-    },
-    {
       "id": "2307",
       "estatus": "Fuera"
     },
     {
       "id": "7571",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "9753",
       "estatus": "Fuera"
+    },
+    {
+      "id": "4950",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12469",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12492",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "7543",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12508",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "9226",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12487",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "7090",
+      "estatus": "Duda"
     }
   ],
   "agregados": [
@@ -211,16 +211,16 @@
     "11655",
     "12487",
     "6650",
+    "8135",
     "11539",
     "9502",
-    "8135",
     "10213",
     "7553",
     "11792",
     "9230",
     "11610",
-    "8116",
     "3271",
+    "8116",
     "11783",
     "8408"
   ],
