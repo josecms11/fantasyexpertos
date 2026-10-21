@@ -1,19 +1,19 @@
 /**
  * FANTASY EXPERTOS – Apps Script (buzón del reportero + newsletter semanal)
  *
- * 1) revisarBuzon: cada hora lee los correos que llegan a fxnews@8creativo.info y los manda a data/reportero.json en GitHub.
+ * 1) revisarBuzon: cada hora lee los correos que llegan a fxnews@8creativo.info y los guarda en Supabase (privado).
  * 2) enviarNewsletter: cada hora revisa si toca mandar "El resumen FX" (martes desde las 9:00, hora de Monterrey)
  *    y lo envía desde tu Workspace a todas las cuentas con el resumen activado. Si se acaba la cuota diaria de Gmail,
  *    continúa sola en la siguiente hora.
  *
  * Propiedades del script (Configuración del proyecto → Propiedades del script):
- *   GITHUB_TOKEN     → ya la tienes
+ *   GITHUB_TOKEN     → ya no se usa (puedes borrarla)
  *   SUPABASE_SECRET  → la llave secreta de Supabase (empieza con sb_secret_)
  *   REPORTERO_DE     → (opcional) correos del reportero separados por coma; si existe, solo esos correos se procesan
  *   NEWSLETTER_DE    → (opcional) alias desde el que sale la newsletter, ej. resumen@8creativo.info (debe estar en Gmail → Enviar como)
  */
 const CFG = {
-  BUZON: 'fxnews@8creativo.info', ETIQUETA: 'Fantasy-Dump', REPO: 'josecms11/fantasyexpertos', ARCHIVO: 'data/reportero.json',
+  BUZON: 'fxnews@8creativo.info', ETIQUETA: 'Fantasy-Dump',
   SUPABASE: 'https://eafzqftobwrtqdnawncn.supabase.co',
   NEWSLETTER: 'https://raw.githubusercontent.com/josecms11/fantasyexpertos/main/data/v2/newsletter.json',
   DIA_ENVIO: 2, HORA_ENVIO: 9, ZONA: 'America/Monterrey', REMITENTE: 'Fantasy Expertos'
@@ -29,6 +29,7 @@ function instalar() {
 }
 
 /* ---------------- Buzón del reportero ---------------- */
+// Los correos del reportero se guardan en Supabase (privado). Nunca se publican en GitHub.
 function revisarBuzon() {
   const etiqueta = GmailApp.getUserLabelByName(CFG.ETIQUETA) || GmailApp.createLabel(CFG.ETIQUETA);
   const permitidos = (prop('REPORTERO_DE') || '').toLowerCase().split(',').map(s => s.trim()).filter(Boolean);
@@ -41,23 +42,13 @@ function revisarBuzon() {
     nuevas.push({ fecha: m.getDate().toISOString(), asunto: m.getSubject(), texto: m.getPlainBody().slice(0, 20000), procesada: false });
   }));
   if (!nuevas.length) { hilos.forEach(x => x.addLabel(etiqueta)); return; }
-
-  const url = 'https://api.github.com/repos/' + CFG.REPO + '/contents/' + CFG.ARCHIVO;
-  const h = { Authorization: 'Bearer ' + prop('GITHUB_TOKEN'), Accept: 'application/vnd.github+json' };
-  const actual = UrlFetchApp.fetch(url, { headers: h, muteHttpExceptions: true });
-  let datos = { notas: [] }, sha;
-  if (actual.getResponseCode() === 200) {
-    const j = JSON.parse(actual.getContentText());
-    sha = j.sha;
-    datos = JSON.parse(Utilities.newBlob(Utilities.base64Decode(j.content.replace(/\n/g, ''))).getDataAsString());
-  }
-  datos.notas = nuevas.concat(datos.notas || []).slice(0, 200);
-  const r = UrlFetchApp.fetch(url, {
-    method: 'put', headers: h, contentType: 'application/json', muteHttpExceptions: true,
-    payload: JSON.stringify({ message: 'Notas del reportero', sha: sha, content: Utilities.base64Encode(JSON.stringify(datos, null, 2), Utilities.Charset.UTF_8) })
-  });
-  console.log('GitHub: ' + r.getResponseCode() + ' · ' + nuevas.length + ' notas');
+  const k = prop('SUPABASE_SECRET');
+  if (!k) throw new Error('Falta la propiedad SUPABASE_SECRET');
+  const h = { apikey: k, Prefer: 'return=minimal' }; if (/^eyJ/.test(k)) h.Authorization = 'Bearer ' + k;
+  const r = UrlFetchApp.fetch(CFG.SUPABASE + '/rest/v1/reportero', { method: 'post', headers: h, contentType: 'application/json', payload: JSON.stringify(nuevas), muteHttpExceptions: true });
+  console.log('Supabase: ' + r.getResponseCode() + ' · ' + nuevas.length + ' notas del reportero');
   if (r.getResponseCode() < 300) hilos.forEach(x => x.addLabel(etiqueta));
+  else console.log(r.getContentText().slice(0, 300));
 }
 
 /* ---------------- Newsletter semanal ---------------- */

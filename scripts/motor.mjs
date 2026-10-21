@@ -37,7 +37,22 @@ async function modelos() {
   log('Modelos disponibles:', MODELOS.slice(0, 6).join(', '));
   return MODELOS;
 }
-async function gemini(prompt, tokens = 16000) {
+// Si la respuesta llega cortada, rescata los objetos completos de la lista "noticias".
+function rescata(t) {
+  const i = t.indexOf('"noticias"'); if (i < 0) return null;
+  const ini = t.indexOf('[', i); if (ini < 0) return null;
+  const ok = []; let prof = 0, desde = -1, enTxt = false, esc = false;
+  for (let k = ini + 1; k < t.length; k++) {
+    const c = t[k];
+    if (enTxt) { if (esc) esc = false; else if (c === '\\') esc = true; else if (c === '"') enTxt = false; continue; }
+    if (c === '"') enTxt = true;
+    else if (c === '{') { if (prof === 0) desde = k; prof++; }
+    else if (c === '}') { prof--; if (prof === 0 && desde >= 0) { try { ok.push(JSON.parse(t.slice(desde, k + 1))); } catch { /* incompleto */ } desde = -1; } }
+    else if (c === ']' && prof === 0) break;
+  }
+  return ok.length ? { noticias: ok } : null;
+}
+async function gemini(prompt, tokens = 32000) {
   if (!KEY) { log('Falta GEMINI_API_KEY'); return null; }
   if (quedan() <= 0) { log('Cuota diaria de IA agotada, se reintenta mañana'); return null; }
   for (const m of await modelos()) {
@@ -45,7 +60,7 @@ async function gemini(prompt, tokens = 16000) {
     let r;
     try {
       r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent?key=${KEY}`, {
-        signal: conTiempo(240000), method: 'POST', headers: { 'Content-Type': 'application/json' },
+        signal: conTiempo(300000), method: 'POST', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: 'application/json', temperature: 0.6, maxOutputTokens: tokens } })
       });
     } catch (e) { log('Gemini sin respuesta', m, e.message); continue; }
@@ -53,8 +68,13 @@ async function gemini(prompt, tokens = 16000) {
     if (r.status === 429 || r.status === 404) { (cuota.bloqueado = cuota.bloqueado || {})[m] = r.status; guardar(DIR + '/cuota.json', cuota, true); log('Modelo sin cuota hoy', m, r.status); continue; }
     if (r.status >= 500) { log('Modelo saturado, pruebo otro', m, r.status); continue; }
     cuota.usadas = (cuota.usadas || 0) + 1; guardar(DIR + '/cuota.json', cuota, true);
-    try { const t = j.candidates[0].content.parts.map(x => x.text || '').join(''); log('IA OK con', m); return JSON.parse(t.slice(t.indexOf('{'), t.lastIndexOf('}') + 1)); }
-    catch { log('Gemini respuesta inválida', m, JSON.stringify(j).slice(0, 300)); return null; }
+    const c0 = (j.candidates || [])[0] || {}, t = ((c0.content || {}).parts || []).map(x => x.text || '').join('');
+    try { const o = JSON.parse(t.slice(t.indexOf('{'), t.lastIndexOf('}') + 1)); log('IA OK con', m); return o; }
+    catch {
+      const r2 = rescata(t);
+      if (r2) { log('IA respuesta cortada (' + (c0.finishReason || '?') + '), rescatadas', r2.noticias.length, 'notas con', m); return r2; }
+      log('Gemini respuesta inválida', m, c0.finishReason || '', t.slice(0, 160)); return null;
+    }
   }
   return null;
 }
@@ -257,7 +277,7 @@ if (tocaIA) {
   const estatus = relevantes.filter(j => j.inj).map(j => `${j.n} (${j.pos}, ${j.team}): ${estadoTxt(j)}`).slice(0, 90);
   const fuentes = [...newsE.slice(0, 45).map(a => `${a.titulo} — ${a.desc}`.slice(0, 380)), ...(await titularesRSS())];
   const proyTop = POS.map(pos => pos + ': ' + relevantes.filter(j => j.pos === pos && j.proy).sort((a, b) => b.proy[0] - a.proy[0]).slice(0, 8).map(j => `${j.n} ${j.proy[0]}`).join(', ')).join(' | ');
-  const ia = await gemini(VOZ + `Escribe exactamente 12 noticias de fantasy para la semana ${semJuego}. Varía las etiquetas (al menos 2 START, 2 SIT, 2 WAIVER y lesiones si hay). Forma: ` + FORMATO +
+  const ia = await gemini(VOZ + `Escribe exactamente 8 noticias de fantasy para la semana ${semJuego}. Varía las etiquetas (al menos 2 START, 2 SIT, 1 WAIVER y lesiones si hay). Forma: ` + FORMATO +
     ' En el mismo JSON agrega "duelo":{"a":"jugador","b":"jugador","veredicto":"a quién arrancar y por qué, máximo 40 palabras"} con dos jugadores sanos de la misma posición.' +
     `\nESTATUS OFICIAL (fuente de verdad):\n${estatus.join('\n')}\nPROYECCIONES PPR SEMANA ${semJuego}: ${proyTop}\nMás agregados: ${s.add.slice(0, 12).map(t => s.todos[t.player_id] && s.todos[t.player_id].n).filter(Boolean).join(', ')}\nMás soltados: ${s.drop.slice(0, 10).map(t => s.todos[t.player_id] && s.todos[t.player_id].n).filter(Boolean).join(', ')}\nYa publicadas (NO repitas tema ni jugador principal): ${JSON.stringify(archivo.slice(0, 30).map(n => n.titulo))}\nFUENTES:\n${fuentes.join('\n')}`);
   duelo = ia && ia.duelo;
@@ -273,8 +293,17 @@ if (tocaIA) {
   log('Noticias nuevas verificadas:', nuevas.length);
 }
 
-// Exclusivas del reportero
-const rep = leer('data/reportero.json', { notas: [] });
+// Exclusivas del reportero: los correos viven en Supabase (privado). El archivo público data/reportero.json ya no se usa.
+const SBK = process.env.SUPABASE_SECRET, SBURL = 'https://eafzqftobwrtqdnawncn.supabase.co';
+const sbH = () => { const h = { apikey: SBK, 'Content-Type': 'application/json' }; if (/^eyJ/.test(SBK || '')) h.Authorization = 'Bearer ' + SBK; return h; };
+let rep = { notas: [] }, repDeSupabase = false;
+if (SBK) {
+  try {
+    const r = await fetch(SBURL + '/rest/v1/reportero?procesada=eq.false&order=fecha.asc&limit=10', { headers: sbH(), signal: conTiempo(20000) });
+    if (r.ok) { rep.notas = await r.json(); repDeSupabase = true; } else log('Reportero (Supabase): error', r.status, (await r.text()).slice(0, 120));
+  } catch (e) { log('Reportero (Supabase): sin respuesta', e.message); }
+}
+// Sin Supabase no hay correos que procesar (el archivo público ya no existe).
 const pendientes = (rep.notas || []).filter(x => !x.procesada);
 let exclusivas = [];
 if (pendientes.length && quedan() > 0) {
@@ -285,7 +314,9 @@ REGLAS: cubre ABSOLUTAMENTE TODOS los puntos del texto, sin omitir ninguno. Gene
     const lista = ((ex && ex.noticias) || []).map((n, i) => { const ids = ligar(n); return { id: `x${sello}${String(exclusivas.length + i).padStart(2, '0')}`, fecha: ahora, semana: semJuego, exclusivo: true, fuente: nota.fecha, ...n, equipos: [...new Set([n.equipo, ...(n.equipos || []), ...ids.map(id => (J[id] || {}).team)].filter(Boolean))], jugadores: ids }; });
     if (lista.length) { exclusivas.push(...lista); nota.procesada = true; nota.notas = lista.length; log('Exclusivas de', nota.asunto, '→', lista.length, 'notas'); }
   }
-  guardar('data/reportero.json', rep, true);
+  if (repDeSupabase) {
+    for (const n of pendientes.filter(x => x.procesada && x.id)) await fetch(SBURL + '/rest/v1/reportero?id=eq.' + n.id, { method: 'PATCH', headers: { ...sbH(), Prefer: 'return=minimal' }, body: JSON.stringify({ procesada: true, notas: n.notas || 0 }), signal: conTiempo(20000) }).catch(e => log('Reportero: no se pudo marcar', e.message));
+  } else log('Reportero: sin Supabase, no se marca como procesado (nada se publica en GitHub)');
 }
 // re-ligar equipos de noticias viejas que no los tenían
 archivo.forEach(n => { if (!n.equipos) n.equipos = [...new Set([n.equipo, ...(n.jugadores || []).map(id => (J[id] || {}).team)].filter(Boolean))]; if (n.etiqueta === 'ARRANCA') n.etiqueta = 'START'; if (n.etiqueta === 'BANCA') n.etiqueta = 'SIT'; });
@@ -304,7 +335,6 @@ for (const a of archivo) {
 }
 if (corregidas) log('Notas del archivo corregidas por estatus o protagonista:', corregidas);
 // Bóveda Premium: la exclusiva completa va a Supabase (solo la ven los Premium); en el sitio público queda titular y avance.
-const SBK = process.env.SUPABASE_SECRET, SBURL = 'https://eafzqftobwrtqdnawncn.supabase.co';
 const PRIVADOS = ['contexto', 'fantasy', 'equipo_impacto', 'accion', 'cuerpo'];
 const completa = n => n.exclusivo && PRIVADOS.some(k => n[k]);
 const avance = n => { const t = { ...n, premium: true, claves: (n.claves || []).slice(0, 1) }; PRIVADOS.forEach(k => delete t[k]); return t; };

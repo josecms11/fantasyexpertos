@@ -1072,3 +1072,9 @@ a:hover .th .th-vis .th-hel{transform:translateY(-5px) rotate(-4deg) scale(1.04)
 .prem-card{border-color:rgba(255,212,92,.4)}
 .prem-card h3{color:var(--gold);margin:0 0 6px}
 @media (max-width:520px){.planes{grid-template-columns:1fr}}
+/* auditoría: filas con barra no se desbordan en móvil */
+.prow .meta{flex:1 1 auto;min-width:64px;overflow:hidden}
+.prow .meta .pname{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media (max-width:520px){.prow .right .bar{display:none}.prow .right{gap:6px}.prow{gap:8px}}
+.grid>*{min-width:0}
+@media (max-width:520px){.prow .right .fxv svg{display:none}.prow .right .fxv{padding:0 8px}.prow .right .num.sm{font-size:15px}.card{padding:16px}}
