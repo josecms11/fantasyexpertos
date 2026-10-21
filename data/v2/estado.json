@@ -1,20 +1,10 @@
 {
-  "fecha": "2026-10-21T10:56:32.410Z",
+  "fecha": "2026-10-21T11:21:47.132Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 15 nuevos, 15 en total",
     "[0.8s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
     "[2.5s] ESPN: lesiones 799 · noticias 50",
-    "[3.1s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[3.6s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[138.8s] IA OK con gemini-3.7-flash",
-    "[138.8s] Descartada: Terry McLaurin se pierde el resto de la temporada → duplicada",
-    "[138.8s] Descartada: Brock Purdy comanda el ataque invicto de San Francisco → duplicada",
-    "[138.8s] Descartada: Mike Evans genera dudas por molestia en el tendón → duplicada",
-    "[138.8s] Descartada: Najee Harris es cortado sorpresivamente por los Giants → duplicada",
-    "[138.8s] Descartada: Jahmyr Gibbs encabeza proyecciones terrestres en la Semana 7 → duplicada",
-    "[138.8s] Descartada: C.J. Stroud se vuelve opción prioritaria en el waiver → duplicada",
-    "[138.8s] Noticias nuevas verificadas: 2",
-    "[139.6s] Listo: 2 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 160 · semana de juego 7 · IA usada hoy 10/40"
+    "[3.2s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 160 · semana de juego 7 · IA usada hoy 10/40"
   ]
 }
