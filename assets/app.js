@@ -771,7 +771,8 @@ const cargaSB = () => _sbCarga || (_sbCarga = new Promise((ok, no) => {
 }));
 async function cargaPerfil() {
   if (!YO) { PERFIL = null; FAV = new Set(); repinta(); return; }
-  const [p, f] = await Promise.all([SB.from('perfiles').select('*').eq('id', YO.id).maybeSingle(), SB.from('favoritos').select('jugador')]);
+  let p = {}, f = {};
+  try { [p, f] = await Promise.all([SB.from('perfiles').select('*').eq('id', YO.id).maybeSingle(), SB.from('favoritos').select('jugador')]); } catch (e) { console.warn('Perfil no disponible', e); }
   PERFIL = p.data || { nombre: (YO.email || '').split('@')[0] };
   FAV = new Set((f.data || []).map(x => x.jugador));
   const pend = ls('fx-sigue'); if (pend && J[pend] && !FAV.has(pend)) { ls('fx-sigue', null); await SB.from('favoritos').insert({ jugador: pend }); FAV.add(pend); }
