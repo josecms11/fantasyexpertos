@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-21T07:22:37.154Z",
-  "ultimaIA": "2026-10-21T05:26:31.012Z",
+  "actualizado": "2026-10-21T08:04:58.360Z",
+  "ultimaIA": "2026-10-21T08:04:58.360Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,28 +13,27 @@
   ],
   "noticias": [
     {
-      "id": "n20261021052611",
-      "fecha": "2026-10-21T05:26:31.012Z",
+      "id": "n20261021080407",
+      "fecha": "2026-10-21T08:04:58.360Z",
       "semana": 7,
-      "titulo": "Matthew Stafford busca evitar récord negativo histórico con los Rams",
+      "titulo": "Jordan Addison figura como duda por lesión muscular",
       "claves": [
-        "Matthew Stafford al borde de la marca histórica de derrotas",
-        "El arranque de 2-4 complica las aspiraciones de Los Angeles",
-        "La ofensiva sufre por falta de juego profundo y lesiones"
+        "El receptor sufre molestias en el tendón de la corva.",
+        "Su estatus es Questionable para el siguiente partido.",
+        "Su ausencia alteraría los planes aéreos del equipo."
       ],
-      "contexto": "El veterano mariscal de campo de los Rams se encuentra muy cerca de empatar una marca histórica poco deseada en cuanto a tropiezos acumulados en su carrera, reflejo de un complicado inicio de temporada para todo el plantel angelino.",
-      "fantasy": "Se mantiene como una opción de riesgo moderado en ligas superflex; su proyección depende estrictamente del volumen aéreo, pero el mal momento colectivo lo vuelve un jugador difícil de confiar plenamente como START absoluto.",
-      "equipo_impacto": "Evidencia la crisis colectiva que atraviesa la escuadra dirigida por Sean McVay, la cual necesita corregir errores urgentemente para salvar el año.",
-      "accion": "Evalúa alternativas en tu banca si cuentas con un mariscal con mejor momento.",
-      "etiqueta": "TENDENCIA",
+      "contexto": "El cuerpo médico mantiene bajo estrecha observación al receptor abierto de los Vikings, quien arrastra problemas físicos en el tendón de la corva que ponen en riesgo su participación para el compromiso de la Semana 7.",
+      "fantasy": "Bajo las reglas de precaución en fantasy, al estar catalogado como Questionable, debes tener un plan de respaldo listo y evitarlo en tu alineación inicial si no se confirma su alta médica antes del kickoff.",
+      "equipo_impacto": "Obliga al cuerpo técnico a modificar las asignaciones de rutas y buscar alternativas de confianza en el ataque aéreo si no logra recuperarse a tiempo.",
+      "accion": "Monitorea su reporte de lesionados y bájalo de tu cuadro titular si no juega.",
+      "etiqueta": "LESIÓN",
       "impacto": "BAJA",
-      "equipo": "LAR",
+      "equipo": "MIN",
       "equipos": [
-        "LAR"
+        "MIN"
       ],
       "jugadores": [
-        "421",
-        "1433"
+        "9756"
       ],
       "menciona": []
     }
@@ -211,15 +210,15 @@
     "11655",
     "12487",
     "6650",
-    "8135",
     "11539",
+    "8135",
     "9502",
     "10213",
     "7553",
     "11792",
     "9230",
-    "11610",
     "3271",
+    "11610",
     "8116",
     "11783",
     "8408"
@@ -242,15 +241,16 @@
     "12711",
     "12533",
     "7042",
-    "3321",
     "1166",
+    "3321",
     "11647",
-    "13330"
+    "13330",
+    "8129"
   ],
   "duelo": {
     "a": "Brock Purdy",
     "b": "Drake Maye",
-    "veredicto": "Arranca a Drake Maye por su ligera ventaja en proyección semanal y mayor techo ofensivo en el esquema de Nueva Patriots."
+    "veredicto": "Arranca a Brock Purdy por su ligera ventaja en la proyección semanal (20.7 sobre 19.4) y su eficiencia histórica liderando la ofensiva de los 49ers."
   },
   "fuentes": [
     "Sleeper",
