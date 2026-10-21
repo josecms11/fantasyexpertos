@@ -1,10 +1,11 @@
 {
-  "fecha": "2026-10-21T00:29:03.793Z",
+  "fecha": "2026-10-21T01:14:13.896Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.3s] YouTube: 15 nuevos, 15 en total",
-    "[0.9s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
-    "[2.4s] ESPN: lesiones 799 · noticias 50",
-    "[2.4s] Listo: 0 noticias nuevas (0 exclusivas) · 420 jugadores · archivo 153 · semana de juego 7 · IA usada hoy 1/40"
+    "[0.1s] YouTube: 0 nuevos, 15 en total",
+    "[1.0s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
+    "[41.3s] GET falló https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?seasontype=2&week=2& The operation was aborted due to timeout",
+    "[43.1s] ESPN: lesiones 799 · noticias 50",
+    "[43.2s] Listo: 0 noticias nuevas (0 exclusivas) · 420 jugadores · archivo 153 · semana de juego 7 · IA usada hoy 1/40"
   ]
 }
