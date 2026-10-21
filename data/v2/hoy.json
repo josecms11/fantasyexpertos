@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-21T10:18:53.835Z",
-  "ultimaIA": "2026-10-21T08:04:58.360Z",
+  "actualizado": "2026-10-21T10:54:15.359Z",
+  "ultimaIA": "2026-10-21T10:54:15.359Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,27 +13,55 @@
   ],
   "noticias": [
     {
-      "id": "n20261021080407",
-      "fecha": "2026-10-21T08:04:58.360Z",
+      "id": "n20261021105403",
+      "fecha": "2026-10-21T10:54:15.359Z",
       "semana": 7,
-      "titulo": "Jordan Addison figura como duda por lesión muscular",
+      "titulo": "Kenneth Walker busca revancha contra Chiefs en Semana 7",
       "claves": [
-        "El receptor sufre molestias en el tendón de la corva.",
-        "Su estatus es Questionable para el siguiente partido.",
-        "Su ausencia alteraría los planes aéreos del equipo."
+        "Proyección estelar de 18.5 unidades en ligas PPR.",
+        "Duelo de alto voltaje catalogado como juego de revancha.",
+        "Volumen asegurado en el ataque terrestre de Seattle."
       ],
-      "contexto": "El cuerpo médico mantiene bajo estrecha observación al receptor abierto de los Vikings, quien arrastra problemas físicos en el tendón de la corva que ponen en riesgo su participación para el compromiso de la Semana 7.",
-      "fantasy": "Bajo las reglas de precaución en fantasy, al estar catalogado como Questionable, debes tener un plan de respaldo listo y evitarlo en tu alineación inicial si no se confirma su alta médica antes del kickoff.",
-      "equipo_impacto": "Obliga al cuerpo técnico a modificar las asignaciones de rutas y buscar alternativas de confianza en el ataque aéreo si no logra recuperarse a tiempo.",
-      "accion": "Monitorea su reporte de lesionados y bájalo de tu cuadro titular si no juega.",
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "MIN",
+      "contexto": "Seattle viaja a enfrentar a Kansas City en un compromiso donde Kenneth Walker tendrá todos los reflectores encima. Los análisis de la liga colocan este enfrentamiento como el juego de revancha para el talentoso corredor, quien asume la responsabilidad total por tierra. Seattle necesita establecer el acarreo de balón para mantenerse competitivo ante el poderío de los campeones defensores en condición de visita.",
+      "fantasy": "Walker presume una sólida proyección de 18.5 puntos en formatos PPR, consolidándose entre los siete mejores corredores de toda la cartelera. Es un RB1 obligatorio en ligas de doce equipos gracias a su monopolio de toques en zona de gol. Su capacidad para romper tacleadas y generar yardas tras el contacto le garantiza un piso elevado y un techo explosivo ideal para ganar enfrentamientos directos.",
+      "equipo_impacto": "El ataque de Seattle depende de que Walker mueva las cadenas temprano. Un juego terrestre efectivo abrirá ventanas para Jaxon Smith-Njigba y le quitará presión al pasador en terceras oportunidades.",
+      "accion": "Coloca a Kenneth Walker en tu alineación como corredor estelar.",
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "SEA",
       "equipos": [
-        "MIN"
+        "SEA",
+        "KC"
       ],
       "jugadores": [
-        "9756"
+        "8151",
+        "9488"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261021105407",
+      "fecha": "2026-10-21T10:54:15.359Z",
+      "semana": 7,
+      "titulo": "Dak Prescott pierde valor en rankings para el resto",
+      "claves": [
+        "Desciende en clasificaciones de valor para el resto del año.",
+        "Dallas sumido en una racha negativa histórica dentro del Este.",
+        "Calendario próximo luce como la única esperanza de recuperación."
+      ],
+      "contexto": "El panorama se ha complicado seriamente para los Dallas Cowboys y su mariscal de campo Dak Prescott. La división Este de la NFC firmó un récord negativo histórico al no ganar partidos por dos semanas seguidas, sumiendo a Dallas en una severa crisis de resultados. Aunque los jugadores y entrenadores confían en que el próximo calendario accesible ofrezca esperanza, el desempeño colectivo ha sembrado enormes dudas alrededor de toda la franquicia.",
+      "fantasy": "Los rankings actualizados para el resto de la temporada degradaron formalmente la cotización fantasy de Dak Prescott. En ligas de un solo mariscal de campo, ha dejado de ser una opción indiscutible semana a semana para convertirse en un mariscal de enfrentamiento condicionado. Los manejadores deben evaluar opciones alternativas en waivers o explorar canjes si buscan mayor estabilidad y techo anotador en la posición de pasador.",
+      "equipo_impacto": "La crisis ofensiva y los problemas crónicos de la defensiva texana obligan a Dallas a forzar envíos constantemente. CeeDee Lamb mantiene volumen alto, pero la inconsistencia de Prescott compromete la eficiencia general en zona roja.",
+      "accion": "Explora opciones de intercambio o reemplazo para Dak Prescott.",
+      "etiqueta": "TENDENCIA",
+      "impacto": "BAJA",
+      "equipo": "DAL",
+      "equipos": [
+        "DAL"
+      ],
+      "jugadores": [
+        "3294",
+        "6786"
       ],
       "menciona": []
     }
@@ -209,23 +237,23 @@
     "9758",
     "10235",
     "11655",
-    "12487",
     "6650",
+    "12487",
     "11539",
     "8135",
     "NYJ",
     "MIN",
-    "9502",
     "10213",
+    "9502",
     "7553",
     "11792",
-    "9230",
     "3271",
+    "9230",
     "11610",
     "8116",
-    "HOU",
+    "13296",
     "11783",
-    "13296"
+    "HOU"
   ],
   "soltados": [
     "11581",
@@ -239,10 +267,10 @@
     "3271",
     "8121",
     "13150",
-    "6904",
     "2505",
-    "650",
+    "6904",
     "11439",
+    "650",
     "9480",
     "8132",
     "12711",
@@ -255,9 +283,9 @@
     "8129"
   ],
   "duelo": {
-    "a": "Kenneth Walker",
-    "b": "Jonathan Taylor",
-    "veredicto": "Arranca a Kenneth Walker sobre Jonathan Taylor. Walker proyecta 18.5 puntos frente a los 17.7 de Taylor, beneficiándose de un rol estelar absoluto ante las múltiples bajas por lesión en el juego terrestre de Seattle."
+    "a": "Bijan Robinson",
+    "b": "Kyren Williams",
+    "veredicto": "Arranca a Bijan Robinson. Con una proyección élite de 22.8 puntos PPR frente a los 20.0 de Kyren Williams, Bijan ofrece mayor explosividad y un volumen indiscutible en juego terrestre y aéreo para asegurar tu victoria semanal."
   },
   "fuentes": [
     "Sleeper",
