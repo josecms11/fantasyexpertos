@@ -1,22 +1,10 @@
 {
-  "fecha": "2026-10-21T03:17:53.644Z",
+  "fecha": "2026-10-21T03:51:06.553Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 0 nuevos, 15 en total",
-    "[1.0s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
-    "[2.8s] ESPN: lesiones 799 · noticias 50",
-    "[3.7s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[117.0s] IA OK con gemini-3.8-flash",
-    "[117.0s] Descartada: Terry McLaurin se pierde el resto de temporada → duplicada",
-    "[117.0s] Descartada: Mike Evans sufre lesión de gravedad en el tendón → duplicada",
-    "[117.0s] Descartada: Brock Purdy lidera la liga en eficiencia histórica → duplicada",
-    "[117.0s] Descartada: Jahmyr Gibbs encabeza proyecciones terrestres en Semana 7 → duplicada",
-    "[117.0s] Descartada: Jaxon Smith-Njigba apunta a un domingo colosal → duplicada",
-    "[117.0s] Descartada: Christian Watson se perfila para brillar con Packers → duplicada",
-    "[117.0s] Descartada: Dak Prescott pierde atractivo en rankings para el resto → duplicada",
-    "[117.0s] Descartada: Konata Mumpfield se convierte en objetivo popular de waivers → duplicada",
-    "[117.0s] Descartada: Roschon Johnson es prioridad inmediata en el alambre libre → duplicada",
-    "[117.0s] Noticias nuevas verificadas: 3",
-    "[117.1s] Listo: 3 noticias nuevas (0 exclusivas) · 420 jugadores · archivo 156 · semana de juego 7 · IA usada hoy 5/40"
+    "[0.8s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
+    "[1.6s] ESPN: lesiones 799 · noticias 50",
+    "[1.6s] Listo: 0 noticias nuevas (0 exclusivas) · 420 jugadores · archivo 156 · semana de juego 7 · IA usada hoy 5/40"
   ]
 }
