@@ -1,14 +1,14 @@
 {
-  "fecha": "2026-10-21T02:17:47.599Z",
+  "fecha": "2026-10-21T02:51:49.018Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.4s] YouTube: 15 nuevos, 15 en total",
-    "[1.3s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
-    "[3.7s] ESPN: lesiones 799 · noticias 50",
-    "[4.7s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[143.6s] IA OK con gemini-3.8-flash",
-    "[143.6s] Gemini respuesta inválida gemini-3.8-flash {\"candidates\":[{\"content\":{\"parts\":[{\"text\":\"{\\n  \\\"noticias\\\": [\\n    {\\n      \\\"titulo\\\": \\\"Terry McLaurin fuera todo el año por rodilla\\\",\\n      \\\"claves\\\": [\\n        \\\"Desgarro de tendón patelar termina oficialmente con su temporada.\\\",\\n        \\\"Sufrió la aparatosa lesión el lunes ante San F",
-    "[143.6s] Noticias nuevas verificadas: 0",
-    "[143.6s] Listo: 0 noticias nuevas (0 exclusivas) · 420 jugadores · archivo 153 · semana de juego 7 · IA usada hoy 3/40"
+    "[0.3s] YouTube: 15 nuevos, 15 en total",
+    "[0.9s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
+    "[3.1s] ESPN: lesiones 799 · noticias 50",
+    "[3.7s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[226.5s] IA OK con gemini-3.8-flash",
+    "[226.5s] Gemini respuesta inválida gemini-3.8-flash {\"candidates\":[{\"content\":{\"parts\":[{\"text\":\"{\\n  \\\"noticias\\\": [\\n    {\\n      \\\"titulo\\\": \\\"Terry McLaurin fuera el resto de la temporada\\\",\\n      \\\"claves\\\": [\\n        \\\"Rotura de tendón patelar confirmada por Dan Quinn.\\\",\\n        \\\"Baja definitiva para todo el 2026 en Washington.\\\",\\n       ",
+    "[226.5s] Noticias nuevas verificadas: 0",
+    "[226.5s] Listo: 0 noticias nuevas (0 exclusivas) · 420 jugadores · archivo 153 · semana de juego 7 · IA usada hoy 4/40"
   ]
 }
