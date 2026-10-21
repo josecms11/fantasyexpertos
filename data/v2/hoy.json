@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-21T19:38:54.067Z",
-  "ultimaIA": "2026-10-21T17:55:43.293Z",
+  "actualizado": "2026-10-21T20:07:06.505Z",
+  "ultimaIA": "2026-10-21T20:07:06.505Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,26 +13,83 @@
   ],
   "noticias": [
     {
-      "id": "n20261021175506",
-      "fecha": "2026-10-21T17:55:43.293Z",
+      "id": "n20261021200701",
+      "fecha": "2026-10-21T20:07:06.505Z",
       "semana": 7,
-      "titulo": "Kerby Joseph perfila su regreso defensivo en los emparrillados de Detroit",
+      "titulo": "Isaiah Likely se consolida como opción confiable",
       "claves": [
-        "Su recuperación avanza conforme a los plazos previstos",
-        "Es el ancla secundaria de la retaguardia",
-        "Apunta a fortalecer la cobertura profunda"
+        "Alta confianza en el ala cerrada para cada semana",
+        "Produce de manera constante en el esquema ofensivo",
+        "Valor firme en ligas PPR de alta competencia"
       ],
-      "con el fin de": "Las noticias desde Detroit apuntan a una mejora sustancial en su defensiva secundaria con el inminente retorno de su profundo estelar, quien busca devolver solidez a la retaguardia del equipo.",
-      "fantasy": "Su impacto directo en ligas ofensivas estándar es nulo, pero en formatos IDP representa una adición de jerarquía obligatoria para sumar puntos en tackleadas y robos de balón.",
-      "equipo_impacto": "Su regreso ordena las asignaciones de cobertura y reduce las libertades concedidas a los receptores rivales en rutas largas.",
-      "accion": "Vigílalo en waivers si tu liga utiliza jugadores defensivos individuales.",
-      "etiqueta": "WAIVER",
+      "contexto": "El desempeño de Isaiah Likely mantiene entusiasmados a los expertos en fantasy football, quienes destacan su capacidad para producir de manera consistente semana tras semana dentro de su ofensiva.",
+      "fantasy": "Su impacto en fantasy es sumamente positivo; se posiciona como un titular indiscutible en ligas PPR y formatos profundos donde la posición de ala cerrada suele ser un dolor de cabeza.",
+      "equipo_impacto": "Su presencia le otorga una válvula de escape constante al mariscal de campo y complica las coberturas defensivas de los rivales de división.",
+      "accion": "Alinea con total confianza a Isaiah Likely en tu alineación titular esta jornada.",
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "BAL",
+      "equipos": [
+        "BAL",
+        "NYG"
+      ],
+      "jugadores": [
+        "8131"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261021200702",
+      "fecha": "2026-10-21T20:07:06.505Z",
+      "semana": 7,
+      "titulo": "Jared Goff se afianza en el top 10",
+      "claves": [
+        "Jared Goff muestra solidez rumbo a la semana 7",
+        "Proyección favorable para ligas de formato estándar y PPR",
+        "Consistencia semanal que agrada a los entrenadores virtuales"
+      ],
+      "contexto": "Jared Goff llega a la Semana 7 con el respaldo de los analistas, quienes lo ubican firmemente dentro de los diez mejores mariscales de campo para esta jornada debido a su alto rendimiento reciente.",
+      "fantasy": "Sube considerablemente su valor en ligas fantasy de formato superflex y estándar, convirtiéndose en una opción sumamente segura para comandar tu equipo esta semana.",
+      "equipo_impacto": "Esta estabilidad beneficia directamente a todo el grupo ofensivo de Detroit, permitiendo una distribución fluida del ovoide por todo el campo.",
+      "accion": "Pon a Jared Goff como tu mariscal titular sin pensarlo dos veces.",
+      "etiqueta": "START",
       "impacto": "SUBE",
       "equipo": "DET",
       "equipos": [
-        "DET"
+        "DET",
+        "GB"
       ],
-      "jugadores": [],
+      "jugadores": [
+        "3163",
+        "6804"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261021200703",
+      "fecha": "2026-10-21T20:07:06.505Z",
+      "semana": 7,
+      "titulo": "Jonathan Taylor mantiene su valor a pesar de todo",
+      "claves": [
+        "Confianza total en Jonathan Taylor pese a duelo difícil",
+        "El corredor mantiene su estatus de pieza estelar",
+        "Resiste rumores de intercambio y cambios en la franquicia"
+      ],
+      "contexto": "A pesar de un panorama complejo en los Indianapolis Colts tras la salida de la gerencia y rumores sobre su futuro, los expertos mantienen plena confianza en la producción de Jonathan Taylor para la Semana 7.",
+      "fantasy": "Su impacto se mantiene alto en todas las ligas fantasy; es un corredor de carga pesada que asegura un piso elevado de puntos independientemente de la dificultad del rival.",
+      "equipo_impacto": "El juego terrestre sigue siendo el ancla principal de una ofensiva de los Colts que busca estabilidad en medio de tantos movimientos institucionales.",
+      "accion": "Asegúrate de colocar a Jonathan Taylor en tu cuadro titular sin dudarlo.",
+      "etiqueta": "START",
+      "impacto": "NEUTRO",
+      "equipo": "IND",
+      "equipos": [
+        "IND",
+        "DAL"
+      ],
+      "jugadores": [
+        "6813",
+        "7588"
+      ],
       "menciona": []
     }
   ],
@@ -110,11 +167,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "9756",
+      "id": "13287",
       "estatus": "Duda"
     },
     {
-      "id": "13287",
+      "id": "9756",
       "estatus": "Duda"
     },
     {
@@ -138,15 +195,15 @@
       "estatus": "Fuera"
     },
     {
-      "id": "9508",
-      "estatus": "Duda"
-    },
-    {
       "id": "11635",
       "estatus": "Fuera"
     },
     {
       "id": "12509",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12469",
       "estatus": "Fuera"
     },
     {
@@ -170,16 +227,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "7571",
-      "estatus": "Duda"
-    },
-    {
-      "id": "12469",
-      "estatus": "Fuera"
-    },
-    {
       "id": "4950",
       "estatus": "Fuera"
+    },
+    {
+      "id": "7571",
+      "estatus": "Duda"
     },
     {
       "id": "12492",
@@ -196,6 +249,10 @@
     {
       "id": "9226",
       "estatus": "Fuera"
+    },
+    {
+      "id": "11625",
+      "estatus": "Duda"
     }
   ],
   "agregados": [
@@ -212,8 +269,8 @@
     "11655",
     "NYJ",
     "10213",
-    "12487",
     "3271",
+    "12487",
     "7553",
     "MIN",
     "9502",
@@ -253,9 +310,9 @@
     "3321"
   ],
   "duelo": {
-    "a": "Josh Jacobs",
-    "b": "Javonte Williams",
-    "veredicto": "Arranca a Josh Jacobs por su volumen superior de acarreos y su rol consolidado en zona roja, lo que garantiza un piso de puntos mucho más seguro en comparación con Javonte Williams."
+    "a": "C.J. Stroud",
+    "b": "Jared Goff",
+    "veredicto": "Arranca a Jared Goff por su proyección superior y mayor estabilidad dentro del top 10 semanal de mariscales de campo."
   },
   "fuentes": [
     "Sleeper",
