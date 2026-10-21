@@ -8,7 +8,7 @@ const EQUIPOS = { ARI: 'Arizona Cardinals', ATL: 'Atlanta Falcons', BAL: 'Baltim
 const COL = { ARI: ['#97233F', '#FFB612'], ATL: ['#A71930', '#101820'], BAL: ['#241773', '#9E7C0C'], BUF: ['#00338D', '#C60C30'], CAR: ['#0085CA', '#101820'], CHI: ['#0B162A', '#C83803'], CIN: ['#FB4F14', '#101820'], CLE: ['#311D00', '#FF3C00'], DAL: ['#003594', '#869397'], DEN: ['#FB4F14', '#002244'], DET: ['#0076B6', '#B0B7BC'], GB: ['#203731', '#FFB612'], HOU: ['#03202F', '#A71930'], IND: ['#002C5F', '#A2AAAD'], JAX: ['#006778', '#D7A22A'], KC: ['#E31837', '#FFB81C'], LV: ['#101820', '#A5ACAF'], LAC: ['#0080C6', '#FFC20E'], LAR: ['#003594', '#FFA300'], MIA: ['#008E97', '#FC4C02'], MIN: ['#4F2683', '#FFC62F'], NE: ['#002244', '#C60C30'], NO: ['#D3BC8D', '#101820'], NYG: ['#0B2265', '#A71930'], NYJ: ['#125740', '#FFFFFF'], PHI: ['#004C54', '#A5ACAF'], PIT: ['#FFB612', '#101820'], SF: ['#AA0000', '#B3995D'], SEA: ['#002244', '#69BE28'], TB: ['#D50A0A', '#FF7900'], TEN: ['#0C2340', '#4B92DB'], WAS: ['#5A1414', '#FFB612'] };
 const col = t => COL[t] || ['#2E6B47', '#5BC489'];
 const vars = t => `--c1:${col(t)[0]};--c2:${col(t)[1]}`;
-const POSICIONES = { QB: 'Quarterbacks', RB: 'Running backs', WR: 'Receptores', TE: 'Alas cerradas', K: 'Pateadores' };
+const POSICIONES = { QB: 'Quarterbacks', RB: 'Running backs', WR: 'Receptores', TE: 'Alas cerradas', K: 'Pateadores', DEF: 'Defensivas' };
 const ESTATUS = { Questionable: 'Duda', Doubtful: 'Duda', Out: 'Fuera', IR: 'Fuera', PUP: 'Fuera', Sus: 'Fuera', NA: 'Fuera' };
 const ETIQUETAS = ['START', 'SIT', 'WAIVER', 'LESIÓN', 'TRADE', 'TENDENCIA'];
 const ETQ = { START: 'START', SIT: 'SIT', WAIVER: 'WAIVER WIRE', LESIÓN: 'REPORTE MÉDICO', TRADE: 'TRADE', TENDENCIA: 'TENDENCIA' };
@@ -103,7 +103,7 @@ function estrellas(opp, pos) {
   return d ? { n: Math.max(1, Math.min(5, Math.ceil((33 - d.rank) / 6.4))), rank: d.rank, prom: d.prom } : null;
 }
 const pintaEstrellas = e => e ? `<span class="stars s${e.n}" title="Defensa Nº${e.rank} en puntos permitidos">${'★'.repeat(e.n)}<i>${'★'.repeat(5 - e.n)}</i></span>` : '<span class="stars">–</span>';
-const CORTE = { QB: [12, 20], RB: [24, 40], WR: [30, 50], TE: [10, 18], K: [12, 18] };
+const CORTE = { QB: [12, 20], RB: [24, 40], WR: [30, 50], TE: [10, 18], K: [12, 18], DEF: [12, 12] };
 function veredicto(j) {
   const r = rivalDe(j.team), st = estatus(j), razones = [];
   if (j.team === 'FA') return { v: 'SIT', razones: ['Agente libre: no tiene equipo esta semana.'], e: null };
@@ -112,7 +112,7 @@ function veredicto(j) {
   const k = RANKW[j.id] || 99, [c1, c2] = CORTE[j.pos] || [12, 18];
   const e = estrellas(r.opp, j.pos);
   razones.push(j.p != null ? `Proyección ${FMTS[FMT]} de ${n1(j.p)} pts: es el ${j.pos}${k} de la semana ${semActual()}.` : `Sin proyección oficial; por su promedio (${n1(j.prom)}) es el ${j.pos}${k} de la semana.`);
-  if (e) razones.push(`${r.home ? 'En casa' : 'De visita'} ante ${r.opp}: ${e.n >= 4 ? 'defensa que regala puntos' : e.n <= 2 ? 'defensa dura' : 'matchup neutral'} contra ${j.pos} (Nº${e.rank} en puntos permitidos).`);
+  if (e) razones.push(j.pos === 'DEF' ? `${r.home ? 'En casa' : 'De visita'} ante ${r.opp}: ${e.n >= 4 ? 'ofensiva que le regala puntos a las defensivas' : e.n <= 2 ? 'ofensiva que cuida el balón' : 'matchup neutral'} (Nº${e.rank} en puntos que permite a defensivas).` : `${r.home ? 'En casa' : 'De visita'} ante ${r.opp}: ${e.n >= 4 ? 'defensa que regala puntos' : e.n <= 2 ? 'defensa dura' : 'matchup neutral'} contra ${j.pos} (Nº${e.rank} en puntos permitidos).`);
   const u3 = (j.temp || []).filter(v => v != null).slice(-3);
   if (u3.length >= 2 && j.prom) { const f = u3.reduce((a, b) => a + b, 0) / u3.length / j.prom; if (f > 1.2) razones.push('Viene en racha: sus últimas semanas superan su promedio.'); else if (f < .8) razones.push('Viene a la baja en sus últimas semanas.'); }
   const nota = todasNoticias().find(n => (n.jugadores || [])[0] === j.id);
@@ -143,34 +143,62 @@ const equiposDe = n => [...new Set([n.equipo, ...(n.equipos || []), ...(n.jugado
 const noticiasDe = id => todasNoticias().filter(n => (n.jugadores || []).includes(id));
 const noticiasEquipo = t => todasNoticias().filter(n => equiposDe(n).includes(t));
 
-/* ---------- miniatura de noticia: el gancho visual ---------- */
+/* ---------- tarjeta de noticia (v3): el diseño cambia según de qué trata la nota ---------- */
+const POSN = { QB: 'QUARTERBACKS', RB: 'CORREDORES', WR: 'RECEPTORES', TE: 'ALAS CERRADAS', K: 'PATEADORES', DEF: 'DEFENSIVAS' };
+const TEMA_ETQ = { TRADE: 'MERCADO DE CAMBIOS', WAIVER: 'AGENCIA LIBRE', START: 'START / SIT', SIT: 'START / SIT', LESIÓN: 'REPORTE MÉDICO', TENDENCIA: 'TENDENCIAS' };
+const sinAc = x => String(x || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+function tipoTarjeta(n) {
+  const ps = (n.jugadores || []).map(id => J[id]).filter(Boolean), tit = sinAc(n.titulo);
+  const enTit = ps.filter(x => tit.includes(sinAc(apellido(x.n).replace(/ (jr|sr|ii|iii)\.?$/i, ''))));
+  if (enTit.length === 1 || (ps.length === 1 && !enTit.length)) return { k: 'jug', p: enTit[0] || ps[0], ps };
+  if (ps.length >= 2) return { k: 'grupo', ps: enTit.length >= 2 ? enTit : ps };
+  const eqs = equiposDe(n);
+  return eqs.length === 1 ? { k: 'equipo', t: eqs[0], ps } : { k: 'general', eqs, ps };
+}
+const equipoDe = p => p && EQUIPOS[p.team] ? p.team : '';
+function chipNota(n, p) {
+  const et = n.etiqueta, vende = /vend/i.test((n.accion || '') + ' ' + (n.titulo || ''));
+  if (et === 'START') return '<span class="fxv-chip ok">START</span>';
+  if (et === 'SIT') return '<span class="fxv-chip no">SIT</span>';
+  if (et === 'TRADE') return `<span class="fxv-chip ${vende ? 'no' : 'ok'}">${vende ? 'VENDE' : 'COMPRA'}</span>`;
+  if (et === 'WAIVER') return `<span class="fxv-chip sky">+ AGRÉGALO${p && p.add ? `<small>${p.add >= 1000 ? Math.round(p.add / 1000) + 'K' : p.add} ligas</small>` : ''}</span>`;
+  if (et === 'LESIÓN') return `<span class="fxv-chip med"><i class="cruz"></i>${p ? esc(estatus(p).toUpperCase()) : 'LESIÓN'}${p && parte(p) ? `<small>${esc(parte(p))}</small>` : ''}</span>`;
+  return '';
+}
 function thumb(n, big) {
-  const ps = (n.jugadores || []).map(id => J[id]).filter(Boolean);
-  const p = ps[0], t1 = n.equipo || (p && p.team) || '', p2 = ps.find(x => x.team !== (p && p.team));
-  const h = hash(n.id), et = n.etiqueta, imp = n.impacto || 'NEUTRO', lado = h % 2 ? 'der' : 'izq';
-  const nomA = p ? nombre1(p.n) : (EQUIPOS[t1] || '').split(' ').slice(0, -1).join(' ');
-  const nomB = p ? apellido(p.n) : (EQUIPOS[t1] || 'Fantasy Expertos').split(' ').pop();
-  const largo = nomB.length > 11 ? 'xl' : nomB.length > 8 ? 'l' : '';
-  const num = p && p.num != null ? p.num : '';
-  const datos = p ? [[rw(p) !== '–' ? rw(p) : p.pos, 'S' + semActual()], [p.p != null ? n1(p.p) : n1(p.prom), p.p != null ? 'PROY' : 'PROM'], [fuera(p) ? estatus(p).toUpperCase() : rivalTxt(p.team), fuera(p) ? 'ESTATUS' : 'RIVAL']] : [[recordDe(t1) || t1 || 'NFL', 'RÉCORD'], [rivalTxt(t1), 'S' + semActual()], [noticiasEquipo(t1).length, 'NOTICIAS']];
-  const vende = /vend/i.test((n.accion || '') + ' ' + (n.titulo || ''));
-  let badge = '';
-  if (et === 'START') badge = `<span class="stamp start">START</span>`;
-  else if (et === 'SIT') badge = `<span class="stamp sit">SIT</span>`;
-  else if (et === 'TRADE') badge = `<span class="stamp ${vende ? 'sit' : 'start'}">${vende ? 'VENDE' : 'COMPRA'}</span>`;
-  else if (et === 'WAIVER') badge = `<span class="ticket"><b>+ AGRÉGALO</b>${p && p.add ? `<span>${p.add >= 1000 ? Math.round(p.add / 1000) + 'K' : p.add} ligas</span>` : ''}</span>`;
-  else if (et === 'LESIÓN') badge = `<span class="medic"><i class="cross"><i></i><i></i></i><b>${p ? estatus(p).toUpperCase() : 'LESIÓN'}</b>${p && parte(p) ? `<small>${esc(parte(p))}</small>` : ''}</span>`;
-  let vis = helmet(t1, num, big ? 170 : 104, lado === 'izq', 'th-hel');
-  if (p2 && et !== 'LESIÓN' && h % 2) vis = `<span class="vsx">${helmet(t1, num, 90, false, 'th-hel')}<b>VS</b>${helmet(p2.team, p2.num, 90, true, 'th-hel')}</span>`;
-  let trend = '';
-  if (et === 'TENDENCIA' && p) { const sr = (p.temp || []).filter(v => v != null).slice(-6), mx = Math.max(10, ...sr); if (sr.length > 1) trend = `<svg class="trend" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><polyline points="${sr.map((v, i) => `${Math.round(i / (sr.length - 1) * 100)},${Math.round(36 - v / mx * 32)}`).join(' ')}" fill="none" stroke="var(--c2)" stroke-width="3" vector-effect="non-scaling-stroke"/></svg>`; }
-  const claro = (x => { const v = parseInt(x.slice(1), 16); return (v >> 16) * .299 + ((v >> 8) & 255) * .587 + (v & 255) * .114 > 150; })(col(t1)[0]);
-  return `<span class="th ${et} ${lado} ${big ? 'th-big' : ''} pat${h % 3} ${claro ? 'claro' : ''}" style="${vars(t1)}">
-    <span class="th-num" aria-hidden="true">${esc(num)}</span><span class="th-field" aria-hidden="true"></span>${trend}
-    <span class="th-top"><span class="th-tag ${et}">${n.exclusivo ? '★ EXCLUSIVO' : ETQ[et]}</span>${badge}<span class="th-imp ${imp}">${flecha(imp, 14)}${imp === 'SUBE' ? 'SUBE' : imp === 'BAJA' ? 'BAJA' : 'ESTABLE'}</span></span>
-    <span class="th-mid"><span class="th-name ${largo}"><small>${esc(nomA)}</small><b>${esc(nomB)}</b><em>${esc(p ? p.pos + ' · ' + (EQUIPOS[p.team] || p.team) : EQUIPOS[t1] || '')}</em></span><span class="th-vis">${vis}</span></span>
-    <span class="th-strip">${datos.map(([a, b]) => `<span><b>${esc(a)}</b><i>${b}</i></span>`).join('')}<span class="th-brand">${fxLogo(18)}</span></span>
-  </span>`;
+  const T = tipoTarjeta(n), et = n.etiqueta, imp = n.impacto || 'NEUTRO', sem = n.semana || semActual();
+  const top = `<span class="fxc-top">${n.exclusivo ? `<span class="fxc-pill prem">★ PREMIUM</span>` : ''}<span class="fxc-pill cat ${et}">${esc(ETQ[et] || et || 'NFL')}</span><span class="fxc-imp ${imp}">${flecha(imp, 12)}${imp === 'SUBE' ? 'SUBE' : imp === 'BAJA' ? 'BAJA' : 'ESTABLE'}</span></span>`;
+  const celda = (b, i) => `<span><b>${b}</b><i>${i}</i></span>`, marca = `<span class="fxc-marca">${fxLogo(16)}</span>`;
+  let cls = '', st = '', mid = '', strip = '', fondo = '';
+  if (T.k === 'jug') {
+    const p = T.p, t = equipoDe(p) || n.equipo || '', [ap, nom] = [apellido(p.n), nombre1(p.n)];
+    cls = 'v-jug'; st = vars(t);
+    fondo = `<span class="fxc-num" aria-hidden="true">${esc(p.num != null && p.num !== 0 ? p.num : p.pos)}</span>`;
+    let extra = chipNota(n, p);
+    if (et === 'TENDENCIA') { const sr = (p.temp || []).filter(v => v != null).slice(-6), mx = Math.max(10, ...sr); if (sr.length > 1) extra = `<svg class="fxc-spark" viewBox="0 0 100 30" preserveAspectRatio="none" aria-hidden="true"><polyline points="${sr.map((v, i) => `${Math.round(i / (sr.length - 1) * 100)},${Math.round(28 - v / mx * 26)}`).join(' ')}" fill="none" stroke="currentColor" stroke-width="3" vector-effect="non-scaling-stroke"/></svg>`; }
+    mid = `<span class="fxc-txt"><small>${esc(nom)}</small><b class="${ap.length > 11 ? 'xl' : ap.length > 8 ? 'l' : ''}">${esc(ap)}</b><em>${esc(p.pos)}${t ? ' · ' + esc(EQUIPOS[t]) : ' · Agente libre'}</em>${extra ? `<span class="fxc-ver">${extra}</span>` : ''}</span><span class="fxc-vis">${helmet(t, p.num || '', big ? 170 : 110, true, 'fxc-hel')}</span>`;
+    strip = celda(esc(rw(p) !== '–' ? rw(p) : p.pos), 'S' + semActual()) + celda(p.p != null ? n1(p.p) : n1(p.prom), p.p != null ? 'PROY' : 'PROM') + (fuera(p) ? celda(esc(estatus(p).toUpperCase()), 'ESTATUS') : celda(t ? esc(rivalTxt(t)) : '–', 'RIVAL'));
+  } else if (T.k === 'grupo') {
+    const G = T.ps.slice(0, 3), pos = [...new Set(T.ps.map(x => x.pos))], tema = pos.length === 1 ? POSN[pos[0]] : (TEMA_ETQ[et] || 'FANTASY');
+    cls = 'v-grupo'; st = `--c1:${col(equipoDe(G[0]))[0]};--c3:${col(equipoDe(G[1]))[0]}`;
+    fondo = `<span class="fxc-num" aria-hidden="true">${pos.length === 1 ? pos[0] : 'FX'}</span>`;
+    mid = `<span class="fxc-txt"><small>SEMANA ${sem} · ${esc(T.ps.length)} JUGADORES</small><b class="${tema.length > 12 ? 'xl' : tema.length > 9 ? 'l' : ''}">${esc(tema)}</b>${chipNota(n) ? `<span class="fxc-ver">${chipNota(n)}</span>` : ''}</span><span class="fxc-vis pila">${G.map((x, i) => helmet(equipoDe(x), '', big ? 110 : 76, true, 'fxc-hel h' + i)).join('')}</span>`;
+    strip = G.map(x => `<span class="fxc-q">${helmet(equipoDe(x), '', 22)}<span><b>${esc(apellido(x.n))}</b><i>${esc(x.pos)}${equipoDe(x) ? ' · ' + x.team : ''}${x.p != null ? ' · ' + n1(x.p) : ''}</i></span></span>`).join('');
+  } else if (T.k === 'equipo') {
+    const t = T.t, nm = EQUIPOS[t] || t, ult = nm.split(' ').pop();
+    cls = 'v-equipo'; st = vars(t);
+    fondo = `<span class="fxc-num" aria-hidden="true">${esc(t)}</span>`;
+    mid = `<span class="fxc-txt"><small>${esc(nm.split(' ').slice(0, -1).join(' '))}</small><b class="${ult.length > 9 ? 'l' : ''}">${esc(ult)}</b><em>${esc(recordDe(t) || '')} · Semana ${sem}</em>${chipNota(n) ? `<span class="fxc-ver">${chipNota(n)}</span>` : ''}</span><span class="fxc-vis">${helmet(t, '', big ? 170 : 110, true, 'fxc-hel')}</span>`;
+    strip = celda(esc(recordDe(t) || '–'), 'RÉCORD') + celda(esc(rivalTxt(t)), 'S' + semActual()) + celda(noticiasEquipo(t).length, 'NOTICIAS');
+  } else {
+    const E = T.eqs.slice(0, 4);
+    cls = 'v-general'; st = `--c1:${col(E[0])[0]};--c3:${col(E[1])[0]}`;
+    fondo = `<span class="fxc-num" aria-hidden="true">${sem}</span>`;
+    const kw = /previa/i.test(n.titulo) ? 'LA PREVIA' : /resumen|recap/i.test(n.titulo) ? 'EL RESUMEN' : (TEMA_ETQ[et] || 'FANTASY FOOTBALL');
+    mid = `<span class="fxc-txt"><small>${kw}</small><b>SEMANA ${sem}</b>${E.length ? `<em>${E.length} ${E.length === 1 ? 'equipo' : 'equipos'} en la nota</em>` : ''}</span>${E.length ? `<span class="fxc-vis pila">${E.slice(0, 3).map((t, i) => helmet(t, '', big ? 110 : 76, true, 'fxc-hel h' + i)).join('')}</span>` : ''}`;
+    strip = E.length ? E.map(t => `<span class="fxc-q">${helmet(t, '', 22)}<span><b>${t}</b><i>${esc(recordDe(t) || '')}</i></span></span>`).join('') : celda('NFL', 'SEMANA ' + sem);
+  }
+  return `<span class="fxc ${cls} e-${et} ${big ? 'big' : ''}" style="${st}">${fondo}<span class="fxc-campo" aria-hidden="true"></span>${top}<span class="fxc-mid">${mid}</span><span class="fxc-strip">${strip}${marca}</span></span>`;
 }
 const CANDADO = '<svg class="ico-lock" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 7V5a4 4 0 0 1 8 0v2h1v8H3V7h1zm2 0h4V5a2 2 0 0 0-4 0v2z" fill="currentColor"/></svg>';
 const newsCard = (n, big) => {
@@ -319,7 +347,7 @@ function noticia(id) {
   const sec = (t, txt, cls = '') => txt ? `<section class="nsec ${cls}"><h3>${t}</h3><p>${esc(txt)}</p></section>` : '';
   return `<div class="page">${crumbs([['#/noticias', 'Noticias'], ['#/noticias?tipo=' + encodeURIComponent(n.etiqueta), ETQ[n.etiqueta]], ['', n.titulo.slice(0, 40) + (n.titulo.length > 40 ? '…' : '')]])}<div class="wrap narrowish">
     <div class="nhead">${thumb(n, true)}</div>
-    <p class="st-meta ${n.etiqueta}" style="margin-top:18px">${esc(ETQ[n.etiqueta])}${n.fecha ? ' · ' + hace(n.fecha) : ''}${n.exclusivo ? ' · ★ Exclusivo FX' : ''}</p>
+    <p class="st-meta ${n.etiqueta}" style="margin-top:18px">${esc(ETQ[n.etiqueta])}${n.fecha ? ' · ' + hace(n.fecha) : ''}${n.exclusivo ? ' · ★ Premium FX' : ''}</p>
     <h1 class="ntitle">${esc(n.titulo)}</h1>
     ${n.aviso ? `<div class="aviso-nota"><b>⚠ NOTA ACTUALIZADA</b><p>${esc(n.aviso)}</p></div>` : ''}
     <div class="kcards stagger">${(n.claves || []).map((c, k) => `<div class="kcard"><b>${k + 1}</b>${esc(c)}</div>`).join('')}${cerrada ? [2, 3].map(k => `<div class="kcard lock"><b>${k}</b><span>${CANDADO} Solo Premium</span></div>`).join('') : ''}</div>
@@ -354,7 +382,7 @@ function jugador(id) {
   const comp = P.filter(x => x.team === j.team && x.id !== id).sort((a, b) => b.pEst - a.pEst).slice(0, 6);
   const log = (j.log || []).slice().reverse(), hist = j.hist || [], max = Math.max(10, ...hist.filter(x => x != null));
   const r = rivalDe(j.team), prox = []; for (let w = semActual(); w < semActual() + 5 && w <= 18; w++) prox.push(w);
-  const cols = j.pos === 'QB' ? [['py', 'YDS PASE'], ['ptd', 'TD P'], ['int', 'INT'], ['ry', 'YDS CAR'], ['rtd', 'TD C']] : j.pos === 'K' ? [['fgm', 'FG'], ['xpm', 'PAT']]
+  const cols = j.pos === 'QB' ? [['py', 'YDS PASE'], ['ptd', 'TD P'], ['int', 'INT'], ['ry', 'YDS CAR'], ['rtd', 'TD C']] : j.pos === 'K' ? [['fgm', 'FG'], ['xpm', 'PAT']] : j.pos === 'DEF' ? [['sk', 'CAPTURAS'], ['dint', 'INT'], ['fr', 'FUM REC'], ['dtd', 'TD'], ['pa', 'PTS PERM']]
     : j.pos === 'RB' ? [['ra', 'ACAR'], ['ry', 'YDS CAR'], ['rtd', 'TD C'], ['rec', 'REC'], ['recy', 'YDS REC'], ['rectd', 'TD R']] : [['tg', 'TGT'], ['rec', 'REC'], ['recy', 'YDS REC'], ['rectd', 'TD R'], ['ry', 'YDS CAR']];
   const res = w => { const c = rivalDe(j.team, w); return c && c.fin ? `<span class="${c.pf > c.pc ? 'g' : c.pf < c.pc ? 'p' : ''}">${c.pf > c.pc ? 'G' : c.pf < c.pc ? 'P' : 'E'} ${c.pf}-${c.pc}</span>` : ''; };
   const VT = { START: 'ARRÁNCALO', FLEX: 'OPCIÓN FLEX', SIT: 'A LA BANCA', OUT: 'NO JUEGA', BYE: 'SEMANA DE DESCANSO' };
@@ -461,29 +489,52 @@ function montaTabla(p) {
 }
 
 /* ---------- líderes ---------- */
+// Puntos en vivo de la semana en curso: Sleeper directo desde el navegador (cada minuto mientras haya partidos)
+const VIVO = { w: null, pts: null, t: 0, carga: false };
+function cargaVivo(w) {
+  if (VIVO.carga || (VIVO.w === w && Date.now() - VIVO.t < 60000)) return;
+  VIVO.carga = true;
+  fetch(`https://api.sleeper.app/v1/stats/nfl/regular/${D.temporada || new Date().getFullYear()}/${w}`).then(r => r.ok ? r.json() : null).then(st => {
+    VIVO.carga = false; if (!st) return;
+    const pts = {}; for (const [id, x] of Object.entries(st)) if (x && x.pts_ppr != null && J[id]) pts[id] = [x.pts_ppr, x.pts_half_ppr, x.pts_std];
+    VIVO.w = w; VIVO.pts = pts; VIVO.t = Date.now();
+    if (/^#\/lideres/.test(location.hash)) repinta();
+  }).catch(() => { VIVO.carga = false; VIVO.t = Date.now(); VIVO.w = w; });
+}
+const semanasJugadas = () => { const set = new Set(); P.forEach(j => (j.log || []).forEach(l => { if (l.f) set.add(l.w); })); return [...set].sort((a, b) => a - b); };
 function lideres(q) {
   titulo('Líderes');
-  const modo = q.get('ver') || (SEMNUM ? 'semana' : 'temporada'), sel = q.get('pos');
-  const val = j => modo === 'semana' ? ptsSem(j) : j.total;
-  const etq = modo === 'semana' ? 'Semana ' + SEMNUM : 'Temporada';
-  const chips = `<div class="chips"><a class="chip ${modo === 'semana' ? 'on' : ''}" href="#/lideres?ver=semana${sel ? '&pos=' + sel : ''}">Semana ${esc(SEMNUM || '')}</a><a class="chip ${modo === 'temporada' ? 'on' : ''}" href="#/lideres?ver=temporada${sel ? '&pos=' + sel : ''}">Temporada</a></div>`;
+  const ahora = semActual(), jug = semanasJugadas(), vivoJuegos = G.some(g => g.estado === 'in'), empezo = G.some(g => g.estado !== 'pre') || jug.includes(ahora);
+  if (empezo) cargaVivo(ahora);
+  const ptsVivo = j => VIVO.w === ahora && VIVO.pts && VIVO.pts[j.id] ? VIVO.pts[j.id][FMT] : null;
+  const pedida = q.get('s'), modoQ = q.get('ver'), sel = q.get('pos');
+  const w = modoQ === 'temporada' ? null : +(pedida || (empezo ? ahora : (SEMNUM || ahora)));
+  let modo = w == null ? 'temporada' : w === ahora && !empezo ? 'proy' : 'semana';
+  if (modo === 'semana' && w === ahora && !P.some(j => (ptsVivo(j) ?? ptsSem(j, w)) != null)) modo = 'proy'; // aún sin puntos de la semana: se muestra la proyección
+  const val = j => modo === 'temporada' ? j.total : modo === 'proy' ? j.p : w === ahora ? (ptsVivo(j) ?? ptsSem(j, w)) : ptsSem(j, w);
+  const etq = modo === 'temporada' ? 'Temporada' : modo === 'proy' ? `Semana ${w} · Proyección` : `Semana ${w}${w === ahora && vivoJuegos ? ' · En vivo' : ''}`;
+  const qs = (x, extra = '') => `#/lideres?${x == null ? 'ver=temporada' : 's=' + x}${extra}`;
+  const semanas = [...new Set([...jug, ahora])].filter(x => x <= ahora).sort((a, b) => a - b);
+  const chips = `<div class="chips semchips">${semanas.map(x => `<a class="chip ${x === w ? 'on' : ''} ${x === ahora ? 'actual' : ''}" href="${qs(x, sel ? '&pos=' + sel : '')}">S${x}${x === ahora ? (vivoJuegos ? ' <i class="dotv"></i>VIVO' : empezo ? '' : ' · PROY') : ''}</a>`).join('')}<a class="chip ${modo === 'temporada' ? 'on' : ''}" href="${qs(null, sel ? '&pos=' + sel : '')}">Temporada</a></div>`;
+  const sub = modo === 'proy' ? `La semana ${w} aún no arranca: así se proyectan en ${FMTS[FMT]}. En cuanto empiece el primer partido, esta lista se vuelve en vivo.` : modo === 'temporada' ? `Total de la temporada en puntos ${FMTS[FMT]}.` : w === ahora ? `Puntos ${FMTS[FMT]} de la semana en curso. Se actualiza solo cada minuto mientras haya partidos.` : `Puntos ${FMTS[FMT]} de la semana ${w}.`;
+  const pts = j => n1(val(j));
   if (sel && POSICIONES[sel]) {
     const L = P.filter(j => j.pos === sel && val(j) != null).sort((a, b) => val(b) - val(a));
-    return `<div class="page">${crumbs([['#/lideres?ver=' + modo, 'Líderes'], ['', sel + ' · ' + etq]])}<div class="wrap"><section class="block">
-      <div class="head"><div><h2>Líderes ${sel} · ${etq}</h2><p class="hsub">Todos los ${POSICIONES[sel].toLowerCase()} con puntos ${FMTS[FMT]}.</p></div></div>${chips}
-      <div class="chips">${Object.keys(POSICIONES).map(x => `<a class="chip ${x === sel ? 'on' : ''}" href="#/lideres?ver=${modo}&pos=${x}">${x}</a>`).join('')}</div>
-      <div class="card scroll"><table class="tbl"><thead><tr><th>#</th><th>JUGADOR</th><th>EQUIPO</th><th>${modo === 'semana' ? 'RIVAL' : 'PARTIDOS'}</th><th class="hl">PUNTOS</th><th>PROM</th><th>TENDENCIA</th></tr></thead><tbody>
-      ${L.map((j, i) => `<tr onclick="location.hash='#/jugador/${j.id}'"><td class="n rk">${i + 1}</td><td><span class="tpl">${helmet(j.team, j.num, 28)}<span class="pname">${esc(j.n)}</span></span></td><td class="team">${esc(j.team)}</td><td class="team">${modo === 'semana' ? rivalTxt(j.team, SEMNUM) : (j.log || []).filter(l => l.f).length}</td><td class="n hl">${n1(val(j))}</td><td class="n">${n1(j.prom)}</td><td>${spark(j.hist)}</td></tr>`).join('')}</tbody></table></div>
+    return `<div class="page">${crumbs([['#/lideres', 'Líderes'], ['', sel + ' · ' + etq]])}<div class="wrap"><section class="block">
+      <div class="head"><div><h2>Líderes ${sel} · ${etq}</h2><p class="hsub">${sub}</p></div></div>${chips}
+      <div class="chips">${Object.keys(POSICIONES).map(x => `<a class="chip ${x === sel ? 'on' : ''}" href="${qs(w, '&pos=' + x)}">${x}</a>`).join('')}</div>
+      <div class="card scroll"><table class="tbl"><thead><tr><th>#</th><th>JUGADOR</th><th>EQUIPO</th><th>${modo === 'temporada' ? 'PARTIDOS' : 'RIVAL'}</th><th class="hl">${modo === 'proy' ? 'PROY' : 'PUNTOS'}</th><th>PROM</th></tr></thead><tbody>
+      ${L.map((j, i) => `<tr onclick="location.hash='#/jugador/${j.id}'"><td class="n rk">${i + 1}</td><td><span class="tpl">${helmet(j.team, j.num, 28)}<span class="pname">${esc(j.n)}</span></span></td><td class="team">${esc(j.team)}</td><td class="team">${modo === 'temporada' ? (j.log || []).filter(l => l.f).length : rivalTxt(j.team, w)}</td><td class="n hl">${pts(j)}</td><td class="n">${n1(j.prom)}</td></tr>`).join('') || '<tr><td colspan="6" class="empty">Sin datos para esta semana todavía.</td></tr>'}</tbody></table></div>
     </section></div></div>`;
   }
   return `<div class="page">${crumbs([['', 'Líderes fantasy']])}<div class="wrap"><section class="block">
-    <div class="head"><div><h2>Líderes fantasy · ${etq}</h2><p class="hsub">Los 10 mejores por posición en puntos ${FMTS[FMT]}. Toca “Ver todos” para la lista completa.</p></div></div>${chips}
+    <div class="head"><div><h2>Líderes fantasy · ${etq}</h2><p class="hsub">${sub} Toca “Ver todos” para la lista completa.</p></div></div>${chips}
     <div class="lgrid stagger">${Object.keys(POSICIONES).map(p => {
       const L = P.filter(j => j.pos === p && val(j) != null).sort((a, b) => val(b) - val(a)), top = L[0];
       return `<div class="lcol"><div class="lcol-h"><b>${p}</b><span>${POSICIONES[p]}</span></div>
-        ${top ? `<a class="lead1" href="#/jugador/${top.id}" style="${vars(top.team)}">${helmet(top.team, top.num, 58, false, 'bob')}<span><small>Nº1 · ${esc(top.team)}</small><b><i>${esc(nombre1(top.n))}</i>${esc(apellido(top.n))}</b><em class="n">${n1(val(top))} pts</em></span></a>` : ''}
-        <div class="plist">${L.slice(1, 10).map((j, i) => `<a class="lrow" href="#/jugador/${j.id}"><i class="n">${i + 2}</i>${helmet(j.team, j.num, 24)}<span>${esc(j.n)}<small>${esc(j.team)}</small></span><em class="n">${n1(val(j))}</em></a>`).join('')}</div>
-        <a class="lcol-all" href="#/lideres?ver=${modo}&pos=${p}">Ver los ${L.length} ${p} ›</a></div>`;
+        ${top ? `<a class="lead1" href="#/jugador/${top.id}" style="${vars(top.team)}">${helmet(top.team, top.num, 58, false, 'bob')}<span><small>Nº1 · ${esc(top.team)}</small><b><i>${esc(p === 'DEF' ? '' : nombre1(top.n))}</i>${esc(p === 'DEF' ? (EQUIPOS[top.team] || top.n) : apellido(top.n))}</b><em class="n">${pts(top)} pts</em></span></a>` : `<div class="empty sm">${p === 'DEF' ? 'Las defensivas llegan con la próxima actualización de datos.' : 'Sin datos todavía.'}</div>`}
+        <div class="plist">${L.slice(1, 10).map((j, i) => `<a class="lrow" href="#/jugador/${j.id}"><i class="n">${i + 2}</i>${helmet(j.team, j.num, 24)}<span>${esc(j.n)}<small>${esc(j.team)}</small></span><em class="n">${pts(j)}</em></a>`).join('')}</div>
+        ${L.length ? `<a class="lcol-all" href="${qs(w, '&pos=' + p)}">Ver los ${L.length} ${p} ›</a>` : ''}</div>`;
     }).join('')}</div></section></div></div>`;
 }
 
@@ -529,10 +580,10 @@ function lesionados(q) {
   </section></div></div>`;
 }
 function exclusivo() {
-  titulo('Exclusivo FX');
+  titulo('Premium FX');
   const L = todasNoticias().filter(n => n.exclusivo);
-  return `<div class="page">${crumbs([['', 'Exclusivo FX']])}<div class="wrap">
-    <div class="nhero" style="--c1:#3A2A05;--c2:#FFD45C"><div class="grid-in"><div class="txt"><span class="tagx" style="background:var(--gold)">★ PREMIUM FX</span><h1>Exclusivo FX</h1><p class="hero-sub">Información de nuestra red de reporteros que no vas a encontrar en otro lado, desarrollada por los expertos.</p>${L.length ? `<p class="hero-n"><b>${L.length}</b> ${L.length === 1 ? 'nota exclusiva publicada' : 'notas exclusivas publicadas'}</p>` : ''}</div></div></div>
+  return `<div class="page">${crumbs([['', 'Premium FX']])}<div class="wrap">
+    <div class="nhero" style="--c1:#3A2A05;--c2:#FFD45C"><div class="grid-in"><div class="txt"><span class="tagx" style="background:var(--gold)">★ PREMIUM FX</span><h1>Premium FX</h1><p class="hero-sub">Información de nuestra red de reporteros que no vas a encontrar en otro lado, desarrollada por los expertos.</p>${L.length ? `<p class="hero-n"><b>${L.length}</b> ${L.length === 1 ? 'nota exclusiva publicada' : 'notas exclusivas publicadas'}</p>` : ''}</div></div></div>
     ${esPremium() ? `<p class="prem-ok">★ Eres Premium: tienes acceso completo a todas las notas.</p>` : `<section class="block">${muroPremium()}</section>`}
     <section class="block"><div class="news stagger">${L.map(n => newsCard(n)).join('') || '<div class="empty">La primera nota exclusiva llega muy pronto. Mientras, revisa las <a href="#/noticias">noticias del día</a>.</div>'}</div></section>
   </div></div>`;
@@ -730,15 +781,52 @@ async function detallePartido(g) {
     const statsHTML = filas.length ? `<div class="card"><h3>Estadísticas del partido</h3><div class="tstats">${filas.map(([k, t]) => { const a = num(sv[k]), b = num(sl[k]), tot = a + b || 1, mejorA = k === 'turnovers' || k === 'totalPenaltiesYards' ? a < b : a > b;
       return `<div class="tsr"><b class="${mejorA ? 'w' : ''}">${esc(sv[k] ?? '–')}</b><span><small>${t}</small><i style="--a:${Math.round(a / tot * 100)}%;--cv:${col(g.visita.ab)[0]};--cl:${col(g.local.ab)[0]}"></i></span><b class="${!mejorA && a !== b ? 'w' : ''}">${esc(sl[k] ?? '–')}</b></div>`; }).join('')}</div></div>` : '';
     const anot = (s.scoringPlays || []).map(p => `<div class="sp">${helmet(AB[p.team && p.team.abbreviation] || (p.team && p.team.abbreviation), '', 26)}<span><small>${p.period && p.period.number ? 'Q' + p.period.number : ''} ${esc((p.clock && p.clock.displayValue) || '')} · ${esc(p.scoringType && p.scoringType.displayName || '')}</small>${esc(p.text || '')}</span><b class="n">${p.awayScore}-${p.homeScore}</b></div>`).join('');
-    const lid = (s.leaders || []).flatMap(t => (t.leaders || []).map(c => ({ ab: AB[t.team && t.team.abbreviation] || (t.team && t.team.abbreviation), cat: c.displayName, a: c.leaders && c.leaders[0] }))).filter(x => x.a);
-    const lidHTML = lid.length ? `<div class="card"><h3>Líderes del partido</h3><div class="leaders">${lid.map(x => `<div style="${vars(x.ab)}"><small>${esc(x.cat)} · ${esc(x.ab)}</small><b>${esc(x.a.athlete && x.a.athlete.displayName)}</b><span>${esc(x.a.displayValue || '')}</span></div>`).join('')}</div></div>` : '';
+    const lid = g.estado === 'pre' ? [] : (s.leaders || []).flatMap(t => (t.leaders || []).map(c => ({ ab: AB[t.team && t.team.abbreviation] || (t.team && t.team.abbreviation), cat: c.displayName, a: c.leaders && c.leaders[0] }))).filter(x => x.a);
+    const CAT = { 'Passing Yards': 'Yardas por pase', 'Rushing Yards': 'Yardas por tierra', 'Receiving Yards': 'Yardas por recepción', Sacks: 'Capturas', Tackles: 'Tacleadas', Interceptions: 'Intercepciones' };
+    const lidHTML = lid.length ? `<div class="card span2"><h3>Líderes del partido</h3><p class="sub">Estadísticas de este juego${g.estado === 'in' ? ', en vivo' : ''}.</p><div class="leaders">${lid.map(x => `<div style="${vars(x.ab)}"><small>${esc(CAT[x.cat] || x.cat)} · ${esc(x.ab)}</small><b>${esc(x.a.athlete && x.a.athlete.displayName)}</b><span>${esc(x.a.displayValue || '')}</span></div>`).join('')}</div></div>` : '';
+    // Proyecciones del partido por posición (antes del juego), con nuestros números
+    const topDe = (ab, pos) => fantasyDe(ab).filter(j => j.pos === pos && !fuera(j)).sort((x, y) => (y.p ?? y.pEst ?? 0) - (x.p ?? x.pEst ?? 0));
+    const slots = [['QB', 0], ['RB', 0], ['RB', 1], ['WR', 0], ['WR', 1], ['WR', 2], ['TE', 0], ['K', 0]];
+    const pj = j => j ? (j.p ?? j.pEst) : null;
+    const filaP = ([pos, i]) => { const a = topDe(g.visita.ab, pos)[i], b = topDe(g.local.ab, pos)[i]; if (!a && !b) return ''; const va = pj(a), vb = pj(b);
+      const lado = (j, v, gana, der) => { if (!j) return '<span class="pp-j vacio">–</span>'; const h = helmet(j.team, j.num, 26, der), t = `<span><b><i class="nm-l">${esc(j.n)}</i><i class="nm-s">${esc(apellido(j.n))}</i></b><small>${esc(rw(j) !== '–' ? rw(j) : j.pos)}${estatus(j) !== 'Sano' ? ' · ' + esc(estatus(j)) : ''}</small></span>`, e = `<em>${v != null ? n1(v) : '–'}</em>`;
+        return `<a class="pp-j ${der ? 'der' : ''} ${gana ? 'gana' : ''}" href="#/jugador/${j.id}">${der ? e + t + h : h + t + e}</a>`; };
+      return `<div class="pp-row">${lado(a, va, va != null && (vb == null || va > vb))}<span class="pp-pos">${pos}${i + 1}</span>${lado(b, vb, vb != null && (va == null || vb > va), true)}</div>`; };
+    const sumaP = ab => slots.reduce((t, [pos, i]) => t + (pj(topDe(ab, pos)[i]) || 0), 0);
+    const proyHTML = g.estado === 'pre' ? `<div class="card span2 proy-partido"><div class="head"><div><h3>Proyecciones del partido</h3><p class="sub">Proyección fantasy ${FMTS[FMT]} de los titulares de cada equipo, posición por posición.</p></div></div>
+      <div class="pp-head" style="--cv:${col(g.visita.ab)[0]};--cl:${col(g.local.ab)[0]}"><span>${helmet(g.visita.ab, '', 30)}<b>${g.visita.ab}</b><em>${n1(sumaP(g.visita.ab))}</em></span><small>PROY. TOTAL</small><span class="der"><em>${n1(sumaP(g.local.ab))}</em><b>${g.local.ab}</b>${helmet(g.local.ab, '', 30, true)}</span></div>
+      <div class="pp-list">${slots.map(filaP).join('')}</div></div>` : '';
+    // Líneas de apuesta: lo que publica la casa en ESPN; los cálculos implícitos son matemáticos, a partir de esas líneas
     const pc = (s.pickcenter || [])[0], pred = s.predictor;
-    const preHTML = (pc || pred) && g.estado === 'pre' ? `<div class="card"><h3>Antes del kickoff</h3><div class="leaders">${pc && pc.details ? `<div><small>LÍNEA</small><b>${esc(pc.details)}</b><span>${esc(pc.provider && pc.provider.name || '')}</span></div>` : ''}${pc && pc.overUnder ? `<div><small>TOTAL DE PUNTOS</small><b class="n">${esc(pc.overUnder)}</b><span>Over/Under</span></div>` : ''}${pred && pred.homeTeam ? `<div><small>PROBABILIDAD ${esc(g.local.ab)}</small><b class="n">${n1(+pred.homeTeam.gameProjection)}%</b><span>Modelo ESPN</span></div><div><small>PROBABILIDAD ${esc(g.visita.ab)}</small><b class="n">${n1(+pred.awayTeam.gameProjection)}%</b><span>Modelo ESPN</span></div>` : ''}</div></div>` : '';
-    box.innerHTML = `<section class="block grid g2" style="padding-top:22px">${preHTML}${statsHTML}${lidHTML}${anot ? `<div class="card"><h3>Jugadas de anotación</h3><div class="splist">${anot}</div></div>` : ''}</section>`;
+    const ml = o => o && o.moneyLine != null ? +o.moneyLine : null, mlTxt = v => v == null ? '–' : (v > 0 ? '+' : '') + v;
+    const probML = v => v == null ? null : v < 0 ? -v / (-v + 100) * 100 : 100 / (v + 100) * 100;
+    const momio = v => v == null || v === '' ? '' : ` <i>(${(+v > 0 ? '+' : '') + v})</i>`;
+    let preHTML = '';
+    if ((pc || pred) && g.estado === 'pre') {
+      const aO = (pc && pc.awayTeamOdds) || {}, hO = (pc && pc.homeTeamOdds) || {}, T = pc && pc.overUnder != null ? +pc.overUnder : null;
+      const spr = pc && pc.spread != null ? +pc.spread : null; // negativo = favorito el local
+      const favLocal = hO.favorite || (spr != null && spr < 0), favAb = favLocal ? g.local.ab : g.visita.ab, dogAb = favLocal ? g.visita.ab : g.local.ab, s0 = spr != null ? Math.abs(spr) : null;
+      const imp = T != null && s0 != null ? { [favAb]: (T + s0) / 2, [dogAb]: (T - s0) / 2 } : null;
+      const mA = ml(aO), mH = ml(hO), pA = probML(mA), pH = probML(mH);
+      const ps = pc && pc.pointSpread, tt = pc && pc.total;
+      const abre = ps && ps.home && ps.home.open && ps.home.open.line != null ? `${g.local.ab} ${ps.home.open.line}` : '';
+      const tiles = [
+        pc && pc.details ? ['LÍNEA (SPREAD)', `${esc(pc.details)}`, `${esc(g.visita.ab)} ${aO.spreadOdds != null ? mlTxt(+aO.spreadOdds) : ''} · ${esc(g.local.ab)} ${hO.spreadOdds != null ? mlTxt(+hO.spreadOdds) : ''}`.replace(/ · $/, '')] : null,
+        mA != null || mH != null ? ['MONEYLINE', `${esc(g.visita.ab)} ${mlTxt(mA)} · ${esc(g.local.ab)} ${mlTxt(mH)}`, 'Ganador del partido'] : null,
+        T != null ? ['TOTAL DE PUNTOS', `O/U ${n1(T)}`, `Over${momio(pc.overOdds)} · Under${momio(pc.underOdds)}`] : null,
+        imp ? [`PUNTOS IMPLÍCITOS`, `${esc(g.visita.ab)} ${n1(imp[g.visita.ab])} · ${esc(g.local.ab)} ${n1(imp[g.local.ab])}`, 'Calculado con la línea y el total'] : null,
+        pA != null && pH != null ? ['PROBABILIDAD POR MOMIO', `${esc(g.visita.ab)} ${n1(pA)}% · ${esc(g.local.ab)} ${n1(pH)}%`, 'Implícita en la moneyline'] : null,
+        pred && pred.homeTeam ? ['MODELO ESPN', `${esc(g.visita.ab)} ${n1(+pred.awayTeam.gameProjection)}% · ${esc(g.local.ab)} ${n1(+pred.homeTeam.gameProjection)}%`, 'Probabilidad de ganar'] : null,
+        abre ? ['LÍNEA DE APERTURA', esc(abre), tt && tt.over && tt.over.open && tt.over.open.line ? `Total abrió en ${esc(String(tt.over.open.line).replace(/^o/i, ''))}` : 'Cómo abrió la semana'] : null
+      ].filter(Boolean);
+      preHTML = tiles.length ? `<div class="card span2 apuestas"><div class="head"><div><h3>Antes del kickoff</h3><p class="sub">Líneas de ${esc((pc && pc.provider && pc.provider.name) || 'las casas de apuestas')}. Solo informativo.</p></div></div><div class="odds">${tiles.map(([k, v, d]) => `<div><small>${k}</small><b>${v}</b><span>${d}</span></div>`).join('')}</div></div>` : '';
+    }
+    box.innerHTML = `<section class="block grid g2" style="padding-top:22px">${preHTML}${proyHTML}${statsHTML}${lidHTML}${anot ? `<div class="card"><h3>Jugadas de anotación</h3><div class="splist">${anot}</div></div>` : ''}</section>`;
     if (!box.textContent.trim()) box.innerHTML = '';
   } catch (e) { box.innerHTML = ''; }
 }
 function refrescaVista() {
+  if (/^#\/lideres/.test(location.hash) && G.some(g => g.estado === 'in')) cargaVivo(semActual());
   if (/^#\/partidos/.test(location.hash)) { app.innerHTML = partidos(new URLSearchParams(location.hash.split('?')[1] || '')); return; }
   const box = $('#home-matches'); if (box) box.innerHTML = homeMatches();
 }
@@ -833,7 +921,7 @@ function cuenta(q = new URLSearchParams()) {
   const favs = [...FAV].map(id => J[id]).filter(Boolean).sort((a, b) => b.pEst - a.pEst);
   if (q.get('pago') && !esPremium()) esperaPago();
   const hasta = PERFIL && PERFIL.premium_hasta ? new Date(PERFIL.premium_hasta).toLocaleDateString('es-MX', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
-  const tPrem = esPremium() ? `<div class="card prem-card"><h3>★ Premium FX</h3><p>${PERFIL.premium_tipo === 'temporada' ? 'Pase de temporada' : 'Suscripción mensual'}${hasta ? (PERFIL.premium_tipo === 'temporada' ? ' · válido hasta el ' : ' · próxima renovación: ') + hasta : ''}</p><p><a class="btn sm" href="#/exclusivo">Leer el Exclusivo</a>${PAGO.portal && PERFIL.premium_tipo !== 'temporada' ? ` <a class="btn ghost sm" href="${PAGO.portal}" target="_blank" rel="noopener">Administrar o cancelar</a>` : ''}</p></div>`
+  const tPrem = esPremium() ? `<div class="card prem-card"><h3>★ Premium FX</h3><p>${PERFIL.premium_tipo === 'temporada' ? 'Pase de temporada' : 'Suscripción mensual'}${hasta ? (PERFIL.premium_tipo === 'temporada' ? ' · válido hasta el ' : ' · próxima renovación: ') + hasta : ''}</p><p><a class="btn sm" href="#/premium">Leer el Exclusivo</a>${PAGO.portal && PERFIL.premium_tipo !== 'temporada' ? ` <a class="btn ghost sm" href="${PAGO.portal}" target="_blank" rel="noopener">Administrar o cancelar</a>` : ''}</p></div>`
     : q.get('pago') ? `<div class="card prem-card"><h3>★ Activando tu Premium…</h3><p class="px blink" style="color:var(--gold)">CONFIRMANDO PAGO</p><p class="sub">Tarda unos segundos.</p></div>`
     : `<div class="card prem-card"><h3>★ Hazte Premium</h3><p class="sub">Desbloquea todas las notas exclusivas de nuestra red de reporteros.</p>${(PAGO.mes || PAGO.temporada) ? planes() : '<small class="muro-pie">Las suscripciones abren en unos días.</small>'}</div>`;
   return `<div class="page">${crumbs([['', 'Mi cuenta']])}<div class="wrap narrowish"><section class="block">
@@ -901,7 +989,7 @@ function baja(q) {
 }
 
 /* =============================== HERRAMIENTAS =============================== */
-const SEM_FIN = 17, REEMPLAZO = { QB: 14, RB: 32, WR: 40, TE: 14, K: 14 };
+const SEM_FIN = 17, REEMPLAZO = { QB: 14, RB: 32, WR: 40, TE: 14, K: 14, DEF: 14 };
 const ppj = j => { const jug = (j.temp || []).filter(v => v != null); if (!jug.length) return j.p ?? 0; const u3 = jug.slice(-3), r = u3.reduce((a, b) => a + b, 0) / u3.length; return .5 * j.prom + .3 * r + .2 * (j.p ?? j.prom); };
 let _rep = {};
 const nivelRep = pos => { const k = pos + FMT; if (_rep[k] == null) { const L = P.filter(j => j.pos === pos && j.team !== 'FA' && (j.temp || []).filter(v => v != null).length >= 2).map(ppj).sort((a, b) => b - a); _rep[k] = L[(REEMPLAZO[pos] || 14) - 1] || 0; } return _rep[k]; };
@@ -1006,13 +1094,13 @@ function router() {
   const [ruta, qs] = ((location.hash || window.FX_RUTA || '').slice(1) || '/').split('?');
   const q = new URLSearchParams(qs || ''), [, seccion, a, b] = ruta.split('/');
   const R = { '': () => inicio(), noticias: () => noticias(q), reportajes: () => noticias(q), noticia: () => noticia(a), reportaje: () => noticia(a), jugador: () => jugador(a), comparar: () => comparar(a, b), posicion: () => posicion(a),
-    equipos: () => equipos(), equipo: () => equipo(a), partidos: () => partidos(q), partido: () => partido(a), lideres: () => lideres(q), media: () => media(), exclusivo: () => exclusivo(), temporada: () => temporada(), semana: () => semana(a), tendencias: () => tendencias(), lesionados: () => lesionados(q),
+    equipos: () => equipos(), equipo: () => equipo(a), partidos: () => partidos(q), partido: () => partido(a), lideres: () => lideres(q), media: () => media(), exclusivo: () => exclusivo(), premium: () => exclusivo(), temporada: () => temporada(), semana: () => semana(a), tendencias: () => tendencias(), lesionados: () => lesionados(q),
     cuenta: () => cuenta(q), herramientas: () => herramientas(), trade: () => trade(q), privacidad: () => privacidad(), baja: () => baja(q) };
   app.innerHTML = (R[seccion || ''] || noEncontrado)();
   if (ruta !== _rutaPrev) { _rutaPrev = ruta; app.classList.remove('entra'); void app.offsetWidth; app.classList.add('entra'); }
   scrollTo({ top: 0 });
   vista(ruta + (seccion === 'noticias' || seccion === 'lideres' || seccion === 'lesionados' ? (qs ? '?' + qs : '') : ''));
-  const act = s => s === (seccion || '') || (seccion === 'noticia' && s === 'noticias') || (seccion === 'partido' && s === 'partidos') || (seccion === 'semana' && s === 'temporada') || (seccion === 'trade' && s === 'herramientas');
+  const act = s => s === (seccion || '') || (seccion === 'exclusivo' && s === 'premium') || (seccion === 'noticia' && s === 'noticias') || (seccion === 'partido' && s === 'partidos') || (seccion === 'semana' && s === 'temporada') || (seccion === 'trade' && s === 'herramientas');
   document.querySelectorAll('.links a').forEach(l => l.classList.toggle('act', act(l.dataset.s)));
   if ($('.links').classList.contains('open')) menu(false, true);
   if (seccion === 'posicion') montaTabla(a);
@@ -1034,7 +1122,7 @@ function buscador() {
   const inp = $('#q'), box = $('#sugg'); let sel = -1, res = [];
   const pinta = () => {
     const v = inp.value.trim().toLowerCase();
-    box.innerHTML = res.map((j, i) => `<a href="#/jugador/${j.id}" class="${i === sel ? 'sel' : ''}">${helmet(j.team, j.num, 44)}<span>${esc(j.n)}</span><span class="pos">${esc(j.pos)}</span><span class="team">${esc(j.team)}</span></a>`).join('')
+    box.innerHTML = res.map((j, i) => `<a href="#/jugador/${j.id}" class="${i === sel ? 'sel' : ''}">${helmet(j.team, j.num, 44)}<span>${esc(j.n)}</span><span class="pos">${j.pos === 'DEF' ? 'DEF' : esc(j.pos)}</span><span class="team">${esc(j.team)}</span></a>`).join('')
       + Object.keys(EQUIPOS).filter(t => v.length > 1 && (t.toLowerCase() === v || EQUIPOS[t].toLowerCase().includes(v))).slice(0, 3).map(t => `<a href="#/equipo/${t}">${helmet(t, '', 44)}<span>${EQUIPOS[t]}</span><span class="team">Equipo</span></a>`).join('');
     if (!box.innerHTML && v.length > 1) box.innerHTML = `<div class="sugg-vacio">Sin resultados para «${esc(inp.value.trim())}». Prueba con el apellido o el nombre del equipo.</div>`;
     box.classList.toggle('on', !!box.innerHTML);

@@ -10,7 +10,7 @@ const log = (...a) => { const m = `[${((Date.now() - t0) / 1000).toFixed(1)}s] `
 const conTiempo = (ms = 25000) => AbortSignal.timeout(ms);
 const KEY = process.env.GEMINI_API_KEY;
 const RSS = ['https://www.cbssports.com/rss/headlines/nfl/', 'https://sports.yahoo.com/nfl/rss/'];
-const POS = ['QB', 'RB', 'WR', 'TE', 'K'];
+const POS = ['QB', 'RB', 'WR', 'TE', 'K', 'DEF'];
 const TOP = 420, HIST = 5, CUOTA_DIA = 40, CADA_IA_MIN = 115;
 const leer = (f, d) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch { return d; } };
 const guardar = (f, o, pretty) => { fs.mkdirSync(f.split('/').slice(0, -1).join('/'), { recursive: true }); fs.writeFileSync(f, JSON.stringify(o, null, pretty ? 2 : 0)); };
@@ -144,7 +144,7 @@ async function sleeper() {
   const todos = {};
   for (const [k, p] of Object.entries(raw || {})) {
     if (!p.active || !POS.includes(p.position)) continue;
-    todos[k] = { n: p.full_name, pos: p.position, team: p.team, num: p.number, edad: p.age, exp: p.years_exp, col: p.college, alt: p.height, peso: p.weight, espn: p.espn_id ? String(p.espn_id) : null,
+    todos[k] = { n: p.position === 'DEF' ? `${p.last_name || k} D/ST` : p.full_name || [p.first_name, p.last_name].filter(Boolean).join(' ') || k, pos: p.position, team: p.team, num: p.number, edad: p.age, exp: p.years_exp, col: p.college, alt: p.height, peso: p.weight, espn: p.espn_id ? String(p.espn_id) : null,
       rank: p.search_rank && p.search_rank < 9999999 ? p.search_rank : null, inj: p.injury_status, injParte: p.injury_body_part, injNota: p.injury_notes, depth: p.depth_chart_order };
   }
   const semanas = []; for (let w = 1; w <= semana; w++) semanas.push(w);
@@ -154,7 +154,7 @@ async function sleeper() {
   const proy = {};
   for (const w of [semana, semana + 1]) {
     let p = proyeccionesDe(await get(`https://api.sleeper.app/v1/projections/nfl/regular/${temporada}/${w}`));
-    if (!Object.keys(p).length) p = proyeccionesDe(await get(`https://api.sleeper.app/projections/nfl/${temporada}/${w}?season_type=regular&position[]=QB&position[]=RB&position[]=WR&position[]=TE&position[]=K`));
+    if (!Object.keys(p).length) p = proyeccionesDe(await get(`https://api.sleeper.app/projections/nfl/${temporada}/${w}?season_type=regular&position[]=QB&position[]=RB&position[]=WR&position[]=TE&position[]=K&position[]=DEF`));
     proy[w] = p;
   }
   const add = await get('https://api.sleeper.app/v1/players/nfl/trending/add?lookback_hours=24&limit=25') || [];
@@ -221,10 +221,10 @@ const totalPPR = k => s.semanas.reduce((a, w) => a + ((s.stats[w] && s.stats[w][
 const candidatos = Object.keys(s.todos).filter(k => s.todos[k].team || addM[k] || dropM[k])
   .map(k => [k, (PW[k] && PW[k].pts_ppr || 0) * 3 + totalPPR(k) / Math.max(1, s.semanas.length) + (s.todos[k].rank ? Math.max(0, 300 - s.todos[k].rank) / 30 : 0)])
   .sort((a, b) => b[1] - a[1]).map(x => x[0]);
-const set = new Set(candidatos.slice(0, TOP)); [...Object.keys(addM), ...Object.keys(dropM)].forEach(k => s.todos[k] && set.add(k));
+const set = new Set(candidatos.slice(0, TOP)); Object.keys(s.todos).filter(k => s.todos[k].pos === 'DEF' && s.todos[k].team).forEach(k => set.add(k)); // las 32 defensivas siempre [...Object.keys(addM), ...Object.keys(dropM)].forEach(k => s.todos[k] && set.add(k));
 
 const linea = (w, k) => { const x = s.stats[w] && s.stats[w][k]; if (!x || x.pts_ppr == null) return null;
-  const st = {}; [['py', 'pass_yd'], ['ptd', 'pass_td'], ['int', 'pass_int'], ['ra', 'rush_att'], ['ry', 'rush_yd'], ['rtd', 'rush_td'], ['tg', 'rec_tgt'], ['rec', 'rec'], ['recy', 'rec_yd'], ['rectd', 'rec_td'], ['fl', 'fum_lost'], ['fgm', 'fgm'], ['xpm', 'xpm']].forEach(([a, b]) => { if (x[b]) st[a] = Math.round(x[b]); });
+  const st = {}; [['py', 'pass_yd'], ['ptd', 'pass_td'], ['int', 'pass_int'], ['ra', 'rush_att'], ['ry', 'rush_yd'], ['rtd', 'rush_td'], ['tg', 'rec_tgt'], ['rec', 'rec'], ['recy', 'rec_yd'], ['rectd', 'rec_td'], ['fl', 'fum_lost'], ['fgm', 'fgm'], ['xpm', 'xpm'], ['sk', 'sack'], ['dint', 'int'], ['fr', 'fum_rec'], ['dtd', 'def_td'], ['pa', 'pts_allow'], ['sf', 'safe']].forEach(([a, b]) => { if (x[b]) st[a] = Math.round(x[b]); });
   return { f: [r1(x.pts_ppr), r1(x.pts_half_ppr), r1(x.pts_std)], st }; };
 const espnA = {}; // espn id -> sleeper id
 const jugadores = [...set].map(k => {

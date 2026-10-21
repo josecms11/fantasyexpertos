@@ -81,7 +81,7 @@ for (const n of archivo) {
   const desc = corta(n.exclusivo ? (n.claves || []).join(' ') : (n.contexto || (n.claves || []).join(' ')));
   const fecha = n.fecha || new Date().toISOString();
   const rel = (n.jugadores || []).map(x => jugadores.find(j => String(j.id) === String(x) || j.n === x)).filter(Boolean);
-  const cuerpo = `<article><p><small>${esc(n.exclusivo ? 'Exclusivo FX' : (n.etiqueta || 'Noticia'))} · ${esc(fecha.slice(0, 10))}</small></p>
+  const cuerpo = `<article><p><small>${esc(n.exclusivo ? 'Premium FX' : (n.etiqueta || 'Noticia'))} · ${esc(fecha.slice(0, 10))}</small></p>
 <h1>${esc(n.titulo)}</h1>
 ${(n.claves || []).length ? `<ul>${n.claves.map(c => `<li>${esc(c)}</li>`).join('')}</ul>` : ''}
 ${n.exclusivo ? '<p>Nota exclusiva de Fantasy Expertos.</p>' : `${n.contexto ? `<h2>Qué pasó</h2><p>${esc(n.contexto)}</p>` : ''}${n.fantasy ? `<h2>Impacto en fantasy</h2><p>${esc(n.fantasy)}</p>` : ''}${n.equipo_impacto ? `<h2>Qué cambia para el equipo</h2><p>${esc(n.equipo_impacto)}</p>` : ''}${n.accion ? `<p><b>Qué hacer:</b> ${esc(n.accion)}</p>` : ''}`}
