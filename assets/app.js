@@ -242,7 +242,7 @@ function inicio() {
   <div class="wrap">${bienvenida()}
     <section class="front">
       <div class="front-main">${lead ? newsCard(lead, true) : '<div class="empty">Las noticias llegan en el próximo ciclo.</div>'}<div class="front-sec">${sec.map(n => newsCard(n)).join('')}</div></div>
-      <aside class="front-side">${panelStarts()}${panelMedico()}</aside>
+      <aside class="front-side">${panelMios()}${panelStarts()}${panelMedico()}</aside>
     </section>
   </div>
   <div class="ticker"><div class="tag">ÚLTIMA HORA</div><div class="view"><div class="ticker-track">${tickerItems()}${tickerItems()}</div></div></div>
@@ -330,6 +330,7 @@ function noticia(id) {
         ${eqs.length ? `<div class="card"><h3>Equipos</h3><div class="eqchips">${eqs.map(t => `<a class="eqchip" href="#/equipo/${t}" style="${vars(t)}">${helmet(t, '', 30)}<span>${EQUIPOS[t]}<small>${recordDe(t)} · S${semActual()} ${rivalTxt(t)}</small></span></a>`).join('')}</div></div>` : ''}
       </aside>
     </div>
+    <details class="reporte"><summary>⚑ Reportar un error en esta nota</summary><form id="f-reporte" class="fform" data-nota="${esc(n.id)}"><textarea name="m" maxlength="900" required placeholder="¿Qué dato está mal? Ej.: el jugador está lesionado, el rival no es ese…"></textarea><button class="btn sm" type="submit">Enviar reporte</button><small class="msg"></small></form></details>
     <div class="navnotas">${ant ? `<a class="nn" href="#/noticia/${ant.id}"><small>‹ Noticia anterior</small><b>${esc(ant.titulo)}</b></a>` : '<span></span>'}${sig ? `<a class="nn r" href="#/noticia/${sig.id}"><small>Siguiente noticia ›</small><b>${esc(sig.titulo)}</b></a>` : ''}</div>
     ${ctaRedes()}
     ${rel.length ? `<section class="block"><div class="head"><h2>Relacionadas</h2></div><div class="news stagger">${rel.map(x => newsCard(x)).join('')}</div></section>` : ''}
@@ -358,7 +359,7 @@ function jugador(id) {
         <div class="tags"><a class="pos" href="#/posicion/${j.pos}">${esc(rw(j) !== '–' ? rw(j) + ' · S' + semActual() : j.pos)}</a>${EQUIPOS[j.team] ? `<a class="team" href="#/equipo/${j.team}">${esc(EQUIPOS[j.team])} ›</a>` : '<span class="team">Agente libre</span>'}${pillSt(j)}</div>
         <h1><small>${esc(nombre1(j.n))}</small>${esc(apellido(j.n))}</h1>
         <div class="meters">${medidores(j)}</div>
-        <div class="actions">${vecinos[0] ? `<a class="btn" href="#/comparar/${id}/${vecinos[0].id}">⚔ Comparar</a>` : ''}<a class="btn ghost" href="#/posicion/${j.pos}">Ranking ${esc(j.pos)}</a></div>
+        <div class="actions">${vecinos[0] ? `<a class="btn" href="#/comparar/${id}/${vecinos[0].id}">⚔ Comparar</a>` : ''}<a class="btn ghost" href="#/posicion/${j.pos}">Ranking ${esc(j.pos)}</a>${botonSeguir(id)}</div>
       </div>
     </div>
     ${st !== 'Sano' || j.les ? `<div class="alert ${st}"><b>${st === 'Duda' ? 'EN DUDA' : st === 'Fuera' ? (fueraTemp(j) ? 'EN RESERVA DE LESIONADOS' : 'FUERA') : 'REPORTE MÉDICO'}${parte(j) ? ' · ' + esc(parte(j)).toUpperCase() : ''}</b>
@@ -731,15 +732,223 @@ function refrescaVista() {
   const box = $('#home-matches'); if (box) box.innerHTML = homeMatches();
 }
 
+/* =============================== CUENTAS (Supabase) =============================== */
+const SB_URL = 'https://eafzqftobwrtqdnawncn.supabase.co', SB_KEY = 'sb_publishable_T9r9COQ5f9h1QKa9rqaUyA_hWXOYUqc';
+const SB_LLAVE = 'sb-eafzqftobwrtqdnawncn-auth-token';
+let SB = null, YO = null, PERFIL = null, FAV = new Set(), _sbCarga = null;
+const ls = (k, v) => { try { if (v === undefined) return localStorage.getItem(k); if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) { return null; } };
+const cargaSB = () => _sbCarga || (_sbCarga = new Promise((ok, no) => {
+  const s = document.createElement('script'); s.src = 'assets/vendor/supabase-2.117.2.js';
+  s.onload = () => {
+    SB = window.supabase.createClient(SB_URL, SB_KEY, { auth: { flowType: 'pkce', detectSessionInUrl: true, persistSession: true } });
+    SB.auth.onAuthStateChange((ev, ses) => { const antes = YO && YO.id; YO = ses ? ses.user : null; pintaCuentaBtn(); if ((YO && YO.id) !== antes) setTimeout(cargaPerfil, 0); });
+    ok(SB);
+  };
+  s.onerror = () => { _sbCarga = null; no(new Error('sin conexión')); };
+  document.head.appendChild(s);
+}));
+async function cargaPerfil() {
+  if (!YO) { PERFIL = null; FAV = new Set(); repinta(); return; }
+  const [p, f] = await Promise.all([SB.from('perfiles').select('*').eq('id', YO.id).maybeSingle(), SB.from('favoritos').select('jugador')]);
+  PERFIL = p.data || { nombre: (YO.email || '').split('@')[0] };
+  FAV = new Set((f.data || []).map(x => x.jugador));
+  const pend = ls('fx-sigue'); if (pend && J[pend] && !FAV.has(pend)) { ls('fx-sigue', null); await SB.from('favoritos').insert({ jugador: pend }); FAV.add(pend); }
+  if (/[?&]code=/.test(location.search)) history.replaceState(null, '', location.pathname + (location.hash || '#/cuenta'));
+  pintaCuentaBtn(); repinta();
+}
+const repinta = () => { if (!D) return; const y = scrollY; router(); scrollTo(0, y); };
+const ICONO_CUENTA = `<svg width="16" height="16" viewBox="0 0 8 8" shape-rendering="crispEdges" aria-hidden="true"><rect x="2" y="0" width="4" height="4" fill="currentColor"/><rect x="1" y="5" width="6" height="3" fill="currentColor"/></svg>`;
+function pintaCuentaBtn() {
+  const b = $('#btn-cuenta'); if (!b) return;
+  const ini = YO ? String((PERFIL && PERFIL.nombre) || YO.email || '?').trim().charAt(0).toUpperCase() : '';
+  b.classList.toggle('in', !!YO); b.title = YO ? 'Mi cuenta' : 'Entrar';
+  b.innerHTML = YO ? `<i>${esc(ini)}</i>` : `${ICONO_CUENTA}<span>ENTRAR</span>`;
+}
+async function toggleFav(id, btn) {
+  if (!YO) { ls('fx-sigue', id); location.hash = '#/cuenta'; return; }
+  const sigue = FAV.has(id);
+  const r = sigue ? await SB.from('favoritos').delete().eq('jugador', id) : await SB.from('favoritos').insert({ jugador: id });
+  if (r.error) return;
+  sigue ? FAV.delete(id) : FAV.add(id);
+  if (btn) { btn.classList.toggle('on', !sigue); btn.textContent = !sigue ? '★ Siguiendo' : '☆ Seguir'; }
+}
+const botonSeguir = id => `<button type="button" class="btn ghost seguir ${FAV.has(id) ? 'on' : ''}" data-id="${id}">${FAV.has(id) ? '★ Siguiendo' : '☆ Seguir'}</button>`;
+const panelMios = () => {
+  const L = [...FAV].map(id => J[id]).filter(Boolean).sort((a, b) => b.pEst - a.pEst).slice(0, 8);
+  return L.length ? `<div class="panel mios"><div class="panel-h"><b>★ Mis jugadores</b><a href="#/cuenta">Editar ›</a></div>${L.map(j => `<a class="ml" href="#/jugador/${j.id}">${helmet(j.team, j.num, 28)}<span class="ml-n"><b>${esc(j.n)}</b><small>${esc(j.pos)} · ${rivalTxt(j.team)} · ${n1(j.p ?? j.pEst)} pts</small></span>${fxPill(j)}</a>`).join('')}</div>` : '';
+};
+function cuenta() {
+  titulo('Mi cuenta');
+  if (!SB) { cargaSB().then(() => SB.auth.getSession()).then(() => { if (/^#\/cuenta/.test(location.hash)) repinta(); }).catch(() => { const a = $('#app'); if (a) a.innerHTML = '<div class="wrap empty">No pudimos conectar. Intenta de nuevo en un momento.</div>'; }); return '<div class="wrap loading"><p class="px blink" style="color:var(--accent)">CARGANDO…</p></div>'; }
+  if (!YO) return `<div class="page">${crumbs([['', 'Entrar']])}<div class="wrap"><section class="auth card">
+    <div class="auth-h">${fxLogo(44)}<h1>Tu cuenta FX</h1></div>
+    <p>Sigue a tus jugadores, conecta tu liga de Sleeper y recibe el resumen semanal. Es gratis.</p>
+    <form id="f-login" class="fform"><label>Tu correo<input type="email" name="email" required placeholder="tu@correo.com" autocomplete="email"></label><button class="btn" type="submit">Enviarme enlace de acceso</button><small class="msg">Te llega un enlace a tu correo para entrar, sin contraseñas.</small></form>
+  </section></div></div>`;
+  const favs = [...FAV].map(id => J[id]).filter(Boolean).sort((a, b) => b.pEst - a.pEst);
+  return `<div class="page">${crumbs([['', 'Mi cuenta']])}<div class="wrap narrowish"><section class="block">
+    <div class="head"><div><h2>Hola, ${esc((PERFIL && PERFIL.nombre) || '')}</h2><p class="hsub">${esc(YO.email || '')}</p></div><button class="btn ghost sm" type="button" id="salir">Cerrar sesión</button></div>
+    <div class="grid g2">
+      <div class="card"><h3>★ Mis jugadores</h3>${favs.length ? `<div class="plist">${favs.map(j => prow(j, `<em class="n">${n1(j.p ?? j.pEst)}</em>${fxPill(j)}`)).join('')}</div>` : '<p class="sub">Aún no sigues a nadie. Entra a la ficha de un jugador y toca ☆ Seguir: aparecerán aquí y en tu portada.</p>'}</div>
+      <div class="card"><h3>Tu perfil</h3><form id="f-perfil" class="fform"><label>Nombre<input name="nombre" maxlength="40" value="${esc((PERFIL && PERFIL.nombre) || '')}"></label><label>Usuario de Sleeper<input name="sleeper" maxlength="40" placeholder="opcional" value="${esc((PERFIL && PERFIL.sleeper) || '')}"></label><button class="btn sm" type="submit">Guardar</button><small class="msg"></small></form>
+        ${PERFIL && PERFIL.sleeper ? `<a class="btn ghost sm" style="margin-top:12px" href="#/liga">Ver mi liga ›</a>` : ''}</div>
+    </div></section></div></div>`;
+}
+
+/* =============================== HERRAMIENTAS =============================== */
+const SEM_FIN = 17, REEMPLAZO = { QB: 14, RB: 32, WR: 40, TE: 14, K: 14 };
+const ppj = j => { const jug = (j.temp || []).filter(v => v != null); if (!jug.length) return j.p ?? 0; const u3 = jug.slice(-3), r = u3.reduce((a, b) => a + b, 0) / u3.length; return .5 * j.prom + .3 * r + .2 * (j.p ?? j.prom); };
+let _rep = {};
+const nivelRep = pos => { const k = pos + FMT; if (_rep[k] == null) { const L = P.filter(j => j.pos === pos && j.team !== 'FA' && (j.temp || []).filter(v => v != null).length >= 2).map(ppj).sort((a, b) => b - a); _rep[k] = L[(REEMPLAZO[pos] || 14) - 1] || 0; } return _rep[k]; };
+function valorROS(j) {
+  let juegos = 0; if (j.team !== 'FA') for (let w = semActual(); w <= SEM_FIN; w++) if (rivalDe(j.team, w)) juegos++;
+  if (j.inj === 'Out' || j.inj === 'Doubtful') juegos = Math.max(0, juegos - 1);
+  const f = fueraTemp(j) ? .25 : estatus(j) === 'Duda' ? .95 : 1, p = ppj(j);
+  return { ppj: p, juegos, valor: (Math.max(0, p - nivelRep(j.pos)) + p * .08) * juegos * f };
+}
+function herramientas() {
+  titulo('Herramientas de fantasy');
+  const t = (h, ico, n, d) => `<a class="tool card" href="${h}"><span class="tool-i">${ico}</span><b>${n}</b><p>${d}</p><span class="all">Abrir ›</span></a>`;
+  return `<div class="page">${crumbs([['', 'Herramientas']])}<div class="wrap"><section class="block">
+    <div class="head"><div><h2>Herramientas FX</h2><p class="hsub">Decide con datos: trades, tu liga y cara a cara. Todo en ${FMTS[FMT]} (cámbialo arriba).</p></div></div>
+    <div class="grid g3">${t('#/trade', '⇄', 'Analizador de trades', 'Agrega lo que das y lo que recibes. Te decimos si te conviene, con el valor de cada jugador para el resto de la temporada.')}
+      ${t('#/liga', '▣', 'Mi liga de Sleeper', 'Escribe tu usuario de Sleeper: alineación óptima de la semana, cambios urgentes y lo mejor disponible en tu liga.')}
+      ${t('#/posicion/QB', '★', 'Start / Sit de la semana', 'Rankings por proyección con veredicto START, FLEX o SIT y dificultad del rival.')}</div>
+  </section></div></div>`;
+}
+let TR = { da: [], recibe: [] };
+function trade(q) {
+  titulo('Analizador de trades');
+  TR = { da: (q.get('da') || '').split(',').filter(id => J[id]), recibe: (q.get('recibe') || '').split(',').filter(id => J[id]) };
+  const lado = (k, t) => `<div class="card tr-lado"><h3>${t}</h3><div class="tr-lista" id="tr-${k}">${listaTrade(k)}</div><form class="tr-add" data-k="${k}" autocomplete="off"><input list="fx-todos" name="j" placeholder="Agregar jugador…" aria-label="Agregar jugador a ${t}"><button class="btn sm" type="submit">+</button></form></div>`;
+  return `<div class="page">${crumbs([['#/herramientas', 'Herramientas'], ['', 'Analizador de trades']])}<div class="wrap narrowish"><section class="block">
+    <div class="head"><div><h2>Analizador de trades</h2><p class="hsub">Valor de cada jugador para lo que resta de la temporada regular (hasta la semana ${SEM_FIN}) en ${FMTS[FMT]}.</p></div></div>
+    <div class="tr-grid">${lado('da', 'TÚ DAS')}${lado('recibe', 'TÚ RECIBES')}</div>
+    <div id="tr-res">${resTrade()}</div>
+    <datalist id="fx-todos">${P.slice().sort((a, b) => b.pEst - a.pEst).map(j => `<option value="${esc(j.n)}">${esc(j.pos + ' · ' + j.team)}</option>`).join('')}</datalist>
+  </section></div></div>`;
+}
+const listaTrade = k => TR[k].length ? TR[k].map(id => { const j = J[id], v = valorROS(j);
+  return `<div class="tr-j" style="${vars(j.team)}">${helmet(j.team, j.num, 30)}<a class="tr-n" href="#/jugador/${j.id}"><b>${esc(j.n)}</b><small>${esc(j.pos)} · ${esc(j.team)} · ${n1(v.ppj)} pts/juego · ${v.juegos} juegos${estatus(j) !== 'Sano' ? ' · ' + estatus(j).toUpperCase() : ''}</small></a><em class="n">${Math.round(v.valor)}</em><button type="button" class="tr-x" data-k="${k}" data-id="${id}" aria-label="Quitar a ${esc(j.n)}">×</button></div>`; }).join('') : '<p class="sub">Sin jugadores todavía.</p>';
+function resTrade() {
+  if (!TR.da.length || !TR.recibe.length) return `<div class="verdict show"><b>${fxLogo(20)} ARMA EL TRADE</b><p>Agrega al menos un jugador de cada lado.</p></div>`;
+  const a = TR.da.reduce((s, id) => s + valorROS(J[id]).valor, 0), b = TR.recibe.reduce((s, id) => s + valorROS(J[id]).valor, 0);
+  const m = Math.max(a, b, 1), dif = (b - a) / m;
+  const v = dif > .12 ? ['ACEPTA', 'Recibes más valor del que entregas.'] : dif < -.12 ? ['RECHAZA', 'Entregas más valor del que recibes.'] : ['PAREJO', 'El valor es similar: decide según la posición que más necesitas.'];
+  const extra = [];
+  if (TR.recibe.length > TR.da.length) extra.push(`Recibes ${TR.recibe.length} por ${TR.da.length}: tendrás que soltar a ${TR.recibe.length - TR.da.length} de tu banca.`);
+  if (TR.da.length > TR.recibe.length) extra.push(`Das ${TR.da.length} por ${TR.recibe.length}: consolidas y liberas lugar para waivers.`);
+  [...TR.da, ...TR.recibe].map(id => J[id]).filter(j => estatus(j) !== 'Sano').forEach(j => extra.push(`${j.n} está ${fueraTemp(j) ? 'en reserva de lesionados' : estatus(j).toLowerCase()}; ya está descontado en su valor.`));
+  return `<div class="card tr-res"><div class="tr-bars"><div><small>TÚ DAS</small><span><i style="width:${(a / m * 100).toFixed(1)}%"></i></span><b class="n">${Math.round(a)}</b></div><div class="r"><small>TÚ RECIBES</small><span><i style="width:${(b / m * 100).toFixed(1)}%"></i></span><b class="n">${Math.round(b)}</b></div></div>
+    <div class="verdict show tv-${v[0]}"><b>${fxLogo(20)} ${v[0]}</b><p>${esc(v[1] + ' ' + extra.join(' '))}</p></div>
+    <p class="sub" style="margin-top:12px">Valor = lo que aporta por encima de un jugador que encontrarías en waivers, en los juegos que le quedan. Combina su promedio, sus últimas 3 semanas, la proyección de esta semana y su estatus médico.</p></div>`;
+}
+const pintaTrade = () => { ['da', 'recibe'].forEach(k => { const el = $('#tr-' + k); if (el) el.innerHTML = listaTrade(k); }); const r = $('#tr-res'); if (r) r.innerHTML = resTrade(); history.replaceState(null, '', `${location.pathname}${location.search}#/trade?da=${TR.da.join(',')}&recibe=${TR.recibe.join(',')}`); };
+
+/* ---------- Mi liga (Sleeper) ---------- */
+const SLP = 'https://api.sleeper.app/v1/';
+const sget = u => fetch(SLP + u).then(r => { if (!r.ok) throw new Error('red'); return r.json(); });
+const ELEG = { QB: ['QB'], RB: ['RB'], WR: ['WR'], TE: ['TE'], K: ['K'], FLEX: ['RB', 'WR', 'TE'], WRRB_FLEX: ['RB', 'WR'], REC_FLEX: ['WR', 'TE'], SUPER_FLEX: ['QB', 'RB', 'WR', 'TE'] };
+const SLOT = { SUPER_FLEX: 'SFLEX', WRRB_FLEX: 'W/R', REC_FLEX: 'W/T', DEF: 'DEF' };
+function alineacion(slots, L) {
+  const disp = L.filter(juega).sort((a, b) => b.pEst - a.pEst), usados = new Set(), res = Array(slots.length).fill(null);
+  slots.map((s, i) => [s, i]).sort((a, b) => (ELEG[a[0]] || []).length - (ELEG[b[0]] || []).length).forEach(([s, i]) => {
+    const e = ELEG[s]; if (!e) return; const j = disp.find(x => !usados.has(x.id) && e.includes(x.pos)); if (j) { usados.add(j.id); res[i] = j; } });
+  return slots.map((s, i) => ({ slot: s, j: res[i] }));
+}
+function liga(q) {
+  titulo('Mi liga de Sleeper');
+  const u = q.get('u') || (PERFIL && PERFIL.sleeper) || ls('fx-sleeper') || '';
+  if (u) setTimeout(() => cargaLiga(u, q.get('l')), 0);
+  return `<div class="page">${crumbs([['#/herramientas', 'Herramientas'], ['', 'Mi liga']])}<div class="wrap narrowish"><section class="block">
+    <div class="head"><div><h2>Mi liga de Sleeper</h2><p class="hsub">Escribe tu usuario de Sleeper: te decimos a quién alinear esta semana, qué cambiar y qué hay disponible en tu liga.</p></div></div>
+    <form id="f-liga" class="fform inline" autocomplete="off"><input name="u" value="${esc(u)}" placeholder="Tu usuario de Sleeper" aria-label="Usuario de Sleeper" required><button class="btn sm" type="submit">Cargar mi liga</button></form>
+    <div id="liga-res">${u ? '<p class="px blink" style="margin-top:22px;color:var(--accent)">CARGANDO LIGA…</p>' : ''}</div>
+  </section></div></div>`;
+}
+async function cargaLiga(u, lid) {
+  const box = () => $('#liga-res'); if (!box()) return;
+  try {
+    const us = await sget('user/' + encodeURIComponent(u.trim()));
+    if (!us || !us.user_id) throw new Error('nouser');
+    ls('fx-sleeper', u.trim());
+    const ligas = (await sget(`user/${us.user_id}/leagues/nfl/${D.temporada}`)) || [];
+    if (!box()) return;
+    if (!ligas.length) { box().innerHTML = `<div class="empty">${esc(u)} no tiene ligas de ${D.temporada} en Sleeper.</div>`; return; }
+    const L = ligas.find(x => x.league_id === lid) || ligas[0];
+    const [rosters, users] = await Promise.all([sget(`league/${L.league_id}/rosters`), sget(`league/${L.league_id}/users`)]);
+    if (box()) box().innerHTML = pintaLiga(us, ligas, L, rosters || [], users || []);
+  } catch (e) { if (box()) box().innerHTML = `<div class="empty">${e.message === 'nouser' ? 'No encontramos ese usuario en Sleeper. Revisa cómo está escrito.' : 'No pudimos conectar con Sleeper. Intenta de nuevo en un momento.'}</div>`; }
+}
+function pintaLiga(us, ligas, L, rosters, users) {
+  const mio = rosters.find(r => r.owner_id === us.user_id || (r.co_owners || []).includes(us.user_id));
+  const rec = L.scoring_settings ? +L.scoring_settings.rec || 0 : 1, fmtL = rec >= 1 ? 0 : rec > 0 ? 1 : 2;
+  const chips = ligas.length > 1 ? `<div class="chips" style="margin-top:18px">${ligas.map(x => `<a class="chip ${x.league_id === L.league_id ? 'on' : ''}" href="#/liga?u=${encodeURIComponent(us.username || us.display_name)}&l=${x.league_id}">${esc(x.name)}</a>`).join('')}</div>` : '';
+  if (!mio) return chips + `<div class="empty">No encontramos tu equipo en ${esc(L.name)}.</div>`;
+  const ids = mio.players || [], mios = ids.map(id => J[id]).filter(Boolean), def = ids.find(id => EQUIPOS[id]);
+  const fueraTop = ids.filter(id => !J[id] && !EQUIPOS[id]).length;
+  const slots = (L.roster_positions || []).filter(s => !['BN', 'IR', 'TAXI'].includes(s));
+  const opt = alineacion(slots, mios), optIds = new Set(opt.filter(x => x.j).map(x => x.j.id));
+  const titulares = new Set(mio.starters || []);
+  const entra = opt.filter(x => x.j && !titulares.has(x.j.id)).map(x => x.j);
+  const sale = (mio.starters || []).map(id => J[id]).filter(j => j && !optIds.has(j.id));
+  const banca = mios.filter(j => !optIds.has(j.id)).sort((a, b) => b.pEst - a.pEst);
+  const ocupados = new Set(rosters.flatMap(r => r.players || []));
+  const libres = ['QB', 'RB', 'WR', 'TE'].map(p => [p, P.filter(j => j.pos === p && j.team !== 'FA' && !ocupados.has(j.id) && !fueraTemp(j)).map(j => [j, valorROS(j)]).sort((a, b) => b[1].valor - a[1].valor).slice(0, 3)]);
+  const yo = users.find(x => x.user_id === us.user_id) || {}, nombreEq = (yo.metadata && yo.metadata.team_name) || yo.display_name || us.display_name;
+  const st = mio.settings || {}, w = semActual();
+  const motivo = j => { const v = veredicto(j).v; return v === 'OUT' ? 'está OUT' : v === 'BYE' ? 'descansa' : `proyecta ${n1(j.pEst)}`; };
+  return `${chips}
+    <div class="card liga-h" style="margin-top:18px">${fxLogo(30)}<div><b>${esc(L.name)}</b><small>${esc(nombreEq)} · ${st.wins ?? 0}-${st.losses ?? 0}${st.ties ? '-' + st.ties : ''} · ${L.total_rosters} equipos · ${FMTS[fmtL]}</small></div></div>
+    ${fmtL !== FMT ? `<p class="aviso-fmt">Tu liga se juega en <b>${FMTS[fmtL]}</b> y estás viendo ${FMTS[FMT]}. <button type="button" class="chip" data-fmt="${fmtL}">Usar ${FMTS[fmtL]}</button></p>` : ''}
+    ${entra.length || sale.length ? `<div class="card cambios"><h3>⚠ Cambios para la semana ${w}</h3>${sale.map(j => `<p class="cb sale">▼ Saca a <a href="#/jugador/${j.id}">${esc(j.n)}</a>: ${motivo(j)}.</p>`).join('')}${entra.map(j => `<p class="cb entra">▲ Mete a <a href="#/jugador/${j.id}">${esc(j.n)}</a>: ${motivo(j)} ${rivalTxt(j.team)}.</p>`).join('')}</div>` : `<div class="card cambios ok"><h3>✓ Tu alineación está bien</h3><p class="sub">Tus titulares en Sleeper coinciden con la alineación óptima de la semana ${w}.</p></div>`}
+    <div class="grid g2" style="margin-top:18px">
+      <div class="card"><h3>Alineación sugerida · S${w}</h3><div class="plist">${opt.map(x => `<div class="slotrow"><i class="slot">${SLOT[x.slot] || x.slot}</i>${x.j ? prow(x.j, `<em class="n">${n1(x.j.pEst)}</em>${fxPill(x.j)}`) : x.slot === 'DEF' && def ? `<a class="prow" href="#/equipo/${def}">${helmet(def, '', 34)}<span class="meta"><span class="pname">${esc(EQUIPOS[def])}</span><small>Defensa · ${rivalTxt(def)}</small></span></a>` : '<span class="sub">Sin jugador disponible</span>'}</div>`).join('')}</div></div>
+      <div class="card"><h3>Banca</h3><div class="plist">${banca.length ? banca.map(j => prow(j, `<em class="n">${n1(j.pEst)}</em>${fxPill(j)}`)).join('') : '<p class="sub">Sin jugadores en la banca.</p>'}</div>${fueraTop ? `<p class="sub" style="margin-top:10px">${fueraTop} jugador(es) de tu equipo están fuera de nuestro top ${P.length} y no se muestran.</p>` : ''}</div>
+    </div>
+    <div class="card" style="margin-top:18px"><h3>Disponibles en tu liga</h3><p class="sub">Lo mejor que nadie tiene en ${esc(L.name)}, por valor para el resto de la temporada.</p>
+      <div class="grid g4 libres">${libres.map(([p, L2]) => `<div><b class="lpos">${p}</b>${L2.length ? L2.map(([j, v]) => prow(j, `<em class="n">${n1(v.ppj)}</em>`)).join('') : '<p class="sub">Nada relevante.</p>'}</div>`).join('')}</div></div>
+    <p class="sub" style="margin-top:14px"><a href="#/trade">¿Pensando en un trade? Analízalo aquí ›</a></p>`;
+}
+
+/* ---------- formularios y botones (delegados) ---------- */
+document.addEventListener('submit', async e => {
+  const f = e.target; if (!f.id && !f.classList.contains('tr-add')) return;
+  const msg = t => { const m = $('.msg', f); if (m) m.textContent = t; };
+  if (f.id === 'f-login') { e.preventDefault(); const email = f.email.value.trim(); msg('Enviando…');
+    const base = location.origin + location.pathname.replace(/(jugador|noticia|equipo)\/.*$/, '');
+    const { error } = await (await cargaSB()).auth.signInWithOtp({ email, options: { emailRedirectTo: base } });
+    msg(error ? (/rate|limit/i.test(error.message) ? 'Demasiados intentos. Espera unos minutos.' : 'No se pudo enviar. Revisa tu correo.') : '✓ Listo. Revisa tu correo (y la carpeta de spam) y abre el enlace en este mismo navegador.'); }
+  else if (f.id === 'f-perfil') { e.preventDefault(); const d = { nombre: f.nombre.value.trim().slice(0, 40), sleeper: f.sleeper.value.trim().slice(0, 40) || null };
+    const { error } = await SB.from('perfiles').update(d).eq('id', YO.id); if (!error) { PERFIL = { ...PERFIL, ...d }; pintaCuentaBtn(); } msg(error ? 'No se pudo guardar.' : '✓ Guardado'); }
+  else if (f.id === 'f-news') { e.preventDefault(); const email = f.email.value.trim().toLowerCase(); msg('Guardando…');
+    try { const { error } = await (await cargaSB()).from('suscriptores').insert({ email, fuente: 'sitio' }); msg(!error || error.code === '23505' ? '✓ ¡Listo! Te llegará el resumen de cada semana.' : 'Revisa tu correo e intenta de nuevo.'); if (!error) f.reset(); } catch (er) { msg('Sin conexión. Intenta de nuevo.'); } }
+  else if (f.id === 'f-reporte') { e.preventDefault(); const t = f.m.value.trim(); if (!t) return; msg('Enviando…');
+    try { const { error } = await (await cargaSB()).from('reportes').insert({ nota: f.dataset.nota, mensaje: t.slice(0, 900), user_id: YO ? YO.id : null }); msg(error ? 'No se pudo enviar.' : '✓ Gracias. Lo revisamos.'); if (!error) f.reset(); } catch (er) { msg('Sin conexión. Intenta de nuevo.'); } }
+  else if (f.id === 'f-liga') { e.preventDefault(); location.hash = '#/liga?u=' + encodeURIComponent(f.u.value.trim()); }
+  else if (f.classList.contains('tr-add')) { e.preventDefault(); const v = f.j.value.trim().toLowerCase(); if (!v) return;
+    const j = P.find(x => x.n.toLowerCase() === v) || P.filter(x => x.n.toLowerCase().includes(v)).sort((a, b) => b.pEst - a.pEst)[0];
+    if (j && !TR.da.includes(j.id) && !TR.recibe.includes(j.id)) { TR[f.dataset.k].push(j.id); pintaTrade(); }
+    f.reset(); const i = $(`.tr-add[data-k="${f.dataset.k}"] input`); if (i) i.focus(); }
+});
+document.addEventListener('click', e => {
+  const x = e.target.closest('.tr-x, .seguir, #salir, [data-fmt]'); if (!x) return;
+  if (x.classList.contains('tr-x')) { TR[x.dataset.k] = TR[x.dataset.k].filter(id => id !== x.dataset.id); pintaTrade(); }
+  else if (x.classList.contains('seguir')) toggleFav(x.dataset.id, x);
+  else if (x.id === 'salir') SB.auth.signOut();
+  else if (x.dataset.fmt) { FMT = +x.dataset.fmt; ls('fx-fmt', String(FMT)); aplicaFormato(); repinta(); }
+});
+
 /* =============================== ROUTER =============================== */
 function router() {
   const [ruta, qs] = ((location.hash || window.FX_RUTA || '').slice(1) || '/').split('?');
   const q = new URLSearchParams(qs || ''), [, seccion, a, b] = ruta.split('/');
   const R = { '': () => inicio(), noticias: () => noticias(q), reportajes: () => noticias(q), noticia: () => noticia(a), reportaje: () => noticia(a), jugador: () => jugador(a), comparar: () => comparar(a, b), posicion: () => posicion(a),
-    equipos: () => equipos(), equipo: () => equipo(a), partidos: () => partidos(q), partido: () => partido(a), lideres: () => lideres(q), media: () => media(), exclusivo: () => exclusivo(), temporada: () => temporada(), semana: () => semana(a), tendencias: () => tendencias(), lesionados: () => lesionados(q) };
+    equipos: () => equipos(), equipo: () => equipo(a), partidos: () => partidos(q), partido: () => partido(a), lideres: () => lideres(q), media: () => media(), exclusivo: () => exclusivo(), temporada: () => temporada(), semana: () => semana(a), tendencias: () => tendencias(), lesionados: () => lesionados(q),
+    cuenta: () => cuenta(), herramientas: () => herramientas(), trade: () => trade(q), liga: () => liga(q) };
   app.innerHTML = (R[seccion || ''] || noEncontrado)();
   scrollTo({ top: 0 });
-  const act = s => s === (seccion || '') || (seccion === 'noticia' && s === 'noticias') || (seccion === 'partido' && s === 'partidos') || (seccion === 'semana' && s === 'temporada');
+  const act = s => s === (seccion || '') || (seccion === 'noticia' && s === 'noticias') || (seccion === 'partido' && s === 'partidos') || (seccion === 'semana' && s === 'temporada') || (['trade', 'liga'].includes(seccion) && s === 'herramientas');
   document.querySelectorAll('.tabbar a, .links a').forEach(l => l.classList.toggle('act', act(l.dataset.s)));
   $('.links').classList.remove('open');
   if (seccion === 'posicion') montaTabla(a);
@@ -798,7 +1007,8 @@ Promise.all([cargar('hoy.json', null), cargar('jugadores.json', []), cargar('arc
   D.resumenes = resumenes || {}; D.redes = redes || {}; D.videos = videos || {}; D.cal = calendario; D.externas = externas || [];
   aplicaFormato();
   document.querySelectorAll('.fmt button').forEach((b, i) => b.onclick = () => { FMT = i; try { localStorage.setItem('fx-fmt', i); } catch (e) {} aplicaFormato(); router(); });
-  const pie = $('#pie-redes'); if (pie) pie.innerHTML = `<div class="follow"><div><h3>Síguenos</h3><p>Tips diarios, el podcast y los videos de cada semana.</p></div>${grupoRedes()}</div>`;
+  const pie = $('#pie-redes'); if (pie) pie.innerHTML = `<div class="newsbox"><div><h3>${fxLogo(26)} El resumen FX, cada semana</h3><p>Start/Sit, waivers y lo que tienes que saber antes del domingo. Gratis, directo a tu correo.</p></div><form id="f-news" class="fform inline"><input type="email" name="email" required placeholder="tu@correo.com" aria-label="Tu correo" autocomplete="email"><button class="btn sm" type="submit">Suscribirme</button><small class="msg"></small></form></div><div class="follow"><div><h3>Síguenos</h3><p>Tips diarios, el podcast y los videos de cada semana.</p></div>${grupoRedes()}</div>`;
+  pintaCuentaBtn(); if (ls(SB_LLAVE) || /[?&]code=/.test(location.search)) cargaSB().catch(() => {});
   const fu = $('#fuentes'); if (fu) fu.textContent = 'Datos: ' + (hoy.fuentes || ['Sleeper', 'ESPN']).join(', ') + '.';
   buscador(); cargaPartidos();
   const mas = $('#tb-mas'); if (mas) mas.onclick = () => { $('.links').classList.toggle('open'); mas.classList.toggle('act'); };
