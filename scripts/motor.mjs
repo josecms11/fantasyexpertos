@@ -218,7 +218,7 @@ for (const pos of POS) {
 const addM = Object.fromEntries(s.add.map(t => [t.player_id, t.count])), dropM = Object.fromEntries(s.drop.map(t => [t.player_id, t.count]));
 const PW = s.proy[semJuego] || {};
 const totalPPR = k => s.semanas.reduce((a, w) => a + ((s.stats[w] && s.stats[w][k] && s.stats[w][k].pts_ppr) || 0), 0);
-const candidatos = Object.keys(s.todos).filter(k => s.todos[k].team || addM[k] || dropM[k])
+const candidatos = Object.keys(s.todos).filter(k => s.todos[k].pos !== 'DEF' && (s.todos[k].team || addM[k] || dropM[k]))
   .map(k => [k, (PW[k] && PW[k].pts_ppr || 0) * 3 + totalPPR(k) / Math.max(1, s.semanas.length) + (s.todos[k].rank ? Math.max(0, 300 - s.todos[k].rank) / 30 : 0)])
   .sort((a, b) => b[1] - a[1]).map(x => x[0]);
 const set = new Set(candidatos.slice(0, TOP)); Object.keys(s.todos).filter(k => s.todos[k].pos === 'DEF' && s.todos[k].team).forEach(k => set.add(k)); // las 32 defensivas siempre [...Object.keys(addM), ...Object.keys(dropM)].forEach(k => s.todos[k] && set.add(k));
