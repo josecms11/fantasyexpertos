@@ -998,6 +998,9 @@ function menu(on, quieto) {
   if (b) b.setAttribute('aria-expanded', on ? 'true' : 'false');
   if (on) { const a = L.querySelector('a.act') || L.querySelector('a[href]'); a && a.focus({ preventScroll: true }); } else if (!quieto && b) b.focus();
 }
+// El menú funciona desde el primer momento, aunque los datos sigan cargando
+document.addEventListener('click', e => { const t = e.target.closest && e.target.closest('#menu-btn,#menu-x,#menu-bg'); if (t) { e.preventDefault(); menu(t.id === 'menu-btn'); } });
+addEventListener('hashchange', () => { const L = $('.links'); if (L && L.classList.contains('open')) menu(false, true); });
 let _rutaPrev = null;
 function router() {
   const [ruta, qs] = ((location.hash || window.FX_RUTA || '').slice(1) || '/').split('?');
@@ -1074,7 +1077,6 @@ Promise.all([cargar('hoy.json', null), cargar('jugadores.json', []), cargar('arc
   const fu = $('#fuentes'); if (fu) fu.textContent = 'Datos: ' + (hoy.fuentes || ['Sleeper', 'ESPN']).join(', ') + '.';
   buscador(); cargaPartidos();
   if (innerWidth < 520) { const qi = $('#q'); if (qi) qi.placeholder = 'Buscar'; }
-  $('#menu-btn').onclick = () => menu(true); $('#menu-x').onclick = () => menu(false); $('#menu-bg').onclick = () => menu(false);
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && $('.links').classList.contains('open')) menu(false); });
   addEventListener('hashchange', router);
   router();
