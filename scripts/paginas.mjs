@@ -103,11 +103,15 @@ for (const t of Object.keys(EQUIPOS)) {
     ld: { '@context': 'https://schema.org', '@type': 'SportsTeam', name: EQUIPOS[t], sport: 'American football' } }));
 }
 
+// ---------- Aviso de privacidad (página fija para Google y Stripe) ----------
+escribe('privacidad/', pagina({ ruta: 'privacidad/', titulo: `Aviso de privacidad | ${SITIO}`, desc: 'Cómo Fantasy Expertos usa y protege los datos de tu cuenta, tus jugadores favoritos, el resumen semanal y los pagos de Premium.', ruteo: '#/privacidad',
+  cuerpo: '<h1>Aviso de privacidad</h1><p>Fantasy Expertos usa tu correo, el nombre que elijas y los jugadores que sigues para darte acceso a tu cuenta, guardar tus favoritos y mandarte el resumen semanal si lo tienes activado. Los pagos de Premium los procesa Stripe; nunca vemos ni guardamos tu tarjeta. Puedes darte de baja o borrar tu cuenta cuando quieras desde Mi cuenta.</p>' }));
+
 // Jugadores que ya no están en la lista: se borra su página (las noticias se conservan siempre)
 if (fs.existsSync('jugador')) for (const d of fs.readdirSync('jugador')) if (!escritas.has('jugador/' + d)) { fs.rmSync('jugador/' + d, { recursive: true, force: true }); cambios++; }
 
 // ---------- Sitemap y robots ----------
-const urls = [['', 'hourly', '1.0'],
+const urls = [['', 'hourly', '1.0'], ['privacidad/', 'yearly', '0.2'],
   ...archivo.filter(n => n && n.titulo && n.id).map(n => [urlN(n), 'weekly', '0.8', (n.fecha || '').slice(0, 10)]),
   ...jugadores.map(j => [urlJ(j), 'daily', '0.7']), ...Object.keys(EQUIPOS).map(t => [urlE(t), 'daily', '0.6'])];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(([u, f, p, m]) => `<url><loc>${RAIZ}${u}</loc>${m ? `<lastmod>${m}</lastmod>` : ''}<changefreq>${f}</changefreq><priority>${p}</priority></url>`).join('\n')}\n</urlset>\n`;
