@@ -245,8 +245,8 @@ function verificar(n) {
   const motivo = [];
   if (p && fueraTemp(p) && ['START', 'WAIVER', 'ARRANCA'].includes(n.etiqueta)) motivo.push(`${p.n} está ${estadoTxt(p)}`);
   if (p && p.inj === 'Out' && n.etiqueta === 'START') motivo.push(`${p.n} está OUT`);
-  const reciente = archivo.filter(a => Date.now() - Date.parse(a.fecha || 0) < 36 * 3600e3);
-  if (reciente.some(a => parecido(a.titulo, n.titulo) > .6 || (ids[0] && a.jugadores && a.jugadores[0] === ids[0] && a.etiqueta === n.etiqueta))) motivo.push('duplicada');
+  const reciente = archivo.filter(a => Date.now() - Date.parse(a.fecha || 0) < 7 * 864e5);
+  if (reciente.some(a => parecido(a.titulo, n.titulo) > .5 || (ids[0] && a.jugadores && a.jugadores[0] === ids[0] && a.etiqueta === n.etiqueta))) motivo.push('duplicada');
   return motivo;
 }
 if (tocaIA) {
@@ -274,9 +274,14 @@ const rep = leer('data/reportero.json', { notas: [] });
 const pendientes = (rep.notas || []).filter(x => !x.procesada);
 let exclusivas = [];
 if (pendientes.length && quedan() > 0) {
-  const ex = await gemini(VOZ + 'Estas son notas EXCLUSIVAS de nuestro reportero. Conviértelas en notas premium "Exclusivo FX": más profundas, con contexto y una recomendación accionable. Forma: ' + FORMATO + '\nNOTAS:\n' + pendientes.map(x => x.texto).join('\n---\n').slice(0, 50000));
-  exclusivas = ((ex && ex.noticias) || []).map((n, i) => { const ids = ligar(n); return { id: `x${sello}${String(i).padStart(2, '0')}`, fecha: ahora, semana: semJuego, exclusivo: true, ...n, equipos: [...new Set([n.equipo, ...(n.equipos || []), ...ids.map(id => (J[id] || {}).team)].filter(Boolean))], jugadores: ids }; });
-  if (exclusivas.length) { rep.notas.forEach(x => x.procesada = true); guardar('data/reportero.json', rep, true); }
+  // Una llamada por correo para que ningún punto se pierda; cada tema del reportero se vuelve su propia nota
+  for (const nota of pendientes) {
+    const ex = await gemini(VOZ + `Esta es una nota EXCLUSIVA de nuestro reportero (puede traer errores de dedo en nombres: corrígelos al nombre oficial). Conviértela en notas premium "Exclusivo FX".
+REGLAS: cubre ABSOLUTAMENTE TODOS los puntos del texto, sin omitir ninguno. Genera una nota por cada tema: cada récord es una nota; cada grupo de trade targets por posición (QB, RB, WR, TE) es una nota con TODOS los nombres de ese grupo y si es comprar o vender; si trae el calendario o previa de la semana, haz una nota "Previa de la semana" con los partidos y horarios clave. Usa la etiqueta TRADE para comprar/vender, TENDENCIA para récords y previas, y las demás cuando apliquen. En "claves" resume el punto; en "accion" di exactamente qué hacer (comprar, vender, mantener, arrancar). Máximo 16 notas. Forma: ` + FORMATO.replace('START | SIT | WAIVER | LESIÓN | TENDENCIA', 'START | SIT | WAIVER | LESIÓN | TENDENCIA | TRADE') + `\nNOTA DEL REPORTERO (${nota.asunto || ''}):\n` + nota.texto.slice(0, 30000), 20000);
+    const lista = ((ex && ex.noticias) || []).map((n, i) => { const ids = ligar(n); return { id: `x${sello}${String(exclusivas.length + i).padStart(2, '0')}`, fecha: ahora, semana: semJuego, exclusivo: true, fuente: nota.fecha, ...n, equipos: [...new Set([n.equipo, ...(n.equipos || []), ...ids.map(id => (J[id] || {}).team)].filter(Boolean))], jugadores: ids }; });
+    if (lista.length) { exclusivas.push(...lista); nota.procesada = true; nota.notas = lista.length; log('Exclusivas de', nota.asunto, '→', lista.length, 'notas'); }
+  }
+  guardar('data/reportero.json', rep, true);
 }
 // re-ligar equipos de noticias viejas que no los tenían
 archivo.forEach(n => { if (!n.equipos) n.equipos = [...new Set([n.equipo, ...(n.jugadores || []).map(id => (J[id] || {}).team)].filter(Boolean))]; if (n.etiqueta === 'ARRANCA') n.etiqueta = 'START'; if (n.etiqueta === 'BANCA') n.etiqueta = 'SIT'; });
