@@ -1030,3 +1030,23 @@ a:hover .th .th-vis .th-hel{transform:translateY(-5px) rotate(-4deg) scale(1.04)
 @media (max-width:820px){.cta-cuenta span{display:none}.cta-cuenta{width:38px;padding:0;justify-content:center}.top-row{gap:10px}}
 @media (max-width:520px){.g4{grid-template-columns:1fr}.tr-bars>div{grid-template-columns:86px 1fr 46px}}
 @media (max-width:440px){.fmt button{padding:0 7px;font-size:12px}.cta-cuenta,.cta-cuenta.in{width:34px;height:34px}.top-row{gap:8px}.logo svg{width:38px}}
+.btn-google{width:100%;height:48px;display:flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;border:1px solid var(--line2);background:#fff;color:#1F1F1F;font:600 16px var(--f);cursor:pointer;margin-top:8px;transition:transform .15s}
+.btn-google:hover{transform:translateY(-1px)}
+.o-sep{display:flex;align-items:center;gap:12px;margin:18px 0;color:var(--mute);font-size:13px}
+.o-sep::before,.o-sep::after{content:'';flex:1;height:1px;background:var(--line2)}
+.auth-alt{margin:16px 0 0;font-size:14px;color:var(--mute)}
+.lnk{background:none;border:0;padding:0;color:var(--accent);font:inherit;font-weight:600;cursor:pointer;text-decoration:underline}
+.auth .fform .btn{align-self:stretch}
+.fform .chk{flex-direction:row;align-items:flex-start;gap:10px;text-transform:none;letter-spacing:0;font-family:var(--f);font-weight:500;font-size:15px;color:var(--soft);cursor:pointer}
+.fform .chk input{width:20px;height:20px;padding:0;margin:1px 0 0;accent-color:var(--accent);flex:none}
+.legal{margin:4px 0 0;font-size:13px;color:var(--mute);line-height:1.45}
+.legal a{color:var(--soft)}
+.nb-cta{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.nb-cta small{color:var(--soft);font-size:14px}
+.nb-ok{font-family:var(--fc);font-size:22px;color:var(--accent)}
+.zona-borrar{margin-top:22px;padding-top:14px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:4px}
+.zona-borrar small{color:var(--mute);font-size:13px}
+.lnk.peligro{color:var(--bad);align-self:flex-start}
+.legaltxt h1{font-family:var(--fc);font-size:36px;margin:0}
+.legaltxt h2{font-family:var(--fc);font-size:22px;margin:22px 0 6px}
+.legaltxt p{color:var(--soft);line-height:1.6;margin:0}

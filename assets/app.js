@@ -735,13 +735,15 @@ function refrescaVista() {
 /* =============================== CUENTAS (Supabase) =============================== */
 const SB_URL = 'https://eafzqftobwrtqdnawncn.supabase.co', SB_KEY = 'sb_publishable_T9r9COQ5f9h1QKa9rqaUyA_hWXOYUqc';
 const SB_LLAVE = 'sb-eafzqftobwrtqdnawncn-auth-token';
-let SB = null, YO = null, PERFIL = null, FAV = new Set(), _sbCarga = null;
+let SB = null, YO = null, PERFIL = null, FAV = new Set(), _sbCarga = null, MODO = 'entrar', RECUPERA = false;
+const baseURL = () => location.origin + location.pathname.replace(/(jugador|noticia|equipo)\/.*$/, '');
+const ERR = m => /invalid login/i.test(m) ? 'Correo o contraseña incorrectos.' : /already registered|already been registered/i.test(m) ? 'Ese correo ya tiene cuenta. Entra con tu contraseña.' : /at least|weak|short/i.test(m) ? 'La contraseña es muy corta: usa mínimo 8 caracteres.' : /not confirmed/i.test(m) ? 'Primero confirma tu correo con el enlace que te mandamos.' : /rate|limit|security purposes/i.test(m) ? 'Demasiados intentos. Espera unos minutos.' : /provider is not enabled/i.test(m) ? 'El acceso con Google se activa muy pronto. Por ahora usa tu correo.' : 'No se pudo completar. Intenta de nuevo.';
 const ls = (k, v) => { try { if (v === undefined) return localStorage.getItem(k); if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) { return null; } };
 const cargaSB = () => _sbCarga || (_sbCarga = new Promise((ok, no) => {
   const s = document.createElement('script'); s.src = 'assets/vendor/supabase-2.117.2.js';
   s.onload = () => {
     SB = window.supabase.createClient(SB_URL, SB_KEY, { auth: { flowType: 'pkce', detectSessionInUrl: true, persistSession: true } });
-    SB.auth.onAuthStateChange((ev, ses) => { const antes = YO && YO.id; YO = ses ? ses.user : null; pintaCuentaBtn(); if ((YO && YO.id) !== antes) setTimeout(cargaPerfil, 0); });
+    SB.auth.onAuthStateChange((ev, ses) => { if (ev === 'PASSWORD_RECOVERY') { RECUPERA = true; if (!/^#\/cuenta/.test(location.hash)) location.hash = '#/cuenta'; } const antes = YO && YO.id; YO = ses ? ses.user : null; pintaCuentaBtn(); if ((YO && YO.id) !== antes) setTimeout(cargaPerfil, 0); });
     ok(SB);
   };
   s.onerror = () => { _sbCarga = null; no(new Error('sin conexión')); };
@@ -758,7 +760,14 @@ async function cargaPerfil() {
 }
 const repinta = () => { if (!D) return; const y = scrollY; router(); scrollTo(0, y); };
 const ICONO_CUENTA = `<svg width="16" height="16" viewBox="0 0 8 8" shape-rendering="crispEdges" aria-hidden="true"><rect x="2" y="0" width="4" height="4" fill="currentColor"/><rect x="1" y="5" width="6" height="3" fill="currentColor"/></svg>`;
-function pintaCuentaBtn() {
+function pintaPieNews() {
+  const el = $('#pie-news'); if (!el) return;
+  const txt = `<div><h3>${fxLogo(26)} El resumen FX, cada semana</h3><p>Start/Sit, waivers y lo que tienes que saber antes del domingo. Directo a tu correo.</p></div>`;
+  el.innerHTML = `<div class="newsbox">${txt}${!YO ? `<div class="nb-cta"><a class="btn" href="#/cuenta" data-reg>Crear mi cuenta gratis</a><small>Tu cuenta incluye el resumen semanal y tus jugadores favoritos.</small></div>`
+    : PERFIL && PERFIL.newsletter === false ? `<div class="nb-cta"><a class="btn ghost" href="#/cuenta">Activar el resumen en mi cuenta</a></div>`
+    : `<div class="nb-cta"><b class="nb-ok">✓ Estás suscrito</b><small>Te llega a ${esc(YO.email || '')}. <a href="#/cuenta">Administrar</a></small></div>`}</div>`;
+}
+function pintaCuentaBtn() { pintaPieNews();
   const b = $('#btn-cuenta'); if (!b) return;
   const ini = YO ? String((PERFIL && PERFIL.nombre) || YO.email || '?').trim().charAt(0).toUpperCase() : '';
   b.classList.toggle('in', !!YO); b.title = YO ? 'Mi cuenta' : 'Entrar';
@@ -780,18 +789,47 @@ const panelMios = () => {
 function cuenta() {
   titulo('Mi cuenta');
   if (!SB) { cargaSB().then(() => SB.auth.getSession()).then(() => { if (/^#\/cuenta/.test(location.hash)) repinta(); }).catch(() => { const a = $('#app'); if (a) a.innerHTML = '<div class="wrap empty">No pudimos conectar. Intenta de nuevo en un momento.</div>'; }); return '<div class="wrap loading"><p class="px blink" style="color:var(--accent)">CARGANDO…</p></div>'; }
-  if (!YO) return `<div class="page">${crumbs([['', 'Entrar']])}<div class="wrap"><section class="auth card">
-    <div class="auth-h">${fxLogo(44)}<h1>Tu cuenta FX</h1></div>
-    <p>Sigue a tus jugadores, arma tu portada con ellos y recibe el resumen semanal. Es gratis.</p>
-    <form id="f-login" class="fform"><label>Tu correo<input type="email" name="email" required placeholder="tu@correo.com" autocomplete="email"></label><button class="btn" type="submit">Enviarme enlace de acceso</button><small class="msg">Te llega un enlace a tu correo para entrar, sin contraseñas.</small></form>
+  if (RECUPERA && YO) return `<div class="page">${crumbs([['', 'Nueva contraseña']])}<div class="wrap"><section class="auth card">
+    <div class="auth-h">${fxLogo(44)}<h1>Nueva contraseña</h1></div>
+    <form id="f-nueva" class="fform"><label>Escribe tu nueva contraseña<input type="password" name="pass" required minlength="8" autocomplete="new-password" placeholder="Mínimo 8 caracteres"></label><button class="btn" type="submit">Guardar contraseña</button><small class="msg"></small></form>
   </section></div></div>`;
+  if (!YO) { const reg = MODO === 'registro';
+    return `<div class="page">${crumbs([['', reg ? 'Crear cuenta' : 'Entrar']])}<div class="wrap"><section class="auth card">
+    <div class="auth-h">${fxLogo(44)}<h1>${reg ? 'Crea tu cuenta FX' : 'Entra a tu cuenta'}</h1></div>
+    <p>Sigue a tus jugadores, arma tu portada con ellos y recibe el resumen semanal. Es gratis.</p>
+    <button type="button" class="btn-google" id="g-login"><svg width="20" height="20" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg>Continuar con Google</button>
+    <p class="legal">Al continuar con Google se crea tu cuenta, aceptas el <a href="#/privacidad">Aviso de privacidad</a> y recibes el resumen semanal (te das de baja desde tu cuenta cuando quieras).</p>
+    <div class="o-sep"><span>o con tu correo</span></div>
+    <form id="f-login" class="fform" data-modo="${reg ? 'registro' : 'entrar'}">
+      ${reg ? '<label>Tu nombre<input name="nombre" maxlength="40" autocomplete="name" placeholder="¿Cómo te llamamos?"></label>' : ''}
+      <label>Correo<input type="email" name="email" required placeholder="tu@correo.com" autocomplete="email"></label>
+      <label>Contraseña<input type="password" name="pass" required minlength="8" autocomplete="${reg ? 'new-password' : 'current-password'}" placeholder="${reg ? 'Mínimo 8 caracteres' : 'Tu contraseña'}"></label>
+      ${reg ? '<label class="chk"><input type="checkbox" name="news" checked> <span>Quiero recibir el resumen semanal de Fantasy Expertos. Me doy de baja cuando quiera.</span></label><p class="legal">Al crear tu cuenta aceptas el <a href="#/privacidad">Aviso de privacidad</a>.</p>' : ''}
+      <button class="btn" type="submit">${reg ? 'Crear cuenta' : 'Entrar'}</button><small class="msg"></small>
+    </form>
+    <p class="auth-alt">${reg ? '¿Ya tienes cuenta? <button type="button" class="lnk" data-modo="entrar">Entra aquí</button>' : '¿Nuevo en FX? <button type="button" class="lnk" data-modo="registro">Crea tu cuenta gratis</button> · <button type="button" class="lnk" id="olvide">Olvidé mi contraseña</button>'}</p>
+  </section></div></div>`; }
   const favs = [...FAV].map(id => J[id]).filter(Boolean).sort((a, b) => b.pEst - a.pEst);
   return `<div class="page">${crumbs([['', 'Mi cuenta']])}<div class="wrap narrowish"><section class="block">
     <div class="head"><div><h2>Hola, ${esc((PERFIL && PERFIL.nombre) || '')}</h2><p class="hsub">${esc(YO.email || '')}</p></div><button class="btn ghost sm" type="button" id="salir">Cerrar sesión</button></div>
     <div class="grid g2">
       <div class="card"><h3>★ Mis jugadores</h3>${favs.length ? `<div class="plist">${favs.map(j => prow(j, `<em class="n">${n1(j.p ?? j.pEst)}</em>${fxPill(j)}`)).join('')}</div>` : '<p class="sub">Aún no sigues a nadie. Entra a la ficha de un jugador y toca ☆ Seguir: aparecerán aquí y en tu portada.</p>'}</div>
-      <div class="card"><h3>Tu perfil</h3><form id="f-perfil" class="fform"><label>Nombre<input name="nombre" maxlength="40" value="${esc((PERFIL && PERFIL.nombre) || '')}"></label><button class="btn sm" type="submit">Guardar</button><small class="msg"></small></form></div>
+      <div class="card"><h3>Tu perfil</h3><form id="f-perfil" class="fform"><label>Nombre<input name="nombre" maxlength="40" value="${esc((PERFIL && PERFIL.nombre) || '')}"></label><label class="chk"><input type="checkbox" name="news" ${PERFIL && PERFIL.newsletter === false ? '' : 'checked'}> <span>Recibir el resumen semanal por correo</span></label><button class="btn sm" type="submit">Guardar</button><small class="msg"></small></form>
+        <div class="zona-borrar"><button type="button" class="lnk peligro" id="borrar">Eliminar mi cuenta</button><small>Borra tu cuenta, tus jugadores y tu suscripción. No se puede deshacer.</small></div></div>
     </div></section></div></div>`;
+}
+
+function privacidad() {
+  titulo('Aviso de privacidad');
+  return `<div class="page">${crumbs([['', 'Aviso de privacidad']])}<div class="wrap narrowish"><article class="card legaltxt">
+    <h1>Aviso de privacidad</h1><p class="sub">Última actualización: 20 de octubre de 2026</p>
+    <h2>Quién es responsable</h2><p>Fantasy Expertos es responsable del tratamiento de los datos que nos das al crear tu cuenta en este sitio.</p>
+    <h2>Qué datos usamos</h2><p>Tu correo electrónico, el nombre que elijas, los jugadores que sigues y, si entras con Google, el nombre y correo de tu cuenta de Google. No pedimos datos financieros ni sensibles.</p>
+    <h2>Para qué los usamos</h2><p>Para darte acceso a tu cuenta, guardar tus jugadores favoritos, mandarte el resumen semanal de fantasy (si lo tienes activado) y revisar los reportes de error que envías. No vendemos ni compartimos tus datos con terceros para su publicidad.</p>
+    <h2>Dónde se guardan</h2><p>En Supabase, el proveedor de base de datos y acceso de este sitio, con acceso restringido: cada usuario solo puede ver y cambiar su propia información.</p>
+    <h2>Tus derechos</h2><p>Puedes ver y cambiar tus datos, darte de baja del resumen semanal o borrar tu cuenta en cualquier momento desde <a href="#/cuenta">Mi cuenta</a>. Para cualquier otra solicitud de acceso, rectificación, cancelación u oposición, escríbenos por mensaje directo a <a href="https://www.instagram.com/fantasy.expertos" target="_blank" rel="noopener">@fantasy.expertos</a>.</p>
+    <h2>Cambios</h2><p>Si este aviso cambia, lo publicaremos en esta misma página con su nueva fecha.</p>
+  </article></div></div>`;
 }
 
 /* =============================== HERRAMIENTAS =============================== */
@@ -847,11 +885,16 @@ const pintaTrade = () => { ['da', 'recibe'].forEach(k => { const el = $('#tr-' +
 document.addEventListener('submit', async e => {
   const f = e.target; if (!f.id && !f.classList.contains('tr-add')) return;
   const msg = t => { const m = $('.msg', f); if (m) m.textContent = t; };
-  if (f.id === 'f-login') { e.preventDefault(); const email = f.email.value.trim(); msg('Enviando…');
-    const base = location.origin + location.pathname.replace(/(jugador|noticia|equipo)\/.*$/, '');
-    const { error } = await (await cargaSB()).auth.signInWithOtp({ email, options: { emailRedirectTo: base } });
-    msg(error ? (/rate|limit/i.test(error.message) ? 'Demasiados intentos. Espera unos minutos.' : 'No se pudo enviar. Revisa tu correo.') : '✓ Listo. Revisa tu correo (y la carpeta de spam) y abre el enlace en este mismo navegador.'); }
-  else if (f.id === 'f-perfil') { e.preventDefault(); const d = { nombre: f.nombre.value.trim().slice(0, 40) };
+  if (f.id === 'f-login') { e.preventDefault(); const sb = await cargaSB(), email = f.email.value.trim(), password = f.pass.value, reg = f.dataset.modo === 'registro';
+    msg(reg ? 'Creando tu cuenta…' : 'Entrando…');
+    if (reg) { const nombre = (f.nombre.value || '').trim().slice(0, 40);
+      const { data, error } = await sb.auth.signUp({ email, password, options: { data: { full_name: nombre || email.split('@')[0], newsletter: !!(f.news && f.news.checked) }, emailRedirectTo: baseURL() } });
+      if (error) return msg(ERR(error.message));
+      if (!data.session) return msg('✓ Cuenta creada. Te mandamos un correo para confirmarla; ábrelo y luego entra con tu contraseña.');
+    } else { const { error } = await sb.auth.signInWithPassword({ email, password }); if (error) return msg(ERR(error.message)); }
+    msg('✓ ¡Bienvenido!'); }
+  else if (f.id === 'f-nueva') { e.preventDefault(); const { error } = await SB.auth.updateUser({ password: f.pass.value }); if (error) return msg(ERR(error.message)); RECUPERA = false; msg('✓ Contraseña guardada.'); setTimeout(repinta, 900); }
+  else if (f.id === 'f-perfil') { e.preventDefault(); const d = { nombre: f.nombre.value.trim().slice(0, 40), newsletter: f.news.checked };
     const { error } = await SB.from('perfiles').update(d).eq('id', YO.id); if (!error) { PERFIL = { ...PERFIL, ...d }; pintaCuentaBtn(); } msg(error ? 'No se pudo guardar.' : '✓ Guardado'); }
   else if (f.id === 'f-news') { e.preventDefault(); const email = f.email.value.trim().toLowerCase(); msg('Guardando…');
     try { const { error } = await (await cargaSB()).from('suscriptores').insert({ email, fuente: 'sitio' }); msg(!error || error.code === '23505' ? '✓ ¡Listo! Te llegará el resumen de cada semana.' : 'Revisa tu correo e intenta de nuevo.'); if (!error) f.reset(); } catch (er) { msg('Sin conexión. Intenta de nuevo.'); } }
@@ -863,7 +906,14 @@ document.addEventListener('submit', async e => {
     f.reset(); const i = $(`.tr-add[data-k="${f.dataset.k}"] input`); if (i) i.focus(); }
 });
 document.addEventListener('click', e => {
-  const x = e.target.closest('.tr-x, .seguir, #salir, [data-fmt]'); if (!x) return;
+  const x = e.target.closest('.tr-x, .seguir, #salir, [data-fmt], #g-login, #olvide, .lnk[data-modo], #borrar, [data-reg]'); if (!x) return;
+  if (x.hasAttribute('data-reg')) { MODO = 'registro'; return; }
+  if (x.id === 'borrar') { if (!x.dataset.ok) { x.dataset.ok = 1; x.textContent = 'Toca otra vez para confirmar: se borra todo'; return; }
+    x.textContent = 'Borrando…'; SB.rpc('eliminar_mi_cuenta').then(({ error }) => { if (error) { x.textContent = 'No se pudo borrar. Intenta de nuevo.'; delete x.dataset.ok; return; } SB.auth.signOut().finally(() => { location.hash = '#/'; }); }); return; }
+  if (x.id === 'g-login') { cargaSB().then(sb => sb.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: baseURL() } })).then(r => { if (r && r.error) { const m = $('#f-login .msg'); if (m) m.textContent = ERR(r.error.message); } }); return; }
+  if (x.id === 'olvide') { const f = $('#f-login'), m = $('.msg', f), email = f.email.value.trim(); if (!email) { m.textContent = 'Escribe tu correo arriba y vuelve a tocar "Olvidé mi contraseña".'; f.email.focus(); return; }
+    m.textContent = 'Enviando…'; SB.auth.resetPasswordForEmail(email, { redirectTo: baseURL() + '#/cuenta' }).then(({ error }) => { m.textContent = error ? ERR(error.message) : '✓ Te mandamos un enlace para crear una nueva contraseña. Ábrelo en este mismo navegador.'; }); return; }
+  if (x.dataset.modo) { MODO = x.dataset.modo; repinta(); return; }
   if (x.classList.contains('tr-x')) { TR[x.dataset.k] = TR[x.dataset.k].filter(id => id !== x.dataset.id); pintaTrade(); }
   else if (x.classList.contains('seguir')) toggleFav(x.dataset.id, x);
   else if (x.id === 'salir') SB.auth.signOut();
@@ -876,7 +926,7 @@ function router() {
   const q = new URLSearchParams(qs || ''), [, seccion, a, b] = ruta.split('/');
   const R = { '': () => inicio(), noticias: () => noticias(q), reportajes: () => noticias(q), noticia: () => noticia(a), reportaje: () => noticia(a), jugador: () => jugador(a), comparar: () => comparar(a, b), posicion: () => posicion(a),
     equipos: () => equipos(), equipo: () => equipo(a), partidos: () => partidos(q), partido: () => partido(a), lideres: () => lideres(q), media: () => media(), exclusivo: () => exclusivo(), temporada: () => temporada(), semana: () => semana(a), tendencias: () => tendencias(), lesionados: () => lesionados(q),
-    cuenta: () => cuenta(), herramientas: () => herramientas(), trade: () => trade(q) };
+    cuenta: () => cuenta(), herramientas: () => herramientas(), trade: () => trade(q), privacidad: () => privacidad() };
   app.innerHTML = (R[seccion || ''] || noEncontrado)();
   scrollTo({ top: 0 });
   const act = s => s === (seccion || '') || (seccion === 'noticia' && s === 'noticias') || (seccion === 'partido' && s === 'partidos') || (seccion === 'semana' && s === 'temporada') || (seccion === 'trade' && s === 'herramientas');
@@ -938,7 +988,7 @@ Promise.all([cargar('hoy.json', null), cargar('jugadores.json', []), cargar('arc
   D.resumenes = resumenes || {}; D.redes = redes || {}; D.videos = videos || {}; D.cal = calendario; D.externas = externas || [];
   aplicaFormato();
   document.querySelectorAll('.fmt button').forEach((b, i) => b.onclick = () => { FMT = i; try { localStorage.setItem('fx-fmt', i); } catch (e) {} aplicaFormato(); router(); });
-  const pie = $('#pie-redes'); if (pie) pie.innerHTML = `<div class="newsbox"><div><h3>${fxLogo(26)} El resumen FX, cada semana</h3><p>Start/Sit, waivers y lo que tienes que saber antes del domingo. Gratis, directo a tu correo.</p></div><form id="f-news" class="fform inline"><input type="email" name="email" required placeholder="tu@correo.com" aria-label="Tu correo" autocomplete="email"><button class="btn sm" type="submit">Suscribirme</button><small class="msg"></small></form></div><div class="follow"><div><h3>Síguenos</h3><p>Tips diarios, el podcast y los videos de cada semana.</p></div>${grupoRedes()}</div>`;
+  const pie = $('#pie-redes'); if (pie) pie.innerHTML = `<div id="pie-news"></div><div class="follow"><div><h3>Síguenos</h3><p>Tips diarios, el podcast y los videos de cada semana.</p></div>${grupoRedes()}</div>`;
   pintaCuentaBtn(); if (ls(SB_LLAVE) || /[?&]code=/.test(location.search)) cargaSB().catch(() => {});
   const fu = $('#fuentes'); if (fu) fu.textContent = 'Datos: ' + (hoy.fuentes || ['Sleeper', 'ESPN']).join(', ') + '.';
   buscador(); cargaPartidos();
