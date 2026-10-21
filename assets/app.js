@@ -826,7 +826,7 @@ function cuenta(q = new URLSearchParams()) {
   if (q.get('pago') && !esPremium()) esperaPago();
   const hasta = PERFIL && PERFIL.premium_hasta ? new Date(PERFIL.premium_hasta).toLocaleDateString('es-MX', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
   const tPrem = esPremium() ? `<div class="card prem-card"><h3>★ Premium FX</h3><p>${PERFIL.premium_tipo === 'temporada' ? 'Pase de temporada' : 'Suscripción mensual'}${hasta ? (PERFIL.premium_tipo === 'temporada' ? ' · válido hasta el ' : ' · próxima renovación: ') + hasta : ''}</p><p><a class="btn sm" href="#/exclusivo">Leer el Exclusivo</a>${PAGO.portal && PERFIL.premium_tipo !== 'temporada' ? ` <a class="btn ghost sm" href="${PAGO.portal}" target="_blank" rel="noopener">Administrar o cancelar</a>` : ''}</p></div>`
-    : q.get('pago') ? `<div class="card prem-card"><h3>★ Activando tu Premium…</h3><p class="px blink" style="color:var(--gold)">CONFIRMANDO PAGO</p><p class="sub">Tarda unos segundos. Si pagaste en OXXO, se activa cuando se refleje tu pago.</p></div>`
+    : q.get('pago') ? `<div class="card prem-card"><h3>★ Activando tu Premium…</h3><p class="px blink" style="color:var(--gold)">CONFIRMANDO PAGO</p><p class="sub">Tarda unos segundos.</p></div>`
     : `<div class="card prem-card"><h3>★ Hazte Premium</h3><p class="sub">Desbloquea todas las notas exclusivas de nuestra red de reporteros.</p>${(PAGO.mes || PAGO.temporada) ? planes() : '<small class="muro-pie">Las suscripciones abren en unos días.</small>'}</div>`;
   return `<div class="page">${crumbs([['', 'Mi cuenta']])}<div class="wrap narrowish"><section class="block">
     <div class="head"><div><h2>Hola, ${esc((PERFIL && PERFIL.nombre) || '')}</h2><p class="hsub">${esc(YO.email || '')}</p></div><button class="btn ghost sm" type="button" id="salir">Cerrar sesión</button></div>
@@ -839,7 +839,10 @@ function cuenta(q = new URLSearchParams()) {
 }
 
 /* ---------- Premium FX (Stripe) ---------- */
-const PAGO = { mes: '', temporada: '', portal: '' }; // enlaces de pago de Stripe
+const PAGO = { mes: 'https://buy.stripe.com/test_5kQ9AS8v731a0Recsua7C00', temporada: 'https://buy.stripe.com/test_dRm9AScLn6dmdE0502a7C01', portal: '' }; // enlaces de pago de Stripe
+// Los enlaces de prueba (test_) solo se muestran a quien abrió el sitio con ?pruebas=1 (José, mientras probamos).
+try { if (/[?&]pruebas=1/.test(location.search + location.hash)) localStorage.setItem('fx-pruebas', '1'); if (/[?&]pruebas=0/.test(location.search + location.hash)) localStorage.removeItem('fx-pruebas'); } catch (e) {}
+if (Object.values(PAGO).some(u => /\/test_/.test(u)) && ls('fx-pruebas') !== '1') { PAGO.mes = ''; PAGO.temporada = ''; PAGO.portal = ''; }
 const esPremium = () => !!(PERFIL && PERFIL.premium && (!PERFIL.premium_hasta || Date.parse(PERFIL.premium_hasta) > Date.now()));
 const BOVEDA = {};
 function cargaBoveda(id) {
@@ -847,7 +850,7 @@ function cargaBoveda(id) {
   SB.from('exclusivos').select('nota').eq('id', id).maybeSingle().then(({ data }) => { if (data && data.nota) { BOVEDA[id] = data.nota; if (location.hash.includes(id)) repinta(); } else delete BOVEDA[id]; });
 }
 const linkPago = k => PAGO[k] && YO ? PAGO[k] + (PAGO[k].includes('?') ? '&' : '?') + 'client_reference_id=' + encodeURIComponent(YO.id) + (YO.email ? '&prefilled_email=' + encodeURIComponent(YO.email) : '') : '';
-const planes = () => `<div class="planes">${PAGO.mes ? `<a class="plan" href="${linkPago('mes')}"><b>$59</b><span>MXN al mes</span><small>Cancela cuando quieras</small></a>` : ''}${PAGO.temporada ? `<a class="plan top" href="${linkPago('temporada')}"><i>MEJOR PRECIO</i><b>$199</b><span>MXN toda la temporada</span><small>Pago único, hasta el Super Bowl</small></a>` : ''}</div><small class="muro-pie">Pago seguro con Stripe: tarjeta, Apple Pay, Google Pay u OXXO.</small>`;
+const planes = () => `<div class="planes">${PAGO.mes ? `<a class="plan" href="${linkPago('mes')}"><b>$59</b><span>MXN al mes</span><small>Cancela cuando quieras</small></a>` : ''}${PAGO.temporada ? `<a class="plan top" href="${linkPago('temporada')}"><i>MEJOR PRECIO</i><b>$199</b><span>MXN toda la temporada</span><small>Pago único, hasta el Super Bowl</small></a>` : ''}</div><small class="muro-pie">Pago seguro con Stripe: tarjeta, Apple Pay o Google Pay.</small>`;
 function muroPremium() {
   const btns = !YO ? `<a class="btn" href="#/cuenta" data-reg>Crea tu cuenta para suscribirte</a><small class="muro-pie">¿Ya tienes cuenta? <a href="#/cuenta">Entra aquí</a></small>`
     : (PAGO.mes || PAGO.temporada) ? planes() : `<small class="muro-pie">Las suscripciones abren en unos días.</small>`;
