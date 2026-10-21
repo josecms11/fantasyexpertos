@@ -990,6 +990,13 @@ document.addEventListener('click', e => {
 });
 
 /* =============================== ROUTER =============================== */
+// Menú lateral (celular): mismas secciones que el escritorio
+function menu(on, quieto) {
+  const L = $('.links'), b = $('#menu-btn'), bg = $('#menu-bg'); if (!L) return;
+  L.classList.toggle('open', on); if (bg) bg.hidden = !on; document.body.classList.toggle('menu-on', on);
+  if (b) b.setAttribute('aria-expanded', on ? 'true' : 'false');
+  if (on) { const a = L.querySelector('a.act') || L.querySelector('a[href]'); a && a.focus({ preventScroll: true }); } else if (!quieto && b) b.focus();
+}
 let _rutaPrev = null;
 function router() {
   const [ruta, qs] = ((location.hash || window.FX_RUTA || '').slice(1) || '/').split('?');
@@ -1002,8 +1009,8 @@ function router() {
   scrollTo({ top: 0 });
   vista(ruta + (seccion === 'noticias' || seccion === 'lideres' || seccion === 'lesionados' ? (qs ? '?' + qs : '') : ''));
   const act = s => s === (seccion || '') || (seccion === 'noticia' && s === 'noticias') || (seccion === 'partido' && s === 'partidos') || (seccion === 'semana' && s === 'temporada') || (seccion === 'trade' && s === 'herramientas');
-  document.querySelectorAll('.tabbar a, .links a').forEach(l => l.classList.toggle('act', act(l.dataset.s)));
-  $('.links').classList.remove('open');
+  document.querySelectorAll('.links a').forEach(l => l.classList.toggle('act', act(l.dataset.s)));
+  if ($('.links').classList.contains('open')) menu(false, true);
   if (seccion === 'posicion') montaTabla(a);
   document.querySelectorAll('.vid').forEach(v => v.onclick = () => { v.querySelector('.thumb').innerHTML = `<iframe src="https://www.youtube.com/embed/${v.dataset.v}?autoplay=1&rel=0" title="Video de Fantasy Expertos" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`; v.onclick = null; });
   const du = $('.duelo');
@@ -1065,7 +1072,9 @@ Promise.all([cargar('hoy.json', null), cargar('jugadores.json', []), cargar('arc
   pintaCuentaBtn(); if (ls(SB_LLAVE) || /[?&]code=/.test(location.search)) cargaSB().catch(() => {});
   const fu = $('#fuentes'); if (fu) fu.textContent = 'Datos: ' + (hoy.fuentes || ['Sleeper', 'ESPN']).join(', ') + '.';
   buscador(); cargaPartidos();
-  const mas = $('#tb-mas'); if (mas) mas.onclick = () => { $('.links').classList.toggle('open'); mas.classList.toggle('act'); };
+  if (innerWidth < 520) { const qi = $('#q'); if (qi) qi.placeholder = 'Buscar'; }
+  $('#menu-btn').onclick = () => menu(true); $('#menu-x').onclick = () => menu(false); $('#menu-bg').onclick = () => menu(false);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && $('.links').classList.contains('open')) menu(false); });
   addEventListener('hashchange', router);
   router();
 }).catch(e => { app.innerHTML = '<div class="wrap loading"><p class="px">Actualizando datos</p><p>Estamos preparando la información. Vuelve en un par de minutos.</p></div>'; console.error(e); });
