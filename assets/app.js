@@ -133,7 +133,10 @@ const normN = (n, i = 0) => {
   return { ...n, id: n.id || 'r' + i, etiqueta: et, claves: cl, impacto: imp, jugadores: n.jugadores || [], equipos: n.equipos || [n.equipo].filter(Boolean) };
 };
 let _todas = null;
-const todasNoticias = () => { if (_todas) return _todas; const v = new Set(); _todas = D.noticias.concat(D.archivo || []).filter(n => !v.has(n.id) && v.add(n.id)); return _todas; };
+let _todasAll = null;
+const todasConVencidas = () => { if (_todasAll) return _todasAll; const v = new Set(), arch = Object.fromEntries((D.archivo || []).map(n => [n.id, n])); _todasAll = D.noticias.map(n => arch[n.id] || n).concat(D.archivo || []).filter(n => !v.has(n.id) && v.add(n.id)); return _todasAll; };
+// Las notas que ya no aplican (el jugador quedó fuera después de publicarse) no salen en portada ni listas; su página sí abre, con aviso.
+const todasNoticias = () => _todas || (_todas = todasConVencidas().filter(n => !n.vencida));
 const equiposDe = n => [...new Set([n.equipo, ...(n.equipos || []), ...(n.jugadores || []).map(id => J[id] && J[id].team)].filter(t => t && EQUIPOS[t]))];
 const noticiasDe = id => todasNoticias().filter(n => (n.jugadores || []).includes(id));
 const noticiasEquipo = t => todasNoticias().filter(n => equiposDe(n).includes(t));
@@ -301,10 +304,10 @@ function noticias(q) {
   </section></div></div>`;
 }
 function noticia(id) {
-  const L = todasNoticias(), n = L.find(x => x.id === id);
+  const L = todasNoticias(), n = todasConVencidas().find(x => x.id === id);
   if (!n) return noEncontrado();
   titulo(n.titulo);
-  const jug = (n.jugadores || []).map(x => J[x]).filter(Boolean), eqs = equiposDe(n);
+  const jug = [...(n.jugadores || []), ...(n.menciona || [])].map(x => J[x]).filter(Boolean), eqs = equiposDe(n);
   const i = L.indexOf(n), sig = L[i + 1], ant = L[i - 1];
   const rel = L.filter(x => x.id !== id && ((x.jugadores || []).some(p => (n.jugadores || []).includes(p)) || equiposDe(x).some(t => eqs.includes(t)))).slice(0, 3);
   const sec = (t, txt, cls = '') => txt ? `<section class="nsec ${cls}"><h3>${t}</h3><p>${esc(txt)}</p></section>` : '';
@@ -312,6 +315,7 @@ function noticia(id) {
     <div class="nhead">${thumb(n, true)}</div>
     <p class="st-meta ${n.etiqueta}" style="margin-top:18px">${esc(ETQ[n.etiqueta])}${n.fecha ? ' · ' + hace(n.fecha) : ''}${n.exclusivo ? ' · ★ Exclusivo FX' : ''}</p>
     <h1 class="ntitle">${esc(n.titulo)}</h1>
+    ${n.aviso ? `<div class="aviso-nota"><b>⚠ NOTA ACTUALIZADA</b><p>${esc(n.aviso)}</p></div>` : ''}
     <div class="kcards stagger">${(n.claves || []).map((c, k) => `<div class="kcard"><b>${k + 1}</b>${esc(c)}</div>`).join('')}</div>
     <div class="nbody">
       <div class="ncol">
@@ -771,6 +775,14 @@ function buscador() {
 }
 
 /* =============================== ARRANQUE =============================== */
+/* App instalable: funciona sin internet con lo último guardado y se puede agregar a la pantalla de inicio */
+if ('serviceWorker' in navigator) addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+addEventListener('beforeinstallprompt', e => {
+  e.preventDefault(); const aviso = e, links = $('.links'); if (!links || $('#instalar')) return;
+  const b = document.createElement('a'); b.id = 'instalar'; b.href = '#'; b.textContent = '⬇ INSTALAR'; b.className = 'instalar';
+  b.onclick = ev => { ev.preventDefault(); aviso.prompt(); aviso.userChoice.finally(() => b.remove()); };
+  links.appendChild(b);
+});
 const BASE = 'data/v2/';
 const cargar = (f, d) => fetch(BASE + f + '?v=' + Math.floor(Date.now() / 60000)).then(r => r.ok ? r.json() : d).catch(() => d);
 Promise.all([cargar('hoy.json', null), cargar('jugadores.json', []), cargar('archivo.json', []), cargar('semanas.json', {}), fetch('data/redes.json').then(r => r.json()).catch(() => ({})), cargar('videos.json', {}), cargar('calendario.json', null), cargar('externas.json', [])])

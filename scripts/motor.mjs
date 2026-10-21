@@ -59,7 +59,7 @@ async function gemini(prompt, tokens = 16000) {
   return null;
 }
 const VOZ = 'Eres el editor de Fantasy Expertos, el rincón de fantasy football para fans de habla hispana. Español de México, tono experto, directo y con personalidad. Escribe con tus propias palabras, nunca copies frases de las fuentes. Todo se aterriza a decisiones de fantasy. REGLAS DE VERACIDAD: usa SOLO hechos presentes en las fuentes y en la lista de estatus que te doy; si un jugador está OUT o IR jamás lo recomiendes para arrancar; no inventes cifras, fechas ni lesiones; si no estás seguro de un dato, no lo uses. Responde SOLO JSON. ';
-const FORMATO = '{"noticias":[{"titulo":"titular original y punchy, máximo 9 palabras","claves":["3 puntos clave de máximo 12 palabras"],"contexto":"qué pasó y por qué, 50 a 80 palabras","fantasy":"impacto en fantasy: a quién sube o baja, en qué formatos y ligas, 50 a 80 palabras","equipo_impacto":"cómo cambia al equipo y a sus compañeros, 30 a 60 palabras","accion":"qué hacer hoy en tu liga, una frase accionable","etiqueta":"START | SIT | WAIVER | LESIÓN | TENDENCIA","impacto":"SUBE | BAJA | NEUTRO","equipo":"abreviatura NFL del equipo principal","equipos":["todas las abreviaturas NFL relacionadas"],"jugadores":["nombre completo en inglés, el principal primero"]}]}';
+const FORMATO = '{"noticias":[{"titulo":"titular original y punchy, máximo 9 palabras","claves":["3 puntos clave de máximo 12 palabras"],"contexto":"qué pasó y por qué, 50 a 80 palabras","fantasy":"impacto en fantasy: a quién sube o baja, en qué formatos y ligas, 50 a 80 palabras","equipo_impacto":"cómo cambia al equipo y a sus compañeros, 30 a 60 palabras","accion":"qué hacer hoy en tu liga, una frase accionable","etiqueta":"START | SIT | WAIVER | LESIÓN | TENDENCIA","impacto":"SUBE | BAJA | NEUTRO","equipo":"abreviatura NFL del equipo principal","equipos":["todas las abreviaturas NFL relacionadas"],"jugadores":["nombre completo en inglés; el primero DEBE ser el protagonista que aparece en el titular; no incluyas jugadores mencionados de paso"]}]}';
 
 /* ---------- Fuentes de texto ---------- */
 async function titularesRSS() {
@@ -240,6 +240,9 @@ const palabras = t => new Set(norm2(t).split(' ').filter(w => w.length > 3));
 function norm2(t) { return String(t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9 ]/g, ' '); }
 const parecido = (a, b) => { const A = palabras(a), B = palabras(b); let c = 0; A.forEach(w => B.has(w) && c++); return c / Math.max(1, Math.min(A.size, B.size)); };
 const ligar = n => (n.jugadores || []).map(x => porNombre[norm(x)]).filter(Boolean);
+// El jugador de la tarjeta debe ser el protagonista: su apellido tiene que aparecer en el titular.
+const apellidoDe = nm => norm(String(nm || '').replace(/\b(jr|sr|ii|iii|iv)\.?$/i, '').trim().split(/\s+/).slice(-1)[0]);
+const protagonista = (n, id) => { const p = J[id] || s.todos[id]; if (!p) return false; const ap = apellidoDe(p.n); const txt = norm(n.titulo || ''); return ap.length > 2 && txt.includes(ap); };
 function verificar(n) {
   const ids = ligar(n), p = J[ids[0]] || s.todos[ids[0]];
   const motivo = [];
@@ -262,9 +265,10 @@ if (tocaIA) {
     if (n.etiqueta === 'ARRANCA') n.etiqueta = 'START'; if (n.etiqueta === 'BANCA') n.etiqueta = 'SIT';
     const motivo = verificar(n);
     if (motivo.length) { log('Descartada:', n.titulo, '→', motivo.join(', ')); continue; }
-    const ids = ligar(n);
-    const equipos = [...new Set([n.equipo, ...(n.equipos || []), ...ids.map(id => (J[id] || s.todos[id] || {}).team)].filter(Boolean))];
-    nuevas.push({ id: `n${sello}${String(i).padStart(2, '0')}`, fecha: ahora, semana: semJuego, ...n, equipos, jugadores: ids });
+    let ids = ligar(n), menciona = [];
+    if (ids.length && !protagonista(n, ids[0])) { menciona = ids; ids = []; }
+    const equipos = [...new Set([n.equipo, ...(n.equipos || []), ...[...ids, ...menciona].map(id => (J[id] || s.todos[id] || {}).team)].filter(Boolean))];
+    nuevas.push({ id: `n${sello}${String(i).padStart(2, '0')}`, fecha: ahora, semana: semJuego, ...n, equipos, jugadores: ids, menciona });
   }
   log('Noticias nuevas verificadas:', nuevas.length);
 }
@@ -285,6 +289,20 @@ REGLAS: cubre ABSOLUTAMENTE TODOS los puntos del texto, sin omitir ninguno. Gene
 }
 // re-ligar equipos de noticias viejas que no los tenían
 archivo.forEach(n => { if (!n.equipos) n.equipos = [...new Set([n.equipo, ...(n.jugadores || []).map(id => (J[id] || {}).team)].filter(Boolean))]; if (n.etiqueta === 'ARRANCA') n.etiqueta = 'START'; if (n.etiqueta === 'BANCA') n.etiqueta = 'SIT'; });
+// Revisión continua: cada corrida vuelve a revisar las notas de los últimos 14 días contra el estatus de hoy.
+const RECOMIENDA = ['START', 'WAIVER', 'ARRANCA'];
+let corregidas = 0;
+for (const a of archivo) {
+  if (Date.now() - Date.parse(a.fecha || 0) > 14 * 864e5) continue;
+  if (a.jugadores && a.jugadores.length && !a.exclusivo && !protagonista(a, a.jugadores[0])) { a.menciona = a.jugadores; a.jugadores = []; corregidas++; }
+  const p = a.jugadores && J[a.jugadores[0]];
+  const fuera = p && (fueraTemp(p) || p.inj === 'Out');
+  if (fuera && (RECOMIENDA.includes(a.etiqueta) || a.impacto === 'SUBE')) {
+    const aviso = `Actualización: ${p.n} ahora está ${p.inj === 'Out' ? 'OUT' : estadoTxt(p)}${p.injParte ? ' (' + p.injParte + ')' : ''}. Esta recomendación ya no aplica.`;
+    if (a.aviso !== aviso) { a.aviso = aviso; a.vencida = true; corregidas++; }
+  } else if (a.vencida && p && !fuera) { delete a.aviso; delete a.vencida; corregidas++; }
+}
+if (corregidas) log('Notas del archivo corregidas por estatus o protagonista:', corregidas);
 const todasNuevas = [...exclusivas, ...nuevas];
 const nuevoArchivo = [...todasNuevas, ...archivo].slice(0, 800);
 guardar(DIR + '/archivo.json', nuevoArchivo);
@@ -315,7 +333,7 @@ const lesionados = jugadores.filter(j => ESTATUS[j.inj] && j.team !== 'FA' && ((
   .sort((a, b) => ((b.proy && b.proy[0]) || totalPPR(b.id) / 6) - ((a.proy && a.proy[0]) || totalPPR(a.id) / 6)).slice(0, 40).map(j => ({ id: j.id, estatus: ESTATUS[j.inj] }));
 const hoy = {
   actualizado: ahora, ultimaIA: nuevas.length ? ahora : prevHoy.ultimaIA, semana: semJuego, semanaStats: s.semana, temporada: s.temporada, semanas: s.semanas.slice(-HIST),
-  noticias: todasNuevas.length ? todasNuevas : (prevHoy.noticias || nuevoArchivo.slice(0, 12)),
+  noticias: todasNuevas.length ? todasNuevas : (prevHoy.noticias ? prevHoy.noticias.map(n => nuevoArchivo.find(a => a.id === n.id) || n) : nuevoArchivo.slice(0, 12)),
   lesionados, agregados: s.add.map(t => t.player_id).filter(k => J[k]), soltados: s.drop.map(t => t.player_id).filter(k => J[k]),
   duelo: duelo || prevHoy.duelo || null, fuentes: ['Sleeper', 'ESPN', 'CBS Sports', 'Yahoo Sports']
 };

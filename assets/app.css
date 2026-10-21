@@ -950,3 +950,7 @@ a:hover .th .th-vis .th-hel{transform:translateY(-5px) rotate(-4deg) scale(1.04)
 .seo a{color:var(--accent)}
 .seo table{border-collapse:collapse;margin:14px 0;font-size:14px}
 .seo td,.seo th{padding:4px 10px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left}
+.links a.instalar{color:var(--accent);font-weight:700}
+.aviso-nota{margin:14px 0 4px;padding:14px 16px;border-radius:12px;border:1.5px solid #E5A93C;background:rgba(229,169,60,.1)}
+.aviso-nota b{font-family:'Barlow Condensed',sans-serif;letter-spacing:.06em;color:#F2C063;font-size:14px}
+.aviso-nota p{margin:4px 0 0;line-height:1.45}
