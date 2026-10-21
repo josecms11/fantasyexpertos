@@ -1,6 +1,6 @@
 // FANTASY EXPERTOS · stripe-webhook (Supabase Edge Function)
 // Stripe avisa aquí cada pago; esta función activa o quita el Premium en el perfil del usuario.
-// Secretos necesarios (Edge Functions → Secrets): STRIPE_WEBHOOK_SECRET
+// Secretos necesarios (Edge Functions → Secrets): STRIPE_WEBHOOK_SECRET (el de prueba y el real, separados por coma)
 // SUPABASE_URL y SUPABASE_SERVICE_ROLE_KEY ya vienen incluidos en Supabase.
 // Importante: en la configuración de la función, "Verify JWT" debe estar APAGADO (Stripe no manda sesión).
 
@@ -8,18 +8,22 @@ const FIN_TEMPORADA = '2027-02-28T23:59:59Z'; // el pase de temporada dura hasta
 const SB = Deno.env.get('SUPABASE_URL')!;
 // Llave de servidor: primero las llaves nuevas (sb_secret_…); si no existen, la llave clásica service_role.
 const KEY = (() => { try { const k = Object.values(JSON.parse(Deno.env.get('SUPABASE_SECRET_KEYS') || '{}'))[0]; if (k) return String(k); } catch (_) { /* sigue */ } return Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') || ''; })();
-const SECRETO = (Deno.env.get('STRIPE_WEBHOOK_SECRET') || '').trim();
+// Uno o varios secretos separados por coma (el de prueba y el de modo real)
+const SECRETOS = (Deno.env.get('STRIPE_WEBHOOK_SECRET') || '').split(',').map(x => x.trim()).filter(Boolean);
 
 const hex = (b: ArrayBuffer) => [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, '0')).join('');
 async function firmaValida(cuerpo: string, cabecera: string | null) {
-  if (!cabecera || !SECRETO) return false;
+  if (!cabecera || !SECRETOS.length) return false;
   const partes = Object.fromEntries(cabecera.split(',').map(p => p.split('=') as [string, string]).filter(p => p.length === 2));
   const firmas = cabecera.split(',').filter(p => p.startsWith('v1=')).map(p => p.slice(3));
   const t = partes['t']; if (!t || !firmas.length) return false;
   if (Math.abs(Date.now() / 1000 - Number(t)) > 600) return false; // máximo 10 min de diferencia
-  const llave = await crypto.subtle.importKey('raw', new TextEncoder().encode(SECRETO), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
-  const calc = hex(await crypto.subtle.sign('HMAC', llave, new TextEncoder().encode(`${t}.${cuerpo}`)));
-  return firmas.some(f => f.length === calc.length && [...f].every((c, i) => c === calc[i]));
+  for (const secreto of SECRETOS) {
+    const llave = await crypto.subtle.importKey('raw', new TextEncoder().encode(secreto), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
+    const calc = hex(await crypto.subtle.sign('HMAC', llave, new TextEncoder().encode(`${t}.${cuerpo}`)));
+    if (firmas.some(f => f.length === calc.length && [...f].every((c, i) => c === calc[i]))) return true;
+  }
+  return false;
 }
 const h: Record<string, string> = { apikey: KEY, 'Content-Type': 'application/json', Prefer: 'return=minimal' };
 if (KEY.startsWith('eyJ')) h.Authorization = `Bearer ${KEY}`;
