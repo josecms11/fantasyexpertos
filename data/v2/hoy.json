@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-21T16:52:45.371Z",
+  "actualizado": "2026-10-21T17:20:46.636Z",
   "ultimaIA": "2026-10-21T15:41:32.155Z",
   "semana": 7,
   "semanaStats": 7,
@@ -13,30 +13,101 @@
   ],
   "noticias": [
     {
-      "id": "n20261021154102",
-      "fecha": "2026-10-21T15:41:32.155Z",
+      "id": "x20261021172000",
+      "fecha": "2026-10-21T17:20:46.636Z",
       "semana": 7,
-      "titulo": "Marquez Valdes-Scantling busca impacto en Pittsburgh",
+      "exclusivo": true,
+      "fuente": "2026-10-21T16:20:56+00:00",
+      "titulo": "Previa de la semana 7: Partidos estelares dominicales",
       "claves": [
-        "Llega para calmar la crisis de receptores",
-        "Ausencias sensibles por lesión en los Steelers",
-        "Opción profunda para los entrenadores"
+        "Juegos programados para la tarde dominical"
       ],
-      "contexto": "Ante las bajas confirmadas de Michael Pittman Jr. y Roman Wilson por problemas físicos, los Steelers decidieron incorporar de urgencia al veterano receptor Marquez Valdes-Scantling para aportar experiencia por fuera.",
-      "fantasy": "Su impacto en fantasy es por ahora limitado y de impacto bajo en ligas estándar, pero sirve como un parche desesperado en formatos muy profundos o de la modalidad de eliminación si buscas alguien con snaps garantizados.",
-      "equipo_impacto": "La ofensiva aérea de Pittsburgh necesitaba desesperadamente piernas frescas y manos veteranas para abrir el campo ante la ausencia de sus principales armas.",
-      "accion": "Monitorea su participación antes de arriesgarte a alinearlo.",
       "etiqueta": "TENDENCIA",
       "impacto": "NEUTRO",
-      "equipo": "PIT",
+      "equipo": "NFL",
       "equipos": [
-        "PIT"
+        "NFL"
+      ],
+      "jugadores": [],
+      "premium": true
+    },
+    {
+      "id": "x20261021172001",
+      "fecha": "2026-10-21T17:20:46.636Z",
+      "semana": 7,
+      "exclusivo": true,
+      "fuente": "2026-10-21T16:20:56+00:00",
+      "titulo": "Trade Targets: Compra alto a estos receptores y alas cerradas",
+      "claves": [
+        "Stefon Diggs, TJ Hockenson y Burden listos para subir"
+      ],
+      "etiqueta": "TRADE",
+      "impacto": "SUBE",
+      "equipo": "WAS",
+      "equipos": [
+        "WAS",
+        "MIN",
+        "CHI",
+        "NE",
+        "PHI",
+        "BAL"
       ],
       "jugadores": [
-        "5086",
-        "6819"
+        "2449",
+        "5844",
+        "12519",
+        "5859",
+        "2309"
       ],
-      "menciona": []
+      "premium": true
+    },
+    {
+      "id": "x20261021172002",
+      "fecha": "2026-10-21T17:20:46.636Z",
+      "semana": 7,
+      "exclusivo": true,
+      "fuente": "2026-10-21T16:20:56+00:00",
+      "titulo": "Pánico Total: Jugadores bajo la lupa y en riesgo",
+      "claves": [
+        "Cam Skattebo y J.K. Dobbins generan dudas masivas"
+      ],
+      "etiqueta": "TRADE",
+      "impacto": "BAJA",
+      "equipo": "NYG",
+      "equipos": [
+        "NYG",
+        "DEN",
+        "LAC"
+      ],
+      "jugadores": [
+        "12481",
+        "7526",
+        "6806",
+        "12507"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261021172003",
+      "fecha": "2026-10-21T17:20:46.636Z",
+      "semana": 7,
+      "exclusivo": true,
+      "fuente": "2026-10-21T16:20:56+00:00",
+      "titulo": "Espejismo total: Equipos sorpresa sin boleto a postemporada",
+      "claves": [
+        "Titans y Texans sorprenden pero fuera de playoffs"
+      ],
+      "etiqueta": "TENDENCIA",
+      "impacto": "NEUTRO",
+      "equipo": "TEN",
+      "equipos": [
+        "TEN",
+        "HOU",
+        "ARI",
+        "NO"
+      ],
+      "jugadores": [],
+      "premium": true
     }
   ],
   "lesionados": [
@@ -193,11 +264,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12487",
-      "estatus": "Fuera"
+      "id": "11625",
+      "estatus": "Duda"
     },
     {
-      "id": "9225",
+      "id": "12487",
       "estatus": "Fuera"
     }
   ],
@@ -243,16 +314,16 @@
     "11439",
     "2505",
     "9480",
-    "8132",
     "650",
+    "8132",
     "6904",
     "7042",
     "12711",
     "12533",
     "1166",
     "11647",
-    "13330",
     "8129",
+    "13330",
     "3321"
   ],
   "duelo": {
