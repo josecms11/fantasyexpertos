@@ -1,28 +1,11 @@
 {
-  "fecha": "2026-10-21T05:26:47.340Z",
+  "fecha": "2026-10-21T05:58:07.099Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 0 nuevos, 15 en total",
-    "[1.0s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
-    "[2.5s] ESPN: lesiones 799 · noticias 50",
-    "[3.1s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[3.5s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[4.2s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[4.5s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[4.6s] Modelo sin cuota hoy gemini-3.5-flash 429",
-    "[18.8s] IA OK con gemini-3.5-flash-lite",
-    "[18.8s] Descartada: Brock Purdy comanda con eficiencia los controles de San Francisco → duplicada",
-    "[18.8s] Descartada: Brandon McManus llega a los Rams para solucionar crisis de patadas → duplicada",
-    "[18.8s] Descartada: Marquez Valdes-Scantling aterriza en Pittsburgh para sumar profundidad → duplicada",
-    "[18.8s] Descartada: Drake Maye proyecta una explosión ofensiva gigante en la jornada → duplicada",
-    "[18.8s] Descartada: Kerby Joseph lidera el esperado renacimiento defensivo de Detroit → duplicada",
-    "[18.8s] Descartada: Najae Harris queda completamente libre tras su salida de los Giants → duplicada",
-    "[18.8s] Descartada: Jordan Elliott queda fuera de los Titans por incidente interno → duplicada",
-    "[18.8s] Descartada: Riley Patterson fuera de los Dolphins tras graves problemas en patadas → duplicada",
-    "[18.8s] Descartada: Terry McLaurin dice adiós a la temporada con lesión de rodilla → duplicada",
-    "[18.8s] Descartada: Mike Evans evita daño mayor pero genera dudas en San Francisco → duplicada",
-    "[18.8s] Descartada: Jalen Hurts mantiene el respaldo médico tras superar situación de salud → duplicada",
-    "[18.8s] Noticias nuevas verificadas: 1",
-    "[18.8s] Listo: 1 noticias nuevas (0 exclusivas) · 420 jugadores · archivo 157 · semana de juego 7 · IA usada hoy 6/40"
+    "[1.1s] Sleeper: 3201 activos, semana 7 · proyecciones S7: 9418",
+    "[2.3s] ESPN: lesiones 799 · noticias 50",
+    "[3.2s] Bóveda Premium: 9 exclusivas guardadas",
+    "[3.2s] Listo: 0 noticias nuevas (0 exclusivas) · 420 jugadores · archivo 157 · semana de juego 7 · IA usada hoy 6/40"
   ]
 }
