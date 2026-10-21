@@ -513,9 +513,10 @@ function lideres(q) {
   if (modo === 'semana' && w === ahora && !P.some(j => (ptsVivo(j) ?? ptsSem(j, w)) != null)) modo = 'proy'; // aún sin puntos de la semana: se muestra la proyección
   const val = j => modo === 'temporada' ? j.total : modo === 'proy' ? j.p : w === ahora ? (ptsVivo(j) ?? ptsSem(j, w)) : ptsSem(j, w);
   const etq = modo === 'temporada' ? 'Temporada' : modo === 'proy' ? `Semana ${w} · Proyección` : `Semana ${w}${w === ahora && vivoJuegos ? ' · En vivo' : ''}`;
+  const curProy = !jug.includes(ahora) && !(VIVO.w === ahora && VIVO.pts && Object.keys(VIVO.pts).length);
   const qs = (x, extra = '') => `#/lideres?${x == null ? 'ver=temporada' : 's=' + x}${extra}`;
   const semanas = [...new Set([...jug, ahora])].filter(x => x <= ahora).sort((a, b) => a - b);
-  const chips = `<div class="chips semchips">${semanas.map(x => `<a class="chip ${x === w ? 'on' : ''} ${x === ahora ? 'actual' : ''}" href="${qs(x, sel ? '&pos=' + sel : '')}">S${x}${x === ahora ? (vivoJuegos ? ' <i class="dotv"></i>VIVO' : empezo ? '' : ' · PROY') : ''}</a>`).join('')}<a class="chip ${modo === 'temporada' ? 'on' : ''}" href="${qs(null, sel ? '&pos=' + sel : '')}">Temporada</a></div>`;
+  const chips = `<div class="chips semchips">${semanas.map(x => `<a class="chip ${x === w ? 'on' : ''} ${x === ahora ? 'actual' : ''}" href="${qs(x, sel ? '&pos=' + sel : '')}">S${x}${x === ahora ? (curProy ? ' · PROY' : vivoJuegos ? ' <i class="dotv"></i>VIVO' : '') : ''}</a>`).join('')}<a class="chip ${modo === 'temporada' ? 'on' : ''}" href="${qs(null, sel ? '&pos=' + sel : '')}">Temporada</a></div>`;
   const sub = modo === 'proy' ? `La semana ${w} aún no arranca: así se proyectan en ${FMTS[FMT]}. En cuanto empiece el primer partido, esta lista se vuelve en vivo.` : modo === 'temporada' ? `Total de la temporada en puntos ${FMTS[FMT]}.` : w === ahora ? `Puntos ${FMTS[FMT]} de la semana en curso. Se actualiza solo cada minuto mientras haya partidos.` : `Puntos ${FMTS[FMT]} de la semana ${w}.`;
   const pts = j => n1(val(j));
   if (sel && POSICIONES[sel]) {
