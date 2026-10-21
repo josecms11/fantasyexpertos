@@ -782,7 +782,7 @@ function cuenta() {
   if (!SB) { cargaSB().then(() => SB.auth.getSession()).then(() => { if (/^#\/cuenta/.test(location.hash)) repinta(); }).catch(() => { const a = $('#app'); if (a) a.innerHTML = '<div class="wrap empty">No pudimos conectar. Intenta de nuevo en un momento.</div>'; }); return '<div class="wrap loading"><p class="px blink" style="color:var(--accent)">CARGANDO…</p></div>'; }
   if (!YO) return `<div class="page">${crumbs([['', 'Entrar']])}<div class="wrap"><section class="auth card">
     <div class="auth-h">${fxLogo(44)}<h1>Tu cuenta FX</h1></div>
-    <p>Sigue a tus jugadores, conecta tu liga de Sleeper y recibe el resumen semanal. Es gratis.</p>
+    <p>Sigue a tus jugadores, arma tu portada con ellos y recibe el resumen semanal. Es gratis.</p>
     <form id="f-login" class="fform"><label>Tu correo<input type="email" name="email" required placeholder="tu@correo.com" autocomplete="email"></label><button class="btn" type="submit">Enviarme enlace de acceso</button><small class="msg">Te llega un enlace a tu correo para entrar, sin contraseñas.</small></form>
   </section></div></div>`;
   const favs = [...FAV].map(id => J[id]).filter(Boolean).sort((a, b) => b.pEst - a.pEst);
@@ -790,8 +790,7 @@ function cuenta() {
     <div class="head"><div><h2>Hola, ${esc((PERFIL && PERFIL.nombre) || '')}</h2><p class="hsub">${esc(YO.email || '')}</p></div><button class="btn ghost sm" type="button" id="salir">Cerrar sesión</button></div>
     <div class="grid g2">
       <div class="card"><h3>★ Mis jugadores</h3>${favs.length ? `<div class="plist">${favs.map(j => prow(j, `<em class="n">${n1(j.p ?? j.pEst)}</em>${fxPill(j)}`)).join('')}</div>` : '<p class="sub">Aún no sigues a nadie. Entra a la ficha de un jugador y toca ☆ Seguir: aparecerán aquí y en tu portada.</p>'}</div>
-      <div class="card"><h3>Tu perfil</h3><form id="f-perfil" class="fform"><label>Nombre<input name="nombre" maxlength="40" value="${esc((PERFIL && PERFIL.nombre) || '')}"></label><label>Usuario de Sleeper<input name="sleeper" maxlength="40" placeholder="opcional" value="${esc((PERFIL && PERFIL.sleeper) || '')}"></label><button class="btn sm" type="submit">Guardar</button><small class="msg"></small></form>
-        ${PERFIL && PERFIL.sleeper ? `<a class="btn ghost sm" style="margin-top:12px" href="#/liga">Ver mi liga ›</a>` : ''}</div>
+      <div class="card"><h3>Tu perfil</h3><form id="f-perfil" class="fform"><label>Nombre<input name="nombre" maxlength="40" value="${esc((PERFIL && PERFIL.nombre) || '')}"></label><button class="btn sm" type="submit">Guardar</button><small class="msg"></small></form></div>
     </div></section></div></div>`;
 }
 
@@ -810,9 +809,8 @@ function herramientas() {
   titulo('Herramientas de fantasy');
   const t = (h, ico, n, d) => `<a class="tool card" href="${h}"><span class="tool-i">${ico}</span><b>${n}</b><p>${d}</p><span class="all">Abrir ›</span></a>`;
   return `<div class="page">${crumbs([['', 'Herramientas']])}<div class="wrap"><section class="block">
-    <div class="head"><div><h2>Herramientas FX</h2><p class="hsub">Decide con datos: trades, tu liga y cara a cara. Todo en ${FMTS[FMT]} (cámbialo arriba).</p></div></div>
+    <div class="head"><div><h2>Herramientas FX</h2><p class="hsub">Decide con datos: trades y start/sit de cada semana. Todo en ${FMTS[FMT]} (cámbialo arriba).</p></div></div>
     <div class="grid g3">${t('#/trade', '⇄', 'Analizador de trades', 'Agrega lo que das y lo que recibes. Te decimos si te conviene, con el valor de cada jugador para el resto de la temporada.')}
-      ${t('#/liga', '▣', 'Mi liga de Sleeper', 'Escribe tu usuario de Sleeper: alineación óptima de la semana, cambios urgentes y lo mejor disponible en tu liga.')}
       ${t('#/posicion/QB', '★', 'Start / Sit de la semana', 'Rankings por proyección con veredicto START, FLEX o SIT y dificultad del rival.')}</div>
   </section></div></div>`;
 }
@@ -845,72 +843,6 @@ function resTrade() {
 }
 const pintaTrade = () => { ['da', 'recibe'].forEach(k => { const el = $('#tr-' + k); if (el) el.innerHTML = listaTrade(k); }); const r = $('#tr-res'); if (r) r.innerHTML = resTrade(); history.replaceState(null, '', `${location.pathname}${location.search}#/trade?da=${TR.da.join(',')}&recibe=${TR.recibe.join(',')}`); };
 
-/* ---------- Mi liga (Sleeper) ---------- */
-const SLP = 'https://api.sleeper.app/v1/';
-const sget = u => fetch(SLP + u).then(r => { if (!r.ok) throw new Error('red'); return r.json(); });
-const ELEG = { QB: ['QB'], RB: ['RB'], WR: ['WR'], TE: ['TE'], K: ['K'], FLEX: ['RB', 'WR', 'TE'], WRRB_FLEX: ['RB', 'WR'], REC_FLEX: ['WR', 'TE'], SUPER_FLEX: ['QB', 'RB', 'WR', 'TE'] };
-const SLOT = { SUPER_FLEX: 'SFLEX', WRRB_FLEX: 'W/R', REC_FLEX: 'W/T', DEF: 'DEF' };
-function alineacion(slots, L) {
-  const disp = L.filter(juega).sort((a, b) => b.pEst - a.pEst), usados = new Set(), res = Array(slots.length).fill(null);
-  slots.map((s, i) => [s, i]).sort((a, b) => (ELEG[a[0]] || []).length - (ELEG[b[0]] || []).length).forEach(([s, i]) => {
-    const e = ELEG[s]; if (!e) return; const j = disp.find(x => !usados.has(x.id) && e.includes(x.pos)); if (j) { usados.add(j.id); res[i] = j; } });
-  return slots.map((s, i) => ({ slot: s, j: res[i] }));
-}
-function liga(q) {
-  titulo('Mi liga de Sleeper');
-  const u = q.get('u') || (PERFIL && PERFIL.sleeper) || ls('fx-sleeper') || '';
-  if (u) setTimeout(() => cargaLiga(u, q.get('l')), 0);
-  return `<div class="page">${crumbs([['#/herramientas', 'Herramientas'], ['', 'Mi liga']])}<div class="wrap narrowish"><section class="block">
-    <div class="head"><div><h2>Mi liga de Sleeper</h2><p class="hsub">Escribe tu usuario de Sleeper: te decimos a quién alinear esta semana, qué cambiar y qué hay disponible en tu liga.</p></div></div>
-    <form id="f-liga" class="fform inline" autocomplete="off"><input name="u" value="${esc(u)}" placeholder="Tu usuario de Sleeper" aria-label="Usuario de Sleeper" required><button class="btn sm" type="submit">Cargar mi liga</button></form>
-    <div id="liga-res">${u ? '<p class="px blink" style="margin-top:22px;color:var(--accent)">CARGANDO LIGA…</p>' : ''}</div>
-  </section></div></div>`;
-}
-async function cargaLiga(u, lid) {
-  const box = () => $('#liga-res'); if (!box()) return;
-  try {
-    const us = await sget('user/' + encodeURIComponent(u.trim()));
-    if (!us || !us.user_id) throw new Error('nouser');
-    ls('fx-sleeper', u.trim());
-    const ligas = (await sget(`user/${us.user_id}/leagues/nfl/${D.temporada}`)) || [];
-    if (!box()) return;
-    if (!ligas.length) { box().innerHTML = `<div class="empty">${esc(u)} no tiene ligas de ${D.temporada} en Sleeper.</div>`; return; }
-    const L = ligas.find(x => x.league_id === lid) || ligas[0];
-    const [rosters, users] = await Promise.all([sget(`league/${L.league_id}/rosters`), sget(`league/${L.league_id}/users`)]);
-    if (box()) box().innerHTML = pintaLiga(us, ligas, L, rosters || [], users || []);
-  } catch (e) { if (box()) box().innerHTML = `<div class="empty">${e.message === 'nouser' ? 'No encontramos ese usuario en Sleeper. Revisa cómo está escrito.' : 'No pudimos conectar con Sleeper. Intenta de nuevo en un momento.'}</div>`; }
-}
-function pintaLiga(us, ligas, L, rosters, users) {
-  const mio = rosters.find(r => r.owner_id === us.user_id || (r.co_owners || []).includes(us.user_id));
-  const rec = L.scoring_settings ? +L.scoring_settings.rec || 0 : 1, fmtL = rec >= 1 ? 0 : rec > 0 ? 1 : 2;
-  const chips = ligas.length > 1 ? `<div class="chips" style="margin-top:18px">${ligas.map(x => `<a class="chip ${x.league_id === L.league_id ? 'on' : ''}" href="#/liga?u=${encodeURIComponent(us.username || us.display_name)}&l=${x.league_id}">${esc(x.name)}</a>`).join('')}</div>` : '';
-  if (!mio) return chips + `<div class="empty">No encontramos tu equipo en ${esc(L.name)}.</div>`;
-  const ids = mio.players || [], mios = ids.map(id => J[id]).filter(Boolean), def = ids.find(id => EQUIPOS[id]);
-  const fueraTop = ids.filter(id => !J[id] && !EQUIPOS[id]).length;
-  const slots = (L.roster_positions || []).filter(s => !['BN', 'IR', 'TAXI'].includes(s));
-  const opt = alineacion(slots, mios), optIds = new Set(opt.filter(x => x.j).map(x => x.j.id));
-  const titulares = new Set(mio.starters || []);
-  const entra = opt.filter(x => x.j && !titulares.has(x.j.id)).map(x => x.j);
-  const sale = (mio.starters || []).map(id => J[id]).filter(j => j && !optIds.has(j.id));
-  const banca = mios.filter(j => !optIds.has(j.id)).sort((a, b) => b.pEst - a.pEst);
-  const ocupados = new Set(rosters.flatMap(r => r.players || []));
-  const libres = ['QB', 'RB', 'WR', 'TE'].map(p => [p, P.filter(j => j.pos === p && j.team !== 'FA' && !ocupados.has(j.id) && !fueraTemp(j)).map(j => [j, valorROS(j)]).sort((a, b) => b[1].valor - a[1].valor).slice(0, 3)]);
-  const yo = users.find(x => x.user_id === us.user_id) || {}, nombreEq = (yo.metadata && yo.metadata.team_name) || yo.display_name || us.display_name;
-  const st = mio.settings || {}, w = semActual();
-  const motivo = j => { const v = veredicto(j).v; return v === 'OUT' ? 'está OUT' : v === 'BYE' ? 'descansa' : `proyecta ${n1(j.pEst)}`; };
-  return `${chips}
-    <div class="card liga-h" style="margin-top:18px">${fxLogo(30)}<div><b>${esc(L.name)}</b><small>${esc(nombreEq)} · ${st.wins ?? 0}-${st.losses ?? 0}${st.ties ? '-' + st.ties : ''} · ${L.total_rosters} equipos · ${FMTS[fmtL]}</small></div></div>
-    ${fmtL !== FMT ? `<p class="aviso-fmt">Tu liga se juega en <b>${FMTS[fmtL]}</b> y estás viendo ${FMTS[FMT]}. <button type="button" class="chip" data-fmt="${fmtL}">Usar ${FMTS[fmtL]}</button></p>` : ''}
-    ${entra.length || sale.length ? `<div class="card cambios"><h3>⚠ Cambios para la semana ${w}</h3>${sale.map(j => `<p class="cb sale">▼ Saca a <a href="#/jugador/${j.id}">${esc(j.n)}</a>: ${motivo(j)}.</p>`).join('')}${entra.map(j => `<p class="cb entra">▲ Mete a <a href="#/jugador/${j.id}">${esc(j.n)}</a>: ${motivo(j)} ${rivalTxt(j.team)}.</p>`).join('')}</div>` : `<div class="card cambios ok"><h3>✓ Tu alineación está bien</h3><p class="sub">Tus titulares en Sleeper coinciden con la alineación óptima de la semana ${w}.</p></div>`}
-    <div class="grid g2" style="margin-top:18px">
-      <div class="card"><h3>Alineación sugerida · S${w}</h3><div class="plist">${opt.map(x => `<div class="slotrow"><i class="slot">${SLOT[x.slot] || x.slot}</i>${x.j ? prow(x.j, `<em class="n">${n1(x.j.pEst)}</em>${fxPill(x.j)}`) : x.slot === 'DEF' && def ? `<a class="prow" href="#/equipo/${def}">${helmet(def, '', 34)}<span class="meta"><span class="pname">${esc(EQUIPOS[def])}</span><small>Defensa · ${rivalTxt(def)}</small></span></a>` : '<span class="sub">Sin jugador disponible</span>'}</div>`).join('')}</div></div>
-      <div class="card"><h3>Banca</h3><div class="plist">${banca.length ? banca.map(j => prow(j, `<em class="n">${n1(j.pEst)}</em>${fxPill(j)}`)).join('') : '<p class="sub">Sin jugadores en la banca.</p>'}</div>${fueraTop ? `<p class="sub" style="margin-top:10px">${fueraTop} jugador(es) de tu equipo están fuera de nuestro top ${P.length} y no se muestran.</p>` : ''}</div>
-    </div>
-    <div class="card" style="margin-top:18px"><h3>Disponibles en tu liga</h3><p class="sub">Lo mejor que nadie tiene en ${esc(L.name)}, por valor para el resto de la temporada.</p>
-      <div class="grid g4 libres">${libres.map(([p, L2]) => `<div><b class="lpos">${p}</b>${L2.length ? L2.map(([j, v]) => prow(j, `<em class="n">${n1(v.ppj)}</em>`)).join('') : '<p class="sub">Nada relevante.</p>'}</div>`).join('')}</div></div>
-    <p class="sub" style="margin-top:14px"><a href="#/trade">¿Pensando en un trade? Analízalo aquí ›</a></p>`;
-}
-
 /* ---------- formularios y botones (delegados) ---------- */
 document.addEventListener('submit', async e => {
   const f = e.target; if (!f.id && !f.classList.contains('tr-add')) return;
@@ -919,13 +851,12 @@ document.addEventListener('submit', async e => {
     const base = location.origin + location.pathname.replace(/(jugador|noticia|equipo)\/.*$/, '');
     const { error } = await (await cargaSB()).auth.signInWithOtp({ email, options: { emailRedirectTo: base } });
     msg(error ? (/rate|limit/i.test(error.message) ? 'Demasiados intentos. Espera unos minutos.' : 'No se pudo enviar. Revisa tu correo.') : '✓ Listo. Revisa tu correo (y la carpeta de spam) y abre el enlace en este mismo navegador.'); }
-  else if (f.id === 'f-perfil') { e.preventDefault(); const d = { nombre: f.nombre.value.trim().slice(0, 40), sleeper: f.sleeper.value.trim().slice(0, 40) || null };
+  else if (f.id === 'f-perfil') { e.preventDefault(); const d = { nombre: f.nombre.value.trim().slice(0, 40) };
     const { error } = await SB.from('perfiles').update(d).eq('id', YO.id); if (!error) { PERFIL = { ...PERFIL, ...d }; pintaCuentaBtn(); } msg(error ? 'No se pudo guardar.' : '✓ Guardado'); }
   else if (f.id === 'f-news') { e.preventDefault(); const email = f.email.value.trim().toLowerCase(); msg('Guardando…');
     try { const { error } = await (await cargaSB()).from('suscriptores').insert({ email, fuente: 'sitio' }); msg(!error || error.code === '23505' ? '✓ ¡Listo! Te llegará el resumen de cada semana.' : 'Revisa tu correo e intenta de nuevo.'); if (!error) f.reset(); } catch (er) { msg('Sin conexión. Intenta de nuevo.'); } }
   else if (f.id === 'f-reporte') { e.preventDefault(); const t = f.m.value.trim(); if (!t) return; msg('Enviando…');
     try { const { error } = await (await cargaSB()).from('reportes').insert({ nota: f.dataset.nota, mensaje: t.slice(0, 900), user_id: YO ? YO.id : null }); msg(error ? 'No se pudo enviar.' : '✓ Gracias. Lo revisamos.'); if (!error) f.reset(); } catch (er) { msg('Sin conexión. Intenta de nuevo.'); } }
-  else if (f.id === 'f-liga') { e.preventDefault(); location.hash = '#/liga?u=' + encodeURIComponent(f.u.value.trim()); }
   else if (f.classList.contains('tr-add')) { e.preventDefault(); const v = f.j.value.trim().toLowerCase(); if (!v) return;
     const j = P.find(x => x.n.toLowerCase() === v) || P.filter(x => x.n.toLowerCase().includes(v)).sort((a, b) => b.pEst - a.pEst)[0];
     if (j && !TR.da.includes(j.id) && !TR.recibe.includes(j.id)) { TR[f.dataset.k].push(j.id); pintaTrade(); }
@@ -945,10 +876,10 @@ function router() {
   const q = new URLSearchParams(qs || ''), [, seccion, a, b] = ruta.split('/');
   const R = { '': () => inicio(), noticias: () => noticias(q), reportajes: () => noticias(q), noticia: () => noticia(a), reportaje: () => noticia(a), jugador: () => jugador(a), comparar: () => comparar(a, b), posicion: () => posicion(a),
     equipos: () => equipos(), equipo: () => equipo(a), partidos: () => partidos(q), partido: () => partido(a), lideres: () => lideres(q), media: () => media(), exclusivo: () => exclusivo(), temporada: () => temporada(), semana: () => semana(a), tendencias: () => tendencias(), lesionados: () => lesionados(q),
-    cuenta: () => cuenta(), herramientas: () => herramientas(), trade: () => trade(q), liga: () => liga(q) };
+    cuenta: () => cuenta(), herramientas: () => herramientas(), trade: () => trade(q) };
   app.innerHTML = (R[seccion || ''] || noEncontrado)();
   scrollTo({ top: 0 });
-  const act = s => s === (seccion || '') || (seccion === 'noticia' && s === 'noticias') || (seccion === 'partido' && s === 'partidos') || (seccion === 'semana' && s === 'temporada') || (['trade', 'liga'].includes(seccion) && s === 'herramientas');
+  const act = s => s === (seccion || '') || (seccion === 'noticia' && s === 'noticias') || (seccion === 'partido' && s === 'partidos') || (seccion === 'semana' && s === 'temporada') || (seccion === 'trade' && s === 'herramientas');
   document.querySelectorAll('.tabbar a, .links a').forEach(l => l.classList.toggle('act', act(l.dataset.s)));
   $('.links').classList.remove('open');
   if (seccion === 'posicion') montaTabla(a);
