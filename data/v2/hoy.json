@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-21T04:58:51.834Z",
-  "ultimaIA": "2026-10-21T03:15:59.437Z",
+  "actualizado": "2026-10-21T05:26:31.012Z",
+  "ultimaIA": "2026-10-21T05:26:31.012Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,81 +13,30 @@
   ],
   "noticias": [
     {
-      "id": "n20261021031507",
-      "fecha": "2026-10-21T03:15:59.437Z",
+      "id": "n20261021052611",
+      "fecha": "2026-10-21T05:26:31.012Z",
       "semana": 7,
-      "titulo": "Omar Cooper Jr. genera dudas según analistas reconocidos",
+      "titulo": "Matthew Stafford busca evitar récord negativo histórico con los Rams",
       "claves": [
-        "Analistas de renombre muestran pesimismo sobre su proyección fantasy real.",
-        "Incorporación masiva en agencias libres no asegura volumen constante semanal.",
-        "Riesgo elevado de nula producción para rosters de ligas poco profundas."
+        "Matthew Stafford al borde de la marca histórica de derrotas",
+        "El arranque de 2-4 complica las aspiraciones de Los Angeles",
+        "La ofensiva sufre por falta de juego profundo y lesiones"
       ],
-      "contexto": "A pesar de figurar entre los elementos más reclamados en la agencia libre por diversos estrategas, el panorama alrededor de Omar Cooper Jr. luce bastante desalentador. El respetado analista Mike Clay expresó abiertamente su pesimismo sobre el verdadero aporte que el jugador puede ofrecer en semanas consecutivas. La distribución del balón y la falta de un rol protagónico establecido reducen la fiabilidad que requiere un competidor en estas alturas del campeonato.",
-      "fantasy": "No te dejes llevar por la euforia colectiva y envía a Omar Cooper Jr. directamente a la banca. En ligas tradicionales de doce participantes, utilizarlo como titular representa una apuesta sumamente imprudente sin un piso claro de toques o recepciones aseguradas. Si lo tomaste del alambre, mantenlo como simple seguro de profundidad mientras se aclara la rotación, pero jamás lo expongas en tu alineación estelar de la Semana 7.",
-      "equipo_impacto": "La incorporación de Cooper busca parchar huecos específicos, pero no altera el núcleo de la estrategia aérea. Su impacto continuará condicionado a la efectividad de los receptores prioritarios del esquema ofensivo del conjunto.",
-      "accion": "Deja a Omar Cooper Jr. en la banca de tu plantilla.",
-      "etiqueta": "SIT",
+      "contexto": "El veterano mariscal de campo de los Rams se encuentra muy cerca de empatar una marca histórica poco deseada en cuanto a tropiezos acumulados en su carrera, reflejo de un complicado inicio de temporada para todo el plantel angelino.",
+      "fantasy": "Se mantiene como una opción de riesgo moderado en ligas superflex; su proyección depende estrictamente del volumen aéreo, pero el mal momento colectivo lo vuelve un jugador difícil de confiar plenamente como START absoluto.",
+      "equipo_impacto": "Evidencia la crisis colectiva que atraviesa la escuadra dirigida por Sean McVay, la cual necesita corregir errores urgentemente para salvar el año.",
+      "accion": "Evalúa alternativas en tu banca si cuentas con un mariscal con mejor momento.",
+      "etiqueta": "TENDENCIA",
       "impacto": "BAJA",
-      "equipo": "IND",
+      "equipo": "LAR",
       "equipos": [
-        "IND",
-        "NYJ"
+        "LAR"
       ],
       "jugadores": [
-        "13276"
-      ]
-    },
-    {
-      "id": "n20261021031510",
-      "fecha": "2026-10-21T03:15:59.437Z",
-      "semana": 7,
-      "titulo": "Jalen Hurts evita castigos pero permanece en lista inactiva",
-      "claves": [
-        "NFL descartó sanciones a Eagles por el manejo médico del mariscal.",
-        "Permanece en la lista de reservas lesionados por lesión en pantorrilla.",
-        "No se encuentra habilitado para tener actividad en la Semana 7."
+        "421",
+        "1433"
       ],
-      "contexto": "La NFL y su cuerpo médico concluyeron que Philadelphia actuó con cautela apropiada al atender el diagnóstico de coágulos de Jalen Hurts durante la Semana 5, descartando cualquier sanción para el club. No obstante, en el terreno de juego Hurts continúa colocado en la lista de lesionados por molestias en la pantorrilla. La directiva y el entrenador Nick Sirianni no precipitarán la vuelta del quarterback estelar hasta que cuente con alta médica completa.",
-      "fantasy": "Jalen Hurts no está disponible para jugar en la Semana 7 bajo ninguna circunstancia. Bajo las reglas de fantasy, debes conservarlo estrictamente en tu espacio de lesionados sin caer en la tentación de soltarlo, pues su potencial al regresar será vital para playoffs. Explora reemplazos viables en mariscales como Jordan Love o Bo Nix mientras el líder de las Águilas concluye su periodo reglamentario fuera del emparrillado.",
-      "equipo_impacto": "Philadelphia resiente la falta de liderazgo de su mariscal franquicia. La ofensiva aérea con DeVonta Smith y Dallas Goedert pierde sincronía, forzando a Sirianni a simplificar asignaciones y depender de ejecuciones terrestres conservadoras.",
-      "accion": "Mantén a Jalen Hurts resguardado en tu casilla de lesionados.",
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "PHI",
-      "equipos": [
-        "PHI"
-      ],
-      "jugadores": [
-        "6904",
-        "5022",
-        "7525"
-      ]
-    },
-    {
-      "id": "n20261021031511",
-      "fecha": "2026-10-21T03:15:59.437Z",
-      "semana": 7,
-      "titulo": "George Kittle asume protagonismo máximo en San Francisco",
-      "claves": [
-        "Comanda las alas cerradas con 16.8 puntos proyectados en PPR.",
-        "Bajas de Mike Evans y otros receptores incrementan exponencialmente su volumen.",
-        "Opción indispensable de inicio ante cualquier oponente en Semana 7."
-      ],
-      "contexto": "El ala cerrada estelar George Kittle se encuentra en el punto cumbre de su relevancia para los 49ers de San Francisco. Ante la baja confirmada de Mike Evans por molestias en el tendón de Aquiles y la ausencia de receptores complementarios, Kittle representa el blanco de mayor confianza para Brock Purdy. El ala cerrada domina las métricas de puntos esperados, garantizando un papel preponderante cada vez que el equipo se aproxima a zona prometida.",
-      "fantasy": "Kittle lidera a todas las alas cerradas de la Semana 7 con una espectacular proyección de 16.8 unidades en formatos PPR. Con la baraja de receptores reducida drásticamente, su piso de objetivos será altísimo. Arráncalo sin reservas en cualquier liga, sin importar la cantidad de escuadras participantes; su capacidad física para romper tacleadas y anotar múltiples touchdowns lo coloca como una ventaja competitiva determinante este fin de semana.",
-      "equipo_impacto": "Kittle es el corazón del esquema ofensivo de Kyle Shanahan. Su destreza bloqueando consolida la carrera de Christian McCaffrey, mientras que sus recepciones intermedias desahogan la distribución del ovoide para el mariscal Brock Purdy.",
-      "accion": "Alinea a George Kittle con total certeza en tu puesto titular.",
-      "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "SF",
-      "equipos": [
-        "SF"
-      ],
-      "jugadores": [
-        "4217",
-        "8183",
-        "2216"
-      ]
+      "menciona": []
     }
   ],
   "lesionados": [
@@ -299,9 +248,9 @@
     "8129"
   ],
   "duelo": {
-    "a": "Amon-Ra St. Brown",
-    "b": "Ja'Marr Chase",
-    "veredicto": "Arranca a Amon-Ra St. Brown sobre Ja'Marr Chase por mayor volumen proyectado (19.5 vs 19.1) en un tiroteo garantizado de Detroit, ofreciendo un piso más seguro en formatos PPR para la Semana 7."
+    "a": "Brock Purdy",
+    "b": "Drake Maye",
+    "veredicto": "Arranca a Drake Maye por su ligera ventaja en proyección semanal y mayor techo ofensivo en el esquema de Nueva Patriots."
   },
   "fuentes": [
     "Sleeper",
