@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-21T15:09:09.876Z",
-  "ultimaIA": "2026-10-21T13:20:05.889Z",
+  "actualizado": "2026-10-21T15:41:32.155Z",
+  "ultimaIA": "2026-10-21T15:41:32.155Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,27 +13,28 @@
   ],
   "noticias": [
     {
-      "id": "n20261021132006",
-      "fecha": "2026-10-21T13:20:05.889Z",
+      "id": "n20261021154102",
+      "fecha": "2026-10-21T15:41:32.155Z",
       "semana": 7,
-      "titulo": "Jonathan Taylor proyecta solidez mientras surgen rumores",
+      "titulo": "Marquez Valdes-Scantling busca impacto en Pittsburgh",
       "claves": [
-        "Proyección confiable de 17.7 puntos PPR",
-        "Mencionado en posibles escenarios de traspaso",
-        "Titular establecido en la ofensiva terrestre"
+        "Llega para calmar la crisis de receptores",
+        "Ausencias sensibles por lesión en los Steelers",
+        "Opción profunda para los entrenadores"
       ],
-      "contexto": "Jonathan Taylor continúa siendo una pieza codiciada tanto dentro del campo como en el entorno informativo de la liga rumbo a la fecha límite de canjes. Analistas señalan que figuras estelares de su calibre merecen competir en contendientes reales. Mientras esos rumores circulan, el estelar corredor de Indianápolis mantiene su condición física óptima y se prepara para comandar la ofensiva terrestre en la séptima fecha del torneo.",
-      "fantasy": "Con 17.7 puntos PPR proyectados, Taylor se consolida firmemente como un corredor número uno o número dos de élite en ligas de diez y doce participantes. Su consistencia semanal brinda seguridad inquebrantable a quienes compiten en formatos tradicionales. No hay motivos para pensar en negociarlo a la baja; al contrario, su carga habitual de toques garantiza puntos vitales cada vez que toma el balón de las manos del mariscal.",
-      "equipo_impacto": "Taylor absorbe la presión del ataque terrestre de los Colts, facilitando terceras oportunidades manejables y restando peso al juego aéreo ante la ausencia de receptores abiertos lastimados.",
-      "accion": "Mantén a Jonathan Taylor en tu alineación titular y monitorea cualquier rumor de traspaso.",
+      "contexto": "Ante las bajas confirmadas de Michael Pittman Jr. y Roman Wilson por problemas físicos, los Steelers decidieron incorporar de urgencia al veterano receptor Marquez Valdes-Scantling para aportar experiencia por fuera.",
+      "fantasy": "Su impacto en fantasy es por ahora limitado y de impacto bajo en ligas estándar, pero sirve como un parche desesperado en formatos muy profundos o de la modalidad de eliminación si buscas alguien con snaps garantizados.",
+      "equipo_impacto": "La ofensiva aérea de Pittsburgh necesitaba desesperadamente piernas frescas y manos veteranas para abrir el campo ante la ausencia de sus principales armas.",
+      "accion": "Monitorea su participación antes de arriesgarte a alinearlo.",
       "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "IND",
+      "impacto": "NEUTRO",
+      "equipo": "PIT",
       "equipos": [
-        "IND"
+        "PIT"
       ],
       "jugadores": [
-        "6813"
+        "5086",
+        "6819"
       ],
       "menciona": []
     }
@@ -216,10 +217,10 @@
     "12487",
     "10213",
     "MIN",
-    "9502",
     "7553",
-    "11792",
+    "9502",
     "3271",
+    "11792",
     "11610",
     "9230",
     "13296",
@@ -241,8 +242,8 @@
     "3271",
     "11439",
     "2505",
-    "650",
     "9480",
+    "650",
     "8132",
     "6904",
     "12711",
@@ -251,13 +252,13 @@
     "1166",
     "11647",
     "3321",
-    "8129",
-    "13330"
+    "13330",
+    "8129"
   ],
   "duelo": {
-    "a": "Bijan Robinson",
-    "b": "Kyren Williams",
-    "veredicto": "Arranca a Bijan Robinson. Con una proyección superior de 22.8 puntos frente a los 20.0 de Williams, Robinson posee mayor explosividad y un volumen más dinámico tanto por tierra como por aire en la Semana 7."
+    "a": "CeeDee Lamb",
+    "b": "Zay Flowers",
+    "veredicto": "Arranca a CeeDee Lamb sin dudarlo; su techo proyectado en recepciones y yardas totales supera por margen al de Flowers en esta jornada de PPR."
   },
   "fuentes": [
     "Sleeper",
