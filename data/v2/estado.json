@@ -1,10 +1,21 @@
 {
-  "fecha": "2026-10-21T09:49:48.492Z",
+  "fecha": "2026-10-21T10:21:36.664Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 15 nuevos, 15 en total",
     "[0.8s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[1.8s] ESPN: lesiones 799 · noticias 50",
-    "[2.3s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 158 · semana de juego 7 · IA usada hoy 8/40"
+    "[2.0s] ESPN: lesiones 799 · noticias 50",
+    "[2.6s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[164.3s] IA OK con gemini-3.8-flash",
+    "[164.3s] Descartada: Terry McLaurin fuera por el resto del año → duplicada",
+    "[164.3s] Descartada: Mike Evans sufre lesión de tendón de Aquiles → duplicada",
+    "[164.3s] Descartada: Jahmyr Gibbs encabeza proyecciones terrestres en Semana 7 → duplicada",
+    "[164.3s] Descartada: Brock Purdy lidera con eficiencia récord en NFL → duplicada",
+    "[164.3s] Descartada: Najee Harris es cortado tras rol terrestre decepcionante → duplicada",
+    "[164.3s] Descartada: Bryce Young genera dudas con baja proyección semanal → duplicada",
+    "[164.3s] Descartada: Roschon Johnson surge como opción codiciada en waivers → duplicada",
+    "[164.3s] Descartada: Jaxon Smith-Njigba proyecta liderar a los receptores abiertos → duplicada",
+    "[164.3s] Noticias nuevas verificadas: 0",
+    "[164.9s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 158 · semana de juego 7 · IA usada hoy 9/40"
   ]
 }
