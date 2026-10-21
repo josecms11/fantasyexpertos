@@ -38,6 +38,8 @@ const hace = f => { if (!f) return ''; const m = Math.round((Date.now() - Date.p
 const fechaC = f => f ? new Date(f).toLocaleDateString('es-MX', { day: 'numeric', month: 'short' }) : '';
 const titulo = t => { document.title = t ? t + ' · Fantasy Expertos' : 'Fantasy Expertos · Fantasy football en español'; };
 const actualizado = () => 'Actualizado ' + new Date(D.actualizado).toLocaleString('es-MX', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+const esqMatches = (n = 3) => `<div class="matches" aria-busy="true" aria-label="Cargando marcadores">${'<div class="match esq"><i class="e1"></i><span class="e-row"><i class="e-hel"></i><i class="e-sc"></i><i class="e-hel"></i></span><i class="e2"></i><i class="e3"></i></div>'.repeat(n)}</div>`;
+const cargador = (txt = 'CARGANDO', c = 'var(--accent)') => `<div class="wrap loading"><div class="fx-load" role="status" style="--lc:${c}">${fxLogo(56)}<span class="fx-bar"><i></i></span><p class="px">${txt}</p></div></div>`;
 const fxLogo = (s = 22) => `<svg width="${s}" height="${Math.round(s * .67)}" viewBox="20 55 150 100" aria-hidden="true"><polygon points="69,58.5 166.5,58.5 153.5,82.2 83.5,82.2 49,151.7 23.7,151.7" fill="#E8E8E8"/><polygon points="90.5,94.5 146.2,94.5 133,118 79.2,118" fill="#4A9A68"/></svg>`;
 
 /* ---------- casco pixel (sello de marca) ---------- */
@@ -323,7 +325,7 @@ function noticia(id) {
     <div class="kcards stagger">${(n.claves || []).map((c, k) => `<div class="kcard"><b>${k + 1}</b>${esc(c)}</div>`).join('')}${cerrada ? [2, 3].map(k => `<div class="kcard lock"><b>${k}</b><span>${CANDADO} Solo Premium</span></div>`).join('') : ''}</div>
     <div class="nbody">
       <div class="ncol">
-        ${cerrada ? (prem ? '<p class="px blink" style="color:var(--gold)">ABRIENDO NOTA PREMIUM…</p>' : previaPremium()) : `${sec('Qué pasó', n.contexto || n.cuerpo)}
+        ${cerrada ? (prem ? '<div class="esq-lineas oro" aria-busy="true" aria-label="Abriendo nota Premium"><i></i><i></i><i></i><i></i><i></i></div>' : previaPremium()) : `${sec('Qué pasó', n.contexto || n.cuerpo)}
         ${sec('Impacto en fantasy', n.fantasy, 'fx')}
         ${sec('Qué cambia para el equipo', n.equipo_impacto)}
         ${n.accion ? `<div class="accion">${fxLogo(30)}<div><small>QUÉ HACER HOY</small><p>${esc(n.accion)}</p></div></div>` : ''}`}
@@ -581,7 +583,7 @@ const ICO = {
 };
 const redBtn = (k, ico, txt) => D.redes[k] ? `<a class="social" href="${esc(D.redes[k].url)}" target="_blank" rel="noopener">${ICO[ico]}<span>${txt}<small>${esc(D.redes[k].usuario || '')}</small></span></a>` : '';
 const grupoRedes = () => `<div class="redgroups"><div class="redgroup"><h4>FANTASY EXPERTOS</h4><div class="socials">${redBtn('youtube', 'yt', 'YouTube')}${redBtn('spotify', 'sp', 'Podcast')}${redBtn('instagramFX', 'ig', 'Instagram')}</div></div><div class="redgroup"><h4>JOE NFL</h4><div class="socials">${redBtn('tiktok', 'tt', 'TikTok')}${redBtn('instagram', 'ig', 'Instagram')}</div></div></div>`;
-const vidCard = (v, big) => `<button class="vid ${big ? 'big' : ''}" type="button" data-v="${esc(v.id)}" aria-label="Reproducir ${esc(v.titulo)}"><span class="thumb"><img loading="lazy" src="https://i.ytimg.com/vi/${esc(v.id)}/${big ? 'maxresdefault' : 'hqdefault'}.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/${esc(v.id)}/hqdefault.jpg'" alt=""><span class="play">${ICO.yt}</span>${v.corto ? '<span class="tm">SHORT</span>' : ''}</span>
+const vidCard = (v, big) => `<button class="vid ${big ? 'big' : ''}" type="button" data-v="${esc(v.id)}" aria-label="Reproducir ${esc(v.titulo)}"><span class="thumb"><img loading="lazy" src="https://i.ytimg.com/vi/${esc(v.id)}/${big ? 'maxresdefault' : 'hqdefault'}.jpg" onerror="if(this.dataset.r){this.remove()}else{this.dataset.r=1;this.src='https://i.ytimg.com/vi/${esc(v.id)}/hqdefault.jpg'}" alt=""><span class="play">${ICO.yt}</span>${v.corto ? '<span class="tm">SHORT</span>' : ''}</span>
   <span class="vinfo"><span class="vt">${esc(v.titulo)}</span><small>${v.fecha ? new Date(v.fecha).toLocaleDateString('es-MX', { day: 'numeric', month: 'short', year: 'numeric' }) : ''}${v.vistas ? ' · ' + nf.format(v.vistas) + ' vistas' : ''}</small></span></button>`;
 const videos = () => (D.videos.videos || []).slice().sort((a, b) => Date.parse(b.fecha || 0) - Date.parse(a.fecha || 0));
 const podcast = () => D.redes.spotify ? `<div class="pod"><iframe title="Podcast Fantasy Expertos en Spotify" src="https://open.spotify.com/embed/show/${esc(D.redes.spotify.show)}?theme=0" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>` : '';
@@ -591,10 +593,14 @@ function fxtv() {
 }
 function media() {
   titulo('FX TV');
-  const V = videos();
+  const V = videos(), largos = V.filter(v => !v.corto).length, R = D.redes;
+  const canal = (k, ico, txt, url) => R[k] ? `<a class="tv-canal ${k}" href="${esc(url || R[k].url)}" target="_blank" rel="noopener">${ico}<span>${txt}</span></a>` : '';
   return `<div class="page">${crumbs([['', 'FX TV']])}<div class="wrap">
-    <section class="block"><div class="head"><div><h2>El podcast</h2><p class="hsub">Fantasy Expertos en Spotify.</p></div>${D.redes.spotify ? `<a class="all" href="${esc(D.redes.spotify.url)}" target="_blank" rel="noopener">Abrir en Spotify ›</a>` : ''}</div>${podcast()}</section>
-    <section class="block"><div class="head"><div><h2>YouTube</h2><p class="hsub">El video más reciente siempre primero.</p></div>${D.redes.youtube ? `<a class="all" href="${esc(D.redes.youtube.url)}?sub_confirmation=1" target="_blank" rel="noopener">Suscríbete ›</a>` : ''}</div>${tvBloque(V)}</section>
+    <div class="tv-hero"><div><span class="tv-live"><i></i>FX TV</span><h1>Videos y podcast</h1><p class="hero-sub">El análisis de Fantasy Expertos en video y audio. Se reproduce aquí mismo, sin salir del sitio.</p>
+      ${V.length ? `<p class="hero-n"><b>${V.length}</b> videos publicados${largos && largos !== V.length ? ` · ${largos} episodios completos` : ''}</p>` : ''}</div>
+      <div class="tv-canales">${canal('youtube', ICO.yt, 'Suscríbete en YouTube', R.youtube && R.youtube.url + '?sub_confirmation=1')}${canal('spotify', ICO.sp, 'Escucha en Spotify')}${canal('tiktok', ICO.tt, 'Síguenos en TikTok')}</div></div>
+    <section class="block"><div class="head"><div><h2>Lo más reciente</h2><p class="hsub">El video más nuevo siempre primero.</p></div></div>${tvBloque(V)}</section>
+    ${R.spotify ? `<section class="block"><div class="head"><div><h2>El podcast</h2><p class="hsub">Fantasy Expertos en Spotify.</p></div><a class="all" href="${esc(R.spotify.url)}" target="_blank" rel="noopener">Abrir en Spotify ›</a></div>${podcast()}</section>` : ''}
     ${V.length > 4 ? `<section class="block"><div class="head"><h2>Más videos</h2></div><div class="vids">${V.slice(4, 22).map(v => vidCard(v)).join('')}</div></section>` : ''}
   </div></div>`;
 }
@@ -664,7 +670,7 @@ function campo(g) {
   return `<svg viewBox="0 0 80 14" preserveAspectRatio="none" shape-rendering="crispEdges" aria-label="Posición del balón"><rect width="80" height="14" fill="#12441F"/><rect width="8" height="14" fill="${col(g.visita.ab)[0]}"/><rect x="72" width="8" height="14" fill="${col(g.local.ab)[0]}"/>
     ${Array.from({ length: 11 }, (_, i) => `<rect x="${8 + i * 6.4}" width=".4" height="14" fill="#fff" opacity=".35"/>`).join('')}<rect x="${x - 1.5}" y="5" width="3" height="4" fill="#8B4A2B"><animate attributeName="y" values="5;4;5" dur=".6s" repeatCount="indefinite" calcMode="discrete"/></rect><rect x="${x}" width=".5" height="14" fill="${col(dueño)[1]}"/></svg>`;
 }
-function homeMatches() { return G.length ? `<div class="matches">${ordenG().slice(0, 6).map(matchCard).join('')}</div>` : '<div class="empty">Cargando marcadores…</div>'; }
+function homeMatches() { return G.length ? `<div class="matches">${ordenG().slice(0, 6).map(matchCard).join('')}</div>` : esqMatches(3); }
 const PLAYOFFS = [['3-1', 'Wild Card'], ['3-2', 'Divisional'], ['3-3', 'Final de conferencia'], ['3-5', 'Super Bowl']];
 function partidos(q) {
   titulo('Partidos');
@@ -672,8 +678,8 @@ function partidos(q) {
   const sel = (q && q.get('semana')) || ('2-' + act), [tipo, w] = sel.split('-');
   const nombre = tipo === '3' ? (PLAYOFFS.find(x => x[0] === sel) || [0, 'Playoffs'])[1] : 'Semana ' + w;
   const L = sel === '2-' + act && G.length ? G : GW[sel];
-  if (!L) cargaSemana(tipo, w).then(() => { if ((location.hash.split('semana=')[1] || '2-' + act) === sel) app.innerHTML = partidos(q); }).catch(() => { const m = $('#wkmsg'); if (m) m.textContent = 'Esta semana aún no tiene partidos publicados.'; });
-  const grupos = L ? [['in', 'En vivo'], ['pre', 'Próximos'], ['post', 'Finales']].map(([k, t]) => { const X = L.filter(g => g.estado === k); return X.length ? `<h3 class="grp">${t} · ${X.length}</h3><div class="matches">${X.map(matchCard).join('')}</div>` : ''; }).join('') : `<div class="empty" id="wkmsg">Cargando ${esc(nombre)}…</div>`;
+  if (!L) cargaSemana(tipo, w).then(() => { if ((location.hash.split('semana=')[1] || '2-' + act) === sel) app.innerHTML = partidos(q); }).catch(() => { const m = $('#wkmsg'); if (m) m.innerHTML = '<div class="empty">No pudimos cargar los partidos de esta semana. Intenta de nuevo en un momento.</div>'; });
+  const grupos = L ? [['in', 'En vivo'], ['pre', 'Próximos'], ['post', 'Finales']].map(([k, t]) => { const X = L.filter(g => g.estado === k); return X.length ? `<h3 class="grp">${t} · ${X.length}</h3><div class="matches">${X.map(matchCard).join('')}</div>` : ''; }).join('') : `<div id="wkmsg">${esqMatches(6)}</div>`;
   const byes = tipo === '2' && D.cal ? Object.keys(EQUIPOS).filter(t => D.cal.cal[t] && !D.cal.cal[t][w]) : [];
   return `<div class="page">${crumbs([['', 'Partidos']])}<div class="wrap"><section class="block">
     <div class="head"><div><h2>Partidos · ${esc(nombre)}</h2><p class="hsub">Temporada regular de la semana 1 a la 18 y los playoffs. ${sel === '2-' + act ? (enVivo() ? 'Se actualiza cada 20 segundos.' : 'Semana actual.') : ''}</p></div></div>
@@ -689,7 +695,7 @@ function partido(id) {
       const h = s.header; if (!h) return; const ev = mapEvento({ id, date: h.competitions[0].date, status: h.competitions[0].status, competitions: h.competitions }, h.week);
       GW['x-' + id] = [ev]; if (location.hash.includes(id)) router();
     }).catch(() => {});
-    return '<div class="wrap loading"><p class="blink">Cargando partido…</p></div>';
+    return cargador('CARGANDO PARTIDO');
   }
   titulo(`${g.visita.ab} vs ${g.local.ab}`);
   const notas = todasNoticias().filter(n => equiposDe(n).some(t => t === g.visita.ab || t === g.local.ab)).slice(0, 6);
@@ -707,7 +713,7 @@ function partido(id) {
         <a class="g-team" href="#/equipo/${g.local.ab}">${helmet(g.local.ab, '', 140, true, g.posesion === g.local.id ? 'bob' : '')}<b>${esc(g.local.nombre)}</b><small>${esc(g.local.rec)} · Local</small></a></div>
       ${g.estado === 'in' ? `<div class="g-field">${campo(g)}</div><div class="led"><small>${esc(g.downs || '')}${g.zonaRoja ? ' · ZONA ROJA' : ''}</small>${esc(g.ultima || 'Esperando la siguiente jugada…')}</div>` : ''}
     </div>
-    <div class="gsum" id="gsum"><div class="empty sm">Cargando estadísticas del partido…</div></div>
+    <div class="gsum" id="gsum"><div class="esq-lineas" aria-busy="true" aria-label="Cargando estadísticas del partido"><i></i><i></i><i></i><i></i></div></div>
     <section class="block grid g2">${lado(g.visita)}${lado(g.local)}</section>
     ${notas.length ? `<section class="block"><div class="head"><h2>Noticias de ${esc(g.visita.ab)} y ${esc(g.local.ab)}</h2></div><div class="news stagger">${notas.map(n => newsCard(n)).join('')}</div></section>` : ''}
   </div></div>`;
@@ -802,7 +808,7 @@ const panelMios = () => {
 };
 function cuenta(q = new URLSearchParams()) {
   titulo('Mi cuenta');
-  if (!SB) { cargaSB().then(() => SB.auth.getSession()).then(() => { if (/^#\/cuenta/.test(location.hash)) repinta(); }).catch(() => { const a = $('#app'); if (a) a.innerHTML = '<div class="wrap empty">No pudimos conectar. Intenta de nuevo en un momento.</div>'; }); return '<div class="wrap loading"><p class="px blink" style="color:var(--accent)">CARGANDO…</p></div>'; }
+  if (!SB) { cargaSB().then(() => SB.auth.getSession()).then(() => { if (/^#\/cuenta/.test(location.hash)) repinta(); }).catch(() => { const a = $('#app'); if (a) a.innerHTML = '<div class="wrap empty">No pudimos conectar. Intenta de nuevo en un momento.</div>'; }); return cargador('CONECTANDO'); }
   if (RECUPERA && YO) return `<div class="page">${crumbs([['', 'Nueva contraseña']])}<div class="wrap"><section class="auth card">
     <div class="auth-h">${fxLogo(44)}<h1>Nueva contraseña</h1></div>
     <form id="f-nueva" class="fform"><label>Escribe tu nueva contraseña<input type="password" name="pass" required minlength="8" autocomplete="new-password" placeholder="Mínimo 8 caracteres"></label><button class="btn" type="submit">Guardar contraseña</button><small class="msg"></small></form>
@@ -984,6 +990,7 @@ document.addEventListener('click', e => {
 });
 
 /* =============================== ROUTER =============================== */
+let _rutaPrev = null;
 function router() {
   const [ruta, qs] = ((location.hash || window.FX_RUTA || '').slice(1) || '/').split('?');
   const q = new URLSearchParams(qs || ''), [, seccion, a, b] = ruta.split('/');
@@ -991,6 +998,7 @@ function router() {
     equipos: () => equipos(), equipo: () => equipo(a), partidos: () => partidos(q), partido: () => partido(a), lideres: () => lideres(q), media: () => media(), exclusivo: () => exclusivo(), temporada: () => temporada(), semana: () => semana(a), tendencias: () => tendencias(), lesionados: () => lesionados(q),
     cuenta: () => cuenta(q), herramientas: () => herramientas(), trade: () => trade(q), privacidad: () => privacidad(), baja: () => baja(q) };
   app.innerHTML = (R[seccion || ''] || noEncontrado)();
+  if (ruta !== _rutaPrev) { _rutaPrev = ruta; app.classList.remove('entra'); void app.offsetWidth; app.classList.add('entra'); }
   scrollTo({ top: 0 });
   vista(ruta + (seccion === 'noticias' || seccion === 'lideres' || seccion === 'lesionados' ? (qs ? '?' + qs : '') : ''));
   const act = s => s === (seccion || '') || (seccion === 'noticia' && s === 'noticias') || (seccion === 'partido' && s === 'partidos') || (seccion === 'semana' && s === 'temporada') || (seccion === 'trade' && s === 'herramientas');
