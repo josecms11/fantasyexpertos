@@ -5,8 +5,10 @@
 // Importante: en la configuración de la función, "Verify JWT" debe estar APAGADO (Stripe no manda sesión).
 
 const FIN_TEMPORADA = '2027-02-28T23:59:59Z'; // el pase de temporada dura hasta después del Super Bowl
-const SB = Deno.env.get('SUPABASE_URL')!, KEY = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
-const SECRETO = Deno.env.get('STRIPE_WEBHOOK_SECRET') || '';
+const SB = Deno.env.get('SUPABASE_URL')!;
+// Llave de servidor: primero las llaves nuevas (sb_secret_…); si no existen, la llave clásica service_role.
+const KEY = (() => { try { const k = Object.values(JSON.parse(Deno.env.get('SUPABASE_SECRET_KEYS') || '{}'))[0]; if (k) return String(k); } catch (_) { /* sigue */ } return Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') || ''; })();
+const SECRETO = (Deno.env.get('STRIPE_WEBHOOK_SECRET') || '').trim();
 
 const hex = (b: ArrayBuffer) => [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, '0')).join('');
 async function firmaValida(cuerpo: string, cabecera: string | null) {
@@ -19,9 +21,12 @@ async function firmaValida(cuerpo: string, cabecera: string | null) {
   const calc = hex(await crypto.subtle.sign('HMAC', llave, new TextEncoder().encode(`${t}.${cuerpo}`)));
   return firmas.some(f => f.length === calc.length && [...f].every((c, i) => c === calc[i]));
 }
-const h = { apikey: KEY, Authorization: `Bearer ${KEY}`, 'Content-Type': 'application/json', Prefer: 'return=minimal' };
-const actualiza = (filtro: string, datos: Record<string, unknown>) =>
-  fetch(`${SB}/rest/v1/perfiles?${filtro}`, { method: 'PATCH', headers: h, body: JSON.stringify(datos) });
+const h: Record<string, string> = { apikey: KEY, 'Content-Type': 'application/json', Prefer: 'return=minimal' };
+if (KEY.startsWith('eyJ')) h.Authorization = `Bearer ${KEY}`;
+const actualiza = async (filtro: string, datos: Record<string, unknown>) => {
+  const r = await fetch(`${SB}/rest/v1/perfiles?${filtro}`, { method: 'PATCH', headers: h, body: JSON.stringify(datos) });
+  if (!r.ok) throw new Error(`Supabase ${r.status}: ${(await r.text()).slice(0, 200)}`);
+};
 const iso = (s?: number) => s ? new Date(s * 1000).toISOString() : null;
 const masDias = (d: number) => new Date(Date.now() + d * 864e5).toISOString();
 
