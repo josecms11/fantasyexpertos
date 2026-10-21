@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-21T17:20:46.636Z",
-  "ultimaIA": "2026-10-21T15:41:32.155Z",
+  "actualizado": "2026-10-21T17:55:43.293Z",
+  "ultimaIA": "2026-10-21T17:55:43.293Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,101 +13,27 @@
   ],
   "noticias": [
     {
-      "id": "x20261021172000",
-      "fecha": "2026-10-21T17:20:46.636Z",
+      "id": "n20261021175506",
+      "fecha": "2026-10-21T17:55:43.293Z",
       "semana": 7,
-      "exclusivo": true,
-      "fuente": "2026-10-21T16:20:56+00:00",
-      "titulo": "Previa de la semana 7: Partidos estelares dominicales",
+      "titulo": "Kerby Joseph perfila su regreso defensivo en los emparrillados de Detroit",
       "claves": [
-        "Juegos programados para la tarde dominical"
+        "Su recuperación avanza conforme a los plazos previstos",
+        "Es el ancla secundaria de la retaguardia",
+        "Apunta a fortalecer la cobertura profunda"
       ],
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "NFL",
-      "equipos": [
-        "NFL"
-      ],
-      "jugadores": [],
-      "premium": true
-    },
-    {
-      "id": "x20261021172001",
-      "fecha": "2026-10-21T17:20:46.636Z",
-      "semana": 7,
-      "exclusivo": true,
-      "fuente": "2026-10-21T16:20:56+00:00",
-      "titulo": "Trade Targets: Compra alto a estos receptores y alas cerradas",
-      "claves": [
-        "Stefon Diggs, TJ Hockenson y Burden listos para subir"
-      ],
-      "etiqueta": "TRADE",
+      "con el fin de": "Las noticias desde Detroit apuntan a una mejora sustancial en su defensiva secundaria con el inminente retorno de su profundo estelar, quien busca devolver solidez a la retaguardia del equipo.",
+      "fantasy": "Su impacto directo en ligas ofensivas estándar es nulo, pero en formatos IDP representa una adición de jerarquía obligatoria para sumar puntos en tackleadas y robos de balón.",
+      "equipo_impacto": "Su regreso ordena las asignaciones de cobertura y reduce las libertades concedidas a los receptores rivales en rutas largas.",
+      "accion": "Vigílalo en waivers si tu liga utiliza jugadores defensivos individuales.",
+      "etiqueta": "WAIVER",
       "impacto": "SUBE",
-      "equipo": "WAS",
+      "equipo": "DET",
       "equipos": [
-        "WAS",
-        "MIN",
-        "CHI",
-        "NE",
-        "PHI",
-        "BAL"
-      ],
-      "jugadores": [
-        "2449",
-        "5844",
-        "12519",
-        "5859",
-        "2309"
-      ],
-      "premium": true
-    },
-    {
-      "id": "x20261021172002",
-      "fecha": "2026-10-21T17:20:46.636Z",
-      "semana": 7,
-      "exclusivo": true,
-      "fuente": "2026-10-21T16:20:56+00:00",
-      "titulo": "Pánico Total: Jugadores bajo la lupa y en riesgo",
-      "claves": [
-        "Cam Skattebo y J.K. Dobbins generan dudas masivas"
-      ],
-      "etiqueta": "TRADE",
-      "impacto": "BAJA",
-      "equipo": "NYG",
-      "equipos": [
-        "NYG",
-        "DEN",
-        "LAC"
-      ],
-      "jugadores": [
-        "12481",
-        "7526",
-        "6806",
-        "12507"
-      ],
-      "premium": true
-    },
-    {
-      "id": "x20261021172003",
-      "fecha": "2026-10-21T17:20:46.636Z",
-      "semana": 7,
-      "exclusivo": true,
-      "fuente": "2026-10-21T16:20:56+00:00",
-      "titulo": "Espejismo total: Equipos sorpresa sin boleto a postemporada",
-      "claves": [
-        "Titans y Texans sorprenden pero fuera de playoffs"
-      ],
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "TEN",
-      "equipos": [
-        "TEN",
-        "HOU",
-        "ARI",
-        "NO"
+        "DET"
       ],
       "jugadores": [],
-      "premium": true
+      "menciona": []
     }
   ],
   "lesionados": [
@@ -200,6 +126,10 @@
       "estatus": "Fuera"
     },
     {
+      "id": "9508",
+      "estatus": "Duda"
+    },
+    {
       "id": "12534",
       "estatus": "Duda"
     },
@@ -266,10 +196,6 @@
     {
       "id": "11625",
       "estatus": "Duda"
-    },
-    {
-      "id": "12487",
-      "estatus": "Fuera"
     }
   ],
   "agregados": [
@@ -279,8 +205,8 @@
     "9482",
     "5849",
     "10235",
-    "9758",
     "6650",
+    "9758",
     "8135",
     "11539",
     "11655",
@@ -307,29 +233,29 @@
     "NE",
     "11435",
     "IND",
-    "7528",
     "13150",
+    "7528",
     "8121",
     "3271",
     "11439",
     "2505",
     "9480",
-    "650",
     "8132",
-    "6904",
+    "650",
     "7042",
-    "12711",
+    "6904",
     "12533",
+    "12711",
     "1166",
     "11647",
-    "8129",
     "13330",
+    "8129",
     "3321"
   ],
   "duelo": {
-    "a": "CeeDee Lamb",
-    "b": "Zay Flowers",
-    "veredicto": "Arranca a CeeDee Lamb sin dudarlo; su techo proyectado en recepciones y yardas totales supera por margen al de Flowers en esta jornada de PPR."
+    "a": "Josh Jacobs",
+    "b": "Javonte Williams",
+    "veredicto": "Arranca a Josh Jacobs por su volumen superior de acarreos y su rol consolidado en zona roja, lo que garantiza un piso de puntos mucho más seguro en comparación con Javonte Williams."
   },
   "fuentes": [
     "Sleeper",
