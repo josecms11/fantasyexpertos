@@ -1,23 +1,10 @@
 {
-  "fecha": "2026-10-21T17:55:59.376Z",
+  "fecha": "2026-10-21T18:21:31.952Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.4s] YouTube: 15 nuevos, 15 en total",
-    "[1.4s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[0.2s] YouTube: 15 nuevos, 15 en total",
+    "[1.6s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
     "[3.1s] ESPN: lesiones 799 · noticias 50",
-    "[4.1s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[4.7s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[5.0s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[5.3s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[19.0s] IA OK con gemini-3.5-flash-lite",
-    "[19.0s] Descartada: J.J. McCarthy toma los controles como mariscal titular → duplicada",
-    "[19.0s] Descartada: Marquez Valdes-Scantling llega a sumar opciones en Pittsburgh → duplicada",
-    "[19.0s] Descartada: Brandon McManus asume la responsabilidad de pateador en Los Ángeles → duplicada",
-    "[19.0s] Descartada: Josh Jacobs encabeza los planes ofensivos para la jornada → duplicada",
-    "[19.0s] Descartada: C.J. Stroud escala posiciones en el power ranking de pasadores → duplicada",
-    "[19.0s] Descartada: Mike Evans evita daños mayores tras asustar a su gerencia → duplicada",
-    "[19.0s] Descartada: Matthew Stafford persigue marcas históricas en medio de turbulencias → duplicada",
-    "[19.0s] Noticias nuevas verificadas: 1",
-    "[19.2s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 167 · semana de juego 7 · IA usada hoy 14/40"
+    "[3.9s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 167 · semana de juego 7 · IA usada hoy 14/40"
   ]
 }
