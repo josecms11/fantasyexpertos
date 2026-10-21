@@ -237,7 +237,7 @@ const noEncontrado = () => { titulo('No encontrado'); return `<div class="page w
 /* =============================== PÁGINAS =============================== */
 function bienvenida() {
   let visto = false; try { visto = localStorage.getItem('fx-bienvenida') === '2'; } catch (e) {}
-  return visto ? '' : `<div class="hello" id="welcome">${fxLogo(34)}<p><b>Bienvenido a Fantasy Expertos.</b> Marcadores en vivo, rankings por proyección en PPR, Half o Standard, Start/Sit con razones y noticias verificadas. Todo se actualiza solo.</p>
+  return visto ? '' : `<div class="hello" id="welcome">${fxLogo(34)}<p><b>Bienvenido a Fantasy Expertos.</b> Marcadores en vivo, rankings por proyección en PPR, Half o Standard, Start/Sit con razones y noticias verificadas.</p>
     <button type="button" aria-label="Cerrar" onclick="try{localStorage.setItem('fx-bienvenida','2')}catch(e){};document.getElementById('welcome').remove()">✕</button></div>`;
 }
 const topSemana = (pos, n = 3) => SEMNUM ? P.filter(x => x.pos === pos && ptsSem(x) != null).sort((a, b) => ptsSem(b) - ptsSem(a)).slice(0, n) : [];
