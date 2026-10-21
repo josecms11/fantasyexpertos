@@ -941,3 +941,12 @@ a:hover .th .th-vis .th-hel{transform:translateY(-5px) rotate(-4deg) scale(1.04)
 .th-top .ticket b,.th-top .medic b{font-size:1em}
 .th-top .ticket span,.th-top .medic small{font-size:.72em}
 .th-top .stamp{font-size:clamp(13px,3.4cqi,26px)}
+
+/* v12 · contenido para Google (se ve un instante antes de que cargue la app) */
+.seo{padding:28px 20px;max-width:860px}
+.seo h1{font-family:'Barlow Condensed',sans-serif;font-size:32px;margin:0 0 12px}
+.seo h2{font-family:'Barlow Condensed',sans-serif;font-size:22px;margin:22px 0 8px}
+.seo p,.seo li{color:var(--muted,#9DB5A4);line-height:1.55}
+.seo a{color:var(--accent)}
+.seo table{border-collapse:collapse;margin:14px 0;font-size:14px}
+.seo td,.seo th{padding:4px 10px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left}
