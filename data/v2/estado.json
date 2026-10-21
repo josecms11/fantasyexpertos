@@ -1,10 +1,18 @@
 {
-  "fecha": "2026-10-21T21:36:33.252Z",
+  "fecha": "2026-10-21T22:08:16.675Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 15 nuevos, 15 en total",
-    "[1.0s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[2.7s] ESPN: lesiones 799 · noticias 50",
-    "[3.5s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 170 · semana de juego 7 · IA usada hoy 15/40"
+    "[0.3s] YouTube: 15 nuevos, 15 en total",
+    "[1.2s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[3.0s] ESPN: lesiones 799 · noticias 50",
+    "[4.1s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[92.9s] IA OK con gemini-3.8-flash",
+    "[92.9s] Descartada: Drake Maye lidera las proyecciones para Semana 7 → duplicada",
+    "[92.9s] Descartada: Brock Purdy reafirma su condición de mariscal indiscutible → duplicada",
+    "[92.9s] Descartada: Lamar Jackson cojea en práctica y enciende las alarmas → duplicada",
+    "[92.9s] Descartada: Roschon Johnson gana protagonismo ante baja en Chicago → duplicada",
+    "[92.9s] Descartada: Terry McLaurin fuera toda la campaña por grave lesión → duplicada",
+    "[92.9s] Noticias nuevas verificadas: 3",
+    "[93.6s] Listo: 3 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 173 · semana de juego 7 · IA usada hoy 16/40"
   ]
 }

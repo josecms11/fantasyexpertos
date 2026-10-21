@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-21T21:36:32.498Z",
-  "ultimaIA": "2026-10-21T20:07:06.505Z",
+  "actualizado": "2026-10-21T22:06:46.102Z",
+  "ultimaIA": "2026-10-21T22:06:46.102Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,82 +13,83 @@
   ],
   "noticias": [
     {
-      "id": "n20261021200701",
-      "fecha": "2026-10-21T20:07:06.505Z",
+      "id": "n20261021220601",
+      "fecha": "2026-10-21T22:06:46.102Z",
       "semana": 7,
-      "titulo": "Isaiah Likely se consolida como opción confiable",
+      "titulo": "Patrick Mahomes pierde terreno y luce como opción riesgosa",
       "claves": [
-        "Alta confianza en el ala cerrada para cada semana",
-        "Produce de manera constante en el esquema ofensivo",
-        "Valor firme en ligas PPR de alta competencia"
+        "Clasificaciones de enfrentamientos sugieren degradar al pasador de Kansas City.",
+        "Cayó fuera del top tres en rankings semanales de mariscales.",
+        "Duelo complicado de visita ante la dura defensiva de Seattle."
       ],
-      "contexto": "El desempeño de Isaiah Likely mantiene entusiasmados a los expertos en fantasy football, quienes destacan su capacidad para producir de manera consistente semana tras semana dentro de su ofensiva.",
-      "fantasy": "Su impacto en fantasy es sumamente positivo; se posiciona como un titular indiscutible en ligas PPR y formatos profundos donde la posición de ala cerrada suele ser un dolor de cabeza.",
-      "equipo_impacto": "Su presencia le otorga una válvula de escape constante al mariscal de campo y complica las coberturas defensivas de los rivales de división.",
-      "accion": "Alinea con total confianza a Isaiah Likely en tu alineación titular esta jornada.",
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "BAL",
+      "contexto": "Los Chiefs se preparan para un complejo viaje a Seattle con el objetivo de mantener su invicto. Sin embargo, el panorama para Patrick Mahomes presenta serias alertas tras caer fuera del podio en los Power Rankings de la posición. El análisis de enfrentamientos directos de la semana 7 aconseja reducir drásticamente las expectativas sobre su producción debido al cerrojo que impone la secundaria rival.",
+      "fantasy": "El panorama para Mahomes obliga a la cautela máxima en ligas de un solo mariscal. Quienes compiten en formatos de 10 o 12 participantes deben considerar sentarlo si disponen de pasadores con mejores cruces. Su techo anotador está seriamente limitado esta semana, alejándolo del rendimiento estelar que normalmente justifica su etiqueta de intocable. Considera opciones de mayor proyección como Brock Purdy o C.J. Stroud.",
+      "equipo_impacto": "Con una proyección moderada para Mahomes, Kansas City recargará su ataque mediante Kenneth Walker y el juego terrestre, lo que afectará directamente el volumen anotador de sus armas aéreas.",
+      "accion": "Sienta a Patrick Mahomes si tienes alternativas con proyecciones más favorables.",
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "KC",
       "equipos": [
-        "BAL",
-        "NYG"
+        "KC",
+        "SEA"
       ],
       "jugadores": [
-        "8131"
+        "4046",
+        "8151"
       ],
       "menciona": []
     },
     {
-      "id": "n20261021200702",
-      "fecha": "2026-10-21T20:07:06.505Z",
+      "id": "n20261021220603",
+      "fecha": "2026-10-21T22:06:46.102Z",
       "semana": 7,
-      "titulo": "Jared Goff se afianza en el top 10",
+      "titulo": "J.J. McCarthy toma la titularidad pero enfrenta panorama hostil",
       "claves": [
-        "Jared Goff muestra solidez rumbo a la semana 7",
-        "Proyección favorable para ligas de formato estándar y PPR",
-        "Consistencia semanal que agrada a los entrenadores virtuales"
+        "Nombrado titular oficial de Giants sobre el veterano Jameis Winston.",
+        "Debutará enfrentando a una defensiva de Texans proyectada entre mejores.",
+        "Coach John Harbaugh decidió entregarle los controles en semana siete."
       ],
-      "contexto": "Jared Goff llega a la Semana 7 con el respaldo de los analistas, quienes lo ubican firmemente dentro de los diez mejores mariscales de campo para esta jornada debido a su alto rendimiento reciente.",
-      "fantasy": "Sube considerablemente su valor en ligas fantasy de formato superflex y estándar, convirtiéndose en una opción sumamente segura para comandar tu equipo esta semana.",
-      "equipo_impacto": "Esta estabilidad beneficia directamente a todo el grupo ofensivo de Detroit, permitiendo una distribución fluida del ovoide por todo el campo.",
-      "accion": "Pon a Jared Goff como tu mariscal titular sin pensarlo dos veces.",
-      "etiqueta": "START",
-      "impacto": "SUBE",
+      "contexto": "Los Giants confirmaron oficialmente a J.J. McCarthy como su quarterback titular para la visita ante los Texans. Semanas después de adquirir al novato reclutado en la primera ronda del draft 2024, el entrenador John Harbaugh optó por sentar a Jameis Winston. La decisión busca reactivar al equipo en su pelea dentro del Este de la Conferencia Nacional, aunque la prueba de fuego resultará sumamente compleja.",
+      "fantasy": "McCarthy no debe acercarse a tu alineación titular en ligas tradicionales de 10 o 12 escuadras. La defensiva de Houston figura como la número uno proyectada de la semana con 9.4 puntos fantasy, lo que convierte este estreno en un escenario adverso plagado de posibles entregas de balón. Solamente posee valor como segunda opción de emergencia en formatos Superflex o ligas de dos pasadores.",
+      "equipo_impacto": "El cambio en los controles modifica la dinámica de los Giants; el ataque buscará proteger al joven mariscal con trayectorias cortas y envíos controlados, limitando el volumen de pases profundos.",
+      "accion": "Mantén a J.J. McCarthy en la banca frente al cerrojo texano.",
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "NYG",
+      "equipos": [
+        "NYG",
+        "HOU"
+      ],
+      "jugadores": [
+        "11565",
+        "2306"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261021220607",
+      "fecha": "2026-10-21T22:06:46.102Z",
+      "semana": 7,
+      "titulo": "Sam LaPorta explota por falta de reconocimiento salarial",
+      "claves": [
+        "Mostró enorme molestia por falta de avance contractual con Detroit.",
+        "Proyecta 12.9 unidades fantasy para el choque ante Green Bay.",
+        "Abierto a emigrar en agencia libre rumbo a la temporada 2027."
+      ],
+      "contexto": "El ala cerrada estelar Sam LaPorta desató polémica al manifestar abiertamente su frustración hacia la gerencia de los Lions. El jugador declaró no percibir aprecio ni ofertas de extensión contractual rumbo a su agencia libre de 2027, asegurando que se rompe la espalda por la institución. Pese al ruido extradeportivo, Detroit visita a Green Bay buscando consolidar su posición divisional en el Norte.",
+      "fantasy": "A nivel fantasy LaPorta no se inmuta y proyecta 12.9 puntos en formato PPR, colocándose como el cuarto mejor de su demarcación esta semana. Su descontento contractual no diluye su rol crucial en zona roja ni su alta cuota de recepciones. Es titular fijo en ligas de diez y doce equipos; debes mantenerlo en tu cuadro titular sin dudar de su entrega profesional.",
+      "equipo_impacto": "Las quejas de LaPorta ponen presión a la oficina de Detroit, pero en el campo continuará siendo la válvula predilecta en series intermedias, complementando el arsenal liderado por Amon-Ra St. Brown.",
+      "accion": "Mantén a Sam LaPorta firmemente como tu ala cerrada titular indiscutible.",
+      "etiqueta": "TENDENCIA",
+      "impacto": "NEUTRO",
       "equipo": "DET",
       "equipos": [
         "DET",
         "GB"
       ],
       "jugadores": [
-        "3163",
-        "6804"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261021200703",
-      "fecha": "2026-10-21T20:07:06.505Z",
-      "semana": 7,
-      "titulo": "Jonathan Taylor mantiene su valor a pesar de todo",
-      "claves": [
-        "Confianza total en Jonathan Taylor pese a duelo difícil",
-        "El corredor mantiene su estatus de pieza estelar",
-        "Resiste rumores de intercambio y cambios en la franquicia"
-      ],
-      "contexto": "A pesar de un panorama complejo en los Indianapolis Colts tras la salida de la gerencia y rumores sobre su futuro, los expertos mantienen plena confianza en la producción de Jonathan Taylor para la Semana 7.",
-      "fantasy": "Su impacto se mantiene alto en todas las ligas fantasy; es un corredor de carga pesada que asegura un piso elevado de puntos independientemente de la dificultad del rival.",
-      "equipo_impacto": "El juego terrestre sigue siendo el ancla principal de una ofensiva de los Colts que busca estabilidad en medio de tantos movimientos institucionales.",
-      "accion": "Asegúrate de colocar a Jonathan Taylor en tu cuadro titular sin dudarlo.",
-      "etiqueta": "START",
-      "impacto": "NEUTRO",
-      "equipo": "IND",
-      "equipos": [
-        "IND",
-        "DAL"
-      ],
-      "jugadores": [
-        "6813",
-        "7588"
+        "10859",
+        "7547"
       ],
       "menciona": []
     }
@@ -199,8 +200,16 @@
       "estatus": "Duda"
     },
     {
+      "id": "7021",
+      "estatus": "Duda"
+    },
+    {
       "id": "5927",
       "estatus": "Fuera"
+    },
+    {
+      "id": "4035",
+      "estatus": "Duda"
     },
     {
       "id": "5892",
@@ -245,14 +254,6 @@
     {
       "id": "2307",
       "estatus": "Fuera"
-    },
-    {
-      "id": "9753",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "4950",
-      "estatus": "Fuera"
     }
   ],
   "agregados": [
@@ -261,8 +262,8 @@
     "12718",
     "10235",
     "9482",
-    "5849",
     "6650",
+    "5849",
     "9758",
     "11539",
     "8135",
@@ -272,15 +273,15 @@
     "10213",
     "12487",
     "7553",
-    "MIN",
     "11610",
-    "9502",
+    "MIN",
     "13296",
+    "9502",
     "11792",
     "9230",
+    "11563",
     "8408",
-    "8116",
-    "11563"
+    "8116"
   ],
   "soltados": [
     "11581",
@@ -310,9 +311,9 @@
     "3321"
   ],
   "duelo": {
-    "a": "C.J. Stroud",
-    "b": "Jared Goff",
-    "veredicto": "Arranca a Jared Goff por su proyección superior y mayor estabilidad dentro del top 10 semanal de mariscales de campo."
+    "a": "Puka Nacua",
+    "b": "Ja'Marr Chase",
+    "veredicto": "Arranca a Puka Nacua. Con una proyección de 22.3 puntos PPR supera a Chase (19.0) gracias a su descomunal volumen de recepciones que ofrece un techo más elevado en duelos de alta anotación."
   },
   "fuentes": [
     "Sleeper",
