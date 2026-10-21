@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /apps-script/
-Sitemap: https://josecms11.github.io/fantasyexpertos/sitemap.xml
+Sitemap: https://fantasyexpertos.app/sitemap.xml
