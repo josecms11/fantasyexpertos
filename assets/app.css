@@ -1242,3 +1242,24 @@ section.block{padding-top:var(--sec-gap)}
 @media (max-width:760px){
   .sugg{position:fixed;left:12px;right:12px;top:64px;width:auto;max-height:70vh;overflow-y:auto}
 }
+/* ===================== F4 · EXPERIENCIA PREMIUM ===================== */
+.ico-lock{display:inline-block;vertical-align:-1px;flex:none}
+.st-lock{display:inline-flex;align-items:center;gap:4px;margin-left:8px;padding:2px 7px;border-radius:999px;background:rgba(255,212,92,.14);border:1px solid rgba(255,212,92,.4);color:var(--gold);font-size:11px;letter-spacing:.08em;vertical-align:1px}
+.story.lock .th::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(10,14,12,.35));pointer-events:none}
+.kcard.lock span{display:inline-flex;align-items:center;gap:6px;color:var(--gold);opacity:.8}
+/* Vista previa difuminada + muro encima */
+.previa{position:relative}
+.previa-in{filter:blur(5px);opacity:.55;user-select:none;pointer-events:none;mask-image:linear-gradient(180deg,#000 30%,transparent 95%);-webkit-mask-image:linear-gradient(180deg,#000 30%,transparent 95%)}
+.ph{display:flex;flex-direction:column;gap:9px;margin:0}
+.ph i{display:block;height:12px;border-radius:6px;background:var(--line2)}
+.ph i:nth-child(2){width:92%}.ph i:nth-child(3){width:78%}.ph i:nth-child(4){width:60%}
+.previa .muro{position:relative;margin-top:-180px;box-shadow:0 -30px 60px rgba(8,12,10,.85),var(--sh-2);background:linear-gradient(160deg,#2A2310,#151A15 60%)}
+.benef{list-style:none;margin:4px 0 6px;padding:0;display:grid;gap:10px}
+.benef li{position:relative;padding-left:26px;display:flex;flex-direction:column;gap:1px}
+.benef li::before{content:'★';position:absolute;left:0;top:0;color:var(--gold);font-size:15px}
+.benef b{font-size:16px}
+.benef span{color:var(--mute);font-size:14px}
+.hero-n{margin:14px 0 0;color:var(--soft);font-size:15px}
+.hero-n b{font-family:var(--fc);font-size:28px;color:var(--gold);margin-right:4px}
+@media (min-width:900px){.page .muro{padding:30px 32px}.muro .planes{max-width:560px}}
+@media (prefers-reduced-motion:reduce){.plan{transition:none}.plan:hover{transform:none}}

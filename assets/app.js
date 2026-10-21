@@ -170,10 +170,11 @@ function thumb(n, big) {
     <span class="th-strip">${datos.map(([a, b]) => `<span><b>${esc(a)}</b><i>${b}</i></span>`).join('')}<span class="th-brand">${fxLogo(18)}</span></span>
   </span>`;
 }
+const CANDADO = '<svg class="ico-lock" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 7V5a4 4 0 0 1 8 0v2h1v8H3V7h1zm2 0h4V5a2 2 0 0 0-4 0v2z" fill="currentColor"/></svg>';
 const newsCard = (n, big) => {
-  const ps = (n.jugadores || []).map(id => J[id]).filter(Boolean);
-  return `<a class="story ${big ? 'big' : ''} ${n.exclusivo ? 'excl' : ''}" href="#/noticia/${n.id}">${thumb(n, big)}
-    <span class="st-body"><span class="st-meta ${n.etiqueta}">${esc(ETQ[n.etiqueta])}${n.fecha ? ' · ' + hace(n.fecha) : ''}</span><h3>${esc(n.titulo)}</h3>
+  const ps = (n.jugadores || []).map(id => J[id]).filter(Boolean), lock = n.exclusivo && n.premium && !esPremium();
+  return `<a class="story ${big ? 'big' : ''} ${n.exclusivo ? 'excl' : ''} ${lock ? 'lock' : ''}" href="#/noticia/${n.id}">${thumb(n, big)}
+    <span class="st-body"><span class="st-meta ${n.etiqueta}">${esc(ETQ[n.etiqueta])}${n.fecha ? ' · ' + hace(n.fecha) : ''}${lock ? `<span class="st-lock">${CANDADO}PREMIUM</span>` : ''}</span><h3>${esc(n.titulo)}</h3>
       ${big ? `<ul class="claves">${(n.claves || []).slice(0, 3).map(c => `<li>${esc(c)}</li>`).join('')}</ul>` : `<p class="st-k">${esc((n.claves || [])[0] || '')}</p>`}
       <span class="st-who">${ps.slice(0, 3).map(x => `<span>${helmet(x.team, x.num, 20)}${esc(x.n)}</span>`).join('')}</span></span></a>`;
 };
@@ -319,10 +320,10 @@ function noticia(id) {
     <p class="st-meta ${n.etiqueta}" style="margin-top:18px">${esc(ETQ[n.etiqueta])}${n.fecha ? ' · ' + hace(n.fecha) : ''}${n.exclusivo ? ' · ★ Exclusivo FX' : ''}</p>
     <h1 class="ntitle">${esc(n.titulo)}</h1>
     ${n.aviso ? `<div class="aviso-nota"><b>⚠ NOTA ACTUALIZADA</b><p>${esc(n.aviso)}</p></div>` : ''}
-    <div class="kcards stagger">${(n.claves || []).map((c, k) => `<div class="kcard"><b>${k + 1}</b>${esc(c)}</div>`).join('')}${cerrada ? '<div class="kcard lock"><b>2</b>🔒 Solo Premium</div><div class="kcard lock"><b>3</b>🔒 Solo Premium</div>' : ''}</div>
+    <div class="kcards stagger">${(n.claves || []).map((c, k) => `<div class="kcard"><b>${k + 1}</b>${esc(c)}</div>`).join('')}${cerrada ? [2, 3].map(k => `<div class="kcard lock"><b>${k}</b><span>${CANDADO} Solo Premium</span></div>`).join('') : ''}</div>
     <div class="nbody">
       <div class="ncol">
-        ${cerrada ? (prem ? '<p class="px blink" style="color:var(--gold)">ABRIENDO NOTA PREMIUM…</p>' : muroPremium()) : `${sec('Qué pasó', n.contexto || n.cuerpo)}
+        ${cerrada ? (prem ? '<p class="px blink" style="color:var(--gold)">ABRIENDO NOTA PREMIUM…</p>' : previaPremium()) : `${sec('Qué pasó', n.contexto || n.cuerpo)}
         ${sec('Impacto en fantasy', n.fantasy, 'fx')}
         ${sec('Qué cambia para el equipo', n.equipo_impacto)}
         ${n.accion ? `<div class="accion">${fxLogo(30)}<div><small>QUÉ HACER HOY</small><p>${esc(n.accion)}</p></div></div>` : ''}`}
@@ -529,7 +530,7 @@ function exclusivo() {
   titulo('Exclusivo FX');
   const L = todasNoticias().filter(n => n.exclusivo);
   return `<div class="page">${crumbs([['', 'Exclusivo FX']])}<div class="wrap">
-    <div class="nhero" style="--c1:#3A2A05;--c2:#FFD45C"><div class="grid-in"><div class="txt"><span class="tagx" style="background:var(--gold)">★ PREMIUM FX</span><h1>Exclusivo FX</h1><p class="hero-sub">Información de nuestra red de reporteros que no vas a encontrar en otro lado, desarrollada por los expertos.</p></div></div></div>
+    <div class="nhero" style="--c1:#3A2A05;--c2:#FFD45C"><div class="grid-in"><div class="txt"><span class="tagx" style="background:var(--gold)">★ PREMIUM FX</span><h1>Exclusivo FX</h1><p class="hero-sub">Información de nuestra red de reporteros que no vas a encontrar en otro lado, desarrollada por los expertos.</p>${L.length ? `<p class="hero-n"><b>${L.length}</b> ${L.length === 1 ? 'nota exclusiva publicada' : 'notas exclusivas publicadas'}</p>` : ''}</div></div></div>
     ${esPremium() ? `<p class="prem-ok">★ Eres Premium: tienes acceso completo a todas las notas.</p>` : `<section class="block">${muroPremium()}</section>`}
     <section class="block"><div class="news stagger">${L.map(n => newsCard(n)).join('') || '<div class="empty">La primera nota exclusiva llega muy pronto. Mientras, revisa las <a href="#/noticias">noticias del día</a>.</div>'}</div></section>
   </div></div>`;
@@ -851,10 +852,13 @@ function cargaBoveda(id) {
 }
 const linkPago = k => PAGO[k] && YO ? PAGO[k] + (PAGO[k].includes('?') ? '&' : '?') + 'client_reference_id=' + encodeURIComponent(YO.id) + (YO.email ? '&prefilled_email=' + encodeURIComponent(YO.email) : '') : '';
 const planes = () => `<div class="planes">${PAGO.mes ? `<a class="plan" href="${linkPago('mes')}"><b>$59</b><span>MXN al mes</span><small>Cancela cuando quieras</small></a>` : ''}${PAGO.temporada ? `<a class="plan top" href="${linkPago('temporada')}"><i>MEJOR PRECIO</i><b>$199</b><span>MXN toda la temporada</span><small>Pago único, hasta el Super Bowl</small></a>` : ''}</div><small class="muro-pie">Pago seguro con Stripe: tarjeta, Apple Pay o Google Pay.</small>`;
+// Vista previa bloqueada: muestra la estructura real de la nota (secciones) con renglones difuminados, nunca texto inventado
+const previaPremium = () => `<div class="previa"><div class="previa-in" aria-hidden="true">${['Qué pasó', 'Impacto en fantasy', 'Qué cambia para el equipo'].map((t, k) => `<section class="nsec ${k === 1 ? 'fx' : ''}"><h3>${t}</h3><p class="ph"><i></i><i></i><i></i>${k ? '' : '<i></i>'}</p></section>`).join('')}<div class="accion">${fxLogo(30)}<div><small>QUÉ HACER HOY</small><p class="ph"><i></i><i></i></p></div></div></div>${muroPremium()}</div>`;
+const BENEF = [['Notas de nuestra red de reporteros', 'Información que no vas a encontrar en otro lado.'], ['Trade targets y la previa de cada semana', 'A quién comprar, vender y arrancar antes que tu liga.'], ['Qué hacer hoy, nota por nota', 'Cada exclusiva termina con una acción concreta para tu equipo.']];
 function muroPremium() {
   const btns = !YO ? `<a class="btn" href="#/cuenta" data-reg>Crea tu cuenta para suscribirte</a><small class="muro-pie">¿Ya tienes cuenta? <a href="#/cuenta">Entra aquí</a></small>`
     : (PAGO.mes || PAGO.temporada) ? planes() : `<small class="muro-pie">Las suscripciones abren en unos días.</small>`;
-  return `<div class="muro"><div class="muro-h">${fxLogo(34)}<div><b>★ PREMIUM FX</b><h3>Sigue leyendo con Premium</h3></div></div><p>Las notas exclusivas de nuestra red de reporteros: trade targets, la previa de cada semana e información que no vas a encontrar en otro lado.</p>${btns}</div>`;
+  return `<div class="muro"><div class="muro-h">${fxLogo(34)}<div><b>★ PREMIUM FX</b><h3>Sigue leyendo con Premium</h3></div></div><ul class="benef">${BENEF.map(([a, b]) => `<li><b>${a}</b><span>${b}</span></li>`).join('')}</ul>${btns}</div>`;
 }
 let _poll = 0;
 function esperaPago() {
