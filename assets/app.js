@@ -245,10 +245,10 @@ function inicio() {
       <aside class="front-side">${panelMios()}${panelStarts()}${panelMedico()}</aside>
     </section>
   </div>
-  <div class="ticker"><div class="tag">ÚLTIMA HORA</div><div class="view"><div class="ticker-track">${tickerItems()}${tickerItems()}</div></div></div>
-  ${marqueeLideres()}
+  <div class="ticker"><div class="tag"><i></i>ÚLTIMA HORA</div><div class="view"><div class="ticker-track">${tickerItems()}${tickerItems()}</div></div></div>
   <div class="wrap">
-    <section class="block"><div class="head"><div><h2>Matchups de la semana ${esc(G[0] ? G[0].semana : semActual())}</h2><p class="hsub">Posesión, marcador y las estrellas de fantasy de cada lado.</p></div><a class="all" href="#/partidos">Todas las semanas ›</a></div><div id="home-matches">${homeMatches()}</div></section>
+    <section class="block"><div class="head"><div><h2>Partidos de la semana ${esc(G[0] ? G[0].semana : semActual())}</h2><p class="hsub">En vivo primero, luego los próximos. Marcador, posesión y las figuras de fantasy de cada lado.</p></div><a class="all" href="#/partidos">Todas las semanas ›</a></div><div id="home-matches">${homeMatches()}</div></section>
+    ${SEMNUM ? `<section class="block lideres-home"><div class="head"><div><h2>Líderes de la semana ${SEMNUM}</h2><p class="hsub">Los que más puntos ${FMTS[FMT]} hicieron, por posición. Toca uno para ver su ficha.</p></div><a class="all" href="#/lideres">Todos los líderes ›</a></div>${marqueeLideres()}</section>` : ''}
     ${mas.length ? `<section class="block"><div class="head"><div><h2>Más noticias</h2><p class="hsub">Lo que mueve tus alineaciones, verificado contra el reporte oficial.</p></div><a class="all" href="#/noticias">Todas las noticias ›</a></div><div class="news stagger">${mas.map(n => newsCard(n)).join('')}</div></section>` : ''}
     <section class="block grid g2">
       <div class="card"><div class="head"><h3>▲ Subiendo</h3><a class="all" href="#/tendencias">Todo ›</a></div><p class="sub">Los más agregados en ligas en las últimas 24 horas.</p>
@@ -636,8 +636,8 @@ const horaJuego = g => new Date(g.fecha).toLocaleString('es-MX', { weekday: 'sho
 function pintaMarcadores() {
   const bar = $('#scorebar'); if (!bar || !G.length) return;
   bar.innerHTML = `<span class="sb-tag">${enVivo() ? '<i></i>EN VIVO' : 'SEMANA ' + (G[0].semana || '')}</span><div class="sb-list">${ordenG().map(g => `<a class="sb ${g.estado}" href="#/partido/${g.id}">
-    <span class="sb-t ${ganando(g, 0)}">${helmet(g.visita.ab, '', 22)}${esc(g.visita.ab)}<b>${g.estado === 'pre' ? '' : g.visita.pts}</b></span>
-    <span class="sb-t ${ganando(g, 1)}">${helmet(g.local.ab, '', 22)}${esc(g.local.ab)}<b>${g.estado === 'pre' ? '' : g.local.pts}</b></span><small>${esc(g.estado === 'pre' ? horaJuego(g) : g.detalle)}</small></a>`).join('')}</div>`;
+    <span class="sb-t ${ganando(g, 0)}">${helmet(g.visita.ab, '', 30)}${esc(g.visita.ab)}<b>${g.estado === 'pre' ? '' : g.visita.pts}</b></span>
+    <span class="sb-t ${ganando(g, 1)}">${helmet(g.local.ab, '', 30)}${esc(g.local.ab)}<b>${g.estado === 'pre' ? '' : g.local.pts}</b></span><small>${esc(g.estado === 'pre' ? horaJuego(g) : g.detalle)}</small></a>`).join('')}</div>`;
 }
 function celebra({ g, t, d }) {
   const el = document.createElement('div');
@@ -663,7 +663,7 @@ function campo(g) {
   return `<svg viewBox="0 0 80 14" preserveAspectRatio="none" shape-rendering="crispEdges" aria-label="Posición del balón"><rect width="80" height="14" fill="#12441F"/><rect width="8" height="14" fill="${col(g.visita.ab)[0]}"/><rect x="72" width="8" height="14" fill="${col(g.local.ab)[0]}"/>
     ${Array.from({ length: 11 }, (_, i) => `<rect x="${8 + i * 6.4}" width=".4" height="14" fill="#fff" opacity=".35"/>`).join('')}<rect x="${x - 1.5}" y="5" width="3" height="4" fill="#8B4A2B"><animate attributeName="y" values="5;4;5" dur=".6s" repeatCount="indefinite" calcMode="discrete"/></rect><rect x="${x}" width=".5" height="14" fill="${col(dueño)[1]}"/></svg>`;
 }
-function homeMatches() { return G.length ? `<div class="matches">${ordenG().slice(0, 4).map(matchCard).join('')}</div>` : '<div class="empty">Cargando marcadores…</div>'; }
+function homeMatches() { return G.length ? `<div class="matches">${ordenG().slice(0, 6).map(matchCard).join('')}</div>` : '<div class="empty">Cargando marcadores…</div>'; }
 const PLAYOFFS = [['3-1', 'Wild Card'], ['3-2', 'Divisional'], ['3-3', 'Final de conferencia'], ['3-5', 'Super Bowl']];
 function partidos(q) {
   titulo('Partidos');
@@ -1011,8 +1011,9 @@ function buscador() {
   const inp = $('#q'), box = $('#sugg'); let sel = -1, res = [];
   const pinta = () => {
     const v = inp.value.trim().toLowerCase();
-    box.innerHTML = res.map((j, i) => `<a href="#/jugador/${j.id}" class="${i === sel ? 'sel' : ''}">${helmet(j.team, j.num, 26)}<span>${esc(j.n)}</span><span class="pos">${esc(j.pos)}</span><span class="team">${esc(j.team)}</span></a>`).join('')
-      + Object.keys(EQUIPOS).filter(t => v.length > 1 && (t.toLowerCase() === v || EQUIPOS[t].toLowerCase().includes(v))).slice(0, 3).map(t => `<a href="#/equipo/${t}">${helmet(t, '', 26)}<span>${EQUIPOS[t]}</span><span class="team">Equipo</span></a>`).join('');
+    box.innerHTML = res.map((j, i) => `<a href="#/jugador/${j.id}" class="${i === sel ? 'sel' : ''}">${helmet(j.team, j.num, 44)}<span>${esc(j.n)}</span><span class="pos">${esc(j.pos)}</span><span class="team">${esc(j.team)}</span></a>`).join('')
+      + Object.keys(EQUIPOS).filter(t => v.length > 1 && (t.toLowerCase() === v || EQUIPOS[t].toLowerCase().includes(v))).slice(0, 3).map(t => `<a href="#/equipo/${t}">${helmet(t, '', 44)}<span>${EQUIPOS[t]}</span><span class="team">Equipo</span></a>`).join('');
+    if (!box.innerHTML && v.length > 1) box.innerHTML = `<div class="sugg-vacio">Sin resultados para «${esc(inp.value.trim())}». Prueba con el apellido o el nombre del equipo.</div>`;
     box.classList.toggle('on', !!box.innerHTML);
   };
   inp.oninput = () => { const v = inp.value.trim().toLowerCase(); sel = -1; res = v.length < 2 ? [] : P.filter(j => j.n.toLowerCase().includes(v)).sort((a, b) => b.pEst - a.pEst).slice(0, 8); pinta(); };

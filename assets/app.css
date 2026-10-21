@@ -1078,3 +1078,167 @@ a:hover .th .th-vis .th-hel{transform:translateY(-5px) rotate(-4deg) scale(1.04)
 @media (max-width:520px){.prow .right .bar{display:none}.prow .right{gap:6px}.prow{gap:8px}}
 .grid>*{min-width:0}
 @media (max-width:520px){.prow .right .fxv svg{display:none}.prow .right .fxv{padding:0 8px}.prow .right .num.sm{font-size:15px}.card{padding:16px}}
+
+/* ==========================================================================
+   SISTEMA DE DISEÑO v2 (octubre 2026)
+   Reglas: 1 contenedor · 4 niveles de título · espaciado en escala de 8 · 
+   superficies en 3 niveles · un solo estilo de foco · movimiento con propósito.
+   ========================================================================== */
+@font-face{font-family:'Barlow';font-weight:400;font-display:swap;src:url(fonts/barlow-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Barlow';font-weight:500;font-display:swap;src:url(fonts/barlow-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Barlow';font-weight:600;font-display:swap;src:url(fonts/barlow-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Barlow';font-weight:700;font-display:swap;src:url(fonts/barlow-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-weight:600;font-display:swap;src:url(fonts/barlow-condensed-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-weight:700;font-display:swap;src:url(fonts/barlow-condensed-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-weight:800;font-display:swap;src:url(fonts/barlow-condensed-latin-800-normal.woff2) format('woff2')}
+@font-face{font-family:'Press Start 2P';font-weight:400;font-display:swap;src:url(fonts/press-start-2p-latin-400-normal.woff2) format('woff2')}
+
+:root{
+  /* contenedor */
+  --maxw:1440px; --gut:clamp(16px,2.4vw,40px);
+  /* escala tipográfica (títulos en Barlow Condensed, texto en Barlow) */
+  --t-hero:clamp(32px,1.9vw + 20px,58px);   /* titular de portada */
+  --t-page:clamp(34px,1.6vw + 22px,56px);   /* título de página */
+  --t-sec:clamp(26px,.9vw + 19px,40px);     /* título de sección */
+  --t-card:clamp(19px,.25vw + 17px,23px);   /* título de tarjeta */
+  --t-body:17px; --t-small:15px; --t-meta:13px;
+  /* espaciado */
+  --s1:4px;--s2x:8px;--s3x:12px;--s4x:16px;--s5x:24px;--s6x:32px;--s7x:48px;--s8x:64px;
+  --sec-gap:clamp(48px,3.6vw,80px);
+  /* superficies y elevación */
+  --surface:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,0) 40%),var(--s1);
+  --sh-1:0 1px 0 rgba(255,255,255,.04) inset,0 8px 24px rgba(0,0,0,.28);
+  --sh-2:0 1px 0 rgba(255,255,255,.06) inset,0 18px 40px rgba(0,0,0,.42);
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+/* Monitores grandes: la interfaz escala completa (texto, cascos y tarjetas), no solo se estira */
+@media (min-width:1800px){body{zoom:1.1}}
+@media (min-width:2200px){body{zoom:1.22}}
+
+.wrap{max-width:var(--maxw);padding:0 var(--gut)}
+body{font-size:16px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+/* ---- Títulos: página > sección > tarjeta > meta ---- */
+section.block{padding-top:var(--sec-gap)}
+.head{margin-bottom:var(--s5x);align-items:flex-end}
+.head h2{font-size:var(--t-sec);font-weight:800;letter-spacing:.005em;line-height:1.02}
+.head h3{font-size:clamp(20px,.4vw + 17px,24px);font-weight:800}
+.hsub{font-size:var(--t-small);color:var(--soft);margin-top:8px;max-width:70ch}
+.head a.all{font-size:16px;display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border:1px solid var(--line2);border-radius:999px;transition:border-color .15s,background .15s}
+.head a.all:hover{text-decoration:none;border-color:var(--accent);background:rgba(91,196,137,.08)}
+/* El primer bloque después de las migas es la cabecera de la página */
+.crumbs{font-size:14px;padding-top:var(--s5x)}
+.crumbs + .wrap > section.block:first-child{padding-top:var(--s4x)}
+.crumbs + .wrap > section.block:first-child > .head h2{font-size:var(--t-page);line-height:.98}
+.crumbs + .wrap > section.block:first-child > .head{margin-bottom:var(--s6x)}
+.crumbs + .wrap > section.block:first-child > .head .hsub{font-size:16px}
+
+/* ---- Superficies: tarjeta / panel ---- */
+.card,.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r2);box-shadow:var(--sh-1)}
+.card{padding:var(--s5x)}
+.panel{padding:var(--s4x)}
+.panel-h{padding:2px 4px 12px}
+.panel-h b{font-size:17px;letter-spacing:.04em}
+.panel-h a{font-size:15px}
+.panel-f{font-size:13px}
+.sub{font-size:var(--t-small);color:var(--soft)}
+
+/* ---- Controles ---- */
+.btn{height:46px;font-size:16px;padding:0 22px;transition:transform .15s var(--ease),box-shadow .15s,background .15s}
+.btn.sm{height:40px;font-size:15px}
+.btn:active{transform:translateY(0) scale(.98)}
+.chip{height:40px;padding:0 18px;font-size:15px}
+.chips{gap:10px;margin-bottom:var(--s5x)}
+
+/* ---- Tarjetas de noticia ---- */
+.story h3{font-size:var(--t-card);line-height:1.12}
+.story.big h3{font-size:var(--t-hero);line-height:1.02;letter-spacing:-.005em}
+.st-k{font-size:var(--t-small)}
+.st-meta{font-size:var(--t-meta);letter-spacing:.1em}
+.story.big .claves li{font-size:17px}
+.news{gap:var(--s6x) var(--s5x)}
+.day{font-size:clamp(18px,.4vw + 15px,22px);color:var(--soft);margin:var(--s7x) 0 var(--s5x)}
+.story.excl h3::before{content:'★ ';color:var(--gold)}
+
+/* ---- Buscador: la lupa es solo el ícono directo; los cascos de resultados vuelven a su lugar ---- */
+.search svg{position:static;width:auto;height:auto}
+.search > svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:16px;height:16px;pointer-events:none}
+.search{flex:0 1 360px}
+.search input{height:44px;font-size:15px}
+.sugg{width:min(480px,92vw);padding:8px}
+.sugg a{gap:12px;padding:10px 12px;font-size:16px;min-height:52px}
+.sugg a svg.hel{flex:none;width:44px;height:33px}
+.sugg .pos{font-family:var(--fc);font-weight:700;font-size:13px;letter-spacing:.06em;padding:3px 8px;border-radius:6px;border:1px solid var(--line2);color:var(--soft)}
+.sugg .team{margin-left:auto;font-family:var(--fc);font-weight:700;font-size:14px;color:var(--mute)}
+.sugg-vacio{padding:14px 12px;color:var(--mute);font-size:15px}
+
+/* ---- Barra de partidos: ocupa todo el ancho, más legible ---- */
+.sb-list{flex:1}
+.sb{flex:1 0 150px;padding:10px 16px;gap:4px}
+.sb-t{font-size:16px;gap:8px}
+.sb-t b{font-size:17px}
+.sb small{font-size:12px;letter-spacing:.04em}
+.sb-tag{font-size:14px;padding:0 20px}
+
+/* ---- Home: composición ---- */
+.front{grid-template-columns:minmax(0,1fr) clamp(320px,26vw,400px);gap:var(--s6x);padding-top:var(--s5x)}
+.front-main{gap:var(--s6x)}
+.front-sec{gap:var(--s5x)}
+.hello{margin-top:var(--s5x)}
+/* Última hora: cinta de noticias, sobria; pausa al pasar el cursor */
+.ticker{margin-top:var(--s7x)}
+.ticker .tag{gap:8px;font-size:15px;padding:0 22px}
+.ticker .tag i{width:8px;height:8px;border-radius:50%;background:#06140C;animation:pulse 1.6s infinite}
+.ticker-track{font-size:16px;padding:14px 0;animation-duration:110s}
+/* Partidos: rejilla que se adapta al ancho (2 → 3 columnas), tarjetas con más presencia */
+.matches{grid-template-columns:repeat(auto-fill,minmax(min(100%,380px),1fr));gap:var(--s5x)}
+.match{padding:var(--s5x);gap:var(--s4x);border-radius:20px}
+.m-top{font-size:14px}
+.m-team .hel{width:104px;height:78px}
+.m-team b{font-size:24px;margin-top:6px}
+.m-team small{font-size:14px}
+.m-score{font-size:52px}
+.m-score .vsb{font-size:26px}
+.m-fx{font-size:14px}
+.m-fx b{font-size:16px}
+.match.post .m-top span:first-child{color:var(--text)}
+.match.pre .m-top span:first-child{color:var(--accent)}
+/* Líderes: sección propia con la marquesina dentro del contenedor */
+.lideres-home .marquee{border:1px solid var(--line);border-radius:var(--r2);overflow:hidden;background:var(--surface)}
+.lideres-home .mq-tag{display:none}
+.mq-track{padding:14px 0;gap:12px;animation-duration:70s}
+.mq{padding:8px 18px 8px 10px}
+.mq b{font-size:18px}.mq small{font-size:12px}.mq em{font-size:20px}.mq-pos{font-size:13px}
+/* Rankings hub */
+.hub{padding:var(--s5x);gap:10px}
+.hub-h b{font-size:34px}
+.hub-h span{font-size:14px}
+.hub-r{font-size:15px}
+.hub-go{font-size:15px}
+/* Equipos */
+.trow b{font-size:15px}.trow small{font-size:13px}
+@media (max-width:1100px){.front{grid-template-columns:1fr}}
+/* Partidos: identidad de cada equipo más presente, sin perder lectura */
+.match{background:radial-gradient(120% 90% at 0% 0%,color-mix(in srgb,var(--cv) 46%,transparent),transparent 60%),radial-gradient(120% 90% at 100% 0%,color-mix(in srgb,var(--cl) 46%,transparent),transparent 60%),var(--s1);box-shadow:var(--sh-1)}
+.match:hover{box-shadow:var(--sh-2)}
+.match.post{opacity:.92}
+/* Nota principal de portada: imagen y titular lado a lado en pantallas anchas (menos scroll, más jerarquía) */
+@media (min-width:1300px){
+  .front-main > .story.big{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:var(--s6x);align-items:center}
+  .front-main > .story.big .th{aspect-ratio:4/3}
+  .front-main > .story.big h3{font-size:clamp(34px,1.4vw + 16px,50px)}
+}
+/* Partidos en móvil: casco y marcador a escala de la tarjeta */
+@media (max-width:760px){
+  .match{padding:16px;gap:12px}
+  .m-team .hel{width:64px;height:48px}
+  .m-team b{font-size:19px}
+  .m-score{font-size:36px;gap:6px}
+  .m-score .vsb{font-size:20px}
+  .m-fx{font-size:13px}
+}
+/* Búsqueda en móvil: el desplegable ocupa el ancho de la pantalla, sin salirse */
+@media (max-width:760px){
+  .sugg{position:fixed;left:12px;right:12px;top:64px;width:auto;max-height:70vh;overflow-y:auto}
+}
