@@ -22,6 +22,8 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       - name: Páginas para Google (SEO)
         run: node scripts/paginas.mjs || echo "páginas con errores"
+      - name: Newsletter semanal
+        run: node scripts/newsletter.mjs || echo "newsletter con errores"
       - run: |
           git config user.name "fx-bot"
           git config user.email "fx-bot@users.noreply.github.com"

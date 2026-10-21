@@ -832,6 +832,16 @@ function privacidad() {
   </article></div></div>`;
 }
 
+function baja(q) {
+  titulo('Darme de baja');
+  const t = q.get('t') || '';
+  setTimeout(() => { const el = $('#baja-res'); if (!el) return;
+    if (!/^[0-9a-f-]{36}$/i.test(t)) { el.className = ''; el.textContent = 'El enlace no es válido. Puedes darte de baja desde Mi cuenta.'; return; }
+    cargaSB().then(sb => sb.rpc('darse_de_baja', { token: t })).then(({ data, error }) => { el.className = ''; el.style.color = ''; el.innerHTML = error ? 'No pudimos procesarlo. Intenta de nuevo en un momento.' : data ? '✓ Listo: ya no recibirás el resumen semanal. Tu cuenta y tus jugadores siguen igual; puedes reactivarlo cuando quieras en <a href="#/cuenta">Mi cuenta</a>.' : 'Ese enlace ya no es válido. Revisa tu suscripción en <a href="#/cuenta">Mi cuenta</a>.'; })
+      .catch(() => { el.textContent = 'Sin conexión. Intenta de nuevo.'; }); }, 0);
+  return `<div class="page">${crumbs([['', 'Darme de baja']])}<div class="wrap"><section class="auth card"><div class="auth-h">${fxLogo(44)}<h1>Resumen semanal</h1></div><p id="baja-res" class="px blink" style="color:var(--accent)">PROCESANDO…</p></section></div></div>`;
+}
+
 /* =============================== HERRAMIENTAS =============================== */
 const SEM_FIN = 17, REEMPLAZO = { QB: 14, RB: 32, WR: 40, TE: 14, K: 14 };
 const ppj = j => { const jug = (j.temp || []).filter(v => v != null); if (!jug.length) return j.p ?? 0; const u3 = jug.slice(-3), r = u3.reduce((a, b) => a + b, 0) / u3.length; return .5 * j.prom + .3 * r + .2 * (j.p ?? j.prom); };
@@ -926,7 +936,7 @@ function router() {
   const q = new URLSearchParams(qs || ''), [, seccion, a, b] = ruta.split('/');
   const R = { '': () => inicio(), noticias: () => noticias(q), reportajes: () => noticias(q), noticia: () => noticia(a), reportaje: () => noticia(a), jugador: () => jugador(a), comparar: () => comparar(a, b), posicion: () => posicion(a),
     equipos: () => equipos(), equipo: () => equipo(a), partidos: () => partidos(q), partido: () => partido(a), lideres: () => lideres(q), media: () => media(), exclusivo: () => exclusivo(), temporada: () => temporada(), semana: () => semana(a), tendencias: () => tendencias(), lesionados: () => lesionados(q),
-    cuenta: () => cuenta(), herramientas: () => herramientas(), trade: () => trade(q), privacidad: () => privacidad() };
+    cuenta: () => cuenta(), herramientas: () => herramientas(), trade: () => trade(q), privacidad: () => privacidad(), baja: () => baja(q) };
   app.innerHTML = (R[seccion || ''] || noEncontrado)();
   scrollTo({ top: 0 });
   const act = s => s === (seccion || '') || (seccion === 'noticia' && s === 'noticias') || (seccion === 'partido' && s === 'partidos') || (seccion === 'semana' && s === 'temporada') || (seccion === 'trade' && s === 'herramientas');
