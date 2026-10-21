@@ -303,6 +303,25 @@ for (const a of archivo) {
   } else if (a.vencida && p && !fuera) { delete a.aviso; delete a.vencida; corregidas++; }
 }
 if (corregidas) log('Notas del archivo corregidas por estatus o protagonista:', corregidas);
+// Bóveda Premium: la exclusiva completa va a Supabase (solo la ven los Premium); en el sitio público queda titular y avance.
+const SBK = process.env.SUPABASE_SECRET, SBURL = 'https://eafzqftobwrtqdnawncn.supabase.co';
+const PRIVADOS = ['contexto', 'fantasy', 'equipo_impacto', 'accion', 'cuerpo'];
+const completa = n => n.exclusivo && PRIVADOS.some(k => n[k]);
+const avance = n => { const t = { ...n, premium: true, claves: (n.claves || []).slice(0, 1) }; PRIVADOS.forEach(k => delete t[k]); return t; };
+async function aBoveda(lista) {
+  if (!SBK) { log('Bóveda: falta SUPABASE_SECRET; las exclusivas siguen públicas'); return false; }
+  const h = { apikey: SBK, 'Content-Type': 'application/json', Prefer: 'resolution=merge-duplicates,return=minimal' }; if (/^eyJ/.test(SBK)) h.Authorization = 'Bearer ' + SBK;
+  const r = await fetch(SBURL + '/rest/v1/exclusivos', { method: 'POST', headers: h, signal: conTiempo(30000),
+    body: JSON.stringify(lista.map(n => ({ id: n.id, fecha: n.fecha, semana: n.semana ?? null, titulo: n.titulo, nota: n }))) }).catch(e => ({ ok: false, status: e.message, text: async () => '' }));
+  if (!r.ok) log('Bóveda: error', r.status, (await r.text()).slice(0, 160));
+  return r.ok;
+}
+const porSubir = [...exclusivas, ...archivo.filter(completa)];
+if (porSubir.length && await aBoveda(porSubir)) {
+  exclusivas.splice(0, exclusivas.length, ...exclusivas.map(avance));
+  archivo.forEach((n, i) => { if (completa(n)) archivo[i] = avance(n); });
+  log('Bóveda Premium:', porSubir.length, 'exclusivas guardadas');
+}
 const todasNuevas = [...exclusivas, ...nuevas];
 const nuevoArchivo = [...todasNuevas, ...archivo].slice(0, 800);
 guardar(DIR + '/archivo.json', nuevoArchivo);

@@ -20,6 +20,7 @@ jobs:
         timeout-minutes: 15
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SUPABASE_SECRET: ${{ secrets.SUPABASE_SECRET }}
       - name: Páginas para Google (SEO)
         run: node scripts/paginas.mjs || echo "páginas con errores"
       - name: Newsletter semanal

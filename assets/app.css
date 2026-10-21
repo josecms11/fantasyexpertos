@@ -1050,3 +1050,25 @@ a:hover .th .th-vis .th-hel{transform:translateY(-5px) rotate(-4deg) scale(1.04)
 .legaltxt h1{font-family:var(--fc);font-size:36px;margin:0}
 .legaltxt h2{font-family:var(--fc);font-size:22px;margin:22px 0 6px}
 .legaltxt p{color:var(--soft);line-height:1.6;margin:0}
+/* v16 · Premium FX */
+.muro{margin:8px 0 20px;padding:24px;border-radius:var(--r2);border:1.5px solid rgba(255,212,92,.45);background:linear-gradient(160deg,rgba(255,212,92,.12),rgba(255,212,92,.02));display:flex;flex-direction:column;gap:12px}
+.muro-h{display:flex;align-items:center;gap:14px}
+.muro-h b{font-family:var(--fc);letter-spacing:.1em;color:var(--gold);font-size:14px}
+.muro-h h3{margin:2px 0 0;font-family:var(--fc);font-size:26px}
+.muro p{margin:0;color:var(--soft)}
+.muro .btn{align-self:flex-start}
+.muro-pie{color:var(--mute);font-size:13px}
+.muro-pie a{color:var(--soft)}
+.planes{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:4px 0}
+.plan{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:18px;border-radius:16px;border:1px solid var(--line2);background:var(--s2);text-decoration:none;color:var(--text);transition:transform .15s,border-color .15s}
+.plan:hover{transform:translateY(-2px);border-color:var(--gold)}
+.plan b{font-family:var(--fc);font-size:40px;line-height:1}
+.plan span{font-weight:700}
+.plan small{color:var(--mute)}
+.plan.top{border-color:var(--gold);background:rgba(255,212,92,.08)}
+.plan i{position:absolute;top:-10px;right:12px;font-style:normal;font-family:var(--fc);font-weight:800;font-size:12px;letter-spacing:.08em;background:var(--gold);color:#1A1405;padding:3px 8px;border-radius:999px}
+.kcard.lock{color:var(--mute);border-style:dashed}
+.prem-ok{padding:14px 18px;border-radius:12px;border:1px solid rgba(255,212,92,.45);color:var(--gold);font-weight:700;margin:18px 0 0}
+.prem-card{border-color:rgba(255,212,92,.4)}
+.prem-card h3{color:var(--gold);margin:0 0 6px}
+@media (max-width:520px){.planes{grid-template-columns:1fr}}

@@ -304,11 +304,14 @@ function noticias(q) {
   </section></div></div>`;
 }
 function noticia(id) {
-  const L = todasNoticias(), n = todasConVencidas().find(x => x.id === id);
-  if (!n) return noEncontrado();
+  const L = todasNoticias(), base = todasConVencidas().find(x => x.id === id);
+  if (!base) return noEncontrado();
+  const i = L.indexOf(base), sig = L[i + 1], ant = L[i - 1];
+  const bloqueada = base.exclusivo && base.premium, prem = bloqueada && esPremium();
+  if (prem) cargaBoveda(id);
+  const n = prem && BOVEDA[id] ? { ...base, ...BOVEDA[id] } : base, cerrada = bloqueada && !(prem && BOVEDA[id]);
   titulo(n.titulo);
   const jug = [...(n.jugadores || []), ...(n.menciona || [])].map(x => J[x]).filter(Boolean), eqs = equiposDe(n);
-  const i = L.indexOf(n), sig = L[i + 1], ant = L[i - 1];
   const rel = L.filter(x => x.id !== id && ((x.jugadores || []).some(p => (n.jugadores || []).includes(p)) || equiposDe(x).some(t => eqs.includes(t)))).slice(0, 3);
   const sec = (t, txt, cls = '') => txt ? `<section class="nsec ${cls}"><h3>${t}</h3><p>${esc(txt)}</p></section>` : '';
   return `<div class="page">${crumbs([['#/noticias', 'Noticias'], ['#/noticias?tipo=' + encodeURIComponent(n.etiqueta), ETQ[n.etiqueta]], ['', n.titulo.slice(0, 40) + (n.titulo.length > 40 ? '…' : '')]])}<div class="wrap narrowish">
@@ -316,18 +319,18 @@ function noticia(id) {
     <p class="st-meta ${n.etiqueta}" style="margin-top:18px">${esc(ETQ[n.etiqueta])}${n.fecha ? ' · ' + hace(n.fecha) : ''}${n.exclusivo ? ' · ★ Exclusivo FX' : ''}</p>
     <h1 class="ntitle">${esc(n.titulo)}</h1>
     ${n.aviso ? `<div class="aviso-nota"><b>⚠ NOTA ACTUALIZADA</b><p>${esc(n.aviso)}</p></div>` : ''}
-    <div class="kcards stagger">${(n.claves || []).map((c, k) => `<div class="kcard"><b>${k + 1}</b>${esc(c)}</div>`).join('')}</div>
+    <div class="kcards stagger">${(n.claves || []).map((c, k) => `<div class="kcard"><b>${k + 1}</b>${esc(c)}</div>`).join('')}${cerrada ? '<div class="kcard lock"><b>2</b>🔒 Solo Premium</div><div class="kcard lock"><b>3</b>🔒 Solo Premium</div>' : ''}</div>
     <div class="nbody">
       <div class="ncol">
-        ${sec('Qué pasó', n.contexto || n.cuerpo)}
+        ${cerrada ? (prem ? '<p class="px blink" style="color:var(--gold)">ABRIENDO NOTA PREMIUM…</p>' : muroPremium()) : `${sec('Qué pasó', n.contexto || n.cuerpo)}
         ${sec('Impacto en fantasy', n.fantasy, 'fx')}
         ${sec('Qué cambia para el equipo', n.equipo_impacto)}
-        ${n.accion ? `<div class="accion">${fxLogo(30)}<div><small>QUÉ HACER HOY</small><p>${esc(n.accion)}</p></div></div>` : ''}
+        ${n.accion ? `<div class="accion">${fxLogo(30)}<div><small>QUÉ HACER HOY</small><p>${esc(n.accion)}</p></div></div>` : ''}`}
       </div>
       <aside class="nside">
         ${jug.length ? `<div class="card"><h3>Jugadores en la noticia</h3><p class="sub">Su veredicto para la semana ${semActual()}.</p><div class="plist">${jug.map(j => prow(j, `<span class="num sm">${n1(j.p ?? j.prom)}</span>${fxPill(j)}`)).join('')}</div>
           ${jug.length >= 2 ? `<p style="margin:12px 0 0"><a class="btn sm" href="#/comparar/${jug[0].id}/${jug[1].id}">Comparar cara a cara</a></p>` : ''}</div>` : ''}
-        ${eqs.length ? `<div class="card"><h3>Equipos</h3><div class="eqchips">${eqs.map(t => `<a class="eqchip" href="#/equipo/${t}" style="${vars(t)}">${helmet(t, '', 30)}<span>${EQUIPOS[t]}<small>${recordDe(t)} · S${semActual()} ${rivalTxt(t)}</small></span></a>`).join('')}</div></div>` : ''}
+        ${eqs.length ? `<div class="card"><h3>Equipos</h3><div class="eqchips">${eqs.slice(0, 6).map(t => `<a class="eqchip" href="#/equipo/${t}" style="${vars(t)}">${helmet(t, '', 30)}<span>${EQUIPOS[t]}<small>${recordDe(t)} · S${semActual()} ${rivalTxt(t)}</small></span></a>`).join('')}</div></div>` : ''}
       </aside>
     </div>
     <details class="reporte"><summary>⚑ Reportar un error en esta nota</summary><form id="f-reporte" class="fform" data-nota="${esc(n.id)}"><textarea name="m" maxlength="900" required placeholder="¿Qué dato está mal? Ej.: el jugador está lesionado, el rival no es ese…"></textarea><button class="btn sm" type="submit">Enviar reporte</button><small class="msg"></small></form></details>
@@ -526,7 +529,8 @@ function exclusivo() {
   titulo('Exclusivo FX');
   const L = todasNoticias().filter(n => n.exclusivo);
   return `<div class="page">${crumbs([['', 'Exclusivo FX']])}<div class="wrap">
-    <div class="nhero" style="--c1:#3A2A05;--c2:#FFD45C"><div class="grid-in"><div class="txt"><span class="tagx" style="background:var(--gold)">★ PREMIUM · GRATIS POR AHORA</span><h1>Exclusivo FX</h1><p class="hero-sub">Información de nuestra red de reporteros que no vas a encontrar en otro lado, desarrollada por los expertos.</p></div></div></div>
+    <div class="nhero" style="--c1:#3A2A05;--c2:#FFD45C"><div class="grid-in"><div class="txt"><span class="tagx" style="background:var(--gold)">★ PREMIUM FX</span><h1>Exclusivo FX</h1><p class="hero-sub">Información de nuestra red de reporteros que no vas a encontrar en otro lado, desarrollada por los expertos.</p></div></div></div>
+    ${esPremium() ? `<p class="prem-ok">★ Eres Premium: tienes acceso completo a todas las notas.</p>` : `<section class="block">${muroPremium()}</section>`}
     <section class="block"><div class="news stagger">${L.map(n => newsCard(n)).join('') || '<div class="empty">La primera nota exclusiva llega muy pronto. Mientras, revisa las <a href="#/noticias">noticias del día</a>.</div>'}</div></section>
   </div></div>`;
 }
@@ -786,7 +790,7 @@ const panelMios = () => {
   const L = [...FAV].map(id => J[id]).filter(Boolean).sort((a, b) => b.pEst - a.pEst).slice(0, 8);
   return L.length ? `<div class="panel mios"><div class="panel-h"><b>★ Mis jugadores</b><a href="#/cuenta">Editar ›</a></div>${L.map(j => `<a class="ml" href="#/jugador/${j.id}">${helmet(j.team, j.num, 28)}<span class="ml-n"><b>${esc(j.n)}</b><small>${esc(j.pos)} · ${rivalTxt(j.team)} · ${n1(j.p ?? j.pEst)} pts</small></span>${fxPill(j)}</a>`).join('')}</div>` : '';
 };
-function cuenta() {
+function cuenta(q = new URLSearchParams()) {
   titulo('Mi cuenta');
   if (!SB) { cargaSB().then(() => SB.auth.getSession()).then(() => { if (/^#\/cuenta/.test(location.hash)) repinta(); }).catch(() => { const a = $('#app'); if (a) a.innerHTML = '<div class="wrap empty">No pudimos conectar. Intenta de nuevo en un momento.</div>'; }); return '<div class="wrap loading"><p class="px blink" style="color:var(--accent)">CARGANDO…</p></div>'; }
   if (RECUPERA && YO) return `<div class="page">${crumbs([['', 'Nueva contraseña']])}<div class="wrap"><section class="auth card">
@@ -810,13 +814,41 @@ function cuenta() {
     <p class="auth-alt">${reg ? '¿Ya tienes cuenta? <button type="button" class="lnk" data-modo="entrar">Entra aquí</button>' : '¿Nuevo en FX? <button type="button" class="lnk" data-modo="registro">Crea tu cuenta gratis</button> · <button type="button" class="lnk" id="olvide">Olvidé mi contraseña</button>'}</p>
   </section></div></div>`; }
   const favs = [...FAV].map(id => J[id]).filter(Boolean).sort((a, b) => b.pEst - a.pEst);
+  if (q.get('pago') && !esPremium()) esperaPago();
+  const hasta = PERFIL && PERFIL.premium_hasta ? new Date(PERFIL.premium_hasta).toLocaleDateString('es-MX', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
+  const tPrem = esPremium() ? `<div class="card prem-card"><h3>★ Premium FX</h3><p>${PERFIL.premium_tipo === 'temporada' ? 'Pase de temporada' : 'Suscripción mensual'}${hasta ? (PERFIL.premium_tipo === 'temporada' ? ' · válido hasta el ' : ' · próxima renovación: ') + hasta : ''}</p><p><a class="btn sm" href="#/exclusivo">Leer el Exclusivo</a>${PAGO.portal && PERFIL.premium_tipo !== 'temporada' ? ` <a class="btn ghost sm" href="${PAGO.portal}" target="_blank" rel="noopener">Administrar o cancelar</a>` : ''}</p></div>`
+    : q.get('pago') ? `<div class="card prem-card"><h3>★ Activando tu Premium…</h3><p class="px blink" style="color:var(--gold)">CONFIRMANDO PAGO</p><p class="sub">Tarda unos segundos. Si pagaste en OXXO, se activa cuando se refleje tu pago.</p></div>`
+    : `<div class="card prem-card"><h3>★ Hazte Premium</h3><p class="sub">Desbloquea todas las notas exclusivas de nuestra red de reporteros.</p>${(PAGO.mes || PAGO.temporada) ? planes() : '<small class="muro-pie">Las suscripciones abren en unos días.</small>'}</div>`;
   return `<div class="page">${crumbs([['', 'Mi cuenta']])}<div class="wrap narrowish"><section class="block">
     <div class="head"><div><h2>Hola, ${esc((PERFIL && PERFIL.nombre) || '')}</h2><p class="hsub">${esc(YO.email || '')}</p></div><button class="btn ghost sm" type="button" id="salir">Cerrar sesión</button></div>
-    <div class="grid g2">
+    ${tPrem}
+    <div class="grid g2" style="margin-top:20px">
       <div class="card"><h3>★ Mis jugadores</h3>${favs.length ? `<div class="plist">${favs.map(j => prow(j, `<em class="n">${n1(j.p ?? j.pEst)}</em>${fxPill(j)}`)).join('')}</div>` : '<p class="sub">Aún no sigues a nadie. Entra a la ficha de un jugador y toca ☆ Seguir: aparecerán aquí y en tu portada.</p>'}</div>
       <div class="card"><h3>Tu perfil</h3><form id="f-perfil" class="fform"><label>Nombre<input name="nombre" maxlength="40" value="${esc((PERFIL && PERFIL.nombre) || '')}"></label><label class="chk"><input type="checkbox" name="news" ${PERFIL && PERFIL.newsletter === false ? '' : 'checked'}> <span>Recibir el resumen semanal por correo</span></label><button class="btn sm" type="submit">Guardar</button><small class="msg"></small></form>
         <div class="zona-borrar"><button type="button" class="lnk peligro" id="borrar">Eliminar mi cuenta</button><small>Borra tu cuenta, tus jugadores y tu suscripción. No se puede deshacer.</small></div></div>
     </div></section></div></div>`;
+}
+
+/* ---------- Premium FX (Stripe) ---------- */
+const PAGO = { mes: '', temporada: '', portal: '' }; // enlaces de pago de Stripe
+const esPremium = () => !!(PERFIL && PERFIL.premium && (!PERFIL.premium_hasta || Date.parse(PERFIL.premium_hasta) > Date.now()));
+const BOVEDA = {};
+function cargaBoveda(id) {
+  if (BOVEDA[id] !== undefined || !SB) return; BOVEDA[id] = null;
+  SB.from('exclusivos').select('nota').eq('id', id).maybeSingle().then(({ data }) => { if (data && data.nota) { BOVEDA[id] = data.nota; if (location.hash.includes(id)) repinta(); } else delete BOVEDA[id]; });
+}
+const linkPago = k => PAGO[k] && YO ? PAGO[k] + (PAGO[k].includes('?') ? '&' : '?') + 'client_reference_id=' + encodeURIComponent(YO.id) + (YO.email ? '&prefilled_email=' + encodeURIComponent(YO.email) : '') : '';
+const planes = () => `<div class="planes">${PAGO.mes ? `<a class="plan" href="${linkPago('mes')}"><b>$59</b><span>MXN al mes</span><small>Cancela cuando quieras</small></a>` : ''}${PAGO.temporada ? `<a class="plan top" href="${linkPago('temporada')}"><i>MEJOR PRECIO</i><b>$199</b><span>MXN toda la temporada</span><small>Pago único, hasta el Super Bowl</small></a>` : ''}</div><small class="muro-pie">Pago seguro con Stripe: tarjeta, Apple Pay, Google Pay u OXXO.</small>`;
+function muroPremium() {
+  const btns = !YO ? `<a class="btn" href="#/cuenta" data-reg>Crea tu cuenta para suscribirte</a><small class="muro-pie">¿Ya tienes cuenta? <a href="#/cuenta">Entra aquí</a></small>`
+    : (PAGO.mes || PAGO.temporada) ? planes() : `<small class="muro-pie">Las suscripciones abren en unos días.</small>`;
+  return `<div class="muro"><div class="muro-h">${fxLogo(34)}<div><b>★ PREMIUM FX</b><h3>Sigue leyendo con Premium</h3></div></div><p>Las notas exclusivas de nuestra red de reporteros: trade targets, la previa de cada semana e información que no vas a encontrar en otro lado.</p>${btns}</div>`;
+}
+let _poll = 0;
+function esperaPago() {
+  if (_poll || !SB) return; _poll = 1; let k = 0;
+  const t = setInterval(async () => { k++; if (YO) { const { data } = await SB.from('perfiles').select('*').eq('id', YO.id).maybeSingle(); if (data) PERFIL = data; }
+    if (esPremium() || k > 12) { clearInterval(t); _poll = 0; history.replaceState(null, '', location.pathname + '#/cuenta'); repinta(); } }, 3000);
 }
 
 function privacidad() {
@@ -824,7 +856,8 @@ function privacidad() {
   return `<div class="page">${crumbs([['', 'Aviso de privacidad']])}<div class="wrap narrowish"><article class="card legaltxt">
     <h1>Aviso de privacidad</h1><p class="sub">Última actualización: 20 de octubre de 2026</p>
     <h2>Quién es responsable</h2><p>Fantasy Expertos es responsable del tratamiento de los datos que nos das al crear tu cuenta en este sitio.</p>
-    <h2>Qué datos usamos</h2><p>Tu correo electrónico, el nombre que elijas, los jugadores que sigues y, si entras con Google, el nombre y correo de tu cuenta de Google. No pedimos datos financieros ni sensibles.</p>
+    <h2>Qué datos usamos</h2><p>Tu correo electrónico, el nombre que elijas, los jugadores que sigues y, si entras con Google, el nombre y correo de tu cuenta de Google. No pedimos datos sensibles.</p>
+    <h2>Pagos de Premium</h2><p>Los pagos los procesa Stripe. Nosotros nunca vemos ni guardamos los datos de tu tarjeta; solo guardamos tu tipo de plan, su vigencia y el identificador de cliente que Stripe nos da para activar o cancelar tu acceso.</p>
     <h2>Para qué los usamos</h2><p>Para darte acceso a tu cuenta, guardar tus jugadores favoritos, mandarte el resumen semanal de fantasy (si lo tienes activado) y revisar los reportes de error que envías. No vendemos ni compartimos tus datos con terceros para su publicidad.</p>
     <h2>Dónde se guardan</h2><p>En Supabase, el proveedor de base de datos y acceso de este sitio, con acceso restringido: cada usuario solo puede ver y cambiar su propia información.</p>
     <h2>Tus derechos</h2><p>Puedes ver y cambiar tus datos, darte de baja del resumen semanal o borrar tu cuenta en cualquier momento desde <a href="#/cuenta">Mi cuenta</a>. Para cualquier otra solicitud de acceso, rectificación, cancelación u oposición, escríbenos por mensaje directo a <a href="https://www.instagram.com/fantasy.expertos" target="_blank" rel="noopener">@fantasy.expertos</a>.</p>
@@ -936,7 +969,7 @@ function router() {
   const q = new URLSearchParams(qs || ''), [, seccion, a, b] = ruta.split('/');
   const R = { '': () => inicio(), noticias: () => noticias(q), reportajes: () => noticias(q), noticia: () => noticia(a), reportaje: () => noticia(a), jugador: () => jugador(a), comparar: () => comparar(a, b), posicion: () => posicion(a),
     equipos: () => equipos(), equipo: () => equipo(a), partidos: () => partidos(q), partido: () => partido(a), lideres: () => lideres(q), media: () => media(), exclusivo: () => exclusivo(), temporada: () => temporada(), semana: () => semana(a), tendencias: () => tendencias(), lesionados: () => lesionados(q),
-    cuenta: () => cuenta(), herramientas: () => herramientas(), trade: () => trade(q), privacidad: () => privacidad(), baja: () => baja(q) };
+    cuenta: () => cuenta(q), herramientas: () => herramientas(), trade: () => trade(q), privacidad: () => privacidad(), baja: () => baja(q) };
   app.innerHTML = (R[seccion || ''] || noEncontrado)();
   scrollTo({ top: 0 });
   const act = s => s === (seccion || '') || (seccion === 'noticia' && s === 'noticias') || (seccion === 'partido' && s === 'partidos') || (seccion === 'semana' && s === 'temporada') || (seccion === 'trade' && s === 'herramientas');
