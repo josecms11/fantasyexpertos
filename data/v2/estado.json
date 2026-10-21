@@ -1,23 +1,10 @@
 {
-  "fecha": "2026-10-21T15:41:49.974Z",
+  "fecha": "2026-10-21T16:16:51.219Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.5s] YouTube: 15 nuevos, 15 en total",
-    "[1.2s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[2.4s] ESPN: lesiones 799 · noticias 50",
-    "[2.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[3.4s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[3.9s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[4.3s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[19.3s] IA OK con gemini-3.5-flash-lite",
-    "[19.3s] Descartada: Tyrone Tracy asume el mando en Nueva York → duplicada",
-    "[19.3s] Descartada: Brock Purdy lidera con máxima eficiencia ofensiva → duplicada",
-    "[19.3s] Descartada: C.J. Stroud escala peldaños con gran momento → duplicada",
-    "[19.3s] Descartada: Matthew Stafford navega en turbulencia con los Rams → duplicada",
-    "[19.3s] Descartada: Brandon McManus llega para estabilizar a los Rams → duplicada",
-    "[19.3s] Descartada: Najee Harris se queda sin equipo tras su salida → duplicada",
-    "[19.3s] Descartada: Terry McLaurin despide la temporada por lesión → duplicada",
-    "[19.3s] Noticias nuevas verificadas: 1",
-    "[20.2s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 162 · semana de juego 7 · IA usada hoy 12/40"
+    "[0.4s] YouTube: 15 nuevos, 15 en total",
+    "[1.1s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[2.8s] ESPN: lesiones 799 · noticias 50",
+    "[3.5s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 162 · semana de juego 7 · IA usada hoy 12/40"
   ]
 }
