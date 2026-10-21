@@ -736,6 +736,15 @@ function refrescaVista() {
   const box = $('#home-matches'); if (box) box.innerHTML = homeMatches();
 }
 
+/* =============================== MEDICIÓN (Google Analytics) =============================== */
+const mide = (ev, datos = {}) => { try { if (window.gtag) window.gtag('event', ev, datos); } catch (e) {} };
+let _ultimaVista = '';
+function vista(ruta) {
+  const url = location.origin + '/' + ruta.replace(/^\/+/, '');
+  if (url === _ultimaVista) return; _ultimaVista = url;
+  mide('page_view', { page_location: url, page_title: document.title });
+}
+
 /* =============================== CUENTAS (Supabase) =============================== */
 const SB_URL = 'https://eafzqftobwrtqdnawncn.supabase.co', SB_KEY = 'sb_publishable_T9r9COQ5f9h1QKa9rqaUyA_hWXOYUqc';
 const SB_LLAVE = 'sb-eafzqftobwrtqdnawncn-auth-token';
@@ -848,6 +857,7 @@ let _poll = 0;
 function esperaPago() {
   if (_poll || !SB) return; _poll = 1; let k = 0;
   const t = setInterval(async () => { k++; if (YO) { const { data } = await SB.from('perfiles').select('*').eq('id', YO.id).maybeSingle(); if (data) PERFIL = data; }
+    if (esPremium()) mide('purchase', { currency: 'MXN', value: PERFIL.premium_tipo === 'temporada' ? 199 : 59, items: [{ item_id: 'premium-' + (PERFIL.premium_tipo || 'mensual'), item_name: 'Premium FX ' + (PERFIL.premium_tipo || 'mensual') }] });
     if (esPremium() || k > 12) { clearInterval(t); _poll = 0; history.replaceState(null, '', location.pathname + '#/cuenta'); repinta(); } }, 3000);
 }
 
@@ -857,6 +867,7 @@ function privacidad() {
     <h1>Aviso de privacidad</h1><p class="sub">Última actualización: 20 de octubre de 2026</p>
     <h2>Quién es responsable</h2><p>Fantasy Expertos es responsable del tratamiento de los datos que nos das al crear tu cuenta en este sitio.</p>
     <h2>Qué datos usamos</h2><p>Tu correo electrónico, el nombre que elijas, los jugadores que sigues y, si entras con Google, el nombre y correo de tu cuenta de Google. No pedimos datos sensibles.</p>
+    <h2>Estadísticas de visitas</h2><p>Usamos Google Analytics para saber cuántas personas visitan el sitio y qué secciones leen. Google puede usar cookies para esto; no lo usamos para identificarte personalmente.</p>
     <h2>Pagos de Premium</h2><p>Los pagos los procesa Stripe. Nosotros nunca vemos ni guardamos los datos de tu tarjeta; solo guardamos tu tipo de plan, su vigencia y el identificador de cliente que Stripe nos da para activar o cancelar tu acceso.</p>
     <h2>Para qué los usamos</h2><p>Para darte acceso a tu cuenta, guardar tus jugadores favoritos, mandarte el resumen semanal de fantasy (si lo tienes activado) y revisar los reportes de error que envías. No vendemos ni compartimos tus datos con terceros para su publicidad.</p>
     <h2>Dónde se guardan</h2><p>En Supabase, el proveedor de base de datos y acceso de este sitio, con acceso restringido: cada usuario solo puede ver y cambiar su propia información.</p>
@@ -933,8 +944,9 @@ document.addEventListener('submit', async e => {
     if (reg) { const nombre = (f.nombre.value || '').trim().slice(0, 40);
       const { data, error } = await sb.auth.signUp({ email, password, options: { data: { full_name: nombre || email.split('@')[0], newsletter: !!(f.news && f.news.checked) }, emailRedirectTo: baseURL() } });
       if (error) return msg(ERR(error.message));
+      mide('sign_up', { method: 'email' });
       if (!data.session) return msg('✓ Cuenta creada. Te mandamos un correo para confirmarla; ábrelo y luego entra con tu contraseña.');
-    } else { const { error } = await sb.auth.signInWithPassword({ email, password }); if (error) return msg(ERR(error.message)); }
+    } else { const { error } = await sb.auth.signInWithPassword({ email, password }); if (error) return msg(ERR(error.message)); mide('login', { method: 'email' }); }
     msg('✓ ¡Bienvenido!'); }
   else if (f.id === 'f-nueva') { e.preventDefault(); const { error } = await SB.auth.updateUser({ password: f.pass.value }); if (error) return msg(ERR(error.message)); RECUPERA = false; msg('✓ Contraseña guardada.'); setTimeout(repinta, 900); }
   else if (f.id === 'f-perfil') { e.preventDefault(); const d = { nombre: f.nombre.value.trim().slice(0, 40), newsletter: f.news.checked };
@@ -949,16 +961,17 @@ document.addEventListener('submit', async e => {
     f.reset(); const i = $(`.tr-add[data-k="${f.dataset.k}"] input`); if (i) i.focus(); }
 });
 document.addEventListener('click', e => {
-  const x = e.target.closest('.tr-x, .seguir, #salir, [data-fmt], #g-login, #olvide, .lnk[data-modo], #borrar, [data-reg]'); if (!x) return;
+  const x = e.target.closest('.tr-x, .seguir, #salir, [data-fmt], #g-login, #olvide, .lnk[data-modo], #borrar, [data-reg], .plan'); if (!x) return;
+  if (x.classList.contains('plan')) { mide('begin_checkout', { currency: 'MXN', value: x.classList.contains('top') ? 199 : 59 }); return; }
   if (x.hasAttribute('data-reg')) { MODO = 'registro'; return; }
   if (x.id === 'borrar') { if (!x.dataset.ok) { x.dataset.ok = 1; x.textContent = 'Toca otra vez para confirmar: se borra todo'; return; }
     x.textContent = 'Borrando…'; SB.rpc('eliminar_mi_cuenta').then(({ error }) => { if (error) { x.textContent = 'No se pudo borrar. Intenta de nuevo.'; delete x.dataset.ok; return; } SB.auth.signOut().finally(() => { location.hash = '#/'; }); }); return; }
-  if (x.id === 'g-login') { cargaSB().then(sb => sb.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: baseURL() } })).then(r => { if (r && r.error) { const m = $('#f-login .msg'); if (m) m.textContent = ERR(r.error.message); } }); return; }
+  if (x.id === 'g-login') { mide('login', { method: 'google' }); cargaSB().then(sb => sb.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: baseURL() } })).then(r => { if (r && r.error) { const m = $('#f-login .msg'); if (m) m.textContent = ERR(r.error.message); } }); return; }
   if (x.id === 'olvide') { const f = $('#f-login'), m = $('.msg', f), email = f.email.value.trim(); if (!email) { m.textContent = 'Escribe tu correo arriba y vuelve a tocar "Olvidé mi contraseña".'; f.email.focus(); return; }
     m.textContent = 'Enviando…'; SB.auth.resetPasswordForEmail(email, { redirectTo: baseURL() + '#/cuenta' }).then(({ error }) => { m.textContent = error ? ERR(error.message) : '✓ Te mandamos un enlace para crear una nueva contraseña. Ábrelo en este mismo navegador.'; }); return; }
   if (x.dataset.modo) { MODO = x.dataset.modo; repinta(); return; }
   if (x.classList.contains('tr-x')) { TR[x.dataset.k] = TR[x.dataset.k].filter(id => id !== x.dataset.id); pintaTrade(); }
-  else if (x.classList.contains('seguir')) toggleFav(x.dataset.id, x);
+  else if (x.classList.contains('seguir')) { mide('seguir_jugador', { jugador: x.dataset.id }); toggleFav(x.dataset.id, x); }
   else if (x.id === 'salir') SB.auth.signOut();
   else if (x.dataset.fmt) { FMT = +x.dataset.fmt; ls('fx-fmt', String(FMT)); aplicaFormato(); repinta(); }
 });
@@ -972,6 +985,7 @@ function router() {
     cuenta: () => cuenta(q), herramientas: () => herramientas(), trade: () => trade(q), privacidad: () => privacidad(), baja: () => baja(q) };
   app.innerHTML = (R[seccion || ''] || noEncontrado)();
   scrollTo({ top: 0 });
+  vista(ruta + (seccion === 'noticias' || seccion === 'lideres' || seccion === 'lesionados' ? (qs ? '?' + qs : '') : ''));
   const act = s => s === (seccion || '') || (seccion === 'noticia' && s === 'noticias') || (seccion === 'partido' && s === 'partidos') || (seccion === 'semana' && s === 'temporada') || (seccion === 'trade' && s === 'herramientas');
   document.querySelectorAll('.tabbar a, .links a').forEach(l => l.classList.toggle('act', act(l.dataset.s)));
   $('.links').classList.remove('open');
