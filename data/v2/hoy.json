@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-21T21:06:46.946Z",
+  "actualizado": "2026-10-21T21:36:32.498Z",
   "ultimaIA": "2026-10-21T20:07:06.505Z",
   "semana": 7,
   "semanaStats": 7,
@@ -115,6 +115,10 @@
       "estatus": "Duda"
     },
     {
+      "id": "6794",
+      "estatus": "Duda"
+    },
+    {
       "id": "12501",
       "estatus": "Duda"
     },
@@ -187,11 +191,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "13287",
+      "id": "5001",
       "estatus": "Duda"
     },
     {
-      "id": "9756",
+      "id": "13287",
       "estatus": "Duda"
     },
     {
@@ -223,12 +227,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12469",
-      "estatus": "Fuera"
-    },
-    {
       "id": "13296",
       "estatus": "Duda"
+    },
+    {
+      "id": "12469",
+      "estatus": "Fuera"
     },
     {
       "id": "4983",
@@ -249,10 +253,6 @@
     {
       "id": "4950",
       "estatus": "Fuera"
-    },
-    {
-      "id": "7571",
-      "estatus": "Duda"
     }
   ],
   "agregados": [
@@ -292,8 +292,8 @@
     "IND",
     "13150",
     "8121",
-    "7528",
     "11439",
+    "7528",
     "3271",
     "2505",
     "9480",
