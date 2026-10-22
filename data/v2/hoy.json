@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-22T02:15:34.486Z",
-  "ultimaIA": "2026-10-22T00:31:17.705Z",
+  "actualizado": "2026-10-22T02:48:59.895Z",
+  "ultimaIA": "2026-10-22T02:48:59.895Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,107 +13,80 @@
   ],
   "noticias": [
     {
-      "id": "n20261022003103",
-      "fecha": "2026-10-22T00:31:17.705Z",
+      "id": "n20261022024804",
+      "fecha": "2026-10-22T02:48:59.895Z",
       "semana": 7,
-      "titulo": "Rhamondre Stevenson genera serias dudas para la semana",
+      "titulo": "Terry McLaurin queda fuera el resto del año",
       "claves": [
-        "Analistas señalan preocupante baja de rendimiento",
-        "Duro enfrentamiento defensivo ante los Bears",
-        "Volumen comprometido por imprecisiones recientes"
+        "Desgarro del tendón rotuliano confirmado en juego de lunes.",
+        "Estatus de Out oficial y baja para toda la campaña.",
+        "Uno de los elementos más soltados de la semana."
       ],
-      "contexto": "El panorama para Rhamondre Stevenson luce complicado antes de enfrentar a la defensiva de Chicago en la Semana 7. Múltiples especialistas en fantasy han encendido las alarmas sobre la baja de eficiencia del corredor de los Patriots y sus constantes problemas con sueltos de balón. La combinación de un enfrentamiento terrestre complicado y una rotación de acarreos amenaza seriamente su techo de puntos.",
-      "fantasy": "En formatos PPR y Flex, Stevenson representa un riesgo alto que deberías evitar si tienes mejores alternativas en la banca. Su falta de explosión y el peligro constante de perder jugadas ante compañeros de backfield castigan severamente su proyección. Si tu plantilla te lo permite, envíalo a la banca este fin de semana hasta que demuestre recuperar la efectividad en acarreos clave.",
-      "equipo_impacto": "Obliga al ataque de Nueva Inglaterra a cargar la mano en el brazo de Drake Maye, reduciendo la presencia del juego terrestre tradicional.",
-      "accion": "Sienta a Rhamondre Stevenson y busca opciones con mejor enfrentamiento en tu Flex.",
+      "contexto": "Terry McLaurin sufrió una devastadora lesión en la rodilla durante la derrota de Washington frente a los 49ers en el partido de lunes por la noche. Los exámenes médicos confirmaron un desgarro del tendón rotuliano que lo dejará fuera de acción por el resto de la temporada regular, catalogado oficialmente como descartado. La noticia detonó una ola masiva de despidos en plataformas fantasy alrededor de la liga.",
+      "fantasy": "El valor de McLaurin cae de manera absoluta a cero en formatos Redraft tradicionales. Al estar descartado de por vida para el resto del calendario 2026, retenerlo en tu plantilla representa un desperdicio total de espacio. En ligas Dynasty únicamente amerita ser trasladado a la reserva de lesionados si cuentas con puestos disponibles, pero en cualquier liga estándar debe ser cortado sin ninguna contemplación.",
+      "equipo_impacto": "La ofensiva de los Commanders pierde a su receptor referente por tiempo indefinido, forzando a Washington a repartir volumen entre opciones secundarias y depender mucho más del plan de carrera en semanas venideras.",
+      "accion": "Corta a Terry McLaurin inmediatamente de tu plantilla para liberar un puesto de banca.",
       "etiqueta": "SIT",
       "impacto": "BAJA",
-      "equipo": "NE",
+      "equipo": "WAS",
       "equipos": [
-        "NE",
-        "CHI"
-      ],
-      "jugadores": [
-        "7611",
-        "11564"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261022003104",
-      "fecha": "2026-10-22T00:31:17.705Z",
-      "semana": 7,
-      "titulo": "Kyle Monangai queda descartado por lesiones de dedo",
-      "claves": [
-        "Oficialmente fuera para el juego dominical",
-        "Sufre molestias lingering en pie y dedo",
-        "Abre espacio en el backfield de Bears"
-      ],
-      "contexto": "Los Bears descartaron oficialmente al corredor Kyle Monangai para el duelo contra los Patriots debido a lesiones persistentes en el pie y el dedo pulgar. El jugador no logró recuperarse a tiempo durante la semana corta de prácticas, dejando a Chicago sin una de sus piezas de rotación en el ataque terrestre. Su ausencia altera de inmediato la distribución de acarreos del equipo.",
-      "fantasy": "Monangai queda completamente descartado para cualquier alineación de fantasy football en la Semana 7. Si lo tenías considerado para cubrir alguna semana de descanso o como un Flex desesperado, debes moverlo de inmediato a tu banca o cortar su lugar si necesitas espacio. Su baja abre una oportunidad clara para capturar valor de waivers en el backfield de Chicago.",
-      "equipo_impacto": "Deja todo el trabajo terrestre de Chicago repartido entre los corredores restantes del plantel, incrementando el volumen de toques directos para el backfield.",
-      "accion": "Mueve a Kyle Monangai directamente a tu banca o a la lista de lesionados.",
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "CHI",
-      "equipos": [
-        "CHI",
-        "NE"
-      ],
-      "jugadores": [
-        "12534",
-        "10235"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261022003106",
-      "fecha": "2026-10-22T00:31:17.705Z",
-      "semana": 7,
-      "titulo": "Xavier Worthy asume rol estelar ante los Seahawks",
-      "claves": [
-        "Aprovecha protagonismo expandido en la ofensiva",
-        "Duelo clave contra defensiva de Seattle",
-        "Elemento explosivo en pases profundos Chiefs"
-      ],
-      "contexto": "El receptor novato Xavier Worthy continúa floreciendo dentro del esquema ofensivo de los Chiefs gracias a un volumen de juego cada vez más amplio. Kansas City necesitará al máximo el dinamismo y la velocidad de Worthy este domingo en su visita a los Seahawks. El cuerpo técnico ha diseñado jugadas específicas para explotar su aceleración en rutas profundas y pases tras la recepción.",
-      "fantasy": "Worthy se consolida como una opción sumamente atractiva para alinear como WR2 o Flex con un techo de puntos altísimo. En formatos PPR y métricas de yardas recibidas, su capacidad para convertir un pase corto en una anotación larga compensa con creces cualquier fluctuación en número de objetivos. Su tendencia ascendente obliga a mantenerlo dentro de tus alineaciones titulares de fantasy.",
-      "equipo_impacto": "Estira el campo para la ofensiva de Kansas City, abriendo espacios intermedios para alas cerradas y corredores en el plan de juego semanal.",
-      "accion": "Inserta a Xavier Worthy en tu alineación titular de WR2 o Flex esta semana.",
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "KC",
-      "equipos": [
-        "KC",
-        "SEA"
-      ],
-      "jugadores": [
-        "11624"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261022003107",
-      "fecha": "2026-10-22T00:31:17.705Z",
-      "semana": 7,
-      "titulo": "Brock Purdy lidera rankings de pasadores en 2026",
-      "claves": [
-        "Se posiciona como pasador más eficiente",
-        "Comanda ofensiva invicta de San Francisco",
-        "Proyección sólida de 20.5 puntos semanales"
-      ],
-      "contexto": "Brock Purdy se mantiene en la cima del ranking de mariscales de campo de la NFL tras firmar el índice de pase más alto de todos los tiempos. El mariscal de los 49ers llega a la Semana 7 proyectado con 20.5 puntos fantasy mientras comanda a un ataque invicto. Su consistencia quirúrgica distribuyendo el balón lo convierte en el motor principal del sistema de Kyle Shanahan.",
-      "fantasy": "Purdy es un mariscal de campo titular indiscutible en cualquier formato de fantasy, desde ligas tradicionales hasta Superflex. Su extraordinaria eficiencia en envíos profundos y pases de anotación garantiza una producción constante semana a semana. No hay razón para sentarlo, independientemente del rival en turno, pues su piso de puntos en este sistema es uno de los más seguros de la liga.",
-      "equipo_impacto": "Maximiza el rendimiento fantasy de todos sus receptores y alas cerradas, manteniendo a la ofensiva de San Francisco al máximo nivel competitivo.",
-      "accion": "Mantén a Brock Purdy firme como tu QB1 en la alineación titular.",
-      "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "SF",
-      "equipos": [
+        "WAS",
         "SF"
       ],
       "jugadores": [
-        "8183"
+        "5927"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261022024806",
+      "fecha": "2026-10-22T02:48:59.895Z",
+      "semana": 7,
+      "titulo": "Brock Bowers lidia con problemas en el tendón",
+      "claves": [
+        "Bowers aparece cuestionable por una lesión de isquiotibial.",
+        "Proyección estelar de 16.0 unidades en riesgo físico.",
+        "Monitoreo indispensable antes del arranque dominical."
+      ],
+      "contexto": "Brock Bowers quedó etiquetado oficialmente como cuestionable para el encuentro de la Semana 7 debido a una dolencia en el tendón de la corva. A pesar de los problemas musculares reportados por Las Vegas, el novato mantiene una elevada proyección de 16.0 puntos fantasy en formatos PPR, consolidándose como uno de los alas cerradas mejor perfilados de la jornada si logra recibir la autorización médica necesaria.",
+      "fantasy": "El estatus de Bowers se mantiene bajo impacto neutro a la espera de noticias médicas definitivas. En ligas PPR y TE Premium sigue proyectado como el número dos de la posición, superando a veteranos consagrados. No obstante, las lesiones de isquiotibial son altamente traicioneras; si se confirma activo debes alinearlo, pero resulta imperativo asegurar un ala cerrada suplente confiable en waivers.",
+      "equipo_impacto": "La ausencia o limitación de Bowers dejaría a los Raiders desprovistos de su principal válvula de escape por aire, obligando al esquema a involucrar mucho más a receptores abiertos en rutas intermedias y profundas.",
+      "accion": "Mantén a Brock Bowers en observación constante y asegura un reemplazo de ala cerrada.",
+      "etiqueta": "LESIÓN",
+      "impacto": "NEUTRO",
+      "equipo": "LV",
+      "equipos": [
+        "LV"
+      ],
+      "jugadores": [
+        "11604"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261022024807",
+      "fecha": "2026-10-22T02:48:59.895Z",
+      "semana": 7,
+      "titulo": "Josh Jacobs busca redención tras controversia extradeportiva reciente",
+      "claves": [
+        "Jacobs habló públicamente sobre aprender de sus errores pasados.",
+        "Debate abierto sobre alinearlo directamente en Semana 7.",
+        "Compromiso divisional clave frente a los Detroit Lions."
+      ],
+      "contexto": "Josh Jacobs ofreció sus primeras declaraciones públicas tras su arresto ocurrido en mayo por un incidente con una mujer en su domicilio, manifestando que busca aprender del error y concentrarse plenamente en avanzar. En el terreno competitivo, los Packers preparan un crucial compromiso divisional ante los Lions, mientras en los círculos de fantasy se debate con fuerza si los manejadores deben colocarlo de inmediato en sus alineaciones titulares.",
+      "fantasy": "El valor de Jacobs se ubica bajo observación en ligas PPR y formato estándar. Enfrentar a una defensiva física como Detroit plantea interrogantes tácticas, pero su volumen de toques histórico lo coloca en el límite de un RB2 con piso sólido. Si tu plantilla carece de alternativas de calibre superior, Jacobs ofrece suficiente involucramiento en zona roja para justificar su inclusión como titular en alineaciones convencionales.",
+      "equipo_impacto": "El ataque de Green Bay requiere establecer el ritmo terrestre de Jacobs para aliviar la presión sobre Jordan Love, quien también arrastra molestias físicas en la espalda durante esta semana divisional clave.",
+      "accion": "Alinea a Josh Jacobs como corredor dos si necesitas volumen terrestre garantizado.",
+      "etiqueta": "TENDENCIA",
+      "impacto": "NEUTRO",
+      "equipo": "GB",
+      "equipos": [
+        "GB",
+        "DET"
+      ],
+      "jugadores": [
+        "5850",
+        "6804"
       ],
       "menciona": []
     }
@@ -287,12 +260,12 @@
     "12718",
     "9482",
     "6650",
-    "5849",
     "11539",
+    "5849",
     "9758",
     "8135",
-    "NYJ",
     "3271",
+    "NYJ",
     "11655",
     "10213",
     "11610",
@@ -301,9 +274,9 @@
     "13296",
     "9502",
     "9230",
+    "11563",
     "11792",
     "MIN",
-    "11563",
     "8116",
     "11565"
   ],
@@ -311,11 +284,11 @@
     "11581",
     "5927",
     "JAX",
-    "9511",
     "11435",
+    "9511",
     "NE",
-    "IND",
     "13150",
+    "IND",
     "11439",
     "8121",
     "3271",
@@ -325,19 +298,19 @@
     "650",
     "7042",
     "8132",
-    "12711",
-    "12533",
-    "6904",
     "8129",
+    "12711",
+    "6904",
+    "12533",
     "1166",
-    "13330",
     "11647",
+    "13330",
     "3321"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
     "b": "Bijan Robinson",
-    "veredicto": "Arranca a Jahmyr Gibbs. Su proyección de 25.2 puntos PPR supera a los 22.6 de Bijan gracias a su involucramiento masivo en pases y capacidad explosiva en la zona roja para la Semana 7."
+    "veredicto": "Arranca a Jahmyr Gibbs; su proyección líder de 25.2 unidades y explosividad por aire le otorgan mayor techo fantasy que los respetables 22.6 puntos de Bijan Robinson en formatos PPR."
   },
   "fuentes": [
     "Sleeper",
