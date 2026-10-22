@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-22T18:12:21.719Z",
-  "ultimaIA": "2026-10-22T16:49:48.384Z",
+  "actualizado": "2026-10-22T18:57:02.607Z",
+  "ultimaIA": "2026-10-22T18:57:02.607Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,128 +13,53 @@
   ],
   "noticias": [
     {
-      "id": "x20261022171600",
-      "fecha": "2026-10-22T17:16:43.693Z",
+      "id": "n20261022185703",
+      "fecha": "2026-10-22T18:57:02.607Z",
       "semana": 7,
-      "exclusivo": true,
-      "fuente": "2026-10-22T16:14:39+00:00",
-      "titulo": "Previa semanal: duelos con mayor y menor valor fantasy",
+      "titulo": "Josh Simmons directo a la lista de reservas",
       "claves": [
-        "Bengals contra Ravens encabeza los duelos con mayor potencial fantasy"
+        "Sufre de una protuberancia discal en la espalda",
+        "Su proceso de rehabilitación se estancó",
+        "Ausente hasta la semana once como mínimo"
       ],
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "BAL",
+      "contexto": "Los Chiefs tomaron la dura decisión de colocar al tackle izquierdo Josh Simmons en la lista de reservas tras complicarse su recuperación de una lesión en la parte baja de la espalda.",
+      "fantasy": "Indirectamente afecta las proyecciones ofensivas del equipo de Kansas City al perder protección vital en la línea frontal, restando margen de maniobra a las jugadas aéreas profundas.",
+      "equipo_impacto": "La línea ofensiva de los campeones sufre una baja muy sensible que obligará a realizar ajustes drásticos en el bloque de protección.",
+      "accion": "Monitorea cómo protege la línea a la ofensiva antes de confiar ciegamente en los secundarios del equipo.",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "KC",
       "equipos": [
-        "BAL",
-        "CIN",
-        "GB",
-        "DET",
-        "LAR",
-        "LV",
-        "DEN",
-        "ARI",
-        "MIA",
-        "NYJ",
-        "CLE",
-        "TEN"
+        "KC"
       ],
       "jugadores": [],
-      "premium": true
+      "menciona": []
     },
     {
-      "id": "x20261022171601",
-      "fecha": "2026-10-22T17:16:43.693Z",
+      "id": "n20261022185705",
+      "fecha": "2026-10-22T18:57:02.607Z",
       "semana": 7,
-      "exclusivo": true,
-      "fuente": "2026-10-22T16:14:39+00:00",
-      "titulo": "Colston Loveland encabeza las opciones de alas cerradas",
+      "titulo": "Rams sufren por la baja de Davante Adams",
       "claves": [
-        "Colston Loveland gana terreno como una opción intrigante en fantasy"
+        "Adams se encuentra en la lista de lesionados",
+        "Bastan opciones para reemplazar su producción",
+        "Buscan alternativas urgentes en el mercado"
       ],
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "NE",
+      "contexto": "Los Rams enfrentan un serio problema en su cuerpo de receptores debido a que Davante Adams está en la lista de lesionados por un problema en el tendón de la corva, dejando un vacío enorme en el ataque.",
+      "fantasy": "El rendimiento aéreo del equipo experimenta dudas severas. Los analistas debaten si el volumen de juego se mantendrá igual o si sufrirá un desplome importante en fantasy.",
+      "equipo_impacto": "La gerencia explora opciones de intercambio en el mercado de fichajes para sumar talento exterior que ayude a mitigar la ausencia de su estrella.",
+      "accion": "Evita alinear opciones secundarias del juego aéreo de los Rams hasta ver cómo se reconfigura el esquema ofensivo.",
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "LAR",
       "equipos": [
-        "NE",
-        "CHI"
+        "LAR"
       ],
       "jugadores": [
-        "12517",
-        "3214"
+        "2133",
+        "421"
       ],
-      "premium": true
-    },
-    {
-      "id": "x20261022171602",
-      "fecha": "2026-10-22T17:16:43.693Z",
-      "semana": 7,
-      "exclusivo": true,
-      "fuente": "2026-10-22T16:14:39+00:00",
-      "titulo": "Demario Douglas destaca en el ataque de los Patriots",
-      "claves": [
-        "Demario Douglas busca consolidarse como la opción principal de New England"
-      ],
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "NE",
-      "equipos": [
-        "NE"
-      ],
-      "jugadores": [
-        "9501",
-        "5859"
-      ],
-      "premium": true
-    },
-    {
-      "id": "x20261022171603",
-      "fecha": "2026-10-22T17:16:43.693Z",
-      "semana": 7,
-      "exclusivo": true,
-      "fuente": "2026-10-22T16:14:39+00:00",
-      "titulo": "Luther Burden y Rome Odunze impulsan a Bears",
-      "claves": [
-        "Luther Burden destaca como una de las promesas del ataque"
-      ],
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "CHI",
-      "equipos": [
-        "CHI"
-      ],
-      "jugadores": [
-        "12519",
-        "11620"
-      ],
-      "premium": true
-    },
-    {
-      "id": "x20261022171604",
-      "fecha": "2026-10-22T17:16:43.693Z",
-      "semana": 7,
-      "exclusivo": true,
-      "fuente": "2026-10-22T16:14:39+00:00",
-      "titulo": "Antonio Williams encabeza receptores agentes libres disponibles",
-      "claves": [
-        "Antonio Williams aparece como opción libre en los Washington Commanders"
-      ],
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "WAS",
-      "equipos": [
-        "WAS",
-        "BAL",
-        "SF",
-        "IND"
-      ],
-      "jugadores": [
-        "13301",
-        "13293",
-        "4950",
-        "1479"
-      ],
-      "premium": true
+      "menciona": []
     }
   ],
   "lesionados": [
@@ -306,24 +231,24 @@
     "9482",
     "13276",
     "12718",
-    "11539",
     "3271",
+    "11539",
     "9758",
     "5849",
     "8135",
     "8122",
     "11610",
+    "8132",
     "10213",
     "NYJ",
-    "8132",
     "9502",
     "11563",
-    "9230",
     "13424",
+    "9230",
     "9756",
     "1433",
-    "11565",
     "11655",
+    "11565",
     "11783"
   ],
   "soltados": [
@@ -348,15 +273,15 @@
     "1166",
     "12533",
     "7567",
-    "11637",
     "3321",
+    "11637",
     "12711",
     "11647"
   ],
   "duelo": {
-    "a": "Drake Maye",
-    "b": "Brock Purdy",
-    "veredicto": "Arranca a Drake Maye por su impresionante momento reciente y su alto techo ofensivo proyectado en 21.6 puntos, superando ligeramente la gran consistencia de Purdy."
+    "a": "Jahmyr Gibbs",
+    "b": "Bijan Robinson",
+    "veredicto": "Arranca a Jahmyr Gibbs por su explosividad superior en ofensivas de alto volumen y sus elevadas proyecciones PPR para esta semana."
   },
   "fuentes": [
     "Sleeper",
