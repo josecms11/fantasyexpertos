@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-22T16:49:48.384Z",
+  "actualizado": "2026-10-22T17:16:43.693Z",
   "ultimaIA": "2026-10-22T16:49:48.384Z",
   "semana": 7,
   "semanaStats": 7,
@@ -13,30 +13,128 @@
   ],
   "noticias": [
     {
-      "id": "n20261022164905",
-      "fecha": "2026-10-22T16:49:48.384Z",
+      "id": "x20261022171600",
+      "fecha": "2026-10-22T17:16:43.693Z",
       "semana": 7,
-      "titulo": "Sam LaPorta explota contra la directiva de Lions",
+      "exclusivo": true,
+      "fuente": "2026-10-22T16:14:39+00:00",
+      "titulo": "Previa semanal: duelos con mayor y menor valor fantasy",
       "claves": [
-        "LaPorta expresa profunda frustración por su contrato",
-        "Aporta gran producción a pesar del descontento",
-        "Proyectado con 12.8 puntos en formato PPR"
+        "Bengals contra Ravens encabeza los duelos con mayor potencial fantasy"
       ],
-      "contexto": "El ala cerrada estelar de los Detroit Lions, Sam LaPorta, alzó la voz de manera contundente sobre su actual situación contractual, manifestando su molestia con declaraciones subidas de tono sobre su esfuerzo desmedido en el campo.",
-      "fantasy": "En el terreno de juego fantasy, su jerarquía en la posición se mantiene intacta. Con una proyección sólida de 12.8 puntos en PPR, sigue siendo un elemento de confianza para alinear sin titubeos en la mayoría de las ligas.",
-      "equipo_impacto": "La tensión contractual genera atención mediática, pero dentro del emparrillado su química con el quarterback se mantiene como pilar ofensivo.",
-      "accion": "Alinea a LaPorta con confianza absoluta en tu posición de ala cerrada.",
-      "etiqueta": "START",
+      "etiqueta": "TENDENCIA",
       "impacto": "NEUTRO",
-      "equipo": "DET",
+      "equipo": "BAL",
       "equipos": [
-        "DET"
+        "BAL",
+        "CIN",
+        "GB",
+        "DET",
+        "LAR",
+        "LV",
+        "DEN",
+        "ARI",
+        "MIA",
+        "NYJ",
+        "CLE",
+        "TEN"
+      ],
+      "jugadores": [],
+      "premium": true
+    },
+    {
+      "id": "x20261022171601",
+      "fecha": "2026-10-22T17:16:43.693Z",
+      "semana": 7,
+      "exclusivo": true,
+      "fuente": "2026-10-22T16:14:39+00:00",
+      "titulo": "Colston Loveland encabeza las opciones de alas cerradas",
+      "claves": [
+        "Colston Loveland gana terreno como una opción intrigante en fantasy"
+      ],
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "NE",
+      "equipos": [
+        "NE",
+        "CHI"
       ],
       "jugadores": [
-        "10859",
-        "3163"
+        "12517",
+        "3214"
       ],
-      "menciona": []
+      "premium": true
+    },
+    {
+      "id": "x20261022171602",
+      "fecha": "2026-10-22T17:16:43.693Z",
+      "semana": 7,
+      "exclusivo": true,
+      "fuente": "2026-10-22T16:14:39+00:00",
+      "titulo": "Demario Douglas destaca en el ataque de los Patriots",
+      "claves": [
+        "Demario Douglas busca consolidarse como la opción principal de New England"
+      ],
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "NE",
+      "equipos": [
+        "NE"
+      ],
+      "jugadores": [
+        "9501",
+        "5859"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261022171603",
+      "fecha": "2026-10-22T17:16:43.693Z",
+      "semana": 7,
+      "exclusivo": true,
+      "fuente": "2026-10-22T16:14:39+00:00",
+      "titulo": "Luther Burden y Rome Odunze impulsan a Bears",
+      "claves": [
+        "Luther Burden destaca como una de las promesas del ataque"
+      ],
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "CHI",
+      "equipos": [
+        "CHI"
+      ],
+      "jugadores": [
+        "12519",
+        "11620"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261022171604",
+      "fecha": "2026-10-22T17:16:43.693Z",
+      "semana": 7,
+      "exclusivo": true,
+      "fuente": "2026-10-22T16:14:39+00:00",
+      "titulo": "Antonio Williams encabeza receptores agentes libres disponibles",
+      "claves": [
+        "Antonio Williams aparece como opción libre en los Washington Commanders"
+      ],
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "WAS",
+      "equipos": [
+        "WAS",
+        "BAL",
+        "SF",
+        "IND"
+      ],
+      "jugadores": [
+        "13301",
+        "13293",
+        "4950",
+        "1479"
+      ],
+      "premium": true
     }
   ],
   "lesionados": [
@@ -214,8 +312,8 @@
     "5849",
     "8135",
     "8122",
-    "10213",
     "11610",
+    "10213",
     "NYJ",
     "9502",
     "11565",
@@ -224,8 +322,8 @@
     "9230",
     "11655",
     "13424",
-    "9756",
     "1433",
+    "9756",
     "11783"
   ],
   "soltados": [
