@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-21T23:58:58.206Z",
-  "ultimaIA": "2026-10-21T22:06:46.102Z",
+  "actualizado": "2026-10-22T00:31:17.705Z",
+  "ultimaIA": "2026-10-22T00:31:17.705Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,83 +13,107 @@
   ],
   "noticias": [
     {
-      "id": "n20261021220601",
-      "fecha": "2026-10-21T22:06:46.102Z",
+      "id": "n20261022003103",
+      "fecha": "2026-10-22T00:31:17.705Z",
       "semana": 7,
-      "titulo": "Patrick Mahomes pierde terreno y luce como opción riesgosa",
+      "titulo": "Rhamondre Stevenson genera serias dudas para la semana",
       "claves": [
-        "Clasificaciones de enfrentamientos sugieren degradar al pasador de Kansas City.",
-        "Cayó fuera del top tres en rankings semanales de mariscales.",
-        "Duelo complicado de visita ante la dura defensiva de Seattle."
+        "Analistas señalan preocupante baja de rendimiento",
+        "Duro enfrentamiento defensivo ante los Bears",
+        "Volumen comprometido por imprecisiones recientes"
       ],
-      "contexto": "Los Chiefs se preparan para un complejo viaje a Seattle con el objetivo de mantener su invicto. Sin embargo, el panorama para Patrick Mahomes presenta serias alertas tras caer fuera del podio en los Power Rankings de la posición. El análisis de enfrentamientos directos de la semana 7 aconseja reducir drásticamente las expectativas sobre su producción debido al cerrojo que impone la secundaria rival.",
-      "fantasy": "El panorama para Mahomes obliga a la cautela máxima en ligas de un solo mariscal. Quienes compiten en formatos de 10 o 12 participantes deben considerar sentarlo si disponen de pasadores con mejores cruces. Su techo anotador está seriamente limitado esta semana, alejándolo del rendimiento estelar que normalmente justifica su etiqueta de intocable. Considera opciones de mayor proyección como Brock Purdy o C.J. Stroud.",
-      "equipo_impacto": "Con una proyección moderada para Mahomes, Kansas City recargará su ataque mediante Kenneth Walker y el juego terrestre, lo que afectará directamente el volumen anotador de sus armas aéreas.",
-      "accion": "Sienta a Patrick Mahomes si tienes alternativas con proyecciones más favorables.",
+      "contexto": "El panorama para Rhamondre Stevenson luce complicado antes de enfrentar a la defensiva de Chicago en la Semana 7. Múltiples especialistas en fantasy han encendido las alarmas sobre la baja de eficiencia del corredor de los Patriots y sus constantes problemas con sueltos de balón. La combinación de un enfrentamiento terrestre complicado y una rotación de acarreos amenaza seriamente su techo de puntos.",
+      "fantasy": "En formatos PPR y Flex, Stevenson representa un riesgo alto que deberías evitar si tienes mejores alternativas en la banca. Su falta de explosión y el peligro constante de perder jugadas ante compañeros de backfield castigan severamente su proyección. Si tu plantilla te lo permite, envíalo a la banca este fin de semana hasta que demuestre recuperar la efectividad en acarreos clave.",
+      "equipo_impacto": "Obliga al ataque de Nueva Inglaterra a cargar la mano en el brazo de Drake Maye, reduciendo la presencia del juego terrestre tradicional.",
+      "accion": "Sienta a Rhamondre Stevenson y busca opciones con mejor enfrentamiento en tu Flex.",
       "etiqueta": "SIT",
       "impacto": "BAJA",
+      "equipo": "NE",
+      "equipos": [
+        "NE",
+        "CHI"
+      ],
+      "jugadores": [
+        "7611",
+        "11564"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261022003104",
+      "fecha": "2026-10-22T00:31:17.705Z",
+      "semana": 7,
+      "titulo": "Kyle Monangai queda descartado por lesiones de dedo",
+      "claves": [
+        "Oficialmente fuera para el juego dominical",
+        "Sufre molestias lingering en pie y dedo",
+        "Abre espacio en el backfield de Bears"
+      ],
+      "contexto": "Los Bears descartaron oficialmente al corredor Kyle Monangai para el duelo contra los Patriots debido a lesiones persistentes en el pie y el dedo pulgar. El jugador no logró recuperarse a tiempo durante la semana corta de prácticas, dejando a Chicago sin una de sus piezas de rotación en el ataque terrestre. Su ausencia altera de inmediato la distribución de acarreos del equipo.",
+      "fantasy": "Monangai queda completamente descartado para cualquier alineación de fantasy football en la Semana 7. Si lo tenías considerado para cubrir alguna semana de descanso o como un Flex desesperado, debes moverlo de inmediato a tu banca o cortar su lugar si necesitas espacio. Su baja abre una oportunidad clara para capturar valor de waivers en el backfield de Chicago.",
+      "equipo_impacto": "Deja todo el trabajo terrestre de Chicago repartido entre los corredores restantes del plantel, incrementando el volumen de toques directos para el backfield.",
+      "accion": "Mueve a Kyle Monangai directamente a tu banca o a la lista de lesionados.",
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "CHI",
+      "equipos": [
+        "CHI",
+        "NE"
+      ],
+      "jugadores": [
+        "12534",
+        "10235"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261022003106",
+      "fecha": "2026-10-22T00:31:17.705Z",
+      "semana": 7,
+      "titulo": "Xavier Worthy asume rol estelar ante los Seahawks",
+      "claves": [
+        "Aprovecha protagonismo expandido en la ofensiva",
+        "Duelo clave contra defensiva de Seattle",
+        "Elemento explosivo en pases profundos Chiefs"
+      ],
+      "contexto": "El receptor novato Xavier Worthy continúa floreciendo dentro del esquema ofensivo de los Chiefs gracias a un volumen de juego cada vez más amplio. Kansas City necesitará al máximo el dinamismo y la velocidad de Worthy este domingo en su visita a los Seahawks. El cuerpo técnico ha diseñado jugadas específicas para explotar su aceleración en rutas profundas y pases tras la recepción.",
+      "fantasy": "Worthy se consolida como una opción sumamente atractiva para alinear como WR2 o Flex con un techo de puntos altísimo. En formatos PPR y métricas de yardas recibidas, su capacidad para convertir un pase corto en una anotación larga compensa con creces cualquier fluctuación en número de objetivos. Su tendencia ascendente obliga a mantenerlo dentro de tus alineaciones titulares de fantasy.",
+      "equipo_impacto": "Estira el campo para la ofensiva de Kansas City, abriendo espacios intermedios para alas cerradas y corredores en el plan de juego semanal.",
+      "accion": "Inserta a Xavier Worthy en tu alineación titular de WR2 o Flex esta semana.",
+      "etiqueta": "START",
+      "impacto": "SUBE",
       "equipo": "KC",
       "equipos": [
         "KC",
         "SEA"
       ],
       "jugadores": [
-        "4046",
-        "8151"
+        "11624"
       ],
       "menciona": []
     },
     {
-      "id": "n20261021220603",
-      "fecha": "2026-10-21T22:06:46.102Z",
+      "id": "n20261022003107",
+      "fecha": "2026-10-22T00:31:17.705Z",
       "semana": 7,
-      "titulo": "J.J. McCarthy toma la titularidad pero enfrenta panorama hostil",
+      "titulo": "Brock Purdy lidera rankings de pasadores en 2026",
       "claves": [
-        "Nombrado titular oficial de Giants sobre el veterano Jameis Winston.",
-        "Debutará enfrentando a una defensiva de Texans proyectada entre mejores.",
-        "Coach John Harbaugh decidió entregarle los controles en semana siete."
+        "Se posiciona como pasador más eficiente",
+        "Comanda ofensiva invicta de San Francisco",
+        "Proyección sólida de 20.5 puntos semanales"
       ],
-      "contexto": "Los Giants confirmaron oficialmente a J.J. McCarthy como su quarterback titular para la visita ante los Texans. Semanas después de adquirir al novato reclutado en la primera ronda del draft 2024, el entrenador John Harbaugh optó por sentar a Jameis Winston. La decisión busca reactivar al equipo en su pelea dentro del Este de la Conferencia Nacional, aunque la prueba de fuego resultará sumamente compleja.",
-      "fantasy": "McCarthy no debe acercarse a tu alineación titular en ligas tradicionales de 10 o 12 escuadras. La defensiva de Houston figura como la número uno proyectada de la semana con 9.4 puntos fantasy, lo que convierte este estreno en un escenario adverso plagado de posibles entregas de balón. Solamente posee valor como segunda opción de emergencia en formatos Superflex o ligas de dos pasadores.",
-      "equipo_impacto": "El cambio en los controles modifica la dinámica de los Giants; el ataque buscará proteger al joven mariscal con trayectorias cortas y envíos controlados, limitando el volumen de pases profundos.",
-      "accion": "Mantén a J.J. McCarthy en la banca frente al cerrojo texano.",
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "NYG",
-      "equipos": [
-        "NYG",
-        "HOU"
-      ],
-      "jugadores": [
-        "11565",
-        "2306"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261021220607",
-      "fecha": "2026-10-21T22:06:46.102Z",
-      "semana": 7,
-      "titulo": "Sam LaPorta explota por falta de reconocimiento salarial",
-      "claves": [
-        "Mostró enorme molestia por falta de avance contractual con Detroit.",
-        "Proyecta 12.9 unidades fantasy para el choque ante Green Bay.",
-        "Abierto a emigrar en agencia libre rumbo a la temporada 2027."
-      ],
-      "contexto": "El ala cerrada estelar Sam LaPorta desató polémica al manifestar abiertamente su frustración hacia la gerencia de los Lions. El jugador declaró no percibir aprecio ni ofertas de extensión contractual rumbo a su agencia libre de 2027, asegurando que se rompe la espalda por la institución. Pese al ruido extradeportivo, Detroit visita a Green Bay buscando consolidar su posición divisional en el Norte.",
-      "fantasy": "A nivel fantasy LaPorta no se inmuta y proyecta 12.9 puntos en formato PPR, colocándose como el cuarto mejor de su demarcación esta semana. Su descontento contractual no diluye su rol crucial en zona roja ni su alta cuota de recepciones. Es titular fijo en ligas de diez y doce equipos; debes mantenerlo en tu cuadro titular sin dudar de su entrega profesional.",
-      "equipo_impacto": "Las quejas de LaPorta ponen presión a la oficina de Detroit, pero en el campo continuará siendo la válvula predilecta en series intermedias, complementando el arsenal liderado por Amon-Ra St. Brown.",
-      "accion": "Mantén a Sam LaPorta firmemente como tu ala cerrada titular indiscutible.",
+      "contexto": "Brock Purdy se mantiene en la cima del ranking de mariscales de campo de la NFL tras firmar el índice de pase más alto de todos los tiempos. El mariscal de los 49ers llega a la Semana 7 proyectado con 20.5 puntos fantasy mientras comanda a un ataque invicto. Su consistencia quirúrgica distribuyendo el balón lo convierte en el motor principal del sistema de Kyle Shanahan.",
+      "fantasy": "Purdy es un mariscal de campo titular indiscutible en cualquier formato de fantasy, desde ligas tradicionales hasta Superflex. Su extraordinaria eficiencia en envíos profundos y pases de anotación garantiza una producción constante semana a semana. No hay razón para sentarlo, independientemente del rival en turno, pues su piso de puntos en este sistema es uno de los más seguros de la liga.",
+      "equipo_impacto": "Maximiza el rendimiento fantasy de todos sus receptores y alas cerradas, manteniendo a la ofensiva de San Francisco al máximo nivel competitivo.",
+      "accion": "Mantén a Brock Purdy firme como tu QB1 en la alineación titular.",
       "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "DET",
+      "impacto": "SUBE",
+      "equipo": "SF",
       "equipos": [
-        "DET",
-        "GB"
+        "SF"
       ],
       "jugadores": [
-        "10859",
-        "7547"
+        "8183"
       ],
       "menciona": []
     }
@@ -311,9 +335,9 @@
     "3321"
   ],
   "duelo": {
-    "a": "Puka Nacua",
-    "b": "Ja'Marr Chase",
-    "veredicto": "Arranca a Puka Nacua. Con una proyección de 22.3 puntos PPR supera a Chase (19.0) gracias a su descomunal volumen de recepciones que ofrece un techo más elevado en duelos de alta anotación."
+    "a": "Jahmyr Gibbs",
+    "b": "Bijan Robinson",
+    "veredicto": "Arranca a Jahmyr Gibbs. Su proyección de 25.2 puntos PPR supera a los 22.6 de Bijan gracias a su involucramiento masivo en pases y capacidad explosiva en la zona roja para la Semana 7."
   },
   "fuentes": [
     "Sleeper",
