@@ -1,21 +1,10 @@
 {
-  "fecha": "2026-10-22T21:08:28.231Z",
+  "fecha": "2026-10-22T21:35:32.594Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 15 nuevos, 16 en total",
     "[1.3s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[3.2s] ESPN: lesiones 799 · noticias 50",
-    "[3.8s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[4.6s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[5.0s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[5.7s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[55.7s] IA OK con gemini-3.5-flash",
-    "[55.7s] Descartada: Zach Charbonnet regresa a la lista activa de Seattle → duplicada",
-    "[55.7s] Descartada: Kenneth Walker III alista regreso estelar frente a Seattle → duplicada",
-    "[55.7s] Descartada: Drake Maye perfila sólido arranque en choque nocturno → duplicada",
-    "[55.7s] Descartada: Alvin Kamara entrena limitado previo al viaje internacional → duplicada",
-    "[55.7s] Descartada: Roschon Johnson gana relevancia en el ataque de Chicago → duplicada",
-    "[55.7s] Noticias nuevas verificadas: 3",
-    "[56.6s] Listo: 3 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 203 · semana de juego 7 · IA usada hoy 12/40"
+    "[3.9s] ESPN: lesiones 799 · noticias 50",
+    "[4.8s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 203 · semana de juego 7 · IA usada hoy 12/40"
   ]
 }
