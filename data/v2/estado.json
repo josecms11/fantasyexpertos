@@ -1,10 +1,24 @@
 {
-  "fecha": "2026-10-22T16:11:51.698Z",
+  "fecha": "2026-10-22T16:50:29.768Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.6s] YouTube: 15 nuevos, 16 en total",
-    "[1.3s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[3.5s] ESPN: lesiones 799 · noticias 50",
-    "[4.5s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 192 · semana de juego 7 · IA usada hoy 8/40"
+    "[0.2s] YouTube: 15 nuevos, 16 en total",
+    "[0.8s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[2.0s] ESPN: lesiones 799 · noticias 50",
+    "[2.5s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[3.0s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
+    "[3.7s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
+    "[4.4s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
+    "[12.1s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
+    "[42.6s] IA OK con gemini-3.5-flash-lite",
+    "[42.6s] Descartada: Lamar Jackson enciende alarmas con tobillo adolorido → duplicada",
+    "[42.6s] Descartada: Breece Hall frena actividad por lesión en cuádriceps → duplicada",
+    "[42.6s] Descartada: Aaron Jones asume rol estelar en ataque terrestre → duplicada",
+    "[42.6s] Descartada: Tank Dell regresa a la acción contra los Giants → Tank Dell está IR (Knee - ACL + MCL), duplicada",
+    "[42.6s] Descartada: J.J. McCarthy debuta como titular ante Texans → duplicada",
+    "[42.6s] Descartada: Zach Charbonnet gana protagonismo como opción flexible → Zach Charbonnet está PUP (Knee - ACL), duplicada",
+    "[42.6s] Descartada: Jaelan Phillips causa baja sensible con Panthers → duplicada",
+    "[42.6s] Noticias nuevas verificadas: 1",
+    "[43.4s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 193 · semana de juego 7 · IA usada hoy 9/40"
   ]
 }
