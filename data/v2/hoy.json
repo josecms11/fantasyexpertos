@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-22T11:40:02.378Z",
-  "ultimaIA": "2026-10-22T10:01:55.661Z",
+  "actualizado": "2026-10-22T12:12:41.208Z",
+  "ultimaIA": "2026-10-22T12:12:41.208Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,54 +13,55 @@
   ],
   "noticias": [
     {
-      "id": "n20261022100105",
-      "fecha": "2026-10-22T10:01:55.661Z",
+      "id": "n20261022121202",
+      "fecha": "2026-10-22T12:12:41.208Z",
       "semana": 7,
-      "titulo": "Baker Mayfield acumula dudas con pulgar lastimado",
+      "titulo": "Aaron Jones lidera el ataque terrestre de Minnesota",
       "claves": [
-        "Reportado oficialmente como cuestionable por molestia en pulgar",
-        "Cuerpo de receptores sufre múltiples bajas por lesión",
-        "Baja producción anticipada en enfrentamientos de una plaza"
+        "Jones asume la carga principal por la baja de Mason.",
+        "Demuestra que mantiene su productividad como corredor de tres downs.",
+        "Los Vikings confían plenamente en su experiencia."
       ],
-      "contexto": "Los Tampa Bay Buccaneers encendieron focos rojos con la salud de Baker Mayfield, quien aparece oficialmente cuestionable debido a una lesión en el pulgar. El panorama luce todavía más desalentador considerando que su cuerpo aéreo resiente las bajas de Jalen McMillan en la lista de lesionados y de Emeka Egbuka bajo protocolo de conmoción cerebral para la semana siete.",
-      "fantasy": "Sienta a Mayfield sin pensarlo dos veces en formatos estándar de un mariscal de campo. Un quarterback que lanza con dolencias en el dedo pulgar y con sus mejores objetivos secundarios lesionados representa un riesgo gigantesco de baja anotación e intercepciones. Úsalo únicamente como recurso obligado en ligas de dos pasadores donde no tengas más alternativas en waivers.",
-      "equipo_impacto": "La ofensiva aérea de Tampa Bay reducirá drásticamente los lanzamientos de alto riesgo, recargando el peso del partido en jugadas terrestres y trayectorias sumamente cortas de seguridad para proteger a Mayfield.",
-      "accion": "Sienta a Baker Mayfield este fin de semana para evitar un puntaje decepcionante.",
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "TB",
+      "contexto": "Tras la baja temporal en el backfield, el corredor Aaron Jones ha tomado la batuta absoluta del juego terrestre de los Minnesota Vikings. El veterano ha expresado su compromiso sabiendo que el equipo depende de su liderazgo para mantener el ritmo competitivo y la racha ganadora en el emparrillado.",
+      "fantasy": "Para los managers de fantasy, la carga de trabajo garantizada que recibe Jones lo posiciona como un indiscutible titular semanal en ligas PPR y estándar. Su habilidad para sumar yardas tanto por tierra como por recepción le inyecta un valor enorme a tu alineación en esta jornada siete.",
+      "equipo_impacto": "La presencia sólida de Jones estabiliza el ataque y quita presión al juego aéreo de los Vikings frente a defensivas complicadas.",
+      "accion": "Pon a Aaron Jones en tu alineación titular sin pensarlo dos veces.",
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "MIN",
       "equipos": [
-        "TB"
+        "MIN"
       ],
       "jugadores": [
-        "4892",
-        "12514"
+        "4199",
+        "8408"
       ],
       "menciona": []
     },
     {
-      "id": "n20261022100107",
-      "fecha": "2026-10-22T10:01:55.661Z",
+      "id": "n20261022121203",
+      "fecha": "2026-10-22T12:12:41.208Z",
       "semana": 7,
-      "titulo": "C.J. Stroud repunta fuerte en rankings y proyecciones",
+      "titulo": "Tank Dell regresa a la acción con los Texans",
       "claves": [
-        "Proyección sólida de 19.4 unidades para la jornada",
-        "Mayor salto en los power rankings semanales de mariscales",
-        "Figura entre los jugadores más adquiridos del fantasy"
+        "Dell supera su lesión y jugará contra los Giants.",
+        "Afirma no tener temor al contacto físico en el emparrillado.",
+        "Vuelve a ser pieza clave en el esquema aéreo."
       ],
-      "contexto": "C.J. Stroud protagonizó el salto más impresionante en los Power Rankings de mariscales de campo de la semana siete, consolidando un notable resurgimiento tras semanas de ajustes. Su gran momento se refleja en una estimación de 19.4 puntos PPR y en su inclusión dentro de los jugadores más reclamados en ligas fantasy mientras prepara su enfrentamiento contra los New York Giants.",
-      "fantasy": "Stroud retoma etiqueta de titular indiscutible en formatos de doce equipos o más. La proyección de 19.4 unidades lo ubica a la par de mariscales de calibre estelar, siendo un candidato ideal si buscas estabilidad en la posición. Su tendencia ascendente premia a los managers que lo adquirieron recientemente y castiga a quienes pretendían enviarlo a la banca por rivales supuestamente sencillos.",
-      "equipo_impacto": "El ataque aéreo de Houston recupera ritmo vertiginoso y agresividad en pases intermedios, aumentando notablemente las oportunidades de anotar para todo el cuerpo de receptores del conjunto texano.",
-      "accion": "Alinea a C.J. Stroud con total seguridad como tu mariscal titular este domingo.",
-      "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
+      "contexto": "El explosivo receptor abierto Tank Dell está listo para reaparecer con los Houston Texans en el enfrentamiento ante los New York Giants, marcando su primer partido oficial desde la grave lesión que sufrió. Dell declaró públicamente que se encuentra totalmente recuperado y sin miedo a recibir impactos en su retorno al terreno de juego.",
+      "fantasy": "Su regreso inyecta dinamismo al ataque aéreo de Houston, pero en términos de fantasy es prudente evaluar cuántos snaps jugará en su primer partido oficial de vuelta. Si cuentas con alternativas con mayor certeza de volumen, es mejor dejarlo en la banca una semana más para evitar sorpresas con su carga de trabajo.",
+      "equipo_impacto": "La ofensiva recupera una amenaza profunda letal que estira el campo y genera mejores opciones para el juego terrestre y el resto de los receptores.",
+      "accion": "Déjalo en la banca una semana más para vigilar su porcentaje de participación.",
+      "etiqueta": "SIT",
+      "impacto": "NEUTRO",
       "equipo": "HOU",
       "equipos": [
         "HOU",
         "NYG"
       ],
       "jugadores": [
-        "9758"
+        "9502",
+        "11565"
       ],
       "menciona": []
     }
@@ -244,15 +245,15 @@
     "11610",
     "11655",
     "11563",
-    "9230",
-    "9502",
     "11565",
+    "9502",
+    "9230",
+    "11783",
     "13296",
     "1373",
-    "11783",
-    "7553",
     "96",
-    "1945"
+    "7553",
+    "8116"
   ],
   "soltados": [
     "11581",
@@ -268,23 +269,23 @@
     "9480",
     "650",
     "7042",
-    "3271",
     "7528",
+    "3271",
     "2505",
     "8129",
     "6904",
     "12533",
     "12711",
     "1166",
-    "8132",
     "11637",
     "3321",
+    "8132",
     "11647"
   ],
   "duelo": {
-    "a": "Jahmyr Gibbs",
-    "b": "Bijan Robinson",
-    "veredicto": "Arranca a Jahmyr Gibbs. Lidera las proyecciones de corredores esta semana con 25.2 puntos PPR y su explosividad en juego aéreo le otorga un techo superior al de Bijan Robinson en cualquier formato."
+    "a": "Kenneth Walker III",
+    "b": "Javonte Williams",
+    "veredicto": "Arranca a Kenneth Walker III por su superior volumen de juego y un techo de puntos mucho más alto esta semana."
   },
   "fuentes": [
     "Sleeper",
