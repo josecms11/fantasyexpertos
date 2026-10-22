@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-22T22:34:03.155Z",
-  "ultimaIA": "2026-10-22T21:07:34.885Z",
+  "actualizado": "2026-10-22T23:04:13.094Z",
+  "ultimaIA": "2026-10-22T23:04:13.094Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,79 +13,54 @@
   ],
   "noticias": [
     {
-      "id": "n20261022210702",
-      "fecha": "2026-10-22T21:07:34.885Z",
+      "id": "n20261022230405",
+      "fecha": "2026-10-22T23:04:13.094Z",
       "semana": 7,
-      "titulo": "Garrett Wilson exige balones previo al duelo divisorio",
+      "titulo": "Baker Mayfield confía en iniciar ante Panthers",
       "claves": [
-        "El receptor pide mayor cuota de pases objetivo",
-        "El coordinador ofensivo Frank Reich apoya su postura competitiva",
-        "Enfrentamiento crucial en casa contra los Miami Dolphins"
+        "Baker Mayfield apunta a regresar de lesión en el pulgar.",
+        "Excepto por contratiempos, tomará los controles.",
+        "Enfrentamiento directo ante su exequipo."
       ],
-      "contexto": "El receptor estrella Garrett Wilson expresó su deseo de involucrarse más en la ofensiva de New York, situación respaldada por su coordinador Frank Reich. Los Jets reciben a los Miami Dolphins en un enfrentamiento divisorio de alta presión donde la producción aérea resultará determinante. La gerencia y el cuerpo técnico coinciden en que alimentar a su mejor arma es prioritario para asegurar el triunfo.",
-      "fantasy": "Garrett Wilson debe estar alineado fijamente como WR1 o WR2 en todas las ligas de fantasy football. Este incremento en la comunicación pública suele traducirse en un flujo directo de pases diseñados desde la primera mitad. En formatos PPR, su techo semanal se eleva considerablemente ante una defensiva secundaria rival que suele permitir grandes jugadas por aire.",
-      "equipo_impacto": "Centrar la distribución del ovoide en Wilson aliviará la presión sobre la línea ofensiva y generará mejores manos a mano para el resto del cuerpo de receptores.",
-      "accion": "Mantén a Garrett Wilson fijado en tu alineación titular sin dudar.",
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "NYJ",
+      "contexto": "El mariscal de los Buccaneers, Baker Mayfield, lidia con una dolencia en el pulgar, pero los reportes internos indican que hay optimismo para que logre iniciar el partido del domingo contra los Panthers de Carolina.",
+      "fantasy": "Si se confirma su participación, se convierte en un recurso viable para ligas superflex y formatos de dos mariscales, aunque su eficiencia podría verse ligeramente limitada por el dedo lastimado.",
+      "equipo_impacto": "La ofensiva aérea de Tampa Bay respira tranquila al contar con su mariscal titular para guiar las series ofensivas clave del encuentro.",
+      "accion": "Ten listo un plan de respaldo en tu banca por si surge algún contratiempo médico de última hora.",
+      "etiqueta": "TENDENCIA",
+      "impacto": "NEUTRO",
+      "equipo": "TB",
       "equipos": [
-        "NYJ",
-        "MIA"
+        "TB",
+        "CAR"
       ],
       "jugadores": [
-        "8146"
+        "4892"
       ],
       "menciona": []
     },
     {
-      "id": "n20261022210705",
-      "fecha": "2026-10-22T21:07:34.885Z",
+      "id": "n20261022230406",
+      "fecha": "2026-10-22T23:04:13.094Z",
       "semana": 7,
-      "titulo": "Daniel Jones encara escenario hostil ante defensiva invicta",
+      "titulo": "Puka Nacua enciende alarmas por lesión",
       "claves": [
-        "Los Colts enfrentan a la dominante unidad defensiva de Minnesota",
-        "La presión terrestre rival complica su efectividad por aire",
-        "Baja proyección fantasy en la posición de mariscal"
+        "Puka Nacua abandonó la práctica por molestia en pantorrilla.",
+        "Estatus questionario pone en riesgo su participación.",
+        "Los Rams evalúan opciones ante bajas."
       ],
-      "contexto": "El mariscal de campo Daniel Jones se alista con Indianapolis para chocar contra la imponente defensiva de los Minnesota Vikings, equipo que marcha invicto en la campaña. La defensiva de Minnesota destaca por sofocar el juego terrestre y presionar constantemente al pasador. La ofensiva de los Colts requiere de una ejecución perfecta para evitar pérdidas de balón comprometedoras.",
-      "fantasy": "Debes enviar a Daniel Jones a la banca en ligas de un solo mariscal de campo e incluso considerar otras opciones en Superflex. El riesgo de intercepciones y capturas mermará drásticamente sus puntos fantasy en este enfrentamiento. Es un partido con un panorama desfavorable donde su techo de producción estará severamente limitado por la defensiva contraria.",
-      "equipo_impacto": "La constante presión de la frontal rival afectará severamente el ritmo de Jones, reduciendo las oportunidades de conseguir jugadas explosivas para todos los receptores de Indianapolis.",
-      "accion": "Sienta a Daniel Jones y busca mejores alternativas en la posición.",
+      "contexto": "El receptor estelar de los Rams, Puka Nacua, encendió las alertas al retirarse anticipadamente de la sesión de entrenamientos debido a una dolencia en la pantorrilla, complicando el panorama ofensivo de Los Ángeles.",
+      "fantasy": "Su etiqueta de cuestionable obliga a buscar alternativas inmediatas en tu banca, ya que un descanso preventivo o limitación de snaps reduciría drásticamente su valor en ligas PPR.",
+      "equipo_impacto": "La ausencia o limitación de Nacua deja un hueco enorme en el juego aéreo de los Rams, obligando al cuerpo técnico a buscar variantes urgentes.",
+      "accion": "Sienta a Puka Nacua en tu alineación hasta confirmar que está totalmente recuperado para jugar.",
       "etiqueta": "SIT",
       "impacto": "BAJA",
-      "equipo": "IND",
+      "equipo": "LAR",
       "equipos": [
-        "IND",
-        "MIN"
+        "LAR"
       ],
       "jugadores": [
-        "5870"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261022210706",
-      "fecha": "2026-10-22T21:07:34.885Z",
-      "semana": 7,
-      "titulo": "Bo Nix afronta riesgo de ser enviado a banca",
-      "claves": [
-        "Inestabilidad en la precisión genera dudas en el cuerpo técnico",
-        "Proyección de diecinueve puntos en ligas PPR esta semana",
-        "Riesgo de perder repeticiones ante inconsistencia ofensiva"
-      ],
-      "contexto": "El mariscal novato de Denver, Bo Nix, atraviesa un periodo de escasa consistencia que encendió las alarmas dentro del cuerpo técnico de los Broncos. Análisis recientes sugieren que su puesto como titular podría estar en peligro si continúan los colapsos en la ejecución de la bolsa de protección. El entrenador busca estabilidad inmediata en el ataque aéreo.",
-      "fantasy": "A pesar de ostentar una proyección de 19.2 puntos en formato PPR, alinear a Bo Nix conlleva un riesgo altísimo esta semana. La amenaza latente de un cambio de pasador a mitad del encuentro destruye su piso fantasy. Es preferible buscar alternativas más seguras en la agencia libre o colocarlo en la banca en ligas de un pasador.",
-      "equipo_impacto": "La incertidumbre alrededor de la titularidad del pasador afecta la sincronía con sus receptores y limita considerablemente la capacidad del equipo para sostener ofensivas largas en el campo.",
-      "accion": "Evita arrancar a Bo Nix por la alta volatilidad de su puesto.",
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "DEN",
-      "equipos": [
-        "DEN"
-      ],
-      "jugadores": [
-        "11563"
+        "9493",
+        "2133"
       ],
       "menciona": []
     }
@@ -136,6 +111,10 @@
       "estatus": "Fuera"
     },
     {
+      "id": "7525",
+      "estatus": "Duda"
+    },
+    {
       "id": "4866",
       "estatus": "Duda"
     },
@@ -157,6 +136,10 @@
     },
     {
       "id": "12512",
+      "estatus": "Duda"
+    },
+    {
+      "id": "5022",
       "estatus": "Duda"
     },
     {
@@ -240,16 +223,8 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12509",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "13296",
+      "id": "9486",
       "estatus": "Duda"
-    },
-    {
-      "id": "12469",
-      "estatus": "Fuera"
     }
   ],
   "agregados": [
@@ -267,13 +242,13 @@
     "8135",
     "8132",
     "11610",
-    "10213",
-    "1433",
-    "NYJ",
     "13424",
-    "9502",
-    "9756",
+    "1433",
+    "10213",
+    "NYJ",
     "11563",
+    "9756",
+    "9502",
     "9230",
     "11783",
     "2197",
@@ -296,20 +271,20 @@
     "7528",
     "2505",
     "650",
-    "3271",
     "7042",
+    "3271",
     "1166",
+    "3321",
     "12533",
     "7567",
-    "3321",
     "11637",
     "8154",
     "11647"
   ],
   "duelo": {
-    "a": "Jahmyr Gibbs",
-    "b": "Bijan Robinson",
-    "veredicto": "Arranca a Jahmyr Gibbs sobre Bijan Robinson. Con una proyección estelar de 25.2 puntos PPR, Gibbs ofrece un techo superior por su involucramiento en el juego aéreo y mayor eficiencia en zona de anotación."
+    "a": "Jaxon Smith-Njigba",
+    "b": "Amon-Ra St. Brown",
+    "veredicto": "Arranca a Jaxon Smith-Njigba por su enorme proyección superior en recepciones y yardaje esperada para esta semana."
   },
   "fuentes": [
     "Sleeper",
