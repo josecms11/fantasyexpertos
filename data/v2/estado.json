@@ -1,18 +1,10 @@
 {
-  "fecha": "2026-10-22T05:03:15.690Z",
+  "fecha": "2026-10-22T05:29:47.779Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 0 nuevos, 15 en total",
-    "[1.0s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[2.9s] ESPN: lesiones 799 · noticias 50",
-    "[3.5s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[185.1s] IA OK con gemini-3.8-flash",
-    "[185.1s] Descartada: Lamar Jackson cojea en Baltimore y enciende alarmas → duplicada",
-    "[185.1s] Descartada: Drake Maye domina proyecciones de pasadores semana siete → duplicada",
-    "[185.1s] Descartada: Roschon Johnson lidera las opciones prioritarias de waiver → duplicada",
-    "[185.1s] Descartada: C.J. Stroud asalta la élite con proyección estelar → duplicada",
-    "[185.1s] Descartada: Travis Kelce genera dudas ante molestias de tobillo → duplicada",
-    "[185.1s] Noticias nuevas verificadas: 3",
-    "[185.9s] Listo: 3 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 183 · semana de juego 7 · IA usada hoy 3/40"
+    "[0.1s] YouTube: 0 nuevos, 15 en total",
+    "[0.8s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[2.4s] ESPN: lesiones 799 · noticias 50",
+    "[3.6s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 183 · semana de juego 7 · IA usada hoy 3/40"
   ]
 }
