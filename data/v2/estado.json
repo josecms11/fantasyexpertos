@@ -1,20 +1,10 @@
 {
-  "fecha": "2026-10-22T14:23:28.574Z",
+  "fecha": "2026-10-22T15:00:22.216Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 15 nuevos, 16 en total",
-    "[1.2s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[2.4s] ESPN: lesiones 799 · noticias 50",
-    "[3.2s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[173.6s] IA OK con gemini-3.8-flash",
-    "[173.6s] Descartada: Drake Maye llega encendido para el choque de jueves → duplicada",
-    "[173.6s] Descartada: Lamar Jackson entrena con visible cojera del tobillo → duplicada",
-    "[173.6s] Descartada: Roschon Johnson asume protagonismo ante baja de Monangai → duplicada",
-    "[173.6s] Descartada: Matthew Stafford pierde fuerza sin Davante Adams disponible → duplicada",
-    "[173.6s] Descartada: Kenneth Walker III enfrenta panorama adverso contra Chiefs → duplicada",
-    "[173.6s] Descartada: Puka Nacua acapara el volumen estelar en Los Ángeles → duplicada",
-    "[173.6s] Descartada: Jaxon Smith-Njigba lidera las proyecciones de receptores abiertos → duplicada",
-    "[173.6s] Noticias nuevas verificadas: 1",
-    "[174.5s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 192 · semana de juego 7 · IA usada hoy 8/40"
+    "[1.0s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[2.3s] ESPN: lesiones 799 · noticias 50",
+    "[3.3s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 192 · semana de juego 7 · IA usada hoy 8/40"
   ]
 }
