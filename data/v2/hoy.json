@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-22T13:47:19.485Z",
-  "ultimaIA": "2026-10-22T12:12:41.208Z",
+  "actualizado": "2026-10-22T14:20:36.560Z",
+  "ultimaIA": "2026-10-22T14:20:36.560Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,55 +13,29 @@
   ],
   "noticias": [
     {
-      "id": "n20261022121202",
-      "fecha": "2026-10-22T12:12:41.208Z",
+      "id": "n20261022142000",
+      "fecha": "2026-10-22T14:20:36.560Z",
       "semana": 7,
-      "titulo": "Aaron Jones lidera el ataque terrestre de Minnesota",
+      "titulo": "Saquon Barkley apunta a jugar el lunes ante Cowboys",
       "claves": [
-        "Jones asume la carga principal por la baja de Mason.",
-        "Demuestra que mantiene su productividad como corredor de tres downs.",
-        "Los Vikings confían plenamente en su experiencia."
+        "Barkley planea volver a entrenar este jueves tras lesión muscular",
+        "Filadelfia confía en tenerlo listo para el choque divisional estelar",
+        "Aparece listado como cuestionable debido a dolencias en el tendón"
       ],
-      "contexto": "Tras la baja temporal en el backfield, el corredor Aaron Jones ha tomado la batuta absoluta del juego terrestre de los Minnesota Vikings. El veterano ha expresado su compromiso sabiendo que el equipo depende de su liderazgo para mantener el ritmo competitivo y la racha ganadora en el emparrillado.",
-      "fantasy": "Para los managers de fantasy, la carga de trabajo garantizada que recibe Jones lo posiciona como un indiscutible titular semanal en ligas PPR y estándar. Su habilidad para sumar yardas tanto por tierra como por recepción le inyecta un valor enorme a tu alineación en esta jornada siete.",
-      "equipo_impacto": "La presencia sólida de Jones estabiliza el ataque y quita presión al juego aéreo de los Vikings frente a defensivas complicadas.",
-      "accion": "Pon a Aaron Jones en tu alineación titular sin pensarlo dos veces.",
+      "contexto": "El corredor estelar de los Eagles, Saquon Barkley, se perfila para regresar a las prácticas este jueves con miras al partido del lunes por la noche frente a los Dallas Cowboys. Barkley ha estado lidiando con molestias en el tendón de la corva que lo colocan oficialmente como cuestionable. No obstante, reportes directos señalan que el cuerpo técnico confía plenamente en contar con su talento para este duelo divisional clave en la Conferencia Nacional.",
+      "fantasy": "Si Saquon está activo el lunes por la noche, debes alinearlo obligatoriamente como tu RB1 en cualquier formato, especialmente en ligas PPR. Su volumen por tierra y recepción garantiza un piso muy elevado contra Dallas. Asegura un plan de contingencia de ese mismo partido por si surge un contratiempo de última hora. No cometas el error de mandarlo a la banca por miedo a su etiqueta médica mientras siga perfilado para jugar.",
+      "equipo_impacto": "Con Jalen Hurts en la lista de reservas lesionados por molestias en la pantorrilla, la ofensiva de Nick Sirianni depende completamente del empuje terrestre de Barkley. Su presencia quita presión al mariscal de campo suplente y estabiliza el ritmo en series ofensivas cruciales.",
+      "accion": "Monitorea su actividad del jueves y déjalo firme en tu alineación titular.",
       "etiqueta": "START",
       "impacto": "SUBE",
-      "equipo": "MIN",
+      "equipo": "PHI",
       "equipos": [
-        "MIN"
+        "PHI",
+        "DAL"
       ],
       "jugadores": [
-        "4199",
-        "8408"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261022121203",
-      "fecha": "2026-10-22T12:12:41.208Z",
-      "semana": 7,
-      "titulo": "Tank Dell regresa a la acción con los Texans",
-      "claves": [
-        "Dell supera su lesión y jugará contra los Giants.",
-        "Afirma no tener temor al contacto físico en el emparrillado.",
-        "Vuelve a ser pieza clave en el esquema aéreo."
-      ],
-      "contexto": "El explosivo receptor abierto Tank Dell está listo para reaparecer con los Houston Texans en el enfrentamiento ante los New York Giants, marcando su primer partido oficial desde la grave lesión que sufrió. Dell declaró públicamente que se encuentra totalmente recuperado y sin miedo a recibir impactos en su retorno al terreno de juego.",
-      "fantasy": "Su regreso inyecta dinamismo al ataque aéreo de Houston, pero en términos de fantasy es prudente evaluar cuántos snaps jugará en su primer partido oficial de vuelta. Si cuentas con alternativas con mayor certeza de volumen, es mejor dejarlo en la banca una semana más para evitar sorpresas con su carga de trabajo.",
-      "equipo_impacto": "La ofensiva recupera una amenaza profunda letal que estira el campo y genera mejores opciones para el juego terrestre y el resto de los receptores.",
-      "accion": "Déjalo en la banca una semana más para vigilar su porcentaje de participación.",
-      "etiqueta": "SIT",
-      "impacto": "NEUTRO",
-      "equipo": "HOU",
-      "equipos": [
-        "HOU",
-        "NYG"
-      ],
-      "jugadores": [
-        "9502",
-        "11565"
+        "4866",
+        "6904"
       ],
       "menciona": []
     }
@@ -252,8 +226,8 @@
     "11783",
     "1373",
     "96",
-    "8116",
-    "7553"
+    "9756",
+    "1433"
   ],
   "soltados": [
     "11581",
@@ -283,9 +257,9 @@
     "11647"
   ],
   "duelo": {
-    "a": "Kenneth Walker III",
-    "b": "Javonte Williams",
-    "veredicto": "Arranca a Kenneth Walker III por su superior volumen de juego y un techo de puntos mucho más alto esta semana."
+    "a": "Jahmyr Gibbs",
+    "b": "Christian McCaffrey",
+    "veredicto": "Arranca a Jahmyr Gibbs. Con una impresionante proyección de 25.2 puntos PPR, Gibbs lidera la liga esta semana y ofrece un techo explosivo superior gracias a su rol estelar en una ofensiva que produce anotaciones constantemente."
   },
   "fuentes": [
     "Sleeper",
