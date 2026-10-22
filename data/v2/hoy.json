@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-22T09:25:06.478Z",
-  "ultimaIA": "2026-10-22T07:29:33.635Z",
+  "actualizado": "2026-10-22T10:01:55.661Z",
+  "ultimaIA": "2026-10-22T10:01:55.661Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,108 +13,54 @@
   ],
   "noticias": [
     {
-      "id": "n20261022072903",
-      "fecha": "2026-10-22T07:29:33.635Z",
+      "id": "n20261022100105",
+      "fecha": "2026-10-22T10:01:55.661Z",
       "semana": 7,
-      "titulo": "Caleb Williams genera dudas tras recibir cuatro capturas",
+      "titulo": "Baker Mayfield acumula dudas con pulgar lastimado",
       "claves": [
-        "Sufrió cuatro capturas y mostró dudas para acelerar al máximo.",
-        "La protección de pase de los Bears mostró alarmantes grietas.",
-        "Duelo cerrado contra Patriots limita su producción por la vía aérea."
+        "Reportado oficialmente como cuestionable por molestia en pulgar",
+        "Cuerpo de receptores sufre múltiples bajas por lesión",
+        "Baja producción anticipada en enfrentamientos de una plaza"
       ],
-      "contexto": "Caleb Williams tuvo una jornada turbulenta en su regreso reciente, tolerando cuatro capturas ante los Falcons y exhibiendo ciertas dudas para soltar el balón a tiempo y encender su velocidad. Para este jueves se mide a New England en un duelo donde la protección de pase de Chicago estará bajo escrutinio tras las fallas sistemáticas expuestas en la bolsa de protección.",
-      "fantasy": "Sienta a Caleb en ligas tradicionales de 1QB de diez y doce participantes. Su techo se encuentra gravemente comprometido por la lentitud en procesar lecturas y la fragilidad del esquema para contener los disparos defensivos rivales. Únicamente es viable como opción de emergencia en ligas Superflex o formatos muy profundos de 14 integrantes donde las opciones de reemplazo resulten prácticamente inexistentes.",
-      "equipo_impacto": "Los reiterados errores de protección obligan al coordinador ofensivo a reducir drásticamente el tiempo de desarrollo de rutas profundas, recortando las oportunidades para jugadas explosivas en campo abierto de sus receptores estelares.",
-      "accion": "Deja a Caleb Williams en la banca en ligas de diez equipos.",
+      "contexto": "Los Tampa Bay Buccaneers encendieron focos rojos con la salud de Baker Mayfield, quien aparece oficialmente cuestionable debido a una lesión en el pulgar. El panorama luce todavía más desalentador considerando que su cuerpo aéreo resiente las bajas de Jalen McMillan en la lista de lesionados y de Emeka Egbuka bajo protocolo de conmoción cerebral para la semana siete.",
+      "fantasy": "Sienta a Mayfield sin pensarlo dos veces en formatos estándar de un mariscal de campo. Un quarterback que lanza con dolencias en el dedo pulgar y con sus mejores objetivos secundarios lesionados representa un riesgo gigantesco de baja anotación e intercepciones. Úsalo únicamente como recurso obligado en ligas de dos pasadores donde no tengas más alternativas en waivers.",
+      "equipo_impacto": "La ofensiva aérea de Tampa Bay reducirá drásticamente los lanzamientos de alto riesgo, recargando el peso del partido en jugadas terrestres y trayectorias sumamente cortas de seguridad para proteger a Mayfield.",
+      "accion": "Sienta a Baker Mayfield este fin de semana para evitar un puntaje decepcionante.",
       "etiqueta": "SIT",
       "impacto": "BAJA",
-      "equipo": "CHI",
+      "equipo": "TB",
       "equipos": [
-        "CHI",
-        "NE",
-        "ATL"
+        "TB"
       ],
       "jugadores": [
-        "11560"
+        "4892",
+        "12514"
       ],
       "menciona": []
     },
     {
-      "id": "n20261022072904",
-      "fecha": "2026-10-22T07:29:33.635Z",
+      "id": "n20261022100107",
+      "fecha": "2026-10-22T10:01:55.661Z",
       "semana": 7,
-      "titulo": "Javonte Williams perfila sólida producción terrestre en semana siete",
+      "titulo": "C.J. Stroud repunta fuerte en rankings y proyecciones",
       "claves": [
-        "Proyección de 17.6 unidades PPR consolida su estatus como titular.",
-        "Domina el debate de expertos como opción sobre otros corredores.",
-        "Con Jonah Coleman en reserva lesionada mantendrá mayor volumen."
+        "Proyección sólida de 19.4 unidades para la jornada",
+        "Mayor salto en los power rankings semanales de mariscales",
+        "Figura entre los jugadores más adquiridos del fantasy"
       ],
-      "contexto": "Javonte Williams llega a la semana siete como uno de los corredores más sólidos del panorama tras confirmarse la permanencia de Jonah Coleman en la reserva de lesionados por tobillo. Los analistas debaten su superioridad semanal sobre otras estrellas del emparrillado, respaldados por una sólida proyección de 17.6 puntos en formatos de recepción completa.",
-      "fantasy": "Inicia a Javonte como un RB1 bajo o RB2 alto en todos los formatos PPR y ligas estándar de diez a doce equipos. Su volumen terrestre se encuentra blindado sin competencia real en el comité, y su efectividad en primeras oportunidades garantiza un piso confiable. Si estás dudando entre él y otras figuras con duelos complicados, inclínate por su proyección de toques.",
-      "equipo_impacto": "Denver basará su control de reloj en los constantes acarreos entre los tacles de Williams, quitándole presión inmediata a Bo Nix en situaciones comprometidas de tercer down y zona de anotación rival.",
-      "accion": "Alinea a Javonte Williams como tu corredor titular con total confianza.",
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "DEN",
-      "equipos": [
-        "DEN",
-        "DAL"
-      ],
-      "jugadores": [
-        "7588",
-        "11563"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261022072905",
-      "fecha": "2026-10-22T07:29:33.635Z",
-      "semana": 7,
-      "titulo": "Jordan Love enciende dudas por dolor en la espalda",
-      "claves": [
-        "Aparece como cuestionable en el reporte por lesión de espalda.",
-        "Bajas clave en el cuerpo de receptores merman su arsenal.",
-        "Con 19.4 proyectados enfrenta riesgo de resentirse durante el duelo."
-      ],
-      "contexto": "Jordan Love figura como cuestionable para el crucial compromiso de Green Bay por problemas lumbares que limitaron su preparación semanal. El panorama se complica aún más considerando que su receptor Jayden Reed está en la reserva de lesionados por el cuello, mientras Christian Watson y Matthew Golden también arrastran molestias físicas en el tobillo y hombro respectivamente.",
-      "fantasy": "Manda a Love a la banca si cuentas con opciones más estables en ligas de diez y doce competidores. Aunque su proyección marca 19.4 unidades, la rigidez en la espalda y el arsenal diezmado aumentan exponencialmente la posibilidad de una actuación discreta o una salida prematura. Es preferible inclinarse por pasadores más sanos y con línea ofensiva completa esta jornada.",
-      "equipo_impacto": "Green Bay tendrá que recargar su plan de juego ofensivo en los acarreos constantes de Josh Jacobs para evitar exponer a Love a impactos innecesarios en una bolsa de protección que luce comprometida.",
-      "accion": "Sienta a Jordan Love y busca opciones más saludables en tu banca.",
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "GB",
-      "equipos": [
-        "GB"
-      ],
-      "jugadores": [
-        "6804",
-        "8167",
-        "5850"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261022072907",
-      "fecha": "2026-10-22T07:29:33.635Z",
-      "semana": 7,
-      "titulo": "CeeDee Lamb promete dividendos pese al debate de analistas",
-      "claves": [
-        "Proyección de 17.4 puntos PPR lo sostiene en el rango estelar.",
-        "Protagoniza encendidos debates frente a otros receptores en medios deportivos.",
-        "Su piso de targets lo vuelve insustituible en las alineaciones."
-      ],
-      "contexto": "CeeDee Lamb se encuentra en el centro del debate de los expertos fantasy esta semana, donde analistas discuten su valor relativo frente a otras opciones receptoras de la liga. A pesar de las opiniones encontradas sobre el techo del receptor de Dallas, sus 17.4 puntos proyectados en formato PPR reafirman que su estatus de élite permanece intacto dentro del esquema ofensivo texano.",
-      "fantasy": "Mantén a Lamb firme como receptor titular en todas las ligas de ocho, diez y doce equipos. Aunque algunos debates mediáticos pongan en duda su explosividad momentánea, su volumen de diez o más pases dirigidos por juego ofrece una seguridad insuperable. No te dejes llevar por el pánico de analistas externos y asegúralo en tu alineación estelar como WR1 o WR2 de altísimo piso.",
-      "equipo_impacto": "El ataque aéreo de los Cowboys depende por completo de la versatilidad de Lamb desde la ranura y el perímetro para sostener series ofensivas prolongadas sin arriesgar pérdidas de balón innecesarias.",
-      "accion": "Mantén a CeeDee Lamb inamovible en tu alineación titular esta semana.",
+      "contexto": "C.J. Stroud protagonizó el salto más impresionante en los Power Rankings de mariscales de campo de la semana siete, consolidando un notable resurgimiento tras semanas de ajustes. Su gran momento se refleja en una estimación de 19.4 puntos PPR y en su inclusión dentro de los jugadores más reclamados en ligas fantasy mientras prepara su enfrentamiento contra los New York Giants.",
+      "fantasy": "Stroud retoma etiqueta de titular indiscutible en formatos de doce equipos o más. La proyección de 19.4 unidades lo ubica a la par de mariscales de calibre estelar, siendo un candidato ideal si buscas estabilidad en la posición. Su tendencia ascendente premia a los managers que lo adquirieron recientemente y castiga a quienes pretendían enviarlo a la banca por rivales supuestamente sencillos.",
+      "equipo_impacto": "El ataque aéreo de Houston recupera ritmo vertiginoso y agresividad en pases intermedios, aumentando notablemente las oportunidades de anotar para todo el cuerpo de receptores del conjunto texano.",
+      "accion": "Alinea a C.J. Stroud con total seguridad como tu mariscal titular este domingo.",
       "etiqueta": "TENDENCIA",
       "impacto": "SUBE",
-      "equipo": "DAL",
+      "equipo": "HOU",
       "equipos": [
-        "DAL"
+        "HOU",
+        "NYG"
       ],
       "jugadores": [
-        "6786"
+        "9758"
       ],
       "menciona": []
     }
@@ -303,10 +249,10 @@
     "13296",
     "11565",
     "1373",
-    "7553",
     "11783",
+    "7553",
     "96",
-    "11792"
+    "1945"
   ],
   "soltados": [
     "11581",
@@ -317,8 +263,8 @@
     "NE",
     "13150",
     "IND",
-    "11439",
     "8121",
+    "11439",
     "9480",
     "650",
     "7042",
@@ -332,13 +278,13 @@
     "1166",
     "8132",
     "11637",
-    "11647",
-    "3321"
+    "3321",
+    "11647"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
     "b": "Bijan Robinson",
-    "veredicto": "Arranca a Jahmyr Gibbs; su proyección PPR de 25.2 puntos supera a Bijan y garantiza un techo explosivo gracias a su enorme versatilidad tanto por tierra como por pase en un ataque de élite."
+    "veredicto": "Arranca a Jahmyr Gibbs. Lidera las proyecciones de corredores esta semana con 25.2 puntos PPR y su explosividad en juego aéreo le otorga un techo superior al de Bijan Robinson en cualquier formato."
   },
   "fuentes": [
     "Sleeper",

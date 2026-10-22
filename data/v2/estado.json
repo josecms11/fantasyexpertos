@@ -1,22 +1,19 @@
 {
-  "fecha": "2026-10-22T09:27:14.682Z",
+  "fecha": "2026-10-22T10:06:37.707Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.5s] YouTube: 15 nuevos, 16 en total",
-    "[1.3s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[4.4s] ESPN: lesiones 799 · noticias 50",
-    "[5.5s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[6.3s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[131.7s] IA OK con gemini-3.7-flash",
-    "[131.7s] Descartada: Lamar Jackson enciende alarmas por molestia en tobillo → duplicada",
-    "[131.7s] Descartada: Roschon Johnson emerge como opción estelar en waivers → duplicada",
-    "[131.7s] Descartada: Matthew Stafford pierde brillo y amerita ir a la banca → duplicada",
-    "[131.7s] Descartada: Drake Maye lidera proyecciones y seduce para arrancar → duplicada",
-    "[131.7s] Descartada: C.J. Stroud resurge con fuerza para la semana siete → duplicada",
-    "[131.7s] Descartada: Baker Mayfield genera dudas por lesión en el pulgar → duplicada",
-    "[131.7s] Descartada: Michael Mayer se convierte en reclamo urgente de waivers → duplicada",
-    "[131.7s] Descartada: Jalen Hurts permanece inactivo en reserva de lesionados → duplicada",
-    "[131.7s] Noticias nuevas verificadas: 0",
-    "[132.6s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 187 · semana de juego 7 · IA usada hoy 5/40"
+    "[0.2s] YouTube: 15 nuevos, 16 en total",
+    "[0.9s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[2.9s] ESPN: lesiones 799 · noticias 50",
+    "[3.7s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[284.2s] IA OK con gemini-3.8-flash",
+    "[284.2s] Descartada: Roschon Johnson eleva valor tras baja de Monangai → duplicada",
+    "[284.2s] Descartada: Matthew Stafford luce riesgoso sin Davante Adams disponible → duplicada",
+    "[284.2s] Descartada: Puka Nacua explotará en volumen frente a ausencias → duplicada",
+    "[284.2s] Descartada: Drake Maye lidera las proyecciones de semana siete → duplicada",
+    "[284.2s] Descartada: Lamar Jackson enciende alarmas por molestia en tobillo → duplicada",
+    "[284.2s] Descartada: Michael Mayer atrae miradas ante molestias de Bowers → duplicada",
+    "[284.2s] Noticias nuevas verificadas: 2",
+    "[284.9s] Listo: 2 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 189 · semana de juego 7 · IA usada hoy 6/40"
   ]
 }
