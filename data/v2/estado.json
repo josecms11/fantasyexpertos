@@ -1,16 +1,10 @@
 {
-  "fecha": "2026-10-22T17:17:18.325Z",
+  "fecha": "2026-10-22T17:47:53.545Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 15 nuevos, 16 en total",
-    "[1.0s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[2.9s] ESPN: lesiones 799 · noticias 50",
-    "[3.7s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[4.4s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[4.8s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[36.8s] IA OK con gemini-3.6-flash",
-    "[36.8s] Exclusivas de JUEVES TNF capitulo valor fantasy → 5 notas",
-    "[37.5s] Bóveda Premium: 5 exclusivas guardadas",
-    "[37.5s] Listo: 5 noticias nuevas (5 exclusivas) · 452 jugadores · archivo 198 · semana de juego 7 · IA usada hoy 10/40"
+    "[0.7s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[2.1s] ESPN: lesiones 799 · noticias 50",
+    "[3.0s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 198 · semana de juego 7 · IA usada hoy 10/40"
   ]
 }
