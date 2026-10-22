@@ -1,10 +1,10 @@
 {
-  "fecha": "2026-10-22T15:00:22.216Z",
+  "fecha": "2026-10-22T15:38:34.229Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 15 nuevos, 16 en total",
-    "[1.0s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[2.3s] ESPN: lesiones 799 · noticias 50",
-    "[3.3s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 192 · semana de juego 7 · IA usada hoy 8/40"
+    "[0.5s] YouTube: 15 nuevos, 16 en total",
+    "[1.4s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[2.7s] ESPN: lesiones 799 · noticias 50",
+    "[3.6s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 192 · semana de juego 7 · IA usada hoy 8/40"
   ]
 }
