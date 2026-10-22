@@ -1,10 +1,17 @@
 {
-  "fecha": "2026-10-22T06:43:00.798Z",
+  "fecha": "2026-10-22T07:31:15.327Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.1s] YouTube: 0 nuevos, 15 en total",
+    "[0.2s] YouTube: 15 nuevos, 16 en total",
     "[0.7s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[2.8s] ESPN: lesiones 799 · noticias 50",
-    "[4.0s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 183 · semana de juego 7 · IA usada hoy 3/40"
+    "[1.6s] ESPN: lesiones 799 · noticias 50",
+    "[2.4s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[102.7s] IA OK con gemini-3.8-flash",
+    "[102.7s] Descartada: Drake Maye proyecta explosión aérea frente a Bears → duplicada",
+    "[102.7s] Descartada: Roschon Johnson acapara reflectores tras lesión de Monangai → duplicada",
+    "[102.7s] Descartada: Lamar Jackson enciende alarmas por molestia de tobillo → duplicada",
+    "[102.7s] Descartada: Puka Nacua concentrará envíos masivos ante ausencia de Adams → duplicada",
+    "[102.7s] Noticias nuevas verificadas: 4",
+    "[103.3s] Listo: 4 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 187 · semana de juego 7 · IA usada hoy 4/40"
   ]
 }

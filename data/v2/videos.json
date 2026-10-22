@@ -1,12 +1,19 @@
 {
-  "actualizado": "2026-10-22T06:42:56.933Z",
+  "actualizado": "2026-10-22T07:29:32.178Z",
   "canal": "UCGrMAUWwTS5G8pguZF4mXTA",
   "videos": [
+    {
+      "id": "Rog1JvURwlY",
+      "titulo": "SEMANA 7 NFL | Previa de los Partidos de la Tarde, Proyecciones y Fantasy Football",
+      "fecha": "2026-10-22T04:33:56+00:00",
+      "vistas": 3,
+      "corto": false
+    },
     {
       "id": "wZ-zWTFHfEY",
       "titulo": "PREVIA SEMANA 7 NFL | Partidos, Matchups y Jugadores Clave para Fantasy Football",
       "fecha": "2026-10-21T00:10:03+00:00",
-      "vistas": 18,
+      "vistas": 20,
       "corto": false
     },
     {

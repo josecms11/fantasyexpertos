@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-22T06:42:59.656Z",
-  "ultimaIA": "2026-10-22T05:00:12.711Z",
+  "actualizado": "2026-10-22T07:29:33.635Z",
+  "ultimaIA": "2026-10-22T07:29:33.635Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,79 +13,110 @@
   ],
   "noticias": [
     {
-      "id": "n20261022050001",
-      "fecha": "2026-10-22T05:00:12.711Z",
+      "id": "n20261022072903",
+      "fecha": "2026-10-22T07:29:33.635Z",
       "semana": 7,
-      "titulo": "Breece Hall frena actividad por lesión de cuádriceps",
+      "titulo": "Caleb Williams genera dudas tras recibir cuatro capturas",
       "claves": [
-        "Breece Hall no participó en las prácticas recientes de Nueva York.",
-        "Aparece oficialmente listado como cuestionable por una molestia de cuádriceps.",
-        "Existe incertidumbre sobre su volumen de acarreos para la Semana 7."
+        "Sufrió cuatro capturas y mostró dudas para acelerar al máximo.",
+        "La protección de pase de los Bears mostró alarmantes grietas.",
+        "Duelo cerrado contra Patriots limita su producción por la vía aérea."
       ],
-      "contexto": "Las alarmas se encendieron en el campamento neoyorquino tras confirmarse la ausencia total de Breece Hall en las prácticas debido a un problema muscular en el cuádriceps. El cuerpo técnico lo reportó como no participante, poniendo en entredicho su disponibilidad real para el choque de este fin de semana. Sin entrenar al parejo de sus compañeros, el panorama luce adverso para ver su versión dominante.",
-      "fantasy": "Es momento de enviar a la banca a Hall en ligas de diez y doce equipos de formato PPR o estándar. Un corredor cuestionable sin prácticas suele ver un comité restrictivo o ser desactivado a última hora, destruyendo tu semana de fantasy. Su valor decae notablemente este fin de semana, por lo que es preferible apostar por un corredor saludable con volumen garantizado.",
-      "equipo_impacto": "La ofensiva de los Jets pierde a su motor principal entre los tacles. Sin Hall al cien por ciento, el esquema dependerá más de pases cortos y repartirá los toques terrestres suplementarios para intentar mantener el equilibrio ofensivo.",
-      "accion": "Manda a Breece Hall a tu banca hasta que entrene con normalidad.",
+      "contexto": "Caleb Williams tuvo una jornada turbulenta en su regreso reciente, tolerando cuatro capturas ante los Falcons y exhibiendo ciertas dudas para soltar el balón a tiempo y encender su velocidad. Para este jueves se mide a New England en un duelo donde la protección de pase de Chicago estará bajo escrutinio tras las fallas sistemáticas expuestas en la bolsa de protección.",
+      "fantasy": "Sienta a Caleb en ligas tradicionales de 1QB de diez y doce participantes. Su techo se encuentra gravemente comprometido por la lentitud en procesar lecturas y la fragilidad del esquema para contener los disparos defensivos rivales. Únicamente es viable como opción de emergencia en ligas Superflex o formatos muy profundos de 14 integrantes donde las opciones de reemplazo resulten prácticamente inexistentes.",
+      "equipo_impacto": "Los reiterados errores de protección obligan al coordinador ofensivo a reducir drásticamente el tiempo de desarrollo de rutas profundas, recortando las oportunidades para jugadas explosivas en campo abierto de sus receptores estelares.",
+      "accion": "Deja a Caleb Williams en la banca en ligas de diez equipos.",
       "etiqueta": "SIT",
       "impacto": "BAJA",
-      "equipo": "NYJ",
+      "equipo": "CHI",
       "equipos": [
-        "NYJ"
+        "CHI",
+        "NE",
+        "ATL"
       ],
       "jugadores": [
-        "8155"
+        "11560"
       ],
       "menciona": []
     },
     {
-      "id": "n20261022050006",
-      "fecha": "2026-10-22T05:00:12.711Z",
+      "id": "n20261022072904",
+      "fecha": "2026-10-22T07:29:33.635Z",
       "semana": 7,
-      "titulo": "Defensiva de Jets seduce como titular en semana siete",
+      "titulo": "Javonte Williams perfila sólida producción terrestre en semana siete",
       "claves": [
-        "Tristan H. Cockcroft respalda ampliamente a los Jets esta semana.",
-        "Proyectan 8.6 unidades ubicándose en el podio de las defensas.",
-        "Destacan entre las unidades más reclamadas en el mercado de waivers."
+        "Proyección de 17.6 unidades PPR consolida su estatus como titular.",
+        "Domina el debate de expertos como opción sobre otros corredores.",
+        "Con Jonah Coleman en reserva lesionada mantendrá mayor volumen."
       ],
-      "contexto": "La defensiva de Nueva York se ha convertido en una de las recomendaciones estelares para la Semana 7, respaldada por analistas como Tristan H. Cockcroft y posicionándose como selección predilecta en quinielas de supervivencia. Con una sólida proyección de 8.6 puntos, el cuadro neoyorquino promete capturas y pérdidas de balón, escalando rápidamente entre las unidades más disputadas de la semana.",
-      "fantasy": "Alinea a la defensiva de los Jets como titular indiscutible en todo tipo de ligas tradicionales. Su proyección de 8.6 puntos la sitúa entre las tres mejores opciones defensivas de la jornada. Al estar en la lista de las más agregadas en waivers, debes buscarla inmediatamente si tu defensiva habitual enfrenta un duelo complicado o se encuentra en semana de descanso.",
-      "equipo_impacto": "El rendimiento dominante de esta defensiva brinda posesiones en territorio corto a la ofensiva neoyorquina. Su agresividad en la trinchera permite controlar el ritmo del encuentro y compensar cualquier irregularidad de sus compañeros ofensivos.",
-      "accion": "Alinea a la defensiva de los Jets en tu alineación principal.",
+      "contexto": "Javonte Williams llega a la semana siete como uno de los corredores más sólidos del panorama tras confirmarse la permanencia de Jonah Coleman en la reserva de lesionados por tobillo. Los analistas debaten su superioridad semanal sobre otras estrellas del emparrillado, respaldados por una sólida proyección de 17.6 puntos en formatos de recepción completa.",
+      "fantasy": "Inicia a Javonte como un RB1 bajo o RB2 alto en todos los formatos PPR y ligas estándar de diez a doce equipos. Su volumen terrestre se encuentra blindado sin competencia real en el comité, y su efectividad en primeras oportunidades garantiza un piso confiable. Si estás dudando entre él y otras figuras con duelos complicados, inclínate por su proyección de toques.",
+      "equipo_impacto": "Denver basará su control de reloj en los constantes acarreos entre los tacles de Williams, quitándole presión inmediata a Bo Nix en situaciones comprometidas de tercer down y zona de anotación rival.",
+      "accion": "Alinea a Javonte Williams como tu corredor titular con total confianza.",
       "etiqueta": "START",
       "impacto": "SUBE",
-      "equipo": "NYJ",
+      "equipo": "DEN",
       "equipos": [
-        "NYJ"
+        "DEN",
+        "DAL"
       ],
-      "jugadores": [],
-      "menciona": [
-        "NYJ"
-      ]
+      "jugadores": [
+        "7588",
+        "11563"
+      ],
+      "menciona": []
     },
     {
-      "id": "n20261022050007",
-      "fecha": "2026-10-22T05:00:12.711Z",
+      "id": "n20261022072905",
+      "fecha": "2026-10-22T07:29:33.635Z",
       "semana": 7,
-      "titulo": "Defensiva de Browns destaca entre las altas prioritarias",
+      "titulo": "Jordan Love enciende dudas por dolor en la espalda",
       "claves": [
-        "Browns D/ST figura entre las opciones más reclamadas en waivers.",
-        "Proyecta 8.6 puntos fantasy igualando la cima defensiva semanal.",
-        "Representa una solución de alto impacto para transmisiones defensivas."
+        "Aparece como cuestionable en el reporte por lesión de espalda.",
+        "Bajas clave en el cuerpo de receptores merman su arsenal.",
+        "Con 19.4 proyectados enfrenta riesgo de resentirse durante el duelo."
       ],
-      "contexto": "La unidad defensiva de Cleveland ha despertado un enorme interés en las plataformas de fantasy football, colocándose entre las defensas más añadidas de la semana. Con una proyección estelar de 8.6 unidades, los Browns ofrecen solidez en la presión al mariscal y forzamiento de errores rivales. Su disponibilidad en ligas la vuelve un blanco primordial para los equipos que necesitan puntos defensivos urgentes.",
-      "fantasy": "Ve directo al alambre de agentes libres y asegura a los Browns si estás rotando defensivas semana a semana. Con 8.6 puntos proyectados, comparten el tercer puesto global junto a los Jets para la Semana 7. En ligas estándar y formatos con puntuación por pérdidas de balón, esta escuadra tiene el potencial de inclinar la balanza en partidos cerrados.",
-      "equipo_impacto": "El protagonismo de la defensiva de Cleveland sostiene al equipo en partidos cerrados, minimizando el desgaste de la ofensiva. Al forzar intercambios rápidos de balón, optimizan el plan de juego terrestre del conjunto café.",
-      "accion": "Reclama a la defensiva de Cleveland en el alambre de waivers.",
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "CLE",
+      "contexto": "Jordan Love figura como cuestionable para el crucial compromiso de Green Bay por problemas lumbares que limitaron su preparación semanal. El panorama se complica aún más considerando que su receptor Jayden Reed está en la reserva de lesionados por el cuello, mientras Christian Watson y Matthew Golden también arrastran molestias físicas en el tobillo y hombro respectivamente.",
+      "fantasy": "Manda a Love a la banca si cuentas con opciones más estables en ligas de diez y doce competidores. Aunque su proyección marca 19.4 unidades, la rigidez en la espalda y el arsenal diezmado aumentan exponencialmente la posibilidad de una actuación discreta o una salida prematura. Es preferible inclinarse por pasadores más sanos y con línea ofensiva completa esta jornada.",
+      "equipo_impacto": "Green Bay tendrá que recargar su plan de juego ofensivo en los acarreos constantes de Josh Jacobs para evitar exponer a Love a impactos innecesarios en una bolsa de protección que luce comprometida.",
+      "accion": "Sienta a Jordan Love y busca opciones más saludables en tu banca.",
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "GB",
       "equipos": [
-        "CLE"
+        "GB"
       ],
-      "jugadores": [],
-      "menciona": [
-        "CLE"
-      ]
+      "jugadores": [
+        "6804",
+        "8167",
+        "5850"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261022072907",
+      "fecha": "2026-10-22T07:29:33.635Z",
+      "semana": 7,
+      "titulo": "CeeDee Lamb promete dividendos pese al debate de analistas",
+      "claves": [
+        "Proyección de 17.4 puntos PPR lo sostiene en el rango estelar.",
+        "Protagoniza encendidos debates frente a otros receptores en medios deportivos.",
+        "Su piso de targets lo vuelve insustituible en las alineaciones."
+      ],
+      "contexto": "CeeDee Lamb se encuentra en el centro del debate de los expertos fantasy esta semana, donde analistas discuten su valor relativo frente a otras opciones receptoras de la liga. A pesar de las opiniones encontradas sobre el techo del receptor de Dallas, sus 17.4 puntos proyectados en formato PPR reafirman que su estatus de élite permanece intacto dentro del esquema ofensivo texano.",
+      "fantasy": "Mantén a Lamb firme como receptor titular en todas las ligas de ocho, diez y doce equipos. Aunque algunos debates mediáticos pongan en duda su explosividad momentánea, su volumen de diez o más pases dirigidos por juego ofrece una seguridad insuperable. No te dejes llevar por el pánico de analistas externos y asegúralo en tu alineación estelar como WR1 o WR2 de altísimo piso.",
+      "equipo_impacto": "El ataque aéreo de los Cowboys depende por completo de la versatilidad de Lamb desde la ranura y el perímetro para sostener series ofensivas prolongadas sin arriesgar pérdidas de balón innecesarias.",
+      "accion": "Mantén a CeeDee Lamb inamovible en tu alineación titular esta semana.",
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "DAL",
+      "equipos": [
+        "DAL"
+      ],
+      "jugadores": [
+        "6786"
+      ],
+      "menciona": []
     }
   ],
   "lesionados": [
@@ -290,8 +321,8 @@
     "8121",
     "9480",
     "3271",
-    "7042",
     "650",
+    "7042",
     "2505",
     "7528",
     "8129",
@@ -307,7 +338,7 @@
   "duelo": {
     "a": "Jahmyr Gibbs",
     "b": "Bijan Robinson",
-    "veredicto": "Arranca a Jahmyr Gibbs; su proyección estelar de 25.2 puntos y explosividad en juego aéreo le dan ventaja decisiva sobre Bijan Robinson, quien proyecta 22.6 unidades en un enfrentamiento de altísimo calibre terrestre."
+    "veredicto": "Arranca a Jahmyr Gibbs. Su explosividad y rol receptor le otorgan una proyección monumental de 25.2 unidades PPR, superando las 22.6 de Bijan Robinson frente a la dura defensiva de San Francisco."
   },
   "fuentes": [
     "Sleeper",
