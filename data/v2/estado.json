@@ -1,23 +1,10 @@
 {
-  "fecha": "2026-10-22T12:13:02.314Z",
+  "fecha": "2026-10-22T13:01:01.430Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.3s] YouTube: 15 nuevos, 16 en total",
-    "[0.9s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[2.2s] ESPN: lesiones 799 · noticias 50",
-    "[3.0s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[3.8s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[4.3s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[4.7s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[12.1s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
-    "[21.8s] IA OK con gemini-3.5-flash-lite",
-    "[21.8s] Descartada: J.J. McCarthy debuta como titular con los Giants → duplicada",
-    "[21.9s] Descartada: Xavier Worthy asume rol estelar en Chiefs → duplicada",
-    "[21.9s] Descartada: Defensiva de los Jets seduce como opción clave → duplicada",
-    "[22.1s] Descartada: Jaelan Phillips causa baja sensible en Carolina → duplicada",
-    "[22.2s] Descartada: Jonathon Cooper asume responsabilidad tras ausencia → duplicada",
-    "[22.3s] Descartada: Sam LaPorta genera tensión contractual con Detroit → duplicada",
-    "[22.3s] Noticias nuevas verificadas: 2",
-    "[23.4s] Listo: 2 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 191 · semana de juego 7 · IA usada hoy 7/40"
+    "[0.4s] YouTube: 15 nuevos, 16 en total",
+    "[1.3s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[3.3s] ESPN: lesiones 799 · noticias 50",
+    "[4.6s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 191 · semana de juego 7 · IA usada hoy 7/40"
   ]
 }
