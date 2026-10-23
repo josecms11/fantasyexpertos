@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-23T00:35:00.133Z",
-  "ultimaIA": "2026-10-22T23:04:13.094Z",
+  "actualizado": "2026-10-23T01:18:41.519Z",
+  "ultimaIA": "2026-10-23T01:18:41.519Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,54 +13,28 @@
   ],
   "noticias": [
     {
-      "id": "n20261022230405",
-      "fecha": "2026-10-22T23:04:13.094Z",
+      "id": "n20261023011803",
+      "fecha": "2026-10-23T01:18:41.519Z",
       "semana": 7,
-      "titulo": "Baker Mayfield confía en iniciar ante Panthers",
+      "titulo": "David Montgomery duda seriamente para jugar ante Giants",
       "claves": [
-        "Baker Mayfield apunta a regresar de lesión en el pulgar.",
-        "Excepto por contratiempos, tomará los controles.",
-        "Enfrentamiento directo ante su exequipo."
+        "Designado en reporte médico con etiqueta de dudoso",
+        "Molestia en la ingle compromete su participación dominical",
+        "Obligación absoluta de mandarlo a la banca fantasy"
       ],
-      "contexto": "El mariscal de los Buccaneers, Baker Mayfield, lidia con una dolencia en el pulgar, pero los reportes internos indican que hay optimismo para que logre iniciar el partido del domingo contra los Panthers de Carolina.",
-      "fantasy": "Si se confirma su participación, se convierte en un recurso viable para ligas superflex y formatos de dos mariscales, aunque su eficiencia podría verse ligeramente limitada por el dedo lastimado.",
-      "equipo_impacto": "La ofensiva aérea de Tampa Bay respira tranquila al contar con su mariscal titular para guiar las series ofensivas clave del encuentro.",
-      "accion": "Ten listo un plan de respaldo en tu banca por si surge algún contratiempo médico de última hora.",
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "TB",
-      "equipos": [
-        "TB",
-        "CAR"
-      ],
-      "jugadores": [
-        "4892"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261022230406",
-      "fecha": "2026-10-22T23:04:13.094Z",
-      "semana": 7,
-      "titulo": "Puka Nacua enciende alarmas por lesión",
-      "claves": [
-        "Puka Nacua abandonó la práctica por molestia en pantorrilla.",
-        "Estatus questionario pone en riesgo su participación.",
-        "Los Rams evalúan opciones ante bajas."
-      ],
-      "contexto": "El receptor estelar de los Rams, Puka Nacua, encendió las alertas al retirarse anticipadamente de la sesión de entrenamientos debido a una dolencia en la pantorrilla, complicando el panorama ofensivo de Los Ángeles.",
-      "fantasy": "Su etiqueta de cuestionable obliga a buscar alternativas inmediatas en tu banca, ya que un descanso preventivo o limitación de snaps reduciría drásticamente su valor en ligas PPR.",
-      "equipo_impacto": "La ausencia o limitación de Nacua deja un hueco enorme en el juego aéreo de los Rams, obligando al cuerpo técnico a buscar variantes urgentes.",
-      "accion": "Sienta a Puka Nacua en tu alineación hasta confirmar que está totalmente recuperado para jugar.",
+      "contexto": "Los Houston Texans encaran su duelo dominical ante los New York Giants con dudas críticas en el backfield. David Montgomery figura oficialmente como dudoso debido a una lesión en la ingle que le ha impedido trabajar al parejo del grupo. Aunque el equipo texano busca asegurar su tercer triunfo del calendario en casa, las probabilidades de ver al veterano corredor con actividad regular son prácticamente mínimas para esta séptima semana.",
+      "fantasy": "Tener la designación de doubtful reduce drásticamente las opciones de que Montgomery vea el emparrillado, y aun si se uniforma, el riesgo de limitar sus acarreos es altísimo. Debes enviarlo inmediatamente a la banca en todos los formatos estándar y PPR. Buscar alternativas de respaldo en la agencia libre o activar a corredores suplentes saludables es la única maniobra sensata para evitar un cero rotundo en tu casillero ofensivo este domingo.",
+      "equipo_impacto": "La ausencia de Montgomery reduce el poder en yardaje corto para Houston. El entrenador requerirá apoyarse más en el brazo de C.J. Stroud y en sus corredores de recambio para mover las cadenas ante Nueva York.",
+      "accion": "Sienta a Montgomery en todas tus ligas y asegura un corredor suplente de inmediato.",
       "etiqueta": "SIT",
       "impacto": "BAJA",
-      "equipo": "LAR",
+      "equipo": "HOU",
       "equipos": [
-        "LAR"
+        "HOU",
+        "NYG"
       ],
       "jugadores": [
-        "9493",
-        "2133"
+        "5892"
       ],
       "menciona": []
     }
@@ -240,15 +214,15 @@
     "13276",
     "5849",
     "1433",
-    "8135",
     "13424",
+    "8135",
     "8132",
     "11610",
     "10213",
-    "NYJ",
     "11563",
-    "9230",
+    "NYJ",
     "11783",
+    "9230",
     "9756",
     "9502",
     "2197",
@@ -257,13 +231,13 @@
   "soltados": [
     "11581",
     "11435",
-    "5927",
     "8129",
+    "5927",
     "JAX",
     "9511",
     "NE",
-    "8121",
     "13150",
+    "8121",
     "11439",
     "9480",
     "6904",
@@ -282,9 +256,9 @@
     "11647"
   ],
   "duelo": {
-    "a": "Jaxon Smith-Njigba",
-    "b": "Amon-Ra St. Brown",
-    "veredicto": "Arranca a Jaxon Smith-Njigba por su enorme proyección superior en recepciones y yardaje esperada para esta semana."
+    "a": "Drake Maye",
+    "b": "Brock Purdy",
+    "veredicto": "Arranca a Drake Maye sobre Brock Purdy. Maye lidera las proyecciones con 21.7 puntos y su capacidad de generar yardas por tierra le otorga un techo más elevado en comparación con el juego administrado de Purdy en Atlanta."
   },
   "fuentes": [
     "Sleeper",

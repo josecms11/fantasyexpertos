@@ -1,13 +1,21 @@
 {
-  "fecha": "2026-10-23T00:39:24.551Z",
+  "fecha": "2026-10-23T01:22:23.142Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.1s] YouTube: 0 nuevos, 16 en total",
-    "[0.8s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[2.6s] ESPN: lesiones 799 · noticias 50",
-    "[3.8s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[267.1s] IA OK con gemini-3.8-flash",
-    "[267.1s] Resumen semana 7",
-    "[267.1s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 205 · semana de juego 7 · IA usada hoy 1/40"
+    "[0.2s] YouTube: 15 nuevos, 16 en total",
+    "[0.9s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[3.4s] ESPN: lesiones 799 · noticias 50",
+    "[4.3s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[5.4s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
+    "[224.2s] IA OK con gemini-3.7-flash",
+    "[224.2s] Descartada: Zach Charbonnet reactivado con Seahawks como opción flex → duplicada",
+    "[224.2s] Descartada: Jahmyr Gibbs lidera proyecciones en choque ante Packers → duplicada",
+    "[224.2s] Descartada: George Kittle proyecta dominio total frente a Falcons → duplicada",
+    "[224.2s] Descartada: J.J. McCarthy debuta como titular ante férrea defensiva → duplicada",
+    "[224.2s] Descartada: Jonathan Taylor desata rumores de canje en Indianápolis → duplicada",
+    "[224.2s] Descartada: Alvin Kamara lidia con molestia previo a París → duplicada",
+    "[224.2s] Descartada: Roschon Johnson surge como alta prioritaria en waivers → duplicada",
+    "[224.2s] Noticias nuevas verificadas: 1",
+    "[225.0s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 206 · semana de juego 7 · IA usada hoy 2/40"
   ]
 }
