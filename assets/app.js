@@ -683,7 +683,7 @@ async function cargaPartidos() {
     G.forEach(g => { const p = gPrev[g.id]; if (p) [g.visita, g.local].forEach((t, k) => { const d = t.pts - (k ? p.l : p.v); if (d >= 6 || d === 3) anot.push({ g, t, d }); }); gPrev[g.id] = { v: g.visita.pts, l: g.local.pts }; });
     pintaMarcadores(); anot.forEach(celebra);
     if (/^#\/partidos/.test(location.hash) && !location.hash.includes('semana=')) refrescaVista(); else if (!location.hash || location.hash === '#/') refrescaVista();
-    if (/^#\/partido\//.test(location.hash) && !$('.gsum')) router();
+    if (/^#\/partido\//.test(location.hash)) { const gid = location.hash.split('/')[2], gg = G.find(x => x.id === gid), h = $('#g-hero'); if (!$('.gsum')) router(); else if (gg && h) { h.innerHTML = heroPartido(gg); if (gg.estado === 'in' && !$('#fxlive')) router(); } }
   } catch (e) { console.log('Marcadores no disponibles', e); }
   clearTimeout(gTimer);
   gTimer = setTimeout(cargaPartidos, G.some(g => g.estado === 'in') ? 20000 : 120000);
@@ -740,6 +740,15 @@ function partidos(q) {
     ${grupos || '<div class="empty">Esta semana aún no tiene partidos publicados.</div>'}
   </section></div></div>`;
 }
+function heroPartido(g) {
+  return `<div class="jumbo game ${g.estado}" style="--cv:${col(g.visita.ab)[0]};--cl:${col(g.local.ab)[0]}">
+      <div class="jumbo-top"><span>${g.estado !== 'pre' ? `<b class="fx-live">${fxLogo(14)} FX ${g.estado === 'in' ? 'LIVE' : 'FINAL'}</b>` : ''}${g.estado === 'in' ? '<i class="dot"></i>EN VIVO' : g.estado === 'post' ? 'FINAL' : esc(horaJuego(g))}</span><span>${esc(g.sede || '')}${g.tv ? ' · ' + esc(g.tv) : ''}</span></div>
+      <div class="g-face"><a class="g-team" href="#/equipo/${g.visita.ab}">${helmet(g.visita.ab, '', 140, false, g.posesion === g.visita.id ? 'bob' : '')}<b>${esc(g.visita.nombre)}</b><small>${esc(g.visita.rec)} · Visita</small></a>
+        <div class="g-score"><span class="${ganando(g, 0)}">${g.estado === 'pre' ? '–' : g.visita.pts}</span><em>${g.estado === 'in' ? esc(g.detalle) : g.estado === 'post' ? 'FINAL' : 'VS'}</em><span class="${ganando(g, 1)}">${g.estado === 'pre' ? '–' : g.local.pts}</span></div>
+        <a class="g-team" href="#/equipo/${g.local.ab}">${helmet(g.local.ab, '', 140, true, g.posesion === g.local.id ? 'bob' : '')}<b>${esc(g.local.nombre)}</b><small>${esc(g.local.rec)} · Local</small></a></div>
+      ${g.estado === 'in' ? `<div class="g-field">${campo(g)}</div><div class="led"><small>${esc(g.downs || '')}${g.zonaRoja ? ' · ZONA ROJA' : ''}</small>${esc(g.ultima || 'Esperando la siguiente jugada…')}</div>` : ''}
+    </div>`;
+}
 function partido(id) {
   const g = G.find(x => x.id === id) || Object.values(GW).flat().find(x => x.id === id);
   if (!g) {
@@ -756,17 +765,15 @@ function partido(id) {
       <p class="sub">Fantasy · ${g.estado === 'post' ? 'puntos ' + FMTS[FMT] + ' en este partido' : 'proyección ' + FMTS[FMT] + ' (los puntos finales llegan al terminar)'}</p>
       <div class="plist">${L.map(j => prow(j, `<span class="num sm">${n1(g.estado === 'post' ? ptsSem(j, g.semana) : (j.p ?? j.pEst))}</span>${fxPill(j)}`)).join('')}</div>
       ${les.length ? `<p class="sub" style="margin-top:14px">Reporte médico</p><div class="plist">${les.map(j => prow(j, `<span class="team">${esc(parte(j))}</span>${pillSt(j)}`)).join('')}</div>` : ''}</div>`; };
-  setTimeout(() => detallePartido(g), 0);
+  setTimeout(() => detallePartido(g).then(() => { if (g.estado === 'in') vigilaPartido(g.id); }), 0);
   return `<div class="page">${crumbs([['#/partidos', 'Partidos'], ['', g.visita.ab + ' vs ' + g.local.ab]])}<div class="wrap">
-    <div class="jumbo game" style="--cv:${col(g.visita.ab)[0]};--cl:${col(g.local.ab)[0]}">
-      <div class="jumbo-top"><span>${g.estado === 'in' ? '<i class="dot"></i>EN VIVO' : g.estado === 'post' ? 'FINAL' : esc(horaJuego(g))}</span><span>${esc(g.sede || '')}${g.tv ? ' · ' + esc(g.tv) : ''}</span></div>
-      <div class="g-face"><a class="g-team" href="#/equipo/${g.visita.ab}">${helmet(g.visita.ab, '', 140, false, g.posesion === g.visita.id ? 'bob' : '')}<b>${esc(g.visita.nombre)}</b><small>${esc(g.visita.rec)} · Visita</small></a>
-        <div class="g-score"><span class="${ganando(g, 0)}">${g.estado === 'pre' ? '–' : g.visita.pts}</span><em>${g.estado === 'in' ? esc(g.detalle) : g.estado === 'post' ? 'FINAL' : 'VS'}</em><span class="${ganando(g, 1)}">${g.estado === 'pre' ? '–' : g.local.pts}</span></div>
-        <a class="g-team" href="#/equipo/${g.local.ab}">${helmet(g.local.ab, '', 140, true, g.posesion === g.local.id ? 'bob' : '')}<b>${esc(g.local.nombre)}</b><small>${esc(g.local.rec)} · Local</small></a></div>
-      ${g.estado === 'in' ? `<div class="g-field">${campo(g)}</div><div class="led"><small>${esc(g.downs || '')}${g.zonaRoja ? ' · ZONA ROJA' : ''}</small>${esc(g.ultima || 'Esperando la siguiente jugada…')}</div>` : ''}
-    </div>
-    <div class="gsum" id="gsum"><div class="esq-lineas" aria-busy="true" aria-label="Cargando estadísticas del partido"><i></i><i></i><i></i><i></i></div></div>
-    <section class="block grid g2">${lado(g.visita)}${lado(g.local)}</section>
+    <div id="g-hero">${heroPartido(g)}</div><div id="g-wp"></div>
+    ${g.estado !== 'pre' ? `<div class="live-tabs" role="tablist"><button type="button" class="on" data-lt="fx">${fxLogo(14)} Fantasy en vivo</button><button type="button" data-lt="pbp">Jugada a jugada</button></div>` : ''}
+    ${g.estado === 'pre' ? `<div class="gsum" id="gsum"><div class="esq-lineas" aria-busy="true" aria-label="Cargando estadísticas del partido"><i></i><i></i><i></i><i></i></div></div>
+    <section class="block grid g2">${lado(g.visita)}${lado(g.local)}</section>` : `<div class="live-grid ver-fx">
+      <section class="card fxlive" id="fxlive"><div class="esq-lineas" aria-busy="true" aria-label="Cargando fantasy en vivo"><i></i><i></i><i></i><i></i><i></i><i></i></div></section>
+      <aside class="card pbp" id="pbp"><div class="esq-lineas" aria-busy="true" aria-label="Cargando jugadas"><i></i><i></i><i></i><i></i></div></aside>
+    </div><div id="gsum" class="gsum"></div>`}
     ${notas.length ? `<section class="block"><div class="head"><h2>Noticias de ${esc(g.visita.ab)} y ${esc(g.local.ab)}</h2></div><div class="news stagger">${notas.map(n => newsCard(n)).join('')}</div></section>` : ''}
   </div></div>`;
 }
@@ -774,6 +781,7 @@ async function detallePartido(g) {
   const box = $('#gsum'); if (!box) return;
   try {
     const s = await (await fetch('https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=' + g.id)).json();
+    if (g.estado !== 'pre') return pintaVivo(g, s);
     const teams = (s.boxscore && s.boxscore.teams) || [];
     const statsDe = ab => { const t = teams.find(x => (AB[x.team.abbreviation] || x.team.abbreviation) === ab); return t ? Object.fromEntries((t.statistics || []).map(x => [x.name, x.displayValue])) : {}; };
     const sv = statsDe(g.visita.ab), sl = statsDe(g.local.ab);
@@ -825,6 +833,119 @@ async function detallePartido(g) {
     box.innerHTML = `<section class="block grid g2" style="padding-top:22px">${preHTML}${proyHTML}${statsHTML}${lidHTML}${anot ? `<div class="card"><h3>Jugadas de anotación</h3><div class="splist">${anot}</div></div>` : ''}</section>`;
     if (!box.textContent.trim()) box.innerHTML = '';
   } catch (e) { box.innerHTML = ''; }
+}
+/* =============================== PARTIDO EN VIVO · SELLO FX =============================== */
+// Puntos fantasy calculados con la misma regla de Sleeper que usa todo el sitio: [PPR, Half, STD]
+const ptsFx = x => { const base = (x.py || 0) * .04 + (x.ptd || 0) * 4 - (x.int || 0) + (x.ry || 0) * .1 + (x.rtd || 0) * 6 + (x.recy || 0) * .1 + (x.rectd || 0) * 6 - (x.fl || 0) * 2 + (x.kp || 0);
+  return [base + (x.rec || 0), base + (x.rec || 0) * .5, base].map(v => Math.round(v * 10) / 10); };
+const abrev = n => { const p = String(n || '').replace(/\s+(Jr\.?|Sr\.?|II|III|IV)$/i, '').split(' '); return p.length > 1 ? (p[0][0] + '.' + p.slice(1).join('')).toLowerCase().replace(/[^a-z.]/g, '') : ''; };
+function fantasyBox(s, g) {
+  const porEspn = {}, porNom = {}; P.forEach(j => { if (j.espn) porEspn[j.espn] = j; porNom[sinAc(j.n).replace(/[^a-z]/g, '')] = j; });
+  const M = {};
+  ((s.boxscore && s.boxscore.players) || []).forEach(tm => { const ab = AB[tm.team && tm.team.abbreviation] || (tm.team && tm.team.abbreviation);
+    (tm.statistics || []).forEach(cat => { const keys = cat.keys || [];
+      (cat.athletes || []).forEach(a => { const at = a.athlete || {}, id = String(at.id || at.displayName), v = k => { const i = keys.indexOf(k); return i < 0 ? null : a.stats[i]; }, num = k => parseFloat(v(k)) || 0;
+        const r = M[id] = M[id] || { id, n: at.displayName, ab, num: at.jersey, cats: new Set(), x: {} }; r.cats.add(cat.name); const x = r.x;
+        if (cat.name === 'passing') { const ca = String(v('completions/passingAttempts') || '0/0').split('/'); x.cmp = +ca[0] || 0; x.att = +ca[1] || 0; x.py = num('passingYards'); x.ptd = num('passingTouchdowns'); x.int = num('interceptions'); }
+        if (cat.name === 'rushing') { x.ra = num('rushingAttempts'); x.ry = num('rushingYards'); x.rtd = num('rushingTouchdowns'); }
+        if (cat.name === 'receiving') { x.rec = num('receptions'); x.recy = num('receivingYards'); x.rectd = num('receivingTouchdowns'); x.tg = num('receivingTargets'); }
+        if (cat.name === 'fumbles') x.fl = num('fumblesLost');
+        if (cat.name === 'kicking') { const fg = String(v('fieldGoalsMade/fieldGoalAttempts') || '0/0').split('/'), xp = String(v('extraPointsMade/extraPointAttempts') || '0/0').split('/'); x.fgm = +fg[0] || 0; x.fga = +fg[1] || 0; x.xpm = +xp[0] || 0; x.xpa = +xp[1] || 0; }
+      }); }); });
+  // pateadores: puntos por distancia de cada gol de campo (de las jugadas de anotación)
+  const fgs = (s.scoringPlays || []).map(p => (p.text || '').match(/^(.+?) (\d+) Yd Field Goal/i)).filter(Boolean);
+  return Object.values(M).map(r => {
+    const j = porEspn[r.id] || porNom[sinAc(r.n).replace(/[^a-z]/g, '')] || null, x = r.x;
+    if (r.cats.has('kicking')) { const mias = fgs.filter(m => sinAc(r.n).includes(sinAc(m[1]).split(' ').pop())); x.kp = (mias.length ? mias.reduce((t, m) => t + (+m[2] >= 50 ? 5 : +m[2] >= 40 ? 4 : 3), 0) + Math.max(0, (x.fgm || 0) - mias.length) * 3 : (x.fgm || 0) * 3) + (x.xpm || 0); }
+    const pos = j ? j.pos : r.cats.has('kicking') ? 'K' : (x.att || 0) >= 5 ? 'QB' : (x.ra || 0) > (x.rec || 0) ? 'RB' : 'WR';
+    return { ...r, j, pos, f: ptsFx(x), proy: j && j.proy ? j.proy : null, ab: r.ab || (j && j.team) };
+  }).filter(r => r.f[2] !== 0 || (r.x.att || r.x.ra || r.x.rec || r.x.tg || r.x.fga || r.x.xpa));
+}
+const lineaStats = r => { const x = r.x, t = [];
+  if (x.att) t.push(`${x.cmp}/${x.att}`, `${x.py} YDS P`, ...(x.ptd ? [`${x.ptd} TD`] : []), ...(x.int ? [`${x.int} INT`] : []));
+  if (x.ra) t.push(`${x.ra} CAR ${x.ry} YDS`, ...(x.rtd ? [`${x.rtd} TD C`] : []));
+  if (x.rec || x.tg) t.push(`${x.rec || 0}/${x.tg || x.rec || 0} REC ${x.recy || 0} YDS`, ...(x.rectd ? [`${x.rectd} TD R`] : []));
+  if (x.fga || x.xpa) t.push(`${x.fgm}/${x.fga} FG`, `${x.xpm}/${x.xpa} PAT`);
+  if (x.fl) t.push(`${x.fl} FUM`);
+  return t.join(' · '); };
+const FXPREV = {}, ABIERTOS = new Set();
+let FXFILTRO = 'todos', _vivoT = null;
+function pintaFantasy(g, s) {
+  const box = $('#fxlive'); if (!box) return;
+  if (FXFILTRO !== 'todos' && FXFILTRO !== g.visita.ab && FXFILTRO !== g.local.ab) FXFILTRO = 'todos';
+  const L = fantasyBox(s, g).sort((a, b) => b.f[FMT] - a.f[FMT]), prev = FXPREV[g.id] || {}, nuevo = {};
+  const tot = ab => L.filter(r => r.ab === ab).reduce((t, r) => t + r.f[FMT], 0);
+  const fila = (r, i) => { const pts = r.f[FMT], antes = prev[r.id], sube = antes != null && pts > antes + .05, baja = antes != null && pts < antes - .05; nuevo[r.id] = pts;
+    const pr = r.proy ? r.proy[FMT] : null, pct = pr ? Math.min(100, Math.round(pts / pr * 100)) : null, supera = pr != null && pts > pr;
+    const inner = `<i class="fxr-rk">${i + 1}</i>${helmet(r.ab, r.num || (r.j && r.j.num) || '', 34)}
+      <span class="fxr-who"><b>${esc(r.n)}</b><small><em class="pos">${esc(r.pos)}</em> ${esc(r.ab || '')}${r.j && estatus(r.j) !== 'Sano' ? ' · ' + esc(estatus(r.j)) : ''}</small><span class="fxr-st">${esc(lineaStats(r))}</span>
+        ${pr != null ? `<span class="fxr-bar ${supera ? 'top' : ''}"><i style="width:${pct}%"></i></span><span class="fxr-pr">${supera ? '<b>Superó su proyección</b> · ' : ''}proy ${n1(pr)}</span>` : ''}</span>
+      <span class="fxr-pts"><b class="n">${n1(pts)}</b><small>PTS ${FMTS[FMT]}</small>${sube ? `<em class="fx-delta">+${n1(pts - antes)}</em>` : baja ? `<em class="fx-delta neg">${n1(pts - antes)}</em>` : ''}</span>`;
+    const oc = FXFILTRO !== 'todos' && r.ab !== FXFILTRO ? ' hidden' : '';
+    return r.j ? `<a class="fxr ${sube ? 'sube' : ''} ${baja ? 'baja' : ''} ${supera ? 'supera' : ''}"${oc} data-eq="${esc(r.ab)}" href="#/jugador/${r.j.id}">${inner}</a>` : `<div class="fxr ${sube ? 'sube' : ''} ${baja ? 'baja' : ''}"${oc} data-eq="${esc(r.ab)}">${inner}</div>`; };
+  const filas = L.map(fila).join('');
+  FXPREV[g.id] = nuevo;
+  const chip = (k, t) => `<button type="button" class="chip ${FXFILTRO === k ? 'on' : ''}" data-fxf="${k}">${t}</button>`;
+  box.innerHTML = `<div class="fxl-h"><div><span class="fxl-tag">${fxLogo(18)} FANTASY ${g.estado === 'in' ? 'EN VIVO' : 'FINAL'}</span><h2>¿Quién está sumando?</h2><p class="sub">Puntos ${FMTS[FMT]} con el modelo FX, jugada por jugada${g.estado === 'in' ? ' · se actualiza cada 15 s' : ''}.</p></div>
+    <div class="fxl-tot" style="--cv:${col(g.visita.ab)[0]};--cl:${col(g.local.ab)[0]}"><span>${helmet(g.visita.ab, '', 26)}<b>${g.visita.ab}</b><em class="n">${n1(tot(g.visita.ab))}</em></span><small>PTS FX</small><span><em class="n">${n1(tot(g.local.ab))}</em><b>${g.local.ab}</b>${helmet(g.local.ab, '', 26, true)}</span></div></div>
+    <div class="chips fxl-f">${chip('todos', 'Todos')}${chip(g.visita.ab, g.visita.ab)}${chip(g.local.ab, g.local.ab)}</div>
+    <div class="fxl-list" data-filtro="${esc(FXFILTRO)}">${filas || '<div class="empty">Todavía no hay estadísticas de jugadores.</div>'}</div>`;
+}
+// Puntos FX que dejó cada jugada (pase, carrera, TD, intercepción), a partir del texto oficial de la jugada
+function fxJugada(p, mapa) {
+  const t = p.text || '', y = +p.statYardage || 0, tipo = (p.type && p.type.text) || '', td = /touchdown/i.test(tipo) || /TOUCHDOWN/.test(t), out = [];
+  const nom = k => mapa[(k || '').toLowerCase().replace(/[^a-z.]/g, '')];
+  const m = t.match(/([A-Z][a-zA-Z]{0,2}\.[A-Z][A-Za-z'\-]+)/g) || [];
+  const rec = [1, .5, 0][FMT];
+  if (/pass/i.test(tipo) && /complete|pass (short|deep)/i.test(t) && !/incomplete/i.test(t) && m.length >= 2 && !/Interception/i.test(tipo)) {
+    const qb = nom(m[0]), wr = nom(m[1]);
+    if (qb) out.push([qb, y * .04 + (td ? 4 : 0)]); if (wr) out.push([wr, rec + y * .1 + (td ? 6 : 0)]);
+  } else if (/rush/i.test(tipo) && m.length) { const rb = nom(m[0]); if (rb) out.push([rb, y * .1 + (td ? 6 : 0)]); }
+  else if (/interception/i.test(tipo) && m.length) { const qb = nom(m[0]); if (qb) out.push([qb, -1]); }
+  return out.filter(([, v]) => Math.abs(v) >= .05);
+}
+function pintaJugadas(g, s) {
+  const box = $('#pbp'); if (!box) return;
+  box.querySelectorAll('details[open]').forEach(d => ABIERTOS.add(d.dataset.id)); box.querySelectorAll('details:not([open])').forEach(d => ABIERTOS.delete(d.dataset.id));
+  const mapa = {}; fantasyBox(s, g).forEach(r => { const k = abrev(r.n); if (k) mapa[k] = r.n; });
+  const dr = s.drives || {}, prevs = (dr.previous || []).slice().reverse(), cur = dr.current && dr.current.plays && dr.current.plays.length && g.estado === 'in' ? dr.current : null;
+  const RES = { TD: 'TOUCHDOWN', FG: 'GOL DE CAMPO', PUNT: 'DESPEJE', INT: 'INTERCEPCIÓN', FUMBLE: 'BALÓN SUELTO', DOWNS: 'EN DOWNS', 'END OF HALF': 'FIN DE MITAD', 'END OF GAME': 'FIN DEL PARTIDO', 'MISSED FG': 'FG FALLADO', SF: 'SAFETY' };
+  const jugada = p => { const y = +p.statYardage || 0, tipo = (p.type && p.type.text) || '', anota = p.scoringPlay, chips = fxJugada(p, mapa);
+    return `<li class="pl ${anota ? 'anota' : ''}"><span class="pl-t">${p.period && p.period.number ? 'Q' + p.period.number : ''} ${esc((p.clock && p.clock.displayValue) || '')}${p.start && p.start.shortDownDistanceText ? ' · ' + esc(p.start.shortDownDistanceText) : ''}</span>
+      ${anota ? `<b class="pl-anota">${esc(tipo.toUpperCase())}</b>` : ''}<p>${esc(p.text || tipo)}</p>
+      <span class="pl-f">${y && !/kickoff|punt|penalty|timeout/i.test(tipo) ? `<em class="yd ${y > 0 ? 'pos' : 'neg'}">${y > 0 ? '+' : ''}${y} YDS</em>` : ''}${chips.map(([n, v]) => `<em class="fxc-p ${v < 0 ? 'neg' : ''}">${fxLogo(11)} ${esc(n.split(' ').slice(-1)[0] === 'III' || n.split(' ').slice(-1)[0] === 'Jr.' ? n.split(' ').slice(-2).join(' ') : n.split(' ').slice(-1)[0])} ${v > 0 ? '+' : ''}${n1(v)}</em>`).join('')}</span></li>`; };
+  const drive = (d, abierto, actual) => { const ab = AB[d.team && d.team.abbreviation] || (d.team && d.team.abbreviation), res = (d.displayResult || d.result || '').toUpperCase(), plays = (d.plays || []).slice().reverse(), id = String(d.id || ab + d.description);
+    const op = actual || ABIERTOS.has(id) || (abierto && !ABIERTOS.size);
+    return `<details class="drv ${actual ? 'actual' : ''} ${/TD|TOUCHDOWN/.test(res) ? 'td' : /FG|FIELD/.test(res) ? 'fg' : ''}" data-id="${esc(id)}" ${op ? 'open' : ''}><summary>${helmet(ab, '', 26)}<span><b>${actual ? 'Drive actual · ' : ''}${esc(ab || '')}</b><small>${esc(d.description || '')}</small></span>${res ? `<em>${esc(RES[res] || res)}</em>` : actual ? '<em class="vivo"><i class="dotv"></i>EN JUEGO</em>' : ''}</summary><ol>${plays.map(jugada).join('')}</ol></details>`; };
+  const html = (cur ? drive(cur, true, true) : '') + prevs.map((d, i) => drive(d, !cur && i === 0)).join('');
+  box.innerHTML = `<div class="pbp-h"><h3>Jugada a jugada</h3>${g.estado === 'in' ? '<span class="vivo"><i class="dotv"></i>EN VIVO</span>' : ''}</div><p class="sub">Cada jugada con los puntos FX que dejó (${FMTS[FMT]}).</p><div class="pbp-list">${html || '<div class="empty">Las jugadas aparecen en cuanto empiece el partido.</div>'}</div>`;
+}
+function pintaVivo(g, s) {
+  pintaFantasy(g, s); pintaJugadas(g, s);
+  // probabilidad de ganar en vivo (modelo ESPN)
+  const wp = (s.winprobability || []).slice(-1)[0], wb = $('#g-wp');
+  if (wb) wb.innerHTML = wp && g.estado === 'in' ? `<div class="wp ${wp.homeWinPercentage >= .5 ? 'gana-l' : 'gana-v'}" style="--p:${Math.round((1 - wp.homeWinPercentage) * 100)}%"><span>${g.visita.ab} <b class="n">${n1((1 - wp.homeWinPercentage) * 100)}%</b></span><i></i><span><b class="n">${n1(wp.homeWinPercentage * 100)}%</b> ${g.local.ab}</span><small>Probabilidad de ganar · modelo ESPN</small></div>` : '';
+  // abajo: estadísticas de equipo, anotaciones y la línea con la que abrió
+  const teams = (s.boxscore && s.boxscore.teams) || [];
+  const statsDe = ab => { const t = teams.find(x => (AB[x.team.abbreviation] || x.team.abbreviation) === ab); return t ? Object.fromEntries((t.statistics || []).map(x => [x.name, x.displayValue])) : {}; };
+  const sv = statsDe(g.visita.ab), sl = statsDe(g.local.ab), num = x => parseFloat(String(x || '0').replace(':', '.')) || 0;
+  const filas = [['totalYards', 'Yardas totales'], ['netPassingYards', 'Yardas por pase'], ['rushingYards', 'Yardas por tierra'], ['firstDowns', 'Primeros downs'], ['thirdDownEff', 'Tercera oportunidad'], ['turnovers', 'Pérdidas de balón'], ['possessionTime', 'Posesión'], ['totalPenaltiesYards', 'Castigos']].filter(([k]) => sv[k] != null || sl[k] != null);
+  const statsHTML = filas.length ? `<div class="card"><h3>Equipos</h3><div class="tstats">${filas.map(([k, t]) => { const a = num(sv[k]), b = num(sl[k]), tot = a + b || 1, mejorA = k === 'turnovers' || k === 'totalPenaltiesYards' ? a < b : a > b;
+    return `<div class="tsr"><b class="${mejorA ? 'w' : ''}">${esc(sv[k] ?? '–')}</b><span><small>${t}</small><i style="--a:${Math.round(a / tot * 100)}%;--cv:${col(g.visita.ab)[0]};--cl:${col(g.local.ab)[0]}"></i></span><b class="${!mejorA && a !== b ? 'w' : ''}">${esc(sl[k] ?? '–')}</b></div>`; }).join('')}</div></div>` : '';
+  const anot = (s.scoringPlays || []).slice().reverse().map(p => `<div class="sp">${helmet(AB[p.team && p.team.abbreviation] || (p.team && p.team.abbreviation), '', 26)}<span><small>${p.period && p.period.number ? 'Q' + p.period.number : ''} ${esc((p.clock && p.clock.displayValue) || '')} · ${esc(p.scoringType && p.scoringType.displayName || '')}</small>${esc(p.text || '')}</span><b class="n">${p.awayScore}-${p.homeScore}</b></div>`).join('');
+  const pc = (s.pickcenter || [])[0];
+  const linea = pc && (pc.details || pc.overUnder) ? `<div class="card linea-mini"><h3>La línea antes del partido</h3><p>${pc.details ? `<b>${esc(pc.details)}</b>` : ''}${pc.overUnder ? ` · O/U <b>${esc(pc.overUnder)}</b>` : ''}${pc.provider && pc.provider.name ? ` <small>${esc(pc.provider.name)}</small>` : ''}</p></div>` : '';
+  const gb = $('#gsum'); if (gb) gb.innerHTML = `<section class="block grid g2" style="padding-top:22px">${anot ? `<div class="card"><h3>Anotaciones</h3><div class="splist">${anot}</div></div>` : ''}${statsHTML}${linea}</section>`;
+}
+// Mientras el partido está en vivo, todo se vuelve a pedir solo cada 15 segundos (sin recargar la página)
+function vigilaPartido(id) {
+  clearTimeout(_vivoT);
+  _vivoT = setTimeout(() => {
+    if (location.hash.split('?')[0] !== '#/partido/' + id) return;
+    const g = G.find(x => x.id === id); if (!g || g.estado === 'pre') return;
+    const h = $('#g-hero'); if (h) h.innerHTML = heroPartido(g);
+    detallePartido(g).then(() => { if (g.estado === 'in') vigilaPartido(id); });
+  }, 15000);
 }
 function refrescaVista() {
   if (/^#\/lideres/.test(location.hash) && G.some(g => g.estado === 'in')) cargaVivo(semActual());
@@ -1088,6 +1209,8 @@ function menu(on, quieto) {
   if (on) { const a = L.querySelector('a.act') || L.querySelector('a[href]'); a && a.focus({ preventScroll: true }); } else if (!quieto && b) b.focus();
 }
 // El menú funciona desde el primer momento, aunque los datos sigan cargando
+document.addEventListener('click', e => { const t = e.target.closest && e.target.closest('[data-lt]'); if (!t) return; const lg = $('.live-grid'); if (lg) { lg.classList.toggle('ver-fx', t.dataset.lt === 'fx'); lg.classList.toggle('ver-pbp', t.dataset.lt === 'pbp'); } document.querySelectorAll('[data-lt]').forEach(b => b.classList.toggle('on', b === t)); });
+document.addEventListener('click', e => { const f = e.target.closest && e.target.closest('[data-fxf]'); if (f) { FXFILTRO = f.dataset.fxf; document.querySelectorAll('.fxl-list .fxr').forEach(r => { r.hidden = FXFILTRO !== 'todos' && r.dataset.eq !== FXFILTRO; }); document.querySelectorAll('[data-fxf]').forEach(b => b.classList.toggle('on', b === f)); } });
 document.addEventListener('click', e => { const t = e.target.closest && e.target.closest('#menu-btn,#menu-x,#menu-bg'); if (t) { e.preventDefault(); menu(t.id === 'menu-btn'); } });
 addEventListener('hashchange', () => { const L = $('.links'); if (L && L.classList.contains('open')) menu(false, true); });
 let _rutaPrev = null;
