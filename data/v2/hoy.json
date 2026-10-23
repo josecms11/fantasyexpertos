@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-23T13:46:46.673Z",
-  "ultimaIA": "2026-10-23T12:25:28.579Z",
+  "actualizado": "2026-10-23T14:22:19.783Z",
+  "ultimaIA": "2026-10-23T14:22:19.783Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,76 +13,21 @@
   ],
   "noticias": [
     {
-      "id": "n20261023122500",
-      "fecha": "2026-10-23T12:25:28.579Z",
+      "id": "n20261023142204",
+      "fecha": "2026-10-23T14:22:19.783Z",
       "semana": 7,
-      "titulo": "Baker Mayfield regresa para salvar a Tampa Bay",
+      "titulo": "Walker Little asume protección clave en Jacksonville",
       "claves": [
-        "El mariscal de campo apunta a iniciar contra Panthers.",
-        "Deja atrás sus molestias físicas en el pulgar.",
-        "Busca enderezar el rumbo de la ofensiva buccaneer."
+        "Walker Little titular por baja de Anton Harrison",
+        "Toma la responsabilidad del lado ciego de Lawrence",
+        "Clave para estabilizar la línea ofensiva"
       ],
-      "contexto": "Tras superar sus problemas físicos en el pulgar, Baker Mayfield apunta a regresar a los controles de los Buccaneers para enfrentar a los Panthers. La ofensiva de Tampa Bay urgía de estabilidad ante el pobre momento que atraviesan, por lo que su presencia bajo el centro representa el inminente golpe anímico y estratégico que tanto pedía el equipo.",
-      "fantasy": "Mete a Mayfield en tus alineaciones como una sólida opción de QB1 bajo formatos estandar de fantasy y ligas profundas. Su regreso levanta de inmediato el piso competitivo de la ofensiva, beneficiando a todos los receptores disponibles que sigan sanos en el roster de los Bucaneros.",
-      "equipo_impacto": "La ofensiva recupera la brújula y el liderazgo que se perdieron durante su ausencia, aliviando la presión sobre el resto de las piezas estelares.",
-      "accion": "Activa a Mayfield en tu alineación titular sin dudar.",
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "TB",
-      "equipos": [
-        "TB",
-        "CAR",
-        "NYG"
-      ],
-      "jugadores": [
-        "4892",
-        "12481"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261023122505",
-      "fecha": "2026-10-23T12:25:28.579Z",
-      "semana": 7,
-      "titulo": "Aaron Rodgers comanda con experiencia a los Acereros",
-      "claves": [
-        "El veterano mariscal encabeza el viaje rumbo a París.",
-        "Mantiene un ritmo operativo sumamente eficiente.",
-        "Aporta estabilidad absoluta al esquema ofensivo."
-      ],
-      "contexto": "En medio del contexto internacional rumbo al histórico encuentro en el estadio de Francia, el mariscal Aaron Rodgers se mantiene enfocado en guiar a su escuadra manteniendo una sólida ejecución bajo el centro y minimizando los errores tácticos.",
-      "fantasy": "Considéralo como un comodín muy interesante para ligas Superflex o como parche de emergencia de alta seguridad. Su veterana lectura de defensivas le garantiza un piso aceptable de puntos en fantasy.",
-      "equipo_impacto": "Ordena el tempo de las series ofensivas y reduce drásticamente las entregas de balón innecesarias.",
-      "accion": "Utilízalo como opción viable si buscas un mariscal confiable.",
+      "contexto": "Tras confirmarse la baja por el resto de la temporada del tackle izquierdo titular Anton Harrison debido a una ruptura de ligamento cruzado anterior, el equipo de los Jaguars recurre a Walker Little para custodiar el punto ciego del mariscal de campo.",
+      "fantasy": "Su inserción como titular afecta ligeramente la protección general del sistema ofensivo, reduciendo la seguridad para el juego aéreo profundo en ligas fantasy profundas.",
+      "equipo_impacto": "La línea ofensiva sufre una baja sensible de talento, obligando al cuerpo técnico a ajustar los tiempos de liberación de balón del pasador.",
+      "accion": "Vigila su desempeño antes de confiar ciegamente en las armas ofensivas de Jacksonville.",
       "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "PIT",
-      "equipos": [
-        "PIT",
-        "NO"
-      ],
-      "jugadores": [
-        "96",
-        "4035"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261023122507",
-      "fecha": "2026-10-23T12:25:28.579Z",
-      "semana": 7,
-      "titulo": "Anton Harrison dice adiós a la temporada",
-      "claves": [
-        "Sufrió rotura de ligamento en la rodilla derecha.",
-        "Requerirá cirugía mayor que lo aparta de los emparrillados.",
-        "La línea de los Jaguars sufre una baja irreparable."
-      ],
-      "contexto": "Los Jaguars recibieron un devastador golpe institucional después de confirmarse que el tackle izquierdo titular Anton Harrison se perderá el resto de la campaña tras revelarse una rotura de ligamento cruzado anterior en su rodilla derecha.",
-      "fantasy": "Degrada drásticamente la confianza en el juego terrestre y las coberturas de protección para los mariscales de Jacksonville. Evita arriesgar con piezas periféricas de esta ofensiva ante la inestabilidad que sufrirá la línea.",
-      "equipo_impacto": "Descompensa por completo la estructura de bloqueo titular, obligando a parches urgentes en la trinchera.",
-      "accion": "Rebaja las expectativas de todo el ataque terrestre de Jacksonville.",
-      "etiqueta": "TENDENCIA",
-      "impacto": "BAJA",
+      "impacto": "NEUTRO",
       "equipo": "JAX",
       "equipos": [
         "JAX"
@@ -308,9 +253,9 @@
     "8154"
   ],
   "duelo": {
-    "a": "CeeDee Lamb",
-    "b": "Nico Collins",
-    "veredicto": "Arranca a CeeDee Lamb por su indiscutible volumen de targets semanales y un techo de puntos mucho más seguro en ligas PPR."
+    "a": "Jahmyr Gibbs",
+    "b": "Christian McCaffrey",
+    "veredicto": "Arranca a Jahmyr Gibbs por su explosividad inigualable en el sistema ofensivo de Detroit y su alto piso de producción en PPR."
   },
   "fuentes": [
     "Sleeper",
