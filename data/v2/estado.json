@@ -1,10 +1,22 @@
 {
-  "fecha": "2026-10-23T16:15:31.611Z",
+  "fecha": "2026-10-23T17:00:00.750Z",
   "log": [
     "[0.0s] Inicio",
     "[0.3s] YouTube: 15 nuevos, 17 en total",
-    "[1.0s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[2.4s] ESPN: lesiones 799 · noticias 50",
-    "[3.3s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 216 · semana de juego 7 · IA usada hoy 9/40"
+    "[1.4s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[3.1s] ESPN: lesiones 799 · noticias 50",
+    "[3.8s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[303.8s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
+    "[330.4s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
+    "[337.8s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
+    "[382.0s] IA OK con gemini-3.5-flash",
+    "[382.0s] Descartada: Drake Maye consolida su valor como QB1 → duplicada",
+    "[382.0s] Descartada: Kenneth Walker III encabeza el ataque terrestre → duplicada",
+    "[382.0s] Descartada: Jaylen Waddle mantiene su potencial en Denver → duplicada",
+    "[382.0s] Descartada: Lamar Jackson entrena con etiqueta de cuestionable → duplicada",
+    "[382.0s] Noticias nuevas verificadas: 4",
+    "[512.8s] IA OK con gemini-3.8-flash",
+    "[512.8s] Resumen semana 7",
+    "[512.8s] Listo: 4 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 220 · semana de juego 7 · IA usada hoy 11/40"
   ]
 }

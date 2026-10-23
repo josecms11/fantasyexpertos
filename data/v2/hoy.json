@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-23T16:15:30.799Z",
-  "ultimaIA": "2026-10-23T14:22:19.783Z",
+  "actualizado": "2026-10-23T16:51:31.111Z",
+  "ultimaIA": "2026-10-23T16:51:31.111Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,26 +13,105 @@
   ],
   "noticias": [
     {
-      "id": "n20261023142204",
-      "fecha": "2026-10-23T14:22:19.783Z",
+      "id": "n20261023165100",
+      "fecha": "2026-10-23T16:51:31.111Z",
       "semana": 7,
-      "titulo": "Walker Little asume protección clave en Jacksonville",
+      "titulo": "Adonai Mitchell reaparece tras superar su lesión",
       "claves": [
-        "Walker Little titular por baja de Anton Harrison",
-        "Toma la responsabilidad del lado ciego de Lawrence",
-        "Clave para estabilizar la línea ofensiva"
+        "Practicó toda la semana sin contratiempos",
+        "Regresa a la alineación contra Dolphins",
+        "Opción atractiva para reforzar el receptor"
       ],
-      "contexto": "Tras confirmarse la baja por el resto de la temporada del tackle izquierdo titular Anton Harrison debido a una ruptura de ligamento cruzado anterior, el equipo de los Jaguars recurre a Walker Little para custodiar el punto ciego del mariscal de campo.",
-      "fantasy": "Su inserción como titular afecta ligeramente la protección general del sistema ofensivo, reduciendo la seguridad para el juego aéreo profundo en ligas fantasy profundas.",
-      "equipo_impacto": "La línea ofensiva sufre una baja sensible de talento, obligando al cuerpo técnico a ajustar los tiempos de liberación de balón del pasador.",
-      "accion": "Vigila su desempeño antes de confiar ciegamente en las armas ofensivas de Jacksonville.",
+      "contexto": "El receptor de los Jets, Adonai Mitchell, está listo para volver al terreno de juego frente a Miami después de perderse cuatro encuentros debido a una lesión en el dedo que requirió procedimiento quirúrgico. Tras completar entrenamientos al parejo toda la semana, el receptor de Nueva York recibe luz verde para incorporarse a las rutas ofensivas. Su retorno le brinda a la escuadra neoyorquina un elemento dinámico de profundidad.",
+      "fantasy": "Para fines de fantasy, Mitchell representa un reclamo prioritario en la agencia libre para ligas profundas o formatos PPR. Aunque su estatus oficial marca cuestionable, su participación entrenando augura minutos en campo. No es un titular inmediato para este fin de semana, pero acumularlo en tu banca antes de que explote en volumen es una jugada estratégica altamente recomendable si buscas profundidad en la posición de receptor.",
+      "equipo_impacto": "Su incorporación alinea más opciones para la ofensiva aérea de los Jets, restando algunos objetivos a los receptores secundarios, pero manteniendo el ataque más equilibrado y peligroso.",
+      "accion": "Ve a la agencia libre y agrégalo a tu banca antes del inicio de los partidos.",
       "etiqueta": "WAIVER",
-      "impacto": "NEUTRO",
-      "equipo": "JAX",
+      "impacto": "SUBE",
+      "equipo": "NYJ",
       "equipos": [
-        "JAX"
+        "NYJ",
+        "MIA"
       ],
-      "jugadores": [],
+      "jugadores": [
+        "11625"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261023165101",
+      "fecha": "2026-10-23T16:51:31.111Z",
+      "semana": 7,
+      "titulo": "A.J. Brown defrauda las expectativas en fantasy",
+      "claves": [
+        "Rendimiento muy por debajo del costo",
+        "Inconsistencia severa en el volumen aéreo",
+        "Riesgo alto para iniciar esta semana"
+      ],
+      "contexto": "La temporada de A.J. Brown ha tomado un rumbo preocupante para Philadelphia. El estelar receptor no ha logrado la efectividad esperada en el esquema ofensivo, convirtiéndose en una de las mayores decepciones del año en fantasy football. Con problemas para generar separación constante y un volumen de pases divididos en la ofensiva de Eagles, su producción se ha desplomado dramáticamente en los recientes compromisos disputados.",
+      "fantasy": "Si tienes opciones sólidas en la banca, considera sentar a Brown esta semana en ligas de formato estándar o PPR. Aunque su talento es indiscutible, su piso semanal ha caído a niveles alarmantes. Evalúa colocarlo como receptor tres o Flex únicamente si no cuentas con alternativas de alto volumen. No intentes venderlo al alza en este instante; su valor de traspaso está en su punto más bajo.",
+      "equipo_impacto": "Su baja participación satura de responsabilidad al resto de las armas aéreas de los Eagles, obligando al ataque a depender más de las alas cerradas y el juego terrestre para mover las cadenas.",
+      "accion": "Si tienes mejores opciones en la banca, sienta a A.J. Brown hasta ver consistencia.",
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "PHI",
+      "equipos": [
+        "PHI",
+        "NE"
+      ],
+      "jugadores": [
+        "5859"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261023165104",
+      "fecha": "2026-10-23T16:51:31.111Z",
+      "semana": 7,
+      "titulo": "Emeka Egbuka genera dudas en Tampa Bay",
+      "claves": [
+        "Estatus dudoso por protocolo de conmoción",
+        "Riesgo extremo para la alineación titular",
+        "Recomendación clara de dejar en banca"
+      ],
+      "contexto": "La participación de Emeka Egbuka para el encuentro de esta semana está seriamente comprometida. El receptor de Tampa Bay aparece catalogado como dudoso debido a un cuadro de conmoción cerebral que le ha impedido entrenar con normalidad. Ante la incertidumbre sobre su avance en el protocolo médico de la liga, la directiva y el cuerpo técnico se muestran cautelosos respecto a arriesgar su integridad física de inmediato.",
+      "fantasy": "Para fines de fantasy football, un jugador con etiqueta de dudoso es prácticamente un descarte automático. Sentarte a esperar su evolución hasta el día del juego te expondrá a quedarte con un cero en tu alineación. Es momento de mandarlo a la banca tanto en ligas PPR como en estándar, buscando un reemplazo seguro en la agencia libre o en tus reservas de inmediato.",
+      "equipo_impacto": "La ausencia probable de Egbuka redistribuirá los pases aéreos hacia los demás receptores y alas cerradas de los Buccaneers, exigiendo mayor carga a las opciones secundarias del equipo.",
+      "accion": "Deja a Emeka Egbuka en el banquillo y busca un reemplazo garantizado.",
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "TB",
+      "equipos": [
+        "TB"
+      ],
+      "jugadores": [
+        "12514"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261023165106",
+      "fecha": "2026-10-23T16:51:31.111Z",
+      "semana": 7,
+      "titulo": "Anthony Richardson afronta problemas fuera del campo",
+      "claves": [
+        "Enfrenta cargo menor por posesión",
+        "Incertidumbre en la organización de Colts",
+        "Riesgo extra para su valor fantasy"
+      ],
+      "contexto": "El mariscal de campo de los Colts, Anthony Richardson Sr., enfrenta un cargo menor por posesión de marihuana derivado de una detención de tránsito previa. Las autoridades locales emitieron la citación correspondiente tras inspeccionar su vehículo. Este acontecimiento extra cancha suma una capa adicional de tensión a la temporada del mariscal, mientras la organización de Indianápolis analiza la situación legal y disciplinaria del jugador.",
+      "fantasy": "Este problema fuera del emparrillado enturbia el panorama de Richardson en fantasy. Aunque su impacto inmediato en campo depende del proceso interno de la NFL y del equipo, su valor de intercambio sufre una devaluación drástica. En ligas de un solo QB o de dinastía, lo ideal es cautelar su posición en la banca y evitar alinearlo hasta tener absoluta claridad sobre posibles sanciones.",
+      "equipo_impacto": "La situación genera distracciones dentro del vestidor de Indianápolis, abriendo dudas sobre la estabilidad bajo el centro y obligando al equipo a preparar sus variantes de respaldo.",
+      "accion": "Mantén a Anthony Richardson en la banca a la espera de noticias oficiales.",
+      "etiqueta": "TENDENCIA",
+      "impacto": "BAJA",
+      "equipo": "IND",
+      "equipos": [
+        "IND"
+      ],
+      "jugadores": [
+        "9229"
+      ],
       "menciona": []
     }
   ],
@@ -63,10 +142,6 @@
     },
     {
       "id": "2216",
-      "estatus": "Duda"
-    },
-    {
-      "id": "4892",
       "estatus": "Duda"
     },
     {
@@ -196,6 +271,10 @@
     {
       "id": "12509",
       "estatus": "Fuera"
+    },
+    {
+      "id": "12469",
+      "estatus": "Fuera"
     }
   ],
   "agregados": [
@@ -204,8 +283,8 @@
     "3271",
     "6650",
     "13424",
-    "CLE",
     "11539",
+    "CLE",
     "9482",
     "8122",
     "9758",
@@ -219,8 +298,8 @@
     "11563",
     "10213",
     "9756",
-    "NYJ",
     "9230",
+    "NYJ",
     "2197",
     "96",
     "5045"
@@ -237,25 +316,25 @@
     "8121",
     "9480",
     "11439",
-    "6904",
     "10235",
+    "6904",
     "7042",
     "2505",
     "7528",
-    "IND",
     "1166",
-    "11637",
+    "IND",
     "3321",
+    "11637",
     "650",
     "3271",
-    "7567",
     "12533",
+    "7567",
     "8154"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
-    "b": "Christian McCaffrey",
-    "veredicto": "Arranca a Jahmyr Gibbs por su explosividad inigualable en el sistema ofensivo de Detroit y su alto piso de producción en PPR."
+    "b": "Bijan Robinson",
+    "veredicto": "Arranca a Jahmyr Gibbs. Presenta la proyección PPR más alta de la semana (25.5 puntos) en una ofensiva altamente explosiva. Bijan Robinson es excelente opción, pero el volumen receptivo de Gibbs le otorga un techo superior."
   },
   "fuentes": [
     "Sleeper",
