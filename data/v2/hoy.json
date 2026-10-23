@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-23T07:29:01.328Z",
-  "ultimaIA": "2026-10-23T05:35:45.480Z",
+  "actualizado": "2026-10-23T08:08:06.634Z",
+  "ultimaIA": "2026-10-23T08:08:06.634Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,80 +13,29 @@
   ],
   "noticias": [
     {
-      "id": "n20261023053500",
-      "fecha": "2026-10-23T05:35:45.480Z",
+      "id": "n20261023080801",
+      "fecha": "2026-10-23T08:08:06.634Z",
       "semana": 7,
-      "titulo": "Cole Kmet abandona en camilla por grave lesión",
+      "titulo": "Tanner McKee asume la titularidad ante Dallas",
       "claves": [
-        "Salió en camilla por lesión en la rodilla derecha.",
-        "Ocurrió durante el último cuarto ante los Patriots.",
-        "Baja sensible para el juego aéreo de Chicago."
+        "Jalen Hurts fue enviado a la lista de reservas lesionados.",
+        "McKee debuta como titular en un hostil Monday Night Football.",
+        "Debe permanecer en la banca en prácticamente cualquier formato."
       ],
-      "contexto": "Durante el triunfo de Chicago 30-24 frente a New England en Jueves por la Noche, Cole Kmet tuvo que abandonar el emparrillado en el último cuarto tras sufrir una lesión en la rodilla derecha. El ala cerrada no pudo salir por su propio pie y requirió el carrito de asistencias, encendiendo de inmediato las alarmas en el cuerpo médico del equipo tras un partido que dominaron pero terminó apretado.",
-      "fantasy": "Kmet venía siendo una válvula de seguridad confiable en ligas de doce o más equipos dentro del formato PPR. Si se confirma una ausencia prolongada, su valor cae drásticamente y no puedes mantenerlo activo en tu alineación de la semana entrante. Abre la puerta para explorar el mercado de alas cerradas libres o buscar alternativas emergentes en el alambre ante la sequía de opciones en la posición.",
-      "equipo_impacto": "El esquema aéreo de Caleb Williams pierde un objetivo clave en zona roja e intermedias. Chicago deberá apoyarse aún más en sus receptores abiertos para mover las cadenas en situaciones de tercer down.",
-      "accion": "Envía a Kmet a la banca o reserva de lesionados y busca un reemplazo de emergencia en waivers.",
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "CHI",
-      "equipos": [
-        "CHI",
-        "NE"
-      ],
-      "jugadores": [
-        "6826"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261023053501",
-      "fecha": "2026-10-23T05:35:45.480Z",
-      "semana": 7,
-      "titulo": "George Pickens genera serias dudas con los Cowboys",
-      "claves": [
-        "Brian Schottenheimer lanzó un reto directo a Pickens.",
-        "Dallas marcha con récord negativo de dos y cuatro.",
-        "Aparece listado como cuestionable por golpe en hombro."
-      ],
-      "contexto": "La ofensiva de Dallas atraviesa un momento tenso con marca de 2-4 y el coordinador Brian Schottenheimer reconoció públicamente que debe ajustar tuercas, lanzando un claro desafío a George Pickens. Por si fuera poco, el receptor estelar figura como cuestionable en los reportes debido a una molestia en el hombro, sumando incertidumbre en medio de crecientes rumores de mercado que rodean al equipo antes de medirse a los Eagles.",
-      "fantasy": "Pickens proyecta 17.4 puntos PPR en los papeles, pero su estatus físico cuestionable y el contexto ofensivo inconsistente lo convierten en un peligro inminente. En ligas estándar y formatos PPR de diez o doce escuadras, conviene mandarlo a la banca como receptor tres o flex. Enfrentar una dura rivalidad divisional mermado fisicamente limita enormemente su techo de producción y eleva su suelo a números decepcionantes.",
-      "equipo_impacto": "Con la presión sobre el cuerpo técnico texano, el ataque aéreo luce titubeante. Si Pickens no está al cien, CeeDee Lamb absorberá el volumen mientras Dallas busca dinamismo terrestre.",
-      "accion": "Si cuentas con alternativas saludables de WR2, sienta a Pickens este fin de semana.",
+      "contexto": "El panorama en Filadelfia dio un giro dramático tras confirmarse que Jalen Hurts aterrizó en la lista de reservas lesionados por dolencias en la pantorrilla. Tanner McKee, quien pasó dos campañas como uno de los suplentes jóvenes más reconocidos de la liga, tendrá la responsabilidad de comandar la ofensiva de los Eagles este lunes por la noche frente a los Dallas Cowboys.",
+      "fantasy": "El cambio desploma las expectativas de pase en Filadelfia; McKee no tiene valor confiable en ligas de un solo mariscal y apenas rasca relevancia marginal en Superflex muy profundas. Su inexperiencia reduce la eficiencia anotadora de la ofensiva aérea, por lo que debes mandarlo a la banca sin dudar, buscando alternativas más seguras en el alambre de agentes libres para la semana siete.",
+      "equipo_impacto": "La ofensiva pierde movilidad sin Hurts, forzando a Filadelfia a apoyarse más en jugadas terrestres conservadoras y pases cortos, lo que limita los avances explosivos contra la defensiva de Dallas.",
+      "accion": "Envía a Tanner McKee directo a la banca de tu plantilla de Fantasy.",
       "etiqueta": "SIT",
       "impacto": "BAJA",
-      "equipo": "DAL",
+      "equipo": "PHI",
       "equipos": [
-        "DAL",
-        "PHI"
+        "PHI",
+        "DAL"
       ],
       "jugadores": [
-        "8137"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261023053506",
-      "fecha": "2026-10-23T05:35:45.480Z",
-      "semana": 7,
-      "titulo": "Alvin Kamara presenta dudas ante duelo en París",
-      "claves": [
-        "Aparece como cuestionable por un problema de espalda.",
-        "Los Saints se miden a Steelers en París.",
-        "Riesgo elevado frente a una defensiva muy física."
-      ],
-      "contexto": "Los New Orleans Saints viajaron a Francia para un histórico partido en el Stade de France ante los Pittsburgh Steelers, pero Alvin Kamara llega con incertidumbre física tras ser reportado como cuestionable debido a molestias en la espalda. Aunque el corredor expresó su entusiasmo por formar parte del evento internacional, el desgaste del viaje y el contacto ante una defensiva agresiva generan serias dudas sobre su carga.",
-      "fantasy": "Kamara suele ser un activo incuestionable, pero esta semana representa un riesgo significativo de sentar en ligas estándar y formatos PPR poco profundos. Los Steelers presumen la octava mejor defensiva en proyecciones con 8.1 puntos y castigan severamente a los corredores mermados. Si tienes opciones saludables con volumen asegurado, considerar a Kamara como un flex condicionado o dejarlo descansar es una estrategia prudente.",
-      "equipo_impacto": "Si Kamara ve acción limitada por los dolores lumbares, New Orleans se verá forzado a recargar el volumen de juego aéreo en sus alas cerradas y receptores alternativos en territorio europeo.",
-      "accion": "Evalúa seriamente sentar a Kamara si dispones de un corredor sano con volumen similar.",
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "NO",
-      "equipos": [
-        "NO",
-        "PIT"
-      ],
-      "jugadores": [
-        "4035"
+        "9230",
+        "6904"
       ],
       "menciona": []
     }
@@ -266,8 +215,8 @@
     "9758",
     "1433",
     "5849",
-    "13276",
     "8132",
+    "13276",
     "8135",
     "11610",
     "11563",
@@ -278,7 +227,7 @@
     "9230",
     "2197",
     "96",
-    "5045"
+    "6083"
   ],
   "soltados": [
     "11581",
@@ -308,9 +257,9 @@
     "8154"
   ],
   "duelo": {
-    "a": "Amon-Ra St. Brown",
-    "b": "Ja'Marr Chase",
-    "veredicto": "Arranca a Amon-Ra St. Brown. Con una proyección de 19.5 puntos frente a 18.9 de Chase, su volumen habitual en el duelo divisional de Detroit ante Green Bay le otorga mayor certeza semanal."
+    "a": "Jahmyr Gibbs",
+    "b": "Christian McCaffrey",
+    "veredicto": "Arranca a Jahmyr Gibbs sobre Christian McCaffrey. Gibbs ostenta la proyección más alta de toda la liga (25.5 puntos PPR) y enfrenta una contienda divisional clave, dándole un techo anotador superior esta semana."
   },
   "fuentes": [
     "Sleeper",
