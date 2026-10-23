@@ -1,10 +1,13 @@
 {
-  "fecha": "2026-10-22T23:59:27.646Z",
+  "fecha": "2026-10-23T00:39:24.551Z",
   "log": [
     "[0.0s] Inicio",
     "[0.1s] YouTube: 0 nuevos, 16 en total",
     "[0.8s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[2.7s] ESPN: lesiones 799 · noticias 50",
-    "[3.5s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 205 · semana de juego 7 · IA usada hoy 13/40"
+    "[2.6s] ESPN: lesiones 799 · noticias 50",
+    "[3.8s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[267.1s] IA OK con gemini-3.8-flash",
+    "[267.1s] Resumen semana 7",
+    "[267.1s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 205 · semana de juego 7 · IA usada hoy 1/40"
   ]
 }
