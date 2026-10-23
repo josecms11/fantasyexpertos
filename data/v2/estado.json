@@ -1,22 +1,10 @@
 {
-  "fecha": "2026-10-23T12:31:21.726Z",
+  "fecha": "2026-10-23T13:09:34.221Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 15 nuevos, 17 en total",
-    "[0.9s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[2.2s] ESPN: lesiones 799 · noticias 50",
-    "[2.8s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[302.8s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
-    "[319.5s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[333.3s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[339.9s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
-    "[354.5s] IA OK con gemini-3.5-flash-lite",
-    "[354.5s] Descartada: Zach Charbonnet regresa y complica backfield de Seattle → duplicada",
-    "[354.5s] Descartada: C.J. Stroud asume jerarquía total en Houston → duplicada",
-    "[354.5s] Descartada: Tanner McKee lidera a Eagles ante Dallas → duplicada",
-    "[354.5s] Descartada: Josh Simmons directo a la enfermería de Kansas City → duplicada",
-    "[354.5s] Descartada: Cole Kmet enciende alarmas tras grave lesión → duplicada",
-    "[354.5s] Noticias nuevas verificadas: 3",
-    "[355.4s] Listo: 3 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 215 · semana de juego 7 · IA usada hoy 8/40"
+    "[0.8s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[3.0s] ESPN: lesiones 799 · noticias 50",
+    "[3.7s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 215 · semana de juego 7 · IA usada hoy 8/40"
   ]
 }
