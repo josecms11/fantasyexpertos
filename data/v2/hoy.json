@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-23T05:07:28.710Z",
-  "ultimaIA": "2026-10-23T03:21:14.406Z",
+  "actualizado": "2026-10-23T05:35:45.480Z",
+  "ultimaIA": "2026-10-23T05:35:45.480Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,29 +13,80 @@
   ],
   "noticias": [
     {
-      "id": "n20261023032102",
-      "fecha": "2026-10-23T03:21:14.406Z",
+      "id": "n20261023053500",
+      "fecha": "2026-10-23T05:35:45.480Z",
       "semana": 7,
-      "titulo": "Zach Charbonnet regresa con Seattle",
+      "titulo": "Cole Kmet abandona en camilla por grave lesión",
       "claves": [
-        "Activado oficialmente de la lista PUP",
-        "Suma prácticas completas consecutivas",
-        "Listo para enfrentar a los Seahawks"
+        "Salió en camilla por lesión en la rodilla derecha.",
+        "Ocurrió durante el último cuarto ante los Patriots.",
+        "Baja sensible para el juego aéreo de Chicago."
       ],
-      "contexto": "El corredor Zach Charbonnet ha sido activado de la lista de incapacitados y ya forma parte del roster de 53 jugadores de los Seattle Seahawks tras completar dos sesiones de práctica consecutivas sin limitaciones. Después de registrar una campaña previa muy productiva con 12 anotaciones, su regreso aporta profundidad inmediata al backfield.",
-      "fantasy": "Mike Clay y los expertos de fantasy ubican a Zach Charbonnet como una interesante opción de flex para la semana siete. Aunque su carga de trabajo inicial podría dosificarse, su historial anotador lo convierte en una apuesta intrigante para alinear en ligas competitivas.",
-      "equipo_impacto": "Su incorporación diversifica las alternativas terrestres de Seattle, obligando a los rivales a modificar sus esquemas defensivos en la zona roja.",
-      "accion": "Valóralo como tu opción flexible si buscas upside en tu alineación.",
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "SEA",
+      "contexto": "Durante el triunfo de Chicago 30-24 frente a New England en Jueves por la Noche, Cole Kmet tuvo que abandonar el emparrillado en el último cuarto tras sufrir una lesión en la rodilla derecha. El ala cerrada no pudo salir por su propio pie y requirió el carrito de asistencias, encendiendo de inmediato las alarmas en el cuerpo médico del equipo tras un partido que dominaron pero terminó apretado.",
+      "fantasy": "Kmet venía siendo una válvula de seguridad confiable en ligas de doce o más equipos dentro del formato PPR. Si se confirma una ausencia prolongada, su valor cae drásticamente y no puedes mantenerlo activo en tu alineación de la semana entrante. Abre la puerta para explorar el mercado de alas cerradas libres o buscar alternativas emergentes en el alambre ante la sequía de opciones en la posición.",
+      "equipo_impacto": "El esquema aéreo de Caleb Williams pierde un objetivo clave en zona roja e intermedias. Chicago deberá apoyarse aún más en sus receptores abiertos para mover las cadenas en situaciones de tercer down.",
+      "accion": "Envía a Kmet a la banca o reserva de lesionados y busca un reemplazo de emergencia en waivers.",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "CHI",
       "equipos": [
-        "SEA",
-        "KC"
+        "CHI",
+        "NE"
       ],
       "jugadores": [
-        "9753",
-        "8151"
+        "6826"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261023053501",
+      "fecha": "2026-10-23T05:35:45.480Z",
+      "semana": 7,
+      "titulo": "George Pickens genera serias dudas con los Cowboys",
+      "claves": [
+        "Brian Schottenheimer lanzó un reto directo a Pickens.",
+        "Dallas marcha con récord negativo de dos y cuatro.",
+        "Aparece listado como cuestionable por golpe en hombro."
+      ],
+      "contexto": "La ofensiva de Dallas atraviesa un momento tenso con marca de 2-4 y el coordinador Brian Schottenheimer reconoció públicamente que debe ajustar tuercas, lanzando un claro desafío a George Pickens. Por si fuera poco, el receptor estelar figura como cuestionable en los reportes debido a una molestia en el hombro, sumando incertidumbre en medio de crecientes rumores de mercado que rodean al equipo antes de medirse a los Eagles.",
+      "fantasy": "Pickens proyecta 17.4 puntos PPR en los papeles, pero su estatus físico cuestionable y el contexto ofensivo inconsistente lo convierten en un peligro inminente. En ligas estándar y formatos PPR de diez o doce escuadras, conviene mandarlo a la banca como receptor tres o flex. Enfrentar una dura rivalidad divisional mermado fisicamente limita enormemente su techo de producción y eleva su suelo a números decepcionantes.",
+      "equipo_impacto": "Con la presión sobre el cuerpo técnico texano, el ataque aéreo luce titubeante. Si Pickens no está al cien, CeeDee Lamb absorberá el volumen mientras Dallas busca dinamismo terrestre.",
+      "accion": "Si cuentas con alternativas saludables de WR2, sienta a Pickens este fin de semana.",
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "DAL",
+      "equipos": [
+        "DAL",
+        "PHI"
+      ],
+      "jugadores": [
+        "8137"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261023053506",
+      "fecha": "2026-10-23T05:35:45.480Z",
+      "semana": 7,
+      "titulo": "Alvin Kamara presenta dudas ante duelo en París",
+      "claves": [
+        "Aparece como cuestionable por un problema de espalda.",
+        "Los Saints se miden a Steelers en París.",
+        "Riesgo elevado frente a una defensiva muy física."
+      ],
+      "contexto": "Los New Orleans Saints viajaron a Francia para un histórico partido en el Stade de France ante los Pittsburgh Steelers, pero Alvin Kamara llega con incertidumbre física tras ser reportado como cuestionable debido a molestias en la espalda. Aunque el corredor expresó su entusiasmo por formar parte del evento internacional, el desgaste del viaje y el contacto ante una defensiva agresiva generan serias dudas sobre su carga.",
+      "fantasy": "Kamara suele ser un activo incuestionable, pero esta semana representa un riesgo significativo de sentar en ligas estándar y formatos PPR poco profundos. Los Steelers presumen la octava mejor defensiva en proyecciones con 8.1 puntos y castigan severamente a los corredores mermados. Si tienes opciones saludables con volumen asegurado, considerar a Kamara como un flex condicionado o dejarlo descansar es una estrategia prudente.",
+      "equipo_impacto": "Si Kamara ve acción limitada por los dolores lumbares, New Orleans se verá forzado a recargar el volumen de juego aéreo en sus alas cerradas y receptores alternativos en territorio europeo.",
+      "accion": "Evalúa seriamente sentar a Kamara si dispones de un corredor sano con volumen similar.",
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "NO",
+      "equipos": [
+        "NO",
+        "PIT"
+      ],
+      "jugadores": [
+        "4035"
       ],
       "menciona": []
     }
@@ -213,15 +264,15 @@
     "8122",
     "13424",
     "9758",
-    "5849",
     "1433",
+    "5849",
     "13276",
     "8132",
     "8135",
     "11610",
     "11563",
-    "10213",
     "11783",
+    "10213",
     "NYJ",
     "9756",
     "9230",
@@ -250,16 +301,16 @@
     "1166",
     "3271",
     "11637",
-    "12533",
     "3321",
+    "12533",
     "7567",
     "8154",
     "10235"
   ],
   "duelo": {
-    "a": "Kyren Williams",
-    "b": "Jonathan Taylor",
-    "veredicto": "Arranca a Kyren Williams por su alto volumen de toucheo y proyección constante en zona roja."
+    "a": "Amon-Ra St. Brown",
+    "b": "Ja'Marr Chase",
+    "veredicto": "Arranca a Amon-Ra St. Brown. Con una proyección de 19.5 puntos frente a 18.9 de Chase, su volumen habitual en el duelo divisional de Detroit ante Green Bay le otorga mayor certeza semanal."
   },
   "fuentes": [
     "Sleeper",
