@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-23T20:34:28.472Z",
-  "ultimaIA": "2026-10-23T19:01:38.145Z",
+  "actualizado": "2026-10-23T21:05:55.073Z",
+  "ultimaIA": "2026-10-23T21:05:55.073Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,56 +13,109 @@
   ],
   "noticias": [
     {
-      "id": "n20261023190103",
-      "fecha": "2026-10-23T19:01:38.145Z",
+      "id": "n20261023210501",
+      "fecha": "2026-10-23T21:05:55.073Z",
       "semana": 7,
-      "titulo": "Caleb Douglas regresa con los Dolphins tras larga ausencia",
+      "titulo": "Cam Skattebo recupera protagonismo terrestre con los Giants",
       "claves": [
-        "Superó una lesión en el tobillo derecho que lo alejó semanas",
-        "Está listo para reaparecer este domingo frente a los Jets",
-        "Busca ganarse un lugar importante en la rotación de Miami"
+        "Skattebo regresa a la rotación tras no tener acarreos.",
+        "El cuerpo técnico de Nueva York confirmó su integración ofensiva.",
+        "Enfrenta a Houston buscando consolidar toques en el backfield."
       ],
-      "contexto": "El receptor novato de los Miami Dolphins completó su proceso de recuperación tras perderse los últimos tres encuentros por molestias físicas y se declara apto para ver acción en el emparrillado.",
-      "fantasy": "Por ahora representa una apuesta de riesgo moderado en ligas profundas o formatos de dynasty, siendo prudente evaluar su participación antes de arriesgarlo en tu alineación titular.",
-      "equipo_impacto": "Aporta profundidad al cuerpo de receptores de los Miami Dolphins en un momento clave de la temporada.",
-      "accion": "Vigílalo desde tu banca esta semana.",
+      "contexto": "Luego de ser castigado sin actividad terrestre en la semana seis, Cam Skattebo afirmó que aprendió la lección tras reflexionar sobre su situación. El entrenador de los Giants confirmó que el corredor volverá a la rotación terrestre este domingo ante los Texans. Con la reciente liberación de Najee Harris en el equipo, Skattebo tiene el camino despejado para recuperar volumen importante.",
+      "fantasy": "Skattebo sube de inmediato en ligas profundas de doce o más equipos como una opción viable en waivers. Su perfil físico le permite pelear acarreos en zona roja frente a Houston. En formatos PPR y ligas dinastía, vale la pena invertir presupuesto para asegurarlo en la banca antes de que se adueñe por completo del ataque terrestre de Nueva York.",
+      "equipo_impacto": "El regreso de Skattebo otorga balance al ataque de los Giants, quitándole peso al juego aéreo y desgastando a la frontal defensiva de los Texans con acarreos de poder entre los tacles.",
+      "accion": "Agrega a Skattebo en waivers antes de que aumente su cuota de acarreos.",
       "etiqueta": "WAIVER",
-      "impacto": "NEUTRO",
-      "equipo": "MIA",
+      "impacto": "SUBE",
+      "equipo": "NYG",
       "equipos": [
-        "MIA",
-        "NYJ"
+        "NYG",
+        "HOU"
       ],
       "jugadores": [
-        "13296",
-        "11625"
+        "12481"
       ],
       "menciona": []
     },
     {
-      "id": "n20261023190106",
-      "fecha": "2026-10-23T19:01:38.145Z",
+      "id": "n20261023210502",
+      "fecha": "2026-10-23T21:05:55.073Z",
       "semana": 7,
-      "titulo": "Jeremiyah Love ausente con los Cardinals por lesión de tobillo",
+      "titulo": "Bijan Robinson perfila festival terrestre frente a San Francisco",
       "claves": [
-        "Se perderá su segundo partido consecutivo este fin de semana",
-        "El problema en el tobillo requiere mayor tiempo de recuperación",
-        "Los Cardinals ajustan su ofensiva terrestre"
+        "Proyecta 23.8 puntos en formatos PPR durante la semana.",
+        "Robinson domina acarreos y recepciones en el esquema ofensivo.",
+        "Enfrenta una prueba clave contra la defensiva de 49ers."
       ],
-      "contexto": "El corredor novato de los Arizona Cardinals no logró superar las molestias físicas que arrastra desde hace días, quedando descartado para el duelo dominical del equipo.",
-      "fantasy": "No puede ser considerado bajo ninguna circunstancia para tu alineación de fantasy, restando opciones temporales en el backfield del equipo.",
-      "equipo_impacto": "Los Arizona Cardinals se ven obligados a delegar el peso del ataque terrestre en el resto de sus corredores disponibles.",
-      "accion": "Mantenlo completamente sentado en tu banca.",
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "ARI",
+      "contexto": "Bijan Robinson llega a la semana siete como uno de los corredores más dominantes del futbol americano colegial y profesional. La ofensiva de los Falcons se apoyará de lleno en su versatilidad para destrozar a los 49ers por tierra y aire. Con la capacidad de romper tacleadas y generar jugadas explosivas, Robinson está colocado como la segunda mejor proyección terrestre general.",
+      "fantasy": "Con 23.8 puntos proyectados en PPR, Robinson es un RB1 indiscutible en ligas tradicionales y ligas de formato diario. No existe ningún argumento para sentarlo, independientemente del rival. Su volumen garantizado de toques y su participación constante en rutas de pase le aseguran un piso muy elevado y un techo astronómico que puede definir tu enfrentamiento semanal.",
+      "equipo_impacto": "Robinson absorbe la mayor carga ofensiva de Atlanta, obligando a los linebackers de San Francisco a cerrar espacios en la caja, lo que abrirá caminos limpios para el juego de pase corto.",
+      "accion": "Mantén a Bijan en tu alineación estelar sin dudar un solo segundo.",
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "ATL",
       "equipos": [
-        "ARI",
-        "DEN"
+        "ATL",
+        "SF"
       ],
       "jugadores": [
-        "13287",
-        "11563"
+        "9509"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261023210505",
+      "fecha": "2026-10-23T21:05:55.073Z",
+      "semana": 7,
+      "titulo": "Theo Johnson en seria duda para enfrentar a Houston",
+      "claves": [
+        "Johnson figura como dudoso por una molestia en cuello.",
+        "Su participación ante Texans luce prácticamente imposible el domingo.",
+        "Los managers deben retirarlo de sus alineaciones fantasy."
+      ],
+      "contexto": "El ala cerrada de los Giants, Theo Johnson, fue catalogado como dudoso debido a una lesión de cuello para el duelo frente a Houston. Esta designación médica casi siempre se traduce en inactividad el día de juego. Nueva York llega con severas ausencias aéreas, pero confiar en un elemento limitado físicamente representa un riesgo mayúsculo que puede costarte caro en tu duelo semanal.",
+      "fantasy": "Johnson es un candidato cantado para sentar en formatos PPR y ligas dinastía. Aunque la posición de ala cerrada carece de profundidad este año, mantener a un jugador con etiqueta de dudoso equivale a regalar un cero en tu casillero. Si no cuentas con otra opción, rastrea en waivers a jugadores con proyecciones estables como Isaiah Likely o Sam LaPorta.",
+      "equipo_impacto": "La posible baja de Johnson reduce las opciones aéreas en el centro del campo para los Giants y debilita el bloqueo perimetral ante la agresiva persecución de los apoyadores de Houston.",
+      "accion": "Sienta a Johnson en todas tus ligas y asegura un sustituto sano.",
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "NYG",
+      "equipos": [
+        "NYG",
+        "HOU",
+        "DET"
+      ],
+      "jugadores": [
+        "11597",
+        "8131",
+        "10859"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261023210506",
+      "fecha": "2026-10-23T21:05:55.073Z",
+      "semana": 7,
+      "titulo": "Tyler Higbee surge como gran opción en waivers",
+      "claves": [
+        "Higbee figura entre los jugadores más agregados esta semana.",
+        "Los Rams lidian con lesiones severas en receptores clave.",
+        "Su proyección de volumen sube ante defensiva de Raiders."
+      ],
+      "contexto": "Con Terrance Ferguson y Davante Adams fuera en la lista de reservas lesionados, los Rams de Los Ángeles necesitan urgentemente alternativas por pase. Tyler Higbee ha visto un incremento notable de interés en ligas de fantasía tras figurar en la lista de los jugadores más reclamados en la agencia libre. Su veteranía y química con el sistema ofensivo le otorgan una ventaja competitiva única.",
+      "fantasy": "Higbee es una prioridad de reclamo en waivers para ligas de diez a catorce equipos que sufran por bajas en la posición de ala cerrada. En formatos PPR su valor sube considerablemente gracias a las rutas cortas y zonas rojas que suele explotar. Si perdiste a tu titular por lesión, invierte prioridad de waivers o porcentaje de presupuesto para ficharlo.",
+      "equipo_impacto": "Higbee ofrece una salida limpia para el pase rápido en Los Ángeles, aliviando la presión del rival y permitiendo abrir espacios aéreos mientras los Raiders congestionan la línea de golpeo.",
+      "accion": "Reclama a Higbee en waivers para solucionar tus problemas de ala cerrada.",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "LAR",
+      "equipos": [
+        "LAR",
+        "LV"
+      ],
+      "jugadores": [
+        "3271"
       ],
       "menciona": []
     }
@@ -86,7 +139,7 @@
     },
     {
       "id": "2216",
-      "estatus": "Duda"
+      "estatus": "Fuera"
     },
     {
       "id": "7525",
@@ -111,10 +164,6 @@
     {
       "id": "12514",
       "estatus": "Fuera"
-    },
-    {
-      "id": "8137",
-      "estatus": "Duda"
     },
     {
       "id": "12518",
@@ -157,16 +206,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "5001",
-      "estatus": "Duda"
-    },
-    {
       "id": "5927",
       "estatus": "Fuera"
     },
     {
       "id": "5892",
-      "estatus": "Duda"
+      "estatus": "Fuera"
     },
     {
       "id": "8188",
@@ -227,12 +272,20 @@
     {
       "id": "13305",
       "estatus": "Duda"
+    },
+    {
+      "id": "12492",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "7543",
+      "estatus": "Fuera"
     }
   ],
   "agregados": [
     "12718",
-    "10235",
     "3271",
+    "10235",
     "13424",
     "6650",
     "9482",
@@ -241,20 +294,20 @@
     "8122",
     "9758",
     "1433",
-    "8132",
-    "5849",
-    "11610",
     "4037",
+    "8132",
+    "11610",
+    "5849",
     "11783",
     "13276",
     "8135",
-    "10213",
     "9756",
-    "11563",
+    "10213",
     "2197",
-    "5045",
+    "11563",
     "6865",
-    "9230"
+    "5045",
+    "11435"
   ],
   "soltados": [
     "11581",
@@ -270,23 +323,23 @@
     "8121",
     "2505",
     "6904",
-    "NE",
     "8154",
     "11637",
+    "NE",
+    "3321",
     "7042",
     "1166",
-    "3321",
-    "7528",
     "12718",
-    "3271",
+    "7528",
     "12533",
-    "IND",
-    "7567"
+    "3271",
+    "7567",
+    "IND"
   ],
   "duelo": {
-    "a": "Jordan Love",
-    "b": "Bo Nix",
-    "veredicto": "Arranca a Jordan Love por su mayor solidez y proyección ofensiva frente a una defensiva complicada, dejando en la banca a Bo Nix debido a su irregularidad reciente."
+    "a": "Jahmyr Gibbs",
+    "b": "Kenneth Walker III",
+    "veredicto": "Arranca a Jahmyr Gibbs. Su proyección de 25.5 puntos PPR lidera la semana y su rol receptor con Detroit le garantiza un techo mucho más alto que el volumen tradicional de Walker."
   },
   "fuentes": [
     "Sleeper",
