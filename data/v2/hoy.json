@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-23T02:55:20.357Z",
-  "ultimaIA": "2026-10-23T01:18:41.519Z",
+  "actualizado": "2026-10-23T03:21:14.406Z",
+  "ultimaIA": "2026-10-23T03:21:14.406Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,28 +13,29 @@
   ],
   "noticias": [
     {
-      "id": "n20261023011803",
-      "fecha": "2026-10-23T01:18:41.519Z",
+      "id": "n20261023032102",
+      "fecha": "2026-10-23T03:21:14.406Z",
       "semana": 7,
-      "titulo": "David Montgomery duda seriamente para jugar ante Giants",
+      "titulo": "Zach Charbonnet regresa con Seattle",
       "claves": [
-        "Designado en reporte médico con etiqueta de dudoso",
-        "Molestia en la ingle compromete su participación dominical",
-        "Obligación absoluta de mandarlo a la banca fantasy"
+        "Activado oficialmente de la lista PUP",
+        "Suma prácticas completas consecutivas",
+        "Listo para enfrentar a los Seahawks"
       ],
-      "contexto": "Los Houston Texans encaran su duelo dominical ante los New York Giants con dudas críticas en el backfield. David Montgomery figura oficialmente como dudoso debido a una lesión en la ingle que le ha impedido trabajar al parejo del grupo. Aunque el equipo texano busca asegurar su tercer triunfo del calendario en casa, las probabilidades de ver al veterano corredor con actividad regular son prácticamente mínimas para esta séptima semana.",
-      "fantasy": "Tener la designación de doubtful reduce drásticamente las opciones de que Montgomery vea el emparrillado, y aun si se uniforma, el riesgo de limitar sus acarreos es altísimo. Debes enviarlo inmediatamente a la banca en todos los formatos estándar y PPR. Buscar alternativas de respaldo en la agencia libre o activar a corredores suplentes saludables es la única maniobra sensata para evitar un cero rotundo en tu casillero ofensivo este domingo.",
-      "equipo_impacto": "La ausencia de Montgomery reduce el poder en yardaje corto para Houston. El entrenador requerirá apoyarse más en el brazo de C.J. Stroud y en sus corredores de recambio para mover las cadenas ante Nueva York.",
-      "accion": "Sienta a Montgomery en todas tus ligas y asegura un corredor suplente de inmediato.",
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "HOU",
+      "contexto": "El corredor Zach Charbonnet ha sido activado de la lista de incapacitados y ya forma parte del roster de 53 jugadores de los Seattle Seahawks tras completar dos sesiones de práctica consecutivas sin limitaciones. Después de registrar una campaña previa muy productiva con 12 anotaciones, su regreso aporta profundidad inmediata al backfield.",
+      "fantasy": "Mike Clay y los expertos de fantasy ubican a Zach Charbonnet como una interesante opción de flex para la semana siete. Aunque su carga de trabajo inicial podría dosificarse, su historial anotador lo convierte en una apuesta intrigante para alinear en ligas competitivas.",
+      "equipo_impacto": "Su incorporación diversifica las alternativas terrestres de Seattle, obligando a los rivales a modificar sus esquemas defensivos en la zona roja.",
+      "accion": "Valóralo como tu opción flexible si buscas upside en tu alineación.",
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "SEA",
       "equipos": [
-        "HOU",
-        "NYG"
+        "SEA",
+        "KC"
       ],
       "jugadores": [
-        "5892"
+        "9753",
+        "8151"
       ],
       "menciona": []
     }
@@ -211,8 +212,8 @@
     "11539",
     "8122",
     "9758",
-    "13276",
     "13424",
+    "13276",
     "5849",
     "1433",
     "8132",
@@ -256,9 +257,9 @@
     "13330"
   ],
   "duelo": {
-    "a": "Drake Maye",
-    "b": "Brock Purdy",
-    "veredicto": "Arranca a Drake Maye sobre Brock Purdy. Maye lidera las proyecciones con 21.7 puntos y su capacidad de generar yardas por tierra le otorga un techo más elevado en comparación con el juego administrado de Purdy en Atlanta."
+    "a": "Kyren Williams",
+    "b": "Jonathan Taylor",
+    "veredicto": "Arranca a Kyren Williams por su alto volumen de toucheo y proyección constante en zona roja."
   },
   "fuentes": [
     "Sleeper",
