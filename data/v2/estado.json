@@ -1,18 +1,10 @@
 {
-  "fecha": "2026-10-23T21:09:23.317Z",
+  "fecha": "2026-10-23T21:34:34.997Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 15 nuevos, 17 en total",
     "[0.8s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[2.0s] ESPN: lesiones 799 · noticias 50",
-    "[2.5s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[209.6s] IA OK con gemini-3.8-flash",
-    "[209.6s] Descartada: Lamar Jackson enciende alarmas por lesión de tobillo → duplicada",
-    "[209.6s] Descartada: Kenneth Walker III amenaza a la defensiva de Chiefs → duplicada",
-    "[209.6s] Descartada: Tyler Warren queda descartado y debe ir a banca → duplicada",
-    "[209.6s] Descartada: J.J. McCarthy atrae reflectores como reserva a guardar → duplicada",
-    "[209.6s] Noticias nuevas verificadas: 4",
-    "[210.2s] Notas del archivo corregidas por estatus o protagonista: 2",
-    "[210.3s] Listo: 4 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 226 · semana de juego 7 · IA usada hoy 13/40"
+    "[2.4s] ESPN: lesiones 799 · noticias 50",
+    "[3.4s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 226 · semana de juego 7 · IA usada hoy 13/40"
   ]
 }
