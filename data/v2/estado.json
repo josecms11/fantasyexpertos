@@ -1,21 +1,15 @@
 {
-  "fecha": "2026-10-23T08:12:49.415Z",
+  "fecha": "2026-10-23T08:40:50.839Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 15 nuevos, 17 en total",
-    "[0.9s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[1.6s] ESPN: lesiones 799 · noticias 50",
-    "[2.1s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[5.5s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[283.6s] IA OK con gemini-3.7-flash",
-    "[283.6s] Descartada: Jahmyr Gibbs comanda el ataque terrestre ante Packers → duplicada",
-    "[283.6s] Descartada: Roschon Johnson escala en waivers tras victoria de Bears → duplicada",
-    "[283.6s] Descartada: Michael Penix encara dura prueba contra defensiva invicta → duplicada",
-    "[283.6s] Descartada: Jaxon Smith-Njigba proyecta semana estelar en Seattle → duplicada",
-    "[283.6s] Descartada: Terry McLaurin descartado por rodilla y soltado masivamente → duplicada",
-    "[283.6s] Descartada: Jonathan Taylor despierta rumores comerciales pero seduce alinear → duplicada",
-    "[283.6s] Descartada: George Kittle encabeza proyecciones de alas cerradas → duplicada",
-    "[283.6s] Noticias nuevas verificadas: 1",
-    "[284.4s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 211 · semana de juego 7 · IA usada hoy 5/40"
+    "[0.8s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[1.9s] ESPN: lesiones 799 · noticias 50",
+    "[2.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[9.7s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
+    "[12.0s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
+    "[25.9s] IA OK con gemini-3.6-flash",
+    "[25.9s] Resumen semana 7",
+    "[26.0s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 211 · semana de juego 7 · IA usada hoy 6/40"
   ]
 }
