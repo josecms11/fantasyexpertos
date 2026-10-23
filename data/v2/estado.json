@@ -1,19 +1,10 @@
 {
-  "fecha": "2026-10-23T23:05:53.826Z",
+  "fecha": "2026-10-23T23:30:55.575Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 15 nuevos, 17 en total",
-    "[0.8s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[1.9s] ESPN: lesiones 799 · noticias 50",
-    "[2.3s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[194.3s] IA OK con gemini-3.8-flash",
-    "[194.3s] Descartada: Kenneth Walker dominará el backfield de Seattle → duplicada",
-    "[194.3s] Descartada: Lamar Jackson en seria duda contra los Bengals → duplicada",
-    "[194.3s] Descartada: George Kittle encabezará el ataque aéreo de Niners → duplicada",
-    "[194.3s] Descartada: Drake Maye lidera las proyecciones de mariscales → duplicada",
-    "[194.3s] Descartada: Browns D/ST se perfila como prioridad en waivers → duplicada",
-    "[194.3s] Descartada: Sam LaPorta busca calmar aguas en Detroit → duplicada",
-    "[194.3s] Noticias nuevas verificadas: 2",
-    "[195.0s] Listo: 2 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 228 · semana de juego 7 · IA usada hoy 14/40"
+    "[0.9s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[1.8s] ESPN: lesiones 799 · noticias 50",
+    "[2.5s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 228 · semana de juego 7 · IA usada hoy 14/40"
   ]
 }
