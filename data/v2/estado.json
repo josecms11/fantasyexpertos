@@ -1,10 +1,10 @@
 {
-  "fecha": "2026-10-23T21:34:34.997Z",
+  "fecha": "2026-10-23T22:05:31.460Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 15 nuevos, 17 en total",
     "[0.8s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[2.4s] ESPN: lesiones 799 · noticias 50",
-    "[3.4s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 226 · semana de juego 7 · IA usada hoy 13/40"
+    "[3.9s] ESPN: lesiones 799 · noticias 50",
+    "[4.8s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 226 · semana de juego 7 · IA usada hoy 13/40"
   ]
 }
