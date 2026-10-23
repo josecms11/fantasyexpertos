@@ -1,23 +1,10 @@
 {
-  "fecha": "2026-10-23T19:07:03.697Z",
+  "fecha": "2026-10-23T19:35:48.189Z",
   "log": [
     "[0.0s] Inicio",
     "[0.3s] YouTube: 15 nuevos, 17 en total",
-    "[1.1s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[3.0s] ESPN: lesiones 799 · noticias 50",
-    "[3.7s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[6.2s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[306.2s] Gemini sin respuesta gemini-3.7-flash The operation was aborted due to timeout",
-    "[307.0s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[319.5s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
-    "[327.7s] IA OK con gemini-3.5-flash-lite",
-    "[327.7s] Descartada: Caleb Williams brilla y consolida su gran momento en Chicago → duplicada",
-    "[327.7s] Descartada: Drake Maye mantiene su impresionante ritmo ofensivo con New England → duplicada",
-    "[327.7s] Descartada: Sam LaPorta genera tensión contractual pero mantiene su rol → duplicada",
-    "[327.7s] Descartada: Adonai Mitchell reaparece con los Jets tras superar lesión → duplicada",
-    "[327.7s] Descartada: Tyler Warren se perderá otro encuentro por lesión en la ingle → duplicada",
-    "[327.7s] Descartada: Zaire Franklin fuera con los Packers por lesión en la espinilla → duplicada",
-    "[327.7s] Noticias nuevas verificadas: 2",
-    "[328.6s] Listo: 2 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 222 · semana de juego 7 · IA usada hoy 12/40"
+    "[1.0s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[2.0s] ESPN: lesiones 799 · noticias 50",
+    "[2.8s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 222 · semana de juego 7 · IA usada hoy 12/40"
   ]
 }
