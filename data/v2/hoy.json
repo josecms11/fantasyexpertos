@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-23T09:52:53.607Z",
-  "ultimaIA": "2026-10-23T08:08:06.634Z",
+  "actualizado": "2026-10-23T10:21:26.700Z",
+  "ultimaIA": "2026-10-23T10:21:26.700Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,29 +13,28 @@
   ],
   "noticias": [
     {
-      "id": "n20261023080801",
-      "fecha": "2026-10-23T08:08:06.634Z",
+      "id": "n20261023102105",
+      "fecha": "2026-10-23T10:21:26.700Z",
       "semana": 7,
-      "titulo": "Tanner McKee asume la titularidad ante Dallas",
+      "titulo": "DK Metcalf perfila gran exhibición en duelo de París",
       "claves": [
-        "Jalen Hurts fue enviado a la lista de reservas lesionados.",
-        "McKee debuta como titular en un hostil Monday Night Football.",
-        "Debe permanecer en la banca en prácticamente cualquier formato."
+        "Steelers enfrentan a Saints en choque internacional histórico.",
+        "Oportunidad perfecta de encender el ataque aéreo en París.",
+        "Historial favorable del equipo en escenarios europeos recientes."
       ],
-      "contexto": "El panorama en Filadelfia dio un giro dramático tras confirmarse que Jalen Hurts aterrizó en la lista de reservas lesionados por dolencias en la pantorrilla. Tanner McKee, quien pasó dos campañas como uno de los suplentes jóvenes más reconocidos de la liga, tendrá la responsabilidad de comandar la ofensiva de los Eagles este lunes por la noche frente a los Dallas Cowboys.",
-      "fantasy": "El cambio desploma las expectativas de pase en Filadelfia; McKee no tiene valor confiable en ligas de un solo mariscal y apenas rasca relevancia marginal en Superflex muy profundas. Su inexperiencia reduce la eficiencia anotadora de la ofensiva aérea, por lo que debes mandarlo a la banca sin dudar, buscando alternativas más seguras en el alambre de agentes libres para la semana siete.",
-      "equipo_impacto": "La ofensiva pierde movilidad sin Hurts, forzando a Filadelfia a apoyarse más en jugadas terrestres conservadoras y pases cortos, lo que limita los avances explosivos contra la defensiva de Dallas.",
-      "accion": "Envía a Tanner McKee directo a la banca de tu plantilla de Fantasy.",
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "PHI",
+      "contexto": "DK Metcalf y los Pittsburgh Steelers cruzan el Atlántico para medirse a New Orleans en el Stade de France. Tras un arranque titubeante el fin de semana pasado, el estelar receptor cuenta con el escenario ideal para adueñarse de los reflectores. La franquicia acerera históricamente suele responder de gran manera en duelos internacionales, y el enfrentamiento individual contra la secundaria de los Saints ofrece ventajas notables que su mariscal buscará explotar de inicio a fin.",
+      "fantasy": "Metcalf es un titular indiscutible como WR1 o WR2 de altísimo calibre en ligas estándar y formatos PPR. Su capacidad para ganar rutas verticales y registrar recepciones en la zona de anotación lo coloca con un techo demoledor esta semana. Si cuentas con él en ligas de diez a catorce equipos, alinéalo sin pensarlo dos veces; su volumen de pases y físico imponente generarán dividendos considerables para tu escuadra fantasy.",
+      "equipo_impacto": "El protagonismo de Metcalf abre el campo para el resto del cuerpo de receptores de Pittsburgh. Al acaparar doble cobertura, libera carriles interiores y facilita el trabajo del ataque terrestre para desgastar paulatinamente a la defensiva de Saints.",
+      "accion": "Pon a Metcalf en tu alineación estelar sin dudarlo.",
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "PIT",
       "equipos": [
-        "PHI",
-        "DAL"
+        "PIT",
+        "NO"
       ],
       "jugadores": [
-        "9230",
-        "6904"
+        "5846"
       ],
       "menciona": []
     }
@@ -259,7 +258,7 @@
   "duelo": {
     "a": "Jahmyr Gibbs",
     "b": "Christian McCaffrey",
-    "veredicto": "Arranca a Jahmyr Gibbs sobre Christian McCaffrey. Gibbs ostenta la proyección más alta de toda la liga (25.5 puntos PPR) y enfrenta una contienda divisional clave, dándole un techo anotador superior esta semana."
+    "veredicto": "Arranca a Jahmyr Gibbs. Lidera las proyecciones de la NFL con 25.5 puntos PPR en un duelo divisional clave en casa, superando las 21 unidades de Christian McCaffrey."
   },
   "fuentes": [
     "Sleeper",
