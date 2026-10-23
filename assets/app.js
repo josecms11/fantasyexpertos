@@ -574,7 +574,7 @@ function lesionados(q) {
   const orden = D.lesionados.map(x => J[x.id]).filter(Boolean);
   const lista = orden.filter(j => f === 'TODOS' || (f === 'IR' ? fueraTemp(j) : f === 'Fuera' ? j.inj === 'Out' : estatus(j) === f));
   return `<div class="page">${crumbs([['', 'Lesionados']])}<div class="wrap"><section class="block">
-    <div class="head"><div><h2>Reporte médico</h2><p class="hsub">Solo jugadores relevantes para fantasy, ordenados por su impacto. Fuentes: reporte oficial de Sleeper y ESPN · ${esc(actualizado())}</p></div><small>${lista.length} jugadores</small></div>
+    <div class="head"><div><h2>Reporte médico</h2><p class="hsub">Solo jugadores relevantes para fantasy, ordenados por su impacto. Fuente: reporte oficial de lesiones · ${esc(actualizado())}</p></div><small>${lista.length} jugadores</small></div>
     <div class="chips">${[['TODOS', 'Todos'], ['Duda', 'En duda'], ['Fuera', 'Fuera esta semana'], ['IR', 'Reserva / temporada']].map(([s, t]) => `<a class="chip ${s === f ? 'on' : ''}" href="#/lesionados${s === 'TODOS' ? '' : '?estatus=' + s}">${t}</a>`).join('')}</div>
     <div class="injgrid">${lista.map(j => `<a class="inj" href="#/jugador/${j.id}" style="${vars(j.team)}">${helmet(j.team, j.num, 44)}<span class="inj-n"><small>${esc(nombre1(j.n))}</small><b>${esc(apellido(j.n))}</b><i>${esc(j.pos)} · ${esc(j.team)} · ${esc(rw(j) !== '–' ? rw(j) : rp(j))}</i></span>
       <span class="inj-d"><span class="pill ${estatus(j)}">${fueraTemp(j) ? 'RESERVA' : estatus(j).toUpperCase()}</span><b>${esc(parte(j) || 'Sin detalle')}</b><small>${j.les && j.les.regreso ? 'Regreso: ' + esc(fechaC(j.les.regreso)) : j.les && j.les.fecha ? 'Reporte: ' + esc(fechaC(j.les.fecha)) : ''}</small></span></a>`).join('') || '<div class="empty">Sin lesionados con este estatus.</div>'}</div>
@@ -740,14 +740,26 @@ function partidos(q) {
     ${grupos || '<div class="empty">Esta semana aún no tiene partidos publicados.</div>'}
   </section></div></div>`;
 }
+// Marcador tipo televisión: horizontal y simétrico. Visita a la izquierda, local a la derecha.
+const RELOJ = d => { const m = String(d || '').match(/(\d+:\d+)\s*-\s*(\d)(?:st|nd|rd|th)/i); if (m) return [`${m[2]}º CUARTO`, m[1]];
+  if (/half/i.test(d)) return ['MEDIO TIEMPO', '']; const e = String(d || '').match(/end of (\d)/i); if (e) return [`FIN DEL ${e[1]}º`, '']; if (/OT/.test(d)) return ['TIEMPO EXTRA', String(d).split('-')[0].trim()]; return [String(d || '').toUpperCase(), '']; };
+const DOWN = t => { const m = String(t || '').match(/(\d)(?:st|nd|rd|th) & (\w+) at (.+)/i); return m ? `${m[1]}ª y ${/goal/i.test(m[2]) ? 'gol' : m[2]} en ${m[3]}` : (t || ''); };
+const BALON = '<svg class="balon" width="18" height="12" viewBox="0 0 9 6" shape-rendering="crispEdges" aria-label="Tiene el balón"><rect x="2" y="0" width="5" height="1" fill="#8B4A2B"/><rect x="1" y="1" width="7" height="4" fill="#8B4A2B"/><rect x="0" y="2" width="9" height="2" fill="#8B4A2B"/><rect x="2" y="5" width="5" height="1" fill="#8B4A2B"/><rect x="3" y="2" width="3" height="1" fill="#fff"/></svg>';
+const WPC = {};
 function heroPartido(g) {
-  return `<div class="jumbo game ${g.estado}" style="--cv:${col(g.visita.ab)[0]};--cl:${col(g.local.ab)[0]}">
-      <div class="jumbo-top"><span>${g.estado !== 'pre' ? `<b class="fx-live">${fxLogo(14)} FX ${g.estado === 'in' ? 'LIVE' : 'FINAL'}</b>` : ''}${g.estado === 'in' ? '<i class="dot"></i>EN VIVO' : g.estado === 'post' ? 'FINAL' : esc(horaJuego(g))}</span><span>${esc(g.sede || '')}${g.tv ? ' · ' + esc(g.tv) : ''}</span></div>
-      <div class="g-face"><a class="g-team" href="#/equipo/${g.visita.ab}">${helmet(g.visita.ab, '', 140, false, g.posesion === g.visita.id ? 'bob' : '')}<b>${esc(g.visita.nombre)}</b><small>${esc(g.visita.rec)} · Visita</small></a>
-        <div class="g-score"><span class="${ganando(g, 0)}">${g.estado === 'pre' ? '–' : g.visita.pts}</span><em>${g.estado === 'in' ? esc(g.detalle) : g.estado === 'post' ? 'FINAL' : 'VS'}</em><span class="${ganando(g, 1)}">${g.estado === 'pre' ? '–' : g.local.pts}</span></div>
-        <a class="g-team" href="#/equipo/${g.local.ab}">${helmet(g.local.ab, '', 140, true, g.posesion === g.local.id ? 'bob' : '')}<b>${esc(g.local.nombre)}</b><small>${esc(g.local.rec)} · Local</small></a></div>
-      ${g.estado === 'in' ? `<div class="g-field">${campo(g)}</div><div class="led"><small>${esc(g.downs || '')}${g.zonaRoja ? ' · ZONA ROJA' : ''}</small>${esc(g.ultima || 'Esperando la siguiente jugada…')}</div>` : ''}
-    </div>`;
+  const pre = g.estado === 'pre', [r1, r2] = g.estado === 'in' ? RELOJ(g.detalle) : g.estado === 'post' ? ['FINAL', ''] : [horaJuego(g), ''];
+  const eq = (t, k) => { const tiene = g.estado === 'in' && g.posesion === t.id;
+    return `<a class="mk-eq ${k ? 'loc' : 'vis'}" href="#/equipo/${t.ab}">${helmet(t.ab, '', 92, !!k, 'mk-hel')}<span class="mk-nom"><b class="lg">${esc(t.nombre)}</b><b class="sm">${esc(t.ab)}</b><small>${esc(t.rec)}${t.rec ? ' · ' : ''}${k ? 'Local' : 'Visita'}</small>${tiene ? `<i class="mk-pos">${BALON} Balón</i>` : ''}</span></a>`; };
+  return `<div class="mk ${g.estado}" style="--cv:${col(g.visita.ab)[0]};--cl:${col(g.local.ab)[0]}">
+    <div class="mk-top"><span>${!pre ? `<b class="fx-live">${fxLogo(14)} FX ${g.estado === 'in' ? 'LIVE' : 'FINAL'}</b>` : ''}${g.estado === 'in' ? '<span class="vivo"><i class="dotv"></i>EN VIVO</span>' : ''}</span><span>${esc(g.sede || '')}</span></div>
+    <div class="mk-row">${eq(g.visita, 0)}
+      <b class="mk-pts ${ganando(g, 0)}">${pre ? '' : g.visita.pts}</b>
+      <span class="mk-reloj"><b>${esc(pre ? 'VS' : r1)}</b>${pre ? `<small>${esc(r1)}</small>` : r2 ? `<small>${esc(r2)}</small>` : ''}</span>
+      <b class="mk-pts ${ganando(g, 1)}">${pre ? '' : g.local.pts}</b>
+      ${eq(g.local, 1)}</div>
+    ${g.estado === 'in' ? `<div class="mk-campo">${campo(g)}</div><div class="mk-jugada"><small>${esc(DOWN(g.downs))}${g.zonaRoja ? ' · <b>ZONA ROJA</b>' : ''}</small><p>${esc(g.ultima || 'Esperando la siguiente jugada…')}</p></div>` : ''}
+    <div id="g-wp">${WPC[g.id] || ''}</div>
+  </div>`;
 }
 function partido(id) {
   const g = G.find(x => x.id === id) || Object.values(GW).flat().find(x => x.id === id);
@@ -767,7 +779,7 @@ function partido(id) {
       ${les.length ? `<p class="sub" style="margin-top:14px">Reporte médico</p><div class="plist">${les.map(j => prow(j, `<span class="team">${esc(parte(j))}</span>${pillSt(j)}`)).join('')}</div>` : ''}</div>`; };
   setTimeout(() => detallePartido(g).then(() => { if (g.estado === 'in') vigilaPartido(g.id); }), 0);
   return `<div class="page">${crumbs([['#/partidos', 'Partidos'], ['', g.visita.ab + ' vs ' + g.local.ab]])}<div class="wrap">
-    <div id="g-hero">${heroPartido(g)}</div><div id="g-wp"></div>
+    <div id="g-hero">${heroPartido(g)}</div>${g.estado !== 'pre' ? '<div id="g-eq"></div>' : ''}
     ${g.estado !== 'pre' ? `<div class="live-tabs" role="tablist"><button type="button" class="on" data-lt="fx">${fxLogo(14)} Fantasy en vivo</button><button type="button" data-lt="pbp">Jugada a jugada</button></div>` : ''}
     ${g.estado === 'pre' ? `<div class="gsum" id="gsum"><div class="esq-lineas" aria-busy="true" aria-label="Cargando estadísticas del partido"><i></i><i></i><i></i><i></i></div></div>
     <section class="block grid g2">${lado(g.visita)}${lado(g.local)}</section>` : `<div class="live-grid ver-fx">
@@ -825,10 +837,10 @@ async function detallePartido(g) {
         T != null ? ['TOTAL DE PUNTOS', `O/U ${n1(T)}`, `Over${momio(pc.overOdds)} · Under${momio(pc.underOdds)}`] : null,
         imp ? [`PUNTOS IMPLÍCITOS`, `${esc(g.visita.ab)} ${n1(imp[g.visita.ab])} · ${esc(g.local.ab)} ${n1(imp[g.local.ab])}`, 'Calculado con la línea y el total'] : null,
         pA != null && pH != null ? ['PROBABILIDAD POR MOMIO', `${esc(g.visita.ab)} ${n1(pA)}% · ${esc(g.local.ab)} ${n1(pH)}%`, 'Implícita en la moneyline'] : null,
-        pred && pred.homeTeam ? ['MODELO ESPN', `${esc(g.visita.ab)} ${n1(+pred.awayTeam.gameProjection)}% · ${esc(g.local.ab)} ${n1(+pred.homeTeam.gameProjection)}%`, 'Probabilidad de ganar'] : null,
+        pred && pred.homeTeam ? ['PROBABILIDAD DE GANAR', `${esc(g.visita.ab)} ${n1(+pred.awayTeam.gameProjection)}% · ${esc(g.local.ab)} ${n1(+pred.homeTeam.gameProjection)}%`, 'Modelo estadístico'] : null,
         abre ? ['LÍNEA DE APERTURA', esc(abre), tt && tt.over && tt.over.open && tt.over.open.line ? `Total abrió en ${esc(String(tt.over.open.line).replace(/^o/i, ''))}` : 'Cómo abrió la semana'] : null
       ].filter(Boolean);
-      preHTML = tiles.length ? `<div class="card span2 apuestas"><div class="head"><div><h3>Antes del kickoff</h3><p class="sub">Líneas de ${esc((pc && pc.provider && pc.provider.name) || 'las casas de apuestas')}. Solo informativo.</p></div></div><div class="odds">${tiles.map(([k, v, d]) => `<div><small>${k}</small><b>${v}</b><span>${d}</span></div>`).join('')}</div></div>` : '';
+      preHTML = tiles.length ? `<div class="card span2 apuestas"><div class="head"><div><h3>Antes del kickoff</h3><p class="sub">Líneas de las casas de apuestas. Solo informativo.</p></div></div><div class="odds">${tiles.map(([k, v, d]) => `<div><small>${k}</small><b>${v}</b><span>${d}</span></div>`).join('')}</div></div>` : '';
     }
     box.innerHTML = `<section class="block grid g2" style="padding-top:22px">${preHTML}${proyHTML}${statsHTML}${lidHTML}${anot ? `<div class="card"><h3>Jugadas de anotación</h3><div class="splist">${anot}</div></div>` : ''}</section>`;
     if (!box.textContent.trim()) box.innerHTML = '';
@@ -922,20 +934,22 @@ function pintaJugadas(g, s) {
 }
 function pintaVivo(g, s) {
   pintaFantasy(g, s); pintaJugadas(g, s);
-  // probabilidad de ganar en vivo (modelo ESPN)
-  const wp = (s.winprobability || []).slice(-1)[0], wb = $('#g-wp');
-  if (wb) wb.innerHTML = wp && g.estado === 'in' ? `<div class="wp ${wp.homeWinPercentage >= .5 ? 'gana-l' : 'gana-v'}" style="--p:${Math.round((1 - wp.homeWinPercentage) * 100)}%"><span>${g.visita.ab} <b class="n">${n1((1 - wp.homeWinPercentage) * 100)}%</b></span><i></i><span><b class="n">${n1(wp.homeWinPercentage * 100)}%</b> ${g.local.ab}</span><small>Probabilidad de ganar · modelo ESPN</small></div>` : '';
+  // probabilidad de ganar en vivo, dentro del marcador
+  const wp = (s.winprobability || []).slice(-1)[0];
+  WPC[g.id] = wp && g.estado === 'in' ? `<div class="wp ${wp.homeWinPercentage >= .5 ? 'gana-l' : 'gana-v'}" style="--p:${Math.round((1 - wp.homeWinPercentage) * 100)}%"><span><b class="n">${n1((1 - wp.homeWinPercentage) * 100)}%</b></span><i></i><span><b class="n">${n1(wp.homeWinPercentage * 100)}%</b></span><small>Probabilidad de ganar</small></div>` : '';
+  const wb = $('#g-wp'); if (wb) wb.innerHTML = WPC[g.id];
   // abajo: estadísticas de equipo, anotaciones y la línea con la que abrió
   const teams = (s.boxscore && s.boxscore.teams) || [];
   const statsDe = ab => { const t = teams.find(x => (AB[x.team.abbreviation] || x.team.abbreviation) === ab); return t ? Object.fromEntries((t.statistics || []).map(x => [x.name, x.displayValue])) : {}; };
   const sv = statsDe(g.visita.ab), sl = statsDe(g.local.ab), num = x => parseFloat(String(x || '0').replace(':', '.')) || 0;
   const filas = [['totalYards', 'Yardas totales'], ['netPassingYards', 'Yardas por pase'], ['rushingYards', 'Yardas por tierra'], ['firstDowns', 'Primeros downs'], ['thirdDownEff', 'Tercera oportunidad'], ['turnovers', 'Pérdidas de balón'], ['possessionTime', 'Posesión'], ['totalPenaltiesYards', 'Castigos']].filter(([k]) => sv[k] != null || sl[k] != null);
-  const statsHTML = filas.length ? `<div class="card"><h3>Equipos</h3><div class="tstats">${filas.map(([k, t]) => { const a = num(sv[k]), b = num(sl[k]), tot = a + b || 1, mejorA = k === 'turnovers' || k === 'totalPenaltiesYards' ? a < b : a > b;
+  const statsHTML = filas.length ? `<div class="card eqcard"><div class="eq-h"><span>${helmet(g.visita.ab, '', 26)}<b>${g.visita.ab}</b></span><h3>Equipos</h3><span><b>${g.local.ab}</b>${helmet(g.local.ab, '', 26, true)}</span></div><div class="tstats">${filas.map(([k, t]) => { const a = num(sv[k]), b = num(sl[k]), tot = a + b || 1, mejorA = k === 'turnovers' || k === 'totalPenaltiesYards' ? a < b : a > b;
     return `<div class="tsr"><b class="${mejorA ? 'w' : ''}">${esc(sv[k] ?? '–')}</b><span><small>${t}</small><i style="--a:${Math.round(a / tot * 100)}%;--cv:${col(g.visita.ab)[0]};--cl:${col(g.local.ab)[0]}"></i></span><b class="${!mejorA && a !== b ? 'w' : ''}">${esc(sl[k] ?? '–')}</b></div>`; }).join('')}</div></div>` : '';
   const anot = (s.scoringPlays || []).slice().reverse().map(p => `<div class="sp">${helmet(AB[p.team && p.team.abbreviation] || (p.team && p.team.abbreviation), '', 26)}<span><small>${p.period && p.period.number ? 'Q' + p.period.number : ''} ${esc((p.clock && p.clock.displayValue) || '')} · ${esc(p.scoringType && p.scoringType.displayName || '')}</small>${esc(p.text || '')}</span><b class="n">${p.awayScore}-${p.homeScore}</b></div>`).join('');
   const pc = (s.pickcenter || [])[0];
-  const linea = pc && (pc.details || pc.overUnder) ? `<div class="card linea-mini"><h3>La línea antes del partido</h3><p>${pc.details ? `<b>${esc(pc.details)}</b>` : ''}${pc.overUnder ? ` · O/U <b>${esc(pc.overUnder)}</b>` : ''}${pc.provider && pc.provider.name ? ` <small>${esc(pc.provider.name)}</small>` : ''}</p></div>` : '';
-  const gb = $('#gsum'); if (gb) gb.innerHTML = `<section class="block grid g2" style="padding-top:22px">${anot ? `<div class="card"><h3>Anotaciones</h3><div class="splist">${anot}</div></div>` : ''}${statsHTML}${linea}</section>`;
+  const linea = pc && (pc.details || pc.overUnder) ? `<div class="card linea-mini"><h3>La línea antes del partido</h3><p>${pc.details ? `<b>${esc(pc.details)}</b>` : ''}${pc.overUnder ? ` · O/U <b>${esc(pc.overUnder)}</b>` : ''}</p></div>` : '';
+  const ge = $('#g-eq'); if (ge) ge.innerHTML = statsHTML;
+  const gb = $('#gsum'); if (gb) gb.innerHTML = `<section class="block grid g2" style="padding-top:22px">${anot ? `<div class="card"><h3>Anotaciones</h3><div class="splist">${anot}</div></div>` : ''}${linea}</section>`;
 }
 // Mientras el partido está en vivo, todo se vuelve a pedir solo cada 15 segundos (sin recargar la página)
 function vigilaPartido(id) {

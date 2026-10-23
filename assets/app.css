@@ -1578,3 +1578,70 @@ a.fxr:hover{border-color:var(--line2)}
   .live-grid.ver-fx .pbp,.live-grid.ver-pbp .fxlive{display:none}
 }
 @media (max-width:1060px){.live-tabs{position:static}}
+/* ===================== MARCADOR TIPO TV (.mk) ===================== */
+.mk{margin-top:18px;border-radius:var(--r2);overflow:hidden;border:1px solid var(--line2);background:linear-gradient(90deg,color-mix(in srgb,var(--cv) 38%,#060B08) 0%,#070C09 50%,color-mix(in srgb,var(--cl) 38%,#060B08) 100%)}
+.mk-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 18px;border-bottom:1px solid rgba(255,255,255,.07);font-family:var(--fc);font-weight:700;font-size:13px;letter-spacing:.06em;color:var(--soft)}
+.mk-top > span{display:flex;align-items:center;gap:10px}
+.mk-row{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(150px,auto) auto minmax(0,1fr);align-items:center;gap:clamp(12px,2.4vw,36px);padding:clamp(18px,2.4vw,30px) clamp(16px,2.4vw,32px)}
+.mk-eq{display:flex;align-items:center;gap:16px;min-width:0;color:var(--text);text-decoration:none}
+.mk-eq.vis{justify-content:flex-start}
+.mk-eq.loc{justify-content:flex-end;flex-direction:row-reverse;text-align:right}
+.mk .mk-hel{width:clamp(56px,7vw,96px);height:auto;flex:none;filter:drop-shadow(0 6px 0 rgba(0,0,0,.35))}
+.mk-nom{display:flex;flex-direction:column;gap:3px;min-width:0}
+.mk-eq.loc .mk-nom{align-items:flex-end}
+.mk-nom b{font-family:var(--fc);font-weight:800;line-height:1.05}
+.mk-nom b.lg{font-size:clamp(20px,2vw,28px)}
+.mk-nom b.sm{display:none;font-size:22px;letter-spacing:.04em}
+.mk-nom small{font-size:13px;color:var(--mute)}
+.mk-pos{display:inline-flex;align-items:center;gap:6px;margin-top:4px;font-style:normal;font-family:var(--fc);font-weight:800;font-size:12px;letter-spacing:.08em;color:#F3D9B5}
+.mk-pts{font-family:var(--fc);font-weight:800;font-size:clamp(56px,7vw,96px);line-height:1;font-variant-numeric:tabular-nums;color:rgba(255,255,255,.72);min-width:1.2em;text-align:center}
+.mk-pts.gana{color:#fff;text-shadow:0 0 30px rgba(91,196,137,.35)}
+.mk.post .mk-pts.gana{color:var(--accent)}
+.mk-reloj{display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 16px;border-radius:12px;background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.08);text-align:center}
+.mk-reloj b{font-family:var(--fc);font-weight:800;font-size:clamp(13px,1.2vw,16px);letter-spacing:.1em;color:var(--warn);white-space:nowrap}
+.mk-reloj small{font-family:var(--fc);font-weight:800;font-size:clamp(22px,2.2vw,30px);font-variant-numeric:tabular-nums;color:#fff;white-space:nowrap}
+.mk.pre .mk-reloj b{color:#fff;font-size:22px}.mk.pre .mk-reloj small{font-size:14px;color:var(--soft)}
+.mk.post .mk-reloj b{color:#fff}
+.mk-campo{padding:0 clamp(16px,2.4vw,32px)}
+.mk-campo svg{display:block;width:100%;height:34px;border-radius:6px}
+.mk-jugada{margin:14px clamp(16px,2.4vw,32px) 0;padding:14px 18px;border-radius:12px;background:rgba(0,0,0,.42);border:1px solid rgba(91,196,137,.22)}
+.mk-jugada small{display:block;font-family:var(--fc);font-weight:800;font-size:14px;letter-spacing:.04em;color:var(--warn)}
+.mk-jugada small b{color:var(--bad)}
+.mk-jugada p{margin:6px 0 0;font-family:var(--fc);font-weight:600;font-size:clamp(17px,1.5vw,21px);line-height:1.35;color:#E9FFF1}
+.mk #g-wp:empty{display:none}
+.mk #g-wp{padding:14px clamp(16px,2.4vw,32px) 18px}
+.mk .wp{margin:0;padding:0;background:none;border:0;border-radius:0}
+.mk-campo + .mk-jugada + #g-wp:empty,.mk-row + #g-wp:empty{display:none}
+.mk.in{padding-bottom:4px}
+.mk.in > #g-wp:empty{padding:0}
+.mk:not(.in) .mk-row{padding-bottom:clamp(22px,3vw,36px)}
+/* Equipos: tabla de comparación justo debajo del marcador */
+.eqcard{margin-top:16px}
+.eq-h{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;margin-bottom:10px}
+.eq-h > span{display:flex;align-items:center;gap:8px;font-family:var(--fc);font-size:18px}
+.eq-h > span:last-child{justify-content:flex-end}
+.eq-h h3{margin:0;font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+@media (min-width:1061px){.eqcard .tstats{display:grid;grid-template-columns:1fr 1fr;column-gap:40px}}
+/* celular: mismo marcador horizontal, compacto y centrado */
+@media (max-width:760px){
+  .mk-top{padding:9px 12px;font-size:11px}
+  .mk-top > span:last-child{display:none}
+  .mk-row{grid-template-columns:minmax(0,1fr) auto auto auto minmax(0,1fr);gap:8px;padding:16px 10px}
+  .mk-eq,.mk-eq.loc{flex-direction:column;justify-content:center;align-items:center;gap:6px;text-align:center}
+  .mk-eq.loc .mk-nom,.mk-nom{align-items:center}
+  .mk .mk-hel{width:48px}
+  .mk-nom b.lg{display:none}.mk-nom b.sm{display:block}
+  .mk-nom small{font-size:11px}
+  .mk-pos{font-size:10px}
+  .mk-pts{font-size:44px;min-width:1em}
+  .mk-reloj{padding:6px 8px;border-radius:10px}
+  .mk-reloj b{font-size:10px;letter-spacing:.06em}
+  .mk-reloj small{font-size:18px}
+  .mk.pre .mk-reloj b{font-size:18px}.mk.pre .mk-reloj small{font-size:11px}
+  .mk-jugada{margin:12px 10px 0;padding:12px 14px}
+  .mk-jugada p{font-size:16px}
+  .mk-campo{padding:0 10px}.mk-campo svg{height:26px}
+  .mk #g-wp{padding:12px 10px 14px}
+  .eqcard .tstats{display:block}
+}
+@media (min-width:1061px){.eqcard .tstats{display:block;max-width:820px;margin:0 auto}.eq-h{max-width:820px;margin:0 auto 10px}}
