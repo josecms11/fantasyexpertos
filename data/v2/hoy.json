@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-23T18:18:55.948Z",
-  "ultimaIA": "2026-10-23T16:51:31.111Z",
+  "actualizado": "2026-10-23T19:01:38.145Z",
+  "ultimaIA": "2026-10-23T19:01:38.145Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,115 +13,67 @@
   ],
   "noticias": [
     {
-      "id": "n20261023165100",
-      "fecha": "2026-10-23T16:51:31.111Z",
+      "id": "n20261023190103",
+      "fecha": "2026-10-23T19:01:38.145Z",
       "semana": 7,
-      "titulo": "Adonai Mitchell reaparece tras superar su lesión",
+      "titulo": "Caleb Douglas regresa con los Dolphins tras larga ausencia",
       "claves": [
-        "Practicó toda la semana sin contratiempos",
-        "Regresa a la alineación contra Dolphins",
-        "Opción atractiva para reforzar el receptor"
+        "Superó una lesión en el tobillo derecho que lo alejó semanas",
+        "Está listo para reaparecer este domingo frente a los Jets",
+        "Busca ganarse un lugar importante en la rotación de Miami"
       ],
-      "contexto": "El receptor de los Jets, Adonai Mitchell, está listo para volver al terreno de juego frente a Miami después de perderse cuatro encuentros debido a una lesión en el dedo que requirió procedimiento quirúrgico. Tras completar entrenamientos al parejo toda la semana, el receptor de Nueva York recibe luz verde para incorporarse a las rutas ofensivas. Su retorno le brinda a la escuadra neoyorquina un elemento dinámico de profundidad.",
-      "fantasy": "Para fines de fantasy, Mitchell representa un reclamo prioritario en la agencia libre para ligas profundas o formatos PPR. Aunque su estatus oficial marca cuestionable, su participación entrenando augura minutos en campo. No es un titular inmediato para este fin de semana, pero acumularlo en tu banca antes de que explote en volumen es una jugada estratégica altamente recomendable si buscas profundidad en la posición de receptor.",
-      "equipo_impacto": "Su incorporación alinea más opciones para la ofensiva aérea de los Jets, restando algunos objetivos a los receptores secundarios, pero manteniendo el ataque más equilibrado y peligroso.",
-      "accion": "Ve a la agencia libre y agrégalo a tu banca antes del inicio de los partidos.",
+      "contexto": "El receptor novato de los Miami Dolphins completó su proceso de recuperación tras perderse los últimos tres encuentros por molestias físicas y se declara apto para ver acción en el emparrillado.",
+      "fantasy": "Por ahora representa una apuesta de riesgo moderado en ligas profundas o formatos de dynasty, siendo prudente evaluar su participación antes de arriesgarlo en tu alineación titular.",
+      "equipo_impacto": "Aporta profundidad al cuerpo de receptores de los Miami Dolphins en un momento clave de la temporada.",
+      "accion": "Vigílalo desde tu banca esta semana.",
       "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "NYJ",
+      "impacto": "NEUTRO",
+      "equipo": "MIA",
       "equipos": [
-        "NYJ",
-        "MIA"
+        "MIA",
+        "NYJ"
       ],
       "jugadores": [
+        "13296",
         "11625"
       ],
       "menciona": []
     },
     {
-      "id": "n20261023165101",
-      "fecha": "2026-10-23T16:51:31.111Z",
+      "id": "n20261023190106",
+      "fecha": "2026-10-23T19:01:38.145Z",
       "semana": 7,
-      "titulo": "A.J. Brown defrauda las expectativas en fantasy",
+      "titulo": "Jeremiyah Love ausente con los Cardinals por lesión de tobillo",
       "claves": [
-        "Rendimiento muy por debajo del costo",
-        "Inconsistencia severa en el volumen aéreo",
-        "Riesgo alto para iniciar esta semana"
+        "Se perderá su segundo partido consecutivo este fin de semana",
+        "El problema en el tobillo requiere mayor tiempo de recuperación",
+        "Los Cardinals ajustan su ofensiva terrestre"
       ],
-      "contexto": "La temporada de A.J. Brown ha tomado un rumbo preocupante para Philadelphia. El estelar receptor no ha logrado la efectividad esperada en el esquema ofensivo, convirtiéndose en una de las mayores decepciones del año en fantasy football. Con problemas para generar separación constante y un volumen de pases divididos en la ofensiva de Eagles, su producción se ha desplomado dramáticamente en los recientes compromisos disputados.",
-      "fantasy": "Si tienes opciones sólidas en la banca, considera sentar a Brown esta semana en ligas de formato estándar o PPR. Aunque su talento es indiscutible, su piso semanal ha caído a niveles alarmantes. Evalúa colocarlo como receptor tres o Flex únicamente si no cuentas con alternativas de alto volumen. No intentes venderlo al alza en este instante; su valor de traspaso está en su punto más bajo.",
-      "equipo_impacto": "Su baja participación satura de responsabilidad al resto de las armas aéreas de los Eagles, obligando al ataque a depender más de las alas cerradas y el juego terrestre para mover las cadenas.",
-      "accion": "Si tienes mejores opciones en la banca, sienta a A.J. Brown hasta ver consistencia.",
+      "contexto": "El corredor novato de los Arizona Cardinals no logró superar las molestias físicas que arrastra desde hace días, quedando descartado para el duelo dominical del equipo.",
+      "fantasy": "No puede ser considerado bajo ninguna circunstancia para tu alineación de fantasy, restando opciones temporales en el backfield del equipo.",
+      "equipo_impacto": "Los Arizona Cardinals se ven obligados a delegar el peso del ataque terrestre en el resto de sus corredores disponibles.",
+      "accion": "Mantenlo completamente sentado en tu banca.",
       "etiqueta": "SIT",
       "impacto": "BAJA",
-      "equipo": "PHI",
+      "equipo": "ARI",
       "equipos": [
-        "PHI",
-        "NE"
+        "ARI",
+        "DEN"
       ],
       "jugadores": [
-        "5859"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261023165104",
-      "fecha": "2026-10-23T16:51:31.111Z",
-      "semana": 7,
-      "titulo": "Emeka Egbuka genera dudas en Tampa Bay",
-      "claves": [
-        "Estatus dudoso por protocolo de conmoción",
-        "Riesgo extremo para la alineación titular",
-        "Recomendación clara de dejar en banca"
-      ],
-      "contexto": "La participación de Emeka Egbuka para el encuentro de esta semana está seriamente comprometida. El receptor de Tampa Bay aparece catalogado como dudoso debido a un cuadro de conmoción cerebral que le ha impedido entrenar con normalidad. Ante la incertidumbre sobre su avance en el protocolo médico de la liga, la directiva y el cuerpo técnico se muestran cautelosos respecto a arriesgar su integridad física de inmediato.",
-      "fantasy": "Para fines de fantasy football, un jugador con etiqueta de dudoso es prácticamente un descarte automático. Sentarte a esperar su evolución hasta el día del juego te expondrá a quedarte con un cero en tu alineación. Es momento de mandarlo a la banca tanto en ligas PPR como en estándar, buscando un reemplazo seguro en la agencia libre o en tus reservas de inmediato.",
-      "equipo_impacto": "La ausencia probable de Egbuka redistribuirá los pases aéreos hacia los demás receptores y alas cerradas de los Buccaneers, exigiendo mayor carga a las opciones secundarias del equipo.",
-      "accion": "Deja a Emeka Egbuka en el banquillo y busca un reemplazo garantizado.",
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "TB",
-      "equipos": [
-        "TB"
-      ],
-      "jugadores": [
-        "12514"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261023165106",
-      "fecha": "2026-10-23T16:51:31.111Z",
-      "semana": 7,
-      "titulo": "Anthony Richardson afronta problemas fuera del campo",
-      "claves": [
-        "Enfrenta cargo menor por posesión",
-        "Incertidumbre en la organización de Colts",
-        "Riesgo extra para su valor fantasy"
-      ],
-      "contexto": "El mariscal de campo de los Colts, Anthony Richardson Sr., enfrenta un cargo menor por posesión de marihuana derivado de una detención de tránsito previa. Las autoridades locales emitieron la citación correspondiente tras inspeccionar su vehículo. Este acontecimiento extra cancha suma una capa adicional de tensión a la temporada del mariscal, mientras la organización de Indianápolis analiza la situación legal y disciplinaria del jugador.",
-      "fantasy": "Este problema fuera del emparrillado enturbia el panorama de Richardson en fantasy. Aunque su impacto inmediato en campo depende del proceso interno de la NFL y del equipo, su valor de intercambio sufre una devaluación drástica. En ligas de un solo QB o de dinastía, lo ideal es cautelar su posición en la banca y evitar alinearlo hasta tener absoluta claridad sobre posibles sanciones.",
-      "equipo_impacto": "La situación genera distracciones dentro del vestidor de Indianápolis, abriendo dudas sobre la estabilidad bajo el centro y obligando al equipo a preparar sus variantes de respaldo.",
-      "accion": "Mantén a Anthony Richardson en la banca a la espera de noticias oficiales.",
-      "etiqueta": "TENDENCIA",
-      "impacto": "BAJA",
-      "equipo": "IND",
-      "equipos": [
-        "IND"
-      ],
-      "jugadores": [
-        "9229"
+        "13287",
+        "11563"
       ],
       "menciona": []
     }
   ],
   "lesionados": [
     {
-      "id": "4881",
+      "id": "9493",
       "estatus": "Duda"
     },
     {
-      "id": "9493",
+      "id": "4881",
       "estatus": "Duda"
     },
     {
@@ -162,10 +114,6 @@
     },
     {
       "id": "7526",
-      "estatus": "Duda"
-    },
-    {
-      "id": "10229",
       "estatus": "Duda"
     },
     {
@@ -221,12 +169,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "5001",
-      "estatus": "Duda"
-    },
-    {
       "id": "13287",
       "estatus": "Fuera"
+    },
+    {
+      "id": "5001",
+      "estatus": "Duda"
     },
     {
       "id": "5927",
@@ -269,6 +217,10 @@
       "estatus": "Fuera"
     },
     {
+      "id": "10229",
+      "estatus": "Fuera"
+    },
+    {
       "id": "12509",
       "estatus": "Fuera"
     },
@@ -295,13 +247,13 @@
     "13276",
     "11783",
     "8135",
-    "11563",
-    "10213",
-    "9756",
     "4037",
+    "10213",
+    "11563",
+    "9756",
     "2197",
-    "9230",
     "5045",
+    "9230",
     "NYJ"
   ],
   "soltados": [
@@ -314,27 +266,27 @@
     "13150",
     "9480",
     "11439",
-    "8121",
     "10235",
+    "8121",
     "NE",
     "6904",
     "2505",
     "7042",
+    "11637",
+    "8154",
     "1166",
     "7528",
-    "11637",
     "3321",
-    "8154",
-    "IND",
     "3271",
-    "650",
+    "IND",
+    "12533",
     "7567",
-    "12533"
+    "12718"
   ],
   "duelo": {
-    "a": "Jahmyr Gibbs",
-    "b": "Bijan Robinson",
-    "veredicto": "Arranca a Jahmyr Gibbs. Presenta la proyección PPR más alta de la semana (25.5 puntos) en una ofensiva altamente explosiva. Bijan Robinson es excelente opción, pero el volumen receptivo de Gibbs le otorga un techo superior."
+    "a": "Jordan Love",
+    "b": "Bo Nix",
+    "veredicto": "Arranca a Jordan Love por su mayor solidez y proyección ofensiva frente a una defensiva complicada, dejando en la banca a Bo Nix debido a su irregularidad reciente."
   },
   "fuentes": [
     "Sleeper",
