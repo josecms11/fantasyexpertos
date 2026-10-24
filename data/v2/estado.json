@@ -1,22 +1,10 @@
 {
-  "fecha": "2026-10-24T17:37:31.311Z",
+  "fecha": "2026-10-24T17:54:41.431Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 15 nuevos, 17 en total",
-    "[0.8s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[1.8s] ESPN: lesiones 799 · noticias 50",
-    "[2.3s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[5.0s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[293.8s] IA OK con gemini-3.7-flash",
-    "[293.8s] Descartada: Cole Kmet queda fuera por el resto del año → duplicada",
-    "[293.8s] Descartada: Tyler Warren se pierde segundo juego por lesión inguinal → duplicada",
-    "[293.8s] Descartada: George Kittle lidera proyecciones en el Día Nacional TE → duplicada",
-    "[293.8s] Descartada: Kenneth Walker III amenaza a Seahawks en juego revancha → duplicada",
-    "[293.8s] Descartada: Michael Mayer surge como opción atractiva desde el alambre → duplicada",
-    "[293.8s] Descartada: CeeDee Lamb busca rescatar el rumbo de Dallas → duplicada",
-    "[293.8s] Noticias nuevas verificadas: 2",
-    "[444.1s] IA OK con gemini-3.8-flash",
-    "[444.1s] Resumen semana 7",
-    "[444.1s] Listo: 2 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 242 · semana de juego 7 · IA usada hoy 14/40"
+    "[0.9s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[2.4s] ESPN: lesiones 799 · noticias 50",
+    "[3.4s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 242 · semana de juego 7 · IA usada hoy 14/40"
   ]
 }
