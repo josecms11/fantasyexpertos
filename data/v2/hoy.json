@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-24T19:13:06.619Z",
-  "ultimaIA": "2026-10-24T17:30:09.119Z",
+  "actualizado": "2026-10-24T19:40:14.391Z",
+  "ultimaIA": "2026-10-24T19:40:14.391Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,55 +13,105 @@
   ],
   "noticias": [
     {
-      "id": "n20261024173004",
-      "fecha": "2026-10-24T17:30:09.119Z",
+      "id": "n20261024194002",
+      "fecha": "2026-10-24T19:40:14.391Z",
       "semana": 7,
-      "titulo": "Dylan Sampson regresa pero afronta rol secundario en Cleveland",
+      "titulo": "DeVonta Smith representa un riesgo enorme frente a Dallas",
       "claves": [
-        "Esperado para jugar ante Tennessee tras superar lesión.",
-        "Compartirá toques terrestres con el titular Quinshon Judkins.",
-        "Techo limitado en fantasy por comité y precaución."
+        "Figura como cuestionable por una persistente molestia de isquiotibiales.",
+        "Jalen Hurts está en la lista de reservas lesionados.",
+        "La ofensiva de Philadelphia sufre severas dudas en producción."
       ],
-      "contexto": "Aunque se espera que Dylan Sampson vuelva a la actividad este domingo contra Tennessee tras superar sus molestias físicas, el panorama no es del todo favorable. Sampson comparte el ataque con Quinshon Judkins, quien también fue reportado listo para jugar. La presencia simultánea de ambos corredores reduce drásticamente las expectativas individuales en un duelo que requerirá paciencia táctica para Cleveland.",
-      "fantasy": "Es preferible mandar a Sampson a la banca en ligas tradicionales de 10 y 12 equipos en formatos PPR y estándar. Con Judkins disponible, la división del juego terrestre y el riesgo de limitación de jugadas tras la lesión merman su viabilidad fantasy. Úsalo únicamente como flex de emergencia en ligas muy profundas si te quedaste sin opciones por lesiones.",
-      "equipo_impacto": "El regreso de Sampson brinda profundidad al esquema terrestre de los Browns, permitiendo rotar personal y reducir la carga de impacto físico individual frente a la frontal de los Titans.",
-      "accion": "Mándalo a la banca esta semana hasta verificar su verdadero volumen de toques.",
+      "contexto": "Philadelphia afronta el clásico divisional frente a los Dallas Cowboys en lunes por la noche bajo un panorama desolador. DeVonta Smith llega con la etiqueta de cuestionable tras sufrir molestias en el tendón de la corva. Esta lesión física se combina con la baja definitiva del mariscal titular Jalen Hurts, quien fue enviado a la reserva de lesionados por problemas de pantorrilla, dejando la eficacia del juego de pase en seria incertidumbre.",
+      "fantasy": "Smith baja considerablemente en las evaluaciones para la semana 7 y se posiciona como un candidato claro para mandar a la banca. En ligas estándar y formatos PPR de diez o doce participantes, alinear a un receptor mermado físicamente sin su mariscal franquicia es una trampa mortal. Si tienes alternativas sanas en tu banca con roles definidos, prefiere dejárselo a otro y evita comer un cero.",
+      "equipo_impacto": "El ataque aéreo de Philadelphia pierde dinamismo sin Hurts ni receptores al cien por ciento. Saquon Barkley y Dallas Goedert también arrastran molestias, reduciendo drásticamente la capacidad de anotación del conjunto.",
+      "accion": "Manda a DeVonta Smith a la banca y busca opciones más saludables.",
       "etiqueta": "SIT",
       "impacto": "BAJA",
-      "equipo": "CLE",
+      "equipo": "PHI",
       "equipos": [
-        "CLE",
-        "TEN"
+        "PHI",
+        "DAL"
       ],
       "jugadores": [
-        "12469",
-        "12512"
+        "7525"
       ],
       "menciona": []
     },
     {
-      "id": "n20261024173005",
-      "fecha": "2026-10-24T17:30:09.119Z",
+      "id": "n20261024194003",
+      "fecha": "2026-10-24T19:40:14.391Z",
       "semana": 7,
-      "titulo": "Tucker Kraft afronta panorama dependiente del touchdown ante Detroit",
+      "titulo": "Dalton Kincaid llega golpeado y pierde valor fantasy semanal",
       "claves": [
-        "Proyección de 11.6 puntos PPR para semana siete.",
-        "Enfrenta a férrea defensiva de Lions en división.",
-        "Su valor fantasy depende enteramente de ingresar diagonales."
+        "Aparece como cuestionable por una dolorosa lesión en costillas.",
+        "Quedó fuera de los mejores ocho alas cerradas proyectados.",
+        "Las dolencias en el torso suelen recortar rutas y jugadas."
       ],
-      "contexto": "Los pronósticos de la semana 7 señalan a Tucker Kraft como candidato a anotar en el Día Nacional de las Alas Cerradas; sin embargo, el duelo divisional contra los Lions se perfila complicado. Detroit llega como favorito y suele limitar las recepciones intermedias. Kraft requerirá una anotación para justificar su titularidad en una ofensiva que cuenta con múltiples opciones de pase.",
-      "fantasy": "Si cuentas con alternativas más confiables en tu plantilla, es momento de sentar a Kraft en ligas estándar y ligas PPR de 10 equipos. Su modesta proyección de 11.6 puntos lo sitúa fuera de los siete mejores de la semana. Depender exclusivamente de un touchdown en un choque tan cerrado y físico resulta una apuesta sumamente peligrosa para tu alineación.",
-      "equipo_impacto": "Kraft continuará bloqueando en jugadas de carrera y aportando recepciones cortas para Packers, pero el plan de juego probablemente priorice el ataque aéreo exterior y jugadas de pase rápido.",
-      "accion": "Sienta a Kraft si tienes alas cerradas con mayor volumen constante de pases.",
+      "contexto": "El ala cerrada de Buffalo se encuentra en duda para el compromiso de la semana 7 debido a una lesión en las costillas. Con DJ Moore descartado por una lesión en la articulación del hombro, el conjunto de los Bills tendrá que ajustar su plan aéreo. Sin embargo, los problemas de costillas son especialmente limitantes para jugadores que reciben castigo constante por el centro del campo, reduciendo su efectividad.",
+      "fantasy": "Baja sensiblemente en las clasificaciones semanales y debe ser enviado a la banca en la mayoría de ligas de diez y doce equipos. En las proyecciones PPR de ala cerrada no logró colarse en el grupo de honor que encabezan Brock Bowers y George Kittle. En formatos sin bonificación por recepción, su techo es sumamente bajo debido al riesgo latente de perder tiempo durante el partido si sufre contacto.",
+      "equipo_impacto": "La ausencia de DJ Moore y las molestias de Kincaid obligan a Buffalo a diversificar envíos hacia receptores complementarios, restando fluidez y potencia a las series ofensivas en zona de gol.",
+      "accion": "Sienta a Dalton Kincaid en tu alineación hasta que recupere la salud.",
       "etiqueta": "SIT",
       "impacto": "BAJA",
-      "equipo": "GB",
+      "equipo": "BUF",
       "equipos": [
-        "GB",
-        "DET"
+        "BUF"
       ],
       "jugadores": [
-        "9484"
+        "10236"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261024194004",
+      "fecha": "2026-10-24T19:40:14.391Z",
+      "semana": 7,
+      "titulo": "Xavier Worthy emerge en waivers tras lesión de Rice",
+      "claves": [
+        "Rashee Rice quedó oficialmente descartado por una lesión de isquiotibiales.",
+        "Worthy se coloca entre los elementos más reclamados en waivers.",
+        "Enfrenta a Seattle en choque que promete puntos fantasy."
+      ],
+      "contexto": "Los Kansas City Chiefs sufrieron un duro golpe con la confirmación de que Rashee Rice se perderá el duelo contra los Seahawks por lesión de isquiotibiales. Ante esta vacante trascendental, el novato Xavier Worthy se ha transformado en uno de los jugadores más solicitados en la lista de waivers de la liga. Su velocidad y capacidad para generar jugadas grandes son indispensables para mantener la profundidad aérea del equipo.",
+      "fantasy": "Worthy sube drásticamente como una prioridad máxima de reclamo en waivers para ligas de diez, doce y catorce equipos. En formatos PPR y ligas dinastía, su valor escala de inmediato hacia el terreno del Flex con potencial de WR2. Si sufres por bajas de titulares lesionados, gastar presupuesto de FAAB o una prioridad alta por Worthy te dará dividendos inmediatos en este enfrentamiento contra la secundaria de Seattle.",
+      "equipo_impacto": "Kansas City requiere estirar el campo ante Seattle sin Rice en la alineación. Worthy absorberá objetivos verticales cruciales, aliviando la presión sobre Travis Kelce en el medio del terreno.",
+      "accion": "Invierte tu prioridad de waivers o presupuesto FAAB en Xavier Worthy hoy.",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "KC",
+      "equipos": [
+        "KC",
+        "SEA"
+      ],
+      "jugadores": [
+        "11624"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261024194006",
+      "fecha": "2026-10-24T19:40:14.391Z",
+      "semana": 7,
+      "titulo": "Kenneth Walker III visita Seattle con proyección de élite",
+      "claves": [
+        "Enfrenta a su exequipo con proyección de 19.3 puntos.",
+        "Figura como el quinto corredor con mayor expectativa PPR.",
+        "Seattle no contará con Zach Charbonnet en el emparrillado."
+      ],
+      "contexto": "Uno de los relatos más atractivos de la semana 7 es la visita de Kenneth Walker III a Seattle defendiendo los colores de Kansas City. Walker regresa al estadio donde inició su trayectoria profesional en un momento cumbre de la temporada. El corredor ha sido pieza clave para los Chiefs y llega en plenitud física para medirse ante una defensiva de Seattle que no tendrá disponible a Zach Charbonnet.",
+      "fantasy": "Walker sube su cotización como un indiscutible RB1 para esta jornada en formatos PPR, estándar y puntos medios. Con una proyección estelar de 19.3 unidades, únicamente es superado por Jahmyr Gibbs, Bijan Robinson y Christian McCaffrey en los pronósticos de la posición. En cualquier liga donde lo tengas registrado, ponlo en tu alineación inicial sin dudarlo; el volumen proyectado y la narrativa de revancha aseguran un rendimiento explosivo.",
+      "equipo_impacto": "El ataque terrestre de Kansas City se apoyará en la potencia de Walker para marcar el ritmo en Seattle, balanceando los envíos hacia sus receptores y controlando el reloj de juego.",
+      "accion": "Arranca a Kenneth Walker III con total seguridad como tu corredor titular.",
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "KC",
+      "equipos": [
+        "KC",
+        "SEA"
+      ],
+      "jugadores": [
+        "8151"
       ],
       "menciona": []
     }
@@ -69,10 +119,6 @@
   "lesionados": [
     {
       "id": "9493",
-      "estatus": "Duda"
-    },
-    {
-      "id": "4881",
       "estatus": "Duda"
     },
     {
@@ -102,6 +148,10 @@
     {
       "id": "6904",
       "estatus": "Fuera"
+    },
+    {
+      "id": "4881",
+      "estatus": "Duda"
     },
     {
       "id": "12514",
@@ -235,22 +285,22 @@
     "3271",
     "4037",
     "13317",
-    "9482",
     "2197",
+    "9482",
     "8122",
     "12634",
     "11624",
     "11625",
-    "11783",
     "13296",
+    "11783",
     "8132",
-    "11610",
     "6650",
-    "13298",
-    "CLE",
-    "6865",
+    "11610",
     "5849",
+    "CLE",
+    "13298",
     "5995",
+    "6865",
     "10220",
     "1479",
     "11539"
@@ -265,27 +315,27 @@
     "5927",
     "10235",
     "9480",
-    "11637",
-    "11435",
     "3321",
+    "11637",
     "9482",
     "2505",
     "13150",
+    "11435",
     "13330",
     "1166",
     "7567",
     "JAX",
     "8134",
-    "8121",
     "3271",
     "12533",
+    "8121",
     "4035",
     "5012"
   ],
   "duelo": {
-    "a": "Kenneth Walker III",
-    "b": "Jonathan Taylor",
-    "veredicto": "Arranca a Kenneth Walker III. En su juego de revancha contra Seattle y proyectado con 19.4 puntos PPR, tiene mayor potencial y volumen que Taylor (17.6), quien enfrenta a una exigente defensiva de los Vikings."
+    "a": "Joe Burrow",
+    "b": "Jordan Love",
+    "veredicto": "Arranca a Joe Burrow. Proyecta 19.7 puntos frente a una defensiva de Baltimore mermada, mientras que Jordan Love proyecta 19.4. Burrow ofrece un techo más elevado en un tiroteo aéreo divisional."
   },
   "fuentes": [
     "Sleeper",
