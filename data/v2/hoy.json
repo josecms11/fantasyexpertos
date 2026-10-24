@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-24T16:32:05.163Z",
+  "actualizado": "2026-10-24T17:02:06.499Z",
   "ultimaIA": "2026-10-24T14:07:49.622Z",
   "semana": 7,
   "semanaStats": 7,
@@ -165,10 +165,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12469",
-      "estatus": "Fuera"
-    },
-    {
       "id": "4983",
       "estatus": "Fuera"
     },
@@ -199,6 +195,10 @@
     {
       "id": "13345",
       "estatus": "Fuera"
+    },
+    {
+      "id": "12508",
+      "estatus": "Fuera"
     }
   ],
   "agregados": [
@@ -217,31 +217,31 @@
     "8132",
     "13296",
     "12634",
-    "6650",
     "11624",
+    "6650",
     "6865",
     "13298",
     "CLE",
     "7553",
     "1479",
     "5849",
-    "9756",
-    "8111"
+    "8111",
+    "9756"
   ],
   "soltados": [
     "11581",
     "8129",
     "11439",
     "8154",
-    "11435",
     "12718",
+    "11435",
     "9511",
     "10235",
     "5927",
     "9480",
     "11637",
-    "3321",
     "2505",
+    "3321",
     "13150",
     "9482",
     "13330",
@@ -256,9 +256,9 @@
     "5012"
   ],
   "duelo": {
-    "a": "Jahmyr Gibbs",
-    "b": "Bijan Robinson",
-    "veredicto": "Arranca a Jahmyr Gibbs. Con una tremenda proyección de 25.5 puntos PPR y un duelo estelar ante Green Bay, su techo y explosividad aérea superan los 23.8 de Bijan frente a la dura defensa de San Francisco."
+    "a": "CeeDee Lamb",
+    "b": "Nico Collins",
+    "veredicto": "Arranca a Nico Collins. Houston llega en mejor momento ofensivo con su uniforme alternativo ante una defensiva vulnerable, mientras que Dallas arrastra dudas colectivas y un inicio tambaleante de temporada pese a la alta proyección de CeeDee Lamb."
   },
   "fuentes": [
     "Sleeper",
