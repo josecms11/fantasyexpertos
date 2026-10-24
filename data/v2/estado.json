@@ -1,10 +1,18 @@
 {
-  "fecha": "2026-10-24T04:55:41.058Z",
+  "fecha": "2026-10-24T05:21:11.103Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.1s] YouTube: 0 nuevos, 17 en total",
-    "[0.8s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[1.8s] ESPN: lesiones 799 · noticias 50",
-    "[2.6s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 232 · semana de juego 7 · IA usada hoy 3/40"
+    "[0.4s] YouTube: 0 nuevos, 17 en total",
+    "[1.4s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[4.4s] ESPN: lesiones 799 · noticias 50",
+    "[5.3s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[148.6s] IA OK con gemini-3.8-flash",
+    "[148.6s] Descartada: Drake Maye emerge como opción estelar en semana 7 → duplicada",
+    "[148.7s] Descartada: Kenneth Walker III monopoliza el backfield frente a Kansas City → duplicada",
+    "[148.7s] Descartada: Jared Goff genera dudas ante férrea secundaria de Packers → duplicada",
+    "[148.7s] Descartada: Michael Mayer destaca como reclamo prioritario en la posición → duplicada",
+    "[148.7s] Descartada: Tyler Warren queda fuera por segunda semana consecutiva → duplicada",
+    "[148.7s] Noticias nuevas verificadas: 3",
+    "[149.6s] Listo: 3 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 235 · semana de juego 7 · IA usada hoy 4/40"
   ]
 }

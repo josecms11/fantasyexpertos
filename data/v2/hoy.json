@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-24T04:55:40.366Z",
-  "ultimaIA": "2026-10-24T03:22:51.787Z",
+  "actualizado": "2026-10-24T05:18:45.954Z",
+  "ultimaIA": "2026-10-24T05:18:45.954Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,57 +13,79 @@
   ],
   "noticias": [
     {
-      "id": "n20261024032201",
-      "fecha": "2026-10-24T03:22:51.787Z",
+      "id": "n20261024051803",
+      "fecha": "2026-10-24T05:18:45.954Z",
       "semana": 7,
-      "titulo": "Ja'Marr Chase tiene banquete servido frente a Baltimore",
+      "titulo": "Brock Purdy pierde armas clave frente a Atlanta",
       "claves": [
-        "Enfrenta a una secundaria de Ravens sumamente vulnerable",
-        "Proyección estelar de 19.1 puntos en formato PPR",
-        "Cincinnati llega como perro peligroso de visita divisional"
+        "Mike Evans y Deebo Samuel quedaron descartados por distintas lesiones musculares.",
+        "Brock Purdy pierde a sus dos principales opciones aéreas exteriores.",
+        "El mariscal enfrenta un techo limitado ante la defensiva de Falcons."
       ],
-      "contexto": "Los Bengals visitan a Baltimore en un choque divisional crucial de la AFC Norte donde las apuestas señalan un escenario ideal para Ja'Marr Chase. La defensiva secundaria de los Ravens ha mostrado grietas importantes y Cincinnati llega con Joe Burrow buscando explotar matchups individuales en campo profundo. Con el juego aéreo como principal arma de los Bengals, Chase llega con etiqueta de protagonista para castigar las coberturas rivales el domingo.",
-      "fantasy": "Chase se mantiene como WR1 de élite y su valor sube con una proyección de 19.1 puntos PPR, colocándolo en el top cuatro de receptores de la semana. En ligas Dynasty y Redraft es una pieza inamovible que ofrece techo monstruoso por su capacidad de anotar en jugadas explosivas. Si buscas asegurar la victoria semanal en ligas PPR o DFS, Chase es un candado absoluto en tu alineación inicial.",
-      "equipo_impacto": "El ataque de Cincinnati concentrará sus rutas largas en Chase, obligando a los Ravens a mandar doble cobertura y abriendo espacios para el resto de los receptores comandados por Joe Burrow.",
-      "accion": "Arranca a Ja'Marr Chase como tu WR1 indispensable sin importar el formato de competencia.",
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "CIN",
+      "contexto": "El panorama se complicó drásticamente para Brock Purdy y los San Francisco 49ers de cara al cruce dominical contra los Atlanta Falcons. El equipo confirmó de manera oficial que tanto Mike Evans, aquejado del tendón de Aquiles, como Deebo Samuel, lastimado del tendón de la corva, están completamente descartados. Purdy deberá encarar el duelo sin dos de sus receptores estelares, limitando de golpe la verticalidad y versatilidad aérea del esquema ofensivo.",
+      "fantasy": "Purdy experimenta una caída sensible en su valor inmediato para fantasy, cayendo a territorio de mariscal de reserva en ligas tradicionales de un solo pasador. Su proyección previa de 20.3 puntos está bajo severa amenaza debido a la falta de personal probado en el perímetro. Aunque conserva a George Kittle y Christian McCaffrey, su techo anotador disminuye drásticamente, haciendo preferible explorar pasadores en situaciones mucho más favorables.",
+      "equipo_impacto": "Con las bajas de Evans y Samuel, la ofensiva de San Francisco recargará todo su plan de juego en el juego terrestre y pases pantalla. Los defensivos rivales podrán concentrar hombres en la caja sin temer tanto castigo profundo.",
+      "accion": "Manda a Brock Purdy a tu banca y busca un mariscal con mejor arsenal disponible.",
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "SF",
       "equipos": [
-        "CIN",
-        "BAL"
+        "SF",
+        "ATL"
       ],
       "jugadores": [
-        "7564",
-        "6770"
+        "8183",
+        "2216",
+        "5872"
       ],
       "menciona": []
     },
     {
-      "id": "n20261024032204",
-      "fecha": "2026-10-24T03:22:51.787Z",
+      "id": "n20261024051806",
+      "fecha": "2026-10-24T05:18:45.954Z",
       "semana": 7,
-      "titulo": "Chris Godwin Jr. asume rol protagónico en Tampa",
+      "titulo": "Tremaine Edmunds se pierde el resto de la temporada",
       "claves": [
-        "Emeka Egbuka descartado por protocolo de conmoción cerebral",
-        "Jalen McMillan continúa en la lista de reservas lesionados",
-        "Baker Mayfield regresa y buscará a su veterano favorito"
+        "Tremaine Edmunds sufrió un desgarro en el músculo del pecho.",
+        "El apoyador de Giants lideraba al equipo con cincuenta tacleadas.",
+        "Portaba el punto verde defensivo y deja un vacío gigantesco."
       ],
-      "contexto": "La ofensiva de los Buccaneers recibe de vuelta al mariscal Baker Mayfield, pero sufrirá bajas críticas en su cuerpo de receptores. Emeka Egbuka quedó descartado por una conmoción cerebral, mientras que Jalen McMillan permanece fuera en la lista de lesionados. Este escenario deja a Chris Godwin Jr., quien figura entre los jugadores más reclamados en waivers esta semana, como el objetivo principal para mover las cadenas aéreas contra el perímetro de Panthers.",
-      "fantasy": "Godwin sube a rango de WR2 sólido con enorme volumen garantizado en ligas PPR y formatos Redraft o Dynasty. Con las ausencias de Egbuka y McMillan, acaparará una cuota dominante de targets tanto en trayectorias cortas como en la zona roja. Si está disponible en tu agencia libre o waiver wire, debes reclamarlo de inmediato antes de que otros mánagers aprovechen este vacío en el ataque aéreo.",
-      "equipo_impacto": "Con la baja de Egbuka, Godwin se convierte en el ancla indiscutible del esquema ofensivo de Tampa Bay, recibiendo los envíos prioritarios de Mayfield para sostener el ataque frente a Carolina.",
-      "accion": "Reclama a Chris Godwin Jr. en waivers y colócalo de inmediato en tu alineación titular.",
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "TB",
+      "contexto": "Golpe devastador para la defensiva de los New York Giants. Se confirmó que el apoyador estelar Tremaine Edmunds se perderá el resto de la campaña tras sufrir un grave desgarro en el músculo pectoral. Edmunds no solo encabezaba al equipo con cincuenta tacleadas totales, sino que además portaba el casco con punto verde para coordinar todas las órdenes defensivas dentro del terreno de juego. Su ausencia representa un golpe crítico a la columna vertebral del conjunto neoyorquino.",
+      "fantasy": "En ligas defensivas individuales (IDP), la baja de Edmunds es catastrófica. Era un titular fijo con producción élite de tacleadas semana a semana; los manejadores deben cortarlo de inmediato en formatos tradicionales de temporada única. Paralelamente, la unidad defensiva de los Giants baja drásticamente de categoría y se convierte en un emparejamiento favorable para atacar con corredores rivales, perdiendo cualquier atractivo como defensa para alinear en fantasy tradicional.",
+      "equipo_impacto": "Sin su líder de tacleadas ni el encargado de comunicar las jugadas, los Giants deberán reorganizar por completo la comunicación y disciplina terrestre en el centro del campo, haciéndose sumamente vulnerables por tierra.",
+      "accion": "Corta de inmediato a Tremaine Edmunds en formatos IDP y busca su sustituto en la agencia libre.",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "NYG",
       "equipos": [
-        "TB",
-        "CAR"
+        "NYG"
+      ],
+      "jugadores": [],
+      "menciona": []
+    },
+    {
+      "id": "n20261024051807",
+      "fecha": "2026-10-24T05:18:45.954Z",
+      "semana": 7,
+      "titulo": "Lamar Jackson progresa pero mantiene incertidumbre ante Bengals",
+      "claves": [
+        "Lamar Jackson lidia con un esguince en la parte alta del tobillo.",
+        "El mariscal afirmó ir en la dirección correcta para jugar.",
+        "Baltimore lista a su estrella como cuestionable frente a Cincinnati."
+      ],
+      "contexto": "Lamar Jackson continúa en proceso de rehabilitación tras perderse los últimos dos encuentros debido a un severo esguince en la parte alta del tobillo. Aunque el estelar mariscal de los Baltimore Ravens declaró sentirse optimista y avanzando en la dirección correcta para encarar el duelo divisional contra los Cincinnati Bengals, aún no garantiza su participación dominical. El equipo lo mantiene con etiqueta oficial de cuestionable a la espera de evaluar su movilidad en calentamientos.",
+      "fantasy": "Jackson se mantiene en estatus neutro a la espera de confirmación dominical, con una proyección respetable de 19.0 puntos fantasy en caso de jugar. En cualquier formato es imposible enviarlo a la banca si está activo, pero su historial con lesiones de tobillo podría mermar su cuota de yardas por tierra. Es imperativo que sus dueños aseguren un plan de respaldo confiable que juegue en el segundo turno o en el juego de lunes.",
+      "equipo_impacto": "Si Jackson pisa el campo, la defensiva de Cincinnati debe abrir espacios para vigilar la opción corrida. En caso contrario, el plan de los Ravens se vuelve más predecible y unidimensional.",
+      "accion": "Prepara un mariscal suplente por si Lamar Jackson es descartado poco antes de su partido.",
+      "etiqueta": "TENDENCIA",
+      "impacto": "NEUTRO",
+      "equipo": "BAL",
+      "equipos": [
+        "BAL",
+        "CIN"
       ],
       "jugadores": [
-        "4037",
-        "12514",
-        "4892"
+        "4881"
       ],
       "menciona": []
     }
@@ -285,9 +307,9 @@
     "6904"
   ],
   "duelo": {
-    "a": "Drake Maye",
-    "b": "Brock Purdy",
-    "veredicto": "Arranca a Drake Maye. Su proyección de 21.7 puntos lidera la liga y ofrece mayor volumen aéreo frente a unos 49ers que llegan severamente mermados por bajas clave en su cuerpo de receptores."
+    "a": "Amon-Ra St. Brown",
+    "b": "Christian Watson",
+    "veredicto": "Arranca a Amon-Ra St. Brown (19.5 proyectados). Su volumen como opción predilecta de Detroit en pases cortos asegura un piso de recepciones mucho más firme y seguro que la volatilidad de Watson en Green Bay."
   },
   "fuentes": [
     "Sleeper",
