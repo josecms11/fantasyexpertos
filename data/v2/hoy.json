@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-24T13:43:52.731Z",
-  "ultimaIA": "2026-10-24T12:01:43.250Z",
+  "actualizado": "2026-10-24T14:07:49.622Z",
+  "ultimaIA": "2026-10-24T14:07:49.622Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,30 +13,28 @@
   ],
   "noticias": [
     {
-      "id": "n20261024120102",
-      "fecha": "2026-10-24T12:01:43.250Z",
+      "id": "n20261024140706",
+      "fecha": "2026-10-24T14:07:49.622Z",
       "semana": 7,
-      "titulo": "Dallas Goedert representa un riesgo mayúsculo en fantasy",
+      "titulo": "Caleb Williams desata entusiasmo histórico en los Bears",
       "claves": [
-        "Llega en duda por molestia recurrente en la rodilla.",
-        "Tanner McKee lidera ofensiva ante ausencia definitiva de Jalen Hurts.",
-        "Duelo divisional sumamente complejo ante los Dallas Cowboys."
+        "Hazaña estadística no vista en Chicago desde 1962",
+        "Triunfo en jueves consolida el despertar del mariscal",
+        "Proyección sólida de 18.7 puntos en semana 7"
       ],
-      "contexto": "Dallas Goedert se mantiene listado como cuestionable debido a dolencias en la rodilla que le han impedido entrenar al parejo del grupo. Para colmo de males, la baja por coágulos de Jalen Hurts obliga a Tanner McKee a encargarse de los controles, afectando la eficiencia general del ataque aéreo. Ante la férrea defensa de los Cowboys, Philadelphia podría limitar la participación de su ala cerrada veterano.",
-      "fantasy": "Goedert cae al rango de TE2 poco confiable en formatos PPR y ligas estándar de diez o doce equipos. La falta de química con McKee, combinada con su estado físico mermado, reduce drásticamente su cuota esperada de recepciones y yardas. Incluso si es activado antes del juego de lunes por la noche, arriesgarte con un objetivo disminuido puede costarte caro el enfrentamiento semanal.",
-      "equipo_impacto": "La incertidumbre física de Goedert recarga el trabajo en el juego terrestre y obliga a las alas cerradas suplentes a bloquear con mayor frecuencia, reduciendo la efectividad aérea de Philadelphia.",
-      "accion": "Sienta a Dallas Goedert y busca alternativas sanas en waivers.",
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "PHI",
+      "contexto": "Caleb Williams demostró que su nivel estelar está totalmente de regreso tras comandar a Chicago a un electrizante triunfo por 30-24 frente a Nueva Inglaterra. El pasador novato logró hitos que ningún quarterback de los Bears conseguía desde la temporada de 1962, disipando cualquier cuestionamiento sobre su adaptación. El dinamismo ofensivo que desplegó confirma que la franquicia tiene al fin un líder confiable en el bolsillo.",
+      "fantasy": "Williams se consolida firmemente en el escalón de los titulares confiables gracias a su proyección de 18.7 puntos fantasy. En ligas de diez y doce escuadras, su capacidad para extender jugadas y generar yardas por tierra lo transforman en un mariscal con piso muy seguro. Es momento de sostenerlo como una opción sólida semanal o venderlo muy caro en intercambios si tienes exceso de talento.",
+      "equipo_impacto": "La evolución de Williams eleva el techo competitivo de todo el cuerpo de receptores de Chicago, devolviendo la credibilidad y el ritmo dominante al esquema táctico diseñado por su coordinador ofensivo.",
+      "accion": "Mantén a Caleb Williams activo y cotízalo alto en canjes.",
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "CHI",
       "equipos": [
-        "PHI",
-        "DAL"
+        "CHI",
+        "NE"
       ],
       "jugadores": [
-        "5022",
-        "9230",
-        "6904"
+        "11560"
       ],
       "menciona": []
     }
@@ -209,8 +207,8 @@
     "3271",
     "4037",
     "11435",
-    "9482",
     "13317",
+    "9482",
     "8122",
     "2197",
     "11783",
@@ -228,7 +226,7 @@
     "9756",
     "5849",
     "1479",
-    "5045"
+    "11539"
   ],
   "soltados": [
     "11581",
@@ -258,9 +256,9 @@
     "5012"
   ],
   "duelo": {
-    "a": "Jaxon Smith-Njigba",
-    "b": "Amon-Ra St. Brown",
-    "veredicto": "Arranca a Jaxon Smith-Njigba por su elevado techo proyectado en PPR y su momento estelar en el ataque aéreo."
+    "a": "Kyren Williams",
+    "b": "Kenneth Walker III",
+    "veredicto": "Arranca a Kyren Williams sobre Kenneth Walker III. Williams ofrece mayor volumen garantizado en la línea de gol y un piso más estable en yardas terrestres con 19.8 puntos proyectados, superando el duelo divisional de Walker."
   },
   "fuentes": [
     "Sleeper",
