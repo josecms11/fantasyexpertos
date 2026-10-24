@@ -1,10 +1,18 @@
 {
-  "fecha": "2026-10-24T21:14:59.735Z",
+  "fecha": "2026-10-24T21:46:53.912Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 15 nuevos, 17 en total",
-    "[0.8s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[1.7s] ESPN: lesiones 799 · noticias 50",
-    "[2.5s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 246 · semana de juego 7 · IA usada hoy 15/40"
+    "[0.9s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[3.5s] ESPN: lesiones 799 · noticias 50",
+    "[4.1s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[121.0s] IA OK con gemini-3.8-flash",
+    "[121.0s] Descartada: George Kittle dominará el juego aéreo ante Atlanta → duplicada",
+    "[121.0s] Descartada: Zay Flowers asume el liderazgo aéreo de Baltimore → duplicada",
+    "[121.0s] Descartada: Baker Mayfield vuelve limitado y sin armas clave → duplicada",
+    "[121.0s] Descartada: Cole Kmet fuera por lesión de rodilla → duplicada",
+    "[121.0s] Descartada: Josh Jacobs debuta con Green Bay ante Detroit → duplicada",
+    "[121.0s] Noticias nuevas verificadas: 3",
+    "[121.9s] Listo: 3 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 249 · semana de juego 7 · IA usada hoy 16/40"
   ]
 }

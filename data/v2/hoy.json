@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-24T21:14:58.994Z",
-  "ultimaIA": "2026-10-24T19:40:14.391Z",
+  "actualizado": "2026-10-24T21:44:55.560Z",
+  "ultimaIA": "2026-10-24T21:44:55.560Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,105 +13,83 @@
   ],
   "noticias": [
     {
-      "id": "n20261024194002",
-      "fecha": "2026-10-24T19:40:14.391Z",
+      "id": "n20261024214403",
+      "fecha": "2026-10-24T21:44:55.560Z",
       "semana": 7,
-      "titulo": "DeVonta Smith representa un riesgo enorme frente a Dallas",
+      "titulo": "Aaron Rodgers encara duelo incómodo en París",
       "claves": [
-        "Figura como cuestionable por una persistente molestia de isquiotibiales.",
-        "Jalen Hurts está en la lista de reservas lesionados.",
-        "La ofensiva de Philadelphia sufre severas dudas en producción."
+        "Molestia pública por la logística del viaje internacional a Francia.",
+        "Duelo atípico en París frente a los New Orleans Saints.",
+        "Michael Pittman Jr. permanece fuera en la lista de lesionados."
       ],
-      "contexto": "Philadelphia afronta el clásico divisional frente a los Dallas Cowboys en lunes por la noche bajo un panorama desolador. DeVonta Smith llega con la etiqueta de cuestionable tras sufrir molestias en el tendón de la corva. Esta lesión física se combina con la baja definitiva del mariscal titular Jalen Hurts, quien fue enviado a la reserva de lesionados por problemas de pantorrilla, dejando la eficacia del juego de pase en seria incertidumbre.",
-      "fantasy": "Smith baja considerablemente en las evaluaciones para la semana 7 y se posiciona como un candidato claro para mandar a la banca. En ligas estándar y formatos PPR de diez o doce participantes, alinear a un receptor mermado físicamente sin su mariscal franquicia es una trampa mortal. Si tienes alternativas sanas en tu banca con roles definidos, prefiere dejárselo a otro y evita comer un cero.",
-      "equipo_impacto": "El ataque aéreo de Philadelphia pierde dinamismo sin Hurts ni receptores al cien por ciento. Saquon Barkley y Dallas Goedert también arrastran molestias, reduciendo drásticamente la capacidad de anotación del conjunto.",
-      "accion": "Manda a DeVonta Smith a la banca y busca opciones más saludables.",
+      "contexto": "Aaron Rodgers disputará su tercer partido internacional consecutivo en países distintos, enfrentando a los New Orleans Saints en el histórico duelo de París. El veterano mariscal expresó públicamente su incomodidad con la logística del viaje europeo. Además, la ofensiva de Pittsburgh continúa afectada por la ausencia de Michael Pittman Jr., quien sigue inactivo en la lista de lesionados.",
+      "fantasy": "Concluye como un claro candidato para sentar en ligas estándar de un mariscal de campo. Los encuentros internacionales suelen traducirse en ritmos más pausados y menor volumen ofensivo mientras los planteles se aclimatan al huso horario. Salvo que compitas en formatos de dos pasadores o Superflex con ligas de 14 equipos, encontrarás mejores números en el mercado habitual.",
+      "equipo_impacto": "El esquema ofensivo de Pittsburgh tendrá que apoyarse en posesiones largas y acarreos directos para evitar pérdidas de balón en territorio parisino tras una semana de traslados sumamente pesada.",
+      "accion": "Manda a Aaron Rodgers a la banca en ligas convencionales de un quarterback.",
       "etiqueta": "SIT",
       "impacto": "BAJA",
-      "equipo": "PHI",
+      "equipo": "PIT",
       "equipos": [
-        "PHI",
-        "DAL"
+        "PIT",
+        "NO"
       ],
       "jugadores": [
-        "7525"
+        "96",
+        "6819"
       ],
       "menciona": []
     },
     {
-      "id": "n20261024194003",
-      "fecha": "2026-10-24T19:40:14.391Z",
+      "id": "n20261024214405",
+      "fecha": "2026-10-24T21:44:55.560Z",
       "semana": 7,
-      "titulo": "Dalton Kincaid llega golpeado y pierde valor fantasy semanal",
+      "titulo": "Jordan Mason reactivado por los Minnesota Vikings",
       "claves": [
-        "Aparece como cuestionable por una dolorosa lesión en costillas.",
-        "Quedó fuera de los mejores ocho alas cerradas proyectados.",
-        "Las dolencias en el torso suelen recortar rutas y jugadas."
+        "Superó la cirugía en el pulgar fracturado del mes pasado.",
+        "Minnesota lo retiró oficialmente de la reserva de lesionados.",
+        "Opción prioritaria disponible para reforzar la profundidad en waivers."
       ],
-      "contexto": "El ala cerrada de Buffalo se encuentra en duda para el compromiso de la semana 7 debido a una lesión en las costillas. Con DJ Moore descartado por una lesión en la articulación del hombro, el conjunto de los Bills tendrá que ajustar su plan aéreo. Sin embargo, los problemas de costillas son especialmente limitantes para jugadores que reciben castigo constante por el centro del campo, reduciendo su efectividad.",
-      "fantasy": "Baja sensiblemente en las clasificaciones semanales y debe ser enviado a la banca en la mayoría de ligas de diez y doce equipos. En las proyecciones PPR de ala cerrada no logró colarse en el grupo de honor que encabezan Brock Bowers y George Kittle. En formatos sin bonificación por recepción, su techo es sumamente bajo debido al riesgo latente de perder tiempo durante el partido si sufre contacto.",
-      "equipo_impacto": "La ausencia de DJ Moore y las molestias de Kincaid obligan a Buffalo a diversificar envíos hacia receptores complementarios, restando fluidez y potencia a las series ofensivas en zona de gol.",
-      "accion": "Sienta a Dalton Kincaid en tu alineación hasta que recupere la salud.",
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "BUF",
-      "equipos": [
-        "BUF"
-      ],
-      "jugadores": [
-        "10236"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261024194004",
-      "fecha": "2026-10-24T19:40:14.391Z",
-      "semana": 7,
-      "titulo": "Xavier Worthy emerge en waivers tras lesión de Rice",
-      "claves": [
-        "Rashee Rice quedó oficialmente descartado por una lesión de isquiotibiales.",
-        "Worthy se coloca entre los elementos más reclamados en waivers.",
-        "Enfrenta a Seattle en choque que promete puntos fantasy."
-      ],
-      "contexto": "Los Kansas City Chiefs sufrieron un duro golpe con la confirmación de que Rashee Rice se perderá el duelo contra los Seahawks por lesión de isquiotibiales. Ante esta vacante trascendental, el novato Xavier Worthy se ha transformado en uno de los jugadores más solicitados en la lista de waivers de la liga. Su velocidad y capacidad para generar jugadas grandes son indispensables para mantener la profundidad aérea del equipo.",
-      "fantasy": "Worthy sube drásticamente como una prioridad máxima de reclamo en waivers para ligas de diez, doce y catorce equipos. En formatos PPR y ligas dinastía, su valor escala de inmediato hacia el terreno del Flex con potencial de WR2. Si sufres por bajas de titulares lesionados, gastar presupuesto de FAAB o una prioridad alta por Worthy te dará dividendos inmediatos en este enfrentamiento contra la secundaria de Seattle.",
-      "equipo_impacto": "Kansas City requiere estirar el campo ante Seattle sin Rice en la alineación. Worthy absorberá objetivos verticales cruciales, aliviando la presión sobre Travis Kelce en el medio del terreno.",
-      "accion": "Invierte tu prioridad de waivers o presupuesto FAAB en Xavier Worthy hoy.",
+      "contexto": "Los Minnesota Vikings activaron este sábado al corredor Jordan Mason de la lista de lesionados, completando favorablemente su recuperación de una fractura de pulgar que demandó intervención quirúrgica el mes anterior. Con el alta médica otorgada por el cuerpo técnico, Mason se reincorpora a la rotación activa para fortalecer el ataque terrestre de Minnesota en este tramo crucial.",
+      "fantasy": "Mason se transforma al instante en un reclamo prioritario de waivers en todas las ligas de diez y doce participantes que no lo tengan acaparado. Aunque su volumen inicial podría ser administrado mientras recupera el ritmo competitivo, su potencial valor de seguro y relevancia en zona de gol elevan su cotización en ligas PPR y formatos por puntos estándar.",
+      "equipo_impacto": "La presencia física de Mason le entrega a Minnesota un corredor confiable entre los tacles, aliviando la carga de trabajo en situaciones de corto yardaje y protegiendo el balón.",
+      "accion": "Reclama a Jordan Mason desde la agencia libre antes de que juegue Minnesota.",
       "etiqueta": "WAIVER",
       "impacto": "SUBE",
-      "equipo": "KC",
+      "equipo": "MIN",
       "equipos": [
-        "KC",
-        "SEA"
+        "MIN"
       ],
       "jugadores": [
-        "11624"
+        "8408"
       ],
       "menciona": []
     },
     {
-      "id": "n20261024194006",
-      "fecha": "2026-10-24T19:40:14.391Z",
+      "id": "n20261024214407",
+      "fecha": "2026-10-24T21:44:55.560Z",
       "semana": 7,
-      "titulo": "Kenneth Walker III visita Seattle con proyección de élite",
+      "titulo": "Justice Hill gana terreno aéreo con Tyler Huntley",
       "claves": [
-        "Enfrenta a su exequipo con proyección de 19.3 puntos.",
-        "Figura como el quinto corredor con mayor expectativa PPR.",
-        "Seattle no contará con Zach Charbonnet en el emparrillado."
+        "Figura entre los jugadores más agregados en ligas semanales.",
+        "Lamar Jackson queda descartado ante los Cincinnati Bengals.",
+        "Perfil de receptor complementario ideal para pases de escape."
       ],
-      "contexto": "Uno de los relatos más atractivos de la semana 7 es la visita de Kenneth Walker III a Seattle defendiendo los colores de Kansas City. Walker regresa al estadio donde inició su trayectoria profesional en un momento cumbre de la temporada. El corredor ha sido pieza clave para los Chiefs y llega en plenitud física para medirse ante una defensiva de Seattle que no tendrá disponible a Zach Charbonnet.",
-      "fantasy": "Walker sube su cotización como un indiscutible RB1 para esta jornada en formatos PPR, estándar y puntos medios. Con una proyección estelar de 19.3 unidades, únicamente es superado por Jahmyr Gibbs, Bijan Robinson y Christian McCaffrey en los pronósticos de la posición. En cualquier liga donde lo tengas registrado, ponlo en tu alineación inicial sin dudarlo; el volumen proyectado y la narrativa de revancha aseguran un rendimiento explosivo.",
-      "equipo_impacto": "El ataque terrestre de Kansas City se apoyará en la potencia de Walker para marcar el ritmo en Seattle, balanceando los envíos hacia sus receptores y controlando el reloj de juego.",
-      "accion": "Arranca a Kenneth Walker III con total seguridad como tu corredor titular.",
-      "etiqueta": "TENDENCIA",
+      "contexto": "La confirmación de Tyler Huntley como titular en lugar del lastimado Lamar Jackson abre una interesante puerta táctica para el veterano Justice Hill. Con Jackson ausente por un esguince en el tobillo alto, la ofensiva de los Ravens necesitará pases pantallas y rutas cortas hacia el backfield para quitarle presión a Huntley frente a los Cincinnati Bengals.",
+      "fantasy": "Hill emerge como una incorporación inteligente de waivers para plantillas necesitadas de profundidad en ligas PPR de doce o catorce equipos. Con Derrick Henry acaparando las jugadas de poder, Hill absorbe las situaciones de pase y tercer down, donde Huntley acostumbra soltar el balón rápido. Si necesitas un Flex de emergencia con piso decente, Hill ofrece valor inmediato.",
+      "equipo_impacto": "El plan de juego de Baltimore dividirá responsabilidades entre la fuerza de Derrick Henry y la velocidad de Hill, protegiendo a Tyler Huntley contra la intensa presión frontal de Cincinnati.",
+      "accion": "Suma a Justice Hill desde el alambre de waivers para reforzar tu banca.",
+      "etiqueta": "WAIVER",
       "impacto": "SUBE",
-      "equipo": "KC",
+      "equipo": "BAL",
       "equipos": [
-        "KC",
-        "SEA"
+        "BAL",
+        "CIN"
       ],
       "jugadores": [
-        "8151"
+        "5995",
+        "7083",
+        "4881",
+        "3198"
       ],
       "menciona": []
     }
@@ -284,22 +262,22 @@
     "11435",
     "3271",
     "4037",
-    "13317",
     "5995",
+    "13317",
     "2197",
     "9482",
-    "8122",
-    "11624",
     "5849",
+    "11624",
+    "8122",
     "12634",
     "11625",
     "13296",
     "6650",
-    "11783",
-    "8132",
-    "11610",
-    "13298",
     "11563",
+    "11610",
+    "8132",
+    "11783",
+    "13298",
     "9758",
     "CLE",
     "96",
@@ -311,31 +289,31 @@
     "11439",
     "12718",
     "9511",
-    "8154",
     "5927",
+    "8154",
     "10235",
     "9480",
     "3321",
     "11637",
+    "9502",
     "9482",
     "2505",
-    "13150",
     "1166",
+    "13150",
     "13330",
-    "9502",
     "7567",
-    "8134",
     "4035",
+    "8134",
     "JAX",
-    "11435",
     "3271",
     "12533",
+    "11783",
     "8121"
   ],
   "duelo": {
-    "a": "Joe Burrow",
-    "b": "Jordan Love",
-    "veredicto": "Arranca a Joe Burrow. Proyecta 19.7 puntos frente a una defensiva de Baltimore mermada, mientras que Jordan Love proyecta 19.4. Burrow ofrece un techo más elevado en un tiroteo aéreo divisional."
+    "a": "Drake Maye",
+    "b": "Brock Purdy",
+    "veredicto": "Arranca a Drake Maye. Su proyección de 21.7 puntos supera los 20.3 de Brock Purdy, quien llega con bajas clave en su cuerpo de receptores como Mike Evans y Deebo Samuel Sr."
   },
   "fuentes": [
     "Sleeper",
