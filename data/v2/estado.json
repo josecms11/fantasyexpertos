@@ -1,17 +1,10 @@
 {
-  "fecha": "2026-10-24T19:42:03.968Z",
+  "fecha": "2026-10-24T20:02:58.547Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 15 nuevos, 17 en total",
-    "[0.8s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[2.4s] ESPN: lesiones 799 · noticias 50",
-    "[2.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[111.1s] IA OK con gemini-3.8-flash",
-    "[111.1s] Descartada: George Kittle será el motor ofensivo de San Francisco → duplicada",
-    "[111.1s] Descartada: Jaxon Smith-Njigba domina las proyecciones para la semana siete → duplicada",
-    "[111.1s] Descartada: Cole Kmet se pierde la temporada tras lesión grave → duplicada",
-    "[111.1s] Descartada: Sam LaPorta mantiene respaldo técnico pese a tensión contractual → duplicada",
-    "[111.1s] Noticias nuevas verificadas: 4",
-    "[112.0s] Listo: 4 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 246 · semana de juego 7 · IA usada hoy 15/40"
+    "[0.5s] YouTube: 15 nuevos, 17 en total",
+    "[1.4s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[3.9s] ESPN: lesiones 799 · noticias 50",
+    "[4.8s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 246 · semana de juego 7 · IA usada hoy 15/40"
   ]
 }
