@@ -1,22 +1,10 @@
 {
-  "fecha": "2026-10-24T09:38:44.635Z",
+  "fecha": "2026-10-24T10:03:06.576Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.3s] YouTube: 15 nuevos, 17 en total",
+    "[0.2s] YouTube: 15 nuevos, 17 en total",
     "[0.9s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[2.3s] ESPN: lesiones 799 · noticias 50",
-    "[2.7s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[245.4s] IA OK con gemini-3.8-flash",
-    "[245.4s] Descartada: Kenneth Walker explota en fantasy sin Charbonnet → duplicada",
-    "[245.4s] Descartada: Drake Maye lidera las proyecciones de mariscales → duplicada",
-    "[245.4s] Descartada: Jared Goff encara peligroso duelo divisional ante Packers → duplicada",
-    "[245.4s] Descartada: Breece Hall genera incertidumbre por molestia de cuádriceps → duplicada",
-    "[245.4s] Descartada: Michael Mayer surge como opción urgente de waivers → duplicada",
-    "[245.4s] Descartada: Tyler Warren queda fuera por lesión en ingle → duplicada",
-    "[245.4s] Descartada: CeeDee Lamb busca rescate urgente de los Cowboys → duplicada",
-    "[245.5s] Noticias nuevas verificadas: 1",
-    "[363.2s] IA OK con gemini-3.8-flash",
-    "[363.2s] Resumen semana 7",
-    "[363.2s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 238 · semana de juego 7 · IA usada hoy 7/40"
+    "[3.3s] ESPN: lesiones 799 · noticias 50",
+    "[4.4s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 238 · semana de juego 7 · IA usada hoy 7/40"
   ]
 }
