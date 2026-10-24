@@ -1,21 +1,10 @@
 {
-  "fecha": "2026-10-24T07:47:53.014Z",
+  "fecha": "2026-10-24T08:04:52.009Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 15 nuevos, 17 en total",
-    "[0.9s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[1.7s] ESPN: lesiones 799 · noticias 50",
-    "[2.1s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[302.1s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
-    "[602.1s] Gemini sin respuesta gemini-3.7-flash The operation was aborted due to timeout",
-    "[648.4s] IA OK con gemini-3.6-flash",
-    "[648.4s] Descartada: Drake Maye se consolida como mariscal de élite → duplicada",
-    "[648.4s] Descartada: Tyler Warren queda descartado para enfrentar a Vikings → duplicada",
-    "[648.4s] Descartada: Breece Hall genera serias dudas con molestia física → duplicada",
-    "[648.4s] Descartada: Jahmyr Gibbs encabeza las proyecciones de corredores → duplicada",
-    "[648.4s] Descartada: Tyler Allgeier gana atractivo de reclamo en waivers → duplicada",
-    "[648.4s] Descartada: Caleb Williams recupera el rumbo tras victoria estelar → duplicada",
-    "[648.4s] Noticias nuevas verificadas: 2",
-    "[649.2s] Listo: 2 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 237 · semana de juego 7 · IA usada hoy 5/40"
+    "[0.1s] YouTube: 15 nuevos, 17 en total",
+    "[0.8s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[1.5s] ESPN: lesiones 799 · noticias 50",
+    "[2.2s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 237 · semana de juego 7 · IA usada hoy 5/40"
   ]
 }
