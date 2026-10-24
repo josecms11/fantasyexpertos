@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-24T11:32:02.150Z",
-  "ultimaIA": "2026-10-24T09:32:43.744Z",
+  "actualizado": "2026-10-24T12:01:43.250Z",
+  "ultimaIA": "2026-10-24T12:01:43.250Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,29 +13,30 @@
   ],
   "noticias": [
     {
-      "id": "n20261024093207",
-      "fecha": "2026-10-24T09:32:43.744Z",
+      "id": "n20261024120102",
+      "fecha": "2026-10-24T12:01:43.250Z",
       "semana": 7,
-      "titulo": "Zach Charbonnet descartado y retrasa su debut estacional",
+      "titulo": "Dallas Goedert representa un riesgo mayúsculo en fantasy",
       "claves": [
-        "Descartado formalmente por lesión de ligamento en rodilla.",
-        "Se pierde el duelo dominical contra Kansas City.",
-        "Dejará el backfield completamente libre a Walker."
+        "Llega en duda por molestia recurrente en la rodilla.",
+        "Tanner McKee lidera ofensiva ante ausencia definitiva de Jalen Hurts.",
+        "Duelo divisional sumamente complejo ante los Dallas Cowboys."
       ],
-      "contexto": "La expectativa sobre el ansiado debut en la temporada para Zach Charbonnet tendrá que esperar por lo menos una semana más. Los Seahawks determinaron que el corredor aún no se encuentra físicamente apto tras su lesión de rodilla y lo descartaron de manera definitiva para el cotejo ante los Chiefs. Seattle ha optado por no precipitar su vuelta a los emparrillados competitivos.",
-      "fantasy": "Cero valor utilizable esta semana en todas las ligas de fantasía. Al ostentar la etiqueta oficial de descartado, mantenerlo en cualquier alineación activa es un suicidio táctico. Los dueños que lo guardaban en la banca deben conservarlo únicamente si cuentan con casillas de reserva lesionada, buscando paciencia hasta que los reportes de entrenamientos indiquen un progreso real y constante.",
-      "equipo_impacto": "Seattle dependerá exclusivamente de un corredor principal ante los Chiefs, limitando por completo las rotaciones en el backfield y forzando a la línea ofensiva a concentrarse en bloqueos directos y sostenidos.",
-      "accion": "Sienta a Zach Charbonnet en tu IR y no lo actives este domingo.",
-      "etiqueta": "LESIÓN",
+      "contexto": "Dallas Goedert se mantiene listado como cuestionable debido a dolencias en la rodilla que le han impedido entrenar al parejo del grupo. Para colmo de males, la baja por coágulos de Jalen Hurts obliga a Tanner McKee a encargarse de los controles, afectando la eficiencia general del ataque aéreo. Ante la férrea defensa de los Cowboys, Philadelphia podría limitar la participación de su ala cerrada veterano.",
+      "fantasy": "Goedert cae al rango de TE2 poco confiable en formatos PPR y ligas estándar de diez o doce equipos. La falta de química con McKee, combinada con su estado físico mermado, reduce drásticamente su cuota esperada de recepciones y yardas. Incluso si es activado antes del juego de lunes por la noche, arriesgarte con un objetivo disminuido puede costarte caro el enfrentamiento semanal.",
+      "equipo_impacto": "La incertidumbre física de Goedert recarga el trabajo en el juego terrestre y obliga a las alas cerradas suplentes a bloquear con mayor frecuencia, reduciendo la efectividad aérea de Philadelphia.",
+      "accion": "Sienta a Dallas Goedert y busca alternativas sanas en waivers.",
+      "etiqueta": "SIT",
       "impacto": "BAJA",
-      "equipo": "SEA",
+      "equipo": "PHI",
       "equipos": [
-        "SEA",
-        "KC"
+        "PHI",
+        "DAL"
       ],
       "jugadores": [
-        "9753",
-        "8151"
+        "5022",
+        "9230",
+        "6904"
       ],
       "menciona": []
     }
@@ -241,8 +242,8 @@
     "5927",
     "9480",
     "11637",
-    "13150",
     "2505",
+    "13150",
     "3321",
     "9482",
     "JAX",
