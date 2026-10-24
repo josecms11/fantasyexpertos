@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-24T07:04:45.158Z",
-  "ultimaIA": "2026-10-24T05:18:45.954Z",
+  "actualizado": "2026-10-24T07:37:05.576Z",
+  "ultimaIA": "2026-10-24T07:37:05.576Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,79 +13,54 @@
   ],
   "noticias": [
     {
-      "id": "n20261024051803",
-      "fecha": "2026-10-24T05:18:45.954Z",
+      "id": "n20261024073700",
+      "fecha": "2026-10-24T07:37:05.576Z",
       "semana": 7,
-      "titulo": "Brock Purdy pierde armas clave frente a Atlanta",
+      "titulo": "Puka Nacua en duda por molestia en la pantorrilla",
       "claves": [
-        "Mike Evans y Deebo Samuel quedaron descartados por distintas lesiones musculares.",
-        "Brock Purdy pierde a sus dos principales opciones aéreas exteriores.",
-        "El mariscal enfrenta un techo limitado ante la defensiva de Falcons."
+        "Nacua no entrenó el viernes por molestia de pantorrilla.",
+        "Su estatus oficial es cuestionable para la Semana 7.",
+        "Sean McVay evalúa su disponibilidad antes del partido."
       ],
-      "contexto": "El panorama se complicó drásticamente para Brock Purdy y los San Francisco 49ers de cara al cruce dominical contra los Atlanta Falcons. El equipo confirmó de manera oficial que tanto Mike Evans, aquejado del tendón de Aquiles, como Deebo Samuel, lastimado del tendón de la corva, están completamente descartados. Purdy deberá encarar el duelo sin dos de sus receptores estelares, limitando de golpe la verticalidad y versatilidad aérea del esquema ofensivo.",
-      "fantasy": "Purdy experimenta una caída sensible en su valor inmediato para fantasy, cayendo a territorio de mariscal de reserva en ligas tradicionales de un solo pasador. Su proyección previa de 20.3 puntos está bajo severa amenaza debido a la falta de personal probado en el perímetro. Aunque conserva a George Kittle y Christian McCaffrey, su techo anotador disminuye drásticamente, haciendo preferible explorar pasadores en situaciones mucho más favorables.",
-      "equipo_impacto": "Con las bajas de Evans y Samuel, la ofensiva de San Francisco recargará todo su plan de juego en el juego terrestre y pases pantalla. Los defensivos rivales podrán concentrar hombres en la caja sin temer tanto castigo profundo.",
-      "accion": "Manda a Brock Purdy a tu banca y busca un mariscal con mejor arsenal disponible.",
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "SF",
-      "equipos": [
-        "SF",
-        "ATL"
-      ],
-      "jugadores": [
-        "8183",
-        "2216",
-        "5872"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261024051806",
-      "fecha": "2026-10-24T05:18:45.954Z",
-      "semana": 7,
-      "titulo": "Tremaine Edmunds se pierde el resto de la temporada",
-      "claves": [
-        "Tremaine Edmunds sufrió un desgarro en el músculo del pecho.",
-        "El apoyador de Giants lideraba al equipo con cincuenta tacleadas.",
-        "Portaba el punto verde defensivo y deja un vacío gigantesco."
-      ],
-      "contexto": "Golpe devastador para la defensiva de los New York Giants. Se confirmó que el apoyador estelar Tremaine Edmunds se perderá el resto de la campaña tras sufrir un grave desgarro en el músculo pectoral. Edmunds no solo encabezaba al equipo con cincuenta tacleadas totales, sino que además portaba el casco con punto verde para coordinar todas las órdenes defensivas dentro del terreno de juego. Su ausencia representa un golpe crítico a la columna vertebral del conjunto neoyorquino.",
-      "fantasy": "En ligas defensivas individuales (IDP), la baja de Edmunds es catastrófica. Era un titular fijo con producción élite de tacleadas semana a semana; los manejadores deben cortarlo de inmediato en formatos tradicionales de temporada única. Paralelamente, la unidad defensiva de los Giants baja drásticamente de categoría y se convierte en un emparejamiento favorable para atacar con corredores rivales, perdiendo cualquier atractivo como defensa para alinear en fantasy tradicional.",
-      "equipo_impacto": "Sin su líder de tacleadas ni el encargado de comunicar las jugadas, los Giants deberán reorganizar por completo la comunicación y disciplina terrestre en el centro del campo, haciéndose sumamente vulnerables por tierra.",
-      "accion": "Corta de inmediato a Tremaine Edmunds en formatos IDP y busca su sustituto en la agencia libre.",
+      "contexto": "El receptor estelar de los Rams, Puka Nacua, encendió las alarmas en Los Ángeles tras ausentarse de la práctica del viernes debido a una molestia en la pantorrilla. El entrenador en jefe Sean McVay confirmó que el jugador está enlistado como cuestionable para enfrentar a los Raiders. El equipo monitoreará su evolución hasta los calentamientos previos al juego para determinar si está en condiciones de saltar al emparrillado.",
+      "fantasy": "Aunque su proyección PPR se mantiene alta en 22.3 puntos para la Semana 7, la incertidumbre física complica el panorama. Si juega, se mantiene como un receptor de calibre WR1 obligatorio en todas las ligas de fantasy football. Sin embargo, debes preparar una opción de respaldo de la tarde si finalmente es descartado. Su valor a largo plazo no cae, pero esta semana representa un riesgo considerable.",
+      "equipo_impacto": "Sin Davante Adams en la reserva de lesionados, la posible ausencia de Nacua dejaría la ofensiva aérea golpeada. Cooper Kupp asumiría un volumen masivo de objetivos, mientras que las opciones secundarias tendrían que dar un paso al frente en la rotación.",
+      "accion": "Asegura un receptor suplente en tu banca para cubrirte en caso de que quede fuera de último minuto.",
       "etiqueta": "LESIÓN",
       "impacto": "BAJA",
-      "equipo": "NYG",
+      "equipo": "LAR",
       "equipos": [
-        "NYG"
+        "LAR",
+        "LV"
       ],
-      "jugadores": [],
+      "jugadores": [
+        "9493"
+      ],
       "menciona": []
     },
     {
-      "id": "n20261024051807",
-      "fecha": "2026-10-24T05:18:45.954Z",
+      "id": "n20261024073702",
+      "fecha": "2026-10-24T07:37:05.576Z",
       "semana": 7,
-      "titulo": "Lamar Jackson progresa pero mantiene incertidumbre ante Bengals",
+      "titulo": "Mantén la paciencia con Jaylen Waddle en fantasy",
       "claves": [
-        "Lamar Jackson lidia con un esguince en la parte alta del tobillo.",
-        "El mariscal afirmó ir en la dirección correcta para jugar.",
-        "Baltimore lista a su estrella como cuestionable frente a Cincinnati."
+        "Los analistas piden no desesperar tras un inicio lento.",
+        "Su volumen de objetivos se incrementará en próximas semanas.",
+        "Mantiene un potencial explosivo de jugadas de muchas yardas."
       ],
-      "contexto": "Lamar Jackson continúa en proceso de rehabilitación tras perderse los últimos dos encuentros debido a un severo esguince en la parte alta del tobillo. Aunque el estelar mariscal de los Baltimore Ravens declaró sentirse optimista y avanzando en la dirección correcta para encarar el duelo divisional contra los Cincinnati Bengals, aún no garantiza su participación dominical. El equipo lo mantiene con etiqueta oficial de cuestionable a la espera de evaluar su movilidad en calentamientos.",
-      "fantasy": "Jackson se mantiene en estatus neutro a la espera de confirmación dominical, con una proyección respetable de 19.0 puntos fantasy en caso de jugar. En cualquier formato es imposible enviarlo a la banca si está activo, pero su historial con lesiones de tobillo podría mermar su cuota de yardas por tierra. Es imperativo que sus dueños aseguren un plan de respaldo confiable que juegue en el segundo turno o en el juego de lunes.",
-      "equipo_impacto": "Si Jackson pisa el campo, la defensiva de Cincinnati debe abrir espacios para vigilar la opción corrida. En caso contrario, el plan de los Ravens se vuelve más predecible y unidimensional.",
-      "accion": "Prepara un mariscal suplente por si Lamar Jackson es descartado poco antes de su partido.",
+      "contexto": "A pesar de un arranque de temporada por debajo de las altas expectativas, los analistas de fantasy recomiendan no vender ni cortar al talentoso receptor de los Dolphins. Jaylen Waddle mantiene una participación constante en las rutas del equipo y el regreso de compañeros lesionados a la alineación comenzará a aligerar la cobertura defensiva sobre él, abriendo más ventanas de pase en el esquema ofensivo.",
+      "fantasy": "Waddle se encuentra actualmente en una zona de compra barata en ligas de formato PPR y estándar. Aunque ha decepcionado a quienes lo draftearon temprano, su talento y velocidad siguen intactos. Funciona como una opción de Flex de alto riesgo y alta recompensa para la Semana 7, pero no cometas el error de soltarlo a la agencia libre por frustración momentánea.",
+      "equipo_impacto": "El resurgimiento en la producción de Waddle es vital para darle dimensión vertical al ataque aéreo de Miami. Su presencia obliga a las defensas secundarias a retroceder, beneficiando el juego terrestre.",
+      "accion": "Explora intercambios para adquirirlo a bajo precio antes de su inevitable repunte.",
       "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "BAL",
+      "impacto": "SUBE",
+      "equipo": "MIA",
       "equipos": [
-        "BAL",
-        "CIN"
+        "MIA",
+        "DEN"
       ],
       "jugadores": [
-        "4881"
+        "7526"
       ],
       "menciona": []
     }
@@ -254,8 +229,8 @@
   ],
   "agregados": [
     "12718",
-    "3271",
     "13424",
+    "3271",
     "4037",
     "11435",
     "9482",
@@ -264,16 +239,16 @@
     "2197",
     "11783",
     "11610",
-    "6650",
     "8132",
+    "6650",
     "11625",
     "13296",
     "12634",
     "6865",
     "CLE",
     "9756",
-    "11539",
     "11624",
+    "11539",
     "7553",
     "5849",
     "13276",
@@ -298,8 +273,8 @@
     "9482",
     "13330",
     "1166",
-    "8134",
     "8121",
+    "8134",
     "7567",
     "3271",
     "12533",
@@ -307,9 +282,9 @@
     "6904"
   ],
   "duelo": {
-    "a": "Amon-Ra St. Brown",
-    "b": "Christian Watson",
-    "veredicto": "Arranca a Amon-Ra St. Brown (19.5 proyectados). Su volumen como opción predilecta de Detroit en pases cortos asegura un piso de recepciones mucho más firme y seguro que la volatilidad de Watson en Green Bay."
+    "a": "Jahmyr Gibbs",
+    "b": "Kenneth Walker III",
+    "veredicto": "Arranca a Jahmyr Gibbs. Su proyección PPR de 25.5 puntos encabeza la liga y su rol aéreo ante Green Bay le da un techo más explosivo que a Walker III frente a la dura defensa de Kansas City."
   },
   "fuentes": [
     "Sleeper",
