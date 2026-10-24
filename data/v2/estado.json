@@ -1,20 +1,10 @@
 {
-  "fecha": "2026-10-24T12:03:53.110Z",
+  "fecha": "2026-10-24T12:37:50.988Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 15 nuevos, 17 en total",
-    "[0.9s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[1.8s] ESPN: lesiones 799 · noticias 50",
-    "[2.3s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[7.0s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[130.9s] IA respuesta cortada (STOP), rescatadas 7 notas con gemini-3.7-flash",
-    "[130.9s] Descartada: Kenneth Walker III lidera backfield en revancha clave → duplicada",
-    "[130.9s] Descartada: Drake Maye despunta como quarterback estelar de semana → duplicada",
-    "[130.9s] Descartada: Jared Goff enfrenta reto hostil contra la secundaria empacadora → duplicada",
-    "[130.9s] Descartada: Tyler Allgeier gana alto valor de reclamo en waivers → duplicada",
-    "[130.9s] Descartada: Tyler Warren baja confirmada para choque ante Minnesota Vikings → duplicada",
-    "[131.0s] Descartada: Saquon Barkley enfrenta tensión física y mental en Philadelphia → duplicada",
-    "[131.0s] Noticias nuevas verificadas: 1",
-    "[131.7s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 239 · semana de juego 7 · IA usada hoy 9/40"
+    "[0.3s] YouTube: 15 nuevos, 17 en total",
+    "[1.0s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[3.4s] ESPN: lesiones 799 · noticias 50",
+    "[4.5s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 239 · semana de juego 7 · IA usada hoy 9/40"
   ]
 }
