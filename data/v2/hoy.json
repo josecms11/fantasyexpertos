@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-24T17:02:06.499Z",
-  "ultimaIA": "2026-10-24T14:07:49.622Z",
+  "actualizado": "2026-10-24T17:30:09.119Z",
+  "ultimaIA": "2026-10-24T17:30:09.119Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,28 +13,55 @@
   ],
   "noticias": [
     {
-      "id": "n20261024140706",
-      "fecha": "2026-10-24T14:07:49.622Z",
+      "id": "n20261024173004",
+      "fecha": "2026-10-24T17:30:09.119Z",
       "semana": 7,
-      "titulo": "Caleb Williams desata entusiasmo histórico en los Bears",
+      "titulo": "Dylan Sampson regresa pero afronta rol secundario en Cleveland",
       "claves": [
-        "Hazaña estadística no vista en Chicago desde 1962",
-        "Triunfo en jueves consolida el despertar del mariscal",
-        "Proyección sólida de 18.7 puntos en semana 7"
+        "Esperado para jugar ante Tennessee tras superar lesión.",
+        "Compartirá toques terrestres con el titular Quinshon Judkins.",
+        "Techo limitado en fantasy por comité y precaución."
       ],
-      "contexto": "Caleb Williams demostró que su nivel estelar está totalmente de regreso tras comandar a Chicago a un electrizante triunfo por 30-24 frente a Nueva Inglaterra. El pasador novato logró hitos que ningún quarterback de los Bears conseguía desde la temporada de 1962, disipando cualquier cuestionamiento sobre su adaptación. El dinamismo ofensivo que desplegó confirma que la franquicia tiene al fin un líder confiable en el bolsillo.",
-      "fantasy": "Williams se consolida firmemente en el escalón de los titulares confiables gracias a su proyección de 18.7 puntos fantasy. En ligas de diez y doce escuadras, su capacidad para extender jugadas y generar yardas por tierra lo transforman en un mariscal con piso muy seguro. Es momento de sostenerlo como una opción sólida semanal o venderlo muy caro en intercambios si tienes exceso de talento.",
-      "equipo_impacto": "La evolución de Williams eleva el techo competitivo de todo el cuerpo de receptores de Chicago, devolviendo la credibilidad y el ritmo dominante al esquema táctico diseñado por su coordinador ofensivo.",
-      "accion": "Mantén a Caleb Williams activo y cotízalo alto en canjes.",
-      "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "CHI",
+      "contexto": "Aunque se espera que Dylan Sampson vuelva a la actividad este domingo contra Tennessee tras superar sus molestias físicas, el panorama no es del todo favorable. Sampson comparte el ataque con Quinshon Judkins, quien también fue reportado listo para jugar. La presencia simultánea de ambos corredores reduce drásticamente las expectativas individuales en un duelo que requerirá paciencia táctica para Cleveland.",
+      "fantasy": "Es preferible mandar a Sampson a la banca en ligas tradicionales de 10 y 12 equipos en formatos PPR y estándar. Con Judkins disponible, la división del juego terrestre y el riesgo de limitación de jugadas tras la lesión merman su viabilidad fantasy. Úsalo únicamente como flex de emergencia en ligas muy profundas si te quedaste sin opciones por lesiones.",
+      "equipo_impacto": "El regreso de Sampson brinda profundidad al esquema terrestre de los Browns, permitiendo rotar personal y reducir la carga de impacto físico individual frente a la frontal de los Titans.",
+      "accion": "Mándalo a la banca esta semana hasta verificar su verdadero volumen de toques.",
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "CLE",
       "equipos": [
-        "CHI",
-        "NE"
+        "CLE",
+        "TEN"
       ],
       "jugadores": [
-        "11560"
+        "12469",
+        "12512"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261024173005",
+      "fecha": "2026-10-24T17:30:09.119Z",
+      "semana": 7,
+      "titulo": "Tucker Kraft afronta panorama dependiente del touchdown ante Detroit",
+      "claves": [
+        "Proyección de 11.6 puntos PPR para semana siete.",
+        "Enfrenta a férrea defensiva de Lions en división.",
+        "Su valor fantasy depende enteramente de ingresar diagonales."
+      ],
+      "contexto": "Los pronósticos de la semana 7 señalan a Tucker Kraft como candidato a anotar en el Día Nacional de las Alas Cerradas; sin embargo, el duelo divisional contra los Lions se perfila complicado. Detroit llega como favorito y suele limitar las recepciones intermedias. Kraft requerirá una anotación para justificar su titularidad en una ofensiva que cuenta con múltiples opciones de pase.",
+      "fantasy": "Si cuentas con alternativas más confiables en tu plantilla, es momento de sentar a Kraft en ligas estándar y ligas PPR de 10 equipos. Su modesta proyección de 11.6 puntos lo sitúa fuera de los siete mejores de la semana. Depender exclusivamente de un touchdown en un choque tan cerrado y físico resulta una apuesta sumamente peligrosa para tu alineación.",
+      "equipo_impacto": "Kraft continuará bloqueando en jugadas de carrera y aportando recepciones cortas para Packers, pero el plan de juego probablemente priorice el ataque aéreo exterior y jugadas de pase rápido.",
+      "accion": "Sienta a Kraft si tienes alas cerradas con mayor volumen constante de pases.",
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "GB",
+      "equipos": [
+        "GB",
+        "DET"
+      ],
+      "jugadores": [
+        "9484"
       ],
       "menciona": []
     }
@@ -234,21 +261,21 @@
     "11439",
     "8154",
     "12718",
-    "11435",
     "9511",
+    "11435",
     "10235",
     "5927",
     "9480",
     "11637",
-    "2505",
     "3321",
+    "2505",
     "13150",
     "9482",
     "13330",
     "1166",
     "JAX",
-    "8134",
     "7567",
+    "8134",
     "3271",
     "8121",
     "12533",
@@ -256,9 +283,9 @@
     "5012"
   ],
   "duelo": {
-    "a": "CeeDee Lamb",
-    "b": "Nico Collins",
-    "veredicto": "Arranca a Nico Collins. Houston llega en mejor momento ofensivo con su uniforme alternativo ante una defensiva vulnerable, mientras que Dallas arrastra dudas colectivas y un inicio tambaleante de temporada pese a la alta proyección de CeeDee Lamb."
+    "a": "Kenneth Walker III",
+    "b": "Jonathan Taylor",
+    "veredicto": "Arranca a Kenneth Walker III. En su juego de revancha contra Seattle y proyectado con 19.4 puntos PPR, tiene mayor potencial y volumen que Taylor (17.6), quien enfrenta a una exigente defensiva de los Vikings."
   },
   "fuentes": [
     "Sleeper",
