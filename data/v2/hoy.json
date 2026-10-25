@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-25T08:34:45.235Z",
-  "ultimaIA": "2026-10-25T05:50:39.269Z",
+  "actualizado": "2026-10-25T09:04:12.520Z",
+  "ultimaIA": "2026-10-25T09:04:12.520Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,28 +13,28 @@
   ],
   "noticias": [
     {
-      "id": "n20261025055005",
-      "fecha": "2026-10-25T05:50:39.269Z",
+      "id": "n20261025090406",
+      "fecha": "2026-10-25T09:04:12.520Z",
       "semana": 7,
-      "titulo": "Tyjae Spears genera serias dudas frente a Cleveland",
+      "titulo": "Travis Kelce acecha récord histórico de yardas recibidas",
       "claves": [
-        "Lesión en la rodilla compromete su disponibilidad y explosividad",
-        "La defensiva de los Browns proyecta 8.6 puntos en fantasy",
-        "Riesgo elevado de repartir toques limitados en el backfield"
+        "A solo 35 yardas de superar marca histórica",
+        "Proyección de 12.1 puntos PPR en Semana 7",
+        "Marco ideal en el National Tight Ends Day"
       ],
-      "contexto": "Tyjae Spears llega al choque frente a los Browns catalogado como cuestionable por una persistente molestia en la rodilla. Enfrentar a una férrea defensiva de Cleveland, que proyecta 8.6 puntos de impacto en fantasy, ya representaba una prueba de fuego; hacerlo mermado físicamente reduce drásticamente cualquier esperanza de un rendimiento productivo en un duelo sumamente físico.",
-      "fantasy": "Spears debe ir directo a tu banca en ligas de doce equipos en formatos estándar y medio punto por recepción. Únicamente podría considerarse un Flex muy desesperado en ligas PPR de catorce integrantes o más si supera las pruebas previas, pero su piso es de apenas un puñado de toques y nulo valor cerca de las diagonales.",
-      "equipo_impacto": "Si Spears llega con restricciones de juego, el ataque de Tennessee se tornará unidimensional, perdiendo dinamismo por tierra y facilitando la presión de la frontal de Cleveland sobre la bolsa de protección.",
-      "accion": "Deja a Tyjae Spears en la banca esta semana y no arriesgues tu enfrentamiento.",
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "TEN",
+      "contexto": "El estelar ala cerrada de Kansas City está a las puertas de la historia. Travis Kelce necesita únicamente 35 yardas por recepción para superar a Tony Gonzalez con la mayor cantidad de yardas recibidas para un ala cerrada en la historia de la NFL, contando temporada regular y postemporada. El logro coincide con el Tight Ends Day.",
+      "fantasy": "Kelce llega con una proyección de 12.1 puntos en formato PPR para enfrentarse a Seattle. Su estatus de objetivo de absoluta confianza cerca de la zona de anotación lo mantiene como un inicio obligatorio. La motivación extra por romper la marca histórica añade un atractivo adicional a su producción semanal esperada.",
+      "equipo_impacto": "Kansas City buscará involucrar a Kelce desde las primeras series del partido para asegurar la marca histórica rápidamente y mover las cadenas con solidez ante la secundaria de Seattle.",
+      "accion": "Mantén a Travis Kelce firme en tu alineación titular sin dudarlo.",
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "KC",
       "equipos": [
-        "TEN",
-        "CLE"
+        "KC",
+        "SEA"
       ],
       "jugadores": [
-        "9508"
+        "1466"
       ],
       "menciona": []
     }
@@ -223,10 +223,10 @@
     "9758",
     "CLE",
     "13296",
-    "11625",
     "11539",
-    "8132",
-    "1373"
+    "11625",
+    "1373",
+    "8132"
   ],
   "soltados": [
     "11581",
@@ -256,9 +256,9 @@
     "3271"
   ],
   "duelo": {
-    "a": "Javonte Williams",
-    "b": "Jonathan Taylor",
-    "veredicto": "Arranca a Javonte Williams sobre Jonathan Taylor. Williams proyecta 17.8 puntos frente a Arizona y goza de un libreto terrestre favorable, mientras Taylor enfrenta a la férrea defensiva terrestre de Minnesota sin Tyler Warren para abrir huecos."
+    "a": "Drake Maye",
+    "b": "Brock Purdy",
+    "veredicto": "Arranca a Drake Maye sobre Brock Purdy. Maye presume una proyección superior de 21.7 puntos, mientras que Purdy estará severamente mermado por las ausencias confirmadas de piezas clave como Mike Evans y Deebo Samuel en San Francisco."
   },
   "fuentes": [
     "Sleeper",
