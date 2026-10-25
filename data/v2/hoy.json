@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-25T05:19:10.289Z",
-  "ultimaIA": "2026-10-25T03:49:19.276Z",
+  "actualizado": "2026-10-25T05:50:39.269Z",
+  "ultimaIA": "2026-10-25T05:50:39.269Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,58 +13,28 @@
   ],
   "noticias": [
     {
-      "id": "n20261025034904",
-      "fecha": "2026-10-25T03:49:19.276Z",
+      "id": "n20261025055005",
+      "fecha": "2026-10-25T05:50:39.269Z",
       "semana": 7,
-      "titulo": "Tyler Shough encara un choque sumamente desfavorable en París",
+      "titulo": "Tyjae Spears genera serias dudas frente a Cleveland",
       "claves": [
-        "Duelo inédito de temporada regular en París frente a los Steelers.",
-        "Steelers D/ST proyecta 8.0 puntos con una defensiva sumamente peligrosa.",
-        "Escenario internacional sumamente complicado para un ataque con mariscal inexperto."
+        "Lesión en la rodilla compromete su disponibilidad y explosividad",
+        "La defensiva de los Browns proyecta 8.6 puntos en fantasy",
+        "Riesgo elevado de repartir toques limitados en el backfield"
       ],
-      "contexto": "La NFL debuta en París con el enfrentamiento entre Saints y Steelers, un choque marcado por protestas sociales previas que obligaron a cerrar la sede oficial de la liga. En lo deportivo, Tyler Shough se mide ante una temible defensiva de Pittsburgh comandada en el vestidor por Aaron Rodgers en el bando contrario. Para el joven pasador, lidiar con los viajes transatlánticos y la agresividad frontal de Pittsburgh será una prueba de fuego.",
-      "fantasy": "Shough es un jugador que debes enviar directamente a la banca en ligas de Superflex o de dos quarterbacks, mientras que en ligas estándar de 12 equipos ni siquiera debería considerarse. La defensiva de los Steelers está proyectada con 8.0 puntos fantasy y destaca por generar entregas de balón constantes. El riesgo de capturas y pérdidas es altísimo, lo que destruye cualquier piso de puntuación aceptable para esta semana.",
-      "equipo_impacto": "La ofensiva de los Saints requerirá una estrategia conservadora enfocada en el juego terrestre para no exponer a Shough. El juego aéreo se limitará a lecturas de rápida liberación ante la presión exterior.",
-      "accion": "Deja a Tyler Shough en la banca de suplentes frente a la férrea defensiva acerera.",
+      "contexto": "Tyjae Spears llega al choque frente a los Browns catalogado como cuestionable por una persistente molestia en la rodilla. Enfrentar a una férrea defensiva de Cleveland, que proyecta 8.6 puntos de impacto en fantasy, ya representaba una prueba de fuego; hacerlo mermado físicamente reduce drásticamente cualquier esperanza de un rendimiento productivo en un duelo sumamente físico.",
+      "fantasy": "Spears debe ir directo a tu banca en ligas de doce equipos en formatos estándar y medio punto por recepción. Únicamente podría considerarse un Flex muy desesperado en ligas PPR de catorce integrantes o más si supera las pruebas previas, pero su piso es de apenas un puñado de toques y nulo valor cerca de las diagonales.",
+      "equipo_impacto": "Si Spears llega con restricciones de juego, el ataque de Tennessee se tornará unidimensional, perdiendo dinamismo por tierra y facilitando la presión de la frontal de Cleveland sobre la bolsa de protección.",
+      "accion": "Deja a Tyjae Spears en la banca esta semana y no arriesgues tu enfrentamiento.",
       "etiqueta": "SIT",
       "impacto": "BAJA",
-      "equipo": "NO",
+      "equipo": "TEN",
       "equipos": [
-        "NO",
-        "PIT"
+        "TEN",
+        "CLE"
       ],
       "jugadores": [
-        "12545",
-        "96"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261025034905",
-      "fecha": "2026-10-25T03:49:19.276Z",
-      "semana": 7,
-      "titulo": "Brandin Cooks figura entre las adiciones populares en waivers",
-      "claves": [
-        "Cowboys necesitan revertir con urgencia su flojo arranque de 2-4.",
-        "Aparece entre los jugadores más agregados de la presente semana.",
-        "Eagles llegan debilitados con bajas clave en su perímetro y ataque."
-      ],
-      "contexto": "Los Dallas Cowboys atraviesan un momento de apremio con marca de 2-4, pero tanto Dak Prescott como CeeDee Lamb han expresado públicamente su convicción de que todavía están a tiempo de enderezar el barco. En medio de esta necesidad imperiosa de victorias, el veterano Brandin Cooks ha sido uno de los nombres más reclamados desde la agencia libre en ligas de fantasy durante los últimos días para apuntalar el cuerpo de receptores.",
-      "fantasy": "Cooks sube de valor y representa una excelente adición de alambre de waivers para ligas profundas de 12 o 14 equipos, así como en formatos con receptores Flex múltiples. Aunque Lamb domina el volumen de targets proyectado con 17.3 puntos, Cooks ofrece un recurso valioso para aquellos dueños azotados por las numerosas lesiones en la posición. Agrégalo hoy mismo como seguro de vida o fondo de banca para emergencias.",
-      "equipo_impacto": "Dallas necesita diversificar sus rutas ante defensas que doblan la cobertura sobre CeeDee Lamb. Cooks aporta velocidad para estirar el campo y castigar a profundos descuidados en envíos largos.",
-      "accion": "Reclama a Brandin Cooks de la agencia libre antes de que gane más protagonismo.",
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "DAL",
-      "equipos": [
-        "DAL",
-        "PHI",
-        "SF"
-      ],
-      "jugadores": [
-        "2197",
-        "6786",
-        "3294"
+        "9508"
       ],
       "menciona": []
     }
@@ -245,8 +215,8 @@
     "13294",
     "9482",
     "2197",
-    "8122",
     "11563",
+    "8122",
     "6650",
     "96",
     "13298",
@@ -254,8 +224,8 @@
     "13296",
     "11625",
     "CLE",
-    "12634",
     "8132",
+    "12634",
     "1373"
   ],
   "soltados": [
@@ -286,9 +256,9 @@
     "3271"
   ],
   "duelo": {
-    "a": "Amon-Ra St. Brown",
-    "b": "Ja'Marr Chase",
-    "veredicto": "Arranca a Amon-Ra St. Brown. Con una proyección de 19.9 puntos PPR frente a los 18.7 de Chase, el estelar de Detroit ofrece mayor volumen garantizado en el choque divisional contra los Packers."
+    "a": "Drake Maye",
+    "b": "Bo Nix",
+    "veredicto": "Arranca a Drake Maye. Su proyección de 21.7 puntos supera claramente a Nix (19.2), ofreciendo mayor techo anotador y consistencia aérea en un enfrentamiento favorable para liderar tu ofensiva de fantasy esta semana."
   },
   "fuentes": [
     "Sleeper",
