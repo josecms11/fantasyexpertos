@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-25T10:31:32.600Z",
-  "ultimaIA": "2026-10-25T09:04:12.520Z",
+  "actualizado": "2026-10-25T11:01:36.417Z",
+  "ultimaIA": "2026-10-25T11:01:36.417Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,28 +13,28 @@
   ],
   "noticias": [
     {
-      "id": "n20261025090406",
-      "fecha": "2026-10-25T09:04:12.520Z",
+      "id": "n20261025110107",
+      "fecha": "2026-10-25T11:01:36.417Z",
       "semana": 7,
-      "titulo": "Travis Kelce acecha récord histórico de yardas recibidas",
+      "titulo": "CeeDee Lamb afronta un duelo complejo contra Filadelfia",
       "claves": [
-        "A solo 35 yardas de superar marca histórica",
-        "Proyección de 12.1 puntos PPR en Semana 7",
-        "Marco ideal en el National Tight Ends Day"
+        "Dallas llega con marca negativa de dos victorias.",
+        "Críticas internas del cuerpo técnico sobre el esfuerzo.",
+        "Tiene una proyección estipulada de 17.3 puntos PPR."
       ],
-      "contexto": "El estelar ala cerrada de Kansas City está a las puertas de la historia. Travis Kelce necesita únicamente 35 yardas por recepción para superar a Tony Gonzalez con la mayor cantidad de yardas recibidas para un ala cerrada en la historia de la NFL, contando temporada regular y postemporada. El logro coincide con el Tight Ends Day.",
-      "fantasy": "Kelce llega con una proyección de 12.1 puntos en formato PPR para enfrentarse a Seattle. Su estatus de objetivo de absoluta confianza cerca de la zona de anotación lo mantiene como un inicio obligatorio. La motivación extra por romper la marca histórica añade un atractivo adicional a su producción semanal esperada.",
-      "equipo_impacto": "Kansas City buscará involucrar a Kelce desde las primeras series del partido para asegurar la marca histórica rápidamente y mover las cadenas con solidez ante la secundaria de Seattle.",
-      "accion": "Mantén a Travis Kelce firme en tu alineación titular sin dudarlo.",
-      "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "KC",
+      "contexto": "Los Dallas Cowboys atraviesan un arranque incierto de temporada con marca de 2-4 previo al enfrentamiento contra los Philadelphia Eagles. Tras llamados de atención del coordinador ofensivo Brian Schottenheimer hacia receptores como George Pickens sobre el esfuerzo en bloques terrestres, CeeDee Lamb intenta liderar la recuperación del ataque. Sin embargo, el ambiente tenso y la presión defensiva complican el panorama del receptor estelar.",
+      "fantasy": "A pesar de mantener una proyección de 17.3 puntos PPR, ubicar a Lamb como una opción de SIT temporal o bajar tus expectativas de producción es recomendado si tienes alternativas de élite. La inconsistencia de Dallas y los duelos secundarios de Filadelfia reducen las probabilidades de un juego de múltiples anotaciones, perfilándolo como un Flex de riesgo esta semana.",
+      "equipo_impacto": "El ataque de Dallas necesita encontrar fluidez urgentemente. Si la defensiva rival logra aislar a Lamb, Dak Prescott tendrá problemas para extender las jugadas en tercer down.",
+      "accion": "Considera evaluar mejores opciones en tu Flex antes de alinear a CeeDee Lamb.",
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "DAL",
       "equipos": [
-        "KC",
-        "SEA"
+        "DAL",
+        "PHI"
       ],
       "jugadores": [
-        "1466"
+        "6786"
       ],
       "menciona": []
     }
@@ -216,17 +216,17 @@
     "9482",
     "2197",
     "11563",
-    "8122",
     "6650",
+    "8122",
     "96",
     "13298",
     "9758",
     "CLE",
     "13296",
     "11539",
-    "11625",
+    "1373",
     "8132",
-    "1373"
+    "11625"
   ],
   "soltados": [
     "11581",
@@ -251,14 +251,14 @@
     "5012",
     "JAX",
     "11783",
-    "11435",
     "13424",
+    "11435",
     "3271"
   ],
   "duelo": {
-    "a": "Drake Maye",
-    "b": "Brock Purdy",
-    "veredicto": "Arranca a Drake Maye sobre Brock Purdy. Maye presume una proyección superior de 21.7 puntos, mientras que Purdy estará severamente mermado por las ausencias confirmadas de piezas clave como Mike Evans y Deebo Samuel en San Francisco."
+    "a": "Jared Goff",
+    "b": "Jordan Love",
+    "veredicto": "Arranca a Jared Goff sobre Jordan Love. Goff enfrenta un duelo de alto octanaje en Detroit con un piso aéreo más sólido, mientras que Love encara una prueba defensiva más exigente fuera de casa esta semana."
   },
   "fuentes": [
     "Sleeper",
