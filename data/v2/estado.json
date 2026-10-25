@@ -1,10 +1,19 @@
 {
-  "fecha": "2026-10-25T03:13:53.954Z",
+  "fecha": "2026-10-25T03:51:58.807Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.1s] YouTube: 0 nuevos, 17 en total",
-    "[0.9s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[2.8s] ESPN: lesiones 799 · noticias 50",
-    "[3.8s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 252 · semana de juego 7 · IA usada hoy 2/40"
+    "[0.4s] YouTube: 0 nuevos, 17 en total",
+    "[1.3s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[4.1s] ESPN: lesiones 799 · noticias 50",
+    "[4.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[162.7s] IA OK con gemini-3.8-flash",
+    "[162.7s] Descartada: Cole Kmet se pierde el resto de la temporada → duplicada",
+    "[162.7s] Descartada: George Kittle será el motor ofensivo de San Francisco → duplicada",
+    "[162.7s] Descartada: Jahmyr Gibbs lidera las proyecciones terrestres en semana siete → duplicada",
+    "[162.7s] Descartada: Baker Mayfield enciende alarmas y conviene sentarlo esta semana → duplicada",
+    "[162.7s] Descartada: Jeremiyah Love queda descartado por su lesión de tobillo → duplicada",
+    "[162.7s] Descartada: CeeDee Lamb promete comandar la urgente reacción de Dallas → duplicada",
+    "[162.7s] Noticias nuevas verificadas: 2",
+    "[163.7s] Listo: 2 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 254 · semana de juego 7 · IA usada hoy 3/40"
   ]
 }

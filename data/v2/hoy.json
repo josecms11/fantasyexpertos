@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-25T03:13:52.978Z",
-  "ultimaIA": "2026-10-25T01:50:00.791Z",
+  "actualizado": "2026-10-25T03:49:19.276Z",
+  "ultimaIA": "2026-10-25T03:49:19.276Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,29 +13,58 @@
   ],
   "noticias": [
     {
-      "id": "n20261025015004",
-      "fecha": "2026-10-25T01:50:00.791Z",
+      "id": "n20261025034904",
+      "fecha": "2026-10-25T03:49:19.276Z",
       "semana": 7,
-      "titulo": "Josh Jacobs es reactivado y debes ir por él",
+      "titulo": "Tyler Shough encara un choque sumamente desfavorable en París",
       "claves": [
-        "Activado para debutar en 2026 frente a Detroit Lions",
-        "Superó seis semanas en la lista de exentos del comisionado",
-        "Puede estar disponible en alambres de ligas desatentas"
+        "Duelo inédito de temporada regular en París frente a los Steelers.",
+        "Steelers D/ST proyecta 8.0 puntos con una defensiva sumamente peligrosa.",
+        "Escenario internacional sumamente complicado para un ataque con mariscal inexperto."
       ],
-      "contexto": "Los Packers de Green Bay activaron formalmente al corredor estelar Josh Jacobs para realizar su esperado debut en la temporada frente a los Lions de Detroit. Jacobs pasó las primeras seis semanas de la campaña dentro de la lista de exentos del comisionado de la NFL, pero ahora se encuentra listo para incorporarse al emparrillado en un duelo divisional trascendental para las aspiraciones del conjunto de Wisconsin en el Norte de la Conferencia Nacional.",
-      "fantasy": "El valor de Jacobs sube como la espuma en todos los formatos de fantasy football. Tras semanas de incertidumbre, se reintegra como una opción de impacto inmediato para redraft y dinastía. Revisa de inmediato el alambre de despidos por si algún manejador impaciente lo soltó durante su prolongada inactividad. Si ya es tuyo o logras sumarlo mediante reclamo prioritario, reactívalo de tu reserva de cara a este prometedor debut estacional.",
-      "equipo_impacto": "El regreso de Jacobs transforma el esquema terrestre de Green Bay, brindando fortaleza en carreras de poder y zona roja, aligerando la presión sobre Jordan Love y reduciendo el volumen de los corredores complementarios.",
-      "accion": "Reclama a Josh Jacobs en el alambre de waivers o actívalo de inmediato en tu plantilla.",
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "GB",
+      "contexto": "La NFL debuta en París con el enfrentamiento entre Saints y Steelers, un choque marcado por protestas sociales previas que obligaron a cerrar la sede oficial de la liga. En lo deportivo, Tyler Shough se mide ante una temible defensiva de Pittsburgh comandada en el vestidor por Aaron Rodgers en el bando contrario. Para el joven pasador, lidiar con los viajes transatlánticos y la agresividad frontal de Pittsburgh será una prueba de fuego.",
+      "fantasy": "Shough es un jugador que debes enviar directamente a la banca en ligas de Superflex o de dos quarterbacks, mientras que en ligas estándar de 12 equipos ni siquiera debería considerarse. La defensiva de los Steelers está proyectada con 8.0 puntos fantasy y destaca por generar entregas de balón constantes. El riesgo de capturas y pérdidas es altísimo, lo que destruye cualquier piso de puntuación aceptable para esta semana.",
+      "equipo_impacto": "La ofensiva de los Saints requerirá una estrategia conservadora enfocada en el juego terrestre para no exponer a Shough. El juego aéreo se limitará a lecturas de rápida liberación ante la presión exterior.",
+      "accion": "Deja a Tyler Shough en la banca de suplentes frente a la férrea defensiva acerera.",
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "NO",
       "equipos": [
-        "GB",
-        "DET"
+        "NO",
+        "PIT"
       ],
       "jugadores": [
-        "5850",
-        "6804"
+        "12545",
+        "96"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261025034905",
+      "fecha": "2026-10-25T03:49:19.276Z",
+      "semana": 7,
+      "titulo": "Brandin Cooks figura entre las adiciones populares en waivers",
+      "claves": [
+        "Cowboys necesitan revertir con urgencia su flojo arranque de 2-4.",
+        "Aparece entre los jugadores más agregados de la presente semana.",
+        "Eagles llegan debilitados con bajas clave en su perímetro y ataque."
+      ],
+      "contexto": "Los Dallas Cowboys atraviesan un momento de apremio con marca de 2-4, pero tanto Dak Prescott como CeeDee Lamb han expresado públicamente su convicción de que todavía están a tiempo de enderezar el barco. En medio de esta necesidad imperiosa de victorias, el veterano Brandin Cooks ha sido uno de los nombres más reclamados desde la agencia libre en ligas de fantasy durante los últimos días para apuntalar el cuerpo de receptores.",
+      "fantasy": "Cooks sube de valor y representa una excelente adición de alambre de waivers para ligas profundas de 12 o 14 equipos, así como en formatos con receptores Flex múltiples. Aunque Lamb domina el volumen de targets proyectado con 17.3 puntos, Cooks ofrece un recurso valioso para aquellos dueños azotados por las numerosas lesiones en la posición. Agrégalo hoy mismo como seguro de vida o fondo de banca para emergencias.",
+      "equipo_impacto": "Dallas necesita diversificar sus rutas ante defensas que doblan la cobertura sobre CeeDee Lamb. Cooks aporta velocidad para estirar el campo y castigar a profundos descuidados en envíos largos.",
+      "accion": "Reclama a Brandin Cooks de la agencia libre antes de que gane más protagonismo.",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "DAL",
+      "equipos": [
+        "DAL",
+        "PHI",
+        "SF"
+      ],
+      "jugadores": [
+        "2197",
+        "6786",
+        "3294"
       ],
       "menciona": []
     }
@@ -221,10 +250,10 @@
     "6650",
     "96",
     "11625",
-    "12634",
-    "13296",
     "9758",
     "13298",
+    "12634",
+    "13296",
     "CLE",
     "8132",
     "10220"
@@ -239,8 +268,8 @@
     "3321",
     "9480",
     "5927",
-    "8154",
     "11637",
+    "8154",
     "10235",
     "9482",
     "2505",
@@ -252,14 +281,14 @@
     "JAX",
     "11783",
     "5012",
-    "13150",
+    "11435",
     "13424",
-    "11435"
+    "13150"
   ],
   "duelo": {
-    "a": "George Kittle",
-    "b": "Brock Bowers",
-    "veredicto": "Arranca a George Kittle. Con Mike Evans y Deebo Samuel descartados por lesión en San Francisco, Kittle monopolizará el volumen aéreo de Brock Purdy en pleno Día Nacional de los Alas Cerradas con proyección estelar."
+    "a": "Amon-Ra St. Brown",
+    "b": "Ja'Marr Chase",
+    "veredicto": "Arranca a Amon-Ra St. Brown. Con una proyección de 19.9 puntos PPR frente a los 18.7 de Chase, el estelar de Detroit ofrece mayor volumen garantizado en el choque divisional contra los Packers."
   },
   "fuentes": [
     "Sleeper",
