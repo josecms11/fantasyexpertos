@@ -1,19 +1,10 @@
 {
-  "fecha": "2026-10-25T21:46:49.219Z",
+  "fecha": "2026-10-25T22:06:09.200Z",
   "log": [
     "[0.0s] Inicio",
     "[0.3s] YouTube: 15 nuevos, 17 en total",
-    "[1.2s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[5.5s] ESPN: lesiones 799 · noticias 50",
-    "[6.3s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[88.8s] IA OK con gemini-3.8-flash",
-    "[88.8s] Descartada: Zay Flowers entra al radar como WR1 en fantasy → duplicada",
-    "[88.8s] Descartada: Breece Hall queda descartado por lesión de cuádriceps → duplicada",
-    "[88.8s] Descartada: Lamar Jackson queda fuera de combate por tobillo lastimado → duplicada",
-    "[88.8s] Descartada: Tyler Higbee emerge como opción codiciada en waivers → duplicada",
-    "[88.8s] Descartada: Terry McLaurin queda fuera y desata ola de bajas → duplicada",
-    "[88.8s] Descartada: Puka Nacua lidera el ataque angelino con proyección élite → duplicada",
-    "[88.8s] Noticias nuevas verificadas: 2",
-    "[89.9s] Listo: 2 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 270 · semana de juego 8 · IA usada hoy 15/40"
+    "[1.1s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[3.4s] ESPN: lesiones 799 · noticias 50",
+    "[4.5s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 270 · semana de juego 8 · IA usada hoy 15/40"
   ]
 }
