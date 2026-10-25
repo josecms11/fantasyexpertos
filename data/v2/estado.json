@@ -1,24 +1,10 @@
 {
-  "fecha": "2026-10-25T15:31:42.145Z",
+  "fecha": "2026-10-25T16:02:33.030Z",
   "log": [
     "[0.0s] Inicio",
-    "[1.0s] YouTube: 15 nuevos, 17 en total",
-    "[1.8s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[3.4s] ESPN: lesiones 799 · noticias 50",
-    "[4.2s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[5.1s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[5.6s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[6.3s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[6.8s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
-    "[14.4s] IA OK con gemini-3.5-flash-lite",
-    "[14.4s] Descartada: Josh Jacobs debuta con Green Bay ante Detroit → duplicada",
-    "[14.4s] Descartada: Jordan Mason regresa a la acción con Minnesota → duplicada",
-    "[14.4s] Descartada: Tyler Huntley asume los controles en Baltimore → duplicada",
-    "[14.4s] Descartada: Baker Mayfield busca jugar pese a molestia → duplicada",
-    "[14.4s] Descartada: Puka Nacua genera optimismo de juego en Los Ángeles → duplicada",
-    "[14.4s] Descartada: Cam Skattebo recupera el rol principal en Nueva York → duplicada",
-    "[14.4s] Descartada: George Kittle encabeza las opciones en la posición → duplicada",
-    "[14.4s] Noticias nuevas verificadas: 1",
-    "[15.5s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 263 · semana de juego 7 · IA usada hoy 11/40"
+    "[1.1s] YouTube: 15 nuevos, 17 en total",
+    "[1.7s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[3.2s] ESPN: lesiones 799 · noticias 50",
+    "[4.3s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 263 · semana de juego 7 · IA usada hoy 11/40"
   ]
 }
