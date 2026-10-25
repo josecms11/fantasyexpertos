@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-25T15:01:26.916Z",
-  "ultimaIA": "2026-10-25T13:13:44.289Z",
+  "actualizado": "2026-10-25T15:31:30.046Z",
+  "ultimaIA": "2026-10-25T15:31:30.046Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,129 +13,28 @@
   ],
   "noticias": [
     {
-      "id": "n20261025131300",
-      "fecha": "2026-10-25T13:13:44.289Z",
+      "id": "n20261025153107",
+      "fecha": "2026-10-25T15:31:30.046Z",
       "semana": 7,
-      "titulo": "Cam Skattebo retoma el rol titular con los Giants",
+      "titulo": "Zach Charbonnet queda fuera por lesión de rodilla",
       "claves": [
-        "Asume la titularidad terrestre ante Houston",
-        "Listo para recibir la carga principal de acarreos",
-        "Proyección favorable para sumar volumen importante"
+        "Descartado oficialmente para el partido dominical",
+        "Su debut estacional se retrasa una semana más",
+        "Problema persistente en la articulación"
       ],
-      "contexto": "Tras superar diversas molestias, el corredor Cam Skattebo está programado para retomar su papel como el corredor principal de los New York Giants este domingo frente a la defensiva de Houston. Fuentes cercanas al equipo confirmaron que el novato asumirá la mayor parte de los acarreos en un partido clave para la ofensiva.",
-      "fantasy": "Su regreso al puesto estelar lo proyecta directamente como un RB2 de gran impacto para formatos PPR y ligas tradicionales. El volumen garantizado de toques le otorga un piso muy seguro y un techo interesante. Si lo tienes en tu plantilla, es momento de confiar en él y ponerlo a jugar esta semana.",
-      "equipo_impacto": "El ataque terrestre de New York adquiere mayor estabilidad, quitando presión al juego aéreo. Sus compañeros en el backfield verán reducidas sus oportunidades drásticamente a un rol secundario.",
-      "accion": "Alinea a Cam Skattebo como tu RB2 o flex con total confianza esta semana.",
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "NYG",
-      "equipos": [
-        "NYG",
-        "HOU"
-      ],
-      "jugadores": [
-        "12481"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261025131302",
-      "fecha": "2026-10-25T13:13:44.289Z",
-      "semana": 7,
-      "titulo": "Seth McGowan destaca entre los reclamos en waivers",
-      "claves": [
-        "Figura entre los jugadores más añadidos actualmente",
-        "Opción emergente para reforzar el backfield golpeado",
-        "Disponible en la mayoría de ligas de fantasy"
-      ],
-      "contexto": "El corredor Seth McGowan se ha transformado en uno de los nombres más cotizados en la agencia libre durante los últimos días. La constante búsqueda de profundidad en el ataque terrestre ha llevado a múltiples entrenadores de fantasy a sumar sus servicios antes del arranque de la jornada dominical.",
-      "fantasy": "Su popularidad creciente en la lista de más agregados lo coloca como una adición prioritaria de profundidad para tu banca en ligas profundas de doce o más equipos. Si bien no debes alinearlo inmediatamente, asegura su fichaje en waivers para evaluar el desarrollo de su volumen de toques.",
-      "equipo_impacto": "Su llegada al plantel le otorga mayor versatilidad al cuerpo de entrenadores en el ataque terrestre, generando competencia constante en la rotación de corredores durante los próximos compromisos de la temporada.",
-      "accion": "Agrega a Seth McGowan a tu banca inmediatamente desde la agencia libre.",
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "NFL",
-      "equipos": [
-        "NFL",
-        "IND"
-      ],
-      "jugadores": [
-        "13424"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261025131304",
-      "fecha": "2026-10-25T13:13:44.289Z",
-      "semana": 7,
-      "titulo": "Saquon Barkley genera dudas serias por lesión de isquiotibial",
-      "claves": [
-        "Aparece en estatus cuestionable para la semana",
-        "Molestia en el isquiotibial compromete su participación",
-        "Riesgo elevado para alineaciones titulares de fantasy"
-      ],
-      "contexto": "El estelar corredor de Filadelfia, Saquon Barkley, entra al fin de semana con el estatus oficial de cuestionable debido a molestias en el isquiotibial. El cuerpo médico evaluará su evolución hasta antes del partido, pero la incertidumbre sobre su carga de trabajo genera preocupación en la organización.",
-      "fantasy": "Ante el riesgo de una participación limitada o una recaída en pleno juego, Barkley representa un peligro notable esta semana. Si cuentas con una alternativa sólida en tu banca, es recomendable dejarlo en el banquillo para evitar sorpresas desagradables en tu puntuación total de fantasy.",
-      "equipo_impacto": "La posible limitación de Barkley obliga al esquema ofensivo a confiar más en los pases cortos y repartir acarreos entre los corredores suplentes ante la baja de Hurts.",
-      "accion": "Busca una alternativa segura en tu banca por si Saquon Barkley no juega.",
+      "contexto": "Los Seattle Seahawks confirmaron que el corredor Zach Charbonnet no verá acción en el compromiso frente a los Kansas City Chiefs, retrasando una vez más su tan esperado debut en la presente temporada regular.",
+      "fantasy": "No representa ningún valor para alinear en esta jornada; evítalo por completo en cualquier tipo de formato de fantasy football hasta que logre entrenar sin restricciones.",
+      "equipo_impacto": "Mantiene intacta la jerarquía actual del backfield de Seattle sin alterar la rotación provisional.",
+      "accion": "Déjalo firmemente sentado en tu banca o reserva.",
       "etiqueta": "SIT",
       "impacto": "BAJA",
-      "equipo": "PHI",
+      "equipo": "SEA",
       "equipos": [
-        "PHI"
+        "SEA",
+        "KC"
       ],
       "jugadores": [
-        "4866"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261025131306",
-      "fecha": "2026-10-25T13:13:44.289Z",
-      "semana": 7,
-      "titulo": "Drake Maye lidera proyecciones de mariscales en semana siete",
-      "claves": [
-        "Proyección máxima de 21.7 puntos en fantasy",
-        "Consolidación como una opción sólida en la posición",
-        "Enfrentamiento clave para mantener el impulso ofensivo"
-      ],
-      "contexto": "El pasador Drake Maye se sitúa en la cima de las proyecciones de mariscales de campo para la semana siete, superando a nombres consagrados con un pronóstico de 21.7 puntos fantasy. New England busca corregir su diferencial de entregas y potenciar su ritmo aéreo para conseguir la victoria.",
-      "fantasy": "Esta elevada proyección convierte a Drake Maye en un arranque muy atractivo para ligas de un mariscal y una pieza imprescindible en formatos Superflex. Si necesitas un pasador con piso seguro y excelente proyección de anotación, es el momento ideal para confiar en sus habilidades.",
-      "equipo_impacto": "El ascenso de Maye beneficia directamente a todo el grupo de receptores de New England, elevando el valor fantasy de sus principales objetivos aéreos en esquemas ofensivos bastante balanceados.",
-      "accion": "Alinea a Drake Maye como tu mariscal de campo titular para esta semana.",
-      "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "NE",
-      "equipos": [
-        "NE"
-      ],
-      "jugadores": [
-        "11564"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261025131307",
-      "fecha": "2026-10-25T13:13:44.289Z",
-      "semana": 7,
-      "titulo": "Brock Bowers encabeza proyecciones de ala cerrada esta semana",
-      "claves": [
-        "Líder proyectado en la posición con 17.1 puntos",
-        "Objetivo principal en la estructura de pases aéreos",
-        "Consistencia de élite en ligas con formato PPR"
-      ],
-      "contexto": "La joven estrella Brock Bowers comparte el liderato de proyecciones entre las alas cerradas para la jornada siete, alcanzando una marca de 17.1 puntos en formato PPR. La ofensiva de Las Vegas confía plenamente en su capacidad para dominar las zonas intermedias del campo durante este importante partido.",
-      "fantasy": "En una posición con poca constancia semanal, Bowers se consolida como un valor de élite inamovible en tu alineación. Su volumen de dianas y presencia en zona roja lo colocan como un titular obligatorio sin importar el rival o el formato de tu liga.",
-      "equipo_impacto": "Al ser el blanco predilecto por aire, Bowers alivia la presión sobre los receptores abiertos de Las Vegas, atrayendo la atención constante de los apoyadores y profundos rivales.",
-      "accion": "Mantén a Brock Bowers firmemente en tu casilla de ala cerrada titular.",
-      "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "LV",
-      "equipos": [
-        "LV"
-      ],
-      "jugadores": [
-        "11604"
+        "9753"
       ],
       "menciona": []
     }
@@ -322,12 +221,12 @@
     "CLE",
     "2197",
     "13298",
-    "8132",
     "1373",
-    "96",
+    "8132",
     "9758",
-    "13296",
-    "11610"
+    "96",
+    "11610",
+    "13296"
   ],
   "soltados": [
     "11581",
@@ -345,11 +244,11 @@
     "2505",
     "7567",
     "5012",
-    "4035",
-    "1166",
-    "9482",
     "JAX",
+    "1166",
     "13330",
+    "4035",
+    "9482",
     "8134",
     "11435",
     "11783",
@@ -357,9 +256,9 @@
     "12533"
   ],
   "duelo": {
-    "a": "Jared Goff",
-    "b": "Jordan Love",
-    "veredicto": "Arranca a Jared Goff sobre Jordan Love. Goff presenta una proyección ligeramente superior (19.9 vs 19.8) en un choque divisional de alto octanaje que promete bastantes puntos aéreos en Detroit."
+    "a": "Josh Jacobs",
+    "b": "Jordan Mason",
+    "veredicto": "Arranca a Josh Jacobs sin pensarlo por su rol estelar y debut con Green Bay, dejando a Mason en la banca mientras recupera ritmo."
   },
   "fuentes": [
     "Sleeper",
