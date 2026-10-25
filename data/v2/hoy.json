@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-25T19:20:17.102Z",
-  "ultimaIA": "2026-10-25T17:30:24.948Z",
+  "actualizado": "2026-10-25T19:48:29.931Z",
+  "ultimaIA": "2026-10-25T19:48:29.931Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,31 +13,110 @@
   ],
   "noticias": [
     {
-      "id": "n20261025173006",
-      "fecha": "2026-10-25T17:30:24.948Z",
+      "id": "n20261025194801",
+      "fecha": "2026-10-25T19:48:29.931Z",
       "semana": 7,
-      "titulo": "Ja'Marr Chase domina proyecciones en duelo clave ante Baltimore",
+      "titulo": "Jordan Mason regresa tras superar lesión de pulgar",
       "claves": [
-        "Proyecta 18.8 puntos PPR frente a la defensiva de Ravens.",
-        "Mantiene una sinergia letal en el ataque liderado por Joe Burrow.",
-        "Oportunidad inmejorable para conseguir números de impacto en esta jornada."
+        "Activado oficialmente desde la reserva de lesionados",
+        "Superó con éxito cirugía por fractura en el pulgar",
+        "Refuerza el ataque terrestre de los Vikings"
       ],
-      "contexto": "El receptor estelar de Cincinnati se perfila para tener una jornada dominante en el enfrentamiento divisional frente a los Baltimore Ravens. Con una proyección estelar de 18.8 puntos PPR, Chase llega en un momento óptimo del esquema aéreo diseñado por Joe Burrow, aprovechando los enfrentamientos individuales que la defensiva secundaria rival suele conceder a los receptores abiertos.",
-      "fantasy": "Chase es un WR1 indiscutible en todos los formatos de fantasy football esta semana. Su techo de puntos es astronómico gracias a la cantidad de pases profundos e intenciones en zona roja que acumula semana a semana. Si lo tienes en tu plantilla, no hay ningún escenario donde debas dudar de ponerlo en tu alineación como titular estelar.",
-      "equipo_impacto": "Su habilidad para atraer coberturas dobles abre espacios vitales para sus compañeros receptores y alivia la presión sobre Joe Burrow al ejecutar pases de soltado rápido en momentos comprometidos.",
-      "accion": "Alinea a Ja'Marr Chase como tu WR1 titular con total confianza.",
+      "contexto": "Los Minnesota Vikings activaron oficialmente al corredor Jordan Mason desde la reserva de lesionados este sábado, completando su exitosa recuperación de la fractura en el pulgar que requirió cirugía el mes pasado. Su regreso aporta profundidad y físico al ataque terrestre del equipo.",
+      "fantasy": "Su impacto en fantasy es moderado por ahora, sirviendo principalmente como una valiosa pieza de profundidad o flex en ligas profundas mientras recupera ritmo completo. Monitorea su reparto de cargas antes de arriesgarlo como titular indiscutible.",
+      "equipo_impacto": "Aporta variantes físicas al backfield de Minnesota, complementando el esquema ofensivo y aliviando la carga en jugadas terrestres.",
+      "accion": "Vigila su porcentaje de snaps antes de arriesgarlo.",
       "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "CIN",
+      "impacto": "NEUTRO",
+      "equipo": "MIN",
       "equipos": [
-        "CIN",
-        "BAL"
+        "MIN",
+        "IND"
       ],
       "jugadores": [
-        "7564",
+        "8408",
+        "6813"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261025194803",
+      "fecha": "2026-10-25T19:48:29.931Z",
+      "semana": 7,
+      "titulo": "Tyler Huntley asume los controles ante Cincinnati",
+      "claves": [
+        "Lamar Jackson descartado oficialmente por esguince de tobillo",
+        "Huntley toma la titularidad para los Baltimore Ravens",
+        "Duelo divisional de alto voltaje frente a los Bengals"
+      ],
+      "contexto": "Ante la baja oficial de Lamar Jackson por un esguince severo en el tobillo alto, los Baltimore Ravens confirmaron que Tyler 'Snoop' Huntley será el mariscal de campo titular para el crucial choque divisional de este domingo frente a los Cincinnati Bengals.",
+      "fantasy": "Su titularidad eleva un poco el piso de opciones secundarias por su movilidad, pero representa un claro bajón general para el potencial ofensivo de los receptores de Baltimore en ligas competitivas. Úsalo con cautela extrema en Superflex.",
+      "equipo_impacto": "Modifica drásticamente el plan de juego ofensivo de los Ravens, apostando más por lecturas rápidas y movilidad contenida.",
+      "accion": "Evítalo en ligas tradicionales de un solo mariscal.",
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "BAL",
+      "equipos": [
+        "BAL",
+        "CIN"
+      ],
+      "jugadores": [
+        "7083",
         "6770"
       ],
       "menciona": []
+    },
+    {
+      "id": "n20261025194806",
+      "fecha": "2026-10-25T19:48:29.931Z",
+      "semana": 7,
+      "titulo": "Taylor Moton sufre grave lesión de tobillo y peroné",
+      "claves": [
+        "Abandonó el campo en carrito durante el tercer cuarto",
+        "Lesión confirmada en tobillo izquierdo y peroné",
+        "Golpe durísimo para la línea ofensiva de los Panthers"
+      ],
+      "contexto": "Las alarmas se encendieron en Carolina cuando el tackle derecho titular Taylor Moton tuvo que abandonar el terreno de juego en carrito durante la segunda mitad del partido contra los Buccaneers, tras sufrir una aparatosa lesión en el tobillo izquierdo y el peroné.",
+      "fantasy": "Aunque no es un skill player, esta baja representa una pésima noticia para la eficiencia general de la ofensiva de los Panthers, restando garantías y tiempo en la bolsa de protección para todo el backfield.",
+      "equipo_impacto": "Debilita severamente la protección en la línea ofensiva de Carolina, incrementando el riesgo de presión sobre su mariscal de campo.",
+      "accion": "Reduce expectativas sobre el juego terrestre de Carolina.",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "CAR",
+      "equipos": [
+        "CAR",
+        "TB"
+      ],
+      "jugadores": [],
+      "menciona": [
+        "7594"
+      ]
+    },
+    {
+      "id": "n20261025194807",
+      "fecha": "2026-10-25T19:48:29.931Z",
+      "semana": 7,
+      "titulo": "Maliek Collins amarra jugosa extensión con los Browns",
+      "claves": [
+        "Firma extensión contractual por dos años",
+        "Acuerdo valuado en 30 millones de dólares totales",
+        "Consolida el núcleo defensivo de Cleveland"
+      ],
+      "contexto": "El tackle defensivo Maliek Collins aseguró su futuro a largo plazo al acordar los términos de una extensión de contrato por dos años y 30 millones de dólares con los Cleveland Browns, cifra que incluye una fuerte suma garantizada según reportes de sus agentes.",
+      "fantasy": "Esta noticia tiene impacto directo exclusivamente en ligas con formato IDP (jugadores defensivos individuales), donde Collins refuerza su estatus como un liniero interior confiable para generar presiones y tackleadas consistentes.",
+      "equipo_impacto": "Asegura la solidez y continuidad en el centro de la línea defensiva de los Browns, blindando el frente de contención terrestre.",
+      "accion": "Vigílalo en waiver para ligas profundas IDP.",
+      "etiqueta": "WAIVER",
+      "impacto": "NEUTRO",
+      "equipo": "CLE",
+      "equipos": [
+        "CLE",
+        "TEN"
+      ],
+      "jugadores": [],
+      "menciona": [
+        "4988"
+      ]
     }
   ],
   "lesionados": [
@@ -58,6 +137,10 @@
       "estatus": "Fuera"
     },
     {
+      "id": "12474",
+      "estatus": "Duda"
+    },
+    {
       "id": "4866",
       "estatus": "Duda"
     },
@@ -68,6 +151,10 @@
     {
       "id": "4881",
       "estatus": "Fuera"
+    },
+    {
+      "id": "4199",
+      "estatus": "Duda"
     },
     {
       "id": "12514",
@@ -192,14 +279,6 @@
     {
       "id": "9226",
       "estatus": "Fuera"
-    },
-    {
-      "id": "12487",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "9225",
-      "estatus": "Fuera"
     }
   ],
   "agregados": [
@@ -213,21 +292,21 @@
     "13414",
     "5849",
     "13294",
+    "13298",
     "11624",
     "9482",
-    "13298",
-    "13317",
     "6650",
+    "13317",
     "11563",
     "11539",
     "8122",
+    "13296",
     "8132",
     "CLE",
     "1373",
-    "13296",
     "8129",
     "11610",
-    "2197"
+    "1166"
   ],
   "soltados": [
     "11581",
@@ -238,28 +317,28 @@
     "11439",
     "3321",
     "9480",
-    "5927",
     "11637",
+    "5927",
     "8154",
     "10235",
     "JAX",
     "8134",
-    "7567",
     "1166",
     "5012",
-    "2505",
+    "7567",
     "11435",
     "13330",
     "9482",
+    "2505",
     "13424",
     "12533",
     "3271",
-    "4035"
+    "5045"
   ],
   "duelo": {
-    "a": "Brock Purdy",
-    "b": "Jordan Love",
-    "veredicto": "Arranca a Brock Purdy. Aunque ambos tienen proyecciones elevadas cercanas a los 20 puntos PPR, Purdy ofrece un piso de pases completados más seguro en un choque donde San Francisco buscará mover el balón constantemente por aire."
+    "a": "Jahmyr Gibbs",
+    "b": "Jonathan Taylor",
+    "veredicto": "Arranca a Jahmyr Gibbs por su explosividad inigualable en ofensivas de alta rotación y su enorme piso en PPR frente a un rival directo."
   },
   "fuentes": [
     "Sleeper",
