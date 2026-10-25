@@ -1,22 +1,10 @@
 {
-  "fecha": "2026-10-25T09:05:21.540Z",
+  "fecha": "2026-10-25T09:33:09.388Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.4s] YouTube: 15 nuevos, 17 en total",
-    "[1.3s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[3.8s] ESPN: lesiones 799 · noticias 50",
-    "[4.7s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[21.5s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[23.7s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[72.0s] IA OK con gemini-3.6-flash",
-    "[72.0s] Descartada: Cole Kmet se pierde el resto de la temporada → duplicada",
-    "[72.0s] Descartada: George Kittle encabeza las opciones del Tight Ends Day → duplicada",
-    "[72.0s] Descartada: Jahmyr Gibbs apunta a dominar la Semana 7 → duplicada",
-    "[72.0s] Descartada: Baker Mayfield regresa pero sin su objetivo principal → duplicada",
-    "[72.0s] Descartada: Jordan Love afronta un choque hostil en Detroit → duplicada",
-    "[72.0s] Descartada: Tyler Higbee emerge como opción atractiva en waivers → duplicada",
-    "[72.0s] Descartada: Bijan Robinson perfila actuación explosiva ante San Francisco → duplicada",
-    "[72.0s] Noticias nuevas verificadas: 1",
-    "[72.8s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 256 · semana de juego 7 · IA usada hoy 7/40"
+    "[0.3s] YouTube: 15 nuevos, 17 en total",
+    "[0.9s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[2.2s] ESPN: lesiones 799 · noticias 50",
+    "[3.3s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 256 · semana de juego 7 · IA usada hoy 7/40"
   ]
 }
