@@ -1,23 +1,10 @@
 {
-  "fecha": "2026-10-25T01:53:21.925Z",
+  "fecha": "2026-10-25T02:14:31.471Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 0 nuevos, 17 en total",
+    "[0.3s] YouTube: 0 nuevos, 17 en total",
     "[0.9s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[3.7s] ESPN: lesiones 799 · noticias 50",
-    "[4.7s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[6.9s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[146.8s] IA OK con gemini-3.7-flash",
-    "[146.8s] Descartada: George Kittle apunta a dominar la semana siete → duplicada",
-    "[146.8s] Descartada: Jahmyr Gibbs encabeza proyecciones estelares de semana siete → duplicada",
-    "[146.8s] Descartada: Baker Mayfield genera serias dudas para semana siete → duplicada",
-    "[146.8s] Descartada: Tyler Warren queda fuera y debes sentarlo hoy → duplicada",
-    "[146.8s] Descartada: Cole Kmet se pierde la temporada por lesión → duplicada",
-    "[146.8s] Descartada: Jeremiyah Love queda descartado por lesión de tobillo → duplicada",
-    "[146.8s] Descartada: Jonathan Taylor asume protagonismo terrestre ante defensiva vikinga → duplicada",
-    "[146.8s] Noticias nuevas verificadas: 1",
-    "[204.9s] IA OK con gemini-3.8-flash",
-    "[204.9s] Resumen semana 7",
-    "[204.9s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 252 · semana de juego 7 · IA usada hoy 2/40"
+    "[2.9s] ESPN: lesiones 799 · noticias 50",
+    "[4.0s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 252 · semana de juego 7 · IA usada hoy 2/40"
   ]
 }
