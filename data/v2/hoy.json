@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-25T21:15:54.995Z",
-  "ultimaIA": "2026-10-25T19:48:29.931Z",
+  "actualizado": "2026-10-25T21:45:24.931Z",
+  "ultimaIA": "2026-10-25T21:45:24.931Z",
   "semana": 8,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,110 +13,60 @@
   ],
   "noticias": [
     {
-      "id": "n20261025194801",
-      "fecha": "2026-10-25T19:48:29.931Z",
-      "semana": 7,
-      "titulo": "Jordan Mason regresa tras superar lesión de pulgar",
+      "id": "n20261025214501",
+      "fecha": "2026-10-25T21:45:24.931Z",
+      "semana": 8,
+      "titulo": "Bucky Irving explota con doblete y exige titularidad fija",
       "claves": [
-        "Activado oficialmente desde la reserva de lesionados",
-        "Superó con éxito cirugía por fractura en el pulgar",
-        "Refuerza el ataque terrestre de los Vikings"
+        "Anotó dos touchdowns terrestres en la paliza ante Carolina.",
+        "Baker Mayfield jugó limitado por lesión en el pulgar.",
+        "Kenny Gainwell llega entre algodones por molestia de cadera."
       ],
-      "contexto": "Los Minnesota Vikings activaron oficialmente al corredor Jordan Mason desde la reserva de lesionados este sábado, completando su exitosa recuperación de la fractura en el pulgar que requirió cirugía el mes pasado. Su regreso aporta profundidad y físico al ataque terrestre del equipo.",
-      "fantasy": "Su impacto en fantasy es moderado por ahora, sirviendo principalmente como una valiosa pieza de profundidad o flex en ligas profundas mientras recupera ritmo completo. Monitorea su reparto de cargas antes de arriesgarlo como titular indiscutible.",
-      "equipo_impacto": "Aporta variantes físicas al backfield de Minnesota, complementando el esquema ofensivo y aliviando la carga en jugadas terrestres.",
-      "accion": "Vigila su porcentaje de snaps antes de arriesgarlo.",
+      "contexto": "Los Tampa Bay Buccaneers aplastaron 43-13 a los Panthers apoyándose en una exhibición terrestre dominante. Con Baker Mayfield lidiando con un pulgar dislocado y un guante protector en su mano de lanzar, el equipo decidió no sobrecargarlo por aire. Bucky Irving tomó el control del backfield anotando dos touchdowns terrestres y liderando el plan de juego ofensivo de forma categórica.",
+      "fantasy": "Irving sube a la categoría de RB2 sólido con aspiraciones de RB1 en formatos PPR y estándar. En ligas medianas y profundas, se convierte en un titular indiscutible. Mientras Kenny Gainwell aparece con designación de cuestionable por molestias en la cadera, el novato acapara las oportunidades de zona roja, convirtiéndose en una pieza imprescindible para los playoffs de fantasy.",
+      "equipo_impacto": "Tampa Bay demostró que puede controlar el reloj y ganar mediante el juego terrestre. Esto alivia la presión sobre Mayfield y disminuye la dependencia de receptores lesionados en el esquema de los Buccaneers.",
+      "accion": "Mete a Bucky Irving directamente en tu alineación titular como un RB2 de gran impacto.",
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "TB",
+      "equipos": [
+        "TB",
+        "CAR"
+      ],
+      "jugadores": [
+        "11584",
+        "4892",
+        "7567"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261025214505",
+      "fecha": "2026-10-25T21:45:24.931Z",
+      "semana": 8,
+      "titulo": "Christian McCaffrey enciende alarmas por molestia en pantorrilla",
+      "claves": [
+        "Aparece como cuestionable por un problema de pantorrilla.",
+        "Salió al vestidor pero regresó ante Atlanta en semana siete.",
+        "Expertos recomiendan retenerlo en lugar de malbaratarlo en cambios."
+      ],
+      "contexto": "San Francisco sufrió su primera derrota del año 29-20 frente a los Falcons en un partido donde Christian McCaffrey visitó el vestidor con una molestia en el muslo antes de regresar al emparrillado. El reporte oficial para la semana ocho coloca a McCaffrey como cuestionable por una dolencia en la pantorrilla, desatando nerviosismo generalizado dentro de la comunidad de fantasy football.",
+      "fantasy": "El valor de McCaffrey se mantiene neutral pero con tendencia volátil en formatos PPR y ligas competitivas. Aunque la tentación de canjearlo por pánico es alta, los expertos coinciden en retenerlo como un activo élite intocable. Si es activado el domingo, debes arrancarlo como un RB1 imprescindible, pero monitoreando estrictamente los reportes previos al juego.",
+      "equipo_impacto": "El ataque terrestre y aéreo de San Francisco gira en torno a McCaffrey. Con Deebo Samuel Sr. y Mike Evans descartados por lesiones, los 49ers dependen críticamente de la disponibilidad de su corredor estrella.",
+      "accion": "Conserva a Christian McCaffrey en tu nómina y vigila su estatus activo antes del inicio del juego.",
       "etiqueta": "TENDENCIA",
       "impacto": "NEUTRO",
-      "equipo": "MIN",
+      "equipo": "SF",
       "equipos": [
-        "MIN",
-        "IND"
+        "SF",
+        "ATL"
       ],
       "jugadores": [
-        "8408",
-        "6813"
+        "4034",
+        "5872",
+        "2216"
       ],
       "menciona": []
-    },
-    {
-      "id": "n20261025194803",
-      "fecha": "2026-10-25T19:48:29.931Z",
-      "semana": 7,
-      "titulo": "Tyler Huntley asume los controles ante Cincinnati",
-      "claves": [
-        "Lamar Jackson descartado oficialmente por esguince de tobillo",
-        "Huntley toma la titularidad para los Baltimore Ravens",
-        "Duelo divisional de alto voltaje frente a los Bengals"
-      ],
-      "contexto": "Ante la baja oficial de Lamar Jackson por un esguince severo en el tobillo alto, los Baltimore Ravens confirmaron que Tyler 'Snoop' Huntley será el mariscal de campo titular para el crucial choque divisional de este domingo frente a los Cincinnati Bengals.",
-      "fantasy": "Su titularidad eleva un poco el piso de opciones secundarias por su movilidad, pero representa un claro bajón general para el potencial ofensivo de los receptores de Baltimore en ligas competitivas. Úsalo con cautela extrema en Superflex.",
-      "equipo_impacto": "Modifica drásticamente el plan de juego ofensivo de los Ravens, apostando más por lecturas rápidas y movilidad contenida.",
-      "accion": "Evítalo en ligas tradicionales de un solo mariscal.",
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "BAL",
-      "equipos": [
-        "BAL",
-        "CIN"
-      ],
-      "jugadores": [
-        "7083",
-        "6770"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261025194806",
-      "fecha": "2026-10-25T19:48:29.931Z",
-      "semana": 7,
-      "titulo": "Taylor Moton sufre grave lesión de tobillo y peroné",
-      "claves": [
-        "Abandonó el campo en carrito durante el tercer cuarto",
-        "Lesión confirmada en tobillo izquierdo y peroné",
-        "Golpe durísimo para la línea ofensiva de los Panthers"
-      ],
-      "contexto": "Las alarmas se encendieron en Carolina cuando el tackle derecho titular Taylor Moton tuvo que abandonar el terreno de juego en carrito durante la segunda mitad del partido contra los Buccaneers, tras sufrir una aparatosa lesión en el tobillo izquierdo y el peroné.",
-      "fantasy": "Aunque no es un skill player, esta baja representa una pésima noticia para la eficiencia general de la ofensiva de los Panthers, restando garantías y tiempo en la bolsa de protección para todo el backfield.",
-      "equipo_impacto": "Debilita severamente la protección en la línea ofensiva de Carolina, incrementando el riesgo de presión sobre su mariscal de campo.",
-      "accion": "Reduce expectativas sobre el juego terrestre de Carolina.",
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "CAR",
-      "equipos": [
-        "CAR",
-        "TB"
-      ],
-      "jugadores": [],
-      "menciona": [
-        "7594"
-      ]
-    },
-    {
-      "id": "n20261025194807",
-      "fecha": "2026-10-25T19:48:29.931Z",
-      "semana": 7,
-      "titulo": "Maliek Collins amarra jugosa extensión con los Browns",
-      "claves": [
-        "Firma extensión contractual por dos años",
-        "Acuerdo valuado en 30 millones de dólares totales",
-        "Consolida el núcleo defensivo de Cleveland"
-      ],
-      "contexto": "El tackle defensivo Maliek Collins aseguró su futuro a largo plazo al acordar los términos de una extensión de contrato por dos años y 30 millones de dólares con los Cleveland Browns, cifra que incluye una fuerte suma garantizada según reportes de sus agentes.",
-      "fantasy": "Esta noticia tiene impacto directo exclusivamente en ligas con formato IDP (jugadores defensivos individuales), donde Collins refuerza su estatus como un liniero interior confiable para generar presiones y tackleadas consistentes.",
-      "equipo_impacto": "Asegura la solidez y continuidad en el centro de la línea defensiva de los Browns, blindando el frente de contención terrestre.",
-      "accion": "Vigílalo en waiver para ligas profundas IDP.",
-      "etiqueta": "WAIVER",
-      "impacto": "NEUTRO",
-      "equipo": "CLE",
-      "equipos": [
-        "CLE",
-        "TEN"
-      ],
-      "jugadores": [],
-      "menciona": [
-        "4988"
-      ]
     }
   ],
   "lesionados": [
@@ -288,25 +238,25 @@
     "12718",
     "11435",
     "13414",
-    "5995",
     "4037",
+    "5995",
     "13294",
-    "5849",
     "13298",
+    "5849",
     "13296",
     "9482",
     "11624",
     "6650",
     "11539",
     "8122",
-    "13317",
     "11563",
+    "13317",
     "8132",
-    "CLE",
     "8129",
+    "CLE",
     "13276",
     "1433",
-    "1373"
+    "9502"
   ],
   "soltados": [
     "11581",
@@ -315,9 +265,9 @@
     "9502",
     "9511",
     "11439",
-    "3321",
-    "9480",
     "5927",
+    "9480",
+    "3321",
     "11637",
     "10235",
     "8154",
@@ -325,20 +275,20 @@
     "8134",
     "5012",
     "11435",
-    "13330",
     "9482",
+    "13330",
     "1166",
+    "3271",
     "7567",
     "2505",
-    "3271",
-    "13424",
     "12533",
+    "13424",
     "5045"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
-    "b": "Jonathan Taylor",
-    "veredicto": "Arranca a Jahmyr Gibbs por su explosividad inigualable en ofensivas de alta rotación y su enorme piso en PPR frente a un rival directo."
+    "b": "Bijan Robinson",
+    "veredicto": "Arranca a Jahmyr Gibbs. Proyecta 23 puntos PPR frente a los 21.1 de Bijan Robinson. Su rol explosivo en Detroit le otorga un techo más alto para ganar tu enfrentamiento en la semana ocho."
   },
   "fuentes": [
     "Sleeper",
