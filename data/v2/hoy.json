@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-25T01:19:44.237Z",
-  "ultimaIA": "2026-10-24T23:41:10.467Z",
+  "actualizado": "2026-10-25T01:50:00.791Z",
+  "ultimaIA": "2026-10-25T01:50:00.791Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,59 +13,29 @@
   ],
   "noticias": [
     {
-      "id": "n20261024234103",
-      "fecha": "2026-10-24T23:41:10.467Z",
+      "id": "n20261025015004",
+      "fecha": "2026-10-25T01:50:00.791Z",
       "semana": 7,
-      "titulo": "Jonah Coleman enciende dudas por lesión de tobillo",
+      "titulo": "Josh Jacobs es reactivado y debes ir por él",
       "claves": [
-        "Reportado como cuestionable por molestia en el tobillo.",
-        "Único novato de Denver con participación de campo.",
-        "Riesgo de perder acarreos vitales ante Arizona Cardinals."
+        "Activado para debutar en 2026 frente a Detroit Lions",
+        "Superó seis semanas en la lista de exentos del comisionado",
+        "Puede estar disponible en alambres de ligas desatentas"
       ],
-      "contexto": "El corredor novato Jonah Coleman llega con estatus oficial de cuestionable debido a una molestia en el tobillo para el compromiso de los Denver Broncos. Seleccionado en la cuarta ronda, Coleman ha sido el único elemento novato del equipo en ver acción regular durante las primeras seis semanas de campaña. Su condición física comprometida prende focos rojos en el cuerpo técnico para enfrentar a los Arizona Cardinals este fin de semana.",
-      "fantasy": "Coleman representa una trampa peligrosa en fantasy football esta semana 7. Al encontrarse con molestias y figurar cuestionable, su carga de toques podría verse fuertemente limitada en esquemas por comité. Con Javonte Williams proyectado en 17.8 puntos acaparando la mayoría de oportunidades, Coleman debe ser enviado a la banca en ligas estándar y PPR de diez a doce escuadras para no arriesgar un cero o producción mínima.",
-      "equipo_impacto": "Si Coleman queda restringido, Javonte Williams absorberá acarreos de poder en zona roja. La ofensiva comandada por Bo Nix requerirá mayor consistencia terrestre para evitar situaciones comprometidas en tercera oportunidad.",
-      "accion": "Manda a la banca a Jonah Coleman hasta comprobar su sanidad completa.",
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "DEN",
+      "contexto": "Los Packers de Green Bay activaron formalmente al corredor estelar Josh Jacobs para realizar su esperado debut en la temporada frente a los Lions de Detroit. Jacobs pasó las primeras seis semanas de la campaña dentro de la lista de exentos del comisionado de la NFL, pero ahora se encuentra listo para incorporarse al emparrillado en un duelo divisional trascendental para las aspiraciones del conjunto de Wisconsin en el Norte de la Conferencia Nacional.",
+      "fantasy": "El valor de Jacobs sube como la espuma en todos los formatos de fantasy football. Tras semanas de incertidumbre, se reintegra como una opción de impacto inmediato para redraft y dinastía. Revisa de inmediato el alambre de despidos por si algún manejador impaciente lo soltó durante su prolongada inactividad. Si ya es tuyo o logras sumarlo mediante reclamo prioritario, reactívalo de tu reserva de cara a este prometedor debut estacional.",
+      "equipo_impacto": "El regreso de Jacobs transforma el esquema terrestre de Green Bay, brindando fortaleza en carreras de poder y zona roja, aligerando la presión sobre Jordan Love y reduciendo el volumen de los corredores complementarios.",
+      "accion": "Reclama a Josh Jacobs en el alambre de waivers o actívalo de inmediato en tu plantilla.",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "GB",
       "equipos": [
-        "DEN",
-        "ARI",
-        "DAL"
+        "GB",
+        "DET"
       ],
       "jugadores": [
-        "13345",
-        "7588",
-        "11563"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261024234107",
-      "fecha": "2026-10-24T23:41:10.467Z",
-      "semana": 7,
-      "titulo": "Tyler Huntley asume la titularidad con Baltimore Ravens",
-      "claves": [
-        "Lamar Jackson descartado oficialmente por esguince de tobillo.",
-        "Huntley comandará la ofensiva frente a Cincinnati Bengals.",
-        "Valor fantasy concentrado en ligas profundas y Superflex."
-      ],
-      "contexto": "Los Baltimore Ravens descartaron formalmente a Lamar Jackson debido al esguince de tobillo que arrastra, designando a Tyler \"Snoop\" Huntley como su mariscal de campo titular contra los Cincinnati Bengals. Jackson mostró progresos durante las prácticas de la semana pero el cuerpo técnico prefirió no arriesgarlo. De este modo, Huntley recibe la encomienda de comandar el trascendental choque divisional de la AFC Norte en calidad de líder ofensivo.",
-      "fantasy": "Huntley adquiere valor relevante en ligas de formato Superflex o dos mariscales, donde un pasador titular con facultades para correr siempre posee un piso decoroso. En ligas tradicionales de un solo mariscal de campo se mantiene como un reemplazo poco atractivo frente a opciones consagradas. Quienes tengan a Lamar Jackson deben asegurar a Huntley en la banca o buscar opciones de calidad en la agencia libre para este fin de semana.",
-      "equipo_impacto": "La presencia de Huntley mantendrá esquemas terrestres apoyados en Justice Hill. Receptores y alas cerradas verán trayectorias más cortas ante la presión constante que ejercerá la línea defensiva de Cincinnati.",
-      "accion": "Agrega a Tyler Huntley de emergencia exclusivamente si juegas ligas de formato Superflex.",
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "BAL",
-      "equipos": [
-        "BAL",
-        "CIN"
-      ],
-      "jugadores": [
-        "7083",
-        "4881",
-        "5995"
+        "5850",
+        "6804"
       ],
       "menciona": []
     }
@@ -243,14 +213,14 @@
     "13317",
     "5849",
     "2197",
-    "9482",
     "11624",
+    "9482",
     "8122",
-    "12634",
+    "13294",
     "11563",
+    "12634",
     "6650",
     "11625",
-    "13294",
     "13296",
     "96",
     "9758",
@@ -266,10 +236,10 @@
     "12718",
     "9511",
     "9502",
-    "5927",
     "3321",
-    "8154",
+    "5927",
     "9480",
+    "8154",
     "11637",
     "10235",
     "9482",
@@ -282,14 +252,14 @@
     "13150",
     "JAX",
     "11783",
-    "3271",
     "11435",
+    "3271",
     "13424"
   ],
   "duelo": {
-    "a": "Ja'Marr Chase",
-    "b": "CeeDee Lamb",
-    "veredicto": "Arranca a Ja'Marr Chase. Aunque ambos son receptores estelares, Chase disfruta de una proyección superior de 18.8 puntos ante una secundaria vulnerable de Baltimore sin Lamar Jackson, garantizando mayor dominio del tiempo de posesión."
+    "a": "George Kittle",
+    "b": "Brock Bowers",
+    "veredicto": "Arranca a George Kittle. Con Mike Evans y Deebo Samuel descartados por lesión en San Francisco, Kittle monopolizará el volumen aéreo de Brock Purdy en pleno Día Nacional de los Alas Cerradas con proyección estelar."
   },
   "fuentes": [
     "Sleeper",
