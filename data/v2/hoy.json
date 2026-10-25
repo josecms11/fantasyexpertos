@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-25T17:03:09.861Z",
-  "ultimaIA": "2026-10-25T15:31:30.046Z",
+  "actualizado": "2026-10-25T17:30:24.948Z",
+  "ultimaIA": "2026-10-25T17:30:24.948Z",
   "semana": 7,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,28 +13,29 @@
   ],
   "noticias": [
     {
-      "id": "n20261025153107",
-      "fecha": "2026-10-25T15:31:30.046Z",
+      "id": "n20261025173006",
+      "fecha": "2026-10-25T17:30:24.948Z",
       "semana": 7,
-      "titulo": "Zach Charbonnet queda fuera por lesión de rodilla",
+      "titulo": "Ja'Marr Chase domina proyecciones en duelo clave ante Baltimore",
       "claves": [
-        "Descartado oficialmente para el partido dominical",
-        "Su debut estacional se retrasa una semana más",
-        "Problema persistente en la articulación"
+        "Proyecta 18.8 puntos PPR frente a la defensiva de Ravens.",
+        "Mantiene una sinergia letal en el ataque liderado por Joe Burrow.",
+        "Oportunidad inmejorable para conseguir números de impacto en esta jornada."
       ],
-      "contexto": "Los Seattle Seahawks confirmaron que el corredor Zach Charbonnet no verá acción en el compromiso frente a los Kansas City Chiefs, retrasando una vez más su tan esperado debut en la presente temporada regular.",
-      "fantasy": "No representa ningún valor para alinear en esta jornada; evítalo por completo en cualquier tipo de formato de fantasy football hasta que logre entrenar sin restricciones.",
-      "equipo_impacto": "Mantiene intacta la jerarquía actual del backfield de Seattle sin alterar la rotación provisional.",
-      "accion": "Déjalo firmemente sentado en tu banca o reserva.",
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "SEA",
+      "contexto": "El receptor estelar de Cincinnati se perfila para tener una jornada dominante en el enfrentamiento divisional frente a los Baltimore Ravens. Con una proyección estelar de 18.8 puntos PPR, Chase llega en un momento óptimo del esquema aéreo diseñado por Joe Burrow, aprovechando los enfrentamientos individuales que la defensiva secundaria rival suele conceder a los receptores abiertos.",
+      "fantasy": "Chase es un WR1 indiscutible en todos los formatos de fantasy football esta semana. Su techo de puntos es astronómico gracias a la cantidad de pases profundos e intenciones en zona roja que acumula semana a semana. Si lo tienes en tu plantilla, no hay ningún escenario donde debas dudar de ponerlo en tu alineación como titular estelar.",
+      "equipo_impacto": "Su habilidad para atraer coberturas dobles abre espacios vitales para sus compañeros receptores y alivia la presión sobre Joe Burrow al ejecutar pases de soltado rápido en momentos comprometidos.",
+      "accion": "Alinea a Ja'Marr Chase como tu WR1 titular con total confianza.",
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "CIN",
       "equipos": [
-        "SEA",
-        "KC"
+        "CIN",
+        "BAL"
       ],
       "jugadores": [
-        "9753"
+        "7564",
+        "6770"
       ],
       "menciona": []
     }
@@ -223,9 +224,9 @@
     "8132",
     "1373",
     "2197",
+    "13296",
     "11610",
     "9758",
-    "13296",
     "8129"
   ],
   "soltados": [
@@ -240,25 +241,25 @@
     "5927",
     "11637",
     "8154",
-    "10235",
     "JAX",
+    "10235",
+    "8134",
     "2505",
     "7567",
-    "8134",
-    "5012",
     "1166",
+    "5012",
     "13330",
     "9482",
     "11435",
     "13424",
     "12533",
     "4035",
-    "11783"
+    "3271"
   ],
   "duelo": {
-    "a": "Josh Jacobs",
-    "b": "Jordan Mason",
-    "veredicto": "Arranca a Josh Jacobs sin pensarlo por su rol estelar y debut con Green Bay, dejando a Mason en la banca mientras recupera ritmo."
+    "a": "Brock Purdy",
+    "b": "Jordan Love",
+    "veredicto": "Arranca a Brock Purdy. Aunque ambos tienen proyecciones elevadas cercanas a los 20 puntos PPR, Purdy ofrece un piso de pases completados más seguro en un choque donde San Francisco buscará mover el balón constantemente por aire."
   },
   "fuentes": [
     "Sleeper",

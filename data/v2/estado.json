@@ -1,10 +1,23 @@
 {
-  "fecha": "2026-10-25T17:03:10.750Z",
+  "fecha": "2026-10-25T17:32:04.606Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 15 nuevos, 17 en total",
     "[0.8s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[1.8s] ESPN: lesiones 799 · noticias 50",
-    "[2.8s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 263 · semana de juego 7 · IA usada hoy 11/40"
+    "[2.4s] ESPN: lesiones 799 · noticias 50",
+    "[3.4s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[10.3s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
+    "[11.7s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
+    "[12.1s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
+    "[101.1s] IA OK con gemini-3.5-flash",
+    "[101.1s] Descartada: Jahmyr Gibbs encabeza las proyecciones terrestres en semana siete → duplicada",
+    "[101.1s] Descartada: Baker Mayfield regresa a la titularidad tras superar su lesión → duplicada",
+    "[101.1s] Descartada: Breece Hall queda descartado por lesión severa de cuádriceps → duplicada",
+    "[101.1s] Descartada: Terry McLaurin fuera por lesión y debes enviarlo a banca → duplicada",
+    "[101.1s] Descartada: Calvin Ridley fuera por cadera y debe ir a banca → duplicada",
+    "[101.1s] Descartada: Chris Godwin Jr. surge como opción prioritaria en waivers → duplicada",
+    "[101.1s] Descartada: Jonathan Taylor despierta rumores de canje previo al cierre → duplicada",
+    "[101.1s] Noticias nuevas verificadas: 1",
+    "[102.1s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 264 · semana de juego 7 · IA usada hoy 12/40"
   ]
 }
