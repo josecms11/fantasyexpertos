@@ -1,10 +1,21 @@
 {
-  "fecha": "2026-10-25T07:40:10.991Z",
+  "fecha": "2026-10-25T08:09:43.375Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.3s] YouTube: 15 nuevos, 17 en total",
+    "[0.2s] YouTube: 15 nuevos, 17 en total",
     "[0.9s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[1.7s] ESPN: lesiones 799 · noticias 50",
-    "[2.3s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 255 · semana de juego 7 · IA usada hoy 4/40"
+    "[2.6s] ESPN: lesiones 799 · noticias 50",
+    "[3.3s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[181.8s] IA OK con gemini-3.8-flash",
+    "[181.8s] Descartada: George Kittle será el motor ofensivo de San Francisco → duplicada",
+    "[181.8s] Descartada: Cole Kmet fuera el resto del año por rodilla → duplicada",
+    "[181.8s] Descartada: Baker Mayfield genera muchas dudas en su regreso → duplicada",
+    "[181.8s] Descartada: J.J. McCarthy debuta ante una defensiva implacable → duplicada",
+    "[181.8s] Descartada: Bijan Robinson apunta a reventar la defensiva rival → duplicada",
+    "[181.8s] Descartada: Tyler Higbee resurge como opción en el alambre → duplicada",
+    "[181.8s] Descartada: Jeremiyah Love queda descartado por lesión de tobillo → duplicada",
+    "[181.8s] Descartada: Jahmyr Gibbs lidera las proyecciones de corredores → duplicada",
+    "[181.8s] Noticias nuevas verificadas: 0",
+    "[182.6s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 255 · semana de juego 7 · IA usada hoy 5/40"
   ]
 }
