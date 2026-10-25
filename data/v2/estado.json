@@ -1,21 +1,22 @@
 {
-  "fecha": "2026-10-25T08:09:43.375Z",
+  "fecha": "2026-10-25T08:37:46.738Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 15 nuevos, 17 en total",
-    "[0.9s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[2.6s] ESPN: lesiones 799 · noticias 50",
-    "[3.3s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[181.8s] IA OK con gemini-3.8-flash",
-    "[181.8s] Descartada: George Kittle será el motor ofensivo de San Francisco → duplicada",
-    "[181.8s] Descartada: Cole Kmet fuera el resto del año por rodilla → duplicada",
-    "[181.8s] Descartada: Baker Mayfield genera muchas dudas en su regreso → duplicada",
-    "[181.8s] Descartada: J.J. McCarthy debuta ante una defensiva implacable → duplicada",
-    "[181.8s] Descartada: Bijan Robinson apunta a reventar la defensiva rival → duplicada",
-    "[181.8s] Descartada: Tyler Higbee resurge como opción en el alambre → duplicada",
-    "[181.8s] Descartada: Jeremiyah Love queda descartado por lesión de tobillo → duplicada",
-    "[181.8s] Descartada: Jahmyr Gibbs lidera las proyecciones de corredores → duplicada",
-    "[181.8s] Noticias nuevas verificadas: 0",
-    "[182.6s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 255 · semana de juego 7 · IA usada hoy 5/40"
+    "[0.8s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[1.8s] ESPN: lesiones 799 · noticias 50",
+    "[2.2s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[4.1s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
+    "[182.6s] IA OK con gemini-3.7-flash",
+    "[182.6s] Descartada: George Kittle será el motor absoluto de San Francisco → duplicada",
+    "[182.6s] Descartada: Bijan Robinson brillará ante defensa mermada de los 49ers → duplicada",
+    "[182.6s] Descartada: Jaxon Smith-Njigba lidera las proyecciones de receptores abiertos → duplicada",
+    "[182.6s] Descartada: Baker Mayfield regresa con guante pero sin armas clave → duplicada",
+    "[182.6s] Descartada: Dak Prescott genera dudas tras pobre inicio con Dallas → duplicada",
+    "[182.6s] Descartada: Michael Mayer surge como opción atractiva en waivers → duplicada",
+    "[182.6s] Descartada: Cole Kmet queda fuera por el resto de temporada → duplicada",
+    "[182.6s] Descartada: Tyler Warren descartado para enfrentar a los Minnesota Vikings → duplicada",
+    "[182.6s] Noticias nuevas verificadas: 0",
+    "[183.4s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 255 · semana de juego 7 · IA usada hoy 6/40"
   ]
 }
