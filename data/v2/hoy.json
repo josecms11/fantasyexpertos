@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-26T16:20:49.676Z",
-  "ultimaIA": "2026-10-26T16:20:49.676Z",
+  "actualizado": "2026-10-26T17:07:19.473Z",
+  "ultimaIA": "2026-10-26T17:07:19.473Z",
   "semana": 8,
   "semanaStats": 7,
   "temporada": "2026",
@@ -14,45 +14,536 @@
   ],
   "noticias": [
     {
-      "id": "n20261026162001",
-      "fecha": "2026-10-26T16:20:49.676Z",
+      "id": "x20261026170700",
+      "fecha": "2026-10-26T17:07:19.473Z",
       "semana": 8,
-      "titulo": "Courtland Sutton vuelve a la consideración para el flex",
+      "exclusivo": true,
+      "fuente": "2026-10-26T16:50:46+00:00",
+      "titulo": "Exclusivo FX: Bears domina a Pats en la semana 7",
       "claves": [
-        "Sutton entra de nuevo en el radar fantasy como flex.",
-        "Su volumen de dianas lo mantiene relevante en PPR.",
-        "Denver requiere constancia aérea para afianzar su valor fantasy."
+        "Bears consigue la victoria con 30 puntos"
       ],
-      "contexto": "Courtland Sutton vuelve a colocarse en la conversación como una opción utilizable en el puesto de flex para la semana 8. El receptor de Denver ha mostrado chispazos de involucramiento ofensivo que llaman la atención de los mánagers fantasy. Con el ataque aéreo tratando de estabilizar su ritmo de juego, su participación en el esquema ofensivo resulta clave para sostener series largas e incrementar las oportunidades dentro de la zona de anotación.",
-      "fantasy": "Sutton se ubica como una alternativa de flex en ligas PPR de 12 o más receptores. No cuenta con el techo de un receptor 1, pero su volumen le otorga un piso aceptable si necesitas cubrir bajas por lesión en tu alineación titular. Si buscas estabilidad en tu alineación para la semana 8, Sutton ofrece el rendimiento suficiente para evitar un 0 en tu enfrentamiento directo.",
-      "equipo_impacto": "Su presencia afianza la estructura del juego aéreo de Denver, ofreciendo un blanco seguro en trayectorias intermedias. Esto libera espacios para los receptores secundarios y le brinda mayor tiempo de decisión a su mariscal de campo en momentos de presión.",
-      "accion": "Alinea a Courtland Sutton en tu casilla de flex si tienes bajas importantes en la semana 8.",
       "en": {
-        "titulo": "Courtland Sutton Returns to Flex Radar for Week 8",
+        "titulo": "Exclusive FX: Bears dominate Pats in week 7",
         "claves": [
-          "Sutton emerges back as a viable flex option.",
-          "Target volume keeps him relevant in PPR formats.",
-          "Denver needs passing consistency to maintain his value."
+          "Bears secures victory with 30 points",
+          "Pats falls after allowing 30 units",
+          "Final score of 30-24 in week 7"
         ],
-        "contexto": "Courtland Sutton has put himself back into the conversation as a usable flex option for Week 8. The Denver wide receiver has shown flashes of offensive involvement that grab the attention of fantasy managers. As the passing attack tries to stabilize its overall game rhythm, his participation in the offensive scheme remains key to sustaining long drives and increasing opportunities inside the red zone area.",
-        "fantasy": "Sutton slides in as a flex alternative in PPR leagues with 12 or more teams. He does not carry the high ceiling of a top receiver, but his target volume provides a decent floor if you need to cover injuries in your starting lineup. If you are seeking stability in Week 8, Sutton offers enough production to prevent a complete 0 in your matchup.",
-        "equipo_impacto": "His presence stabilizes Denver's passing structure by providing a reliable target on intermediate routes. This opens up space for secondary receivers and gives his quarterback more decision-making time during high-pressure situations.",
-        "accion": "Start Courtland Sutton in your flex spot if you face lineup injuries in Week 8."
+        "contexto": "In week 7 action, Bears showed offensive solidity to overcome Patriots in a matchup ending 30-24. Chicago imposed conditions early, controlling the game pace and capitalizing on key scoring opportunities to seal the road win.",
+        "fantasy": "This triumph boosts the overall value of Bears' offense in standard and PPR formats. Key contributors gain momentum for upcoming matchups, while Patriots assets require careful evaluation.",
+        "equipo_impacto": "Chicago's offense proves consistency, whereas New England needs adjustments after surrendering 30 points.",
+        "accion": "Monitor Bears' production on waivers and start key pieces carefully."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "CHI",
+      "equipos": [
+        "CHI",
+        "NE"
+      ],
+      "jugadores": [],
+      "premium": true
+    },
+    {
+      "id": "x20261026170701",
+      "fecha": "2026-10-26T17:07:19.473Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-10-26T16:50:46+00:00",
+      "titulo": "Exclusivo FX: Steelers vence a Saints en París",
+      "claves": [
+        "Steelers supera a Saints con 16 puntos"
+      ],
+      "en": {
+        "titulo": "Exclusive FX: Steelers beats Saints in Paris",
+        "claves": [
+          "Steelers overcomes Saints with 16 points",
+          "International game played in Paris",
+          "Close score of 16-10 in week 7"
+        ],
+        "contexto": "In an international matchup played in Paris for week 7, Steelers secured a 16-10 victory against Saints. It was a low-scoring game where defenses dictated the pace and every yard hard-earned on the gridiron.",
+        "fantasy": "For fantasy football, such low scores limit upside for involved players. Rely only on safe starters and avoid flexing secondary pieces from both squads.",
+        "equipo_impacto": "Pittsburgh grabs a valuable road win, while New Orleans struggles missing key offensive conversions.",
+        "accion": "Keep reliable starters from Steelers and Saints in your lineup."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "NEUTRO",
+      "equipo": "PIT",
+      "equipos": [
+        "PIT",
+        "NO"
+      ],
+      "jugadores": [],
+      "premium": true
+    },
+    {
+      "id": "x20261026170702",
+      "fecha": "2026-10-26T17:07:19.473Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-10-26T16:50:46+00:00",
+      "titulo": "Exclusivo FX: Vikings sigue invicto tras vencer a Colts",
+      "claves": [
+        "Vikings mantiene su invicto en la temporada"
+      ],
+      "en": {
+        "titulo": "Exclusive FX: Vikings stays undefeated beating Colts",
+        "claves": [
+          "Vikings maintains undefeated season streak",
+          "Hard-fought victory by score of 16-10",
+          "Colts fights hard but falls in week 7"
+        ],
+        "contexto": "Vikings extended their perfect streak in week 7 by edging Colts 16-10 in a tightly contested game. Minnesota found ways to tilt the scale in crucial moments to keep their loss column clean.",
+        "fantasy": "Vikings' offense and defense continue yielding massive fantasy returns across all formats. Keep all star assets as mandatory starters, while evaluating matchups before trusting Colts players.",
+        "equipo_impacto": "Minnesota solidifies contender status, and Indianapolis falls short despite defensive effort.",
+        "accion": "Start all key Vikings players without hesitation."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "MIN",
+      "equipos": [
+        "MIN",
+        "IND"
+      ],
+      "jugadores": [],
+      "premium": true
+    },
+    {
+      "id": "x20261026170703",
+      "fecha": "2026-10-26T17:07:19.473Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-10-26T16:50:46+00:00",
+      "titulo": "Exclusivo FX: Dolphins consigue su primera victoria",
+      "claves": [
+        "Dolphins gana su primer juego de la temporada"
+      ],
+      "en": {
+        "titulo": "Exclusive FX: Dolphins earns first season win",
+        "claves": [
+          "Dolphins wins first game of the season",
+          "Record moves to 1-5 after week 7",
+          "Tense 28-25 score over Jets"
+        ],
+        "contexto": "Dolphins snapped their skid in week 7 by securing their first win of the season 28-25 over Jets, moving to a 1-5 record. Miami showed much-needed offensive sparks to outlast a division rival in a thrilling finish.",
+        "fantasy": "This win slightly improves the outlook for Dolphins offensive players in deep leagues. While still carrying a losing record, certain assets become viable flex considerations if volume sustains.",
+        "equipo_impacto": "Miami breathes after getting their first win, and New York Jets regrets dropping a key divisional matchup.",
+        "accion": "Add Dolphins players carefully in deep formats."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "MIA",
+      "equipos": [
+        "MIA",
+        "NYJ"
+      ],
+      "jugadores": [],
+      "premium": true
+    },
+    {
+      "id": "x20261026170704",
+      "fecha": "2026-10-26T17:07:19.473Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-10-26T16:50:46+00:00",
+      "titulo": "Exclusivo FX: Bengals aplasta a Ravens sin Lamar",
+      "claves": [
+        "Bengals consigue contundente triunfo de 35-13"
+      ],
+      "en": {
+        "titulo": "Exclusive FX: Bengals crushes Ravens without Lamar",
+        "claves": [
+          "Bengals secures dominant 35-13 victory",
+          "Ravens played without Lamar Jackson in week 7",
+          "Total control by Cincinnati on the gridiron"
+        ],
+        "contexto": "Bengals blew past Ravens in week 7 with a 35-13 blowout. Baltimore had to play without star quarterback Lamar Jackson, an absence that heavily hindered the visiting team's collective execution.",
+        "fantasy": "Cincinnati's offense shined with massive stats benefiting fantasy stars. On the Ravens side, offensive assets lose massive value while Lamar Jackson remains sidelined.",
+        "equipo_impacto": "Cincinnati capitalizes on the rival's absence for an easy win, and Baltimore suffers a rough loss.",
+        "accion": "Start Bengals offensive weapons with full confidence."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "CIN",
+      "equipos": [
+        "CIN",
+        "BAL"
+      ],
+      "jugadores": [
+        "4881"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261026170705",
+      "fecha": "2026-10-26T17:07:19.473Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-10-26T16:50:46+00:00",
+      "titulo": "Exclusivo FX: Browns saca victoria dramática ante Titans",
+      "claves": [
+        "Browns derrota a Titans por marcador de 27-24"
+      ],
+      "en": {
+        "titulo": "Exclusive FX: Browns edges Titans in dramatic win",
+        "claves": [
+          "Browns defeats Titans by 27-24 score",
+          "Tough matchup decided in week 7",
+          "Cleveland finds the formula to win on road"
+        ],
+        "contexto": "Browns grabbed a hard-fought 27-24 victory against Titans during week 7 action. Cleveland battled throughout the entire contest, executing clutch plays down the stretch to secure the road win.",
+        "fantasy": "This outcome keeps fantasy managers trusting Browns pieces on alert. Produced numbers sustain standard league value, though analyzing future matchups is advised before overextending.",
+        "equipo_impacto": "Cleveland adds a much-needed morale booster, and Tennessee walks away empty-handed after a close finish.",
+        "accion": "Hold key Browns players on your roster."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "CLE",
+      "equipos": [
+        "CLE",
+        "TEN"
+      ],
+      "jugadores": [],
+      "premium": true
+    },
+    {
+      "id": "x20261026170706",
+      "fecha": "2026-10-26T17:07:19.473Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-10-26T16:50:46+00:00",
+      "titulo": "Exclusivo FX: Baker Mayfield lidera paliza a Panthers",
+      "claves": [
+        "Buccaneers aplasta a Panthers con 43 puntos"
+      ],
+      "en": {
+        "titulo": "Exclusive FX: Baker Mayfield leads blowout over Panthers",
+        "claves": [
+          "Buccaneers crushes Panthers with 43 points",
+          "Baker Mayfield returns in dominant fashion",
+          "Final score of 43-13 in week 7"
+        ],
+        "contexto": "Baker Mayfield is back. Buccaneers destroyed Panthers 43-13 in week 7 with a stellar performance led by their quarterback. Tampa Bay completely overwhelmed the opposing defense from the opening quarter.",
+        "fantasy": "Great fantasy news: Baker Mayfield delivers massive numbers restoring full confidence. All Buccaneers receivers and offensive weapons surge in value for upcoming matchups.",
+        "equipo_impacto": "Tampa Bay looks unstoppable offensively, while Carolina suffers a humiliating loss requiring changes.",
+        "accion": "Start Baker Mayfield and Buccaneers weapons without hesitation."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "TB",
+      "equipos": [
+        "TB",
+        "CAR"
+      ],
+      "jugadores": [
+        "4892"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261026170707",
+      "fecha": "2026-10-26T17:07:19.473Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-10-26T16:50:46+00:00",
+      "titulo": "Exclusivo FX: Falcons quita el invicto a 49ers",
+      "claves": [
+        "Atlanta frena la racha perfecta de San Francisco"
+      ],
+      "en": {
+        "titulo": "Exclusive FX: Falcons hands 49ers first loss",
+        "claves": [
+          "Atlanta halts San Francisco's perfect streak",
+          "Falcons prevails with a 29-20 score",
+          "Major upset delivered in week 7"
+        ],
+        "contexto": "Falcons pulled off a week 7 stunner by handing 49ers their first loss with a 29-20 victory. Atlanta played with intense grit and efficiency to take down one of the league's powerhouses.",
+        "fantasy": "Falcons players significantly boost their fantasy stock after this huge performance. On the 49ers side, despite the loss, star pieces remain locked-in starters, though Atlanta's defense earned respect.",
+        "equipo_impacto": "Atlanta proves it can compete with top contenders, and San Francisco loses its undefeated status surprisingly.",
+        "accion": "Raise Falcons offensive weapons in your rest-of-season rankings."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "ATL",
+      "equipos": [
+        "ATL",
+        "SF"
+      ],
+      "jugadores": [],
+      "premium": true
+    },
+    {
+      "id": "x20261026170708",
+      "fecha": "2026-10-26T17:07:19.473Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-10-26T16:50:46+00:00",
+      "titulo": "Exclusivo FX: Giants gana en tiempo extra a Texans",
+      "claves": [
+        "Giants derrota a Texans en tiempo extra"
+      ],
+      "en": {
+        "titulo": "Exclusive FX: Giants outlasts Texans in overtime",
+        "claves": [
+          "Giants defeats Texans in overtime thriller",
+          "Exciting final score of 27-21",
+          "Dramatic finish delivered in week 7"
+        ],
+        "contexto": "Giants outlasted Houston Texans 27-21 in a dramatic matchup needing overtime to settle during week 7. New York showed character to battle back and seal the game with a clutch play.",
+        "fantasy": "This thrilling win re-elevates Giants offensive options in medium-depth leagues. Points contributed by game-changers offer relief to managers starting them this week.",
+        "equipo_impacto": "New York celebrates a crucial overtime win, and Houston regrets letting a road game slip away.",
+        "accion": "Monitor Giants player usage on waivers for potential pickups."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "NYG",
+      "equipos": [
+        "NYG",
+        "HOU"
+      ],
+      "jugadores": [],
+      "premium": true
+    },
+    {
+      "id": "x20261026170709",
+      "fecha": "2026-10-26T17:07:19.473Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-10-26T16:50:46+00:00",
+      "titulo": "Exclusivo FX: Broncos domina de principio a fin a Arizona",
+      "claves": [
+        "Broncos consigue contundente marcador de 30-16"
+      ],
+      "en": {
+        "titulo": "Exclusive FX: Broncos dominates Arizona wire-to-wire",
+        "claves": [
+          "Broncos secures solid 30-16 score",
+          "Arizona struggles against Denver's power",
+          "Absolute control in week 7 action"
+        ],
+        "contexto": "Broncos controlled week 7 proceedings to outclass Arizona 30-16. Denver enforced their game style on both sides of the ball, shutting down the Cardinals and securing a comfortable lead early.",
+        "fantasy": "Denver's execution rewards fantasy managers with very solid numbers. Keep star Denver assets in starting lineups, while carefully evaluating Arizona pieces before trusting them.",
+        "equipo_impacto": "Denver builds collective confidence, and Arizona must urgently address defensive leaks.",
+        "accion": "Start Denver primary starters with confidence."
       },
       "etiqueta": "TENDENCIA",
       "impacto": "SUBE",
       "equipo": "DEN",
       "equipos": [
-        "DEN"
+        "DEN",
+        "ARI"
+      ],
+      "jugadores": [],
+      "premium": true
+    },
+    {
+      "id": "x20261026170710",
+      "fecha": "2026-10-26T17:07:19.473Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-10-26T16:50:46+00:00",
+      "titulo": "Exclusivo FX: Rams aplasta con autoridad a Raiders",
+      "claves": [
+        "Rams propina paliza de 35-21 a Las Vegas"
+      ],
+      "en": {
+        "titulo": "Exclusive FX: Rams crushes Raiders with authority",
+        "claves": [
+          "Rams delivers 35-21 blowout over Las Vegas",
+          "Explosive offense unleashed in week 7",
+          "Las Vegas unable to stop the attack"
+        ],
+        "contexto": "Rams put on a show in week 7 by crushing Las Vegas Raiders 35-21. Los Angeles' offense clicked to perfection, finding constant openings in the opposing defense to rack up points relentlessly.",
+        "fantasy": "Brilliant showcase for Rams offensive weapons raising their fantasy stock. Los Angeles starters are mandatory across all formats, leaving Las Vegas with severe defensive concerns.",
+        "equipo_impacto": "Los Angeles boasts a devastating attack, and Las Vegas struggles heavily containing opponents.",
+        "accion": "Start all star Rams players without hesitation."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "LAR",
+      "equipos": [
+        "LAR",
+        "LV"
+      ],
+      "jugadores": [],
+      "premium": true
+    },
+    {
+      "id": "x20261026170711",
+      "fecha": "2026-10-26T17:07:19.473Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-10-26T16:50:46+00:00",
+      "titulo": "Exclusivo FX: Lions supera en cerrado duelo a Packers",
+      "claves": [
+        "Lions gana por ajustado margen de 20-17"
+      ],
+      "en": {
+        "titulo": "Exclusive FX: Lions edges Packers in tight matchup",
+        "claves": [
+          "Lions wins by narrow 20-17 margin",
+          "Packers fights hard but falls in week 7",
+          "Valuable divisional victory for Detroit"
+        ],
+        "contexto": "Lions showed grit in week 7 to edge Packers 20-17 in a hard-fought divisional battle. Detroit managed game clock efficiently and stopped Green Bay's late comeback bid to lock down the win.",
+        "fantasy": "Key Detroit pieces maintain high value due to consistent output. Meanwhile, Packers players experience a slight fantasy impact dip from the close score, but remain viable.",
+        "equipo_impacto": "Detroit solidifies divisional standing, and Green Bay falls just short of completing a comeback.",
+        "accion": "Keep Detroit star figures in your starting lineups."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "DET",
+      "equipos": [
+        "DET",
+        "GB"
+      ],
+      "jugadores": [],
+      "premium": true
+    },
+    {
+      "id": "x20261026170712",
+      "fecha": "2026-10-26T17:07:19.473Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-10-26T16:50:46+00:00",
+      "titulo": "Exclusivo FX: Seattle aplasta contundentemente a Chiefs",
+      "claves": [
+        "Seattle propina categórica paliza de 20-3"
+      ],
+      "en": {
+        "titulo": "Exclusive FX: Seattle crushes Chiefs in dominant fashion",
+        "claves": [
+          "Seattle delivers categorical 20-3 blowout",
+          "Kansas City shut down during week 7",
+          "Imposing defensive display by Seahawks"
+        ],
+        "contexto": "Seahawks put on an imposing display in week 7 by crushing Kansas City Chiefs 20-3. Seattle completely bottled up the opposing offense, restricting them to just 3 points all game.",
+        "fantasy": "Seattle's defense becomes an elite fantasy option this week. Regarding Chiefs, star players suffer an unexpected stumble forcing managers to reconsider immediate expectations.",
+        "equipo_impacto": "Seattle looks phenomenal defensively, and Kansas City requires urgent scheme adjustments.",
+        "accion": "Pick up Seattle defense if available on waivers."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "SEA",
+      "equipos": [
+        "SEA",
+        "KC"
+      ],
+      "jugadores": [],
+      "premium": true
+    },
+    {
+      "id": "x20261026170713",
+      "fecha": "2026-10-26T17:07:19.473Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-10-26T16:50:46+00:00",
+      "titulo": "Exclusivo FX: Aaron Jones fuera al menos 1 semana",
+      "claves": [
+        "Aaron Jones estará fuera mínimo 1 semana"
+      ],
+      "en": {
+        "titulo": "Exclusive FX: Aaron Jones out at least 1 week",
+        "claves": [
+          "Aaron Jones will miss at least 1 week",
+          "Mason spikes in immediate fantasy value",
+          "Confirmed injury for the star running back"
+        ],
+        "contexto": "Bad news for Aaron Jones managers as the running back will miss at least 1 week due to an injury. Given this sensitive absence, the team must alter its rushing approach for upcoming games.",
+        "fantasy": "With Aaron Jones out, Mason spikes in value exponentially across all fantasy formats. Secure Mason on waivers or plug him directly into your starting lineup if already on your roster.",
+        "equipo_impacto": "The offense loses its primary ground anchor, opening the door for Mason to take the starring role.",
+        "accion": "Start Mason and do not start Aaron Jones."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "GB",
+      "equipos": [
+        "GB",
+        "SF",
+        "MIN"
       ],
       "jugadores": [
-        "5045"
+        "4199",
+        "8408"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261026170714",
+      "fecha": "2026-10-26T17:07:19.473Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-10-26T16:50:46+00:00",
+      "titulo": "Exclusivo FX: Tracy y Skattebo con molestias leves",
+      "claves": [
+        "Tracy reporta molestias en el muslo"
+      ],
+      "en": {
+        "titulo": "Exclusive FX: Tracy and Skattebo dealing with minor injuries",
+        "claves": [
+          "Tracy reports hamstring discomfort",
+          "Skattebo suffers minor hamstring strain",
+          "Physical status to monitor ahead of next game"
+        ],
+        "contexto": "During recent action, Tracy and Skattebo picked up minor hamstring discomfort. Both situations are being evaluated by the medical staff to determine exact availability ahead of upcoming matchups.",
+        "fantasy": "In fantasy you must stay calm yet attentive to practice reports. If rostering Tracy or Skattebo, look for waiver alternatives in case they fail to recover 100 percent for next week.",
+        "equipo_impacto": "Offensive rotations could adjust temporarily if both players require preventive rest.",
+        "accion": "Monitor their injury reports before deciding to start them."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "NEUTRO",
+      "equipo": "NYG",
+      "equipos": [
+        "NYG"
+      ],
+      "jugadores": [
+        "11655"
+      ],
+      "premium": true
+    },
+    {
+      "id": "n20261026170700",
+      "fecha": "2026-10-26T17:07:19.473Z",
+      "semana": 8,
+      "titulo": "Aaron Glenn resta importancia a berrinche de Garrett Wilson",
+      "claves": [
+        "Coach de Jets defiende ofensiva",
+        "Wilson protestó jugadas en zona roja",
+        "Frustración ajena a mariscal de campo"
+      ],
+      "contexto": "Tras la derrota ante Miami en la semana 7, el entrenador Aaron Glenn calificó como exagerado por la prensa el conato de bronca de Garrett Wilson en la banca. El receptor estrella admitió su enorme descontento con las decisiones tácticas dentro de la zona roja, aclarando que su enojo no era contra el pasador Geno Smith.",
+      "fantasy": "Impacto neutro en fantasy para ligas PPR estándar. Garrett Wilson sigue siendo pieza intocable en tus alineaciones semanales a pesar de los problemas operativos de Nueva York dentro de las 20 yardas rivales. No bajes su estatus por esta polémica.",
+      "equipo_impacto": "La ofensiva de los Jets busca calmar las aguas internas tras el incidente. La gerencia y el cuerpo técnico respaldan públicamente la competitividad de su principal arma aérea.",
+      "accion": "Mantén a Garrett Wilson en tu alineación titular de la semana 8 sin dudar.",
+      "en": {
+        "titulo": "Aaron Glenn downplays Garrett Wilson sideline outburst",
+        "claves": [
+          "Jets coach defends offense",
+          "Wilson upset with red-zone plays",
+          "Frustration not aimed at QB"
+        ],
+        "contexto": "Following the week 7 loss to Miami, coach Aaron Glenn labeled Garrett Wilson's sideline outburst as overblown by the media. The star receiver admitted his strong displeasure with red-zone play calls, clarifying his anger was not directed at quarterback Geno Smith.",
+        "fantasy": "Neutral fantasy impact for standard PPR formats. Garrett Wilson remains a must-start piece in your weekly lineups despite the team's red-zone struggles. Do not lower his status over this controversy.",
+        "equipo_impacto": "The Jets offense aims to quiet internal friction after the incident. The coaching staff publicly backs the competitive fire of their primary aerial weapon.",
+        "accion": "Keep Garrett Wilson locked into your week 8 starting lineup."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "NEUTRO",
+      "equipo": "NYJ",
+      "equipos": [
+        "NYJ",
+        "MIA"
+      ],
+      "jugadores": [
+        "8146",
+        "1373"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50287717/is-courtland-sutton-back-flex-radar",
-          "t": "Is Courtland Sutton back on the flex radar?"
+          "u": "https://www.espn.com/nfl/story/_/id/50287902/aaron-glenn-says-talked-garrett-wilson-outburst",
+          "t": "Aaron Glenn says Garrett Wilson's outburst 'overblown,' defends Jets' offense"
         }
       ],
       "menciona": []
@@ -223,56 +714,56 @@
   "agregados": [
     "13150",
     "13296",
-    "13424",
     "13414",
     "13298",
+    "13424",
     "13276",
     "11435",
     "10213",
-    "3271",
     "13294",
-    "5995",
-    "6650",
-    "8129",
-    "11539",
-    "12718",
     "NE",
-    "11624",
-    "9482",
+    "8129",
+    "6650",
+    "11539",
     "11783",
     "9502",
-    "1166",
     "11586",
+    "3271",
     "7553",
+    "1166",
+    "11624",
     "9230",
-    "5849"
+    "JAX",
+    "12718",
+    "9482",
+    "6130"
   ],
   "soltados": [
     "12718",
     "3271",
-    "8129",
     "10235",
+    "8129",
     "11581",
     "CLE",
     "9482",
     "9502",
-    "9511",
-    "5927",
-    "11637",
-    "11435",
-    "3321",
-    "9480",
-    "5849",
-    "11625",
     "HOU",
-    "9756",
+    "5927",
+    "5849",
+    "11637",
+    "11625",
+    "9511",
+    "11435",
     "11610",
-    "8154",
-    "8134",
+    "3321",
+    "9756",
     "9500",
-    "13330",
+    "NYJ",
+    "9480",
+    "SF",
     "13150",
-    "5012"
+    "5012",
+    "13330"
   ],
   "duelo": {
     "a": "Jared Goff",
