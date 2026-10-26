@@ -2307,3 +2307,9 @@ section.block{padding-top:clamp(36px,4vw,64px)}
 .tr-stats span{display:flex;flex-direction:column;gap:2px;padding:6px 8px;border-radius:8px;background:rgba(255,255,255,.035)}
 .tr-stats small{font-size:10.5px;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tr-stats b{font-size:15px}
 @media (max-width:620px){.tr-stats{grid-template-columns:repeat(3,minmax(0,1fr))}}
+/* Listas desplegables siempre por encima del resto de la página y totalmente opacas */
+#app{position:relative;z-index:2}
+.tr-lado{position:relative;z-index:5}.tr-lado:focus-within{z-index:20}
+.tr-busca .sugg{background:#13201A!important;border-color:rgba(91,196,137,.45);box-shadow:0 22px 50px rgba(0,0,0,.75);opacity:1}
+.tr-busca .sugg a{background:transparent}.tr-busca .sugg a:hover,.tr-busca .sugg a.sel{background:#1E3326}
+.tr-busca .sugg{position:absolute!important;top:calc(100% + 6px)!important;left:0!important;right:0!important;width:auto!important;max-height:min(60vh,380px)}
