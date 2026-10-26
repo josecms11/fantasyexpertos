@@ -1,20 +1,21 @@
 {
-  "fecha": "2026-10-26T09:42:54.742Z",
+  "fecha": "2026-10-26T10:09:49.931Z",
   "log": [
     "[0.0s] Inicio",
     "[0.3s] YouTube: 15 nuevos, 17 en total",
-    "[0.9s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[2.2s] ESPN: lesiones 799 · noticias 50",
-    "[3.0s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[303.0s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
-    "[365.7s] IA OK con gemini-3.6-flash",
-    "[365.7s] Descartada: Jaxon Smith-Njigba explota y apunta a récord histórico → duplicada",
-    "[365.7s] Descartada: Zay Flowers se consolida en el radar WR1 → duplicada",
-    "[365.7s] Descartada: Baker Mayfield regresa con volumen extremadamente limitado → duplicada",
-    "[365.7s] Descartada: Daniel Jones atraviesa severos problemas de rendimiento → duplicada",
-    "[365.7s] Descartada: Bo Nix impresiona con anotación terrestre de 62 yardas → duplicada",
-    "[365.7s] Descartada: J.J. McCarthy responde en su primera titularidad con Giants → duplicada",
-    "[365.7s] Noticias nuevas verificadas: 2",
-    "[366.6s] Listo: 2 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 281 · semana de juego 8 · IA usada hoy 7/40"
+    "[1.1s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[3.5s] ESPN: lesiones 799 · noticias 50",
+    "[3.6s] Modelo FX v2 : 433 proyecciones propias para la semana 8",
+    "[4.5s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[304.5s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
+    "[312.8s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
+    "[324.7s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
+    "[330.4s] IA OK con gemini-3.5-flash-lite",
+    "[330.4s] Blog: ¿Arrancar o sentar a Tyler Higbee en la Semana 8? / Should you start Tyler Higbee in Week 8?",
+    "[630.4s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
+    "[658.5s] IA OK con gemini-3.6-flash",
+    "[658.5s] Blog: ¿Vale la pena agregar a Darius Cooper en la semana 8? / Should you pick up Darius Cooper in Week 8?",
+    "[658.7s] Precisión S7: error FX 4.68 · referencia 4.45 · n 285",
+    "[658.7s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 281 · semana de juego 8 · IA usada hoy 9/40"
   ]
 }
