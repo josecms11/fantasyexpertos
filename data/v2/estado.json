@@ -1,13 +1,18 @@
 {
-  "fecha": "2026-10-26T20:21:43.977Z",
+  "fecha": "2026-10-26T21:00:00.936Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 15 nuevos, 17 en total",
-    "[1.0s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[2.5s] ESPN: lesiones 799 · noticias 50",
-    "[2.5s] Modelo FX v3 : 444 proyecciones propias para la semana 8",
-    "[3.3s] Fuentes nuevas: 2 · horario pico · toca IA: false",
-    "[4.4s] Precisión S7: error FX 4.43 · referencia 4.46 · n 284",
-    "[4.5s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 300 · semana de juego 8 · IA usada hoy 32/40"
+    "[0.3s] YouTube: 15 nuevos, 17 en total",
+    "[0.9s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[1.9s] ESPN: lesiones 799 · noticias 50",
+    "[2.0s] Modelo FX v3 : 444 proyecciones propias para la semana 8",
+    "[2.6s] Fuentes nuevas: 5 · horario pico · toca IA: false",
+    "[4.0s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[10.2s] Gemini respuesta inválida gemini-3.5-flash-lite STOP {\n  \"es\": {\n    \"titulo\": \"¿Vender o aguantar a Tyler Higbee? Análisis semana 8\",\n    \"descripcion\": \"Descubre si debes vender o retener a Tyler Higbee en tu eq",
+    "[10.2s] Blog: respuesta incompleta para Tyler Higbee",
+    "[15.7s] IA OK con gemini-3.5-flash-lite",
+    "[15.7s] Blog: ¿Arrancar o sentar a Kyle Pitts Sr. en la semana 8? / Should you start Kyle Pitts Sr. in Week 8?",
+    "[15.7s] Precisión S7: error FX 4.42 · referencia 4.45 · n 285",
+    "[15.7s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 300 · semana de juego 8 · IA usada hoy 34/40"
   ]
 }
