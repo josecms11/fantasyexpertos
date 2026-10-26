@@ -2,9 +2,9 @@
   "version": "FX v3",
   "semanas": {
     "7": {
-      "n": 285,
-      "maeFX": 4.42,
-      "maeRef": 4.45,
+      "n": 284,
+      "maeFX": 4.43,
+      "maeRef": 4.46,
       "porPos": {
         "QB": {
           "n": 26,
@@ -17,9 +17,9 @@
           "spearmanRef": 0.676
         },
         "WR": {
-          "n": 96,
-          "spearmanFX": 0.702,
-          "spearmanRef": 0.678
+          "n": 95,
+          "spearmanFX": 0.709,
+          "spearmanRef": 0.681
         },
         "TE": {
           "n": 58,
@@ -38,7 +38,7 @@
         }
       },
       "cerrada": false,
-      "fecha": "2026-10-26T18:22:15.635Z"
+      "fecha": "2026-10-26T19:12:41.436Z"
     }
   }
 }
