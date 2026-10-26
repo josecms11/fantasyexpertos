@@ -1,7 +1,7 @@
 name: Motor Fantasy Expertos
 on:
   schedule:
-    - cron: "*/10 * * * *"   # cada 10 min (datos); las noticias con IA se escriben cada hora
+    - cron: "*/5 * * * *"   # cada 5 min: marcadores, lesiones y noticias al momento (la IA escribe solo cuando hay reportes nuevos)
   workflow_dispatch:
 permissions:
   contents: write

@@ -21,7 +21,8 @@ let D = null, P = [], J = {}, RANKPOS = {}, RANKW = {}, SEMNUM = null;
 /* =============================== IDIOMA (ES / EN) ===============================
    Prioridad: la página (las de /en/ fijan inglés) > lo que eligió el usuario > el idioma de su navegador/región.
    Fase 1: menú, encabezado, pie, blog y avisos en inglés. Las noticias diarias siguen en español. */
-let LANG = (() => { if (window.FX_LANG === 'en' || window.FX_LANG === 'es') return window.FX_LANG; try { const g = localStorage.getItem('fx-lang'); if (g === 'es' || g === 'en') return g; } catch (e) {} return /^es\b/i.test(navigator.language || 'es') ? 'es' : 'en'; })();
+let LANG = (() => { try { const g = localStorage.getItem('fx-lang'); if (g === 'es' || g === 'en') return g; } catch (e) {} if (window.FX_LANG === 'en' || window.FX_LANG === 'es') return window.FX_LANG; return /^es\b/i.test(navigator.language || 'es') ? 'es' : 'en'; })();
+window.FX_LANG_ACTUAL = LANG; try { document.documentElement.lang = LANG; } catch (e) {}
 const tx = (es, en) => LANG === 'en' ? en : es;
 const NAV_EN = { '': 'HOME', partidos: 'GAMES', noticias: 'NEWS', lideres: 'LEADERS', posicion: 'RANKINGS', equipos: 'TEAMS', lesionados: 'INJURIES', temporada: 'SEASON', herramientas: 'TOOLS', media: 'FX TV', cuenta: 'MY ACCOUNT' };
 const NAV_ES = {};
@@ -30,11 +31,18 @@ function aplicaIdioma() {
   document.querySelectorAll('.links a[data-s]').forEach(a => { const k = a.dataset.s; if (k === 'premium') return; if (!(k in NAV_ES)) NAV_ES[k] = a.textContent; a.textContent = LANG === 'en' ? (NAV_EN[k] || NAV_ES[k]) : NAV_ES[k]; });
   const q = document.getElementById('q'); if (q) q.placeholder = innerWidth < 520 ? tx('Buscar', 'Search') : tx('Buscar jugador o equipo', 'Search player or team');
   const pie = document.getElementById('pie-legal'); if (pie) pie.innerHTML = tx('Sitio independiente. No afiliado a ninguna liga ni equipo profesional. · <a href="#/privacidad" style="color:inherit">Aviso de privacidad</a>', 'Independent site. Not affiliated with any league or professional team. · <a href="#/privacidad" style="color:inherit">Privacy notice</a>');
-  const bl = document.getElementById('btn-lang'); if (bl) { bl.textContent = LANG === 'en' ? 'ES' : 'EN'; bl.title = tx('Read in English', 'Leer en español'); }
+  const bl = document.getElementById('btn-lang'); if (bl) { bl.innerHTML = `<svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M1.5 8h13M8 1.5c2 2 2.8 4.2 2.8 6.5S10 12.5 8 14.5M8 1.5C6 3.5 5.2 5.7 5.2 8S6 12.5 8 14.5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>${LANG.toUpperCase()}<i>▾</i>`; bl.title = tx('Idioma', 'Language'); }
+  document.querySelectorAll('[data-lang]').forEach(b => b.setAttribute('aria-checked', b.dataset.lang === LANG ? 'true' : 'false'));
   document.querySelectorAll('[data-lang]').forEach(b => b.classList.toggle('on', b.dataset.lang === LANG));
 }
-function cambiaIdioma(l) { if (l === LANG) return; LANG = l; try { localStorage.setItem('fx-lang', l); } catch (e) {} aplicaIdioma(); if (typeof pintaCuentaBtn === 'function') pintaCuentaBtn(); if (typeof repinta === 'function') repinta(); }
-document.addEventListener('click', e => { const b = e.target.closest && e.target.closest('#btn-lang,[data-lang]'); if (!b) return; e.preventDefault(); cambiaIdioma(b.id === 'btn-lang' ? (LANG === 'en' ? 'es' : 'en') : b.dataset.lang); });
+function cambiaIdioma(l) { if (l === LANG) return; LANG = l; try { localStorage.setItem('fx-lang', l); } catch (e) {} location.reload(); }
+// Selector de idioma: el botón muestra el idioma actual y abre un menú; se cambia al elegir una opción
+const menuIdioma = abre => { const m = document.getElementById('lang-menu'), b = document.getElementById('btn-lang'); if (!m || !b) return; m.hidden = !abre; b.setAttribute('aria-expanded', abre ? 'true' : 'false'); };
+document.addEventListener('click', e => { const t = e.target.closest ? e.target : null; if (!t) return;
+  if (t.closest('#btn-lang')) { e.preventDefault(); const m = document.getElementById('lang-menu'); menuIdioma(m && m.hidden); return; }
+  const op = t.closest('[data-lang]'); if (op) { e.preventDefault(); menuIdioma(false); cambiaIdioma(op.dataset.lang); return; }
+  if (!t.closest('#lang-menu')) menuIdioma(false); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') menuIdioma(false); });
 
 
 /* ---------- utilidades ---------- */
@@ -147,6 +155,7 @@ const fxPill = j => { const v = veredicto(j).v; return `<span class="fxv ${v}">$
 /* ---------- noticias ---------- */
 const normN = (n, i = 0) => {
   if (typeof n === 'string') n = { titulo: n, cuerpo: n, etiqueta: 'TENDENCIA' };
+  if (LANG === 'en' && n.en && n.en.titulo) { const e = n.en; n = { ...n, ...Object.fromEntries(Object.entries(e).filter(([, v]) => v && (!Array.isArray(v) || v.length))), _en: 1 }; }
   const et = n.etiqueta === 'ARRANCA' ? 'START' : n.etiqueta === 'BANCA' ? 'SIT' : ETIQUETAS.includes(n.etiqueta) ? n.etiqueta : 'TENDENCIA';
   const cl = (n.claves && n.claves.length) ? n.claves : String(n.cuerpo || '').split(/(?<=[.!?])\s+/).filter(Boolean).slice(0, 3);
   const imp = n.impacto || ({ START: 'SUBE', WAIVER: 'SUBE', LESIÓN: 'BAJA', SIT: 'BAJA' })[et] || 'NEUTRO';
@@ -218,6 +227,67 @@ function thumb(n, big) {
   }
   return `<span class="fxc ${cls} e-${et} ${big ? 'big' : ''}" style="${st}">${fondo}<span class="fxc-campo" aria-hidden="true"></span>${top}<span class="fxc-mid">${mid}</span><span class="fxc-strip">${strip}${marca}</span></span>`;
 }
+// Tarjeta de marca: el consejo de fantasy de Fantasy Expertos, flotando dentro de la nota o el artículo
+/* El consejo de los Expertos: la acción siempre es gratis; el análisis completo y la lectura del modelo FX son Premium.
+   Gratis ve un adelanto (primera frase + desvanecido) con el borde neón lento que marca lo Premium. */
+const lecturaFX = j => {
+  if (!j || !j.proy) return '';
+  const lg = (j.log || []).filter(l => l.f && l.f[FMT] != null), u = lg.slice(-5).map(l => l.f[FMT]);
+  const misma = Object.values(J).filter(x => x.pos === j.pos && x.proy).sort((a, b) => b.proy[FMT] - a.proy[FMT]), rk = misma.indexOf(j) + 1;
+  const vk = j.pos === 'RB' || j.pos === 'QB' ? 'ra' : 'tg', vol = lg.slice(-3).map(l => (l.st || {})[vk] || 0), vm = vol.length ? n1(vol.reduce((a, b) => a + b, 0) / vol.length) : null;
+  const dato = (k, v) => `<span><small>${k}</small><b>${v}</b></span>`;
+  return `<div class="cs-fx"><div class="cs-fx-h">${fxLogo(14)}${tx('Lectura del modelo FX', 'FX model read')}</div><div class="cs-fx-g">
+    ${dato(tx('Proyección', 'Projection'), n1(j.proy[FMT]) + ' pts')}${rk ? dato(tx('Rango', 'Rank'), j.pos + rk) : ''}
+    ${u.length ? dato(tx('Piso / techo', 'Floor / ceiling'), n1(Math.min(...u)) + ' / ' + n1(Math.max(...u))) : ''}${vm != null ? dato(vk === 'ra' ? tx('Acarreos (3 sem)', 'Carries (3 wk)') : tx('Targets (3 sem)', 'Targets (3 wk)'), vm) : ''}</div></div>`;
+};
+/* Zona Premium reutilizable: suscriptor ve el contenido; el resto ve un adelanto borroso con el borde neón y un clic a Premium. */
+const zonaPrem = (html, gancho) => esPremium() ? `<div class="pz es-prem">${html}</div>`
+  : `<div class="pz lock"><div class="pz-in" aria-hidden="true">${html}</div><a class="cs-cta pz-cta" href="#/premium">${CANDADO}<span>${esc(gancho)}</span><b>Premium ›</b></a></div>`;
+const pisoTecho = j => { const u = (j.log || []).filter(l => l.f && l.f[FMT] != null).slice(-5).map(l => l.f[FMT]); return u.length >= 2 ? [Math.min(...u), Math.max(...u)] : null; };
+const consejo = ({ accion, texto, jugadores = [], veredicto }) => {
+  if (!accion && !texto) return '';
+  const full = esPremium(), j0 = jugadores[0];
+  const frase = String(texto || '').split(/(?<=[.!?])\s+/)[0] || '', resto = String(texto || '').slice(frase.length).trim();
+  const cuerpo = full ? `${texto ? `<p class="cs-texto">${enlaza(texto, jugadores)}</p>` : ''}${lecturaFX(j0)}`
+    : `${frase ? `<p class="cs-texto">${enlaza(frase, jugadores)}</p>` : ''}${resto || (j0 && j0.proy) ? `<div class="cs-prev" aria-hidden="true"><p>${esc((resto || tx('El modelo FX ya tiene su lectura de este jugador para la semana.', 'The FX model already has its read on this player for the week.')).slice(0, 170))}</p></div>
+      <a class="cs-cta" href="#/premium">${CANDADO}<span>${tx('Ver el análisis completo y la lectura del modelo FX', 'See the full analysis and the FX model read')}</span><b>Premium ›</b></a>` : ''}`;
+  return `<aside class="consejo${full ? ' es-prem' : ' lock'}" aria-label="${tx('El consejo de los Expertos', 'Expert advice')}">
+  <div class="cs-h"><span class="cs-sello">${fxLogo(22)}</span><span><small>${tx('EL CONSEJO DE LOS EXPERTOS', 'EXPERT ADVICE')}</small><b>Fantasy Expertos</b></span>${veredicto ? `<span class="fxv-chip ${/START|AGR|ADD|COMPRA|BUY|AGUANTA|HOLD/i.test(veredicto) ? 'ok' : /SIT|VENDE|SELL/i.test(veredicto) ? 'no' : 'sky'}">${esc(veredicto)}</span>` : ''}${full ? '<span class="cs-badge">★ PREMIUM</span>' : ''}</div>
+  ${accion ? `<p class="cs-accion">${enlaza(accion, jugadores)}</p>` : ''}${cuerpo}
+  ${jugadores.length ? `<div class="cs-jug">${jugadores.map(j => `<a href="#/jugador/${j.id}">${helmet(j.team, j.num, 22)}<span>${esc(j.n)}</span>${fxPill(j)}</a>`).join('')}</div>` : ''}
+</aside>`;
+};
+/* ---------- Enlaces internos: cada jugador o equipo mencionado lleva a su ficha ---------- */
+let _rxLink = null, _mapLink = null;
+const escRx = t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+function prepLinks() {
+  _mapLink = new Map(); const keys = [];
+  P.forEach(j => { if (!j.n || j.n.length < 6) return; const k = esc(j.n); if (!_mapLink.has(k)) { _mapLink.set(k, { t: 'j', id: j.id }); keys.push(k); } });
+  Object.entries(EQUIPOS).forEach(([ab, nm]) => { const k = esc(nm), nick = esc(nm.split(' ').pop()); _mapLink.set(k, { t: 'e', id: ab }); keys.push(k); if (!_mapLink.has(nick)) { _mapLink.set(nick, { t: 'e', id: ab }); keys.push(nick); } });
+  keys.sort((a, b) => b.length - a.length);
+  _rxLink = new RegExp(`(?<![A-Za-zÀ-ÿ'])(${keys.map(escRx).join('|')})(?![A-Za-zÀ-ÿ])`, 'g');
+}
+// Escapa el texto y convierte en enlace los nombres conocidos. ctx = jugadores de la nota: también su apellido.
+function enlaza(texto, ctx = []) {
+  if (!P.length) return esc(texto);
+  if (!_rxLink) prepLinks();
+  let h = esc(texto);
+  const extra = new Map(); ctx.forEach(j => { if (!j || !j.n) return; const ap = esc(apellido(j.n).replace(/\s+(Jr\.?|Sr\.?|II|III|IV)$/, '')); if (ap.length >= 4 && !_mapLink.has(ap)) extra.set(ap, { t: 'j', id: j.id }); });
+  const rx = extra.size ? new RegExp(`${_rxLink.source.slice(0, -('(?![A-Za-zÀ-ÿ])'.length) - 1)}|${[...extra.keys()].map(escRx).join('|')})(?![A-Za-zÀ-ÿ])`, 'g') : _rxLink;
+  return h.replace(rx, m => { const x = _mapLink.get(m) || extra.get(m); if (!x) return m; return x.t === 'j' ? `<a class="ilink" data-j="${x.id}" href="#/jugador/${x.id}">${m}</a>` : `<a class="ilink eq" href="#/equipo/${x.id}">${m}</a>`; });
+}
+document.addEventListener('click', e => { const li = e.target.closest && e.target.closest('[data-ir]'); if (li && !e.target.closest('a')) location.hash = li.dataset.ir; });
+// Tarjeta flotante al pasar el cursor por un jugador enlazado (escritorio)
+let _hc = null;
+document.addEventListener('mouseover', e => { const a = e.target.closest && e.target.closest('a.ilink[data-j], a[data-hover-j]'); if (!a || !matchMedia('(hover:hover)').matches) return; const j = J[a.dataset.j || a.dataset.hoverJ]; if (!j) return;
+  if (!_hc) { _hc = document.createElement('div'); _hc.className = 'hovercard'; document.body.appendChild(_hc); }
+  const v = veredicto(j).v, ult = j.ult != null ? `${n1(j.ult)} <small>${tx('ÚLT', 'LAST')} S${j.ultW}</small>` : '–';
+  _hc.innerHTML = `<div class="hc-h" style="${vars(j.team)}">${helmet(j.team, j.num, 40)}<span><b>${esc(j.n)}</b><small>${esc(j.pos)} · ${esc(EQUIPOS[j.team] || j.team)} · ${esc(rivalTxt(j.team))}</small></span></div>
+    <div class="hc-d"><span><b class="n">${j.p != null ? n1(j.p) : '–'}</b><small>${tx('PROY FX', 'FX PROJ')}</small></span><span><b class="n">${ult}</b></span><span><b class="n">${n1(j.prom)}</b><small>${tx('PROM', 'AVG')}</small></span>${fxPill(j)}</div><p>${tx('Clic para ver su ficha completa', 'Click for full profile')} ›</p>`;
+  const r = a.getBoundingClientRect(); _hc.style.left = Math.min(innerWidth - 300, Math.max(12, r.left)) + 'px'; _hc.style.top = (r.bottom + 8 + scrollY) + 'px'; _hc.classList.add('on');
+});
+document.addEventListener('mouseout', e => { if (_hc && e.target.closest && e.target.closest('a.ilink[data-j], a[data-hover-j]')) _hc.classList.remove('on'); });
+addEventListener('hashchange', () => { if (_hc) _hc.classList.remove('on'); });
 const CANDADO = '<svg class="ico-lock" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 7V5a4 4 0 0 1 8 0v2h1v8H3V7h1zm2 0h4V5a2 2 0 0 0-4 0v2z" fill="currentColor"/></svg>';
 const newsCard = (n, big) => {
   const ps = (n.jugadores || []).map(id => J[id]).filter(Boolean), lock = n.exclusivo && n.premium && !esPremium();
@@ -348,7 +418,7 @@ function noticias(q) {
   return `<div class="page">${crumbs([['', 'Noticias']])}<div class="wrap"><section class="block">
     <div class="head"><div><h2>Noticias de fantasy</h2><p class="hsub">${L.length} noticias en el archivo · ${esc(actualizado())}</p></div></div>
     <div class="chips">${['TODO', ...ETIQUETAS].map(t => `<a class="chip ${t === f ? 'on' : ''} ${t}" href="#/noticias${t === 'TODO' ? '' : '?tipo=' + encodeURIComponent(t)}">${t === 'TODO' ? 'TODAS' : ETQ[t]}</a>`).join('')}<a class="chip-blog" href="#/blog">Blog ›</a></div>
-    ${LANG === 'en' ? `<p class="aviso-idioma">${fxLogo(14)} Our daily news is in Spanish for now. <a href="#/blog">Read the English blog ›</a></p>` : ''}
+    ${LANG === 'en' && D.noticias.some(n => !n._en) ? `<p class="aviso-idioma">${fxLogo(14)} Some older stories are still in Spanish; every new story now arrives in English too. <a href="#/blog">Read the English blog ›</a></p>` : ''}
     ${Object.entries(dias).map(([d, ns], k) => `<h3 class="day">${esc(d)}</h3><div class="news ${k ? '' : 'first'} stagger">${ns.map((n, i) => newsCard(n, k === 0 && i === 0 && f === 'TODO')).join('')}</div>`).join('') || '<div class="empty">No hay noticias de este tipo.</div>'}
     ${L.length > lim ? `<p class="more"><a class="btn ghost" href="#/noticias?${f === 'TODO' ? '' : 'tipo=' + encodeURIComponent(f) + '&'}ver=${lim + 30}">Cargar más noticias</a></p>` : ''}
   </section></div></div>`;
@@ -363,17 +433,16 @@ function noticia(id) {
   titulo(n.titulo);
   const jug = [...(n.jugadores || []), ...(n.menciona || [])].map(x => J[x]).filter(Boolean), eqs = equiposDe(n);
   const rel = L.filter(x => x.id !== id && ((x.jugadores || []).some(p => (n.jugadores || []).includes(p)) || equiposDe(x).some(t => eqs.includes(t)))).slice(0, 3);
-  const sec = (t, txt, cls = '') => txt ? `<section class="nsec ${cls}"><h3>${t}</h3><p>${esc(txt)}</p></section>` : '';
+  const sec = (t, txt, cls = '') => txt ? `<section class="nsec ${cls}"><h3>${t}</h3><p>${enlaza(txt, jug)}</p></section>` : '';
   return `<div class="page">${crumbs([['#/noticias', 'Noticias'], ['#/noticias?tipo=' + encodeURIComponent(n.etiqueta), ETQ[n.etiqueta]], ['', n.titulo.slice(0, 40) + (n.titulo.length > 40 ? '…' : '')]])}<div class="wrap narrowish">
     <div class="nhead">${thumb(n, true)}</div>
     <p class="st-meta ${n.etiqueta}" style="margin-top:18px">${esc(ETQ[n.etiqueta])}${n.fecha ? ' · ' + hace(n.fecha) : ''}${n.exclusivo ? ' · ★ Premium FX' : ''}</p>
     <h1 class="ntitle">${esc(n.titulo)}</h1>
     ${n.aviso ? `<div class="aviso-nota"><b>⚠ NOTA ACTUALIZADA</b><p>${esc(n.aviso)}</p></div>` : ''}
-    <div class="kcards stagger">${(n.claves || []).map((c, k) => `<div class="kcard"><b>${k + 1}</b>${esc(c)}</div>`).join('')}${cerrada ? [2, 3].map(k => `<div class="kcard lock"><b>${k}</b><span>${CANDADO} Solo Premium</span></div>`).join('') : ''}</div>
+    <div class="kcards stagger">${(n.claves || []).map((c, k) => `<div class="kcard"><b>${k + 1}</b><span>${enlaza(c, jug)}</span></div>`).join('')}${cerrada ? [2, 3].map(k => `<div class="kcard lock"><b>${k}</b><span>${CANDADO} Solo Premium</span></div>`).join('') : ''}</div>
     <div class="nbody">
       <div class="ncol">
-        ${cerrada ? (prem ? '<div class="esq-lineas oro" aria-busy="true" aria-label="Abriendo nota Premium"><i></i><i></i><i></i><i></i><i></i></div>' : previaPremium()) : (() => { const nota = sec('Qué pasó', n.contexto || n.cuerpo) + sec('Qué cambia para el equipo', n.equipo_impacto), fx = sec('Impacto en fantasy', n.fantasy, 'fx') + (n.accion ? `<div class="accion">${fxLogo(30)}<div><small>QUÉ HACER HOY</small><p>${esc(n.accion)}</p></div></div>` : '');
-          return fx && nota ? `<div class="ntabs" role="tablist"><button type="button" class="on" data-nt="nota" role="tab">La nota</button><button type="button" data-nt="fx" role="tab">${fxLogo(14)} Qué hacer en fantasy</button></div><div class="npanel" data-p="nota">${nota}</div><div class="npanel" data-p="fx" hidden>${fx}</div>` : nota + fx; })()}
+        ${cerrada ? (prem ? '<div class="esq-lineas oro" aria-busy="true" aria-label="Abriendo nota Premium"><i></i><i></i><i></i><i></i><i></i></div>' : previaPremium()) : `${sec('Qué pasó', n.contexto || n.cuerpo)}${consejo({ accion: n.accion, texto: n.fantasy, jugadores: jug.slice(0, 4) })}${sec('Qué cambia para el equipo', n.equipo_impacto)}${(n.fuentes || []).length ? `<p class="n-fuentes"><b>${tx('Fuentes', 'Sources')}:</b> ${n.fuentes.map(f => f.u ? `<a href="${esc(f.u)}" target="_blank" rel="nofollow noopener">${esc(f.m)} ↗</a>` : esc(f.m)).join(' · ')} <small>${tx('Redacción y análisis propios a partir del reporte citado.', 'Our own write-up and analysis based on the cited report.')}</small></p>` : ''}`}
       </div>
       <aside class="nside">
         ${jug.length ? `<div class="card"><h3>Jugadores en la noticia</h3><p class="sub">Su veredicto para la semana ${semActual()}.</p><div class="plist">${jug.map(j => prow(j, `<span class="num sm">${n1(j.p ?? j.prom)}</span>${fxPill(j)}`)).join('')}</div>
@@ -418,7 +487,8 @@ function jugador(id) {
     <section class="block" style="padding-top:22px"><div class="ssfx ${v.v}">
       <div class="ss-head">${fxLogo(54)}<div><small>START / SIT FX · SEMANA ${esc(semActual())}</small><b>${VT[v.v]}</b></div>
         <div class="ss-riv">${r ? `${helmet(r.opp, '', 56, true)}<span><small>RIVAL</small><b>${r.home ? 'vs' : '@'} ${esc(r.opp)}</b>${pintaEstrellas(v.e)}</span>` : ''}${j.p != null ? `<span class="ss-proy"><small>PROYECCIÓN</small><b class="n">${n1(j.p)}</b><i>${FMTS[FMT]}</i></span>` : ''}</div></div>
-      <ul class="ss-why">${v.razones.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div></section>
+      <ul class="ss-why">${v.razones.slice(0, 1).map(x => `<li>${enlaza(x, [j])}</li>`).join('')}</ul>
+      ${v.razones.length > 1 || j.proy ? zonaPrem(`<ul class="ss-why">${v.razones.slice(1).map(x => `<li>${enlaza(x, [j])}</li>`).join('')}</ul>${lecturaFX(j)}`, tx('Todas las razones del veredicto y la lectura del modelo FX', 'Every reason behind the verdict and the FX model read')) : ''}</div></section>
     <div class="kpis stagger">
       <div class="kpi"><b>${esc(rp(j))}</b><span>Ranking temporada · ${FMTS[FMT]}</span></div>
       <div class="kpi"><b class="n">${n1(j.total)}</b><span>Puntos en la temporada</span></div>
@@ -478,9 +548,9 @@ function posicion(p) {
       <span class="chips" style="margin:0" id="fst">${['TODOS', 'START', 'FLEX', 'SIT'].map((s, i) => `<button type="button" class="chip ${i ? '' : 'on'} ${s}" data-s="${s}">${s}</button>`).join('')}</span></div>
     <div class="card scroll"><table class="tbl rank"><thead><tr>
       <th>#</th><th>JUGADOR</th><th>EQUIPO</th><th>RIVAL S${semActual()}</th><th>DIFICULTAD</th><th class="hl">PROY</th>
-      ${ult.map(x => `<th>S${x}</th>`).join('')}<th>PROM</th><th>TOTAL</th><th>TENDENCIA</th><th class="fxh">${fxLogo(18)} START/SIT</th>
+      ${ult.map(x => `<th>S${x}</th>`).join('')}<th>PROM</th><th>TOTAL</th><th>TENDENCIA</th><th class="pz-th"><a href="#/premium">${esPremium() ? '' : CANDADO}PISO–TECHO</a></th><th class="fxh">${fxLogo(18)} START/SIT</th>
     </tr></thead><tbody id="tb"></tbody></table></div>
-    <p class="ss-note">Proyección: Sleeper (si no existe, se estima con su promedio). Dificultad = puntos que la defensa rival permite a la posición: ★★★★★ es el matchup ideal. START/FLEX/SIT combina proyección, rival, racha, noticias y comunidad.</p>
+    <p class="ss-note">Proyección: Modelo FX, propio (volumen y eficiencia de esta temporada, con la anterior como base). Dificultad = puntos que la defensa rival permite a la posición: ★★★★★ es el matchup ideal. START/FLEX/SIT combina proyección, rival, racha, noticias y comunidad.</p>
     ${noJuegan.length ? `<details class="desglose" style="margin-top:22px"><summary><span>No juegan en la semana ${semActual()} · ${noJuegan.length}</span><span>›</span></summary><div class="plist" style="padding:0 12px 12px">${noJuegan.map(j => prow(j, `<span class="team">${fuera(j) ? esc(parte(j) || j.inj) : 'BYE'}</span>${fxPill(j)}`)).join('')}</div></details>` : ''}
   </section></div></div>`;
 }
@@ -497,7 +567,7 @@ function montaTabla(p) {
       <td>${r ? `<a class="team riv" href="#/equipo/${r.opp}" onclick="event.stopPropagation()">${helmet(r.opp, '', 22)}${r.home ? 'vs' : '@'} ${r.opp}</a>` : ''}</td>
       <td>${pintaEstrellas(v.e)}</td><td class="n hl">${n1(j.p ?? j.pEst)}${j.p == null ? '<sup>*</sup>' : ''}</td>
       ${ult.map(w => { const val = ptsSem(j, w); return `<td class="n wk">${val != null ? n1(val) : rivalDe(j.team, w) ? '–' : '<small>BYE</small>'}</td>`; }).join('')}
-      <td class="n">${n1(j.prom)}</td><td class="n">${n1(j.total)}</td><td>${spark(j.hist)}</td><td>${fxPill(j)}</td></tr>`).join('') || '<tr><td colspan="12"><div class="empty">Ningún jugador coincide.</div></td></tr>';
+      <td class="n">${n1(j.prom)}</td><td class="n">${n1(j.total)}</td><td>${spark(j.hist)}</td><td class="n pz-td">${esPremium() ? (pisoTecho(j) ? n1(pisoTecho(j)[0]) + '–' + n1(pisoTecho(j)[1]) : '–') : `<a href="#/premium" onclick="event.stopPropagation()" title="Premium"><span class="pz-blur">${k * 3 % 9 + 4}.${k % 10}–${k * 7 % 13 + 14}.${k * 3 % 10}</span></a>`}</td><td>${fxPill(j)}</td></tr>`).join('') || '<tr><td colspan="13"><div class="empty">Ningún jugador coincide.</div></td></tr>';
     $('#tb').querySelectorAll('tr[data-id]').forEach(tr => tr.onclick = () => { location.hash = '#/jugador/' + tr.dataset.id; });
   };
   $('#filtro').oninput = pinta;
@@ -635,11 +705,11 @@ function blogNota(id) {
   return `<div class="page">${crumbs([['#/noticias', tx('Noticias', 'News')], ['#/blog', 'Blog'], ['', x.titulo.slice(0, 40) + (x.titulo.length > 40 ? '…' : '')]])}<div class="wrap narrowish"><article class="bnota">
     <p class="b-meta"><b>${TIPO_B[a.tipo] ? TIPO_B[a.tipo][LANG === 'en' ? 1 : 0] : 'FX'}</b> · ${tx('Semana', 'Week')} ${esc(a.semana)} · ${esc(fechaB(a.fecha))} · <button type="button" class="b-lang" data-lang="${otro}">${otro === 'en' ? 'Read in English' : 'Leer en español'}</button></p>
     <h1 class="ntitle">${esc(x.titulo)}</h1>
-    <div class="b-resp">${fxLogo(26)}<p>${esc(x.respuesta || '')}</p></div>
+    <div class="b-resp">${fxLogo(26)}<p>${enlaza(x.respuesta || '', j ? [j] : [])}</p></div>
     ${j ? `<a class="b-jug" href="#/jugador/${j.id}" style="${vars(j.team)}">${helmet(j.team, j.num, 52)}<span><b>${esc(j.n)}</b><small>${esc(j.pos)} · ${esc(EQUIPOS[j.team] || j.team)} · ${esc(rivalTxt(j.team))}</small></span>${j.p != null ? `<em><b class="n">${n1(j.p)}</b><small>${tx('PROY FX', 'FX PROJ')} ${FMTS[FMT]}</small></em>` : ''}</a>` : ''}
-    ${(x.secciones || []).map(sc => `<section class="nsec"><h3>${esc(sc.h2)}</h3><p>${esc(sc.texto)}</p></section>`).join('')}
-    ${x.fantasy ? `<div class="b-fx"><div class="b-fx-h">${fxLogo(22)}<small>${tx('QUÉ HACER EN FANTASY', 'FANTASY ADVICE')}</small><span class="fxv-chip ${bueno ? 'ok' : malo ? 'no' : 'sky'}">${esc(ver)}</span></div><p>${esc(x.fantasy.texto || '')}</p><small class="b-mod">${tx('Proyección del Modelo FX, el sistema propio de Fantasy Expertos.', 'Projection from the FX Model, Fantasy Expertos\' own system.')}</small></div>` : ''}
-    ${(x.faq || []).length ? `<section class="b-faq"><h3>${tx('Preguntas frecuentes', 'FAQ')}</h3>${x.faq.map(f => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('')}</section>` : ''}
+    ${(x.secciones || []).map(sc => `<section class="nsec"><h3>${esc(sc.h2)}</h3><p>${enlaza(sc.texto, j ? [j] : [])}</p></section>`).join('')}
+    ${x.fantasy ? consejo({ accion: '', texto: x.fantasy.texto, veredicto: ver, jugadores: j ? [j] : [] }) : ''}
+    ${(x.faq || []).length ? `<section class="b-faq"><h3>${tx('Preguntas frecuentes', 'FAQ')}</h3>${x.faq.map(f => `<details><summary>${esc(f.q)}</summary><p>${enlaza(f.a, j ? [j] : [])}</p></details>`).join('')}</section>` : ''}
     ${(a.fuentes || []).length ? `<p class="b-fuentes">${tx('Reportes originales', 'Original reports')}: ${a.fuentes.map((f, i) => `<a href="${esc(f.u)}" target="_blank" rel="nofollow noopener">${i + 1}</a>`).join(' · ')}</p>` : ''}
     <p class="more"><a class="btn ghost" href="#/blog">${tx('Más del blog', 'More from the blog')}</a></p>
   </article></div></div>`;
@@ -668,12 +738,13 @@ function semana(w) {
   const R = (D.resumenes || {})[w];
   if (!R) return noEncontrado();
   titulo('Semana ' + w);
-  const lista = (t, arr, cls) => arr && arr.length ? `<div class="card ${cls}"><h3>${t}</h3><ul class="claves">${arr.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>` : '';
+  const lista = (t, arr, cls) => arr && arr.length ? `<div class="card ${cls}"><h3>${t}</h3><ul class="claves">${arr.map(x => `<li>${enlaza(x)}</li>`).join('')}</ul></div>` : '';
+  const unico = t => { const m = [...enlaza(t).matchAll(/data-j="([^"]+)"/g)].map(x => x[1]); return new Set(m).size === 1 ? m[0] : null; };
   return `<div class="page">${crumbs([['#/temporada', 'Temporada'], ['', 'Semana ' + w]])}<div class="wrap narrowish">
     <div class="nhead">${semThumb(R, true)}</div>
     <p class="st-meta" style="margin-top:18px">Semana ${w} · ${R.cerrada ? 'jornada cerrada' : 'en curso'}</p><h1 class="ntitle">${esc(R.titulo)}</h1>
-    ${R.cuerpo ? `<p class="lead-p">${esc(R.cuerpo)}</p>` : ''}
-    ${(R.claves || []).length ? `<section class="block" style="padding-top:20px"><div class="head"><h2>${R.claves.length} cosas que aprendimos</h2></div><ol class="learn">${R.claves.map(c => `<li>${esc(c)}</li>`).join('')}</ol></section>` : '<p class="sub">El análisis completo de esta semana se está generando.</p>'}
+    ${R.cuerpo ? `<p class="lead-p">${enlaza(R.cuerpo)}</p>` : ''}
+    ${(R.claves || []).length ? `<section class="block" style="padding-top:20px"><div class="head"><h2>${R.claves.length} cosas que aprendimos</h2></div><ol class="learn">${R.claves.map(c => { const u = unico(c); return `<li${u ? ` class="learn-link" data-ir="#/jugador/${u}" data-hover-j="${u}"` : ''}>${enlaza(c)}</li>`; }).join('')}</ol></section>` : '<p class="sub">El análisis completo de esta semana se está generando.</p>'}
     <div class="grid g2" style="margin-top:20px">${lista('Sorpresas', R.sorpresas, 'good')}${lista('Decepciones', R.decepciones, 'bad')}</div>
     <section class="block"><div class="head"><div><h2>Los mejores de la semana ${w}</h2><p class="hsub">Puntos ${FMTS[FMT]}.</p></div><a class="all" href="#/lideres?ver=semana">Líderes ›</a></div>
       <div class="lgrid">${Object.entries(R.top || {}).map(([p, l]) => `<div class="lcol"><div class="lcol-h"><b>${p}</b></div><div class="plist">${l.slice(0, 10).map((x, i) => `<a class="lrow" href="${J[x.id] ? '#/jugador/' + x.id : '#/semana/' + w}"><i class="n">${i + 1}</i>${helmet(x.team, J[x.id] && J[x.id].num, 24)}<span>${esc(x.n)}<small>${esc(x.team || '')}</small></span><em class="n">${n1(x.f ? x.f[FMT] : x.pts)}</em></a>`).join('')}</div></div>`).join('')}</div></section>
@@ -1140,7 +1211,7 @@ const linkPago = k => PAGO[k] && YO ? PAGO[k] + (PAGO[k].includes('?') ? '&' : '
 const planes = () => `<div class="planes">${PAGO.mes ? `<a class="plan" href="${linkPago('mes')}"><b>$59</b><span>MXN al mes</span><small>Cancela cuando quieras</small></a>` : ''}${PAGO.temporada ? `<a class="plan top" href="${linkPago('temporada')}"><i>MEJOR PRECIO</i><b>$199</b><span>MXN toda la temporada</span><small>Pago único, hasta el Super Bowl</small></a>` : ''}</div><small class="muro-pie">Pago seguro con Stripe: tarjeta, Apple Pay o Google Pay.</small>`;
 // Vista previa bloqueada: muestra la estructura real de la nota (secciones) con renglones difuminados, nunca texto inventado
 const previaPremium = () => `<div class="previa"><div class="previa-in" aria-hidden="true">${['Qué pasó', 'Impacto en fantasy', 'Qué cambia para el equipo'].map((t, k) => `<section class="nsec ${k === 1 ? 'fx' : ''}"><h3>${t}</h3><p class="ph"><i></i><i></i><i></i>${k ? '' : '<i></i>'}</p></section>`).join('')}<div class="accion">${fxLogo(30)}<div><small>QUÉ HACER HOY</small><p class="ph"><i></i><i></i></p></div></div></div>${muroPremium()}</div>`;
-const BENEF = [['Notas de nuestra red de reporteros', 'Información que no vas a encontrar en otro lado.'], ['Trade targets y la previa de cada semana', 'A quién comprar, vender y arrancar antes que tu liga.'], ['Qué hacer hoy, nota por nota', 'Cada exclusiva termina con una acción concreta para tu equipo.']];
+const BENEF = [['Notas de nuestra red de reporteros', 'Información que no vas a encontrar en otro lado.'], ['Trade targets y la previa de cada semana', 'A quién comprar, vender y arrancar antes que tu liga.'], ['Qué hacer hoy, nota por nota', 'Cada exclusiva termina con una acción concreta para tu equipo.'], ['El consejo completo de los expertos', 'En cada nota: el análisis entero, no solo el adelanto.'], ['La lectura del modelo FX', 'Proyección, rango, piso y techo y volumen de cada jugador.'], ['Start/Sit y trades a fondo', 'Todas las razones del veredicto y el valor de cada jugador en tus trades.']];
 function muroPremium() {
   const btns = !YO ? `<a class="btn" href="#/cuenta" data-reg>Crea tu cuenta para suscribirte</a><small class="muro-pie">¿Ya tienes cuenta? <a href="#/cuenta">Entra aquí</a></small>`
     : (PAGO.mes || PAGO.temporada) ? planes() : `<small class="muro-pie">Las suscripciones abren en unos días.</small>`;
@@ -1224,6 +1295,7 @@ function resTrade() {
   [...TR.da, ...TR.recibe].map(id => J[id]).filter(j => estatus(j) !== 'Sano').forEach(j => extra.push(`${j.n} está ${fueraTemp(j) ? 'en reserva de lesionados' : estatus(j).toLowerCase()}; ya está descontado en su valor.`));
   return `<div class="card tr-res"><div class="tr-bars"><div><small>TÚ DAS</small><span><i style="width:${(a / m * 100).toFixed(1)}%"></i></span><b class="n">${Math.round(a)}</b></div><div class="r"><small>TÚ RECIBES</small><span><i style="width:${(b / m * 100).toFixed(1)}%"></i></span><b class="n">${Math.round(b)}</b></div></div>
     <div class="verdict show tv-${v[0]}"><b>${fxLogo(20)} ${v[0]}</b><p>${esc(v[1] + ' ' + extra.join(' '))}</p></div>
+    ${zonaPrem(`<div class="tr-det"><b>${tx('Valor de cada jugador, resto de temporada', 'Rest-of-season value per player')}</b>${[...TR.da.map(id => [id, '−']), ...TR.recibe.map(id => [id, '+'])].map(([id, sg]) => { const j = J[id], x = valorROS(j); return `<div class="tr-dl"><span>${sg} ${esc(j.n)}</span><em>${n1(x.ppj)} pts/${tx('juego', 'game')} · ${x.juegos} ${tx('juegos', 'games')}</em><b class="n">${Math.round(x.valor)}</b></div>`; }).join('')}${lecturaFX(J[TR.recibe[0]])}</div>`, tx('El valor de cada jugador y la lectura del modelo FX del que recibes', 'Each player\'s value and the FX model read on who you receive'))}
     <p class="sub" style="margin-top:12px">Valor = lo que aporta por encima de un jugador que encontrarías en waivers, en los juegos que le quedan. Combina su promedio, sus últimas 3 semanas, la proyección de esta semana y su estatus médico.</p></div>`;
 }
 const pintaTrade = () => { ['da', 'recibe'].forEach(k => { const el = $('#tr-' + k); if (el) el.innerHTML = listaTrade(k); }); const r = $('#tr-res'); if (r) r.innerHTML = resTrade(); history.replaceState(null, '', `${location.pathname}${location.search}#/trade?da=${TR.da.join(',')}&recibe=${TR.recibe.join(',')}`); };
@@ -1278,7 +1350,6 @@ function menu(on, quieto) {
   if (on) { const a = L.querySelector('a.act') || L.querySelector('a[href]'); a && a.focus({ preventScroll: true }); } else if (!quieto && b) b.focus();
 }
 // El menú funciona desde el primer momento, aunque los datos sigan cargando
-document.addEventListener('click', e => { const t = e.target.closest && e.target.closest('[data-nt]'); if (!t) return; document.querySelectorAll('[data-nt]').forEach(b => b.classList.toggle('on', b === t)); document.querySelectorAll('.npanel').forEach(p => { p.hidden = p.dataset.p !== t.dataset.nt; }); });
 document.addEventListener('click', e => { const t = e.target.closest && e.target.closest('[data-lt]'); if (!t) return; const lg = $('.live-grid'); if (lg) { lg.classList.toggle('ver-fx', t.dataset.lt === 'fx'); lg.classList.toggle('ver-pbp', t.dataset.lt === 'pbp'); } document.querySelectorAll('[data-lt]').forEach(b => b.classList.toggle('on', b === t)); });
 document.addEventListener('click', e => { const f = e.target.closest && e.target.closest('[data-fxf]'); if (f) { FXFILTRO = f.dataset.fxf; document.querySelectorAll('.fxl-list .fxr').forEach(r => { r.hidden = FXFILTRO !== 'todos' && r.dataset.eq !== FXFILTRO; }); document.querySelectorAll('[data-fxf]').forEach(b => b.classList.toggle('on', b === f)); } });
 document.addEventListener('click', e => { const t = e.target.closest && e.target.closest('#menu-btn,#menu-x,#menu-bg'); if (t) { e.preventDefault(); menu(t.id === 'menu-btn'); } });

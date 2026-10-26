@@ -11,7 +11,15 @@ Plataforma de fantasy football (español e inglés) que se actualiza sola. Sitio
 
 ## Modelo FX (proyecciones propias)
 
-`proyFX()` en `scripts/motor.mjs`: volumen esperado (targets, acarreos, yardas de pase, ponderado por recencia) × eficiencia del jugador regresada a la media de su posición (TD con regresión fuerte). K y DEF: promedio ponderado con regresión. Cada semana terminada se mide su error contra el resultado real en `data/v2/modelo.json`.
+`proyFX()` en `scripts/motor.mjs`: volumen esperado (targets, acarreos, yardas de pase, ponderado por recencia) × eficiencia del jugador regresada a la media de su posición (TD con regresión fuerte). **FX v3:** la temporada anterior (datos públicos de nflverse, cacheados en `data/v2/previa.json`) entra como juegos previos con peso 0.3 (0.15 si cambió de equipo); la temporada actual domina conforme avanza. Backtest S3-S7: error medio 4.79 vs 4.87 sin historia. K y DEF: promedio ponderado con regresión. Cada semana terminada se mide su error contra el resultado real en `data/v2/modelo.json`.
+
+## Verificación antes de publicar
+
+Cada nota pasa por `verificar()` + `revisaTexto()`: cifras con dígitos, decimales que existan en los datos, equipo correcto del jugador, polaridad del matchup y fuente citada obligatoria (`fuentes` con medio y enlace). Las notas son redacción propia; la página de cada nota cita al medio original.
+
+## Idiomas
+
+`assets/i18n-en.js` traduce la interfaz al inglés; el contenido editorial llega bilingüe desde el motor (`n.en`). Páginas SEO en `/` y `/en/` con hreflang.
 
 ## Correr a mano
 

@@ -26,6 +26,8 @@ const semana = hoy.semana || '';
 const plantilla = fs.readFileSync('index.html', 'utf8');
 const urlJ = j => `jugador/${slug(j.n)}-${j.id}/`;
 const urlN = n => `noticia/${slug(n.titulo)}-${String(n.id).replace(/\D/g, '').slice(-8)}/`;
+const urlNen = n => `en/noticia/${slug(n.en.titulo)}-${String(n.id).replace(/\D/g, '').slice(-8)}/`;
+const refsN = (n, l) => (n.fuentes || []).length ? `<h2>${l === 'en' ? 'Sources' : 'Fuentes'}</h2><ul>${n.fuentes.map(f => `<li>${esc(f.m)}${f.t ? ': «' + esc(f.t) + '»' : ''}${f.u ? ` · <a href="${esc(f.u)}" rel="nofollow noopener" target="_blank">${l === 'en' ? 'Read the original report' : 'Ver reporte original'}</a>` : ''}</li>`).join('')}</ul><p><small>${l === 'en' ? 'Our own write-up and analysis based on the cited report.' : 'Redacción y análisis propios a partir del reporte citado.'}</small></p>` : '';
 const urlE = t => `equipo/${t.toLowerCase()}/`;
 
 function pagina({ ruta, titulo, desc, ruteo, cuerpo, ld, tipo = 'website', lang = 'es', alt = null }) {
@@ -87,9 +89,21 @@ for (const n of archivo) {
 <h1>${esc(n.titulo)}</h1>
 ${(n.claves || []).length ? `<ul>${n.claves.map(c => `<li>${esc(c)}</li>`).join('')}</ul>` : ''}
 ${n.exclusivo ? '<p>Nota exclusiva de Fantasy Expertos.</p>' : `${n.contexto ? `<h2>Qué pasó</h2><p>${esc(n.contexto)}</p>` : ''}${n.fantasy ? `<h2>Impacto en fantasy</h2><p>${esc(n.fantasy)}</p>` : ''}${n.equipo_impacto ? `<h2>Qué cambia para el equipo</h2><p>${esc(n.equipo_impacto)}</p>` : ''}${n.accion ? `<p><b>Qué hacer:</b> ${esc(n.accion)}</p>` : ''}`}
-${rel.length ? `<p>Jugadores: ${rel.map(j => `<a href="${urlJ(j)}">${esc(j.n)}</a>`).join(', ')}</p>` : ''}</article>`;
-  escribe(urlN(n), pagina({ ruta: urlN(n), titulo, desc, ruteo: '#/noticia/' + n.id, cuerpo, tipo: 'article',
-    ld: { '@context': 'https://schema.org', '@type': 'NewsArticle', headline: n.titulo.slice(0, 110), description: desc, datePublished: fecha, dateModified: fecha, inLanguage: 'es-MX', isAccessibleForFree: true,
+${rel.length ? `<p>Jugadores: ${rel.map(j => `<a href="${urlJ(j)}">${esc(j.n)}</a>`).join(', ')}</p>` : ''}
+${refsN(n, 'es')}</article>`;
+  const altN = n.en && n.en.titulo && !n.exclusivo ? { es: urlN(n), en: urlNen(n) } : null;
+  if (altN) { const e = n.en, de = corta(e.contexto || (e.claves || []).join(' '));
+    const ce = `<article><p><small>${esc(n.etiqueta || 'News')} · ${esc(fecha.slice(0, 10))}</small></p>
+<h1>${esc(e.titulo)}</h1>
+${(e.claves || []).length ? `<ul>${e.claves.map(c => `<li>${esc(c)}</li>`).join('')}</ul>` : ''}
+${e.contexto ? `<h2>What happened</h2><p>${esc(e.contexto)}</p>` : ''}${e.fantasy ? `<h2>Fantasy impact</h2><p>${esc(e.fantasy)}</p>` : ''}${e.equipo_impacto ? `<h2>What changes for the team</h2><p>${esc(e.equipo_impacto)}</p>` : ''}${e.accion ? `<p><b>What to do:</b> ${esc(e.accion)}</p>` : ''}
+${rel.length ? `<p>Players: ${rel.map(j => `<a href="${urlJ(j)}">${esc(j.n)}</a>`).join(', ')}</p>` : ''}
+${refsN(n, 'en')}</article>`;
+    escribe(altN.en, pagina({ ruta: altN.en, titulo: `${e.titulo} | Fantasy Experts`, desc: de, ruteo: '#/noticia/' + n.id, cuerpo: ce, tipo: 'article', lang: 'en', alt: altN,
+      ld: { '@context': 'https://schema.org', '@type': 'NewsArticle', headline: e.titulo.slice(0, 110), description: de, datePublished: fecha, dateModified: fecha, inLanguage: 'en-US', isAccessibleForFree: true, isBasedOn: (n.fuentes || []).map(f => f.u).filter(Boolean),
+        author: { '@type': 'Organization', name: SITIO, url: RAIZ }, publisher: { '@type': 'Organization', name: SITIO, url: RAIZ }, mainEntityOfPage: RAIZ + altN.en } })); }
+  escribe(urlN(n), pagina({ ruta: urlN(n), titulo, desc, ruteo: '#/noticia/' + n.id, cuerpo, tipo: 'article', ...(altN ? { lang: 'es', alt: altN } : {}),
+    ld: { '@context': 'https://schema.org', '@type': 'NewsArticle', headline: n.titulo.slice(0, 110), description: desc, datePublished: fecha, dateModified: fecha, inLanguage: 'es-MX', isAccessibleForFree: true, isBasedOn: (n.fuentes || []).map(f => f.u).filter(Boolean),
       author: { '@type': 'Organization', name: SITIO, url: RAIZ }, publisher: { '@type': 'Organization', name: SITIO, url: RAIZ }, mainEntityOfPage: RAIZ + urlN(n) } }));
 }
 
@@ -179,7 +193,7 @@ for (const base of ['blog', 'en/blog']) if (fs.existsSync(base)) for (const d of
 const urls = [['', 'hourly', '1.0'], ['privacidad/', 'yearly', '0.2'], ['blog/', 'daily', '0.8', null, { es: 'blog/', en: 'en/blog/' }], ['en/blog/', 'daily', '0.8', null, { es: 'blog/', en: 'en/blog/' }],
   ...blog.filter(a => a.es && a.en && a.es.slug && a.en.slug).flatMap(a => { const alt = { es: urlB(a, 'es'), en: urlB(a, 'en') }; return [[alt.es, 'weekly', '0.9', (a.fecha || '').slice(0, 10), alt], [alt.en, 'weekly', '0.9', (a.fecha || '').slice(0, 10), alt]]; }),
   ...rkPos.flatMap(x => { const alt = { es: urlR(x, 'es'), en: urlR(x, 'en') }; return [[alt.es, 'daily', '0.9', null, alt], [alt.en, 'daily', '0.9', null, alt]]; }),
-  ...archivo.filter(n => n && n.titulo && n.id).map(n => [urlN(n), 'weekly', '0.8', (n.fecha || '').slice(0, 10)]),
+  ...archivo.filter(n => n && n.titulo && n.id).flatMap(n => { const f = (n.fecha || '').slice(0, 10); if (!(n.en && n.en.titulo && !n.exclusivo)) return [[urlN(n), 'weekly', '0.8', f]]; const alt = { es: urlN(n), en: urlNen(n) }; return [[alt.es, 'weekly', '0.8', f, alt], [alt.en, 'weekly', '0.8', f, alt]]; }),
   ...jugadores.map(j => [urlJ(j), 'daily', '0.7']), ...Object.keys(EQUIPOS).map(t => [urlE(t), 'daily', '0.6'])];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.filter(([u]) => !/^(en\/)?blog\/.+/.test(u) || escritasB.has(u)).map(([u, f, p, m, alt]) => `<url><loc>${RAIZ}${u}</loc>${alt ? Object.entries(alt).map(([l, x]) => `<xhtml:link rel="alternate" hreflang="${l}" href="${RAIZ}${x}"/>`).join('') : ''}${m ? `<lastmod>${m}</lastmod>` : ''}<changefreq>${f}</changefreq><priority>${p}</priority></url>`).join('\n')}\n</urlset>\n`;
 const robots = `User-agent: *\nAllow: /\nDisallow: /apps-script/\nSitemap: ${RAIZ}sitemap.xml\n`;

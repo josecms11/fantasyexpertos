@@ -78,8 +78,8 @@ async function gemini(prompt, tokens = 32000) {
   }
   return null;
 }
-const VOZ = 'Eres el editor de Fantasy Expertos, el rincón de fantasy football para fans de habla hispana. Español de México, tono experto, directo y con personalidad. Escribe con tus propias palabras, nunca copies frases de las fuentes. Todo se aterriza a decisiones de fantasy. REGLAS DE VERACIDAD: usa SOLO hechos presentes en las fuentes y en la lista de estatus que te doy; si un jugador está OUT o IR jamás lo recomiendes para arrancar; no inventes cifras, fechas ni lesiones; si no estás seguro de un dato, no lo uses. Responde SOLO JSON. ';
-const FORMATO = '{"noticias":[{"titulo":"titular original y punchy, máximo 9 palabras","claves":["3 puntos clave de máximo 12 palabras"],"contexto":"qué pasó y por qué, 50 a 80 palabras","fantasy":"impacto en fantasy: a quién sube o baja, en qué formatos y ligas, 50 a 80 palabras","equipo_impacto":"cómo cambia al equipo y a sus compañeros, 30 a 60 palabras","accion":"qué hacer hoy en tu liga, una frase accionable","etiqueta":"START | SIT | WAIVER | LESIÓN | TENDENCIA","impacto":"SUBE | BAJA | NEUTRO","equipo":"abreviatura NFL del equipo principal","equipos":["todas las abreviaturas NFL relacionadas"],"jugadores":["nombre completo en inglés; el primero DEBE ser el protagonista que aparece en el titular; no incluyas jugadores mencionados de paso"]}]}';
+const VOZ = 'Eres el editor de Fantasy Expertos, el rincón de fantasy football para fans de habla hispana. Español de México, tono experto, directo y con personalidad. Escribe con tus propias palabras, nunca copies frases de las fuentes. Escribe SIEMPRE las cifras con dígitos (28.9 pts, 3 TD, semana 7), nunca con letras. Todo se aterriza a decisiones de fantasy. REGLAS DE VERACIDAD: usa SOLO hechos presentes en las fuentes y en la lista de estatus que te doy; si un jugador está OUT o IR jamás lo recomiendes para arrancar; no inventes cifras, fechas ni lesiones; si no estás seguro de un dato, no lo uses. Responde SOLO JSON. ';
+const FORMATO = '{"noticias":[{"titulo":"titular original y punchy, máximo 9 palabras","claves":["3 puntos clave de máximo 12 palabras"],"contexto":"qué pasó y por qué, 50 a 80 palabras","fantasy":"impacto en fantasy: a quién sube o baja, en qué formatos y ligas, 50 a 80 palabras","equipo_impacto":"cómo cambia al equipo y a sus compañeros, 30 a 60 palabras","accion":"qué hacer hoy en tu liga, una frase accionable","en":{"titulo":"same headline in US English, max 9 words","claves":["3 key points in English"],"contexto":"in English","fantasy":"in English","equipo_impacto":"in English","accion":"one actionable sentence in English"},"etiqueta":"START | SIT | WAIVER | LESIÓN | TENDENCIA","impacto":"SUBE | BAJA | NEUTRO","equipo":"abreviatura NFL del equipo principal","equipos":["todas las abreviaturas NFL relacionadas"],"jugadores":["nombre completo en inglés; el primero DEBE ser el protagonista que aparece en el titular; no incluyas jugadores mencionados de paso"]}]}';
 
 /* ---------- Fuentes de texto ---------- */
 async function titularesRSS() {
@@ -90,7 +90,8 @@ async function titularesRSS() {
       for (const m of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)) {
         const t = (m[1].match(/<title>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/title>/) || [])[1] || '';
         const d = ((m[1].match(/<description>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/description>/) || [])[1] || '').replace(/<[^>]+>/g, '');
-        if (t) out.push((t + ' — ' + d).slice(0, 400));
+        const ln = ((m[1].match(/<link>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/link>/) || [])[1] || '').trim();
+        if (t) out.push({ t, txt: (t + ' — ' + d).slice(0, 400), u: /^https?:\/\//.test(ln) ? ln : null, m: /cbssports/.test(u) ? 'CBS Sports' : /yahoo/.test(u) ? 'Yahoo Sports' : 'RSS' });
         if (out.length > 30) break;
       }
     } catch (e) { log('RSS falló', u, e.message); }
@@ -243,14 +244,36 @@ const jugadores = [...set].map(k => {
    Volumen esperado (targets, acarreos, yardas de pase) ponderado por recencia × eficiencia del jugador
    regresada a la media de su posición (los TD, que son lo más ruidoso, se regresan mucho más). K y DEF: promedio
    ponderado con regresión. Parámetros elegidos con backtest S4-S7 2026 (scripts de auditoría).                      */
-const FX = { version: 'FX v2', hl: 8, mEf: 40, mTd: 160 };
+const FX = { version: 'FX v3', hl: 8, mEf: 40, mTd: 160, aPrev: 0.3 };
+/* v3: la temporada anterior entra como "juegos previos" con peso aPrev (mitad si cambió de equipo); la actual pesa más
+   y domina conforme avanza el año. Backtest S3-S7: error medio 4.79 vs 4.87 sin historia (scripts de auditoría). */
+const PREVIA = await (async () => {
+  const año = Number(s.temporada) - 1, f = DIR + '/previa.json', c = leer(f, null);
+  if (c && c.año === año && Object.keys(c.j || {}).length > 200) return c.j;
+  let txt = null;
+  try { const r = await fetch(`https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_${año}.csv`, { signal: conTiempo(60000) }); if (r.ok) txt = await r.text(); } catch (e) { log('Previa falló', e.message); }
+  if (!txt) return (c && c.j) || {};
+  const filas = txt.trim().split('\n'), H = filas.shift().split(','), ix = k => H.indexOf(k), num = (c2, k) => +c2[ix(k)] || 0, P = {};
+  const cs = l => { const o = []; let c = '', q = false; for (const ch of l) { if (ch === '"') q = !q; else if (ch === ',' && !q) { o.push(c); c = ''; } else c += ch; } o.push(c); return o; };
+  for (const l of filas) { const c2 = cs(l); if (c2[ix('season_type')] !== 'REG') continue;
+    const k = norm(c2[ix('player_display_name')]) + '|' + c2[ix('position')], x = P[k] = P[k] || { g: 0 };
+    x.g++; x.team = c2[ix('team')];
+    const add = (a, v) => x[a] = Math.round(((x[a] || 0) + v) * 10) / 10;
+    add('tg', num(c2, 'targets')); add('rec', num(c2, 'receptions')); add('recy', num(c2, 'receiving_yards')); add('rectd', num(c2, 'receiving_tds'));
+    add('ra', num(c2, 'carries')); add('ry', num(c2, 'rushing_yards')); add('rtd', num(c2, 'rushing_tds')); add('py', num(c2, 'passing_yards')); add('ptd', num(c2, 'passing_tds'));
+    add('int', num(c2, 'passing_interceptions')); add('fl', num(c2, 'rushing_fumbles_lost') + num(c2, 'receiving_fumbles_lost') + num(c2, 'sack_fumbles_lost')); }
+  for (const k in P) if (P[k].g < 3) delete P[k];
+  guardar(f, { año, fuente: 'nflverse (datos públicos)', j: P }); log('Previa', año, ':', Object.keys(P).length, 'jugadores'); return P;
+})();
+const previaDe = j => { const x = PREVIA[norm(j.n) + '|' + j.pos]; if (!x) return null; const mismo = x.team === j.team || (x.team === 'LA' && j.team === 'LAR'); return { x, a: FX.aPrev * (mismo ? 1 : .5) }; };
 const STK = ['tg', 'rec', 'recy', 'rectd', 'ra', 'ry', 'rtd', 'py', 'ptd', 'int', 'fl'];
 function tasasPos(lista, W) { const T = {}; for (const j of lista) for (const l of j.log) { if (l.w >= W || !l.st || !l.f) continue; const t = T[j.pos] = T[j.pos] || {}; for (const k of STK) t[k] = (t[k] || 0) + (l.st[k] || 0); } return T; }
 function proyFX(j, W, T) {
-  const hist = j.log.filter(l => l.w < W && l.f && l.f[0] != null); if (!hist.length) return null;
-  const w = l => Math.pow(.5, (W - 1 - l.w) / FX.hl), sw = hist.reduce((a, l) => a + w(l), 0), n = hist.length;
+  const hist = j.log.filter(l => l.w < W && l.f && l.f[0] != null), pv = j.pos === 'K' || j.pos === 'DEF' ? null : previaDe(j); if (!hist.length && !pv) return null;
+  const w = l => Math.pow(.5, (W - 1 - l.w) / FX.hl), n = hist.length, pg = pv ? pv.a * pv.x.g : 0, sw = hist.reduce((a, l) => a + w(l), 0) + pg;
   if (j.pos === 'K' || j.pos === 'DEF') return [0, 1, 2].map(k => { const v = hist.reduce((a, l) => a + w(l) * (l.f[k] ?? l.f[0]), 0) / sw; return r1((n * v + 2 * .8 * v) / (n + 2)); });
-  const vol = k => hist.reduce((a, l) => a + w(l) * ((l.st || {})[k] || 0), 0) / sw, tot = k => hist.reduce((a, l) => a + ((l.st || {})[k] || 0), 0), tp = T[j.pos] || {};
+  const ex = k => pv ? pv.a * (pv.x[k] || 0) : 0, tp = T[j.pos] || {};
+  const vol = k => (hist.reduce((a, l) => a + w(l) * ((l.st || {})[k] || 0), 0) + ex(k)) / sw, tot = k => hist.reduce((a, l) => a + ((l.st || {})[k] || 0), 0) + ex(k);
   const tasa = (num, den, m) => { const d = tot(den) + m; return d ? (tot(num) + m * ((tp[num] || 0) / Math.max(1, tp[den] || 0))) / d : 0; };
   const tg = vol('tg'), ra = vol('ra'), qb = j.pos === 'QB', py = vol('py');
   const rec = tg * tasa('rec', 'tg', FX.mEf), recy = tg * tasa('recy', 'tg', FX.mEf), rectd = tg * tasa('rectd', 'tg', FX.mTd);
@@ -276,7 +299,16 @@ guardar(DIR + '/calendario.json', { temporada: s.temporada, semana: semJuego, se
 const archivo = leer(DIR + '/archivo.json', []);
 const prevHoy = leer(DIR + '/hoy.json', {});
 const ahora = new Date().toISOString(), sello = ahora.replace(/\D/g, '').slice(0, 12);
-const tocaIA = (!prevHoy.ultimaIA || Date.now() - Date.parse(prevHoy.ultimaIA) > CADA_IA_MIN * 60e3) && quedan() > 2;
+// Noticias al momento: el motor reacciona a reportes NUEVOS. En horario pico de EE. UU. (10 a. m. a medianoche del Este)
+// revisa cada corrida y escribe en cuanto aparece algo; fuera de pico, cada 90 min. La cuota diaria se reparte con el blog.
+const vistos = new Set(leer(DIR + '/vistos.json', []));
+const claveF = t => norm(String(t || '')).slice(0, 90);
+const horaET = (new Date().getUTCHours() + 20) % 24, pico = horaET >= 10;
+const fuentesTodas = [...newsE.slice(0, 45).map(a => ({ k: claveF(a.titulo), txt: `${a.titulo} — ${a.desc}`.slice(0, 380), u: a.url })), ...(await titularesRSS()).map(t => ({ k: claveF(t.t), txt: t.txt, u: t.u, m: t.m }))];
+fuentesTodas.forEach(f => { if (!f.m) f.m = 'ESPN'; });
+const fuentesNuevas = fuentesTodas.filter(f => f.k && !vistos.has(f.k));
+const tocaIA = fuentesNuevas.length > 0 && (!prevHoy.ultimaIA || Date.now() - Date.parse(prevHoy.ultimaIA) > (pico ? 20 : 90) * 60e3) && quedan() > 8;
+log('Fuentes nuevas:', fuentesNuevas.length, '· horario', pico ? 'pico' : 'normal', '· toca IA:', tocaIA);
 let nuevas = [], duelo = null;
 const palabras = t => new Set(norm2(t).split(' ').filter(w => w.length > 3));
 function norm2(t) { return String(t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9 ]/g, ' '); }
@@ -285,6 +317,32 @@ const ligar = n => (n.jugadores || []).map(x => porNombre[norm(x)]).filter(Boole
 // El jugador de la tarjeta debe ser el protagonista: su apellido tiene que aparecer en el titular.
 const apellidoDe = nm => norm(String(nm || '').replace(/\b(jr|sr|ii|iii|iv)\.?$/i, '').trim().split(/\s+/).slice(-1)[0]);
 const protagonista = (n, id) => { const p = J[id] || s.todos[id]; if (!p) return false; const ap = apellidoDe(p.n); const txt = norm(n.titulo || ''); return ap.length > 2 && txt.includes(ap); };
+const EQUIPOS = { ARI: 'Arizona Cardinals', ATL: 'Atlanta Falcons', BAL: 'Baltimore Ravens', BUF: 'Buffalo Bills', CAR: 'Carolina Panthers', CHI: 'Chicago Bears', CIN: 'Cincinnati Bengals', CLE: 'Cleveland Browns', DAL: 'Dallas Cowboys', DEN: 'Denver Broncos', DET: 'Detroit Lions', GB: 'Green Bay Packers', HOU: 'Houston Texans', IND: 'Indianapolis Colts', JAX: 'Jacksonville Jaguars', KC: 'Kansas City Chiefs', LV: 'Las Vegas Raiders', LAC: 'Los Angeles Chargers', LAR: 'Los Angeles Rams', MIA: 'Miami Dolphins', MIN: 'Minnesota Vikings', NE: 'New England Patriots', NO: 'New Orleans Saints', NYG: 'New York Giants', NYJ: 'New York Jets', PHI: 'Philadelphia Eagles', PIT: 'Pittsburgh Steelers', SF: 'San Francisco 49ers', SEA: 'Seattle Seahawks', TB: 'Tampa Bay Buccaneers', TEN: 'Tennessee Titans', WAS: 'Washington Commanders' };
+const NICK = Object.fromEntries(Object.entries(EQUIPOS).map(([ab, nm]) => [nm.split(' ').pop().toLowerCase(), ab]));
+/* ---------- Verificador automático antes de publicar (notas y blog) ----------
+   1) cifras siempre con dígitos  2) toda cifra decimal debe existir en los datos o fuentes que recibió la IA
+   3) el equipo del protagonista no puede estar equivocado  4) el matchup no puede contradecir nuestra calificación */
+const NUM_LETRAS = /\b(cero|uno|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|trece|catorce|quince|dieci\w+|veinte|veinti\w+|treinta|cuarenta|cincuenta|zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty)(\s+y\s+\w+|-\w+)?\s+(punto|point)\b/i;
+const textosDe = x => [x.titulo, ...(x.claves || []), x.contexto, x.fantasy && typeof x.fantasy === 'object' ? x.fantasy.texto : x.fantasy, x.equipo_impacto, x.accion, x.respuesta, ...(x.secciones || []).map(c => c.texto), ...(x.faq || []).map(f => f.a)].filter(v => typeof v === 'string');
+function revisaTexto(partes, hechos, prot, matchup) {
+  const out = [], txt = partes.flatMap(textosDe).join(' \n ');
+  if (!txt.trim()) return out;
+  if (NUM_LETRAS.test(txt)) out.push('cifras escritas con letras');
+  const nums = (String(hechos).match(/\d+(?:\.\d+)?/g) || []).map(Number);
+  const raras = [...new Set((txt.match(/(?<![\d.])\d+\.\d+(?![\d.])/g) || []).map(Number))].filter(v => !nums.some(x => Math.abs(x - v) < 0.051));
+  if (raras.length) out.push('cifras que no están en los datos: ' + raras.slice(0, 4).join(', '));
+  if (prot && prot.n && EQUIPOS[prot.team]) {
+    const rx = new RegExp(prot.n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + `[^.\\n]{0,45}?\\b(?:de los|con los|of the|for the|with the)\\s+([A-Z][a-z0-9]+)`, 'g');
+    for (const m of txt.matchAll(rx)) { const ab = NICK[m[1].toLowerCase()]; if (ab && ab !== prot.team) out.push(`equipo equivocado: ${prot.n} con ${m[1]}`); }
+  }
+  if (matchup) {
+    const frases = txt.split(/(?<=[.!?])\s+/).filter(f => /defens|defense|rival|matchup|opponent/i.test(f));
+    const pos = /(favorable|accesible|fácil|facil|vulnerable|débil|debil|blanda|generosa|weak|soft|easy|exploitable|friendly|leaky)/i, neg = /(difícil|dificil|dura|complicad|tough|difficult|stingy|stout)/i;
+    if (matchup === 'DIFÍCIL' && frases.some(f => pos.test(f) && !neg.test(f))) out.push('matchup contradice la calificación (DIFÍCIL)');
+    if (matchup === 'FÁCIL' && frases.some(f => neg.test(f) && !pos.test(f))) out.push('matchup contradice la calificación (FÁCIL)');
+  }
+  return out;
+}
 function verificar(n) {
   const ids = ligar(n), p = J[ids[0]] || s.todos[ids[0]];
   const motivo = [];
@@ -294,23 +352,30 @@ function verificar(n) {
   if (reciente.some(a => parecido(a.titulo, n.titulo) > .5 || (ids[0] && a.jugadores && a.jugadores[0] === ids[0] && a.etiqueta === n.etiqueta))) motivo.push('duplicada');
   return motivo;
 }
+const pideDuelo = !prevHoy.dueloFecha || Date.now() - Date.parse(prevHoy.dueloFecha) > 20 * 3600e3;
 if (tocaIA) {
   const relevantes = jugadores.filter(j => j.team !== 'FA' && ((j.proy && j.proy[0] > 6) || (j.rank && j.rank < 200)));
   const estatus = relevantes.filter(j => j.inj).map(j => `${j.n} (${j.pos}, ${j.team}): ${estadoTxt(j)}`).slice(0, 90);
-  const fuentes = [...newsE.slice(0, 45).map(a => `${a.titulo} — ${a.desc}`.slice(0, 380)), ...(await titularesRSS())];
+  const usadas = fuentesNuevas.slice(0, 30), fuentes = usadas.map((f, i) => `[${i + 1}] (${f.m}) ${f.txt}`);
   const proyTop = POS.map(pos => pos + ': ' + relevantes.filter(j => j.pos === pos && j.proy).sort((a, b) => b.proy[0] - a.proy[0]).slice(0, 8).map(j => `${j.n} ${j.proy[0]}`).join(', ')).join(' | ');
-  const ia = await gemini(VOZ + `Escribe exactamente 8 noticias de fantasy para la semana ${semJuego}. Varía las etiquetas (al menos 2 START, 2 SIT, 1 WAIVER y lesiones si hay). Forma: ` + FORMATO +
-    ' En el mismo JSON agrega "duelo":{"a":"jugador","b":"jugador","veredicto":"a quién arrancar y por qué, máximo 40 palabras"} con dos jugadores sanos de la misma posición.' +
+  const ia = await gemini(VOZ + `Escribe de 1 a 4 noticias de fantasy para la semana ${semJuego}, SOLO sobre lo que reportan las FUENTES (son reportes nuevos de las últimas horas; cada una lleva su número [n]). En cada nota pon "fuentes":[números de las FUENTES que usaste]; es obligatorio, una nota sin fuente se descarta. Redacta con tus propias palabras: es nuestra versión, citando al medio original. Ignora lo que no tenga impacto en fantasy. Cada nota en español y su versión en inglés estadounidense (llave "en"). Forma: ` + FORMATO +
+    (pideDuelo ? ' En el mismo JSON agrega "duelo":{"a":"jugador","b":"jugador","veredicto":"a quién arrancar y por qué, máximo 40 palabras"} con dos jugadores sanos de la misma posición.' : '') +
     `\nESTATUS OFICIAL (fuente de verdad):\n${estatus.join('\n')}\nPROYECCIONES PPR DEL MODELO FX, SEMANA ${semJuego}: ${proyTop}\nMás agregados: ${s.add.slice(0, 12).map(t => s.todos[t.player_id] && s.todos[t.player_id].n).filter(Boolean).join(', ')}\nMás soltados: ${s.drop.slice(0, 10).map(t => s.todos[t.player_id] && s.todos[t.player_id].n).filter(Boolean).join(', ')}\nYa publicadas (NO repitas tema ni jugador principal): ${JSON.stringify(archivo.slice(0, 30).map(n => n.titulo))}\nFUENTES:\n${fuentes.join('\n')}`);
   duelo = ia && ia.duelo;
+  fuentesNuevas.forEach(f => vistos.add(f.k)); guardar(DIR + '/vistos.json', [...vistos].slice(-800));
+  const hechosIA = `${estatus.join(' ')} ${proyTop} ${fuentes.join(' ')}`;
   for (const [i, n] of ((ia && ia.noticias) || []).entries()) {
     if (n.etiqueta === 'ARRANCA') n.etiqueta = 'START'; if (n.etiqueta === 'BANCA') n.etiqueta = 'SIT';
-    const motivo = verificar(n);
+    const motivo = [...verificar(n), ...revisaTexto([n, n.en || {}], hechosIA, J[ligar(n)[0]])];
     if (motivo.length) { log('Descartada:', n.titulo, '→', motivo.join(', ')); continue; }
     let ids = ligar(n), menciona = [];
     if (ids.length && !protagonista(n, ids[0])) { menciona = ids; ids = []; }
     const equipos = [...new Set([n.equipo, ...(n.equipos || []), ...[...ids, ...menciona].map(id => (J[id] || s.todos[id] || {}).team)].filter(Boolean))];
-    nuevas.push({ id: `n${sello}${String(i).padStart(2, '0')}`, fecha: ahora, semana: semJuego, ...n, equipos, jugadores: ids, menciona });
+    const refs = [...new Set((Array.isArray(n.fuentes) ? n.fuentes : []).map(Number))].map(k => usadas[k - 1]).filter(Boolean).map(f => ({ m: f.m, u: f.u || null, t: String(f.txt).split(' — ')[0].slice(0, 140) })).slice(0, 4);
+    if (!refs.length) { const ap = [...ids, ...menciona].map(id => (J[id] || s.todos[id] || {}).n).filter(Boolean).map(x => x.split(' ').slice(-1)[0].toLowerCase());
+      const f = ap.length && usadas.find(f => ap.some(a => a.length > 3 && f.txt.toLowerCase().includes(a))); if (f) refs.push({ m: f.m, u: f.u || null, t: String(f.txt).split(' — ')[0].slice(0, 140) }); }
+    if (!refs.length) { log('Descartada (sin fuente citada):', n.titulo); continue; }
+    nuevas.push({ id: `n${sello}${String(i).padStart(2, '0')}`, fecha: ahora, semana: semJuego, ...n, fuentes: refs, equipos, jugadores: ids, menciona });
   }
   log('Noticias nuevas verificadas:', nuevas.length);
 }
@@ -385,14 +450,15 @@ for (const w of s.semanas.slice().reverse()) {
   const st = s.stats[w]; if (!st || !Object.keys(st).length) continue;
   const cerrada = Object.values(cal).every(t => !t[w] || t[w].fin);
   const r = resumenes[w];
-  if (r && r.v === 2 && (r.cerrada || Date.now() - Date.parse(r.fecha) < 8 * 3600e3)) continue;
+  if (r && r.v === 3 && (r.cerrada || Date.now() - Date.parse(r.fecha) < 8 * 3600e3)) continue;
   const top = {};
   for (const pos of POS) top[pos] = Object.entries(st).filter(([k, v]) => s.todos[k] && s.todos[k].pos === pos && v.pts_ppr != null).sort((a, b) => b[1].pts_ppr - a[1].pts_ppr).slice(0, 12)
     .map(([k, v]) => ({ id: k, n: s.todos[k].n, team: s.todos[k].team, pts: r1(v.pts_ppr), f: [r1(v.pts_ppr), r1(v.pts_half_ppr), r1(v.pts_std)] }));
   const res = Object.values(cal).map(t => t[w]).filter(x => x && x.fin && x.home).map(x => x);
   const marc = Object.entries(cal).filter(([t, c]) => c[w] && c[w].home && c[w].fin).map(([t, c]) => `${c[w].opp} ${c[w].pc} @ ${t} ${c[w].pf}`).join(', ');
   const txt = await gemini(VOZ + `Escribe el análisis de fantasy de la Semana ${w}. Forma: {"titulo":"máximo 9 palabras","claves":["exactamente 10 aprendizajes de máximo 16 palabras, concretos y con nombres"],"cuerpo":"120 a 160 palabras","sorpresas":["3 frases cortas"],"decepciones":["3 frases cortas"]}. Marcadores: ${marc}. Mejores por posición (PPR): ${JSON.stringify(Object.fromEntries(Object.entries(top).map(([p, l]) => [p, l.slice(0, 6).map(x => x.n + ' ' + x.pts)])))}`, 6000);
-  if (txt) { resumenes[w] = { v: 2, semana: w, cerrada, fecha: ahora, top, titulo: txt.titulo || `Semana ${w}`, claves: txt.claves || [], cuerpo: txt.cuerpo || '', sorpresas: txt.sorpresas || [], decepciones: txt.decepciones || [] }; log('Resumen semana', w); }
+  if (txt && NUM_LETRAS.test(JSON.stringify(txt))) log('Resumen S' + w + ' descartado: cifras con letras');
+  if (txt && !NUM_LETRAS.test(JSON.stringify(txt))) { resumenes[w] = { v: 3, semana: w, cerrada, fecha: ahora, top, titulo: txt.titulo || `Semana ${w}`, claves: txt.claves || [], cuerpo: txt.cuerpo || '', sorpresas: txt.sorpresas || [], decepciones: txt.decepciones || [] }; log('Resumen semana', w); }
   else if (!r) resumenes[w] = { v: 1, semana: w, cerrada, fecha: ahora, top, titulo: `Semana ${w}`, claves: [], cuerpo: '' };
   else r.top = top;
   break;
@@ -406,7 +472,7 @@ guardar(DIR + '/semanas.json', resumenes);
 const blog = leer(DIR + '/blog.json', []);
 const CADA_BLOG_MIN = 300, BLOG_POR_CORRIDA = 2;
 const ultimaBlog = blog.reduce((m, a) => Math.max(m, Date.parse(a.fecha || 0)), 0);
-const tocaBlog = (process.env.FX_BLOG === '1' || Date.now() - ultimaBlog > CADA_BLOG_MIN * 60e3) && quedan() > 4;
+const tocaBlog = (process.env.FX_BLOG === '1' || Date.now() - ultimaBlog > (pico ? 150 : CADA_BLOG_MIN) * 60e3) && quedan() > 4;
 const slugB = t => String(t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 80);
 if (tocaBlog) {
   const rankFX = {}; POS.forEach(ps => jugadores.filter(j => j.pos === ps && j.proy && j.team !== 'FA').sort((a, b) => b.proy[0] - a.proy[0]).forEach((j, i) => { rankFX[j.id] = i + 1; }));
@@ -443,7 +509,7 @@ COMUNIDAD: agregado en ${j.add || 0} ligas y soltado en ${j.drop || 0} en 24 h.
 REPORTES ORIGINALES (hechos verificables; NO copies su redacción): ${noticiasJ.map(x => `«${x.t}» — ${x.d}`).join(' | ') || 'ninguno'}.
 NUESTRAS NOTAS PREVIAS: ${nuestras.map(n => n.titulo + ': ' + (n.claves || []).join('; ')).join(' | ') || 'ninguna'}.`;
     const pide = `Eres el editor de Fantasy Expertos. Escribe UN artículo de blog optimizado para Google que responde la pregunta del momento sobre este jugador, en DOS versiones: español latinoamericano neutro (claro para México, EE. UU. hispano y Latinoamérica) e inglés estadounidense con la terminología estándar de fantasy football (start/sit, waiver wire, PPR, flex, bye, ceiling, floor).
-Reglas: usa SOLO los datos que te doy; para el rival usa la etiqueta MATCHUP tal cual (FÁCIL/NEUTRAL/DIFÍCIL), no la reinterpretes; no inventes cifras, lesiones, fechas ni citas; escribe con tus propias palabras (cero frases copiadas de los reportes); primero la noticia y el contexto, después el análisis y al final la recomendación de fantasy; tono experto, cercano, claro y sin relleno; nada de nombres de otras marcas o medios.
+Reglas: usa SOLO los datos que te doy; cifras siempre con dígitos (28.9 pts), nunca con letras; para el rival usa la etiqueta MATCHUP tal cual (FÁCIL/NEUTRAL/DIFÍCIL), no la reinterpretes; no inventes cifras, lesiones, fechas ni citas; escribe con tus propias palabras (cero frases copiadas de los reportes); primero la noticia y el contexto, después el análisis y al final la recomendación de fantasy; tono experto, cercano, claro y sin relleno; nada de nombres de otras marcas o medios.
 Título ES base: "${tEs}" · Título EN base: "${tEn}" (puedes mejorarlos, mantén la pregunta, el nombre y la semana; máximo 70 caracteres).
 Responde SOLO JSON: {"es":{"titulo":"","descripcion":"máx 155 caracteres","respuesta":"2 o 3 oraciones que responden directo la pregunta","secciones":[{"h2":"","texto":"90 a 140 palabras"}],"fantasy":{"veredicto":"START|SIT|FLEX|AGRÉGALO|ESPERA|VENDE|COMPRA|AGUANTA","texto":"70 a 110 palabras: qué hacer exactamente en PPR, Half y STD"},"faq":[{"q":"","a":""}],"palabras":["5 búsquedas reales que este texto responde"]},"en":{mismas llaves en inglés; veredicto en inglés: START|SIT|FLEX|ADD|WAIT|SELL|BUY|HOLD}}. Exactamente 3 secciones y 3 preguntas frecuentes por idioma.
 DATOS:
@@ -451,6 +517,8 @@ ${datos}`;
     const r = await gemini(pide, 12000);
     if (!r || !r.es || !r.en || !r.es.titulo || !r.en.titulo || !(r.es.secciones || []).length) { log('Blog: respuesta incompleta para', j.n); continue; }
     if (fueraTemp(j) && /START|FLEX/.test(String(r.es.fantasy && r.es.fantasy.veredicto))) { log('Blog descartado (fuera y recomendado):', j.n); continue; }
+    { const mu = d ? (d.rank <= 10 ? 'FÁCIL' : d.rank >= 23 ? 'DIFÍCIL' : 'NEUTRAL') : null, fallas = revisaTexto([r.es, r.en], datos, j, mu);
+      if (fallas.length) { log('Blog descartado por verificación:', j.n, '→', fallas.join(' | ')); continue; } }
     const id = 'b' + ahora.replace(/\D/g, '').slice(0, 12) + String(elegidos.indexOf(t));
     const art = { id, fecha: ahora, semana: semJuego, tipo: t.tipo, jugador: j.id, equipo: j.team, modelo: FX.version,
       fuentes: noticiasJ.filter(x => x.u).map(x => ({ t: x.t, u: x.u })),
@@ -468,7 +536,7 @@ const hoy = {
   actualizado: ahora, ultimaIA: nuevas.length ? ahora : prevHoy.ultimaIA, semana: semJuego, semanaStats: s.semana, temporada: s.temporada, semanas: s.semanas.slice(-HIST),
   noticias: todasNuevas.length ? todasNuevas : (prevHoy.noticias ? prevHoy.noticias.map(n => nuevoArchivo.find(a => a.id === n.id) || n) : nuevoArchivo.slice(0, 12)),
   lesionados, agregados: s.add.map(t => t.player_id).filter(k => J[k]), soltados: s.drop.map(t => t.player_id).filter(k => J[k]),
-  duelo: duelo || prevHoy.duelo || null, fuentes: ['Sleeper', 'ESPN', 'CBS Sports', 'Yahoo Sports']
+  duelo: duelo || prevHoy.duelo || null, dueloFecha: duelo ? ahora : (prevHoy.dueloFecha || null), fuentes: ['Sleeper', 'ESPN', 'CBS Sports', 'Yahoo Sports']
 };
 // Precisión del modelo: cada semana terminada se compara FX (recalculado con lo que se sabía antes) contra el
 // resultado real y contra una proyección de referencia externa. La referencia NO se publica; solo los errores.
