@@ -281,6 +281,21 @@ function proyFX(j, W, T) {
   const base = py * .04 + ptd * 4 - it + ry * .1 + rtd * 6 + recy * .1 + rectd * 6 - fl * 2;
   return [base + rec, base + rec * .5, base].map(v => r1(Math.max(0, v)));
 }
+/* Auto-ajuste: el modelo se recalibra solo. Cada 12 h prueba combinaciones de sus parámetros contra las semanas ya jugadas
+   (sin ver el resultado de la semana que proyecta) y se queda con la de menor error. Nunca inventa: solo reajusta pesos. */
+{
+  const MF = DIR + '/modelo.json', Mx = leer(MF, { semanas: {} }), base = { hl: FX.hl, mEf: FX.mEf, mTd: FX.mTd, aPrev: FX.aPrev };
+  if (Mx.params && Date.now() - Date.parse(Mx.params.fecha || 0) < 12 * 3600e3) Object.assign(FX, Mx.params.valores);
+  else if (semJuego >= 5) {
+    const sems = []; for (let w = Math.max(3, semJuego - 5); w < semJuego; w++) sems.push(w);
+    const prueba = () => { let e = 0, n = 0; for (const W of sems) { const T = tasasPos(jugadores, W); for (const j of jugadores) { if (j.pos === 'K' || j.pos === 'DEF') continue; const act = j.log.find(l => l.w === W && l.f && l.f[0] != null); if (!act || j.log.filter(l => l.w < W && l.f).length < 2) continue; const pr = proyFX(j, W, T); if (!pr) continue; e += Math.abs(pr[0] - act.f[0]); n++; } } return n ? e / n : 99; };
+    let mejor = { ...base, err: prueba() }; const inicial = mejor.err;
+    for (const hl of [6, 8, 11]) for (const mEf of [30, 40, 60]) for (const mTd of [120, 160, 220]) for (const aPrev of [.2, .3, .4]) { Object.assign(FX, { hl, mEf, mTd, aPrev }); const err = prueba(); if (err < mejor.err - .005) mejor = { hl, mEf, mTd, aPrev, err }; }
+    const { err, ...valores } = mejor; Object.assign(FX, valores);
+    Mx.params = { fecha: new Date().toISOString(), valores, error: +err.toFixed(3), errorAntes: +inicial.toFixed(3), semanas: sems };
+    guardar(MF, Mx, true); log('Auto-ajuste FX:', JSON.stringify(valores), 'error', inicial.toFixed(3), '→', err.toFixed(3));
+  }
+}
 { const T = tasasPos(jugadores, semJuego); for (const j of jugadores) j.proy = proyFX(j, semJuego, T); }
 log('Modelo', FX.version, ':', jugadores.filter(j => j.proy).length, 'proyecciones propias para la semana', semJuego);
 const J = Object.fromEntries(jugadores.map(j => [j.id, j]));
