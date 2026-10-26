@@ -62,7 +62,7 @@ const nombre1 = n => { const p = String(n || '').split(' '); return p.length > 1
 const apellido = n => { const p = String(n || '').split(' '); return p.length > 1 ? p.slice(1).join(' ') : p[0]; };
 const hace = f => { if (!f) return ''; const m = Math.round((Date.now() - Date.parse(f)) / 60000); return m < 60 ? `hace ${Math.max(1, m)} min` : m < 1440 ? `hace ${Math.round(m / 60)} h` : new Date(f).toLocaleDateString('es-MX', { day: 'numeric', month: 'short' }); };
 const fechaC = f => f ? new Date(f).toLocaleDateString('es-MX', { day: 'numeric', month: 'short' }) : '';
-const titulo = t => { document.title = t ? t + ' · Fantasy Expertos' : 'Fantasy Expertos · Fantasy football en español'; };
+const titulo = t => { const m = tx('Fantasy Expertos', 'Fantasy Experts'); document.title = t ? t + ' · ' + m : m + ' · ' + tx('Fantasy football en español', 'Fantasy football, powered by data'); };
 const actualizado = () => 'Actualizado ' + new Date(D.actualizado).toLocaleString('es-MX', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
 const esqMatches = (n = 3) => `<div class="matches" aria-busy="true" aria-label="Cargando marcadores">${'<div class="match esq"><i class="e1"></i><span class="e-row"><i class="e-hel"></i><i class="e-sc"></i><i class="e-hel"></i></span><i class="e2"></i><i class="e3"></i></div>'.repeat(n)}</div>`;
 const cargador = (txt = 'CARGANDO', c = 'var(--accent)') => `<div class="wrap loading"><div class="fx-load" role="status" style="--lc:${c}">${fxLogo(56)}<span class="fx-bar"><i></i></span><p class="px">${txt}</p></div></div>`;
@@ -194,7 +194,7 @@ function chipNota(n, p) {
 }
 function thumb(n, big) {
   const T = tipoTarjeta(n), et = n.etiqueta, imp = n.impacto || 'NEUTRO', sem = n.semana || semActual();
-  const top = `<span class="fxc-top">${n.exclusivo ? `<span class="fxc-pill prem">★ PREMIUM</span>` : ''}<span class="fxc-pill cat ${et}">${esc(ETQ[et] || et || 'NFL')}</span><span class="fxc-imp ${imp}">${flecha(imp, 12)}${imp === 'SUBE' ? 'SUBE' : imp === 'BAJA' ? 'BAJA' : 'ESTABLE'}</span></span>`;
+  const top = `<span class="fxc-top">${n.exclusivo ? `<span class="fxc-pill prem">★ PRO</span>` : ''}<span class="fxc-pill cat ${et}">${esc(ETQ[et] || et || 'NFL')}</span><span class="fxc-imp ${imp}">${flecha(imp, 12)}${imp === 'SUBE' ? 'SUBE' : imp === 'BAJA' ? 'BAJA' : 'ESTABLE'}</span></span>`;
   const celda = (b, i) => `<span><b>${b}</b><i>${i}</i></span>`, marca = `<span class="fxc-marca">${fxLogo(16)}</span>`;
   let cls = '', st = '', mid = '', strip = '', fondo = '';
   if (T.k === 'jug') {
@@ -228,8 +228,8 @@ function thumb(n, big) {
   return `<span class="fxc ${cls} e-${et} ${big ? 'big' : ''}" style="${st}">${fondo}<span class="fxc-campo" aria-hidden="true"></span>${top}<span class="fxc-mid">${mid}</span><span class="fxc-strip">${strip}${marca}</span></span>`;
 }
 // Tarjeta de marca: el consejo de fantasy de Fantasy Expertos, flotando dentro de la nota o el artículo
-/* El consejo de los Expertos: la acción siempre es gratis; el análisis completo y la lectura del modelo FX son Premium.
-   Gratis ve un adelanto (primera frase + desvanecido) con el borde neón lento que marca lo Premium. */
+/* El consejo de los Expertos: la acción siempre es gratis; el análisis completo y la lectura del modelo FX son PRO.
+   Gratis ve un adelanto (primera frase + desvanecido) con el borde neón lento que marca lo PRO. */
 const lecturaFX = j => {
   if (!j || !j.proy) return '';
   const lg = (j.log || []).filter(l => l.f && l.f[FMT] != null), u = lg.slice(-5).map(l => l.f[FMT]);
@@ -240,33 +240,33 @@ const lecturaFX = j => {
     ${dato(tx('Proyección', 'Projection'), n1(j.proy[FMT]) + ' pts')}${rk ? dato(tx('Rango', 'Rank'), j.pos + rk) : ''}
     ${u.length ? dato(tx('Piso / techo', 'Floor / ceiling'), n1(Math.min(...u)) + ' / ' + n1(Math.max(...u))) : ''}${vm != null ? dato(vk === 'ra' ? tx('Acarreos (3 sem)', 'Carries (3 wk)') : tx('Targets (3 sem)', 'Targets (3 wk)'), vm) : ''}</div></div>`;
 };
-/* Zona Premium reutilizable: suscriptor ve el contenido; el resto ve un adelanto borroso con el borde neón y un clic a Premium. */
+/* Zona PRO reutilizable: suscriptor ve el contenido; el resto ve un adelanto borroso con el borde neón y un clic a PRO. */
 const zonaPrem = (html, gancho) => esPremium() ? `<div class="pz es-prem">${html}</div>`
-  : `<div class="pz lock"><div class="pz-in" aria-hidden="true">${html}</div><a class="cs-cta pz-cta" href="#/premium">${CANDADO}<span>${esc(gancho)}</span><b>Premium ›</b></a></div>`;
+  : `<div class="pz lock"><div class="pz-in" aria-hidden="true">${html}</div><a class="cs-cta pz-cta" href="#/premium">${CANDADO}<span>${esc(gancho)}</span><b>PRO ›</b></a></div>`;
 const pisoTecho = j => { const u = (j.log || []).filter(l => l.f && l.f[FMT] != null).slice(-5).map(l => l.f[FMT]); return u.length >= 2 ? [Math.min(...u), Math.max(...u)] : null; };
 /* Sello de la tecnología propia: marca todo lo que sale de nuestros sistemas. */
 const sello = (x = '') => `<span class="fx-tech ${x}">${fxLogo(12)}<b>FX TECH</b> ANALYZER</span>`;
-/* Ventaja FX: cada sección trae un extra hecho con nuestros sistemas. Botón (i) explica qué es; el contenido es Premium. */
+/* Ventaja FX: cada sección trae un extra hecho con nuestros sistemas. Botón (i) explica qué es; el contenido es PRO. */
 const infoFX = t => `<button type="button" class="fx-info" aria-label="${tx('¿Qué es esto?', 'What is this?')}">i<span role="tooltip">${t}</span></button>`;
-const proBloque = (titulo, info, html, gancho) => `<section class="block plusfx" data-chip="★ ${tx('VENTAJA FX', 'FX EDGE')}"><div class="head"><div><h2>${titulo} ${infoFX(info)}</h2></div><a class="all" href="#/premium">${tx('Todo Premium', 'All Premium')} ›</a></div><div class="card plus-in"><div class="plus-sello">${sello()}</div>${zonaPrem(html, gancho)}</div></section>`;
+const proBloque = (titulo, info, html, gancho) => `<section class="block plusfx" data-chip="★ ${tx('VENTAJA FX', 'FX EDGE')}"><div class="head"><div><h2>${titulo} ${infoFX(info)}</h2></div><a class="all" href="#/premium">${tx('Todo PRO', 'All PRO')} ›</a></div><div class="card plus-in"><div class="plus-sello">${sello()}</div>${zonaPrem(html, gancho)}</div></section>`;
 const filaPlus = (j, der, sub) => `<a class="cg-j" href="#/jugador/${j.id}" data-hover-j="${j.id}">${helmet(j.team, j.num, 30)}<span class="cg-jn"><b>${esc(j.n)}</b><small>${sub}</small></span>${der}</a>`;
 function plusLesion() {
   const L = D.lesionados.map(x => J[x.id]).filter(j => j && (fuera(j) || estatus(j) === 'Duda') && ['QB', 'RB', 'WR', 'TE'].includes(j.pos) && (j.pEst > 5 || (j.rank && j.rank < 150))).slice(0, 8);
-  const filas = L.map(j => { const b = P.filter(x => x.team === j.team && x.pos === j.pos && x.id !== j.id && juega(x)).sort((a, c) => c.pEst - a.pEst)[0]; return b ? filaPlus(b, `<b class="n cg-p">${n1(b.pEst)}</b>`, tx(`Si ${j.n} no juega, el beneficiado es él · ${b.pos} ${b.team}`, `If ${j.n} sits, he's the one who benefits · ${b.pos} ${b.team}`)) : ''; }).filter(Boolean);
-  return filas.length ? proBloque(tx('Reemplazos FX', 'FX replacements'), tx('Para cada lesionado relevante, el compañero que hereda su volumen según el Modelo FX: el waiver que tu liga todavía no ve.', 'For every relevant injury, the teammate who inherits the volume according to the FX Model: the waiver your league hasn\'t spotted yet.'), filas.join(''), tx('Quién hereda el trabajo de cada lesionado', 'Who inherits each injured player\'s work')) : '';
+  const filas = L.map(j => { const b = P.filter(x => x.team === j.team && x.pos === j.pos && x.id !== j.id && juega(x)).sort((a, c) => c.pEst - a.pEst)[0]; return b ? filaPlus(b, `<b class="n cg-p">${n1(b.pEst)}</b>`, tx(`Toma el lugar de ${j.n} (${(estatus(j) === 'Duda' ? 'en duda' : 'fuera').toUpperCase()}) · ${b.pos} ${b.team}`, `Steps in for ${j.n} (${estatus(j) === 'Duda' ? 'QUESTIONABLE' : 'OUT'}) · ${b.pos} ${b.team}`)) : ''; }).filter(Boolean);
+  return filas.length ? proBloque(tx('¿Quién toma su lugar?', 'Who takes his spot?'), tx('Cuando un titular se lesiona, otro jugador de su equipo recibe sus balones. Te decimos quién es y cuánto proyecta.', 'When a starter gets hurt, a teammate gets his touches. We tell you who it is and what he projects.'), filas.join(''), tx('Agrega al sustituto del lesionado antes que el resto de tu liga', 'Add the injured starter\'s replacement before the rest of your league')) : '';
 }
 function plusRepite() {
   if (!SEMNUM) return '';
   const L = P.filter(j => ptsSem(j, SEMNUM) != null && ['QB', 'RB', 'WR', 'TE'].includes(j.pos)).sort((a, b) => ptsSem(b, SEMNUM) - ptsSem(a, SEMNUM)).slice(0, 10);
   const filas = L.map(j => { const a = ptsSem(j, SEMNUM), p = j.p || 0, r = a ? p / a : 0, et = !juega(j) ? ['NO JUEGA', 'no'] : r >= .65 ? [tx('SOSTENIBLE', 'REPEATABLE'), 'ok'] : r >= .45 ? [tx('BAJA A TIERRA', 'REGRESSION'), 'mid'] : [tx('FUE UN PICO', 'ONE-OFF'), 'no'];
     return filaPlus(j, `<span class="rp ${et[1]}">${et[0]}</span>`, `S${SEMNUM}: ${n1(a)} → S${semActual()} FX: ${n1(p)}`); });
-  return proBloque(tx('¿Repite? FX', 'Repeat? FX'), tx('Comparamos lo que hizo cada líder contra su proyección FX de esta semana: volumen, eficiencia y rival. Te dice si fue algo sostenible o un pico que no va a repetir.', 'We compare each leader\'s output with this week\'s FX projection: volume, efficiency and opponent. It tells you if it\'s sustainable or a one-off.'), filas.join(''), tx('Qué líderes van a repetir y cuáles fueron un pico', 'Which leaders will repeat and which were a one-off'));
+  return proBloque(tx('¿Repite? FX', 'Repeat? FX'), tx('Comparamos lo que hizo cada líder contra su proyección FX de esta semana: volumen, eficiencia y rival. Te dice si fue algo sostenible o un pico que no va a repetir.', 'We compare each leader\'s output with this week\'s FX projection: volume, efficiency and opponent. It tells you if it\'s sustainable or a one-off.'), filas.join(''), tx('Sabe si aguantar o vender a cada jugador que explotó', 'Know whether to hold or sell every player who boomed'));
 }
 function plusCompra() {
   const L = (D.agregados || []).map(id => J[id]).filter(j => j && j.team !== 'FA').slice(0, 10);
   const filas = L.map(j => { const v = valorROS(j), rep = REEMPLAZO[j.pos] || 20, rk = P.filter(x => x.pos === j.pos && juega(x)).sort((a, b) => b.pEst - a.pEst).indexOf(j) + 1, ok = v.valor > 15 || (rk && rk <= rep * .6);
     return filaPlus(j, `<span class="rp ${ok ? 'ok' : 'no'}">${ok ? tx('COMPRA', 'BUY') : tx('TRAMPA', 'TRAP')}</span>`, tx(`${j.pos}${rk || '–'} esta semana · valor resto de temporada ${Math.round(v.valor)}`, `${j.pos}${rk || '–'} this week · rest-of-season value ${Math.round(v.valor)}`)); });
-  return filas.length ? proBloque(tx('¿Compra o trampa?', 'Buy or trap?'), tx('Todos agregan a los mismos jugadores. Medimos su valor real para el resto de la temporada contra un jugador de reemplazo: COMPRA si mejora tu equipo, TRAMPA si es puro ruido.', 'Everyone adds the same players. We measure their real rest-of-season value against a replacement player: BUY if it upgrades your team, TRAP if it\'s just noise.'), filas.join(''), tx('Qué agregados valen la pena y cuáles son trampa', 'Which adds are worth it and which are traps')) : '';
+  return filas.length ? proBloque(tx('¿Compra o trampa?', 'Buy or trap?'), tx('Todos agregan a los mismos jugadores. Medimos su valor real para el resto de la temporada contra un jugador de reemplazo: COMPRA si mejora tu equipo, TRAMPA si es puro ruido.', 'Everyone adds the same players. We measure their real rest-of-season value against a replacement player: BUY if it upgrades your team, TRAP if it\'s just noise.'), filas.join(''), tx('No gastes tu prioridad de waivers en una trampa', 'Don\'t waste your waiver priority on a trap')) : '';
 }
 function plusPartidos(L) {
   if (!L || !L.length) return '';
@@ -275,15 +275,15 @@ function plusPartidos(L) {
     return { g, sa, sb, llave, ta: g.visita.ab || g.visita, tb: g.local.ab || g.local }; }).filter(x => x.llave).sort((x, y) => (y.sa + y.sb) - (x.sa + x.sb));
   if (!filas.length) return '';
   const html = filas.map((x, i) => `<div class="pf-g"><span class="pf-t">${helmet(x.ta, '', 24)}<b class="n">${n1(x.sa)}</b></span><span class="pf-m">${i === 0 ? `<em>${tx('EL TIROTEO', 'SHOOTOUT')}</em>` : ''}<small>${tx('Llave', 'Key')}: <a href="#/jugador/${x.llave.id}">${esc(x.llave.n)}</a></small></span><span class="pf-t r"><b class="n">${n1(x.sb)}</b>${helmet(x.tb, '', 24)}</span></div>`).join('');
-  return proBloque(tx('Pronóstico fantasy FX', 'FX fantasy forecast'), tx('Sumamos la proyección FX de los titulares de fantasy de cada equipo (QB, 2 RB, 3 WR, TE) para saber qué partidos van a dar más puntos y quién es la llave de cada uno.', 'We add up the FX projection of each team\'s fantasy starters (QB, 2 RB, 3 WR, TE) to know which games will score the most fantasy points and who the key player is.'), html, tx('Qué partidos dan más puntos de fantasy y su jugador llave', 'Which games score the most fantasy points and their key player'));
+  return proBloque(tx('Pronóstico fantasy FX', 'FX fantasy forecast'), tx('Sumamos la proyección FX de los titulares de fantasy de cada equipo (QB, 2 RB, 3 WR, TE) para saber qué partidos van a dar más puntos y quién es la llave de cada uno.', 'We add up the FX projection of each team\'s fantasy starters (QB, 2 RB, 3 WR, TE) to know which games will score the most fantasy points and who the key player is.'), html, tx('Arma tu alineación con los jugadores de los partidos que más puntos van a dar', 'Build your lineup with players from the highest-scoring games'));
 }
 function plusCalendario(t) {
   const html = ['QB', 'RB', 'WR', 'TE'].map(pos => { const e = []; for (let w = semActual(); w <= 17; w++) { const r = rivalDe(t, w), x = r && estrellas(r.opp, pos); if (x) e.push(x.n); } const m = e.length ? e.reduce((a, b) => a + b, 0) / e.length : 0;
     return `<div class="pf-g"><span class="pf-t"><b>${pos}</b></span><span class="pf-m">${pintaEstrellas(m ? { n: Math.round(m), rank: '' } : null)}<small>${m >= 3.5 ? tx('Calendario a favor: compra', 'Soft schedule: buy') : m <= 2.5 ? tx('Calendario duro: vende', 'Tough schedule: sell') : tx('Calendario neutral', 'Neutral schedule')}</small></span><span class="pf-t r"><b class="n">${e.length}</b><small>${tx('juegos', 'games')}</small></span></div>`; }).join('');
-  return proBloque(tx('Calendario FX resto de temporada', 'FX rest-of-season schedule'), tx('La dificultad promedio de los rivales que le quedan a este equipo, por posición, según los puntos que cada defensa permite. Clave para trades y playoffs de fantasy.', 'The average difficulty of this team\'s remaining opponents, by position, based on points each defense allows. Key for trades and fantasy playoffs.'), html, tx('A qué posiciones de este equipo comprar o vender por calendario', 'Which positions on this team to buy or sell by schedule'));
+  return proBloque(tx('Calendario FX resto de temporada', 'FX rest-of-season schedule'), tx('La dificultad promedio de los rivales que le quedan a este equipo, por posición, según los puntos que cada defensa permite. Clave para trades y playoffs de fantasy.', 'The average difficulty of this team\'s remaining opponents, by position, based on points each defense allows. Key for trades and fantasy playoffs.'), html, tx('Compra y vende jugadores sabiendo qué rivales les quedan', 'Buy and sell players knowing who they face next'));
 }
 function plusMiLiga() {
-  if (!LIGA || !(LIGA.jugadores || []).length) return `<section class="block plusfx" data-chip="★ ${tx('VENTAJA FX', 'FX EDGE')}"><a class="card plus-cta" href="#/premium"><b>${tx('Ve solo lo que afecta a TU equipo', 'See only what affects YOUR team')}</b><span>${tx('Conecta tu liga gratis y marcamos cada noticia que toca a tus jugadores.', 'Connect your league for free and we flag every story that touches your players.')}</span><em>${tx('Conectar mi liga', 'Connect my league')} ›</em></a></section>`;
+  if (!LIGA || !(LIGA.jugadores || []).length) return `<section class="block plusfx" data-chip="★ ${tx('VENTAJA FX', 'FX EDGE')}"><a class="card plus-cta neon" href="#/premium"><b>${tx('Ve solo lo que afecta a TU equipo', 'See only what affects YOUR team')}</b><span>${tx('Con PRO conectas tu liga y marcamos cada noticia que toca a tus jugadores, para que no se te pase nada.', 'With PRO you connect your league and we flag every story that touches your players, so you never miss one.')}</span><em>${tx('Conectar mi liga', 'Connect my league')} ›</em></a></section>`;
   const mios = new Set(LIGA.jugadores), N = todasNoticias().filter(n => [...(n.jugadores || []), ...(n.menciona || [])].some(id => mios.has(id))).slice(0, 6);
   return N.length ? `<section class="block plusfx" data-chip="${tx('TU LIGA', 'YOUR LEAGUE')} · ${N.length}"><div class="head"><div><h2>${tx('Afecta a tu equipo', 'Affects your team')}</h2><p class="hsub">${esc(LIGA.nombre || '')}</p></div><a class="all" href="#/premium">${tx('Mi cuarto de guerra', 'My war room')} ›</a></div><div class="news stagger">${N.map(n => newsCard(n)).join('')}</div></section>` : '';
 }
@@ -293,9 +293,9 @@ const consejo = ({ accion, texto, jugadores = [], veredicto }) => {
   const frase = String(texto || '').split(/(?<=[.!?])\s+/)[0] || '', resto = String(texto || '').slice(frase.length).trim();
   const cuerpo = full ? `${texto ? `<p class="cs-texto">${enlaza(texto, jugadores)}</p>` : ''}${lecturaFX(j0)}`
     : `${frase ? `<p class="cs-texto">${enlaza(frase, jugadores)}</p>` : ''}${resto || (j0 && j0.proy) ? `<div class="cs-prev" aria-hidden="true"><p>${esc((resto || tx('El modelo FX ya tiene su lectura de este jugador para la semana.', 'The FX model already has its read on this player for the week.')).slice(0, 170))}</p></div>
-      <a class="cs-cta" href="#/premium">${CANDADO}<span>${tx('Ver el análisis completo y la lectura del modelo FX', 'See the full analysis and the FX model read')}</span><b>Premium ›</b></a>` : ''}`;
+      <a class="cs-cta" href="#/premium">${CANDADO}<span>${tx('Recibe el análisis completo y qué hacer con tu equipo', 'Get the full analysis and what to do with your team')}</span><b>PRO ›</b></a>` : ''}`;
   return `<aside class="consejo${full ? ' es-prem' : ' lock'}" aria-label="${tx('El consejo de los Expertos', 'Expert advice')}">
-  <div class="cs-h"><span class="cs-sello">${fxLogo(22)}</span><span><small>${tx('EL CONSEJO DE LOS EXPERTOS', 'EXPERT ADVICE')}</small><b>Fantasy Expertos</b>${sello('mini')}</span>${veredicto ? `<span class="fxv-chip ${/START|AGR|ADD|COMPRA|BUY|AGUANTA|HOLD/i.test(veredicto) ? 'ok' : /SIT|VENDE|SELL/i.test(veredicto) ? 'no' : 'sky'}">${esc(veredicto)}</span>` : ''}${full ? '<span class="cs-badge">★ PREMIUM</span>' : ''}</div>
+  <div class="cs-h"><span class="cs-sello">${fxLogo(22)}</span><span><small>${tx('EL CONSEJO DE LOS EXPERTOS', 'EXPERT ADVICE')}</small><b>Fantasy Expertos</b>${sello('mini')}</span>${veredicto ? `<span class="fxv-chip ${/START|AGR|ADD|COMPRA|BUY|AGUANTA|HOLD/i.test(veredicto) ? 'ok' : /SIT|VENDE|SELL/i.test(veredicto) ? 'no' : 'sky'}">${esc(veredicto)}</span>` : ''}${full ? '<span class="cs-badge">★ PRO</span>' : ''}</div>
   ${accion ? `<p class="cs-accion">${enlaza(accion, jugadores)}</p>` : ''}${cuerpo}
   ${jugadores.length ? `<div class="cs-jug">${jugadores.map(j => `<a href="#/jugador/${j.id}">${helmet(j.team, j.num, 22)}<span>${esc(j.n)}</span>${fxPill(j)}</a>`).join('')}</div>` : ''}
 </aside>`;
@@ -335,7 +335,7 @@ const CANDADO = '<svg class="ico-lock" viewBox="0 0 16 16" width="12" height="12
 const newsCard = (n, big) => {
   const ps = (n.jugadores || []).map(id => J[id]).filter(Boolean), lock = n.exclusivo && n.premium && !esPremium();
   return `<a class="story ${big ? 'big' : ''} ${n.exclusivo ? 'excl' : ''} ${lock ? 'lock' : ''}" href="#/noticia/${n.id}">${thumb(n, big)}
-    <span class="st-body"><span class="st-meta ${n.etiqueta}">${esc(ETQ[n.etiqueta])}${n.fecha ? ' · ' + hace(n.fecha) : ''}${lock ? `<span class="st-lock">${CANDADO}PREMIUM</span>` : ''}</span><h3>${esc(n.titulo)}</h3>
+    <span class="st-body"><span class="st-meta ${n.etiqueta}">${esc(ETQ[n.etiqueta])}${n.fecha ? ' · ' + hace(n.fecha) : ''}${lock ? `<span class="st-lock">${CANDADO}PRO</span>` : ''}</span><h3>${esc(n.titulo)}</h3>
       ${big ? `<ul class="claves">${(n.claves || []).slice(0, 3).map(c => `<li>${esc(c)}</li>`).join('')}</ul>` : `<p class="st-k">${esc((n.claves || [])[0] || '')}</p>`}
       <span class="st-who">${ps.slice(0, 3).map(x => `<span>${helmet(x.team, x.num, 20)}${esc(x.n)}</span>`).join('')}</span></span></a>`;
 };
@@ -480,13 +480,13 @@ function noticia(id) {
   const sec = (t, txt, cls = '') => txt ? `<section class="nsec ${cls}"><h3>${t}</h3><p>${enlaza(txt, jug)}</p></section>` : '';
   return `<div class="page">${crumbs([['#/noticias', 'Noticias'], ['#/noticias?tipo=' + encodeURIComponent(n.etiqueta), ETQ[n.etiqueta]], ['', n.titulo.slice(0, 40) + (n.titulo.length > 40 ? '…' : '')]])}<div class="wrap narrowish">
     <div class="nhead">${thumb(n, true)}</div>
-    <p class="st-meta ${n.etiqueta}" style="margin-top:18px">${esc(ETQ[n.etiqueta])}${n.fecha ? ' · ' + hace(n.fecha) : ''}${n.exclusivo ? ' · ★ Premium FX' : ''}</p>
+    <p class="st-meta ${n.etiqueta}" style="margin-top:18px">${esc(ETQ[n.etiqueta])}${n.fecha ? ' · ' + hace(n.fecha) : ''}${n.exclusivo ? ' · ★ FX PRO' : ''}</p>
     <h1 class="ntitle">${esc(n.titulo)}</h1>
     ${n.aviso ? `<div class="aviso-nota"><b>⚠ NOTA ACTUALIZADA</b><p>${esc(n.aviso)}</p></div>` : ''}
-    <div class="kcards stagger">${(n.claves || []).map((c, k) => `<div class="kcard"><b>${k + 1}</b><span>${enlaza(c, jug)}</span></div>`).join('')}${cerrada ? [2, 3].map(k => `<div class="kcard lock"><b>${k}</b><span>${CANDADO} Solo Premium</span></div>`).join('') : ''}</div>
+    <div class="kcards stagger">${(n.claves || []).map((c, k) => `<div class="kcard"><b>${k + 1}</b><span>${enlaza(c, jug)}</span></div>`).join('')}${cerrada ? [2, 3].map(k => `<div class="kcard lock"><b>${k}</b><span>${CANDADO} Solo PRO</span></div>`).join('') : ''}</div>
     <div class="nbody">
       <div class="ncol">
-        ${cerrada ? (prem ? '<div class="esq-lineas oro" aria-busy="true" aria-label="Abriendo nota Premium"><i></i><i></i><i></i><i></i><i></i></div>' : previaPremium()) : `${sec('Qué pasó', n.contexto || n.cuerpo)}${consejo({ accion: n.accion, texto: n.fantasy, jugadores: jug.slice(0, 4) })}${sec('Qué cambia para el equipo', n.equipo_impacto)}${(n.fuentes || []).length ? `<p class="n-fuentes"><b>${tx('Fuentes', 'Sources')}:</b> ${n.fuentes.map(f => f.u ? `<a href="${esc(f.u)}" target="_blank" rel="nofollow noopener">${esc(f.m)} ↗</a>` : esc(f.m)).join(' · ')} <small>${tx('Redacción y análisis propios a partir del reporte citado.', 'Our own write-up and analysis based on the cited report.')}</small></p>` : ''}`}
+        ${cerrada ? (prem ? '<div class="esq-lineas oro" aria-busy="true" aria-label="Abriendo nota PRO"><i></i><i></i><i></i><i></i><i></i></div>' : previaPremium()) : `${sec('Qué pasó', n.contexto || n.cuerpo)}${consejo({ accion: n.accion, texto: n.fantasy, jugadores: jug.slice(0, 4) })}${sec('Qué cambia para el equipo', n.equipo_impacto)}${(n.fuentes || []).length ? `<p class="n-fuentes"><b>${tx('Fuentes', 'Sources')}:</b> ${n.fuentes.map(f => f.u ? `<a href="${esc(f.u)}" target="_blank" rel="nofollow noopener">${esc(f.m)} ↗</a>` : esc(f.m)).join(' · ')} <small>${tx('Redacción y análisis propios a partir del reporte citado.', 'Our own write-up and analysis based on the cited report.')}</small></p>` : ''}`}
       </div>
       <aside class="nside">
         ${jug.length ? `<div class="card"><h3>Jugadores en la noticia</h3><p class="sub">Su veredicto para la semana ${semActual()}.</p><div class="plist">${jug.map(j => prow(j, `<span class="num sm">${n1(j.p ?? j.prom)}</span>${fxPill(j)}`)).join('')}</div>
@@ -532,7 +532,7 @@ function jugador(id) {
       <div class="ss-head">${fxLogo(54)}<div><small>START / SIT FX · SEMANA ${esc(semActual())}</small><b>${VT[v.v]}</b>${sello('mini')}</div>
         <div class="ss-riv">${r ? `${helmet(r.opp, '', 56, true)}<span><small>RIVAL</small><b>${r.home ? 'vs' : '@'} ${esc(r.opp)}</b>${pintaEstrellas(v.e)}</span>` : ''}${j.p != null ? `<span class="ss-proy"><small>PROYECCIÓN</small><b class="n">${n1(j.p)}</b><i>${FMTS[FMT]}</i></span>` : ''}</div></div>
       <ul class="ss-why">${v.razones.slice(0, 1).map(x => `<li>${enlaza(x, [j])}</li>`).join('')}</ul>
-      ${v.razones.length > 1 || j.proy ? zonaPrem(`<ul class="ss-why">${v.razones.slice(1).map(x => `<li>${enlaza(x, [j])}</li>`).join('')}</ul>${lecturaFX(j)}`, tx('Todas las razones del veredicto y la lectura del modelo FX', 'Every reason behind the verdict and the FX model read')) : ''}</div></section>
+      ${v.razones.length > 1 || j.proy ? zonaPrem(`<ul class="ss-why">${v.razones.slice(1).map(x => `<li>${enlaza(x, [j])}</li>`).join('')}</ul>${lecturaFX(j)}`, tx('Decide con todas las razones, su piso y su techo', 'Decide with every reason, his floor and his ceiling')) : ''}</div></section>
     <div class="kpis stagger">
       <div class="kpi"><b>${esc(rp(j))}</b><span>Ranking temporada · ${FMTS[FMT]}</span></div>
       <div class="kpi"><b class="n">${n1(j.total)}</b><span>Puntos en la temporada</span></div>
@@ -575,33 +575,42 @@ function comparar(a, b) {
   const g = (x.pEst || 0) === (y.pEst || 0) ? (px >= py ? x : y) : (x.pEst > y.pEst ? x : y);
   return `<div class="page">${crumbs([['#/jugador/' + x.id, x.n], ['', 'Comparar']])}<div class="wrap"><section class="block"><div class="head"><h2>Cara a cara</h2></div>
     <div class="vsgrid"><div class="card side" style="${vars(x.team)}">${prow(x, fxPill(x))}</div><span class="vs">VS</span><div class="card side" style="${vars(y.team)}">${prow(y, fxPill(y))}</div></div>
-    <div class="card" style="margin-top:18px">${rows}<div class="verdict show"><b>${fxLogo(20)} ARRANCA A ${esc(g.n).toUpperCase()}</b><p>Le gana ${Math.max(px, py)} de ${px + py} categorías y tiene ${g.pEst >= Math.max(x.pEst, y.pEst) ? 'la mejor proyección de la semana' : 'mejores números de temporada'}. Confirma su estatus antes del kickoff.</p></div></div>
+    <div class="card" style="margin-top:18px">${rows}<div class="verdict show"><b>${fxLogo(20)} ${tx('ARRANCA A', 'START')} ${esc(g.n).toUpperCase()}</b><p>${tx(`Le gana ${Math.max(px, py)} de ${px + py} categorías y tiene ${g.pEst >= Math.max(x.pEst, y.pEst) ? 'la mejor proyección de la semana' : 'mejores números de temporada'}. Confirma su estatus antes del kickoff.`, `Wins ${Math.max(px, py)} of ${px + py} categories and has ${g.pEst >= Math.max(x.pEst, y.pEst) ? 'the better projection this week' : 'better season numbers'}. Confirm his status before kickoff.`)}</p></div></div>
   </section></div></div>`;
 }
 
 /* ---------- rankings de la semana ---------- */
 function posicion(p) {
   if (!POSICIONES[p]) return noEncontrado();
-  titulo('Ranking ' + p + ' semana ' + semActual());
+  const W = semRk(), fut = W !== semActual();
+  titulo('Ranking ' + p + ' semana ' + W);
   const ult = (D.semanas || []).filter(w => w <= (SEMNUM || 0)).slice(-3);
   const noJuegan = P.filter(j => j.pos === p && j.team !== 'FA' && !juega(j) && ((j.total || 0) > 20 || (j.rank && j.rank < 200))).sort((a, b) => (b.prom || 0) - (a.prom || 0)).slice(0, 24);
   return `<div class="page">${crumbs([['', 'Rankings ' + p]])}<div class="wrap"><section class="block">
-    <div class="head"><div><h2>Ranking ${p} · Semana ${semActual()}</h2><p class="hsub">Ordenado por proyección ${FMTS[FMT]} de la semana. Solo jugadores que sí juegan; los lesionados y en descanso van aparte.</p></div><small>${esc(actualizado())}</small></div>
-    <div class="chips">${Object.keys(POSICIONES).map(x => `<a class="chip ${x === p ? 'on' : ''}" href="#/posicion/${x}">${x}</a>`).join('')}</div>
+    <div class="head"><div><h2>Ranking ${p} · Semana ${W}</h2><p class="hsub">Ordenado por proyección ${FMTS[FMT]} de la semana. Solo jugadores que sí juegan; los lesionados y en descanso van aparte.</p></div><small>${esc(actualizado())}</small></div>
+    <div class="chips">${Object.keys(POSICIONES).map(x => `<a class="chip ${x === p ? 'on' : ''}" href="#/posicion/${x}${fut ? '?s=' + W : ''}">${x}</a>`).join('')}</div>
+    <div class="chips semchips">${Array.from({ length: SEM_RS - semActual() + 1 }, (_, i) => semActual() + i).map(w => `<a class="chip ${w === W ? 'on' : ''} ${w === semActual() ? 'actual' : ''}" href="#/posicion/${p}${w === semActual() ? '' : '?s=' + w}">S${w}${w === semActual() ? ' · ' + tx('ACTUAL', 'NOW') : ''}</a>`).join('')}</div>
+    ${fut ? `<p class="aviso-sem">${tx(`Proyección anticipada de la semana ${W}: el Modelo FX ajustado por la dificultad del rival de esa semana. Se recalcula cada semana con los datos nuevos.`, `Early week ${W} projection: the FX Model adjusted for that week's opponent. Recalculated every week with new data.`)}</p>` : ''}
     <div class="tools"><input id="filtro" type="search" placeholder="Filtrar por nombre, equipo o rival…" aria-label="Filtrar jugadores">
       <span class="chips" style="margin:0" id="fst">${['TODOS', 'START', 'FLEX', 'SIT'].map((s, i) => `<button type="button" class="chip ${i ? '' : 'on'} ${s}" data-s="${s}">${s}</button>`).join('')}</span></div>
     <div class="card scroll"><table class="tbl rank"><thead><tr>
-      <th>#</th><th>JUGADOR</th><th>EQUIPO</th><th>RIVAL S${semActual()}</th><th>DIFICULTAD</th><th class="hl">PROY ${infoFX(tx('Proyección del FX Tech Analyzer: nuestro modelo combina el volumen y la eficiencia de esta temporada con la anterior, el rival y la salud del jugador.', 'FX Tech Analyzer projection: our model blends this and last season\'s volume and efficiency with the opponent and the player\'s health.'))}</th>
-      ${ult.map(x => `<th>S${x}</th>`).join('')}<th>PROM</th><th>TOTAL</th><th>TENDENCIA</th><th class="pz-th"><a href="#/premium">${esPremium() ? '' : CANDADO}PISO–TECHO</a>${infoFX(tx('Lo mínimo y lo máximo que ha hecho en sus últimas 5 semanas. Piso alto = seguro para tu alineación; techo alto = jugador para ganar semanas cerradas. Exclusivo Premium.', 'The least and most he scored over his last 5 weeks. High floor = safe for your lineup; high ceiling = a player to win close weeks. Premium exclusive.'))}</th><th class="fxh">${fxLogo(18)} START/SIT</th>
+      <th>#</th><th>JUGADOR</th><th>EQUIPO</th><th>RIVAL S${W}</th><th>DIFICULTAD</th><th class="hl">PROY ${infoFX(tx('Proyección del FX Tech Analyzer: nuestro modelo combina el volumen y la eficiencia de esta temporada con la anterior, el rival y la salud del jugador.', 'FX Tech Analyzer projection: our model blends this and last season\'s volume and efficiency with the opponent and the player\'s health.'))}</th>
+      ${ult.map(x => `<th>S${x}</th>`).join('')}<th>PROM</th><th>TOTAL</th><th>TENDENCIA</th><th class="pz-th"><a href="#/premium">${esPremium() ? '' : CANDADO}PISO–TECHO</a>${infoFX(tx('Lo mínimo y lo máximo que ha hecho en sus últimas 5 semanas. Piso alto = seguro para tu alineación; techo alto = jugador para ganar semanas cerradas. Exclusivo PRO.', 'The least and most he scored over his last 5 weeks. High floor = safe for your lineup; high ceiling = a player to win close weeks. PRO exclusive.'))}</th><th class="fxh">${fxLogo(18)} START/SIT</th>
     </tr></thead><tbody id="tb"></tbody></table></div>
     <p class="ss-note">Proyección: Modelo FX, propio (volumen y eficiencia de esta temporada, con la anterior como base). Dificultad = puntos que la defensa rival permite a la posición: ★★★★★ es el matchup ideal. START/FLEX/SIT combina proyección, rival, racha, noticias y comunidad.</p>
     ${noJuegan.length ? `<details class="desglose" style="margin-top:22px"><summary><span>No juegan en la semana ${semActual()} · ${noJuegan.length}</span><span>›</span></summary><div class="plist" style="padding:0 12px 12px">${noJuegan.map(j => prow(j, `<span class="team">${fuera(j) ? esc(parte(j) || j.inj) : 'BYE'}</span>${fxPill(j)}`)).join('')}</div></details>` : ''}
   </section></div></div>`;
 }
+/* Proyección para semanas futuras: proyección FX ajustada por la dificultad del rival de esa semana; 0 en descanso o en reserva */
+const SEM_RS = 17;
+const semRk = () => { const w = +(new URLSearchParams((location.hash.split('?')[1]) || '').get('s')); return w >= semActual() && w <= SEM_RS ? w : semActual(); };
+const proyW = (j, w) => { if (w === semActual()) return j.p ?? j.pEst; const r = rivalDe(j.team, w); if (!r || fueraTemp(j)) return 0; const b = j.proy && j.proy[FMT] != null ? j.proy[FMT] : (j.prom || 0) * .9, e = estrellas(r.opp, j.pos); return b * (e ? 1 + (e.n - 3) * .06 : 1); };
 function montaTabla(p) {
   let filtroV = 'TODOS';
   const ult = (D.semanas || []).filter(w => w <= (SEMNUM || 0)).slice(-3);
-  const base = P.filter(j => j.pos === p && juega(j)).sort((a, b) => b.pEst - a.pEst).map((j, i) => ({ j, k: i + 1, v: veredicto(j), r: rivalDe(j.team) }));
+  const W = semRk(), fut = W !== semActual(), C = CORTE[p] || [12, 24];
+  const base = (fut ? P.filter(j => j.pos === p && j.team !== 'FA' && proyW(j, W) > 0) : P.filter(j => j.pos === p && juega(j))).sort((a, b) => (fut ? proyW(b, W) - proyW(a, W) : b.pEst - a.pEst))
+    .map((j, i) => { const r = rivalDe(j.team, W); return { j, k: i + 1, r, v: fut ? { v: i < C[0] ? 'START' : i < C[1] ? 'FLEX' : 'SIT', e: r && estrellas(r.opp, j.pos) } : veredicto(j) }; });
   const pinta = () => {
     const f = ($('#filtro').value || '').toLowerCase();
     const lista = base.filter(x => (filtroV === 'TODOS' || x.v.v === filtroV) && (!f || x.j.n.toLowerCase().includes(f) || x.j.team.toLowerCase().includes(f) || (x.r && x.r.opp.toLowerCase().includes(f)) || (EQUIPOS[x.j.team] || '').toLowerCase().includes(f)));
@@ -609,9 +618,9 @@ function montaTabla(p) {
       <td><span class="tpl">${helmet(j.team, j.num, 30)}<span><span class="pname">${esc(j.n)}</span>${estatus(j) !== 'Sano' ? ` <span class="pill ${estatus(j)}">${estatus(j).toUpperCase()}</span>` : ''}</span></span></td>
       <td><a class="team" href="#/equipo/${j.team}" onclick="event.stopPropagation()">${esc(j.team)}</a></td>
       <td>${r ? `<a class="team riv" href="#/equipo/${r.opp}" onclick="event.stopPropagation()">${helmet(r.opp, '', 22)}${r.home ? 'vs' : '@'} ${r.opp}</a>` : ''}</td>
-      <td>${pintaEstrellas(v.e)}</td><td class="n hl">${n1(j.p ?? j.pEst)}${j.p == null ? '<sup>*</sup>' : ''}</td>
+      <td>${pintaEstrellas(v.e)}</td><td class="n hl">${n1(proyW(j, W))}${!fut && j.p == null ? '<sup>*</sup>' : ''}</td>
       ${ult.map(w => { const val = ptsSem(j, w); return `<td class="n wk">${val != null ? n1(val) : rivalDe(j.team, w) ? '–' : '<small>BYE</small>'}</td>`; }).join('')}
-      <td class="n">${n1(j.prom)}</td><td class="n">${n1(j.total)}</td><td>${spark(j.hist)}</td><td class="n pz-td">${esPremium() ? (pisoTecho(j) ? n1(pisoTecho(j)[0]) + '–' + n1(pisoTecho(j)[1]) : '–') : `<a href="#/premium" onclick="event.stopPropagation()" title="Premium"><span class="pz-blur">${k * 3 % 9 + 4}.${k % 10}–${k * 7 % 13 + 14}.${k * 3 % 10}</span></a>`}</td><td>${fxPill(j)}</td></tr>`).join('') || '<tr><td colspan="13"><div class="empty">Ningún jugador coincide.</div></td></tr>';
+      <td class="n">${n1(j.prom)}</td><td class="n">${n1(j.total)}</td><td>${spark(j.hist)}</td><td class="n pz-td">${esPremium() ? (pisoTecho(j) ? n1(pisoTecho(j)[0]) + '–' + n1(pisoTecho(j)[1]) : '–') : `<a href="#/premium" onclick="event.stopPropagation()" title="PRO"><span class="pz-blur">${k * 3 % 9 + 4}.${k % 10}–${k * 7 % 13 + 14}.${k * 3 % 10}</span></a>`}</td><td>${fut ? `<span class="fxv ${v.v}">${fxLogo(15)}${VTXT[v.v]}</span>` : fxPill(j)}</td></tr>`).join('') || '<tr><td colspan="13"><div class="empty">Ningún jugador coincide.</div></td></tr>';
     $('#tb').querySelectorAll('tr[data-id]').forEach(tr => tr.onclick = () => { location.hash = '#/jugador/' + tr.dataset.id; });
   };
   $('#filtro').oninput = pinta;
@@ -714,11 +723,11 @@ function lesionados(q) {
   </section></div></div>`;
 }
 function exclusivo() {
-  titulo('Premium FX');
+  titulo('FX PRO');
   const L = todasNoticias().filter(n => n.exclusivo);
-  return `<div class="page">${crumbs([['', 'Premium FX']])}<div class="wrap">
-    <div class="nhero" style="--c1:#3A2A05;--c2:#FFD45C"><div class="grid-in"><div class="txt"><span class="tagx" style="background:var(--gold)">★ PREMIUM FX</span><h1>Premium FX</h1><p class="hero-sub">Información de nuestra red de reporteros que no vas a encontrar en otro lado, desarrollada por los expertos.</p>${L.length ? `<p class="hero-n"><b>${L.length}</b> ${L.length === 1 ? 'nota exclusiva publicada' : 'notas exclusivas publicadas'}</p>` : ''}</div></div></div>
-    ${esPremium() ? `<p class="prem-ok">★ Eres Premium: tienes acceso completo a todas las notas.</p>` : `<section class="block">${muroPremium()}</section>`}
+  return `<div class="page">${crumbs([['', 'FX PRO']])}<div class="wrap">
+    <div class="nhero" style="--c1:#3A2A05;--c2:#FFD45C"><div class="grid-in"><div class="txt"><span class="tagx" style="background:var(--gold)">★ FX PRO</span><h1>FX PRO</h1><p class="hero-sub">Información de nuestra red de reporteros que no vas a encontrar en otro lado, desarrollada por los expertos.</p>${L.length ? `<p class="hero-n"><b>${L.length}</b> ${L.length === 1 ? 'nota exclusiva publicada' : 'notas exclusivas publicadas'}</p>` : ''}</div></div></div>
+    ${esPremium() ? `<p class="prem-ok">★ Eres PRO: tienes acceso completo a todas las notas.</p>` : `<section class="block">${muroPremium()}</section>`}
     <section class="block"><div class="news stagger">${L.map(n => newsCard(n)).join('') || '<div class="empty">La primera nota exclusiva llega muy pronto. Mientras, revisa las <a href="#/noticias">noticias del día</a>.</div>'}</div></section>
   </div></div>`;
 }
@@ -1230,9 +1239,9 @@ function cuenta(q = new URLSearchParams()) {
   const favs = [...FAV].map(id => J[id]).filter(Boolean).sort((a, b) => b.pEst - a.pEst);
   if (q.get('pago') && !esPremium()) esperaPago();
   const hasta = PERFIL && PERFIL.premium_hasta ? new Date(PERFIL.premium_hasta).toLocaleDateString('es-MX', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
-  const tPrem = esPremium() ? `<div class="card prem-card"><h3>★ Premium FX</h3><p>${PERFIL.premium_tipo === 'temporada' ? 'Pase de temporada' : 'Suscripción mensual'}${hasta ? (PERFIL.premium_tipo === 'temporada' ? ' · válido hasta el ' : ' · próxima renovación: ') + hasta : ''}</p><p><a class="btn sm" href="#/premium">Leer el Exclusivo</a>${PAGO.portal && PERFIL.premium_tipo !== 'temporada' ? ` <a class="btn ghost sm" href="${PAGO.portal}" target="_blank" rel="noopener">Administrar o cancelar</a>` : ''}</p></div>`
-    : q.get('pago') ? `<div class="card prem-card"><h3>★ Activando tu Premium…</h3><p class="px blink" style="color:var(--gold)">CONFIRMANDO PAGO</p><p class="sub">Tarda unos segundos.</p></div>`
-    : `<div class="card prem-card"><h3>★ Hazte Premium</h3><p class="sub">Desbloquea todas las notas exclusivas de nuestra red de reporteros.</p>${(PAGO.mes || PAGO.temporada) ? planes() : '<small class="muro-pie">Las suscripciones abren en unos días.</small>'}</div>`;
+  const tPrem = esPremium() ? `<div class="card prem-card"><h3>★ FX PRO</h3><p>${PERFIL.premium_tipo === 'temporada' ? 'Pase de temporada' : 'Suscripción mensual'}${hasta ? (PERFIL.premium_tipo === 'temporada' ? ' · válido hasta el ' : ' · próxima renovación: ') + hasta : ''}</p><p><a class="btn sm" href="#/premium">Leer el Exclusivo</a>${PAGO.portal && PERFIL.premium_tipo !== 'temporada' ? ` <a class="btn ghost sm" href="${PAGO.portal}" target="_blank" rel="noopener">Administrar o cancelar</a>` : ''}</p></div>`
+    : q.get('pago') ? `<div class="card prem-card"><h3>★ Activando tu PRO…</h3><p class="px blink" style="color:var(--gold)">CONFIRMANDO PAGO</p><p class="sub">Tarda unos segundos.</p></div>`
+    : `<div class="card prem-card"><h3>★ Hazte PRO</h3><p class="sub">Desbloquea todas las notas exclusivas de nuestra red de reporteros.</p>${(PAGO.mes || PAGO.temporada) ? planes() : '<small class="muro-pie">Las suscripciones abren en unos días.</small>'}</div>`;
   return `<div class="page">${crumbs([['', 'Mi cuenta']])}<div class="wrap narrowish"><section class="block">
     <div class="head"><div><h2>Hola, ${esc((PERFIL && PERFIL.nombre) || '')}</h2><p class="hsub">${esc(YO.email || '')}</p></div><button class="btn ghost sm" type="button" id="salir">Cerrar sesión</button></div>
     ${tPrem}
@@ -1243,7 +1252,7 @@ function cuenta(q = new URLSearchParams()) {
     </div></section></div></div>`;
 }
 
-/* ---------- Premium FX (Stripe) ---------- */
+/* ---------- FX PRO (Stripe) ---------- */
 const PAGO = { mes: 'https://buy.stripe.com/test_5kQ9AS8v731a0Recsua7C00', temporada: 'https://buy.stripe.com/test_dRm9AScLn6dmdE0502a7C01', portal: 'https://billing.stripe.com/p/login/test_5kQ9AS8v731a0Recsua7C00' }; // enlaces de pago de Stripe
 // Los enlaces de prueba (test_) solo se muestran a quien abrió el sitio con ?pruebas=1 (José, mientras probamos).
 try { if (/[?&]pruebas=1/.test(location.search + location.hash)) localStorage.setItem('fx-pruebas', '1'); if (/[?&]pruebas=0/.test(location.search + location.hash)) localStorage.removeItem('fx-pruebas'); } catch (e) {}
@@ -1262,13 +1271,13 @@ const BENEF = [['Notas de nuestra red de reporteros', 'Información que no vas a
 function muroPremium() {
   const btns = !YO ? `<a class="btn" href="#/cuenta" data-reg>Crea tu cuenta para suscribirte</a><small class="muro-pie">¿Ya tienes cuenta? <a href="#/cuenta">Entra aquí</a></small>`
     : (PAGO.mes || PAGO.temporada) ? planes() : `<small class="muro-pie">Las suscripciones abren en unos días.</small>`;
-  return `<div class="muro"><div class="muro-h">${fxLogo(34)}<div><b>★ PREMIUM FX</b><h3>Sigue leyendo con Premium</h3></div></div><ul class="benef">${BENEF.map(([a, b]) => `<li><b>${a}</b><span>${b}</span></li>`).join('')}</ul>${btns}</div>`;
+  return `<div class="muro"><div class="muro-h">${fxLogo(34)}<div><b>★ FX PRO</b><h3>Sigue leyendo con PRO</h3></div></div><ul class="benef">${BENEF.map(([a, b]) => `<li><b>${a}</b><span>${b}</span></li>`).join('')}</ul>${btns}</div>`;
 }
 let _poll = 0;
 function esperaPago() {
   if (_poll || !SB) return; _poll = 1; let k = 0;
   const t = setInterval(async () => { k++; if (YO) { const { data } = await SB.from('perfiles').select('*').eq('id', YO.id).maybeSingle(); if (data) PERFIL = data; }
-    if (esPremium()) mide('purchase', { currency: 'MXN', value: PERFIL.premium_tipo === 'temporada' ? 199 : 59, items: [{ item_id: 'premium-' + (PERFIL.premium_tipo || 'mensual'), item_name: 'Premium FX ' + (PERFIL.premium_tipo || 'mensual') }] });
+    if (esPremium()) mide('purchase', { currency: 'MXN', value: PERFIL.premium_tipo === 'temporada' ? 199 : 59, items: [{ item_id: 'premium-' + (PERFIL.premium_tipo || 'mensual'), item_name: 'FX PRO ' + (PERFIL.premium_tipo || 'mensual') }] });
     if (esPremium() || k > 12) { clearInterval(t); _poll = 0; history.replaceState(null, '', location.pathname + '#/cuenta'); repinta(); } }, 3000);
 }
 
@@ -1279,7 +1288,7 @@ function privacidad() {
     <h2>Quién es responsable</h2><p>Fantasy Expertos es responsable del tratamiento de los datos que nos das al crear tu cuenta en este sitio.</p>
     <h2>Qué datos usamos</h2><p>Tu correo electrónico, el nombre que elijas, los jugadores que sigues y, si entras con Google, el nombre y correo de tu cuenta de Google. No pedimos datos sensibles.</p>
     <h2>Estadísticas de visitas</h2><p>Usamos Google Analytics para saber cuántas personas visitan el sitio y qué secciones leen. Google puede usar cookies para esto; no lo usamos para identificarte personalmente.</p>
-    <h2>Pagos de Premium</h2><p>Los pagos los procesa Stripe. Nosotros nunca vemos ni guardamos los datos de tu tarjeta; solo guardamos tu tipo de plan, su vigencia y el identificador de cliente que Stripe nos da para activar o cancelar tu acceso.</p>
+    <h2>Pagos de PRO</h2><p>Los pagos los procesa Stripe. Nosotros nunca vemos ni guardamos los datos de tu tarjeta; solo guardamos tu tipo de plan, su vigencia y el identificador de cliente que Stripe nos da para activar o cancelar tu acceso.</p>
     <h2>Para qué los usamos</h2><p>Para darte acceso a tu cuenta, guardar tus jugadores favoritos, mandarte el resumen semanal de fantasy (si lo tienes activado) y revisar los reportes de error que envías. No vendemos ni compartimos tus datos con terceros para su publicidad.</p>
     <h2>Dónde se guardan</h2><p>En Supabase, el proveedor de base de datos y acceso de este sitio, con acceso restringido: cada usuario solo puede ver y cambiar su propia información.</p>
     <h2>Tus derechos</h2><p>Puedes ver y cambiar tus datos, darte de baja del resumen semanal o borrar tu cuenta en cualquier momento desde <a href="#/cuenta">Mi cuenta</a>. Para cualquier otra solicitud de acceso, rectificación, cancelación u oposición, escríbenos por mensaje directo a <a href="https://www.instagram.com/fantasy.expertos" target="_blank" rel="noopener">@fantasy.expertos</a>.</p>
@@ -1321,12 +1330,11 @@ let TR = { da: [], recibe: [] };
 function trade(q) {
   titulo('Analizador de trades');
   TR = { da: (q.get('da') || '').split(',').filter(id => J[id]), recibe: (q.get('recibe') || '').split(',').filter(id => J[id]) };
-  const lado = (k, t) => `<div class="card tr-lado"><h3>${t}</h3><div class="tr-lista" id="tr-${k}">${listaTrade(k)}</div><form class="tr-add" data-k="${k}" autocomplete="off"><input list="fx-todos" name="j" placeholder="Agregar jugador…" aria-label="Agregar jugador a ${t}"><button class="btn sm" type="submit">+</button></form></div>`;
-  return `<div class="page">${crumbs([['#/herramientas', 'Herramientas'], ['', 'Analizador de trades']])}<div class="wrap narrowish"><section class="block">
+  const lado = (k, t) => `<div class="card tr-lado"><h3>${t}</h3><div class="tr-lista" id="tr-${k}">${listaTrade(k)}</div><div class="tr-busca"><input type="search" data-trk="${k}" placeholder="${tx('Busca un jugador para agregarlo…', 'Search a player to add…')}" aria-label="${tx('Agregar jugador a', 'Add player to')} ${t}" autocomplete="off"><div class="tr-sug" id="trs-${k}"></div></div></div>`;
+  return `<div class="page">${crumbs([['#/premium', 'PRO'], ['', 'Analizador de trades']])}<div class="wrap narrowish"><section class="block">
     <div class="head"><div><h2>Analizador de trades</h2><p class="hsub">Valor de cada jugador para lo que resta de la temporada regular (hasta la semana ${SEM_FIN}) en ${FMTS[FMT]}.</p></div></div>
     <div class="tr-grid">${lado('da', 'TÚ DAS')}${lado('recibe', 'TÚ RECIBES')}</div>
     <div id="tr-res">${resTrade()}</div>
-    <datalist id="fx-todos">${P.slice().sort((a, b) => b.pEst - a.pEst).map(j => `<option value="${esc(j.n)}">${esc(j.pos + ' · ' + j.team)}</option>`).join('')}</datalist>
   </section></div></div>`;
 }
 const listaTrade = k => TR[k].length ? TR[k].map(id => { const j = J[id], v = valorROS(j);
@@ -1342,9 +1350,15 @@ function resTrade() {
   [...TR.da, ...TR.recibe].map(id => J[id]).filter(j => estatus(j) !== 'Sano').forEach(j => extra.push(`${j.n} está ${fueraTemp(j) ? 'en reserva de lesionados' : estatus(j).toLowerCase()}; ya está descontado en su valor.`));
   return `<div class="card tr-res"><div class="tr-bars"><div><small>TÚ DAS</small><span><i style="width:${(a / m * 100).toFixed(1)}%"></i></span><b class="n">${Math.round(a)}</b></div><div class="r"><small>TÚ RECIBES</small><span><i style="width:${(b / m * 100).toFixed(1)}%"></i></span><b class="n">${Math.round(b)}</b></div></div>
     <div class="verdict show tv-${v[0]}"><b>${fxLogo(20)} ${v[0]}</b><p>${esc(v[1] + ' ' + extra.join(' '))}</p></div>
-    ${zonaPrem(`<div class="tr-det"><b>${tx('Valor de cada jugador, resto de temporada', 'Rest-of-season value per player')}</b>${[...TR.da.map(id => [id, '−']), ...TR.recibe.map(id => [id, '+'])].map(([id, sg]) => { const j = J[id], x = valorROS(j); return `<div class="tr-dl"><span>${sg} ${esc(j.n)}</span><em>${n1(x.ppj)} pts/${tx('juego', 'game')} · ${x.juegos} ${tx('juegos', 'games')}</em><b class="n">${Math.round(x.valor)}</b></div>`; }).join('')}${lecturaFX(J[TR.recibe[0]])}</div>`, tx('El valor de cada jugador y la lectura del modelo FX del que recibes', 'Each player\'s value and the FX model read on who you receive'))}
+    ${zonaPrem(`<div class="tr-det"><b>${tx('Valor de cada jugador, resto de temporada', 'Rest-of-season value per player')}</b>${[...TR.da.map(id => [id, '−']), ...TR.recibe.map(id => [id, '+'])].map(([id, sg]) => { const j = J[id], x = valorROS(j); return `<div class="tr-dl"><span>${sg} ${esc(j.n)}</span><em>${n1(x.ppj)} pts/${tx('juego', 'game')} · ${x.juegos} ${tx('juegos', 'games')}</em><b class="n">${Math.round(x.valor)}</b></div>`; }).join('')}${lecturaFX(J[TR.recibe[0]])}</div>`, tx('Sabe exactamente cuánto vale cada jugador antes de aceptar', 'Know exactly what every player is worth before you accept'))}
     <p class="sub" style="margin-top:12px">Valor = lo que aporta por encima de un jugador que encontrarías en waivers, en los juegos que le quedan. Combina su promedio, sus últimas 3 semanas, la proyección de esta semana y su estatus médico.</p></div>`;
 }
+const sugTrade = (k, q) => { const box = document.getElementById('trs-' + k); if (!box) return; q = (q || '').trim().toLowerCase(); if (q.length < 2) { box.innerHTML = ''; return; }
+  const ya = new Set([...TR.da, ...TR.recibe]), nq = q.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  box.innerHTML = P.filter(j => !ya.has(j.id) && j.n.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').includes(nq)).sort((a, b) => b.pEst - a.pEst).slice(0, 7)
+    .map(j => `<button type="button" data-tradd="${k}:${j.id}">${helmet(j.team, j.num, 26)}<span><b>${esc(j.n)}</b><small>${esc(j.pos)} · ${esc(j.team)}</small></span><em class="n">${n1(j.pEst)}</em></button>`).join('') || `<p class="sub">${tx('Sin resultados', 'No results')}</p>`; };
+document.addEventListener('input', e => { const i = e.target.closest && e.target.closest('[data-trk]'); if (i) sugTrade(i.dataset.trk, i.value); });
+document.addEventListener('click', e => { const b = e.target.closest && e.target.closest('[data-tradd]'); if (!b) return; const [k, id] = b.dataset.tradd.split(':'); if (!TR[k].includes(id)) TR[k].push(id); pintaTrade(); const i = document.querySelector(`[data-trk="${k}"]`); if (i) { i.value = ''; i.focus(); } sugTrade(k, ''); });
 const pintaTrade = () => { ['da', 'recibe'].forEach(k => { const el = $('#tr-' + k); if (el) el.innerHTML = listaTrade(k); }); const r = $('#tr-res'); if (r) r.innerHTML = resTrade(); history.replaceState(null, '', `${location.pathname}${location.search}#/trade?da=${TR.da.join(',')}&recibe=${TR.recibe.join(',')}`); };
 
 /* ---------- formularios y botones (delegados) ---------- */
@@ -1402,8 +1416,8 @@ document.addEventListener('click', e => { const f = e.target.closest && e.target
 document.addEventListener('click', e => { const t = e.target.closest && e.target.closest('#menu-btn,#menu-x,#menu-bg'); if (t) { e.preventDefault(); menu(t.id === 'menu-btn'); } });
 addEventListener('hashchange', () => { const L = $('.links'); if (L && L.classList.contains('open')) menu(false, true); });
 let _rutaPrev = null;
-/* =============================== PREMIUM FX · CUARTO DE GUERRA ===============================
-   La pestaña Premium vende herramientas, no notas. El usuario conecta su liga (Sleeper en automático, cualquier otra
+/* =============================== FX PRO · CUARTO DE GUERRA ===============================
+   La pestaña PRO vende herramientas, no notas. El usuario conecta su liga (Sleeper en automático, cualquier otra
    plataforma a mano) y el sistema trabaja sobre SU plantel:
    - Alineación óptima de la semana con el porqué de cada decisión (Modelo FX + rival + salud + racha).
    - Alertas del plantel: lesionados, descanso y jugadores fuera, con su reemplazo.
@@ -1411,7 +1425,7 @@ let _rutaPrev = null;
    - Waivers para ti: libres en TU liga que mejoran tu posición más débil.
    - Trade targets: a quién pedir, a qué rival, y qué ofrecer de tu banca.
    - Exclusivas de la red de reporteros.
-   Conectar la liga y ver el plantel es gratis (es el gancho); las decisiones y explicaciones son Premium.
+   Conectar la liga y ver el plantel es gratis (es el gancho); las decisiones y explicaciones son PRO.
    Los IDs de jugador de Sleeper son los mismos del sitio, así que la liga importada usa los datos del Modelo FX directo. */
 const LIGA_K = 'fx-liga';
 let LIGA = (() => { try { return JSON.parse(localStorage.getItem(LIGA_K) || 'null'); } catch (e) { return null; } })();
@@ -1563,7 +1577,7 @@ function conectaVista() {
     <p class="legal">${tx('ESPN y Yahoo no permiten importar ligas privadas sin tu contraseña; por seguridad nunca te la pedimos. Captura tu plantel a mano y te damos las mismas herramientas.', 'ESPN and Yahoo don\'t allow importing private leagues without your password; for your security we never ask for it. Enter your roster manually and you get the same tools.')}</p></section>`;
 }
 
-/* ---------- Página de venta Premium: arte pixel propio (sin emojis), un nivel por función ---------- */
+/* ---------- Página de venta PRO: arte pixel propio (sin emojis), un nivel por función ---------- */
 const PXC = { G: '#5BC489', D: '#2E6B47', Y: '#FFD45C', L: '#B8892A', O: '#8B4A2B', P: '#5E2F1A', W: '#E9FFF1', R: '#F2786A', X: '#A8433A', K: '#0B130F', B: '#6FB7F0', S: '#9FB4A8', M: '#3B5446' };
 const pixel = (g, cls = '') => { const w = Math.max(...g.map(r => r.length)), h = g.length; let o = ''; g.forEach((r, y) => [...r].forEach((c, x) => { if (PXC[c]) o += `<rect x="${x}" y="${y}" width="1.04" height="1.04" fill="${PXC[c]}"/>`; })); return `<svg class="px-art ${cls}" viewBox="0 0 ${w} ${h}" shape-rendering="crispEdges" aria-hidden="true">${o}</svg>`; };
 const ART = {
@@ -1582,10 +1596,10 @@ function ventaHero() {
   const nJ = P.filter(j => j.proy).length, nN = todasNoticias().length;
   const dato = (n, t, suf = '') => `<div><b class="n" data-cuenta="${n}">${n}</b>${suf}<small>${t}</small></div>`;
   return `<section class="pv-hero">
-    <div class="pv-hero-txt"><span class="pv-coin">${pixel(ART.moneda, 'gira')}<em>INSERT COIN</em></span>
+    <div class="pv-hero-txt"><span class="pv-badge neon"><b>FX PRO</b><em>${tx('Herramientas para ganar tu liga', 'Tools to win your league')}</em></span>
       <h1>${tx('El cuarto de guerra de tu liga', 'Your league\'s war room')}</h1>
       <p>${tx('Conectas tu liga una vez. Desde ese momento el FX Tech Analyzer revisa tu equipo todos los días y te dice qué hacer, con el porqué de cada decisión.', 'Connect your league once. From then on, the FX Tech Analyzer checks your team every day and tells you what to do, with the why behind every call.')}</p>
-      <div class="pv-ctas">${ctaPrem(tx('Desbloquear Premium', 'Unlock Premium'))}<a class="btn ghost" href="#pv-conecta" data-pv-ir="pv-conecta">${tx('Conectar mi liga gratis', 'Connect my league free')}</a></div>
+      <div class="pv-ctas">${ctaPrem(tx('Desbloquear PRO', 'Unlock PRO'))}<a class="btn ghost" href="#pv-conecta" data-pv-ir="pv-conecta">${tx('Conectar mi liga gratis', 'Connect my league free')}</a></div>
       <small class="pv-nota">${tx('Desde $59 MXN al mes · cancela cuando quieras', 'From $59 MXN a month · cancel anytime')}</small></div>
     <div class="pv-board" aria-label="FX Tech Analyzer">
       <div class="pv-board-top">${sello()}<span class="pv-led"><i></i>${tx('EN LÍNEA', 'ONLINE')}</span></div>
@@ -1610,21 +1624,22 @@ function niveles() {
       demo: les ? `<div class="pv-d-row"><span class="r">${fuera(les) ? tx('FUERA', 'OUT') : tx('DUDA', 'Q')}</span><b>${esc(les.n)}</b><em>${esc(parte(les) || '')}</em></div><p class="pv-d-why">${tx('Si es tu titular, te damos el reemplazo.', 'If he is your starter, we give you the replacement.')}</p>` : '' },
     { s: 'micro', t: tx('Exclusivas FX', 'FX exclusives'), h: tx('Lo que tu liga se entera mañana.', 'What your league finds out tomorrow.'), b: [tx('Notas de nuestra red de reporteros', 'Notes from our reporter network'), tx('Cada exclusiva termina con una acción concreta', 'Every exclusive ends with a concrete move'), tx('El consejo completo de los expertos en cada nota', 'The full expert advice in every story')], demo: '' }
   ];
-  return N.map((x, i) => `<section class="block pv-lvl ${i % 2 ? 'inv' : ''}"><div class="pv-art"><div class="pv-crt">${pixel(ART[x.s], 'big a-' + x.s)}<span class="pv-lv">LEVEL ${String(i + 1).padStart(2, '0')}</span></div>${x.demo ? `<div class="card pv-demo">${sello('mini')}${x.demo}</div>` : ''}</div>
-    <div class="pv-txt"><small class="pv-k">★ PREMIUM · ${String(i + 1).padStart(2, '0')}/06</small><h2>${x.t}</h2><p class="pv-h">${x.h}</p><ul>${x.b.map(t => `<li>${t}</li>`).join('')}</ul>${ctaPrem(tx('Desbloquear', 'Unlock') + ' ' + x.t.toLowerCase(), 'sm')}</div></section>`).join('');
+  return `<section class="block pv-feats"><div class="pv-sec-h"><small class="pv-k">${tx('LO QUE DESBLOQUEAS', 'WHAT YOU UNLOCK')}</small><h2>${tx('6 herramientas que deciden por ti con datos', '6 tools that decide for you with data')}</h2></div>
+    <div class="pv-fg">${N.map((x, i) => `<article class="pv-f neon"><div class="pv-f-h">${pixel(ART[x.s], 'pv-f-ico a-' + x.s)}<div><small>${String(i + 1).padStart(2, '0')}</small><h3>${x.t}</h3></div></div><p class="pv-h">${x.h}</p><ul>${x.b.map(t => `<li>${t}</li>`).join('')}</ul>${x.demo ? `<div class="pv-demo">${x.demo}</div>` : ''}</article>`).join('')}</div>
+    <div class="pv-mid">${ctaPrem(tx('Quiero PRO', 'I want PRO'))}<small>${tx('Desde $59 MXN al mes · cancela cuando quieras', 'From $59 MXN a month · cancel anytime')}</small></div></section>`;
 }
 function cadaSeccion() {
   const C = [['#/posicion/RB', tx('Piso–techo', 'Floor–ceiling'), tx('Rankings', 'Rankings')], ['#/lideres', tx('¿Repite?', 'Repeat?'), tx('Líderes', 'Leaders')], ['#/tendencias', tx('¿Compra o trampa?', 'Buy or trap?'), tx('Tendencias', 'Trends')], ['#/lesionados', tx('Reemplazos FX', 'FX replacements'), tx('Lesionados', 'Injuries')], ['#/partidos', tx('Pronóstico fantasy', 'Fantasy forecast'), tx('Partidos', 'Games')], ['#/equipo/KC', tx('Calendario FX', 'FX schedule'), tx('Equipos', 'Teams')], ['#/noticias', tx('Consejo completo', 'Full advice'), tx('Noticias', 'News')], ['#/trade', tx('Valor por jugador', 'Value per player'), 'Trades']];
-  return `<section class="block pv-cart"><div class="pv-sec-h"><small class="pv-k">BONUS STAGE</small><h2>${tx('Y en cada sección del sitio, una ventaja más', 'And in every section of the site, one more edge')}</h2></div>
-    <div class="pv-cart-g">${C.map(([h, t, s]) => `<a class="card pv-cartucho" href="${h}"><span class="pv-ct">${s}</span><b>${t}</b><i>${pixel(ART.rayo)}</i></a>`).join('')}</div></section>`;
+  return `<section class="block pv-cart"><div class="pv-sec-h"><small class="pv-k">${tx('EN TODO EL SITIO', 'ACROSS THE SITE')}</small><h2>${tx('Y en cada sección del sitio, una ventaja más', 'And in every section of the site, one more edge')}</h2></div>
+    <div class="pv-cart-g">${C.map(([h, t, s]) => `<a class="card pv-cartucho" href="${h}"><span class="pv-ct">${s}</span><b>${t}</b></a>`).join('')}</div></section>`;
 }
 function precios() {
   const F = [[tx('Noticias, líderes, rankings y partidos', 'News, leaders, rankings and games'), 1, 1], [tx('Conectar tu liga y ver tu plantel', 'Connect your league and see your roster'), 1, 1], [tx('Alertas del plantel', 'Roster alerts'), 1, 1], [tx('Alineación óptima con el porqué', 'Optimal lineup with the why'), 0, 1], [tx('Probabilidad de ganar tu matchup', 'Matchup win probability'), 0, 1], [tx('Waivers y trade targets de tu liga', 'Your league\'s waivers and trade targets'), 0, 1], [tx('Ventaja FX en cada sección', 'FX edge in every section'), 0, 1], [tx('Exclusivas y consejo completo', 'Exclusives and full advice'), 0, 1]];
   const ok = v => v ? `<i class="si">${pixel(['.......G', '......GG', 'G....GG.', 'GG..GG..', '.GGGG...', '..GG....'])}</i>` : '<i class="no">—</i>';
-  const plan = (k, precio, per, nota, top) => `<a class="pv-plan ${top ? 'top' : ''}" href="${!YO ? '#/cuenta' : (linkPago(k) || '#/cuenta')}" ${!YO ? 'data-reg' : ''}>${top ? `<em>${tx('MEJOR PRECIO', 'BEST PRICE')}</em>` : ''}<span class="pv-coin-s">${pixel(ART.moneda)}${top ? pixel(ART.moneda) + pixel(ART.moneda) : ''}</span><b class="n">$${precio}</b><span>MXN ${per}</span><small>${nota}</small><u>${top ? tx('Quiero el pase de temporada', 'I want the season pass') : tx('Empezar mensual', 'Start monthly')}</u></a>`;
-  return `<section class="block pv-precios" id="pv-planes"><div class="pv-sec-h"><small class="pv-k">SELECT PLAYER</small><h2>${tx('Elige tu plan', 'Pick your plan')}</h2></div>
+  const plan = (k, precio, per, nota, top) => `<a class="pv-plan neon ${top ? 'top' : ''}" href="${!YO ? '#/cuenta' : (linkPago(k) || '#/cuenta')}" ${!YO ? 'data-reg' : ''}>${top ? `<em>${tx('MEJOR PRECIO', 'BEST PRICE')}</em>` : ''}<span class="pv-pl-n">${top ? tx('PASE DE TEMPORADA', 'SEASON PASS') : tx('MENSUAL', 'MONTHLY')}</span><b class="n">$${precio}</b><span>MXN ${per}</span><small>${nota}</small><u>${top ? tx('Quiero el pase de temporada', 'I want the season pass') : tx('Empezar mensual', 'Start monthly')}</u></a>`;
+  return `<section class="block pv-precios" id="pv-planes"><div class="pv-sec-h"><small class="pv-k">${tx('PLANES', 'PLANS')}</small><h2>${tx('Elige tu plan', 'Pick your plan')}</h2></div>
     <div class="pv-pr-g"><div class="pv-planes">${plan('mes', 59, tx('al mes', 'a month'), tx('Cancela cuando quieras', 'Cancel anytime'))}${plan('temporada', 199, tx('toda la temporada', 'whole season'), tx('Pago único, hasta el Super Bowl', 'One payment, through the Super Bowl'), 1)}</div>
-    <div class="card pv-tabla"><div class="pv-tr h"><span></span><b>${tx('Gratis', 'Free')}</b><b class="g">Premium</b></div>${F.map(([t, a, b]) => `<div class="pv-tr"><span>${t}</span>${ok(a)}${ok(b)}</div>`).join('')}</div></div>
+    <div class="card pv-tabla"><div class="pv-tr h"><span></span><b>${tx('Gratis', 'Free')}</b><b class="g">PRO</b></div>${F.map(([t, a, b]) => `<div class="pv-tr"><span>${t}</span>${ok(a)}${ok(b)}</div>`).join('')}</div></div>
     <p class="legal">${tx('Pago seguro con Stripe: tarjeta, Apple Pay o Google Pay. Nunca vemos ni guardamos los datos de tu tarjeta.', 'Secure payment with Stripe: card, Apple Pay or Google Pay. We never see or store your card details.')}</p></section>`;
 }
 function animaPremium() {
@@ -1751,7 +1766,7 @@ function cuartoGuerra(tab, pro) {
   return `<div class="wr-top"><div class="wr-liga"><div><small>${LIGA.fuente === 'sleeper' ? 'SLEEPER' : 'MANUAL'} · ${FMTS[fmtL()]}${LIGA.equipos ? ' · ' + LIGA.equipos + ' ' + tx('equipos', 'teams') : ''} · ${tx('Semana', 'Week')} ${semActual()}</small><h1>${esc(LIGA.nombre || tx('Mi equipo', 'My team'))}</h1></div>
       <div class="cg-acc">${LIGA.fuente === 'sleeper' ? `<button type="button" class="btn ghost sm" data-cg-sync>${tx('Actualizar', 'Refresh')}</button>` : ''}<button type="button" class="btn ghost sm" data-cg-salir>${tx('Cambiar liga', 'Change league')}</button></div></div>
     <nav class="wr-tabs" aria-label="${tx('Herramientas', 'Tools')}">${TABS_CG.map(([k, es, en]) => `<a href="#/premium${k ? '/' + k : ''}" class="${k === v ? 'on' : ''}">${tx(es, en)}</a>`).join('')}</nav></div>
-    <div class="wr-body">${pro || libre ? cuerpo : zonaPrem(cuerpo, tx('Desbloquea esta herramienta con Premium', 'Unlock this tool with Premium'))}${pieTech()}</div>`;
+    <div class="wr-body">${pro || libre ? cuerpo : zonaPrem(cuerpo, tx('Desbloquea esta herramienta con PRO', 'Unlock this tool with PRO'))}${pieTech()}</div>`;
 }
 document.addEventListener('click', e => {
   const sw = e.target.closest('[data-swap]'); if (sw && !sw.disabled) { tablero._abre = tablero._abre === +sw.dataset.swap ? null : +sw.dataset.swap; repinta(); return; }
@@ -1761,15 +1776,16 @@ document.addEventListener('click', e => {
 document.addEventListener('change', e => { const s = e.target.closest('[data-duelo]'); if (!s) return; const a = document.querySelector('[data-duelo="a"]'), b = document.querySelector('[data-duelo="b"]'), r = document.getElementById('duelo-res'); if (r) r.innerHTML = dueloHtml(J[a.value], J[b.value]); });
 
 function premiumHub(tab = '') {
-  titulo('Premium FX');
+  titulo('FX PRO');
   const pro = esPremium(), excl = todasNoticias().filter(n => n.exclusivo).slice(0, 6);
   sincroniza();
-  const hero = pro ? `<div class="cg-hero solo"><div class="cg-hero-in"><span class="cg-tag">★ PREMIUM FX</span><h1>${tx('Tu cuarto de guerra', 'Your war room')}</h1><p class="prem-ok">★ ${tx('Eres Premium: todas las herramientas están desbloqueadas.', 'You are Premium: every tool is unlocked.')}</p></div>${sello()}</div>` : ventaHero();
+  const hero = pro ? `<div class="cg-hero solo"><div class="cg-hero-in"><span class="cg-tag">★ FX PRO</span><h1>${tx('Tu cuarto de guerra', 'Your war room')}</h1><p class="prem-ok">★ ${tx('Eres PRO: todas las herramientas están desbloqueadas.', 'You are PRO: every tool is unlocked.')}</p></div>${sello()}</div>` : ventaHero();
   const venta = pro ? '' : niveles() + cadaSeccion() + precios();
-  if (!LIGA || !(LIGA.jugadores || []).length) return `<div class="page pv">${crumbs([['', 'Premium FX']])}<div class="wrap">${hero}${pro ? '' : niveles()}<div id="pv-conecta">${conectaVista()}</div>${pro ? '' : cadaSeccion() + precios()}${exclusivasBloque(excl, pro)}</div></div>`;
+  if (!pro) return `<div class="page pv">${crumbs([['', 'FX PRO']])}<div class="wrap">${hero}${niveles()}${cadaSeccion()}${precios()}<section class="block"><div class="pv-lock neon"><div><b>${tx('Conecta tu liga', 'Connect your league')}</b><p>${tx('Con PRO importas tu liga de Sleeper (o capturas tu plantel de ESPN o Yahoo) y todas las herramientas trabajan con TU equipo.', 'With PRO you import your Sleeper league (or enter your ESPN or Yahoo roster) and every tool works with YOUR team.')}</p></div>${ctaPrem(tx('Desbloquear con PRO', 'Unlock with PRO'))}</div></section>${exclusivasBloque(excl, pro)}</div></div>`;
+  if (!LIGA || !(LIGA.jugadores || []).length) return `<div class="page pv">${crumbs([['', 'FX PRO']])}<div class="wrap">${hero}${pro ? '' : niveles()}<div id="pv-conecta">${conectaVista()}</div>${pro ? '' : cadaSeccion() + precios()}${exclusivasBloque(excl, pro)}</div></div>`;
 
   cargaVivo(semActual());
-  return `<div class="page pv wr">${crumbs([['#/premium', 'Premium FX'], ['', LIGA.nombre || tx('Mi equipo', 'My team')]])}<div class="wrap">${cuartoGuerra(tab, pro)}${venta}</div></div>`;
+  return `<div class="page pv wr">${crumbs([['#/premium', 'FX PRO'], ['', LIGA.nombre || tx('Mi equipo', 'My team')]])}<div class="wrap">${cuartoGuerra(tab, pro)}${venta}</div></div>`;
 }
 function exclusivasBloque(L, pro) {
   return `<section class="block" data-chip="${tx('RED DE REPORTEROS', 'REPORTER NETWORK')}"><div class="head"><div><h2>${tx('Exclusivas FX', 'FX exclusives')}</h2><p class="hsub">${tx('Información de nuestra red de reporteros que no vas a encontrar en otro lado.', 'Information from our reporter network you won\'t find anywhere else.')}</p></div><a class="all" href="#/exclusivo">${tx('Todas', 'All')} ›</a></div>
@@ -1812,7 +1828,7 @@ function router() {
   const q = new URLSearchParams(qs || ''), [, seccion, a, b] = ruta.split('/');
   const R = { '': () => inicio(), blog: () => a ? blogNota(a) : blogLista(), noticias: () => noticias(q), reportajes: () => noticias(q), noticia: () => noticia(a), reportaje: () => noticia(a), jugador: () => jugador(a), comparar: () => comparar(a, b), posicion: () => posicion(a),
     equipos: () => equipos(), equipo: () => equipo(a), partidos: () => partidos(q), partido: () => partido(a), lideres: () => lideres(q), media: () => media(), exclusivo: () => exclusivo(), premium: () => premiumHub(a || ''), temporada: () => temporada(), semana: () => semana(a), tendencias: () => tendencias(), lesionados: () => lesionados(q),
-    cuenta: () => cuenta(q), herramientas: () => herramientas(), trade: () => trade(q), privacidad: () => privacidad(), baja: () => baja(q) };
+    cuenta: () => cuenta(q), herramientas: () => premiumHub(''), trade: () => trade(q), privacidad: () => privacidad(), baja: () => baja(q) };
   app.innerHTML = (R[seccion || ''] || noEncontrado)();
   if (ruta !== _rutaPrev) { _rutaPrev = ruta; app.classList.remove('entra'); void app.offsetWidth; app.classList.add('entra'); }
   scrollTo({ top: 0 });
@@ -1875,7 +1891,7 @@ Promise.all([cargar('hoy.json', null), cargar('jugadores.json', []), cargar('arc
   D.archivo = (Array.isArray(archivo) ? archivo : []).map(normN);
   D.lesionados = (hoy.lesionados || []).filter(x => x.id && J[x.id]);
   D.agregados = hoy.agregados || []; D.soltados = hoy.soltados || [];
-  D.resumenes = resumenes || {}; D.redes = redes || {}; D.videos = videos || {}; D.cal = calendario; D.externas = externas || [];
+  D.resumenes = resumenes || {}; if (LANG === 'en') Object.values(D.resumenes).forEach(r => { if (r && r.en && r.en.titulo) Object.assign(r, r.en); }); D.redes = redes || {}; D.videos = videos || {}; D.cal = calendario; D.externas = externas || [];
   aplicaFormato();
   document.querySelectorAll('.fmt button').forEach((b, i) => b.onclick = () => { FMT = i; try { localStorage.setItem('fx-fmt', i); } catch (e) {} aplicaFormato(); router(); });
   const pie = $('#pie-redes'); if (pie) pie.innerHTML = `<div id="pie-news"></div><div class="follow"><div><h3>Síguenos</h3><p>Tips diarios, el podcast y los videos de cada semana.</p></div>${grupoRedes()}</div>`;

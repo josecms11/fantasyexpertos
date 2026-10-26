@@ -35,12 +35,14 @@
   // Riel como cancha real: G · 10 · 20 · 30 · 40 · 50 · 40 · 30 · 20 · 10 · TD. El balón avanza con el scroll.
   const YARDAS = ['G', 10, 20, 30, 40, 50, 40, 30, 20, 10, 'TD'];
   const seccionEn = f => { const y = f * (document.documentElement.scrollHeight - innerHeight) + innerHeight * .5; let k = 0; secs.forEach((s, n) => { if (s.getBoundingClientRect().top + scrollY <= y) k = n; }); return secs[k]; };
+  // Cancha de avance: tira delgada pegada bajo el menú; el balón recorre las yardas conforme haces scroll
   function pintaRiel() {
     if (hud) hud.hidden = true;
+    const hdr = document.querySelector('header'); if (!hdr) return;
     if (secs.length < 4 || document.documentElement.scrollHeight < innerHeight * 1.8) { if (riel) riel.hidden = true; return; }
-    if (!riel) { riel = document.createElement('nav'); riel.className = 'fx-riel'; riel.setAttribute('aria-label', 'Avance en la página'); document.body.appendChild(riel); }
+    if (!riel) { riel = document.createElement('nav'); riel.className = 'fx-yard'; riel.setAttribute('aria-label', 'Avance en la página'); hdr.appendChild(riel); }
     riel.hidden = false;
-    riel.innerHTML = `<i class="fx-riel-l"></i><b class="fx-riel-b" aria-hidden="true">${BALON}</b>` + YARDAS.map((y, n) => { const s = seccionEn(n / 10); return `<button type="button" data-f="${n / 10}" class="${typeof y === 'string' ? 'gl' : ''}"><span>${y}</span><em>${(s && nombre(s)) || (EN() ? 'Top' : 'Portada')}</em></button>`; }).join('');
+    riel.innerHTML = `<i class="fx-yard-l"></i><b class="fx-yard-b" aria-hidden="true">${BALON}</b>` + YARDAS.map((y, n) => { const s = seccionEn(n / 10); return `<button type="button" data-f="${n / 10}" style="left:${n * 10}%" class="${typeof y === 'string' ? 'gl' : ''}" title="${((s && nombre(s)) || '').replace(/"/g, '')}">${y}</button>`; }).join('');
     riel.onclick = e => { const b = e.target.closest('button'); if (b) scrollTo({ top: +b.dataset.f * (document.documentElement.scrollHeight - innerHeight), behavior: quieto ? 'auto' : 'smooth' }); };
   }
   function pintaHud() {

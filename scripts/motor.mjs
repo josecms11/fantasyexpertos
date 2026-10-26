@@ -198,7 +198,7 @@ log('ESPN: lesiones', Object.keys(lesE).length / 2 | 0, '· noticias', newsE.len
 
 // ¿Qué semana se analiza? la primera donde la mayoría de juegos no ha terminado
 let semJuego = 18;
-for (let w = 1; w <= 18; w++) { let tot = 0, pend = 0; Object.values(cal).forEach(t => { if (t[w]) { tot++; if (!t[w].fin) pend++; } }); if (tot && pend / tot > .5) { semJuego = w; break; } }
+for (let w = 1; w <= 18; w++) { let tot = 0, pend = 0; Object.values(cal).forEach(t => { if (t[w]) { tot++; if (!t[w].fin) pend++; } }); if (tot && pend > 0) { semJuego = w; break; } }
 if (!Object.keys(s.proy[semJuego] || {}).length && s.proy[s.semana + 1] && semJuego === s.semana + 1) s.proy[semJuego] = s.proy[s.semana + 1];
 
 // defensa contra posición
@@ -450,15 +450,15 @@ for (const w of s.semanas.slice().reverse()) {
   const st = s.stats[w]; if (!st || !Object.keys(st).length) continue;
   const cerrada = Object.values(cal).every(t => !t[w] || t[w].fin);
   const r = resumenes[w];
-  if (r && r.v === 3 && (r.cerrada || Date.now() - Date.parse(r.fecha) < 8 * 3600e3)) continue;
+  if (r && r.v === 4 && (r.cerrada || Date.now() - Date.parse(r.fecha) < 8 * 3600e3)) continue;
   const top = {};
   for (const pos of POS) top[pos] = Object.entries(st).filter(([k, v]) => s.todos[k] && s.todos[k].pos === pos && v.pts_ppr != null).sort((a, b) => b[1].pts_ppr - a[1].pts_ppr).slice(0, 12)
     .map(([k, v]) => ({ id: k, n: s.todos[k].n, team: s.todos[k].team, pts: r1(v.pts_ppr), f: [r1(v.pts_ppr), r1(v.pts_half_ppr), r1(v.pts_std)] }));
   const res = Object.values(cal).map(t => t[w]).filter(x => x && x.fin && x.home).map(x => x);
   const marc = Object.entries(cal).filter(([t, c]) => c[w] && c[w].home && c[w].fin).map(([t, c]) => `${c[w].opp} ${c[w].pc} @ ${t} ${c[w].pf}`).join(', ');
-  const txt = await gemini(VOZ + `Escribe el análisis de fantasy de la Semana ${w}. Forma: {"titulo":"máximo 9 palabras","claves":["exactamente 10 aprendizajes de máximo 16 palabras, concretos y con nombres"],"cuerpo":"120 a 160 palabras","sorpresas":["3 frases cortas"],"decepciones":["3 frases cortas"]}. Marcadores: ${marc}. Mejores por posición (PPR): ${JSON.stringify(Object.fromEntries(Object.entries(top).map(([p, l]) => [p, l.slice(0, 6).map(x => x.n + ' ' + x.pts)])))}`, 6000);
+  const txt = await gemini(VOZ + `Escribe el análisis de fantasy de la Semana ${w}. Forma: {"titulo":"máximo 9 palabras","claves":["exactamente 10 aprendizajes de máximo 16 palabras, concretos y con nombres"],"cuerpo":"120 a 160 palabras","sorpresas":["3 frases cortas"],"decepciones":["3 frases cortas"],"en":{la misma estructura completa traducida al inglés estadounidense con terminología de fantasy football}}. Marcadores: ${marc}. Mejores por posición (PPR): ${JSON.stringify(Object.fromEntries(Object.entries(top).map(([p, l]) => [p, l.slice(0, 6).map(x => x.n + ' ' + x.pts)])))}`, 6000);
   if (txt && NUM_LETRAS.test(JSON.stringify(txt))) log('Resumen S' + w + ' descartado: cifras con letras');
-  if (txt && !NUM_LETRAS.test(JSON.stringify(txt))) { resumenes[w] = { v: 3, semana: w, cerrada, fecha: ahora, top, titulo: txt.titulo || `Semana ${w}`, claves: txt.claves || [], cuerpo: txt.cuerpo || '', sorpresas: txt.sorpresas || [], decepciones: txt.decepciones || [] }; log('Resumen semana', w); }
+  if (txt && !NUM_LETRAS.test(JSON.stringify(txt))) { resumenes[w] = { v: 4, semana: w, cerrada, fecha: ahora, top, titulo: txt.titulo || `Semana ${w}`, claves: txt.claves || [], cuerpo: txt.cuerpo || '', sorpresas: txt.sorpresas || [], decepciones: txt.decepciones || [], en: txt.en && txt.en.titulo ? txt.en : null }; log('Resumen semana', w); }
   else if (!r) resumenes[w] = { v: 1, semana: w, cerrada, fecha: ahora, top, titulo: `Semana ${w}`, claves: [], cuerpo: '' };
   else r.top = top;
   break;
