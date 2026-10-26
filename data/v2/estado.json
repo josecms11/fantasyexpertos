@@ -1,21 +1,12 @@
 {
-  "fecha": "2026-10-26T10:09:49.931Z",
+  "fecha": "2026-10-26T10:20:05.629Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.3s] YouTube: 15 nuevos, 17 en total",
-    "[1.1s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[3.5s] ESPN: lesiones 799 · noticias 50",
-    "[3.6s] Modelo FX v2 : 433 proyecciones propias para la semana 8",
-    "[4.5s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[304.5s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
-    "[312.8s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[324.7s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
-    "[330.4s] IA OK con gemini-3.5-flash-lite",
-    "[330.4s] Blog: ¿Arrancar o sentar a Tyler Higbee en la Semana 8? / Should you start Tyler Higbee in Week 8?",
-    "[630.4s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
-    "[658.5s] IA OK con gemini-3.6-flash",
-    "[658.5s] Blog: ¿Vale la pena agregar a Darius Cooper en la semana 8? / Should you pick up Darius Cooper in Week 8?",
-    "[658.7s] Precisión S7: error FX 4.68 · referencia 4.45 · n 285",
-    "[658.7s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 281 · semana de juego 8 · IA usada hoy 9/40"
+    "[0.5s] YouTube: 15 nuevos, 17 en total",
+    "[1.3s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[2.9s] ESPN: lesiones 799 · noticias 50",
+    "[3.0s] Modelo FX v2 : 433 proyecciones propias para la semana 8",
+    "[4.0s] Precisión S7: error FX 4.68 · referencia 4.45 · n 285",
+    "[4.0s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 281 · semana de juego 8 · IA usada hoy 9/40"
   ]
 }
