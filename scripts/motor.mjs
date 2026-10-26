@@ -60,7 +60,7 @@ async function gemini(prompt, tokens = 32000) {
     let r;
     try {
       r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent?key=${KEY}`, {
-        signal: conTiempo(300000), method: 'POST', headers: { 'Content-Type': 'application/json' },
+        signal: conTiempo(150000), method: 'POST', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: 'application/json', temperature: 0.6, maxOutputTokens: tokens } })
       });
     } catch (e) { log('Gemini sin respuesta', m, e.message); continue; }
@@ -427,6 +427,7 @@ if (tocaBlog) {
   const FMT_TIPO = { startsit: ['¿Arrancar o sentar a {N} en la semana {W}?', 'Should you start {N} in Week {W}?'], waiver: ['¿Vale la pena agregar a {N} en la semana {W}?', 'Should you pick up {N} in Week {W}?'],
     lesion: ['Lesión de {N}: ¿juega en la semana {W} y qué hacer en fantasy?', '{N} injury update: will he play in Week {W}? Fantasy impact'], trade: ['¿Vender o aguantar a {N}? Valor de trade semana {W}', 'Should you sell or hold {N}? Week {W} trade value'] };
   for (const t of elegidos) {
+    if (Date.now() - t0 > 7 * 60e3) { log('Blog: sin tiempo en esta corrida, sigue en la próxima'); break; }
     const j = t.j, rival = cal[j.team] && cal[j.team][semJuego], d = rival && dvp[rival.opp] && dvp[rival.opp][j.pos];
     const ult = j.log.filter(l => l.f).slice(-4).map(l => `S${l.w} ${l.home ? 'vs' : '@'} ${l.opp || '?'}: ${l.f[0]} pts PPR · ${Object.entries(l.st || {}).map(([k, v]) => k + '=' + v).join(' ')}`);
     const jug = j.log.filter(l => l.f), tot = r1(jug.reduce((a, l) => a + l.f[0], 0));
@@ -437,12 +438,12 @@ ESTATUS: ${estadoTxt(j)}${j.les ? ` · reporte: ${j.les.st || ''} ${j.les.tipo |
 TEMPORADA ${s.temporada}: ${jug.length} juegos, ${tot} pts PPR, promedio ${jug.length ? r1(tot / jug.length) : 0}.
 ÚLTIMOS JUEGOS: ${ult.join(' | ') || 'sin juegos'}.
 MODELO FX (propio) SEMANA ${semJuego}: ${j.proy ? `${j.proy[0]} PPR / ${j.proy[1]} Half / ${j.proy[2]} STD · ${j.pos}${rankFX[j.id] || '?'} de la semana` : 'sin proyección'}.
-RIVAL SEMANA ${semJuego}: ${rival ? `${rival.home ? 'vs' : '@'} ${rival.opp}` : 'descanso (BYE)'}${d ? ` · esa defensa es la Nº${d.rank} que más puntos permite a ${j.pos} (${d.prom} por juego; 1 = la más débil)` : ''}.
+RIVAL SEMANA ${semJuego}: ${rival ? `${rival.home ? 'vs' : '@'} ${rival.opp}` : 'descanso (BYE)'}${d ? ` · MATCHUP ${d.rank <= 10 ? 'FÁCIL' : d.rank >= 23 ? 'DIFÍCIL' : 'NEUTRAL'} (esa defensa permite ${d.prom} pts por juego a ${j.pos}; es la Nº${d.rank} de 32, donde Nº1 = la que MÁS permite y Nº32 = la que MENOS permite)` : ''}.
 COMUNIDAD: agregado en ${j.add || 0} ligas y soltado en ${j.drop || 0} en 24 h.
 REPORTES ORIGINALES (hechos verificables; NO copies su redacción): ${noticiasJ.map(x => `«${x.t}» — ${x.d}`).join(' | ') || 'ninguno'}.
 NUESTRAS NOTAS PREVIAS: ${nuestras.map(n => n.titulo + ': ' + (n.claves || []).join('; ')).join(' | ') || 'ninguna'}.`;
     const pide = `Eres el editor de Fantasy Expertos. Escribe UN artículo de blog optimizado para Google que responde la pregunta del momento sobre este jugador, en DOS versiones: español latinoamericano neutro (claro para México, EE. UU. hispano y Latinoamérica) e inglés estadounidense con la terminología estándar de fantasy football (start/sit, waiver wire, PPR, flex, bye, ceiling, floor).
-Reglas: usa SOLO los datos que te doy; no inventes cifras, lesiones, fechas ni citas; escribe con tus propias palabras (cero frases copiadas de los reportes); primero la noticia y el contexto, después el análisis y al final la recomendación de fantasy; tono experto, cercano, claro y sin relleno; nada de nombres de otras marcas o medios.
+Reglas: usa SOLO los datos que te doy; para el rival usa la etiqueta MATCHUP tal cual (FÁCIL/NEUTRAL/DIFÍCIL), no la reinterpretes; no inventes cifras, lesiones, fechas ni citas; escribe con tus propias palabras (cero frases copiadas de los reportes); primero la noticia y el contexto, después el análisis y al final la recomendación de fantasy; tono experto, cercano, claro y sin relleno; nada de nombres de otras marcas o medios.
 Título ES base: "${tEs}" · Título EN base: "${tEn}" (puedes mejorarlos, mantén la pregunta, el nombre y la semana; máximo 70 caracteres).
 Responde SOLO JSON: {"es":{"titulo":"","descripcion":"máx 155 caracteres","respuesta":"2 o 3 oraciones que responden directo la pregunta","secciones":[{"h2":"","texto":"90 a 140 palabras"}],"fantasy":{"veredicto":"START|SIT|FLEX|AGRÉGALO|ESPERA|VENDE|COMPRA|AGUANTA","texto":"70 a 110 palabras: qué hacer exactamente en PPR, Half y STD"},"faq":[{"q":"","a":""}],"palabras":["5 búsquedas reales que este texto responde"]},"en":{mismas llaves en inglés; veredicto en inglés: START|SIT|FLEX|ADD|WAIT|SELL|BUY|HOLD}}. Exactamente 3 secciones y 3 preguntas frecuentes por idioma.
 DATOS:
