@@ -1,6 +1,45 @@
 {
   "version": "FX v3",
   "semanas": {
+    "6": {
+      "n": 309,
+      "maeFX": 4.58,
+      "maeRef": 4.44,
+      "porPos": {
+        "QB": {
+          "n": 27,
+          "spearmanFX": 0.375,
+          "spearmanRef": 0.513
+        },
+        "RB": {
+          "n": 60,
+          "spearmanFX": 0.567,
+          "spearmanRef": 0.629
+        },
+        "WR": {
+          "n": 102,
+          "spearmanFX": 0.67,
+          "spearmanRef": 0.628
+        },
+        "TE": {
+          "n": 65,
+          "spearmanFX": 0.451,
+          "spearmanRef": 0.456
+        },
+        "K": {
+          "n": 27,
+          "spearmanFX": -0.04,
+          "spearmanRef": -0.08
+        },
+        "DEF": {
+          "n": 28,
+          "spearmanFX": -0.08,
+          "spearmanRef": -0.016
+        }
+      },
+      "cerrada": true,
+      "fecha": "2026-10-26T22:35:13.912Z"
+    },
     "7": {
       "n": 285,
       "maeFX": 4.42,
