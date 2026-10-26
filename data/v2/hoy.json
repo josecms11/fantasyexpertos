@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-26T06:26:15.469Z",
-  "ultimaIA": "2026-10-26T05:14:01.287Z",
+  "actualizado": "2026-10-26T07:23:38.939Z",
+  "ultimaIA": "2026-10-26T07:23:38.939Z",
   "semana": 8,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,105 +13,27 @@
   ],
   "noticias": [
     {
-      "id": "n20261026051403",
-      "fecha": "2026-10-26T05:14:01.287Z",
+      "id": "n20261026072304",
+      "fecha": "2026-10-26T07:23:38.939Z",
       "semana": 8,
-      "titulo": "Kenneth Walker III desacelera su producción y exige cautela",
+      "titulo": "Fernando Mendoza emerge como opción de reclamo en waivers",
       "claves": [
-        "Registró un partido sumamente discreto durante la semana siete",
-        "Aun proyectando 21.1 puntos PPR genera dudas su eficiencia reciente",
-        "La ofensiva priorizó el pase reduciendo su volumen de acarreos"
+        "Las Vegas considera cambio de mariscal titular",
+        "Klint Kubiak evalúa la decisión tras derrotas",
+        "Atractivo inmediato para ligas formato Superflex"
       ],
-      "contexto": "El corredor de Seattle tuvo un encuentro callado en la semana siete, donde el plan de juego favoreció abiertamente el ataque aéreo sobre el terrestre. Aunque Seattle se llevó la victoria, Walker III batalla para sostener el impacto terrestre frente a defensivas que saturan la caja de pcheo, reduciendo su promedio de yardas por acarreo en semanas consecutivas.",
-      "fantasy": "Si bien mantiene una proyección alta de 21.1 puntos PPR para la semana ocho gracias a su rol de goline, el volumen puro de acarreos ha caído. En ligas estándar o PPR no lo dejes en la banca si no tienes mejores opciones, pero ajústale las expectativas y considéralo un SIT o arranque de bajo piso en duelos desfavorables.",
-      "equipo_impacto": "El incremento en el juego aéreo resta oportunidades de acarreo directo a Walker, aunque mantiene valor en situaciones de yardaje corto e interior de la zona roja.",
-      "accion": "Evalúa tus opciones y de preferencia sienta o modera expectativas con Kenneth Walker III esta semana.",
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "SEA",
-      "equipos": [
-        "SEA",
-        "KC"
-      ],
-      "jugadores": [
-        "8151"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261026051404",
-      "fecha": "2026-10-26T05:14:01.287Z",
-      "semana": 8,
-      "titulo": "Greg Dulcich surge como reclamo atractivo en el alambre",
-      "claves": [
-        "Despierta el interés de analistas tras sus destellos ofensivos recientes",
-        "Representa una solución valiosa para la golpeada posición de ala cerrada",
-        "Gana participación importante en el esquema aéreo de su equipo"
-      ],
-      "contexto": "El ala cerrada de Denver se ha convertido en una sorpresa agradable tras mostrar una química creciente dentro del sistema aéreo de su conjunto. Con el ataque buscando armas confiables en pases de trayectoria intermedia, Dulcich ha aprovechado los espacios para sumar recepciones importantes y posicionarse como un objetivo clave en momentos clave del encuentro.",
-      "fantasy": "En un panorama repleto de lesiones y bajas en la posición de ala cerrada, Dulcich se perfila como una de las mejores adiciones disponibles en el alambre de waivers. Es ideal para mánagers en ligas de doce o más equipos que necesitan cubrir la posición esta semana o buscar una opción con margen de crecimiento constante.",
-      "equipo_impacto": "Su capacidad para estirar el campo por el centro le brinda al mariscal un válvula de escape segura, distribuyendo mejor el volumen de pases en la ofensiva.",
-      "accion": "Reclama a Greg Dulcich de inmediato en el alambre de waivers para reforzar tu ala cerrada.",
+      "contexto": "Tras hilar cuatro derrotas consecutivas, el entrenador de los Raiders, Klint Kubiak, declaró que están analizando todas las opciones para corregir el rumbo, incluyendo darle la titularidad al novato Fernando Mendoza. La inconsistencia del ataque aéreo en Las Vegas abre la puerta para un cambio bajo el centro que podría concretarse de cara a los próximos compromisos.",
+      "fantasy": "Mendoza es un reclamo prioritario en waivers para ligas Superflex y de dos mariscales de campo. Si se confirma su titularidad, adquirirá valor inmediato por el simple volumen de pases. En ligas tradicionales de un solo QB no es necesario gastar presupuesto por él, pero vale la pena monitorear su desarrollo como reserva profundo si la ofensiva logra encenderse.",
+      "equipo_impacto": "Un cambio de mariscal buscaría encender el ataque de Las Vegas, modificando la distribución de pases para receptores y alas cerradas.",
+      "accion": "Solicita a Fernando Mendoza en waivers si juegas en formato Superflex.",
       "etiqueta": "WAIVER",
       "impacto": "SUBE",
-      "equipo": "DEN",
+      "equipo": "LV",
       "equipos": [
-        "DEN",
-        "MIA"
+        "LV"
       ],
       "jugadores": [
-        "8172"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261026051406",
-      "fecha": "2026-10-26T05:14:01.287Z",
-      "semana": 8,
-      "titulo": "Garrett Wilson externa frustración ante la ineficacia del pase",
-      "claves": [
-        "Protagonizó momentos de tensión en la banca por la mala ejecución",
-        "Aclaró que sus gritos responden al deseo de ganar partidos",
-        "El bajo nivel del ataque aéreo merma su techo semanal fantasy"
-      ],
-      "contexto": "El receptor de los Jets fue captado por las cámaras expresando su molestia en la banca durante la derrota de su equipo ante los Dolphins. Tras el partido, Wilson aclaró que su reacción no fue un ataque personal sino la pura frustración por el rendimiento ineficaz del juego aéreo, el cual no logra carburar consistentemente esta temporada.",
-      "fantasy": "Las constantes fallas en la posición de mariscal limitan drásticamente el impacto fantasy de Wilson. Aunque posee el talento para ser un WR1 de élite, la inconsistencia del sistema te obliga a ser prudente. En la semana ocho debes considerarlo un SIT o un WR3 de bajo piso en matchups difíciles.",
-      "equipo_impacto": "La falta de química en el ataque aéreo genera fricción interna y complica la sostenibilidad de las series ofensivas del equipo.",
-      "accion": "Sienta a Garrett Wilson si cuentas con receptores más estables para esta jornada.",
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "NYJ",
-      "equipos": [
-        "NYJ",
-        "MIA"
-      ],
-      "jugadores": [
-        "8146"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261026051407",
-      "fecha": "2026-10-26T05:14:01.287Z",
-      "semana": 8,
-      "titulo": "Drake London llega en duda tras sufrir golpe en la cabeza",
-      "claves": [
-        "Aparece en el reporte con estatus cuestionable por molestia en la cabeza",
-        "Mantiene proyección de 17 puntos PPR si logra la alta médica",
-        "Mánagers deben tener preparado un sustituto inmediato en la banca"
-      ],
-      "contexto": "El receptor estrella de Atlanta fue incluido en el reporte oficial de lesiones como cuestionable debido a una conmoción / golpe en la cabeza sufrido durante los entrenamientos recientes. El cuerpo médico del equipo evaluará su progreso día a día para determinar si está en condiciones de tomar el campo durante el fin de semana.",
-      "fantasy": "Con una proyección semanal de 17.0 puntos PPR, London es un receptor de calibre titular cuando está sano. Sin embargo, su estatus oficial te obliga a extremar precauciones. Debes monitorear los informes de práctica y asegurar un reemplazo de tarde o noche en tu banca en caso de que finalmente sea descartado.",
-      "equipo_impacto": "Si London no juega, el volumen de pases se concentrará en las alas cerradas y corredores del equipo, disminuyendo el techo ofensivo general.",
-      "accion": "Prepara un sustituto en tu banca por si Drake London no pasa el protocolo médico.",
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "ATL",
-      "equipos": [
-        "ATL"
-      ],
-      "jugadores": [
-        "8112"
+        "13269"
       ],
       "menciona": []
     }
@@ -294,15 +216,15 @@
     "4037",
     "5849",
     "11539",
-    "11624",
     "9482",
+    "11624",
     "8129",
     "8122",
     "10213",
     "11563",
     "11576",
-    "8132",
     "1166",
+    "8132",
     "1433"
   ],
   "soltados": [
@@ -319,23 +241,23 @@
     "9480",
     "9482",
     "11435",
-    "11439",
     "8154",
+    "11439",
     "JAX",
     "8134",
     "5012",
     "13330",
     "1166",
-    "12533",
     "9756",
+    "12533",
+    "CLE",
     "11625",
-    "7567",
     "9500"
   ],
   "duelo": {
-    "a": "Puka Nacua",
-    "b": "Amon-Ra St. Brown",
-    "veredicto": "Arranca a Puka Nacua por encima de Amon-Ra St. Brown en la semana 8; su volumen proyectado de 21.8 puntos PPR supera notablemente los 17.2 de St. Brown, garantizándote un piso y techo superiores."
+    "a": "Bijan Robinson",
+    "b": "Jonathan Taylor",
+    "veredicto": "Arranca a Bijan Robinson. Presenta un volumen superior tanto por tierra como por aire y proyecta 21.1 puntos PPR, superando los 18.7 de Jonathan Taylor en un duelo terrestre con mejor libreto de juego."
   },
   "fuentes": [
     "Sleeper",

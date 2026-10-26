@@ -1,10 +1,21 @@
 {
-  "fecha": "2026-10-26T06:26:16.156Z",
+  "fecha": "2026-10-26T07:25:36.863Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.1s] YouTube: 0 nuevos, 17 en total",
-    "[0.8s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[1.5s] ESPN: lesiones 799 · noticias 50",
-    "[2.3s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 278 · semana de juego 8 · IA usada hoy 5/40"
+    "[0.2s] YouTube: 15 nuevos, 17 en total",
+    "[1.0s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[2.5s] ESPN: lesiones 799 · noticias 50",
+    "[3.5s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[28.0s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
+    "[119.4s] IA OK con gemini-3.6-flash",
+    "[119.4s] Descartada: Jaxon Smith-Njigba explota y se consolida como receptor élite → duplicada",
+    "[119.4s] Descartada: Zay Flowers emerge como opción estelar en el ataque aéreo → duplicada",
+    "[119.4s] Descartada: Derrick Henry frena su ritmo tras un tropiezo severo → duplicada",
+    "[119.4s] Descartada: Daniel Jones conserva la titularidad pero ofrece nula confianza → duplicada",
+    "[119.4s] Descartada: Lamar Jackson queda descartado oficialmente por lesión de tobillo → duplicada",
+    "[119.4s] Descartada: Jahmyr Gibbs comanda las proyecciones terrestres en Semana 8 → duplicada",
+    "[119.4s] Descartada: Brock Purdy pierde dinamismo tras doloroso tropiezo ante Atlanta → duplicada",
+    "[119.4s] Noticias nuevas verificadas: 1",
+    "[120.5s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 279 · semana de juego 8 · IA usada hoy 6/40"
   ]
 }
