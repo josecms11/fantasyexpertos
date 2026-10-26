@@ -366,19 +366,19 @@ function inicio() {
   </div>
   <div class="ticker"><div class="tag"><i></i>ÚLTIMA HORA</div><div class="view"><div class="ticker-track">${tickerItems()}${tickerItems()}</div></div></div>
   <div class="wrap">
-    <section class="block"><div class="head"><div><h2>Partidos de la semana ${esc(G[0] ? G[0].semana : semActual())}</h2><p class="hsub">En vivo primero, luego los próximos. Marcador, posesión y las figuras de fantasy de cada lado.</p></div><a class="all" href="#/partidos">Todas las semanas ›</a></div><div id="home-matches">${homeMatches()}</div></section>
-    ${SEMNUM ? `<section class="block lideres-home"><div class="head"><div><h2>Líderes de la semana ${SEMNUM}</h2><p class="hsub">Los que más puntos ${FMTS[FMT]} hicieron, por posición. Toca uno para ver su ficha.</p></div><a class="all" href="#/lideres">Todos los líderes ›</a></div>${marqueeLideres()}</section>` : ''}
-    ${mas.length ? `<section class="block"><div class="head"><div><h2>Más noticias</h2><p class="hsub">Lo que mueve tus alineaciones, verificado contra el reporte oficial.</p></div><a class="all" href="#/noticias">Todas las noticias ›</a></div><div class="news stagger">${mas.map(n => newsCard(n)).join('')}</div></section>` : ''}
-    <section class="block grid g2">
+    <section class="block" data-chip="${enVivo() ? enVivo() + ' EN VIVO' : G.length ? G.filter(g => g.estado === 'post').length + '/' + G.length + ' FINAL' : 'S' + semActual()}" data-vivo="${enVivo() ? 1 : ''}"><div class="head"><div><h2>Partidos de la semana ${esc(G[0] ? G[0].semana : semActual())}</h2><p class="hsub">En vivo primero, luego los próximos. Marcador, posesión y las figuras de fantasy de cada lado.</p></div><a class="all" href="#/partidos">Todas las semanas ›</a></div><div id="home-matches">${homeMatches()}</div></section>
+    ${SEMNUM ? `<section class="block lideres-home" data-chip="S${SEMNUM} · ${FMTS[FMT]}"><div class="head"><div><h2>Líderes de la semana ${SEMNUM}</h2><p class="hsub">Los que más puntos ${FMTS[FMT]} hicieron, por posición. Toca uno para ver su ficha.</p></div><a class="all" href="#/lideres">Todos los líderes ›</a></div>${marqueeLideres()}</section>` : ''}
+    ${mas.length ? `<section class="block" data-chip="+${N.filter(n => Date.now() - Date.parse(n.fecha || 0) < 864e5).length} HOY"><div class="head"><div><h2>Más noticias</h2><p class="hsub">Lo que mueve tus alineaciones, verificado contra el reporte oficial.</p></div><a class="all" href="#/noticias">Todas las noticias ›</a></div><div class="news stagger">${mas.map(n => newsCard(n)).join('')}</div></section>` : ''}
+    <section class="block grid g2" data-chip="ÚLTIMAS 24 H">
       <div class="card"><div class="head"><h3>▲ Subiendo</h3><a class="all" href="#/tendencias">Todo ›</a></div><p class="sub">Los más agregados en ligas en las últimas 24 horas.</p>
         <div class="plist">${D.agregados.slice(0, 6).map(id => J[id] && prow(J[id], `<span class="bar"><i style="width:${pct(J[id].add, 'add')}%"></i></span>${fxPill(J[id])}`)).join('')}</div></div>
       <div class="card"><div class="head"><h3 style="color:var(--bad)">▼ Bajando</h3><a class="all" href="#/tendencias">Todo ›</a></div><p class="sub">A quién están soltando en las últimas 24 horas.</p>
         <div class="plist">${D.soltados.slice(0, 6).map(id => J[id] && prow(J[id], `<span class="bar down"><i style="width:${pct(J[id].drop, 'drop')}%"></i></span>${fxPill(J[id])}`)).join('')}</div></div>
     </section>
     ${duelo()}
-    <section class="block"><div class="head"><div><h2>Rankings de la semana ${semActual()}</h2><p class="hsub">Top 3 por proyección ${FMTS[FMT]}, solo jugadores que sí juegan.</p></div><a class="all" href="#/posicion/QB">Rankings ›</a></div><div class="grid g5 stagger">${hubs}</div></section>
+    <section class="block" data-chip="S${semActual()} · ${FMTS[FMT]}"><div class="head"><div><h2>Rankings de la semana ${semActual()}</h2><p class="hsub">Top 3 por proyección ${FMTS[FMT]}, solo jugadores que sí juegan.</p></div><a class="all" href="#/posicion/QB">Rankings ›</a></div><div class="grid g5 stagger">${hubs}</div></section>
     ${fxtv()}
-    <section class="block"><div class="head"><div><h2>Los 32 equipos</h2><p class="hsub">Récord, rival de la semana, calendario y plantel de fantasy.</p></div><a class="all" href="#/equipos">Ver todos ›</a></div>${teamGrid()}</section>
+    <section class="block" data-chip="${G.length ? G.length * 2 : 32} JUEGAN · S${semActual()}"><div class="head"><div><h2>Los 32 equipos</h2><p class="hsub">Récord, rival de la semana, calendario y plantel de fantasy.</p></div><a class="all" href="#/equipos">Ver todos ›</a></div>${teamGrid()}</section>
   </div></div>`;
 }
 const tickerItems = () => todasNoticias().slice(0, 14).map(n => `<a href="#/noticia/${n.id}"><i class="tk ${n.etiqueta}">${esc(ETQ[n.etiqueta])}</i>${esc(n.titulo)}</a>`).join('');
@@ -394,7 +394,7 @@ function duelo() {
       <span class="pk-s"><span><b class="n">${n1(j.p ?? j.pEst)}</b><i>PROY</i></span><span><b>${r ? (r.home ? 'vs ' : '@ ') + r.opp : 'BYE'}</b><i>${pintaEstrellas(r && estrellas(r.opp, j.pos))}</i></span><span><b class="n">${n1(u3.length ? u3.reduce((x, y) => x + y, 0) / u3.length : null)}</b><i>ÚLT. 3</i></span></span>
       <span class="pk-cta">Arranco a ${esc(apellido(j.n))}</span><small class="pk-res"></small></button>`; };
   const nombres = P.filter(j => j.team !== 'FA').sort((x, y) => y.pEst - x.pEst).slice(0, 320);
-  return `<section class="block" id="startsit"><div class="head"><div><h2>${fxLogo(26)} Duelo del día: ¿a quién arrancas?</h2><p class="hsub">Dos ${a.pos} con proyección parecida y un solo lugar en tu alineación. Elige, y te mostramos el veredicto de los expertos y el porqué.</p></div></div>
+  return `<section class="block" id="startsit" data-chip="1 VS 1"><div class="head"><div><h2>${fxLogo(26)} Duelo del día: ¿a quién arrancas?</h2><p class="hsub">Dos ${a.pos} con proyección parecida y un solo lugar en tu alineación. Elige, y te mostramos el veredicto de los expertos y el porqué.</p></div></div>
     <div class="duelo" data-fx="${fx === a ? 'a' : 'b'}">${lado(a, 'a')}<span class="vs">VS</span>${lado(b, 'b')}</div>
     <div class="verdict" id="verdict"><b>${fxLogo(20)} FANTASY EXPERTOS ARRANCA A ${esc(fx.n).toUpperCase()}</b><p>${esc(d.veredicto && find(d.a) && find(d.b) ? d.veredicto : `Proyecta ${n1(fx.p ?? fx.pEst)} pts contra ${n1((fx === a ? b : a).p ?? (fx === a ? b : a).pEst)} y tiene ${veredicto(fx).e && veredicto(fx).e.n >= 3 ? 'el mejor matchup' : 'más volumen'} esta semana.`)}</p>
       <span class="actions"><a class="btn" href="#/comparar/${a.id}/${b.id}">Ver comparación completa</a></span></div>
@@ -767,7 +767,7 @@ const videos = () => (D.videos.videos || []).slice().sort((a, b) => Date.parse(b
 const podcast = () => D.redes.spotify ? `<div class="pod"><iframe title="Podcast Fantasy Expertos en Spotify" src="https://open.spotify.com/embed/show/${esc(D.redes.spotify.show)}?theme=0" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>` : '';
 const tvBloque = V => V.length ? `<div class="tv">${vidCard(V[0], true)}<div class="tv-side">${V.slice(1, 4).map(v => vidCard(v)).join('')}</div></div>` : `<a class="empty" href="${esc(D.redes.youtube ? D.redes.youtube.url : '#')}" target="_blank" rel="noopener">Mira nuestros videos en YouTube ›</a>`;
 function fxtv() {
-  return `<section class="block"><div class="head"><div><h2>FX TV</h2><p class="hsub">El podcast y lo más reciente del canal. Se reproduce aquí mismo.</p></div><a class="all" href="#/media">Todo el contenido ›</a></div>${podcast()}<div style="margin-top:18px">${tvBloque(videos())}</div></section>`;
+  return `<section class="block" data-chip="▶ NUEVO"><div class="head"><div><h2>FX TV</h2><p class="hsub">El podcast y lo más reciente del canal. Se reproduce aquí mismo.</p></div><a class="all" href="#/media">Todo el contenido ›</a></div>${podcast()}<div style="margin-top:18px">${tvBloque(videos())}</div></section>`;
 }
 function media() {
   titulo('FX TV');
