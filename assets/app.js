@@ -526,7 +526,7 @@ function jugador(id) {
         <div class="actions">${vecinos[0] ? `<a class="btn" href="#/comparar/${id}/${vecinos[0].id}">⚔ Comparar</a>` : ''}<a class="btn ghost" href="#/posicion/${j.pos}">Ranking ${esc(j.pos)}</a>${botonSeguir(id)}</div>
       </div>
     </div>
-    ${st !== 'Sano' || j.les ? `<div class="alert ${st}"><b>${st === 'Duda' ? 'EN DUDA' : st === 'Fuera' ? (fueraTemp(j) ? 'EN RESERVA DE LESIONADOS' : 'FUERA') : 'REPORTE MÉDICO'}${parte(j) ? ' · ' + esc(parte(j)).toUpperCase() : ''}</b>
+    ${st !== 'Sano' || (j.les && (j.les.detalle || j.les.tipo)) ? `<div class="alert ${st}"><b>${st === 'Duda' ? 'EN DUDA' : st === 'Fuera' ? (fueraTemp(j) ? 'EN RESERVA DE LESIONADOS' : 'FUERA') : 'REPORTE MÉDICO'}${parte(j) ? ' · ' + esc(parte(j)).toUpperCase() : ''}</b>
       <p>${j.les ? [tr(j.les.detalle), tr(j.les.lado)].filter(Boolean).map(esc).join(' · ') : ''}${j.les && j.les.regreso ? ` · Regreso estimado: <b>${esc(fechaC(j.les.regreso))}</b>` : ''}${j.les && j.les.fecha ? ` · Reporte del ${esc(fechaC(j.les.fecha))}` : ''}${!j.les ? esc(j.injNota || 'Sin detalle adicional en el reporte oficial.') : ''}</p></div>` : ''}
     <section class="block" style="padding-top:22px"><div class="ssfx ${v.v}">
       <div class="ss-head">${fxLogo(54)}<div><small>START / SIT FX · SEMANA ${esc(semActual())}</small><b>${VT[v.v]}</b>${sello('mini')}</div>

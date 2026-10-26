@@ -26,7 +26,7 @@
         if (h && s.dataset.balon && !h.querySelector('.fx-spin')) h.insertAdjacentHTML('beforeend', `<span class="fx-spin" aria-hidden="true">${BALON}</span>`);
         [...s.querySelectorAll(':scope .card, :scope .story, :scope .match, :scope .hub, :scope .plist > *, :scope .news > *')].slice(0, 14).forEach((c, n) => c.style.setProperty('--d', (movil() ? n * 35 : n * 60) + 'ms'));
       }
-      if (quieto || re) s.classList.add('vis', 'ya'); else if (!s.classList.contains('vis')) io.observe(s);
+      if (quieto || re) s.classList.add('vis', 'ya');
     });
     if (!movil()) pintaRiel(); else pintaHud();
     onScroll();
@@ -50,8 +50,10 @@
   }
 
   let ultimo = -1, tick = false;
+  // Revela por posición (no depende de IntersectionObserver, que falla con contenedores recortados)
+  const revela = () => { const lim = innerHeight * .95; secs.forEach(s => { if (!s.classList.contains('vis') && s.getBoundingClientRect().top < lim) s.classList.add('vis'); }); };
   function onScroll() {
-    tick = false; if (!secs.length) return;
+    tick = false; if (!secs.length) return; revela();
     const y = scrollY + innerHeight * .5, max = document.documentElement.scrollHeight - innerHeight;
     let i = 0; secs.forEach((s, n) => { if (s.getBoundingClientRect().top + scrollY <= y) i = n; });
     const p = max > 0 ? Math.min(1, scrollY / max) : 0;
