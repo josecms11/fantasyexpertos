@@ -1,6 +1,6 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-26T10:40:04.211Z",
+  "actualizado": "2026-10-26T11:22:24.994Z",
   "ultimaIA": "2026-10-26T09:36:50.397Z",
   "semana": 8,
   "semanaStats": 7,
@@ -236,17 +236,17 @@
     "13298",
     "11435",
     "3271",
-    "12718",
-    "5995",
     "13276",
+    "5995",
+    "12718",
     "13294",
     "6650",
     "11539",
-    "4037",
     "5849",
+    "4037",
     "9482",
-    "11624",
     "8129",
+    "11624",
     "10213",
     "8122",
     "11563",
@@ -283,11 +283,11 @@
     "9500"
   ],
   "duelo": {
-    "a": "Josh Allen",
-    "b": "Drake Maye",
-    "veredicto": "Arranca a Josh Allen. Su techo explosivo y proyección de 24 puntos PPR superan a Maye (22.3), garantizando mayor certeza y volumen semanal en enfrentamientos clave para tu alineación titular."
+    "a": "Jared Goff",
+    "b": "Brock Purdy",
+    "veredicto": "Afronta la semana 8 arrancando a Jared Goff (19.5 pts) sobre Brock Purdy (19.3 pts). Goff proyecta mayor estabilidad aérea en un duelo favorable, mientras que Purdy viene de tener severos problemas de efectividad ofensiva."
   },
-  "dueloFecha": null,
+  "dueloFecha": "2026-10-26T11:22:24.994Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
