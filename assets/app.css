@@ -2292,3 +2292,8 @@ section.block{padding-top:clamp(36px,4vw,64px)}
   .top-row .fmt button{padding:0 7px}
 }
 @media (max-width:380px){.top-row .search{display:none}}
+/* Info (i): la explicación flota por encima de todo, nunca detrás de otra tarjeta */
+.fx-info span{display:none!important}
+.fx-tip{position:fixed;z-index:1000;width:min(300px,86vw);padding:12px 14px;border-radius:12px;background:#0F1E16;border:1px solid rgba(91,196,137,.45);box-shadow:0 14px 34px rgba(0,0,0,.55);color:var(--soft);font:400 13.5px/1.5 var(--f);pointer-events:none;opacity:0;transform:translateY(4px);transition:opacity .15s,transform .15s}
+.fx-tip.on{opacity:1;transform:none}
+.fx-tip b{display:block;margin-bottom:6px;font-family:var(--fp);font-weight:400;font-size:7px;color:var(--gold)}

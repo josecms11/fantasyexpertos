@@ -248,6 +248,17 @@ const pisoTecho = j => { const u = (j.log || []).filter(l => l.f && l.f[FMT] != 
 const sello = (x = '') => `<span class="fx-tech ${x}">${fxLogo(12)}<b>FX TECH</b> ANALYZER</span>`;
 /* Ventaja FX: cada sección trae un extra hecho con nuestros sistemas. Botón (i) explica qué es; el contenido es PRO. */
 const infoFX = t => `<button type="button" class="fx-info" aria-label="${tx('¿Qué es esto?', 'What is this?')}">i<span role="tooltip">${t}</span></button>`;
+let _tip = null;
+const muestraTip = btn => { const sp = btn.querySelector('span'); if (!sp) return; if (!_tip) { _tip = document.createElement('div'); _tip.className = 'fx-tip'; _tip.setAttribute('role', 'tooltip'); document.body.appendChild(_tip); }
+  _tip.innerHTML = `<b>★ FX PRO</b>${sp.innerHTML}`; const r = btn.getBoundingClientRect(), w = Math.min(300, innerWidth * .86), x = Math.max(12, Math.min(innerWidth - w - 12, r.left + r.width / 2 - w / 2));
+  _tip.style.left = x + 'px'; _tip.classList.add('on'); const h = _tip.offsetHeight; _tip.style.top = (r.bottom + 10 + h < innerHeight ? r.bottom + 10 : Math.max(8, r.top - 10 - h)) + 'px'; };
+const ocultaTip = () => { if (_tip) _tip.classList.remove('on'); };
+document.addEventListener('mouseover', e => { const b = e.target.closest && e.target.closest('.fx-info'); if (b) muestraTip(b); });
+document.addEventListener('mouseout', e => { if (e.target.closest && e.target.closest('.fx-info')) ocultaTip(); });
+document.addEventListener('focusin', e => { const b = e.target.closest && e.target.closest('.fx-info'); if (b) muestraTip(b); });
+document.addEventListener('focusout', e => { if (e.target.closest && e.target.closest('.fx-info')) ocultaTip(); });
+document.addEventListener('click', e => { const b = e.target.closest && e.target.closest('.fx-info'); if (b) { e.preventDefault(); e.stopPropagation(); muestraTip(b); } }, true);
+addEventListener('scroll', ocultaTip, { passive: true }); addEventListener('hashchange', ocultaTip);
 const proBloque = (titulo, info, html, gancho) => `<section class="block plusfx" data-chip="★ ${tx('VENTAJA FX', 'FX EDGE')}"><div class="head"><div><h2>${titulo} ${infoFX(info)}</h2></div><a class="all" href="#/premium">${tx('Todo PRO', 'All PRO')} ›</a></div><div class="card plus-in"><div class="plus-sello">${sello()}</div>${zonaPrem(html, gancho)}</div></section>`;
 const filaPlus = (j, der, sub) => `<a class="cg-j" href="#/jugador/${j.id}" data-hover-j="${j.id}">${helmet(j.team, j.num, 30)}<span class="cg-jn"><b>${esc(j.n)}</b><small>${sub}</small></span>${der}</a>`;
 function plusLesion() {
