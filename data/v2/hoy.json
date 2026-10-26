@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-25T23:40:19.753Z",
-  "ultimaIA": "2026-10-25T21:45:24.931Z",
+  "actualizado": "2026-10-26T00:03:27.576Z",
+  "ultimaIA": "2026-10-26T00:03:27.576Z",
   "semana": 8,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,58 +13,55 @@
   ],
   "noticias": [
     {
-      "id": "n20261025214501",
-      "fecha": "2026-10-25T21:45:24.931Z",
+      "id": "n20261026000303",
+      "fecha": "2026-10-26T00:03:27.576Z",
       "semana": 8,
-      "titulo": "Bucky Irving explota con doblete y exige titularidad fija",
+      "titulo": "Emanuel Wilson destaca en waivers para semana ocho",
       "claves": [
-        "Anotó dos touchdowns terrestres en la paliza ante Carolina.",
-        "Baker Mayfield jugó limitado por lesión en el pulgar.",
-        "Kenny Gainwell llega entre algodones por molestia de cadera."
+        "Figura entre los jugadores más agregados de la semana.",
+        "Oportunidad de oro con Kaleb Johnson descartado por los Packers.",
+        "Alternativa atractiva para plantillas necesitadas de volumen terrestre."
       ],
-      "contexto": "Los Tampa Bay Buccaneers aplastaron 43-13 a los Panthers apoyándose en una exhibición terrestre dominante. Con Baker Mayfield lidiando con un pulgar dislocado y un guante protector en su mano de lanzar, el equipo decidió no sobrecargarlo por aire. Bucky Irving tomó el control del backfield anotando dos touchdowns terrestres y liderando el plan de juego ofensivo de forma categórica.",
-      "fantasy": "Irving sube a la categoría de RB2 sólido con aspiraciones de RB1 en formatos PPR y estándar. En ligas medianas y profundas, se convierte en un titular indiscutible. Mientras Kenny Gainwell aparece con designación de cuestionable por molestias en la cadera, el novato acapara las oportunidades de zona roja, convirtiéndose en una pieza imprescindible para los playoffs de fantasy.",
-      "equipo_impacto": "Tampa Bay demostró que puede controlar el reloj y ganar mediante el juego terrestre. Esto alivia la presión sobre Mayfield y disminuye la dependencia de receptores lesionados en el esquema de los Buccaneers.",
-      "accion": "Mete a Bucky Irving directamente en tu alineación titular como un RB2 de gran impacto.",
-      "etiqueta": "START",
+      "contexto": "Tras el apretado choque divisional donde los Lions vencieron 20-17 a Green Bay con gol de campo de Jake Bates, el panorama del backfield de los Packers se acomoda. Con Kaleb Johnson catalogado oficialmente como fuera por decisión técnica, Emanuel Wilson ha visto crecer su interés y se ubica entre las piezas más reclamadas en el alambre de waivers de cara a la semana ocho.",
+      "fantasy": "Reclámalo de inmediato en ligas de doce o más participantes, especialmente en formatos con formato PPR profundo o dinastía. Wilson ofrece valor inmediato como seguro premium y posible opción de flex si el comité terrestre le otorga trabajo en situaciones de pase. Es una adición barata antes de que aumente el costo de adquisición si su cuota de jugadas se incrementa.",
+      "equipo_impacto": "Su incorporación regular amplía las variantes terrestres de Green Bay, permitiendo refrescar el ataque por tierra y aportando frescura física en situaciones clave de corto yardaje durante las segundas mitades.",
+      "accion": "Gasta prioridad de reclamo en Emanuel Wilson desde la agencia libre.",
+      "etiqueta": "WAIVER",
       "impacto": "SUBE",
-      "equipo": "TB",
+      "equipo": "GB",
       "equipos": [
-        "TB",
-        "CAR"
+        "GB",
+        "DET",
+        "SEA"
       ],
       "jugadores": [
-        "11584",
-        "4892",
-        "7567"
+        "11435"
       ],
       "menciona": []
     },
     {
-      "id": "n20261025214505",
-      "fecha": "2026-10-25T21:45:24.931Z",
+      "id": "n20261026000304",
+      "fecha": "2026-10-26T00:03:27.576Z",
       "semana": 8,
-      "titulo": "Christian McCaffrey enciende alarmas por molestia en pantorrilla",
+      "titulo": "Tony Pollard emerge como arranque confiable en fantasy",
       "claves": [
-        "Aparece como cuestionable por un problema de pantorrilla.",
-        "Salió al vestidor pero regresó ante Atlanta en semana siete.",
-        "Expertos recomiendan retenerlo en lugar de malbaratarlo en cambios."
+        "Consolidado como uno de los grandes ganadores de la jornada.",
+        "Asume la carga principal del backfield con Tyjae Spears fuera.",
+        "Sólido volumen terrestre pese a la derrota ante Cleveland."
       ],
-      "contexto": "San Francisco sufrió su primera derrota del año 29-20 frente a los Falcons en un partido donde Christian McCaffrey visitó el vestidor con una molestia en el muslo antes de regresar al emparrillado. El reporte oficial para la semana ocho coloca a McCaffrey como cuestionable por una dolencia en la pantorrilla, desatando nerviosismo generalizado dentro de la comunidad de fantasy football.",
-      "fantasy": "El valor de McCaffrey se mantiene neutral pero con tendencia volátil en formatos PPR y ligas competitivas. Aunque la tentación de canjearlo por pánico es alta, los expertos coinciden en retenerlo como un activo élite intocable. Si es activado el domingo, debes arrancarlo como un RB1 imprescindible, pero monitoreando estrictamente los reportes previos al juego.",
-      "equipo_impacto": "El ataque terrestre y aéreo de San Francisco gira en torno a McCaffrey. Con Deebo Samuel Sr. y Mike Evans descartados por lesiones, los 49ers dependen críticamente de la disponibilidad de su corredor estrella.",
-      "accion": "Conserva a Christian McCaffrey en tu nómina y vigila su estatus activo antes del inicio del juego.",
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "SF",
+      "contexto": "A pesar de la dolorosa caída 27-24 de los Titans a manos de Cleveland, Tony Pollard demostró que está en excelente ritmo individual, siendo catalogado como uno de los grandes ganadores de la semana siete. Su papel en la ofensiva de Tennessee se vuelve aún más crucial considerando que Tyjae Spears se encuentra fuera por lesión de rodilla, dejándole vía libre para capitalizar toques.",
+      "fantasy": "Colócalo con confianza como RB2 sólido o Flex de altísima gama en todos los formatos PPR y estándar. Con Spears fuera de combate, el porcentaje de jugadas de Pollard se mantendrá en niveles de corredor campana. Aprovecha este momento donde su volumen de toques y trabajo en zona roja le garantizan un piso de doce a quince puntos con enorme potencial de touchdown.",
+      "equipo_impacto": "La dependencia de Pollard libera de presión a los receptores abiertos de Tennessee, obligando a los apoyadores contrarios a morder engaños de play action en series ofensivas determinantes.",
+      "accion": "Alinea a Tony Pollard en tu puesto de corredor titular.",
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "TEN",
       "equipos": [
-        "SF",
-        "ATL"
+        "TEN",
+        "CLE"
       ],
       "jugadores": [
-        "4034",
-        "5872",
-        "2216"
+        "5967"
       ],
       "menciona": []
     }
@@ -79,12 +76,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "2133",
-      "estatus": "Fuera"
-    },
-    {
       "id": "8112",
       "estatus": "Duda"
+    },
+    {
+      "id": "2133",
+      "estatus": "Fuera"
     },
     {
       "id": "4866",
@@ -119,11 +116,11 @@
       "estatus": "Duda"
     },
     {
-      "id": "12518",
+      "id": "12514",
       "estatus": "Fuera"
     },
     {
-      "id": "12514",
+      "id": "12518",
       "estatus": "Fuera"
     },
     {
@@ -235,8 +232,8 @@
     "13150",
     "13424",
     "3271",
-    "12718",
     "13414",
+    "12718",
     "11435",
     "13298",
     "13296",
@@ -249,8 +246,8 @@
     "11539",
     "9482",
     "8122",
-    "11563",
     "13276",
+    "11563",
     "8129",
     "8132",
     "13317",
@@ -266,17 +263,17 @@
     "9511",
     "10235",
     "5927",
+    "3271",
     "11637",
     "9480",
     "3321",
     "11439",
-    "3271",
     "8154",
     "JAX",
     "9482",
+    "11435",
     "5012",
     "8134",
-    "11435",
     "1166",
     "13330",
     "7567",
@@ -288,7 +285,7 @@
   "duelo": {
     "a": "Jahmyr Gibbs",
     "b": "Bijan Robinson",
-    "veredicto": "Arranca a Jahmyr Gibbs. Proyecta 23 puntos PPR frente a los 21.1 de Bijan Robinson. Su rol explosivo en Detroit le otorga un techo más alto para ganar tu enfrentamiento en la semana ocho."
+    "veredicto": "Arranca a Jahmyr Gibbs sobre Bijan Robinson. Gibbs lidera las proyecciones de corredores con 23 puntos PPR tras el dramático triunfo ante Green Bay, respaldado por un rol estelar en zona roja y recepción de pases."
   },
   "fuentes": [
     "Sleeper",
