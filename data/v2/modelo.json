@@ -79,5 +79,22 @@
       "cerrada": false,
       "fecha": "2026-10-26T22:08:38.503Z"
     }
+  },
+  "params": {
+    "fecha": "2026-10-26T22:53:26.641Z",
+    "valores": {
+      "hl": 8,
+      "mEf": 30,
+      "mTd": 160,
+      "aPrev": 0.2
+    },
+    "error": 4.806,
+    "errorAntes": 4.828,
+    "semanas": [
+      3,
+      4,
+      5,
+      6
+    ]
   }
 }

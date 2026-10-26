@@ -1,6 +1,6 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-26T22:42:42.071Z",
+  "actualizado": "2026-10-26T22:53:26.656Z",
   "ultimaIA": "2026-10-26T17:07:19.473Z",
   "semana": 7,
   "semanaStats": 7,
@@ -569,19 +569,15 @@
       "estatus": "Fuera"
     },
     {
-      "id": "9226",
-      "estatus": "Fuera"
-    },
-    {
       "id": "8112",
       "estatus": "Duda"
     },
     {
-      "id": "2133",
+      "id": "9226",
       "estatus": "Fuera"
     },
     {
-      "id": "12508",
+      "id": "2133",
       "estatus": "Fuera"
     },
     {
@@ -593,15 +589,11 @@
       "estatus": "Duda"
     },
     {
+      "id": "12508",
+      "estatus": "Fuera"
+    },
+    {
       "id": "8155",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "7543",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "2216",
       "estatus": "Fuera"
     },
     {
@@ -609,11 +601,27 @@
       "estatus": "Fuera"
     },
     {
-      "id": "10229",
+      "id": "2216",
       "estatus": "Fuera"
     },
     {
+      "id": "11646",
+      "estatus": "Duda"
+    },
+    {
+      "id": "7543",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12501",
+      "estatus": "Duda"
+    },
+    {
       "id": "12514",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "10229",
       "estatus": "Fuera"
     },
     {
@@ -625,23 +633,7 @@
       "estatus": "Duda"
     },
     {
-      "id": "11646",
-      "estatus": "Duda"
-    },
-    {
-      "id": "12501",
-      "estatus": "Duda"
-    },
-    {
       "id": "13287",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "12481",
-      "estatus": "Duda"
-    },
-    {
-      "id": "4137",
       "estatus": "Fuera"
     },
     {
@@ -649,12 +641,28 @@
       "estatus": "Fuera"
     },
     {
-      "id": "7526",
+      "id": "5854",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "4137",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12481",
       "estatus": "Duda"
     },
     {
       "id": "11589",
       "estatus": "Fuera"
+    },
+    {
+      "id": "7526",
+      "estatus": "Duda"
+    },
+    {
+      "id": "12474",
+      "estatus": "Duda"
     },
     {
       "id": "5872",
@@ -665,23 +673,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12474",
-      "estatus": "Duda"
-    },
-    {
-      "id": "5854",
-      "estatus": "Fuera"
-    },
-    {
       "id": "5927",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "8142",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "11635",
       "estatus": "Fuera"
     },
     {
@@ -689,15 +681,23 @@
       "estatus": "Duda"
     },
     {
+      "id": "8142",
+      "estatus": "Fuera"
+    },
+    {
       "id": "4983",
       "estatus": "Fuera"
     },
     {
-      "id": "6819",
+      "id": "4177",
       "estatus": "Fuera"
     },
     {
-      "id": "4177",
+      "id": "11635",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "6819",
       "estatus": "Fuera"
     },
     {
