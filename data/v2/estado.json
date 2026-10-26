@@ -1,10 +1,25 @@
 {
-  "fecha": "2026-10-26T04:03:02.452Z",
+  "fecha": "2026-10-26T04:42:54.265Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.1s] YouTube: 0 nuevos, 17 en total",
+    "[0.2s] YouTube: 0 nuevos, 17 en total",
     "[0.8s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[2.6s] ESPN: lesiones 799 · noticias 50",
-    "[3.4s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 274 · semana de juego 8 · IA usada hoy 3/40"
+    "[2.2s] ESPN: lesiones 799 · noticias 50",
+    "[2.6s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[3.3s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
+    "[303.3s] Gemini sin respuesta gemini-3.7-flash The operation was aborted due to timeout",
+    "[322.3s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
+    "[339.3s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
+    "[347.4s] IA OK con gemini-3.5-flash-lite",
+    "[347.4s] Descartada: Jaxon Smith-Njigba explota y domina la Semana 8 de fantasy → duplicada",
+    "[347.4s] Descartada: Cam Skattebo responde con juegazo terrestre en los Giants → duplicada",
+    "[347.4s] Descartada: Zay Flowers se perfila como receptor estelar en semana ocho → duplicada",
+    "[347.4s] Descartada: Christian McCaffrey enciende alarmas por lesión en pantorrilla → duplicada",
+    "[347.4s] Descartada: Matthew Stafford hace historia pero sin brillo en fantasy → duplicada",
+    "[347.4s] Descartada: Bo Nix brilla con tremenda anotación terrestre ante Arizona → duplicada",
+    "[347.4s] Descartada: Baker Mayfield brilla con eficiencia absoluta sin sobrecargar su brazo → duplicada",
+    "[347.4s] Descartada: Marvin Harrison Jr. se estrena con los Texans con anotación → duplicada",
+    "[347.4s] Noticias nuevas verificadas: 0",
+    "[348.2s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 274 · semana de juego 8 · IA usada hoy 4/40"
   ]
 }
