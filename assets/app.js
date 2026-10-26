@@ -327,7 +327,7 @@ document.addEventListener('mouseover', e => { const a = e.target.closest && e.ta
   const v = veredicto(j).v, ult = j.ult != null ? `${n1(j.ult)} <small>${tx('ÚLT', 'LAST')} S${j.ultW}</small>` : '–';
   _hc.innerHTML = `<div class="hc-h" style="${vars(j.team)}">${helmet(j.team, j.num, 40)}<span><b>${esc(j.n)}</b><small>${esc(j.pos)} · ${esc(EQUIPOS[j.team] || j.team)} · ${esc(rivalTxt(j.team))}</small></span></div>
     <div class="hc-d"><span><b class="n">${j.p != null ? n1(j.p) : '–'}</b><small>${tx('PROY FX', 'FX PROJ')}</small></span><span><b class="n">${ult}</b></span><span><b class="n">${n1(j.prom)}</b><small>${tx('PROM', 'AVG')}</small></span>${fxPill(j)}</div><p>${tx('Clic para ver su ficha completa', 'Click for full profile')} ›</p>`;
-  const r = a.getBoundingClientRect(); _hc.style.left = Math.min(innerWidth - 300, Math.max(12, r.left)) + 'px'; _hc.style.top = (r.bottom + 8 + scrollY) + 'px'; _hc.classList.add('on');
+  const nm = a.querySelector('b') || a, r = nm.getBoundingClientRect(), x = Math.min(innerWidth - 300, Math.max(12, r.left)), abajo = r.bottom + 190 < innerHeight; _hc.style.left = x + 'px'; _hc.style.top = (abajo ? r.bottom + 8 : r.top - 8 - (_hc.offsetHeight || 170)) + scrollY + 'px'; _hc.classList.add('on');
 });
 document.addEventListener('mouseout', e => { if (_hc && e.target.closest && e.target.closest('a.ilink[data-j], a[data-hover-j]')) _hc.classList.remove('on'); });
 addEventListener('hashchange', () => { if (_hc) _hc.classList.remove('on'); });
@@ -629,7 +629,7 @@ function cargaVivo(w) {
     VIVO.carga = false; if (!st) return;
     const pts = {}; for (const [id, x] of Object.entries(st)) if (x && x.pts_ppr != null && J[id]) pts[id] = [x.pts_ppr, x.pts_half_ppr, x.pts_std];
     VIVO.w = w; VIVO.pts = pts; VIVO.t = Date.now();
-    if (/^#\/lideres/.test(location.hash)) repinta();
+    if (/^#\/(lideres|premium)/.test(location.hash)) repinta();
   }).catch(() => { VIVO.carga = false; VIVO.t = Date.now(); VIVO.w = w; });
 }
 const semanasJugadas = () => { const set = new Set(); P.forEach(j => (j.log || []).forEach(l => { if (l.f) set.add(l.w); })); return [...set].sort((a, b) => a - b); };
@@ -1247,7 +1247,7 @@ const PAGO = { mes: 'https://buy.stripe.com/test_5kQ9AS8v731a0Recsua7C00', tempo
 // Los enlaces de prueba (test_) solo se muestran a quien abrió el sitio con ?pruebas=1 (José, mientras probamos).
 try { if (/[?&]pruebas=1/.test(location.search + location.hash)) localStorage.setItem('fx-pruebas', '1'); if (/[?&]pruebas=0/.test(location.search + location.hash)) localStorage.removeItem('fx-pruebas'); } catch (e) {}
 if (Object.values(PAGO).some(u => /\/test_/.test(u)) && ls('fx-pruebas') !== '1') { PAGO.mes = ''; PAGO.temporada = ''; PAGO.portal = ''; }
-const esPremium = () => !!(PERFIL && PERFIL.premium && (!PERFIL.premium_hasta || Date.parse(PERFIL.premium_hasta) > Date.now()));
+const esPremium = () => !!(PERFIL && PERFIL.premium && (!PERFIL.premium_hasta || Date.parse(PERFIL.premium_hasta) > Date.now())) || (location.hostname === 'localhost' && (() => { try { return localStorage.getItem('fx-test-pro') === '1'; } catch (e) { return false; } })());
 const BOVEDA = {};
 function cargaBoveda(id) {
   if (BOVEDA[id] !== undefined || !SB) return; BOVEDA[id] = null;
@@ -1425,35 +1425,89 @@ const pL = j => !j || !juega(j) ? 0 : j.proy && j.proy[fmtL()] != null ? j.proy[
 const fiL = j => { const u = (j.log || []).filter(l => l.f && l.f[fmtL()] != null).slice(-5).map(l => l.f[fmtL()]); return u.length >= 2 ? [Math.min(...u), Math.max(...u)] : null; };
 
 /* ---------- Motor de decisiones ---------- */
-function alineacion(ids, slots) {
-  const pool = ids.map(id => J[id]).filter(Boolean).sort((a, b) => pL(b) - pL(a)), usados = new Set(), out = [];
-  const orden = slots.map((s, i) => ({ s, i })).filter(x => SLOT_OK[x.s]).sort((a, b) => SLOT_OK[a.s].length - SLOT_OK[b.s].length);
-  for (const { s, i } of orden) { const j = pool.find(p => !usados.has(p.id) && SLOT_OK[s].includes(p.pos)); if (j) usados.add(j.id); out[i] = { s, j }; }
-  const tit = slots.map((s, i) => out[i]).filter(Boolean), banca = pool.filter(p => !usados.has(p.id));
-  return { tit, banca, total: tit.reduce((a, x) => a + pL(x.j), 0) };
+/* ---------- Motor de decisiones (consciente del estado de cada partido) ---------- */
+const POS_JUEGO = ['QB', 'RB', 'WR', 'TE'];
+const juegoDe = t => G.find(g => (g.visita && g.visita.ab === t) || (g.local && g.local.ab === t));
+const ptsAhora = j => {
+  const sp = LIGA && LIGA.mu && LIGA.mu.w === semActual() && LIGA.mu.pts ? LIGA.mu.pts[j.id] : null; if (sp != null && sp !== 0) return sp;
+  if (VIVO.w === semActual() && VIVO.pts && VIVO.pts[j.id]) return VIVO.pts[j.id][fmtL()];
+  const l = (j.log || []).find(x => x.w === semActual()); return l && l.f ? l.f[fmtL()] : null;
+};
+// Estado del jugador esta semana: post (ya jugó), in (jugando), pre (por jugar), bye, out
+function edo(j) {
+  if (!j) return { e: 'vacio', fin: 0 };
+  const r = rivalDe(j.team); if (!r) return { e: 'bye', fin: 0 };
+  const g = juegoDe(j.team), pts = ptsAhora(j), proy = j.proy && j.proy[fmtL()] != null ? j.proy[fmtL()] : (j.prom || 0) * .9;
+  const est = g ? g.estado : ((j.log || []).some(l => l.w === semActual() && l.f) ? 'post' : 'pre');
+  if (est === 'post') return { e: 'post', pts: pts || 0, fin: pts || 0, proy, r };
+  if (est === 'in') return { e: 'in', pts: pts || 0, fin: (pts || 0) + proy * .45, proy, r, g };
+  if (fuera(j)) return { e: 'out', fin: 0, proy: 0, r, g };
+  return { e: 'pre', fin: proy, proy, r, g, kick: g && g.fecha };
 }
-function porQue(x, banca) {
-  const j = x.j; if (!j) return tx('Hueco: no tienes a nadie elegible para esta posición. Busca en waivers.', 'Empty: nobody eligible for this slot. Check waivers.');
-  const v = veredicto(j), alt = banca.find(b => SLOT_OK[x.s].includes(b.pos)), r = [];
-  r.push(v.razones[0] || '');
-  if (alt) { const d = pL(j) - pL(alt); r.push(d > 0 ? tx(`Le gana a ${alt.n} (tu mejor opción en la banca) por ${n1(d)} pts proyectados.`, `Beats ${alt.n} (your best bench option) by ${n1(d)} projected pts.`) : tx(`Prácticamente empatado con ${alt.n}; decide el matchup.`, `Basically tied with ${alt.n}; the matchup decides.`)); }
-  if (v.razones[1]) r.push(v.razones[1]);
-  return r.filter(Boolean).join(' ');
-}
+const bloqueado = j => j && ['post', 'in'].includes(edo(j).e);
+const disponible = j => j && edo(j).e === 'pre';
+const diaHora = f => f ? new Date(f).toLocaleString(LANG === 'en' ? 'en-US' : 'es-MX', { weekday: 'short', hour: 'numeric', minute: '2-digit' }) : '';
+const chipEdo = j => { const x = edo(j); return x.e === 'post' ? `<span class="ed post">FINAL</span><b class="n ed-p">${n1(x.pts)}</b>` : x.e === 'in' ? `<span class="ed in"><i></i>${tx('VIVO', 'LIVE')}</span><b class="n ed-p">${n1(x.pts)}</b>` : x.e === 'bye' ? `<span class="ed bye">BYE</span><b class="n ed-p">0.0</b>` : x.e === 'out' ? `<span class="ed out">${tx('FUERA', 'OUT')}</span><b class="n ed-p">0.0</b>` : x.e === 'vacio' ? '' : `<span class="ed pre">${esc(diaHora(x.kick)) || 'PROY'}</span><b class="n ed-p pr">${n1(x.proy)}</b>`; };
+const matchupTxt = j => { const r = rivalDe(j.team), e = r && estrellas(r.opp, j.pos); if (!r) return ''; return `${r.home ? 'vs' : '@'} ${r.opp}${e ? ' · ' + (e.n >= 4 ? tx('rival a favor', 'soft matchup') : e.n <= 2 ? tx('rival difícil', 'tough matchup') : tx('rival neutral', 'neutral matchup')) : ''}`; };
+const rangoPos = j => { const L = P.filter(x => x.pos === j.pos && juega(x)).sort((a, b) => b.pEst - a.pEst), k = L.indexOf(j); return k >= 0 ? j.pos + (k + 1) : j.pos; };
+const sdJ = j => { const u = (j.log || []).filter(l => l.f && l.f[fmtL()] != null).slice(-6).map(l => l.f[fmtL()]); if (u.length < 3) return Math.max(4, (j.prom || 8) * .45); const m = u.reduce((a, b) => a + b, 0) / u.length; return Math.max(3.5, Math.sqrt(u.reduce((a, b) => a + (b - m) ** 2, 0) / (u.length - 1))); };
+const ult3 = j => { const u = (j.log || []).filter(l => l.f && l.f[fmtL()] != null).slice(-3).map(l => l.f[fmtL()]); return u.length ? u.reduce((a, b) => a + b, 0) / u.length : null; };
 const phi = z => { const t = 1 / (1 + .3275911 * Math.abs(z) / Math.SQRT2), y = 1 - (((((1.061405429 * t - 1.453152027) * t) + 1.421413741) * t - .284496736) * t + .254829592) * t * Math.exp(-z * z / 2); return .5 * (1 + (z >= 0 ? y : -y)); };
-function waiversPara(al) {
-  const ocupados = new Set([...(LIGA.jugadores || []), ...Object.values(LIGA.otros || {}).flat()]);
-  const libres = Object.values(J).filter(j => !ocupados.has(j.id) && j.team !== 'FA' && j.proy && ['QB', 'RB', 'WR', 'TE', 'K', 'DEF'].includes(j.pos));
-  const peor = {}; al.tit.forEach(x => { if (x.j && SLOT_OK[x.s].length === 1) { const p = x.j.pos; peor[p] = Math.min(peor[p] ?? 99, pL(x.j)); } else if (!x.j) peor[x.s] = 0; });
-  return libres.map(j => ({ j, mejora: pL(j) - (peor[j.pos] ?? 99), ros: valorROS(j).valor })).filter(x => x.mejora > .5 || x.ros > 25).sort((a, b) => (b.mejora * 2 + b.ros / 20) - (a.mejora * 2 + a.ros / 20)).slice(0, 6);
+
+// Alineación: respeta a los que ya jugaron o están jugando (no se pueden mover) y optimiza el resto
+function alineacion(ids, slots, actuales = []) {
+  const usados = new Set(), out = [];
+  slots.forEach((s, i) => { const j = J[actuales[i]]; if (j && bloqueado(j)) { out[i] = { s, j, lock: true }; usados.add(j.id); } });
+  const pool = ids.map(id => J[id]).filter(j => j && !usados.has(j.id) && !bloqueado(j)).sort((a, b) => edo(b).fin - edo(a).fin);
+  const orden = slots.map((s, i) => ({ s, i })).filter(x => SLOT_OK[x.s] && !out[x.i]).sort((a, b) => SLOT_OK[a.s].length - SLOT_OK[b.s].length);
+  for (const { s, i } of orden) { const j = pool.find(p => !usados.has(p.id) && SLOT_OK[s].includes(p.pos)); if (j) usados.add(j.id); out[i] = { s, j }; }
+  const tit = slots.map((s, i) => out[i] || { s, j: null }), banca = ids.map(id => J[id]).filter(j => j && !usados.has(j.id)).sort((a, b) => edo(b).fin - edo(a).fin);
+  return { tit, banca, total: tit.reduce((a, x) => a + (x.j ? edo(x.j).fin : 0), 0) };
 }
-function tradeTargets(al) {
-  if (!LIGA.otros) return [];
-  const debil = ['RB', 'WR', 'TE', 'QB'].map(p => { const t = al.tit.filter(x => x.j && x.j.pos === p); return { p, v: t.length ? Math.min(...t.map(x => pL(x.j))) : 0 }; }).sort((a, b) => a.v - b.v)[0];
-  const mios = al.banca.filter(j => j.pos !== debil.p && ['RB', 'WR', 'TE', 'QB'].includes(j.pos)).map(j => ({ j, v: valorROS(j).valor })).sort((a, b) => b.v - a.v);
-  const out = [];
-  for (const [rid, ids] of Object.entries(LIGA.otros)) for (const id of ids) { const j = J[id]; if (!j || j.pos !== debil.p || pL(j) <= debil.v + 1) continue; const v = valorROS(j).valor, oferta = mios.find(m => m.v >= v * .85); if (oferta) out.push({ j, v, rid, oferta: oferta.j }); }
-  return out.sort((a, b) => pL(b.j) - pL(a.j)).slice(0, 4);
+// Cambios concretos: lo que tienes alineado en Sleeper contra lo óptimo
+function cambios(slots) {
+  const act = LIGA.tit && LIGA.tit.length ? LIGA.tit : null; if (!act) return [];
+  const opt = alineacion(LIGA.jugadores, slots, act), out = [];
+  opt.tit.forEach((x, i) => {
+    const a = J[act[i]], b = x.j; if (x.lock || !b || (a && a.id === b.id)) return;
+    const ea = a ? edo(a) : { e: 'vacio', fin: 0 }, eb = edo(b), gan = eb.fin - ea.fin;
+    if (['out', 'bye', 'vacio'].includes(ea.e)) out.push({ urg: 3, s: x.s, a, b, gan, txt: a ? tx(`${a.n} ${ea.e === 'bye' ? 'descansa esta semana' : 'está FUERA'}: mete a ${b.n} en ${SLOT_TXT[x.s] || x.s}.`, `${a.n} ${ea.e === 'bye' ? 'is on bye' : 'is OUT'}: start ${b.n} at ${SLOT_TXT[x.s] || x.s}.`) : tx(`Tienes ${SLOT_TXT[x.s] || x.s} vacío: mete a ${b.n}.`, `Your ${SLOT_TXT[x.s] || x.s} is empty: start ${b.n}.`) });
+    else if (gan >= .8 && !bloqueado(a)) out.push({ urg: 2, s: x.s, a, b, gan, txt: tx(`Arranca a ${b.n} en lugar de ${a.n} en ${SLOT_TXT[x.s] || x.s}: +${n1(gan)} pts proyectados.`, `Start ${b.n} over ${a.n} at ${SLOT_TXT[x.s] || x.s}: +${n1(gan)} projected pts.`) });
+  });
+  return out.sort((a, b) => b.urg - a.urg || b.gan - a.gan);
+}
+const propios = () => new Set([...(LIGA.jugadores || []), ...Object.values(LIGA.otros || {}).flat()]);
+function waiversPara(al) {
+  const own = propios(), mis = LIGA.jugadores.map(id => J[id]).filter(Boolean);
+  const peorTit = p => { const t = al.tit.filter(x => x.j && x.j.pos === p).map(x => edo(x.j).proy || 0); return t.length ? Math.min(...t) : 0; };
+  const soltable = mis.filter(j => POS_JUEGO.includes(j.pos) && !al.tit.some(x => x.j && x.j.id === j.id)).map(j => ({ j, v: valorROS(j).valor, ppj: valorROS(j).ppj })).filter(x => x.v < 15 && x.ppj < 12).sort((a, b) => a.v - b.v);
+  const L = Object.values(J).filter(j => !own.has(j.id) && j.team !== 'FA' && POS_JUEGO.includes(j.pos) && j.proy).map(j => {
+    const v = valorROS(j).valor, pr = j.proy[fmtL()] || 0, add = j.add || 0, mej = pr - peorTit(j.pos);
+    const her = P.find(x => x.team === j.team && x.pos === j.pos && x.id !== j.id && fuera(x) && x.pEst > pr);
+    const score = v + Math.min(add / 700, 30) + Math.max(0, mej) * 2 + (her ? 6 : 0);
+    return { j, v, pr, add, mej, her, score, suelta: (soltable.find(s => s.j.pos === j.pos && s.v < v * .8) || soltable.find(s => s.v < v * .8) || {}).j };
+  }).filter(x => x.add > 250 || x.v > 10 || x.mej > 1).sort((a, b) => b.score - a.score).slice(0, 8);
+  return L;
+}
+function streaming(al) {
+  const own = propios(), out = [];
+  for (const p of ['K', 'DEF']) { const t = al.tit.find(x => x.s === p), mi = t && t.j, e = mi ? edo(mi) : { e: 'vacio', proy: 0 };
+    if (e.e === 'post' || e.e === 'in') continue;
+    const libres = Object.values(J).filter(j => j.pos === p && !own.has(j.id) && disponible(j)).sort((a, b) => edo(b).proy - edo(a).proy).slice(0, 2);
+    libres.forEach(j => { if (!mi || ['bye', 'out', 'vacio'].includes(e.e) || edo(j).proy - e.proy > 1.5) out.push({ j, mi, gan: edo(j).proy - (e.proy || 0) }); }); }
+  return out;
+}
+function tradeIdeas(al) {
+  if (!LIGA.otros) return { targets: [], vende: [], compra: [] };
+  const mis = LIGA.jugadores.map(id => J[id]).filter(j => j && POS_JUEGO.includes(j.pos));
+  const avgPos = p => { const L = P.filter(x => x.pos === p && juega(x)).sort((a, b) => b.pEst - a.pEst).slice(0, (LIGA.equipos || 12) * (p === 'QB' || p === 'TE' ? 1 : 2)); return L.reduce((a, x) => a + x.pEst, 0) / Math.max(1, L.length); };
+  const debil = POS_JUEGO.map(p => { const t = al.tit.filter(x => x.j && x.j.pos === p).map(x => valorROS(x.j).ppj); return { p, r: t.length ? Math.min(...t) / Math.max(1, avgPos(p)) : 0 }; }).sort((a, b) => a.r - b.r)[0];
+  const banca = mis.filter(j => !al.tit.some(x => x.j && x.j.id === j.id) && j.pos !== debil.p).map(j => ({ j, v: valorROS(j).valor })).sort((a, b) => b.v - a.v);
+  const targets = [];
+  for (const [rid, ids] of Object.entries(LIGA.otros)) for (const id of ids) { const j = J[id]; if (!j || j.pos !== debil.p || fueraTemp(j)) continue; const v = valorROS(j).valor, of = banca.find(m => m.v >= v * .85 && m.v <= v * 1.35); if (of && v > 15) targets.push({ j, v, rid, of: of.j }); }
+  const vende = mis.map(j => { const u = ptsSem(j, SEMNUM), vr = valorROS(j); return { j, u, ppj: vr.ppj, v: vr.valor }; }).filter(x => x.u != null && x.ppj > 0 && x.u >= x.ppj * 1.7 && x.u >= 15).sort((a, b) => b.u / b.ppj - a.u / a.ppj).slice(0, 3);
+  const compra = Object.entries(LIGA.otros).flatMap(([rid, ids]) => ids.map(id => ({ j: J[id], rid }))).filter(x => x.j && POS_JUEGO.includes(x.j.pos) && !fuera(x.j)).map(x => ({ ...x, u3: ult3(x.j), vr: valorROS(x.j) })).filter(x => x.u3 != null && x.vr.ppj >= 11 && x.u3 <= x.vr.ppj * .7).sort((a, b) => b.vr.valor - a.vr.valor).slice(0, 4);
+  return { debil: debil.p, targets: targets.sort((a, b) => b.v - a.v).slice(0, 4), vende, compra };
 }
 
 /* ---------- Importar ---------- */
@@ -1472,10 +1526,14 @@ async function cargaLigaSleeper(lid, uid) {
   LIGA = { fuente: 'sleeper', lid, uid, nombre: lg.name, equipos: lg.total_rosters, rid: mio.roster_id, slots: (lg.roster_positions || POS_BASE).filter(s => s !== 'BN' && s !== 'IR' && s !== 'TAXI'),
     fmt: rec >= 1 ? 0 : rec >= .5 ? 1 : 2, jugadores: mio.players || [], otros: Object.fromEntries(rs.filter(r => r !== mio).map(r => [r.roster_id, r.players || []])),
     duenos: Object.fromEntries(rs.map(r => [r.roster_id, nom[r.owner_id] || ('Equipo ' + r.roster_id)])), fecha: new Date().toISOString() };
-  try { const m = await sleeperGet(`league/${lid}/matchups/${semActual()}`), yo = m.find(x => x.roster_id === mio.roster_id); const riv = yo && m.find(x => x.matchup_id === yo.matchup_id && x.roster_id !== mio.roster_id); LIGA.rival = riv ? riv.roster_id : null; } catch (e) { LIGA.rival = null; }
+  LIGA.duenoYo = nom[uid] || ''; LIGA.tit = mio.starters || null;
+  try { const m = await sleeperGet(`league/${lid}/matchups/${semActual()}`), yo = m.find(x => x.roster_id === mio.roster_id); const riv = yo && m.find(x => x.matchup_id === yo.matchup_id && x.roster_id !== mio.roster_id);
+    LIGA.rival = riv ? riv.roster_id : null; if (yo && yo.starters) LIGA.tit = yo.starters; LIGA.titR = riv && riv.starters || null;
+    LIGA.mu = { pts: { ...(yo && yo.players_points || {}), ...(riv && riv.players_points || {}) }, yo: yo ? yo.points : null, rv: riv ? riv.points : null, w: semActual() };
+  } catch (e) { LIGA.rival = null; }
   guardaLiga();
 }
-function sincroniza() { if (!LIGA || LIGA.fuente !== 'sleeper' || _ligaSync || Date.now() - Date.parse(LIGA.fecha || 0) < 10 * 60e3) return; _ligaSync = 1; cargaLigaSleeper(LIGA.lid, LIGA.uid).then(() => { _ligaSync = 0; if (/^#\/premium/.test(location.hash)) repinta(); }).catch(() => { _ligaSync = 0; }); }
+function sincroniza() { if (!LIGA || LIGA.fuente !== 'sleeper' || _ligaSync || Date.now() - Date.parse(LIGA.fecha || 0) < (enVivo() ? 2 : 10) * 60e3) return; _ligaSync = 1; cargaLigaSleeper(LIGA.lid, LIGA.uid).then(() => { _ligaSync = 0; if (/^#\/premium/.test(location.hash)) repinta(); }).catch(() => { _ligaSync = 0; }); }
 
 /* ---------- Vista ---------- */
 const tarjetaHerr = (ico, t, d, cuerpo, gancho, libre) => `<section class="cg-tool card"><div class="cg-th"><span class="cg-ico">${ico}</span><div><h3>${t}</h3><p>${d}</p></div>${libre ? `<span class="cg-free">${tx('GRATIS', 'FREE')}</span>` : `<span class="cg-pro">★ PRO</span>`}</div>${sello('cg')}${libre ? cuerpo : zonaPrem(cuerpo, gancho)}</section>`;
@@ -1566,7 +1624,117 @@ function animaPremium() {
 }
 document.addEventListener('click', e => { const a = e.target.closest('[data-pv-ir],[data-ir-planes]'); if (!a) return; const id = a.dataset.pvIr || 'pv-planes', el = document.getElementById(id); if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } });
 
-function premiumHub() {
+/* ---------- Cuarto de guerra: tablero + herramientas por pestaña ---------- */
+const TABS_CG = [['', 'Mi semana', 'My week'], ['alineacion', 'Alineación', 'Lineup'], ['waivers', 'Waivers', 'Waivers'], ['trades', 'Trades', 'Trades'], ['plantel', 'Plantel', 'Roster'], ['exclusivas', 'Exclusivas', 'Exclusives']];
+const jLink = (j, sub = '') => `<a class="wr-j" href="#/jugador/${j.id}" data-hover-j="${j.id}">${helmet(j.team, j.num, 30)}<span><b>${esc(j.n)}</b><small>${esc(j.pos)} · ${esc(j.team)}${sub ? ' · ' + sub : ''}</small></span></a>`;
+const pieTech = () => `<div class="pie-tech">${sello('mini')}</div>`;
+const slotsL = () => LIGA.slots && LIGA.slots.length ? LIGA.slots : POS_BASE;
+function lados() {
+  const slots = slotsL(), act = LIGA.tit && LIGA.tit.length ? LIGA.tit : null;
+  const yo = act ? { tit: slots.map((s, i) => ({ s, j: J[act[i]] || null })) } : alineacion(LIGA.jugadores, slots);
+  let rv = null; if (LIGA.rival && LIGA.otros && LIGA.otros[LIGA.rival]) { const ra = LIGA.titR && LIGA.titR.length ? LIGA.titR : null; rv = ra ? { tit: slots.map((s, i) => ({ s, j: J[ra[i]] || null })) } : alineacion(LIGA.otros[LIGA.rival], slots); }
+  const suma = l => l.tit.reduce((a, x) => { const e = edo(x.j); a.act += e.pts || 0; a.fin += e.fin || 0; a.rest += e.e === 'pre' ? e.proy : e.e === 'in' ? e.proy * .45 : 0; a.faltan += e.e === 'pre' || e.e === 'in' ? 1 : 0; return a; }, { act: 0, fin: 0, rest: 0, faltan: 0 });
+  const sy = suma(yo), sr = rv ? suma(rv) : null;
+  if (LIGA.mu && LIGA.mu.yo != null) sy.act = LIGA.mu.yo; if (sr && LIGA.mu && LIGA.mu.rv != null) sr.act = LIGA.mu.rv;
+  return { slots, yo, rv, sy, sr };
+}
+function marcador(L) {
+  const { sy, sr } = L; if (!sr) return `<div class="wr-score solo"><div><small>${tx('TU PROYECCIÓN', 'YOUR PROJECTION')}</small><b class="n">${n1(sy.fin)}</b></div><p>${LIGA.fuente === 'manual' ? tx('Conecta Sleeper para ver a tu rival y tu probabilidad de ganar.', 'Connect Sleeper to see your opponent and win probability.') : tx('Sin rival esta semana.', 'No opponent this week.')}</p></div>`;
+  const sd = Math.max(5, 27 * Math.sqrt((sy.rest + sr.rest) / Math.max(1, sy.fin + sr.fin))), p = phi((sy.fin - sr.fin) / sd), pc = Math.round(p * 100), d = sy.fin - sr.fin;
+  const lect = sy.faltan + sr.faltan === 0 ? (d >= 0 ? tx('Semana cerrada: ganaste.', 'Week closed: you won.') : tx('Semana cerrada: perdiste.', 'Week closed: you lost.'))
+    : pc >= 70 ? tx(`Eres favorito. Juega seguro: prioriza piso alto en tus decisiones de FLEX.`, `You're the favorite. Play it safe: prioritize high floor at FLEX.`)
+    : pc <= 30 ? tx(`Vienes de atrás. Necesitas techo: en cada duda, elige al jugador más explosivo.`, `You're the underdog. You need ceiling: in every close call, pick the boom player.`)
+    : tx(`Duelo cerrado. Cada decisión cuenta: revisa tus cambios sugeridos y el reporte médico antes del kickoff.`, `Tight matchup. Every call matters: check your suggested moves and the injury report before kickoff.`);
+  const nada = sy.act + sr.act === 0, big = x => nada ? x.fin : x.act, sub = x => nada ? tx('proyección FX', 'FX projection') : `${tx('proy', 'proj')} ${n1(x.fin)} · ${x.faltan} ${tx('por jugar', 'to play')}`;
+  return `<div class="wr-score"><div class="wr-sc-l"><small>${esc(LIGA.duenoYo || tx('TÚ', 'YOU'))}</small><b class="n">${n1(big(sy))}</b><em>${sub(sy)}</em></div>
+    <div class="wr-sc-m"><span class="wr-pc n">${pc}%</span><div class="wr-barra"><i style="width:${pc}%"></i></div><small>${tx('probabilidad de ganar', 'win probability')}</small></div>
+    <div class="wr-sc-r"><small>${esc(LIGA.duenos[LIGA.rival] || 'Rival')}</small><b class="n">${n1(big(sr))}</b><em>${sub(sr)}</em></div></div><p class="wr-lect">${lect}</p>`;
+}
+function tablero(L) {
+  const fila = (x, k) => { const j = x.j; return j ? `<div class="wr-pl ${k}">${jLink(j, edo(j).e === 'pre' ? matchupTxt(j) : '')}<span class="wr-ed">${chipEdo(j)}</span></div>` : `<div class="wr-pl ${k} vacio">${tx('Vacío', 'Empty')}</div>`; };
+  return `<div class="wr-board">${L.yo.tit.map((x, i) => `<div class="wr-row">${fila(x, 'l')}<span class="wr-slot">${SLOT_TXT[x.s] || x.s}</span>${L.rv ? fila(L.rv.tit[i] || {}, 'r') : '<div class="wr-pl r"></div>'}</div>`).join('')}</div>`;
+}
+function plan(L) {
+  const slots = L.slots, al = alineacion(LIGA.jugadores, slots, LIGA.tit || []), A = [];
+  cambios(slots).slice(0, 3).forEach(c => A.push({ n: c.urg === 3 ? 'urg' : 'mov', t: c.urg === 3 ? tx('URGENTE', 'URGENT') : tx('ALINEACIÓN', 'LINEUP'), txt: c.txt, ir: 'alineacion' }));
+  if (!LIGA.tit) { const malos = al.tit.filter(x => x.j && ['out', 'bye'].includes(edo(x.j).e)); if (malos.length) A.push({ n: 'urg', t: tx('URGENTE', 'URGENT'), txt: tx('Tienes titulares fuera o en descanso: revisa tu alineación óptima.', 'You have starters out or on bye: check your optimal lineup.'), ir: 'alineacion' }); }
+  al.tit.filter(x => x.j && edo(x.j).e === 'pre' && estatus(x.j) === 'Duda').forEach(x => { const b = al.banca.find(y => SLOT_OK[x.s].includes(y.pos) && disponible(y)); A.push({ n: 'ojo', t: tx('EN DUDA', 'QUESTIONABLE'), txt: tx(`${x.j.n} está en duda${parte(x.j) ? ' (' + parte(x.j) + ')' : ''}. ${b ? `Si lo descartan, tu plan B es ${b.n} (${n1(edo(b).proy)} pts).` : 'No tienes plan B en la banca: mira waivers.'}`, `${x.j.n} is questionable${parte(x.j) ? ' (' + parte(x.j) + ')' : ''}. ${b ? `If ruled out, your plan B is ${b.n} (${n1(edo(b).proy)} pts).` : 'No plan B on your bench: check waivers.'}`), ir: 'alineacion' }); });
+  const w = waiversPara(al)[0]; if (w && (w.mej > 1.5 || w.her)) A.push({ n: 'add', t: 'WAIVER', txt: tx(`Agrega a ${w.j.n}${w.suelta ? ` y suelta a ${w.suelta.n}` : ''}: ${w.her ? `hereda el trabajo de ${w.her.n} (fuera)` : `+${n1(w.mej)} pts sobre tu ${w.j.pos} titular más débil`}.`, `Add ${w.j.n}${w.suelta ? ` and drop ${w.suelta.n}` : ''}: ${w.her ? `inherits ${w.her.n}'s work (out)` : `+${n1(w.mej)} pts over your weakest ${w.j.pos} starter`}.`), ir: 'waivers' });
+  const s = streaming(al)[0]; if (s && s.gan > 2) A.push({ n: 'add', t: 'STREAMING', txt: tx(`Cambia tu ${s.j.pos}: ${s.j.n} proyecta ${n1(edo(s.j).proy)} (${s.mi ? '+' + n1(s.gan) + ' sobre ' + s.mi.n : 'no tienes ' + s.j.pos})`, `Stream your ${s.j.pos}: ${s.j.n} projects ${n1(edo(s.j).proy)} (${s.mi ? '+' + n1(s.gan) + ' over ' + s.mi.n : 'you have no ' + s.j.pos})`), ir: 'waivers' });
+  const ti = tradeIdeas(al); if (ti.vende[0]) { const v = ti.vende[0]; A.push({ n: 'trade', t: tx('VENDE ALTO', 'SELL HIGH'), txt: tx(`${v.j.n} hizo ${n1(v.u)} pts, su promedio es ${n1(v.ppj)}. Su valor de mercado está en el pico: ofrécelo hoy.`, `${v.j.n} scored ${n1(v.u)} pts vs a ${n1(v.ppj)} average. His market value peaked: shop him today.`), ir: 'trades' }); }
+  if (!A.length) A.push({ n: 'ok', t: 'OK', txt: tx('Tu alineación ya es la óptima y no hay movimientos que te mejoren hoy. Vuelve después del reporte médico.', 'Your lineup is already optimal and no move improves you today. Check back after the injury report.'), ir: '' });
+  return `<ol class="wr-plan">${A.slice(0, 6).map((a, i) => `<li class="${a.n}"><span class="wr-n n">${i + 1}</span><span class="wr-t">${a.t}</span><p>${enlaza(esc(a.txt), [])}</p>${a.ir ? `<a class="wr-go" href="#/premium/${a.ir}">${tx('Resolver', 'Fix it')} ›</a>` : ''}</li>`).join('')}</ol>`;
+}
+function vistaSemana(L, pro) {
+  const al = alineacion(LIGA.jugadores, L.slots, LIGA.tit || []), wv = waiversPara(al), ti = tradeIdeas(al), alertas = LIGA.jugadores.map(id => J[id]).filter(j => j && (fuera(j) || estatus(j) === 'Duda'));
+  const tiles = [['alineacion', ART.linea, tx('¿A quién arranco?', 'Who do I start?'), tx('Compara a dos de tus jugadores', 'Compare two of your players')], ['waivers', ART.iman, `${wv.length} waivers`, tx('que mejoran tu equipo', 'that upgrade your team')], ['trades', ART.trade, `${ti.targets.length + ti.vende.length + ti.compra.length} ${tx('ideas de trade', 'trade ideas')}`, tx('vende alto, compra bajo', 'sell high, buy low')], ['plantel', ART.sirena, `${alertas.length} ${tx('alertas', 'alerts')}`, tx('salud de tu plantel', 'your roster health')]];
+  const cont = `<section class="wr-sec"><div class="wr-h"><h3>${tx('Tu plan de la semana', 'Your plan for the week')}</h3><small>${tx('Ordenado por urgencia', 'Sorted by urgency')}</small></div>${plan(L)}</section>
+    <section class="wr-sec"><div class="wr-h"><h3>${tx('Tu matchup, posición por posición', 'Your matchup, slot by slot')}</h3></div>${tablero(L)}</section>
+    <div class="wr-tiles">${tiles.map(([h, a, t, d]) => `<a class="wr-tile" href="#/premium/${h}">${pixel(a)}<b>${t}</b><small>${d}</small></a>`).join('')}</div>`;
+  return `<section class="wr-sec top">${marcador(L)}</section>${pro ? cont : zonaPrem(cont, tx('Tu plan de la semana, tu matchup y las herramientas', 'Your weekly plan, your matchup and the tools'))}`;
+}
+function vistaAlineacion(L) {
+  const al = alineacion(LIGA.jugadores, L.slots, LIGA.tit || []), cs = cambios(L.slots), mis = LIGA.jugadores.map(id => J[id]).filter(j => j && disponible(j)).sort((a, b) => edo(b).proy - edo(a).proy);
+  const linea = x => { const j = x.j; if (!j) return `<div class="wr-al vacio"><span class="wr-slot">${SLOT_TXT[x.s] || x.s}</span><p>${tx('Vacío: no tienes a nadie elegible. Revisa waivers.', 'Empty: nobody eligible. Check waivers.')}</p></div>`;
+    const e = edo(j), ft = fiL(j), u = ult3(j);
+    const det = e.e === 'post' ? tx(`Ya jugó: ${n1(e.pts)} pts. Fijo.`, `Already played: ${n1(e.pts)} pts. Locked.`) : e.e === 'in' ? tx(`Jugando: ${n1(e.pts)} pts hasta ahora. Fijo.`, `Playing: ${n1(e.pts)} pts so far. Locked.`) : e.e === 'out' ? tx('FUERA esta semana: no lo alinees.', 'OUT this week: bench him.') : e.e === 'bye' ? tx('Semana de descanso.', 'Bye week.')
+      : `${rangoPos(j)} · ${matchupTxt(j)}${u != null ? ' · ' + tx('últimas 3: ', 'last 3: ') + n1(u) : ''}${ft ? ' · ' + tx('piso/techo ', 'floor/ceiling ') + n1(ft[0]) + '–' + n1(ft[1]) : ''}`;
+    return `<div class="wr-al ${x.lock ? 'lock' : ''}"><span class="wr-slot">${SLOT_TXT[x.s] || x.s}</span>${jLink(j)}<span class="wr-ed">${chipEdo(j)}</span><p>${det}</p></div>`; };
+  const op = (sel) => mis.map(j => `<option value="${j.id}" ${j.id === sel ? 'selected' : ''}>${esc(j.n)} · ${j.pos} · ${n1(edo(j).proy)}</option>`).join('');
+  const a0 = mis[0] && mis[0].id, b0 = (mis.find(j => mis[0] && j.pos === mis[0].pos && j.id !== a0) || mis[1] || {}).id;
+  return `${cs.length ? `<section class="wr-sec"><div class="wr-h"><h3>${tx('Cambios que debes hacer en Sleeper', 'Moves to make in Sleeper')}</h3><small>${cs.length}</small></div><ol class="wr-plan">${cs.map((c, i) => `<li class="${c.urg === 3 ? 'urg' : 'mov'}"><span class="wr-n n">${i + 1}</span><span class="wr-t">${SLOT_TXT[c.s] || c.s}</span><p>${esc(c.txt)}</p></li>`).join('')}</ol></section>` : LIGA.tit ? `<p class="wr-ok">${tx('Tu alineación en Sleeper ya es la óptima según el FX Tech Analyzer.', 'Your Sleeper lineup is already optimal per the FX Tech Analyzer.')}</p>` : ''}
+    <section class="wr-sec"><div class="wr-h"><h3>${tx('Alineación óptima', 'Optimal lineup')} · ${tx('Semana', 'Week')} ${semActual()}</h3><small>${FMTS[fmtL()]} · ${tx('proy', 'proj')} ${n1(al.total)}</small></div><div class="wr-als">${al.tit.map(linea).join('')}</div>
+      <details class="wr-banca"><summary>${tx('Banca', 'Bench')} · ${al.banca.length}</summary>${al.banca.map(j => `<div class="wr-al banca">${jLink(j, edo(j).e === 'pre' ? matchupTxt(j) : '')}<span class="wr-ed">${chipEdo(j)}</span></div>`).join('')}</details></section>
+    <section class="wr-sec" id="duelo-sec"><div class="wr-h"><h3>${tx('¿A quién arranco?', 'Who do I start?')}</h3><small>${tx('Elige dos de tus jugadores', 'Pick two of your players')}</small></div>
+      <div class="wr-duelo-f"><select data-duelo="a">${op(a0)}</select><span>VS</span><select data-duelo="b">${op(b0)}</select></div><div id="duelo-res">${a0 && b0 ? dueloHtml(J[a0], J[b0]) : ''}</div></section>`;
+}
+function dueloHtml(a, b) {
+  if (!a || !b || a === b) return '';
+  const ea = edo(a), eb = edo(b), sd = Math.sqrt(sdJ(a) ** 2 + sdJ(b) ** 2), pa = phi((ea.proy - eb.proy) / sd), g = pa >= .5 ? a : b, pg = Math.round(Math.max(pa, 1 - pa) * 100);
+  const col = (j, e) => { const ft = fiL(j), u = ult3(j), r = rivalDe(j.team), es = r && estrellas(r.opp, j.pos); return `<div class="wr-dc ${j === g ? 'gana' : ''}">${jLink(j)}<dl><dt>${tx('Proyección', 'Projection')}</dt><dd class="n">${n1(e.proy)}</dd><dt>${tx('Últimas 3', 'Last 3')}</dt><dd class="n">${u != null ? n1(u) : '–'}</dd><dt>${tx('Piso / techo', 'Floor / ceiling')}</dt><dd class="n">${ft ? n1(ft[0]) + ' / ' + n1(ft[1]) : '–'}</dd><dt>${tx('Rival', 'Opponent')}</dt><dd>${r ? (r.home ? 'vs ' : '@ ') + r.opp + ' ' + pintaEstrellas(es) : 'BYE'}</dd><dt>${tx('Salud', 'Health')}</dt><dd>${estatus(j) === 'Sano' ? tx('Sano', 'Healthy') : esc(estatus(j))}</dd></dl></div>`; };
+  const techo = (fiL(a) || [0, 0])[1] > (fiL(b) || [0, 0])[1] ? a : b, piso = (fiL(a) || [0, 0])[0] > (fiL(b) || [0, 0])[0] ? a : b;
+  return `<div class="wr-dv"><b>${tx('Arranca a', 'Start')} ${esc(g.n)}</b><span class="n">${pg}%</span><small>${tx(`de probabilidad de superar a ${(g === a ? b : a).n} según su proyección y su variación semanal.`, `chance to outscore ${(g === a ? b : a).n} based on projection and weekly variance.`)}</small>
+    <p>${pg < 58 ? tx(`Es casi un volado. Si vas de favorito elige piso (${esc(piso.n)}); si vas abajo elige techo (${esc(techo.n)}).`, `It's nearly a coin flip. If you're favored pick floor (${esc(piso.n)}); if you're behind pick ceiling (${esc(techo.n)}).`) : tx('Ventaja clara en los datos.', 'Clear edge in the data.')}</p></div><div class="wr-dg">${col(a, ea)}${col(b, eb)}</div>`;
+}
+function vistaWaivers(L) {
+  const al = alineacion(LIGA.jugadores, L.slots, LIGA.tit || []), W = waiversPara(al), S = streaming(al);
+  const card = x => `<div class="wr-wv">${jLink(x.j, rangoPos(x.j) + ' · ' + matchupTxt(x.j))}<b class="n wr-big">${n1(x.pr)}</b>
+    <div class="wr-tags">${x.add ? `<span>▲ ${nf.format(x.add)} ${tx('ligas en 24 h', 'leagues in 24 h')}</span>` : ''}${x.her ? `<span class="hot">${tx('Hereda el trabajo de', 'Inherits work from')} ${esc(x.her.n)}</span>` : ''}${x.mej > .5 ? `<span class="ok">+${n1(x.mej)} ${tx('vs tu titular', 'vs your starter')}</span>` : ''}<span>${tx('Valor resto de temporada', 'Rest-of-season value')} ${Math.round(x.v)}</span></div>
+    ${x.suelta ? `<p class="wr-drop">${tx('Suelta a', 'Drop')} <a href="#/jugador/${x.suelta.id}">${esc(x.suelta.n)}</a> · ${tx('valor', 'value')} ${Math.round(valorROS(x.suelta).valor)}</p>` : ''}</div>`;
+  return `<section class="wr-sec"><div class="wr-h"><h3>${tx('Waivers para tu equipo', 'Waivers for your team')}</h3><small>${tx('Libres en tu liga · ordenados por impacto', 'Free in your league · sorted by impact')}</small></div>
+    <div class="wr-wvs">${W.map(card).join('') || `<p class="wr-ok">${tx('No hay libres que mejoren tu equipo hoy.', 'No free agents upgrade your team today.')}</p>`}</div></section>
+    ${S.length ? `<section class="wr-sec"><div class="wr-h"><h3>Streaming K / DEF</h3><small>${tx('Solo si mejora al que tienes', 'Only if it beats yours')}</small></div>${S.map(s => `<div class="wr-al banca">${jLink(s.j, matchupTxt(s.j))}<b class="n">${n1(edo(s.j).proy)}</b><p>${s.mi ? tx(`+${n1(s.gan)} sobre ${s.mi.n}`, `+${n1(s.gan)} over ${s.mi.n}`) : tx('No tienes uno alineado', 'You have none in your lineup')}</p></div>`).join('')}</section>` : ''}`;
+}
+function vistaTrades(L) {
+  const al = alineacion(LIGA.jugadores, L.slots, LIGA.tit || []), T = tradeIdeas(al);
+  if (!LIGA.otros) return `<p class="wr-ok">${tx('Conecta Sleeper para ver los planteles de tus rivales y armar trades reales.', 'Connect Sleeper to see your rivals\' rosters and build real trades.')}</p>`;
+  const lnk = (d, r) => `<a class="wr-go" href="#/trade?da=${d}&recibe=${r}">${tx('Analizar trade', 'Analyze trade')} ›</a>`;
+  return `<section class="wr-sec"><div class="wr-h"><h3>${tx('Refuerza tu', 'Upgrade your')} ${T.debil}</h3><small>${tx('Tu posición más débil contra el resto de la liga', 'Your weakest spot vs the league')}</small></div>
+    ${T.targets.map(x => `<div class="wr-tr">${jLink(x.j, LIGA.duenos[x.rid] ? tx('de', 'from') + ' ' + esc(LIGA.duenos[x.rid]) : '')}<p>${tx('Ofrece a', 'Offer')} <b>${esc(x.of.n)}</b> · ${tx('valor', 'value')} ${Math.round(valorROS(x.of).valor)} ${tx('por', 'for')} ${Math.round(x.v)}</p>${lnk(x.of.id, x.j.id)}</div>`).join('') || `<p class="wr-ok">${tx('No vemos un trade justo que te mejore en esa posición.', 'No fair trade improves that spot right now.')}</p>`}</section>
+    <section class="wr-sec"><div class="wr-h"><h3>${tx('Vende alto', 'Sell high')}</h3><small>${tx('Tuyos con una semana muy por encima de su promedio', 'Yours with a week far above their average')}</small></div>
+    ${T.vende.map(x => `<div class="wr-tr">${jLink(x.j)}<p>${tx(`S${SEMNUM}: ${n1(x.u)} pts · promedio ${n1(x.ppj)}. Su precio nunca va a estar más alto.`, `W${SEMNUM}: ${n1(x.u)} pts · average ${n1(x.ppj)}. His price won't get higher.`)}</p></div>`).join('') || `<p class="wr-ok">${tx('Nadie de tu plantel está inflado esta semana.', 'Nobody on your roster is inflated this week.')}</p>`}</section>
+    <section class="wr-sec"><div class="wr-h"><h3>${tx('Compra bajo', 'Buy low')}</h3><small>${tx('De tus rivales: buenos jugadores en mala racha', 'From your rivals: good players in a slump')}</small></div>
+    ${T.compra.map(x => `<div class="wr-tr">${jLink(x.j, LIGA.duenos[x.rid] ? tx('de', 'from') + ' ' + esc(LIGA.duenos[x.rid]) : '')}<p>${tx(`Últimas 3: ${n1(x.u3)} pts · su nivel real: ${n1(x.vr.ppj)}. Su dueño puede venderlo barato.`, `Last 3: ${n1(x.u3)} pts · true level: ${n1(x.vr.ppj)}. His owner may sell cheap.`)}</p></div>`).join('') || `<p class="wr-ok">${tx('Sin oportunidades claras hoy.', 'No clear opportunities today.')}</p>`}</section>`;
+}
+function vistaPlantel() {
+  const mis = LIGA.jugadores.map(id => J[id]).filter(Boolean).sort((a, b) => valorROS(b).valor - valorROS(a).valor), tit = new Set(LIGA.tit || []);
+  const tag = j => { const v = valorROS(j), u = ptsSem(j, SEMNUM); if (fueraTemp(j)) return [tx('RESERVA', 'IR'), 'no']; if (u != null && v.ppj > 0 && u >= v.ppj * 1.7 && u >= 15) return [tx('VENDE ALTO', 'SELL HIGH'), 'gold']; if (v.valor < 3 && !['K', 'DEF'].includes(j.pos)) return [tx('SOLTABLE', 'DROPPABLE'), 'no']; if (v.valor > 40) return [tx('PILAR', 'CORE'), 'ok']; return [tx('AGUANTA', 'HOLD'), 'mid']; };
+  return `<section class="wr-sec"><div class="wr-h"><h3>${tx('Tu plantel', 'Your roster')}</h3><small>${tx('Ordenado por valor para el resto de la temporada', 'Sorted by rest-of-season value')}</small></div>
+    <div class="card scroll"><table class="tbl wr-tbl"><thead><tr><th>${tx('JUGADOR', 'PLAYER')}</th><th>${tx('ESTA SEMANA', 'THIS WEEK')}</th><th>${tx('VALOR', 'VALUE')}</th><th>PPJ</th><th>${tx('PISO–TECHO', 'FLOOR–CEIL')}</th><th>${tx('ACCIÓN', 'ACTION')}</th></tr></thead><tbody>
+    ${mis.map(j => { const v = valorROS(j), ft = fiL(j), t = tag(j); return `<tr><td>${jLink(j, tit.has(j.id) ? tx('titular', 'starter') : '')}</td><td><span class="wr-ed">${chipEdo(j)}</span></td><td class="n">${Math.round(v.valor)}</td><td class="n">${n1(v.ppj)}</td><td class="n">${ft ? n1(ft[0]) + '–' + n1(ft[1]) : '–'}</td><td><span class="rp ${t[1]}">${t[0]}</span></td></tr>`; }).join('')}</tbody></table></div></section>`;
+}
+function cuartoGuerra(tab, pro) {
+  const L = lados(), vistas = { '': () => vistaSemana(L, pro), alineacion: () => vistaAlineacion(L), waivers: () => vistaWaivers(L), trades: () => vistaTrades(L), plantel: () => vistaPlantel(), exclusivas: () => exclusivasBloque(todasNoticias().filter(n => n.exclusivo).slice(0, 9), pro) };
+  const v = vistas[tab] ? tab : '', libre = v === '' || v === 'plantel' || v === 'exclusivas';
+  const cuerpo = vistas[v]();
+  return `<div class="wr-top"><div class="wr-liga"><div><small>${LIGA.fuente === 'sleeper' ? 'SLEEPER' : 'MANUAL'} · ${FMTS[fmtL()]}${LIGA.equipos ? ' · ' + LIGA.equipos + ' ' + tx('equipos', 'teams') : ''} · ${tx('Semana', 'Week')} ${semActual()}</small><h1>${esc(LIGA.nombre || tx('Mi equipo', 'My team'))}</h1></div>
+      <div class="cg-acc">${LIGA.fuente === 'sleeper' ? `<button type="button" class="btn ghost sm" data-cg-sync>${tx('Actualizar', 'Refresh')}</button>` : ''}<button type="button" class="btn ghost sm" data-cg-salir>${tx('Cambiar liga', 'Change league')}</button></div></div>
+    <nav class="wr-tabs" aria-label="${tx('Herramientas', 'Tools')}">${TABS_CG.map(([k, es, en]) => `<a href="#/premium${k ? '/' + k : ''}" class="${k === v ? 'on' : ''}">${tx(es, en)}</a>`).join('')}</nav></div>
+    <div class="wr-body">${pro || libre ? cuerpo : zonaPrem(cuerpo, tx('Desbloquea esta herramienta con Premium', 'Unlock this tool with Premium'))}${pieTech()}</div>`;
+}
+document.addEventListener('change', e => { const s = e.target.closest('[data-duelo]'); if (!s) return; const a = document.querySelector('[data-duelo="a"]'), b = document.querySelector('[data-duelo="b"]'), r = document.getElementById('duelo-res'); if (r) r.innerHTML = dueloHtml(J[a.value], J[b.value]); });
+
+function premiumHub(tab = '') {
   titulo('Premium FX');
   const pro = esPremium(), excl = todasNoticias().filter(n => n.exclusivo).slice(0, 6);
   sincroniza();
@@ -1574,35 +1742,8 @@ function premiumHub() {
   const venta = pro ? '' : niveles() + cadaSeccion() + precios();
   if (!LIGA || !(LIGA.jugadores || []).length) return `<div class="page pv">${crumbs([['', 'Premium FX']])}<div class="wrap">${hero}${pro ? '' : niveles()}<div id="pv-conecta">${conectaVista()}</div>${pro ? '' : cadaSeccion() + precios()}${exclusivasBloque(excl, pro)}</div></div>`;
 
-  const slots = LIGA.slots && LIGA.slots.length ? LIGA.slots : POS_BASE, al = alineacion(LIGA.jugadores, slots);
-  const alertas = LIGA.jugadores.map(id => J[id]).filter(Boolean).filter(j => fuera(j) || estatus(j) === 'Duda' || !rivalDe(j.team));
-  const titIds = new Set(al.tit.map(x => x.j && x.j.id));
-  const alertasHtml = alertas.length ? alertas.map(j => { const t = titIds.has(j.id) ? `<em class="cg-tag-t">${tx('TITULAR', 'STARTER')}</em>` : ''; const st = !rivalDe(j.team) ? 'BYE' : fuera(j) ? tx('FUERA', 'OUT') : tx('DUDA', 'QUEST.'); return filaJ(j, `${t}<span class="pill ${st === 'BYE' ? '' : fuera(j) ? 'Fuera' : 'Duda'}">${st}</span>`, parte(j) || ''); }).join('') : `<p class="cg-ok">✓ ${tx('Todo tu plantel está sano y juega esta semana.', 'Your whole roster is healthy and playing this week.')}</p>`;
-  const linea = al.tit.map(x => `<div class="cg-slot"><span class="cg-s">${SLOT_TXT[x.s] || x.s}</span>${x.j ? filaJ(x.j, `<b class="n cg-p">${n1(pL(x.j))}</b>${fxPill(x.j)}`) : `<span class="cg-vacio">${tx('Vacío', 'Empty')}</span>`}<p class="cg-pq">${esc(porQue(x, al.banca))}</p></div>`).join('');
-  const libreLinea = al.tit.slice(0, 2).map(x => `<div class="cg-slot"><span class="cg-s">${SLOT_TXT[x.s] || x.s}</span>${x.j ? filaJ(x.j, `<b class="n cg-p">${n1(pL(x.j))}</b>${fxPill(x.j)}`) : ''}</div>`).join('');
-
-  let matchup = '';
-  if (LIGA.rival && LIGA.otros && LIGA.otros[LIGA.rival]) {
-    const ar = alineacion(LIGA.otros[LIGA.rival], slots), d = al.total - ar.total, p = phi(d / 27);
-    matchup = `<div class="cg-mu"><div><small>${tx('TÚ', 'YOU')}</small><b class="n">${n1(al.total)}</b></div><div class="cg-mu-p"><span style="--p:${(p * 100).toFixed(0)}%"></span><b>${Math.round(p * 100)}%</b><small>${tx('probabilidad de ganar', 'win probability')}</small></div><div class="r"><small>${esc(LIGA.duenos[LIGA.rival] || 'Rival')}</small><b class="n">${n1(ar.total)}</b></div></div>
-      <p class="cg-pq">${d > 8 ? tx('Eres favorito. Alinea lo seguro: piso alto antes que techo.', 'You are the favorite. Play it safe: high floor over ceiling.') : d < -8 ? tx('Eres el que viene de atrás: busca techo, apuesta por jugadores explosivos en FLEX.', 'You are the underdog: chase ceiling, bet on boom players at FLEX.') : tx('Duelo cerrado: cada decisión de FLEX cuenta. Revisa el reporte médico antes del kickoff.', 'Tight matchup: every FLEX call matters. Check the injury report before kickoff.')}</p>
-      <div class="cg-top">${tx('Su arma principal', 'Their top weapon')}: ${ar.tit.filter(x => x.j).sort((a, b) => pL(b.j) - pL(a.j)).slice(0, 2).map(x => `<a href="#/jugador/${x.j.id}">${esc(x.j.n)} (${n1(pL(x.j))})</a>`).join(' · ')}</div>`;
-  } else matchup = `<p class="cg-pq">${LIGA.fuente === 'manual' ? tx('En modo manual no conocemos a tu rival. Conecta Sleeper para ver tu probabilidad de ganar.', 'In manual mode we don\'t know your opponent. Connect Sleeper to see your win probability.') : tx('Tu liga no tiene matchup esta semana.', 'Your league has no matchup this week.')}</p>`;
-
-  const wv = waiversPara(al), wvHtml = wv.length ? wv.map(x => filaJ(x.j, `<b class="n cg-p">${n1(pL(x.j))}</b>`, x.mejora > .5 ? `+${n1(x.mejora)} ${tx('vs tu titular', 'vs your starter')}` : tx('valor resto de temporada', 'rest-of-season value'))).join('') : `<p class="cg-ok">${tx('No hay libres que mejoren tu alineación hoy.', 'No free agents improve your lineup today.')}</p>`;
-  const tt = tradeTargets(al), ttHtml = tt.length ? tt.map(x => `<div class="cg-tr">${filaJ(x.j, `<b class="n cg-p">${n1(pL(x.j))}</b>`, `${tx('de', 'from')} ${esc(LIGA.duenos[x.rid] || '')}`)}<p class="cg-pq">${tx('Ofrece', 'Offer')} <a href="#/trade?da=${x.oferta.id}&recibe=${x.j.id}">${esc(x.oferta.n)} ↔ ${esc(x.j.n)}</a> · ${tx('analizar trade ›', 'analyze trade ›')}</p></div>`).join('') : `<p class="cg-pq">${LIGA.otros ? tx('Tu plantel está balanceado: no vemos un trade que te mejore hoy.', 'Your roster is balanced: no trade improves you today.') : tx('Conecta Sleeper para ver los planteles de tus rivales.', 'Connect Sleeper to see your rivals\' rosters.')}</p>`;
-
-  return `<div class="page pv">${crumbs([['', 'Premium FX']])}<div class="wrap">${hero}
-    <div class="cg-liga-h"><div><small>${LIGA.fuente === 'sleeper' ? 'SLEEPER' : tx('MANUAL', 'MANUAL')} · ${FMTS[fmtL()]}${LIGA.equipos ? ' · ' + LIGA.equipos + ' ' + tx('equipos', 'teams') : ''}</small><h2>${esc(LIGA.nombre || tx('Mi equipo', 'My team'))}</h2></div><div class="cg-acc">${LIGA.fuente === 'sleeper' ? `<button type="button" class="btn ghost sm" data-cg-sync>${tx('Actualizar', 'Refresh')}</button>` : ''}<button type="button" class="btn ghost sm" data-cg-salir>${tx('Cambiar liga', 'Change league')}</button></div></div>
-    <div class="cg-grid">
-      ${tarjetaHerr(pixel(ART.linea), tx(`Alineación óptima · Semana ${semActual()}`, `Optimal lineup · Week ${semActual()}`), tx(`Proyección ${n1(al.total)} pts con el Modelo FX en el formato de tu liga.`, `${n1(al.total)} projected pts with the FX Model in your league format.`), `<div class="cg-line">${linea}</div>`, tx('Tu alineación completa con el porqué de cada decisión', 'Your full lineup with the why behind every call'), false).replace('<div class="pz lock">', `<div class="cg-line">${libreLinea}</div><div class="pz lock">`)}
-      ${tarjetaHerr(pixel(ART.sirena), tx('Alertas del plantel', 'Roster alerts'), tx(`${alertas.length} jugador${alertas.length === 1 ? '' : 'es'} con algo que revisar.`, `${alertas.length} player${alertas.length === 1 ? '' : 's'} to check.`), alertasHtml, '', true)}
-      ${tarjetaHerr(pixel(ART.marcador), tx('Tu matchup', 'Your matchup'), tx('Puntos proyectados de las dos alineaciones óptimas.', 'Projected points of both optimal lineups.'), matchup, tx('Tu probabilidad de ganar y cómo jugar la semana', 'Your win probability and how to play the week'), false)}
-      ${tarjetaHerr(pixel(ART.iman), tx('Waivers para ti', 'Waivers for you'), tx('Libres en tu liga que mejoran tu posición más débil.', 'Free agents in your league who upgrade your weakest spot.'), wvHtml, tx('Los libres que mejoran tu equipo, ordenados', 'The free agents who upgrade your team, ranked'), false)}
-      ${tarjetaHerr(pixel(ART.trade), 'Trade targets', tx('A quién pedir, a qué rival y qué ofrecer de tu banca.', 'Who to ask for, from which rival and what to offer from your bench.'), ttHtml, tx('Los trades que te convienen con tus rivales reales', 'The trades that help you with your real rivals'), false)}
-      ${tarjetaHerr(pixel(ART.linea), tx('Tu plantel', 'Your roster'), tx(`${LIGA.jugadores.length} jugadores · banca ordenada por proyección.`, `${LIGA.jugadores.length} players · bench sorted by projection.`), `<div class="cg-list">${al.banca.map(j => filaJ(j, `<b class="n cg-p">${n1(pL(j))}</b>${fxPill(j)}`, fiL(j) ? tx('piso/techo ', 'floor/ceiling ') + n1(fiL(j)[0]) + '–' + n1(fiL(j)[1]) : '')).join('') || '<p class="sub">—</p>'}</div>`, '', true)}
-    </div>
-    ${venta}${exclusivasBloque(excl, pro)}</div></div>`;
+  cargaVivo(semActual());
+  return `<div class="page pv wr">${crumbs([['#/premium', 'Premium FX'], ['', LIGA.nombre || tx('Mi equipo', 'My team')]])}<div class="wrap">${cuartoGuerra(tab, pro)}${venta}</div></div>`;
 }
 function exclusivasBloque(L, pro) {
   return `<section class="block" data-chip="${tx('RED DE REPORTEROS', 'REPORTER NETWORK')}"><div class="head"><div><h2>${tx('Exclusivas FX', 'FX exclusives')}</h2><p class="hsub">${tx('Información de nuestra red de reporteros que no vas a encontrar en otro lado.', 'Information from our reporter network you won\'t find anywhere else.')}</p></div><a class="all" href="#/exclusivo">${tx('Todas', 'All')} ›</a></div>
@@ -1644,7 +1785,7 @@ function router() {
   const [ruta, qs] = ((location.hash || window.FX_RUTA || '').slice(1) || '/').split('?');
   const q = new URLSearchParams(qs || ''), [, seccion, a, b] = ruta.split('/');
   const R = { '': () => inicio(), blog: () => a ? blogNota(a) : blogLista(), noticias: () => noticias(q), reportajes: () => noticias(q), noticia: () => noticia(a), reportaje: () => noticia(a), jugador: () => jugador(a), comparar: () => comparar(a, b), posicion: () => posicion(a),
-    equipos: () => equipos(), equipo: () => equipo(a), partidos: () => partidos(q), partido: () => partido(a), lideres: () => lideres(q), media: () => media(), exclusivo: () => exclusivo(), premium: () => premiumHub(), temporada: () => temporada(), semana: () => semana(a), tendencias: () => tendencias(), lesionados: () => lesionados(q),
+    equipos: () => equipos(), equipo: () => equipo(a), partidos: () => partidos(q), partido: () => partido(a), lideres: () => lideres(q), media: () => media(), exclusivo: () => exclusivo(), premium: () => premiumHub(a || ''), temporada: () => temporada(), semana: () => semana(a), tendencias: () => tendencias(), lesionados: () => lesionados(q),
     cuenta: () => cuenta(q), herramientas: () => herramientas(), trade: () => trade(q), privacidad: () => privacidad(), baja: () => baja(q) };
   app.innerHTML = (R[seccion || ''] || noEncontrado)();
   if (ruta !== _rutaPrev) { _rutaPrev = ruta; app.classList.remove('entra'); void app.offsetWidth; app.classList.add('entra'); }
