@@ -244,6 +244,47 @@ const lecturaFX = j => {
 const zonaPrem = (html, gancho) => esPremium() ? `<div class="pz es-prem">${html}</div>`
   : `<div class="pz lock"><div class="pz-in" aria-hidden="true">${html}</div><a class="cs-cta pz-cta" href="#/premium">${CANDADO}<span>${esc(gancho)}</span><b>Premium ›</b></a></div>`;
 const pisoTecho = j => { const u = (j.log || []).filter(l => l.f && l.f[FMT] != null).slice(-5).map(l => l.f[FMT]); return u.length >= 2 ? [Math.min(...u), Math.max(...u)] : null; };
+/* Ventaja FX: cada sección trae un extra hecho con nuestros sistemas. Botón (i) explica qué es; el contenido es Premium. */
+const infoFX = t => `<button type="button" class="fx-info" aria-label="${tx('¿Qué es esto?', 'What is this?')}">i<span role="tooltip">${t}</span></button>`;
+const proBloque = (titulo, info, html, gancho) => `<section class="block plusfx" data-chip="★ ${tx('VENTAJA FX', 'FX EDGE')}"><div class="head"><div><h2>${titulo} ${infoFX(info)}</h2></div><a class="all" href="#/premium">${tx('Todo Premium', 'All Premium')} ›</a></div><div class="card plus-in">${zonaPrem(html, gancho)}</div></section>`;
+const filaPlus = (j, der, sub) => `<a class="cg-j" href="#/jugador/${j.id}" data-hover-j="${j.id}">${helmet(j.team, j.num, 30)}<span class="cg-jn"><b>${esc(j.n)}</b><small>${sub}</small></span>${der}</a>`;
+function plusLesion() {
+  const L = D.lesionados.map(x => J[x.id]).filter(j => j && (fuera(j) || estatus(j) === 'Duda') && ['QB', 'RB', 'WR', 'TE'].includes(j.pos) && (j.pEst > 5 || (j.rank && j.rank < 150))).slice(0, 8);
+  const filas = L.map(j => { const b = P.filter(x => x.team === j.team && x.pos === j.pos && x.id !== j.id && juega(x)).sort((a, c) => c.pEst - a.pEst)[0]; return b ? filaPlus(b, `<b class="n cg-p">${n1(b.pEst)}</b>`, tx(`Si ${j.n} no juega, el beneficiado es él · ${b.pos} ${b.team}`, `If ${j.n} sits, he's the one who benefits · ${b.pos} ${b.team}`)) : ''; }).filter(Boolean);
+  return filas.length ? proBloque(tx('Reemplazos FX', 'FX replacements'), tx('Para cada lesionado relevante, el compañero que hereda su volumen según el Modelo FX: el waiver que tu liga todavía no ve.', 'For every relevant injury, the teammate who inherits the volume according to the FX Model: the waiver your league hasn\'t spotted yet.'), filas.join(''), tx('Quién hereda el trabajo de cada lesionado', 'Who inherits each injured player\'s work')) : '';
+}
+function plusRepite() {
+  if (!SEMNUM) return '';
+  const L = P.filter(j => ptsSem(j, SEMNUM) != null && ['QB', 'RB', 'WR', 'TE'].includes(j.pos)).sort((a, b) => ptsSem(b, SEMNUM) - ptsSem(a, SEMNUM)).slice(0, 10);
+  const filas = L.map(j => { const a = ptsSem(j, SEMNUM), p = j.p || 0, r = a ? p / a : 0, et = !juega(j) ? ['NO JUEGA', 'no'] : r >= .65 ? [tx('SOSTENIBLE', 'REPEATABLE'), 'ok'] : r >= .45 ? [tx('BAJA A TIERRA', 'REGRESSION'), 'mid'] : [tx('FUE UN PICO', 'ONE-OFF'), 'no'];
+    return filaPlus(j, `<span class="rp ${et[1]}">${et[0]}</span>`, `S${SEMNUM}: ${n1(a)} → S${semActual()} FX: ${n1(p)}`); });
+  return proBloque(tx('¿Repite? FX', 'Repeat? FX'), tx('Comparamos lo que hizo cada líder contra su proyección FX de esta semana: volumen, eficiencia y rival. Te dice si fue algo sostenible o un pico que no va a repetir.', 'We compare each leader\'s output with this week\'s FX projection: volume, efficiency and opponent. It tells you if it\'s sustainable or a one-off.'), filas.join(''), tx('Qué líderes van a repetir y cuáles fueron un pico', 'Which leaders will repeat and which were a one-off'));
+}
+function plusCompra() {
+  const L = (D.agregados || []).map(id => J[id]).filter(j => j && j.team !== 'FA').slice(0, 10);
+  const filas = L.map(j => { const v = valorROS(j), rep = REEMPLAZO[j.pos] || 20, rk = P.filter(x => x.pos === j.pos && juega(x)).sort((a, b) => b.pEst - a.pEst).indexOf(j) + 1, ok = v.valor > 15 || (rk && rk <= rep * .6);
+    return filaPlus(j, `<span class="rp ${ok ? 'ok' : 'no'}">${ok ? tx('COMPRA', 'BUY') : tx('TRAMPA', 'TRAP')}</span>`, tx(`${j.pos}${rk || '–'} esta semana · valor resto de temporada ${Math.round(v.valor)}`, `${j.pos}${rk || '–'} this week · rest-of-season value ${Math.round(v.valor)}`)); });
+  return filas.length ? proBloque(tx('¿Compra o trampa?', 'Buy or trap?'), tx('Todos agregan a los mismos jugadores. Medimos su valor real para el resto de la temporada contra un jugador de reemplazo: COMPRA si mejora tu equipo, TRAMPA si es puro ruido.', 'Everyone adds the same players. We measure their real rest-of-season value against a replacement player: BUY if it upgrades your team, TRAP if it\'s just noise.'), filas.join(''), tx('Qué agregados valen la pena y cuáles son trampa', 'Which adds are worth it and which are traps')) : '';
+}
+function plusPartidos(L) {
+  if (!L || !L.length) return '';
+  const tot = t => { const r = P.filter(j => j.team === t && juega(j)), top = (p, k) => r.filter(j => j.pos === p).sort((a, b) => b.pEst - a.pEst).slice(0, k); return [...top('QB', 1), ...top('RB', 2), ...top('WR', 3), ...top('TE', 1)]; };
+  const filas = L.filter(g => g.estado !== 'post').map(g => { const a = tot(g.visita.ab || g.visita), b = tot(g.local.ab || g.local), sa = a.reduce((x, j) => x + j.pEst, 0), sb = b.reduce((x, j) => x + j.pEst, 0), llave = [...a, ...b].sort((x, y) => y.pEst - x.pEst)[0];
+    return { g, sa, sb, llave, ta: g.visita.ab || g.visita, tb: g.local.ab || g.local }; }).filter(x => x.llave).sort((x, y) => (y.sa + y.sb) - (x.sa + x.sb));
+  if (!filas.length) return '';
+  const html = filas.map((x, i) => `<div class="pf-g"><span class="pf-t">${helmet(x.ta, '', 24)}<b class="n">${n1(x.sa)}</b></span><span class="pf-m">${i === 0 ? `<em>${tx('EL TIROTEO', 'SHOOTOUT')}</em>` : ''}<small>${tx('Llave', 'Key')}: <a href="#/jugador/${x.llave.id}">${esc(x.llave.n)}</a></small></span><span class="pf-t r"><b class="n">${n1(x.sb)}</b>${helmet(x.tb, '', 24)}</span></div>`).join('');
+  return proBloque(tx('Pronóstico fantasy FX', 'FX fantasy forecast'), tx('Sumamos la proyección FX de los titulares de fantasy de cada equipo (QB, 2 RB, 3 WR, TE) para saber qué partidos van a dar más puntos y quién es la llave de cada uno.', 'We add up the FX projection of each team\'s fantasy starters (QB, 2 RB, 3 WR, TE) to know which games will score the most fantasy points and who the key player is.'), html, tx('Qué partidos dan más puntos de fantasy y su jugador llave', 'Which games score the most fantasy points and their key player'));
+}
+function plusCalendario(t) {
+  const html = ['QB', 'RB', 'WR', 'TE'].map(pos => { const e = []; for (let w = semActual(); w <= 17; w++) { const r = rivalDe(t, w), x = r && estrellas(r.opp, pos); if (x) e.push(x.n); } const m = e.length ? e.reduce((a, b) => a + b, 0) / e.length : 0;
+    return `<div class="pf-g"><span class="pf-t"><b>${pos}</b></span><span class="pf-m">${pintaEstrellas(m ? { n: Math.round(m), rank: '' } : null)}<small>${m >= 3.5 ? tx('Calendario a favor: compra', 'Soft schedule: buy') : m <= 2.5 ? tx('Calendario duro: vende', 'Tough schedule: sell') : tx('Calendario neutral', 'Neutral schedule')}</small></span><span class="pf-t r"><b class="n">${e.length}</b><small>${tx('juegos', 'games')}</small></span></div>`; }).join('');
+  return proBloque(tx('Calendario FX resto de temporada', 'FX rest-of-season schedule'), tx('La dificultad promedio de los rivales que le quedan a este equipo, por posición, según los puntos que cada defensa permite. Clave para trades y playoffs de fantasy.', 'The average difficulty of this team\'s remaining opponents, by position, based on points each defense allows. Key for trades and fantasy playoffs.'), html, tx('A qué posiciones de este equipo comprar o vender por calendario', 'Which positions on this team to buy or sell by schedule'));
+}
+function plusMiLiga() {
+  if (!LIGA || !(LIGA.jugadores || []).length) return `<section class="block plusfx" data-chip="★ ${tx('VENTAJA FX', 'FX EDGE')}"><a class="card plus-cta" href="#/premium"><b>${tx('Ve solo lo que afecta a TU equipo', 'See only what affects YOUR team')}</b><span>${tx('Conecta tu liga gratis y marcamos cada noticia que toca a tus jugadores.', 'Connect your league for free and we flag every story that touches your players.')}</span><em>${tx('Conectar mi liga', 'Connect my league')} ›</em></a></section>`;
+  const mios = new Set(LIGA.jugadores), N = todasNoticias().filter(n => [...(n.jugadores || []), ...(n.menciona || [])].some(id => mios.has(id))).slice(0, 6);
+  return N.length ? `<section class="block plusfx" data-chip="${tx('TU LIGA', 'YOUR LEAGUE')} · ${N.length}"><div class="head"><div><h2>${tx('Afecta a tu equipo', 'Affects your team')}</h2><p class="hsub">${esc(LIGA.nombre || '')}</p></div><a class="all" href="#/premium">${tx('Mi cuarto de guerra', 'My war room')} ›</a></div><div class="news stagger">${N.map(n => newsCard(n)).join('')}</div></section>` : '';
+}
 const consejo = ({ accion, texto, jugadores = [], veredicto }) => {
   if (!accion && !texto) return '';
   const full = esPremium(), j0 = jugadores[0];
@@ -417,6 +458,7 @@ function noticias(q) {
   L.slice(0, lim).forEach(n => { const d = n.fecha ? new Date(n.fecha).toLocaleDateString('es-MX', { weekday: 'long', day: 'numeric', month: 'long' }) : 'Hoy'; (dias[d] = dias[d] || []).push(n); });
   return `<div class="page">${crumbs([['', 'Noticias']])}<div class="wrap"><section class="block">
     <div class="head"><div><h2>Noticias de fantasy</h2><p class="hsub">${L.length} noticias en el archivo · ${esc(actualizado())}</p></div></div>
+    ${plusMiLiga()}
     <div class="chips">${['TODO', ...ETIQUETAS].map(t => `<a class="chip ${t === f ? 'on' : ''} ${t}" href="#/noticias${t === 'TODO' ? '' : '?tipo=' + encodeURIComponent(t)}">${t === 'TODO' ? 'TODAS' : ETQ[t]}</a>`).join('')}<a class="chip-blog" href="#/blog">Blog ›</a></div>
     ${LANG === 'en' && D.noticias.some(n => !n._en) ? `<p class="aviso-idioma">${fxLogo(14)} Some older stories are still in Spanish; every new story now arrives in English too. <a href="#/blog">Read the English blog ›</a></p>` : ''}
     ${Object.entries(dias).map(([d, ns], k) => `<h3 class="day">${esc(d)}</h3><div class="news ${k ? '' : 'first'} stagger">${ns.map((n, i) => newsCard(n, k === 0 && i === 0 && f === 'TODO')).join('')}</div>`).join('') || '<div class="empty">No hay noticias de este tipo.</div>'}
@@ -548,7 +590,7 @@ function posicion(p) {
       <span class="chips" style="margin:0" id="fst">${['TODOS', 'START', 'FLEX', 'SIT'].map((s, i) => `<button type="button" class="chip ${i ? '' : 'on'} ${s}" data-s="${s}">${s}</button>`).join('')}</span></div>
     <div class="card scroll"><table class="tbl rank"><thead><tr>
       <th>#</th><th>JUGADOR</th><th>EQUIPO</th><th>RIVAL S${semActual()}</th><th>DIFICULTAD</th><th class="hl">PROY</th>
-      ${ult.map(x => `<th>S${x}</th>`).join('')}<th>PROM</th><th>TOTAL</th><th>TENDENCIA</th><th class="pz-th"><a href="#/premium">${esPremium() ? '' : CANDADO}PISO–TECHO</a></th><th class="fxh">${fxLogo(18)} START/SIT</th>
+      ${ult.map(x => `<th>S${x}</th>`).join('')}<th>PROM</th><th>TOTAL</th><th>TENDENCIA</th><th class="pz-th"><a href="#/premium">${esPremium() ? '' : CANDADO}PISO–TECHO</a>${infoFX(tx('Lo mínimo y lo máximo que ha hecho en sus últimas 5 semanas. Piso alto = seguro para tu alineación; techo alto = jugador para ganar semanas cerradas. Exclusivo Premium.', 'The least and most he scored over his last 5 weeks. High floor = safe for your lineup; high ceiling = a player to win close weeks. Premium exclusive.'))}</th><th class="fxh">${fxLogo(18)} START/SIT</th>
     </tr></thead><tbody id="tb"></tbody></table></div>
     <p class="ss-note">Proyección: Modelo FX, propio (volumen y eficiencia de esta temporada, con la anterior como base). Dificultad = puntos que la defensa rival permite a la posición: ★★★★★ es el matchup ideal. START/FLEX/SIT combina proyección, rival, racha, noticias y comunidad.</p>
     ${noJuegan.length ? `<details class="desglose" style="margin-top:22px"><summary><span>No juegan en la semana ${semActual()} · ${noJuegan.length}</span><span>›</span></summary><div class="plist" style="padding:0 12px 12px">${noJuegan.map(j => prow(j, `<span class="team">${fuera(j) ? esc(parte(j) || j.inj) : 'BYE'}</span>${fxPill(j)}`)).join('')}</div></details>` : ''}
@@ -623,7 +665,7 @@ function lideres(q) {
         ${top ? `<a class="lead1" href="#/jugador/${top.id}" style="${vars(top.team)}">${helmet(top.team, top.num, 58, false, 'bob')}<span><small>Nº1 · ${esc(top.team)}</small><b><i>${esc(p === 'DEF' ? '' : nombre1(top.n))}</i>${esc(p === 'DEF' ? (EQUIPOS[top.team] || top.n) : apellido(top.n))}</b><em class="n">${pts(top)} pts</em></span></a>` : `<div class="empty sm">${p === 'DEF' ? 'Las defensivas llegan con la próxima actualización de datos.' : 'Sin datos todavía.'}</div>`}
         <div class="plist">${L.slice(1, 10).map((j, i) => `<a class="lrow" href="#/jugador/${j.id}"><i class="n">${i + 2}</i>${helmet(j.team, j.num, 24)}<span>${esc(j.n)}<small>${esc(j.team)}</small></span><em class="n">${pts(j)}</em></a>`).join('')}</div>
         ${L.length ? `<a class="lcol-all" href="${qs(w, '&pos=' + p)}">Ver los ${L.length} ${p} ›</a>` : ''}</div>`;
-    }).join('')}</div></section></div></div>`;
+    }).join('')}</div></section>${plusRepite()}</div></div>`;
 }
 
 /* ---------- equipos ---------- */
@@ -644,6 +686,7 @@ function equipo(t) {
     ${les.length ? `<div class="alert"><b>REPORTE DE LESIONES</b><p>${les.map(j => `<a href="#/jugador/${j.id}">${esc(j.n)}</a> (${estatus(j)}${parte(j) ? ', ' + esc(parte(j)) : ''})`).join(' · ')}</p></div>` : ''}
     <section class="block"><div class="head"><div><h2>Calendario ${esc(D.cal ? D.cal.temporada : '')}</h2><p class="hsub">Resultados y lo que viene, semana por semana.</p></div></div>
       <div class="sched">${Array.from({ length: 18 }, (_, i) => i + 1).map(w => { const c = cal[w]; return `<a class="sw ${c && c.fin ? (c.pf > c.pc ? 'g' : 'p') : ''} ${w === semActual() ? 'now' : ''}" href="${c ? '#/equipo/' + c.opp : '#/equipos'}"><small>S${w}</small>${c ? helmet(c.opp, '', 34, !c.home) : '<b class="bye">BYE</b>'}<span>${c ? (c.home ? 'vs ' : '@ ') + c.opp : 'Descanso'}</span><em class="n">${c && c.fin ? (c.pf > c.pc ? 'G ' : c.pf < c.pc ? 'P ' : 'E ') + c.pf + '-' + c.pc : c ? fechaC(c.fecha) : ''}</em></a>`; }).join('')}</div></section>
+    ${plusCalendario(t)}
     <section class="block"><div class="head"><div><h2>Plantel fantasy</h2><p class="hsub">Con su veredicto Start/Sit FX de esta semana.</p></div></div><div class="grid g3 stagger">${grupos || '<div class="empty">Sin jugadores registrados.</div>'}</div></section>
     <section class="block"><div class="head"><h2>Noticias de ${esc(EQUIPOS[t])}</h2></div><div class="news stagger">${notas.slice(0, 9).map(n => newsCard(n)).join('') || '<div class="empty">Aún no hay noticias de este equipo.</div>'}</div></section>
   </div></div>`;
@@ -653,7 +696,7 @@ function tendencias() {
   return `<div class="page">${crumbs([['', 'Tendencias']])}<div class="wrap"><section class="block"><div class="head"><div><h2>Tendencias en ligas</h2><p class="hsub">Movimientos de las últimas 24 horas en Sleeper, con nuestro veredicto.</p></div></div><div class="grid g2">
     <div class="card"><h3 style="color:var(--accent)">▲ Más agregados</h3><div class="plist">${D.agregados.map((id, i) => J[id] && prow(J[id], `<span class="bar"><i style="width:${pct(J[id].add, 'add')}%"></i></span><span class="num sm">${nf.format(J[id].add)}</span>${fxPill(J[id])}`, i + 1)).join('')}</div></div>
     <div class="card"><h3 style="color:var(--bad)">▼ Más soltados</h3><div class="plist">${D.soltados.map((id, i) => J[id] && prow(J[id], `<span class="bar down"><i style="width:${pct(J[id].drop, 'drop')}%"></i></span><span class="num sm" style="color:var(--bad)">${nf.format(J[id].drop)}</span>`, i + 1)).join('') || '<p class="sub">Sin datos hoy.</p>'}</div></div>
-  </div></section></div></div>`;
+  </div></section>${plusCompra()}</div></div>`;
 }
 function lesionados(q) {
   titulo('Lesionados');
@@ -663,6 +706,7 @@ function lesionados(q) {
   return `<div class="page">${crumbs([['', 'Lesionados']])}<div class="wrap"><section class="block">
     <div class="head"><div><h2>Reporte médico</h2><p class="hsub">Solo jugadores relevantes para fantasy, ordenados por su impacto. Fuente: reporte oficial de lesiones · ${esc(actualizado())}</p></div><small>${lista.length} jugadores</small></div>
     <div class="chips">${[['TODOS', 'Todos'], ['Duda', 'En duda'], ['Fuera', 'Fuera esta semana'], ['IR', 'Reserva / temporada']].map(([s, t]) => `<a class="chip ${s === f ? 'on' : ''}" href="#/lesionados${s === 'TODOS' ? '' : '?estatus=' + s}">${t}</a>`).join('')}</div>
+    ${plusLesion()}
     <div class="injgrid">${lista.map(j => `<a class="inj" href="#/jugador/${j.id}" style="${vars(j.team)}">${helmet(j.team, j.num, 44)}<span class="inj-n"><small>${esc(nombre1(j.n))}</small><b>${esc(apellido(j.n))}</b><i>${esc(j.pos)} · ${esc(j.team)} · ${esc(rw(j) !== '–' ? rw(j) : rp(j))}</i></span>
       <span class="inj-d"><span class="pill ${estatus(j)}">${fueraTemp(j) ? 'RESERVA' : estatus(j).toUpperCase()}</span><b>${esc(parte(j) || 'Sin detalle')}</b><small>${j.les && j.les.regreso ? 'Regreso: ' + esc(fechaC(j.les.regreso)) : j.les && j.les.fecha ? 'Reporte: ' + esc(fechaC(j.les.fecha)) : ''}</small></span></a>`).join('') || '<div class="empty">Sin lesionados con este estatus.</div>'}</div>
   </section></div></div>`;
@@ -864,7 +908,7 @@ function partidos(q) {
     <div class="weeks" role="tablist">${Array.from({ length: 18 }, (_, i) => i + 1).map(n => `<a class="wkc ${sel === '2-' + n ? 'on' : ''} ${n < act ? 'past' : n === act ? 'now' : ''}" href="#/partidos?semana=2-${n}">S${n}</a>`).join('')}<span class="wsep"></span>${PLAYOFFS.map(([k, t]) => `<a class="wkc po ${sel === k ? 'on' : ''}" href="#/partidos?semana=${k}">${t}</a>`).join('')}</div>
     ${byes.length ? `<p class="byes">Descansan: ${byes.map(t => `<a href="#/equipo/${t}">${helmet(t, '', 20)}${t}</a>`).join('')}</p>` : ''}
     ${grupos || '<div class="empty">Esta semana aún no tiene partidos publicados.</div>'}
-  </section></div></div>`;
+  </section>${sel === '2-' + act ? plusPartidos(L) : ''}</div></div>`;
 }
 // Marcador tipo televisión: horizontal y simétrico. Visita a la izquierda, local a la derecha.
 const RELOJ = d => { const m = String(d || '').match(/(\d+:\d+)\s*-\s*(\d)(?:st|nd|rd|th)/i); if (m) return [`${m[2]}º CUARTO`, m[1]];
