@@ -22,7 +22,8 @@
         s.dataset.fx = s.classList.contains('front') ? 'front' : 'sec';
         const h = s.querySelector(':scope > .head h2, :scope > .head > div > h2, :scope .card > .head h3');
         if (h && s.dataset.chip && !s.querySelector('.fx-chip')) h.insertAdjacentHTML('beforebegin', `<span class="fx-chip${s.dataset.vivo ? ' vivo' : ''}" aria-hidden="true">${s.dataset.vivo ? '<i></i>' : ''}${s.dataset.chip}</span>`);
-        if (h && s.dataset.fx === 'sec' && !h.querySelector('.fx-spin')) h.insertAdjacentHTML('beforeend', `<span class="fx-spin" aria-hidden="true">${BALON}</span>`);
+        // El balón que gira solo acompaña a las secciones marcadas como protagonistas (data-balon)
+        if (h && s.dataset.balon && !h.querySelector('.fx-spin')) h.insertAdjacentHTML('beforeend', `<span class="fx-spin" aria-hidden="true">${BALON}</span>`);
         [...s.querySelectorAll(':scope .card, :scope .story, :scope .match, :scope .hub, :scope .plist > *, :scope .news > *')].slice(0, 14).forEach((c, n) => c.style.setProperty('--d', (movil() ? n * 35 : n * 60) + 'ms'));
       }
       if (quieto || re) s.classList.add('vis', 'ya'); else if (!s.classList.contains('vis')) io.observe(s);

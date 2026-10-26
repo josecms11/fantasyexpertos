@@ -409,7 +409,7 @@ function inicio() {
   </div>
   <div class="ticker"><div class="tag"><i></i>ÚLTIMA HORA</div><div class="view"><div class="ticker-track">${tickerItems()}${tickerItems()}</div></div></div>
   <div class="wrap">
-    <section class="block" data-chip="${enVivo() ? enVivo() + ' EN VIVO' : G.length ? G.filter(g => g.estado === 'post').length + '/' + G.length + ' FINAL' : 'S' + semActual()}" data-vivo="${enVivo() ? 1 : ''}"><div class="head"><div><h2>Partidos de la semana ${esc(G[0] ? G[0].semana : semActual())}</h2><p class="hsub">En vivo primero, luego los próximos. Marcador, posesión y las figuras de fantasy de cada lado.</p></div><a class="all" href="#/partidos">Todas las semanas ›</a></div><div id="home-matches">${homeMatches()}</div></section>
+    <section class="block" data-chip="${enVivo() ? enVivo() + ' EN VIVO' : G.length ? G.filter(g => g.estado === 'post').length + '/' + G.length + ' FINAL' : 'S' + semActual()}" data-vivo="${enVivo() ? 1 : ''}" data-balon="1"><div class="head"><div><h2>Partidos de la semana ${esc(G[0] ? G[0].semana : semActual())}</h2><p class="hsub">En vivo primero, luego los próximos. Marcador, posesión y las figuras de fantasy de cada lado.</p></div><a class="all" href="#/partidos">Todas las semanas ›</a></div><div id="home-matches">${homeMatches()}</div></section>
     ${SEMNUM ? `<section class="block lideres-home" data-chip="S${SEMNUM} · ${FMTS[FMT]}"><div class="head"><div><h2>Líderes de la semana ${SEMNUM}</h2><p class="hsub">Los que más puntos ${FMTS[FMT]} hicieron, por posición. Toca uno para ver su ficha.</p></div><a class="all" href="#/lideres">Todos los líderes ›</a></div>${marqueeLideres()}</section>` : ''}
     ${mas.length ? `<section class="block" data-chip="+${N.filter(n => Date.now() - Date.parse(n.fecha || 0) < 864e5).length} HOY"><div class="head"><div><h2>Más noticias</h2><p class="hsub">Lo que mueve tus alineaciones, verificado contra el reporte oficial.</p></div><a class="all" href="#/noticias">Todas las noticias ›</a></div><div class="news stagger">${mas.map(n => newsCard(n)).join('')}</div></section>` : ''}
     <section class="block grid g2" data-chip="ÚLTIMAS 24 H">
@@ -1170,6 +1170,7 @@ async function cargaPerfil() {
   let p = {}, f = {};
   try { [p, f] = await Promise.all([SB.from('perfiles').select('*').eq('id', YO.id).maybeSingle(), SB.from('favoritos').select('jugador')]); } catch (e) { console.warn('Perfil no disponible', e); }
   PERFIL = p.data || { nombre: (YO.email || '').split('@')[0] };
+  try { restauraLiga(); } catch (e) {}
   FAV = new Set((f.data || []).map(x => x.jugador));
   const pend = ls('fx-sigue'); if (pend && J[pend] && !FAV.has(pend)) { ls('fx-sigue', null); await SB.from('favoritos').insert({ jugador: pend }); FAV.add(pend); }
   if (/[?&]code=/.test(location.search)) history.replaceState(null, '', location.pathname + (location.hash || '#/cuenta'));
@@ -1415,7 +1416,16 @@ let _rutaPrev = null;
 const LIGA_K = 'fx-liga';
 let LIGA = (() => { try { return JSON.parse(localStorage.getItem(LIGA_K) || 'null'); } catch (e) { return null; } })();
 let _ligaSync = 0, _ligaOpc = null;
-const guardaLiga = () => { try { LIGA ? localStorage.setItem(LIGA_K, JSON.stringify(LIGA)) : localStorage.removeItem(LIGA_K); } catch (e) {} };
+const guardaLiga = () => { try { LIGA ? localStorage.setItem(LIGA_K, JSON.stringify(LIGA)) : localStorage.removeItem(LIGA_K); } catch (e) {}
+  // También en la cuenta: la liga te sigue en cualquier dispositivo y no se vuelve a pedir
+  if (SB && YO) { const c = LIGA ? { fuente: LIGA.fuente, lid: LIGA.lid || null, uid: LIGA.uid || null, fmt: LIGA.fmt, nombre: LIGA.nombre, jugadores: LIGA.fuente === 'manual' ? LIGA.jugadores : undefined, fijos: LIGA.fijos || {} } : null, k = JSON.stringify(c);
+    if (k !== guardaLiga._u) { guardaLiga._u = k; SB.auth.updateUser({ data: { fx_liga: c } }).catch(() => {}); } } };
+function restauraLiga() {
+  const c = YO && YO.user_metadata && YO.user_metadata.fx_liga; if (!c || (LIGA && LIGA.jugadores && LIGA.jugadores.length)) return;
+  guardaLiga._u = JSON.stringify(c);
+  if (c.fuente === 'sleeper' && c.lid && c.uid) cargaLigaSleeper(c.lid, c.uid).then(() => { if (c.fijos) { LIGA.fijos = c.fijos; guardaLiga(); } if (/^#\/premium/.test(location.hash)) repinta(); }).catch(() => {});
+  else if (c.fuente === 'manual' && (c.jugadores || []).length) { LIGA = { ...c, slots: POS_BASE, fecha: new Date().toISOString() }; guardaLiga(); if (/^#\/premium/.test(location.hash)) repinta(); }
+}
 const sleeperGet = async u => { const r = await fetch('https://api.sleeper.app/v1/' + u); if (!r.ok) throw new Error(r.status); return r.json(); };
 const SLOT_OK = { QB: ['QB'], RB: ['RB'], WR: ['WR'], TE: ['TE'], K: ['K'], DEF: ['DEF'], FLEX: ['RB', 'WR', 'TE'], WRRB_FLEX: ['RB', 'WR'], REC_FLEX: ['WR', 'TE'], SUPER_FLEX: ['QB', 'RB', 'WR', 'TE'] };
 const SLOT_TXT = { FLEX: 'FLEX', WRRB_FLEX: 'W/R', REC_FLEX: 'W/T', SUPER_FLEX: 'SFLEX' };
@@ -1427,7 +1437,7 @@ const fiL = j => { const u = (j.log || []).filter(l => l.f && l.f[fmtL()] != nul
 /* ---------- Motor de decisiones ---------- */
 /* ---------- Motor de decisiones (consciente del estado de cada partido) ---------- */
 const POS_JUEGO = ['QB', 'RB', 'WR', 'TE'];
-const juegoDe = t => G.find(g => (g.visita && g.visita.ab === t) || (g.local && g.local.ab === t));
+const juegoDe = t => (G.length && +G[0].semana === semActual() ? G : []).find(g => (g.visita && g.visita.ab === t) || (g.local && g.local.ab === t));
 const ptsAhora = j => {
   const sp = LIGA && LIGA.mu && LIGA.mu.w === semActual() && LIGA.mu.pts ? LIGA.mu.pts[j.id] : null; if (sp != null && sp !== 0) return sp;
   if (VIVO.w === semActual() && VIVO.pts && VIVO.pts[j.id]) return VIVO.pts[j.id][fmtL()];
@@ -1455,9 +1465,10 @@ const ult3 = j => { const u = (j.log || []).filter(l => l.f && l.f[fmtL()] != nu
 const phi = z => { const t = 1 / (1 + .3275911 * Math.abs(z) / Math.SQRT2), y = 1 - (((((1.061405429 * t - 1.453152027) * t) + 1.421413741) * t - .284496736) * t + .254829592) * t * Math.exp(-z * z / 2); return .5 * (1 + (z >= 0 ? y : -y)); };
 
 // Alineación: respeta a los que ya jugaron o están jugando (no se pueden mover) y optimiza el resto
-function alineacion(ids, slots, actuales = []) {
+function alineacion(ids, slots, actuales = [], fijos = {}) {
   const usados = new Set(), out = [];
   slots.forEach((s, i) => { const j = J[actuales[i]]; if (j && bloqueado(j)) { out[i] = { s, j, lock: true }; usados.add(j.id); } });
+  Object.entries(fijos).forEach(([i, id]) => { const j = J[id], s = slots[i]; if (!out[i] && j && !usados.has(id) && ids.includes(id) && SLOT_OK[s] && SLOT_OK[s].includes(j.pos)) { out[i] = { s, j, tuyo: true }; usados.add(id); } });
   const pool = ids.map(id => J[id]).filter(j => j && !usados.has(j.id) && !bloqueado(j)).sort((a, b) => edo(b).fin - edo(a).fin);
   const orden = slots.map((s, i) => ({ s, i })).filter(x => SLOT_OK[x.s] && !out[x.i]).sort((a, b) => SLOT_OK[a.s].length - SLOT_OK[b.s].length);
   for (const { s, i } of orden) { const j = pool.find(p => !usados.has(p.id) && SLOT_OK[s].includes(p.pos)); if (j) usados.add(j.id); out[i] = { s, j }; }
@@ -1467,7 +1478,7 @@ function alineacion(ids, slots, actuales = []) {
 // Cambios concretos: lo que tienes alineado en Sleeper contra lo óptimo
 function cambios(slots) {
   const act = LIGA.tit && LIGA.tit.length ? LIGA.tit : null; if (!act) return [];
-  const opt = alineacion(LIGA.jugadores, slots, act), out = [];
+  const opt = alineacion(LIGA.jugadores, slots, act, LIGA.fijos || {}), out = [];
   opt.tit.forEach((x, i) => {
     const a = J[act[i]], b = x.j; if (x.lock || !b || (a && a.id === b.id)) return;
     const ea = a ? edo(a) : { e: 'vacio', fin: 0 }, eb = edo(b), gan = eb.fin - ea.fin;
@@ -1525,7 +1536,7 @@ async function cargaLigaSleeper(lid, uid) {
   const rec = (lg.scoring_settings || {}).rec;
   LIGA = { fuente: 'sleeper', lid, uid, nombre: lg.name, equipos: lg.total_rosters, rid: mio.roster_id, slots: (lg.roster_positions || POS_BASE).filter(s => s !== 'BN' && s !== 'IR' && s !== 'TAXI'),
     fmt: rec >= 1 ? 0 : rec >= .5 ? 1 : 2, jugadores: mio.players || [], otros: Object.fromEntries(rs.filter(r => r !== mio).map(r => [r.roster_id, r.players || []])),
-    duenos: Object.fromEntries(rs.map(r => [r.roster_id, nom[r.owner_id] || ('Equipo ' + r.roster_id)])), fecha: new Date().toISOString() };
+    duenos: Object.fromEntries(rs.map(r => [r.roster_id, nom[r.owner_id] || ('Equipo ' + r.roster_id)])), rec: Object.fromEntries(rs.map(r => [r.roster_id, r.settings ? `${r.settings.wins || 0}-${r.settings.losses || 0}${r.settings.ties ? '-' + r.settings.ties : ''}` : ''])), fijos: (LIGA && LIGA.lid === lid && LIGA.fijos) || {}, fecha: new Date().toISOString() };
   LIGA.duenoYo = nom[uid] || ''; LIGA.tit = mio.starters || null;
   try { const m = await sleeperGet(`league/${lid}/matchups/${semActual()}`), yo = m.find(x => x.roster_id === mio.roster_id); const riv = yo && m.find(x => x.matchup_id === yo.matchup_id && x.roster_id !== mio.roster_id);
     LIGA.rival = riv ? riv.roster_id : null; if (yo && yo.starters) LIGA.tit = yo.starters; LIGA.titR = riv && riv.starters || null;
@@ -1631,7 +1642,7 @@ const pieTech = () => `<div class="pie-tech">${sello('mini')}</div>`;
 const slotsL = () => LIGA.slots && LIGA.slots.length ? LIGA.slots : POS_BASE;
 function lados() {
   const slots = slotsL(), act = LIGA.tit && LIGA.tit.length ? LIGA.tit : null;
-  const yo = act ? { tit: slots.map((s, i) => ({ s, j: J[act[i]] || null })) } : alineacion(LIGA.jugadores, slots);
+  const yo = alineacion(LIGA.jugadores, slots, act || [], LIGA.fijos || {});
   let rv = null; if (LIGA.rival && LIGA.otros && LIGA.otros[LIGA.rival]) { const ra = LIGA.titR && LIGA.titR.length ? LIGA.titR : null; rv = ra ? { tit: slots.map((s, i) => ({ s, j: J[ra[i]] || null })) } : alineacion(LIGA.otros[LIGA.rival], slots); }
   const suma = l => l.tit.reduce((a, x) => { const e = edo(x.j); a.act += e.pts || 0; a.fin += e.fin || 0; a.rest += e.e === 'pre' ? e.proy : e.e === 'in' ? e.proy * .45 : 0; a.faltan += e.e === 'pre' || e.e === 'in' ? 1 : 0; return a; }, { act: 0, fin: 0, rest: 0, faltan: 0 });
   const sy = suma(yo), sr = rv ? suma(rv) : null;
@@ -1639,23 +1650,34 @@ function lados() {
   return { slots, yo, rv, sy, sr };
 }
 function marcador(L) {
-  const { sy, sr } = L; if (!sr) return `<div class="wr-score solo"><div><small>${tx('TU PROYECCIÓN', 'YOUR PROJECTION')}</small><b class="n">${n1(sy.fin)}</b></div><p>${LIGA.fuente === 'manual' ? tx('Conecta Sleeper para ver a tu rival y tu probabilidad de ganar.', 'Connect Sleeper to see your opponent and win probability.') : tx('Sin rival esta semana.', 'No opponent this week.')}</p></div>`;
-  const sd = Math.max(5, 27 * Math.sqrt((sy.rest + sr.rest) / Math.max(1, sy.fin + sr.fin))), p = phi((sy.fin - sr.fin) / sd), pc = Math.round(p * 100), d = sy.fin - sr.fin;
-  const lect = sy.faltan + sr.faltan === 0 ? (d >= 0 ? tx('Semana cerrada: ganaste.', 'Week closed: you won.') : tx('Semana cerrada: perdiste.', 'Week closed: you lost.'))
-    : pc >= 70 ? tx(`Eres favorito. Juega seguro: prioriza piso alto en tus decisiones de FLEX.`, `You're the favorite. Play it safe: prioritize high floor at FLEX.`)
-    : pc <= 30 ? tx(`Vienes de atrás. Necesitas techo: en cada duda, elige al jugador más explosivo.`, `You're the underdog. You need ceiling: in every close call, pick the boom player.`)
-    : tx(`Duelo cerrado. Cada decisión cuenta: revisa tus cambios sugeridos y el reporte médico antes del kickoff.`, `Tight matchup. Every call matters: check your suggested moves and the injury report before kickoff.`);
-  const nada = sy.act + sr.act === 0, big = x => nada ? x.fin : x.act, sub = x => nada ? tx('proyección FX', 'FX projection') : `${tx('proy', 'proj')} ${n1(x.fin)} · ${x.faltan} ${tx('por jugar', 'to play')}`;
-  return `<div class="wr-score"><div class="wr-sc-l"><small>${esc(LIGA.duenoYo || tx('TÚ', 'YOU'))}</small><b class="n">${n1(big(sy))}</b><em>${sub(sy)}</em></div>
-    <div class="wr-sc-m"><span class="wr-pc n">${pc}%</span><div class="wr-barra"><i style="width:${pc}%"></i></div><small>${tx('probabilidad de ganar', 'win probability')}</small></div>
-    <div class="wr-sc-r"><small>${esc(LIGA.duenos[LIGA.rival] || 'Rival')}</small><b class="n">${n1(big(sr))}</b><em>${sub(sr)}</em></div></div><p class="wr-lect">${lect}</p>`;
+  const { sy, sr } = L, nada = sy.act + (sr ? sr.act : 0) === 0, big = x => nada ? x.fin : x.act;
+  const eq = (nom, rec, x, lado) => `<div class="mp-eq ${lado}"><span class="mp-av">${esc((nom || '?').trim().slice(0, 2).toUpperCase())}</span><div><b>${esc(nom || '')}</b><small>${rec ? esc(rec) + ' · ' : ''}${nada ? tx('proyección', 'projected') : tx('proy', 'proj') + ' ' + n1(x.fin)}</small></div><strong class="n">${n1(big(x))}</strong></div>`;
+  if (!sr) return `<div class="mp-head">${eq(LIGA.duenoYo || tx('Mi equipo', 'My team'), LIGA.rec && LIGA.rec[LIGA.rid], sy, 'l')}<p class="mp-sin">${LIGA.fuente === 'manual' ? tx('Conecta Sleeper para jugar contra tu rival real.', 'Connect Sleeper to play against your real opponent.') : tx('Sin rival esta semana.', 'No opponent this week.')}</p></div>`;
+  const sd = Math.max(5, 27 * Math.sqrt((sy.rest + sr.rest) / Math.max(1, sy.fin + sr.fin))), pc = Math.round(phi((sy.fin - sr.fin) / sd) * 100);
+  const lect = sy.faltan + sr.faltan === 0 ? (sy.fin >= sr.fin ? tx('Semana cerrada: ganaste.', 'Week closed: you won.') : tx('Semana cerrada: perdiste.', 'Week closed: you lost.'))
+    : pc >= 70 ? tx('Eres favorito: en cada duda elige al jugador con piso más alto.', 'You are favored: in every close call pick the higher floor.')
+    : pc <= 30 ? tx('Vienes de atrás: en cada duda elige al jugador con más techo.', 'You are the underdog: in every close call pick the higher ceiling.')
+    : tx('Duelo cerrado: revisa cada FLEX y el reporte médico antes del kickoff.', 'Tight matchup: check every FLEX and the injury report before kickoff.');
+  return `<div class="mp-head">${eq(LIGA.duenoYo || tx('Mi equipo', 'My team'), LIGA.rec && LIGA.rec[LIGA.rid], sy, 'l')}<span class="mp-vs">VS</span>${eq(LIGA.duenos[LIGA.rival] || 'Rival', LIGA.rec && LIGA.rec[LIGA.rival], sr, 'r')}</div>
+    <div class="mp-prob"><span class="n">${pc}%</span><div class="wr-barra"><i style="width:${pc}%"></i></div><span class="n r">${100 - pc}%</span></div><p class="mp-lect">${lect}</p>`;
 }
 function tablero(L) {
-  const fila = (x, k) => { const j = x.j; return j ? `<div class="wr-pl ${k}">${jLink(j, edo(j).e === 'pre' ? matchupTxt(j) : '')}<span class="wr-ed">${chipEdo(j)}</span></div>` : `<div class="wr-pl ${k} vacio">${tx('Vacío', 'Empty')}</div>`; };
-  return `<div class="wr-board">${L.yo.tit.map((x, i) => `<div class="wr-row">${fila(x, 'l')}<span class="wr-slot">${SLOT_TXT[x.s] || x.s}</span>${L.rv ? fila(L.rv.tit[i] || {}, 'r') : '<div class="wr-pl r"></div>'}</div>`).join('')}</div>`;
+  const act = LIGA.tit || [], abierto = tablero._abre;
+  const corto = n => { const p = String(n).split(' '); return p.length > 1 && !/D\/ST$/.test(n) ? p[0][0] + '. ' + p.slice(1).join(' ') : n; };
+  const celda = (j, lado) => j ? `<a class="mp-j ${lado}" href="#/jugador/${j.id}" data-hover-j="${j.id}"><b><span class="nl">${esc(j.n)}</span><span class="nc">${esc(corto(j.n))}</span></b><small>${esc(j.pos)} · ${esc(j.team)}${edo(j).e === 'pre' ? ' · ' + esc(rivalTxt(j.team)) : ''}</small></a>` : `<span class="mp-j ${lado} vacio">${tx('Vacío', 'Empty')}</span>`;
+  const pts = j => { if (!j) return '<span class="mp-p"></span>'; const e = edo(j); return `<span class="mp-p ${e.e}">${e.e === 'pre' ? `<em>${n1(e.proy)}</em>` : e.e === 'bye' ? '<em class="x">BYE</em>' : e.e === 'out' ? `<em class="x">${tx('FUERA', 'OUT')}</em>` : `<b>${n1(e.pts)}</b>`}<small>${e.e === 'pre' ? (diaHora(e.kick) || 'PROY') : e.e === 'in' ? tx('EN VIVO', 'LIVE') : e.e === 'post' ? 'FINAL' : ''}</small></span>`; };
+  const filas = L.yo.tit.map((x, i) => { const j = x.j, r = L.rv && L.rv.tit[i] && L.rv.tit[i].j, distinto = act.length && j && act[i] !== j.id, alts = !x.lock ? L.yo.banca.filter(b => SLOT_OK[x.s] && SLOT_OK[x.s].includes(b.pos) && disponible(b)) : [];
+    return `<div class="mp-row ${x.lock ? 'lock' : ''} ${distinto ? 'dif' : ''}">${helmet(j ? j.team : 'FA', j ? j.num : '', 30)}${celda(j, 'l')}${pts(j)}
+      <button type="button" class="mp-slot" data-swap="${i}" ${x.lock || !alts.length ? 'disabled' : ''} title="${tx('Cambiar', 'Swap')}">${SLOT_TXT[x.s] || x.s}${!x.lock && alts.length ? '<i>⇅</i>' : ''}</button>
+      ${L.rv ? `${pts(r)}${celda(r, 'r')}${helmet(r ? r.team : 'FA', r ? r.num : '', 30)}` : '<span></span><span></span><span></span>'}</div>
+      ${abierto === i ? `<div class="mp-alts">${alts.map(b => `<button type="button" data-pon="${i}:${b.id}">${helmet(b.team, b.num, 24)}<span><b>${esc(b.n)}</b><small>${esc(b.pos)} · ${esc(rivalTxt(b.team))}</small></span><em class="n">${n1(edo(b).proy)}</em></button>`).join('')}</div>` : ''}`; }).join('');
+  const nDif = act.length ? L.yo.tit.filter((x, i) => x.j && act[i] !== x.j.id).length : 0, tuyos = Object.keys(LIGA.fijos || {}).length;
+  return `<div class="mp-lineup"><div class="mp-lh"><b>${tx('Titulares', 'Starters')}</b>${nDif ? `<a href="#/premium/alineacion" class="mp-aviso">${tx(`${nDif} cambio${nDif > 1 ? 's' : ''} pendiente${nDif > 1 ? 's' : ''} en Sleeper`, `${nDif} pending change${nDif > 1 ? 's' : ''} in Sleeper`)} ›</a>` : `<span class="mp-ok">${tx('Alineación óptima', 'Optimal lineup')}</span>`}${tuyos ? `<button type="button" class="mp-reset" data-reset>${tx('Volver a la óptima', 'Reset to optimal')}</button>` : ''}</div>${filas}
+    <div class="mp-tot"><span>${tx('Total', 'Total')}</span><b class="n">${n1(L.sy.fin)}</b><span></span>${L.sr ? `<b class="n">${n1(L.sr.fin)}</b>` : '<span></span>'}<span></span></div>
+    <details class="mp-banca"><summary>${tx('Banca', 'Bench')} · ${L.yo.banca.length}</summary>${L.yo.banca.map(b => `<div class="mp-row banca">${helmet(b.team, b.num, 26)}${celda(b, 'l')}${pts(b)}</div>`).join('')}</details></div>`;
 }
 function plan(L) {
-  const slots = L.slots, al = alineacion(LIGA.jugadores, slots, LIGA.tit || []), A = [];
+  const slots = L.slots, al = alineacion(LIGA.jugadores, slots, LIGA.tit || [], LIGA.fijos || {}), A = [];
   cambios(slots).slice(0, 3).forEach(c => A.push({ n: c.urg === 3 ? 'urg' : 'mov', t: c.urg === 3 ? tx('URGENTE', 'URGENT') : tx('ALINEACIÓN', 'LINEUP'), txt: c.txt, ir: 'alineacion' }));
   if (!LIGA.tit) { const malos = al.tit.filter(x => x.j && ['out', 'bye'].includes(edo(x.j).e)); if (malos.length) A.push({ n: 'urg', t: tx('URGENTE', 'URGENT'), txt: tx('Tienes titulares fuera o en descanso: revisa tu alineación óptima.', 'You have starters out or on bye: check your optimal lineup.'), ir: 'alineacion' }); }
   al.tit.filter(x => x.j && edo(x.j).e === 'pre' && estatus(x.j) === 'Duda').forEach(x => { const b = al.banca.find(y => SLOT_OK[x.s].includes(y.pos) && disponible(y)); A.push({ n: 'ojo', t: tx('EN DUDA', 'QUESTIONABLE'), txt: tx(`${x.j.n} está en duda${parte(x.j) ? ' (' + parte(x.j) + ')' : ''}. ${b ? `Si lo descartan, tu plan B es ${b.n} (${n1(edo(b).proy)} pts).` : 'No tienes plan B en la banca: mira waivers.'}`, `${x.j.n} is questionable${parte(x.j) ? ' (' + parte(x.j) + ')' : ''}. ${b ? `If ruled out, your plan B is ${b.n} (${n1(edo(b).proy)} pts).` : 'No plan B on your bench: check waivers.'}`), ir: 'alineacion' }); });
@@ -1666,15 +1688,14 @@ function plan(L) {
   return `<ol class="wr-plan">${A.slice(0, 6).map((a, i) => `<li class="${a.n}"><span class="wr-n n">${i + 1}</span><span class="wr-t">${a.t}</span><p>${enlaza(esc(a.txt), [])}</p>${a.ir ? `<a class="wr-go" href="#/premium/${a.ir}">${tx('Resolver', 'Fix it')} ›</a>` : ''}</li>`).join('')}</ol>`;
 }
 function vistaSemana(L, pro) {
-  const al = alineacion(LIGA.jugadores, L.slots, LIGA.tit || []), wv = waiversPara(al), ti = tradeIdeas(al), alertas = LIGA.jugadores.map(id => J[id]).filter(j => j && (fuera(j) || estatus(j) === 'Duda'));
-  const tiles = [['alineacion', ART.linea, tx('¿A quién arranco?', 'Who do I start?'), tx('Compara a dos de tus jugadores', 'Compare two of your players')], ['waivers', ART.iman, `${wv.length} waivers`, tx('que mejoran tu equipo', 'that upgrade your team')], ['trades', ART.trade, `${ti.targets.length + ti.vende.length + ti.compra.length} ${tx('ideas de trade', 'trade ideas')}`, tx('vende alto, compra bajo', 'sell high, buy low')], ['plantel', ART.sirena, `${alertas.length} ${tx('alertas', 'alerts')}`, tx('salud de tu plantel', 'your roster health')]];
-  const cont = `<section class="wr-sec"><div class="wr-h"><h3>${tx('Tu plan de la semana', 'Your plan for the week')}</h3><small>${tx('Ordenado por urgencia', 'Sorted by urgency')}</small></div>${plan(L)}</section>
-    <section class="wr-sec"><div class="wr-h"><h3>${tx('Tu matchup, posición por posición', 'Your matchup, slot by slot')}</h3></div>${tablero(L)}</section>
+  const al = L.yo, wv = waiversPara(al), ti = tradeIdeas(al), alertas = LIGA.jugadores.map(id => J[id]).filter(j => j && (fuera(j) || estatus(j) === 'Duda'));
+  const tiles = [['alineacion', ART.linea, tx('¿A quién arranco?', 'Who do I start?'), tx('Compara dos jugadores', 'Compare two players')], ['waivers', ART.iman, `${wv.length} waivers`, tx('que mejoran tu equipo', 'that upgrade you')], ['trades', ART.trade, `${ti.targets.length + ti.vende.length + ti.compra.length} trades`, tx('vende alto, compra bajo', 'sell high, buy low')], ['plantel', ART.sirena, `${alertas.length} ${tx('alertas', 'alerts')}`, tx('salud de tu plantel', 'roster health')]];
+  const resto = `<section class="wr-sec"><div class="wr-h"><h3>${tx('Qué hacer esta semana', 'What to do this week')}</h3></div>${plan(L)}</section>
     <div class="wr-tiles">${tiles.map(([h, a, t, d]) => `<a class="wr-tile" href="#/premium/${h}">${pixel(a)}<b>${t}</b><small>${d}</small></a>`).join('')}</div>`;
-  return `<section class="wr-sec top">${marcador(L)}</section>${pro ? cont : zonaPrem(cont, tx('Tu plan de la semana, tu matchup y las herramientas', 'Your weekly plan, your matchup and the tools'))}`;
+  return `<section class="wr-sec mp">${marcador(L)}${pro ? tablero(L) : ''}</section>${pro ? resto : zonaPrem(tablero(L) + resto, tx('Tu alineación óptima, tu matchup y tu plan de la semana', 'Your optimal lineup, matchup and weekly plan'))}`;
 }
 function vistaAlineacion(L) {
-  const al = alineacion(LIGA.jugadores, L.slots, LIGA.tit || []), cs = cambios(L.slots), mis = LIGA.jugadores.map(id => J[id]).filter(j => j && disponible(j)).sort((a, b) => edo(b).proy - edo(a).proy);
+  const al = alineacion(LIGA.jugadores, L.slots, LIGA.tit || [], LIGA.fijos || {}), cs = cambios(L.slots), mis = LIGA.jugadores.map(id => J[id]).filter(j => j && disponible(j)).sort((a, b) => edo(b).proy - edo(a).proy);
   const linea = x => { const j = x.j; if (!j) return `<div class="wr-al vacio"><span class="wr-slot">${SLOT_TXT[x.s] || x.s}</span><p>${tx('Vacío: no tienes a nadie elegible. Revisa waivers.', 'Empty: nobody eligible. Check waivers.')}</p></div>`;
     const e = edo(j), ft = fiL(j), u = ult3(j);
     const det = e.e === 'post' ? tx(`Ya jugó: ${n1(e.pts)} pts. Fijo.`, `Already played: ${n1(e.pts)} pts. Locked.`) : e.e === 'in' ? tx(`Jugando: ${n1(e.pts)} pts hasta ahora. Fijo.`, `Playing: ${n1(e.pts)} pts so far. Locked.`) : e.e === 'out' ? tx('FUERA esta semana: no lo alinees.', 'OUT this week: bench him.') : e.e === 'bye' ? tx('Semana de descanso.', 'Bye week.')
@@ -1697,7 +1718,7 @@ function dueloHtml(a, b) {
     <p>${pg < 58 ? tx(`Es casi un volado. Si vas de favorito elige piso (${esc(piso.n)}); si vas abajo elige techo (${esc(techo.n)}).`, `It's nearly a coin flip. If you're favored pick floor (${esc(piso.n)}); if you're behind pick ceiling (${esc(techo.n)}).`) : tx('Ventaja clara en los datos.', 'Clear edge in the data.')}</p></div><div class="wr-dg">${col(a, ea)}${col(b, eb)}</div>`;
 }
 function vistaWaivers(L) {
-  const al = alineacion(LIGA.jugadores, L.slots, LIGA.tit || []), W = waiversPara(al), S = streaming(al);
+  const al = alineacion(LIGA.jugadores, L.slots, LIGA.tit || [], LIGA.fijos || {}), W = waiversPara(al), S = streaming(al);
   const card = x => `<div class="wr-wv">${jLink(x.j, rangoPos(x.j) + ' · ' + matchupTxt(x.j))}<b class="n wr-big">${n1(x.pr)}</b>
     <div class="wr-tags">${x.add ? `<span>▲ ${nf.format(x.add)} ${tx('ligas en 24 h', 'leagues in 24 h')}</span>` : ''}${x.her ? `<span class="hot">${tx('Hereda el trabajo de', 'Inherits work from')} ${esc(x.her.n)}</span>` : ''}${x.mej > .5 ? `<span class="ok">+${n1(x.mej)} ${tx('vs tu titular', 'vs your starter')}</span>` : ''}<span>${tx('Valor resto de temporada', 'Rest-of-season value')} ${Math.round(x.v)}</span></div>
     ${x.suelta ? `<p class="wr-drop">${tx('Suelta a', 'Drop')} <a href="#/jugador/${x.suelta.id}">${esc(x.suelta.n)}</a> · ${tx('valor', 'value')} ${Math.round(valorROS(x.suelta).valor)}</p>` : ''}</div>`;
@@ -1706,7 +1727,7 @@ function vistaWaivers(L) {
     ${S.length ? `<section class="wr-sec"><div class="wr-h"><h3>Streaming K / DEF</h3><small>${tx('Solo si mejora al que tienes', 'Only if it beats yours')}</small></div>${S.map(s => `<div class="wr-al banca">${jLink(s.j, matchupTxt(s.j))}<b class="n">${n1(edo(s.j).proy)}</b><p>${s.mi ? tx(`+${n1(s.gan)} sobre ${s.mi.n}`, `+${n1(s.gan)} over ${s.mi.n}`) : tx('No tienes uno alineado', 'You have none in your lineup')}</p></div>`).join('')}</section>` : ''}`;
 }
 function vistaTrades(L) {
-  const al = alineacion(LIGA.jugadores, L.slots, LIGA.tit || []), T = tradeIdeas(al);
+  const al = alineacion(LIGA.jugadores, L.slots, LIGA.tit || [], LIGA.fijos || {}), T = tradeIdeas(al);
   if (!LIGA.otros) return `<p class="wr-ok">${tx('Conecta Sleeper para ver los planteles de tus rivales y armar trades reales.', 'Connect Sleeper to see your rivals\' rosters and build real trades.')}</p>`;
   const lnk = (d, r) => `<a class="wr-go" href="#/trade?da=${d}&recibe=${r}">${tx('Analizar trade', 'Analyze trade')} ›</a>`;
   return `<section class="wr-sec"><div class="wr-h"><h3>${tx('Refuerza tu', 'Upgrade your')} ${T.debil}</h3><small>${tx('Tu posición más débil contra el resto de la liga', 'Your weakest spot vs the league')}</small></div>
@@ -1732,6 +1753,11 @@ function cuartoGuerra(tab, pro) {
     <nav class="wr-tabs" aria-label="${tx('Herramientas', 'Tools')}">${TABS_CG.map(([k, es, en]) => `<a href="#/premium${k ? '/' + k : ''}" class="${k === v ? 'on' : ''}">${tx(es, en)}</a>`).join('')}</nav></div>
     <div class="wr-body">${pro || libre ? cuerpo : zonaPrem(cuerpo, tx('Desbloquea esta herramienta con Premium', 'Unlock this tool with Premium'))}${pieTech()}</div>`;
 }
+document.addEventListener('click', e => {
+  const sw = e.target.closest('[data-swap]'); if (sw && !sw.disabled) { tablero._abre = tablero._abre === +sw.dataset.swap ? null : +sw.dataset.swap; repinta(); return; }
+  const po = e.target.closest('[data-pon]'); if (po && LIGA) { const [i, id] = po.dataset.pon.split(':'); LIGA.fijos = { ...(LIGA.fijos || {}) }; Object.keys(LIGA.fijos).forEach(k => { if (LIGA.fijos[k] === id) delete LIGA.fijos[k]; }); LIGA.fijos[i] = id; tablero._abre = null; guardaLiga(); repinta(); return; }
+  if (e.target.closest('[data-reset]') && LIGA) { LIGA.fijos = {}; tablero._abre = null; guardaLiga(); repinta(); }
+});
 document.addEventListener('change', e => { const s = e.target.closest('[data-duelo]'); if (!s) return; const a = document.querySelector('[data-duelo="a"]'), b = document.querySelector('[data-duelo="b"]'), r = document.getElementById('duelo-res'); if (r) r.innerHTML = dueloHtml(J[a.value], J[b.value]); });
 
 function premiumHub(tab = '') {
