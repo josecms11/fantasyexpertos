@@ -1,19 +1,10 @@
 {
-  "fecha": "2026-10-26T00:06:07.307Z",
+  "fecha": "2026-10-26T00:54:59.761Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 0 nuevos, 17 en total",
-    "[0.9s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[2.7s] ESPN: lesiones 799 · noticias 50",
-    "[3.5s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[161.7s] IA OK con gemini-3.8-flash",
-    "[161.7s] Descartada: Zay Flowers entra al radar WR1 para semana ocho → duplicada",
-    "[161.7s] Descartada: Daniel Jones debe ir a la banca en fantasy → duplicada",
-    "[161.7s] Descartada: Breece Hall queda descartado por lesión de cuadríceps → duplicada",
-    "[161.7s] Descartada: Baker Mayfield genera dudas por bajo volumen aéreo → duplicada",
-    "[161.7s] Descartada: Bo Nix deslumbra por tierra y eleva cotización → duplicada",
-    "[161.7s] Descartada: Matthew Stafford impone récord histórico con tres touchdowns → duplicada",
-    "[161.7s] Noticias nuevas verificadas: 2",
-    "[162.5s] Listo: 2 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 272 · semana de juego 8 · IA usada hoy 1/40"
+    "[0.8s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[3.3s] ESPN: lesiones 799 · noticias 50",
+    "[4.5s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 272 · semana de juego 8 · IA usada hoy 1/40"
   ]
 }
