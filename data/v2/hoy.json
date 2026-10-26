@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-26T13:44:31.424Z",
-  "ultimaIA": "2026-10-26T09:36:50.397Z",
+  "actualizado": "2026-10-26T15:23:34.461Z",
+  "ultimaIA": "2026-10-26T15:23:34.461Z",
   "semana": 8,
   "semanaStats": 7,
   "temporada": "2026",
@@ -14,54 +14,91 @@
   ],
   "noticias": [
     {
-      "id": "n20261026093604",
-      "fecha": "2026-10-26T09:36:50.397Z",
+      "id": "n20261026152300",
+      "fecha": "2026-10-26T15:23:34.461Z",
       "semana": 8,
-      "titulo": "Darius Cooper encabeza las adiciones populares en waivers",
+      "titulo": "Rico Dowdle gana tracción en el backfield tejano",
       "claves": [
-        "Objetivo codiciado en el alambre",
-        "Creciente interés en ligas profundas",
-        "Oportunidad de profundidad en banca"
+        "Field Yates monitorea de cerca el valor fantasy de Rico Dowdle.",
+        "El corredor suma mayor volumen en las oportunidades terrestres del equipo.",
+        "Se perfila como una opción relevante para la semana 8."
       ],
-      "contexto": "Darius Cooper se ubica como una de las adiciones más buscadas en las ligas de fantasy football tras la reciente actividad en el alambre de reclamos. Ante la necesidad constante de cubrir bajas por lesiones o semanas de descanso, la demanda por receptores con potencial de snaps y participación se ha disparado considerablemente antes del inicio de la Semana 8.",
-      "fantasy": "Cooper sube en valor como reclamo prioritario en la bolsa de agentes libres. Es una adición ideal para ligas profundas de 12 o 14 equipos en formatos PPR o Half-PPR. Si necesitas reforzar la profundidad de tu banca de receptores sin gastar un presupuesto excesivo de FAAB, Cooper representa un activo interesante con margen de crecimiento.",
-      "equipo_impacto": "Su incorporación al grupo de receptores busca dar estabilidad y frescura al cuerpo de pases, generando una alternativa confiable para rotar atrapadas en el esquema ofensivo principal.",
-      "accion": "Reclama a Darius Cooper en el alambre de agentes libres.",
-      "etiqueta": "WAIVER",
+      "contexto": "El panorama ofensivo de Dallas muestra ajustes en la distribución de acarreos. Field Yates destaca que el valor fantasy de Rico Dowdle va en aumento debido al incremento en sus oportunidades de calidad. Tras semanas de rotación constante, Dowdle empieza a establecerse como un pilar en el ataque terrestre del conjunto tejano. Este ajuste táctico busca darle mayor fluidez al plan de juego ofensivo de cara a la semana 8.",
+      "fantasy": "El ascenso de Rico Dowdle lo posiciona como un objetivo prioritario de reclamo en ligas PPR y formato estándar de 12 o más equipos. Su carga de trabajo proyectada lo convierte en una opción sólida de FLEX para la semana 8. Quienes buscan cobertura por lesiones o semanas de descanso encontrarán en Dowdle un activo confiable con techo ascendente en su volumen semanal dentro de la zona roja.",
+      "equipo_impacto": "El ataque terrestre de Dallas gana consistencia con un corredor principal más definido. La mayor cuota de Dowdle estabiliza la producción de la unidad, quitando presión sobre el juego aéreo y balanceando el esquema ofensivo general.",
+      "accion": "Asegura a Rico Dowdle en tu banca antes de que su volumen aumente en la semana 8.",
+      "en": {
+        "titulo": "Rico Dowdle Gains Momentum in Dallas Backfield",
+        "claves": [
+          "Field Yates is closely monitoring Rico Dowdle's fantasy value.",
+          "The running back is gaining more work in ground opportunities.",
+          "He emerges as a relevant option for Week 8."
+        ],
+        "contexto": "The offensive landscape in Dallas shows adjustments in carry distribution. Field Yates highlights that Rico Dowdle's fantasy value is on the rise due to an increase in quality opportunities. After weeks of constant rotation, Dowdle is starting to establish himself as a cornerstone in the ground game. This tactical shift aims to give the offensive game plan more fluidity heading into Week 8.",
+        "fantasy": "The rise of Rico Dowdle positions him as a priority target in PPR and standard formats with 12 or more teams. His projected workload turns him into a solid FLEX option for Week 8. Managers seeking coverage for injuries or bye weeks will find in Dowdle a reliable asset with an ascending ceiling in his weekly red zone volume.",
+        "equipo_impacto": "Dallas' ground attack gains consistency with a clearer lead back. Dowdle's increased touch share stabilizes unit production, relieving pressure from the passing game and balancing the overall offensive scheme.",
+        "accion": "Secure Rico Dowdle on your bench before his volume expands in Week 8."
+      },
+      "etiqueta": "TENDENCIA",
       "impacto": "SUBE",
-      "equipo": "KC",
+      "equipo": "DAL",
       "equipos": [
-        "KC",
-        "PHI"
+        "DAL",
+        "PIT"
       ],
       "jugadores": [
-        "13150"
+        "7021"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50287661/why-field-yates-monitoring-rico-dowdle-fantasy-value",
+          "t": "Why Field Yates is monitoring Rico Dowdle's fantasy value"
+        }
       ],
       "menciona": []
     },
     {
-      "id": "n20261026093606",
-      "fecha": "2026-10-26T09:36:50.397Z",
+      "id": "n20261026152301",
+      "fecha": "2026-10-26T15:23:34.461Z",
       "semana": 8,
-      "titulo": "Matthew Stafford firma jornada histórica con tres anotaciones",
+      "titulo": "Chase Brown genera dudas como titular en fantasy",
       "claves": [
-        "Tres pases de anotación en victoria",
-        "Récord de franquicia en dos equipos",
-        "Triunfo holgado 35-21 ante Raiders"
+        "Especialistas analizan la viabilidad de mantener a Chase Brown como titular.",
+        "Su volumen de toques muestra variaciones en las últimas semanas.",
+        "Su estatus en alineaciones de fantasy requiere una evaluación minuciosa."
       ],
-      "contexto": "Matthew Stafford lideró la victoria 35-21 de los Rams sobre los Raiders lanzando tres pases de touchdown. Con esta actuación, el veterano mariscal de campo se convirtió en el primer jugador en la historia en poseer el récord de pases de anotación de franquicia en múltiples equipos activos, habiéndolo conseguido previamente con los Lions y ahora con la organización de Los Ángeles.",
-      "fantasy": "Stafford eleva su valor para fantasy football tras demostrar la vigencia de su brazo y la efectividad en zona roja. Se posiciona como una opción de arranque sólida de nivel QB1 bajo o QB2 alto en ligas de 12 equipos. Su volumen de pases de anotación beneficia directamente la producción de sus receptores principales en formatos PPR.",
-      "equipo_impacto": "Su precisión eleva la producción general de toda la ofensiva aérea de los Rams, haciendo mucho más eficientes las series en zona de anotación para el resto de sus compañeros.",
-      "accion": "Arranca a Matthew Stafford si buscas un piso seguro de pase.",
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "LAR",
+      "contexto": "La producción de Chase Brown entra bajo la lupa de los analistas de ESPN para la semana 8. Tras registrar jornadas con rendimiento inconsistente, surge el debate sobre si mantiene el perfil de corredor titular en equipos de fantasy football. El cuerpo técnico de Cincinnati ajusta sus esquemas ofensivos, lo que impacta de forma directa el volumen de toques y la eficiencia terrestre que Brown registra dentro del terreno de juego.",
+      "fantasy": "Para los dueños de Chase Brown en ligas PPR y de 10 o 12 equipos, su rol pasa de ser un RB2 seguro a un terreno de duda. En la semana 8 conviene contemplarlo más como una opción de RB3 o FLEX dependiente de anotación. Si cuentas con alternativas de mayor volumen garantizado, considera mover a Brown a tu banca hasta que recupere regularidad.",
+      "equipo_impacto": "El ataque de Cincinnati diversifica sus jugadas terrestres, disminuyendo la dependencia en un solo corredor. Esta rotación exige mayor efectividad por oportunidad, afectando la previsibilidad de los puntos para la ofensiva en conjunto.",
+      "accion": "Evalúa alternativas en tu banca antes de colocar a Chase Brown como titular en la semana 8.",
+      "en": {
+        "titulo": "Chase Brown Raises Starting Concerns in Fantasy Leagues",
+        "claves": [
+          "Analysts evaluate Chase Brown's status as a fantasy starter.",
+          "His weekly touch volume shows recent fluctuations.",
+          "His lineup value requires careful assessment for Week 8."
+        ],
+        "contexto": "Chase Brown's production comes under review by ESPN analysts heading into Week 8. Following games with inconsistent performance, debate surrounds whether he maintains RB2 value in fantasy lineups. Cincinnati's coaching staff continues to adjust offensive schemes, directly impacting touch distribution and ground efficiency for Brown on the field.",
+        "fantasy": "For fantasy managers in 10 or 12 team PPR leagues, Chase Brown shifts from a reliable RB2 to a volatile option. For Week 8, it is safer to treat him as a touchdown-dependent RB3 or FLEX. If you possess backfield options with guaranteed volume, consider benching Brown until his touch floor stabilizes.",
+        "equipo_impacto": "Cincinnati's offense is diversifying ground touches, reducing reliance on a single back. This committee approach demands higher efficiency per attempt, introducing unpredictability to the unit's fantasy production overall.",
+        "accion": "Explore bench alternatives before committing Chase Brown to your Week 8 lineup."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "BAJA",
+      "equipo": "CIN",
       "equipos": [
-        "LAR",
-        "LV"
+        "CIN"
       ],
       "jugadores": [
-        "421"
+        "9224"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50287614/is-chase-brown-starting-fantasy-rb",
+          "t": "Is Chase Brown still a starting fantasy RB?"
+        }
       ],
       "menciona": []
     }
@@ -235,52 +272,52 @@
     "13414",
     "13298",
     "11435",
-    "3271",
     "13276",
+    "3271",
     "5995",
     "13294",
+    "10213",
     "6650",
     "12718",
-    "10213",
-    "11539",
     "8129",
+    "11539",
     "9482",
-    "5849",
     "11624",
-    "4037",
-    "11563",
-    "8122",
-    "1166",
+    "5849",
+    "NE",
     "9502",
     "11783",
-    "11576"
+    "1166",
+    "11563",
+    "7553",
+    "4037"
   ],
   "soltados": [
     "12718",
+    "3271",
     "8129",
     "11581",
-    "3271",
     "10235",
     "9502",
+    "CLE",
     "9511",
-    "5927",
     "9482",
+    "5927",
     "11637",
     "3321",
-    "CLE",
-    "9480",
     "11435",
+    "9480",
     "8154",
     "8134",
-    "JAX",
-    "5012",
-    "13330",
-    "11439",
-    "1166",
-    "9756",
-    "11625",
     "5849",
-    "11610"
+    "11625",
+    "9756",
+    "13330",
+    "5012",
+    "11610",
+    "1166",
+    "JAX",
+    "9500"
   ],
   "duelo": {
     "a": "Jared Goff",
