@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-26T08:59:33.602Z",
-  "ultimaIA": "2026-10-26T07:23:38.939Z",
+  "actualizado": "2026-10-26T09:36:50.397Z",
+  "ultimaIA": "2026-10-26T09:36:50.397Z",
   "semana": 8,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,27 +13,54 @@
   ],
   "noticias": [
     {
-      "id": "n20261026072304",
-      "fecha": "2026-10-26T07:23:38.939Z",
+      "id": "n20261026093604",
+      "fecha": "2026-10-26T09:36:50.397Z",
       "semana": 8,
-      "titulo": "Fernando Mendoza emerge como opción de reclamo en waivers",
+      "titulo": "Darius Cooper encabeza las adiciones populares en waivers",
       "claves": [
-        "Las Vegas considera cambio de mariscal titular",
-        "Klint Kubiak evalúa la decisión tras derrotas",
-        "Atractivo inmediato para ligas formato Superflex"
+        "Objetivo codiciado en el alambre",
+        "Creciente interés en ligas profundas",
+        "Oportunidad de profundidad en banca"
       ],
-      "contexto": "Tras hilar cuatro derrotas consecutivas, el entrenador de los Raiders, Klint Kubiak, declaró que están analizando todas las opciones para corregir el rumbo, incluyendo darle la titularidad al novato Fernando Mendoza. La inconsistencia del ataque aéreo en Las Vegas abre la puerta para un cambio bajo el centro que podría concretarse de cara a los próximos compromisos.",
-      "fantasy": "Mendoza es un reclamo prioritario en waivers para ligas Superflex y de dos mariscales de campo. Si se confirma su titularidad, adquirirá valor inmediato por el simple volumen de pases. En ligas tradicionales de un solo QB no es necesario gastar presupuesto por él, pero vale la pena monitorear su desarrollo como reserva profundo si la ofensiva logra encenderse.",
-      "equipo_impacto": "Un cambio de mariscal buscaría encender el ataque de Las Vegas, modificando la distribución de pases para receptores y alas cerradas.",
-      "accion": "Solicita a Fernando Mendoza en waivers si juegas en formato Superflex.",
+      "contexto": "Darius Cooper se ubica como una de las adiciones más buscadas en las ligas de fantasy football tras la reciente actividad en el alambre de reclamos. Ante la necesidad constante de cubrir bajas por lesiones o semanas de descanso, la demanda por receptores con potencial de snaps y participación se ha disparado considerablemente antes del inicio de la Semana 8.",
+      "fantasy": "Cooper sube en valor como reclamo prioritario en la bolsa de agentes libres. Es una adición ideal para ligas profundas de 12 o 14 equipos en formatos PPR o Half-PPR. Si necesitas reforzar la profundidad de tu banca de receptores sin gastar un presupuesto excesivo de FAAB, Cooper representa un activo interesante con margen de crecimiento.",
+      "equipo_impacto": "Su incorporación al grupo de receptores busca dar estabilidad y frescura al cuerpo de pases, generando una alternativa confiable para rotar atrapadas en el esquema ofensivo principal.",
+      "accion": "Reclama a Darius Cooper en el alambre de agentes libres.",
       "etiqueta": "WAIVER",
       "impacto": "SUBE",
-      "equipo": "LV",
+      "equipo": "KC",
       "equipos": [
+        "KC",
+        "PHI"
+      ],
+      "jugadores": [
+        "13150"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261026093606",
+      "fecha": "2026-10-26T09:36:50.397Z",
+      "semana": 8,
+      "titulo": "Matthew Stafford firma jornada histórica con tres anotaciones",
+      "claves": [
+        "Tres pases de anotación en victoria",
+        "Récord de franquicia en dos equipos",
+        "Triunfo holgado 35-21 ante Raiders"
+      ],
+      "contexto": "Matthew Stafford lideró la victoria 35-21 de los Rams sobre los Raiders lanzando tres pases de touchdown. Con esta actuación, el veterano mariscal de campo se convirtió en el primer jugador en la historia en poseer el récord de pases de anotación de franquicia en múltiples equipos activos, habiéndolo conseguido previamente con los Lions y ahora con la organización de Los Ángeles.",
+      "fantasy": "Stafford eleva su valor para fantasy football tras demostrar la vigencia de su brazo y la efectividad en zona roja. Se posiciona como una opción de arranque sólida de nivel QB1 bajo o QB2 alto en ligas de 12 equipos. Su volumen de pases de anotación beneficia directamente la producción de sus receptores principales en formatos PPR.",
+      "equipo_impacto": "Su precisión eleva la producción general de toda la ofensiva aérea de los Rams, haciendo mucho más eficientes las series en zona de anotación para el resto de sus compañeros.",
+      "accion": "Arranca a Matthew Stafford si buscas un piso seguro de pase.",
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "LAR",
+      "equipos": [
+        "LAR",
         "LV"
       ],
       "jugadores": [
-        "13269"
+        "421"
       ],
       "menciona": []
     }
@@ -255,9 +282,9 @@
     "9500"
   ],
   "duelo": {
-    "a": "Bijan Robinson",
-    "b": "Jonathan Taylor",
-    "veredicto": "Arranca a Bijan Robinson. Presenta un volumen superior tanto por tierra como por aire y proyecta 21.1 puntos PPR, superando los 18.7 de Jonathan Taylor en un duelo terrestre con mejor libreto de juego."
+    "a": "Josh Allen",
+    "b": "Drake Maye",
+    "veredicto": "Arranca a Josh Allen. Su techo explosivo y proyección de 24 puntos PPR superan a Maye (22.3), garantizando mayor certeza y volumen semanal en enfrentamientos clave para tu alineación titular."
   },
   "fuentes": [
     "Sleeper",
