@@ -1355,11 +1355,180 @@ document.addEventListener('click', e => { const f = e.target.closest && e.target
 document.addEventListener('click', e => { const t = e.target.closest && e.target.closest('#menu-btn,#menu-x,#menu-bg'); if (t) { e.preventDefault(); menu(t.id === 'menu-btn'); } });
 addEventListener('hashchange', () => { const L = $('.links'); if (L && L.classList.contains('open')) menu(false, true); });
 let _rutaPrev = null;
+/* =============================== PREMIUM FX · CUARTO DE GUERRA ===============================
+   La pestaña Premium vende herramientas, no notas. El usuario conecta su liga (Sleeper en automático, cualquier otra
+   plataforma a mano) y el sistema trabaja sobre SU plantel:
+   - Alineación óptima de la semana con el porqué de cada decisión (Modelo FX + rival + salud + racha).
+   - Alertas del plantel: lesionados, descanso y jugadores fuera, con su reemplazo.
+   - Tu matchup: puntos proyectados contra tu rival y probabilidad de ganar.
+   - Waivers para ti: libres en TU liga que mejoran tu posición más débil.
+   - Trade targets: a quién pedir, a qué rival, y qué ofrecer de tu banca.
+   - Exclusivas de la red de reporteros.
+   Conectar la liga y ver el plantel es gratis (es el gancho); las decisiones y explicaciones son Premium.
+   Los IDs de jugador de Sleeper son los mismos del sitio, así que la liga importada usa los datos del Modelo FX directo. */
+const LIGA_K = 'fx-liga';
+let LIGA = (() => { try { return JSON.parse(localStorage.getItem(LIGA_K) || 'null'); } catch (e) { return null; } })();
+let _ligaSync = 0, _ligaOpc = null;
+const guardaLiga = () => { try { LIGA ? localStorage.setItem(LIGA_K, JSON.stringify(LIGA)) : localStorage.removeItem(LIGA_K); } catch (e) {} };
+const sleeperGet = async u => { const r = await fetch('https://api.sleeper.app/v1/' + u); if (!r.ok) throw new Error(r.status); return r.json(); };
+const SLOT_OK = { QB: ['QB'], RB: ['RB'], WR: ['WR'], TE: ['TE'], K: ['K'], DEF: ['DEF'], FLEX: ['RB', 'WR', 'TE'], WRRB_FLEX: ['RB', 'WR'], REC_FLEX: ['WR', 'TE'], SUPER_FLEX: ['QB', 'RB', 'WR', 'TE'] };
+const SLOT_TXT = { FLEX: 'FLEX', WRRB_FLEX: 'W/R', REC_FLEX: 'W/T', SUPER_FLEX: 'SFLEX' };
+const POS_BASE = ['QB', 'RB', 'RB', 'WR', 'WR', 'TE', 'FLEX', 'K', 'DEF'];
+const fmtL = () => LIGA && LIGA.fmt != null ? LIGA.fmt : FMT;
+const pL = j => !j || !juega(j) ? 0 : j.proy && j.proy[fmtL()] != null ? j.proy[fmtL()] : (j.prom || 0) * .9;
+const fiL = j => { const u = (j.log || []).filter(l => l.f && l.f[fmtL()] != null).slice(-5).map(l => l.f[fmtL()]); return u.length >= 2 ? [Math.min(...u), Math.max(...u)] : null; };
+
+/* ---------- Motor de decisiones ---------- */
+function alineacion(ids, slots) {
+  const pool = ids.map(id => J[id]).filter(Boolean).sort((a, b) => pL(b) - pL(a)), usados = new Set(), out = [];
+  const orden = slots.map((s, i) => ({ s, i })).filter(x => SLOT_OK[x.s]).sort((a, b) => SLOT_OK[a.s].length - SLOT_OK[b.s].length);
+  for (const { s, i } of orden) { const j = pool.find(p => !usados.has(p.id) && SLOT_OK[s].includes(p.pos)); if (j) usados.add(j.id); out[i] = { s, j }; }
+  const tit = slots.map((s, i) => out[i]).filter(Boolean), banca = pool.filter(p => !usados.has(p.id));
+  return { tit, banca, total: tit.reduce((a, x) => a + pL(x.j), 0) };
+}
+function porQue(x, banca) {
+  const j = x.j; if (!j) return tx('Hueco: no tienes a nadie elegible para esta posición. Busca en waivers.', 'Empty: nobody eligible for this slot. Check waivers.');
+  const v = veredicto(j), alt = banca.find(b => SLOT_OK[x.s].includes(b.pos)), r = [];
+  r.push(v.razones[0] || '');
+  if (alt) { const d = pL(j) - pL(alt); r.push(d > 0 ? tx(`Le gana a ${alt.n} (tu mejor opción en la banca) por ${n1(d)} pts proyectados.`, `Beats ${alt.n} (your best bench option) by ${n1(d)} projected pts.`) : tx(`Prácticamente empatado con ${alt.n}; decide el matchup.`, `Basically tied with ${alt.n}; the matchup decides.`)); }
+  if (v.razones[1]) r.push(v.razones[1]);
+  return r.filter(Boolean).join(' ');
+}
+const phi = z => { const t = 1 / (1 + .3275911 * Math.abs(z) / Math.SQRT2), y = 1 - (((((1.061405429 * t - 1.453152027) * t) + 1.421413741) * t - .284496736) * t + .254829592) * t * Math.exp(-z * z / 2); return .5 * (1 + (z >= 0 ? y : -y)); };
+function waiversPara(al) {
+  const ocupados = new Set([...(LIGA.jugadores || []), ...Object.values(LIGA.otros || {}).flat()]);
+  const libres = Object.values(J).filter(j => !ocupados.has(j.id) && j.team !== 'FA' && j.proy && ['QB', 'RB', 'WR', 'TE', 'K', 'DEF'].includes(j.pos));
+  const peor = {}; al.tit.forEach(x => { if (x.j && SLOT_OK[x.s].length === 1) { const p = x.j.pos; peor[p] = Math.min(peor[p] ?? 99, pL(x.j)); } else if (!x.j) peor[x.s] = 0; });
+  return libres.map(j => ({ j, mejora: pL(j) - (peor[j.pos] ?? 99), ros: valorROS(j).valor })).filter(x => x.mejora > .5 || x.ros > 25).sort((a, b) => (b.mejora * 2 + b.ros / 20) - (a.mejora * 2 + a.ros / 20)).slice(0, 6);
+}
+function tradeTargets(al) {
+  if (!LIGA.otros) return [];
+  const debil = ['RB', 'WR', 'TE', 'QB'].map(p => { const t = al.tit.filter(x => x.j && x.j.pos === p); return { p, v: t.length ? Math.min(...t.map(x => pL(x.j))) : 0 }; }).sort((a, b) => a.v - b.v)[0];
+  const mios = al.banca.filter(j => j.pos !== debil.p && ['RB', 'WR', 'TE', 'QB'].includes(j.pos)).map(j => ({ j, v: valorROS(j).valor })).sort((a, b) => b.v - a.v);
+  const out = [];
+  for (const [rid, ids] of Object.entries(LIGA.otros)) for (const id of ids) { const j = J[id]; if (!j || j.pos !== debil.p || pL(j) <= debil.v + 1) continue; const v = valorROS(j).valor, oferta = mios.find(m => m.v >= v * .85); if (oferta) out.push({ j, v, rid, oferta: oferta.j }); }
+  return out.sort((a, b) => pL(b.j) - pL(a.j)).slice(0, 4);
+}
+
+/* ---------- Importar ---------- */
+async function importaSleeper(usuario) {
+  const u = await sleeperGet('user/' + encodeURIComponent(usuario.trim()));
+  if (!u || !u.user_id) throw new Error(tx('No encontramos ese usuario de Sleeper.', 'We could not find that Sleeper user.'));
+  const ls = await sleeperGet(`user/${u.user_id}/leagues/nfl/${D.temporada || new Date().getFullYear()}`);
+  if (!ls || !ls.length) throw new Error(tx('Ese usuario no tiene ligas esta temporada.', 'That user has no leagues this season.'));
+  return { u, ls };
+}
+async function cargaLigaSleeper(lid, uid) {
+  const [lg, rs, us] = await Promise.all([sleeperGet('league/' + lid), sleeperGet(`league/${lid}/rosters`), sleeperGet(`league/${lid}/users`)]);
+  const mio = rs.find(r => r.owner_id === uid || (r.co_owners || []).includes(uid)); if (!mio) throw new Error(tx('No encontramos tu equipo en esa liga.', 'We could not find your team in that league.'));
+  const nom = Object.fromEntries((us || []).map(x => [x.user_id, (x.metadata && x.metadata.team_name) || x.display_name]));
+  const rec = (lg.scoring_settings || {}).rec;
+  LIGA = { fuente: 'sleeper', lid, uid, nombre: lg.name, equipos: lg.total_rosters, rid: mio.roster_id, slots: (lg.roster_positions || POS_BASE).filter(s => s !== 'BN' && s !== 'IR' && s !== 'TAXI'),
+    fmt: rec >= 1 ? 0 : rec >= .5 ? 1 : 2, jugadores: mio.players || [], otros: Object.fromEntries(rs.filter(r => r !== mio).map(r => [r.roster_id, r.players || []])),
+    duenos: Object.fromEntries(rs.map(r => [r.roster_id, nom[r.owner_id] || ('Equipo ' + r.roster_id)])), fecha: new Date().toISOString() };
+  try { const m = await sleeperGet(`league/${lid}/matchups/${semActual()}`), yo = m.find(x => x.roster_id === mio.roster_id); const riv = yo && m.find(x => x.matchup_id === yo.matchup_id && x.roster_id !== mio.roster_id); LIGA.rival = riv ? riv.roster_id : null; } catch (e) { LIGA.rival = null; }
+  guardaLiga();
+}
+function sincroniza() { if (!LIGA || LIGA.fuente !== 'sleeper' || _ligaSync || Date.now() - Date.parse(LIGA.fecha || 0) < 10 * 60e3) return; _ligaSync = 1; cargaLigaSleeper(LIGA.lid, LIGA.uid).then(() => { _ligaSync = 0; if (/^#\/premium/.test(location.hash)) repinta(); }).catch(() => { _ligaSync = 0; }); }
+
+/* ---------- Vista ---------- */
+const tarjetaHerr = (ico, t, d, cuerpo, gancho, libre) => `<section class="cg-tool card"><div class="cg-th"><span class="cg-ico">${ico}</span><div><h3>${t}</h3><p>${d}</p></div>${libre ? `<span class="cg-free">${tx('GRATIS', 'FREE')}</span>` : `<span class="cg-pro">★ PRO</span>`}</div>${libre ? cuerpo : zonaPrem(cuerpo, gancho)}</section>`;
+const filaJ = (j, der = '', sub = '') => `<a class="cg-j" href="#/jugador/${j.id}" data-hover-j="${j.id}">${helmet(j.team, j.num, 30)}<span class="cg-jn"><b>${esc(j.n)}</b><small>${esc(j.pos)} · ${esc(j.team)} · ${esc(rivalTxt(j.team))}${sub ? ' · ' + sub : ''}</small></span>${der}</a>`;
+
+function conectaVista() {
+  return `<section class="cg-conecta card">
+    <div class="cg-th"><span class="cg-ico">⚡</span><div><h3>${tx('Conecta tu liga', 'Connect your league')}</h3><p>${tx('Trae tu equipo en 10 segundos y todo el sitio trabaja para tu plantel.', 'Bring your team in 10 seconds and the whole site works for your roster.')}</p></div><span class="cg-free">${tx('GRATIS', 'FREE')}</span></div>
+    <div class="cg-tabs"><button type="button" class="on" data-cg-modo="sleeper">Sleeper</button><button type="button" data-cg-modo="manual">${tx('ESPN, Yahoo u otra (a mano)', 'ESPN, Yahoo or other (manual)')}</button></div>
+    <form class="cg-f" data-cg="sleeper"><input name="u" placeholder="${tx('Tu usuario de Sleeper', 'Your Sleeper username')}" autocomplete="off" required><button class="btn" type="submit">${tx('Buscar mis ligas', 'Find my leagues')}</button></form>
+    <div class="cg-ligas" id="cg-ligas">${_ligaOpc ? _ligaOpc.ls.map(l => `<button type="button" class="cg-liga" data-cg-lid="${l.league_id}"><b>${esc(l.name)}</b><small>${l.total_rosters} ${tx('equipos', 'teams')} · ${(l.scoring_settings || {}).rec >= 1 ? 'PPR' : (l.scoring_settings || {}).rec >= .5 ? 'HALF' : 'STD'}</small></button>`).join('') : ''}</div>
+    <div class="cg-manual" hidden><p class="sub">${tx('Busca y agrega a tus jugadores. Lo guardamos en este dispositivo.', 'Search and add your players. We save it on this device.')}</p><input id="cg-busca" placeholder="${tx('Nombre del jugador…', 'Player name…')}" autocomplete="off"><div id="cg-res"></div>
+      <button type="button" class="btn" data-cg-listo>${tx('Listo, ver mi cuarto de guerra', 'Done, open my war room')}</button>
+      <label class="cg-fmt">${tx('Formato', 'Format')} <select id="cg-fmt">${FMTS.map((f, i) => `<option value="${i}">${f}</option>`).join('')}</select></label></div>
+    <p class="cg-msg" id="cg-msg" role="status"></p>
+    <p class="legal">${tx('ESPN y Yahoo no permiten importar ligas privadas sin tu contraseña; por seguridad nunca te la pedimos. Captura tu plantel a mano y te damos las mismas herramientas.', 'ESPN and Yahoo don\'t allow importing private leagues without your password; for your security we never ask for it. Enter your roster manually and you get the same tools.')}</p></section>`;
+}
+
+function premiumHub() {
+  titulo('Premium FX');
+  const pro = esPremium(), excl = todasNoticias().filter(n => n.exclusivo).slice(0, 6);
+  sincroniza();
+  const hero = `<div class="cg-hero"><div class="cg-hero-in"><span class="cg-tag">★ PREMIUM FX</span><h1>${tx('Tu cuarto de guerra', 'Your war room')}</h1>
+    <p>${tx('Conecta tu liga y nuestros sistemas te dicen a quién alinear, a quién agregar y qué trade pedir, con el porqué de cada decisión. Cada día, con el Modelo FX.', 'Connect your league and our systems tell you who to start, who to add and what trade to ask for, with the why behind every call. Every day, powered by the FX Model.')}</p>
+    ${pro ? `<p class="prem-ok">★ ${tx('Eres Premium: todas las herramientas están desbloqueadas.', 'You are Premium: every tool is unlocked.')}</p>` : `<div class="cg-cta">${!YO ? `<a class="btn" href="#/cuenta" data-reg>${tx('Crea tu cuenta y suscríbete', 'Create your account and subscribe')}</a>` : (PAGO.mes || PAGO.temporada) ? planes() : ''}</div>`}</div>
+    <ul class="cg-feat">${[['🏈', tx('Alineación óptima', 'Optimal lineup'), tx('con el porqué', 'with the why')], ['📈', tx('Probabilidad de ganar', 'Win probability'), tx('tu matchup', 'your matchup')], ['🧲', tx('Waivers para ti', 'Waivers for you'), tx('libres en tu liga', 'free in your league')], ['🤝', 'Trade targets', tx('qué pedir y qué dar', 'what to ask and give')], ['🚑', tx('Alertas del plantel', 'Roster alerts'), tx('lesiones y descansos', 'injuries and byes')], ['🗞️', tx('Exclusivas', 'Exclusives'), tx('red de reporteros', 'reporter network')]].map(([i, a, b]) => `<li><span>${i}</span><b>${a}</b><small>${b}</small></li>`).join('')}</ul></div>`;
+  if (!LIGA || !(LIGA.jugadores || []).length) return `<div class="page">${crumbs([['', 'Premium FX']])}<div class="wrap">${hero}${conectaVista()}${exclusivasBloque(excl, pro)}</div></div>`;
+
+  const slots = LIGA.slots && LIGA.slots.length ? LIGA.slots : POS_BASE, al = alineacion(LIGA.jugadores, slots);
+  const alertas = LIGA.jugadores.map(id => J[id]).filter(Boolean).filter(j => fuera(j) || estatus(j) === 'Duda' || !rivalDe(j.team));
+  const titIds = new Set(al.tit.map(x => x.j && x.j.id));
+  const alertasHtml = alertas.length ? alertas.map(j => { const t = titIds.has(j.id) ? `<em class="cg-tag-t">${tx('TITULAR', 'STARTER')}</em>` : ''; const st = !rivalDe(j.team) ? 'BYE' : fuera(j) ? tx('FUERA', 'OUT') : tx('DUDA', 'QUEST.'); return filaJ(j, `${t}<span class="pill ${st === 'BYE' ? '' : fuera(j) ? 'Fuera' : 'Duda'}">${st}</span>`, parte(j) || ''); }).join('') : `<p class="cg-ok">✓ ${tx('Todo tu plantel está sano y juega esta semana.', 'Your whole roster is healthy and playing this week.')}</p>`;
+  const linea = al.tit.map(x => `<div class="cg-slot"><span class="cg-s">${SLOT_TXT[x.s] || x.s}</span>${x.j ? filaJ(x.j, `<b class="n cg-p">${n1(pL(x.j))}</b>${fxPill(x.j)}`) : `<span class="cg-vacio">${tx('Vacío', 'Empty')}</span>`}<p class="cg-pq">${esc(porQue(x, al.banca))}</p></div>`).join('');
+  const libreLinea = al.tit.slice(0, 2).map(x => `<div class="cg-slot"><span class="cg-s">${SLOT_TXT[x.s] || x.s}</span>${x.j ? filaJ(x.j, `<b class="n cg-p">${n1(pL(x.j))}</b>${fxPill(x.j)}`) : ''}</div>`).join('');
+
+  let matchup = '';
+  if (LIGA.rival && LIGA.otros && LIGA.otros[LIGA.rival]) {
+    const ar = alineacion(LIGA.otros[LIGA.rival], slots), d = al.total - ar.total, p = phi(d / 27);
+    matchup = `<div class="cg-mu"><div><small>${tx('TÚ', 'YOU')}</small><b class="n">${n1(al.total)}</b></div><div class="cg-mu-p"><span style="--p:${(p * 100).toFixed(0)}%"></span><b>${Math.round(p * 100)}%</b><small>${tx('probabilidad de ganar', 'win probability')}</small></div><div class="r"><small>${esc(LIGA.duenos[LIGA.rival] || 'Rival')}</small><b class="n">${n1(ar.total)}</b></div></div>
+      <p class="cg-pq">${d > 8 ? tx('Eres favorito. Alinea lo seguro: piso alto antes que techo.', 'You are the favorite. Play it safe: high floor over ceiling.') : d < -8 ? tx('Eres el que viene de atrás: busca techo, apuesta por jugadores explosivos en FLEX.', 'You are the underdog: chase ceiling, bet on boom players at FLEX.') : tx('Duelo cerrado: cada decisión de FLEX cuenta. Revisa el reporte médico antes del kickoff.', 'Tight matchup: every FLEX call matters. Check the injury report before kickoff.')}</p>
+      <div class="cg-top">${tx('Su arma principal', 'Their top weapon')}: ${ar.tit.filter(x => x.j).sort((a, b) => pL(b.j) - pL(a.j)).slice(0, 2).map(x => `<a href="#/jugador/${x.j.id}">${esc(x.j.n)} (${n1(pL(x.j))})</a>`).join(' · ')}</div>`;
+  } else matchup = `<p class="cg-pq">${LIGA.fuente === 'manual' ? tx('En modo manual no conocemos a tu rival. Conecta Sleeper para ver tu probabilidad de ganar.', 'In manual mode we don\'t know your opponent. Connect Sleeper to see your win probability.') : tx('Tu liga no tiene matchup esta semana.', 'Your league has no matchup this week.')}</p>`;
+
+  const wv = waiversPara(al), wvHtml = wv.length ? wv.map(x => filaJ(x.j, `<b class="n cg-p">${n1(pL(x.j))}</b>`, x.mejora > .5 ? `+${n1(x.mejora)} ${tx('vs tu titular', 'vs your starter')}` : tx('valor resto de temporada', 'rest-of-season value'))).join('') : `<p class="cg-ok">${tx('No hay libres que mejoren tu alineación hoy.', 'No free agents improve your lineup today.')}</p>`;
+  const tt = tradeTargets(al), ttHtml = tt.length ? tt.map(x => `<div class="cg-tr">${filaJ(x.j, `<b class="n cg-p">${n1(pL(x.j))}</b>`, `${tx('de', 'from')} ${esc(LIGA.duenos[x.rid] || '')}`)}<p class="cg-pq">${tx('Ofrece', 'Offer')} <a href="#/trade?da=${x.oferta.id}&recibe=${x.j.id}">${esc(x.oferta.n)} ↔ ${esc(x.j.n)}</a> · ${tx('analizar trade ›', 'analyze trade ›')}</p></div>`).join('') : `<p class="cg-pq">${LIGA.otros ? tx('Tu plantel está balanceado: no vemos un trade que te mejore hoy.', 'Your roster is balanced: no trade improves you today.') : tx('Conecta Sleeper para ver los planteles de tus rivales.', 'Connect Sleeper to see your rivals\' rosters.')}</p>`;
+
+  return `<div class="page">${crumbs([['', 'Premium FX']])}<div class="wrap">${hero}
+    <div class="cg-liga-h"><div><small>${LIGA.fuente === 'sleeper' ? 'SLEEPER' : tx('MANUAL', 'MANUAL')} · ${FMTS[fmtL()]}${LIGA.equipos ? ' · ' + LIGA.equipos + ' ' + tx('equipos', 'teams') : ''}</small><h2>${esc(LIGA.nombre || tx('Mi equipo', 'My team'))}</h2></div><div class="cg-acc">${LIGA.fuente === 'sleeper' ? `<button type="button" class="btn ghost sm" data-cg-sync>${tx('Actualizar', 'Refresh')}</button>` : ''}<button type="button" class="btn ghost sm" data-cg-salir>${tx('Cambiar liga', 'Change league')}</button></div></div>
+    <div class="cg-grid">
+      ${tarjetaHerr('🏈', tx(`Alineación óptima · Semana ${semActual()}`, `Optimal lineup · Week ${semActual()}`), tx(`Proyección ${n1(al.total)} pts con el Modelo FX en el formato de tu liga.`, `${n1(al.total)} projected pts with the FX Model in your league format.`), `<div class="cg-line">${linea}</div>`, tx('Tu alineación completa con el porqué de cada decisión', 'Your full lineup with the why behind every call'), false).replace('<div class="pz lock">', `<div class="cg-line">${libreLinea}</div><div class="pz lock">`)}
+      ${tarjetaHerr('🚑', tx('Alertas del plantel', 'Roster alerts'), tx(`${alertas.length} jugador${alertas.length === 1 ? '' : 'es'} con algo que revisar.`, `${alertas.length} player${alertas.length === 1 ? '' : 's'} to check.`), alertasHtml, '', true)}
+      ${tarjetaHerr('📈', tx('Tu matchup', 'Your matchup'), tx('Puntos proyectados de las dos alineaciones óptimas.', 'Projected points of both optimal lineups.'), matchup, tx('Tu probabilidad de ganar y cómo jugar la semana', 'Your win probability and how to play the week'), false)}
+      ${tarjetaHerr('🧲', tx('Waivers para ti', 'Waivers for you'), tx('Libres en tu liga que mejoran tu posición más débil.', 'Free agents in your league who upgrade your weakest spot.'), wvHtml, tx('Los libres que mejoran tu equipo, ordenados', 'The free agents who upgrade your team, ranked'), false)}
+      ${tarjetaHerr('🤝', 'Trade targets', tx('A quién pedir, a qué rival y qué ofrecer de tu banca.', 'Who to ask for, from which rival and what to offer from your bench.'), ttHtml, tx('Los trades que te convienen con tus rivales reales', 'The trades that help you with your real rivals'), false)}
+      ${tarjetaHerr('📋', tx('Tu plantel', 'Your roster'), tx(`${LIGA.jugadores.length} jugadores · banca ordenada por proyección.`, `${LIGA.jugadores.length} players · bench sorted by projection.`), `<div class="cg-list">${al.banca.map(j => filaJ(j, `<b class="n cg-p">${n1(pL(j))}</b>${fxPill(j)}`, fiL(j) ? tx('piso/techo ', 'floor/ceiling ') + n1(fiL(j)[0]) + '–' + n1(fiL(j)[1]) : '')).join('') || '<p class="sub">—</p>'}</div>`, '', true)}
+    </div>
+    ${exclusivasBloque(excl, pro)}</div></div>`;
+}
+function exclusivasBloque(L, pro) {
+  return `<section class="block" data-chip="${tx('RED DE REPORTEROS', 'REPORTER NETWORK')}"><div class="head"><div><h2>${tx('Exclusivas FX', 'FX exclusives')}</h2><p class="hsub">${tx('Información de nuestra red de reporteros que no vas a encontrar en otro lado.', 'Information from our reporter network you won\'t find anywhere else.')}</p></div><a class="all" href="#/exclusivo">${tx('Todas', 'All')} ›</a></div>
+    <div class="news stagger">${L.map(n => newsCard(n)).join('') || `<div class="empty">${tx('La primera exclusiva llega muy pronto.', 'The first exclusive arrives very soon.')}</div>`}</div></section>`;
+}
+
+/* ---------- Eventos ---------- */
+const cgMsg = (t, mal) => { const m = document.getElementById('cg-msg'); if (m) { m.textContent = t; m.classList.toggle('mal', !!mal); } };
+document.addEventListener('submit', async e => {
+  const f = e.target.closest('form[data-cg="sleeper"]'); if (!f) return; e.preventDefault();
+  cgMsg(tx('Buscando tus ligas…', 'Finding your leagues…'));
+  try { _ligaOpc = await importaSleeper(f.u.value); if (_ligaOpc.ls.length === 1) { await cargaLigaSleeper(_ligaOpc.ls[0].league_id, _ligaOpc.u.user_id); _ligaOpc = null; mide('liga_conectada', { fuente: 'sleeper' }); return repinta(); } repinta(); cgMsg(tx('Elige tu liga:', 'Pick your league:')); }
+  catch (er) { cgMsg(er.message && !/^\d+$/.test(er.message) ? er.message : tx('No pudimos conectar con Sleeper. Revisa el usuario.', 'We couldn\'t reach Sleeper. Check the username.'), true); }
+});
+document.addEventListener('click', async e => {
+  const l = e.target.closest('[data-cg-lid]');
+  if (l && _ligaOpc) { cgMsg(tx('Trayendo tu equipo…', 'Bringing your team…')); try { await cargaLigaSleeper(l.dataset.cgLid, _ligaOpc.u.user_id); _ligaOpc = null; mide('liga_conectada', { fuente: 'sleeper' }); repinta(); } catch (er) { cgMsg(er.message, true); } return; }
+  const m = e.target.closest('[data-cg-modo]');
+  if (m) { document.querySelectorAll('[data-cg-modo]').forEach(b => b.classList.toggle('on', b === m)); const man = m.dataset.cgModo === 'manual'; document.querySelector('form[data-cg="sleeper"]').hidden = man; document.querySelector('.cg-manual').hidden = !man; return; }
+  const a = e.target.closest('[data-cg-add]');
+  if (a) { LIGA = LIGA && LIGA.fuente === 'manual' ? LIGA : { fuente: 'manual', nombre: tx('Mi equipo', 'My team'), slots: POS_BASE, jugadores: [], fmt: +(document.getElementById('cg-fmt') || { value: FMT }).value, fecha: new Date().toISOString() };
+    if (!LIGA.jugadores.includes(a.dataset.cgAdd)) LIGA.jugadores.push(a.dataset.cgAdd); guardaLiga(); cgMsg(tx(`${LIGA.jugadores.length} jugadores en tu plantel. Agrega todos y listo.`, `${LIGA.jugadores.length} players on your roster. Add them all and you're set.`));
+    a.disabled = true; a.textContent = '✓'; if (LIGA.jugadores.length === 1) mide('liga_conectada', { fuente: 'manual' }); return; }
+  if (e.target.closest('[data-cg-listo]')) { if (LIGA && LIGA.jugadores.length) repinta(); else cgMsg(tx('Agrega al menos un jugador.', 'Add at least one player.'), true); return; }
+  if (e.target.closest('[data-cg-salir]')) { LIGA = null; _ligaOpc = null; guardaLiga(); repinta(); return; }
+  if (e.target.closest('[data-cg-sync]')) { if (LIGA) LIGA.fecha = 0; sincroniza(); return; }
+});
+document.addEventListener('input', e => {
+  if (e.target.id === 'cg-fmt' && LIGA && LIGA.fuente === 'manual') { LIGA.fmt = +e.target.value; guardaLiga(); }
+  if (e.target.id !== 'cg-busca') return;
+  const q = e.target.value.trim().toLowerCase(), box = document.getElementById('cg-res'); if (!box) return;
+  if (q.length < 2) { box.innerHTML = ''; return; }
+  const ya = new Set((LIGA && LIGA.jugadores) || []);
+  box.innerHTML = Object.values(J).filter(j => j.n && j.n.toLowerCase().includes(q) && ['QB', 'RB', 'WR', 'TE', 'K', 'DEF'].includes(j.pos)).sort((a, b) => (b.proy ? b.proy[0] : 0) - (a.proy ? a.proy[0] : 0)).slice(0, 8)
+    .map(j => `<div class="cg-res">${helmet(j.team, j.num, 26)}<span><b>${esc(j.n)}</b><small>${esc(j.pos)} · ${esc(j.team)}</small></span><button type="button" class="btn sm" data-cg-add="${j.id}" ${ya.has(j.id) ? 'disabled' : ''}>${ya.has(j.id) ? '✓' : '+'}</button></div>`).join('');
+});
+
 function router() {
   const [ruta, qs] = ((location.hash || window.FX_RUTA || '').slice(1) || '/').split('?');
   const q = new URLSearchParams(qs || ''), [, seccion, a, b] = ruta.split('/');
   const R = { '': () => inicio(), blog: () => a ? blogNota(a) : blogLista(), noticias: () => noticias(q), reportajes: () => noticias(q), noticia: () => noticia(a), reportaje: () => noticia(a), jugador: () => jugador(a), comparar: () => comparar(a, b), posicion: () => posicion(a),
-    equipos: () => equipos(), equipo: () => equipo(a), partidos: () => partidos(q), partido: () => partido(a), lideres: () => lideres(q), media: () => media(), exclusivo: () => exclusivo(), premium: () => exclusivo(), temporada: () => temporada(), semana: () => semana(a), tendencias: () => tendencias(), lesionados: () => lesionados(q),
+    equipos: () => equipos(), equipo: () => equipo(a), partidos: () => partidos(q), partido: () => partido(a), lideres: () => lideres(q), media: () => media(), exclusivo: () => exclusivo(), premium: () => premiumHub(), temporada: () => temporada(), semana: () => semana(a), tendencias: () => tendencias(), lesionados: () => lesionados(q),
     cuenta: () => cuenta(q), herramientas: () => herramientas(), trade: () => trade(q), privacidad: () => privacidad(), baja: () => baja(q) };
   app.innerHTML = (R[seccion || ''] || noEncontrado)();
   if (ruta !== _rutaPrev) { _rutaPrev = ruta; app.classList.remove('entra'); void app.offsetWidth; app.classList.add('entra'); }
