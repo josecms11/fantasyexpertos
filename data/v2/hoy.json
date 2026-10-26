@@ -1,6 +1,6 @@
 {
-  "modelo": "FX v2",
-  "actualizado": "2026-10-26T10:20:04.583Z",
+  "modelo": "FX v3",
+  "actualizado": "2026-10-26T10:40:04.211Z",
   "ultimaIA": "2026-10-26T09:36:50.397Z",
   "semana": 8,
   "semanaStats": 7,
@@ -68,63 +68,15 @@
   ],
   "lesionados": [
     {
-      "id": "4881",
-      "estatus": "Fuera"
-    },
-    {
       "id": "4034",
       "estatus": "Duda"
     },
     {
-      "id": "7525",
+      "id": "4881",
       "estatus": "Fuera"
-    },
-    {
-      "id": "8112",
-      "estatus": "Duda"
     },
     {
       "id": "6904",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "5854",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "2133",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "8155",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "4199",
-      "estatus": "Duda"
-    },
-    {
-      "id": "12518",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "12514",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "12534",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "2216",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "7543",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "12508",
       "estatus": "Fuera"
     },
     {
@@ -132,7 +84,55 @@
       "estatus": "Fuera"
     },
     {
-      "id": "13287",
+      "id": "8112",
+      "estatus": "Duda"
+    },
+    {
+      "id": "2133",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12508",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "7525",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "8155",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "7543",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12518",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "2216",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "10229",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "4199",
+      "estatus": "Duda"
+    },
+    {
+      "id": "12514",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "4866",
+      "estatus": "Duda"
+    },
+    {
+      "id": "2307",
       "estatus": "Fuera"
     },
     {
@@ -140,23 +140,59 @@
       "estatus": "Duda"
     },
     {
+      "id": "13287",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "4137",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12534",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "11589",
+      "estatus": "Fuera"
+    },
+    {
       "id": "7526",
       "estatus": "Duda"
+    },
+    {
+      "id": "5872",
+      "estatus": "Fuera"
     },
     {
       "id": "12474",
       "estatus": "Duda"
     },
     {
-      "id": "12533",
+      "id": "9753",
       "estatus": "Fuera"
     },
     {
-      "id": "9486",
+      "id": "5927",
       "estatus": "Fuera"
     },
     {
-      "id": "2307",
+      "id": "8142",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "5854",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "11635",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "6819",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "4983",
       "estatus": "Fuera"
     },
     {
@@ -168,51 +204,15 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4983",
+      "id": "12533",
       "estatus": "Fuera"
     },
     {
-      "id": "5927",
+      "id": "8205",
       "estatus": "Fuera"
     },
     {
-      "id": "12509",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "5872",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "11630",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "4866",
-      "estatus": "Duda"
-    },
-    {
-      "id": "10229",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "8188",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "1737",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "5892",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "13286",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "8154",
+      "id": "9486",
       "estatus": "Fuera"
     },
     {
@@ -220,12 +220,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4033",
-      "estatus": "Fuera"
+      "id": "7567",
+      "estatus": "Duda"
     },
     {
-      "id": "12536",
-      "estatus": "Duda"
+      "id": "5892",
+      "estatus": "Fuera"
     }
   ],
   "agregados": [
@@ -265,8 +265,8 @@
     "9511",
     "5927",
     "11637",
-    "3321",
     "9482",
+    "3321",
     "9480",
     "11435",
     "8154",
@@ -278,8 +278,8 @@
     "1166",
     "CLE",
     "9756",
-    "12533",
     "11625",
+    "12533",
     "9500"
   ],
   "duelo": {
@@ -287,6 +287,7 @@
     "b": "Drake Maye",
     "veredicto": "Arranca a Josh Allen. Su techo explosivo y proyección de 24 puntos PPR superan a Maye (22.3), garantizando mayor certeza y volumen semanal en enfrentamientos clave para tu alineación titular."
   },
+  "dueloFecha": null,
   "fuentes": [
     "Sleeper",
     "ESPN",
