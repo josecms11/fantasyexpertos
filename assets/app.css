@@ -2317,3 +2317,4 @@ section.block{padding-top:clamp(36px,4vw,64px)}
 .seo-home{padding:40px 0}.seo-home h1{font-size:var(--t-page)}.seo-home p{color:var(--soft);max-width:70ch}.seo-home a{color:#7CF0A8}
 .pie-links{display:flex;flex-wrap:wrap;gap:8px 18px;padding-bottom:12px;font-family:var(--fc);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:13px}
 .pie-links a{color:var(--soft);text-decoration:none}.pie-links a:hover{color:var(--text)}
+.fx-tech.inl{display:inline-flex;vertical-align:-3px;margin:0 2px;font-size:6.5px!important;padding:3px 6px 3px 4px}

@@ -259,6 +259,13 @@ document.addEventListener('focusin', e => { const b = e.target.closest && e.targ
 document.addEventListener('focusout', e => { if (e.target.closest && e.target.closest('.fx-info')) ocultaTip(); });
 document.addEventListener('click', e => { const b = e.target.closest && e.target.closest('.fx-info'); if (b) { e.preventDefault(); e.stopPropagation(); muestraTip(b); } }, true);
 addEventListener('scroll', ocultaTip, { passive: true }); addEventListener('hashchange', ocultaTip);
+/* Cada vez que el texto dice "FX Tech Analyzer", se muestra el sello (logo) en lugar de las palabras */
+function selloEnTexto(raiz) {
+  if (!raiz) return; const w = document.createTreeWalker(raiz, NodeFilter.SHOW_TEXT), L = []; let n;
+  while ((n = w.nextNode())) if (/FX Tech Analyzer/i.test(n.nodeValue) && !n.parentElement.closest('.fx-tech,option,script,textarea,title')) L.push(n);
+  L.forEach(t => { const f = document.createElement('span'); f.innerHTML = esc(t.nodeValue).replace(/(del |the |el )?FX Tech Analyzer/gi, (m, art) => (art || '') + sello('inl')); t.replaceWith(...f.childNodes); });
+}
+new MutationObserver(() => { clearTimeout(selloEnTexto._t); selloEnTexto._t = setTimeout(() => { selloEnTexto(app); selloEnTexto(document.querySelector('footer')); }, 120); }).observe(document.getElementById('app'), { childList: true, subtree: true });
 const proBloque = (titulo, info, html, gancho) => `<section class="block plusfx" data-chip="★ ${tx('VENTAJA FX', 'FX EDGE')}"><div class="head"><div><h2>${titulo} ${infoFX(info)}</h2></div><a class="all" href="#/premium">${tx('Todo PRO', 'All PRO')} ›</a></div><div class="card plus-in"><div class="plus-sello">${sello()}</div>${zonaPrem(html, gancho)}</div></section>`;
 const filaPlus = (j, der, sub) => `<a class="cg-j" href="#/jugador/${j.id}" data-hover-j="${j.id}">${helmet(j.team, j.num, 30)}<span class="cg-jn"><b>${esc(j.n)}</b><small>${sub}</small></span>${der}</a>`;
 function plusLesion() {
@@ -1881,6 +1888,7 @@ function router() {
   if ($('.links').classList.contains('open')) menu(false, true);
   if (seccion === 'posicion') montaTabla(a);
   if (seccion === 'premium') animaPremium();
+  selloEnTexto(app);
   document.querySelectorAll('.vid').forEach(v => v.onclick = () => { v.querySelector('.thumb').innerHTML = `<iframe src="https://www.youtube.com/embed/${v.dataset.v}?autoplay=1&rel=0" title="Video de Fantasy Expertos" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`; v.onclick = null; });
   const du = $('.duelo');
   document.querySelectorAll('.pick').forEach(btn => btn.onclick = () => {
