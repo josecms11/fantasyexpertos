@@ -1,24 +1,20 @@
 {
-  "fecha": "2026-10-26T17:09:43.829Z",
+  "fecha": "2026-10-26T17:44:57.119Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 15 nuevos, 17 en total",
-    "[0.9s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[1.9s] ESPN: lesiones 799 · noticias 50",
-    "[1.9s] Modelo FX v3 : 444 proyecciones propias para la semana 8",
-    "[2.3s] Fuentes nuevas: 6 · horario pico · toca IA: true",
-    "[2.5s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[6.6s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[30.9s] IA OK con gemini-3.5-flash-lite",
-    "[30.9s] Noticias nuevas verificadas: 1",
-    "[75.3s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[120.9s] IA OK con gemini-3.5-flash-lite",
-    "[120.9s] Exclusivas de SEMANA 7 recap y lesiones → 15 notas",
-    "[121.5s] Bóveda Premium: 15 exclusivas guardadas",
-    "[122.1s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[146.2s] IA OK con gemini-3.5-flash-lite",
-    "[146.2s] Resumen semana 2",
-    "[146.3s] Precisión S7: error FX 4.42 · referencia 4.45 · n 285",
-    "[146.3s] Listo: 16 noticias nuevas (15 exclusivas) · 452 jugadores · archivo 300 · semana de juego 8 · IA usada hoy 23/40"
+    "[1.0s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[2.1s] ESPN: lesiones 799 · noticias 50",
+    "[2.2s] Modelo FX v3 : 444 proyecciones propias para la semana 8",
+    "[2.8s] Fuentes nuevas: 6 · horario pico · toca IA: true",
+    "[2.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[7.6s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
+    "[28.7s] Gemini respuesta inválida gemini-3.5-flash-lite STOP {\n  \"noticias\": [\n    {\n      \"titulo\": \"Schefter ve a Colts negociando jugadores rumbo a fecha límite\",\n      \"claves\": [\n        \"Adam Schefter anticipa movim",
+    "[28.7s] Noticias nuevas verificadas: 0",
+    "[29.5s] Notas del archivo corregidas por estatus o protagonista: 1",
+    "[33.9s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
+    "[50.4s] Gemini respuesta inválida gemini-3.5-flash-lite STOP {\n  \"titulo\": \"Análisis Fantasy de la Semana 1: Arrancamos con todo\",\n  \"claves\": [\n    \"Caleb Williams dominó con 37.3 puntos y manda en los quarterbacks.\",\n  ",
+    "[50.5s] Precisión S7: error FX 4.42 · referencia 4.45 · n 285",
+    "[50.5s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 300 · semana de juego 8 · IA usada hoy 25/40"
   ]
 }
