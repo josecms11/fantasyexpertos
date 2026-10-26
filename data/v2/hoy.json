@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-26T15:23:34.461Z",
-  "ultimaIA": "2026-10-26T15:23:34.461Z",
+  "actualizado": "2026-10-26T16:20:49.676Z",
+  "ultimaIA": "2026-10-26T16:20:49.676Z",
   "semana": 8,
   "semanaStats": 7,
   "temporada": "2026",
@@ -14,90 +14,45 @@
   ],
   "noticias": [
     {
-      "id": "n20261026152300",
-      "fecha": "2026-10-26T15:23:34.461Z",
+      "id": "n20261026162001",
+      "fecha": "2026-10-26T16:20:49.676Z",
       "semana": 8,
-      "titulo": "Rico Dowdle gana tracción en el backfield tejano",
+      "titulo": "Courtland Sutton vuelve a la consideración para el flex",
       "claves": [
-        "Field Yates monitorea de cerca el valor fantasy de Rico Dowdle.",
-        "El corredor suma mayor volumen en las oportunidades terrestres del equipo.",
-        "Se perfila como una opción relevante para la semana 8."
+        "Sutton entra de nuevo en el radar fantasy como flex.",
+        "Su volumen de dianas lo mantiene relevante en PPR.",
+        "Denver requiere constancia aérea para afianzar su valor fantasy."
       ],
-      "contexto": "El panorama ofensivo de Dallas muestra ajustes en la distribución de acarreos. Field Yates destaca que el valor fantasy de Rico Dowdle va en aumento debido al incremento en sus oportunidades de calidad. Tras semanas de rotación constante, Dowdle empieza a establecerse como un pilar en el ataque terrestre del conjunto tejano. Este ajuste táctico busca darle mayor fluidez al plan de juego ofensivo de cara a la semana 8.",
-      "fantasy": "El ascenso de Rico Dowdle lo posiciona como un objetivo prioritario de reclamo en ligas PPR y formato estándar de 12 o más equipos. Su carga de trabajo proyectada lo convierte en una opción sólida de FLEX para la semana 8. Quienes buscan cobertura por lesiones o semanas de descanso encontrarán en Dowdle un activo confiable con techo ascendente en su volumen semanal dentro de la zona roja.",
-      "equipo_impacto": "El ataque terrestre de Dallas gana consistencia con un corredor principal más definido. La mayor cuota de Dowdle estabiliza la producción de la unidad, quitando presión sobre el juego aéreo y balanceando el esquema ofensivo general.",
-      "accion": "Asegura a Rico Dowdle en tu banca antes de que su volumen aumente en la semana 8.",
+      "contexto": "Courtland Sutton vuelve a colocarse en la conversación como una opción utilizable en el puesto de flex para la semana 8. El receptor de Denver ha mostrado chispazos de involucramiento ofensivo que llaman la atención de los mánagers fantasy. Con el ataque aéreo tratando de estabilizar su ritmo de juego, su participación en el esquema ofensivo resulta clave para sostener series largas e incrementar las oportunidades dentro de la zona de anotación.",
+      "fantasy": "Sutton se ubica como una alternativa de flex en ligas PPR de 12 o más receptores. No cuenta con el techo de un receptor 1, pero su volumen le otorga un piso aceptable si necesitas cubrir bajas por lesión en tu alineación titular. Si buscas estabilidad en tu alineación para la semana 8, Sutton ofrece el rendimiento suficiente para evitar un 0 en tu enfrentamiento directo.",
+      "equipo_impacto": "Su presencia afianza la estructura del juego aéreo de Denver, ofreciendo un blanco seguro en trayectorias intermedias. Esto libera espacios para los receptores secundarios y le brinda mayor tiempo de decisión a su mariscal de campo en momentos de presión.",
+      "accion": "Alinea a Courtland Sutton en tu casilla de flex si tienes bajas importantes en la semana 8.",
       "en": {
-        "titulo": "Rico Dowdle Gains Momentum in Dallas Backfield",
+        "titulo": "Courtland Sutton Returns to Flex Radar for Week 8",
         "claves": [
-          "Field Yates is closely monitoring Rico Dowdle's fantasy value.",
-          "The running back is gaining more work in ground opportunities.",
-          "He emerges as a relevant option for Week 8."
+          "Sutton emerges back as a viable flex option.",
+          "Target volume keeps him relevant in PPR formats.",
+          "Denver needs passing consistency to maintain his value."
         ],
-        "contexto": "The offensive landscape in Dallas shows adjustments in carry distribution. Field Yates highlights that Rico Dowdle's fantasy value is on the rise due to an increase in quality opportunities. After weeks of constant rotation, Dowdle is starting to establish himself as a cornerstone in the ground game. This tactical shift aims to give the offensive game plan more fluidity heading into Week 8.",
-        "fantasy": "The rise of Rico Dowdle positions him as a priority target in PPR and standard formats with 12 or more teams. His projected workload turns him into a solid FLEX option for Week 8. Managers seeking coverage for injuries or bye weeks will find in Dowdle a reliable asset with an ascending ceiling in his weekly red zone volume.",
-        "equipo_impacto": "Dallas' ground attack gains consistency with a clearer lead back. Dowdle's increased touch share stabilizes unit production, relieving pressure from the passing game and balancing the overall offensive scheme.",
-        "accion": "Secure Rico Dowdle on your bench before his volume expands in Week 8."
+        "contexto": "Courtland Sutton has put himself back into the conversation as a usable flex option for Week 8. The Denver wide receiver has shown flashes of offensive involvement that grab the attention of fantasy managers. As the passing attack tries to stabilize its overall game rhythm, his participation in the offensive scheme remains key to sustaining long drives and increasing opportunities inside the red zone area.",
+        "fantasy": "Sutton slides in as a flex alternative in PPR leagues with 12 or more teams. He does not carry the high ceiling of a top receiver, but his target volume provides a decent floor if you need to cover injuries in your starting lineup. If you are seeking stability in Week 8, Sutton offers enough production to prevent a complete 0 in your matchup.",
+        "equipo_impacto": "His presence stabilizes Denver's passing structure by providing a reliable target on intermediate routes. This opens up space for secondary receivers and gives his quarterback more decision-making time during high-pressure situations.",
+        "accion": "Start Courtland Sutton in your flex spot if you face lineup injuries in Week 8."
       },
       "etiqueta": "TENDENCIA",
       "impacto": "SUBE",
-      "equipo": "DAL",
+      "equipo": "DEN",
       "equipos": [
-        "DAL",
-        "PIT"
+        "DEN"
       ],
       "jugadores": [
-        "7021"
+        "5045"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50287661/why-field-yates-monitoring-rico-dowdle-fantasy-value",
-          "t": "Why Field Yates is monitoring Rico Dowdle's fantasy value"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261026152301",
-      "fecha": "2026-10-26T15:23:34.461Z",
-      "semana": 8,
-      "titulo": "Chase Brown genera dudas como titular en fantasy",
-      "claves": [
-        "Especialistas analizan la viabilidad de mantener a Chase Brown como titular.",
-        "Su volumen de toques muestra variaciones en las últimas semanas.",
-        "Su estatus en alineaciones de fantasy requiere una evaluación minuciosa."
-      ],
-      "contexto": "La producción de Chase Brown entra bajo la lupa de los analistas de ESPN para la semana 8. Tras registrar jornadas con rendimiento inconsistente, surge el debate sobre si mantiene el perfil de corredor titular en equipos de fantasy football. El cuerpo técnico de Cincinnati ajusta sus esquemas ofensivos, lo que impacta de forma directa el volumen de toques y la eficiencia terrestre que Brown registra dentro del terreno de juego.",
-      "fantasy": "Para los dueños de Chase Brown en ligas PPR y de 10 o 12 equipos, su rol pasa de ser un RB2 seguro a un terreno de duda. En la semana 8 conviene contemplarlo más como una opción de RB3 o FLEX dependiente de anotación. Si cuentas con alternativas de mayor volumen garantizado, considera mover a Brown a tu banca hasta que recupere regularidad.",
-      "equipo_impacto": "El ataque de Cincinnati diversifica sus jugadas terrestres, disminuyendo la dependencia en un solo corredor. Esta rotación exige mayor efectividad por oportunidad, afectando la previsibilidad de los puntos para la ofensiva en conjunto.",
-      "accion": "Evalúa alternativas en tu banca antes de colocar a Chase Brown como titular en la semana 8.",
-      "en": {
-        "titulo": "Chase Brown Raises Starting Concerns in Fantasy Leagues",
-        "claves": [
-          "Analysts evaluate Chase Brown's status as a fantasy starter.",
-          "His weekly touch volume shows recent fluctuations.",
-          "His lineup value requires careful assessment for Week 8."
-        ],
-        "contexto": "Chase Brown's production comes under review by ESPN analysts heading into Week 8. Following games with inconsistent performance, debate surrounds whether he maintains RB2 value in fantasy lineups. Cincinnati's coaching staff continues to adjust offensive schemes, directly impacting touch distribution and ground efficiency for Brown on the field.",
-        "fantasy": "For fantasy managers in 10 or 12 team PPR leagues, Chase Brown shifts from a reliable RB2 to a volatile option. For Week 8, it is safer to treat him as a touchdown-dependent RB3 or FLEX. If you possess backfield options with guaranteed volume, consider benching Brown until his touch floor stabilizes.",
-        "equipo_impacto": "Cincinnati's offense is diversifying ground touches, reducing reliance on a single back. This committee approach demands higher efficiency per attempt, introducing unpredictability to the unit's fantasy production overall.",
-        "accion": "Explore bench alternatives before committing Chase Brown to your Week 8 lineup."
-      },
-      "etiqueta": "TENDENCIA",
-      "impacto": "BAJA",
-      "equipo": "CIN",
-      "equipos": [
-        "CIN"
-      ],
-      "jugadores": [
-        "9224"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50287614/is-chase-brown-starting-fantasy-rb",
-          "t": "Is Chase Brown still a starting fantasy RB?"
+          "u": "https://www.espn.com/video/clip/_/id/50287717/is-courtland-sutton-back-flex-radar",
+          "t": "Is Courtland Sutton back on the flex radar?"
         }
       ],
       "menciona": []
@@ -267,57 +222,57 @@
   ],
   "agregados": [
     "13150",
-    "13424",
     "13296",
+    "13424",
     "13414",
     "13298",
-    "11435",
     "13276",
-    "3271",
-    "5995",
-    "13294",
+    "11435",
     "10213",
+    "3271",
+    "13294",
+    "5995",
     "6650",
-    "12718",
     "8129",
     "11539",
-    "9482",
-    "11624",
-    "5849",
+    "12718",
     "NE",
-    "9502",
+    "11624",
+    "9482",
     "11783",
+    "9502",
     "1166",
-    "11563",
+    "11586",
     "7553",
-    "4037"
+    "9230",
+    "5849"
   ],
   "soltados": [
     "12718",
     "3271",
     "8129",
-    "11581",
     "10235",
-    "9502",
+    "11581",
     "CLE",
-    "9511",
     "9482",
+    "9502",
+    "9511",
     "5927",
     "11637",
-    "3321",
     "11435",
+    "3321",
     "9480",
-    "8154",
-    "8134",
     "5849",
     "11625",
+    "HOU",
     "9756",
-    "13330",
-    "5012",
     "11610",
-    "1166",
-    "JAX",
-    "9500"
+    "8154",
+    "8134",
+    "9500",
+    "13330",
+    "13150",
+    "5012"
   ],
   "duelo": {
     "a": "Jared Goff",
