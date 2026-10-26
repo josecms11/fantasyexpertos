@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-10-26T01:34:49.579Z",
-  "ultimaIA": "2026-10-26T00:03:27.576Z",
+  "actualizado": "2026-10-26T02:14:38.587Z",
+  "ultimaIA": "2026-10-26T02:14:38.587Z",
   "semana": 8,
   "semanaStats": 7,
   "temporada": "2026",
@@ -13,55 +13,57 @@
   ],
   "noticias": [
     {
-      "id": "n20261026000303",
-      "fecha": "2026-10-26T00:03:27.576Z",
+      "id": "n20261026021403",
+      "fecha": "2026-10-26T02:14:38.587Z",
       "semana": 8,
-      "titulo": "Emanuel Wilson destaca en waivers para semana ocho",
+      "titulo": "Joe Burrow proyecta número estelar ante Baltimore",
       "claves": [
-        "Figura entre los jugadores más agregados de la semana.",
-        "Oportunidad de oro con Kaleb Johnson descartado por los Packers.",
-        "Alternativa atractiva para plantillas necesitadas de volumen terrestre."
+        "Proyección sólida de 21.4 puntos en semana ocho.",
+        "Lideró la remontada de Cincinnati tras discurso de Chase.",
+        "Ritmo ofensivo en ascenso frente a rivales divisionales."
       ],
-      "contexto": "Tras el apretado choque divisional donde los Lions vencieron 20-17 a Green Bay con gol de campo de Jake Bates, el panorama del backfield de los Packers se acomoda. Con Kaleb Johnson catalogado oficialmente como fuera por decisión técnica, Emanuel Wilson ha visto crecer su interés y se ubica entre las piezas más reclamadas en el alambre de waivers de cara a la semana ocho.",
-      "fantasy": "Reclámalo de inmediato en ligas de doce o más participantes, especialmente en formatos con formato PPR profundo o dinastía. Wilson ofrece valor inmediato como seguro premium y posible opción de flex si el comité terrestre le otorga trabajo en situaciones de pase. Es una adición barata antes de que aumente el costo de adquisición si su cuota de jugadas se incrementa.",
-      "equipo_impacto": "Su incorporación regular amplía las variantes terrestres de Green Bay, permitiendo refrescar el ataque por tierra y aportando frescura física en situaciones clave de corto yardaje durante las segundas mitades.",
-      "accion": "Gasta prioridad de reclamo en Emanuel Wilson desde la agencia libre.",
-      "etiqueta": "WAIVER",
+      "contexto": "Joe Burrow llega encendido a la semana ocho tras orquestar una aplastante victoria 35-13 sobre Baltimore, liderando la remontada de los Bengals luego del motivador discurso de Ja'Marr Chase en el descanso. Cincinnati anotó de manera consecutiva y Burrow mostró un nivel impecable en el bolsillo de protección, castigando a la secundaria rival con precisión milimétrica y consolidando su recuperación tras un inicio de campaña irregular.",
+      "fantasy": "Burrow figura en el podio de mariscales con una tremenda proyección de 21.4 puntos en ligas fantasy. En formatos tradicionales de un mariscal o en ligas Superflex, su titularidad no se discute. Si cuentas con él en tu plantilla, no busques alternativas de descanso; Burrow ofrece un techo astronómico respaldado por el explosivo volumen de pases hacia sus receptores estelares en momentos cruciales de cada serie ofensiva.",
+      "equipo_impacto": "La contundencia de Burrow eleva la eficacia en zona roja para todo el conjunto de Cincinnati, contagiando ritmo al ataque terrestre de Chase Brown y asegurando series sostenidas que desgastan al rival.",
+      "accion": "Alinéalo de inicio sin dudar en cualquier formato fantasy.",
+      "etiqueta": "START",
       "impacto": "SUBE",
-      "equipo": "GB",
+      "equipo": "CIN",
       "equipos": [
-        "GB",
-        "DET",
-        "SEA"
+        "CIN",
+        "BAL"
       ],
       "jugadores": [
-        "11435"
+        "6770",
+        "7564",
+        "9224"
       ],
       "menciona": []
     },
     {
-      "id": "n20261026000304",
-      "fecha": "2026-10-26T00:03:27.576Z",
+      "id": "n20261026021406",
+      "fecha": "2026-10-26T02:14:38.587Z",
       "semana": 8,
-      "titulo": "Tony Pollard emerge como arranque confiable en fantasy",
+      "titulo": "Marvin Harrison Jr. estrena anotación con los Texans",
       "claves": [
-        "Consolidado como uno de los grandes ganadores de la jornada.",
-        "Asume la carga principal del backfield con Tyjae Spears fuera.",
-        "Sólido volumen terrestre pese a la derrota ante Cleveland."
+        "Logró su primer touchdown como receptor de Houston.",
+        "Reconectó con C.J. Stroud en jugadas importantes.",
+        "Impulso inmediato para su valor aéreo semanal."
       ],
-      "contexto": "A pesar de la dolorosa caída 27-24 de los Titans a manos de Cleveland, Tony Pollard demostró que está en excelente ritmo individual, siendo catalogado como uno de los grandes ganadores de la semana siete. Su papel en la ofensiva de Tennessee se vuelve aún más crucial considerando que Tyjae Spears se encuentra fuera por lesión de rodilla, dejándole vía libre para capitalizar toques.",
-      "fantasy": "Colócalo con confianza como RB2 sólido o Flex de altísima gama en todos los formatos PPR y estándar. Con Spears fuera de combate, el porcentaje de jugadas de Pollard se mantendrá en niveles de corredor campana. Aprovecha este momento donde su volumen de toques y trabajo en zona roja le garantizan un piso de doce a quince puntos con enorme potencial de touchdown.",
-      "equipo_impacto": "La dependencia de Pollard libera de presión a los receptores abiertos de Tennessee, obligando a los apoyadores contrarios a morder engaños de play action en series ofensivas determinantes.",
-      "accion": "Alinea a Tony Pollard en tu puesto de corredor titular.",
-      "etiqueta": "START",
+      "contexto": "Marvin Harrison Jr. consiguió su primera anotación con el uniforme de los Houston Texans durante el duelo de tiempo extra frente a los Giants. El receptor novato se conectó de forma brillante con su mariscal de campo C.J. Stroud, reviviendo la química de sus etapas previas en el emparrillado. A pesar del tropiezo 27-21 ante Nueva York, su integración a la ofensiva texana dio señales sumamente prometedoras.",
+      "fantasy": "Esta actuación consolida a Harrison Jr. en el radar de WR2 con proyección a la alza en ligas de diez y doce escuadras. Su participación creciente en zona de gol eleva su piso semanal tanto en formatos estándar como en puntos por recepción. Con Jayden Higgins en la lista de reservas lesionados y Jaylin Noel con estatus cuestionable por un problema de dedo, su cuota de pases está garantizada.",
+      "equipo_impacto": "La presencia de Harrison revitaliza las opciones aéreas de Stroud ante la ausencia de David Montgomery y los problemas en la pierna de Woody Marks, balanceando un ataque que venía sufriendo por tierra.",
+      "accion": "Asegúralo en tu alineación titular como un WR2 confiable.",
+      "etiqueta": "TENDENCIA",
       "impacto": "SUBE",
-      "equipo": "TEN",
+      "equipo": "HOU",
       "equipos": [
-        "TEN",
-        "CLE"
+        "HOU",
+        "NYG"
       ],
       "jugadores": [
-        "5967"
+        "11628",
+        "9758"
       ],
       "menciona": []
     }
@@ -233,13 +235,13 @@
     "13424",
     "3271",
     "13414",
-    "11435",
-    "12718",
     "13296",
+    "11435",
     "13298",
+    "12718",
     "13294",
-    "4037",
     "5995",
+    "4037",
     "5849",
     "6650",
     "11624",
@@ -252,8 +254,8 @@
     "8132",
     "CLE",
     "13317",
-    "1433",
-    "11576"
+    "10213",
+    "1433"
   ],
   "soltados": [
     "11581",
@@ -261,8 +263,8 @@
     "12718",
     "9502",
     "9511",
-    "10235",
     "3271",
+    "10235",
     "5927",
     "11637",
     "9480",
@@ -279,13 +281,13 @@
     "7567",
     "12533",
     "2505",
-    "13424",
-    "8121"
+    "8121",
+    "13424"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
     "b": "Bijan Robinson",
-    "veredicto": "Arranca a Jahmyr Gibbs sobre Bijan Robinson. Gibbs lidera las proyecciones de corredores con 23 puntos PPR tras el dramático triunfo ante Green Bay, respaldado por un rol estelar en zona roja y recepción de pases."
+    "veredicto": "Arranca a Jahmyr Gibbs. Su proyección de 23 puntos en PPR supera los 21.1 de Robinson; la explosividad y el dominio de Detroit en zona roja inclinan la balanza a su favor en la semana ocho."
   },
   "fuentes": [
     "Sleeper",
