@@ -223,9 +223,10 @@ const candidatos = Object.keys(s.todos).filter(k => s.todos[k].pos !== 'DEF' && 
   .sort((a, b) => b[1] - a[1]).map(x => x[0]);
 const set = new Set(candidatos.slice(0, TOP)); Object.keys(s.todos).filter(k => s.todos[k].pos === 'DEF' && s.todos[k].team).forEach(k => set.add(k)); // las 32 defensivas siempre [...Object.keys(addM), ...Object.keys(dropM)].forEach(k => s.todos[k] && set.add(k));
 
-const linea = (w, k) => { const x = s.stats[w] && s.stats[w][k]; if (!x || x.pts_ppr == null) return null;
+const linea = (w, k) => { const x = s.stats[w] && s.stats[w][k]; if (!x) return null;
+  const jugo = x.pts_ppr != null || x.gp || x.off_snp || x.rec_tgt || x.rush_att || x.pass_att; if (!jugo) return null; // una semana jugada con 0 puntos también cuenta
   const st = {}; [['py', 'pass_yd'], ['ptd', 'pass_td'], ['int', 'pass_int'], ['ra', 'rush_att'], ['ry', 'rush_yd'], ['rtd', 'rush_td'], ['tg', 'rec_tgt'], ['rec', 'rec'], ['recy', 'rec_yd'], ['rectd', 'rec_td'], ['fl', 'fum_lost'], ['fgm', 'fgm'], ['xpm', 'xpm'], ['sk', 'sack'], ['dint', 'int'], ['fr', 'fum_rec'], ['dtd', 'def_td'], ['pa', 'pts_allow'], ['sf', 'safe']].forEach(([a, b]) => { if (x[b]) st[a] = Math.round(x[b]); });
-  return { f: [r1(x.pts_ppr), r1(x.pts_half_ppr), r1(x.pts_std)], st }; };
+  return { f: [r1(x.pts_ppr || 0), r1(x.pts_half_ppr ?? x.pts_ppr ?? 0), r1(x.pts_std ?? x.pts_ppr ?? 0)], st }; };
 const espnA = {}; // espn id -> sleeper id
 const jugadores = [...set].map(k => {
   const p = s.todos[k];
@@ -234,10 +235,31 @@ const jugadores = [...set].map(k => {
   const pr = PW[k];
   const le = (p.espn && lesE['e' + p.espn]) || lesE['n' + norm(p.n)] || null;
   return { id: k, ...p, team: p.team || 'FA', log: log_,
-    proy: pr ? [r1(pr.pts_ppr), r1(pr.pts_half_ppr), r1(pr.pts_std)] : null,
+    proy: null,
     les: le ? { st: le.st, fecha: le.fecha, tipo: le.tipo || le.lugar, detalle: le.detalle, lado: le.lado, regreso: le.regreso } : null,
     add: addM[k] || 0, drop: dropM[k] || 0 };
 });
+/* ---------- Modelo FX v2: proyección propia ----------
+   Volumen esperado (targets, acarreos, yardas de pase) ponderado por recencia × eficiencia del jugador
+   regresada a la media de su posición (los TD, que son lo más ruidoso, se regresan mucho más). K y DEF: promedio
+   ponderado con regresión. Parámetros elegidos con backtest S4-S7 2026 (scripts de auditoría).                      */
+const FX = { version: 'FX v2', hl: 8, mEf: 40, mTd: 160 };
+const STK = ['tg', 'rec', 'recy', 'rectd', 'ra', 'ry', 'rtd', 'py', 'ptd', 'int', 'fl'];
+function tasasPos(lista, W) { const T = {}; for (const j of lista) for (const l of j.log) { if (l.w >= W || !l.st || !l.f) continue; const t = T[j.pos] = T[j.pos] || {}; for (const k of STK) t[k] = (t[k] || 0) + (l.st[k] || 0); } return T; }
+function proyFX(j, W, T) {
+  const hist = j.log.filter(l => l.w < W && l.f && l.f[0] != null); if (!hist.length) return null;
+  const w = l => Math.pow(.5, (W - 1 - l.w) / FX.hl), sw = hist.reduce((a, l) => a + w(l), 0), n = hist.length;
+  if (j.pos === 'K' || j.pos === 'DEF') return [0, 1, 2].map(k => { const v = hist.reduce((a, l) => a + w(l) * (l.f[k] ?? l.f[0]), 0) / sw; return r1((n * v + 2 * .8 * v) / (n + 2)); });
+  const vol = k => hist.reduce((a, l) => a + w(l) * ((l.st || {})[k] || 0), 0) / sw, tot = k => hist.reduce((a, l) => a + ((l.st || {})[k] || 0), 0), tp = T[j.pos] || {};
+  const tasa = (num, den, m) => { const d = tot(den) + m; return d ? (tot(num) + m * ((tp[num] || 0) / Math.max(1, tp[den] || 0))) / d : 0; };
+  const tg = vol('tg'), ra = vol('ra'), qb = j.pos === 'QB', py = vol('py');
+  const rec = tg * tasa('rec', 'tg', FX.mEf), recy = tg * tasa('recy', 'tg', FX.mEf), rectd = tg * tasa('rectd', 'tg', FX.mTd);
+  const ry = ra * tasa('ry', 'ra', FX.mEf), rtd = ra * tasa('rtd', 'ra', FX.mTd), ptd = qb ? py * tasa('ptd', 'py', FX.mTd * 40) : 0, it = qb ? vol('int') : 0, fl = vol('fl');
+  const base = py * .04 + ptd * 4 - it + ry * .1 + rtd * 6 + recy * .1 + rectd * 6 - fl * 2;
+  return [base + rec, base + rec * .5, base].map(v => r1(Math.max(0, v)));
+}
+{ const T = tasasPos(jugadores, semJuego); for (const j of jugadores) j.proy = proyFX(j, semJuego, T); }
+log('Modelo', FX.version, ':', jugadores.filter(j => j.proy).length, 'proyecciones propias para la semana', semJuego);
 const J = Object.fromEntries(jugadores.map(j => [j.id, j]));
 const porNombre = {}; jugadores.forEach(j => { porNombre[norm(j.n)] = j.id; });
 Object.entries(s.todos).forEach(([k, p]) => { if (!porNombre[norm(p.n)]) porNombre[norm(p.n)] = k; });
@@ -279,7 +301,7 @@ if (tocaIA) {
   const proyTop = POS.map(pos => pos + ': ' + relevantes.filter(j => j.pos === pos && j.proy).sort((a, b) => b.proy[0] - a.proy[0]).slice(0, 8).map(j => `${j.n} ${j.proy[0]}`).join(', ')).join(' | ');
   const ia = await gemini(VOZ + `Escribe exactamente 8 noticias de fantasy para la semana ${semJuego}. Varía las etiquetas (al menos 2 START, 2 SIT, 1 WAIVER y lesiones si hay). Forma: ` + FORMATO +
     ' En el mismo JSON agrega "duelo":{"a":"jugador","b":"jugador","veredicto":"a quién arrancar y por qué, máximo 40 palabras"} con dos jugadores sanos de la misma posición.' +
-    `\nESTATUS OFICIAL (fuente de verdad):\n${estatus.join('\n')}\nPROYECCIONES PPR SEMANA ${semJuego}: ${proyTop}\nMás agregados: ${s.add.slice(0, 12).map(t => s.todos[t.player_id] && s.todos[t.player_id].n).filter(Boolean).join(', ')}\nMás soltados: ${s.drop.slice(0, 10).map(t => s.todos[t.player_id] && s.todos[t.player_id].n).filter(Boolean).join(', ')}\nYa publicadas (NO repitas tema ni jugador principal): ${JSON.stringify(archivo.slice(0, 30).map(n => n.titulo))}\nFUENTES:\n${fuentes.join('\n')}`);
+    `\nESTATUS OFICIAL (fuente de verdad):\n${estatus.join('\n')}\nPROYECCIONES PPR DEL MODELO FX, SEMANA ${semJuego}: ${proyTop}\nMás agregados: ${s.add.slice(0, 12).map(t => s.todos[t.player_id] && s.todos[t.player_id].n).filter(Boolean).join(', ')}\nMás soltados: ${s.drop.slice(0, 10).map(t => s.todos[t.player_id] && s.todos[t.player_id].n).filter(Boolean).join(', ')}\nYa publicadas (NO repitas tema ni jugador principal): ${JSON.stringify(archivo.slice(0, 30).map(n => n.titulo))}\nFUENTES:\n${fuentes.join('\n')}`);
   duelo = ia && ia.duelo;
   for (const [i, n] of ((ia && ia.noticias) || []).entries()) {
     if (n.etiqueta === 'ARRANCA') n.etiqueta = 'START'; if (n.etiqueta === 'BANCA') n.etiqueta = 'SIT';
@@ -377,15 +399,92 @@ for (const w of s.semanas.slice().reverse()) {
 }
 guardar(DIR + '/semanas.json', resumenes);
 
+/* ---------- Blog SEO bilingüe (ES / EN) ----------
+   Cada ~5 h escribe 2 artículos con títulos en forma de pregunta sobre los jugadores del momento (lo que la gente
+   busca en Google: ¿lo arranco?, ¿lo agrego?, ¿juega?, ¿lo vendo?). Hechos: nuestros datos + reportes originales
+   (con enlace a la fuente). Análisis y veredicto: propios, con el Modelo FX. Nunca se copia texto de las fuentes. */
+const blog = leer(DIR + '/blog.json', []);
+const CADA_BLOG_MIN = 300, BLOG_POR_CORRIDA = 2;
+const ultimaBlog = blog.reduce((m, a) => Math.max(m, Date.parse(a.fecha || 0)), 0);
+const tocaBlog = (process.env.FX_BLOG === '1' || Date.now() - ultimaBlog > CADA_BLOG_MIN * 60e3) && quedan() > 4;
+const slugB = t => String(t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 80);
+if (tocaBlog) {
+  const rankFX = {}; POS.forEach(ps => jugadores.filter(j => j.pos === ps && j.proy && j.team !== 'FA').sort((a, b) => b.proy[0] - a.proy[0]).forEach((j, i) => { rankFX[j.id] = i + 1; }));
+  const temas = [];
+  s.add.forEach(t => { const j = J[t.player_id]; if (j && j.team !== 'FA' && !fueraTemp(j)) temas.push({ tipo: 'waiver', j, peso: t.count }); });
+  jugadores.filter(j => ESTATUS[j.inj] && j.team !== 'FA' && j.proy && j.proy[0] > 8).forEach(j => temas.push({ tipo: 'lesion', j, peso: j.proy[0] * 1000 }));
+  jugadores.filter(j => j.proy && rankFX[j.id] <= 24 && !j.inj && !['K', 'DEF'].includes(j.pos)).forEach(j => temas.push({ tipo: 'startsit', j, peso: j.proy[0] * 500 + (j.add || 0) }));
+  s.drop.forEach(t => { const j = J[t.player_id]; if (j && j.proy && j.proy[0] > 6 && !fueraTemp(j)) temas.push({ tipo: 'trade', j, peso: t.count }); });
+  const reciente = blog.filter(a => Date.now() - Date.parse(a.fecha) < 10 * 864e5);
+  const usado = t => reciente.some(a => a.jugador === t.j.id && (a.tipo === t.tipo || Date.now() - Date.parse(a.fecha) < 3 * 864e5));
+  const orden = ['startsit', 'waiver', 'lesion', 'trade', 'startsit', 'lesion', 'waiver'];
+  const giro = blog.length % orden.length, elegidos = [];
+  for (let k = 0; k < orden.length && elegidos.length < BLOG_POR_CORRIDA; k++) {
+    const tipo = orden[(giro + k) % orden.length];
+    const t = temas.filter(x => x.tipo === tipo && !usado(x) && !elegidos.some(e => e.j.id === x.j.id)).sort((a, b) => b.peso - a.peso)[0];
+    if (t) elegidos.push(t);
+  }
+  const FMT_TIPO = { startsit: ['¿Arrancar o sentar a {N} en la semana {W}?', 'Should you start {N} in Week {W}?'], waiver: ['¿Vale la pena agregar a {N} en la semana {W}?', 'Should you pick up {N} in Week {W}?'],
+    lesion: ['Lesión de {N}: ¿juega en la semana {W} y qué hacer en fantasy?', '{N} injury update: will he play in Week {W}? Fantasy impact'], trade: ['¿Vender o aguantar a {N}? Valor de trade semana {W}', 'Should you sell or hold {N}? Week {W} trade value'] };
+  for (const t of elegidos) {
+    const j = t.j, rival = cal[j.team] && cal[j.team][semJuego], d = rival && dvp[rival.opp] && dvp[rival.opp][j.pos];
+    const ult = j.log.filter(l => l.f).slice(-4).map(l => `S${l.w} ${l.home ? 'vs' : '@'} ${l.opp || '?'}: ${l.f[0]} pts PPR · ${Object.entries(l.st || {}).map(([k, v]) => k + '=' + v).join(' ')}`);
+    const jug = j.log.filter(l => l.f), tot = r1(jug.reduce((a, l) => a + l.f[0], 0));
+    const noticiasJ = externas.filter(x => (x.j || []).includes(j.id)).slice(0, 4), nuestras = archivo.filter(n => (n.jugadores || []).includes(j.id)).slice(0, 3);
+    const [tEs, tEn] = FMT_TIPO[t.tipo].map(x => x.replace('{N}', j.n).replace('{W}', semJuego));
+    const datos = `JUGADOR: ${j.n} (${j.pos}, ${j.team}). Edad ${j.edad ?? '?'}, experiencia ${j.exp ?? '?'} años.
+ESTATUS: ${estadoTxt(j)}${j.les ? ` · reporte: ${j.les.st || ''} ${j.les.tipo || ''} ${j.les.detalle || ''} ${j.les.regreso ? 'regreso estimado ' + j.les.regreso : ''}` : ''}.
+TEMPORADA ${s.temporada}: ${jug.length} juegos, ${tot} pts PPR, promedio ${jug.length ? r1(tot / jug.length) : 0}.
+ÚLTIMOS JUEGOS: ${ult.join(' | ') || 'sin juegos'}.
+MODELO FX (propio) SEMANA ${semJuego}: ${j.proy ? `${j.proy[0]} PPR / ${j.proy[1]} Half / ${j.proy[2]} STD · ${j.pos}${rankFX[j.id] || '?'} de la semana` : 'sin proyección'}.
+RIVAL SEMANA ${semJuego}: ${rival ? `${rival.home ? 'vs' : '@'} ${rival.opp}` : 'descanso (BYE)'}${d ? ` · esa defensa es la Nº${d.rank} que más puntos permite a ${j.pos} (${d.prom} por juego; 1 = la más débil)` : ''}.
+COMUNIDAD: agregado en ${j.add || 0} ligas y soltado en ${j.drop || 0} en 24 h.
+REPORTES ORIGINALES (hechos verificables; NO copies su redacción): ${noticiasJ.map(x => `«${x.t}» — ${x.d}`).join(' | ') || 'ninguno'}.
+NUESTRAS NOTAS PREVIAS: ${nuestras.map(n => n.titulo + ': ' + (n.claves || []).join('; ')).join(' | ') || 'ninguna'}.`;
+    const pide = `Eres el editor de Fantasy Expertos. Escribe UN artículo de blog optimizado para Google que responde la pregunta del momento sobre este jugador, en DOS versiones: español latinoamericano neutro (claro para México, EE. UU. hispano y Latinoamérica) e inglés estadounidense con la terminología estándar de fantasy football (start/sit, waiver wire, PPR, flex, bye, ceiling, floor).
+Reglas: usa SOLO los datos que te doy; no inventes cifras, lesiones, fechas ni citas; escribe con tus propias palabras (cero frases copiadas de los reportes); primero la noticia y el contexto, después el análisis y al final la recomendación de fantasy; tono experto, cercano, claro y sin relleno; nada de nombres de otras marcas o medios.
+Título ES base: "${tEs}" · Título EN base: "${tEn}" (puedes mejorarlos, mantén la pregunta, el nombre y la semana; máximo 70 caracteres).
+Responde SOLO JSON: {"es":{"titulo":"","descripcion":"máx 155 caracteres","respuesta":"2 o 3 oraciones que responden directo la pregunta","secciones":[{"h2":"","texto":"90 a 140 palabras"}],"fantasy":{"veredicto":"START|SIT|FLEX|AGRÉGALO|ESPERA|VENDE|COMPRA|AGUANTA","texto":"70 a 110 palabras: qué hacer exactamente en PPR, Half y STD"},"faq":[{"q":"","a":""}],"palabras":["5 búsquedas reales que este texto responde"]},"en":{mismas llaves en inglés; veredicto en inglés: START|SIT|FLEX|ADD|WAIT|SELL|BUY|HOLD}}. Exactamente 3 secciones y 3 preguntas frecuentes por idioma.
+DATOS:
+${datos}`;
+    const r = await gemini(pide, 12000);
+    if (!r || !r.es || !r.en || !r.es.titulo || !r.en.titulo || !(r.es.secciones || []).length) { log('Blog: respuesta incompleta para', j.n); continue; }
+    if (fueraTemp(j) && /START|FLEX/.test(String(r.es.fantasy && r.es.fantasy.veredicto))) { log('Blog descartado (fuera y recomendado):', j.n); continue; }
+    const id = 'b' + ahora.replace(/\D/g, '').slice(0, 12) + String(elegidos.indexOf(t));
+    const art = { id, fecha: ahora, semana: semJuego, tipo: t.tipo, jugador: j.id, equipo: j.team, modelo: FX.version,
+      fuentes: noticiasJ.filter(x => x.u).map(x => ({ t: x.t, u: x.u })),
+      es: { ...r.es, slug: slugB(r.es.titulo) + '-' + id.slice(-6) }, en: { ...r.en, slug: slugB(r.en.titulo) + '-' + id.slice(-6) } };
+    blog.unshift(art); log('Blog:', art.es.titulo, '/', art.en.titulo);
+  }
+  guardar(DIR + '/blog.json', blog.slice(0, 600));
+}
+
 /* ---------- Publicar ---------- */
 const lesionados = jugadores.filter(j => ESTATUS[j.inj] && j.team !== 'FA' && ((j.proy && j.proy[0] > 4) || (j.rank && j.rank < 220) || totalPPR(j.id) > 30))
   .sort((a, b) => ((b.proy && b.proy[0]) || totalPPR(b.id) / 6) - ((a.proy && a.proy[0]) || totalPPR(a.id) / 6)).slice(0, 40).map(j => ({ id: j.id, estatus: ESTATUS[j.inj] }));
 const hoy = {
+  modelo: FX.version,
   actualizado: ahora, ultimaIA: nuevas.length ? ahora : prevHoy.ultimaIA, semana: semJuego, semanaStats: s.semana, temporada: s.temporada, semanas: s.semanas.slice(-HIST),
   noticias: todasNuevas.length ? todasNuevas : (prevHoy.noticias ? prevHoy.noticias.map(n => nuevoArchivo.find(a => a.id === n.id) || n) : nuevoArchivo.slice(0, 12)),
   lesionados, agregados: s.add.map(t => t.player_id).filter(k => J[k]), soltados: s.drop.map(t => t.player_id).filter(k => J[k]),
   duelo: duelo || prevHoy.duelo || null, fuentes: ['Sleeper', 'ESPN', 'CBS Sports', 'Yahoo Sports']
 };
+// Precisión del modelo: cada semana terminada se compara FX (recalculado con lo que se sabía antes) contra el
+// resultado real y contra una proyección de referencia externa. La referencia NO se publica; solo los errores.
+try {
+  const M = leer(DIR + '/modelo.json', { version: FX.version, semanas: {} }), Wc = semJuego - 1;
+  if (Wc >= 3 && !(M.semanas[Wc] && M.semanas[Wc].cerrada)) {
+    const ref = proyeccionesDe(await get(`https://api.sleeper.app/v1/projections/nfl/regular/${s.temporada}/${Wc}`)), T = tasasPos(jugadores, Wc);
+    const filas = jugadores.map(j => { const act = (j.log.find(l => l.w === Wc && l.f) || {}).f; const prev = j.log.filter(l => l.w < Wc && l.f).length;
+      const fx = proyFX(j, Wc, T), r = ref[j.id] && ref[j.id].pts_ppr; return act && prev >= 2 && fx && r != null ? { pos: j.pos, act: act[0], fx: fx[0], r } : null; }).filter(Boolean);
+    const mae = k => Math.round(filas.reduce((a, x) => a + Math.abs(x[k] - x.act), 0) / Math.max(1, filas.length) * 100) / 100;
+    const rk = v => { const o = v.map((x, i) => [x, i]).sort((a, b) => a[0] - b[0]), r = []; o.forEach(([, i], k) => r[i] = k); return r; };
+    const sp = (L, k) => { const n = L.length; if (n < 6) return null; const a = rk(L.map(x => x[k])), b = rk(L.map(x => x.act)); return Math.round((1 - 6 * a.reduce((t, x, i) => t + (x - b[i]) ** 2, 0) / (n * (n * n - 1))) * 1000) / 1000; };
+    const porPos = Object.fromEntries(POS.map(ps => { const L = filas.filter(x => x.pos === ps); return [ps, { n: L.length, spearmanFX: sp(L, 'fx'), spearmanRef: sp(L, 'r') }]; }));
+    const juegosPend = Object.values(cal).some(t => t[Wc] && !t[Wc].fin);
+    if (filas.length) { M.version = FX.version; M.semanas[Wc] = { n: filas.length, maeFX: mae('fx'), maeRef: mae('r'), porPos, cerrada: !juegosPend, fecha: new Date().toISOString() }; guardar(DIR + '/modelo.json', M, true); log('Precisión S' + Wc + ': error FX', mae('fx'), '· referencia', mae('r'), '· n', filas.length); }
+  }
+} catch (e) { log('Precisión del modelo: error', e.message); }
 guardar(DIR + '/jugadores.json', jugadores);
 guardar(DIR + '/hoy.json', hoy, true);
 log(`Listo: ${todasNuevas.length} noticias nuevas (${exclusivas.length} exclusivas) · ${jugadores.length} jugadores · archivo ${nuevoArchivo.length} · semana de juego ${semJuego} · IA usada hoy ${cuota.usadas}/${CUOTA_DIA}`);

@@ -18,6 +18,24 @@ const FMTS = ['PPR', 'HALF PPR', 'STANDARD'];
 let FMT = 0; try { FMT = +(localStorage.getItem('fx-fmt') || 0) || 0; } catch (e) {}
 
 let D = null, P = [], J = {}, RANKPOS = {}, RANKW = {}, SEMNUM = null;
+/* =============================== IDIOMA (ES / EN) ===============================
+   Prioridad: la página (las de /en/ fijan inglés) > lo que eligió el usuario > el idioma de su navegador/región.
+   Fase 1: menú, encabezado, pie, blog y avisos en inglés. Las noticias diarias siguen en español. */
+let LANG = (() => { if (window.FX_LANG === 'en' || window.FX_LANG === 'es') return window.FX_LANG; try { const g = localStorage.getItem('fx-lang'); if (g === 'es' || g === 'en') return g; } catch (e) {} return /^es\b/i.test(navigator.language || 'es') ? 'es' : 'en'; })();
+const tx = (es, en) => LANG === 'en' ? en : es;
+const NAV_EN = { '': 'HOME', partidos: 'GAMES', noticias: 'NEWS', lideres: 'LEADERS', posicion: 'RANKINGS', equipos: 'TEAMS', lesionados: 'INJURIES', temporada: 'SEASON', herramientas: 'TOOLS', media: 'FX TV', cuenta: 'MY ACCOUNT' };
+const NAV_ES = {};
+function aplicaIdioma() {
+  document.documentElement.lang = LANG;
+  document.querySelectorAll('.links a[data-s]').forEach(a => { const k = a.dataset.s; if (k === 'premium') return; if (!(k in NAV_ES)) NAV_ES[k] = a.textContent; a.textContent = LANG === 'en' ? (NAV_EN[k] || NAV_ES[k]) : NAV_ES[k]; });
+  const q = document.getElementById('q'); if (q) q.placeholder = innerWidth < 520 ? tx('Buscar', 'Search') : tx('Buscar jugador o equipo', 'Search player or team');
+  const pie = document.getElementById('pie-legal'); if (pie) pie.innerHTML = tx('Sitio independiente. No afiliado a ninguna liga ni equipo profesional. · <a href="#/privacidad" style="color:inherit">Aviso de privacidad</a>', 'Independent site. Not affiliated with any league or professional team. · <a href="#/privacidad" style="color:inherit">Privacy notice</a>');
+  const bl = document.getElementById('btn-lang'); if (bl) { bl.textContent = LANG === 'en' ? 'ES' : 'EN'; bl.title = tx('Read in English', 'Leer en español'); }
+  document.querySelectorAll('[data-lang]').forEach(b => b.classList.toggle('on', b.dataset.lang === LANG));
+}
+function cambiaIdioma(l) { if (l === LANG) return; LANG = l; try { localStorage.setItem('fx-lang', l); } catch (e) {} aplicaIdioma(); if (typeof pintaCuentaBtn === 'function') pintaCuentaBtn(); if (typeof repinta === 'function') repinta(); }
+document.addEventListener('click', e => { const b = e.target.closest && e.target.closest('#btn-lang,[data-lang]'); if (!b) return; e.preventDefault(); cambiaIdioma(b.id === 'btn-lang' ? (LANG === 'en' ? 'es' : 'en') : b.dataset.lang); });
+
 
 /* ---------- utilidades ---------- */
 const estatus = j => ESTATUS[j.inj] || 'Sano';
@@ -329,7 +347,8 @@ function noticias(q) {
   L.slice(0, lim).forEach(n => { const d = n.fecha ? new Date(n.fecha).toLocaleDateString('es-MX', { weekday: 'long', day: 'numeric', month: 'long' }) : 'Hoy'; (dias[d] = dias[d] || []).push(n); });
   return `<div class="page">${crumbs([['', 'Noticias']])}<div class="wrap"><section class="block">
     <div class="head"><div><h2>Noticias de fantasy</h2><p class="hsub">${L.length} noticias en el archivo · ${esc(actualizado())}</p></div></div>
-    <div class="chips">${['TODO', ...ETIQUETAS].map(t => `<a class="chip ${t === f ? 'on' : ''} ${t}" href="#/noticias${t === 'TODO' ? '' : '?tipo=' + encodeURIComponent(t)}">${t === 'TODO' ? 'TODAS' : ETQ[t]}</a>`).join('')}</div>
+    <div class="chips">${['TODO', ...ETIQUETAS].map(t => `<a class="chip ${t === f ? 'on' : ''} ${t}" href="#/noticias${t === 'TODO' ? '' : '?tipo=' + encodeURIComponent(t)}">${t === 'TODO' ? 'TODAS' : ETQ[t]}</a>`).join('')}<a class="chip-blog" href="#/blog">Blog ›</a></div>
+    ${LANG === 'en' ? `<p class="aviso-idioma">${fxLogo(14)} Our daily news is in Spanish for now. <a href="#/blog">Read the English blog ›</a></p>` : ''}
     ${Object.entries(dias).map(([d, ns], k) => `<h3 class="day">${esc(d)}</h3><div class="news ${k ? '' : 'first'} stagger">${ns.map((n, i) => newsCard(n, k === 0 && i === 0 && f === 'TODO')).join('')}</div>`).join('') || '<div class="empty">No hay noticias de este tipo.</div>'}
     ${L.length > lim ? `<p class="more"><a class="btn ghost" href="#/noticias?${f === 'TODO' ? '' : 'tipo=' + encodeURIComponent(f) + '&'}ver=${lim + 30}">Cargar más noticias</a></p>` : ''}
   </section></div></div>`;
@@ -353,10 +372,8 @@ function noticia(id) {
     <div class="kcards stagger">${(n.claves || []).map((c, k) => `<div class="kcard"><b>${k + 1}</b>${esc(c)}</div>`).join('')}${cerrada ? [2, 3].map(k => `<div class="kcard lock"><b>${k}</b><span>${CANDADO} Solo Premium</span></div>`).join('') : ''}</div>
     <div class="nbody">
       <div class="ncol">
-        ${cerrada ? (prem ? '<div class="esq-lineas oro" aria-busy="true" aria-label="Abriendo nota Premium"><i></i><i></i><i></i><i></i><i></i></div>' : previaPremium()) : `${sec('Qué pasó', n.contexto || n.cuerpo)}
-        ${sec('Impacto en fantasy', n.fantasy, 'fx')}
-        ${sec('Qué cambia para el equipo', n.equipo_impacto)}
-        ${n.accion ? `<div class="accion">${fxLogo(30)}<div><small>QUÉ HACER HOY</small><p>${esc(n.accion)}</p></div></div>` : ''}`}
+        ${cerrada ? (prem ? '<div class="esq-lineas oro" aria-busy="true" aria-label="Abriendo nota Premium"><i></i><i></i><i></i><i></i><i></i></div>' : previaPremium()) : (() => { const nota = sec('Qué pasó', n.contexto || n.cuerpo) + sec('Qué cambia para el equipo', n.equipo_impacto), fx = sec('Impacto en fantasy', n.fantasy, 'fx') + (n.accion ? `<div class="accion">${fxLogo(30)}<div><small>QUÉ HACER HOY</small><p>${esc(n.accion)}</p></div></div>` : '');
+          return fx && nota ? `<div class="ntabs" role="tablist"><button type="button" class="on" data-nt="nota" role="tab">La nota</button><button type="button" data-nt="fx" role="tab">${fxLogo(14)} Qué hacer en fantasy</button></div><div class="npanel" data-p="nota">${nota}</div><div class="npanel" data-p="fx" hidden>${fx}</div>` : nota + fx; })()}
       </div>
       <aside class="nside">
         ${jug.length ? `<div class="card"><h3>Jugadores en la noticia</h3><p class="sub">Su veredicto para la semana ${semActual()}.</p><div class="plist">${jug.map(j => prow(j, `<span class="num sm">${n1(j.p ?? j.prom)}</span>${fxPill(j)}`)).join('')}</div>
@@ -588,6 +605,44 @@ function exclusivo() {
     ${esPremium() ? `<p class="prem-ok">★ Eres Premium: tienes acceso completo a todas las notas.</p>` : `<section class="block">${muroPremium()}</section>`}
     <section class="block"><div class="news stagger">${L.map(n => newsCard(n)).join('') || '<div class="empty">La primera nota exclusiva llega muy pronto. Mientras, revisa las <a href="#/noticias">noticias del día</a>.</div>'}</div></section>
   </div></div>`;
+}
+
+
+/* =============================== BLOG (ES / EN) =============================== */
+let BLOG = null;
+const cargaBlog = () => BLOG ? Promise.resolve(BLOG) : fetch(BASE + 'blog.json?v=' + Math.floor(Date.now() / 60000)).then(r => r.ok ? r.json() : []).catch(() => []).then(b => (BLOG = Array.isArray(b) ? b : []));
+const enBlog = () => /^#\/blog/.test(location.hash || window.FX_RUTA || '');
+const TIPO_B = { startsit: ['START / SIT', 'START / SIT'], waiver: ['WAIVER WIRE', 'WAIVER WIRE'], lesion: ['LESIONES', 'INJURIES'], trade: ['TRADES', 'TRADES'] };
+const POSB = { QB: ['QB', 'QB'], RB: ['RB', 'RB'], WR: ['WR', 'WR'], TE: ['TE', 'TE'], K: ['Pateadores', 'Kickers'], DEF: ['Defensivas', 'Defenses'] };
+const fechaB = f => new Date(f).toLocaleDateString(LANG === 'en' ? 'en-US' : 'es-MX', { day: 'numeric', month: 'short' });
+function blogLista() {
+  titulo('Blog');
+  if (!BLOG) { cargaBlog().then(() => { if (enBlog()) repinta(); }); return cargador(); }
+  const L = BLOG.filter(a => a[LANG] && a[LANG].titulo), w = semActual();
+  return `<div class="page">${crumbs([['#/noticias', tx('Noticias', 'News')], ['', 'Blog']])}<div class="wrap narrowish">
+    <section class="block"><div class="head"><div><h2>${tx('Blog de fantasy', 'Fantasy Football Blog')}</h2><p class="hsub">${tx('Las preguntas de la semana, respondidas con datos y con el Modelo FX.', 'This week\'s big questions, answered with data and the FX Model.')}</p></div></div>
+    <div class="b-rk"><span>${tx('Rankings semana', 'Week')} ${w}</span>${Object.keys(POSB).map(p => `<a class="chip" href="#/posicion/${p}">${POSB[p][LANG === 'en' ? 1 : 0]}</a>`).join('')}</div>
+    <div class="b-lista">${L.map(a => { const x = a[LANG], j = J[a.jugador];
+      return `<a class="b-item" href="#/blog/${a.id}">${j ? helmet(j.team, j.num, 44) : fxLogo(30)}<span><small><b>${TIPO_B[a.tipo] ? TIPO_B[a.tipo][LANG === 'en' ? 1 : 0] : 'FX'}</b> · ${tx('Semana', 'Week')} ${esc(a.semana)} · ${esc(fechaB(a.fecha))}</small><b class="b-t">${esc(x.titulo)}</b><em>${esc(x.respuesta || '')}</em></span></a>`; }).join('') || `<div class="empty">${tx('Los primeros artículos llegan con la siguiente actualización.', 'The first articles arrive with the next update.')}</div>`}</div>
+    </section></div></div>`;
+}
+function blogNota(id) {
+  if (!BLOG) { cargaBlog().then(() => { if (enBlog()) repinta(); }); return cargador(); }
+  const a = BLOG.find(x => x.id === id); if (!a) return noEncontrado();
+  const x = a[LANG] || a.es, j = J[a.jugador], otro = LANG === 'en' ? 'es' : 'en';
+  titulo(x.titulo);
+  const ver = (x.fantasy && x.fantasy.veredicto) || '', bueno = /START|AGR|ADD|COMPRA|BUY|AGUANTA|HOLD/i.test(ver), malo = /SIT|VENDE|SELL/i.test(ver);
+  return `<div class="page">${crumbs([['#/noticias', tx('Noticias', 'News')], ['#/blog', 'Blog'], ['', x.titulo.slice(0, 40) + (x.titulo.length > 40 ? '…' : '')]])}<div class="wrap narrowish"><article class="bnota">
+    <p class="b-meta"><b>${TIPO_B[a.tipo] ? TIPO_B[a.tipo][LANG === 'en' ? 1 : 0] : 'FX'}</b> · ${tx('Semana', 'Week')} ${esc(a.semana)} · ${esc(fechaB(a.fecha))} · <button type="button" class="b-lang" data-lang="${otro}">${otro === 'en' ? 'Read in English' : 'Leer en español'}</button></p>
+    <h1 class="ntitle">${esc(x.titulo)}</h1>
+    <div class="b-resp">${fxLogo(26)}<p>${esc(x.respuesta || '')}</p></div>
+    ${j ? `<a class="b-jug" href="#/jugador/${j.id}" style="${vars(j.team)}">${helmet(j.team, j.num, 52)}<span><b>${esc(j.n)}</b><small>${esc(j.pos)} · ${esc(EQUIPOS[j.team] || j.team)} · ${esc(rivalTxt(j.team))}</small></span>${j.p != null ? `<em><b class="n">${n1(j.p)}</b><small>${tx('PROY FX', 'FX PROJ')} ${FMTS[FMT]}</small></em>` : ''}</a>` : ''}
+    ${(x.secciones || []).map(sc => `<section class="nsec"><h3>${esc(sc.h2)}</h3><p>${esc(sc.texto)}</p></section>`).join('')}
+    ${x.fantasy ? `<div class="b-fx"><div class="b-fx-h">${fxLogo(22)}<small>${tx('QUÉ HACER EN FANTASY', 'FANTASY ADVICE')}</small><span class="fxv-chip ${bueno ? 'ok' : malo ? 'no' : 'sky'}">${esc(ver)}</span></div><p>${esc(x.fantasy.texto || '')}</p><small class="b-mod">${tx('Proyección del Modelo FX, el sistema propio de Fantasy Expertos.', 'Projection from the FX Model, Fantasy Expertos\' own system.')}</small></div>` : ''}
+    ${(x.faq || []).length ? `<section class="b-faq"><h3>${tx('Preguntas frecuentes', 'FAQ')}</h3>${x.faq.map(f => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('')}</section>` : ''}
+    ${(a.fuentes || []).length ? `<p class="b-fuentes">${tx('Reportes originales', 'Original reports')}: ${a.fuentes.map((f, i) => `<a href="${esc(f.u)}" target="_blank" rel="nofollow noopener">${i + 1}</a>`).join(' · ')}</p>` : ''}
+    <p class="more"><a class="btn ghost" href="#/blog">${tx('Más del blog', 'More from the blog')}</a></p>
+  </article></div></div>`;
 }
 
 /* ---------- temporada ---------- */
@@ -1015,8 +1070,8 @@ function pintaPieNews() {
 function pintaCuentaBtn() { pintaPieNews();
   const b = $('#btn-cuenta'); if (!b) return;
   const ini = YO ? String((PERFIL && PERFIL.nombre) || YO.email || '?').trim().charAt(0).toUpperCase() : '';
-  b.classList.toggle('in', !!YO); b.title = YO ? 'Mi cuenta' : 'Entrar';
-  b.innerHTML = YO ? `<i>${esc(ini)}</i>` : `${ICONO_CUENTA}<span>ENTRAR</span>`;
+  b.classList.toggle('in', !!YO); b.title = YO ? tx('Mi cuenta', 'My account') : tx('Entrar', 'Sign in');
+  b.innerHTML = YO ? `<i>${esc(ini)}</i>` : `${ICONO_CUENTA}<span>${tx('ENTRAR', 'SIGN IN')}</span>`;
 }
 async function toggleFav(id, btn) {
   if (!YO) { ls('fx-sigue', id); location.hash = '#/cuenta'; return; }
@@ -1223,6 +1278,7 @@ function menu(on, quieto) {
   if (on) { const a = L.querySelector('a.act') || L.querySelector('a[href]'); a && a.focus({ preventScroll: true }); } else if (!quieto && b) b.focus();
 }
 // El menú funciona desde el primer momento, aunque los datos sigan cargando
+document.addEventListener('click', e => { const t = e.target.closest && e.target.closest('[data-nt]'); if (!t) return; document.querySelectorAll('[data-nt]').forEach(b => b.classList.toggle('on', b === t)); document.querySelectorAll('.npanel').forEach(p => { p.hidden = p.dataset.p !== t.dataset.nt; }); });
 document.addEventListener('click', e => { const t = e.target.closest && e.target.closest('[data-lt]'); if (!t) return; const lg = $('.live-grid'); if (lg) { lg.classList.toggle('ver-fx', t.dataset.lt === 'fx'); lg.classList.toggle('ver-pbp', t.dataset.lt === 'pbp'); } document.querySelectorAll('[data-lt]').forEach(b => b.classList.toggle('on', b === t)); });
 document.addEventListener('click', e => { const f = e.target.closest && e.target.closest('[data-fxf]'); if (f) { FXFILTRO = f.dataset.fxf; document.querySelectorAll('.fxl-list .fxr').forEach(r => { r.hidden = FXFILTRO !== 'todos' && r.dataset.eq !== FXFILTRO; }); document.querySelectorAll('[data-fxf]').forEach(b => b.classList.toggle('on', b === f)); } });
 document.addEventListener('click', e => { const t = e.target.closest && e.target.closest('#menu-btn,#menu-x,#menu-bg'); if (t) { e.preventDefault(); menu(t.id === 'menu-btn'); } });
@@ -1231,7 +1287,7 @@ let _rutaPrev = null;
 function router() {
   const [ruta, qs] = ((location.hash || window.FX_RUTA || '').slice(1) || '/').split('?');
   const q = new URLSearchParams(qs || ''), [, seccion, a, b] = ruta.split('/');
-  const R = { '': () => inicio(), noticias: () => noticias(q), reportajes: () => noticias(q), noticia: () => noticia(a), reportaje: () => noticia(a), jugador: () => jugador(a), comparar: () => comparar(a, b), posicion: () => posicion(a),
+  const R = { '': () => inicio(), blog: () => a ? blogNota(a) : blogLista(), noticias: () => noticias(q), reportajes: () => noticias(q), noticia: () => noticia(a), reportaje: () => noticia(a), jugador: () => jugador(a), comparar: () => comparar(a, b), posicion: () => posicion(a),
     equipos: () => equipos(), equipo: () => equipo(a), partidos: () => partidos(q), partido: () => partido(a), lideres: () => lideres(q), media: () => media(), exclusivo: () => exclusivo(), premium: () => exclusivo(), temporada: () => temporada(), semana: () => semana(a), tendencias: () => tendencias(), lesionados: () => lesionados(q),
     cuenta: () => cuenta(q), herramientas: () => herramientas(), trade: () => trade(q), privacidad: () => privacidad(), baja: () => baja(q) };
   app.innerHTML = (R[seccion || ''] || noEncontrado)();
@@ -1300,9 +1356,9 @@ Promise.all([cargar('hoy.json', null), cargar('jugadores.json', []), cargar('arc
   document.querySelectorAll('.fmt button').forEach((b, i) => b.onclick = () => { FMT = i; try { localStorage.setItem('fx-fmt', i); } catch (e) {} aplicaFormato(); router(); });
   const pie = $('#pie-redes'); if (pie) pie.innerHTML = `<div id="pie-news"></div><div class="follow"><div><h3>Síguenos</h3><p>Tips diarios, el podcast y los videos de cada semana.</p></div>${grupoRedes()}</div>`;
   pintaCuentaBtn(); if (ls(SB_LLAVE) || /[?&]code=/.test(location.search)) cargaSB().catch(() => {});
-  const fu = $('#fuentes'); if (fu) fu.textContent = 'Datos: ' + (hoy.fuentes || ['Sleeper', 'ESPN']).join(', ') + '.';
+  const fu = $('#fuentes'); if (fu) fu.textContent = tx('Datos: ', 'Data: ') + (hoy.fuentes || ['Sleeper', 'ESPN']).join(', ') + '.';
   buscador(); cargaPartidos();
-  if (innerWidth < 520) { const qi = $('#q'); if (qi) qi.placeholder = 'Buscar'; }
+  aplicaIdioma();
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && $('.links').classList.contains('open')) menu(false); });
   addEventListener('hashchange', router);
   router();
