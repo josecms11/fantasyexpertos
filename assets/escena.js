@@ -31,14 +31,16 @@
     onScroll();
   }
 
+  // Riel como cancha real: G · 10 · 20 · 30 · 40 · 50 · 40 · 30 · 20 · 10 · TD. El balón avanza con el scroll.
+  const YARDAS = ['G', 10, 20, 30, 40, 50, 40, 30, 20, 10, 'TD'];
+  const seccionEn = f => { const y = f * (document.documentElement.scrollHeight - innerHeight) + innerHeight * .5; let k = 0; secs.forEach((s, n) => { if (s.getBoundingClientRect().top + scrollY <= y) k = n; }); return secs[k]; };
   function pintaRiel() {
     if (hud) hud.hidden = true;
-    if (secs.length < 4) { if (riel) riel.hidden = true; return; }
-    if (!riel) { riel = document.createElement('nav'); riel.className = 'fx-riel'; riel.setAttribute('aria-label', 'Secciones de la página'); document.body.appendChild(riel); }
+    if (secs.length < 4 || document.documentElement.scrollHeight < innerHeight * 1.8) { if (riel) riel.hidden = true; return; }
+    if (!riel) { riel = document.createElement('nav'); riel.className = 'fx-riel'; riel.setAttribute('aria-label', 'Avance en la página'); document.body.appendChild(riel); }
     riel.hidden = false;
-    const yd = n => { const y = Math.round(n / Math.max(1, secs.length - 1) * 100); return y === 0 ? 'G' : y >= 100 ? 'TD' : y > 50 ? 100 - y : y; };
-    riel.innerHTML = `<i class="fx-riel-l"></i><b class="fx-riel-b" aria-hidden="true">${BALON}</b>` + secs.map((s, n) => `<button type="button" data-i="${n}" title="${nombre(s).replace(/"/g, '')}"><span>${yd(n)}</span><em>${nombre(s) || (EN() ? 'Top' : 'Portada')}</em></button>`).join('');
-    riel.onclick = e => { const b = e.target.closest('button'); if (b) secs[+b.dataset.i].scrollIntoView({ behavior: quieto ? 'auto' : 'smooth', block: 'start' }); };
+    riel.innerHTML = `<i class="fx-riel-l"></i><b class="fx-riel-b" aria-hidden="true">${BALON}</b>` + YARDAS.map((y, n) => { const s = seccionEn(n / 10); return `<button type="button" data-f="${n / 10}" class="${typeof y === 'string' ? 'gl' : ''}"><span>${y}</span><em>${(s && nombre(s)) || (EN() ? 'Top' : 'Portada')}</em></button>`; }).join('');
+    riel.onclick = e => { const b = e.target.closest('button'); if (b) scrollTo({ top: +b.dataset.f * (document.documentElement.scrollHeight - innerHeight), behavior: quieto ? 'auto' : 'smooth' }); };
   }
   function pintaHud() {
     if (riel) riel.hidden = true;
@@ -52,7 +54,7 @@
     const y = scrollY + innerHeight * .5, max = document.documentElement.scrollHeight - innerHeight;
     let i = 0; secs.forEach((s, n) => { if (s.getBoundingClientRect().top + scrollY <= y) i = n; });
     const p = max > 0 ? Math.min(1, scrollY / max) : 0;
-    if (riel && !riel.hidden) { riel.style.setProperty('--p', p); riel.querySelectorAll('button').forEach(b => b.classList.toggle('on', +b.dataset.i === i)); }
+    if (riel && !riel.hidden) { riel.style.setProperty('--p', p); const k = Math.round(p * 10); riel.querySelectorAll('button').forEach((b, n) => { b.classList.toggle('on', n === k); b.classList.toggle('pasado', n < k); }); }
     if (hud && !hud.hidden) {
       hud.style.setProperty('--p', p); hud.classList.toggle('ver', scrollY > 260);
       if (i !== ultimo) { const s = secs[i], c = s.querySelector('.fx-chip'); hud.querySelector('.fx-hud-n').textContent = nombre(s) || (EN() ? 'Top stories' : 'Portada'); hud.querySelector('.fx-hud-c').textContent = c ? c.textContent : `${i + 1}/${secs.length}`; if (!quieto) { hud.classList.remove('cambia'); void hud.offsetWidth; hud.classList.add('cambia'); } }

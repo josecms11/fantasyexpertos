@@ -1922,3 +1922,13 @@ th .fx-info span{left:auto;right:-10px;transform:translateY(6px)}th .fx-info:hov
 .fx-tech b{font:inherit!important;letter-spacing:inherit!important;color:#fff!important;margin:0!important;text-transform:none!important}
 .fx-tech{font-size:7px!important;font-family:var(--fp)!important;line-height:1!important;text-transform:uppercase}
 .fx-tech.mini{font-size:6px!important}
+
+/* Riel cancha real: 11 marcas a la misma distancia, balón sobre la línea */
+.fx-riel{gap:0;padding:0;height:min(440px,60vh);justify-content:space-between}
+.fx-riel button{height:auto;flex:none}
+.fx-riel button span{min-width:20px;text-align:center;font-size:7px;padding:3px 3px 2px}
+.fx-riel button.gl span{color:var(--gold)}
+.fx-riel button.pasado span{color:var(--soft)}
+.fx-riel button.on span{color:#06140C;background:var(--accent);box-shadow:0 0 10px rgba(91,196,137,.5)}
+.fx-riel-l{top:6px;bottom:6px;background:linear-gradient(180deg,var(--gold) 0 2%,rgba(91,196,137,.35) 2% 98%,var(--gold) 98%)}
+.fx-riel-b{top:calc(var(--p) * (100% - 12px));margin-top:0;left:calc(50% + 14px);transition:top .12s linear}
