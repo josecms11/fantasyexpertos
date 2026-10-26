@@ -2221,3 +2221,74 @@ header{position:sticky}
 /* Noticias: el aviso de tu liga ya no se pega a los filtros */
 .plusfx{margin:18px 0 22px}
 .plusfx .plus-cta{margin:0}
+
+/* ===== Pulido general: jerarquía tipográfica clara ===== */
+:root{--t-page:clamp(40px,2.6vw + 18px,72px);--t-sec:clamp(30px,1.5vw + 18px,46px);--t-card:clamp(19px,.3vw + 17px,22px);--t-small:15px;--t-meta:12px}
+.head h2{letter-spacing:-.005em}
+.hsub{color:var(--mute);font-size:16px;max-width:62ch;line-height:1.45}
+section.block{padding-top:clamp(36px,4vw,64px)}
+.card h3{font-size:var(--t-card)}
+/* Rankings de la portada: las 6 posiciones en un solo carril */
+.grid.hubs6{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.grid.hubs6 .hub{padding:16px 14px;min-width:0}
+.grid.hubs6 .hub-r{font-size:14px;min-width:0}
+.grid.hubs6 .hub-r b,.grid.hubs6 .hub-r span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media (max-width:1200px){.grid.hubs6{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:620px){.grid.hubs6{grid-template-columns:1fr 1fr}}
+/* Botón PRO del menú: solo el contorno de luz, sin fondo ni resplandor */
+.links a.btn-prem{box-shadow:none!important;background:transparent!important}
+.links a.btn-prem:hover,.links a.btn-prem.act{box-shadow:none!important}
+.links a.btn-prem::after{background:var(--bg)!important}
+.links a.btn-prem.act::after,.links a.btn-prem:hover::after{background:var(--bg)!important}
+/* Cancha del encabezado: sin sombra amarilla */
+.fx-yard-b{filter:none!important}
+.fx-yard-l{background:repeating-linear-gradient(90deg,rgba(91,196,137,.25) 0 1px,transparent 1px 10%)}
+.fx-yard button{background:transparent}
+/* Planes: neón solo en el pase de temporada */
+.pv-plan{border:1.5px solid var(--line2)}
+.pv-plan.top{animation:csang 8s linear infinite}
+/* Tarjetas de herramientas: estructura limpia y alineada */
+.pv-f{border:1px solid var(--line2);background:var(--s1);border-radius:18px;padding:22px;gap:12px}
+.pv-f-art{position:relative;height:120px;border-radius:14px;display:grid;place-items:center;background:radial-gradient(circle at 50% 45%,#16301F,#070D09 72%);border:1px solid #1E2D24;overflow:hidden}
+.pv-f-art::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 2px,transparent 2px 4px);pointer-events:none}
+.pv-f-ico{width:64px;height:64px;filter:drop-shadow(0 0 14px rgba(91,196,137,.35))}
+.pv-f-n{position:absolute;top:10px;left:12px;font-family:var(--fp);font-size:8px;color:var(--gold)}
+.pv-f h3{font-size:24px;text-transform:uppercase;line-height:1.05;margin-top:4px}
+.pv-f .pv-h{color:#fff;font-size:15.5px;font-weight:600;margin:0}
+.pv-f ul{margin-top:2px}
+.pv-f .pv-demo{margin-top:auto;min-height:92px;display:flex;flex-direction:column;justify-content:center}
+.pv-f .pv-d-row b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* Todas las ilustraciones se mueven, cada una a su manera */
+@media (prefers-reduced-motion:no-preference){
+  .a-linea{animation:pxLinea 2.4s steps(4) infinite}
+  .a-marcador{animation:pxMarc 1.6s steps(2) infinite}
+  .a-iman{animation:pxIman 1.6s steps(4) infinite}
+  .a-trade{animation:pxTrade 1.8s steps(6) infinite}
+  .a-sirena{animation:pxSir 1s steps(2) infinite}
+  .a-micro{animation:pxMicro 2s steps(4) infinite}
+}
+@keyframes pxLinea{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes pxMarc{50%{filter:drop-shadow(0 0 18px rgba(124,240,168,.7)) brightness(1.15)}}
+@keyframes pxIman{50%{transform:translateY(-6px) scale(1.04)}}
+@keyframes pxTrade{50%{transform:translateX(6px)}}
+@keyframes pxSir{50%{filter:drop-shadow(0 0 22px rgba(242,120,106,.9)) brightness(1.2)}}
+@keyframes pxMicro{0%,100%{transform:rotate(0)}25%{transform:rotate(-4deg)}75%{transform:rotate(4deg)}}
+/* Ventajas por sección */
+.pv-cart-g{grid-template-columns:repeat(4,minmax(0,1fr))}
+.pv-edge{display:grid;grid-template-columns:44px 1fr auto;align-items:center;gap:14px;padding:16px;border-radius:14px;background:var(--s1);border:1px solid var(--line2);text-decoration:none;color:var(--text);transition:border-color .2s,transform .2s}
+.pv-edge:hover{border-color:var(--accent);transform:translateY(-2px)}
+.pv-e-ico{width:44px;height:44px}
+.pv-edge small{font-family:var(--fp);font-size:7px;color:var(--mute)}.pv-edge b{display:block;font-family:var(--fc);font-size:19px;margin:4px 0 2px}.pv-edge p{margin:0;color:var(--soft);font-size:13.5px;line-height:1.35}
+.pv-edge i{font-style:normal;color:var(--accent);font-size:20px}
+@media (max-width:1100px){.pv-cart-g{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.pv-cart-g{grid-template-columns:1fr}}
+/* PRO anclado arriba en el celular (el menú lateral lo escondía) */
+.pro-m{display:none}
+@media (max-width:820px){
+  .pro-m{position:relative;display:inline-flex;align-items:center;justify-content:center;flex:none;height:36px;padding:0 12px;border-radius:999px;text-decoration:none;isolation:isolate;overflow:hidden}
+  .pro-m::before{content:'';position:absolute;left:50%;top:50%;width:260%;aspect-ratio:1;z-index:-2;transform:translate(-50%,-50%);background:conic-gradient(from 0deg,transparent 0 50%,rgba(91,196,137,.25) 60%,#5BC489 76%,#FFFFFF 86%,#5BC489 94%,transparent 100%);animation:snake 2.6s linear infinite}
+  .pro-m::after{content:'';position:absolute;inset:1.5px;z-index:-1;border-radius:inherit;background:var(--bg)}
+  .pro-m span{font-family:var(--fc);font-weight:800;letter-spacing:.1em;font-size:14px;background:linear-gradient(90deg,#fff 10%,#7CF0A8 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .top-row .fmt button{padding:0 7px}
+}
+@media (max-width:380px){.top-row .search{display:none}}
