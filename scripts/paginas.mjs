@@ -23,7 +23,7 @@ const archivo = leer('data/v2/archivo.json', []);
 const temporada = hoy.temporada || new Date().getFullYear();
 const semana = hoy.semana || '';
 
-const plantilla = fs.readFileSync('index.html', 'utf8');
+const plantilla = fs.readFileSync('index.html', 'utf8').replace(/<link rel="alternate" hreflang[^\n]*\n/g, '').replace(/<script type="application\/ld\+json">[^\n]*<\/script>\n/, '');
 const urlJ = j => `jugador/${slug(j.n)}-${j.id}/`;
 const urlN = n => `noticia/${slug(n.titulo)}-${String(n.id).replace(/\D/g, '').slice(-8)}/`;
 const urlNen = n => `en/noticia/${slug(n.en.titulo)}-${String(n.id).replace(/\D/g, '').slice(-8)}/`;
@@ -177,6 +177,50 @@ for (const pos of rkPos) {
       ld: { '@context': 'https://schema.org', '@type': 'Article', headline: titulo.slice(0, 110), description: desc, dateModified: hoy.actualizado || new Date().toISOString(), inLanguage: l === 'en' ? 'en-US' : 'es-MX', author: { '@type': 'Organization', name: SITIO, url: RAIZ }, publisher: { '@type': 'Organization', name: SITIO, url: RAIZ } } }));
   }
 }
+// Páginas fijas de rankings (misma URL toda la temporada: acumulan autoridad en Google) y su portada
+const PN = { es: { QB: 'quarterbacks (QB)', RB: 'running backs (RB)', WR: 'receptores (WR)', TE: 'alas cerradas (TE)', K: 'pateadores (K)', DEF: 'defensivas (DEF)' }, en: { QB: 'quarterbacks (QB)', RB: 'running backs (RB)', WR: 'wide receivers (WR)', TE: 'tight ends (TE)', K: 'kickers (K)', DEF: 'defenses (DST)' } };
+const urlRF = (pos, l) => (l === 'en' ? 'en/' : '') + 'rankings/' + (pos ? pos.toLowerCase() + '/' : '');
+for (const pos of rkPos) {
+  const L = jugadores.filter(j => j.pos === pos && j.proy && j.proy[0] != null && j.team !== 'FA' && !fueraJ(j) && cal.cal && cal.cal[j.team] && cal.cal[j.team][semana]).sort((a, b) => b.proy[0] - a.proy[0]).slice(0, pos === 'K' || pos === 'DEF' ? 24 : pos === 'QB' || pos === 'TE' ? 32 : 72);
+  if (!L.length) continue;
+  const alt = { es: urlRF(pos, 'es'), en: urlRF(pos, 'en') };
+  for (const l of ['es', 'en']) {
+    const N = PN[l][pos], en = l === 'en';
+    const titulo = en ? `Fantasy Football Rankings ${temporada}: ${N} · Week ${semana} PPR, Half PPR & Standard` : `Rankings de Fantasy Football ${temporada}: ${N} · Semana ${semana} PPR, Half y Standard`;
+    const desc = corta(en ? `Week ${semana} fantasy football ${N} rankings and projections from the FX Model, with matchup and injury status: ${L.slice(0, 3).map(j => j.n).join(', ')}. PPR, Half PPR and Standard, updated every day.` : `Rankings de ${N} de fantasy football para la semana ${semana} con proyecciones del Modelo FX, rival y estatus médico: ${L.slice(0, 3).map(j => j.n).join(', ')}. PPR, Half PPR y Standard, actualizados todos los días.`);
+    const fila = (j, i) => { const r = cal.cal[j.team][semana]; return `<tr><td>${i + 1}</td><td><a href="${urlJ(j)}">${esc(j.n)}</a></td><td>${esc(j.team)}</td><td>${r.home ? 'vs' : '@'} ${esc(r.opp)}</td><td>${j.proy[0]}</td><td>${j.proy[1]}</td><td>${j.proy[2]}</td></tr>`; };
+    const cuerpo = `<article class="blogart"><h1>${esc(titulo)}</h1><p>${en ? `Our ${N} rankings for week ${semana}, ordered by the FX Model projection. The model blends each player's volume and efficiency from this season and last, his opponent and his health, and we publish its accuracy every week.` : `Nuestros rankings de ${N} para la semana ${semana}, ordenados por la proyección del Modelo FX. El modelo combina el volumen y la eficiencia de cada jugador de esta temporada y la anterior, su rival y su salud, y publicamos su precisión cada semana.`} <a href="${urlRF('', l) === 'rankings/' ? 'precision/' : 'en/precision/'}">${en ? 'See our accuracy' : 'Ver nuestra precisión'}</a>.</p>
+<table><thead><tr><th>#</th><th>${en ? 'Player' : 'Jugador'}</th><th>${en ? 'Team' : 'Equipo'}</th><th>${en ? 'Opp' : 'Rival'}</th><th>PPR</th><th>Half</th><th>STD</th></tr></thead><tbody>${L.map(fila).join('')}</tbody></table>
+<p>${rkPos.filter(x => x !== pos).map(x => `<a href="${urlRF(x, l)}">${en ? 'Rankings' : 'Rankings de'} ${PN[l][x]}</a>`).join(' · ')}</p></article>`;
+    escribe(alt[l], pagina({ ruta: alt[l], titulo: `${titulo} | ${en ? 'Fantasy Experts' : SITIO}`, desc, ruteo: '#/posicion/' + pos, cuerpo, lang: l, alt,
+      ld: { '@context': 'https://schema.org', '@graph': [{ '@type': 'WebPage', name: titulo, description: desc, dateModified: hoy.actualizado || new Date().toISOString(), inLanguage: en ? 'en-US' : 'es-MX', publisher: { '@type': 'Organization', name: SITIO, url: RAIZ } },
+        { '@type': 'ItemList', name: titulo, itemListElement: L.slice(0, 20).map((j, i) => ({ '@type': 'ListItem', position: i + 1, name: j.n, url: RAIZ + urlJ(j) })) },
+        { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: SITIO, item: RAIZ }, { '@type': 'ListItem', position: 2, name: 'Rankings', item: RAIZ + urlRF('', l) }, { '@type': 'ListItem', position: 3, name: N, item: RAIZ + alt[l] }] }] } }));
+  }
+}
+for (const l of ['es', 'en']) {
+  const en = l === 'en', alt = { es: urlRF('', 'es'), en: urlRF('', 'en') };
+  const titulo = en ? `Fantasy Football Rankings ${temporada}: Week ${semana} Projections` : `Rankings de Fantasy Football ${temporada}: proyecciones de la semana ${semana}`;
+  const desc = en ? `Week ${semana} fantasy football rankings by position (QB, RB, WR, TE, K, DST) with FX Model projections in PPR, Half PPR and Standard.` : `Rankings de fantasy football de la semana ${semana} por posición (QB, RB, WR, TE, K, DEF) con proyecciones del Modelo FX en PPR, Half PPR y Standard.`;
+  escribe(alt[l], pagina({ ruta: alt[l], titulo: `${titulo} | ${en ? 'Fantasy Experts' : SITIO}`, desc, ruteo: '#/posicion/QB', lang: l, alt, cuerpo: `<h1>${esc(titulo)}</h1><p>${esc(desc)}</p><ul>${rkPos.map(x => `<li><a href="${urlRF(x, l)}">${en ? 'Rankings' : 'Rankings de'} ${PN[l][x]}</a></li>`).join('')}</ul>` }));
+}
+// Precisión del Modelo FX (transparencia: cuánto se equivoca cada semana contra la referencia del mercado)
+{
+  const M = leer('data/v2/modelo.json', { semanas: {} }), S = Object.entries(M.semanas || {}).sort((a, b) => +a[0] - +b[0]);
+  for (const l of ['es', 'en']) {
+    const en = l === 'en', alt = { es: 'precision/', en: 'en/precision/' };
+    const titulo = en ? `Fantasy Football Projection Accuracy ${temporada}: FX Model vs the Market` : `Precisión de proyecciones de fantasy football ${temporada}: Modelo FX vs el mercado`;
+    const desc = en ? 'How accurate are our fantasy football projections? Average error per player every week, compared with a market reference projection.' : '¿Qué tan precisas son nuestras proyecciones de fantasy football? Error promedio por jugador cada semana, comparado contra una proyección de referencia del mercado.';
+    const filas = S.map(([w, x]) => `<tr><td>${w}</td><td>${x.n}</td><td>${x.maeFX}</td><td>${x.maeRef}</td><td>${x.maeFX <= x.maeRef ? (en ? 'FX Model' : 'Modelo FX') : (en ? 'Reference' : 'Referencia')}</td></tr>`).join('');
+    const cuerpo = `<article class="blogart"><h1>${esc(titulo)}</h1><p>${en ? 'Every week we compare each projection with what the player actually scored (PPR). Lower average error means more accurate projections. The model recalibrates itself every 12 hours against the weeks already played.' : 'Cada semana comparamos cada proyección con lo que el jugador realmente hizo (PPR). Menor error promedio significa proyecciones más precisas. El modelo se recalibra solo cada 12 horas contra las semanas ya jugadas.'}</p>
+<table><thead><tr><th>${en ? 'Week' : 'Semana'}</th><th>${en ? 'Players' : 'Jugadores'}</th><th>${en ? 'FX Model error' : 'Error Modelo FX'}</th><th>${en ? 'Reference error' : 'Error referencia'}</th><th>${en ? 'More accurate' : 'Más preciso'}</th></tr></thead><tbody>${filas}</tbody></table>
+<p><a href="${urlRF('', l)}">${en ? 'See this week\'s rankings' : 'Ver los rankings de la semana'}</a></p></article>`;
+    escribe(alt[l], pagina({ ruta: alt[l], titulo: `${titulo} | ${en ? 'Fantasy Experts' : SITIO}`, desc, ruteo: '#/precision', cuerpo, lang: l, alt, ld: { '@context': 'https://schema.org', '@type': 'Dataset', name: titulo, description: desc, creator: { '@type': 'Organization', name: SITIO, url: RAIZ }, url: RAIZ + alt[l] } }));
+  }
+}
+// Portada en inglés
+escribe('en/', pagina({ ruta: 'en/', titulo: `Fantasy Experts: Fantasy Football Rankings ${temporada}, Projections & Start/Sit`, desc: 'Week-by-week fantasy football rankings, FX Model projections with accuracy measured every week, start/sit, waivers, injuries, trade analyzer and news. PPR, Half PPR and Standard.', ruteo: '#/', lang: 'en', alt: { es: '', en: 'en/' },
+  cuerpo: `<h1>Fantasy Football Rankings ${temporada}, Projections and Start/Sit</h1><p>Fantasy Experts is the fantasy football platform with its own projections: the FX Model analyzes every NFL player's volume, efficiency, opponent and health, and we publish its accuracy every week.</p><ul>${rkPos.map(x => `<li><a href="${urlRF(x, 'en')}">Rankings: ${PN.en[x]}</a></li>`).join('')}<li><a href="en/precision/">Projection accuracy</a></li><li><a href="en/blog/">Blog</a></li></ul>` }));
 // Portadas del blog
 for (const l of ['es', 'en']) {
   const T = TB[l], ruta = l === 'en' ? 'en/blog/' : 'blog/';
@@ -190,10 +234,12 @@ for (const l of ['es', 'en']) {
 for (const base of ['blog', 'en/blog']) if (fs.existsSync(base)) for (const d of fs.readdirSync(base)) { const r = base + '/' + d + '/'; if (fs.statSync(base + '/' + d).isDirectory() && !escritasB.has(r)) { fs.rmSync(base + '/' + d, { recursive: true, force: true }); cambios++; } }
 
 // ---------- Sitemap y robots ----------
-const urls = [['', 'hourly', '1.0'], ['privacidad/', 'yearly', '0.2'], ['blog/', 'daily', '0.8', null, { es: 'blog/', en: 'en/blog/' }], ['en/blog/', 'daily', '0.8', null, { es: 'blog/', en: 'en/blog/' }],
+const urls = [['', 'hourly', '1.0', null, { es: '', en: 'en/' }], ['privacidad/', 'yearly', '0.2'], ['blog/', 'daily', '0.8', null, { es: 'blog/', en: 'en/blog/' }], ['en/blog/', 'daily', '0.8', null, { es: 'blog/', en: 'en/blog/' }],
   ...blog.filter(a => a.es && a.en && a.es.slug && a.en.slug).flatMap(a => { const alt = { es: urlB(a, 'es'), en: urlB(a, 'en') }; return [[alt.es, 'weekly', '0.9', (a.fecha || '').slice(0, 10), alt], [alt.en, 'weekly', '0.9', (a.fecha || '').slice(0, 10), alt]]; }),
   ...rkPos.flatMap(x => { const alt = { es: urlR(x, 'es'), en: urlR(x, 'en') }; return [[alt.es, 'daily', '0.9', null, alt], [alt.en, 'daily', '0.9', null, alt]]; }),
   ...archivo.filter(n => n && n.titulo && n.id).flatMap(n => { const f = (n.fecha || '').slice(0, 10); if (!(n.en && n.en.titulo && !n.exclusivo)) return [[urlN(n), 'weekly', '0.8', f]]; const alt = { es: urlN(n), en: urlNen(n) }; return [[alt.es, 'weekly', '0.8', f, alt], [alt.en, 'weekly', '0.8', f, alt]]; }),
+  ['en/', 'hourly', '1.0', null, { es: '', en: 'en/' }], ...['', ...rkPos].flatMap(x => { const alt = { es: urlRF(x, 'es'), en: urlRF(x, 'en') }; return [[alt.es, 'daily', '0.95', null, alt], [alt.en, 'daily', '0.95', null, alt]]; }),
+  ['precision/', 'weekly', '0.8', null, { es: 'precision/', en: 'en/precision/' }], ['en/precision/', 'weekly', '0.8', null, { es: 'precision/', en: 'en/precision/' }],
   ...jugadores.map(j => [urlJ(j), 'daily', '0.7']), ...Object.keys(EQUIPOS).map(t => [urlE(t), 'daily', '0.6'])];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.filter(([u]) => !/^(en\/)?blog\/.+/.test(u) || escritasB.has(u)).map(([u, f, p, m, alt]) => `<url><loc>${RAIZ}${u}</loc>${alt ? Object.entries(alt).map(([l, x]) => `<xhtml:link rel="alternate" hreflang="${l}" href="${RAIZ}${x}"/>`).join('') : ''}${m ? `<lastmod>${m}</lastmod>` : ''}<changefreq>${f}</changefreq><priority>${p}</priority></url>`).join('\n')}\n</urlset>\n`;
 const robots = `User-agent: *\nAllow: /\nDisallow: /apps-script/\nSitemap: ${RAIZ}sitemap.xml\n`;

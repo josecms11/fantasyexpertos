@@ -62,7 +62,7 @@ const nombre1 = n => { const p = String(n || '').split(' '); return p.length > 1
 const apellido = n => { const p = String(n || '').split(' '); return p.length > 1 ? p.slice(1).join(' ') : p[0]; };
 const hace = f => { if (!f) return ''; const m = Math.round((Date.now() - Date.parse(f)) / 60000); return m < 60 ? `hace ${Math.max(1, m)} min` : m < 1440 ? `hace ${Math.round(m / 60)} h` : new Date(f).toLocaleDateString('es-MX', { day: 'numeric', month: 'short' }); };
 const fechaC = f => f ? new Date(f).toLocaleDateString('es-MX', { day: 'numeric', month: 'short' }) : '';
-const titulo = t => { const m = tx('Fantasy Expertos', 'Fantasy Experts'); document.title = t ? t + ' · ' + m : m + ' · ' + tx('Fantasy football en español', 'Fantasy football, powered by data'); };
+const titulo = t => { const m = tx('Fantasy Expertos', 'Fantasy Experts'); document.title = t ? t + ' · ' + m : m + ' · ' + tx('Rankings de Fantasy Football, Proyecciones y Start/Sit', 'Fantasy Football Rankings, Projections & Start/Sit'); };
 const actualizado = () => 'Actualizado ' + new Date(D.actualizado).toLocaleString('es-MX', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
 const esqMatches = (n = 3) => `<div class="matches" aria-busy="true" aria-label="Cargando marcadores">${'<div class="match esq"><i class="e1"></i><span class="e-row"><i class="e-hel"></i><i class="e-sc"></i><i class="e-hel"></i></span><i class="e2"></i><i class="e3"></i></div>'.repeat(n)}</div>`;
 const cargador = (txt = 'CARGANDO', c = 'var(--accent)') => `<div class="wrap loading"><div class="fx-load" role="status" style="--lc:${c}">${fxLogo(56)}<span class="fx-bar"><i></i></span><p class="px">${txt}</p></div></div>`;
@@ -294,11 +294,6 @@ function plusCalendario(t) {
   return proBloque(tx('Calendario FX resto de temporada', 'FX rest-of-season schedule'), tx('La dificultad promedio de los rivales que le quedan a este equipo, por posición, según los puntos que cada defensa permite. Clave para trades y playoffs de fantasy.', 'The average difficulty of this team\'s remaining opponents, by position, based on points each defense allows. Key for trades and fantasy playoffs.'), html, tx('Compra y vende jugadores sabiendo qué rivales les quedan', 'Buy and sell players knowing who they face next'));
 }
 function plusMiLiga() {
-  const herrPro = `<section class="block"><div class="pv-sec-h"><small class="pv-k">${tx('TUS HERRAMIENTAS', 'YOUR TOOLS')}</small><h2>${tx('Herramientas PRO', 'PRO tools')}</h2></div><div class="pv-cart-g">
-    <a class="pv-edge" href="#/trade">${pixel(ART.trade, 'pv-e-ico a-trade')}<div><small>PRO</small><b>${tx('Analizador de trades', 'Trade analyzer')}</b><p>${tx('Cuánto vale cada jugador antes de aceptar.', 'What each player is worth before you accept.')}</p></div><i>›</i></a>
-    <a class="pv-edge" href="#pv-conecta" data-pv-ir="pv-conecta">${pixel(ART.linea, 'pv-e-ico a-linea')}<div><small>PRO</small><b>${tx('Tu liga', 'Your league')}</b><p>${tx('Alineación, matchup, waivers y trades de tu equipo.', 'Lineup, matchup, waivers and trades for your team.')}</p></div><i>›</i></a>
-    <a class="pv-edge" href="#/posicion/QB">${pixel(ART.marcador, 'pv-e-ico a-marcador')}<div><small>PRO</small><b>${tx('Rankings con piso y techo', 'Rankings with floor & ceiling')}</b><p>${tx('Proyección FX de esta semana y las siguientes.', 'FX projection for this week and the next ones.')}</p></div><i>›</i></a>
-    <a class="pv-edge" href="#/exclusivo">${pixel(ART.micro, 'pv-e-ico a-micro')}<div><small>PRO</small><b>${tx('Exclusivas', 'Exclusives')}</b><p>${tx('Lo que tu liga se entera mañana.', 'What your league finds out tomorrow.')}</p></div><i>›</i></a></div></section>`;
   if (!LIGA || !(LIGA.jugadores || []).length) return `<section class="block plusfx" data-chip="★ ${tx('VENTAJA FX', 'FX EDGE')}"><a class="card plus-cta neon" href="#/premium"><b>${tx('Ve solo lo que afecta a TU equipo', 'See only what affects YOUR team')}</b><span>${tx('Con PRO conectas tu liga y marcamos cada noticia que toca a tus jugadores, para que no se te pase nada.', 'With PRO you connect your league and we flag every story that touches your players, so you never miss one.')}</span><em>${tx('Conectar mi liga', 'Connect my league')} ›</em></a></section>`;
   const mios = new Set(LIGA.jugadores), N = todasNoticias().filter(n => [...(n.jugadores || []), ...(n.menciona || [])].some(id => mios.has(id))).slice(0, 6);
   return N.length ? `<section class="block plusfx" data-chip="${tx('TU LIGA', 'YOUR LEAGUE')} · ${N.length}"><div class="head"><div><h2>${tx('Afecta a tu equipo', 'Affects your team')}</h2><p class="hsub">${esc(LIGA.nombre || '')}</p></div><a class="all" href="#/premium">${tx('Mi cuarto de guerra', 'My war room')} ›</a></div><div class="news stagger">${N.map(n => newsCard(n)).join('')}</div></section>` : '';
@@ -417,7 +412,7 @@ function inicio() {
     return `<a class="hub" href="#/posicion/${p}"><span class="hub-h"><b>${p}</b><span>${POSICIONES[p]}</span></span>${top3.map((j, i) => `<span class="hub-r"><i class="n">${i + 1}</i>${helmet(j.team, j.num, 22)}<span>${esc(j.n)}</span><em class="n">${n1(j.pEst)}</em></span>`).join('')}<span class="hub-go">Ranking completo ›</span></a>`;
   }).join('');
   return `<div class="page">
-  <div class="wrap">${bienvenida()}
+  <div class="wrap"><h1 class="home-h1">${tx(`Rankings de fantasy football ${D.temporada || ''}, proyecciones y start/sit · Semana ${semActual()}`, `Fantasy football rankings ${D.temporada || ''}, projections and start/sit · Week ${semActual()}`)}</h1>${bienvenida()}
     <section class="front">
       <div class="front-main">${lead ? newsCard(lead, true) : '<div class="empty">Las noticias llegan en el próximo ciclo.</div>'}<div class="front-sec">${sec.map(n => newsCard(n)).join('')}</div></div>
       <aside class="front-side">${panelMios()}${panelStarts()}${panelMedico()}</aside>
@@ -429,10 +424,10 @@ function inicio() {
     ${SEMNUM ? `<section class="block lideres-home" data-chip="S${SEMNUM} · ${FMTS[FMT]}"><div class="head"><div><h2>Líderes de la semana ${SEMNUM}</h2><p class="hsub">Los que más puntos ${FMTS[FMT]} hicieron, por posición. Toca uno para ver su ficha.</p></div><a class="all" href="#/lideres">Todos los líderes ›</a></div>${marqueeLideres()}</section>` : ''}
     ${mas.length ? `<section class="block" data-chip="+${N.filter(n => Date.now() - Date.parse(n.fecha || 0) < 864e5).length} HOY"><div class="head"><div><h2>Más noticias</h2><p class="hsub">Lo que mueve tus alineaciones, verificado contra el reporte oficial.</p></div><a class="all" href="#/noticias">Todas las noticias ›</a></div><div class="news stagger">${mas.map(n => newsCard(n)).join('')}</div></section>` : ''}
     <section class="block grid g2" data-chip="ÚLTIMAS 24 H">
-      <div class="card"><div class="head"><h3>▲ Subiendo</h3><a class="all" href="#/tendencias">Todo ›</a></div><p class="sub">Los más agregados en ligas en las últimas 24 horas.</p>
-        <div class="plist">${D.agregados.slice(0, 6).map(id => J[id] && prow(J[id], `<span class="bar"><i style="width:${pct(J[id].add, 'add')}%"></i></span>${fxPill(J[id])}`)).join('')}</div></div>
-      <div class="card"><div class="head"><h3 style="color:var(--bad)">▼ Bajando</h3><a class="all" href="#/tendencias">Todo ›</a></div><p class="sub">A quién están soltando en las últimas 24 horas.</p>
-        <div class="plist">${D.soltados.slice(0, 6).map(id => J[id] && prow(J[id], `<span class="bar down"><i style="width:${pct(J[id].drop, 'drop')}%"></i></span>${fxPill(J[id])}`)).join('')}</div></div>
+      <div class="card"><div class="head"><h3>▲ Subiendo</h3><a class="all" href="#/tendencias">Todo ›</a></div><p class="sub">${tx('Los que más están agregando las ligas hoy.', 'Who leagues are adding most today.')}</p>
+        <div class="plist">${tresYpro(D.agregados.slice(0, 6).map(id => J[id] && prow(J[id], `<span class="bar"><i style="width:${pct(J[id].add, 'add')}%"></i></span>${fxPill(J[id])}`)).filter(Boolean), tx('Ve a todos los que suben antes que tu liga', 'See every riser before your league does'))}</div></div>
+      <div class="card"><div class="head"><h3 style="color:var(--bad)">▼ Bajando</h3><a class="all" href="#/tendencias">Todo ›</a></div><p class="sub">${tx('Los que más están soltando las ligas hoy.', 'Who leagues are dropping most today.')}</p>
+        <div class="plist">${tresYpro(D.soltados.slice(0, 6).map(id => J[id] && prow(J[id], `<span class="bar down"><i style="width:${pct(J[id].drop, 'drop')}%"></i></span>${fxPill(J[id])}`)).filter(Boolean), tx('Sabe a quién soltar antes de que se desplome', 'Know who to drop before he crashes'))}</div></div>
     </section>
     ${duelo()}
     <section class="block" data-chip="S${semActual()} · ${FMTS[FMT]}"><div class="head"><div><h2>Rankings de la semana ${semActual()}</h2><p class="hsub">Top 3 por proyección ${FMTS[FMT]}, solo jugadores que sí juegan.</p></div><a class="all" href="#/posicion/QB">Rankings ›</a></div><div class="grid hubs6 stagger">${hubs}</div></section>
@@ -718,11 +713,12 @@ function equipo(t) {
     <section class="block"><div class="head"><h2>Noticias de ${esc(EQUIPOS[t])}</h2></div><div class="news stagger">${notas.slice(0, 9).map(n => newsCard(n)).join('') || '<div class="empty">Aún no hay noticias de este equipo.</div>'}</div></section>
   </div></div>`;
 }
+const tresYpro = (L, gancho) => { const a = L.slice(0, 3).join(''), b = L.slice(3).join(''); return a + (b ? (esPremium() ? b : zonaPrem(`<div class="plist">${b}</div>`, gancho)) : ''); };
 function tendencias() {
-  titulo('Tendencias');
-  return `<div class="page">${crumbs([['', 'Tendencias']])}<div class="wrap"><section class="block"><div class="head"><div><h2>Tendencias en ligas</h2><p class="hsub">Movimientos de las últimas 24 horas en Sleeper, con nuestro veredicto.</p></div></div><div class="grid g2">
-    <div class="card"><h3 style="color:var(--accent)">▲ Más agregados</h3><div class="plist">${D.agregados.map((id, i) => J[id] && prow(J[id], `<span class="bar"><i style="width:${pct(J[id].add, 'add')}%"></i></span><span class="num sm">${nf.format(J[id].add)}</span>${fxPill(J[id])}`, i + 1)).join('')}</div></div>
-    <div class="card"><h3 style="color:var(--bad)">▼ Más soltados</h3><div class="plist">${D.soltados.map((id, i) => J[id] && prow(J[id], `<span class="bar down"><i style="width:${pct(J[id].drop, 'drop')}%"></i></span><span class="num sm" style="color:var(--bad)">${nf.format(J[id].drop)}</span>`, i + 1)).join('') || '<p class="sub">Sin datos hoy.</p>'}</div></div>
+  titulo(tx('Tendencias', 'Trends'));
+  return `<div class="page">${crumbs([['#/premium', 'FX PRO'], ['', tx('Tendencias', 'Trends')]])}<div class="wrap"><section class="block"><div class="head"><div><h2>${tx('Tendencias en ligas', 'League trends')}</h2><p class="hsub">${tx('Quién sube y quién baja en las ligas en las últimas 24 horas, con el veredicto del FX Tech Analyzer.', 'Who is rising and falling across leagues in the last 24 hours, with the FX Tech Analyzer verdict.')}</p></div></div><div class="grid g2">
+    <div class="card"><h3 style="color:var(--accent)">▲ Más agregados</h3><div class="plist">${tresYpro(D.agregados.map((id, i) => J[id] && prow(J[id], `<span class="bar"><i style="width:${pct(J[id].add, 'add')}%"></i></span><span class="num sm">${nf.format(J[id].add)}</span>${fxPill(J[id])}`, i + 1)).filter(Boolean), tx('La lista completa de los que suben, con nuestro veredicto', 'The full list of risers, with our verdict'))}</div></div>
+    <div class="card"><h3 style="color:var(--bad)">▼ Más soltados</h3><div class="plist">${tresYpro(D.soltados.map((id, i) => J[id] && prow(J[id], `<span class="bar down"><i style="width:${pct(J[id].drop, 'drop')}%"></i></span><span class="num sm" style="color:var(--bad)">${nf.format(J[id].drop)}</span>`, i + 1)).filter(Boolean), tx('La lista completa de los que bajan', 'The full list of fallers')) || `<p class="sub">${tx('Sin datos hoy.', 'No data today.')}</p>`}</div></div>
   </div></section>${plusCompra()}</div></div>`;
 }
 function lesionados(q) {
@@ -1682,7 +1678,7 @@ function animaPremium() {
 document.addEventListener('click', e => { const a = e.target.closest('[data-pv-ir],[data-ir-planes]'); if (!a) return; const id = a.dataset.pvIr || 'pv-planes', el = document.getElementById(id); if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } });
 
 /* ---------- Cuarto de guerra: tablero + herramientas por pestaña ---------- */
-const TABS_CG = [['', 'Mi semana', 'My week'], ['alineacion', 'Alineación', 'Lineup'], ['waivers', 'Waivers', 'Waivers'], ['trades', 'Trades', 'Trades'], ['plantel', 'Plantel', 'Roster'], ['@trade', 'Analizador de trades', 'Trade analyzer'], ['exclusivas', 'Exclusivas', 'Exclusives']];
+const TABS_CG = [['', 'Mi semana', 'My week'], ['alineacion', 'Alineación', 'Lineup'], ['waivers', 'Waivers', 'Waivers'], ['trades', 'Trades', 'Trades'], ['plantel', 'Plantel', 'Roster'], ['@trade', 'Analizador de trades', 'Trade analyzer'], ['@tendencias', 'Tendencias', 'Trends'], ['exclusivas', 'Exclusivas', 'Exclusives']];
 const jLink = (j, sub = '') => `<a class="wr-j" href="#/jugador/${j.id}" data-hover-j="${j.id}">${helmet(j.team, j.num, 30)}<span><b>${esc(j.n)}</b><small>${esc(j.pos)} · ${esc(j.team)}${sub ? ' · ' + sub : ''}</small></span></a>`;
 const pieTech = () => `<div class="pie-tech">${sello('mini')}</div>`;
 const slotsL = () => LIGA.slots && LIGA.slots.length ? LIGA.slots : POS_BASE;
@@ -1806,6 +1802,16 @@ document.addEventListener('click', e => {
 });
 document.addEventListener('change', e => { const s = e.target.closest('[data-duelo]'); if (!s) return; const a = document.querySelector('[data-duelo="a"]'), b = document.querySelector('[data-duelo="b"]'), r = document.getElementById('duelo-res'); if (r) r.innerHTML = dueloHtml(J[a.value], J[b.value]); });
 
+let _modelo = null;
+function precisionVista() {
+  titulo(tx('Precisión del Modelo FX', 'FX Model accuracy'));
+  if (!_modelo) { fetch(BASE + 'modelo.json?v=' + Math.floor(Date.now() / 6e5)).then(r => r.json()).then(m => { _modelo = m; if (/^#\/precision/.test(location.hash)) repinta(); }).catch(() => {}); return cargador(tx('CARGANDO', 'LOADING')); }
+  const S = Object.entries(_modelo.semanas || {}).sort((a, b) => +a[0] - +b[0]), gana = S.filter(([, x]) => x.maeFX <= x.maeRef).length, p = _modelo.params;
+  return `<div class="page">${crumbs([['', tx('Precisión', 'Accuracy')]])}<div class="wrap"><section class="block"><div class="head"><div><h2>${tx('Precisión del Modelo FX', 'FX Model accuracy')}</h2><p class="hsub">${tx('Cada semana comparamos cada proyección con lo que el jugador realmente hizo. Menos error = proyecciones más precisas.', 'Every week we compare each projection with what the player actually scored. Lower error = more accurate projections.')}</p></div></div>
+    <div class="kpis"><div class="kpi"><b class="n">${S.length ? S[S.length - 1][1].maeFX : '–'}</b><span>${tx('Error promedio última semana (pts)', 'Average error last week (pts)')}</span></div><div class="kpi"><b class="n">${gana}/${S.length}</b><span>${tx('Semanas más precisos que la referencia', 'Weeks more accurate than the reference')}</span></div><div class="kpi"><b class="n">${p ? p.error : '–'}</b><span>${tx('Error tras la última calibración', 'Error after latest calibration')}</span></div></div>
+    <div class="card scroll" style="margin-top:18px"><table class="tbl"><thead><tr><th>${tx('SEMANA', 'WEEK')}</th><th>${tx('JUGADORES', 'PLAYERS')}</th><th>${tx('ERROR FX', 'FX ERROR')}</th><th>${tx('ERROR REFERENCIA', 'REFERENCE ERROR')}</th><th>${tx('MÁS PRECISO', 'MORE ACCURATE')}</th></tr></thead><tbody>${S.map(([w, x]) => `<tr><td class="n">${w}</td><td class="n">${x.n}</td><td class="n hl">${x.maeFX}</td><td class="n">${x.maeRef}</td><td>${x.maeFX <= x.maeRef ? '<b style="color:var(--accent)">Modelo FX</b>' : tx('Referencia', 'Reference')}</td></tr>`).join('')}</tbody></table></div>
+    <p class="hsub" style="margin-top:14px">${tx('El modelo se recalibra solo cada 12 horas contra las semanas ya jugadas, sin ver el resultado de la semana que proyecta.', 'The model recalibrates itself every 12 hours against weeks already played, without seeing the result of the week it projects.')}</p></section></div></div>`;
+}
 function premiumHub(tab = '') {
   titulo('FX PRO');
   const pro = esPremium(), excl = todasNoticias().filter(n => n.exclusivo).slice(0, 6);
@@ -1813,6 +1819,12 @@ function premiumHub(tab = '') {
   const hero = pro ? `<div class="cg-hero solo"><div class="cg-hero-in"><span class="cg-tag">★ FX PRO</span><h1>${tx('Tu cuarto de guerra', 'Your war room')}</h1><p class="prem-ok">★ ${tx('Eres PRO: todas las herramientas están desbloqueadas.', 'You are PRO: every tool is unlocked.')}</p></div>${sello()}</div>` : ventaHero();
   const venta = pro ? '' : niveles() + cadaSeccion() + precios();
   if (!pro) return `<div class="page pv">${crumbs([['', 'FX PRO']])}<div class="wrap">${hero}${niveles()}${cadaSeccion()}${precios()}<section class="block"><div class="pv-lock neon"><div><b>${tx('Conecta tu liga', 'Connect your league')}</b><p>${tx('Con PRO importas tu liga de Sleeper (o capturas tu plantel de ESPN o Yahoo) y todas las herramientas trabajan con TU equipo.', 'With PRO you import your Sleeper league (or enter your ESPN or Yahoo roster) and every tool works with YOUR team.')}</p></div>${ctaPrem(tx('Desbloquear con PRO', 'Unlock with PRO'))}</div></section>${exclusivasBloque(excl, pro)}</div></div>`;
+  const herrPro = `<section class="block"><div class="pv-sec-h"><small class="pv-k">${tx('TUS HERRAMIENTAS', 'YOUR TOOLS')}</small><h2>${tx('Herramientas PRO', 'PRO tools')}</h2></div><div class="pv-cart-g">
+    <a class="pv-edge" href="#/trade">${pixel(ART.trade, 'pv-e-ico a-trade')}<div><small>PRO</small><b>${tx('Analizador de trades', 'Trade analyzer')}</b><p>${tx('Cuánto vale cada jugador antes de aceptar.', 'What each player is worth before you accept.')}</p></div><i>›</i></a>
+    <a class="pv-edge" href="#pv-conecta" data-pv-ir="pv-conecta">${pixel(ART.linea, 'pv-e-ico a-linea')}<div><small>PRO</small><b>${tx('Tu liga', 'Your league')}</b><p>${tx('Alineación, matchup, waivers y trades de tu equipo.', 'Lineup, matchup, waivers and trades for your team.')}</p></div><i>›</i></a>
+    <a class="pv-edge" href="#/posicion/QB">${pixel(ART.marcador, 'pv-e-ico a-marcador')}<div><small>PRO</small><b>${tx('Rankings con piso y techo', 'Rankings with floor & ceiling')}</b><p>${tx('Proyección FX de esta semana y las siguientes.', 'FX projection for this week and the next ones.')}</p></div><i>›</i></a>
+    <a class="pv-edge" href="#/tendencias">${pixel(ART.iman, 'pv-e-ico a-iman')}<div><small>PRO</small><b>${tx('Tendencias', 'Trends')}</b><p>${tx('Quién sube y quién baja en las ligas hoy.', 'Who is rising and falling in leagues today.')}</p></div><i>›</i></a>
+    <a class="pv-edge" href="#/exclusivo">${pixel(ART.micro, 'pv-e-ico a-micro')}<div><small>PRO</small><b>${tx('Exclusivas', 'Exclusives')}</b><p>${tx('Lo que tu liga se entera mañana.', 'What your league finds out tomorrow.')}</p></div><i>›</i></a></div></section>`;
   if (!LIGA || !(LIGA.jugadores || []).length) return `<div class="page pv">${crumbs([['', 'FX PRO']])}<div class="wrap">${hero}${pro ? herrPro : niveles()}<div id="pv-conecta">${conectaVista()}</div>${pro ? '' : cadaSeccion() + precios()}${exclusivasBloque(excl, pro)}</div></div>`;
 
   cargaVivo(semActual());
@@ -1859,12 +1871,12 @@ function router() {
   const q = new URLSearchParams(qs || ''), [, seccion, a, b] = ruta.split('/');
   const R = { '': () => inicio(), blog: () => a ? blogNota(a) : blogLista(), noticias: () => noticias(q), reportajes: () => noticias(q), noticia: () => noticia(a), reportaje: () => noticia(a), jugador: () => jugador(a), comparar: () => comparar(a, b), posicion: () => posicion(a),
     equipos: () => equipos(), equipo: () => equipo(a), partidos: () => partidos(q), partido: () => partido(a), lideres: () => lideres(q), media: () => media(), exclusivo: () => exclusivo(), premium: () => premiumHub(a || ''), temporada: () => temporada(), semana: () => semana(a), tendencias: () => tendencias(), lesionados: () => lesionados(q),
-    cuenta: () => cuenta(q), herramientas: () => premiumHub(''), trade: () => trade(q), privacidad: () => privacidad(), baja: () => baja(q) };
+    cuenta: () => cuenta(q), herramientas: () => premiumHub(''), trade: () => trade(q), privacidad: () => privacidad(), precision: () => precisionVista(), baja: () => baja(q) };
   app.innerHTML = (R[seccion || ''] || noEncontrado)();
   if (ruta !== _rutaPrev) { _rutaPrev = ruta; app.classList.remove('entra'); void app.offsetWidth; app.classList.add('entra'); }
   scrollTo({ top: 0 });
   vista(ruta + (seccion === 'noticias' || seccion === 'lideres' || seccion === 'lesionados' ? (qs ? '?' + qs : '') : ''));
-  const act = s => s === (seccion || '') || ((seccion === 'exclusivo' || seccion === 'trade') && s === 'premium') || (seccion === 'noticia' && s === 'noticias') || (seccion === 'partido' && s === 'partidos') || (seccion === 'semana' && s === 'temporada') || (seccion === 'trade' && s === 'herramientas');
+  const act = s => s === (seccion || '') || ((seccion === 'exclusivo' || seccion === 'trade' || seccion === 'tendencias') && s === 'premium') || (seccion === 'noticia' && s === 'noticias') || (seccion === 'partido' && s === 'partidos') || (seccion === 'semana' && s === 'temporada') || (seccion === 'trade' && s === 'herramientas');
   document.querySelectorAll('.links a').forEach(l => l.classList.toggle('act', act(l.dataset.s)));
   if ($('.links').classList.contains('open')) menu(false, true);
   if (seccion === 'posicion') montaTabla(a);
@@ -1935,7 +1947,7 @@ Promise.all([cargar('hoy.json', null), cargar('jugadores.json', []), cargar('arc
   document.querySelectorAll('.fmt button').forEach((b, i) => b.onclick = () => { FMT = i; try { localStorage.setItem('fx-fmt', i); } catch (e) {} aplicaFormato(); router(); });
   const pie = $('#pie-redes'); if (pie) pie.innerHTML = `<div id="pie-news"></div><div class="follow"><div><h3>Síguenos</h3><p>Tips diarios, el podcast y los videos de cada semana.</p></div>${grupoRedes()}</div>`;
   pintaCuentaBtn(); if (ls(SB_LLAVE) || /[?&]code=/.test(location.search)) cargaSB().catch(() => {});
-  const fu = $('#fuentes'); if (fu) fu.textContent = tx('Datos: ', 'Data: ') + (hoy.fuentes || ['Sleeper', 'ESPN']).join(', ') + '.';
+  const fu = $('#fuentes'); if (fu) fu.textContent = tx('Datos procesados por el FX Tech Analyzer.', 'Data processed by the FX Tech Analyzer.');
   buscador(); cargaPartidos();
   aplicaIdioma();
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && $('.links').classList.contains('open')) menu(false); });
