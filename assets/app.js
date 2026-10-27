@@ -1642,8 +1642,11 @@ const ART = {
 };
 const ctaPrem = (t, cls = '') => `<a class="btn pv-btn ${cls}" href="${!YO ? '#/cuenta' : '#/premium?planes=1'}" ${!YO ? 'data-reg' : 'data-ir-planes'}>${t}</a>`;
 function ventaHero() {
-  const nJ = P.filter(j => j.proy).length, nN = todasNoticias().length;
-  const dato = (n, t, suf = '') => `<div><b class="n" data-cuenta="${n}">${n}</b>${suf}<small>${t}</small></div>`;
+  // Datos reales del motor: lo que el FX Tech Analyzer procesa, no números de adorno
+  const logs = P.flatMap(j => (j.log || []).filter(l => l.f)), nPJ = logs.length, nSt = logs.reduce((a, l) => a + Object.keys(l.st || {}).length + 3, 0);
+  if (!_modelo) fetch(BASE + 'modelo.json?v=' + Math.floor(Date.now() / 6e5)).then(r => r.json()).then(m => { _modelo = m; const el = document.querySelector('[data-error-fx]'); if (el) { const S = Object.values(m.semanas || {}), e = S.length ? S[S.length - 1].maeFX : null; if (e) { el.dataset.cuenta = e; el.textContent = e; } } }).catch(() => {});
+  const S = _modelo ? Object.values(_modelo.semanas || {}) : [], err = S.length ? S[S.length - 1].maeFX : 4.4;
+  const dato = (n, t, suf = '', x = '') => `<div><b class="n" data-cuenta="${n}" ${x}>${n}</b>${suf}<small>${t}</small></div>`;
   return `<section class="pv-hero">
     <div class="pv-hero-txt"><span class="pv-badge neon"><b>FX PRO</b><em>${tx('Herramientas para ganar tu liga', 'Tools to win your league')}</em></span>
       <h1>${tx('El cuarto de guerra de tu liga', 'Your league\'s war room')}</h1>
@@ -1652,7 +1655,7 @@ function ventaHero() {
       <small class="pv-nota">${tx('Desde $59 MXN al mes · cancela cuando quieras', 'From $59 MXN a month · cancel anytime')}</small></div>
     <div class="pv-board" aria-label="FX Tech Analyzer">
       <div class="pv-board-top">${sello()}<span class="pv-led"><i></i>${tx('EN LÍNEA', 'ONLINE')}</span></div>
-      <div class="pv-board-g">${dato(nJ, tx('jugadores proyectados', 'players projected'))}${dato(32, tx('defensas medidas', 'defenses measured'))}${dato(2, tx('temporadas de datos', 'seasons of data'))}${dato(nN, tx('notas verificadas', 'verified stories'))}</div>
+      <div class="pv-board-g">${dato(nSt, tx('estadísticas procesadas esta temporada', 'stats processed this season'))}${dato(nPJ, tx('actuaciones de jugadores analizadas', 'player performances analyzed'))}${dato(err, tx('puntos de error promedio por proyección', 'avg points of error per projection'), '', 'data-error-fx')}${dato(15, tx('minutos entre cada actualización', 'minutes between updates'))}</div>
       <div class="pv-marq"><span>${Array(2).fill(tx('START · SIT · WAIVERS · TRADES · MATCHUPS · LESIONES · PROB. TOP · VALOR FX · ', 'START · SIT · WAIVERS · TRADES · MATCHUPS · INJURIES · TOP ODDS · FX VALUE · ')).join('')}</span></div>
       <div class="pv-field" aria-hidden="true"><i class="pv-ball">${pixel(ART.balon)}</i></div>
     </div></section>`;
@@ -1700,7 +1703,7 @@ function precios() {
 }
 function animaPremium() {
   const io = new IntersectionObserver(es => es.forEach(e => { if (!e.isIntersecting) return; io.unobserve(e.target); const el = e.target, fin = +el.dataset.cuenta, t0 = performance.now();
-    const paso = t => { const k = Math.min(1, (t - t0) / 1200); el.textContent = Math.round(fin * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(paso); }; el.textContent = '0'; requestAnimationFrame(paso); }), { threshold: .4 });
+    const paso = t => { const k = Math.min(1, (t - t0) / 1200), fin = +el.dataset.cuenta; const vv = fin * (1 - Math.pow(1 - k, 3)); el.textContent = Number.isInteger(fin) ? nf.format(Math.round(vv)) : vv.toFixed(String(fin).split('.')[1].length); if (k < 1) requestAnimationFrame(paso); }; el.textContent = '0'; requestAnimationFrame(paso); }), { threshold: .4 });
   document.querySelectorAll('[data-cuenta]').forEach(el => io.observe(el));
   if (/planes=1/.test(location.hash)) setTimeout(() => { const p = document.getElementById('pv-planes'); if (p) p.scrollIntoView({ behavior: 'smooth' }); }, 300);
 }

@@ -1,6 +1,6 @@
 // Fantasy Expertos · service worker
 // Siempre pide lo más nuevo a la red; si no hay internet, muestra lo último guardado.
-const CACHE = 'fx-v60';
+const CACHE = 'fx-v61';
 const BASE = ['./', 'index.html', 'assets/app.css', 'assets/app.js', 'assets/icons/icon-192.png', 'manifest.webmanifest'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(BASE)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(k => Promise.all(k.filter(x => x !== CACHE).map(x => caches.delete(x)))).then(() => self.clients.claim())); });
