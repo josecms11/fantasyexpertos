@@ -1,6 +1,6 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-27T08:55:21.520Z",
+  "actualizado": "2026-10-27T09:32:37.297Z",
   "ultimaIA": "2026-10-27T06:30:38.614Z",
   "semana": 8,
   "semanaStats": 8,
@@ -299,8 +299,8 @@
     "3271",
     "CLE",
     "10235",
-    "8129",
     "HOU",
+    "8129",
     "13150",
     "NYJ",
     "5849",
@@ -322,11 +322,11 @@
     "9500"
   ],
   "duelo": {
-    "a": "Jared Goff",
-    "b": "Brock Purdy",
-    "veredicto": "Afronta la semana 8 arrancando a Jared Goff (19.5 pts) sobre Brock Purdy (19.3 pts). Goff proyecta mayor estabilidad aérea en un duelo favorable, mientras que Purdy viene de tener severos problemas de efectividad ofensiva."
+    "a": "Josh Allen",
+    "b": "Jared Goff",
+    "veredicto": "Arranca a Josh Allen por su alto piso proyectado de 22.2 puntos y su enorme capacidad terrestre que asegura puntos extra cada semana."
   },
-  "dueloFecha": "2026-10-26T11:22:24.994Z",
+  "dueloFecha": "2026-10-27T09:32:37.297Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
