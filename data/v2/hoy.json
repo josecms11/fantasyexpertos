@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-27T05:54:40.178Z",
-  "ultimaIA": "2026-10-27T04:42:17.640Z",
+  "actualizado": "2026-10-27T06:30:38.614Z",
+  "ultimaIA": "2026-10-27T06:30:38.614Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,51 +14,92 @@
   ],
   "noticias": [
     {
-      "id": "n20261027044201",
-      "fecha": "2026-10-27T04:42:17.640Z",
+      "id": "n20261027063001",
+      "fecha": "2026-10-27T06:30:38.614Z",
       "semana": 8,
-      "titulo": "Javonte Williams explota con marca personal de yardas",
+      "titulo": "Saquon Barkley minimiza molestias tras regreso con Eagles",
       "claves": [
-        "Javonte Williams corrió para 155 yardas",
-        "Anotó un touchdown por la vía terrestre",
-        "Dallas dominó por completo el juego terrestre"
+        "Saquon Barkley reportó su músculo isquiotibial en excelente estado",
+        "El corredor minimizó una molestia en la espalda",
+        "Mantuvo alta eficiencia pese a la derrota"
       ],
-      "contexto": "Durante la victoria de los Cowboys por 38-21 sobre los Eagles en la semana 7, Javonte Williams tuvo una noche histórica al registrar una marca personal de 155 yardas por tierra, coronando su gran actuación con un acarreo hasta las diagonales.",
-      "fantasy": "Javonte Williams sube de manera meteórica en los rankings de running backs para fantasy, convirtiéndose en una opción obligatoria en el esquema titular de cualquier alineación para la semana 8.",
-      "equipo_impacto": "El juego terrestre de Dallas toma un rol sumamente dominante y físico, quitándole presión a la ofensiva aérea y abriendo espacios.",
-      "accion": "Inserta a Javonte Williams directamente en tu cuadro titular como corredor estelar.",
+      "contexto": "Durante la derrota de los Eagles ante los Cowboys con marcador de 38-21, el corredor estelar Saquon Barkley regresó al terreno de juego para mostrar una actuación eficiente. Al finalizar el encuentro, el jugador declaró que su músculo isquiotibial respondió de maravilla y restó importancia a un problema en la espalda que arrastraba, disipando los temores sobre una ausencia prolongada.",
+      "fantasy": "Fantástica noticia para los mánagers de fantasy que poseen a Saquon Barkley en sus plantillas. A pesar de la derrota, su alta eficiencia y la confirmación de estar físicamente sano garantizan que puedes mantenerlo como pilar de tu alineación en ligas estándar y PPR de cara a los siguientes compromisos de la temporada.",
+      "equipo_impacto": "El ataque terrestre de Filadelfia respira tranquilo al saber que su arma principal no sufrió recaídas graves tras el duelo divisional del lunes por la noche.",
+      "accion": "Mantén a Saquon Barkley en tu cuadro titular de fantasy sin preocupaciones físicas.",
       "en": {
-        "titulo": "Javonte Williams explodes with career rushing high",
+        "titulo": "Saquon Barkley downplays issues after return with Eagles",
         "claves": [
-          "Javonte Williams rushed for 155 yards",
-          "Scored a rushing touchdown",
-          "Dallas completely dominated on the ground"
+          "Saquon Barkley reported his hamstring in great shape",
+          "The running back downplayed a minor back issue",
+          "He maintained high efficiency despite the loss"
         ],
-        "contexto": "During the Cowboys' 38-21 win over the Eagles in Week 7, Javonte Williams had a career night by rushing for 155 yards and capping off his stellar performance with a touchdown run.",
-        "fantasy": "Javonte Williams skyrockets in fantasy running back rankings, becoming a mandatory starter in any lineup configuration for Week 8.",
-        "equipo_impacto": "The Dallas ground game takes on a heavily dominant and physical role, taking pressure off the passing attack and opening up lanes.",
-        "action": "Lock Javonte Williams straight into your starting lineup as a premier running back."
+        "contexto": "During the Eagles' 38-21 loss to the Cowboys, star running back Saquon Barkley returned to the field to deliver an efficient performance. After the game, the player stated that his hamstring came out great and downplayed a lingering back issue, dismissing fears of a prolonged absence.",
+        "fantasy": "Fantastic news for fantasy managers holding Saquon Barkley on their rosters. Despite the loss, his high efficiency and the confirmation of his physical health ensure you can keep him as a pillar in your standard and PPR lineups for upcoming matchups.",
+        "equipo_impacto": "Philadelphia's ground attack breathes a sigh of relief knowing their primary weapon did not suffer severe setbacks following Monday night's divisional matchup.",
+        "accion": "Keep Saquon Barkley active in your fantasy starting lineup without physical worries."
       },
-      "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "DAL",
+      "etiqueta": "LESIÓN",
+      "impacto": "NEUTRO",
+      "equipo": "PHI",
       "equipos": [
-        "DAL",
-        "PHI"
+        "PHI",
+        "DAL"
       ],
       "jugadores": [
-        "7588"
+        "4866",
+        "3294"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "http://www.espn.com/nfl/recap?gameId=401873009",
-          "t": "Dak Prescott throws 3 TD passes, Javonte Williams runs for 155 yards as Cowboys beat Eagles 38-21"
-        },
+          "u": "https://www.espn.com/nfl/story/_/id/50294687/prsecott-cowboys-keep-pace-nfc-east-road-win-eagles",
+          "t": "Cowboys keep pace in NFC East, end 2-game slide with road win over Eagles"
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261027063002",
+      "fecha": "2026-10-27T06:30:38.614Z",
+      "semana": 8,
+      "titulo": "Jonah Coleman surge como prioridad absoluta en waivers",
+      "claves": [
+        "Jonah Coleman es señalado como objetivo principal",
+        "Atrae máxima atención en el mercado de transferencias",
+        "Representa una adición clave para la profundidad"
+      ],
+      "contexto": "El mercado de exentos y transferencias de la semana 8 coloca al corredor Jonah Coleman en la mira de todos los expertos. Los reportes recientes de la industria lo ubican como la principal prioridad a reclamar en las waivers, atrayendo un volumen masivo de interés por parte de los mánagers que buscan apuntalar sus plantillas ante las múltiples lesiones y semanas de descanso.",
+      "fantasy": "Una oportunidad de oro en ligas de alta competencia. Reclamar a Jonah Coleman en waivers te otorga un potencial de aportación inmediata en el backfield, ideal para formatos profundos donde la escasez de corredores titulares castiga severamente las aspiraciones al campeonato de fantasy.",
+      "equipo_impacto": "Su incorporación en las ligas de fantasy altera la jerarquía de los jugadores disponibles en el alambre, convirtiéndolo en el objetivo número uno de la semana.",
+      "accion": "Invierte una porción importante de tu presupuesto de waivers para asegurar a Jonah Coleman hoy mismo.",
+      "en": {
+        "titulo": "Jonah Coleman emerges as absolute waiver wire priority",
+        "claves": [
+          "Jonah Coleman is highlighted as a primary target",
+          "He draws maximum attention in the waiver market",
+          "He represents a key addition for roster depth"
+        ],
+        "contexto": "The week 8 waiver wire places running back Jonah Coleman squarely in the spotlight for all experts. Recent industry reports position him as the top priority claim, drawing a massive volume of interest from managers looking to shore up their rosters amid multiple injuries and bye weeks.",
+        "fantasy": "A golden opportunity in highly competitive leagues. Claiming Jonah Coleman off waivers gives you immediate backfield production potential, ideal for deep formats where starting running back scarcity severely punishes fantasy championship aspirations.",
+        "equipo_impacto": "His acquisition in fantasy leagues alters the hierarchy of available waiver wire players, making him the number one target of the week.",
+        "accion": "Invest a significant portion of your waiver budget to secure Jonah Coleman today."
+      },
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "FA",
+      "equipos": [
+        "FA",
+        "DEN"
+      ],
+      "jugadores": [
+        "13345"
+      ],
+      "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50292494/cowboys-eagles-mnf-javonte-williams-career-night",
-          "t": "Cowboys handle Eagles on Javonte Williams' career night"
+          "u": "https://www.espn.com/video/clip/_/id/50294359/why-jonah-coleman-priority-add-waiver-wire",
+          "t": "Why Jonah Coleman is a priority add off the waiver wire"
         }
       ],
       "menciona": []
@@ -234,15 +275,15 @@
     "NE",
     "13414",
     "13276",
-    "13150",
     "10213",
+    "13150",
     "TB",
     "9480",
     "11435",
     "6650",
-    "6130",
-    "11783",
     "13345",
+    "11783",
+    "6130",
     "13294",
     "8129",
     "3214",
@@ -263,17 +304,17 @@
     "NYJ",
     "5849",
     "9482",
+    "SF",
     "11581",
     "11624",
-    "SF",
     "9758",
     "11610",
-    "11625",
     "8132",
     "9502",
+    "11625",
     "9756",
-    "4037",
     "7002",
+    "4037",
     "96",
     "9500",
     "5012",
