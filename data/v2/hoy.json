@@ -1,6 +1,6 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-27T23:27:47.347Z",
+  "actualizado": "2026-10-27T23:59:41.162Z",
   "ultimaIA": "2026-10-27T16:19:25.927Z",
   "semana": 8,
   "semanaStats": 8,
@@ -14,49 +14,255 @@
   ],
   "noticias": [
     {
-      "id": "n20261027161900",
-      "fecha": "2026-10-27T16:19:25.927Z",
+      "id": "x20261027235900",
+      "fecha": "2026-10-27T23:59:41.162Z",
       "semana": 8,
-      "titulo": "Klint Kubiak ratifica a Kirk Cousins como titular",
+      "exclusivo": true,
+      "fuente": "2026-10-27T22:59:30+00:00",
+      "titulo": "Exclusivo FX: Los Colts desarman al equipo",
       "claves": [
-        "Kirk Cousins se mantiene firme en la titularidad",
-        "Fernando Mendoza esperará su oportunidad desde la banca",
-        "Sin controversia en la posición de quarterback en Las Vegas"
+        "DeForest Buckner llega a los 49ers"
       ],
-      "contexto": "El coordinador ofensivo Klint Kubiak despejó cualquier duda sobre los controles de la ofensiva al confirmar que no existe debate en la posición. A pesar de que Fernando Mendoza tendrá acción en algún momento de la temporada, Kirk Cousins se mantiene con el rol asegurado de titular sin cuestionamientos recientes.",
-      "fantasy": "Mantiene el valor de los receptores del equipo en ligas standard y PPR, asegurando estabilidad bajo el centro. Sin embargo, anula por completo cualquier opción de reclamo inmediato para Fernando Mendoza en formatos profundos de dynasty o redraft por ahora.",
-      "equipo_impacto": "Brinda certeza en el esquema ofensivo, permitiendo que el plan de juego semanal no sufra modificaciones drásticas en la planeación de los partidos de la semana 8.",
-      "accion": "Conserva a tus piezas ofensivas principales del equipo confiando en la estabilidad de la posición.",
       "en": {
-        "titulo": "Klint Kubiak commits to Kirk Cousins as starter",
+        "titulo": "Exclusivo FX: Colts Fire Sale Begins",
         "claves": [
-          "Kirk Cousins remains firmly in the starting role",
-          "Fernando Mendoza will wait for his opportunity",
-          "No controversy at quarterback in Las Vegas"
+          "DeForest Buckner traded to 49ers",
+          "Quenton Nelson headed to Seattle",
+          "Jonathan Taylor put on the block"
         ],
-        "contexto": "Offensive coordinator Klint Kubiak cleared up any doubts regarding the offense by confirming there is no debate at the quarterback position. Even though Fernando Mendoza will see action at some point this season, Kirk Cousins secures the starting role without recent questions.",
-        "fantasy": "Maintains the fantasy value of the team's pass-catchers in standard and PPR leagues while completely erasing immediate waiver interest in Fernando Mendoza for now.",
-        "equipo_impacto": "Provides certainty in the offensive scheme so the weekly game plan does not suffer drastic changes.",
-        "accion": "Keep your main offensive pieces relying on the stability at the position."
+        "contexto": "The Indianapolis Colts begin a full rebuild by trading key veterans. DeForest Buckner reinforces the 49ers and Quenton Nelson moves to Seattle. Meanwhile, star running back Jonathan Taylor is officially on the trade block, shaking up the fantasy landscape.",
+        "fantasy": "The loss of Quenton Nelson severely hurts Jonathan Taylor's fantasy floor in all formats. Sell high on Taylor immediately in standard and PPR leagues before his market value drops further.",
+        "equipo_impacto": "The offense loses its anchor on the offensive line with Quenton Nelson gone. Jonathan Taylor takes a massive hit, and the entire unit's weekly upside plummets.",
+        "accion": "Trade away Jonathan Taylor right now before his value completely crashes."
       },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "LV",
+      "etiqueta": "TRADE",
+      "impacto": "BAJA",
+      "equipo": "IND",
       "equipos": [
-        "LV"
+        "IND",
+        "SF",
+        "SEA"
       ],
       "jugadores": [
-        "1166",
-        "13269"
+        "6813"
       ],
-      "fuentes": [
-        {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/raiders-no-qb-controversy-klint-kubiak-commits-to-kirk-cousins/",
-          "t": "\n                        Raiders have &#039;no controversy&#039; at QB as Klint Kubiak commits to Kirk Cousins over Fernando Mendoza\n       "
-        }
+      "premium": true
+    },
+    {
+      "id": "x20261027235901",
+      "fecha": "2026-10-27T23:59:41.162Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-10-27T22:59:30+00:00",
+      "titulo": "Exclusivo FX: Opciones de waiver para la semana 8",
+      "claves": [
+        "Omar Cooper busca rol en los Jets"
       ],
-      "menciona": []
+      "en": {
+        "titulo": "Exclusivo FX: Week 8 Waiver Wire Targets",
+        "claves": [
+          "Omar Cooper joins the Jets",
+          "Calen Douglas signs with Dolphins",
+          "Devin Singletary option for Giants"
+        ],
+        "contexto": "Heading into week 8, our exclusive report highlights three key waiver wire additions. Omar Cooper lands with the Jets, Calen Douglas joins the Dolphins, and Devin Singletary emerges as an option for the Giants.",
+        "fantasy": "Devin Singletary provides a decent floor as depth for deep fantasy leagues. Wide receivers Omar Cooper and Calen Douglas remain deep stash lottery tickets on the waiver wire.",
+        "equipo_impacto": "These moves aim to inject much-needed offensive depth for teams looking to survive the bye weeks.",
+        "accion": "Claim Devin Singletary off waivers for running back depth."
+      },
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "NYG",
+      "equipos": [
+        "NYG",
+        "NYJ",
+        "MIA"
+      ],
+      "jugadores": [
+        "6130",
+        "13276"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261027235902",
+      "fecha": "2026-10-27T23:59:41.162Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-10-27T22:59:30+00:00",
+      "titulo": "Exclusivo FX: Top waivers de la temporada",
+      "claves": [
+        "Ollie Gordon y Emanuel Wilson en la pelea"
+      ],
+      "en": {
+        "titulo": "Exclusivo FX: Top Season-Long Waiver Targets",
+        "claves": [
+          "Ollie Gordon and Emanuel Wilson emerge",
+          "Tre Tucker and Luther Burden show upside",
+          "Keep tabs on these impact additions"
+        ],
+        "contexto": "Our exclusive report highlights the top season-long waiver targets. Running backs Ollie Gordon in Miami and Emanuel Wilson in Seattle, alongside wide receivers Tre Tucker in Las Vegas and Luther Burden in Chicago, lead the group.",
+        "fantasy": "Luther Burden and Tre Tucker offer great upside in deeper PPR formats and dynasty leagues. Ollie Gordon and Emanuel Wilson serve as premium handcuffs who could explode if starters miss time.",
+        "equipo_impacto": "These players bring young depth to their respective offenses and could carve out larger roles down the stretch.",
+        "accion": "Claim Luther Burden off waivers for long-term upside.",
+        "etiqueta": "WAIVER",
+        "impacto": "SUBE",
+        "equipo": "CHI",
+        "equipos": [
+          "CHI",
+          "MIA",
+          "LV",
+          "SEA"
+        ],
+        "jugadores": [
+          "Luther Burden",
+          "Ollie Gordon",
+          "Tre Tucker",
+          "Emanuel Wilson"
+        ]
+      },
+      "equipos": [],
+      "jugadores": [],
+      "premium": true
+    },
+    {
+      "id": "x20261027235903",
+      "fecha": "2026-10-27T23:59:41.162Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-10-27T22:59:30+00:00",
+      "titulo": "Exclusivo FX: Alerta de pánico en cinco franquicias",
+      "claves": [
+        "Colts y Eagles generan dudas"
+      ],
+      "en": {
+        "titulo": "Exclusivo FX: Panic Meter High for Five Teams",
+        "claves": [
+          "Colts and Eagles raise major flags",
+          "Washington, Raiders, and Panthers struggle",
+          "Time to evaluate drastic roster changes"
+        ],
+        "contexto": "Panic is setting in for five specific franchises according to our exclusive report. The current outlook for the Colts, Eagles, Washington, Raiders, and Panthers is causing major concerns for fantasy managers.",
+        "fantasy": "Avoid secondary players from these struggling teams and look for safer waiver alternatives. If you own stars from the Eagles or Colts, monitor their trade value closely.",
+        "equipo_impacto": "Instability across these organizations destroys the weekly consistency of their top offensive playmakers.",
+        "accion": "Evaluate trading away players from these panic-ridden offenses.",
+        "etiqueta": "TENDENCIA",
+        "impacto": "BAJA",
+        "equipo": "PHI",
+        "equipos": [
+          "IND",
+          "PHI",
+          "WAS",
+          "LV",
+          "CAR"
+        ],
+        "jugadores": []
+      },
+      "equipos": [],
+      "jugadores": [],
+      "premium": true
+    },
+    {
+      "id": "x20261027235904",
+      "fecha": "2026-10-27T23:59:41.162Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-10-27T22:59:30+00:00",
+      "titulo": "Exclusivo FX: Probabilidades de playoffs para Denver y Baltimore",
+      "claves": [
+        "Denver lidera con 86 por ciento"
+      ],
+      "en": {
+        "titulo": "Exclusivo FX: Playoff Odds for Denver and Baltimore",
+        "claves": [
+          "Denver leads strong at 86 percent",
+          "Baltimore sits at 43 percent",
+          "Critical outlook for the stretch run"
+        ],
+        "contexto": "Exclusive playoff projections place Denver with a strong 86 percent chance to make the postseason. Meanwhile, Baltimore holds a 43 percent probability, raising the urgency for their upcoming matchups.",
+        "fantasy": "Denver players are locked-in holds for all starting lineups due to high playoff security. Baltimore contributors require careful weekly evaluation given their narrower margin for error.",
+        "equipo_impacto": "Denver's stability guarantees consistent weekly usage, whereas Baltimore must fight tooth and nail.",
+        "accion": "Hold onto all key Denver starters in your fantasy lineup.",
+        "etiqueta": "TENDENCIA",
+        "impacto": "NEUTRO",
+        "equipo": "DEN",
+        "equipos": [
+          "DEN",
+          "BAL"
+        ],
+        "jugadores": []
+      },
+      "equipos": [],
+      "jugadores": [],
+      "premium": true
+    },
+    {
+      "id": "x20261027235905",
+      "fecha": "2026-10-27T23:59:41.162Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-10-27T22:59:30+00:00",
+      "titulo": "Exclusivo FX: Probabilidades de postemporada para Dallas y Atlanta",
+      "claves": [
+        "Dallas con 40 por ciento de opciones"
+      ],
+      "en": {
+        "titulo": "Exclusivo FX: Postseason Odds for Dallas and Atlanta",
+        "claves": [
+          "Dallas holds a 40 percent chance",
+          "Atlanta sits close at 38 percent",
+          "Tight conference race heats up"
+        ],
+        "contexto": "Exclusive metrics show Dallas with a 40 percent chance to reach the postseason. Atlanta is right behind with a 38 percent probability, highlighting a tight race for the final spots.",
+        "fantasy": "High urgency means Dallas and Atlanta will lean heavily on their passing games, boosting the weekly floor for primary wide receivers in PPR formats.",
+        "equipo_impacto": "The urgency to win forces both coaching staffs to take calculated risks in high-leverage situations.",
+        "accion": "Start your core pass-catchers from Dallas without hesitation.",
+        "etiqueta": "TENDENCIA",
+        "impacto": "NEUTRO",
+        "equipo": "DAL",
+        "equipos": [
+          "DAL",
+          "ATL"
+        ],
+        "jugadores": []
+      },
+      "equipos": [],
+      "jugadores": [],
+      "premium": true
+    },
+    {
+      "id": "x20261027235906",
+      "fecha": "2026-10-27T23:59:41.162Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-10-27T22:59:30+00:00",
+      "titulo": "Exclusivo FX: Pronósticos de playoffs para Houston y Los Angeles",
+      "claves": [
+        "Houston con 31 por ciento de probabilidad"
+      ],
+      "en": {
+        "titulo": "Exclusivo FX: Playoff Outlook for Houston and Los Angeles",
+        "claves": [
+          "Houston stands at 31 percent odds",
+          "Rams register 21 percent probability",
+          "Thin margin of error for both"
+        ],
+        "contexto": "Concluding the exclusive playoff probabilities, Houston holds a 31 percent chance to make the cut. The Los Angeles Rams sit at 21 percent, making their path to the postseason steep.",
+        "fantasy": "With little room for error, star players in Houston and the Rams could see heavy volume as teams chase wins down the stretch of the season.",
+        "equipo_impacto": "Pressure mounts on both coaching staffs, potentially leading to more aggressive playcalling in crucial moments.",
+        "accion": "Keep your core Houston starters locked into your lineup.",
+        "etiqueta": "TENDENCIA",
+        "impacto": "NEUTRO",
+        "equipo": "HOU",
+        "equipos": [
+          "HOU",
+          "LAR"
+        ],
+        "jugadores": []
+      },
+      "equipos": [],
+      "jugadores": [],
+      "premium": true
     }
   ],
   "lesionados": [
@@ -231,27 +437,27 @@
     "13345",
     "6130",
     "11783",
-    "13414",
     "TB",
+    "13414",
     "WAS",
     "10213",
+    "7561",
     "13276",
     "6650",
-    "7561",
     "13294",
     "3214",
     "1166",
     "12498",
-    "11637",
     "8136",
+    "11637",
     "7042",
     "5947",
     "12469"
   ],
   "soltados": [
     "CLE",
-    "10235",
     "3271",
+    "10235",
     "12718",
     "HOU",
     "13150",
@@ -264,8 +470,8 @@
     "9482",
     "8132",
     "9502",
-    "11624",
     "96",
+    "11624",
     "11655",
     "12545",
     "11610",

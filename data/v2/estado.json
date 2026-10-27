@@ -1,13 +1,16 @@
 {
-  "fecha": "2026-10-27T23:27:48.931Z",
+  "fecha": "2026-10-27T23:59:53.207Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 0 nuevos, 18 en total",
-    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[3.4s] ESPN: lesiones 799 · noticias 50",
-    "[4.0s] Auto-ajuste FX: {\"hl\":8,\"mEf\":30,\"mTd\":220,\"aPrev\":0.2} error 4.804 → 4.790",
-    "[4.0s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[4.6s] Fuentes nuevas: 35 · horario pico · toca IA: false",
-    "[5.6s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 307 · semana de juego 8 · IA usada hoy 36/40"
+    "[0.1s] YouTube: 0 nuevos, 18 en total",
+    "[0.8s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[2.3s] ESPN: lesiones 799 · noticias 50",
+    "[2.4s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[2.6s] Fuentes nuevas: 37 · horario pico · toca IA: false",
+    "[3.5s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[14.0s] IA OK con gemini-3.5-flash-lite",
+    "[14.0s] Exclusivas de Semana 8 y waivers % de playoffs → 7 notas",
+    "[14.4s] Bóveda Premium: 7 exclusivas guardadas",
+    "[14.4s] Listo: 7 noticias nuevas (7 exclusivas) · 452 jugadores · archivo 314 · semana de juego 8 · IA usada hoy 37/40"
   ]
 }
