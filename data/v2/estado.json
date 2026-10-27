@@ -1,12 +1,18 @@
 {
-  "fecha": "2026-10-27T11:33:27.354Z",
+  "fecha": "2026-10-27T12:13:04.712Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 15 nuevos, 18 en total",
-    "[0.9s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[2.1s] ESPN: lesiones 799 · noticias 50",
-    "[2.2s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[3.0s] Fuentes nuevas: 6 · horario normal · toca IA: false",
-    "[3.9s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 305 · semana de juego 8 · IA usada hoy 24/40"
+    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[1.9s] ESPN: lesiones 799 · noticias 50",
+    "[1.9s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[2.3s] Fuentes nuevas: 6 · horario normal · toca IA: true",
+    "[2.5s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[18.6s] IA OK con gemini-3.5-flash-lite",
+    "[18.6s] Descartada: Dak Prescott y Cowboys resucitan en Philadelphia → duplicada",
+    "[18.6s] Descartada: Jared Goff entra con fuerza al debate de MVP → duplicada",
+    "[18.6s] Descartada (sin fuente citada): Vikings asaltan la cima del ranking general",
+    "[18.6s] Noticias nuevas verificadas: 0",
+    "[19.4s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 305 · semana de juego 8 · IA usada hoy 25/40"
   ]
 }
