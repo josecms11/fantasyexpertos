@@ -2390,3 +2390,12 @@ section.block{padding-top:clamp(36px,4vw,64px)}
 .fxl-list .fxr{grid-template-columns:22px 32px minmax(0,1fr) 120px 72px!important;padding:8px 16px 8px 12px!important}
 .fxl-list .fxr-pts{min-width:0;overflow:visible;padding-right:2px}
 @media (max-width:620px){.fxl-div{display:none}.fxl-list .fxr{grid-template-columns:18px 26px minmax(0,1fr) 58px!important}}
+/* Partido: jugada a jugada a la misma altura que "¿Quién está sumando?", sin encimarse */
+.live-grid{align-items:stretch}
+.live-grid > .pbp{position:static!important;height:0;min-height:100%;display:flex;flex-direction:column;overflow:hidden}
+.live-grid > .pbp .pbp-list{flex:1;min-height:0;max-height:none;overflow-y:auto}
+@media (max-width:1060px){.live-grid > .pbp{height:auto;min-height:0}.live-grid > .pbp .pbp-list{max-height:520px}}
+.anot-h{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.linea-chip{font-size:13px;color:var(--soft);padding:6px 12px;border-radius:999px;background:var(--s3);border:1px solid var(--line2)}
+.anot-card .splist{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px}
+@media (max-width:820px){.anot-card .splist{grid-template-columns:1fr}}

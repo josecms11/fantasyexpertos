@@ -1179,9 +1179,9 @@ function pintaVivo(g, s) {
     return `<div class="tsr"><b class="${mejorA ? 'w' : ''}">${esc(sv[k] ?? '–')}</b><span><small>${t}</small><i style="--a:${Math.round(a / tot * 100)}%;--cv:${col(g.visita.ab)[0]};--cl:${col(g.local.ab)[0]}"></i></span><b class="${!mejorA && a !== b ? 'w' : ''}">${esc(sl[k] ?? '–')}</b></div>`; }).join('')}</div></div>` : '';
   const anot = (s.scoringPlays || []).slice().reverse().map(p => `<div class="sp">${helmet(AB[p.team && p.team.abbreviation] || (p.team && p.team.abbreviation), '', 26)}<span><small>${p.period && p.period.number ? 'Q' + p.period.number : ''} ${esc((p.clock && p.clock.displayValue) || '')} · ${esc(p.scoringType && p.scoringType.displayName || '')}</small>${esc(p.text || '')}</span><b class="n">${p.awayScore}-${p.homeScore}</b></div>`).join('');
   const pc = (s.pickcenter || [])[0];
-  const linea = pc && (pc.details || pc.overUnder) ? `<div class="card linea-mini"><h3>La línea antes del partido</h3><p>${pc.details ? `<b>${esc(pc.details)}</b>` : ''}${pc.overUnder ? ` · O/U <b>${esc(pc.overUnder)}</b>` : ''}</p></div>` : '';
+  const linea = pc && (pc.details || pc.overUnder) ? `<span class="linea-chip">${tx('Línea previa', 'Pregame line')}: ${pc.details ? `<b>${esc(pc.details)}</b>` : ''}${pc.overUnder ? ` · O/U <b>${esc(pc.overUnder)}</b>` : ''}</span>` : '';
   const ge = $('#g-eq'); if (ge) ge.innerHTML = statsHTML;
-  const gb = $('#gsum'); if (gb) gb.innerHTML = `<section class="block grid g2" style="padding-top:22px">${anot ? `<div class="card"><h3>Anotaciones</h3><div class="splist">${anot}</div></div>` : ''}${linea}</section>`;
+  const gb = $('#gsum'); if (gb) gb.innerHTML = `<section class="block" style="padding-top:22px">${anot || linea ? `<div class="card anot-card"><div class="anot-h"><h3>${tx('Anotaciones', 'Scoring plays')}</h3>${linea}</div>${anot ? `<div class="splist">${anot}</div>` : ''}</div>` : ''}</section>`;
 }
 // Mientras el partido está en vivo, todo se vuelve a pedir solo cada 15 segundos (sin recargar la página)
 function vigilaPartido(id) {
