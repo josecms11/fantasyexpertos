@@ -81,20 +81,21 @@
     }
   },
   "params": {
-    "fecha": "2026-10-26T22:53:26.641Z",
+    "fecha": "2026-10-27T10:57:42.630Z",
     "valores": {
       "hl": 8,
       "mEf": 30,
-      "mTd": 160,
+      "mTd": 220,
       "aPrev": 0.2
     },
-    "error": 4.806,
-    "errorAntes": 4.828,
+    "error": 4.797,
+    "errorAntes": 4.811,
     "semanas": [
       3,
       4,
       5,
-      6
+      6,
+      7
     ]
   }
 }
