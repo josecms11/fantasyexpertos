@@ -260,7 +260,7 @@ const infoFX = t => `<button type="button" class="fx-info" aria-label="${tx('¿Q
 let _tip = null;
 const muestraTip = btn => { const sp = btn.querySelector('span'); if (!sp) return; if (!_tip) { _tip = document.createElement('div'); _tip.className = 'fx-tip'; _tip.setAttribute('role', 'tooltip'); document.body.appendChild(_tip); }
   _tip.innerHTML = `<b>★ FX PRO</b>${sp.innerHTML}`; const r = btn.getBoundingClientRect(), w = Math.min(300, innerWidth * .86), x = Math.max(12, Math.min(innerWidth - w - 12, r.left + r.width / 2 - w / 2));
-  _tip.style.left = x + 'px'; _tip.classList.add('on'); const h = _tip.offsetHeight; _tip.style.top = (r.bottom + 10 + h < innerHeight ? r.bottom + 10 : Math.max(8, r.top - 10 - h)) + 'px'; };
+  const z = zoomBody(); _tip.style.left = x / z + 'px'; _tip.classList.add('on'); const h = _tip.offsetHeight * z; _tip.style.top = (r.bottom + 10 + h < innerHeight ? r.bottom + 10 : Math.max(8, r.top - 10 - h)) / z + 'px'; };
 const ocultaTip = () => { if (_tip) _tip.classList.remove('on'); };
 document.addEventListener('mouseover', e => { const b = e.target.closest && e.target.closest('.fx-info'); if (b) muestraTip(b); });
 document.addEventListener('mouseout', e => { if (e.target.closest && e.target.closest('.fx-info')) ocultaTip(); });
@@ -353,12 +353,14 @@ function enlaza(texto, ctx = []) {
 document.addEventListener('click', e => { const li = e.target.closest && e.target.closest('[data-ir]'); if (li && !e.target.closest('a')) location.hash = li.dataset.ir; });
 // Tarjeta flotante al pasar el cursor por un jugador enlazado (escritorio)
 let _hc = null;
+// En monitores grandes el sitio se amplía (zoom); las tarjetas flotantes se corrigen con ese factor
+const zoomBody = () => parseFloat(getComputedStyle(document.body).zoom) || 1;
 document.addEventListener('mouseover', e => { const a = e.target.closest && e.target.closest('a.ilink[data-j], a[data-hover-j]'); if (!a || !matchMedia('(hover:hover)').matches) return; const j = J[a.dataset.j || a.dataset.hoverJ]; if (!j) return;
   if (!_hc) { _hc = document.createElement('div'); _hc.className = 'hovercard'; document.body.appendChild(_hc); }
   const v = veredicto(j).v, ult = j.ult != null ? `${n1(j.ult)} <small>${tx('ÚLT', 'LAST')} S${j.ultW}</small>` : '–';
   _hc.innerHTML = `<div class="hc-h" style="${vars(j.team)}">${helmet(j.team, j.num, 40)}<span><b>${esc(j.n)}</b><small>${esc(j.pos)} · ${esc(EQUIPOS[j.team] || j.team)} · ${esc(rivalTxt(j.team))}</small></span></div>
     <div class="hc-d"><span><b class="n">${j.p != null ? n1(j.p) : '–'}</b><small>${tx('PROY FX', 'FX PROJ')}</small></span><span><b class="n">${ult}</b></span><span><b class="n">${n1(j.prom)}</b><small>${tx('PROM', 'AVG')}</small></span>${fxPill(j)}</div><p>${tx('Clic para ver su ficha completa', 'Click for full profile')} ›</p>`;
-  const nm = a.querySelector('b') || a, r = nm.getBoundingClientRect(), x = Math.min(innerWidth - 300, Math.max(12, r.left)), abajo = r.bottom + 190 < innerHeight; _hc.style.left = x + 'px'; _hc.style.top = (abajo ? r.bottom + 8 : r.top - 8 - (_hc.offsetHeight || 170)) + 'px'; _hc.classList.add('on');
+  const nm = a.querySelector('b') || a, r = nm.getBoundingClientRect(), x = Math.min(innerWidth - 300, Math.max(12, r.left)), abajo = r.bottom + 190 < innerHeight; const z = zoomBody(); _hc.style.left = x / z + 'px'; _hc.style.top = (abajo ? r.bottom + 8 : r.top - 8 - (_hc.offsetHeight || 170) * z) / z + 'px'; _hc.classList.add('on');
 });
 document.addEventListener('mouseout', e => { if (_hc && e.target.closest && e.target.closest('a.ilink[data-j], a[data-hover-j]')) _hc.classList.remove('on'); });
 addEventListener('hashchange', () => { if (_hc) _hc.classList.remove('on'); });
