@@ -1107,27 +1107,32 @@ const lineaStats = r => { const x = r.x, t = [];
   if (x.fl) t.push(`${x.fl} FUM`);
   return t.join(' · '); };
 const FXPREV = {}, ABIERTOS = new Set();
-let FXFILTRO = 'todos', _vivoT = null;
+let FXFILTRO = 'todos', FXPOS = 'todas', FXMAS = false, _fxUlt = null, _vivoT = null;
 function pintaFantasy(g, s) {
   const box = $('#fxlive'); if (!box) return;
   if (FXFILTRO !== 'todos' && FXFILTRO !== g.visita.ab && FXFILTRO !== g.local.ab) FXFILTRO = 'todos';
-  const L = fantasyBox(s, g).sort((a, b) => b.f[FMT] - a.f[FMT]), prev = FXPREV[g.id] || {}, nuevo = {};
-  const tot = ab => L.filter(r => r.ab === ab).reduce((t, r) => t + r.f[FMT], 0);
+  _fxUlt = { g, s };
+  const T = fantasyBox(s, g).sort((a, b) => b.f[FMT] - a.f[FMT]), prev = FXPREV[g.id] || {}, nuevo = {};
+  const grupo = p => p === 'K' || p === 'DEF' || p === 'DST' ? 'K/DEF' : p;
+  const F = T.filter(r => (FXFILTRO === 'todos' || r.ab === FXFILTRO) && (FXPOS === 'todas' || grupo(r.pos) === FXPOS)), L = FXMAS ? F : F.slice(0, 6);
+  const tot = ab => T.filter(r => r.ab === ab).reduce((t, r) => t + r.f[FMT], 0);
   const fila = (r, i) => { const pts = r.f[FMT], antes = prev[r.id], sube = antes != null && pts > antes + .05, baja = antes != null && pts < antes - .05; nuevo[r.id] = pts;
     const pr = r.proy ? r.proy[FMT] : null, pct = pr ? Math.min(100, Math.round(pts / pr * 100)) : null, supera = pr != null && pts > pr;
     const inner = `<i class="fxr-rk">${i + 1}</i>${helmet(r.ab, r.num || (r.j && r.j.num) || '', 34)}
       <span class="fxr-who"><b>${esc(r.n)}</b><small><em class="pos">${esc(r.pos)}</em> ${esc(r.ab || '')}${r.j && estatus(r.j) !== 'Sano' ? ' · ' + esc(estatus(r.j)) : ''}</small><span class="fxr-st">${esc(lineaStats(r))}</span>
         ${pr != null ? `<span class="fxr-bar ${supera ? 'top' : ''}"><i style="width:${pct}%"></i></span><span class="fxr-pr">${supera ? '<b>Superó su proyección</b> · ' : ''}proy ${n1(pr)}</span>` : ''}</span>
       <span class="fxr-pts"><b class="n">${n1(pts)}</b><small>PTS ${FMTS[FMT]}</small>${sube ? `<em class="fx-delta">+${n1(pts - antes)}</em>` : baja ? `<em class="fx-delta neg">${n1(pts - antes)}</em>` : ''}</span>`;
-    const oc = FXFILTRO !== 'todos' && r.ab !== FXFILTRO ? ' hidden' : '';
+    const oc = '';
     return r.j ? `<a class="fxr ${sube ? 'sube' : ''} ${baja ? 'baja' : ''} ${supera ? 'supera' : ''}"${oc} data-eq="${esc(r.ab)}" href="#/jugador/${r.j.id}">${inner}</a>` : `<div class="fxr ${sube ? 'sube' : ''} ${baja ? 'baja' : ''}"${oc} data-eq="${esc(r.ab)}">${inner}</div>`; };
   const filas = L.map(fila).join('');
   FXPREV[g.id] = nuevo;
   const chip = (k, t) => `<button type="button" class="chip ${FXFILTRO === k ? 'on' : ''}" data-fxf="${k}">${t}</button>`;
   box.innerHTML = `<div class="fxl-h"><div><span class="fxl-tag">${fxLogo(18)} FANTASY ${g.estado === 'in' ? 'EN VIVO' : 'FINAL'}</span><h2>¿Quién está sumando?</h2><p class="sub">Puntos ${FMTS[FMT]} con el modelo FX, jugada por jugada${g.estado === 'in' ? ' · se actualiza cada 15 s' : ''}.</p></div>
     <div class="fxl-tot" style="--cv:${col(g.visita.ab)[0]};--cl:${col(g.local.ab)[0]}"><span>${helmet(g.visita.ab, '', 26)}<b>${g.visita.ab}</b><em class="n">${n1(tot(g.visita.ab))}</em></span><small>PTS FX</small><span><em class="n">${n1(tot(g.local.ab))}</em><b>${g.local.ab}</b>${helmet(g.local.ab, '', 26, true)}</span></div></div>
-    <div class="chips fxl-f">${chip('todos', 'Todos')}${chip(g.visita.ab, g.visita.ab)}${chip(g.local.ab, g.local.ab)}</div>
-    <div class="fxl-list" data-filtro="${esc(FXFILTRO)}">${filas || '<div class="empty">Todavía no hay estadísticas de jugadores.</div>'}</div>`;
+    <div class="fxl-fs"><div class="chips fxl-f">${chip('todos', tx('Ambos', 'Both'))}${chip(g.visita.ab, g.visita.ab)}${chip(g.local.ab, g.local.ab)}</div>
+      <div class="chips fxl-f pos">${['todas', 'QB', 'RB', 'WR', 'TE', 'K/DEF'].map(p => `<button type="button" class="chip ${FXPOS === p ? 'on' : ''}" data-fxp="${p}">${p === 'todas' ? tx('Todas', 'All') : p}</button>`).join('')}</div></div>
+    <div class="fxl-list" data-filtro="${esc(FXFILTRO)}">${filas || `<div class="empty">${tx('Sin jugadores con estadísticas en este filtro.', 'No players with stats in this filter.')}</div>`}</div>
+    ${F.length > 6 ? `<button type="button" class="btn ghost sm fxl-mas" data-fxmas>${FXMAS ? tx('Ver menos', 'Show less') : tx(`Ver los ${F.length}`, `See all ${F.length}`)}</button>` : ''}`;
 }
 // Puntos FX que dejó cada jugada (pase, carrera, TD, intercepción), a partir del texto oficial de la jugada
 function fxJugada(p, mapa) {
@@ -1465,7 +1470,8 @@ function menu(on, quieto) {
 }
 // El menú funciona desde el primer momento, aunque los datos sigan cargando
 document.addEventListener('click', e => { const t = e.target.closest && e.target.closest('[data-lt]'); if (!t) return; const lg = $('.live-grid'); if (lg) { lg.classList.toggle('ver-fx', t.dataset.lt === 'fx'); lg.classList.toggle('ver-pbp', t.dataset.lt === 'pbp'); } document.querySelectorAll('[data-lt]').forEach(b => b.classList.toggle('on', b === t)); });
-document.addEventListener('click', e => { const f = e.target.closest && e.target.closest('[data-fxf]'); if (f) { FXFILTRO = f.dataset.fxf; document.querySelectorAll('.fxl-list .fxr').forEach(r => { r.hidden = FXFILTRO !== 'todos' && r.dataset.eq !== FXFILTRO; }); document.querySelectorAll('[data-fxf]').forEach(b => b.classList.toggle('on', b === f)); } });
+document.addEventListener('click', e => { const t = e.target.closest && e.target.closest('[data-fxf],[data-fxp],[data-fxmas]'); if (!t || !_fxUlt) return;
+  if (t.dataset.fxf) FXFILTRO = t.dataset.fxf; else if (t.dataset.fxp) FXPOS = t.dataset.fxp; else FXMAS = !FXMAS; if (!t.hasAttribute('data-fxmas')) FXMAS = false; pintaFantasy(_fxUlt.g, _fxUlt.s); });
 document.addEventListener('click', e => { const t = e.target.closest && e.target.closest('#menu-btn,#menu-x,#menu-bg'); if (t) { e.preventDefault(); menu(t.id === 'menu-btn'); } });
 addEventListener('hashchange', () => { const L = $('.links'); if (L && L.classList.contains('open')) menu(false, true); });
 let _rutaPrev = null;
