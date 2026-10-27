@@ -2358,3 +2358,5 @@ section.block{padding-top:clamp(36px,4vw,64px)}
 @media (max-width:900px){.ss-grid{grid-template-columns:1fr 1fr}}@media (max-width:520px){.ss-grid{grid-template-columns:1fr}}
 .wr-sec .card::before,.card .card::before,.pv-f.card::before{display:none}
 .fx-tech.inl{vertical-align:middle!important;position:relative;top:-.12em;line-height:1!important}
+.pk-s i .stars{display:inline-flex;white-space:nowrap;font-size:12px;padding:0;background:none;gap:1px}.pk-s i .stars i{font-size:12px;display:inline;padding:0;background:none}.pk-s span span{padding:0;background:none}
+.pk-s span.stars{display:inline-flex;flex-direction:row;align-items:center}

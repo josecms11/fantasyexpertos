@@ -462,8 +462,8 @@ const tickerItems = () => todasNoticias().slice(0, 14).map(n => `<a href="#/noti
 function duelo() {
   const d = D.duelo || {};
   const find = name => P.find(j => j.n && j.n.toLowerCase() === String(name || '').toLowerCase());
-  let a = find(d.a), b = find(d.b);
-  if (!a || !b || a.pos !== b.pos || !juega(a) || !juega(b)) { const pos = (a && a.pos) || 'WR', L = P.filter(j => j.pos === pos && juega(j)).sort((x, y) => y.pEst - x.pEst), k = Math.min(L.length - 2, CORTE[pos] ? CORTE[pos][0] - 2 : 10); a = L[k]; b = L[k + 1]; }
+  let a = find(d.a), b = find(d.b), propio = false;
+  if (!a || !b || a.pos !== b.pos || !juega(a) || !juega(b)) { const pos = (a && a.pos) || 'WR', L = P.filter(j => j.pos === pos && juega(j)).sort((x, y) => y.pEst - x.pEst), k = Math.min(L.length - 2, CORTE[pos] ? CORTE[pos][0] - 2 : 10); a = L[k]; b = L[k + 1]; propio = true; }
   if (!a || !b) return '';
   const fx = a.pEst >= b.pEst ? a : b;
   const lado = (j, k) => { const r = rivalDe(j.team), u3 = (j.temp || []).filter(v => v != null).slice(-3);
@@ -473,7 +473,11 @@ function duelo() {
   const nombres = P.filter(j => j.team !== 'FA').sort((x, y) => y.pEst - x.pEst).slice(0, 320);
   return `<section class="block" id="startsit" data-chip="1 VS 1"><div class="head"><div><h2>${fxLogo(26)} Duelo del día: ¿a quién arrancas?</h2><p class="hsub">Dos ${a.pos} con proyección parecida y un solo lugar en tu alineación. Elige, y te mostramos el veredicto de los expertos y el porqué.</p></div></div>
     <div class="duelo" data-fx="${fx === a ? 'a' : 'b'}">${lado(a, 'a')}<span class="vs">VS</span>${lado(b, 'b')}</div>
-    <div class="verdict" id="verdict"><b>${fxLogo(20)} FANTASY EXPERTOS ARRANCA A ${esc(fx.n).toUpperCase()}</b><p>${esc(d.veredicto && find(d.a) && find(d.b) ? d.veredicto : `Proyecta ${n1(fx.p ?? fx.pEst)} pts contra ${n1((fx === a ? b : a).p ?? (fx === a ? b : a).pEst)} y tiene ${veredicto(fx).e && veredicto(fx).e.n >= 3 ? 'el mejor matchup' : 'más volumen'} esta semana.`)}</p>
+    <div class="verdict" id="verdict"><b>${fxLogo(20)} ${tx('FANTASY EXPERTOS ARRANCA A', 'FANTASY EXPERTS STARTS')} ${esc(fx.n).toUpperCase()}</b><p>${(() => { const o = fx === a ? b : a, ef = estrellas((rivalDe(fx.team) || {}).opp, fx.pos), eo = estrellas((rivalDe(o.team) || {}).opp, o.pos), u = j => { const x = (j.temp || []).filter(v => v != null).slice(-3); return x.length ? x.reduce((m, y) => m + y, 0) / x.length : 0; };
+      const ia = !propio && d.veredicto && new RegExp(apellido(fx.n), 'i').test(String(d.veredicto).split(/[.(]/)[0]);
+      if (ia) return esc(d.veredicto);
+      const por = (ef && eo && ef.n > eo.n) ? tx('tiene el mejor matchup', 'has the better matchup') : u(fx) > u(o) ? tx('viene en mejor forma', 'is in better form') : tx('tiene más volumen esperado', 'has more expected volume');
+      return esc(tx(`${fx.n} proyecta ${n1(fx.p ?? fx.pEst)} pts contra ${n1(o.p ?? o.pEst)} de ${o.n} y ${por} esta semana.`, `${fx.n} projects ${n1(fx.p ?? fx.pEst)} pts vs ${n1(o.p ?? o.pEst)} for ${o.n} and ${por} this week.`)); })()}</p>
       <span class="actions"><a class="btn" href="#/comparar/${a.id}/${b.id}">Ver comparación completa</a></span></div>
     <form class="armaduelo" id="armaduelo" autocomplete="off"><b>Arma tu propio duelo</b><input list="fx-jug" name="a" placeholder="Jugador 1" aria-label="Jugador 1"><span>vs</span><input list="fx-jug" name="b" placeholder="Jugador 2" aria-label="Jugador 2"><button class="btn sm" type="submit">Comparar</button>
       <datalist id="fx-jug">${nombres.map(j => `<option value="${esc(j.n)}">${esc(j.pos + ' · ' + j.team)}</option>`).join('')}</datalist></form>
