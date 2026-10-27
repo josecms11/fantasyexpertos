@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-27T13:04:04.444Z",
-  "ultimaIA": "2026-10-27T10:16:18.202Z",
+  "actualizado": "2026-10-27T13:53:56.530Z",
+  "ultimaIA": "2026-10-27T13:53:56.530Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,45 +14,45 @@
   ],
   "noticias": [
     {
-      "id": "n20261027101600",
-      "fecha": "2026-10-27T10:16:18.202Z",
+      "id": "n20261027135300",
+      "fecha": "2026-10-27T13:53:56.530Z",
       "semana": 8,
-      "titulo": "Josh Allen comanda la zona roja histórica en fantasy",
+      "titulo": "Jaxon Smith-Njigba apunta a historia en la posición",
       "claves": [
-        "Josh Allen domina acarreos en la línea de gol",
-        "El mariscal proyecta 22.2 pts para la semana 8",
-        "Su eficiencia aumenta su valor como QB 1"
+        "El receptor muestra nivel histórico en la temporada",
+        "Sevilla domina con exhibición contundente",
+        "Proyección alta para la semana 8"
       ],
-      "contexto": "Analistas de ESPN destacan la efectividad inigualable de Josh Allen al acarrear el ovoide desde la yarda 1 o 2 del campo, superando a más de 150 jugadores en la historia desde 1977 con al menos 30 intentos en esa zona.",
-      "fantasy": "El modelo FX proyecta 22.2 pts para Josh Allen de cara a la semana 8. Su capacidad para concretar anotaciones por tierra lo mantiene como el mariscal de campo más confiable y una pieza clave para asegurar la victoria en cualquier formato de liga.",
-      "equipo_impacto": "La presencia de Allen en la ofensiva de Buffalo asegura constantes oportunidades de anotación, elevando el potencial ofensivo del equipo en momentos críticos de los partidos.",
-      "accion": "Asegúrate de alinear a Josh Allen como tu mariscal indiscutible en la semana 8.",
+      "contexto": "Tras las acciones de la semana 7, el desempeño del receptor abierto llama poderosamente la atención de los analistas. Su impacto en el campo lo coloca en la conversación para romper marcas históricas en su posición dentro de la NFL, consolidándose como una pieza ofensiva de élite absoluta.",
+      "fantasy": "Su impacto en fantasy es masivo, proyectándose para 23 pts en formato PPR para la semana 8. Debe ser alineado sin dudar como tu receptor principal en cualquier liga y formato disponible.",
+      "equipo_impacto": "Su gran nivel impulsa por completo el ataque aéreo del equipo, convirtiéndolo en la referencia absoluta para cualquier ofensiva que busque consistencia semanal.",
+      "accion": "Asegúrate de mantenerlo en tu alineación titular sin excepciones de cara a la semana 8.",
       "en": {
-        "titulo": "Josh Allen commands historical red zone value",
+        "titulo": "Jaxon Smith-Njigba targets historical WR milestone",
         "claves": [
-          "Josh Allen dominates goal line rushing efficiency",
-          "The quarterback projects for 22.2 pts in week 8",
-          "His scoring upside solidifies his elite QB 1 status"
+          "Receiver shows elite historical level",
+          "Seahawks dominate with strong display",
+          "High projection for week 8"
         ],
-        "contexto": "ESPN analysts highlight Josh Allen's unmatched efficiency running the ball from the 1 or 2 yard line, outperforming over 150 players in history since 1977 with at least 30 attempts in that area.",
-        "fantasy": "The FX model projects 22.2 pts for Josh Allen ahead of week 8. His knack for converting rushing touchdowns keeps him as the most reliable quarterback and a vital piece to secure victories in any league format.",
-        "equipo_impacto": "Allen's presence in Buffalo's offense guarantees consistent scoring opportunities, elevating the team's overall offensive potential during critical moments of games.",
-        "accion": "Make sure to start Josh Allen as your unquestioned quarterback in week 8."
+        "contexto": "Following week 7 action, the wide receiver's performance is catching analysts' attention. His impact on the field puts him in the conversation to break historical records at his position in the NFL, cementing himself as an elite offensive piece.",
+        "fantasy": "His fantasy impact is massive, projected for 23 PPR points in week 8. He must be locked in as your clear WR1 across all leagues and formats.",
+        "equipo_impacto": "His high level completely boosts the team's aerial attack, making him the absolute reference for any offense seeking weekly consistency.",
+        "accion": "Make sure to keep him in your starting lineup without exceptions heading into week 8."
       },
       "etiqueta": "TENDENCIA",
       "impacto": "SUBE",
-      "equipo": "BUF",
+      "equipo": "SEA",
       "equipos": [
-        "BUF"
+        "SEA"
       ],
       "jugadores": [
-        "4984"
+        "9488"
       ],
       "fuentes": [
         {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50288152/bills-josh-allen-greatest-td-rusher",
-          "t": "Is Bills' Josh Allen the best goal line rusher ever?"
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/nfl-week-7-lessons-seahawks-super-bowl-jaxson-smith-njigba/",
+          "t": "\n                        Lessons from NFL Week 7: Jaxon Smith-Njigba could make WR history, Seahawks look like champs again\n                "
         }
       ],
       "menciona": []
@@ -230,27 +230,26 @@
     "13414",
     "13276",
     "TB",
-    "10213",
     "13345",
+    "10213",
     "11783",
     "6650",
+    "WAS",
     "3214",
     "6130",
-    "WAS",
     "8129",
     "13294",
-    "13150",
-    "11435",
     "1166",
+    "11435",
     "12498",
-    "7561",
-    "7553",
-    "11637"
+    "13150",
+    "11637",
+    "7553"
   ],
   "soltados": [
     "CLE",
-    "12718",
     "3271",
+    "12718",
     "10235",
     "HOU",
     "13150",
@@ -269,9 +268,10 @@
     "11625",
     "7002",
     "12545",
-    "4037",
     "5012",
-    "9756"
+    "4037",
+    "9756",
+    "13545"
   ],
   "duelo": {
     "a": "Josh Allen",
