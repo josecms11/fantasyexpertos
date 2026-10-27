@@ -1118,10 +1118,10 @@ function pintaFantasy(g, s) {
   const tot = ab => T.filter(r => r.ab === ab).reduce((t, r) => t + r.f[FMT], 0);
   const fila = (r, i) => { const pts = r.f[FMT], antes = prev[r.id], sube = antes != null && pts > antes + .05, baja = antes != null && pts < antes - .05; nuevo[r.id] = pts;
     const pr = r.proy ? r.proy[FMT] : null, pct = pr ? Math.min(100, Math.round(pts / pr * 100)) : null, supera = pr != null && pts > pr;
-    const inner = `<i class="fxr-rk">${i + 1}</i>${helmet(r.ab, r.num || (r.j && r.j.num) || '', 34)}
-      <span class="fxr-who"><b>${esc(r.n)}</b><small><em class="pos">${esc(r.pos)}</em> ${esc(r.ab || '')}${r.j && estatus(r.j) !== 'Sano' ? ' · ' + esc(estatus(r.j)) : ''}</small><span class="fxr-st">${esc(lineaStats(r))}</span>
-        ${pr != null ? `<span class="fxr-bar ${supera ? 'top' : ''}"><i style="width:${pct}%"></i></span><span class="fxr-pr">${supera ? '<b>Superó su proyección</b> · ' : ''}proy ${n1(pr)}</span>` : ''}</span>
-      <span class="fxr-pts"><b class="n">${n1(pts)}</b><small>PTS ${FMTS[FMT]}</small>${sube ? `<em class="fx-delta">+${n1(pts - antes)}</em>` : baja ? `<em class="fx-delta neg">${n1(pts - antes)}</em>` : ''}</span>`;
+    const inner = `<i class="fxr-rk">${i + 1}</i>${helmet(r.ab, r.num || (r.j && r.j.num) || '', 28)}
+      <span class="fxr-who"><b>${esc(r.n)} <em class="pos">${esc(r.pos)}</em> <small>${esc(r.ab || '')}</small></b><span class="fxr-st">${esc(lineaStats(r))}</span></span>
+      ${pr != null ? `<span class="fxr-vs ${supera ? 'top' : ''}" title="${tx('Proyección', 'Projection')} ${n1(pr)}"><i style="width:${pct}%"></i><small>${supera ? '▲ ' : ''}${tx('proy', 'proj')} ${n1(pr)}</small></span>` : '<span></span>'}
+      <span class="fxr-pts"><b class="n">${n1(pts)}</b>${sube ? `<em class="fx-delta">+${n1(pts - antes)}</em>` : baja ? `<em class="fx-delta neg">${n1(pts - antes)}</em>` : ''}</span>`;
     const oc = '';
     return r.j ? `<a class="fxr ${sube ? 'sube' : ''} ${baja ? 'baja' : ''} ${supera ? 'supera' : ''}"${oc} data-eq="${esc(r.ab)}" href="#/jugador/${r.j.id}">${inner}</a>` : `<div class="fxr ${sube ? 'sube' : ''} ${baja ? 'baja' : ''}"${oc} data-eq="${esc(r.ab)}">${inner}</div>`; };
   const filas = L.map(fila).join('');
