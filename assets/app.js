@@ -314,6 +314,7 @@ function plusCalendario(t) {
   return proBloque(tx('Calendario FX resto de temporada', 'FX rest-of-season schedule'), tx('La dificultad promedio de los rivales que le quedan a este equipo, por posición, según los puntos que cada defensa permite. Clave para trades y playoffs de fantasy.', 'The average difficulty of this team\'s remaining opponents, by position, based on points each defense allows. Key for trades and fantasy playoffs.'), html, tx('Compra y vende jugadores sabiendo qué rivales les quedan', 'Buy and sell players knowing who they face next'));
 }
 function plusMiLiga() {
+  if (LIGA && !esPremium()) return '';
   if (!LIGA || !(LIGA.jugadores || []).length) return `<section class="block plusfx" data-chip="★ ${tx('VENTAJA FX', 'FX EDGE')}"><a class="card plus-cta neon" href="#/premium"><b>${tx('Ve solo lo que afecta a TU equipo', 'See only what affects YOUR team')}</b><span>${tx('Con PRO conectas tu liga y marcamos cada noticia que toca a tus jugadores, para que no se te pase nada.', 'With PRO you connect your league and we flag every story that touches your players, so you never miss one.')}</span><em>${tx('Conectar mi liga', 'Connect my league')} ›</em></a></section>`;
   const mios = new Set(LIGA.jugadores), N = todasNoticias().filter(n => [...(n.jugadores || []), ...(n.menciona || [])].some(id => mios.has(id))).slice(0, 6);
   return N.length ? `<section class="block plusfx" data-chip="${tx('TU LIGA', 'YOUR LEAGUE')} · ${N.length}"><div class="head"><div><h2>${tx('Afecta a tu equipo', 'Affects your team')}</h2><p class="hsub">${esc(LIGA.nombre || '')}</p></div><a class="all" href="#/premium">${tx('Mi cuarto de guerra', 'My war room')} ›</a></div><div class="news stagger">${N.map(n => newsCard(n)).join('')}</div></section>` : '';
@@ -1218,7 +1219,7 @@ const cargaSB = () => _sbCarga || (_sbCarga = new Promise((ok, no) => {
   const s = document.createElement('script'); s.src = 'assets/vendor/supabase-2.117.2.js';
   s.onload = () => {
     SB = window.supabase.createClient(SB_URL, SB_KEY, { auth: { flowType: 'pkce', detectSessionInUrl: true, persistSession: true } });
-    SB.auth.onAuthStateChange((ev, ses) => { if (ev === 'PASSWORD_RECOVERY') { RECUPERA = true; if (!/^#\/cuenta/.test(location.hash)) location.hash = '#/cuenta'; } const antes = YO && YO.id; YO = ses ? ses.user : null; pintaCuentaBtn(); if ((YO && YO.id) !== antes) setTimeout(cargaPerfil, 0); });
+    SB.auth.onAuthStateChange((ev, ses) => { if (ev === 'PASSWORD_RECOVERY') { RECUPERA = true; if (!/^#\/cuenta/.test(location.hash)) location.hash = '#/cuenta'; } const antes = YO && YO.id; YO = ses ? ses.user : null; ligaDeUsuario(); pintaCuentaBtn(); if ((YO && YO.id) !== antes) setTimeout(cargaPerfil, 0); });
     ok(SB);
   };
   s.onerror = () => { _sbCarga = null; no(new Error('sin conexión')); };
@@ -1489,10 +1490,15 @@ let _rutaPrev = null;
 const LIGA_K = 'fx-liga';
 let LIGA = (() => { try { return JSON.parse(localStorage.getItem(LIGA_K) || 'null'); } catch (e) { return null; } })();
 let _ligaSync = 0, _ligaOpc = null;
-const guardaLiga = () => { try { LIGA ? localStorage.setItem(LIGA_K, JSON.stringify(LIGA)) : localStorage.removeItem(LIGA_K); } catch (e) {}
+const guardaLiga = () => { if (LIGA && YO) LIGA.uidFx = YO.id; try { LIGA ? localStorage.setItem(LIGA_K, JSON.stringify(LIGA)) : localStorage.removeItem(LIGA_K); } catch (e) {}
   // También en la cuenta: la liga te sigue en cualquier dispositivo y no se vuelve a pedir
   if (SB && YO) { const c = LIGA ? { fuente: LIGA.fuente, lid: LIGA.lid || null, uid: LIGA.uid || null, fmt: LIGA.fmt, nombre: LIGA.nombre, jugadores: LIGA.fuente === 'manual' ? LIGA.jugadores : undefined, fijos: LIGA.fijos || {} } : null, k = JSON.stringify(c);
     if (k !== guardaLiga._u) { guardaLiga._u = k; SB.auth.updateUser({ data: { fx_liga: c } }).catch(() => {}); } } };
+// La liga guardada en este navegador pertenece a una cuenta: si entra otra cuenta (o nadie), no se muestra
+function ligaDeUsuario() {
+  const yo = YO && YO.id;
+  if (LIGA && (!LIGA.uidFx || LIGA.uidFx !== yo)) { LIGA = null; _ligaOpc = null; try { localStorage.removeItem(LIGA_K); } catch (e) {} if (/^#\/(premium|noticias|tendencias|trade)/.test(location.hash) && typeof repinta === 'function') setTimeout(repinta, 0); }
+}
 function restauraLiga() {
   const c = YO && YO.user_metadata && YO.user_metadata.fx_liga; if (!c || (LIGA && LIGA.jugadores && LIGA.jugadores.length)) return;
   guardaLiga._u = JSON.stringify(c);
@@ -1993,6 +1999,7 @@ Promise.all([cargar('hoy.json', null), cargar('jugadores.json', []), cargar('arc
   aplicaFormato();
   document.querySelectorAll('.fmt button').forEach((b, i) => b.onclick = () => { FMT = i; try { localStorage.setItem('fx-fmt', i); } catch (e) {} aplicaFormato(); router(); });
   const pie = $('#pie-redes'); if (pie) pie.innerHTML = `<div id="pie-news"></div><div class="follow"><div><h3>Síguenos</h3><p>Tips diarios, el podcast y los videos de cada semana.</p></div>${grupoRedes()}</div>`;
+  if (LIGA && !ls(SB_LLAVE) && location.hostname !== 'localhost') { LIGA = null; try { localStorage.removeItem(LIGA_K); } catch (e) {} } // sin sesión no hay liga de nadie
   pintaCuentaBtn(); if (ls(SB_LLAVE) || /[?&]code=/.test(location.search)) cargaSB().catch(() => {});
   const fu = $('#fuentes'); if (fu) fu.textContent = tx('Datos procesados por el FX Tech Analyzer.', 'Data processed by the FX Tech Analyzer.');
   buscador(); cargaPartidos();
