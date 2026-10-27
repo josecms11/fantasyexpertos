@@ -1,16 +1,15 @@
 {
-  "fecha": "2026-10-27T09:32:42.232Z",
+  "fecha": "2026-10-27T10:16:22.583Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.4s] YouTube: 15 nuevos, 18 en total",
-    "[1.2s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[2.8s] ESPN: lesiones 799 · noticias 50",
-    "[2.8s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[3.7s] Fuentes nuevas: 1 · horario normal · toca IA: true",
-    "[3.8s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[6.5s] IA OK con gemini-3.5-flash-lite",
-    "[6.5s] Descartada: San Francisco evalúa opciones tras pausa obligatoria → duplicada",
-    "[6.6s] Noticias nuevas verificadas: 0",
-    "[7.8s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 304 · semana de juego 8 · IA usada hoy 23/40"
+    "[0.2s] YouTube: 15 nuevos, 18 en total",
+    "[0.9s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[2.9s] ESPN: lesiones 799 · noticias 50",
+    "[2.9s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[3.8s] Fuentes nuevas: 3 · horario normal · toca IA: true",
+    "[3.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[6.3s] IA OK con gemini-3.5-flash-lite",
+    "[6.3s] Noticias nuevas verificadas: 1",
+    "[7.3s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 305 · semana de juego 8 · IA usada hoy 24/40"
   ]
 }

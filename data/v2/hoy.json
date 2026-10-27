@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-27T09:32:37.297Z",
-  "ultimaIA": "2026-10-27T06:30:38.614Z",
+  "actualizado": "2026-10-27T10:16:18.202Z",
+  "ultimaIA": "2026-10-27T10:16:18.202Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,92 +14,45 @@
   ],
   "noticias": [
     {
-      "id": "n20261027063001",
-      "fecha": "2026-10-27T06:30:38.614Z",
+      "id": "n20261027101600",
+      "fecha": "2026-10-27T10:16:18.202Z",
       "semana": 8,
-      "titulo": "Saquon Barkley minimiza molestias tras regreso con Eagles",
+      "titulo": "Josh Allen comanda la zona roja histórica en fantasy",
       "claves": [
-        "Saquon Barkley reportó su músculo isquiotibial en excelente estado",
-        "El corredor minimizó una molestia en la espalda",
-        "Mantuvo alta eficiencia pese a la derrota"
+        "Josh Allen domina acarreos en la línea de gol",
+        "El mariscal proyecta 22.2 pts para la semana 8",
+        "Su eficiencia aumenta su valor como QB 1"
       ],
-      "contexto": "Durante la derrota de los Eagles ante los Cowboys con marcador de 38-21, el corredor estelar Saquon Barkley regresó al terreno de juego para mostrar una actuación eficiente. Al finalizar el encuentro, el jugador declaró que su músculo isquiotibial respondió de maravilla y restó importancia a un problema en la espalda que arrastraba, disipando los temores sobre una ausencia prolongada.",
-      "fantasy": "Fantástica noticia para los mánagers de fantasy que poseen a Saquon Barkley en sus plantillas. A pesar de la derrota, su alta eficiencia y la confirmación de estar físicamente sano garantizan que puedes mantenerlo como pilar de tu alineación en ligas estándar y PPR de cara a los siguientes compromisos de la temporada.",
-      "equipo_impacto": "El ataque terrestre de Filadelfia respira tranquilo al saber que su arma principal no sufrió recaídas graves tras el duelo divisional del lunes por la noche.",
-      "accion": "Mantén a Saquon Barkley en tu cuadro titular de fantasy sin preocupaciones físicas.",
+      "contexto": "Analistas de ESPN destacan la efectividad inigualable de Josh Allen al acarrear el ovoide desde la yarda 1 o 2 del campo, superando a más de 150 jugadores en la historia desde 1977 con al menos 30 intentos en esa zona.",
+      "fantasy": "El modelo FX proyecta 22.2 pts para Josh Allen de cara a la semana 8. Su capacidad para concretar anotaciones por tierra lo mantiene como el mariscal de campo más confiable y una pieza clave para asegurar la victoria en cualquier formato de liga.",
+      "equipo_impacto": "La presencia de Allen en la ofensiva de Buffalo asegura constantes oportunidades de anotación, elevando el potencial ofensivo del equipo en momentos críticos de los partidos.",
+      "accion": "Asegúrate de alinear a Josh Allen como tu mariscal indiscutible en la semana 8.",
       "en": {
-        "titulo": "Saquon Barkley downplays issues after return with Eagles",
+        "titulo": "Josh Allen commands historical red zone value",
         "claves": [
-          "Saquon Barkley reported his hamstring in great shape",
-          "The running back downplayed a minor back issue",
-          "He maintained high efficiency despite the loss"
+          "Josh Allen dominates goal line rushing efficiency",
+          "The quarterback projects for 22.2 pts in week 8",
+          "His scoring upside solidifies his elite QB 1 status"
         ],
-        "contexto": "During the Eagles' 38-21 loss to the Cowboys, star running back Saquon Barkley returned to the field to deliver an efficient performance. After the game, the player stated that his hamstring came out great and downplayed a lingering back issue, dismissing fears of a prolonged absence.",
-        "fantasy": "Fantastic news for fantasy managers holding Saquon Barkley on their rosters. Despite the loss, his high efficiency and the confirmation of his physical health ensure you can keep him as a pillar in your standard and PPR lineups for upcoming matchups.",
-        "equipo_impacto": "Philadelphia's ground attack breathes a sigh of relief knowing their primary weapon did not suffer severe setbacks following Monday night's divisional matchup.",
-        "accion": "Keep Saquon Barkley active in your fantasy starting lineup without physical worries."
+        "contexto": "ESPN analysts highlight Josh Allen's unmatched efficiency running the ball from the 1 or 2 yard line, outperforming over 150 players in history since 1977 with at least 30 attempts in that area.",
+        "fantasy": "The FX model projects 22.2 pts for Josh Allen ahead of week 8. His knack for converting rushing touchdowns keeps him as the most reliable quarterback and a vital piece to secure victories in any league format.",
+        "equipo_impacto": "Allen's presence in Buffalo's offense guarantees consistent scoring opportunities, elevating the team's overall offensive potential during critical moments of games.",
+        "accion": "Make sure to start Josh Allen as your unquestioned quarterback in week 8."
       },
-      "etiqueta": "LESIÓN",
-      "impacto": "NEUTRO",
-      "equipo": "PHI",
-      "equipos": [
-        "PHI",
-        "DAL"
-      ],
-      "jugadores": [
-        "4866",
-        "3294"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50294687/prsecott-cowboys-keep-pace-nfc-east-road-win-eagles",
-          "t": "Cowboys keep pace in NFC East, end 2-game slide with road win over Eagles"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261027063002",
-      "fecha": "2026-10-27T06:30:38.614Z",
-      "semana": 8,
-      "titulo": "Jonah Coleman surge como prioridad absoluta en waivers",
-      "claves": [
-        "Jonah Coleman es señalado como objetivo principal",
-        "Atrae máxima atención en el mercado de transferencias",
-        "Representa una adición clave para la profundidad"
-      ],
-      "contexto": "El mercado de exentos y transferencias de la semana 8 coloca al corredor Jonah Coleman en la mira de todos los expertos. Los reportes recientes de la industria lo ubican como la principal prioridad a reclamar en las waivers, atrayendo un volumen masivo de interés por parte de los mánagers que buscan apuntalar sus plantillas ante las múltiples lesiones y semanas de descanso.",
-      "fantasy": "Una oportunidad de oro en ligas de alta competencia. Reclamar a Jonah Coleman en waivers te otorga un potencial de aportación inmediata en el backfield, ideal para formatos profundos donde la escasez de corredores titulares castiga severamente las aspiraciones al campeonato de fantasy.",
-      "equipo_impacto": "Su incorporación en las ligas de fantasy altera la jerarquía de los jugadores disponibles en el alambre, convirtiéndolo en el objetivo número uno de la semana.",
-      "accion": "Invierte una porción importante de tu presupuesto de waivers para asegurar a Jonah Coleman hoy mismo.",
-      "en": {
-        "titulo": "Jonah Coleman emerges as absolute waiver wire priority",
-        "claves": [
-          "Jonah Coleman is highlighted as a primary target",
-          "He draws maximum attention in the waiver market",
-          "He represents a key addition for roster depth"
-        ],
-        "contexto": "The week 8 waiver wire places running back Jonah Coleman squarely in the spotlight for all experts. Recent industry reports position him as the top priority claim, drawing a massive volume of interest from managers looking to shore up their rosters amid multiple injuries and bye weeks.",
-        "fantasy": "A golden opportunity in highly competitive leagues. Claiming Jonah Coleman off waivers gives you immediate backfield production potential, ideal for deep formats where starting running back scarcity severely punishes fantasy championship aspirations.",
-        "equipo_impacto": "His acquisition in fantasy leagues alters the hierarchy of available waiver wire players, making him the number one target of the week.",
-        "accion": "Invest a significant portion of your waiver budget to secure Jonah Coleman today."
-      },
-      "etiqueta": "WAIVER",
+      "etiqueta": "TENDENCIA",
       "impacto": "SUBE",
-      "equipo": "FA",
+      "equipo": "BUF",
       "equipos": [
-        "FA",
-        "DEN"
+        "BUF"
       ],
       "jugadores": [
-        "13345"
+        "4984"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50294359/why-jonah-coleman-priority-add-waiver-wire",
-          "t": "Why Jonah Coleman is a priority add off the waiver wire"
+          "u": "https://www.espn.com/nfl/story/_/id/50288152/bills-josh-allen-greatest-td-rusher",
+          "t": "Is Bills' Josh Allen the best goal line rusher ever?"
         }
       ],
       "menciona": []
@@ -270,29 +223,29 @@
   "agregados": [
     "13296",
     "13298",
-    "13424",
     "JAX",
+    "13424",
     "NE",
     "13414",
     "13276",
     "10213",
-    "TB",
     "9480",
+    "TB",
     "13150",
     "13345",
     "6650",
     "11783",
     "11435",
     "6130",
-    "13294",
     "3214",
+    "13294",
     "8129",
     "1166",
     "7553",
-    "11586",
     "12498",
-    "12469",
-    "7561"
+    "11586",
+    "7561",
+    "12469"
   ],
   "soltados": [
     "12718",
