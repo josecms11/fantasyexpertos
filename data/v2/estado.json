@@ -1,18 +1,16 @@
 {
-  "fecha": "2026-10-27T12:13:04.712Z",
+  "fecha": "2026-10-27T13:04:08.942Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 15 nuevos, 18 en total",
+    "[0.3s] YouTube: 15 nuevos, 18 en total",
     "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[1.9s] ESPN: lesiones 799 · noticias 50",
-    "[1.9s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[2.3s] Fuentes nuevas: 6 · horario normal · toca IA: true",
-    "[2.5s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[18.6s] IA OK con gemini-3.5-flash-lite",
-    "[18.6s] Descartada: Dak Prescott y Cowboys resucitan en Philadelphia → duplicada",
-    "[18.6s] Descartada: Jared Goff entra con fuerza al debate de MVP → duplicada",
-    "[18.6s] Descartada (sin fuente citada): Vikings asaltan la cima del ranking general",
-    "[18.6s] Noticias nuevas verificadas: 0",
-    "[19.4s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 305 · semana de juego 8 · IA usada hoy 25/40"
+    "[3.5s] ESPN: lesiones 799 · noticias 50",
+    "[3.6s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[4.1s] Fuentes nuevas: 6 · horario normal · toca IA: true",
+    "[4.2s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[7.0s] IA OK con gemini-3.5-flash-lite",
+    "[7.0s] Descartada: Jared Goff muestra lectura de élite en Detroit → duplicada",
+    "[7.0s] Noticias nuevas verificadas: 0",
+    "[8.1s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 305 · semana de juego 8 · IA usada hoy 26/40"
   ]
 }
