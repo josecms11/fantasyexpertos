@@ -1,12 +1,29 @@
 {
-  "fecha": "2026-10-26T23:46:03.728Z",
+  "fecha": "2026-10-27T00:14:52.311Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.5s] YouTube: 0 nuevos, 18 en total",
-    "[1.0s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
-    "[3.9s] ESPN: lesiones 799 · noticias 50",
-    "[3.9s] Modelo FX v3 : 442 proyecciones propias para la semana 7",
-    "[4.6s] Fuentes nuevas: 19 · horario pico · toca IA: false",
-    "[5.6s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 300 · semana de juego 7 · IA usada hoy 37/40"
+    "[0.3s] YouTube: 15 nuevos, 18 en total",
+    "[1.3s] Sleeper: 3233 activos, semana 7 · proyecciones S7: 9418",
+    "[4.2s] ESPN: lesiones 799 · noticias 50",
+    "[4.2s] Modelo FX v3 : 442 proyecciones propias para la semana 7",
+    "[4.9s] Fuentes nuevas: 19 · horario pico · toca IA: true",
+    "[5.3s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[155.4s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
+    "[169.1s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
+    "[193.7s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
+    "[193.8s] Modelo sin cuota hoy gemini-3.5-flash 429",
+    "[196.1s] IA OK con gemini-3.5-flash-lite",
+    "[196.1s] Descartada: Jalen Brooks queda fuera el resto de la temporada → duplicada",
+    "[196.1s] Noticias nuevas verificadas: 0",
+    "[197.0s] Modelo sin cuota hoy gemini-3.8-flash 429",
+    "[197.2s] Modelo sin cuota hoy gemini-3.7-flash 429",
+    "[197.3s] Modelo sin cuota hoy gemini-3.6-flash 429",
+    "[200.2s] IA OK con gemini-3.5-flash-lite",
+    "[200.2s] Resumen semana 4",
+    "[206.1s] IA OK con gemini-3.5-flash-lite",
+    "[206.1s] Blog: ¿Arrancar a Kirk Cousins en la semana 7? / Should you start Kirk Cousins in Week 7?",
+    "[210.7s] IA OK con gemini-3.5-flash-lite",
+    "[210.7s] Blog: Amon-Ra St. Brown: ¿juega en la semana 7 y qué hacer en fantasy? / Amon-Ra St. Brown injury update: will he play in Week 7?",
+    "[210.8s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 300 · semana de juego 7 · IA usada hoy 4/40"
   ]
 }
