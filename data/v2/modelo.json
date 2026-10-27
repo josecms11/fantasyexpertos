@@ -41,43 +41,43 @@
       "fecha": "2026-10-26T22:35:13.912Z"
     },
     "7": {
-      "n": 285,
+      "n": 305,
       "maeFX": 4.42,
       "maeRef": 4.45,
       "porPos": {
         "QB": {
-          "n": 26,
-          "spearmanFX": 0.254,
-          "spearmanRef": 0.406
+          "n": 27,
+          "spearmanFX": 0.252,
+          "spearmanRef": 0.384
         },
         "RB": {
-          "n": 55,
-          "spearmanFX": 0.649,
-          "spearmanRef": 0.676
+          "n": 59,
+          "spearmanFX": 0.669,
+          "spearmanRef": 0.69
         },
         "WR": {
-          "n": 96,
-          "spearmanFX": 0.711,
-          "spearmanRef": 0.684
+          "n": 102,
+          "spearmanFX": 0.709,
+          "spearmanRef": 0.686
         },
         "TE": {
-          "n": 58,
-          "spearmanFX": 0.58,
-          "spearmanRef": 0.538
+          "n": 63,
+          "spearmanFX": 0.578,
+          "spearmanRef": 0.534
         },
         "K": {
-          "n": 24,
-          "spearmanFX": 0.237,
-          "spearmanRef": 0.083
+          "n": 26,
+          "spearmanFX": 0.197,
+          "spearmanRef": 0.179
         },
         "DEF": {
-          "n": 26,
-          "spearmanFX": 0.13,
-          "spearmanRef": 0.074
+          "n": 28,
+          "spearmanFX": 0.196,
+          "spearmanRef": 0.121
         }
       },
-      "cerrada": false,
-      "fecha": "2026-10-26T22:08:38.503Z"
+      "cerrada": true,
+      "fecha": "2026-10-27T03:29:43.673Z"
     }
   },
   "params": {

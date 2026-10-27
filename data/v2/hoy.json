@@ -1,8 +1,8 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-27T02:56:39.817Z",
+  "actualizado": "2026-10-27T03:29:28.086Z",
   "ultimaIA": "2026-10-27T02:56:39.817Z",
-  "semana": 7,
+  "semana": 8,
   "semanaStats": 7,
   "temporada": "2026",
   "semanas": [
@@ -91,10 +91,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4199",
-      "estatus": "Duda"
-    },
-    {
       "id": "12508",
       "estatus": "Fuera"
     },
@@ -107,12 +103,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "2216",
-      "estatus": "Fuera"
+      "id": "4199",
+      "estatus": "Duda"
     },
     {
-      "id": "11646",
-      "estatus": "Duda"
+      "id": "2216",
+      "estatus": "Fuera"
     },
     {
       "id": "7543",
@@ -135,19 +131,15 @@
       "estatus": "Fuera"
     },
     {
+      "id": "4866",
+      "estatus": "Duda"
+    },
+    {
+      "id": "11646",
+      "estatus": "Duda"
+    },
+    {
       "id": "13287",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "12534",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "5854",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "4137",
       "estatus": "Fuera"
     },
     {
@@ -155,7 +147,19 @@
       "estatus": "Duda"
     },
     {
+      "id": "12534",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "4137",
+      "estatus": "Fuera"
+    },
+    {
       "id": "11589",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "5854",
       "estatus": "Fuera"
     },
     {
@@ -179,19 +183,15 @@
       "estatus": "Fuera"
     },
     {
-      "id": "10236",
-      "estatus": "Duda"
-    },
-    {
       "id": "8142",
       "estatus": "Fuera"
     },
     {
-      "id": "4983",
-      "estatus": "Fuera"
+      "id": "10236",
+      "estatus": "Duda"
     },
     {
-      "id": "4177",
+      "id": "4983",
       "estatus": "Fuera"
     },
     {
@@ -199,11 +199,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12533",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "9486",
+      "id": "4177",
       "estatus": "Fuera"
     },
     {
@@ -211,11 +207,15 @@
       "estatus": "Fuera"
     },
     {
-      "id": "8205",
+      "id": "9486",
       "estatus": "Fuera"
     },
     {
-      "id": "8121",
+      "id": "12533",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "8205",
       "estatus": "Fuera"
     }
   ],
@@ -235,12 +235,12 @@
     "6130",
     "6650",
     "11783",
-    "3214",
     "13294",
+    "3214",
     "11586",
     "1166",
-    "13345",
     "7553",
+    "13345",
     "9480",
     "12498",
     "12469",
@@ -255,11 +255,11 @@
     "HOU",
     "9482",
     "11624",
-    "11581",
     "5849",
+    "13150",
+    "11581",
     "NYJ",
     "SF",
-    "13150",
     "11610",
     "9758",
     "11625",
@@ -269,8 +269,8 @@
     "9500",
     "7002",
     "4037",
-    "5927",
     "5012",
+    "5927",
     "96"
   ],
   "duelo": {
