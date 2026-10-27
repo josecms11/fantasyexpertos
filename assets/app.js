@@ -1006,13 +1006,14 @@ function partido(id) {
       ${les.length ? `<p class="sub" style="margin-top:14px">Reporte médico</p><div class="plist">${les.map(j => prow(j, `<span class="team">${esc(parte(j))}</span>${pillSt(j)}`)).join('')}</div>` : ''}</div>`; };
   setTimeout(() => detallePartido(g).then(() => { if (g.estado === 'in') vigilaPartido(g.id); }), 0);
   return `<div class="page">${crumbs([['#/partidos', 'Partidos'], ['', g.visita.ab + ' vs ' + g.local.ab]])}<div class="wrap">
-    <div id="g-hero">${heroPartido(g)}</div>${g.estado !== 'pre' ? '<div id="g-eq"></div>' : ''}
+    <div id="g-hero">${heroPartido(g)}</div>
     ${g.estado !== 'pre' ? `<div class="live-tabs" role="tablist"><button type="button" class="on" data-lt="fx">${fxLogo(14)} Fantasy en vivo</button><button type="button" data-lt="pbp">Jugada a jugada</button></div>` : ''}
     ${g.estado === 'pre' ? `<div class="gsum" id="gsum"><div class="esq-lineas" aria-busy="true" aria-label="Cargando estadísticas del partido"><i></i><i></i><i></i><i></i></div></div>
     <section class="block"><div class="head"><div><h2>${tx('Start/Sit FX del partido', 'Game Start/Sit FX')} ${infoFX(tx('Para cada jugador de fantasy de este partido: su proyección y si conviene arrancarlo, ponerlo de FLEX o dejarlo en la banca.', 'For every fantasy player in this game: projection and whether to start, flex or bench him.'))}</h2></div></div><div class="grid g2">${lado(g.visita)}${lado(g.local)}</div></section>` : `<div class="live-grid ver-fx">
       <section class="card fxlive" id="fxlive"><div class="esq-lineas" aria-busy="true" aria-label="Cargando fantasy en vivo"><i></i><i></i><i></i><i></i><i></i><i></i></div></section>
       <aside class="card pbp" id="pbp"><div class="esq-lineas" aria-busy="true" aria-label="Cargando jugadas"><i></i><i></i><i></i><i></i></div></aside>
-    </div><div id="gsum" class="gsum"></div>`}
+    </div>
+    <section class="block g-res"><div class="head"><div><h2>${tx('Resumen del partido', 'Game summary')}</h2></div></div><div class="g-bottom"><div id="g-eq"></div><div id="gsum" class="gsum"></div></div></section>`}
     ${notas.length ? `<section class="block"><div class="head"><h2>Noticias de ${esc(g.visita.ab)} y ${esc(g.local.ab)}</h2></div><div class="news stagger">${notas.map(n => newsCard(n)).join('')}</div></section>` : ''}
   </div></div>`;
 }
@@ -1181,7 +1182,7 @@ function pintaVivo(g, s) {
   const pc = (s.pickcenter || [])[0];
   const linea = pc && (pc.details || pc.overUnder) ? `<span class="linea-chip">${tx('Línea previa', 'Pregame line')}: ${pc.details ? `<b>${esc(pc.details)}</b>` : ''}${pc.overUnder ? ` · O/U <b>${esc(pc.overUnder)}</b>` : ''}</span>` : '';
   const ge = $('#g-eq'); if (ge) ge.innerHTML = statsHTML;
-  const gb = $('#gsum'); if (gb) gb.innerHTML = `<section class="block" style="padding-top:22px">${anot || linea ? `<div class="card anot-card"><div class="anot-h"><h3>${tx('Anotaciones', 'Scoring plays')}</h3>${linea}</div>${anot ? `<div class="splist">${anot}</div>` : ''}</div>` : ''}</section>`;
+  const gb = $('#gsum'); if (gb) gb.innerHTML = `${anot || linea ? `<div class="card anot-card"><div class="anot-h"><h3>${tx('Anotaciones', 'Scoring plays')}</h3>${linea}</div>${anot ? `<div class="splist">${anot}</div>` : ''}</div>` : ''}`;
 }
 // Mientras el partido está en vivo, todo se vuelve a pedir solo cada 15 segundos (sin recargar la página)
 function vigilaPartido(id) {
