@@ -2409,3 +2409,7 @@ section.block{padding-top:clamp(36px,4vw,64px)}
 .g-bottom .anot-card{display:flex;flex-direction:column;height:0;min-height:100%;overflow:hidden}
 .g-bottom .anot-card .splist{grid-template-columns:1fr!important;flex:1;min-height:0;overflow-y:auto;padding-right:4px}
 @media (max-width:1060px){.g-bottom{grid-template-columns:1fr}.g-bottom .anot-card{height:auto;min-height:0}.g-bottom .anot-card .splist{max-height:420px}}
+/* Al saltar a una sección (botones, enlaces, riel), el título nunca queda escondido bajo el menú fijo */
+html{scroll-padding-top:calc(var(--hdrh,130px) + 18px)}
+#pv-conecta,#pv-planes,[id]{scroll-margin-top:0!important}
+#pv-planes,#pv-conecta,.pv-cart,.pv-feats{padding-top:12px!important}

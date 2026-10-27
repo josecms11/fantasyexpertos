@@ -5,6 +5,9 @@
    - Web: riel de yardas con el balón que avanza con el scroll. Móvil: marcador inferior con la sección y el avance.
    Todo se apaga con prefers-reduced-motion. */
 (function () {
+  // Altura real del menú fijo (incluye marcadores): se usa para que los saltos dentro de la página no tapen los títulos
+  const mideHdr = () => { const h = document.querySelector('header'); if (h) document.documentElement.style.setProperty('--hdrh', Math.round(h.getBoundingClientRect().height) + 'px'); };
+  addEventListener('resize', mideHdr); new ResizeObserver(mideHdr).observe(document.documentElement); setTimeout(mideHdr, 300);
   const quieto = matchMedia('(prefers-reduced-motion: reduce)').matches, movil = () => innerWidth <= 820;
   const EN = () => document.documentElement.lang === 'en';
   const BALON = '<svg viewBox="0 0 24 14" aria-hidden="true"><ellipse cx="12" cy="7" rx="11" ry="6.2" fill="#8B4A2B" stroke="#5E2F1A" stroke-width="1.2"/><path d="M7 7h10" stroke="#fff" stroke-width="1.3"/><path d="M9 5.6v2.8M11 5.6v2.8M13 5.6v2.8M15 5.6v2.8" stroke="#fff" stroke-width="1"/></svg>';
