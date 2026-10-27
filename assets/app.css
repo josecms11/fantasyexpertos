@@ -2382,3 +2382,11 @@ section.block{padding-top:clamp(36px,4vw,64px)}
 .fxr-vs small{font-size:11px;color:var(--mute)}.fxr-vs.top small{color:var(--gold)}
 .fxl-list .fxr-pts{text-align:right}.fxl-list .fxr-pts b{font-size:22px!important}.fxl-list .fxr-pts small{display:none}
 @media (max-width:620px){.fxl-list .fxr{grid-template-columns:18px 26px minmax(0,1fr) 54px}.fxr-vs{display:none}}
+/* Filtros: equipo y posición en una sola fila, mismo estilo, sin recuadro */
+.fxl-fs{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 14px}
+.fxl-fs .fxl-f{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;border:0;background:none}
+.fxl-fs .chip{height:36px;padding:0 14px;font-size:13px}
+.fxl-div{width:1px;height:24px;background:var(--line2);margin:0 6px}
+.fxl-list .fxr{grid-template-columns:22px 32px minmax(0,1fr) 120px 72px!important;padding:8px 16px 8px 12px!important}
+.fxl-list .fxr-pts{min-width:0;overflow:visible;padding-right:2px}
+@media (max-width:620px){.fxl-div{display:none}.fxl-list .fxr{grid-template-columns:18px 26px minmax(0,1fr) 58px!important}}

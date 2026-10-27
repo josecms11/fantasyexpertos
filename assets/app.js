@@ -1131,7 +1131,7 @@ function pintaFantasy(g, s) {
   box.innerHTML = `<div class="fxl-h"><div><span class="fxl-tag">${fxLogo(18)} FANTASY ${g.estado === 'in' ? 'EN VIVO' : 'FINAL'}</span><h2>¿Quién está sumando?</h2><p class="sub">Puntos ${FMTS[FMT]} con el modelo FX, jugada por jugada${g.estado === 'in' ? ' · se actualiza cada 15 s' : ''}.</p></div>
     <div class="fxl-tot" style="--cv:${col(g.visita.ab)[0]};--cl:${col(g.local.ab)[0]}"><span>${helmet(g.visita.ab, '', 26)}<b>${g.visita.ab}</b><em class="n">${n1(tot(g.visita.ab))}</em></span><small>PTS FX</small><span><em class="n">${n1(tot(g.local.ab))}</em><b>${g.local.ab}</b>${helmet(g.local.ab, '', 26, true)}</span></div></div>
     <div class="fxl-fs"><div class="chips fxl-f">${chip('todos', tx('Ambos', 'Both'))}${chip(g.visita.ab, g.visita.ab)}${chip(g.local.ab, g.local.ab)}</div>
-      <div class="chips fxl-f pos">${['todas', 'QB', 'RB', 'WR', 'TE', 'K/DEF'].map(p => `<button type="button" class="chip ${FXPOS === p ? 'on' : ''}" data-fxp="${p}">${p === 'todas' ? tx('Todas', 'All') : p}</button>`).join('')}</div></div>
+      <span class="fxl-div" aria-hidden="true"></span><div class="chips fxl-f fxl-pos">${['todas', 'QB', 'RB', 'WR', 'TE', 'K/DEF'].map(p => `<button type="button" class="chip ${FXPOS === p ? 'on' : ''}" data-fxp="${p}">${p === 'todas' ? tx('Todas', 'All') : p}</button>`).join('')}</div></div>
     <div class="fxl-list" data-filtro="${esc(FXFILTRO)}">${filas || `<div class="empty">${tx('Sin jugadores con estadísticas en este filtro.', 'No players with stats in this filter.')}</div>`}</div>
     ${F.length > 6 ? `<button type="button" class="btn ghost sm fxl-mas" data-fxmas>${FXMAS ? tx('Ver menos', 'Show less') : tx(`Ver los ${F.length}`, `See all ${F.length}`)}</button>` : ''}`;
 }
