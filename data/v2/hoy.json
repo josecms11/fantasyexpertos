@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-27T04:09:07.884Z",
-  "ultimaIA": "2026-10-27T02:56:39.817Z",
+  "actualizado": "2026-10-27T04:42:17.640Z",
+  "ultimaIA": "2026-10-27T04:42:17.640Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,44 +14,51 @@
   ],
   "noticias": [
     {
-      "id": "n20261027025600",
-      "fecha": "2026-10-27T02:56:39.817Z",
-      "semana": 7,
-      "titulo": "La NFL realiza doble cambio de horarios",
+      "id": "n20261027044201",
+      "fecha": "2026-10-27T04:42:17.640Z",
+      "semana": 8,
+      "titulo": "Javonte Williams explota con marca personal de yardas",
       "claves": [
-        "Ajuste en la programación de noviembre",
-        "Modificaciones para la semana 9",
-        "Cambios también vigentes en semana 11"
+        "Javonte Williams corrió para 155 yardas",
+        "Anotó un touchdown por la vía terrestre",
+        "Dallas dominó por completo el juego terrestre"
       ],
-      "contexto": "La liga anunció un movimiento poco común al modificar los horarios de encuentros para dos semanas distintas durante el mes de noviembre, abarcando específicamente los duelos programados para la semana 9 y la semana 11 con el fin de optimizar las transmisiones.",
-      "fantasy": "Este tipo de modificaciones de calendario no afecta directamente el conteo de puntos PPR de la semana 7, pero obliga a los mánagers a revisar con atención los nuevos horarios para evitar sorpresas de última hora en sus alineaciones titulares.",
-      "equipo_impacto": "Los equipos involucrados en estos cambios de horario tendrán que ajustar sus rutinas de viaje y descanso de cara a la segunda mitad de la temporada regular.",
-      "accion": "Revisa el calendario de tus jugadores para noviembre y asegúrate de planear tus alineaciones futuras con base en los nuevos horarios.",
+      "contexto": "Durante la victoria de los Cowboys por 38-21 sobre los Eagles en la semana 7, Javonte Williams tuvo una noche histórica al registrar una marca personal de 155 yardas por tierra, coronando su gran actuación con un acarreo hasta las diagonales.",
+      "fantasy": "Javonte Williams sube de manera meteórica en los rankings de running backs para fantasy, convirtiéndose en una opción obligatoria en el esquema titular de cualquier alineación para la semana 8.",
+      "equipo_impacto": "El juego terrestre de Dallas toma un rol sumamente dominante y físico, quitándole presión a la ofensiva aérea y abriendo espacios.",
+      "accion": "Inserta a Javonte Williams directamente en tu cuadro titular como corredor estelar.",
       "en": {
-        "titulo": "NFL makes rare schedule flex",
+        "titulo": "Javonte Williams explodes with career rushing high",
         "claves": [
-          "Schedule adjustments for November",
-          "Modifications for week 9",
-          "Changes also apply in week 11"
+          "Javonte Williams rushed for 155 yards",
+          "Scored a rushing touchdown",
+          "Dallas completely dominated on the ground"
         ],
-        "contexto": "The league announced a rare double flex move by tweaking game schedules for two different weeks in November, specifically targeting matchups in week 9 and week 11.",
-        "fantasy": "These schedule shifts do not impact week 7 fantasy scoring, but managers must stay alert regarding kickoff times to avoid lineup mistakes in upcoming weeks.",
-        "equipo_impacto": "Affected franchises will need to adjust travel plans and preparation routines ahead of the second half of the season.",
-        "accion": "Check your roster schedule for November and adjust your lineup planning according to the new kickoff times.",
-        "en": "Check your roster schedule for November and adjust your lineup planning according to the new kickoff times."
+        "contexto": "During the Cowboys' 38-21 win over the Eagles in Week 7, Javonte Williams had a career night by rushing for 155 yards and capping off his stellar performance with a touchdown run.",
+        "fantasy": "Javonte Williams skyrockets in fantasy running back rankings, becoming a mandatory starter in any lineup configuration for Week 8.",
+        "equipo_impacto": "The Dallas ground game takes on a heavily dominant and physical role, taking pressure off the passing attack and opening up lanes.",
+        "action": "Lock Javonte Williams straight into your starting lineup as a premier running back."
       },
       "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "NFL",
+      "impacto": "SUBE",
+      "equipo": "DAL",
       "equipos": [
-        "NFL"
+        "DAL",
+        "PHI"
       ],
-      "jugadores": [],
+      "jugadores": [
+        "7588"
+      ],
       "fuentes": [
         {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/nfl-rare-double-flex-move-tweaking-schedule-in-week-9-week-11/",
-          "t": "\n                        NFL makes rare double flex move by tweaking the schedule in Week 9 and Week 11\n                    "
+          "m": "ESPN",
+          "u": "http://www.espn.com/nfl/recap?gameId=401873009",
+          "t": "Dak Prescott throws 3 TD passes, Javonte Williams runs for 155 yards as Cowboys beat Eagles 38-21"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50292494/cowboys-eagles-mnf-javonte-williams-career-night",
+          "t": "Cowboys handle Eagles on Javonte Williams' career night"
         }
       ],
       "menciona": []
@@ -223,25 +230,25 @@
     "13296",
     "13298",
     "13424",
+    "NE",
     "13414",
+    "JAX",
     "13276",
     "13150",
-    "NE",
-    "JAX",
     "10213",
     "TB",
     "11435",
     "6130",
     "6650",
-    "8129",
     "13294",
     "11783",
-    "3214",
+    "8129",
     "9480",
+    "3214",
     "13345",
-    "11586",
-    "7553",
     "1166",
+    "7553",
+    "11586",
     "12498",
     "12469",
     "7021"
@@ -254,24 +261,24 @@
     "8129",
     "HOU",
     "13150",
-    "9482",
-    "NYJ",
     "5849",
+    "NYJ",
+    "9482",
     "11624",
     "11581",
     "SF",
-    "11610",
     "9758",
+    "11610",
     "11625",
-    "9756",
     "8132",
     "9502",
+    "9756",
     "9500",
     "7002",
     "4037",
     "5012",
-    "5927",
-    "96"
+    "96",
+    "5927"
   ],
   "duelo": {
     "a": "Jared Goff",
