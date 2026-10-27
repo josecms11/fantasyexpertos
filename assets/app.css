@@ -2357,3 +2357,4 @@ section.block{padding-top:clamp(36px,4vw,64px)}
 .ss-v.start{background:rgba(91,196,137,.2);color:#7CF0A8}.ss-v.flex{background:rgba(242,193,78,.2);color:var(--warn)}.ss-v.sit,.ss-v.out,.ss-v.bye{background:rgba(242,120,106,.18);color:var(--bad)}
 @media (max-width:900px){.ss-grid{grid-template-columns:1fr 1fr}}@media (max-width:520px){.ss-grid{grid-template-columns:1fr}}
 .wr-sec .card::before,.card .card::before,.pv-f.card::before{display:none}
+.fx-tech.inl{vertical-align:middle!important;position:relative;top:-.12em;line-height:1!important}

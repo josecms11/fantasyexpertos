@@ -1648,12 +1648,12 @@ function ventaHero() {
     <div class="pv-hero-txt"><span class="pv-badge neon"><b>FX PRO</b><em>${tx('Herramientas para ganar tu liga', 'Tools to win your league')}</em></span>
       <h1>${tx('El cuarto de guerra de tu liga', 'Your league\'s war room')}</h1>
       <p>${tx('Conectas tu liga una vez. Desde ese momento el FX Tech Analyzer revisa tu equipo todos los días y te dice qué hacer, con el porqué de cada decisión.', 'Connect your league once. From then on, the FX Tech Analyzer checks your team every day and tells you what to do, with the why behind every call.')}</p>
-      <div class="pv-ctas">${ctaPrem(tx('Desbloquear PRO', 'Unlock PRO'))}<a class="btn ghost" href="#pv-conecta" data-pv-ir="pv-conecta">${tx('Conectar mi liga gratis', 'Connect my league free')}</a></div>
+      <div class="pv-ctas">${ctaPrem(tx('Desbloquear PRO', 'Unlock PRO'))}<a class="btn ghost" href="#pv-planes" data-pv-ir="pv-planes">${tx('Ver planes', 'See plans')}</a></div>
       <small class="pv-nota">${tx('Desde $59 MXN al mes · cancela cuando quieras', 'From $59 MXN a month · cancel anytime')}</small></div>
     <div class="pv-board" aria-label="FX Tech Analyzer">
       <div class="pv-board-top">${sello()}<span class="pv-led"><i></i>${tx('EN LÍNEA', 'ONLINE')}</span></div>
       <div class="pv-board-g">${dato(nJ, tx('jugadores proyectados', 'players projected'))}${dato(32, tx('defensas medidas', 'defenses measured'))}${dato(2, tx('temporadas de datos', 'seasons of data'))}${dato(nN, tx('notas verificadas', 'verified stories'))}</div>
-      <div class="pv-marq"><span>${Array(2).fill(tx('START · SIT · WAIVERS · TRADES · MATCHUPS · LESIONES · PISO · TECHO · ', 'START · SIT · WAIVERS · TRADES · MATCHUPS · INJURIES · FLOOR · CEILING · ')).join('')}</span></div>
+      <div class="pv-marq"><span>${Array(2).fill(tx('START · SIT · WAIVERS · TRADES · MATCHUPS · LESIONES · PROB. TOP · VALOR FX · ', 'START · SIT · WAIVERS · TRADES · MATCHUPS · INJURIES · TOP ODDS · FX VALUE · ')).join('')}</span></div>
       <div class="pv-field" aria-hidden="true"><i class="pv-ball">${pixel(ART.balon)}</i></div>
     </div></section>`;
 }
