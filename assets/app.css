@@ -2318,3 +2318,42 @@ section.block{padding-top:clamp(36px,4vw,64px)}
 .pie-links{display:flex;flex-wrap:wrap;gap:8px 18px;padding-bottom:12px;font-family:var(--fc);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:13px}
 .pie-links a{color:var(--soft);text-decoration:none}.pie-links a:hover{color:var(--text)}
 .fx-tech.inl{display:inline-flex;vertical-align:-3px;margin:0 2px;font-size:6.5px!important;padding:3px 6px 3px 4px}
+
+/* Relevos de lesionados */
+.rels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.rel{display:grid;grid-template-columns:minmax(0,.9fr) 22px minmax(0,1.1fr) auto;align-items:center;gap:10px;padding:12px 14px;border-radius:14px;background:linear-gradient(90deg,rgba(242,120,106,.07),rgba(91,196,137,.07));border:1px solid var(--line2)}
+.rel a{display:flex;align-items:center;gap:10px;min-width:0;text-decoration:none;color:var(--text)}
+.rel a span{display:flex;flex-direction:column;min-width:0}.rel b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rel small{color:var(--mute);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rel-out{opacity:.7}.rel-out b{text-decoration:line-through;text-decoration-color:rgba(242,120,106,.6)}
+.rel small em{font-style:normal;font-weight:700}.rel small em.o{color:var(--bad)}.rel small em.d{color:var(--warn)}
+.rel-in b{font-size:16px}.rel small strong{color:#fff}.rel small i{font-style:normal;color:#7CF0A8}
+.rel-arr .px-art{width:22px;height:20px;animation:relArr 1.2s steps(3) infinite}
+@keyframes relArr{50%{transform:translateX(3px)}}
+@media (max-width:900px){.rels{grid-template-columns:1fr}}
+@media (max-width:520px){.rel{grid-template-columns:1fr 18px 1fr;}.rel .rp{grid-column:1 / -1;justify-self:start}}
+/* Prob. top */
+.ptop{display:inline-block;min-width:46px;padding:3px 6px;border-radius:6px;font-weight:700;background:linear-gradient(90deg,rgba(91,196,137,.35) var(--v),rgba(255,255,255,.05) var(--v))}
+/* Sello alineado en las pestañas */
+.wr-tabs{align-items:center}.wr-sello{margin-left:auto;flex:none;padding:0 4px 4px}.wr-sello .fx-tech.mini{margin:0}
+.pie-tech{display:none}
+/* Mi equipo */
+.wr-tbl .wr-slot.bn{background:var(--s3);color:var(--soft)}.wr-tbl tr.sep td{padding:4px;border:0}.wr-tbl td.vacio{color:var(--bad);font-weight:700}
+/* Hover fijo al nombre */
+.hovercard{position:fixed!important}
+/* Personalidad: esquinas de pixel y realce al pasar en tarjetas */
+.card,.wr-sec,.pv-edge,.wr-tile,.hub,.rel{position:relative}
+.card::before,.wr-sec::before{content:'';position:absolute;top:8px;left:8px;width:8px;height:8px;border-left:2px solid var(--accent);border-top:2px solid var(--accent);opacity:.45;pointer-events:none;transition:opacity .2s,transform .2s}
+.card:hover::before,.wr-sec:hover::before{opacity:1;transform:translate(-2px,-2px)}
+.card,.wr-tile,.hub{transition:border-color .2s,box-shadow .2s,transform .2s}
+.card:hover,.wr-tile:hover,.hub:hover{border-color:rgba(91,196,137,.4);box-shadow:0 10px 30px rgba(0,0,0,.35),0 0 0 1px rgba(91,196,137,.12)}
+.pz .card::before{display:none}
+.ss-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.ss-col{display:flex;flex-direction:column;gap:2px;max-height:520px;overflow:auto;padding:12px;border-radius:14px;background:var(--s1);border:1px solid var(--line2)}
+.ss-col h3{font-size:20px;margin-bottom:6px}
+.ss-it{display:grid;grid-template-columns:26px 1fr auto;align-items:center;gap:8px;padding:6px 4px;border-radius:8px;color:var(--text);text-decoration:none;font-size:14px}
+.ss-it:hover{background:var(--s3)}.ss-it span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ss-v{font-style:normal;font-family:var(--fp);font-size:6.5px;padding:3px 4px 2px;border-radius:2px}
+.ss-v.start{background:rgba(91,196,137,.2);color:#7CF0A8}.ss-v.flex{background:rgba(242,193,78,.2);color:var(--warn)}.ss-v.sit,.ss-v.out,.ss-v.bye{background:rgba(242,120,106,.18);color:var(--bad)}
+@media (max-width:900px){.ss-grid{grid-template-columns:1fr 1fr}}@media (max-width:520px){.ss-grid{grid-template-columns:1fr}}
+.wr-sec .card::before,.card .card::before,.pv-f.card::before{display:none}

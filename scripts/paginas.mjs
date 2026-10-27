@@ -221,12 +221,54 @@ for (const l of ['es', 'en']) {
 // Portada en inglés
 escribe('en/', pagina({ ruta: 'en/', titulo: `Fantasy Experts: Fantasy Football Rankings ${temporada}, Projections & Start/Sit`, desc: 'Week-by-week fantasy football rankings, FX Model projections with accuracy measured every week, start/sit, waivers, injuries, trade analyzer and news. PPR, Half PPR and Standard.', ruteo: '#/', lang: 'en', alt: { es: '', en: 'en/' },
   cuerpo: `<h1>Fantasy Football Rankings ${temporada}, Projections and Start/Sit</h1><p>Fantasy Experts is the fantasy football platform with its own projections: the FX Model analyzes every NFL player's volume, efficiency, opponent and health, and we publish its accuracy every week.</p><ul>${rkPos.map(x => `<li><a href="${urlRF(x, 'en')}">Rankings: ${PN.en[x]}</a></li>`).join('')}<li><a href="en/precision/">Projection accuracy</a></li><li><a href="en/blog/">Blog</a></li></ul>` }));
+// Start/Sit jugador por jugador: una página por jugador relevante cada semana (ES/EN), hecha solo con datos del Modelo FX
+const SS = [];
+{
+  const CORTE = { QB: [12, 20], RB: [24, 40], WR: [30, 50], TE: [10, 18] }, CUANTOS = { QB: 32, RB: 60, WR: 80, TE: 32 };
+  const POSE = { es: { QB: 'QB', RB: 'RB', WR: 'WR', TE: 'TE' }, en: { QB: 'QB', RB: 'RB', WR: 'WR', TE: 'TE' } };
+  for (const pos of Object.keys(CUANTOS)) {
+    const L = jugadores.filter(j => j.pos === pos && j.proy && j.proy[0] != null && j.team !== 'FA' && cal.cal && cal.cal[j.team]).sort((a, b) => b.proy[0] - a.proy[0]).slice(0, CUANTOS[pos]);
+    const jugando = L.filter(j => cal.cal[j.team][semana] && !fueraJ(j));
+    for (const j of L) {
+      const r = cal.cal[j.team][semana], rk = jugando.indexOf(j) + 1, d = r && cal.dvp && cal.dvp[r.opp] && cal.dvp[r.opp][pos];
+      const ver = !r ? 'bye' : fueraJ(j) ? 'out' : rk && rk <= CORTE[pos][0] ? 'start' : rk && rk <= CORTE[pos][1] ? 'flex' : 'sit';
+      const jg = (j.log || []).filter(l => l.f && l.f[0] != null), prom = jg.length ? r1(jg.reduce((a, l) => a + l.f[0], 0) / jg.length) : null, u3 = jg.slice(-3), p3 = u3.length ? r1(u3.reduce((a, l) => a + l.f[0], 0) / u3.length) : null;
+      const alt = { es: `blog/arrancar-${slug(j.n)}-semana-${semana}-${temporada}/`, en: `en/blog/start-${slug(j.n)}-week-${semana}-${temporada}/` };
+      SS.push({ id: j.id, n: j.n, pos, team: j.team, v: ver, p: j.proy[0], es: alt.es, en: alt.en });
+      for (const l of ['es', 'en']) {
+        const en = l === 'en', eq = EQUIPOS[j.team] || j.team, riv = r ? `${r.home ? 'vs' : '@'} ${EQUIPOS[r.opp] || r.opp}` : '';
+        const titulo = en ? `Should you start ${j.n} in Week ${semana}? Fantasy projection and verdict` : `¿Arrancar a ${j.n} en la semana ${semana}? Proyección y veredicto de fantasy`;
+        const resp = { start: en ? `Yes. ${j.n} is the ${pos}${rk} of the week in our FX Model: start him with confidence.` : `Sí. ${j.n} es el ${pos}${rk} de la semana en el Modelo FX: arráncalo con confianza.`,
+          flex: en ? `He's a FLEX option. ${j.n} ranks ${pos}${rk} this week in the FX Model: start him if you need depth at ${pos} or FLEX.` : `Es opción de FLEX. ${j.n} es el ${pos}${rk} de la semana en el Modelo FX: arráncalo si te falta profundidad en ${pos} o en el FLEX.`,
+          sit: en ? `Bench him if you have better options. ${j.n} ranks ${pos}${rk} this week in the FX Model.` : `Mejor en la banca si tienes otra opción. ${j.n} es el ${pos}${rk} de la semana en el Modelo FX.`,
+          out: en ? `No. ${j.n} is listed as ${j.inj} on the official injury report: do not start him.` : `No. ${j.n} aparece como ${j.inj} en el reporte oficial de lesiones: no lo alinees.`,
+          bye: en ? `No. The ${eq} are on bye in week ${semana}.` : `No. ${eq} descansa en la semana ${semana}.` }[ver];
+        const mu = d ? (d.rank <= 10 ? (en ? 'a favorable matchup' : 'un matchup favorable') : d.rank >= 23 ? (en ? 'a tough matchup' : 'un matchup difícil') : (en ? 'a neutral matchup' : 'un matchup neutral')) : '';
+        const secc = [
+          r && ver !== 'out' ? [en ? 'FX Model projection' : 'Proyección del Modelo FX', en ? `${j.proy[0]} PPR points (${j.proy[1]} Half PPR, ${j.proy[2]} Standard) ${riv}.` : `${j.proy[0]} puntos PPR (${j.proy[1]} Half PPR, ${j.proy[2]} Standard) ${riv}.`] : null,
+          d ? [en ? 'Matchup' : 'Matchup', en ? `${EQUIPOS[r.opp] || r.opp} allow ${d.prom} fantasy points per game to ${pos}s: ${mu}.` : `${EQUIPOS[r.opp] || r.opp} permite ${d.prom} puntos de fantasy por partido a los ${pos}: ${mu}.`] : null,
+          prom != null ? [en ? 'Recent form' : 'Forma reciente', en ? `${prom} PPR points per game this season; ${p3} over his last ${u3.length} games.` : `${prom} puntos PPR por partido en la temporada; ${p3} en sus últimos ${u3.length} partidos.`] : null,
+          [en ? 'Injury status' : 'Estatus médico', j.inj ? (en ? `Listed as ${j.inj} on the official report.` : `Aparece como ${j.inj} en el reporte oficial.`) : (en ? 'No injury designation.' : 'Sin designación de lesión.')]].filter(Boolean);
+        const faq = [[en ? `Is ${j.n} a must-start in week ${semana}?` : `¿${j.n} es titular obligado en la semana ${semana}?`, resp], [en ? `How many points will ${j.n} score in week ${semana}?` : `¿Cuántos puntos hará ${j.n} en la semana ${semana}?`, r && ver !== 'out' ? (en ? `The FX Model projects ${j.proy[0]} PPR points.` : `El Modelo FX proyecta ${j.proy[0]} puntos PPR.`) : resp]];
+        const cuerpo = `<article class="blogart"><p><small>START / SIT · ${en ? 'Week' : 'Semana'} ${semana} · ${esc(pos)} · ${esc(eq)}</small></p><h1>${esc(titulo)}</h1><p><b>${esc(resp)}</b></p>
+${secc.map(([h, t]) => `<h2>${esc(h)}</h2><p>${esc(t)}</p>`).join('')}
+<h2>${en ? 'FAQ' : 'Preguntas frecuentes'}</h2>${faq.map(([q, a]) => `<h3>${esc(q)}</h3><p>${esc(a)}</p>`).join('')}
+<p><a href="${urlJ(j)}">${en ? 'Full profile of' : 'Ficha completa de'} ${esc(j.n)}</a> · <a href="${en ? 'en/' : ''}rankings/${pos.toLowerCase()}/">${en ? `Week ${semana} ${pos} rankings` : `Rankings ${pos} semana ${semana}`}</a></p></article>`;
+        escribe(alt[l], pagina({ ruta: alt[l], titulo: `${titulo} | ${en ? 'Fantasy Experts' : SITIO}`, desc: corta(resp + ' ' + secc.map(x => x[1]).join(' ')), ruteo: '#/jugador/' + j.id, cuerpo, tipo: 'article', lang: l, alt,
+          ld: { '@context': 'https://schema.org', '@graph': [{ '@type': 'Article', headline: titulo.slice(0, 110), inLanguage: en ? 'en-US' : 'es-MX', dateModified: hoy.actualizado || new Date().toISOString(), author: { '@type': 'Organization', name: SITIO, url: RAIZ }, publisher: { '@type': 'Organization', name: SITIO, url: RAIZ }, about: { '@type': 'Person', name: j.n } },
+            { '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }] } }));
+      }
+    }
+  }
+  fs.writeFileSync('data/v2/startsit.json', JSON.stringify({ semana, temporada, j: SS }));
+}
 // Portadas del blog
 for (const l of ['es', 'en']) {
   const T = TB[l], ruta = l === 'en' ? 'en/blog/' : 'blog/';
   const cuerpo = `<h1>${T.titulo}</h1><p>${T.desc}</p>
 <h2>${T.rk}</h2><ul>${rkPos.map(x => `<li><a href="${urlR(x, l)}">${l === 'en' ? `Week ${semana} ${POSL.en[x]} rankings` : `Ranking ${POSL.es[x]} semana ${semana}`}</a></li>`).join('')}</ul>
-<ul>${blog.filter(a => a[l] && a[l].slug).slice(0, 80).map(a => `<li><a href="${urlB(a, l)}">${esc(a[l].titulo)}</a> · ${T.sem} ${esc(a.semana)}</li>`).join('')}</ul>`;
+<ul>${blog.filter(a => a[l] && a[l].slug).slice(0, 80).map(a => `<li><a href="${urlB(a, l)}">${esc(a[l].titulo)}</a> · ${T.sem} ${esc(a.semana)}</li>`).join('')}</ul>
+<h2>${l === 'en' ? `Start/Sit week ${semana}: every player` : `Start/Sit semana ${semana}: jugador por jugador`}</h2><ul>${SS.map(x => `<li><a href="${x[l]}">${l === 'en' ? `Should you start ${esc(x.n)}?` : `¿Arrancar a ${esc(x.n)}?`}</a> · ${x.pos} ${x.team}</li>`).join('')}</ul>`;
   escribe(ruta, pagina({ ruta, titulo: `${T.titulo} | ${SITIO}`, desc: T.desc, ruteo: '#/blog', cuerpo, lang: l, alt: { es: 'blog/', en: 'en/blog/' },
     ld: { '@context': 'https://schema.org', '@type': 'Blog', name: `${SITIO} · ${T.blog}`, url: RAIZ + ruta, inLanguage: l === 'en' ? 'en-US' : 'es-MX' } }));
 }
@@ -240,6 +282,7 @@ const urls = [['', 'hourly', '1.0', null, { es: '', en: 'en/' }], ['privacidad/'
   ...archivo.filter(n => n && n.titulo && n.id).flatMap(n => { const f = (n.fecha || '').slice(0, 10); if (!(n.en && n.en.titulo && !n.exclusivo)) return [[urlN(n), 'weekly', '0.8', f]]; const alt = { es: urlN(n), en: urlNen(n) }; return [[alt.es, 'weekly', '0.8', f, alt], [alt.en, 'weekly', '0.8', f, alt]]; }),
   ['en/', 'hourly', '1.0', null, { es: '', en: 'en/' }], ...['', ...rkPos].flatMap(x => { const alt = { es: urlRF(x, 'es'), en: urlRF(x, 'en') }; return [[alt.es, 'daily', '0.95', null, alt], [alt.en, 'daily', '0.95', null, alt]]; }),
   ['precision/', 'weekly', '0.8', null, { es: 'precision/', en: 'en/precision/' }], ['en/precision/', 'weekly', '0.8', null, { es: 'precision/', en: 'en/precision/' }],
+  ...SS.flatMap(x => { const alt = { es: x.es, en: x.en }; return [[x.es, 'daily', '0.8', null, alt], [x.en, 'daily', '0.8', null, alt]]; }),
   ...jugadores.map(j => [urlJ(j), 'daily', '0.7']), ...Object.keys(EQUIPOS).map(t => [urlE(t), 'daily', '0.6'])];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.filter(([u]) => !/^(en\/)?blog\/.+/.test(u) || escritasB.has(u)).map(([u, f, p, m, alt]) => `<url><loc>${RAIZ}${u}</loc>${alt ? Object.entries(alt).map(([l, x]) => `<xhtml:link rel="alternate" hreflang="${l}" href="${RAIZ}${x}"/>`).join('') : ''}${m ? `<lastmod>${m}</lastmod>` : ''}<changefreq>${f}</changefreq><priority>${p}</priority></url>`).join('\n')}\n</urlset>\n`;
 const robots = `User-agent: *\nAllow: /\nDisallow: /apps-script/\nSitemap: ${RAIZ}sitemap.xml\n`;

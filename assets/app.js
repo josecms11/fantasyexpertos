@@ -238,11 +238,20 @@ const lecturaFX = j => {
   const dato = (k, v) => `<span><small>${k}</small><b>${v}</b></span>`;
   return `<div class="cs-fx"><div class="cs-fx-h">${sello()}<span>${tx('Lectura del modelo', 'Model read')}</span></div><div class="cs-fx-g">
     ${dato(tx('Proyección', 'Projection'), n1(j.proy[FMT]) + ' pts')}${rk ? dato(tx('Rango', 'Rank'), j.pos + rk) : ''}
-    ${u.length ? dato(tx('Piso / techo', 'Floor / ceiling'), n1(Math.min(...u)) + ' / ' + n1(Math.max(...u))) : ''}${vm != null ? dato(vk === 'ra' ? tx('Acarreos (3 sem)', 'Carries (3 wk)') : tx('Targets (3 sem)', 'Targets (3 wk)'), vm) : ''}</div></div>`;
+    ${dato(tx(`Prob. top ${topN(j.pos)}`, `Top-${topN(j.pos)} odds`), pctTop(j))}${vm != null ? dato(vk === 'ra' ? tx('Acarreos (3 sem)', 'Carries (3 wk)') : tx('Targets (3 sem)', 'Targets (3 wk)'), vm) : ''}</div></div>`;
 };
 /* Zona PRO reutilizable: suscriptor ve el contenido; el resto ve un adelanto borroso con el borde neón y un clic a PRO. */
 const zonaPrem = (html, gancho) => esPremium() ? `<div class="pz es-prem">${html}</div>`
   : `<div class="pz lock"><div class="pz-in" aria-hidden="true">${html}</div><a class="cs-cta pz-cta" href="#/premium">${CANDADO}<span>${esc(gancho)}</span><b>PRO ›</b></a></div>`;
+/* Probabilidad de terminar la semana entre los N mejores de su posición (N = titulares típicos de una liga).
+   Usa la proyección FX y la variación real de sus puntos semana a semana. */
+const sdF = j => { const u = (j.log || []).filter(l => l.f && l.f[FMT] != null).slice(-6).map(l => l.f[FMT]); if (u.length < 3) return Math.max(4, (j.prom || 8) * .45); const m = u.reduce((a, b) => a + b, 0) / u.length; return Math.max(3.5, Math.sqrt(u.reduce((a, b) => a + (b - m) ** 2, 0) / (u.length - 1))); };
+const _corteTop = {};
+const topN = pos => (CORTE[pos] || [12])[0];
+const probTop = j => { if (!j || !juega(j)) return 0; const k = j.pos + FMT; if (_corteTop[k] == null) { const L = P.filter(x => x.pos === j.pos && juega(x)).sort((a, b) => b.pEst - a.pEst); _corteTop[k] = L[topN(j.pos) - 1] ? L[topN(j.pos) - 1].pEst : 0; }
+  const ph = z => { const t = 1 / (1 + .3275911 * Math.abs(z) / Math.SQRT2), y = 1 - (((((1.061405429 * t - 1.453152027) * t) + 1.421413741) * t - .284496736) * t + .254829592) * t * Math.exp(-z * z / 2); return .5 * (1 + (z >= 0 ? y : -y)); };
+  return Math.round(ph((j.pEst - _corteTop[k]) / sdF(j)) * 100); };
+const pctTop = j => `${probTop(j)}%`;
 const pisoTecho = j => { const u = (j.log || []).filter(l => l.f && l.f[FMT] != null).slice(-5).map(l => l.f[FMT]); return u.length >= 2 ? [Math.min(...u), Math.max(...u)] : null; };
 /* Sello de la tecnología propia: marca todo lo que sale de nuestros sistemas. */
 const sello = (x = '') => `<span class="fx-tech ${x}">${fxLogo(12)}<b>FX TECH</b> ANALYZER</span>`;
@@ -269,9 +278,13 @@ new MutationObserver(() => { clearTimeout(selloEnTexto._t); selloEnTexto._t = se
 const proBloque = (titulo, info, html, gancho) => `<section class="block plusfx" data-chip="★ ${tx('VENTAJA FX', 'FX EDGE')}"><div class="head"><div><h2>${titulo} ${infoFX(info)}</h2></div><a class="all" href="#/premium">${tx('Todo PRO', 'All PRO')} ›</a></div><div class="card plus-in"><div class="plus-sello">${sello()}</div>${zonaPrem(html, gancho)}</div></section>`;
 const filaPlus = (j, der, sub) => `<a class="cg-j" href="#/jugador/${j.id}" data-hover-j="${j.id}">${helmet(j.team, j.num, 30)}<span class="cg-jn"><b>${esc(j.n)}</b><small>${sub}</small></span>${der}</a>`;
 function plusLesion() {
-  const L = D.lesionados.map(x => J[x.id]).filter(j => j && (fuera(j) || estatus(j) === 'Duda') && ['QB', 'RB', 'WR', 'TE'].includes(j.pos) && (j.pEst > 5 || (j.rank && j.rank < 150))).slice(0, 8);
-  const filas = L.map(j => { const b = P.filter(x => x.team === j.team && x.pos === j.pos && x.id !== j.id && juega(x)).sort((a, c) => c.pEst - a.pEst)[0]; return b ? filaPlus(b, `<b class="n cg-p">${n1(b.pEst)}</b>`, tx(`Toma el lugar de ${j.n} (${(estatus(j) === 'Duda' ? 'en duda' : 'fuera').toUpperCase()}) · ${b.pos} ${b.team}`, `Steps in for ${j.n} (${estatus(j) === 'Duda' ? 'QUESTIONABLE' : 'OUT'}) · ${b.pos} ${b.team}`)) : ''; }).filter(Boolean);
-  return filas.length ? proBloque(tx('¿Quién toma su lugar?', 'Who takes his spot?'), tx('Cuando un titular se lesiona, otro jugador de su equipo recibe sus balones. Te decimos quién es y cuánto proyecta.', 'When a starter gets hurt, a teammate gets his touches. We tell you who it is and what he projects.'), filas.join(''), tx('Agrega al sustituto del lesionado antes que el resto de tu liga', 'Add the injured starter\'s replacement before the rest of your league')) : '';
+  const L = D.lesionados.map(x => J[x.id]).filter(j => j && (fuera(j) || estatus(j) === 'Duda') && ['QB', 'RB', 'WR', 'TE'].includes(j.pos) && ((j.prom || 0) > 7 || (j.rank && j.rank < 150))).slice(0, 8);
+  const cards = L.map(j => { const b = P.filter(x => x.team === j.team && x.pos === j.pos && x.id !== j.id && juega(x)).sort((a, c) => c.pEst - a.pEst)[0]; if (!b) return '';
+    const sube = b.pEst - (b.prom || 0), v = b.pEst >= (j.pos === 'QB' ? 15 : 9) ? [tx('AGRÉGALO', 'ADD HIM'), 'ok'] : b.pEst >= 6 ? [tx('VIGÍLALO', 'WATCH'), 'mid'] : [tx('PROFUNDIDAD', 'DEPTH'), 'no'];
+    return `<div class="rel"><a class="rel-out" href="#/jugador/${j.id}" data-hover-j="${j.id}">${helmet(j.team, j.num, 30)}<span><b>${esc(j.n)}</b><small><em class="${fuera(j) ? 'o' : 'd'}">${fuera(j) ? tx('FUERA', 'OUT') : tx('EN DUDA', 'QUEST.')}</em>${parte(j) ? ' · ' + esc(parte(j)) : ''}</small></span></a>
+      <span class="rel-arr" aria-hidden="true">${pixel(['..G.....', '..GG....', 'GGGGG...', 'GGGGGG..', 'GGGGG...', '..GG....', '..G.....'])}</span>
+      <a class="rel-in" href="#/jugador/${b.id}" data-hover-j="${b.id}">${helmet(b.team, b.num, 34)}<span><b>${esc(b.n)}</b><small>${esc(b.pos)} · ${esc(b.team)} · ${tx('proy', 'proj')} <strong>${n1(b.pEst)}</strong>${sube > 1 ? ` <i>▲${n1(sube)}</i>` : ''}</small></span></a><span class="rp ${v[1]}">${v[0]}</span></div>`; }).filter(Boolean);
+  return cards.length ? proBloque(tx('Relevos: quién entra por cada lesionado', 'Relief: who steps in for each injury'), tx('Cuando un titular se lesiona, alguien de su equipo hereda sus balones. Te decimos quién es, cuánto proyecta ahora y si vale la pena agregarlo.', 'When a starter gets hurt, a teammate inherits his touches. We tell you who, what he projects now and whether to add him.'), `<div class="rels">${cards.join('')}</div>`, tx('Agrega al relevo antes que el resto de tu liga', 'Grab the replacement before the rest of your league')) : '';
 }
 function plusRepite() {
   if (!SEMNUM) return '';
@@ -345,10 +358,11 @@ document.addEventListener('mouseover', e => { const a = e.target.closest && e.ta
   const v = veredicto(j).v, ult = j.ult != null ? `${n1(j.ult)} <small>${tx('ÚLT', 'LAST')} S${j.ultW}</small>` : '–';
   _hc.innerHTML = `<div class="hc-h" style="${vars(j.team)}">${helmet(j.team, j.num, 40)}<span><b>${esc(j.n)}</b><small>${esc(j.pos)} · ${esc(EQUIPOS[j.team] || j.team)} · ${esc(rivalTxt(j.team))}</small></span></div>
     <div class="hc-d"><span><b class="n">${j.p != null ? n1(j.p) : '–'}</b><small>${tx('PROY FX', 'FX PROJ')}</small></span><span><b class="n">${ult}</b></span><span><b class="n">${n1(j.prom)}</b><small>${tx('PROM', 'AVG')}</small></span>${fxPill(j)}</div><p>${tx('Clic para ver su ficha completa', 'Click for full profile')} ›</p>`;
-  const nm = a.querySelector('b') || a, r = nm.getBoundingClientRect(), x = Math.min(innerWidth - 300, Math.max(12, r.left)), abajo = r.bottom + 190 < innerHeight; _hc.style.left = x + 'px'; _hc.style.top = (abajo ? r.bottom + 8 : r.top - 8 - (_hc.offsetHeight || 170)) + scrollY + 'px'; _hc.classList.add('on');
+  const nm = a.querySelector('b') || a, r = nm.getBoundingClientRect(), x = Math.min(innerWidth - 300, Math.max(12, r.left)), abajo = r.bottom + 190 < innerHeight; _hc.style.left = x + 'px'; _hc.style.top = (abajo ? r.bottom + 8 : r.top - 8 - (_hc.offsetHeight || 170)) + 'px'; _hc.classList.add('on');
 });
 document.addEventListener('mouseout', e => { if (_hc && e.target.closest && e.target.closest('a.ilink[data-j], a[data-hover-j]')) _hc.classList.remove('on'); });
 addEventListener('hashchange', () => { if (_hc) _hc.classList.remove('on'); });
+addEventListener('scroll', () => { if (_hc) _hc.classList.remove('on'); }, { passive: true });
 const CANDADO = '<svg class="ico-lock" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 7V5a4 4 0 0 1 8 0v2h1v8H3V7h1zm2 0h4V5a2 2 0 0 0-4 0v2z" fill="currentColor"/></svg>';
 const newsCard = (n, big) => {
   const ps = (n.jugadores || []).map(id => J[id]).filter(Boolean), lock = n.exclusivo && n.premium && !esPremium();
@@ -447,7 +461,7 @@ function duelo() {
   const d = D.duelo || {};
   const find = name => P.find(j => j.n && j.n.toLowerCase() === String(name || '').toLowerCase());
   let a = find(d.a), b = find(d.b);
-  if (!a || !b || a.pos !== b.pos) { const L = P.filter(j => j.pos === 'WR' && juega(j)).sort((x, y) => y.pEst - x.pEst); a = L[11]; b = L[12]; }
+  if (!a || !b || a.pos !== b.pos || !juega(a) || !juega(b)) { const pos = (a && a.pos) || 'WR', L = P.filter(j => j.pos === pos && juega(j)).sort((x, y) => y.pEst - x.pEst), k = Math.min(L.length - 2, CORTE[pos] ? CORTE[pos][0] - 2 : 10); a = L[k]; b = L[k + 1]; }
   if (!a || !b) return '';
   const fx = a.pEst >= b.pEst ? a : b;
   const lado = (j, k) => { const r = rivalDe(j.team), u3 = (j.temp || []).filter(v => v != null).slice(-3);
@@ -613,7 +627,7 @@ function posicion(p) {
       <span class="chips" style="margin:0" id="fst">${['TODOS', 'START', 'FLEX', 'SIT'].map((s, i) => `<button type="button" class="chip ${i ? '' : 'on'} ${s}" data-s="${s}">${s}</button>`).join('')}</span></div>
     <div class="card scroll"><table class="tbl rank"><thead><tr>
       <th>#</th><th>JUGADOR</th><th>EQUIPO</th><th>RIVAL S${W}</th><th>DIFICULTAD</th><th class="hl">PROY ${infoFX(tx('Proyección del FX Tech Analyzer: nuestro modelo combina el volumen y la eficiencia de esta temporada con la anterior, el rival y la salud del jugador.', 'FX Tech Analyzer projection: our model blends this and last season\'s volume and efficiency with the opponent and the player\'s health.'))}</th>
-      ${ult.map(x => `<th>S${x}</th>`).join('')}<th>PROM</th><th>TOTAL</th><th>TENDENCIA</th><th class="pz-th"><a href="#/premium">${esPremium() ? '' : CANDADO}PISO–TECHO</a>${infoFX(tx('Lo mínimo y lo máximo que ha hecho en sus últimas 5 semanas. Piso alto = seguro para tu alineación; techo alto = jugador para ganar semanas cerradas. Exclusivo PRO.', 'The least and most he scored over his last 5 weeks. High floor = safe for your lineup; high ceiling = a player to win close weeks. PRO exclusive.'))}</th><th class="fxh">${fxLogo(18)} START/SIT</th>
+      ${ult.map(x => `<th>S${x}</th>`).join('')}<th>PROM</th><th>TOTAL</th><th>TENDENCIA</th><th class="pz-th"><a href="#/premium">${esPremium() ? '' : CANDADO}${tx('PROB. TOP', 'TOP')} ${topN(p)}</a>${infoFX(tx(`Probabilidad de que termine la semana entre los ${topN(p)} mejores ${p} (lo que necesitas de un titular). La calcula el FX Tech Analyzer con su proyección y qué tanto varían sus puntos. Exclusivo PRO.`, `Chance he finishes the week as a top-${topN(p)} ${p} (what you need from a starter). Calculated by the FX Tech Analyzer from his projection and weekly volatility. PRO exclusive.`))}</th><th class="fxh">${fxLogo(18)} START/SIT</th>
     </tr></thead><tbody id="tb"></tbody></table></div>
     <p class="ss-note">Proyección: Modelo FX, propio (volumen y eficiencia de esta temporada, con la anterior como base). Dificultad = puntos que la defensa rival permite a la posición: ★★★★★ es el matchup ideal. START/FLEX/SIT combina proyección, rival, racha, noticias y comunidad.</p>
     ${noJuegan.length ? `<details class="desglose" style="margin-top:22px"><summary><span>No juegan en la semana ${semActual()} · ${noJuegan.length}</span><span>›</span></summary><div class="plist" style="padding:0 12px 12px">${noJuegan.map(j => prow(j, `<span class="team">${fuera(j) ? esc(parte(j) || j.inj) : 'BYE'}</span>${fxPill(j)}`)).join('')}</div></details>` : ''}
@@ -638,7 +652,7 @@ function montaTabla(p) {
       <td>${r ? `<a class="team riv" href="#/equipo/${r.opp}" onclick="event.stopPropagation()">${helmet(r.opp, '', 22)}${r.home ? 'vs' : '@'} ${r.opp}</a>` : ''}</td>
       <td>${pintaEstrellas(v.e)}</td><td class="n hl">${n1(proyW(j, W))}${!fut && j.p == null ? '<sup>*</sup>' : ''}</td>
       ${ult.map(w => { const val = ptsSem(j, w); return `<td class="n wk">${val != null ? n1(val) : rivalDe(j.team, w) ? '–' : '<small>BYE</small>'}</td>`; }).join('')}
-      <td class="n">${n1(j.prom)}</td><td class="n">${n1(j.total)}</td><td>${spark(j.hist)}</td><td class="n pz-td">${esPremium() ? (pisoTecho(j) ? n1(pisoTecho(j)[0]) + '–' + n1(pisoTecho(j)[1]) : '–') : `<a href="#/premium" onclick="event.stopPropagation()" title="PRO"><span class="pz-blur">${k * 3 % 9 + 4}.${k % 10}–${k * 7 % 13 + 14}.${k * 3 % 10}</span></a>`}</td><td>${fut ? `<span class="fxv ${v.v}">${fxLogo(15)}${VTXT[v.v]}</span>` : fxPill(j)}</td></tr>`).join('') || '<tr><td colspan="13"><div class="empty">Ningún jugador coincide.</div></td></tr>';
+      <td class="n">${n1(j.prom)}</td><td class="n">${n1(j.total)}</td><td>${spark(j.hist)}</td><td class="n pz-td">${esPremium() ? (fut ? '–' : `<span class="ptop" style="--v:${probTop(j)}%">${pctTop(j)}</span>`) : `<a href="#/premium" onclick="event.stopPropagation()" title="PRO"><span class="pz-blur">${(k * 37) % 90 + 5}%</span></a>`}</td><td>${fut ? `<span class="fxv ${v.v}">${fxLogo(15)}${VTXT[v.v]}</span>` : fxPill(j)}</td></tr>`).join('') || '<tr><td colspan="13"><div class="empty">Ningún jugador coincide.</div></td></tr>';
     $('#tb').querySelectorAll('tr[data-id]').forEach(tr => tr.onclick = () => { location.hash = '#/jugador/' + tr.dataset.id; });
   };
   $('#filtro').oninput = pinta;
@@ -721,6 +735,9 @@ function equipo(t) {
   </div></div>`;
 }
 const tresYpro = (L, gancho) => { const a = L.slice(0, 3).join(''), b = L.slice(3).join(''); return a + (b ? (esPremium() ? b : zonaPrem(`<div class="plist">${b}</div>`, gancho)) : ''); };
+const tendenciasCuerpo = () => `<div class="grid g2">
+    <div class="card"><h3 style="color:var(--accent)">▲ ${tx('Más agregados', 'Most added')}</h3><div class="plist">${tresYpro(D.agregados.map((id, i) => J[id] && prow(J[id], `<span class="bar"><i style="width:${pct(J[id].add, 'add')}%"></i></span><span class="num sm">${nf.format(J[id].add)}</span>${fxPill(J[id])}`, i + 1)).filter(Boolean), tx('La lista completa de los que suben, con nuestro veredicto', 'The full list of risers, with our verdict'))}</div></div>
+    <div class="card"><h3 style="color:var(--bad)">▼ ${tx('Más soltados', 'Most dropped')}</h3><div class="plist">${tresYpro(D.soltados.map((id, i) => J[id] && prow(J[id], `<span class="bar down"><i style="width:${pct(J[id].drop, 'drop')}%"></i></span><span class="num sm" style="color:var(--bad)">${nf.format(J[id].drop)}</span>`, i + 1)).filter(Boolean), tx('La lista completa de los que bajan', 'The full list of fallers'))}</div></div></div>${plusCompra()}`;
 function tendencias() {
   titulo(tx('Tendencias', 'Trends'));
   return `<div class="page">${crumbs([['#/premium', 'FX PRO'], ['', tx('Tendencias', 'Trends')]])}<div class="wrap"><section class="block"><div class="head"><div><h2>${tx('Tendencias en ligas', 'League trends')}</h2><p class="hsub">${tx('Quién sube y quién baja en las ligas en las últimas 24 horas, con el veredicto del FX Tech Analyzer.', 'Who is rising and falling across leagues in the last 24 hours, with the FX Tech Analyzer verdict.')}</p></div></div><div class="grid g2">
@@ -753,7 +770,7 @@ function exclusivo() {
 
 
 /* =============================== BLOG (ES / EN) =============================== */
-let BLOG = null;
+let BLOG = null, _ss = null;
 const cargaBlog = () => BLOG ? Promise.resolve(BLOG) : fetch(BASE + 'blog.json?v=' + Math.floor(Date.now() / 60000)).then(r => r.ok ? r.json() : []).catch(() => []).then(b => (BLOG = Array.isArray(b) ? b : []));
 const enBlog = () => /^#\/blog/.test(location.hash || window.FX_RUTA || '');
 const TIPO_B = { startsit: ['START / SIT', 'START / SIT'], waiver: ['WAIVER WIRE', 'WAIVER WIRE'], lesion: ['LESIONES', 'INJURIES'], trade: ['TRADES', 'TRADES'] };
@@ -762,12 +779,15 @@ const fechaB = f => new Date(f).toLocaleDateString(LANG === 'en' ? 'en-US' : 'es
 function blogLista() {
   titulo('Blog');
   if (!BLOG) { cargaBlog().then(() => { if (enBlog()) repinta(); }); return cargador(); }
+  if (!_ss) { _ss = {}; fetch(BASE + 'startsit.json?v=' + Math.floor(Date.now() / 6e5)).then(r => r.json()).then(x => { _ss = x; if (enBlog()) repinta(); }).catch(() => {}); }
   const L = BLOG.filter(a => a[LANG] && a[LANG].titulo), w = semActual();
   return `<div class="page">${crumbs([['#/noticias', tx('Noticias', 'News')], ['', 'Blog']])}<div class="wrap narrowish">
     <section class="block"><div class="head"><div><h2>${tx('Blog de fantasy', 'Fantasy Football Blog')}</h2><p class="hsub">${tx('Las preguntas de la semana, respondidas con datos y con el Modelo FX.', 'This week\'s big questions, answered with data and the FX Model.')}</p></div></div>
     <div class="b-rk"><span>${tx('Rankings semana', 'Week')} ${w}</span>${Object.keys(POSB).map(p => `<a class="chip" href="#/posicion/${p}">${POSB[p][LANG === 'en' ? 1 : 0]}</a>`).join('')}</div>
     <div class="b-lista">${L.map(a => { const x = a[LANG], j = J[a.jugador];
       return `<a class="b-item" href="#/blog/${a.id}">${j ? helmet(j.team, j.num, 44) : fxLogo(30)}<span><small><b>${TIPO_B[a.tipo] ? TIPO_B[a.tipo][LANG === 'en' ? 1 : 0] : 'FX'}</b> · ${tx('Semana', 'Week')} ${esc(a.semana)} · ${esc(fechaB(a.fecha))}</small><b class="b-t">${esc(x.titulo)}</b><em>${esc(x.respuesta || '')}</em></span></a>`; }).join('') || `<div class="empty">${tx('Los primeros artículos llegan con la siguiente actualización.', 'The first articles arrive with the next update.')}</div>`}</div>
+    ${(_ss && _ss.j || []).length ? `<div class="head" style="margin-top:36px"><div><h2>${tx(`Start/Sit semana ${_ss.semana}: jugador por jugador`, `Week ${_ss.semana} Start/Sit: every player`)}</h2><p class="hsub">${tx('El veredicto del Modelo FX para cada jugador relevante de la NFL.', 'The FX Model verdict for every relevant NFL player.')}</p></div></div>
+    <div class="ss-grid">${['QB', 'RB', 'WR', 'TE'].map(pos => `<div class="ss-col"><h3>${pos}</h3>${_ss.j.filter(x => x.pos === pos).map(x => { const j = J[x.id]; return `<a class="ss-it" href="${LANG === 'en' ? x.en : x.es}">${j ? helmet(j.team, j.num, 24) : ''}<span>${esc(x.n)}</span><em class="ss-v ${x.v}">${{ start: 'START', flex: 'FLEX', sit: 'SIT', out: 'OUT', bye: 'BYE' }[x.v]}</em></a>`; }).join('')}</div>`).join('')}</div>` : ''}
     </section></div></div>`;
 }
 function blogNota(id) {
@@ -974,15 +994,15 @@ function partido(id) {
   const notas = todasNoticias().filter(n => equiposDe(n).some(t => t === g.visita.ab || t === g.local.ab)).slice(0, 6);
   const lado = t => { const L = fantasyDe(t.ab).slice(0, 8), les = fantasyDe(t.ab).filter(j => estatus(j) !== 'Sano').slice(0, 6);
     return `<div class="card side-team" style="${vars(t.ab)}"><div class="head"><h3>${helmet(t.ab, '', 30)} ${esc(t.nombre)}</h3><a class="all" href="#/equipo/${t.ab}">Equipo ›</a></div>
-      <p class="sub">Fantasy · ${g.estado === 'post' ? 'puntos ' + FMTS[FMT] + ' en este partido' : 'proyección ' + FMTS[FMT] + ' (los puntos finales llegan al terminar)'}</p>
-      <div class="plist">${L.map(j => prow(j, `<span class="num sm">${n1(g.estado === 'post' ? ptsSem(j, g.semana) : (j.p ?? j.pEst))}</span>${fxPill(j)}`)).join('')}</div>
+      <p class="sub">${g.estado === 'post' ? tx(`Puntos ${FMTS[FMT]} en este partido`, `${FMTS[FMT]} points in this game`) : tx(`Proyección ${FMTS[FMT]} y veredicto`, `${FMTS[FMT]} projection and verdict`)}</p>
+      <div class="plist">${tresYpro(L.map(j => prow(j, `<span class="num sm">${n1(g.estado === 'post' ? ptsSem(j, g.semana) : (j.p ?? j.pEst))}</span>${fxPill(j)}`)), tx('El veredicto de cada jugador de este partido', 'The verdict on every player in this game'))}</div>
       ${les.length ? `<p class="sub" style="margin-top:14px">Reporte médico</p><div class="plist">${les.map(j => prow(j, `<span class="team">${esc(parte(j))}</span>${pillSt(j)}`)).join('')}</div>` : ''}</div>`; };
   setTimeout(() => detallePartido(g).then(() => { if (g.estado === 'in') vigilaPartido(g.id); }), 0);
   return `<div class="page">${crumbs([['#/partidos', 'Partidos'], ['', g.visita.ab + ' vs ' + g.local.ab]])}<div class="wrap">
     <div id="g-hero">${heroPartido(g)}</div>${g.estado !== 'pre' ? '<div id="g-eq"></div>' : ''}
     ${g.estado !== 'pre' ? `<div class="live-tabs" role="tablist"><button type="button" class="on" data-lt="fx">${fxLogo(14)} Fantasy en vivo</button><button type="button" data-lt="pbp">Jugada a jugada</button></div>` : ''}
     ${g.estado === 'pre' ? `<div class="gsum" id="gsum"><div class="esq-lineas" aria-busy="true" aria-label="Cargando estadísticas del partido"><i></i><i></i><i></i><i></i></div></div>
-    <section class="block grid g2">${lado(g.visita)}${lado(g.local)}</section>` : `<div class="live-grid ver-fx">
+    <section class="block"><div class="head"><div><h2>${tx('Start/Sit FX del partido', 'Game Start/Sit FX')} ${infoFX(tx('Para cada jugador de fantasy de este partido: su proyección y si conviene arrancarlo, ponerlo de FLEX o dejarlo en la banca.', 'For every fantasy player in this game: projection and whether to start, flex or bench him.'))}</h2></div></div><div class="grid g2">${lado(g.visita)}${lado(g.local)}</div></section>` : `<div class="live-grid ver-fx">
       <section class="card fxlive" id="fxlive"><div class="esq-lineas" aria-busy="true" aria-label="Cargando fantasy en vivo"><i></i><i></i><i></i><i></i><i></i><i></i></div></section>
       <aside class="card pbp" id="pbp"><div class="esq-lineas" aria-busy="true" aria-label="Cargando jugadas"><i></i><i></i><i></i><i></i></div></aside>
     </div><div id="gsum" class="gsum"></div>`}
@@ -1329,6 +1349,7 @@ function baja(q) {
 const SEM_FIN = 17, REEMPLAZO = { QB: 14, RB: 32, WR: 40, TE: 14, K: 14, DEF: 14 };
 const ppj = j => { const jug = (j.temp || []).filter(v => v != null); if (!jug.length) return j.p ?? 0; const u3 = jug.slice(-3), r = u3.reduce((a, b) => a + b, 0) / u3.length; return .5 * j.prom + .3 * r + .2 * (j.p ?? j.prom); };
 let _rep = {};
+const sobreRep = j => Math.max(0, valorROS(j).ppj - nivelRep(j.pos));
 const nivelRep = pos => { const k = pos + FMT; if (_rep[k] == null) { const L = P.filter(j => j.pos === pos && j.team !== 'FA' && (j.temp || []).filter(v => v != null).length >= 2).map(ppj).sort((a, b) => b - a); _rep[k] = L[(REEMPLAZO[pos] || 14) - 1] || 0; } return _rep[k]; };
 function valorROS(j) {
   let juegos = 0; if (j.team !== 'FA') for (let w = semActual(); w <= SEM_FIN; w++) if (rivalDe(j.team, w)) juegos++;
@@ -1346,20 +1367,19 @@ function herramientas() {
   </section></div></div>`;
 }
 let TR = { da: [], recibe: [] };
+const analizador = () => { const lado = (k, t) => `<div class="card tr-lado"><h3>${t}</h3><div class="tr-lista" id="tr-${k}">${listaTrade(k)}</div><div class="tr-busca"><input type="search" data-trk="${k}" placeholder="${tx('Busca un jugador para agregarlo…', 'Search a player to add…')}" aria-label="${tx('Agregar jugador a', 'Add player to')} ${t}" autocomplete="off"><div class="sugg" id="trs-${k}" role="listbox"></div></div></div>`;
+  return `<div class="tr-grid">${lado('da', tx('TÚ DAS', 'YOU GIVE'))}${lado('recibe', tx('TÚ RECIBES', 'YOU GET'))}</div><div id="tr-res">${resTrade()}</div>`; };
+const leeTR = q => { const da = (q.get('da') || '').split(',').filter(id => J[id]), re = (q.get('recibe') || '').split(',').filter(id => J[id]); if (da.length || re.length) TR = { da, recibe: re }; };
 function trade(q) {
-  titulo('Analizador de trades');
-  TR = { da: (q.get('da') || '').split(',').filter(id => J[id]), recibe: (q.get('recibe') || '').split(',').filter(id => J[id]) };
-  const lado = (k, t) => `<div class="card tr-lado"><h3>${t}</h3><div class="tr-lista" id="tr-${k}">${listaTrade(k)}</div><div class="tr-busca"><input type="search" data-trk="${k}" placeholder="${tx('Busca un jugador para agregarlo…', 'Search a player to add…')}" aria-label="${tx('Agregar jugador a', 'Add player to')} ${t}" autocomplete="off"><div class="sugg" id="trs-${k}" role="listbox"></div></div></div>`;
+  titulo(tx('Analizador de trades', 'Trade analyzer')); leeTR(q);
   return `<div class="page">${crumbs([['#/premium', 'FX PRO'], ['', tx('Analizador de trades', 'Trade analyzer')]])}<div class="wrap narrowish"><section class="block">
-    <div class="head"><div><h2>Analizador de trades</h2><p class="hsub">Valor de cada jugador para lo que resta de la temporada regular (hasta la semana ${SEM_FIN}) en ${FMTS[FMT]}.</p></div></div>
-    <div class="tr-grid">${lado('da', 'TÚ DAS')}${lado('recibe', 'TÚ RECIBES')}</div>
-    <div id="tr-res">${resTrade()}</div>
-  </section></div></div>`;
+    <div class="head"><div><h2>${tx('Analizador de trades', 'Trade analyzer')}</h2><p class="hsub">${tx(`Valor FX de cada jugador para lo que resta de la temporada regular (hasta la semana ${SEM_FIN}) en ${FMTS[FMT]}.`, `FX value of each player for the rest of the regular season (through week ${SEM_FIN}) in ${FMTS[FMT]}.`)}</p></div></div>
+    ${analizador()}</section></div></div>`;
 }
 const listaTrade = k => TR[k].length ? TR[k].map(id => { const j = J[id], v = valorROS(j), ft = pisoTecho(j), u = (j.log || []).filter(l => l.f && l.f[FMT] != null).slice(-3).map(l => l.f[FMT]), u3 = u.length ? u.reduce((a, b) => a + b, 0) / u.length : null, st = estatus(j);
   const dato = (t, x) => `<span><small>${t}</small><b class="n">${x}</b></span>`;
   return `<div class="tr-j" style="${vars(j.team)}">${helmet(j.team, j.num, 34)}<a class="tr-n" href="#/jugador/${j.id}" data-hover-j="${j.id}"><b>${esc(j.n)}</b><small>${esc(j.pos)} · ${esc(j.team)}${st !== 'Sano' ? ` · <em class="tr-st">${esc(st.toUpperCase())}</em>` : ''}</small></a><em class="n tr-v">${Math.round(v.valor)}<small>${tx('valor', 'value')}</small></em><button type="button" class="tr-x" data-k="${k}" data-id="${id}" aria-label="${tx('Quitar a', 'Remove')} ${esc(j.n)}">×</button>
-    <div class="tr-stats">${dato(tx('Proy S', 'Proj W') + semActual(), n1(j.p ?? j.pEst))}${dato(tx('Pts/juego', 'Pts/game'), n1(v.ppj))}${dato(tx('Últimas 3', 'Last 3'), u3 != null ? n1(u3) : '–')}${dato(tx('Juegos restantes', 'Games left'), v.juegos)}${dato(tx('Piso–techo', 'Floor–ceil'), esPremium() ? (ft ? n1(ft[0]) + '–' + n1(ft[1]) : '–') : CANDADO)}</div></div>`; }).join('') : `<p class="sub">${tx('Sin jugadores todavía.', 'No players yet.')}</p>`;
+    <div class="tr-stats">${dato(tx('Proy S', 'Proj W') + semActual(), n1(j.p ?? j.pEst))}${dato(tx('Pts/juego', 'Pts/game'), n1(v.ppj))}${dato(tx('Últimas 3', 'Last 3'), u3 != null ? n1(u3) : '–')}${dato(tx('Juegos restantes', 'Games left'), v.juegos)}${dato(tx(`Prob. top ${topN(j.pos)}`, `Top-${topN(j.pos)} odds`), esPremium() ? pctTop(j) : CANDADO)}</div></div>`; }).join('') : `<p class="sub">${tx('Sin jugadores todavía.', 'No players yet.')}</p>`;
 function resTrade() {
   if (!TR.da.length || !TR.recibe.length) return `<div class="verdict show"><b>${fxLogo(20)} ARMA EL TRADE</b><p>Agrega al menos un jugador de cada lado.</p></div>`;
   const a = TR.da.reduce((s, id) => s + valorROS(J[id]).valor, 0), b = TR.recibe.reduce((s, id) => s + valorROS(J[id]).valor, 0);
@@ -1656,7 +1676,7 @@ function niveles() {
     <div class="pv-mid">${ctaPrem(tx('Quiero PRO', 'I want PRO'))}<small>${tx('Desde $59 MXN al mes · cancela cuando quieras', 'From $59 MXN a month · cancel anytime')}</small></div></section>`;
 }
 function cadaSeccion() {
-  const C = [['#/posicion/RB', 'linea', tx('Rankings', 'Rankings'), tx('Piso y techo', 'Floor & ceiling'), tx('Lo mínimo y lo máximo que puede darte cada jugador.', 'The least and most each player can give you.')],
+  const C = [['#/posicion/RB', 'linea', tx('Rankings', 'Rankings'), tx('Probabilidad top', 'Top odds'), tx('Qué tan probable es que rinda como titular.', 'How likely he is to deliver like a starter.')],
     ['#/lideres', 'marcador', tx('Líderes', 'Leaders'), tx('¿Fue suerte o es real?', 'Fluke or for real?'), tx('Sabe si aguantar o vender a quien explotó.', 'Know whether to hold or sell a breakout.')],
     ['#/tendencias', 'iman', tx('Tendencias', 'Trends'), tx('Agregar o ignorar', 'Add or ignore'), tx('No gastes tu waiver en una moda.', 'Don\'t waste your waiver on hype.')],
     ['#/lesionados', 'sirena', tx('Lesionados', 'Injuries'), tx('Quién toma su lugar', 'Who steps in'), tx('El sustituto, antes que tu liga.', 'The replacement, before your league.')],
@@ -1685,7 +1705,7 @@ function animaPremium() {
 document.addEventListener('click', e => { const a = e.target.closest('[data-pv-ir],[data-ir-planes]'); if (!a) return; const id = a.dataset.pvIr || 'pv-planes', el = document.getElementById(id); if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } });
 
 /* ---------- Cuarto de guerra: tablero + herramientas por pestaña ---------- */
-const TABS_CG = [['', 'Mi semana', 'My week'], ['alineacion', 'Alineación', 'Lineup'], ['waivers', 'Waivers', 'Waivers'], ['trades', 'Trades', 'Trades'], ['plantel', 'Plantel', 'Roster'], ['@trade', 'Analizador de trades', 'Trade analyzer'], ['@tendencias', 'Tendencias', 'Trends'], ['exclusivas', 'Exclusivas', 'Exclusives']];
+const TABS_CG = [['', 'Mi semana', 'My week'], ['equipo', 'Mi equipo', 'My team'], ['alineacion', 'Alineación', 'Lineup'], ['waivers', 'Waivers', 'Waivers'], ['trades', 'Trades', 'Trades'], ['tendencias', 'Tendencias', 'Trends'], ['exclusivas', 'Exclusivas', 'Exclusives']];
 const jLink = (j, sub = '') => `<a class="wr-j" href="#/jugador/${j.id}" data-hover-j="${j.id}">${helmet(j.team, j.num, 30)}<span><b>${esc(j.n)}</b><small>${esc(j.pos)} · ${esc(j.team)}${sub ? ' · ' + sub : ''}</small></span></a>`;
 const pieTech = () => `<div class="pie-tech">${sello('mini')}</div>`;
 const slotsL = () => LIGA.slots && LIGA.slots.length ? LIGA.slots : POS_BASE;
@@ -1738,7 +1758,7 @@ function plan(L) {
 }
 function vistaSemana(L, pro) {
   const al = L.yo, wv = waiversPara(al), ti = tradeIdeas(al), alertas = LIGA.jugadores.map(id => J[id]).filter(j => j && (fuera(j) || estatus(j) === 'Duda'));
-  const tiles = [['alineacion', ART.linea, tx('¿A quién arranco?', 'Who do I start?'), tx('Compara dos jugadores', 'Compare two players')], ['waivers', ART.iman, `${wv.length} waivers`, tx('que mejoran tu equipo', 'that upgrade you')], ['trades', ART.trade, `${ti.targets.length + ti.vende.length + ti.compra.length} trades`, tx('vende alto, compra bajo', 'sell high, buy low')], ['plantel', ART.sirena, `${alertas.length} ${tx('alertas', 'alerts')}`, tx('salud de tu plantel', 'roster health')]];
+  const tiles = [['alineacion', ART.linea, tx('¿A quién arranco?', 'Who do I start?'), tx('Compara dos jugadores', 'Compare two players')], ['waivers', ART.iman, `${wv.length} waivers`, tx('que mejoran tu equipo', 'that upgrade you')], ['trades', ART.trade, `${ti.targets.length + ti.vende.length + ti.compra.length} trades`, tx('vende alto, compra bajo', 'sell high, buy low')], ['equipo', ART.sirena, `${alertas.length} ${tx('alertas', 'alerts')}`, tx('salud de tu plantel', 'roster health')]];
   const resto = `<section class="wr-sec"><div class="wr-h"><h3>${tx('Qué hacer esta semana', 'What to do this week')}</h3></div>${plan(L)}</section>
     <div class="wr-tiles">${tiles.map(([h, a, t, d]) => `<a class="wr-tile" href="#/premium/${h}">${pixel(a)}<b>${t}</b><small>${d}</small></a>`).join('')}</div>`;
   return `<section class="wr-sec mp">${marcador(L)}${pro ? tablero(L) : ''}</section>${pro ? resto : zonaPrem(tablero(L) + resto, tx('Tu alineación óptima, tu matchup y tu plan de la semana', 'Your optimal lineup, matchup and weekly plan'))}`;
@@ -1748,7 +1768,7 @@ function vistaAlineacion(L) {
   const linea = x => { const j = x.j; if (!j) return `<div class="wr-al vacio"><span class="wr-slot">${SLOT_TXT[x.s] || x.s}</span><p>${tx('Vacío: no tienes a nadie elegible. Revisa waivers.', 'Empty: nobody eligible. Check waivers.')}</p></div>`;
     const e = edo(j), ft = fiL(j), u = ult3(j);
     const det = e.e === 'post' ? tx(`Ya jugó: ${n1(e.pts)} pts. Fijo.`, `Already played: ${n1(e.pts)} pts. Locked.`) : e.e === 'in' ? tx(`Jugando: ${n1(e.pts)} pts hasta ahora. Fijo.`, `Playing: ${n1(e.pts)} pts so far. Locked.`) : e.e === 'out' ? tx('FUERA esta semana: no lo alinees.', 'OUT this week: bench him.') : e.e === 'bye' ? tx('Semana de descanso.', 'Bye week.')
-      : `${rangoPos(j)} · ${matchupTxt(j)}${u != null ? ' · ' + tx('últimas 3: ', 'last 3: ') + n1(u) : ''}${ft ? ' · ' + tx('piso/techo ', 'floor/ceiling ') + n1(ft[0]) + '–' + n1(ft[1]) : ''}`;
+      : `${rangoPos(j)} · ${matchupTxt(j)}${u != null ? ' · ' + tx('últimas 3: ', 'last 3: ') + n1(u) : ''}${' · ' + tx(`prob. top ${topN(j.pos)}: `, `top-${topN(j.pos)} odds: `) + pctTop(j)}`;
     return `<div class="wr-al ${x.lock ? 'lock' : ''}"><span class="wr-slot">${SLOT_TXT[x.s] || x.s}</span>${jLink(j)}<span class="wr-ed">${chipEdo(j)}</span><p>${det}</p></div>`; };
   const op = (sel) => mis.map(j => `<option value="${j.id}" ${j.id === sel ? 'selected' : ''}>${esc(j.n)} · ${j.pos} · ${n1(edo(j).proy)}</option>`).join('');
   const a0 = mis[0] && mis[0].id, b0 = (mis.find(j => mis[0] && j.pos === mis[0].pos && j.id !== a0) || mis[1] || {}).id;
@@ -1769,38 +1789,42 @@ function dueloHtml(a, b) {
 function vistaWaivers(L) {
   const al = alineacion(LIGA.jugadores, L.slots, LIGA.tit || [], LIGA.fijos || {}), W = waiversPara(al), S = streaming(al);
   const card = x => `<div class="wr-wv">${jLink(x.j, rangoPos(x.j) + ' · ' + matchupTxt(x.j))}<b class="n wr-big">${n1(x.pr)}</b>
-    <div class="wr-tags">${x.add ? `<span>▲ ${nf.format(x.add)} ${tx('ligas en 24 h', 'leagues in 24 h')}</span>` : ''}${x.her ? `<span class="hot">${tx('Hereda el trabajo de', 'Inherits work from')} ${esc(x.her.n)}</span>` : ''}${x.mej > .5 ? `<span class="ok">+${n1(x.mej)} ${tx('vs tu titular', 'vs your starter')}</span>` : ''}<span>${tx('Valor resto de temporada', 'Rest-of-season value')} ${Math.round(x.v)}</span></div>
-    ${x.suelta ? `<p class="wr-drop">${tx('Suelta a', 'Drop')} <a href="#/jugador/${x.suelta.id}">${esc(x.suelta.n)}</a> · ${tx('valor', 'value')} ${Math.round(valorROS(x.suelta).valor)}</p>` : ''}</div>`;
+    <div class="wr-tags">${x.add ? `<span>▲ ${nf.format(x.add)} ${tx('ligas en 24 h', 'leagues in 24 h')}</span>` : ''}${x.her ? `<span class="hot">${tx('Hereda el trabajo de', 'Inherits work from')} ${esc(x.her.n)}</span>` : ''}${x.mej > .5 ? `<span class="ok">+${n1(x.mej)} ${tx('vs tu titular', 'vs your starter')}</span>` : ''}<span>+${n1(sobreRep(x.j))} ${tx('pts/semana sobre un jugador de reemplazo', 'pts/week over a replacement player')}</span></div>
+    ${x.suelta ? `<p class="wr-drop">${tx('Suelta a', 'Drop')} <a href="#/jugador/${x.suelta.id}">${esc(x.suelta.n)}</a> · ${tx('aporta', 'adds')} +${n1(sobreRep(x.suelta))} ${tx('pts/sem', 'pts/wk')}</p>` : ''}</div>`;
   return `<section class="wr-sec"><div class="wr-h"><h3>${tx('Waivers para tu equipo', 'Waivers for your team')}</h3><small>${tx('Libres en tu liga · ordenados por impacto', 'Free in your league · sorted by impact')}</small></div>
     <div class="wr-wvs">${W.map(card).join('') || `<p class="wr-ok">${tx('No hay libres que mejoren tu equipo hoy.', 'No free agents upgrade your team today.')}</p>`}</div></section>
     ${S.length ? `<section class="wr-sec"><div class="wr-h"><h3>Streaming K / DEF</h3><small>${tx('Solo si mejora al que tienes', 'Only if it beats yours')}</small></div>${S.map(s => `<div class="wr-al banca">${jLink(s.j, matchupTxt(s.j))}<b class="n">${n1(edo(s.j).proy)}</b><p>${s.mi ? tx(`+${n1(s.gan)} sobre ${s.mi.n}`, `+${n1(s.gan)} over ${s.mi.n}`) : tx('No tienes uno alineado', 'You have none in your lineup')}</p></div>`).join('')}</section>` : ''}`;
 }
 function vistaTrades(L) {
   const al = alineacion(LIGA.jugadores, L.slots, LIGA.tit || [], LIGA.fijos || {}), T = tradeIdeas(al);
-  if (!LIGA.otros) return `<p class="wr-ok">${tx('Conecta Sleeper para ver los planteles de tus rivales y armar trades reales.', 'Connect Sleeper to see your rivals\' rosters and build real trades.')}</p>`;
-  const lnk = (d, r) => `<a class="wr-go" href="#/trade?da=${d}&recibe=${r}">${tx('Analizar trade', 'Analyze trade')} ›</a>`;
-  return `<section class="wr-sec"><div class="wr-h"><h3>${tx('Refuerza tu', 'Upgrade your')} ${T.debil}</h3><small>${tx('Tu posición más débil contra el resto de la liga', 'Your weakest spot vs the league')}</small></div>
-    ${T.targets.map(x => `<div class="wr-tr">${jLink(x.j, LIGA.duenos[x.rid] ? tx('de', 'from') + ' ' + esc(LIGA.duenos[x.rid]) : '')}<p>${tx('Ofrece a', 'Offer')} <b>${esc(x.of.n)}</b> · ${tx('valor', 'value')} ${Math.round(valorROS(x.of).valor)} ${tx('por', 'for')} ${Math.round(x.v)}</p>${lnk(x.of.id, x.j.id)}</div>`).join('') || `<p class="wr-ok">${tx('No vemos un trade justo que te mejore en esa posición.', 'No fair trade improves that spot right now.')}</p>`}</section>
+  if (!LIGA.otros) return `<section class="wr-sec" id="analizador"><div class="wr-h"><h3>${tx('Analizador de trades', 'Trade analyzer')}</h3></div>${analizador()}</section><p class="wr-ok">${tx('Conecta Sleeper para ver los planteles de tus rivales y armar trades reales.', 'Connect Sleeper to see your rivals\' rosters and build real trades.')}</p>`;
+  leeTR(new URLSearchParams(location.hash.split('?')[1] || ''));
+  const lnk = (d, r) => `<a class="wr-go" href="#/premium/trades?da=${d}&recibe=${r}">${tx('Analizar trade', 'Analyze trade')} ›</a>`;
+  return `<section class="wr-sec" id="analizador"><div class="wr-h"><h3>${tx('Analizador de trades', 'Trade analyzer')} ${infoFX(tx('El Valor FX es lo que un jugador aporta por encima de uno que encontrarías en waivers, sumado en los juegos que le quedan. Más alto = más valioso.', 'FX Value is what a player adds over one you could find on waivers, summed over his remaining games. Higher = more valuable.'))}</h3><small>${tx('Arma cualquier trade y compáralo', 'Build any trade and compare it')}</small></div>${analizador()}</section>
+    <section class="wr-sec"><div class="wr-h"><h3>${tx('Refuerza tu', 'Upgrade your')} ${T.debil}</h3><small>${tx('Tu posición más débil contra el resto de la liga', 'Your weakest spot vs the league')}</small></div>
+    ${T.targets.map(x => `<div class="wr-tr">${jLink(x.j, LIGA.duenos[x.rid] ? tx('de', 'from') + ' ' + esc(LIGA.duenos[x.rid]) : '')}<p>${tx('Ofrece a', 'Offer')} <b>${esc(x.of.n)}</b> · ${tx('Valor FX', 'FX value')} ${Math.round(valorROS(x.of).valor)} ${tx('por', 'for')} ${Math.round(x.v)}</p>${lnk(x.of.id, x.j.id)}</div>`).join('') || `<p class="wr-ok">${tx('No vemos un trade justo que te mejore en esa posición.', 'No fair trade improves that spot right now.')}</p>`}</section>
     <section class="wr-sec"><div class="wr-h"><h3>${tx('Vende alto', 'Sell high')}</h3><small>${tx('Tuyos con una semana muy por encima de su promedio', 'Yours with a week far above their average')}</small></div>
     ${T.vende.map(x => `<div class="wr-tr">${jLink(x.j)}<p>${tx(`S${SEMNUM}: ${n1(x.u)} pts · promedio ${n1(x.ppj)}. Su precio nunca va a estar más alto.`, `W${SEMNUM}: ${n1(x.u)} pts · average ${n1(x.ppj)}. His price won't get higher.`)}</p></div>`).join('') || `<p class="wr-ok">${tx('Nadie de tu plantel está inflado esta semana.', 'Nobody on your roster is inflated this week.')}</p>`}</section>
     <section class="wr-sec"><div class="wr-h"><h3>${tx('Compra bajo', 'Buy low')}</h3><small>${tx('De tus rivales: buenos jugadores en mala racha', 'From your rivals: good players in a slump')}</small></div>
     ${T.compra.map(x => `<div class="wr-tr">${jLink(x.j, LIGA.duenos[x.rid] ? tx('de', 'from') + ' ' + esc(LIGA.duenos[x.rid]) : '')}<p>${tx(`Últimas 3: ${n1(x.u3)} pts · su nivel real: ${n1(x.vr.ppj)}. Su dueño puede venderlo barato.`, `Last 3: ${n1(x.u3)} pts · true level: ${n1(x.vr.ppj)}. His owner may sell cheap.`)}</p></div>`).join('') || `<p class="wr-ok">${tx('Sin oportunidades claras hoy.', 'No clear opportunities today.')}</p>`}</section>`;
 }
-function vistaPlantel() {
-  const mis = LIGA.jugadores.map(id => J[id]).filter(Boolean).sort((a, b) => valorROS(b).valor - valorROS(a).valor), tit = new Set(LIGA.tit || []);
+function vistaPlantel(L) {
+  const al = alineacion(LIGA.jugadores, L.slots, LIGA.tit || [], LIGA.fijos || {});
   const tag = j => { const v = valorROS(j), u = ptsSem(j, SEMNUM); if (fueraTemp(j)) return [tx('RESERVA', 'IR'), 'no']; if (u != null && v.ppj > 0 && u >= v.ppj * 1.7 && u >= 15) return [tx('VENDE ALTO', 'SELL HIGH'), 'gold']; if (v.valor < 3 && !['K', 'DEF'].includes(j.pos)) return [tx('SOLTABLE', 'DROPPABLE'), 'no']; if (v.valor > 40) return [tx('PILAR', 'CORE'), 'ok']; return [tx('AGUANTA', 'HOLD'), 'mid']; };
-  return `<section class="wr-sec"><div class="wr-h"><h3>${tx('Tu plantel', 'Your roster')}</h3><small>${tx('Ordenado por valor para el resto de la temporada', 'Sorted by rest-of-season value')}</small></div>
-    <div class="card scroll"><table class="tbl wr-tbl"><thead><tr><th>${tx('JUGADOR', 'PLAYER')}</th><th>${tx('ESTA SEMANA', 'THIS WEEK')}</th><th>${tx('VALOR', 'VALUE')}</th><th>PPJ</th><th>${tx('PISO–TECHO', 'FLOOR–CEIL')}</th><th>${tx('ACCIÓN', 'ACTION')}</th></tr></thead><tbody>
-    ${mis.map(j => { const v = valorROS(j), ft = fiL(j), t = tag(j); return `<tr><td>${jLink(j, tit.has(j.id) ? tx('titular', 'starter') : '')}</td><td><span class="wr-ed">${chipEdo(j)}</span></td><td class="n">${Math.round(v.valor)}</td><td class="n">${n1(v.ppj)}</td><td class="n">${ft ? n1(ft[0]) + '–' + n1(ft[1]) : '–'}</td><td><span class="rp ${t[1]}">${t[0]}</span></td></tr>`; }).join('')}</tbody></table></div></section>`;
+  const fila = (slot, j) => { if (!j) return `<tr><td><span class="wr-slot">${slot}</span></td><td colspan="5" class="vacio">${tx('Vacío', 'Empty')}</td></tr>`; const v = valorROS(j), t = tag(j);
+    return `<tr><td><span class="wr-slot ${slot === 'BN' ? 'bn' : ''}">${slot === 'BN' ? tx('BANCA', 'BENCH') : slot}</span></td><td>${jLink(j, matchupTxt(j))}</td><td><span class="wr-ed">${chipEdo(j)}</span></td><td class="n">${juega(j) ? pctTop(j) : '–'}</td><td class="n">${Math.round(v.valor)}</td><td><span class="rp ${t[1]}">${t[0]}</span></td></tr>`; };
+  return `<section class="wr-sec"><div class="wr-h"><h3>${tx('Mi equipo', 'My team')}</h3><small>${tx('Tu alineación óptima y tu banca', 'Your optimal lineup and your bench')}</small></div>
+    <div class="card scroll"><table class="tbl wr-tbl"><thead><tr><th>${tx('POS', 'SLOT')}</th><th>${tx('JUGADOR', 'PLAYER')}</th><th>${tx('ESTA SEMANA', 'THIS WEEK')}</th><th>${tx('PROB. TOP', 'TOP ODDS')}</th><th>${tx('VALOR FX', 'FX VALUE')}</th><th>${tx('ACCIÓN', 'ACTION')}</th></tr></thead><tbody>
+    ${al.tit.map(x => fila(SLOT_TXT[x.s] || x.s, x.j)).join('')}<tr class="sep"><td colspan="6"></td></tr>${al.banca.map(j => fila('BN', j)).join('')}</tbody></table></div></section>`;
 }
 function cuartoGuerra(tab, pro) {
-  const L = lados(), vistas = { '': () => vistaSemana(L, pro), alineacion: () => vistaAlineacion(L), waivers: () => vistaWaivers(L), trades: () => vistaTrades(L), plantel: () => vistaPlantel(), exclusivas: () => exclusivasBloque(todasNoticias().filter(n => n.exclusivo).slice(0, 9), pro) };
-  const v = vistas[tab] ? tab : '', libre = v === '' || v === 'plantel' || v === 'exclusivas';
+  const L = lados(), vistas = { '': () => vistaSemana(L, pro), alineacion: () => vistaAlineacion(L), waivers: () => vistaWaivers(L), trades: () => vistaTrades(L), equipo: () => vistaPlantel(L), plantel: () => vistaPlantel(L), tendencias: () => tendenciasCuerpo(), exclusivas: () => exclusivasBloque(todasNoticias().filter(n => n.exclusivo).slice(0, 9), pro) };
+  const v = tab === 'plantel' ? 'equipo' : vistas[tab] ? tab : '', libre = v === '' || v === 'equipo' || v === 'exclusivas';
   const cuerpo = vistas[v]();
   return `<div class="wr-top"><div class="wr-liga"><div><small>${LIGA.fuente === 'sleeper' ? 'SLEEPER' : 'MANUAL'} · ${FMTS[fmtL()]}${LIGA.equipos ? ' · ' + LIGA.equipos + ' ' + tx('equipos', 'teams') : ''} · ${tx('Semana', 'Week')} ${semActual()}</small><h1>${esc(LIGA.nombre || tx('Mi equipo', 'My team'))}</h1></div>
       <div class="cg-acc">${LIGA.fuente === 'sleeper' ? `<button type="button" class="btn ghost sm" data-cg-sync>${tx('Actualizar', 'Refresh')}</button>` : ''}<button type="button" class="btn ghost sm" data-cg-salir>${tx('Cambiar liga', 'Change league')}</button></div></div>
-    <nav class="wr-tabs" aria-label="${tx('Herramientas', 'Tools')}">${TABS_CG.map(([k, es, en]) => `<a href="${k[0] === '@' ? '#/' + k.slice(1) : '#/premium' + (k ? '/' + k : '')}" class="${k === v ? 'on' : ''}">${tx(es, en)}</a>`).join('')}</nav></div>
-    <div class="wr-body">${pro || libre ? cuerpo : zonaPrem(cuerpo, tx('Desbloquea esta herramienta con PRO', 'Unlock this tool with PRO'))}${pieTech()}</div>`;
+    <nav class="wr-tabs" aria-label="${tx('Herramientas', 'Tools')}">${TABS_CG.map(([k, es, en]) => `<a href="#/premium${k ? '/' + k : ''}" class="${k === v ? 'on' : ''}">${tx(es, en)}</a>`).join('')}<span class="wr-sello">${sello('mini')}</span></nav></div>
+    <div class="wr-body">${pro || libre ? cuerpo : zonaPrem(cuerpo, tx('Desbloquea esta herramienta con PRO', 'Unlock this tool with PRO'))}</div>`;
 }
 document.addEventListener('click', e => {
   const sw = e.target.closest('[data-swap]'); if (sw && !sw.disabled) { tablero._abre = tablero._abre === +sw.dataset.swap ? null : +sw.dataset.swap; repinta(); return; }
@@ -1829,7 +1853,7 @@ function premiumHub(tab = '') {
   const herrPro = `<section class="block"><div class="pv-sec-h"><small class="pv-k">${tx('TUS HERRAMIENTAS', 'YOUR TOOLS')}</small><h2>${tx('Herramientas PRO', 'PRO tools')}</h2></div><div class="pv-cart-g">
     <a class="pv-edge" href="#/trade">${pixel(ART.trade, 'pv-e-ico a-trade')}<div><small>PRO</small><b>${tx('Analizador de trades', 'Trade analyzer')}</b><p>${tx('Cuánto vale cada jugador antes de aceptar.', 'What each player is worth before you accept.')}</p></div><i>›</i></a>
     <a class="pv-edge" href="#pv-conecta" data-pv-ir="pv-conecta">${pixel(ART.linea, 'pv-e-ico a-linea')}<div><small>PRO</small><b>${tx('Tu liga', 'Your league')}</b><p>${tx('Alineación, matchup, waivers y trades de tu equipo.', 'Lineup, matchup, waivers and trades for your team.')}</p></div><i>›</i></a>
-    <a class="pv-edge" href="#/posicion/QB">${pixel(ART.marcador, 'pv-e-ico a-marcador')}<div><small>PRO</small><b>${tx('Rankings con piso y techo', 'Rankings with floor & ceiling')}</b><p>${tx('Proyección FX de esta semana y las siguientes.', 'FX projection for this week and the next ones.')}</p></div><i>›</i></a>
+    <a class="pv-edge" href="#/posicion/QB">${pixel(ART.marcador, 'pv-e-ico a-marcador')}<div><small>PRO</small><b>${tx('Rankings con probabilidad top', 'Rankings with top odds')}</b><p>${tx('Proyección FX de esta semana y las siguientes.', 'FX projection for this week and the next ones.')}</p></div><i>›</i></a>
     <a class="pv-edge" href="#/tendencias">${pixel(ART.iman, 'pv-e-ico a-iman')}<div><small>PRO</small><b>${tx('Tendencias', 'Trends')}</b><p>${tx('Quién sube y quién baja en las ligas hoy.', 'Who is rising and falling in leagues today.')}</p></div><i>›</i></a>
     <a class="pv-edge" href="#/exclusivo">${pixel(ART.micro, 'pv-e-ico a-micro')}<div><small>PRO</small><b>${tx('Exclusivas', 'Exclusives')}</b><p>${tx('Lo que tu liga se entera mañana.', 'What your league finds out tomorrow.')}</p></div><i>›</i></a></div></section>`;
   if (!LIGA || !(LIGA.jugadores || []).length) return `<div class="page pv">${crumbs([['', 'FX PRO']])}<div class="wrap">${hero}${pro ? herrPro : niveles()}<div id="pv-conecta">${conectaVista()}</div>${pro ? '' : cadaSeccion() + precios()}${exclusivasBloque(excl, pro)}</div></div>`;
@@ -1877,8 +1901,8 @@ function router() {
   const [ruta, qs] = ((location.hash || window.FX_RUTA || '').slice(1) || '/').split('?');
   const q = new URLSearchParams(qs || ''), [, seccion, a, b] = ruta.split('/');
   const R = { '': () => inicio(), blog: () => a ? blogNota(a) : blogLista(), noticias: () => noticias(q), reportajes: () => noticias(q), noticia: () => noticia(a), reportaje: () => noticia(a), jugador: () => jugador(a), comparar: () => comparar(a, b), posicion: () => posicion(a),
-    equipos: () => equipos(), equipo: () => equipo(a), partidos: () => partidos(q), partido: () => partido(a), lideres: () => lideres(q), media: () => media(), exclusivo: () => exclusivo(), premium: () => premiumHub(a || ''), temporada: () => temporada(), semana: () => semana(a), tendencias: () => tendencias(), lesionados: () => lesionados(q),
-    cuenta: () => cuenta(q), herramientas: () => premiumHub(''), trade: () => trade(q), privacidad: () => privacidad(), precision: () => precisionVista(), baja: () => baja(q) };
+    equipos: () => equipos(), equipo: () => equipo(a), partidos: () => partidos(q), partido: () => partido(a), lideres: () => lideres(q), media: () => media(), exclusivo: () => exclusivo(), premium: () => premiumHub(a || ''), temporada: () => temporada(), semana: () => semana(a), tendencias: () => esPremium() && LIGA && (LIGA.jugadores || []).length ? premiumHub('tendencias') : tendencias(), lesionados: () => lesionados(q),
+    cuenta: () => cuenta(q), herramientas: () => premiumHub(''), trade: () => esPremium() && LIGA && (LIGA.jugadores || []).length ? premiumHub('trades') : trade(q), privacidad: () => privacidad(), precision: () => precisionVista(), baja: () => baja(q) };
   app.innerHTML = (R[seccion || ''] || noEncontrado)();
   if (ruta !== _rutaPrev) { _rutaPrev = ruta; app.classList.remove('entra'); void app.offsetWidth; app.classList.add('entra'); }
   scrollTo({ top: 0 });
