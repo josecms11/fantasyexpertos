@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-27T15:28:53.086Z",
-  "ultimaIA": "2026-10-27T13:53:56.530Z",
+  "actualizado": "2026-10-27T16:19:25.927Z",
+  "ultimaIA": "2026-10-27T16:19:25.927Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,45 +14,46 @@
   ],
   "noticias": [
     {
-      "id": "n20261027135300",
-      "fecha": "2026-10-27T13:53:56.530Z",
+      "id": "n20261027161900",
+      "fecha": "2026-10-27T16:19:25.927Z",
       "semana": 8,
-      "titulo": "Jaxon Smith-Njigba apunta a historia en la posición",
+      "titulo": "Klint Kubiak ratifica a Kirk Cousins como titular",
       "claves": [
-        "El receptor muestra nivel histórico en la temporada",
-        "Sevilla domina con exhibición contundente",
-        "Proyección alta para la semana 8"
+        "Kirk Cousins se mantiene firme en la titularidad",
+        "Fernando Mendoza esperará su oportunidad desde la banca",
+        "Sin controversia en la posición de quarterback en Las Vegas"
       ],
-      "contexto": "Tras las acciones de la semana 7, el desempeño del receptor abierto llama poderosamente la atención de los analistas. Su impacto en el campo lo coloca en la conversación para romper marcas históricas en su posición dentro de la NFL, consolidándose como una pieza ofensiva de élite absoluta.",
-      "fantasy": "Su impacto en fantasy es masivo, proyectándose para 23 pts en formato PPR para la semana 8. Debe ser alineado sin dudar como tu receptor principal en cualquier liga y formato disponible.",
-      "equipo_impacto": "Su gran nivel impulsa por completo el ataque aéreo del equipo, convirtiéndolo en la referencia absoluta para cualquier ofensiva que busque consistencia semanal.",
-      "accion": "Asegúrate de mantenerlo en tu alineación titular sin excepciones de cara a la semana 8.",
+      "contexto": "El coordinador ofensivo Klint Kubiak despejó cualquier duda sobre los controles de la ofensiva al confirmar que no existe debate en la posición. A pesar de que Fernando Mendoza tendrá acción en algún momento de la temporada, Kirk Cousins se mantiene con el rol asegurado de titular sin cuestionamientos recientes.",
+      "fantasy": "Mantiene el valor de los receptores del equipo en ligas standard y PPR, asegurando estabilidad bajo el centro. Sin embargo, anula por completo cualquier opción de reclamo inmediato para Fernando Mendoza en formatos profundos de dynasty o redraft por ahora.",
+      "equipo_impacto": "Brinda certeza en el esquema ofensivo, permitiendo que el plan de juego semanal no sufra modificaciones drásticas en la planeación de los partidos de la semana 8.",
+      "accion": "Conserva a tus piezas ofensivas principales del equipo confiando en la estabilidad de la posición.",
       "en": {
-        "titulo": "Jaxon Smith-Njigba targets historical WR milestone",
+        "titulo": "Klint Kubiak commits to Kirk Cousins as starter",
         "claves": [
-          "Receiver shows elite historical level",
-          "Seahawks dominate with strong display",
-          "High projection for week 8"
+          "Kirk Cousins remains firmly in the starting role",
+          "Fernando Mendoza will wait for his opportunity",
+          "No controversy at quarterback in Las Vegas"
         ],
-        "contexto": "Following week 7 action, the wide receiver's performance is catching analysts' attention. His impact on the field puts him in the conversation to break historical records at his position in the NFL, cementing himself as an elite offensive piece.",
-        "fantasy": "His fantasy impact is massive, projected for 23 PPR points in week 8. He must be locked in as your clear WR1 across all leagues and formats.",
-        "equipo_impacto": "His high level completely boosts the team's aerial attack, making him the absolute reference for any offense seeking weekly consistency.",
-        "accion": "Make sure to keep him in your starting lineup without exceptions heading into week 8."
+        "contexto": "Offensive coordinator Klint Kubiak cleared up any doubts regarding the offense by confirming there is no debate at the quarterback position. Even though Fernando Mendoza will see action at some point this season, Kirk Cousins secures the starting role without recent questions.",
+        "fantasy": "Maintains the fantasy value of the team's pass-catchers in standard and PPR leagues while completely erasing immediate waiver interest in Fernando Mendoza for now.",
+        "equipo_impacto": "Provides certainty in the offensive scheme so the weekly game plan does not suffer drastic changes.",
+        "accion": "Keep your main offensive pieces relying on the stability at the position."
       },
       "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "SEA",
+      "impacto": "NEUTRO",
+      "equipo": "LV",
       "equipos": [
-        "SEA"
+        "LV"
       ],
       "jugadores": [
-        "9488"
+        "1166",
+        "13269"
       ],
       "fuentes": [
         {
           "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/nfl-week-7-lessons-seahawks-super-bowl-jaxson-smith-njigba/",
-          "t": "\n                        Lessons from NFL Week 7: Jaxon Smith-Njigba could make WR history, Seahawks look like champs again\n                "
+          "u": "https://www.cbssports.com/nfl/news/raiders-no-qb-controversy-klint-kubiak-commits-to-kirk-cousins/",
+          "t": "\n                        Raiders have &#039;no controversy&#039; at QB as Klint Kubiak commits to Kirk Cousins over Fernando Mendoza\n       "
         }
       ],
       "menciona": []
@@ -236,29 +237,29 @@
     "6650",
     "WAS",
     "3214",
+    "7561",
     "6130",
     "13294",
-    "7561",
     "1166",
-    "8129",
-    "11435",
     "12498",
+    "8129",
     "11637",
-    "12469",
-    "7553"
+    "11435",
+    "8136",
+    "12469"
   ],
   "soltados": [
     "CLE",
     "3271",
-    "12718",
     "10235",
+    "12718",
     "HOU",
     "13150",
     "NYJ",
     "8129",
     "5849",
-    "9758",
     "SF",
+    "9758",
     "11581",
     "9482",
     "11624",
@@ -266,12 +267,12 @@
     "9502",
     "96",
     "11610",
-    "11625",
-    "7002",
     "12545",
+    "7002",
+    "11625",
     "5012",
-    "4037",
-    "13545"
+    "13545",
+    "4037"
   ],
   "duelo": {
     "a": "Josh Allen",
