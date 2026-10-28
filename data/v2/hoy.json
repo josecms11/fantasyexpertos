@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-28T18:25:48.111Z",
-  "ultimaIA": "2026-10-28T18:25:48.111Z",
+  "actualizado": "2026-10-28T19:23:51.281Z",
+  "ultimaIA": "2026-10-28T19:23:51.281Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,47 +14,45 @@
   ],
   "noticias": [
     {
-      "id": "n20261028182500",
-      "fecha": "2026-10-28T18:25:48.111Z",
+      "id": "n20261028192300",
+      "fecha": "2026-10-28T19:23:51.281Z",
       "semana": 8,
-      "titulo": "Jahmyr Gibbs se consolida como RB1 de lujo",
+      "titulo": "Saquon Barkley cede sus acciones de Polymarket",
       "claves": [
-        "Gibbs asume control total del backfield de Detroit",
-        "Proyección de 23.3 pts para la semana 8",
-        "Carga de trabajo incrementada tras cambios en roster"
+        "Cumplimiento estricto de las reglas NFL",
+        "Inversión retirada por Saquon Barkley",
+        "Atención a su estatus en fantasy"
       ],
-      "contexto": "Tras los movimientos recientes en el roster de los Lions, Jahmyr Gibbs ha tomado las riendas del ataque terrestre de forma definitiva. El jugador ha expresado su mentalidad enfocada en maximizar cada oportunidad, convirtiéndose en el motor principal de una ofensiva que busca dominar la NFC. Su volumen de juego ha crecido exponencialmente, consolidándolo como una pieza inamovible en cualquier esquema ofensivo de la liga.",
-      "fantasy": "Con una proyección de 23.3 pts, Gibbs es una opción de inicio obligatorio en todas las ligas. Su capacidad para generar yardas tanto por tierra como por aire lo coloca en la conversación como el RB1 global para la semana 8. Es momento de blindarlo en tu alineación; su techo de puntos es inigualable actualmente, superando a nombres como Christian McCaffrey o Bijan Robinson en las proyecciones del modelo FX.",
-      "equipo_impacto": "La consolidación de Gibbs le quita presión a Jared Goff, permitiendo que el ataque de Detroit sea más balanceado. La ausencia de Isiah Pacheco por lesión abre aún más el camino para que Gibbs sea el referente único de yardas y anotaciones en el backfield.",
-      "accion": "Asegúrate de que Gibbs esté en tu alineación titular sin dudarlo esta semana.",
+      "contexto": "El estelar corredor de los Eagles, Saquon Barkley, confirmó recientemente que tuvo que desprenderse por completo de su participación accionaria en Polymarket para acatar de forma estricta las normativas vigentes de la NFL. Esta decisión administrativa surge tras revisiones internas y busca evitar cualquier conflicto de intereses con las políticas de la liga profesional de fútbol americano.",
+      "fantasy": "En el terreno del fantasy football, este movimiento fuera del emparrillado no altera sus proyecciones para la semana 8, donde se mantiene como una pieza de élite en las alineaciones titulares. Con una sólida proyección de 20.6 pts en ligas PPR, debes alinearlo con total confianza siempre y cuando esté activo el día del partido.",
+      "equipo_impacto": "La ofensiva de los Eagles sigue girando en torno a su capacidad terrestre, por lo que este tipo de distracciones extracancha no afectan el rendimiento colectivo del equipo en el campo.",
+      "accion": "Mantén a Saquon Barkley en tu alineación titular sin dudarlo para la semana 8.",
       "en": {
-        "titulo": "Jahmyr Gibbs solidifies role as elite RB1",
+        "titulo": "Saquon Barkley sells his Polymarket equity stake",
         "claves": [
-          "Gibbs takes full control of Detroit's backfield",
-          "23.3 pts projected for week 8",
-          "Increased workload following roster changes"
+          "Strict compliance with NFL rules",
+          "Investment divested by Saquon Barkley",
+          "Attention to his fantasy status"
         ],
-        "contexto": "Following recent roster shifts, Jahmyr Gibbs has firmly taken command of the Lions' ground game. He has embraced his mindset of maximizing every touch, becoming the engine of an offense aiming to dominate the NFC. His workload has increased significantly, establishing him as a locked-in starter for any fantasy roster.",
-        "fantasy": "Projected for 23.3 pts, Gibbs is a must-start in all formats. His ability to produce on the ground and through the air makes him a top-tier RB1 for week 8, outpacing names like Christian McCaffrey and Bijan Robinson in FX projections. Lock him into your lineup; his ceiling is currently unmatched.",
-        "equipo_impacto": "Gibbs' emergence relieves pressure on Jared Goff, balancing Detroit's offense. With Isiah Pacheco sidelined, Gibbs remains the undisputed focal point for yardage and scoring opportunities in the backfield.",
-        "accion": "Make sure Gibbs is in your starting lineup without hesitation this week."
+        "contexto": "Eagles star running back Saquon Barkley confirmed that he was forced to completely divest his equity stake in Polymarket to strictly comply with current NFL regulations following internal league reviews.",
+        "fantasy": "In fantasy football, this off-field administrative move does not alter his projections for week 8, where he remains an elite piece in starting lineups. With a strong projection of 20.6 pts in PPR leagues, lock him into your lineups as long as he plays.",
+        "equipo_impacto": "The Eagles offense continues to revolve around his elite rushing ability, ensuring this distraction has zero impact on the field.",
+        "accion": "Keep Saquon Barkley locked into your starting lineup for week 8."
       },
       "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "DET",
+      "impacto": "NEUTRO",
+      "equipo": "PHI",
       "equipos": [
-        "DET"
+        "PHI"
       ],
       "jugadores": [
-        "9221",
-        "3163",
-        "8205"
+        "4866"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50309469/jahmyr-gibbs-shares-mindset-fully-taking-lions-backfield",
-          "t": "Jahmyr Gibbs shares his mindset after fully taking over Lions' backfield"
+          "u": "https://www.espn.com/nfl/story/_/id/50309777/saquon-barkley-says-was-forced-divest-polymarket-stake",
+          "t": "Eagles star Saquon Barkley says he was forced to divest Polymarket equity stake"
         }
       ],
       "menciona": []
@@ -239,13 +237,13 @@
     "13414",
     "10213",
     "7042",
-    "13294",
     "12482",
+    "13294",
     "12469",
-    "13276",
     "12498",
-    "1166",
+    "13276",
     "8134",
+    "1166",
     "8135",
     "5947"
   ],
@@ -267,14 +265,14 @@
     "9502",
     "12545",
     "11624",
-    "11655",
     "11610",
     "96",
     "11625",
+    "11655",
     "7002",
     "5012",
     "9511",
-    "11539"
+    "5045"
   ],
   "duelo": {
     "a": "Drake Maye",
