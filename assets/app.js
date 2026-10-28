@@ -1305,7 +1305,7 @@ function cuenta(q = new URLSearchParams()) {
 }
 
 /* ---------- FX PRO (Stripe) ---------- */
-const PAGO = { mes: 'https://buy.stripe.com/test_5kQ9AS8v731a0Recsua7C00', temporada: 'https://buy.stripe.com/test_dRm9AScLn6dmdE0502a7C01', portal: 'https://billing.stripe.com/p/login/test_5kQ9AS8v731a0Recsua7C00' }; // enlaces de pago de Stripe
+const PAGO = { mes: 'https://buy.stripe.com/eVq6oJaqEcZ6frT3GX4Ja00', temporada: 'https://buy.stripe.com/9B614p42g1go5Rj1yP4Ja01', portal: 'https://billing.stripe.com/p/login/eVq6oJaqEcZ6frT3GX4Ja00' }; // enlaces de pago de Stripe
 // Los enlaces de prueba (test_) solo se muestran a quien abrió el sitio con ?pruebas=1 (José, mientras probamos).
 try { if (/[?&]pruebas=1/.test(location.search + location.hash)) localStorage.setItem('fx-pruebas', '1'); if (/[?&]pruebas=0/.test(location.search + location.hash)) localStorage.removeItem('fx-pruebas'); } catch (e) {}
 if (Object.values(PAGO).some(u => /\/test_/.test(u)) && ls('fx-pruebas') !== '1') { PAGO.mes = ''; PAGO.temporada = ''; PAGO.portal = ''; }
