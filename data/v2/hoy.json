@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-28T00:50:07.376Z",
-  "ultimaIA": "2026-10-27T16:19:25.927Z",
+  "actualizado": "2026-10-28T01:42:11.345Z",
+  "ultimaIA": "2026-10-28T01:42:11.345Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,255 +14,48 @@
   ],
   "noticias": [
     {
-      "id": "x20261027235900",
-      "fecha": "2026-10-27T23:59:41.162Z",
+      "id": "n20261028014200",
+      "fecha": "2026-10-28T01:42:11.345Z",
       "semana": 8,
-      "exclusivo": true,
-      "fuente": "2026-10-27T22:59:30+00:00",
-      "titulo": "Exclusivo FX: Los Colts desarman al equipo",
+      "titulo": "Reporte de lesiones: Christian McCaffrey bajo observación",
       "claves": [
-        "DeForest Buckner llega a los 49ers"
+        "Christian McCaffrey figura como cuestionable por molestia en la pantorrilla.",
+        "Proyección de 20.6 puntos fantasy para la semana 8.",
+        "SF evaluará su participación previo al partido del domingo."
       ],
+      "contexto": "El reporte de lesiones previo a la semana 8 pone reflectores sobre San Francisco. Christian McCaffrey aparece oficialmente con estatus de cuestionable por una molestia en la pantorrilla. Aunque la organización no descarta su presencia, su carga de trabajo en las prácticas de esta semana dictará si estará listo para encarar el siguiente compromiso sin limitaciones severas.",
+      "fantasy": "En formatos PPR mantendrás a Christian McCaffrey como una opción estelar con proyección de 20.6 puntos, pero el riesgo de recaída exige cobertura inmediata. Si cuentas con él en tus ligas, es obligatorio asegurar a sus suplentes directos o preparar un reemplazo de valor similar en el roster antes de que inicien los partidos de la jornada.",
+      "equipo_impacto": "La ofensiva de San Francisco cambia dramáticamente sin su corredor estelar en campo. Si McCaffrey limita sus repeticiones, los pases cortos al backfield disminuirán y la presión aumentará para el esquema terrestre complementario durante la semana 8.",
+      "accion": "Monitorea los reportes matutinos del domingo antes de confirmar a Christian McCaffrey en tu alineación titular.",
       "en": {
-        "titulo": "Exclusivo FX: Colts Fire Sale Begins",
+        "titulo": "Week 8 injury update: Christian McCaffrey status questionable",
         "claves": [
-          "DeForest Buckner traded to 49ers",
-          "Quenton Nelson headed to Seattle",
-          "Jonathan Taylor put on the block"
+          "Christian McCaffrey listed as questionable with a calf issue.",
+          "Projected for 20.6 PPR fantasy points in week 8.",
+          "San Francisco will evaluate his availability close to game time."
         ],
-        "contexto": "The Indianapolis Colts begin a full rebuild by trading key veterans. DeForest Buckner reinforces the 49ers and Quenton Nelson moves to Seattle. Meanwhile, star running back Jonathan Taylor is officially on the trade block, shaking up the fantasy landscape.",
-        "fantasy": "The loss of Quenton Nelson severely hurts Jonathan Taylor's fantasy floor in all formats. Sell high on Taylor immediately in standard and PPR leagues before his market value drops further.",
-        "equipo_impacto": "The offense loses its anchor on the offensive line with Quenton Nelson gone. Jonathan Taylor takes a massive hit, and the entire unit's weekly upside plummets.",
-        "accion": "Trade away Jonathan Taylor right now before his value completely crashes."
+        "contexto": "The week 8 injury report places San Francisco backfield in the spotlight. Christian McCaffrey is officially listed as questionable due to a calf issue. While the team has not ruled him out, his participation in practice sessions throughout the week will determine whether he can handle his usual workload without facing significant limitations on game day.",
+        "fantasy": "In PPR leagues, Christian McCaffrey remains a top tier fantasy option projected for 20.6 points, but his injury status introduces real risk. Fantasy managers must secure insurance options or have a reliable flex substitute ready on their bench before the upcoming slate of matches kicks off this weekend.",
+        "equipo_impacto": "San Francisco offense undergoes notable adjustments if their elite running back is limited. A reduction in McCaffrey touches shifts target distribution toward secondary pass catchers and forces the coaching staff to rely more heavily on backfield rotations.",
+        "accion": "Check final inactive lists on Sunday morning before locking Christian McCaffrey into your starting lineup."
       },
-      "etiqueta": "TRADE",
-      "impacto": "BAJA",
-      "equipo": "IND",
+      "etiqueta": "LESIÓN",
+      "impacto": "NEUTRO",
+      "equipo": "SF",
       "equipos": [
-        "IND",
-        "SF",
-        "SEA"
+        "SF"
       ],
       "jugadores": [
-        "6813"
+        "4034"
       ],
-      "premium": true
-    },
-    {
-      "id": "x20261027235901",
-      "fecha": "2026-10-27T23:59:41.162Z",
-      "semana": 8,
-      "exclusivo": true,
-      "fuente": "2026-10-27T22:59:30+00:00",
-      "titulo": "Exclusivo FX: Opciones de waiver para la semana 8",
-      "claves": [
-        "Omar Cooper busca rol en los Jets"
+      "fuentes": [
+        {
+          "m": "Yahoo Sports",
+          "u": "https://sports.yahoo.com/articles/nfl-week-8-injury-report-012331954.html",
+          "t": "NFL Week 8 Injury Report: LJax expected to play, plus updates on Jaylin Noel, Aaron Jones, CMC"
+        }
       ],
-      "en": {
-        "titulo": "Exclusivo FX: Week 8 Waiver Wire Targets",
-        "claves": [
-          "Omar Cooper joins the Jets",
-          "Calen Douglas signs with Dolphins",
-          "Devin Singletary option for Giants"
-        ],
-        "contexto": "Heading into week 8, our exclusive report highlights three key waiver wire additions. Omar Cooper lands with the Jets, Calen Douglas joins the Dolphins, and Devin Singletary emerges as an option for the Giants.",
-        "fantasy": "Devin Singletary provides a decent floor as depth for deep fantasy leagues. Wide receivers Omar Cooper and Calen Douglas remain deep stash lottery tickets on the waiver wire.",
-        "equipo_impacto": "These moves aim to inject much-needed offensive depth for teams looking to survive the bye weeks.",
-        "accion": "Claim Devin Singletary off waivers for running back depth."
-      },
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "NYG",
-      "equipos": [
-        "NYG",
-        "NYJ",
-        "MIA"
-      ],
-      "jugadores": [
-        "6130",
-        "13276"
-      ],
-      "premium": true
-    },
-    {
-      "id": "x20261027235902",
-      "fecha": "2026-10-27T23:59:41.162Z",
-      "semana": 8,
-      "exclusivo": true,
-      "fuente": "2026-10-27T22:59:30+00:00",
-      "titulo": "Exclusivo FX: Top waivers de la temporada",
-      "claves": [
-        "Ollie Gordon y Emanuel Wilson en la pelea"
-      ],
-      "en": {
-        "titulo": "Exclusivo FX: Top Season-Long Waiver Targets",
-        "claves": [
-          "Ollie Gordon and Emanuel Wilson emerge",
-          "Tre Tucker and Luther Burden show upside",
-          "Keep tabs on these impact additions"
-        ],
-        "contexto": "Our exclusive report highlights the top season-long waiver targets. Running backs Ollie Gordon in Miami and Emanuel Wilson in Seattle, alongside wide receivers Tre Tucker in Las Vegas and Luther Burden in Chicago, lead the group.",
-        "fantasy": "Luther Burden and Tre Tucker offer great upside in deeper PPR formats and dynasty leagues. Ollie Gordon and Emanuel Wilson serve as premium handcuffs who could explode if starters miss time.",
-        "equipo_impacto": "These players bring young depth to their respective offenses and could carve out larger roles down the stretch.",
-        "accion": "Claim Luther Burden off waivers for long-term upside.",
-        "etiqueta": "WAIVER",
-        "impacto": "SUBE",
-        "equipo": "CHI",
-        "equipos": [
-          "CHI",
-          "MIA",
-          "LV",
-          "SEA"
-        ],
-        "jugadores": [
-          "Luther Burden",
-          "Ollie Gordon",
-          "Tre Tucker",
-          "Emanuel Wilson"
-        ]
-      },
-      "equipos": [],
-      "jugadores": [],
-      "premium": true
-    },
-    {
-      "id": "x20261027235903",
-      "fecha": "2026-10-27T23:59:41.162Z",
-      "semana": 8,
-      "exclusivo": true,
-      "fuente": "2026-10-27T22:59:30+00:00",
-      "titulo": "Exclusivo FX: Alerta de pánico en cinco franquicias",
-      "claves": [
-        "Colts y Eagles generan dudas"
-      ],
-      "en": {
-        "titulo": "Exclusivo FX: Panic Meter High for Five Teams",
-        "claves": [
-          "Colts and Eagles raise major flags",
-          "Washington, Raiders, and Panthers struggle",
-          "Time to evaluate drastic roster changes"
-        ],
-        "contexto": "Panic is setting in for five specific franchises according to our exclusive report. The current outlook for the Colts, Eagles, Washington, Raiders, and Panthers is causing major concerns for fantasy managers.",
-        "fantasy": "Avoid secondary players from these struggling teams and look for safer waiver alternatives. If you own stars from the Eagles or Colts, monitor their trade value closely.",
-        "equipo_impacto": "Instability across these organizations destroys the weekly consistency of their top offensive playmakers.",
-        "accion": "Evaluate trading away players from these panic-ridden offenses.",
-        "etiqueta": "TENDENCIA",
-        "impacto": "BAJA",
-        "equipo": "PHI",
-        "equipos": [
-          "IND",
-          "PHI",
-          "WAS",
-          "LV",
-          "CAR"
-        ],
-        "jugadores": []
-      },
-      "equipos": [],
-      "jugadores": [],
-      "premium": true
-    },
-    {
-      "id": "x20261027235904",
-      "fecha": "2026-10-27T23:59:41.162Z",
-      "semana": 8,
-      "exclusivo": true,
-      "fuente": "2026-10-27T22:59:30+00:00",
-      "titulo": "Exclusivo FX: Probabilidades de playoffs para Denver y Baltimore",
-      "claves": [
-        "Denver lidera con 86 por ciento"
-      ],
-      "en": {
-        "titulo": "Exclusivo FX: Playoff Odds for Denver and Baltimore",
-        "claves": [
-          "Denver leads strong at 86 percent",
-          "Baltimore sits at 43 percent",
-          "Critical outlook for the stretch run"
-        ],
-        "contexto": "Exclusive playoff projections place Denver with a strong 86 percent chance to make the postseason. Meanwhile, Baltimore holds a 43 percent probability, raising the urgency for their upcoming matchups.",
-        "fantasy": "Denver players are locked-in holds for all starting lineups due to high playoff security. Baltimore contributors require careful weekly evaluation given their narrower margin for error.",
-        "equipo_impacto": "Denver's stability guarantees consistent weekly usage, whereas Baltimore must fight tooth and nail.",
-        "accion": "Hold onto all key Denver starters in your fantasy lineup.",
-        "etiqueta": "TENDENCIA",
-        "impacto": "NEUTRO",
-        "equipo": "DEN",
-        "equipos": [
-          "DEN",
-          "BAL"
-        ],
-        "jugadores": []
-      },
-      "equipos": [],
-      "jugadores": [],
-      "premium": true
-    },
-    {
-      "id": "x20261027235905",
-      "fecha": "2026-10-27T23:59:41.162Z",
-      "semana": 8,
-      "exclusivo": true,
-      "fuente": "2026-10-27T22:59:30+00:00",
-      "titulo": "Exclusivo FX: Probabilidades de postemporada para Dallas y Atlanta",
-      "claves": [
-        "Dallas con 40 por ciento de opciones"
-      ],
-      "en": {
-        "titulo": "Exclusivo FX: Postseason Odds for Dallas and Atlanta",
-        "claves": [
-          "Dallas holds a 40 percent chance",
-          "Atlanta sits close at 38 percent",
-          "Tight conference race heats up"
-        ],
-        "contexto": "Exclusive metrics show Dallas with a 40 percent chance to reach the postseason. Atlanta is right behind with a 38 percent probability, highlighting a tight race for the final spots.",
-        "fantasy": "High urgency means Dallas and Atlanta will lean heavily on their passing games, boosting the weekly floor for primary wide receivers in PPR formats.",
-        "equipo_impacto": "The urgency to win forces both coaching staffs to take calculated risks in high-leverage situations.",
-        "accion": "Start your core pass-catchers from Dallas without hesitation.",
-        "etiqueta": "TENDENCIA",
-        "impacto": "NEUTRO",
-        "equipo": "DAL",
-        "equipos": [
-          "DAL",
-          "ATL"
-        ],
-        "jugadores": []
-      },
-      "equipos": [],
-      "jugadores": [],
-      "premium": true
-    },
-    {
-      "id": "x20261027235906",
-      "fecha": "2026-10-27T23:59:41.162Z",
-      "semana": 8,
-      "exclusivo": true,
-      "fuente": "2026-10-27T22:59:30+00:00",
-      "titulo": "Exclusivo FX: Pronósticos de playoffs para Houston y Los Angeles",
-      "claves": [
-        "Houston con 31 por ciento de probabilidad"
-      ],
-      "en": {
-        "titulo": "Exclusivo FX: Playoff Outlook for Houston and Los Angeles",
-        "claves": [
-          "Houston stands at 31 percent odds",
-          "Rams register 21 percent probability",
-          "Thin margin of error for both"
-        ],
-        "contexto": "Concluding the exclusive playoff probabilities, Houston holds a 31 percent chance to make the cut. The Los Angeles Rams sit at 21 percent, making their path to the postseason steep.",
-        "fantasy": "With little room for error, star players in Houston and the Rams could see heavy volume as teams chase wins down the stretch of the season.",
-        "equipo_impacto": "Pressure mounts on both coaching staffs, potentially leading to more aggressive playcalling in crucial moments.",
-        "accion": "Keep your core Houston starters locked into your lineup.",
-        "etiqueta": "TENDENCIA",
-        "impacto": "NEUTRO",
-        "equipo": "HOU",
-        "equipos": [
-          "HOU",
-          "LAR"
-        ],
-        "jugadores": []
-      },
-      "equipos": [],
-      "jugadores": [],
-      "premium": true
+      "menciona": []
     }
   ],
   "lesionados": [
@@ -438,21 +231,21 @@
     "6130",
     "11783",
     "WAS",
+    "7561",
     "TB",
     "13414",
-    "7561",
     "10213",
     "6650",
     "13276",
     "13294",
     "3214",
-    "1166",
     "12498",
     "8136",
+    "1166",
     "11637",
     "7042",
-    "5947",
-    "12469"
+    "12469",
+    "12482"
   ],
   "soltados": [
     "CLE",
@@ -478,7 +271,7 @@
     "11610",
     "11625",
     "5012",
-    "13545"
+    "11539"
   ],
   "duelo": {
     "a": "Josh Allen",
