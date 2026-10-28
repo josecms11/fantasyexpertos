@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-28T07:02:10.855Z",
-  "ultimaIA": "2026-10-28T03:14:25.249Z",
+  "actualizado": "2026-10-28T07:59:17.575Z",
+  "ultimaIA": "2026-10-28T07:59:17.575Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,52 +14,48 @@
   ],
   "noticias": [
     {
-      "id": "n20261028031400",
-      "fecha": "2026-10-28T03:14:25.249Z",
+      "id": "n20261028075900",
+      "fecha": "2026-10-28T07:59:17.575Z",
       "semana": 8,
-      "titulo": "Récord de audiencia en el Packers vs Lions",
+      "titulo": "Jalen Hurts fuera tras complicación médica grave",
       "claves": [
-        "El duelo entre Packers y Lions registró 24.67 millones de espectadores.",
-        "Las pantallas de televisión confirman el alto valor de ambos ataques.",
-        "Las estrellas ofensivas mantienen su estatus estelar para la semana 8."
+        "Jalen Hurts está en IR por problemas de salud.",
+        "Complicaciones graves tras viajar en avión con coágulo.",
+        "Impacto directo para las aspiraciones del ataque de Filadelfia."
       ],
-      "contexto": "El choque estelar entre Packers y Lions acumuló 24.67 millones de televidentes en la ventana vespertina del domingo. Este enfrentamiento de la NFC Norte no solo dominó el rating televisivo de la NFL, sino que consolidó a ambas escuadras como potencias ofensivas de alto flujo de puntos. La enorme audiencia refleja el momento explosivo que viven sus figuras en el emparrillado durante la presente campaña 2024.",
-      "fantasy": "El alto volumen de jugadas en este choque beneficia a piezas clave como Jahmyr Gibbs, proyectado con 23.3 pts PPR, y Jared Goff con 19.7 pts. Por el lado de Green Bay, Tucker Kraft sostiene valor con 11.4 pts proyectados. Amon-Ra St. Brown figura en 19.3 pts pero aparece cuestionable por tobillo, por lo que debes verificar su disponibilidad antes de alinearlo en la semana 8.",
-      "equipo_impacto": "Detroit afianza un esquema terrestre y aéreo muy dominante con Gibbs y Goff. En Green Bay, la falta de receptores sanos obliga a distribuir el balón en series cortas, elevando la importancia de sus corredores y alas cerradas.",
-      "accion": "Alinea con total confianza a tus titulares sanos de Detroit y monitorea el reporte final de Amon-Ra St. Brown.",
+      "contexto": "Jalen Hurts se encuentra actualmente en la lista de reservas lesionados tras revelarse que jugó y abordó un vuelo de larga distancia con un coágulo sanguíneo. Esta situación médica puso en riesgo su vida después de recibir la autorización inicial para tener actividad física. El mariscal de campo de 26 años ahora enfrenta un proceso de recuperación médico estricto, dejando a la ofensiva de Filadelfia sin su titular en la semana 8.",
+      "fantasy": "En formatos de fantasy football, perder a Jalen Hurts es un golpe devastador para los usuarios que contaban con sus puntos semanales por aire y tierra. En ligas superflex o de 12 equipos, debes enviarlo a la banca o casillero de IR de inmediato. Su ausencia desplaza el techo proyectado de todo el juego aéreo, reduciendo el valor de sus receptores y obligando a buscar un reemplazo urgente en waivers.",
+      "equipo_impacto": "El ataque de Filadelfia pierde dinamismo en la zona roja sin el volumen terrestre de su mariscal. Saquon Barkley podría asumir mayor carga por tierra para sostener el ataque, mientras que receptores como DeVonta Smith verán ajustar su volumen aéreo mientras la franquicia reorganiza su esquema ofensivo.",
+      "accion": "Mueve a Jalen Hurts a tu casillero IR hoy mismo y busca un mariscal de reemplazo en waivers.",
       "en": {
-        "titulo": "Packers vs Lions Draws Massive 24.67 Million Viewers",
+        "titulo": "Jalen Hurts sidelined after serious medical update",
         "claves": [
-          "Lions and Packers matchup reached 24.67 million viewers on Sunday.",
-          "High television ratings reflect two elite, high-scoring NFL offenses.",
-          "Key fantasy stars remain must-start options for week 8 slate."
+          "Jalen Hurts placed on IR with health complication.",
+          "Eagles QB suffered issue after flying with blood clot.",
+          "Major loss for Philadelphia offense and fantasy rosters."
         ],
-        "contexto": "The marquee matchup between the Packers and Lions pulled in 24.67 million viewers during Sunday's late-afternoon window. This NFC North clash dominated national television ratings and highlighted two of the most explosive offenses in the league. The massive viewership underscores the high-scoring nature of both rosters as fantasy managers head deeper into the 2024 regular season schedule.",
-        "fantasy": "High-volume offensive environments boost primary weapons like Jahmyr Gibbs, projected for 23.3 PPR pts, and Jared Goff at 19.7 pts. Tucker Kraft carries tight end value with 11.4 projected pts. Amon-Ra St. Brown is projected for 19.3 pts but carries a questionable tag due to an ankle injury, making his pregame status critical for week 8 lineups.",
-        "equipo_impacto": "Detroit continues to operate an elite dual-threat offense centered around Gibbs and Goff. Meanwhile, Green Bay's passing distribution shifts toward tight ends and running backs due to current receiver health uncertainties.",
-        "accion": "Start your healthy Lions skill players with complete confidence and monitor Amon-Ra St. Brown before kickoff."
+        "contexto": "Philadelphia Eagles quarterback Jalen Hurts is currently on reserve/injured after details emerged regarding a severe medical condition where he played and boarded a long flight with a blood clot. The life-threatening situation developed after he received initial clearance. The 26-year-old passer faces a strict recovery period, leaving Philadelphia without their starting quarterback ahead of week 8 matchups.",
+        "fantasy": "Losing Jalen Hurts creates an immediate void for fantasy managers relying on his dual-threat production in 12-team and superflex formats. You must move him directly into your IR slot. His absence significantly lowers the ceiling of Philadelphia's passing attack, downgrading target efficiency for wideouts and forcing fantasy managers to prioritize substitute options on the waiver wire for week 8.",
+        "equipo_impacto": "Philadelphia's offensive balance changes dramatically in the red zone without their primary rushing quarterback. Saquon Barkley could take on an even heavier workload on the ground, while target expectations for wide receiver DeVonta Smith recalibrate under the team's adjusted passing scheme.",
+        "accion": "Place Jalen Hurts into your IR slot immediately and claim a streamable QB."
       },
-      "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "DET",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "PHI",
       "equipos": [
-        "DET",
-        "GB"
+        "PHI"
       ],
-      "jugadores": [],
+      "jugadores": [
+        "6904"
+      ],
       "fuentes": [
         {
           "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/packers-lions-does-24-67-023936917.html",
-          "t": "Packers-Lions does 24.67 million in Sunday&#39;s late window"
+          "u": "https://sports.yahoo.com/articles/why-hurts-played-blood-clot-064908565.html",
+          "t": "Why Hurts played with blood clot and what it means for NFL"
         }
       ],
-      "menciona": [
-        "9221",
-        "3163",
-        "7547",
-        "9484"
-      ]
+      "menciona": []
     }
   ],
   "lesionados": [
@@ -73,15 +69,11 @@
     },
     {
       "id": "4881",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "6904",
       "estatus": "Fuera"
-    },
-    {
-      "id": "8112",
-      "estatus": "Duda"
     },
     {
       "id": "9226",
@@ -89,7 +81,7 @@
     },
     {
       "id": "7525",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "2133",
@@ -101,11 +93,11 @@
     },
     {
       "id": "8155",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "12518",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "4199",
@@ -125,15 +117,15 @@
     },
     {
       "id": "12514",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "10229",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "2307",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "4866",
@@ -141,19 +133,15 @@
     },
     {
       "id": "13287",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "12481",
       "estatus": "Duda"
     },
     {
-      "id": "11646",
-      "estatus": "Duda"
-    },
-    {
       "id": "12534",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "4137",
@@ -165,7 +153,7 @@
     },
     {
       "id": "5854",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "7526",
@@ -185,15 +173,11 @@
     },
     {
       "id": "9753",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "5927",
       "estatus": "Fuera"
-    },
-    {
-      "id": "10236",
-      "estatus": "Duda"
     },
     {
       "id": "8142",
@@ -201,7 +185,7 @@
     },
     {
       "id": "4983",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "4177",
@@ -209,7 +193,7 @@
     },
     {
       "id": "11635",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "6819",
@@ -217,10 +201,22 @@
     },
     {
       "id": "9486",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "12533",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "8205",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "8121",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "5892",
       "estatus": "Fuera"
     }
   ],
@@ -233,8 +229,8 @@
     "9480",
     "6130",
     "13345",
-    "7561",
     "WAS",
+    "7561",
     "11783",
     "13414",
     "TB",
@@ -243,11 +239,11 @@
     "13276",
     "13294",
     "12482",
-    "3214",
-    "8136",
     "12498",
-    "12469",
     "7042",
+    "12469",
+    "8136",
+    "3214",
     "11637",
     "5947"
   ],
@@ -266,10 +262,10 @@
     "11581",
     "9482",
     "8132",
-    "96",
-    "11655",
     "9502",
+    "96",
     "12545",
+    "11655",
     "11624",
     "11625",
     "7002",
@@ -278,11 +274,11 @@
     "9757"
   ],
   "duelo": {
-    "a": "Josh Allen",
-    "b": "Jared Goff",
-    "veredicto": "Arranca a Josh Allen por su alto piso proyectado de 22.2 puntos y su enorme capacidad terrestre que asegura puntos extra cada semana."
+    "a": "Drake Maye",
+    "b": "Caleb Williams",
+    "veredicto": "Arranca a Drake Maye con 20.6 pts proyectados en la semana 8. Su efectividad reciente y movilidad ofrecen un piso más seguro que Caleb Williams (20.1 pts) en duelos de alto puntaje."
   },
-  "dueloFecha": "2026-10-27T09:32:37.297Z",
+  "dueloFecha": "2026-10-28T07:59:17.575Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
