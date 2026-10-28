@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-28T13:31:40.803Z",
-  "ultimaIA": "2026-10-28T13:31:40.803Z",
+  "actualizado": "2026-10-28T14:26:11.530Z",
+  "ultimaIA": "2026-10-28T14:26:11.530Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,43 +14,57 @@
   ],
   "noticias": [
     {
-      "id": "n20261028133100",
-      "fecha": "2026-10-28T13:31:40.803Z",
+      "id": "n20261028142600",
+      "fecha": "2026-10-28T14:26:11.530Z",
       "semana": 8,
-      "titulo": "Micah Parsons listo para entrenar con Green Bay",
+      "titulo": "Justin Tucker firma con practice squad de los Chiefs",
       "claves": [
-        "Micah Parsons podria regresar a entrenar la proxima semana",
-        "Regreso clave para potenciar la defensa de Green Bay",
-        "Impacto directo para las proyecciones defensivas en fantasy"
+        "Justin Tucker llega a Kansas City",
+        "Harrison Butker atraviesa complicaciones recientes",
+        "Competencia directa en la posición de K"
       ],
-      "contexto": "El defensivo estrella de Green Bay Packers, Micah Parsons, podria regresar a los entrenamientos durante la proxima semana. Tras permanecer fuera por lesion, su retorno a las practicas marca 1 paso fundamental en su rehabilitacion. Parsons es considerado el elemento mas disruptivo de la unidad defensiva del equipo, por lo que su reincorporacion genera altas expectativas dentro de la organizacion rumbo a la 2da mitad de la temporada regular.",
-      "fantasy": "El eventual regreso de Micah Parsons eleva de inmediato el valor fantasy de la unidad Packers D/ST para las proximas semanas. Aunque esta semana 8 podria ser temprano para ver su impacto total, asegurarlo en ligas IDP es prioridad. Su capacidad para generar capturas y presionar al mariscal rival convierte a la defensiva de Green Bay en 1 opcion de alto techo cuando Parsons este 100% activo en el campo.",
-      "equipo_impacto": "La vuelta de Micah Parsons transforma la linea defensiva de Green Bay, aumentando la presion sobre mariscales rivales y generando mas capturas. Esto alivia la carga de la secundaria de Packers, permitiendo coberturas mas agresivas y mayor oportunidad de generar 1 o 2 robos de balon por partido.",
-      "accion": "Asegura a la defensiva de Packers en tu banca antes de su regreso.",
+      "contexto": "Los Chiefs firmaron al pateador 5 veces All-Pro Justin Tucker a su equipo de práctica. Esta contratación ocurre luego de los constantes problemas de Harrison Butker en patadas recientes. Tucker vuelve a enrolarse en un plantel de la NFL por 1a vez desde 2024, tras quedar libre de los Ravens. Kansas City busca estabilidad en su juego de patada de cara a la semana 8.",
+      "fantasy": "Esta incorporación genera incertidumbre directa con Harrison Butker en ligas de fantasy. Si Tucker sube al roster activo, se convertirá de inmediato en un K1 atractivo en cualquier formato por el volumen ofensivo de Kansas City. De momento no lo alinees en la semana 8, pero monitorea si supera a Butker para reclamarlo libre.",
+      "equipo_impacto": "La llegada de Tucker mete presión total sobre Harrison Butker. La gerencia de los Chiefs demuestra que no tolerará más fallos en duelos apretados durante la segunda mitad de la temporada.",
+      "accion": "Coloca a Justin Tucker en tu lista de seguimiento por si toma la titularidad en Kansas City.",
       "en": {
-        "titulo": "Micah Parsons could return to practice next week",
+        "titulo": "Justin Tucker signs with Chiefs practice squad",
         "claves": [
-          "Micah Parsons may return to practice next week",
-          "Star pass rusher provides huge boost to Packers",
-          "Significant fantasy impact for Packers D/ST unit"
+          "Justin Tucker joins Kansas City",
+          "Harrison Butker struggling with recent kicks",
+          "Direct competition at kicker position"
         ],
-        "contexto": "Green Bay Packers star defensive player Micah Parsons could return to the practice field next week. After missing time due to injury, returning to practice represents 1 major step forward in his recovery process. Parsons is recognized as the most dynamic playmaker on Green Bay's defense, making his potential return 1 pivotal development as they navigate the 2nd half of the NFL regular season.",
-        "fantasy": "The prospective return of Micah Parsons immediately raises the fantasy ceiling for Packers D/ST in upcoming matchups. While week 8 might be early for full production, holding or stashing him in IDP formats is 1 sharp move. His elite ability to record sacks and disrupt quarterbacks elevates Green Bay's defense into 1 top option once he is 100% active on the gridiron.",
-        "equipo_impacto": "Adding Micah Parsons back upgrades Green Bay's pass rush. Increased pressure upfront reduces time in the pocket for quarterbacks, helping the secondary force 1 or 2 turnovers per game throughout upcoming weeks.",
-        "accion": "Stash the Packers D/ST now ahead of his imminent return to action."
+        "contexto": "The Chiefs signed 5-time All-Pro kicker Justin Tucker to their practice squad. This move comes following recent struggles from Harrison Butker on key field goals. Tucker lands on an NFL roster for the 1st time since 2024 after leaving Baltimore. Kansas City aims to solve its kicking issues heading into Week 8.",
+        "fantasy": "This move immediately impacts Harrison Butker's stability in fantasy leagues. If Tucker gets promoted to the active roster, he becomes an intriguing K1 streamer in all formats due to Kansas City's high-powered offense. Do not start him in Week 8 yet, but add him to your watchlist in case he replaces Butker.",
+        "equipo_impacto": "Justin Tucker's arrival puts direct pressure on Harrison Butker. The Chiefs front office shows zero tolerance for missed kicks in tight games during the second half of the regular season.",
+        "accion": "Add Justin Tucker to your fantasy watchlist in case he claims the starting job in Kansas City."
       },
       "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "GB",
+      "impacto": "NEUTRO",
+      "equipo": "KC",
       "equipos": [
-        "GB"
+        "KC",
+        "BAL"
       ],
-      "jugadores": [],
+      "jugadores": [
+        "1264",
+        "4227"
+      ],
       "fuentes": [
         {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/green-bay-packers-news-micah-131442908.html",
-          "t": "Green Bay Packers News: Micah Parsons looms"
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50307645/chiefs-sign-justin-tucker-practice-squad",
+          "t": "Chiefs to sign Justin Tucker to practice squad"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50307506/sources-chiefs-sign-justin-tucker-practice-squad",
+          "t": "Sources: Chiefs sign former Ravens kicker Justin Tucker to practice squad"
+        },
+        {
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/chiefs-sign-former-ravens-kicker-justin-tucker/",
+          "t": "\n                        Chiefs sign former Ravens kicker Justin Tucker after Harrison Butker struggles\n                    "
         }
       ],
       "menciona": []
@@ -219,20 +233,20 @@
     }
   ],
   "agregados": [
-    "13296",
     "JAX",
+    "13296",
     "13424",
     "NE",
     "WAS",
-    "13298",
     "6130",
+    "13298",
     "9480",
     "7561",
     "13345",
     "11783",
     "TB",
-    "13414",
     "6650",
+    "13414",
     "10213",
     "13276",
     "7042",
@@ -242,7 +256,7 @@
     "12498",
     "1166",
     "8136",
-    "3214",
+    "8134",
     "11637"
   ],
   "soltados": [
@@ -263,10 +277,10 @@
     "9502",
     "12545",
     "11624",
-    "96",
     "11655",
-    "11625",
+    "96",
     "11610",
+    "11625",
     "7002",
     "5012",
     "4037",
