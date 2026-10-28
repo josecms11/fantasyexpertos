@@ -1,16 +1,27 @@
 {
-  "fecha": "2026-10-27T23:59:53.207Z",
+  "fecha": "2026-10-28T00:54:01.736Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.1s] YouTube: 0 nuevos, 18 en total",
-    "[0.8s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[2.3s] ESPN: lesiones 799 · noticias 50",
-    "[2.4s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[2.6s] Fuentes nuevas: 37 · horario pico · toca IA: false",
-    "[3.5s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[14.0s] IA OK con gemini-3.5-flash-lite",
-    "[14.0s] Exclusivas de Semana 8 y waivers % de playoffs → 7 notas",
-    "[14.4s] Bóveda Premium: 7 exclusivas guardadas",
-    "[14.4s] Listo: 7 noticias nuevas (7 exclusivas) · 452 jugadores · archivo 314 · semana de juego 8 · IA usada hoy 37/40"
+    "[0.4s] YouTube: 15 nuevos, 18 en total",
+    "[1.5s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[4.0s] ESPN: lesiones 799 · noticias 50",
+    "[4.0s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[4.7s] Fuentes nuevas: 37 · horario pico · toca IA: true",
+    "[4.8s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[11.0s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
+    "[11.3s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
+    "[17.1s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
+    "[22.8s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
+    "[28.5s] Gemini respuesta inválida gemini-3.5-flash-lite STOP {\"noticias\":[{\"titulo\":\"Devin Singletary asume mayor rol tras lesión de Tracy\",\"claves\":[\"Tyrone Tracy Jr. va a la lista de lesionados\",\"Devin Singletary gana p",
+    "[28.5s] Noticias nuevas verificadas: 0",
+    "[96.8s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
+    "[166.8s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
+    "[171.4s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
+    "[201.1s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
+    "[206.8s] IA OK con gemini-3.5-flash-lite",
+    "[206.8s] Blog: ¿Arrancar o sentar a Jahmyr Gibbs en la semana 8? / Should you start Jahmyr Gibbs in Week 8?",
+    "[238.4s] IA OK con gemini-3.8-flash",
+    "[238.4s] Blog descartado por verificación: Patriots D/ST → matchup contradice la calificación (FÁCIL)",
+    "[238.4s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 314 · semana de juego 8 · IA usada hoy 3/40"
   ]
 }
