@@ -1,17 +1,19 @@
 {
-  "fecha": "2026-10-28T17:05:54.139Z",
+  "fecha": "2026-10-28T17:51:22.843Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.3s] YouTube: 15 nuevos, 18 en total",
-    "[1.1s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[2.3s] ESPN: lesiones 799 · noticias 50",
-    "[2.3s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[2.8s] Fuentes nuevas: 7 · horario pico · toca IA: true",
-    "[2.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[3.6s] Modelo saturado, pruebo otro gemini-3.5-flash-lite 503",
-    "[25.4s] Modelo saturado, pruebo otro gemini-3.1-flash-lite 503",
-    "[42.7s] IA OK con gemini-flash-lite-latest",
-    "[42.7s] Noticias nuevas verificadas: 1",
-    "[43.8s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 323 · semana de juego 8 · IA usada hoy 24/40"
+    "[0.2s] YouTube: 15 nuevos, 18 en total",
+    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[2.2s] ESPN: lesiones 799 · noticias 50",
+    "[2.2s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[3.2s] Fuentes nuevas: 2 · horario pico · toca IA: true",
+    "[3.3s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[12.8s] Gemini respuesta inválida gemini-3.5-flash-lite STOP {\n  \"noticias\": [\n    {\n      \"titulo\": \"Amon-Ra St. Brown busca brillar en semana 8\",\n      \"claves\": [\n        \"Amon-Ra St. Brown proyecta 19.3 pts para seman",
+    "[12.8s] Noticias nuevas verificadas: 0",
+    "[46.3s] IA OK con gemini-3.5-flash-lite",
+    "[46.3s] Blog: DeVonta Smith: ¿juega en la semana 8 y qué hacer en fantasy? / DeVonta Smith injury update: will he play in Week 8?",
+    "[67.5s] IA OK con gemini-3.5-flash-lite",
+    "[67.5s] Blog: ¿Conviene fichar a Commanders D/ST en la semana 8? / Should you pick up Commanders D/ST in Week 8?",
+    "[67.5s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 323 · semana de juego 8 · IA usada hoy 27/40"
   ]
 }
