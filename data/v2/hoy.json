@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-28T08:50:45.309Z",
-  "ultimaIA": "2026-10-28T07:59:17.575Z",
+  "actualizado": "2026-10-28T09:32:10.415Z",
+  "ultimaIA": "2026-10-28T09:32:10.415Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,45 +14,52 @@
   ],
   "noticias": [
     {
-      "id": "n20261028075900",
-      "fecha": "2026-10-28T07:59:17.575Z",
+      "id": "n20261028093200",
+      "fecha": "2026-10-28T09:32:10.415Z",
       "semana": 8,
-      "titulo": "Jalen Hurts fuera tras complicación médica grave",
+      "titulo": "DeForest Buckner regresa con 49ers para semana 8",
       "claves": [
-        "Jalen Hurts está en IR por problemas de salud.",
-        "Complicaciones graves tras viajar en avión con coágulo.",
-        "Impacto directo para las aspiraciones del ataque de Filadelfia."
+        "DeForest Buckner regresa al roster de San Francisco",
+        "Noticia reportada por Yahoo Sports para la semana 8",
+        "Impacto directo en la defensiva de los 49ers"
       ],
-      "contexto": "Jalen Hurts se encuentra actualmente en la lista de reservas lesionados tras revelarse que jugó y abordó un vuelo de larga distancia con un coágulo sanguíneo. Esta situación médica puso en riesgo su vida después de recibir la autorización inicial para tener actividad física. El mariscal de campo de 26 años ahora enfrenta un proceso de recuperación médico estricto, dejando a la ofensiva de Filadelfia sin su titular en la semana 8.",
-      "fantasy": "En formatos de fantasy football, perder a Jalen Hurts es un golpe devastador para los usuarios que contaban con sus puntos semanales por aire y tierra. En ligas superflex o de 12 equipos, debes enviarlo a la banca o casillero de IR de inmediato. Su ausencia desplaza el techo proyectado de todo el juego aéreo, reduciendo el valor de sus receptores y obligando a buscar un reemplazo urgente en waivers.",
-      "equipo_impacto": "El ataque de Filadelfia pierde dinamismo en la zona roja sin el volumen terrestre de su mariscal. Saquon Barkley podría asumir mayor carga por tierra para sostener el ataque, mientras que receptores como DeVonta Smith verán ajustar su volumen aéreo mientras la franquicia reorganiza su esquema ofensivo.",
-      "accion": "Mueve a Jalen Hurts a tu casillero IR hoy mismo y busca un mariscal de reemplazo en waivers.",
+      "contexto": "El reporte de Yahoo Sports confirma el regreso oficial de DeForest Buckner a la disciplina de los San Francisco 49ers de cara a los compromisos de la semana 8. Esta incorporación le devuelve veteranía y presencia física a la línea defensiva del equipo.",
+      "fantasy": "Para fines de fantasy football en ligas estándar y formatos de IDP, la presencia de un elemento de la jerarquía de DeForest Buckner fortalece considerablemente el rendimiento colectivo de la defensiva de los 49ers, la cual registra una proyección de 9.2 pts según nuestro modelo FX para esta semana 8.",
+      "equipo_impacto": "La defensiva de San Francisco gana solidez en el centro de la línea, ayudando a contener el juego terrestre rival y generando mayor presión sobre los quarterbacks contrarios durante los partidos.",
+      "accion": "Monitorea el estado de la defensiva de los 49ers en tu liga si usas unidades defensivas.",
       "en": {
-        "titulo": "Jalen Hurts sidelined after serious medical update",
+        "titulo": "DeForest Buckner returns to 49ers for week 8",
         "claves": [
-          "Jalen Hurts placed on IR with health complication.",
-          "Eagles QB suffered issue after flying with blood clot.",
-          "Major loss for Philadelphia offense and fantasy rosters."
+          "DeForest Buckner returns to San Francisco roster",
+          "Reported by Yahoo Sports for week 8",
+          "Direct impact on the 49ers defense"
         ],
-        "contexto": "Philadelphia Eagles quarterback Jalen Hurts is currently on reserve/injured after details emerged regarding a severe medical condition where he played and boarded a long flight with a blood clot. The life-threatening situation developed after he received initial clearance. The 26-year-old passer faces a strict recovery period, leaving Philadelphia without their starting quarterback ahead of week 8 matchups.",
-        "fantasy": "Losing Jalen Hurts creates an immediate void for fantasy managers relying on his dual-threat production in 12-team and superflex formats. You must move him directly into your IR slot. His absence significantly lowers the ceiling of Philadelphia's passing attack, downgrading target efficiency for wideouts and forcing fantasy managers to prioritize substitute options on the waiver wire for week 8.",
-        "equipo_impacto": "Philadelphia's offensive balance changes dramatically in the red zone without their primary rushing quarterback. Saquon Barkley could take on an even heavier workload on the ground, while target expectations for wide receiver DeVonta Smith recalibrate under the team's adjusted passing scheme.",
-        "accion": "Place Jalen Hurts into your IR slot immediately and claim a streamable QB."
+        "contexto": "Yahoo Sports reports the official return of DeForest Buckner to the San Francisco 49ers ahead of their week 8 matchups. This addition brings veteran leadership and physical presence back to the team's defensive line.",
+        "fantasy": "For fantasy football purposes in standard leagues and IDP formats, DeForest Buckner's presence significantly boosts the overall performance of the 49ers defense, which holds a projection of 9.2 pts according to our FX model for week 8.",
+        "equipo_impacto": "The San Francisco defense gains stability in the middle of the line, helping to contain the opponent's running game and generating more pressure on opposing quarterbacks.",
+        "accion": "Monitor the 49ers defense status in your league if you use team defenses.",
+        "etiqueta": "TENDENCIA",
+        "impacto": "SUBE",
+        "equipo": "SF",
+        "equipos": [
+          "SF"
+        ],
+        "jugadores": [
+          "DeForest Buckner"
+        ]
       },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "PHI",
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "SF",
       "equipos": [
-        "PHI"
+        "SF"
       ],
-      "jugadores": [
-        "6904"
-      ],
+      "jugadores": [],
       "fuentes": [
         {
           "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/why-hurts-played-blood-clot-064908565.html",
-          "t": "Why Hurts played with blood clot and what it means for NFL"
+          "u": "https://sports.yahoo.com/articles/golden-nuggets-welcome-back-deforest-090300771.html",
+          "t": "Golden Nuggets: Welcome back, DeForest Buckner!"
         }
       ],
       "menciona": []
