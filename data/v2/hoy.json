@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-28T16:13:32.678Z",
-  "ultimaIA": "2026-10-28T16:13:32.678Z",
+  "actualizado": "2026-10-28T17:05:12.645Z",
+  "ultimaIA": "2026-10-28T17:05:12.645Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,46 +14,46 @@
   ],
   "noticias": [
     {
-      "id": "n20261028161300",
-      "fecha": "2026-10-28T16:13:32.678Z",
+      "id": "n20261028170500",
+      "fecha": "2026-10-28T17:05:12.645Z",
       "semana": 8,
-      "titulo": "Joe Burrow gana noveno premio ofensivo de la AFC",
+      "titulo": "Josh Downs pide cambio a Colts",
       "claves": [
-        "Joe Burrow brilla en gran mitad ante Ravens",
-        "Bengals confían en su nivel para semana 8",
-        "Joe Burrow proyecta 19.1 pts en fantasy"
+        "Josh Downs solicita un traspaso",
+        "Los Colts atraviesan por reconstrucción",
+        "El movimiento afecta el futuro ofensivo"
       ],
-      "contexto": "Tras destacar con una gran mitad de juego frente a los Ravens, el mariscal de campo Joe Burrow fue reconocido como el jugador ofensivo de la semana en la conferencia americana por novena ocasión en su carrera profesional.",
-      "fantasy": "Joe Burrow mantiene un valor sólido en fantasy y nuestro modelo lo proyecta para 19.1 pts de cara a la semana 8, siendo una opción confiable para alinear como titular en ligas de formato estándar y superflex.",
-      "equipo_impacto": "La ofensiva de los Bengals pasa por un gran momento gracias al nivel de su mariscal de campo, lo que eleva el techo competitivo de todo el equipo en la temporada.",
-      "accion": "Asegúrate de alinear a Joe Burrow en tu alineación titular sin dudarlo.",
+      "contexto": "El receptor Josh Downs ha solicitado un intercambio a la directiva de los Colts en medio de los esfuerzos de reconstrucción del equipo, según información reportada por Jeremy Fowler de ESPN este miércoles. Esta decisión surge mientras la franquicia evalúa cambios profundos en su plantilla tras el inicio de temporada.",
+      "fantasy": "El impacto en fantasy para Josh Downs dependerá totalmente del equipo al que llegue, ya que un traspaso podría elevar su valor en ligas profundas si aterriza en una ofensiva con mayor volumen de pase. Por ahora, en los Colts su panorama se vuelve incierto y es mejor mantenerlo en la banca hasta ver cómo evoluciona su situación.",
+      "equipo_impacto": "La salida potencial de Downs deja un hueco en el cuerpo de receptores de Indianápolis, abriendo oportunidades de targets para otros elementos secundarios de la ofensiva del equipo.",
+      "accion": "Monitorea los reportes de traspasos y evita alinear a Josh Downs esta semana.",
       "en": {
-        "titulo": "Joe Burrow wins ninth AFC offensive award",
+        "titulo": "Josh Downs requests trade from Colts",
         "claves": [
-          "Joe Burrow shines in strong half versus Ravens",
-          "Bengals rely on his play for week 8",
-          "Joe Burrow projects 19.1 fantasy pts"
+          "Josh Downs requests a trade",
+          "Colts are currently rebuilding",
+          "The move affects offensive future"
         ],
-        "contexto": "After standing out with a massive half against the Ravens, quarterback Joe Burrow earned AFC offensive player of the week honors for the ninth time in his professional career.",
-        "fantasy": "Joe Burrow retains solid fantasy value and our model projects him for 19.1 pts heading into week 8, making him a reliable starting option in standard and superflex leagues.",
-        "equipo_impacto": "The Bengals offense is thriving thanks to their quarterback's play, raising the competitive ceiling for the entire team this season.",
-        "accion": "Make sure to lock Joe Burrow into your starting lineup without hesitation."
+        "contexto": "Wide receiver Josh Downs has requested a trade amid the team's rebuilding efforts, a source told ESPN's Jeremy Fowler on Wednesday. This decision comes as the franchise evaluates major roster changes following the start of the season.",
+        "fantasy": "The fantasy impact for Josh Downs depends entirely on his landing spot, as a trade could boost his value in deep leagues if he joins a pass-heavy offense. For now, his outlook with the Colts is uncertain and you should bench him until his situation is resolved.",
+        "equipo_impacto": "Downs' potential departure leaves a void in Indianapolis' receiving corps, opening up target opportunities for other secondary pass-catchers.",
+        "accion": "Monitor trade reports and keep Josh Downs on your bench this week."
       },
       "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "CIN",
+      "impacto": "NEUTRO",
+      "equipo": "IND",
       "equipos": [
-        "CIN",
-        "BAL"
+        "IND"
       ],
       "jugadores": [
-        "6770"
+        "9500",
+        "6813"
       ],
       "fuentes": [
         {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/joe-burrow-afc-offensive-player-160616553.html",
-          "t": "Joe Burrow is the AFC offensive player of the week for the ninth time"
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50309196/ian-rapoport-shares-latest-josh-downs-trade-talks",
+          "t": "Ian Rapoport shares latest on Josh Downs trade talks"
         }
       ],
       "menciona": []
@@ -118,6 +118,10 @@
     },
     {
       "id": "12514",
+      "estatus": "Duda"
+    },
+    {
+      "id": "11576",
       "estatus": "Duda"
     },
     {
@@ -215,10 +219,6 @@
     {
       "id": "8121",
       "estatus": "Fuera"
-    },
-    {
-      "id": "5892",
-      "estatus": "Fuera"
     }
   ],
   "agregados": [
@@ -239,14 +239,14 @@
     "10213",
     "7042",
     "13294",
-    "13276",
     "12482",
+    "13276",
     "12469",
     "12498",
     "1166",
     "8134",
-    "8136",
-    "8135"
+    "8135",
+    "8136"
   ],
   "soltados": [
     "CLE",
@@ -267,13 +267,13 @@
     "12545",
     "11624",
     "11655",
-    "96",
     "11610",
+    "96",
     "11625",
     "7002",
     "5012",
-    "11539",
-    "4037"
+    "4037",
+    "9511"
   ],
   "duelo": {
     "a": "Drake Maye",
