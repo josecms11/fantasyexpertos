@@ -1,16 +1,12 @@
 {
-  "fecha": "2026-10-28T04:45:23.283Z",
+  "fecha": "2026-10-28T05:24:35.230Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.1s] YouTube: 0 nuevos, 18 en total",
-    "[1.4s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[0.2s] YouTube: 0 nuevos, 18 en total",
+    "[0.8s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
     "[2.5s] ESPN: lesiones 799 · noticias 50",
-    "[2.6s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[2.9s] Fuentes nuevas: 1 · horario normal · toca IA: true",
-    "[3.0s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[22.7s] IA OK con gemini-3.8-flash",
-    "[22.7s] Descartada: Jonathan Taylor acapara reflectores rumbo al trade deadline → duplicada",
-    "[22.7s] Noticias nuevas verificadas: 0",
-    "[23.6s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 316 · semana de juego 8 · IA usada hoy 7/40"
+    "[2.5s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[3.1s] Fuentes nuevas: 0 · horario normal · toca IA: false",
+    "[4.2s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 316 · semana de juego 8 · IA usada hoy 7/40"
   ]
 }
