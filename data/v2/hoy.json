@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-28T19:23:51.281Z",
-  "ultimaIA": "2026-10-28T19:23:51.281Z",
+  "actualizado": "2026-10-28T20:09:54.899Z",
+  "ultimaIA": "2026-10-28T20:09:54.899Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,45 +14,44 @@
   ],
   "noticias": [
     {
-      "id": "n20261028192300",
-      "fecha": "2026-10-28T19:23:51.281Z",
+      "id": "n20261028200900",
+      "fecha": "2026-10-28T20:09:54.899Z",
       "semana": 8,
-      "titulo": "Saquon Barkley cede sus acciones de Polymarket",
+      "titulo": "Mike McDaniel sigue mandando jugadas con Chargers",
       "claves": [
-        "Cumplimiento estricto de las reglas NFL",
-        "Inversión retirada por Saquon Barkley",
-        "Atención a su estatus en fantasy"
+        "Jim Harbaugh confirma la continuidad del coordinador ofensivo",
+        "Los Chargers buscan enderezar el rumbo en la semana 8",
+        "Impacto directo en la ofensiva angelina y sus armas"
       ],
-      "contexto": "El estelar corredor de los Eagles, Saquon Barkley, confirmó recientemente que tuvo que desprenderse por completo de su participación accionaria en Polymarket para acatar de forma estricta las normativas vigentes de la NFL. Esta decisión administrativa surge tras revisiones internas y busca evitar cualquier conflicto de intereses con las políticas de la liga profesional de fútbol americano.",
-      "fantasy": "En el terreno del fantasy football, este movimiento fuera del emparrillado no altera sus proyecciones para la semana 8, donde se mantiene como una pieza de élite en las alineaciones titulares. Con una sólida proyección de 20.6 pts en ligas PPR, debes alinearlo con total confianza siempre y cuando esté activo el día del partido.",
-      "equipo_impacto": "La ofensiva de los Eagles sigue girando en torno a su capacidad terrestre, por lo que este tipo de distracciones extracancha no afectan el rendimiento colectivo del equipo en el campo.",
-      "accion": "Mantén a Saquon Barkley en tu alineación titular sin dudarlo para la semana 8.",
+      "contexto": "El entrenador en jefe Jim Harbaugh anunció este miércoles que Mike McDaniel se mantendrá como el encargado de diseñar y mandar las jugadas ofensivas de los Chargers. A pesar de los problemas y el inicio sin victorias del equipo, la franquicia decide mantener la confianza en su esquema de cara a los siguientes compromisos de la temporada.",
+      "fantasy": "Para efectos de fantasy football, esta confirmación mantiene el statu quo en Los Angeles. No hay un cambio drástico en el playbook que beneficie o hunda automáticamente a las piezas clave, por lo que puedes alinear con confianza normal a tus elementos ofensivos de este equipo según los enfrentamientos semanales.",
+      "equipo_impacto": "La continuidad en el esquema ofensivo da cierta estabilidad a la hora de planificar los partidos, evitando cambios drásticos en el reparto de acarreos y rutas para el resto de la plantilla.",
+      "accion": "Mantén en tu alineación habitual a tus jugadores de los Chargers sin pánico.",
       "en": {
-        "titulo": "Saquon Barkley sells his Polymarket equity stake",
+        "titulo": "Mike McDaniel remains playcaller for Chargers",
         "claves": [
-          "Strict compliance with NFL rules",
-          "Investment divested by Saquon Barkley",
-          "Attention to his fantasy status"
+          "Jim Harbaugh confirms offensive coordinator will keep calling plays",
+          "Chargers look to right the ship in Week 8",
+          "Direct impact on the offense and playmakers"
         ],
-        "contexto": "Eagles star running back Saquon Barkley confirmed that he was forced to completely divest his equity stake in Polymarket to strictly comply with current NFL regulations following internal league reviews.",
-        "fantasy": "In fantasy football, this off-field administrative move does not alter his projections for week 8, where he remains an elite piece in starting lineups. With a strong projection of 20.6 pts in PPR leagues, lock him into your lineups as long as he plays.",
-        "equipo_impacto": "The Eagles offense continues to revolve around his elite rushing ability, ensuring this distraction has zero impact on the field.",
-        "accion": "Keep Saquon Barkley locked into your starting lineup for week 8."
+        "contexto": "Head coach Jim Harbaugh announced Wednesday that Mike McDaniel will continue calling offensive plays for the winless Chargers. Despite early struggles, the franchise decided to stick with their coordinator moving forward.",
+        "fantasy": "For fantasy purposes, this confirmation keeps things stable in Los Angeles without a sudden playbook shift, meaning you can comfortably start your usual fantasy assets based on matchups.",
+        "equipo_impacto": "Consistency in the offensive scheme prevents major disruptions in target shares and snap counts for the rest of the roster.",
+        "accion": "Keep starting your usual Chargers players without panic.",
+        "en": "Keep starting your usual Chargers players without panic."
       },
       "etiqueta": "TENDENCIA",
       "impacto": "NEUTRO",
-      "equipo": "PHI",
+      "equipo": "LAC",
       "equipos": [
-        "PHI"
+        "LAC"
       ],
-      "jugadores": [
-        "4866"
-      ],
+      "jugadores": [],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50309777/saquon-barkley-says-was-forced-divest-polymarket-stake",
-          "t": "Eagles star Saquon Barkley says he was forced to divest Polymarket equity stake"
+          "u": "https://www.espn.com/nfl/story/_/id/50310259/chargers-sticking-mike-mcdaniel-offensive-playcaller",
+          "t": "Winless Chargers sticking with Mike McDaniel as offensive playcaller"
         }
       ],
       "menciona": []
@@ -242,8 +241,8 @@
     "12469",
     "12498",
     "13276",
-    "8134",
     "1166",
+    "8134",
     "8135",
     "5947"
   ],
