@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-28T15:20:27.305Z",
-  "ultimaIA": "2026-10-28T15:20:27.305Z",
+  "actualizado": "2026-10-28T16:13:32.678Z",
+  "ultimaIA": "2026-10-28T16:13:32.678Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,45 +14,46 @@
   ],
   "noticias": [
     {
-      "id": "n20261028152001",
-      "fecha": "2026-10-28T15:20:27.305Z",
+      "id": "n20261028161300",
+      "fecha": "2026-10-28T16:13:32.678Z",
       "semana": 8,
-      "titulo": "Jonathan Taylor en incertidumbre por rumores de traspasos",
+      "titulo": "Joe Burrow gana noveno premio ofensivo de la AFC",
       "claves": [
-        "Esposa de Jonathan Taylor comenta rumores de cambios",
-        "Colts transfirieron a Quenton Nelson y DeForest Buckner",
-        "Preocupación sobre el futuro del corredor"
+        "Joe Burrow brilla en gran mitad ante Ravens",
+        "Bengals confían en su nivel para semana 8",
+        "Joe Burrow proyecta 19.1 pts en fantasy"
       ],
-      "contexto": "La incertidud rodea el futuro de Jonathan Taylor en Indianapolis después de que la franquicia decidiera negociar a piezas clave como Quenton Nelson y DeForest Buckner previo a la fecha límite de canjes del 10 de noviembre. Las declaraciones públicas sobre la situación han generado dudas sobre si el estelar corredor será el siguiente veterano en salir.",
-      "fantasy": "Mantén a Jonathan Taylor en tu alineación si está activo, respaldado por su gran proyección de 18.8 pts en la semana 8. Sin embargo, monitorea de cerca los reportes de cambios y protege tu inversión en ligas profundas.",
-      "equipo_impacto": "La salida de figuras clave debilita la estructura ofensiva y deja al corredor bajo un panorama sumamente volátil.",
-      "accion": "Alinea a Jonathan Taylor pero sigue de cerca los reportes de traspasos.",
+      "contexto": "Tras destacar con una gran mitad de juego frente a los Ravens, el mariscal de campo Joe Burrow fue reconocido como el jugador ofensivo de la semana en la conferencia americana por novena ocasión en su carrera profesional.",
+      "fantasy": "Joe Burrow mantiene un valor sólido en fantasy y nuestro modelo lo proyecta para 19.1 pts de cara a la semana 8, siendo una opción confiable para alinear como titular en ligas de formato estándar y superflex.",
+      "equipo_impacto": "La ofensiva de los Bengals pasa por un gran momento gracias al nivel de su mariscal de campo, lo que eleva el techo competitivo de todo el equipo en la temporada.",
+      "accion": "Asegúrate de alinear a Joe Burrow en tu alineación titular sin dudarlo.",
       "en": {
-        "titulo": "Jonathan Taylor faces uncertainty amid trade rumors",
-        "keys": [
-          "Jonathan Taylor's wife addresses trade rumors",
-          "Colts dealt Quenton Nelson and DeForest Buckner",
-          "Anxiety grows over running back's future"
+        "titulo": "Joe Burrow wins ninth AFC offensive award",
+        "claves": [
+          "Joe Burrow shines in strong half versus Ravens",
+          "Bengals rely on his play for week 8",
+          "Joe Burrow projects 19.1 fantasy pts"
         ],
-        "contexto": "Uncertainty surrounds Jonathan Taylor's future in Indianapolis after the franchise traded away key pieces like Quenton Nelson and DeForest Buckner ahead of the November 10 trade deadline. Public comments regarding the situation have raised questions about whether the star running back is the next veteran on the move.",
-        "fantasy": "Keep Jonathan Taylor in your lineup if active, backed by his strong 18.8 pts projection in Week 8. However, closely monitor trade reports and protect your investment in deep leagues.",
-        "equipo_impacto": "The departure of key figures weakens the offensive structure and leaves the running back under a highly volatile outlook.",
-        "accion": "Start Jonathan Taylor but keep a close eye on trade reports."
+        "contexto": "After standing out with a massive half against the Ravens, quarterback Joe Burrow earned AFC offensive player of the week honors for the ninth time in his professional career.",
+        "fantasy": "Joe Burrow retains solid fantasy value and our model projects him for 19.1 pts heading into week 8, making him a reliable starting option in standard and superflex leagues.",
+        "equipo_impacto": "The Bengals offense is thriving thanks to their quarterback's play, raising the competitive ceiling for the entire team this season.",
+        "accion": "Make sure to lock Joe Burrow into your starting lineup without hesitation."
       },
       "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "IND",
+      "impacto": "SUBE",
+      "equipo": "CIN",
       "equipos": [
-        "IND"
+        "CIN",
+        "BAL"
       ],
       "jugadores": [
-        "6813"
+        "6770"
       ],
       "fuentes": [
         {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/jonathan-taylors-wife-speaks-colts-trade-rumors/",
-          "t": "\n                        Jonathan Taylor&#039;s wife speaks out on Colts trade rumors: &#039;My mind is spiraling&#039;\n                    "
+          "m": "Yahoo Sports",
+          "u": "https://sports.yahoo.com/articles/joe-burrow-afc-offensive-player-160616553.html",
+          "t": "Joe Burrow is the AFC offensive player of the week for the ninth time"
         }
       ],
       "menciona": []
@@ -224,14 +225,14 @@
     "JAX",
     "13296",
     "13424",
-    "NE",
     "WAS",
+    "NE",
     "6130",
     "13298",
     "9480",
     "7561",
-    "11783",
     "TB",
+    "11783",
     "13345",
     "6650",
     "13414",
@@ -243,8 +244,8 @@
     "12469",
     "12498",
     "1166",
-    "8136",
     "8134",
+    "8136",
     "8135"
   ],
   "soltados": [
