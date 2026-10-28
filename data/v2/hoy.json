@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-28T02:26:43.850Z",
-  "ultimaIA": "2026-10-28T01:42:11.345Z",
+  "actualizado": "2026-10-28T03:14:25.249Z",
+  "ultimaIA": "2026-10-28T03:14:25.249Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,48 +14,52 @@
   ],
   "noticias": [
     {
-      "id": "n20261028014200",
-      "fecha": "2026-10-28T01:42:11.345Z",
+      "id": "n20261028031400",
+      "fecha": "2026-10-28T03:14:25.249Z",
       "semana": 8,
-      "titulo": "Reporte de lesiones: Christian McCaffrey bajo observación",
+      "titulo": "Récord de audiencia en el Packers vs Lions",
       "claves": [
-        "Christian McCaffrey figura como cuestionable por molestia en la pantorrilla.",
-        "Proyección de 20.6 puntos fantasy para la semana 8.",
-        "SF evaluará su participación previo al partido del domingo."
+        "El duelo entre Packers y Lions registró 24.67 millones de espectadores.",
+        "Las pantallas de televisión confirman el alto valor de ambos ataques.",
+        "Las estrellas ofensivas mantienen su estatus estelar para la semana 8."
       ],
-      "contexto": "El reporte de lesiones previo a la semana 8 pone reflectores sobre San Francisco. Christian McCaffrey aparece oficialmente con estatus de cuestionable por una molestia en la pantorrilla. Aunque la organización no descarta su presencia, su carga de trabajo en las prácticas de esta semana dictará si estará listo para encarar el siguiente compromiso sin limitaciones severas.",
-      "fantasy": "En formatos PPR mantendrás a Christian McCaffrey como una opción estelar con proyección de 20.6 puntos, pero el riesgo de recaída exige cobertura inmediata. Si cuentas con él en tus ligas, es obligatorio asegurar a sus suplentes directos o preparar un reemplazo de valor similar en el roster antes de que inicien los partidos de la jornada.",
-      "equipo_impacto": "La ofensiva de San Francisco cambia dramáticamente sin su corredor estelar en campo. Si McCaffrey limita sus repeticiones, los pases cortos al backfield disminuirán y la presión aumentará para el esquema terrestre complementario durante la semana 8.",
-      "accion": "Monitorea los reportes matutinos del domingo antes de confirmar a Christian McCaffrey en tu alineación titular.",
+      "contexto": "El choque estelar entre Packers y Lions acumuló 24.67 millones de televidentes en la ventana vespertina del domingo. Este enfrentamiento de la NFC Norte no solo dominó el rating televisivo de la NFL, sino que consolidó a ambas escuadras como potencias ofensivas de alto flujo de puntos. La enorme audiencia refleja el momento explosivo que viven sus figuras en el emparrillado durante la presente campaña 2024.",
+      "fantasy": "El alto volumen de jugadas en este choque beneficia a piezas clave como Jahmyr Gibbs, proyectado con 23.3 pts PPR, y Jared Goff con 19.7 pts. Por el lado de Green Bay, Tucker Kraft sostiene valor con 11.4 pts proyectados. Amon-Ra St. Brown figura en 19.3 pts pero aparece cuestionable por tobillo, por lo que debes verificar su disponibilidad antes de alinearlo en la semana 8.",
+      "equipo_impacto": "Detroit afianza un esquema terrestre y aéreo muy dominante con Gibbs y Goff. En Green Bay, la falta de receptores sanos obliga a distribuir el balón en series cortas, elevando la importancia de sus corredores y alas cerradas.",
+      "accion": "Alinea con total confianza a tus titulares sanos de Detroit y monitorea el reporte final de Amon-Ra St. Brown.",
       "en": {
-        "titulo": "Week 8 injury update: Christian McCaffrey status questionable",
+        "titulo": "Packers vs Lions Draws Massive 24.67 Million Viewers",
         "claves": [
-          "Christian McCaffrey listed as questionable with a calf issue.",
-          "Projected for 20.6 PPR fantasy points in week 8.",
-          "San Francisco will evaluate his availability close to game time."
+          "Lions and Packers matchup reached 24.67 million viewers on Sunday.",
+          "High television ratings reflect two elite, high-scoring NFL offenses.",
+          "Key fantasy stars remain must-start options for week 8 slate."
         ],
-        "contexto": "The week 8 injury report places San Francisco backfield in the spotlight. Christian McCaffrey is officially listed as questionable due to a calf issue. While the team has not ruled him out, his participation in practice sessions throughout the week will determine whether he can handle his usual workload without facing significant limitations on game day.",
-        "fantasy": "In PPR leagues, Christian McCaffrey remains a top tier fantasy option projected for 20.6 points, but his injury status introduces real risk. Fantasy managers must secure insurance options or have a reliable flex substitute ready on their bench before the upcoming slate of matches kicks off this weekend.",
-        "equipo_impacto": "San Francisco offense undergoes notable adjustments if their elite running back is limited. A reduction in McCaffrey touches shifts target distribution toward secondary pass catchers and forces the coaching staff to rely more heavily on backfield rotations.",
-        "accion": "Check final inactive lists on Sunday morning before locking Christian McCaffrey into your starting lineup."
+        "contexto": "The marquee matchup between the Packers and Lions pulled in 24.67 million viewers during Sunday's late-afternoon window. This NFC North clash dominated national television ratings and highlighted two of the most explosive offenses in the league. The massive viewership underscores the high-scoring nature of both rosters as fantasy managers head deeper into the 2024 regular season schedule.",
+        "fantasy": "High-volume offensive environments boost primary weapons like Jahmyr Gibbs, projected for 23.3 PPR pts, and Jared Goff at 19.7 pts. Tucker Kraft carries tight end value with 11.4 projected pts. Amon-Ra St. Brown is projected for 19.3 pts but carries a questionable tag due to an ankle injury, making his pregame status critical for week 8 lineups.",
+        "equipo_impacto": "Detroit continues to operate an elite dual-threat offense centered around Gibbs and Goff. Meanwhile, Green Bay's passing distribution shifts toward tight ends and running backs due to current receiver health uncertainties.",
+        "accion": "Start your healthy Lions skill players with complete confidence and monitor Amon-Ra St. Brown before kickoff."
       },
-      "etiqueta": "LESIÓN",
-      "impacto": "NEUTRO",
-      "equipo": "SF",
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "DET",
       "equipos": [
-        "SF"
+        "DET",
+        "GB"
       ],
-      "jugadores": [
-        "4034"
-      ],
+      "jugadores": [],
       "fuentes": [
         {
           "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/nfl-week-8-injury-report-012331954.html",
-          "t": "NFL Week 8 Injury Report: LJax expected to play, plus updates on Jaylin Noel, Aaron Jones, CMC"
+          "u": "https://sports.yahoo.com/articles/packers-lions-does-24-67-023936917.html",
+          "t": "Packers-Lions does 24.67 million in Sunday&#39;s late window"
         }
       ],
-      "menciona": []
+      "menciona": [
+        "9221",
+        "3163",
+        "7547",
+        "9484"
+      ]
     }
   ],
   "lesionados": [
@@ -229,8 +233,8 @@
     "9480",
     "6130",
     "13345",
-    "11783",
     "7561",
+    "11783",
     "WAS",
     "13414",
     "TB",
@@ -241,10 +245,10 @@
     "3214",
     "12498",
     "8136",
+    "12482",
     "1166",
     "11637",
     "7042",
-    "12482",
     "12469"
   ],
   "soltados": [
