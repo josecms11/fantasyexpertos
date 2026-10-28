@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-28T12:26:15.151Z",
-  "ultimaIA": "2026-10-28T09:32:10.415Z",
+  "actualizado": "2026-10-28T13:31:40.803Z",
+  "ultimaIA": "2026-10-28T13:31:40.803Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,52 +14,43 @@
   ],
   "noticias": [
     {
-      "id": "n20261028093200",
-      "fecha": "2026-10-28T09:32:10.415Z",
+      "id": "n20261028133100",
+      "fecha": "2026-10-28T13:31:40.803Z",
       "semana": 8,
-      "titulo": "DeForest Buckner regresa con 49ers para semana 8",
+      "titulo": "Micah Parsons listo para entrenar con Green Bay",
       "claves": [
-        "DeForest Buckner regresa al roster de San Francisco",
-        "Noticia reportada por Yahoo Sports para la semana 8",
-        "Impacto directo en la defensiva de los 49ers"
+        "Micah Parsons podria regresar a entrenar la proxima semana",
+        "Regreso clave para potenciar la defensa de Green Bay",
+        "Impacto directo para las proyecciones defensivas en fantasy"
       ],
-      "contexto": "El reporte de Yahoo Sports confirma el regreso oficial de DeForest Buckner a la disciplina de los San Francisco 49ers de cara a los compromisos de la semana 8. Esta incorporación le devuelve veteranía y presencia física a la línea defensiva del equipo.",
-      "fantasy": "Para fines de fantasy football en ligas estándar y formatos de IDP, la presencia de un elemento de la jerarquía de DeForest Buckner fortalece considerablemente el rendimiento colectivo de la defensiva de los 49ers, la cual registra una proyección de 9.2 pts según nuestro modelo FX para esta semana 8.",
-      "equipo_impacto": "La defensiva de San Francisco gana solidez en el centro de la línea, ayudando a contener el juego terrestre rival y generando mayor presión sobre los quarterbacks contrarios durante los partidos.",
-      "accion": "Monitorea el estado de la defensiva de los 49ers en tu liga si usas unidades defensivas.",
+      "contexto": "El defensivo estrella de Green Bay Packers, Micah Parsons, podria regresar a los entrenamientos durante la proxima semana. Tras permanecer fuera por lesion, su retorno a las practicas marca 1 paso fundamental en su rehabilitacion. Parsons es considerado el elemento mas disruptivo de la unidad defensiva del equipo, por lo que su reincorporacion genera altas expectativas dentro de la organizacion rumbo a la 2da mitad de la temporada regular.",
+      "fantasy": "El eventual regreso de Micah Parsons eleva de inmediato el valor fantasy de la unidad Packers D/ST para las proximas semanas. Aunque esta semana 8 podria ser temprano para ver su impacto total, asegurarlo en ligas IDP es prioridad. Su capacidad para generar capturas y presionar al mariscal rival convierte a la defensiva de Green Bay en 1 opcion de alto techo cuando Parsons este 100% activo en el campo.",
+      "equipo_impacto": "La vuelta de Micah Parsons transforma la linea defensiva de Green Bay, aumentando la presion sobre mariscales rivales y generando mas capturas. Esto alivia la carga de la secundaria de Packers, permitiendo coberturas mas agresivas y mayor oportunidad de generar 1 o 2 robos de balon por partido.",
+      "accion": "Asegura a la defensiva de Packers en tu banca antes de su regreso.",
       "en": {
-        "titulo": "DeForest Buckner returns to 49ers for week 8",
+        "titulo": "Micah Parsons could return to practice next week",
         "claves": [
-          "DeForest Buckner returns to San Francisco roster",
-          "Reported by Yahoo Sports for week 8",
-          "Direct impact on the 49ers defense"
+          "Micah Parsons may return to practice next week",
+          "Star pass rusher provides huge boost to Packers",
+          "Significant fantasy impact for Packers D/ST unit"
         ],
-        "contexto": "Yahoo Sports reports the official return of DeForest Buckner to the San Francisco 49ers ahead of their week 8 matchups. This addition brings veteran leadership and physical presence back to the team's defensive line.",
-        "fantasy": "For fantasy football purposes in standard leagues and IDP formats, DeForest Buckner's presence significantly boosts the overall performance of the 49ers defense, which holds a projection of 9.2 pts according to our FX model for week 8.",
-        "equipo_impacto": "The San Francisco defense gains stability in the middle of the line, helping to contain the opponent's running game and generating more pressure on opposing quarterbacks.",
-        "accion": "Monitor the 49ers defense status in your league if you use team defenses.",
-        "etiqueta": "TENDENCIA",
-        "impacto": "SUBE",
-        "equipo": "SF",
-        "equipos": [
-          "SF"
-        ],
-        "jugadores": [
-          "DeForest Buckner"
-        ]
+        "contexto": "Green Bay Packers star defensive player Micah Parsons could return to the practice field next week. After missing time due to injury, returning to practice represents 1 major step forward in his recovery process. Parsons is recognized as the most dynamic playmaker on Green Bay's defense, making his potential return 1 pivotal development as they navigate the 2nd half of the NFL regular season.",
+        "fantasy": "The prospective return of Micah Parsons immediately raises the fantasy ceiling for Packers D/ST in upcoming matchups. While week 8 might be early for full production, holding or stashing him in IDP formats is 1 sharp move. His elite ability to record sacks and disrupt quarterbacks elevates Green Bay's defense into 1 top option once he is 100% active on the gridiron.",
+        "equipo_impacto": "Adding Micah Parsons back upgrades Green Bay's pass rush. Increased pressure upfront reduces time in the pocket for quarterbacks, helping the secondary force 1 or 2 turnovers per game throughout upcoming weeks.",
+        "accion": "Stash the Packers D/ST now ahead of his imminent return to action."
       },
       "etiqueta": "TENDENCIA",
       "impacto": "SUBE",
-      "equipo": "SF",
+      "equipo": "GB",
       "equipos": [
-        "SF"
+        "GB"
       ],
       "jugadores": [],
       "fuentes": [
         {
           "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/golden-nuggets-welcome-back-deforest-090300771.html",
-          "t": "Golden Nuggets: Welcome back, DeForest Buckner!"
+          "u": "https://sports.yahoo.com/articles/green-bay-packers-news-micah-131442908.html",
+          "t": "Green Bay Packers News: Micah Parsons looms"
         }
       ],
       "menciona": []
@@ -232,10 +223,10 @@
     "JAX",
     "13424",
     "NE",
-    "13298",
     "WAS",
-    "9480",
+    "13298",
     "6130",
+    "9480",
     "7561",
     "13345",
     "11783",
@@ -244,14 +235,14 @@
     "6650",
     "10213",
     "13276",
-    "13294",
     "7042",
+    "13294",
     "12482",
-    "12498",
     "12469",
+    "12498",
+    "1166",
     "8136",
     "3214",
-    "1166",
     "11637"
   ],
   "soltados": [
@@ -271,15 +262,15 @@
     "8132",
     "9502",
     "12545",
-    "96",
     "11624",
+    "96",
     "11655",
     "11625",
     "11610",
     "7002",
     "5012",
-    "9757",
-    "4037"
+    "4037",
+    "11539"
   ],
   "duelo": {
     "a": "Drake Maye",

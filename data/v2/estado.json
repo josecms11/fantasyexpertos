@@ -1,19 +1,17 @@
 {
-  "fecha": "2026-10-28T12:29:13.490Z",
+  "fecha": "2026-10-28T13:36:59.390Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.3s] YouTube: 15 nuevos, 18 en total",
-    "[1.4s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[4.2s] ESPN: lesiones 799 · noticias 50",
-    "[4.2s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[4.5s] Fuentes nuevas: 2 · horario normal · toca IA: true",
-    "[4.7s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[154.7s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
-    "[156.0s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[165.1s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[181.7s] IA OK con gemini-3.5-flash",
-    "[181.7s] Descartada: Caleb Williams hila partidos de 300 yardas → duplicada",
-    "[181.7s] Noticias nuevas verificadas: 0",
-    "[182.6s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 318 · semana de juego 8 · IA usada hoy 15/40"
+    "[0.5s] YouTube: 15 nuevos, 18 en total",
+    "[1.2s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[3.2s] ESPN: lesiones 799 · noticias 50",
+    "[3.2s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[3.7s] Fuentes nuevas: 3 · horario normal · toca IA: true",
+    "[3.8s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[153.8s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
+    "[303.8s] Gemini sin respuesta gemini-3.7-flash The operation was aborted due to timeout",
+    "[320.6s] IA OK con gemini-3.6-flash",
+    "[320.6s] Noticias nuevas verificadas: 1",
+    "[321.8s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 319 · semana de juego 8 · IA usada hoy 16/40"
   ]
 }
