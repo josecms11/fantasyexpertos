@@ -1,21 +1,12 @@
 {
-  "fecha": "2026-10-28T06:17:12.156Z",
+  "fecha": "2026-10-28T07:02:12.330Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.1s] YouTube: 0 nuevos, 18 en total",
+    "[0.2s] YouTube: 15 nuevos, 18 en total",
     "[0.8s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[1.8s] ESPN: lesiones 799 · noticias 50",
-    "[1.8s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[2.1s] Fuentes nuevas: 0 · horario normal · toca IA: false",
-    "[3.0s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[153.0s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
-    "[160.5s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[174.7s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[209.0s] IA OK con gemini-3.5-flash",
-    "[209.0s] Blog descartado por verificación: Patriots D/ST → matchup contradice la calificación (FÁCIL)",
-    "[359.0s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
-    "[501.4s] IA OK con gemini-3.7-flash",
-    "[501.4s] Blog: Lesión de Drake London: ¿juega en la semana 8 y qué hacer en fantasy? / Drake London injury update: will he play in Week 8? Fantasy impact",
-    "[501.4s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 316 · semana de juego 8 · IA usada hoy 9/40"
+    "[1.6s] ESPN: lesiones 799 · noticias 50",
+    "[1.7s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[2.3s] Fuentes nuevas: 0 · horario normal · toca IA: false",
+    "[3.2s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 316 · semana de juego 8 · IA usada hoy 9/40"
   ]
 }
