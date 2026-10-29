@@ -1,16 +1,16 @@
 {
-  "fecha": "2026-10-29T10:52:20.059Z",
+  "fecha": "2026-10-29T11:29:05.335Z",
   "log": [
     "[0.0s] Inicio",
     "[0.3s] YouTube: 15 nuevos, 19 en total",
-    "[1.1s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[1.9s] ESPN: lesiones 799 · noticias 50",
-    "[1.9s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
-    "[2.3s] Fuentes nuevas: 7 · horario normal · toca IA: true",
-    "[2.5s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[5.7s] IA OK con gemini-3.5-flash-lite",
-    "[5.7s] Descartada: Vikings sorprenden con asfixiante presión rumbo a semana 8 → duplicada",
-    "[5.7s] Noticias nuevas verificadas: 0",
-    "[6.5s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 330 · semana de juego 8 · IA usada hoy 13/40"
+    "[1.3s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[3.1s] ESPN: lesiones 799 · noticias 50",
+    "[3.2s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
+    "[3.9s] Fuentes nuevas: 1 · horario normal · toca IA: true",
+    "[4.0s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[8.5s] IA OK con gemini-3.5-flash-lite",
+    "[8.5s] Descartada: Clave Bengals: Buscar temprano a Ja'Marr Chase → duplicada",
+    "[8.5s] Noticias nuevas verificadas: 0",
+    "[9.5s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 330 · semana de juego 8 · IA usada hoy 14/40"
   ]
 }
