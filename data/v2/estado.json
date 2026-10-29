@@ -1,15 +1,12 @@
 {
-  "fecha": "2026-10-29T03:17:43.234Z",
+  "fecha": "2026-10-29T04:07:29.688Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.1s] YouTube: 0 nuevos, 19 en total",
-    "[0.8s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[1.6s] ESPN: lesiones 799 · noticias 50",
-    "[1.7s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
-    "[2.0s] Fuentes nuevas: 1 · horario pico · toca IA: true",
-    "[2.2s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[6.8s] IA OK con gemini-3.5-flash-lite",
-    "[6.8s] Noticias nuevas verificadas: 1",
-    "[7.7s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 330 · semana de juego 8 · IA usada hoy 6/40"
+    "[0.2s] YouTube: 0 nuevos, 19 en total",
+    "[0.7s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[3.2s] ESPN: lesiones 799 · noticias 50",
+    "[3.2s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
+    "[3.8s] Fuentes nuevas: 1 · horario normal · toca IA: false",
+    "[4.8s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 330 · semana de juego 8 · IA usada hoy 6/40"
   ]
 }
