@@ -1,18 +1,15 @@
 {
-  "fecha": "2026-10-28T23:57:46.072Z",
+  "fecha": "2026-10-29T00:47:45.206Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 0 nuevos, 19 en total",
-    "[0.9s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[3.5s] ESPN: lesiones 799 · noticias 50",
-    "[4.0s] Auto-ajuste FX: {\"hl\":8,\"mEf\":30,\"mTd\":220,\"aPrev\":0.2} error 4.804 → 4.790",
-    "[4.0s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
-    "[4.7s] Fuentes nuevas: 13 · horario pico · toca IA: false",
-    "[5.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[11.7s] IA OK con gemini-3.5-flash-lite",
-    "[11.7s] Blog: ¿Vale la pena agregar a Elijah Mitchell en semana 8? / Should you pick up Elijah Mitchell in Week 8?",
-    "[17.9s] IA OK con gemini-3.5-flash-lite",
-    "[17.9s] Blog: Lesión de Brock Bowers: ¿juega en la semana 8 y qué hacer? / Brock Bowers injury update: will he play in Week 8? Fantasy impact",
-    "[17.9s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 326 · semana de juego 8 · IA usada hoy 35/40"
+    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[1.9s] ESPN: lesiones 799 · noticias 50",
+    "[2.0s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
+    "[2.2s] Fuentes nuevas: 17 · horario pico · toca IA: true",
+    "[2.4s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[147.3s] IA OK con gemini-3.8-flash",
+    "[147.3s] Noticias nuevas verificadas: 3",
+    "[148.0s] Listo: 3 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 329 · semana de juego 8 · IA usada hoy 1/40"
   ]
 }
