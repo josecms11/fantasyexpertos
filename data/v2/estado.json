@@ -1,18 +1,20 @@
 {
-  "fecha": "2026-10-29T12:15:12.053Z",
+  "fecha": "2026-10-29T13:22:06.506Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.5s] YouTube: 15 nuevos, 19 en total",
-    "[1.4s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[4.2s] ESPN: lesiones 799 · noticias 50",
-    "[5.0s] Auto-ajuste FX: {\"hl\":8,\"mEf\":30,\"mTd\":220,\"aPrev\":0.2} error 4.804 → 4.790",
-    "[5.0s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
-    "[5.6s] Fuentes nuevas: 8 · horario normal · toca IA: true",
-    "[5.8s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[14.8s] IA OK con gemini-3.5-flash-lite",
-    "[14.8s] Descartada: Lamar Jackson regresa para buscar sorprender a Buffalo → duplicada",
-    "[14.8s] Descartada: Jonathan Taylor en la mira de posibles traspasos → duplicada",
-    "[14.8s] Noticias nuevas verificadas: 0",
-    "[15.8s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 330 · semana de juego 8 · IA usada hoy 15/40"
+    "[0.2s] YouTube: 15 nuevos, 19 en total",
+    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[2.2s] ESPN: lesiones 799 · noticias 50",
+    "[2.3s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
+    "[2.5s] Fuentes nuevas: 3 · horario normal · toca IA: true",
+    "[2.6s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[14.0s] IA OK con gemini-3.5-flash-lite",
+    "[14.0s] Descartada (sin fuente citada): Dolphins reclutan a Christian Haynes vía waivers",
+    "[14.0s] Noticias nuevas verificadas: 0",
+    "[26.3s] IA OK con gemini-3.5-flash-lite",
+    "[26.3s] Blog: ¿Vale la pena agregar a Devin Singletary en la semana 8? / Should you pick up Devin Singletary in Week 8?",
+    "[48.6s] IA OK con gemini-3.5-flash-lite",
+    "[48.6s] Blog: Bijan Robinson en semana 8: ¿alinearlo o dejarlo en la banca? / Should you start Bijan Robinson in Week 8?",
+    "[48.6s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 330 · semana de juego 8 · IA usada hoy 18/40"
   ]
 }
