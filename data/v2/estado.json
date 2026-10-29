@@ -1,16 +1,16 @@
 {
-  "fecha": "2026-10-29T20:16:42.809Z",
+  "fecha": "2026-10-29T21:03:31.499Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 15 nuevos, 20 en total",
-    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[2.4s] ESPN: lesiones 799 · noticias 50",
-    "[2.4s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
-    "[2.8s] Fuentes nuevas: 5 · horario pico · toca IA: true",
-    "[2.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[5.2s] IA OK con gemini-3.5-flash-lite",
-    "[5.2s] Descartada: A.J. Brown suma nueva lesión de rodilla → duplicada",
-    "[5.2s] Noticias nuevas verificadas: 0",
-    "[6.2s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 333 · semana de juego 8 · IA usada hoy 30/40"
+    "[0.3s] YouTube: 15 nuevos, 20 en total",
+    "[1.3s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[4.3s] ESPN: lesiones 799 · noticias 50",
+    "[4.3s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
+    "[4.9s] Fuentes nuevas: 5 · horario pico · toca IA: true",
+    "[5.1s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[7.8s] IA OK con gemini-3.5-flash-lite",
+    "[7.8s] Descartada: Seahawks miden su defensa ante Caleb Williams → duplicada",
+    "[7.8s] Noticias nuevas verificadas: 0",
+    "[8.8s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 333 · semana de juego 8 · IA usada hoy 31/40"
   ]
 }
