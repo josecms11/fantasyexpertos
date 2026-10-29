@@ -1,19 +1,15 @@
 {
-  "fecha": "2026-10-29T16:14:28.167Z",
+  "fecha": "2026-10-29T17:08:26.387Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 15 nuevos, 20 en total",
-    "[1.1s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[0.3s] YouTube: 15 nuevos, 20 en total",
+    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
     "[2.0s] ESPN: lesiones 799 · noticias 50",
     "[2.1s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
-    "[2.3s] Fuentes nuevas: 8 · horario pico · toca IA: true",
-    "[2.5s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[16.1s] IA OK con gemini-3.5-flash-lite",
-    "[16.1s] Noticias nuevas verificadas: 0",
-    "[43.1s] IA OK con gemini-3.5-flash-lite",
-    "[43.1s] Blog descartado por verificación: Jaydon Blue → cifras escritas con letras",
-    "[65.1s] IA OK con gemini-3.5-flash-lite",
-    "[65.1s] Blog: Lesión de George Pickens: ¿juega en la semana 8 y qué hacer? / George Pickens injury update: Week 8 outlook and fantasy advice",
-    "[65.2s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 332 · semana de juego 8 · IA usada hoy 23/40"
+    "[2.6s] Fuentes nuevas: 8 · horario pico · toca IA: true",
+    "[2.7s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[27.8s] IA OK con gemini-3.5-flash-lite",
+    "[27.8s] Noticias nuevas verificadas: 1",
+    "[28.6s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 333 · semana de juego 8 · IA usada hoy 24/40"
   ]
 }

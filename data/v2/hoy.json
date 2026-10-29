@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-29T16:13:25.127Z",
-  "ultimaIA": "2026-10-29T15:17:15.009Z",
+  "actualizado": "2026-10-29T17:07:59.859Z",
+  "ultimaIA": "2026-10-29T17:07:59.859Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,45 +14,69 @@
   ],
   "noticias": [
     {
-      "id": "n20261029151701",
-      "fecha": "2026-10-29T15:17:15.009Z",
+      "id": "n20261029170700",
+      "fecha": "2026-10-29T17:07:59.859Z",
       "semana": 8,
-      "titulo": "Carnell Tate sufre baja en proyecciones fantasy",
+      "titulo": "Bears adquieren al estelar Jeffery Simmons",
       "claves": [
-        "Analistas reducen expectativas para el receptor en semana 8",
-        "Lesión en el hombro limita su disponibilidad",
-        "Riesgo alto para alinear en alineaciones titulares"
+        "Jeffery Simmons llega a los Bears en traspaso",
+        "Los Titans reciben 2 selecciones de primera ronda",
+        "Chicago va con todo por el Super Bowl"
       ],
-      "contexto": "Mike Clay ha confirmado que las proyecciones para Carnell Tate han sido recortadas de cara a la semana 8. El receptor de los Titans arrastra una lesión en el hombro que ha encendido las alarmas en el cuerpo técnico y, por consecuencia, en el análisis de fantasy, donde se espera una participación reducida o incluso nula durante el próximo compromiso.",
-      "fantasy": "El valor de Tate cae considerablemente para esta semana. Si tenías planeado usarlo como un receptor flexible (flex) o como cobertura por lesiones, es momento de buscar alternativas en la agencia libre. Su estatus de cuestionable y el recorte en sus proyecciones lo hacen un jugador sumamente peligroso para cargar en tu alineación inicial esta jornada.",
-      "equipo_impacto": "La ausencia o limitación de Tate obliga a los Titans a depender de otros receptores en el campo, lo que podría forzar un incremento en los objetivos para los alas cerradas o corredores en el juego aéreo.",
-      "accion": "Mantén a Carnell Tate en la banca o busca un reemplazo en waivers.",
+      "contexto": "Los Bears rompieron el mercado al adquirir al liniero defensivo estelar Jeffery Simmons en un traspaso masivo con los Titans. A cambio, la franquicia de Tennessee recibió un paquete que incluye 2 selecciones de primera ronda del draft. Este movimiento coloca a Chicago como un contendiente absoluto con aspiraciones máximas al campeonato.",
+      "fantasy": "Para el fantasy football, este movimiento impacta directamente en las defensivas. La llegada de un elemento de la magnitud de Jeffery Simmons eleva el nivel de la unidad de Chicago, convirtiéndola en una opción muy atractiva para alinear en tus ligas de cara a la semana 8.",
+      "equipo_impacto": "La defensiva de los Bears gana un pilar interior indiscutible que transformará su presión al mariscal rival. Por su parte, los Titans inician oficialmente una reconstrucción total apostando por el futuro.",
+      "accion": "Monitorea a la defensiva de los Bears en tu mercado de waivers para la semana 8.",
       "en": {
-        "titulo": "Carnell Tate sees fantasy projections drop",
+        "titulo": "Bears acquire star defensive tackle Jeffery Simmons",
         "claves": [
-          "Analysts lower expectations for Week 8",
-          "Shoulder injury limits availability",
-          "High risk for starting lineups"
+          "Jeffery Simmons traded to the Chicago Bears",
+          "Titans receive two first-round draft picks",
+          "Chicago goes all-in for a Super Bowl"
         ],
-        "contexto": "Mike Clay confirmed that fantasy projections for Carnell Tate have been downgraded ahead of Week 8. The Titans receiver is dealing with a shoulder injury, causing concern for the coaching staff and fantasy managers alike, with expectations for his involvement in the upcoming game significantly reduced.",
-        "fantasy": "Tate's value takes a hit this week. If you were planning to use him as a flex option or depth piece, you should look for alternatives on the waiver wire. His questionable status and downgraded projections make him a risky start for your fantasy lineups.",
-        "equipo_impacto": "Tate's limited availability forces the Titans to rely on other pass-catchers, potentially increasing target shares for tight ends and running backs in the passing game.",
-        "accion": "Keep Carnell Tate on your bench or find a replacement on the waiver wire."
+        "contexto": "The Chicago Bears made a blockbuster trade to acquire star defensive tackle Jeffery Simmons from the Tennessee Titans in exchange for two first-round draft picks. This massive move positions the Bears as true Super Bowl contenders.",
+        "fantasy": "In fantasy football, this trade significantly boosts the outlook for the Chicago defense, making them a strong unit to target and start in upcoming weekly matchups.",
+        "equipo_impacto": "The Bears defense gains an elite interior playmaker, while the Titans pivot toward a full roster rebuild with extra draft capital.",
+        "accion": "Target the Bears defense on waivers for week 8.",
+        "etiqueta": "WAIVER",
+        "impacto": "SUBE",
+        "equipo": "CHI",
+        "equipos": [
+          "CHI",
+          "TEN"
+        ],
+        "jugadores": [
+          "Jeffery Simmons"
+        ]
       },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "TEN",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "CHI",
       "equipos": [
+        "CHI",
         "TEN"
       ],
-      "jugadores": [
-        "13279"
-      ],
+      "jugadores": [],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50318305/why-mike-clay-downgrading-carnell-tate-week-8",
-          "t": "Why Mike Clay is downgrading Carnell Tate in Week 8"
+          "u": "https://www.espn.com/nfl/story/_/id/50043542/2026-trade-deadline-grades-latest-best-worst-deals",
+          "t": "NFL trade deadline grades: Jeffery Simmons, DeForest Buckner, Quenton Nelson"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50319483/how-jeffery-simmons-landed-bears",
+          "t": "How Jeffery Simmons landed with the Bears"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50319153/jeffery-simmons-trade-titans-bears-draft-picks-deadline",
+          "t": "Bears get Jeffery Simmons: Key intel on blockbuster trade"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50318351/sources-bears-trade-all-pro-dt-jeffery-simmons",
+          "t": "Bears acquire All-Pro DT Jeffery Simmons in trade with Titans"
         }
       ],
       "menciona": []
@@ -228,8 +252,8 @@
     "JAX",
     "13296",
     "TB",
-    "13424",
     "11783",
+    "13424",
     "9480",
     "NE",
     "6650",
@@ -245,7 +269,7 @@
     "11435",
     "DET",
     "13294",
-    "9500"
+    "8135"
   ],
   "soltados": [
     "8129",
@@ -257,18 +281,18 @@
     "13150",
     "11581",
     "SF",
-    "9758",
     "8132",
+    "9758",
     "9482",
     "5849",
     "NYJ",
     "5927",
-    "9502",
-    "11610",
-    "11624",
-    "12545",
     "7561",
+    "11610",
+    "9502",
+    "11624",
     "5045",
+    "12545",
     "BAL",
     "96",
     "9511",
