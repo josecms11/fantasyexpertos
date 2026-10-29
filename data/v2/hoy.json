@@ -1,6 +1,6 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-29T04:07:28.128Z",
+  "actualizado": "2026-10-29T04:52:09.728Z",
   "ultimaIA": "2026-10-29T03:17:37.220Z",
   "semana": 8,
   "semanaStats": 8,
@@ -223,8 +223,8 @@
   "agregados": [
     "WAS",
     "JAX",
-    "13296",
     "7561",
+    "13296",
     "13424",
     "6130",
     "NE",
@@ -234,17 +234,17 @@
     "13298",
     "6650",
     "7042",
-    "12482",
     "12457",
+    "12482",
     "10213",
-    "13345",
     "1166",
-    "13414",
     "8134",
+    "13414",
     "12498",
+    "13345",
+    "LV",
     "13294",
     "12469",
-    "LV",
     "11637"
   ],
   "soltados": [
@@ -268,18 +268,18 @@
     "11610",
     "96",
     "5045",
-    "11625",
-    "3321",
     "BAL",
+    "3321",
+    "11625",
     "9511",
     "5012"
   ],
   "duelo": {
-    "a": "Drake Maye",
-    "b": "Caleb Williams",
-    "veredicto": "Arranca a Drake Maye con 20.6 pts proyectados en la semana 8. Su efectividad reciente y movilidad ofrecen un piso más seguro que Caleb Williams (20.1 pts) en duelos de alto puntaje."
+    "a": "Jahmyr Gibbs",
+    "b": "Christian McCaffrey",
+    "veredicto": "Arranca a Jahmyr Gibbs por su enorme proyección de 23.3 pts frente a los 20.6 pts estimados para Christian McCaffrey en la semana 8."
   },
-  "dueloFecha": "2026-10-28T07:59:17.575Z",
+  "dueloFecha": "2026-10-29T04:52:09.728Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
