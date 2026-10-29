@@ -1,16 +1,16 @@
 {
-  "fecha": "2026-10-29T17:54:28.152Z",
+  "fecha": "2026-10-29T18:36:17.538Z",
   "log": [
     "[0.0s] Inicio",
     "[0.3s] YouTube: 15 nuevos, 20 en total",
-    "[1.1s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[2.2s] ESPN: lesiones 799 · noticias 50",
-    "[2.2s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
-    "[2.5s] Fuentes nuevas: 4 · horario pico · toca IA: true",
-    "[2.7s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[20.1s] IA OK con gemini-3.5-flash-lite",
-    "[20.1s] Descartada: Jonathan Taylor descarta rumores de solicitud de cambio → duplicada",
-    "[20.1s] Noticias nuevas verificadas: 0",
-    "[21.1s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 333 · semana de juego 8 · IA usada hoy 25/40"
+    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[2.4s] ESPN: lesiones 799 · noticias 50",
+    "[2.5s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
+    "[3.1s] Fuentes nuevas: 6 · horario pico · toca IA: true",
+    "[3.5s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[6.8s] IA OK con gemini-3.5-flash-lite",
+    "[6.8s] Descartada: Burrow y Bengals listos para noviembre → duplicada",
+    "[6.8s] Noticias nuevas verificadas: 0",
+    "[7.9s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 333 · semana de juego 8 · IA usada hoy 26/40"
   ]
 }
