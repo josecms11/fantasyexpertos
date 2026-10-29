@@ -1,17 +1,16 @@
 {
-  "fecha": "2026-10-29T08:20:30.975Z",
+  "fecha": "2026-10-29T09:14:19.182Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 15 nuevos, 19 en total",
-    "[0.8s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[1.6s] ESPN: lesiones 799 · noticias 50",
-    "[1.6s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
-    "[2.1s] Fuentes nuevas: 0 · horario normal · toca IA: false",
-    "[2.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[9.4s] IA OK con gemini-3.5-flash-lite",
-    "[9.4s] Blog: ¿Arrancar o sentar a Drake Maye en la semana 8? / Should you start Drake Maye in Week 8?",
-    "[16.5s] IA OK con gemini-3.5-flash-lite",
-    "[16.5s] Blog: Lesión de Ja'Marr Chase: ¿juega en semana 8 y qué hacer en fantasy? / Ja'Marr Chase injury update: will he play in Week 8? Fantasy impact",
-    "[16.5s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 330 · semana de juego 8 · IA usada hoy 10/40"
+    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[3.3s] ESPN: lesiones 799 · noticias 50",
+    "[3.3s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
+    "[3.7s] Fuentes nuevas: 1 · horario normal · toca IA: true",
+    "[3.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[7.8s] IA OK con gemini-3.5-flash-lite",
+    "[7.8s] Descartada (sin fuente citada): Hay partido de Thursday Night Football",
+    "[7.8s] Noticias nuevas verificadas: 0",
+    "[8.7s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 330 · semana de juego 8 · IA usada hoy 11/40"
   ]
 }
