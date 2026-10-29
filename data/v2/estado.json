@@ -1,16 +1,16 @@
 {
-  "fecha": "2026-10-29T09:14:19.182Z",
+  "fecha": "2026-10-29T10:06:25.701Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 15 nuevos, 19 en total",
-    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[3.3s] ESPN: lesiones 799 · noticias 50",
-    "[3.3s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
-    "[3.7s] Fuentes nuevas: 1 · horario normal · toca IA: true",
-    "[3.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[7.8s] IA OK con gemini-3.5-flash-lite",
-    "[7.8s] Descartada (sin fuente citada): Hay partido de Thursday Night Football",
-    "[7.8s] Noticias nuevas verificadas: 0",
-    "[8.7s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 330 · semana de juego 8 · IA usada hoy 11/40"
+    "[0.9s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[2.8s] ESPN: lesiones 799 · noticias 50",
+    "[2.8s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
+    "[3.3s] Fuentes nuevas: 1 · horario normal · toca IA: true",
+    "[3.5s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[8.4s] IA OK con gemini-3.5-flash-lite",
+    "[8.4s] Descartada (sin fuente citada): San Francisco busca soluciones urgentes rumbo a semana 8",
+    "[8.4s] Noticias nuevas verificadas: 0",
+    "[9.3s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 330 · semana de juego 8 · IA usada hoy 12/40"
   ]
 }
