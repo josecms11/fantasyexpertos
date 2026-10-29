@@ -1,28 +1,15 @@
 {
-  "fecha": "2026-10-29T02:30:34.431Z",
+  "fecha": "2026-10-29T03:17:43.234Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 0 nuevos, 19 en total",
-    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[41.0s] GET falló https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?seasontype=2&week=1& The operation was aborted due to timeout",
-    "[42.0s] ESPN: lesiones 799 · noticias 50",
-    "[42.1s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
-    "[42.6s] Fuentes nuevas: 1 · horario pico · toca IA: true",
-    "[42.8s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[44.9s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[47.0s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[63.2s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[66.6s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
-    "[69.0s] Gemini respuesta inválida gemini-3.5-flash-lite STOP {\n  \"noticias\": [\n    {\n      \"titulo\": \"Rams carecen de victorias convincentes en temporada\",\n      \"claves\": [\n        \"Los Rams no suman triunfos importantes",
-    "[69.0s] Noticias nuevas verificadas: 0",
-    "[70.0s] Modelo sin cuota hoy gemini-3.8-flash 429",
-    "[70.2s] Modelo sin cuota hoy gemini-3.7-flash 429",
-    "[70.3s] Modelo sin cuota hoy gemini-3.6-flash 429",
-    "[70.5s] Modelo sin cuota hoy gemini-3.5-flash 429",
-    "[76.2s] IA OK con gemini-3.5-flash-lite",
-    "[76.2s] Blog descartado por verificación: Jets D/ST → matchup contradice la calificación (DIFÍCIL)",
-    "[81.8s] IA OK con gemini-3.5-flash-lite",
-    "[81.8s] Blog: ¿Arrancar o sentar a Puka Nacua en la semana 8? / Should you start Puka Nacua in Week 8?",
-    "[81.8s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 329 · semana de juego 8 · IA usada hoy 5/40"
+    "[0.1s] YouTube: 0 nuevos, 19 en total",
+    "[0.8s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[1.6s] ESPN: lesiones 799 · noticias 50",
+    "[1.7s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
+    "[2.0s] Fuentes nuevas: 1 · horario pico · toca IA: true",
+    "[2.2s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[6.8s] IA OK con gemini-3.5-flash-lite",
+    "[6.8s] Noticias nuevas verificadas: 1",
+    "[7.7s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 330 · semana de juego 8 · IA usada hoy 6/40"
   ]
 }

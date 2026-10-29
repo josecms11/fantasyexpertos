@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-29T02:29:54.724Z",
-  "ultimaIA": "2026-10-29T00:45:19.179Z",
+  "actualizado": "2026-10-29T03:17:37.220Z",
+  "ultimaIA": "2026-10-29T03:17:37.220Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,138 +14,45 @@
   ],
   "noticias": [
     {
-      "id": "n20261029004500",
-      "fecha": "2026-10-29T00:45:19.179Z",
+      "id": "n20261029031700",
+      "fecha": "2026-10-29T03:17:37.220Z",
       "semana": 8,
-      "titulo": "Lamar Jackson entrena completo rumbo a semana 8",
+      "titulo": "Jaydon Blue firma con el roster de Eagles",
       "claves": [
-        "Participó al parejo en la práctica del miércoles con Ravens.",
-        "Se mantiene cuestionable por molestia en el tobillo esta semana.",
-        "Su regreso a las prácticas despeja dudas para semana 8."
+        "Jaydon Blue sube al roster activo",
+        "Movimiento clave en la ofensiva de Eagles",
+        "Oportunidad en waivers para la semana 8"
       ],
-      "contexto": "Lamar Jackson completó sin restricciones la práctica del miércoles con Baltimore Ravens, dejando atrás las alarmas de su lesión de tobillo. El mariscal de campo aparece catalogado oficialmente como cuestionable, pero su participación al 100% en el campo confirma una evolución favorable rumbo a la semana 8. El cuerpo técnico de Baltimore monitoreó su movilidad durante las series ofensivas para garantizar que no sufra recaídas en los próximos días.",
-      "fantasy": "El reporte de práctica despeja el panorama para alinearlo de inmediato en ligas redraft de 10 y 12 equipos. Con la etiqueta de cuestionable todavía activa, tener una opción preventiva en la banca era prudente, pero su estatus de práctica completa ratifica su techo habitual de QB1 indiscutible. En formatos Superflex y ligas dynasty, no hay razón para dudar de su capacidad terrestre ni de su volumen por pase en semana 8.",
-      "equipo_impacto": "La presencia de Jackson estabiliza a toda la ofensiva aérea y terrestre de Ravens. Sus receptores y alas cerradas mantienen su valor habitual al contar con su pasador titular dirigiendo las series ofensivas clave del partido.",
-      "accion": "Arranca con total confianza a Lamar Jackson como tu QB1 titular esta semana.",
+      "contexto": "Los Philadelphia Eagles decidieron incorporar al corredor Jaydon Blue directamente a su roster activo, dándole un voto de confianza de cara a la semana 8 de la NFL. Esta movida busca inyectar profundidad en la posición de backs tras los recientes movimientos y lesiones en la franquicia, posicionando al jugador en el radar general.",
+      "fantasy": "Para efectos de fantasy football, este movimiento coloca a Jaydon Blue como un nombre interesante a monitorear en ligas profundas o de dinastía. No se recomienda alinearlo de inmediato en formatos estándar, pero es una pieza especulativa decente para buscar en la sección de waivers si buscas asegurar profundidad en tu plantilla.",
+      "equipo_impacto": "La llegada de Jaydon Blue altera ligeramente la rotación en el backfield de Philadelphia, añadiendo una alternativa joven para el cuerpo técnico mientras evalúan el desgaste físico de su ofensiva terrestre de cara a los siguientes compromisos.",
+      "accion": "Vigílalo en waivers y agrégalo solo en ligas profundas si necesitas respaldo.",
       "en": {
-        "titulo": "Lamar Jackson logs full practice for Week 8",
+        "titulo": "Jaydon Blue joins Eagles active roster",
         "claves": [
-          "Jackson was a full participant in Wednesday's Ravens practice.",
-          "Remains officially questionable due to an ankle issue.",
-          "Full participation clears major doubt for Week 8 lineups."
+          "Jaydon Blue signed to active roster",
+          "Backfield depth boosted in Philadelphia",
+          "Watchlist addition for deep fantasy leagues"
         ],
-        "contexto": "Lamar Jackson was a full participant in Wednesday's practice for Baltimore, easing concerns surrounding his ankle issue. Although he remains officially listed as questionable on the injury report, his unrestricted participation indicates significant progress heading into Week 8. Baltimore's coaching staff closely monitored his mobility throughout team drills to ensure he suffered no setbacks during the session.",
-        "fantasy": "This practice participation removes hesitation about starting him across all 10-team and 12-team leagues. While carrying a questionable tag required managers to hold a backup, a full session secures his standard QB1 ceiling. In Superflex and dynasty formats, Jackson remains an automatic start whose dual-threat rushing upside and passing volume make him essential for Week 8 success.",
-        "equipo_impacto": "Jackson running the offense stabilizes Baltimore entirely. Pass catchers and tight ends retain their standard weekly value with their franchise quarterback on the field directing high-leverage possessions.",
-        "accion": "Confidently start Lamar Jackson as your elite QB1 this week."
+        "contexto": "The Philadelphia Eagles have officially signed running back Jaydon Blue to their active roster, giving him a swift promotion ahead of week 8. This move provides the team with extra backfield depth amidst various roster adjustments and injuries.",
+        "fantasy": "From a fantasy standpoint, Jaydon Blue immediately becomes an intriguing speculative stash in deep formats or dynasty leagues. He is not an option to start right now, but fantasy managers should keep an eye on his usage moving forward.",
+        "equipo_impacto": "This addition shakes up the depth chart in Philadelphia, giving the coaching staff another option in the running back room to handle depth duties.",
+        "accion": "Keep an eye on waivers and stash him only in deep formats.wildcard leagues."
       },
-      "etiqueta": "START",
+      "etiqueta": "WAIVER",
       "impacto": "SUBE",
-      "equipo": "BAL",
+      "equipo": "PHI",
       "equipos": [
-        "BAL"
+        "PHI"
       ],
       "jugadores": [
-        "4881"
+        "12457"
       ],
       "fuentes": [
         {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50311435/ravens-list-lamar-jackson-full-participant-practice",
-          "t": "Ravens list Lamar Jackson as full participant in practice"
-        },
-        {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/nfl-week-8-injury-report-lamar-jackson-kerby-joseph-updates/",
-          "t": "\n                        NFL Week 8 injury report: Lamar Jackson practices in full, Lions star Kerby Joseph returns\n                    "
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261029004501",
-      "fecha": "2026-10-29T00:45:19.179Z",
-      "semana": 8,
-      "titulo": "Jaylin Noel va a reserva de lesionados",
-      "claves": [
-        "Sufrió una lesión de turf toe que terminaría su temporada.",
-        "Houston Texans colocó al novato en la lista de reservas.",
-        "Deja de ser opción en todas las ligas de fantasy."
-      ],
-      "contexto": "Houston Texans colocó oficialmente al receptor Jaylin Noel en la lista de reservas lesionados debido a una severa lesión de turf toe. Los reportes confirman que el problema físico dejará al novato fuera por el resto de la temporada. Noel arrastraba molestias en el dedo del pie y los exámenes médicos determinaron que requerirá una recuperación prolongada, terminando de golpe su participación en la campaña actual.",
-      "fantasy": "La baja definitiva de Noel obliga a cortarlo inmediatamente en ligas de redraft de cualquier tamaño, desde 10 hasta 14 equipos. En ligas dynasty, Noel debe ser movido a una casilla de IR de inmediato para proteger el espacio de banca. No tiene caso quemar un lugar de plantilla con un jugador que no volverá al emparrillado este año. Su ausencia libera objetivos para la baraja secundaria de receptores texanos.",
-      "equipo_impacto": "El cuerpo de receptores de Houston resiente otra baja en la profundidad del plantel tras colocar a Noel en IR. El equipo deberá repartir snaps complementarios en formaciones de 3 receptores para apoyar a su ofensiva aérea.",
-      "accion": "Corta a Jaylin Noel en ligas redraft y colócalo en IR en dynasty.",
-      "en": {
-        "titulo": "Jaylin Noel placed on injured reserve by Texans",
-        "claves": [
-          "Expected to miss the rest of the season with turf toe.",
-          "Houston officially placed the receiver on injured reserve.",
-          "Immediate drop candidate across all fantasy redraft leagues."
-        ],
-        "contexto": "The Houston Texans officially placed wide receiver Jaylin Noel on injured reserve due to turf toe. Reports confirmed that Noel is expected to miss the remainder of the season following medical evaluations of his toe injury. The extensive recovery timeline forced Houston to shut him down, ending his rookie campaign prematurely after dealing with persistent foot discomfort.",
-        "fantasy": "Noel's season-ending injury makes him an instant drop in all redraft leagues of 10, 12, or 14 teams. Dynasty managers should immediately shift him into an IR spot to preserve valuable roster depth heading into Week 8. Holding him on an active bench spot is completely counterproductive since he will not take the field again this season.",
-        "equipo_impacto": "Houston's wide receiver depth takes another significant hit with Noel sidelined on injured reserve. The Texans must redistribute tertiary snaps among their remaining pass catchers in 3-WR packages.",
-        "accion": "Drop Jaylin Noel in redraft leagues and stash him on IR in dynasty."
-      },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "HOU",
-      "equipos": [
-        "HOU"
-      ],
-      "jugadores": [
-        "12536"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50311414/texans-put-wr-jaylin-noel-ir-turf-toe-injury",
-          "t": "Texans put WR Jaylin Noel on IR with expected season-ending turf toe injury"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261029004502",
-      "fecha": "2026-10-29T00:45:19.179Z",
-      "semana": 8,
-      "titulo": "Justin Jefferson vive mínimo histórico en recepciones",
-      "claves": [
-        "Apenas suma 23 recepciones en las primeras 7 semanas.",
-        "Es la marca más baja de su carrera en ese lapso.",
-        "Minnesota marcha invicto con récord de 6-0 en 2024."
-      ],
-      "contexto": "Justin Jefferson acumula 23 recepciones en las primeras 7 semanas de la temporada, la cifra más baja en su carrera en este periodo del calendario. A pesar del descenso en volumen individual, la estrella de Minnesota Vikings restó importancia a los números personales, destacando que el sistema ofensivo funciona a la perfección mientras la franquicia mantenga un récord invicto de 6-0.",
-      "fantasy": "El menor volumen de recepciones ha limitado el techo semanal que Jefferson ofrecía en temporadas pasadas, bajando su piso habitual en formatos PPR. Sin embargo, jamás debes sentarlo en ligas de 10 o 12 equipos; sigue siendo un WR1 obligatorio por su talento generacional y amenaza de anotación. Si un rival en tu liga está frustrado por estas 23 recepciones, es el momento ideal para lanzar ofertas de compra barata.",
-      "equipo_impacto": "Minnesota ha diversificado su ataque para mantenerse con marca de 6-0, lo que reduce la dependencia absoluta de Jefferson sin afectar la eficacia ofensiva ni el ritmo colectivo del equipo en los juegos.",
-      "accion": "Busca adquirir a Justin Jefferson mediante un cambio a precio de descuento.",
-      "en": {
-        "titulo": "Justin Jefferson sees career-low receptions through seven weeks",
-        "claves": [
-          "Jefferson has logged only 23 catches through 7 weeks.",
-          "Marks the lowest reception total of his NFL career.",
-          "The Minnesota Vikings remain undefeated at 6-0."
-        ],
-        "contexto": "Justin Jefferson has tallied only 23 catches through the first 7 weeks, marking a career low over that stretch. Despite the noticeable dip in target volume, the Minnesota star brushed aside personal frustration, emphasizing that the team's offensive approach is working while the Vikings remain undefeated at 6-0 on the year.",
-        "fantasy": "The dip in catches caps Jefferson's elite ceiling compared to prior years, slightly denting his weekly PPR floor. Even so, he remains an unbenchable WR1 in 10-team and 12-team leagues due to his unmatched talent and scoring potential. If an opposing manager in your league feels panic over his low volume, send aggressive buy-low trade offers now.",
-        "equipo_impacto": "Minnesota's balanced game plans have carried them to a flawless 6-0 record this season. Spreading touches across the roster reduces their heavy reliance on Jefferson while preserving offensive efficiency and sustaining winning football each week.",
-        "accion": "Target Justin Jefferson in buy-low trade negotiations before his target volume spikes."
-      },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "MIN",
-      "equipos": [
-        "MIN"
-      ],
-      "jugadores": [
-        "6794"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50311965/justin-jefferson-addresses-year-amid-vikings-6-0-start",
-          "t": "Justin Jefferson on down year amid Vikes' 6-0 start: 'What we're doing is working'"
+          "m": "Yahoo Sports",
+          "u": "https://sports.yahoo.com/articles/jaydon-blue-joining-philly-roster-030505550.html",
+          "t": "Jaydon Blue joining Philly roster"
         }
       ],
       "menciona": []
@@ -321,37 +228,37 @@
     "13424",
     "6130",
     "NE",
-    "9480",
     "TB",
+    "9480",
     "13298",
     "11783",
     "6650",
     "7042",
     "13345",
-    "10213",
     "12482",
+    "10213",
     "13414",
     "1166",
     "8134",
+    "12457",
     "12498",
     "13294",
     "12469",
     "11637",
-    "8135",
-    "12457"
+    "LV"
   ],
   "soltados": [
     "8129",
     "CLE",
-    "3271",
     "10235",
+    "3271",
     "12718",
     "HOU",
     "13150",
     "NYJ",
     "11581",
-    "5849",
     "9758",
+    "5849",
     "SF",
     "9482",
     "8132",
@@ -360,12 +267,12 @@
     "11624",
     "11610",
     "96",
-    "11625",
     "5045",
-    "7002",
+    "11625",
+    "3321",
     "9511",
     "5012",
-    "3321"
+    "BAL"
   ],
   "duelo": {
     "a": "Drake Maye",
