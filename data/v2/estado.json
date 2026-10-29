@@ -1,16 +1,12 @@
 {
-  "fecha": "2026-10-29T05:31:42.415Z",
+  "fecha": "2026-10-29T06:16:52.662Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.4s] YouTube: 0 nuevos, 19 en total",
-    "[1.3s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[4.3s] ESPN: lesiones 799 · noticias 50",
-    "[4.3s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
-    "[4.9s] Fuentes nuevas: 1 · horario normal · toca IA: true",
-    "[5.1s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[7.7s] IA OK con gemini-3.5-flash-lite",
-    "[7.7s] Descartada (sin fuente citada): Vikings dominan con esquema defensivo implacable",
-    "[7.7s] Noticias nuevas verificadas: 0",
-    "[8.8s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 330 · semana de juego 8 · IA usada hoy 8/40"
+    "[0.3s] YouTube: 0 nuevos, 19 en total",
+    "[1.2s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[4.2s] ESPN: lesiones 799 · noticias 50",
+    "[4.2s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
+    "[5.0s] Fuentes nuevas: 0 · horario normal · toca IA: false",
+    "[6.0s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 330 · semana de juego 8 · IA usada hoy 8/40"
   ]
 }
