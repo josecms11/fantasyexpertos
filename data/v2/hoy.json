@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-29T13:21:20.158Z",
-  "ultimaIA": "2026-10-29T03:17:37.220Z",
+  "actualizado": "2026-10-29T14:20:47.870Z",
+  "ultimaIA": "2026-10-29T14:20:47.870Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,45 +14,45 @@
   ],
   "noticias": [
     {
-      "id": "n20261029031700",
-      "fecha": "2026-10-29T03:17:37.220Z",
+      "id": "n20261029142001",
+      "fecha": "2026-10-29T14:20:47.870Z",
       "semana": 8,
-      "titulo": "Jaydon Blue firma con el roster de Eagles",
+      "titulo": "A.J. Brown lidera con molestias rumbo a semana 8",
       "claves": [
-        "Jaydon Blue sube al roster activo",
-        "Movimiento clave en la ofensiva de Eagles",
-        "Oportunidad en waivers para la semana 8"
+        "A.J. Brown sigue con dolencias",
+        "Recuperación tras esguince de tobillo",
+        "Jugando con molestias físicas"
       ],
-      "contexto": "Los Philadelphia Eagles decidieron incorporar al corredor Jaydon Blue directamente a su roster activo, dándole un voto de confianza de cara a la semana 8 de la NFL. Esta movida busca inyectar profundidad en la posición de backs tras los recientes movimientos y lesiones en la franquicia, posicionando al jugador en el radar general.",
-      "fantasy": "Para efectos de fantasy football, este movimiento coloca a Jaydon Blue como un nombre interesante a monitorear en ligas profundas o de dinastía. No se recomienda alinearlo de inmediato en formatos estándar, pero es una pieza especulativa decente para buscar en la sección de waivers si buscas asegurar profundidad en tu plantilla.",
-      "equipo_impacto": "La llegada de Jaydon Blue altera ligeramente la rotación en el backfield de Philadelphia, añadiendo una alternativa joven para el cuerpo técnico mientras evalúan el desgaste físico de su ofensiva terrestre de cara a los siguientes compromisos.",
-      "accion": "Vigílalo en waivers y agrégalo solo en ligas profundas si necesitas respaldo.",
+      "contexto": "El receptor abierto ha manifestado públicamente que todavía no se encuentra al ciento por ciento de su capacidad física tras su reciente regreso de un esguince alto de tobillo que lo alejó de los emparrillados varias semanas.",
+      "fantasy": "A pesar de no estar en plena forma, su volumen de juego lo mantiene en el radar, aunque debes vigilar su estatus oficial en la lista de lesionados antes de arriesgar tu alineación.",
+      "equipo_impacto": "La ofensiva del equipo depende de su presencia para estirar el campo, obligando al cuerpo técnico a dosificar sus rutas y acoplar el esquema a sus limitaciones actuales.",
+      "accion": "Monitorea su reporte de lesionados antes de confirmar tu alineación.",
       "en": {
-        "titulo": "Jaydon Blue joins Eagles active roster",
+        "titulo": "A.J. Brown playing through pain in week 8",
         "claves": [
-          "Jaydon Blue signed to active roster",
-          "Backfield depth boosted in Philadelphia",
-          "Watchlist addition for deep fantasy leagues"
+          "A.J. Brown still dealing with pain",
+          "Recovery following ankle sprain",
+          "Playing through physical discomfort"
         ],
-        "contexto": "The Philadelphia Eagles have officially signed running back Jaydon Blue to their active roster, giving him a swift promotion ahead of week 8. This move provides the team with extra backfield depth amidst various roster adjustments and injuries.",
-        "fantasy": "From a fantasy standpoint, Jaydon Blue immediately becomes an intriguing speculative stash in deep formats or dynasty leagues. He is not an option to start right now, but fantasy managers should keep an eye on his usage moving forward.",
-        "equipo_impacto": "This addition shakes up the depth chart in Philadelphia, giving the coaching staff another option in the running back room to handle depth duties.",
-        "accion": "Keep an eye on waivers and stash him only in deep formats.wildcard leagues."
+        "contexto": "The star wide receiver has publicly stated that he is not yet at full health following his recent return from a high ankle sprain that sidelined him for multiple weeks.",
+        "fantasy": "Despite not being at full strength, his target volume keeps him on the fantasy radar, though you must monitor his official injury status before locking him into your lineup.",
+        "equipo_impacto": "The team offense relies on his presence to stretch the field, forcing the coaching staff to manage his routes and adjust the scheme to his current limitations.",
+        "accion": "Monitor his injury report before finalizing your starting lineup."
       },
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "PHI",
+      "etiqueta": "LESIÓN",
+      "impacto": "NEUTRO",
+      "equipo": "NE",
       "equipos": [
-        "PHI"
+        "NE"
       ],
       "jugadores": [
-        "12457"
+        "5859"
       ],
       "fuentes": [
         {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/jaydon-blue-joining-philly-roster-030505550.html",
-          "t": "Jaydon Blue joining Philly roster"
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50317678/does-deshaun-watson-future-browns-adam-schefter-weighs-in",
+          "t": "Does Deshaun Watson have a future with Browns? Adam Schefter weighs in"
         }
       ],
       "menciona": []
@@ -221,13 +221,13 @@
     }
   ],
   "agregados": [
-    "WAS",
     "7561",
+    "WAS",
     "JAX",
     "6130",
     "13296",
-    "TB",
     "12457",
+    "TB",
     "13424",
     "NE",
     "11783",
@@ -244,35 +244,35 @@
     "11637",
     "11435",
     "DET",
-    "13414",
-    "13294"
+    "13294",
+    "13414"
   ],
   "soltados": [
     "8129",
     "10235",
     "CLE",
     "3271",
-    "12718",
     "HOU",
+    "12718",
     "13150",
     "11581",
     "SF",
     "9758",
-    "NYJ",
     "8132",
     "9482",
+    "NYJ",
     "5849",
     "9502",
     "11624",
     "12545",
     "11610",
-    "5045",
     "5927",
-    "96",
+    "5045",
     "BAL",
+    "96",
     "9511",
-    "5189",
-    "3321"
+    "3321",
+    "5189"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
