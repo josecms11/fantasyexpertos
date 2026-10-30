@@ -1,8 +1,10 @@
 {
   "dia": "2026-10-30",
-  "usadas": 22,
+  "usadas": 25,
   "bloqueado": {
     "gemini-3.7-flash": 429,
-    "gemini-3.8-flash": 429
+    "gemini-3.8-flash": 429,
+    "gemini-3.5-flash": 429,
+    "gemini-3.6-flash": 429
   }
 }

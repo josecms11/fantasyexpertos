@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-30T14:30:37.012Z",
-  "ultimaIA": "2026-10-30T13:33:18.486Z",
+  "actualizado": "2026-10-30T15:24:18.808Z",
+  "ultimaIA": "2026-10-30T15:24:18.808Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,48 +14,48 @@
   ],
   "noticias": [
     {
-      "id": "n20261030133301",
-      "fecha": "2026-10-30T13:33:18.486Z",
+      "id": "n20261030152400",
+      "fecha": "2026-10-30T15:24:18.808Z",
       "semana": 8,
-      "titulo": "Geno Smith y Ryan Flournoy emergen como waivers clave",
+      "titulo": "Dak Prescott emerge como gran opción para semana 8",
       "claves": [
-        "Geno Smith destaca en opciones de última hora",
-        "Ryan Flournoy recomendado por expertos",
-        "Solución ideal para bajas y bye weeks"
+        "Analistas recomiendan alinear a Dak Prescott",
+        "El modelo proyecta 18.8 pts para Dak",
+        "Enfrentamiento favorable en la semana 8"
       ],
-      "contexto": "Ante problemas de lesiones, semanas de descanso o enfrentamientos difíciles, los expertos apuntan a opciones de última hora para salvar tu roster. Matt Bowen lista a Geno Smith y al receptor Ryan Flournoy como los principales objetivos en el mercado de fichajes para esta semana 8.",
-      "fantasy": "Si necesitas cubrir huecos por lesiones o bye weeks en ligas profundas o de formato estándar, ambos jugadores ofrecen un valor inmediato como opciones de emergencia para arrancar en tu equipo.",
-      "equipo_impacto": "Su incorporación da profundidad necesaria a los planteles fantasy que sufren por ausencias imprevistas en posiciones clave.",
-      "accion": "Revisa la agencia libre y puja por ellos si necesitas parchar tu alineación.",
+      "contexto": "Los expertos de la NFL analizan las mejores alternativas en la posición de mariscal de campo para la semana 8 y destacan el panorama favorable de Dak Prescott. El modelo FX lo respalda con una sólida proyección de 18.8 pts, colocándolo como una alternativa muy atractiva para liderar las ofensivas en fantasy tras evaluar los enfrentamientos disponibles en la jornada.",
+      "fantasy": "Impacto directo para asegurar una actuación confiable en ligas de formato estándar y PPR. Al sumar una proyección de 18.8 pts, se convierte en un titular indiscutible que puede elevar el techo de puntos de tu alineación titular por encima de opciones más riesgosas.",
+      "equipo_impacto": "La ofensiva de los Cowboys mantiene el ritmo y busca capitalizar las debilidades defensivas rivales para maximizar la producción aérea del equipo.",
+      "accion": "Alinea a Dak Prescott con confianza en tu equipo titular para la semana 8.",
       "en": {
-        "titulo": "Geno Smith and Ryan Flournoy emerge as key waivers",
+        "titulo": "Dak Prescott emerges as top Week 8 option",
         "claves": [
-          "Geno Smith highlights last-minute options",
-          "Ryan Flournoy recommended by experts",
-          "Ideal solution for injuries and bye weeks"
+          "Analysts recommend starting Dak Prescott",
+          "Model projects 18.8 pts for Dak",
+          "Favorable matchup heading into Week 8"
         ],
-        "contexto": "Facing injury issues, bye weeks, or tough matchups, experts point to last-minute options to save your roster. Matt Bowen lists Geno Smith and wide receiver Ryan Flournoy as top waiver wire targets for Week 8.",
-        "fantasy": "If you need to fill holes from injuries or bye weeks in deep or standard leagues, both players offer immediate value as emergency starting options for your fantasy squad.",
-        "equipo_impacto": "Their addition provides necessary depth to fantasy rosters suffering from unforeseen absences at key positions.",
-        "accion": "Check the waiver wire and put in claims if you need to patch up your lineup."
+        "contexto": "NFL experts are highlighting strong quarterback options for Week 8 and pointing out Dak Prescott's favorable outlook. The FX model backs this up with a solid 18.8 pts projection, making him an attractive choice to anchor fantasy lineups.",
+        "fantasy": "Direct impact for securing reliable production in standard and PPR leagues. With an 18.8 pts projection, he becomes a must-start option that can raise your team's ceiling.",
+        "equipo_impacto": "The Dallas offense keeps rolling and looks to exploit opposing defensive weaknesses to maximize passing game output.",
+        "accion": "Start Dak Prescott with confidence in your Week 8 lineup.",
+        "fuentes": [
+          6
+        ]
       },
-      "etiqueta": "WAIVER",
+      "etiqueta": "START",
       "impacto": "SUBE",
-      "equipo": "SEA",
+      "equipo": "DAL",
       "equipos": [
-        "SEA",
-        "DAL",
-        "NYJ"
+        "DAL"
       ],
       "jugadores": [
-        "1373",
-        "11783"
+        "3294"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/fantasy/football/story/_/id/50319414/fantasy-football-streamers-last-minute-pickups-week-8",
-          "t": "Fantasy football last-minute pickups: Geno Smith, Ryan Flournoy are top options"
+          "u": "https://www.espn.com/video/clip/_/id/50328325/why-good-week-start-dak-prescott-fantasy",
+          "t": "Why this is a good week to start Dak Prescott in fantasy"
         }
       ],
       "menciona": []
@@ -234,8 +234,8 @@
     "JAX",
     "6650",
     "7042",
-    "13296",
     "12498",
+    "13296",
     "NE",
     "LV",
     "1166",
@@ -262,8 +262,8 @@
     "7561",
     "11435",
     "SF",
-    "9758",
     "13330",
+    "9758",
     "8132",
     "9482",
     "5045",
@@ -273,8 +273,8 @@
     "12545",
     "BAL",
     "9502",
-    "9511",
     "3451",
+    "9511",
     "11610"
   ],
   "duelo": {
