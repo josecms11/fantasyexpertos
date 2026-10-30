@@ -1,25 +1,15 @@
 {
-  "fecha": "2026-10-30T01:34:39.413Z",
+  "fecha": "2026-10-30T02:17:37.269Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 0 nuevos, 20 en total",
-    "[1.2s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[3.7s] ESPN: lesiones 799 · noticias 50",
-    "[3.8s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
-    "[4.4s] Fuentes nuevas: 2 · horario pico · toca IA: true",
-    "[4.6s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[7.0s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[157.0s] Gemini sin respuesta gemini-3.7-flash The operation was aborted due to timeout",
-    "[175.4s] IA OK con gemini-3.6-flash",
-    "[175.4s] Noticias nuevas verificadas: 1",
-    "[178.5s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[294.8s] IA OK con gemini-3.7-flash",
-    "[294.8s] Resumen semana 8",
-    "[349.6s] IA OK con gemini-3.8-flash",
-    "[349.7s] Blog: ¿Vale la pena agregar a Jaydon Blue en la semana 8? / Should you pick up Jaydon Blue in Week 8?",
-    "[499.7s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
-    "[595.2s] IA OK con gemini-3.7-flash",
-    "[595.2s] Blog: ¿Arrancar o sentar a CeeDee Lamb en la semana 8? / Should you start CeeDee Lamb in Week 8?",
-    "[595.2s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 335 · semana de juego 8 · IA usada hoy 5/40"
+    "[0.3s] YouTube: 0 nuevos, 20 en total",
+    "[0.9s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[2.2s] ESPN: lesiones 799 · noticias 50",
+    "[2.3s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
+    "[2.6s] Fuentes nuevas: 3 · horario pico · toca IA: true",
+    "[2.8s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[86.6s] IA OK con gemini-3.8-flash",
+    "[86.6s] Noticias nuevas verificadas: 1",
+    "[87.7s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 336 · semana de juego 8 · IA usada hoy 6/40"
   ]
 }

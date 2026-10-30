@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-30T01:24:47.988Z",
-  "ultimaIA": "2026-10-30T01:24:47.988Z",
+  "actualizado": "2026-10-30T02:16:11.858Z",
+  "ultimaIA": "2026-10-30T02:16:11.858Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,52 +14,52 @@
   ],
   "noticias": [
     {
-      "id": "n20261030012400",
-      "fecha": "2026-10-30T01:24:47.988Z",
+      "id": "n20261030021600",
+      "fecha": "2026-10-30T02:16:11.858Z",
       "semana": 8,
-      "titulo": "Jordan Love busca revancha en arranque de semana 8",
+      "titulo": "Christian Watson hospitalizado de emergencia por lesión en pecho",
       "claves": [
-        "Green Bay recibe a Carolina en el juego de jueves por la noche.",
-        "Ambos equipos vienen de sufrir derrotas amargas en la semana 7.",
-        "Jordan Love intenta retomar el nivel tras su caída previa."
+        "Abandonó en ambulancia el partido de semana 8 ante Panthers.",
+        "Trasladado al hospital por precaución tras sufrir golpe en pecho.",
+        "Regresó a Lambeau Field pero su disponibilidad queda comprometida."
       ],
-      "contexto": "Los Green Bay Packers reciben a los Carolina Panthers en Lambeau Field para abrir las acciones de la semana 8 en el partido de jueves por la noche. Ambos mariscales de campo, Jordan Love y Bryce Young, llegan con la urgencia de recuperar el terreno perdido tras caer en sus respectivos compromisos de la semana 7. Para Green Bay, jugar en casa representa la oportunidad ideal para corregir errores ofensivos y reencontrar el camino del triunfo.",
-      "fantasy": "En formatos de 12 equipos y superflex, Jordan Love se mantiene como una opción utilizable de QB2 con techo de QB1 si logra capitalizar el enfrentamiento en casa. Por su parte, Bryce Young sigue siendo una alternativa de riesgo alto reservada para ligas muy profundas o formatos de 2 QB. Si buscas puntos rápidos al iniciar la semana 8, el ataque aéreo de Green Bay ofrece un piso más seguro.",
-      "equipo_impacto": "El ataque de Green Bay necesita que Jordan Love establezca el ritmo temprano para involucrar a sus receptores disponibles. Carolina requiere un juego limpio de Bryce Young para mantener el duelo competitivo fuera de casa.",
-      "accion": "Arranca a Jordan Love como tu QB2 de confianza para abrir la semana 8.",
+      "contexto": "Christian Watson encendió las alarmas en Green Bay durante el partido de jueves por la noche de la semana 8 contra los Panthers. El receptor abierto abandonó el emparrillado en la 1ra mitad en ambulancia y fue llevado a un hospital local por precaución debido a una lesión en el pecho. Más tarde regresó a Lambeau Field, pero no volvió a la acción del encuentro.",
+      "fantasy": "Para el fantasy football, este susto médico frena cualquier valor de Watson. Con Jayden Reed en reserva de lesionados, el ataque aéreo de Green Bay pierde otra pieza crítica. Si tienes a Watson en ligas Redraft o Dynasty de 10 o 12 equipos, es momento de congelarlo en la banca. Esta ausencia abre volumen por aire para el ala cerrada Tucker Kraft, proyectado con 11.4 pts en PPR.",
+      "equipo_impacto": "La ofensiva de Green Bay pierde a su principal amenaza vertical. Sin Watson y con Jayden Reed fuera, la ofensiva deberá apoyarse más en el juego terrestre y en objetivos de corto alcance como Tucker Kraft para mover las cadenas semana a semana.",
+      "accion": "Manda a Christian Watson a la banca y monitorea los reportes médicos antes de considerar alinearlo nuevamente.",
       "en": {
-        "titulo": "Jordan Love seeks redemption to open Week 8",
+        "titulo": "Christian Watson Hospitalized With Chest Injury Against Panthers",
         "claves": [
-          "Green Bay hosts Carolina on Thursday Night Football.",
-          "Both franchises enter looking to bounce back from Week 7 losses.",
-          "Jordan Love aims to regain form in front of home fans."
+          "Left week 8 matchup against Carolina in an ambulance.",
+          "Taken to local hospital for precautionary reasons after injury.",
+          "Returned to Lambeau Field but status remains in question."
         ],
-        "contexto": "The Green Bay Packers host the Carolina Panthers at Lambeau Field to kick off Week 8 on Thursday Night Football. Both quarterbacks, Jordan Love and Bryce Young, enter this matchup desperate to recover momentum after dropping their Week 7 games. Playing at home gives Green Bay an ideal platform to iron out offensive mistakes and get back into the win column.",
-        "fantasy": "In 12-team and superflex formats, Jordan Love remains a viable QB2 option with QB1 ceiling if he capitalizes on the home matchup. Meanwhile, Bryce Young is a high-risk play strictly for deep leagues or 2-QB setups. If you need early points to start Week 8, Green Bay's passing attack offers a much safer floor for fantasy managers.",
-        "equipo_impacto": "Green Bay's offense relies on Jordan Love establishing early tempo to keep receiver targets engaged. Carolina needs clean execution from Bryce Young to keep this road contest competitive throughout.",
-        "accion": "Start Jordan Love as a solid QB2 option to kick off Week 8."
+        "contexto": "Christian Watson caused a major scare in Green Bay during Thursday's week 8 game against the Panthers. The wide receiver was carted off in the 1st half and transported by ambulance to a local hospital for precautionary reasons due to a chest injury. Although Watson was able to return to Lambeau Field later in the evening, he remained sidelined for the rest of the contest.",
+        "fantasy": "From a fantasy perspective, Watson takes a major hit given the nature of the injury. In 10-team or 12-team redraft and dynasty formats, fantasy managers cannot trust him in starting lineups until team doctors clear him. With Jayden Reed currently on injured reserve, Green Bay's passing attack takes another hit, pushing extra target volume toward tight end Tucker Kraft, who projects for 11.4 PPR pts.",
+        "equipo_impacto": "Green Bay loses its top deep vertical weapon on the outside. With Watson hurting and Jayden Reed sidelined, the Packers must rely heavily on their ground attack and short-area targets like Tucker Kraft to keep drives alive.",
+        "accion": "Bench Christian Watson immediately and monitor upcoming medical updates before trusting him in your fantasy lineup."
       },
-      "etiqueta": "START",
-      "impacto": "SUBE",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
       "equipo": "GB",
       "equipos": [
         "GB",
         "CAR"
       ],
       "jugadores": [
-        "6804",
-        "9228"
+        "8167",
+        "9484"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50322459/nfl-thursday-night-football-packers-panthers-jordan-love-bryce-young",
-          "t": "Week 8 TNF Panthers at Packers: Highlights, key plays"
+          "u": "https://www.espn.com/nfl/story/_/id/50324081/packers-christian-watson-hospital-chest-injury-panthers",
+          "t": "Packers' Christian Watson taken to hospital with chest injury"
         },
         {
           "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/nfl/live/packers-panthers-score-live-updates-inactives-highlights-stats-where-to-watch-week-8-thursday-night-football-225254485.html",
-          "t": "Panthers vs. Packers live updates, inactives, where to watch: Jordan Love, Green Bay look to rebound on &#39;Thursday Night Football&#39; vs"
+          "u": "https://sports.yahoo.com/nfl/breaking-news/article/packers-wr-christian-watson-returning-to-lambeau-field-after-leaving-first-half-in-ambulance-with-chest-injury-021213193.html",
+          "t": "Packers WR Christian Watson returning to Lambeau Field after leaving first half in ambulance with chest injury"
         }
       ],
       "menciona": []
@@ -93,6 +93,10 @@
     {
       "id": "2133",
       "estatus": "Fuera"
+    },
+    {
+      "id": "8167",
+      "estatus": "Duda"
     },
     {
       "id": "12508",
@@ -221,10 +225,6 @@
     {
       "id": "4177",
       "estatus": "Fuera"
-    },
-    {
-      "id": "11635",
-      "estatus": "Duda"
     }
   ],
   "agregados": [
@@ -232,8 +232,8 @@
     "WAS",
     "12457",
     "6130",
-    "JAX",
     "TB",
+    "JAX",
     "11783",
     "9480",
     "13296",
@@ -243,13 +243,13 @@
     "12498",
     "13298",
     "LV",
-    "1166",
     "12482",
+    "1166",
     "13424",
     "8134",
     "DET",
-    "10213",
     "5849",
+    "10213",
     "11637",
     "11539",
     "11435"
@@ -267,14 +267,14 @@
     "SF",
     "9758",
     "8132",
-    "9482",
     "11435",
+    "9482",
     "5849",
     "5045",
     "5189",
-    "12545",
-    "5927",
     "13330",
+    "5927",
+    "12545",
     "NYJ",
     "BAL",
     "9502",
