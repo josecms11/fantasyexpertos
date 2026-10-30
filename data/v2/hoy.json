@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-30T02:16:11.858Z",
-  "ultimaIA": "2026-10-30T02:16:11.858Z",
+  "actualizado": "2026-10-30T03:06:24.383Z",
+  "ultimaIA": "2026-10-30T03:06:24.383Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,53 +14,52 @@
   ],
   "noticias": [
     {
-      "id": "n20261030021600",
-      "fecha": "2026-10-30T02:16:11.858Z",
+      "id": "n20261030030600",
+      "fecha": "2026-10-30T03:06:24.383Z",
       "semana": 8,
-      "titulo": "Christian Watson hospitalizado de emergencia por lesión en pecho",
+      "titulo": "Christian Watson regresa milagrosamente tras visita al hospital",
       "claves": [
-        "Abandonó en ambulancia el partido de semana 8 ante Panthers.",
-        "Trasladado al hospital por precaución tras sufrir golpe en pecho.",
-        "Regresó a Lambeau Field pero su disponibilidad queda comprometida."
+        "Sufrió lesión de pecho tras recepción de 53 yardas.",
+        "Fue trasladado al hospital por precaución en 1ra mitad.",
+        "Regresó al partido contra Panthers disipando peores temores."
       ],
-      "contexto": "Christian Watson encendió las alarmas en Green Bay durante el partido de jueves por la noche de la semana 8 contra los Panthers. El receptor abierto abandonó el emparrillado en la 1ra mitad en ambulancia y fue llevado a un hospital local por precaución debido a una lesión en el pecho. Más tarde regresó a Lambeau Field, pero no volvió a la acción del encuentro.",
-      "fantasy": "Para el fantasy football, este susto médico frena cualquier valor de Watson. Con Jayden Reed en reserva de lesionados, el ataque aéreo de Green Bay pierde otra pieza crítica. Si tienes a Watson en ligas Redraft o Dynasty de 10 o 12 equipos, es momento de congelarlo en la banca. Esta ausencia abre volumen por aire para el ala cerrada Tucker Kraft, proyectado con 11.4 pts en PPR.",
-      "equipo_impacto": "La ofensiva de Green Bay pierde a su principal amenaza vertical. Sin Watson y con Jayden Reed fuera, la ofensiva deberá apoyarse más en el juego terrestre y en objetivos de corto alcance como Tucker Kraft para mover las cadenas semana a semana.",
-      "accion": "Manda a Christian Watson a la banca y monitorea los reportes médicos antes de considerar alinearlo nuevamente.",
+      "contexto": "El receptor de Green Bay, Christian Watson, protagonizó un momento dramático este jueves frente a Carolina. Tras atrapar un pase de 53 yardas en la 1ra mitad, abandonó el emparrillado con molestias en el pecho y fue trasladado al hospital local por mera precaución. Para sorpresa de todos, el cuerpo médico autorizó su retorno inmediato al estadio, reincorporándose a la acción ofensiva durante el mismo encuentro y evitando un escenario que pintaba para ser catastrófico.",
+      "fantasy": "Su vuelta al emparrillado es un respiro monumental si lo tienes en ligas Redraft o Dynasty. Evitar una lesión mayor mantiene su etiqueta de WR3 con techo de WR2 en semanas favorables por su capacidad de generar jugadas grandes. El volumen de pases profundos sigue intacto en el esquema de Green Bay. Si tus ligas operan con waivers tardíos, no lo vendas en pánico; su estatus físico luce estable tras este susto.",
+      "equipo_impacto": "La ofensiva de Green Bay respira aliviada. Sin Jayden Reed en reserva de lesionados, perder a su principal amenaza vertical habría colapsado el espaciado terrestre y aéreo. Su presencia mantiene el valor de los demás receptores y el balance ofensivo del equipo.",
+      "accion": "Mantenlo seguro en tu banca o alineación y descarta ofertas de remate por pánico tras este susto médico.",
       "en": {
-        "titulo": "Christian Watson Hospitalized With Chest Injury Against Panthers",
+        "titulo": "Christian Watson returns after hospital trip against Panthers",
         "claves": [
-          "Left week 8 matchup against Carolina in an ambulance.",
-          "Taken to local hospital for precautionary reasons after injury.",
-          "Returned to Lambeau Field but status remains in question."
+          "Suffered chest injury after a 53-yard reception.",
+          "Taken to local hospital for evaluation in 1st half.",
+          "Returned to the contest, calming severe fantasy injury fears."
         ],
-        "contexto": "Christian Watson caused a major scare in Green Bay during Thursday's week 8 game against the Panthers. The wide receiver was carted off in the 1st half and transported by ambulance to a local hospital for precautionary reasons due to a chest injury. Although Watson was able to return to Lambeau Field later in the evening, he remained sidelined for the rest of the contest.",
-        "fantasy": "From a fantasy perspective, Watson takes a major hit given the nature of the injury. In 10-team or 12-team redraft and dynasty formats, fantasy managers cannot trust him in starting lineups until team doctors clear him. With Jayden Reed currently on injured reserve, Green Bay's passing attack takes another hit, pushing extra target volume toward tight end Tucker Kraft, who projects for 11.4 PPR pts.",
-        "equipo_impacto": "Green Bay loses its top deep vertical weapon on the outside. With Watson hurting and Jayden Reed sidelined, the Packers must rely heavily on their ground attack and short-area targets like Tucker Kraft to keep drives alive.",
-        "accion": "Bench Christian Watson immediately and monitor upcoming medical updates before trusting him in your fantasy lineup."
+        "contexto": "Packers wide receiver Christian Watson gave fantasy managers a massive scare Thursday against Carolina. After hauling in an explosive 53-yard reception during the 1st half, he exited with a chest issue and went to the hospital for precautionary evaluation. In an unexpected turn, medical personnel cleared him quickly, allowing Watson to return to the stadium and re-enter the contest, dodging what initially appeared to be a devastating multi-week injury.",
+        "fantasy": "Watson returning to action is fantastic news for managers across redraft and dynasty formats. Dodging serious structural damage keeps his weekly WR3 upside alive, fueled by elite downfield target share. If anyone in your league tried buying low while he was hospitalized, hold firm. His physical status looks clear for upcoming matchups, and his big-play ability remains essential in standard and PPR setups moving forward into the 2nd half of the year.",
+        "equipo_impacto": "Green Bay dodged an offensive nightmare. With Jayden Reed on injured reserve, losing Watson's field-stretching speed would have severely cramped spacing for the run game and complementary pass catchers.",
+        "accion": "Keep Watson rostered with confidence and reject any lowball trade offers stemming from his brief hospital visit."
       },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50324081/packers-christian-watson-hospital-chest-injury-panthers",
+          "t": "Packers' Christian Watson returns to game after hospital trip for chest injury"
+        },
+        {
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/christian-watson-injury-update-packers-wr-hospital/",
+          "t": "\n                        Packers&#039; Christian Watson returns against Panthers after chest injury, hospital visit\n                    "
+        }
+      ],
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
       "equipo": "GB",
       "equipos": [
         "GB",
         "CAR"
       ],
       "jugadores": [
-        "8167",
-        "9484"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50324081/packers-christian-watson-hospital-chest-injury-panthers",
-          "t": "Packers' Christian Watson taken to hospital with chest injury"
-        },
-        {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/nfl/breaking-news/article/packers-wr-christian-watson-returning-to-lambeau-field-after-leaving-first-half-in-ambulance-with-chest-injury-021213193.html",
-          "t": "Packers WR Christian Watson returning to Lambeau Field after leaving first half in ambulance with chest injury"
-        }
+        "8167"
       ],
       "menciona": []
     }
@@ -241,18 +240,18 @@
     "7042",
     "NE",
     "12498",
-    "13298",
     "LV",
-    "12482",
+    "13298",
     "1166",
-    "13424",
+    "12482",
     "8134",
+    "13424",
     "DET",
     "5849",
     "10213",
     "11637",
     "11539",
-    "11435"
+    "1373"
   ],
   "soltados": [
     "8129",
@@ -260,8 +259,8 @@
     "HOU",
     "3271",
     "CLE",
-    "12718",
     "13150",
+    "12718",
     "11581",
     "7561",
     "SF",
@@ -271,12 +270,12 @@
     "9482",
     "5849",
     "5045",
-    "5189",
     "13330",
+    "5189",
     "5927",
     "12545",
-    "NYJ",
     "BAL",
+    "NYJ",
     "9502",
     "11610",
     "9511"
