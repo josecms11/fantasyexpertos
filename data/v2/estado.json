@@ -1,12 +1,18 @@
 {
-  "fecha": "2026-10-30T07:55:24.405Z",
+  "fecha": "2026-10-30T08:45:58.501Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.4s] YouTube: 15 nuevos, 20 en total",
-    "[1.1s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[2.2s] ESPN: lesiones 799 · noticias 50",
-    "[2.3s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
-    "[2.5s] Fuentes nuevas: 0 · horario normal · toca IA: false",
-    "[3.3s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 339 · semana de juego 8 · IA usada hoy 13/40"
+    "[0.3s] YouTube: 15 nuevos, 20 en total",
+    "[0.9s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[2.1s] ESPN: lesiones 799 · noticias 50",
+    "[2.1s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
+    "[2.4s] Fuentes nuevas: 1 · horario normal · toca IA: true",
+    "[2.6s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[15.1s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
+    "[21.6s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
+    "[24.1s] IA OK con gemini-3.5-flash-lite",
+    "[24.1s] Descartada: Christian Watson regresa milagrosamente tras visita hospitalaria → duplicada",
+    "[24.1s] Noticias nuevas verificadas: 0",
+    "[25.2s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 339 · semana de juego 8 · IA usada hoy 14/40"
   ]
 }
