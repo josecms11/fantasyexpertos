@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-30T12:26:44.107Z",
-  "ultimaIA": "2026-10-30T10:25:39.654Z",
+  "actualizado": "2026-10-30T13:33:18.486Z",
+  "ultimaIA": "2026-10-30T13:33:18.486Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,45 +14,50 @@
   ],
   "noticias": [
     {
-      "id": "n20261030102500",
-      "fecha": "2026-10-30T10:25:39.654Z",
+      "id": "n20261030133301",
+      "fecha": "2026-10-30T13:33:18.486Z",
       "semana": 8,
-      "titulo": "La fecha límite de traspasos NFL se aproxima rápidamente",
+      "titulo": "Geno Smith y Ryan Flournoy emergen como waivers clave",
       "claves": [
-        "La fecha límite de canjes 2026 de la NFL se aproxima.",
-        "Los movimientos de gerencias alterarán roles en fantasy football.",
-        "Momento clave para asegurar respaldos en el alambre de waivers."
+        "Geno Smith destaca en opciones de última hora",
+        "Ryan Flournoy recomendado por expertos",
+        "Solución ideal para bajas y bye weeks"
       ],
-      "contexto": "La fecha límite de traspasos de la NFL para la temporada 2026 está cada vez más cerca en el calendario oficial de la liga. Varios equipos ajustan sus plantillas para definir si buscarán competir por el título o si venderán piezas pensando en el futuro. Este periodo genera especulación en las gerencias, provocando movimientos estratégicos antes de que venza el plazo establecido para hacer canjes esta campaña.",
-      "fantasy": "En ligas de fantasy football, la proximidad de la fecha límite exige actuar de inmediato en waivers y canjes. Un movimiento de jugadores clave en la NFL cambia drásticamente el volumen de toques y oportunidades dentro de un ataque. Anticiparse a estos canjes permite adquirir respaldos con alto potencial de convertirse en titulares antes de que sus roles aumenten de valor en la semana 8.",
-      "equipo_impacto": "Los equipos compradores buscan reforzar posiciones clave para la recta final, mientras los vendedores abren espacio para prospectos jóvenes. Esto redistribuye la cuota de blancos y acarreos entre los jugadores que se quedan.",
-      "accion": "Revisa los respaldos en tu liga y asegura piezas de valor antes del límite.",
+      "contexto": "Ante problemas de lesiones, semanas de descanso o enfrentamientos difíciles, los expertos apuntan a opciones de última hora para salvar tu roster. Matt Bowen lista a Geno Smith y al receptor Ryan Flournoy como los principales objetivos en el mercado de fichajes para esta semana 8.",
+      "fantasy": "Si necesitas cubrir huecos por lesiones o bye weeks en ligas profundas o de formato estándar, ambos jugadores ofrecen un valor inmediato como opciones de emergencia para arrancar en tu equipo.",
+      "equipo_impacto": "Su incorporación da profundidad necesaria a los planteles fantasy que sufren por ausencias imprevistas en posiciones clave.",
+      "accion": "Revisa la agencia libre y puja por ellos si necesitas parchar tu alineación.",
+      "en": {
+        "titulo": "Geno Smith and Ryan Flournoy emerge as key waivers",
+        "claves": [
+          "Geno Smith highlights last-minute options",
+          "Ryan Flournoy recommended by experts",
+          "Ideal solution for injuries and bye weeks"
+        ],
+        "contexto": "Facing injury issues, bye weeks, or tough matchups, experts point to last-minute options to save your roster. Matt Bowen lists Geno Smith and wide receiver Ryan Flournoy as top waiver wire targets for Week 8.",
+        "fantasy": "If you need to fill holes from injuries or bye weeks in deep or standard leagues, both players offer immediate value as emergency starting options for your fantasy squad.",
+        "equipo_impacto": "Their addition provides necessary depth to fantasy rosters suffering from unforeseen absences at key positions.",
+        "accion": "Check the waiver wire and put in claims if you need to patch up your lineup."
+      },
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "SEA",
+      "equipos": [
+        "SEA",
+        "DAL",
+        "NYJ"
+      ],
+      "jugadores": [
+        "1373",
+        "11783"
+      ],
       "fuentes": [
         {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/nfl-trade-deadline-date-time-100810470.html",
-          "t": "When is the NFL trade deadline? Date, time and biggest names to watch"
+          "m": "ESPN",
+          "u": "https://www.espn.com/fantasy/football/story/_/id/50319414/fantasy-football-streamers-last-minute-pickups-week-8",
+          "t": "Fantasy football last-minute pickups: Geno Smith, Ryan Flournoy are top options"
         }
       ],
-      "en": {
-        "titulo": "NFL trade deadline rapidly approaches for 2026 season",
-        "claves": [
-          "The 2026 NFL trade deadline is rapidly approaching on calendar.",
-          "Front office moves will significantly impact fantasy player roles.",
-          "Fantasy managers must target high upside backups before trades occur."
-        ],
-        "contexto": "The 2026 NFL trade deadline is rapidly approaching on the league calendar. Teams across the league are currently evaluating their rosters to decide whether to push for a playoff spot or sell assets for future draft pick capital. This crucial period creates intense speculative activity among front offices as the official deadline to execute trades before the end of the season gets closer.",
-        "fantasy": "For fantasy football managers, the approaching trade deadline requires immediate preparation in waiver wire market decisions and league trades. Major player transactions across the NFL can dramatically alter target volume, backfield touches, and overall fantasy value overnight. Adding high upside backup running backs or target needy wide receivers now can pay massive dividends in week 8 before potential roster shifts take place.",
-        "equipo_impacto": "Buying teams aim to bolster key positions for a championship run, while sellers open up opportunities for younger players. This shifts target shares and carries significantly across multiple depth charts around the league.",
-        "accion": "Target upside backup players on waivers before front office trades happen."
-      },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "NFL",
-      "equipos": [
-        "NFL"
-      ],
-      "jugadores": [],
       "menciona": []
     }
   ],
@@ -236,9 +241,9 @@
     "1166",
     "13298",
     "8134",
-    "12482",
     "5849",
     "DET",
+    "12482",
     "13424",
     "11637",
     "11539",
@@ -268,9 +273,9 @@
     "12545",
     "BAL",
     "9502",
-    "11610",
     "9511",
-    "3451"
+    "3451",
+    "11610"
   ],
   "duelo": {
     "a": "Drake Maye",
