@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-30T00:15:37.521Z",
-  "ultimaIA": "2026-10-30T00:15:37.521Z",
+  "actualizado": "2026-10-30T01:24:47.988Z",
+  "ultimaIA": "2026-10-30T01:24:47.988Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,46 +14,53 @@
   ],
   "noticias": [
     {
-      "id": "n20261030001501",
-      "fecha": "2026-10-30T00:15:37.521Z",
+      "id": "n20261030012400",
+      "fecha": "2026-10-30T01:24:47.988Z",
       "semana": 8,
-      "titulo": "Harrison Butker retiene puesto en Chiefs bajo máxima presión",
+      "titulo": "Jordan Love busca revancha en arranque de semana 8",
       "claves": [
-        "Chiefs respaldan a Harrison Butker como titular pese a dudas.",
-        "Justin Tucker brilló en su prueba y espera turno.",
-        "Butker queda sin margen de error en equipos especiales."
+        "Green Bay recibe a Carolina en el juego de jueves por la noche.",
+        "Ambos equipos vienen de sufrir derrotas amargas en la semana 7.",
+        "Jordan Love intenta retomar el nivel tras su caída previa."
       ],
-      "contexto": "A pesar de sus recientes complicaciones en el campo, los Chiefs decidieron respaldar a Harrison Butker como su pateador titular para la semana 8. El veterano Justin Tucker impresionó con una sesión de prueba perfecta que acaparó miradas, pero el cuerpo técnico de Kansas City prefiere mantener a Tucker como respaldo y recurso de emergencia mientras Butker intenta recuperar su nivel y afinar su puntería en momentos decisivos.",
-      "fantasy": "Para fantasy football, Harrison Butker se convierte en una opción de alto riesgo que deberías evitar en semana 8. No aparece entre las mejores proyecciones encabezadas por Will Reichard con 12.9 pts y Spencer Shrader con 11.6 pts. Con Tucker presionando desde la reserva, una falla temprana podría acelerar un cambio en pleno encuentro. En ligas de 10 y 12 equipos, es preferible recurrir al alambre de waivers por pateadores con mayor certidumbre.",
-      "equipo_impacto": "Kansas City incrementa la presión interna en sus equipos especiales tras las fallas recientes. Andy Reid podría ser más agresivo en 4ta oportunidad en territorio rival si las dudas con el pateador persisten en el campo.",
-      "accion": "Sienta o corta a Harrison Butker y busca opciones más estables en waivers esta semana 8.",
+      "contexto": "Los Green Bay Packers reciben a los Carolina Panthers en Lambeau Field para abrir las acciones de la semana 8 en el partido de jueves por la noche. Ambos mariscales de campo, Jordan Love y Bryce Young, llegan con la urgencia de recuperar el terreno perdido tras caer en sus respectivos compromisos de la semana 7. Para Green Bay, jugar en casa representa la oportunidad ideal para corregir errores ofensivos y reencontrar el camino del triunfo.",
+      "fantasy": "En formatos de 12 equipos y superflex, Jordan Love se mantiene como una opción utilizable de QB2 con techo de QB1 si logra capitalizar el enfrentamiento en casa. Por su parte, Bryce Young sigue siendo una alternativa de riesgo alto reservada para ligas muy profundas o formatos de 2 QB. Si buscas puntos rápidos al iniciar la semana 8, el ataque aéreo de Green Bay ofrece un piso más seguro.",
+      "equipo_impacto": "El ataque de Green Bay necesita que Jordan Love establezca el ritmo temprano para involucrar a sus receptores disponibles. Carolina requiere un juego limpio de Bryce Young para mantener el duelo competitivo fuera de casa.",
+      "accion": "Arranca a Jordan Love como tu QB2 de confianza para abrir la semana 8.",
       "en": {
-        "titulo": "Harrison Butker Retains Chiefs Job Under Mounting Pressure",
+        "titulo": "Jordan Love seeks redemption to open Week 8",
         "claves": [
-          "Chiefs stand by Harrison Butker despite his recent struggles.",
-          "Justin Tucker impressed Kansas City with a perfect tryout.",
-          "Butker enters Week 8 on a remarkably short leash."
+          "Green Bay hosts Carolina on Thursday Night Football.",
+          "Both franchises enter looking to bounce back from Week 7 losses.",
+          "Jordan Love aims to regain form in front of home fans."
         ],
-        "contexto": "Despite his recent struggles on the field, the Chiefs are standing by Harrison Butker as their primary kicker for Week 8. Veteran Justin Tucker turned heads with a flawless tryout session and waits in the wings, but Kansas City currently views Tucker as valuable insurance and a developmental resource while Butker gets the opportunity to right the ship and regain his trademark field goal consistency.",
-        "fantasy": "From a fantasy perspective, Harrison Butker is a volatile start that you should avoid in Week 8. He sits outside top projections led by Will Reichard at 12.9 pts and Spencer Shrader at 11.6 pts. With Tucker lurking in the building, any missed kick could accelerate an in-season change. In 10-team and 12-team redraft leagues, streaming more reliable kickers off waivers is the smartest tactical move.",
-        "equipo_impacto": "Kansas City puts its special teams unit under intense scrutiny. Andy Reid may lean toward going for it on 4th down in plus territory if kicking uncertainty continues to linger.",
-        "accion": "Bench or drop Harrison Butker for a safer streaming kicker in Week 8."
+        "contexto": "The Green Bay Packers host the Carolina Panthers at Lambeau Field to kick off Week 8 on Thursday Night Football. Both quarterbacks, Jordan Love and Bryce Young, enter this matchup desperate to recover momentum after dropping their Week 7 games. Playing at home gives Green Bay an ideal platform to iron out offensive mistakes and get back into the win column.",
+        "fantasy": "In 12-team and superflex formats, Jordan Love remains a viable QB2 option with QB1 ceiling if he capitalizes on the home matchup. Meanwhile, Bryce Young is a high-risk play strictly for deep leagues or 2-QB setups. If you need early points to start Week 8, Green Bay's passing attack offers a much safer floor for fantasy managers.",
+        "equipo_impacto": "Green Bay's offense relies on Jordan Love establishing early tempo to keep receiver targets engaged. Carolina needs clean execution from Bryce Young to keep this road contest competitive throughout.",
+        "accion": "Start Jordan Love as a solid QB2 option to kick off Week 8."
       },
-      "fuentes": [
-        {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/chiefs-harrison-butker-struggles-justin-tucker-signs/",
-          "t": "\n                        Chiefs stand by Harrison Butker despite struggles, Justin Tucker waiting in wings\n                    "
-        }
-      ],
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "KC",
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "GB",
       "equipos": [
-        "KC"
+        "GB",
+        "CAR"
       ],
       "jugadores": [
-        "4227"
+        "6804",
+        "9228"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50322459/nfl-thursday-night-football-packers-panthers-jordan-love-bryce-young",
+          "t": "Week 8 TNF Panthers at Packers: Highlights, key plays"
+        },
+        {
+          "m": "Yahoo Sports",
+          "u": "https://sports.yahoo.com/nfl/live/packers-panthers-score-live-updates-inactives-highlights-stats-where-to-watch-week-8-thursday-night-football-225254485.html",
+          "t": "Panthers vs. Packers live updates, inactives, where to watch: Jordan Love, Green Bay look to rebound on &#39;Thursday Night Football&#39; vs"
+        }
       ],
       "menciona": []
     }
@@ -227,59 +234,59 @@
     "6130",
     "JAX",
     "TB",
-    "13296",
     "11783",
     "9480",
+    "13296",
     "6650",
     "7042",
     "NE",
-    "13298",
     "12498",
-    "13424",
-    "12482",
+    "13298",
     "LV",
     "1166",
+    "12482",
+    "13424",
     "8134",
-    "10213",
     "DET",
-    "11637",
+    "10213",
     "5849",
+    "11637",
     "11539",
     "11435"
   ],
   "soltados": [
     "8129",
     "10235",
-    "3271",
     "HOU",
+    "3271",
     "CLE",
     "12718",
     "13150",
     "11581",
     "7561",
     "SF",
-    "8132",
     "9758",
+    "8132",
     "9482",
-    "5849",
     "11435",
+    "5849",
     "5045",
     "5189",
     "12545",
-    "NYJ",
     "5927",
+    "13330",
+    "NYJ",
     "BAL",
     "9502",
     "11610",
-    "13330",
-    "11624"
+    "9511"
   ],
   "duelo": {
-    "a": "Jahmyr Gibbs",
-    "b": "Christian McCaffrey",
-    "veredicto": "Arranca a Jahmyr Gibbs por su enorme proyección de 23.3 pts frente a los 20.6 pts estimados para Christian McCaffrey en la semana 8."
+    "a": "Drake Maye",
+    "b": "Caleb Williams",
+    "veredicto": "Arranca a Drake Maye sobre Caleb Williams en la semana 8. Maye proyecta 20.5 pts frente a los 20 pts de Williams, ofreciendo un techo ligeramente más elevado por su dinamismo en esquemas de pase."
   },
-  "dueloFecha": "2026-10-29T04:52:09.728Z",
+  "dueloFecha": "2026-10-30T01:24:47.988Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
