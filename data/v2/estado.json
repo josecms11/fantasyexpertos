@@ -1,12 +1,12 @@
 {
-  "fecha": "2026-10-30T21:54:56.711Z",
+  "fecha": "2026-10-30T22:28:49.208Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.4s] YouTube: 15 nuevos, 20 en total",
+    "[0.3s] YouTube: 15 nuevos, 20 en total",
     "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[2.6s] ESPN: lesiones 799 · noticias 50",
-    "[2.6s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
-    "[3.1s] Fuentes nuevas: 16 · horario pico · toca IA: false",
-    "[4.0s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 342 · semana de juego 8 · IA usada hoy 34/40"
+    "[3.8s] ESPN: lesiones 799 · noticias 50",
+    "[3.9s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
+    "[4.3s] Fuentes nuevas: 15 · horario pico · toca IA: false",
+    "[5.2s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 342 · semana de juego 8 · IA usada hoy 34/40"
   ]
 }
