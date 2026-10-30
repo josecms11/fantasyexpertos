@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-30T06:04:27.031Z",
-  "ultimaIA": "2026-10-30T03:52:00.990Z",
+  "actualizado": "2026-10-30T06:56:48.889Z",
+  "ultimaIA": "2026-10-30T06:56:48.889Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,52 +14,47 @@
   ],
   "noticias": [
     {
-      "id": "n20261030035200",
-      "fecha": "2026-10-30T03:52:00.990Z",
+      "id": "n20261030065600",
+      "fecha": "2026-10-30T06:56:48.889Z",
       "semana": 8,
-      "titulo": "Josh Jacobs firma 2 TD en triunfo de Packers",
+      "titulo": "Bryce Young descarta daño en rodilla tras 6 capturas",
       "claves": [
-        "Jacobs anota 2 TD en la victoria 27-19 de Green Bay.",
-        "Green Bay mejora su récord a 5-3 tras vencer a Panthers.",
-        "Se consolida como RB1 élite indiscutible en formatos PPR y estándar."
+        "Sufrió 6 capturas y presión en casi la mitad de pases.",
+        "El pasador aseguró que su rodilla lastimada se encuentra bien.",
+        "Carolina cayó 27-19 frente a Green Bay en la semana 8."
       ],
-      "contexto": "Josh Jacobs comandó el ataque terrestre de Green Bay al conseguir 2 TD en el triunfo 27-19 sobre los Panthers en el inicio de la semana 8. Aunque Carolina presionó y apretó el marcador en el cuarto periodo, los Packers lograron resistir para colocar su récord en 5-3 durante el duelo de jueves por la noche. Jacobs demostró una vez más su valor determinante dentro de la zona roja ofensiva.",
-      "fantasy": "La actuación de 2 TD reafirma a Josh Jacobs como un RB1 imprescindible en todas las ligas de fantasy, tanto en formatos estándar como PPR. Con Kaleb Johnson fuera por decisión del entrenador en este juego, el volumen y las oportunidades de gol de línea recaen por completo en Jacobs. Su producción semanal ofrece una base de puntos sólida que debes alinear en cualquier enfrentamiento sin dudar.",
-      "equipo_impacto": "El ataque de Green Bay mantiene el equilibrio necesario para apoyar a Jordan Love. La contundencia de Jacobs en corto yardaje quita presión al juego aéreo y permite a los Packers manejar los tiempos del partido, elevando la eficiencia global de la ofensiva tras mejorar su marca a 5-3.",
-      "accion": "Mantén a Josh Jacobs como titular inamovible de tu alineación cada semana.",
+      "contexto": "El mariscal de campo de Carolina, Bryce Young, soportó una noche durísima en la derrota 27-19 ante los Packers. Young fue derribado en 6 ocasiones y encaró presión constante en prácticamente la mitad de sus jugadas de pase. Pese al castigo físico recibido a lo largo del encuentro, el pasador declaró ante la prensa que su rodilla lesionada terminó bien y sin complicaciones adicionales tras el compromiso.",
+      "fantasy": "Aunque esquivó una lesión de gravedad, Young no ofrece garantías para confiar en él. La pésima protección de su línea ofensiva destroza su techo semana a semana, limitando drásticamente su producción de puntos. En ligas tradicionales de 1 QB debes dejarlo fuera de cualquier alineación, mientras que en formatos Superflex o ligas de 2 QB apenas califica como una alternativa desesperada de respaldo por su bajo volumen y constante asedio en la bolsa.",
+      "equipo_impacto": "La incapacidad de contener la presión rival frena el desarrollo de todo el ataque de Panthers. Si la línea no protege a Young, el juego aéreo pierde ritmo y los receptores sufren para generar separación ante rutas que no terminan de desarrollarse con éxito.",
+      "accion": "Manda a Bryce Young a la banca o al alambre en cualquier formato estándar de 1 QB.",
+      "en": {
+        "titulo": "Bryce Young avoids knee setback despite taking 6 sacks",
+        "claves": [
+          "Young was sacked 6 times and pressured constantly on Thursday.",
+          "The Panthers quarterback reported his injured knee feels completely fine.",
+          "Carolina suffered a 27-19 defeat against the Green Bay Packers."
+        ],
+        "contexto": "Carolina quarterback Bryce Young took heavy physical punishment during Thursday's 27-19 loss to the Packers. Young suffered 6 sacks and faced defensive pressure on nearly half of his dropbacks throughout the contest. Despite enduring relentless contact all game long, the passer stated afterward that his previously injured knee held up well and felt completely fine following the demanding prime-time matchup.",
+        "fantasy": "Even though Young avoided a structural injury to his knee, his fantasy outlook remains bleak. Carolina's porous pass protection severely limits his ceiling and kills weekly consistency for managers. In typical 1-QB leagues, Young belongs nowhere near starting lineups. For Superflex or 2-QB formats, he should be viewed solely as an emergency low-end QB2 due to Carolina's erratic passing volume and persistent offensive line struggles.",
+        "equipo_impacto": "Carolina's inability to provide pass protection hinders the entire offense. Without adequate time in the pocket, downfield pass catchers cannot complete route concepts cleanly, significantly curbing the fantasy scoring upside of Carolina's entire receiving group.",
+        "accion": "Bench or drop Bryce Young in standard 1-QB leagues immediately."
+      },
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "CAR",
+      "equipos": [
+        "CAR",
+        "GB"
+      ],
+      "jugadores": [
+        "9228"
+      ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50322670/nfl-green-bay-packers-panthers-jordan-love-bryce-young",
-          "t": "Josh Jacobs scores twice as Packers dispatch Panthers"
-        },
-        {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/thursday-night-football-packers-hold-033445723.html",
-          "t": "Thursday Night Football: Packers hold on for 27-19 win over Panthers"
+          "u": "https://www.espn.com/nfl/story/_/id/50325742/panthers-bryce-young-says-knee-fine-loss-packers",
+          "t": "Panthers' Bryce Young says injured knee 'fine' after taking 6 sacks vs. Packers"
         }
-      ],
-      "en": {
-        "titulo": "Josh Jacobs Scores Twice in Packers Thursday Night Win",
-        "claves": [
-          "Jacobs scores 2 TD in Green Bay's 27-19 victory.",
-          "Green Bay improves to 5-3 after beating Carolina.",
-          "Jacobs cements his status as an elite every-week RB1."
-        ],
-        "contexto": "Josh Jacobs powered Green Bay's offense by scoring 2 TD in a 27-19 victory over the Panthers to kick off week 8. Carolina made a strong push in the fourth quarter to tighten the game, but the Packers held on to improve their record to 5-3 on Thursday night. Jacobs once again proved to be the focal point of the red-zone attack.",
-        "fantasy": "With a 2 TD performance, Josh Jacobs solidifies his standing as an elite, matchup-proof RB1 in all fantasy formats, including standard and PPR leagues. Having Kaleb Johnson out by coach decision left the backfield completely centered around Jacobs near the goal line. His consistent touchdown upside and heavy workload give fantasy managers a reliable, high-end floor every single week.",
-        "equipo_impacto": "Jacobs provides Green Bay with crucial offensive balance, relieving pressure from Jordan Love. His red-zone effectiveness keeps drives alive and allows the Packers to control game script, strengthening the entire unit as the team moves to 5-3 on the season.",
-        "accion": "Keep Josh Jacobs locked into your fantasy starting lineup as an elite RB1."
-      },
-      "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "GB",
-      "equipos": [
-        "GB",
-        "CAR"
-      ],
-      "jugadores": [
-        "5850"
       ],
       "menciona": []
     }
