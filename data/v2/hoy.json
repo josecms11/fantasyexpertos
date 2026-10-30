@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-30T09:34:21.844Z",
-  "ultimaIA": "2026-10-30T06:56:48.889Z",
+  "actualizado": "2026-10-30T10:25:39.654Z",
+  "ultimaIA": "2026-10-30T10:25:39.654Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,48 +14,45 @@
   ],
   "noticias": [
     {
-      "id": "n20261030065600",
-      "fecha": "2026-10-30T06:56:48.889Z",
+      "id": "n20261030102500",
+      "fecha": "2026-10-30T10:25:39.654Z",
       "semana": 8,
-      "titulo": "Bryce Young descarta daño en rodilla tras 6 capturas",
+      "titulo": "La fecha límite de traspasos NFL se aproxima rápidamente",
       "claves": [
-        "Sufrió 6 capturas y presión en casi la mitad de pases.",
-        "El pasador aseguró que su rodilla lastimada se encuentra bien.",
-        "Carolina cayó 27-19 frente a Green Bay en la semana 8."
+        "La fecha límite de canjes 2026 de la NFL se aproxima.",
+        "Los movimientos de gerencias alterarán roles en fantasy football.",
+        "Momento clave para asegurar respaldos en el alambre de waivers."
       ],
-      "contexto": "El mariscal de campo de Carolina, Bryce Young, soportó una noche durísima en la derrota 27-19 ante los Packers. Young fue derribado en 6 ocasiones y encaró presión constante en prácticamente la mitad de sus jugadas de pase. Pese al castigo físico recibido a lo largo del encuentro, el pasador declaró ante la prensa que su rodilla lesionada terminó bien y sin complicaciones adicionales tras el compromiso.",
-      "fantasy": "Aunque esquivó una lesión de gravedad, Young no ofrece garantías para confiar en él. La pésima protección de su línea ofensiva destroza su techo semana a semana, limitando drásticamente su producción de puntos. En ligas tradicionales de 1 QB debes dejarlo fuera de cualquier alineación, mientras que en formatos Superflex o ligas de 2 QB apenas califica como una alternativa desesperada de respaldo por su bajo volumen y constante asedio en la bolsa.",
-      "equipo_impacto": "La incapacidad de contener la presión rival frena el desarrollo de todo el ataque de Panthers. Si la línea no protege a Young, el juego aéreo pierde ritmo y los receptores sufren para generar separación ante rutas que no terminan de desarrollarse con éxito.",
-      "accion": "Manda a Bryce Young a la banca o al alambre en cualquier formato estándar de 1 QB.",
-      "en": {
-        "titulo": "Bryce Young avoids knee setback despite taking 6 sacks",
-        "claves": [
-          "Young was sacked 6 times and pressured constantly on Thursday.",
-          "The Panthers quarterback reported his injured knee feels completely fine.",
-          "Carolina suffered a 27-19 defeat against the Green Bay Packers."
-        ],
-        "contexto": "Carolina quarterback Bryce Young took heavy physical punishment during Thursday's 27-19 loss to the Packers. Young suffered 6 sacks and faced defensive pressure on nearly half of his dropbacks throughout the contest. Despite enduring relentless contact all game long, the passer stated afterward that his previously injured knee held up well and felt completely fine following the demanding prime-time matchup.",
-        "fantasy": "Even though Young avoided a structural injury to his knee, his fantasy outlook remains bleak. Carolina's porous pass protection severely limits his ceiling and kills weekly consistency for managers. In typical 1-QB leagues, Young belongs nowhere near starting lineups. For Superflex or 2-QB formats, he should be viewed solely as an emergency low-end QB2 due to Carolina's erratic passing volume and persistent offensive line struggles.",
-        "equipo_impacto": "Carolina's inability to provide pass protection hinders the entire offense. Without adequate time in the pocket, downfield pass catchers cannot complete route concepts cleanly, significantly curbing the fantasy scoring upside of Carolina's entire receiving group.",
-        "accion": "Bench or drop Bryce Young in standard 1-QB leagues immediately."
-      },
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "CAR",
-      "equipos": [
-        "CAR",
-        "GB"
-      ],
-      "jugadores": [
-        "9228"
-      ],
+      "contexto": "La fecha límite de traspasos de la NFL para la temporada 2026 está cada vez más cerca en el calendario oficial de la liga. Varios equipos ajustan sus plantillas para definir si buscarán competir por el título o si venderán piezas pensando en el futuro. Este periodo genera especulación en las gerencias, provocando movimientos estratégicos antes de que venza el plazo establecido para hacer canjes esta campaña.",
+      "fantasy": "En ligas de fantasy football, la proximidad de la fecha límite exige actuar de inmediato en waivers y canjes. Un movimiento de jugadores clave en la NFL cambia drásticamente el volumen de toques y oportunidades dentro de un ataque. Anticiparse a estos canjes permite adquirir respaldos con alto potencial de convertirse en titulares antes de que sus roles aumenten de valor en la semana 8.",
+      "equipo_impacto": "Los equipos compradores buscan reforzar posiciones clave para la recta final, mientras los vendedores abren espacio para prospectos jóvenes. Esto redistribuye la cuota de blancos y acarreos entre los jugadores que se quedan.",
+      "accion": "Revisa los respaldos en tu liga y asegura piezas de valor antes del límite.",
       "fuentes": [
         {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50325742/panthers-bryce-young-says-knee-fine-loss-packers",
-          "t": "Panthers' Bryce Young says injured knee 'fine' after taking 6 sacks vs. Packers"
+          "m": "Yahoo Sports",
+          "u": "https://sports.yahoo.com/articles/nfl-trade-deadline-date-time-100810470.html",
+          "t": "When is the NFL trade deadline? Date, time and biggest names to watch"
         }
       ],
+      "en": {
+        "titulo": "NFL trade deadline rapidly approaches for 2026 season",
+        "claves": [
+          "The 2026 NFL trade deadline is rapidly approaching on calendar.",
+          "Front office moves will significantly impact fantasy player roles.",
+          "Fantasy managers must target high upside backups before trades occur."
+        ],
+        "contexto": "The 2026 NFL trade deadline is rapidly approaching on the league calendar. Teams across the league are currently evaluating their rosters to decide whether to push for a playoff spot or sell assets for future draft pick capital. This crucial period creates intense speculative activity among front offices as the official deadline to execute trades before the end of the season gets closer.",
+        "fantasy": "For fantasy football managers, the approaching trade deadline requires immediate preparation in waiver wire market decisions and league trades. Major player transactions across the NFL can dramatically alter target volume, backfield touches, and overall fantasy value overnight. Adding high upside backup running backs or target needy wide receivers now can pay massive dividends in week 8 before potential roster shifts take place.",
+        "equipo_impacto": "Buying teams aim to bolster key positions for a championship run, while sellers open up opportunities for younger players. This shifts target shares and carries significantly across multiple depth charts around the league.",
+        "accion": "Target upside backup players on waivers before front office trades happen."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "NEUTRO",
+      "equipo": "NFL",
+      "equipos": [
+        "NFL"
+      ],
+      "jugadores": [],
       "menciona": []
     }
   ],
@@ -238,14 +235,14 @@
     "LV",
     "1166",
     "13298",
-    "12482",
     "8134",
+    "12482",
     "DET",
     "5849",
     "13424",
+    "11539",
     "10213",
     "11637",
-    "11539",
     "1373"
   ],
   "soltados": [
