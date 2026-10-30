@@ -1,12 +1,18 @@
 {
-  "fecha": "2026-10-29T23:40:34.506Z",
+  "fecha": "2026-10-30T00:20:19.842Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.4s] YouTube: 15 nuevos, 20 en total",
-    "[1.3s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[2.9s] ESPN: lesiones 799 · noticias 50",
-    "[2.9s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
-    "[3.8s] Fuentes nuevas: 17 · horario pico · toca IA: false",
-    "[4.8s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 333 · semana de juego 8 · IA usada hoy 34/40"
+    "[0.1s] YouTube: 0 nuevos, 20 en total",
+    "[0.8s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[1.6s] ESPN: lesiones 799 · noticias 50",
+    "[2.5s] Auto-ajuste FX: {\"hl\":11,\"mEf\":30,\"mTd\":220,\"aPrev\":0.2} error 4.788 → 4.774",
+    "[2.5s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
+    "[2.9s] Fuentes nuevas: 19 · horario pico · toca IA: true",
+    "[3.1s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[153.1s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
+    "[284.0s] IA OK con gemini-3.7-flash",
+    "[284.0s] Descartada: Quenton Nelson llega a Seahawks para potenciar ataque → duplicada",
+    "[284.0s] Noticias nuevas verificadas: 1",
+    "[284.8s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 334 · semana de juego 8 · IA usada hoy 1/40"
   ]
 }

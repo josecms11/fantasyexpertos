@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-29T23:40:32.624Z",
-  "ultimaIA": "2026-10-29T17:07:59.859Z",
+  "actualizado": "2026-10-30T00:15:37.521Z",
+  "ultimaIA": "2026-10-30T00:15:37.521Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,70 +14,46 @@
   ],
   "noticias": [
     {
-      "id": "n20261029170700",
-      "fecha": "2026-10-29T17:07:59.859Z",
+      "id": "n20261030001501",
+      "fecha": "2026-10-30T00:15:37.521Z",
       "semana": 8,
-      "titulo": "Bears adquieren al estelar Jeffery Simmons",
+      "titulo": "Harrison Butker retiene puesto en Chiefs bajo máxima presión",
       "claves": [
-        "Jeffery Simmons llega a los Bears en traspaso",
-        "Los Titans reciben 2 selecciones de primera ronda",
-        "Chicago va con todo por el Super Bowl"
+        "Chiefs respaldan a Harrison Butker como titular pese a dudas.",
+        "Justin Tucker brilló en su prueba y espera turno.",
+        "Butker queda sin margen de error en equipos especiales."
       ],
-      "contexto": "Los Bears rompieron el mercado al adquirir al liniero defensivo estelar Jeffery Simmons en un traspaso masivo con los Titans. A cambio, la franquicia de Tennessee recibió un paquete que incluye 2 selecciones de primera ronda del draft. Este movimiento coloca a Chicago como un contendiente absoluto con aspiraciones máximas al campeonato.",
-      "fantasy": "Para el fantasy football, este movimiento impacta directamente en las defensivas. La llegada de un elemento de la magnitud de Jeffery Simmons eleva el nivel de la unidad de Chicago, convirtiéndola en una opción muy atractiva para alinear en tus ligas de cara a la semana 8.",
-      "equipo_impacto": "La defensiva de los Bears gana un pilar interior indiscutible que transformará su presión al mariscal rival. Por su parte, los Titans inician oficialmente una reconstrucción total apostando por el futuro.",
-      "accion": "Monitorea a la defensiva de los Bears en tu mercado de waivers para la semana 8.",
+      "contexto": "A pesar de sus recientes complicaciones en el campo, los Chiefs decidieron respaldar a Harrison Butker como su pateador titular para la semana 8. El veterano Justin Tucker impresionó con una sesión de prueba perfecta que acaparó miradas, pero el cuerpo técnico de Kansas City prefiere mantener a Tucker como respaldo y recurso de emergencia mientras Butker intenta recuperar su nivel y afinar su puntería en momentos decisivos.",
+      "fantasy": "Para fantasy football, Harrison Butker se convierte en una opción de alto riesgo que deberías evitar en semana 8. No aparece entre las mejores proyecciones encabezadas por Will Reichard con 12.9 pts y Spencer Shrader con 11.6 pts. Con Tucker presionando desde la reserva, una falla temprana podría acelerar un cambio en pleno encuentro. En ligas de 10 y 12 equipos, es preferible recurrir al alambre de waivers por pateadores con mayor certidumbre.",
+      "equipo_impacto": "Kansas City incrementa la presión interna en sus equipos especiales tras las fallas recientes. Andy Reid podría ser más agresivo en 4ta oportunidad en territorio rival si las dudas con el pateador persisten en el campo.",
+      "accion": "Sienta o corta a Harrison Butker y busca opciones más estables en waivers esta semana 8.",
       "en": {
-        "titulo": "Bears acquire star defensive tackle Jeffery Simmons",
+        "titulo": "Harrison Butker Retains Chiefs Job Under Mounting Pressure",
         "claves": [
-          "Jeffery Simmons traded to the Chicago Bears",
-          "Titans receive two first-round draft picks",
-          "Chicago goes all-in for a Super Bowl"
+          "Chiefs stand by Harrison Butker despite his recent struggles.",
+          "Justin Tucker impressed Kansas City with a perfect tryout.",
+          "Butker enters Week 8 on a remarkably short leash."
         ],
-        "contexto": "The Chicago Bears made a blockbuster trade to acquire star defensive tackle Jeffery Simmons from the Tennessee Titans in exchange for two first-round draft picks. This massive move positions the Bears as true Super Bowl contenders.",
-        "fantasy": "In fantasy football, this trade significantly boosts the outlook for the Chicago defense, making them a strong unit to target and start in upcoming weekly matchups.",
-        "equipo_impacto": "The Bears defense gains an elite interior playmaker, while the Titans pivot toward a full roster rebuild with extra draft capital.",
-        "accion": "Target the Bears defense on waivers for week 8.",
-        "etiqueta": "WAIVER",
-        "impacto": "SUBE",
-        "equipo": "CHI",
-        "equipos": [
-          "CHI",
-          "TEN"
-        ],
-        "jugadores": [
-          "Jeffery Simmons"
-        ]
+        "contexto": "Despite his recent struggles on the field, the Chiefs are standing by Harrison Butker as their primary kicker for Week 8. Veteran Justin Tucker turned heads with a flawless tryout session and waits in the wings, but Kansas City currently views Tucker as valuable insurance and a developmental resource while Butker gets the opportunity to right the ship and regain his trademark field goal consistency.",
+        "fantasy": "From a fantasy perspective, Harrison Butker is a volatile start that you should avoid in Week 8. He sits outside top projections led by Will Reichard at 12.9 pts and Spencer Shrader at 11.6 pts. With Tucker lurking in the building, any missed kick could accelerate an in-season change. In 10-team and 12-team redraft leagues, streaming more reliable kickers off waivers is the smartest tactical move.",
+        "equipo_impacto": "Kansas City puts its special teams unit under intense scrutiny. Andy Reid may lean toward going for it on 4th down in plus territory if kicking uncertainty continues to linger.",
+        "accion": "Bench or drop Harrison Butker for a safer streaming kicker in Week 8."
       },
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "CHI",
-      "equipos": [
-        "CHI",
-        "TEN"
-      ],
-      "jugadores": [],
       "fuentes": [
         {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50043542/2026-trade-deadline-grades-latest-best-worst-deals",
-          "t": "NFL trade deadline grades: Jeffery Simmons, DeForest Buckner, Quenton Nelson"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50319483/how-jeffery-simmons-landed-bears",
-          "t": "How Jeffery Simmons landed with the Bears"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50319153/jeffery-simmons-trade-titans-bears-draft-picks-deadline",
-          "t": "Bears get Jeffery Simmons: Key intel on blockbuster trade"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50318351/sources-bears-trade-all-pro-dt-jeffery-simmons",
-          "t": "Bears acquire All-Pro DT Jeffery Simmons in trade with Titans"
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/chiefs-harrison-butker-struggles-justin-tucker-signs/",
+          "t": "\n                        Chiefs stand by Harrison Butker despite struggles, Justin Tucker waiting in wings\n                    "
         }
+      ],
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "KC",
+      "equipos": [
+        "KC"
+      ],
+      "jugadores": [
+        "4227"
       ],
       "menciona": []
     }
@@ -148,11 +124,11 @@
       "estatus": "Duda"
     },
     {
-      "id": "10229",
+      "id": "1466",
       "estatus": "Duda"
     },
     {
-      "id": "1466",
+      "id": "10229",
       "estatus": "Duda"
     },
     {
@@ -180,7 +156,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "5947",
+      "id": "5854",
       "estatus": "Duda"
     },
     {
@@ -188,7 +164,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "5854",
+      "id": "5947",
       "estatus": "Duda"
     },
     {
@@ -228,12 +204,12 @@
       "estatus": "Duda"
     },
     {
-      "id": "8142",
-      "estatus": "Fuera"
-    },
-    {
       "id": "4983",
       "estatus": "Duda"
+    },
+    {
+      "id": "8142",
+      "estatus": "Fuera"
     },
     {
       "id": "4177",
@@ -286,17 +262,17 @@
     "9758",
     "9482",
     "5849",
-    "5045",
     "11435",
-    "NYJ",
-    "12545",
+    "5045",
     "5189",
+    "12545",
+    "NYJ",
     "5927",
+    "BAL",
     "9502",
     "11610",
-    "BAL",
-    "11624",
-    "9511"
+    "13330",
+    "11624"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
