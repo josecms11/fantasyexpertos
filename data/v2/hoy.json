@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-30T03:06:24.383Z",
-  "ultimaIA": "2026-10-30T03:06:24.383Z",
+  "actualizado": "2026-10-30T03:52:00.990Z",
+  "ultimaIA": "2026-10-30T03:52:00.990Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,43 +14,43 @@
   ],
   "noticias": [
     {
-      "id": "n20261030030600",
-      "fecha": "2026-10-30T03:06:24.383Z",
+      "id": "n20261030035200",
+      "fecha": "2026-10-30T03:52:00.990Z",
       "semana": 8,
-      "titulo": "Christian Watson regresa milagrosamente tras visita al hospital",
+      "titulo": "Josh Jacobs firma 2 TD en triunfo de Packers",
       "claves": [
-        "Sufrió lesión de pecho tras recepción de 53 yardas.",
-        "Fue trasladado al hospital por precaución en 1ra mitad.",
-        "Regresó al partido contra Panthers disipando peores temores."
+        "Jacobs anota 2 TD en la victoria 27-19 de Green Bay.",
+        "Green Bay mejora su récord a 5-3 tras vencer a Panthers.",
+        "Se consolida como RB1 élite indiscutible en formatos PPR y estándar."
       ],
-      "contexto": "El receptor de Green Bay, Christian Watson, protagonizó un momento dramático este jueves frente a Carolina. Tras atrapar un pase de 53 yardas en la 1ra mitad, abandonó el emparrillado con molestias en el pecho y fue trasladado al hospital local por mera precaución. Para sorpresa de todos, el cuerpo médico autorizó su retorno inmediato al estadio, reincorporándose a la acción ofensiva durante el mismo encuentro y evitando un escenario que pintaba para ser catastrófico.",
-      "fantasy": "Su vuelta al emparrillado es un respiro monumental si lo tienes en ligas Redraft o Dynasty. Evitar una lesión mayor mantiene su etiqueta de WR3 con techo de WR2 en semanas favorables por su capacidad de generar jugadas grandes. El volumen de pases profundos sigue intacto en el esquema de Green Bay. Si tus ligas operan con waivers tardíos, no lo vendas en pánico; su estatus físico luce estable tras este susto.",
-      "equipo_impacto": "La ofensiva de Green Bay respira aliviada. Sin Jayden Reed en reserva de lesionados, perder a su principal amenaza vertical habría colapsado el espaciado terrestre y aéreo. Su presencia mantiene el valor de los demás receptores y el balance ofensivo del equipo.",
-      "accion": "Mantenlo seguro en tu banca o alineación y descarta ofertas de remate por pánico tras este susto médico.",
-      "en": {
-        "titulo": "Christian Watson returns after hospital trip against Panthers",
-        "claves": [
-          "Suffered chest injury after a 53-yard reception.",
-          "Taken to local hospital for evaluation in 1st half.",
-          "Returned to the contest, calming severe fantasy injury fears."
-        ],
-        "contexto": "Packers wide receiver Christian Watson gave fantasy managers a massive scare Thursday against Carolina. After hauling in an explosive 53-yard reception during the 1st half, he exited with a chest issue and went to the hospital for precautionary evaluation. In an unexpected turn, medical personnel cleared him quickly, allowing Watson to return to the stadium and re-enter the contest, dodging what initially appeared to be a devastating multi-week injury.",
-        "fantasy": "Watson returning to action is fantastic news for managers across redraft and dynasty formats. Dodging serious structural damage keeps his weekly WR3 upside alive, fueled by elite downfield target share. If anyone in your league tried buying low while he was hospitalized, hold firm. His physical status looks clear for upcoming matchups, and his big-play ability remains essential in standard and PPR setups moving forward into the 2nd half of the year.",
-        "equipo_impacto": "Green Bay dodged an offensive nightmare. With Jayden Reed on injured reserve, losing Watson's field-stretching speed would have severely cramped spacing for the run game and complementary pass catchers.",
-        "accion": "Keep Watson rostered with confidence and reject any lowball trade offers stemming from his brief hospital visit."
-      },
+      "contexto": "Josh Jacobs comandó el ataque terrestre de Green Bay al conseguir 2 TD en el triunfo 27-19 sobre los Panthers en el inicio de la semana 8. Aunque Carolina presionó y apretó el marcador en el cuarto periodo, los Packers lograron resistir para colocar su récord en 5-3 durante el duelo de jueves por la noche. Jacobs demostró una vez más su valor determinante dentro de la zona roja ofensiva.",
+      "fantasy": "La actuación de 2 TD reafirma a Josh Jacobs como un RB1 imprescindible en todas las ligas de fantasy, tanto en formatos estándar como PPR. Con Kaleb Johnson fuera por decisión del entrenador en este juego, el volumen y las oportunidades de gol de línea recaen por completo en Jacobs. Su producción semanal ofrece una base de puntos sólida que debes alinear en cualquier enfrentamiento sin dudar.",
+      "equipo_impacto": "El ataque de Green Bay mantiene el equilibrio necesario para apoyar a Jordan Love. La contundencia de Jacobs en corto yardaje quita presión al juego aéreo y permite a los Packers manejar los tiempos del partido, elevando la eficiencia global de la ofensiva tras mejorar su marca a 5-3.",
+      "accion": "Mantén a Josh Jacobs como titular inamovible de tu alineación cada semana.",
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50324081/packers-christian-watson-hospital-chest-injury-panthers",
-          "t": "Packers' Christian Watson returns to game after hospital trip for chest injury"
+          "u": "https://www.espn.com/nfl/story/_/id/50322670/nfl-green-bay-packers-panthers-jordan-love-bryce-young",
+          "t": "Josh Jacobs scores twice as Packers dispatch Panthers"
         },
         {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/christian-watson-injury-update-packers-wr-hospital/",
-          "t": "\n                        Packers&#039; Christian Watson returns against Panthers after chest injury, hospital visit\n                    "
+          "m": "Yahoo Sports",
+          "u": "https://sports.yahoo.com/articles/thursday-night-football-packers-hold-033445723.html",
+          "t": "Thursday Night Football: Packers hold on for 27-19 win over Panthers"
         }
       ],
+      "en": {
+        "titulo": "Josh Jacobs Scores Twice in Packers Thursday Night Win",
+        "claves": [
+          "Jacobs scores 2 TD in Green Bay's 27-19 victory.",
+          "Green Bay improves to 5-3 after beating Carolina.",
+          "Jacobs cements his status as an elite every-week RB1."
+        ],
+        "contexto": "Josh Jacobs powered Green Bay's offense by scoring 2 TD in a 27-19 victory over the Panthers to kick off week 8. Carolina made a strong push in the fourth quarter to tighten the game, but the Packers held on to improve their record to 5-3 on Thursday night. Jacobs once again proved to be the focal point of the red-zone attack.",
+        "fantasy": "With a 2 TD performance, Josh Jacobs solidifies his standing as an elite, matchup-proof RB1 in all fantasy formats, including standard and PPR leagues. Having Kaleb Johnson out by coach decision left the backfield completely centered around Jacobs near the goal line. His consistent touchdown upside and heavy workload give fantasy managers a reliable, high-end floor every single week.",
+        "equipo_impacto": "Jacobs provides Green Bay with crucial offensive balance, relieving pressure from Jordan Love. His red-zone effectiveness keeps drives alive and allows the Packers to control game script, strengthening the entire unit as the team moves to 5-3 on the season.",
+        "accion": "Keep Josh Jacobs locked into your fantasy starting lineup as an elite RB1."
+      },
       "etiqueta": "TENDENCIA",
       "impacto": "SUBE",
       "equipo": "GB",
@@ -59,7 +59,7 @@
         "CAR"
       ],
       "jugadores": [
-        "8167"
+        "5850"
       ],
       "menciona": []
     }
@@ -235,14 +235,14 @@
     "JAX",
     "11783",
     "9480",
-    "13296",
     "6650",
+    "13296",
     "7042",
     "NE",
     "12498",
     "LV",
-    "13298",
     "1166",
+    "13298",
     "12482",
     "8134",
     "13424",
@@ -265,12 +265,12 @@
     "7561",
     "SF",
     "9758",
-    "8132",
     "11435",
+    "8132",
     "9482",
     "5849",
-    "5045",
     "13330",
+    "5045",
     "5189",
     "5927",
     "12545",

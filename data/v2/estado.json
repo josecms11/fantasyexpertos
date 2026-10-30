@@ -1,15 +1,21 @@
 {
-  "fecha": "2026-10-30T03:07:28.207Z",
+  "fecha": "2026-10-30T04:02:27.916Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.1s] YouTube: 0 nuevos, 20 en total",
-    "[0.9s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[2.2s] ESPN: lesiones 799 · noticias 50",
-    "[2.3s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
-    "[3.2s] Fuentes nuevas: 2 · horario pico · toca IA: true",
-    "[3.3s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[65.0s] IA OK con gemini-3.8-flash",
-    "[65.0s] Noticias nuevas verificadas: 1",
-    "[66.1s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 337 · semana de juego 8 · IA usada hoy 7/40"
+    "[0.2s] YouTube: 0 nuevos, 20 en total",
+    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[3.0s] ESPN: lesiones 799 · noticias 50",
+    "[3.1s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
+    "[3.5s] Fuentes nuevas: 5 · horario pico · toca IA: true",
+    "[3.7s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[153.7s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
+    "[279.2s] IA OK con gemini-3.7-flash",
+    "[279.2s] Noticias nuevas verificadas: 1",
+    "[430.2s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
+    "[580.2s] Gemini sin respuesta gemini-3.7-flash The operation was aborted due to timeout",
+    "[630.0s] IA OK con gemini-3.6-flash",
+    "[630.0s] Blog descartado por verificación: Buccaneers D/ST → matchup contradice la calificación (FÁCIL)",
+    "[630.0s] Blog: sin tiempo en esta corrida, sigue en la próxima",
+    "[630.0s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 338 · semana de juego 8 · IA usada hoy 9/40"
   ]
 }
