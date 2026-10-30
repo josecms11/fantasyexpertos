@@ -1,17 +1,12 @@
 {
-  "fecha": "2026-10-30T21:15:59.634Z",
+  "fecha": "2026-10-30T21:54:56.711Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 15 nuevos, 20 en total",
-    "[0.8s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[2.0s] ESPN: lesiones 799 · noticias 50",
-    "[2.0s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
-    "[2.2s] Fuentes nuevas: 12 · horario pico · toca IA: false",
-    "[3.3s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[11.2s] Gemini respuesta inválida gemini-3.5-flash-lite STOP {\n  \"es\": {\n    \"titulo\": \"¿Vale la pena agregar a Ryan Flournoy en la semana 8?\",\n    \"descripcion\": \"Analizamos si debes fichar a Ryan Flournoy en tu fantasy ",
-    "[11.2s] Blog: respuesta incompleta para Ryan Flournoy",
-    "[17.0s] IA OK con gemini-3.5-flash-lite",
-    "[17.0s] Blog: ¿Arrancar o sentar a Amon-Ra St. Brown en la semana 8? / Should you start Amon-Ra St. Brown in Week 8?",
-    "[17.0s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 342 · semana de juego 8 · IA usada hoy 34/40"
+    "[0.4s] YouTube: 15 nuevos, 20 en total",
+    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[2.6s] ESPN: lesiones 799 · noticias 50",
+    "[2.6s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
+    "[3.1s] Fuentes nuevas: 16 · horario pico · toca IA: false",
+    "[4.0s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 342 · semana de juego 8 · IA usada hoy 34/40"
   ]
 }
