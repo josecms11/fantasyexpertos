@@ -1,26 +1,12 @@
 {
-  "fecha": "2026-10-30T06:59:24.537Z",
+  "fecha": "2026-10-30T07:55:24.405Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 0 nuevos, 20 en total",
-    "[0.8s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[4.1s] ESPN: lesiones 799 · noticias 50",
-    "[4.2s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
-    "[5.0s] Fuentes nuevas: 3 · horario normal · toca IA: true",
-    "[5.2s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[7.4s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[100.9s] IA OK con gemini-3.7-flash",
-    "[100.9s] Noticias nuevas verificadas: 1",
-    "[107.1s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[107.2s] Modelo sin cuota hoy gemini-3.7-flash 429",
-    "[118.4s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[120.2s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
-    "[126.1s] IA OK con gemini-3.5-flash-lite",
-    "[126.1s] Blog descartado por verificación: Buccaneers D/ST → matchup contradice la calificación (FÁCIL)",
-    "[126.2s] Modelo sin cuota hoy gemini-3.8-flash 429",
-    "[130.6s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[159.8s] IA OK con gemini-3.5-flash",
-    "[159.8s] Blog: Christian Watson: ¿juega en Semana 8? Lesión y fantasy / Christian Watson Injury Update: Will He Play Week 8? Fantasy Impact",
-    "[159.8s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 339 · semana de juego 8 · IA usada hoy 13/40"
+    "[0.4s] YouTube: 15 nuevos, 20 en total",
+    "[1.1s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[2.2s] ESPN: lesiones 799 · noticias 50",
+    "[2.3s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
+    "[2.5s] Fuentes nuevas: 0 · horario normal · toca IA: false",
+    "[3.3s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 339 · semana de juego 8 · IA usada hoy 13/40"
   ]
 }
