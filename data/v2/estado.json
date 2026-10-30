@@ -1,18 +1,22 @@
 {
-  "fecha": "2026-10-30T08:45:58.501Z",
+  "fecha": "2026-10-30T09:34:48.785Z",
   "log": [
     "[0.0s] Inicio",
     "[0.3s] YouTube: 15 nuevos, 20 en total",
-    "[0.9s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[2.1s] ESPN: lesiones 799 · noticias 50",
-    "[2.1s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
-    "[2.4s] Fuentes nuevas: 1 · horario normal · toca IA: true",
-    "[2.6s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[15.1s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[21.6s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
-    "[24.1s] IA OK con gemini-3.5-flash-lite",
-    "[24.1s] Descartada: Christian Watson regresa milagrosamente tras visita hospitalaria → duplicada",
-    "[24.1s] Noticias nuevas verificadas: 0",
-    "[25.2s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 339 · semana de juego 8 · IA usada hoy 14/40"
+    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[1.8s] ESPN: lesiones 799 · noticias 50",
+    "[1.8s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
+    "[2.2s] Fuentes nuevas: 1 · horario normal · toca IA: true",
+    "[2.3s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[17.4s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
+    "[19.0s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
+    "[21.0s] IA OK con gemini-3.5-flash-lite",
+    "[21.0s] Descartada: Jeffery Simmons llega a los Bears → duplicada",
+    "[21.0s] Noticias nuevas verificadas: 0",
+    "[22.6s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
+    "[25.6s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
+    "[28.8s] IA OK con gemini-3.5-flash-lite",
+    "[28.8s] Resumen semana 8",
+    "[28.8s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 339 · semana de juego 8 · IA usada hoy 16/40"
   ]
 }
