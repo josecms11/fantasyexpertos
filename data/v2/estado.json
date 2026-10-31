@@ -1,22 +1,17 @@
 {
-  "fecha": "2026-10-31T13:37:18.068Z",
+  "fecha": "2026-10-31T14:16:24.790Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 15 nuevos, 20 en total",
-    "[0.7s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[1.6s] ESPN: lesiones 799 · noticias 50",
-    "[2.5s] Auto-ajuste FX: {\"hl\":6,\"mEf\":30,\"mTd\":120,\"aPrev\":0.2} error 4.790 → 4.782",
-    "[2.5s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[2.7s] Fuentes nuevas: 3 · horario normal · toca IA: false",
-    "[3.7s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[7.2s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[10.0s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[14.9s] IA OK con gemini-3.5-flash-lite",
-    "[14.9s] Blog: ¿Arrancar o sentar a Joe Burrow en la semana 8? / Should you start Joe Burrow in Week 8?",
-    "[16.7s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[166.7s] Gemini sin respuesta gemini-3.7-flash The operation was aborted due to timeout",
-    "[171.6s] IA OK con gemini-3.5-flash-lite",
-    "[171.6s] Blog: Travis Etienne Jr.: ¿juega en la semana 8 y fantasy? / Travis Etienne Jr. injury update: Week 8 outlook",
-    "[171.6s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 348 · semana de juego 8 · IA usada hoy 20/40"
+    "[0.3s] YouTube: 15 nuevos, 20 en total",
+    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[2.2s] ESPN: lesiones 799 · noticias 50",
+    "[2.2s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[2.5s] Fuentes nuevas: 6 · horario pico · toca IA: true",
+    "[2.6s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[3.1s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
+    "[3.5s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
+    "[6.1s] Gemini respuesta inválida gemini-3.5-flash-lite STOP {\n  \"noticias\": [\n    {\n      \"titulo\": \"Colts valoran traspaso de Jonathan Taylor\",\n      \"claves\": [\n        \"Jonathan Taylor figura en rumores de cambio en I",
+    "[6.1s] Noticias nuevas verificadas: 0",
+    "[6.9s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 348 · semana de juego 8 · IA usada hoy 21/40"
   ]
 }
