@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-31T02:16:46.336Z",
-  "ultimaIA": "2026-10-31T00:17:32.702Z",
+  "actualizado": "2026-10-31T03:04:44.020Z",
+  "ultimaIA": "2026-10-31T03:04:44.020Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,135 +14,45 @@
   ],
   "noticias": [
     {
-      "id": "n20261031001700",
-      "fecha": "2026-10-31T00:17:32.702Z",
+      "id": "n20261031030400",
+      "fecha": "2026-10-31T03:04:44.020Z",
       "semana": 8,
-      "titulo": "Rashee Rice regresa con Chiefs ante los Broncos",
+      "titulo": "Jordan Love supera histórico récord de Brett Favre",
       "claves": [
-        "Rashee Rice superó molestias en el tendón de la corva.",
-        "Enfrenta a Denver este domingo en la semana 8.",
-        "Recupera de inmediato su rol estelar en la ofensiva."
+        "Jordan Love supera a Brett Favre",
+        "Tres mariscales abridores desde 1992",
+        "Impresionante arranque de temporada"
       ],
-      "contexto": "Buenas noticias para Kansas City antes del choque de la semana 8 contra los Broncos. El receptor abierto Rashee Rice está perfilado para reaparecer este domingo tras superar la lesión de tendón de la corva que lo marginó recientemente. Rice completó su proceso de recuperación y los reportes confirman su disponibilidad para medirse ante la defensiva de Denver, dándole a Patrick Mahomes su arma principal para mover las cadenas por aire.",
-      "fantasy": "El regreso de Rice modifica el panorama de receptores en ligas Redraft y Dynasty de formato PPR. Con Tyquan Thornton en IR, Rice retoma su posición como WR1 indiscutible del equipo con potencial de top 15 semanal. Si lo tenías en la banca o en la reserva médica, debes alinearlo directamente en tu puesto titular de WR o Flex. Su presencia eleva la eficiencia aérea de Patrick Mahomes frente a un rival divisional exigente.",
-      "equipo_impacto": "La ofensiva de Chiefs recupera dinamismo por el centro del campo. Travis Kelce tendrá menor congestión en doble cobertura y los receptores secundarios verán rutas más abiertas gracias a la amenaza constante de Rice en trayectorias cortas e intermedias.",
-      "accion": "Activa a Rashee Rice de tu reserva y colócalo en tu alineación titular este domingo.",
+      "contexto": "El mariscal de campo de Green Bay, Jordan Love, logró superar a Brett Favre en cantidad de partidos consecutivos con múltiples anotaciones por aire al inicio de una temporada, marcando un hito en la historia de la franquicia desde 1992.",
+      "fantasy": "Su impacto en fantasy es directo, manteniéndolo como un mariscal de campo estelar semana a semana en ligas estándar y superflex, elevando además el techo de sus receptores disponibles.",
+      "equipo_impacto": "Este momento histórico consolida la ofensiva aérea de los Packers y da total confianza a toda la unidad ofensiva de cara a la mitad de la temporada.",
+      "accion": "Asegura a Jordan Love como tu mariscal titular sin pensarlo en la semana 8.",
       "en": {
-        "titulo": "Rashee Rice returns for Chiefs against the Broncos",
+        "titulo": "Jordan Love breaks Brett Favre historical record",
         "claves": [
-          "Rashee Rice overcame his lingering hamstring injury.",
-          "Returns Sunday against the division rival Denver Broncos.",
-          "Reclaims his clear WR1 role immediately for Kansas City."
+          "Jordan Love passes Brett Favre",
+          "Three starting quarterbacks since 1992",
+          "Impressive season start"
         ],
-        "contexto": "Great news for Kansas City heading into the Week 8 matchup against the Broncos. Wide receiver Rashee Rice is fully expected to return this Sunday after moving past the hamstring issue that sidelined him. Rice successfully completed his recovery, and reports confirm his availability to face Denver's defense, handing Patrick Mahomes his most trusted chain-mover through the air in a crucial divisional clash.",
-        "fantasy": "Rice's comeback immediately impacts both Redraft and Dynasty PPR leagues. With Tyquan Thornton on IR, Rice returns as the team's unquestioned WR1 boasting weekly top 15 upside. If you had him stashed on your bench or IR slot, plug him straight into your starting WR or Flex lineup. His presence elevates Mahomes' ceiling against a tough divisional rival that forces quick, decisive passes.",
-        "equipo_impacto": "Kansas City's offense regains vital rhythm over the middle of the field. Travis Kelce faces fewer double teams, while complementary targets benefit from softer coverage thanks to Rice's elite underneath separation.",
-        "accion": "Activate Rashee Rice off your bench and start him with confidence this Sunday."
+        "contexto": "Green Bay quarterback Jordan Love managed to surpass Brett Favre in consecutive games with multiple passing touchdowns to start a season, setting a franchise milestone since 1992.",
+        "fantasy": "His fantasy impact remains direct, keeping him as a weekly locked-in quarterback in standard and superflex leagues while elevating his pass-catchers.",
+        "equipo_impacto": "This milestone solidifies the Packers passing attack and brings absolute confidence to the entire offensive unit heading into midseason.",
+        "accion": "Lock in Jordan Love as your starting quarterback for week 8."
       },
-      "etiqueta": "START",
+      "etiqueta": "TENDENCIA",
       "impacto": "SUBE",
-      "equipo": "KC",
+      "equipo": "GB",
       "equipos": [
-        "KC",
-        "DEN"
+        "GB"
       ],
       "jugadores": [
-        "10229"
+        "6804"
       ],
       "fuentes": [
         {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50329594/chiefs-get-rashee-rice-back-injury-broncos-game",
-          "t": "Chiefs get Rashee Rice back from injury for Broncos game"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261031001701",
-      "fecha": "2026-10-31T00:17:32.702Z",
-      "semana": 8,
-      "titulo": "Jeremiyah Love regresa con Cardinals en semana 8",
-      "claves": [
-        "Superó su esguince de tobillo tras 2 semanas fuera.",
-        "Apunta a recibir carga inmediata en el backfield terrestre.",
-        "James Conner y Trey Benson siguen en lista IR."
-      ],
-      "contexto": "Los Arizona Cardinals reciben un respiro de cara al duelo de la semana 8. El corredor novato Jeremiyah Love está listo para volver al emparrillado este domingo tras perderse los últimos 2 partidos por una molesta lesión de tobillo. La ofensiva terrestre del equipo necesitaba urgentemente su talento, considerando las ausencias prolongadas en la rotación de corredores, por lo que su reintegración llega en el momento más oportuno.",
-      "fantasy": "El regreso de Love sacude las decisiones de fantasy en formatos PPR y ligas profundas. Con James Conner y Trey Benson instalados en la lista de lesionados (IR), Love asume de inmediato la oportunidad de acaparar toques terrestres de alta calidad y oportunidades en zona roja. Considéralo un corredor RB2 con excelente techo o una opción estelar de Flex para tu alineación en ligas de 12 o más participantes.",
-      "equipo_impacto": "Arizona recupera velocidad y explosividad entre los tacles. La presencia de Love reduce la carga sobre Kyler Murray en jugadas terrestres diseñadas y amplía las variantes en jugadas de play-action para el juego de pase.",
-      "accion": "Alinea a Jeremiyah Love como RB2 o Flex si requieres volumen terrestre garantizado.",
-      "en": {
-        "titulo": "Jeremiyah Love set to return for the Cardinals",
-        "claves": [
-          "Rookie tailback returns following two missed games with ankle.",
-          "Expected to seize significant volume across the Arizona backfield.",
-          "Backfield mates James Conner and Trey Benson remain on IR."
-        ],
-        "contexto": "The Arizona Cardinals receive a huge offensive boost ahead of Week 8. Rookie running back Jeremiyah Love is scheduled to return to the field this Sunday after missing the past 2 games due to an ankle sprain. Arizona's ground game desperately needed his juice given their extensive backfield injuries, making his timely clearance a major development for the remainder of the regular season.",
-        "fantasy": "Love's return carries immediate fantasy ramifications in PPR and deep formats. With both James Conner and Trey Benson on injured reserve, Love steps directly into high-leverage touches and primary red-zone duties. Treat him as a solid RB2 with high-end upside or an enticing Flex start in 12-team leagues, especially against defenses vulnerable to agile rushers.",
-        "equipo_impacto": "Arizona's offensive scheme regains necessary explosion between the tackles. Love's return alleviates rushing burdens on Kyler Murray while creating cleaner play-action passing lanes against loaded defensive fronts.",
-        "accion": "Slot Jeremiyah Love directly into your lineup as a reliable RB2 or Flex starter."
-      },
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "ARI",
-      "equipos": [
-        "ARI"
-      ],
-      "jugadores": [
-        "13287"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50329508/cardinals-rookie-rb-jeremiyah-love-ankle-set-return",
-          "t": "Cardinals rookie RB Jeremiyah Love (ankle) set to return"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261031001702",
-      "fecha": "2026-10-31T00:17:32.702Z",
-      "semana": 8,
-      "titulo": "DJ Moore en duda con Bills ante Ravens",
-      "claves": [
-        "DJ Moore figura como cuestionable por lesión en hombro.",
-        "Buffalo prepara contingencias ofensivas para enfrentar a Baltimore.",
-        "Su disponibilidad final se definirá previo al calentamiento dominical."
-      ],
-      "contexto": "Incertidumbre en el ataque aéreo de Buffalo para la semana 8. Los Bills catalogaron como cuestionable al receptor DJ Moore debido a una molestia en la articulación del hombro sufrida recientemente. El cuerpo técnico admitió que ya preparan contingencias ofensivas en caso de que su estelar receptor no supere las pruebas físicas antes de medirse a los Baltimore Ravens este domingo, obligando a monitorear su evolución hasta el calentamiento previo.",
-      "fantasy": "El estatus de Moore compromete alineaciones en ligas Redraft y Dynasty en formato PPR. Si Moore juega, se mantiene como un WR2 viable pero con riesgo de recaída o conteo limitado de jugadas. Si queda fuera, Dalton Kincaid (quien también está cuestionable con dolencia de pecho) y los receptores secundarios absorberían más envíos de Josh Allen. Ten preparado un reemplazo de domingo por la tarde o lunes por la noche.",
-      "equipo_impacto": "La ausencia de Moore restaría separación profunda al esquema de Buffalo. Josh Allen tendría que apoyarse más en rutas cortas hacia James Cook III y depender de formaciones con 2 alas cerradas para mover las cadenas.",
-      "accion": "Prepara una alternativa en tu banca por si DJ Moore queda inactivo este domingo.",
-      "en": {
-        "titulo": "DJ Moore questionable for Bills against Baltimore Ravens",
-        "claves": [
-          "DJ Moore listed as questionable with AC joint shoulder issue.",
-          "Buffalo develops contingency plans ahead of Week 8 battle.",
-          "Game-time decision expected following pregame warmups on Sunday."
-        ],
-        "contexto": "Uncertainty looms over Buffalo's passing game leading into Week 8. The Bills officially listed wide receiver DJ Moore as questionable due to an AC joint shoulder injury. Coaching staff confirmed they are preparing offensive contingencies should their star perimeter playmaker fail pregame physical checks against the Baltimore Ravens on Sunday, making his availability a true wire-to-wire situation for fantasy managers to track closely.",
-        "fantasy": "Moore's game status complicates lineup decisions in both Redraft and Dynasty PPR leagues. If active, he functions as a volatile WR2 carrying reinjury risk and potential snap limitations. Should he sit, secondary perimeter options and tight end Dalton Kincaid would see expanded volume from Josh Allen. Make sure you line up a pivot playing in the late Sunday window or on Monday.",
-        "equipo_impacto": "Missing Moore significantly reduces Buffalo's vertical separation on the outside. Josh Allen would likely lean more heavily on checkdowns to James Cook III while deploying heavier multi-tight end sets.",
-        "accion": "Stash a late-game pivot ready on your bench in case Moore is ruled out."
-      },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "BUF",
-      "equipos": [
-        "BUF",
-        "BAL"
-      ],
-      "jugadores": [
-        "4983"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50329615/bills-making-contingencies-hurt-starters-available",
-          "t": "Bills making contingencies if hurt starters aren't available"
+          "m": "Yahoo Sports",
+          "u": "https://sports.yahoo.com/articles/jordan-love-passes-brett-favre-021251584.html",
+          "t": "Jordan Love passes Brett Favre for multi-touchdown games to start season"
         }
       ],
       "menciona": []
@@ -316,26 +226,26 @@
     "WAS",
     "6130",
     "11783",
-    "TB",
     "13294",
+    "TB",
     "12498",
-    "9480",
     "4037",
+    "9480",
     "13296",
-    "13298",
-    "4147",
     "12499",
+    "4147",
+    "13298",
     "8134",
     "11637",
     "6650",
     "JAX",
-    "7042",
     "13424",
-    "1166",
+    "7042",
     "13286",
+    "1166",
     "10213",
-    "NE",
-    "LV"
+    "10219",
+    "NE"
   ],
   "soltados": [
     "8129",
@@ -346,23 +256,23 @@
     "12718",
     "CLE",
     "HOU",
+    "12457",
     "11581",
     "13150",
-    "12457",
     "8132",
-    "13330",
     "9482",
     "13424",
+    "13330",
     "6130",
     "11624",
     "5849",
     "5045",
     "9758",
-    "9502",
     "11610",
+    "9502",
     "12545",
-    "3321",
-    "11637"
+    "13296",
+    "3321"
   ],
   "duelo": {
     "a": "Puka Nacua",
