@@ -1,21 +1,18 @@
 {
-  "fecha": "2026-10-31T08:31:29.488Z",
+  "fecha": "2026-10-31T09:10:23.156Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 15 nuevos, 20 en total",
-    "[0.9s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[3.4s] ESPN: lesiones 799 · noticias 50",
-    "[3.4s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[4.2s] Fuentes nuevas: 0 · horario normal · toca IA: false",
-    "[5.4s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[155.4s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
-    "[161.6s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[168.2s] Gemini respuesta inválida gemini-3.5-flash-lite STOP {\n  \"es\": {\n    \"titulo\": \"Emanuel Wilson en la semana 8: ¿Vender o aguantar?\",\n    \"descripcion\": \"Descubre si debes vender o aguantar a Emanuel Wilson para la",
-    "[168.2s] Blog: respuesta incompleta para Emanuel Wilson",
-    "[318.2s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
-    "[468.2s] Gemini sin respuesta gemini-3.7-flash The operation was aborted due to timeout",
-    "[473.6s] IA OK con gemini-3.5-flash-lite",
-    "[473.6s] Blog: ¿Arrancar o sentar a Mason Taylor en la semana 8? / Should you start Mason Taylor in Week 8?",
-    "[473.6s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 347 · semana de juego 8 · IA usada hoy 13/40"
+    "[0.8s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[3.0s] ESPN: lesiones 799 · noticias 50",
+    "[3.0s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[3.5s] Fuentes nuevas: 1 · horario normal · toca IA: true",
+    "[3.6s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[5.5s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
+    "[155.5s] Gemini sin respuesta gemini-3.7-flash The operation was aborted due to timeout",
+    "[157.5s] IA OK con gemini-3.5-flash-lite",
+    "[157.5s] Descartada: Jeffery Simmons listo para brillar con Bears → duplicada",
+    "[157.5s] Noticias nuevas verificadas: 0",
+    "[158.5s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 347 · semana de juego 8 · IA usada hoy 14/40"
   ]
 }
