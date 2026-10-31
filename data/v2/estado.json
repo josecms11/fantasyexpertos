@@ -1,19 +1,22 @@
 {
-  "fecha": "2026-10-31T01:25:21.377Z",
+  "fecha": "2026-10-31T02:17:16.802Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 0 nuevos, 20 en total",
-    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[3.6s] ESPN: lesiones 799 · noticias 50",
-    "[4.4s] Auto-ajuste FX: {\"hl\":6,\"mEf\":30,\"mTd\":120,\"aPrev\":0.2} error 4.790 → 4.782",
-    "[4.4s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[4.8s] Fuentes nuevas: 3 · horario pico · toca IA: true",
-    "[5.0s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[5.4s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[5.8s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[6.1s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[6.8s] IA OK con gemini-3.5-flash-lite",
-    "[6.8s] Noticias nuevas verificadas: 0",
-    "[7.9s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 345 · semana de juego 8 · IA usada hoy 4/40"
+    "[0.1s] YouTube: 0 nuevos, 20 en total",
+    "[0.9s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[3.0s] ESPN: lesiones 799 · noticias 50",
+    "[3.1s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[3.6s] Fuentes nuevas: 1 · horario pico · toca IA: true",
+    "[3.8s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[4.4s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
+    "[5.2s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
+    "[5.4s] Modelo sin cuota hoy gemini-3.6-flash 429",
+    "[28.3s] IA OK con gemini-3.5-flash-lite",
+    "[28.3s] Noticias nuevas verificadas: 0",
+    "[30.0s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
+    "[30.4s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
+    "[33.5s] IA OK con gemini-3.5-flash-lite",
+    "[33.5s] Resumen semana 8",
+    "[33.5s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 345 · semana de juego 8 · IA usada hoy 6/40"
   ]
 }
