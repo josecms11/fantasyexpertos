@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-31T11:27:31.386Z",
-  "ultimaIA": "2026-10-31T03:47:40.138Z",
+  "actualizado": "2026-10-31T12:04:47.796Z",
+  "ultimaIA": "2026-10-31T12:04:47.796Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,46 +14,47 @@
   ],
   "noticias": [
     {
-      "id": "n20261031034700",
-      "fecha": "2026-10-31T03:47:40.138Z",
+      "id": "n20261031120402",
+      "fecha": "2026-10-31T12:04:47.796Z",
       "semana": 8,
-      "titulo": "Philip Rivers apunta a dirigir a NC State",
+      "titulo": "Kyren Williams y Blake Corum potencian a los Rams",
       "claves": [
-        "Philip Rivers es el objetivo principal para dirigir a NC State.",
-        "El exmariscal de la NFL fue considerado hace 6 días.",
-        "La vacante de entrenador en jefe del Wolfpack sigue abierta."
+        "Demuestran ser una dupla peligrosa tras vencer a los Raiders",
+        "Kyren Williams brilla con proyección de 17.4 puntos fantasy",
+        "Sean McVay busca maximizar el talento de ambos corredores"
       ],
-      "contexto": "El exquarterback de la NFL, Philip Rivers, se convirtió en el foco principal para ocupar el puesto de entrenador en jefe de NC State. Hace 6 días, Rivers fue señalado como un fuerte candidato para entrar en la contienda por el puesto que se encuentra vacante en el Wolfpack. La institución universitaria busca concretar la llegada de su histórica figura colegial tras su retiro de los emparrillados profesionales.",
-      "fantasy": "En términos de fantasy football tradicional para la semana 8, esta noticia tiene un impacto nulo en tus alineaciones y rosters. Rivers está completamente retirado de la NFL, por lo que no aporta estadísticas ni puntos para ligas de redraft o formatos estándar. Si juegas ligas universitarias o formatos devy colegiales, monitorear el posible esquema ofensivo de NC State bajo su mando podría cobrar relevancia de cara a futuros reclutamientos.",
-      "equipo_impacto": "Para los programas colegiales representa una posible revolución con un exjugador estelar al mando del vestidor. En el panorama de la NFL no altera alineaciones de semana 8, pero refuerza el paso de quarterbacks experimentados hacia el nivel de entrenadores en el circuito universitario.",
-      "accion": "Ignora a Rivers en waivers de NFL y concéntrate en tus titulares activos de semana 8.",
+      "contexto": "Tras su reciente actuación frente a los Raiders, Kyren Williams y Blake Corum demostraron que pueden complementarse como una potente arma de doble vía para la ofensiva de los Rams, obligando al cuerpo técnico a seguir exprimiendo sus habilidades.",
+      "fantasy": "Kyren Williams consolida su estatus como un arma pesada con su proyección de 17.4 puntos fantasy, mientras que el rol de Blake Corum añade profundidad táctica en ligas profundas.",
+      "equipo_impacto": "Esta sólida combinación le da una nueva dimensión al ataque terrestre de Los Ángeles, equilibrando el playbook de Sean McVay.",
+      "accion": "Asegúrate de mantener a Kyren Williams en el rol estelar de tu equipo y vigila a Corum en waivers.",
+      "en": {
+        "titulo": "Kyren Williams and Blake Corum boost the Rams",
+        "claves": [
+          "They prove to be a dangerous duo after beating the Raiders",
+          "Kyren Williams shines with a 17.4 fantasy points projection",
+          "Sean McVay looks to maximize the talent of both running backs"
+        ],
+        "contexto": "Following their recent performance against the Raiders, Kyren Williams and Blake Corum proved they can complement each other as a potent two-way weapon for the Rams offense, forcing the coaching staff to keep maximizing their skills.",
+        "fantasy": "Kyren Williams solidifies his status as a heavy-hitter with his 17.4 fantasy points projection, while Blake Corum's role adds tactical depth in deeper leagues.",
+        "equipo_impacto": "This solid combination gives a new dimension to Los Angeles' ground attack, balancing Sean McVay's playbook.",
+        "accion": "Make sure to keep Kyren Williams in your starting lineup and monitor Corum on waivers."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "LAR",
+      "equipos": [
+        "LAR"
+      ],
+      "jugadores": [
+        "8150",
+        "11586"
+      ],
       "fuentes": [
         {
           "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/report-philip-rivers-emerged-focus-030320015.html",
-          "t": "Report: Philip Rivers has &quot;emerged as the focus&quot; of NC State coaching search"
+          "u": "https://sports.yahoo.com/articles/kyren-williams-blake-corum-balance-113000298.html",
+          "t": "Kyren Williams, Blake Corum balance the Rams&#39; offense. Can Sean McVay unlock their potential?"
         }
-      ],
-      "en": {
-        "titulo": "Philip Rivers Emerges as NC State Coaching Focus",
-        "claves": [
-          "Philip Rivers is the primary target for NC State head coach.",
-          "Former NFL quarterback was linked to vacancy 6 days ago.",
-          "The Wolfpack head-coaching position remains officially open right now."
-        ],
-        "contexto": "Former NFL quarterback Philip Rivers has officially emerged as the prime target to take over the head coaching job at NC State. Exactly 6 days ago, Rivers was reported to be firmly in the mix for the Wolfpack vacancy. The university program is now focusing heavily on bringing back their former college star as they look to fill their top coaching position following his storied professional playing career.",
-        "fantasy": "For traditional NFL fantasy leagues in week 8, this report carries zero value for active lineups. Rivers is fully retired from professional football and generates 0 fantasy points across standard formats and waivers. However, managers playing in deep devy formats or college fantasy setups should track NC State offensive tendencies closely if Rivers takes over, as future collegiate recruit values could shift under his potential leadership.",
-        "equipo_impacto": "This news impacts NC State by potentially placing a veteran NFL mind in charge of the program. Across the NFL landscape, it causes no roster movement or scheme adjustments for week 8, serving strictly as a notable coaching transition for the former veteran signal-caller.",
-        "accion": "Ignore Rivers on NFL waivers and focus solely on your active week 8 starters."
-      },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "LAC",
-      "equipos": [
-        "LAC"
-      ],
-      "jugadores": [
-        "331"
       ],
       "menciona": []
     }
@@ -224,8 +225,8 @@
     "7561",
     "6130",
     "11783",
-    "12457",
     "WAS",
+    "12457",
     "13294",
     "4037",
     "12499",
@@ -233,16 +234,16 @@
     "12498",
     "TB",
     "13296",
-    "9480",
+    "13424",
     "13298",
+    "9480",
     "8134",
     "11637",
-    "13424",
     "13150",
     "13286",
-    "6650",
-    "JAX",
     "10219",
+    "JAX",
+    "6650",
     "7042",
     "11647",
     "10213"
@@ -258,21 +259,21 @@
     "CLE",
     "HOU",
     "6130",
-    "11581",
     "13424",
+    "11581",
     "8132",
     "9482",
     "13330",
     "11624",
     "5849",
-    "13150",
     "5045",
+    "13150",
     "9758",
     "9502",
     "11610",
     "13296",
-    "1166",
-    "3321"
+    "12545",
+    "8122"
   ],
   "duelo": {
     "a": "Puka Nacua",
