@@ -1,23 +1,15 @@
 {
-  "fecha": "2026-10-31T03:11:39.615Z",
+  "fecha": "2026-10-31T03:49:02.314Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.1s] YouTube: 0 nuevos, 20 en total",
-    "[0.9s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[3.4s] ESPN: lesiones 799 · noticias 50",
-    "[3.5s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[4.0s] Fuentes nuevas: 1 · horario pico · toca IA: true",
-    "[4.1s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[9.0s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[159.0s] Gemini sin respuesta gemini-3.7-flash The operation was aborted due to timeout",
-    "[160.9s] IA OK con gemini-3.5-flash-lite",
-    "[160.9s] Noticias nuevas verificadas: 1",
-    "[257.3s] IA OK con gemini-3.8-flash",
-    "[257.3s] Blog: Lesión de Mike Evans: ¿juega semana 8 y qué hacer en fantasy? / Mike Evans injury update: will he play Week 8? Fantasy news",
-    "[407.3s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
-    "[409.1s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[419.1s] IA OK con gemini-3.5-flash-lite",
-    "[419.1s] Blog descartado por verificación: Emanuel Wilson → matchup contradice la calificación (DIFÍCIL)",
-    "[419.1s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 346 · semana de juego 8 · IA usada hoy 9/40"
+    "[0.2s] YouTube: 0 nuevos, 20 en total",
+    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[3.3s] ESPN: lesiones 799 · noticias 50",
+    "[3.4s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[3.7s] Fuentes nuevas: 1 · horario pico · toca IA: true",
+    "[3.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[84.5s] IA OK con gemini-3.8-flash",
+    "[84.5s] Noticias nuevas verificadas: 1",
+    "[85.6s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 347 · semana de juego 8 · IA usada hoy 10/40"
   ]
 }
