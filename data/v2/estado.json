@@ -1,17 +1,17 @@
 {
-  "fecha": "2026-10-31T14:16:24.790Z",
+  "fecha": "2026-10-31T14:54:35.947Z",
   "log": [
     "[0.0s] Inicio",
     "[0.3s] YouTube: 15 nuevos, 20 en total",
     "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[2.2s] ESPN: lesiones 799 · noticias 50",
-    "[2.2s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[2.5s] Fuentes nuevas: 6 · horario pico · toca IA: true",
-    "[2.6s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[3.1s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[3.5s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[6.1s] Gemini respuesta inválida gemini-3.5-flash-lite STOP {\n  \"noticias\": [\n    {\n      \"titulo\": \"Colts valoran traspaso de Jonathan Taylor\",\n      \"claves\": [\n        \"Jonathan Taylor figura en rumores de cambio en I",
-    "[6.1s] Noticias nuevas verificadas: 0",
-    "[6.9s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 348 · semana de juego 8 · IA usada hoy 21/40"
+    "[2.0s] ESPN: lesiones 799 · noticias 50",
+    "[2.0s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[2.5s] Fuentes nuevas: 2 · horario pico · toca IA: true",
+    "[2.7s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[2.9s] Modelo sin cuota hoy gemini-3.8-flash 429",
+    "[3.1s] Modelo sin cuota hoy gemini-3.7-flash 429",
+    "[3.8s] IA OK con gemini-3.5-flash-lite",
+    "[3.8s] Noticias nuevas verificadas: 0",
+    "[4.6s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 348 · semana de juego 8 · IA usada hoy 22/40"
   ]
 }
