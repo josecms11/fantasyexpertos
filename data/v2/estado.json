@@ -1,17 +1,17 @@
 {
-  "fecha": "2026-10-31T11:01:13.420Z",
+  "fecha": "2026-10-31T11:27:35.048Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.3s] YouTube: 15 nuevos, 20 en total",
-    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[3.1s] ESPN: lesiones 799 · noticias 50",
-    "[3.1s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[3.6s] Fuentes nuevas: 4 · horario normal · toca IA: true",
-    "[3.7s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[153.7s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
-    "[303.7s] Gemini sin respuesta gemini-3.7-flash The operation was aborted due to timeout",
-    "[306.3s] Gemini respuesta inválida gemini-3.5-flash-lite STOP {\n  \"noticias\": [\n    {\n      \"titulo\": \"Tee Higgins domina los lanzamientos en ventana apretada\",\n      \"claves\": [\n        \"Ningún receptor supera a Higgins e",
-    "[306.3s] Noticias nuevas verificadas: 0",
-    "[307.3s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 347 · semana de juego 8 · IA usada hoy 16/40"
+    "[0.2s] YouTube: 15 nuevos, 20 en total",
+    "[0.9s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[2.5s] ESPN: lesiones 799 · noticias 50",
+    "[2.5s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[3.5s] Fuentes nuevas: 1 · horario normal · toca IA: true",
+    "[3.6s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[4.0s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
+    "[4.6s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
+    "[5.1s] IA OK con gemini-3.5-flash-lite",
+    "[5.1s] Noticias nuevas verificadas: 0",
+    "[6.2s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 347 · semana de juego 8 · IA usada hoy 17/40"
   ]
 }
