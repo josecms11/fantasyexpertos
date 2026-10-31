@@ -1,16 +1,19 @@
 {
-  "fecha": "2026-10-31T16:00:43.164Z",
+  "fecha": "2026-10-31T16:37:47.639Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.3s] YouTube: 15 nuevos, 20 en total",
-    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[2.1s] ESPN: lesiones 799 · noticias 50",
-    "[2.2s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[2.5s] Fuentes nuevas: 4 · horario pico · toca IA: true",
-    "[2.7s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[5.1s] IA OK con gemini-3.5-flash-lite",
-    "[5.1s] Descartada (sin fuente citada): Daron Payne sufre fractura y dice adiós al año",
-    "[5.1s] Noticias nuevas verificadas: 0",
-    "[5.9s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 348 · semana de juego 8 · IA usada hoy 24/40"
+    "[0.6s] YouTube: 15 nuevos, 20 en total",
+    "[1.7s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[4.1s] ESPN: lesiones 799 · noticias 50",
+    "[4.1s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[4.7s] Fuentes nuevas: 1 · horario pico · toca IA: true",
+    "[5.0s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[7.4s] IA OK con gemini-3.5-flash-lite",
+    "[7.4s] Noticias nuevas verificadas: 1",
+    "[13.4s] Gemini respuesta inválida gemini-3.5-flash-lite STOP {\n  \"es\": {\n    \"titulo\": \"¿Makai Lemon en la semana 8: vale la pena agregarlo?\",\n    \"descripcion\": \"Descubre si debes agregar a Makai Lemon en tu fantasy foot",
+    "[13.4s] Blog: respuesta incompleta para Makai Lemon",
+    "[18.9s] IA OK con gemini-3.5-flash-lite",
+    "[19.0s] Blog: ¿Arrancar o sentar a Matthew Stafford en la semana 8? / Should you start Matthew Stafford in Week 8?",
+    "[19.0s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 349 · semana de juego 8 · IA usada hoy 27/40"
   ]
 }

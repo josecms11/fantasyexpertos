@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-31T16:00:39.431Z",
-  "ultimaIA": "2026-10-31T12:04:47.796Z",
+  "actualizado": "2026-10-31T16:37:32.814Z",
+  "ultimaIA": "2026-10-31T16:37:32.814Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,46 +14,45 @@
   ],
   "noticias": [
     {
-      "id": "n20261031120402",
-      "fecha": "2026-10-31T12:04:47.796Z",
+      "id": "n20261031163700",
+      "fecha": "2026-10-31T16:37:32.814Z",
       "semana": 8,
-      "titulo": "Kyren Williams y Blake Corum potencian a los Rams",
+      "titulo": "Micah Parsons apunta a la semana 12",
       "claves": [
-        "Demuestran ser una dupla peligrosa tras vencer a los Raiders",
-        "Kyren Williams brilla con proyección de 17.4 puntos fantasy",
-        "Sean McVay busca maximizar el talento de ambos corredores"
+        "Micah Parsons apunta al juego de semana 12",
+        "Regresaría contra los Rams en Thanksgiving Eve",
+        "Fuera desde su rotura de ligamento en 2024"
       ],
-      "contexto": "Tras su reciente actuación frente a los Raiders, Kyren Williams y Blake Corum demostraron que pueden complementarse como una potente arma de doble vía para la ofensiva de los Rams, obligando al cuerpo técnico a seguir exprimiendo sus habilidades.",
-      "fantasy": "Kyren Williams consolida su estatus como un arma pesada con su proyección de 17.4 puntos fantasy, mientras que el rol de Blake Corum añade profundidad táctica en ligas profundas.",
-      "equipo_impacto": "Esta sólida combinación le da una nueva dimensión al ataque terrestre de Los Ángeles, equilibrando el playbook de Sean McVay.",
-      "accion": "Asegúrate de mantener a Kyren Williams en el rol estelar de tu equipo y vigila a Corum en waivers.",
+      "contexto": "El estelar defensivo Micah Parsons tiene en la mira la semana 12 para su esperado regreso a los emparrillados con Green Bay, apuntando específicamente al duelo de Thanksgiving Eve frente a los Rams. El pass rusher no ha visto acción desde que sufrió una grave lesión de ligamento cruzado anterior durante la semana 15 de la temporada pasada.",
+      "fantasy": "Para los managers de fantasy football en ligas profundas o de dynasty, este reporte da esperanza de contar pronto con un elemento diferencial en el departamento defensivo. Aunque no estará disponible para la semana 8, su inminente retorno obliga a monitorear el mercado de waivers defensivos con anticipación.",
+      "equipo_impacto": "La defensiva de los Packers recibirá un impulso anímico y táctico masivo cuando Parsons vuelva al emparrillado, elevando la presión sobre los mariscales rivales y beneficiando indirectamente el tiempo de posesión de la ofensiva.",
+      "accion": "Monitorea su estatus en ligas IDP de cara a su posible reaparición.",
       "en": {
-        "titulo": "Kyren Williams and Blake Corum boost the Rams",
+        "titulo": "Micah Parsons targeting Week 12 return",
         "claves": [
-          "They prove to be a dangerous duo after beating the Raiders",
-          "Kyren Williams shines with a 17.4 fantasy points projection",
-          "Sean McVay looks to maximize the talent of both running backs"
+          "Micah Parsons eyes Week 12 return",
+          "Targeting Rams game on Thanksgiving Eve",
+          "Out since suffering torn ACL last season"
         ],
-        "contexto": "Following their recent performance against the Raiders, Kyren Williams and Blake Corum proved they can complement each other as a potent two-way weapon for the Rams offense, forcing the coaching staff to keep maximizing their skills.",
-        "fantasy": "Kyren Williams solidifies his status as a heavy-hitter with his 17.4 fantasy points projection, while Blake Corum's role adds tactical depth in deeper leagues.",
-        "equipo_impacto": "This solid combination gives a new dimension to Los Angeles' ground attack, balancing Sean McVay's playbook.",
-        "accion": "Make sure to keep Kyren Williams in your starting lineup and monitor Corum on waivers."
+        "contexto": "Star pass rusher Micah Parsons is reportedly eyeing a Week 12 return for Green Bay's Thanksgiving Eve matchup against the Rams. He has been sidelined since tearing his ACL in Week 15 of last season.",
+        "fantasy": "For fantasy managers in IDP leagues, this timeline offers a clear target to prepare for a major defensive reinforcement down the stretch.",
+        "equipo_impacto": "The Packers defense will get a massive boost to their pass rush once he returns to the field.",
+        "accion": "Monitor his recovery for upcoming IDP lineup decisions.",
+        "en": "Monitor his recovery for upcoming IDP lineup decisions."
       },
       "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "LAR",
+      "impacto": "NEUTRO",
+      "equipo": "GB",
       "equipos": [
+        "GB",
         "LAR"
       ],
-      "jugadores": [
-        "8150",
-        "11586"
-      ],
+      "jugadores": [],
       "fuentes": [
         {
           "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/kyren-williams-blake-corum-balance-113000298.html",
-          "t": "Kyren Williams, Blake Corum balance the Rams&#39; offense. Can Sean McVay unlock their potential?"
+          "u": "https://sports.yahoo.com/nfl/article/packers-micah-parsons-reportedly-eyeing-week-12-return-for-thanksgiving-eve-game-against-rams-145129348.html",
+          "t": "Packers&#39; Micah Parsons reportedly eyeing Week 12 return for Thanksgiving Eve game against Rams"
         }
       ],
       "menciona": []
@@ -225,8 +224,8 @@
     "7561",
     "6130",
     "11783",
-    "13294",
     "13424",
+    "13294",
     "WAS",
     "12499",
     "4037",
@@ -234,8 +233,8 @@
     "12457",
     "12498",
     "TB",
-    "13296",
     "13150",
+    "13296",
     "13298",
     "11637",
     "8134",
@@ -243,8 +242,8 @@
     "13286",
     "10219",
     "11647",
-    "JAX",
     "9756",
+    "JAX",
     "6650",
     "7042"
   ],
@@ -260,20 +259,20 @@
     "6130",
     "HOU",
     "8132",
-    "13424",
     "9482",
     "11624",
+    "13424",
     "11581",
+    "8122",
     "13330",
     "5849",
-    "8122",
     "5045",
-    "9502",
     "13296",
+    "9502",
     "9758",
     "11610",
     "8154",
-    "4035"
+    "3321"
   ],
   "duelo": {
     "a": "Puka Nacua",
