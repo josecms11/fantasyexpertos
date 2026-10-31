@@ -1,23 +1,19 @@
 {
-  "fecha": "2026-10-31T00:23:53.066Z",
+  "fecha": "2026-10-31T01:25:21.377Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 0 nuevos, 20 en total",
-    "[0.9s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[3.2s] ESPN: lesiones 799 · noticias 50",
-    "[3.2s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[3.8s] Fuentes nuevas: 18 · horario pico · toca IA: true",
-    "[4.0s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[86.3s] IA OK con gemini-3.8-flash",
-    "[86.4s] Noticias nuevas verificadas: 3",
-    "[225.3s] IA OK con gemini-3.8-flash",
-    "[225.3s] Blog: ¿Arrancar o sentar a Brock Purdy en la semana 8? / Should you start Brock Purdy in Week 8?",
-    "[375.3s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
-    "[375.8s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[377.6s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[377.7s] Modelo sin cuota hoy gemini-3.5-flash 429",
-    "[383.6s] IA OK con gemini-3.5-flash-lite",
-    "[383.6s] Blog: ¿Vale la pena agregar a Ryan Flournoy en la semana 8? / Should you pick up Ryan Flournoy in Week 8?",
-    "[383.6s] Listo: 3 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 345 · semana de juego 8 · IA usada hoy 3/40"
+    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[3.6s] ESPN: lesiones 799 · noticias 50",
+    "[4.4s] Auto-ajuste FX: {\"hl\":6,\"mEf\":30,\"mTd\":120,\"aPrev\":0.2} error 4.790 → 4.782",
+    "[4.4s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[4.8s] Fuentes nuevas: 3 · horario pico · toca IA: true",
+    "[5.0s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[5.4s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
+    "[5.8s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
+    "[6.1s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
+    "[6.8s] IA OK con gemini-3.5-flash-lite",
+    "[6.8s] Noticias nuevas verificadas: 0",
+    "[7.9s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 345 · semana de juego 8 · IA usada hoy 4/40"
   ]
 }
