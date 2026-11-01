@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-01T15:01:58.333Z",
-  "ultimaIA": "2026-11-01T14:24:02.122Z",
+  "actualizado": "2026-11-01T15:36:44.055Z",
+  "ultimaIA": "2026-11-01T15:36:44.055Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,51 +14,45 @@
   ],
   "noticias": [
     {
-      "id": "n20261101142401",
-      "fecha": "2026-11-01T14:24:02.122Z",
+      "id": "n20261101153600",
+      "fecha": "2026-11-01T15:36:44.055Z",
       "semana": 8,
-      "titulo": "Saquon Barkley confirmado para jugar tras rumores de cambio",
+      "titulo": "Emeka Egbuka queda fuera para la semana 8",
       "claves": [
-        "Confirmado totalmente para alinear en el juego de semana 8.",
-        "Eagles aclaran postura sobre el estelar corredor rumbo al deadline.",
-        "Titular indiscutible en fantasy tras bajas clave en ofensiva."
+        "Receptor descartado por lesión en pie",
+        "Baja confirmada para la semana 8",
+        "Ajustar alineación de fantasy hoy"
       ],
-      "contexto": "Ante los constantes rumores sobre la fecha límite de traspasos fijada para el 10 de noviembre, los Eagles enviaron un mensaje rotundo al confirmar que Saquon Barkley está listo para jugar en la semana 8 contra Washington. En medio de un ataque mermado por las ausencias de Jalen Hurts y DeVonta Smith, Barkley se consolida como la pieza central indiscutible del esquema ofensivo de Filadelfia.",
-      "fantasy": "Con las ausencias por lesión en el ataque aéreo de Filadelfia, Barkley absorberá una dosis masiva de toques tanto por tierra como en pases cortos. En formatos PPR y estándar es un RB1 absoluto de elite para la semana 8. Si tenías dudas por los rumores de traspaso, queda completamente descartada cualquier restricción y debes alinearlo con total confianza en todas tus ligas.",
-      "equipo_impacto": "La presencia de Barkley sostiene todo el plan de juego de Filadelfia, aliviando la presión sobre el mariscal de campo suplente tras la baja de Hurts a reserva de lesionados.",
-      "accion": "Arranca a Saquon Barkley en el 100% de tus alineaciones fantasy este domingo.",
+      "contexto": "El receptor novato de Tampa Bay, Emeka Egbuka, fue declarado inactivo oficialmente para el partido de la semana 8 tras sufrir una molestia en el pie. Esta baja confirmada deja 1 hueco importante en el cuerpo de receptores del equipo antes de su compromiso del domingo frente a su rival, obligando a los entrenadores a ajustar su plan aéreo.",
+      "fantasy": "Con Emeka Egbuka fuera para la semana 8, los dueños de fantasy deben mandarlo a la banca de inmediato. Esta ausencia elimina su producción semanal en ligas formato PPR y estándar, abriendo volumen de pases para otros receptores de la plantilla en matchups profundos. No arriesgues 0 puntos en tu alineación titular y muévelo a la banca hoy.",
+      "equipo_impacto": "La ausencia de Egbuka restringe las opciones aéreas de Buccaneers en la semana 8. El ataque deberá redistribuir las dianas entre los demás receptores y alas cerradas para mantener el avance por aire.",
+      "accion": "Sienta a Emeka Egbuka en todas tus ligas hoy mismo.",
       "en": {
-        "titulo": "Saquon Barkley active for Week 8 amid trade talk",
+        "titulo": "Emeka Egbuka ruled out for Week 8",
         "claves": [
-          "Fully cleared and confirmed to play in Week 8.",
-          "Eagles send clear message regarding trade deadline rumors.",
-          "Elite RB1 start with key Philadelphia starters ruled out."
+          "Receiver ruled out with foot injury",
+          "Confirmed inactive for Week 8 matchup",
+          "Adjust fantasy lineups immediately today"
         ],
-        "contexto": "Amid persistent trade rumors leading into the Nov. 10 deadline, Philadelphia sent a strong signal by confirming Saquon Barkley will play in Week 8 against Washington. With quarterback Jalen Hurts on IR and DeVonta Smith sidelined, Barkley firmly stands as the single most critical element of the Eagles offensive game plan.",
-        "fantasy": "With injuries crippling Philadelphia's passing attack, Barkley is set to absorb a monster workload through carries and short targets. He operates as an unquestioned elite RB1 in all PPR and standard leagues for Week 8. Any trade distraction concerns are officially cleared, making him a must-start across all fantasy formats.",
-        "equipo_impacto": "Barkley's active status anchors Philadelphia's entire offensive scheme, taking immense pressure off the backup quarterback with Hurts missing time on IR.",
-        "accion": "Start Saquon Barkley in 100% of your fantasy lineups this Sunday."
+        "contexto": "Tampa Bay rookie wide receiver Emeka Egbuka has been officially ruled out for Week 8 due to a foot injury. His confirmed absence leaves 1 major void in the passing attack ahead of Sunday's game, forcing the coaching staff to adjust their game plan through the air.",
+        "fantasy": "With Emeka Egbuka ruled out for Week 8, fantasy managers must bench him immediately. His absence removes all fantasy value in PPR and standard formats for this week, while opening target volume for secondary options in deep leagues. Avoid scoring 0 points and move him to your bench today.",
+        "equipo_impacto": "Egbuka's absence thins out the Buccaneers receiving options in Week 8. The offense will need to redistribute passing targets among remaining wideouts and tight ends to move the ball.",
+        "accion": "Bench Emeka Egbuka in all fantasy leagues today."
       },
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "PHI",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "TB",
       "equipos": [
-        "PHI",
-        "WAS"
+        "TB"
       ],
       "jugadores": [
-        "4866"
+        "12514"
       ],
       "fuentes": [
         {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/saquon-barkley-trade-rumors-eagles/",
-          "t": "\n                        Saquon Barkley trade rumors: Eagles send a clear message about RB&#039;s future in Philadelphia\n                   "
-        },
-        {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/nfl/live/nfl-scores-news-live-updates-week-8-schedule-inactives-highlights-stats-where-to-watch-140132612.html",
-          "t": "Week 8 NFL schedule, scores, live updates: A.J. Brown questionable; Lamar Jackson, Saquon Barkley to play"
+          "m": "ESPN",
+          "u": "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50289130/fantasy-football-injuries-nfl-week-8-inactive-active",
+          "t": "Fantasy football Week 8 inactives: Chase, Barkley to play; Brown, Egbuka out"
         }
       ],
       "menciona": []
@@ -232,14 +226,14 @@
     "4147",
     "11783",
     "13294",
-    "7561",
     "WAS",
+    "7561",
     "12491",
     "12499",
     "4037",
     "TB",
-    "13286",
     "10219",
+    "13286",
     "11637",
     "12498",
     "13150",
@@ -250,18 +244,18 @@
     "DET",
     "8134",
     "3214",
-    "11581",
-    "JAX"
+    "JAX",
+    "11581"
   ],
   "soltados": [
     "8129",
     "11435",
     "7561",
-    "12489",
     "6130",
+    "12489",
     "3271",
-    "12457",
     "10235",
+    "12457",
     "12718",
     "CLE",
     "HOU",
@@ -278,7 +272,7 @@
     "3321",
     "9502",
     "5012",
-    "11834"
+    "11581"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
