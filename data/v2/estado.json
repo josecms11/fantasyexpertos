@@ -1,21 +1,16 @@
 {
-  "fecha": "2026-11-01T14:25:32.162Z",
+  "fecha": "2026-11-01T15:02:22.628Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.4s] YouTube: 15 nuevos, 20 en total",
-    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[2.3s] ESPN: lesiones 799 · noticias 50",
-    "[2.8s] Auto-ajuste FX: {\"hl\":6,\"mEf\":30,\"mTd\":120,\"aPrev\":0.2} error 4.805 → 4.796",
-    "[2.8s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[4.1s] Fuentes nuevas: 13 · horario pico · toca IA: true",
-    "[4.3s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[29.3s] IA OK con gemini-3.6-flash",
-    "[29.3s] Descartada: Jonathan Taylor enfrenta posible reducción de toques en semana 8 → duplicada",
-    "[29.3s] Noticias nuevas verificadas: 1",
-    "[56.9s] IA OK con gemini-3.6-flash",
-    "[56.9s] Blog: Lesión de A.J. Brown: ¿juega en la semana 8 y qué hacer en fantasy? / A.J. Brown injury update: will he play in Week 8? Fantasy impact",
-    "[92.9s] IA OK con gemini-3.6-flash",
-    "[92.9s] Blog: ¿Vender o aguantar a Elijah Mitchell? Valor de trade semana 8 / Should you sell or hold Elijah Mitchell? Week 8 trade value",
-    "[92.9s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 361 · semana de juego 8 · IA usada hoy 22/40"
+    "[0.3s] YouTube: 15 nuevos, 20 en total",
+    "[0.9s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[2.0s] ESPN: lesiones 799 · noticias 50",
+    "[2.1s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[2.3s] Fuentes nuevas: 9 · horario pico · toca IA: true",
+    "[2.4s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[25.5s] IA OK con gemini-3.6-flash",
+    "[25.5s] Descartada: Jonathan Taylor protagoniza rumores de cambio en semana 8 → duplicada",
+    "[25.5s] Noticias nuevas verificadas: 0",
+    "[26.4s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 361 · semana de juego 8 · IA usada hoy 23/40"
   ]
 }
