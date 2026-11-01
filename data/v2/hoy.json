@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-01T12:13:24.099Z",
-  "ultimaIA": "2026-11-01T11:03:01.060Z",
+  "actualizado": "2026-11-01T13:07:40.573Z",
+  "ultimaIA": "2026-11-01T13:07:40.573Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,47 +14,46 @@
   ],
   "noticias": [
     {
-      "id": "n20261101110300",
-      "fecha": "2026-11-01T11:03:01.060Z",
+      "id": "n20261101130701",
+      "fecha": "2026-11-01T13:07:40.573Z",
       "semana": 8,
-      "fuentes": [
-        {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/patriots-vs-dolphins-watch-week-100000061.html",
-          "t": "Patriots vs. Dolphins: How to watch the Week 8 game on Sunday"
-        }
-      ],
-      "titulo": "Drake Maye lidia duelo crucial ante Dolphins en semana 8",
+      "titulo": "Caleb Douglas gana protagonismo en la ofensiva de Dolphins",
       "claves": [
-        "Patriots se miden a Dolphins este domingo en semana 8",
-        "Drake Maye proyecta 20.9 pts fantasy contra defensa rival",
-        "Pase de anotacion es clave ante bajas en ataque"
+        "Caleb Douglas destaca en entrenamientos previo a la semana 8",
+        "Gana la confianza del cuerpo técnico de los Dolphins",
+        "Oportunidad de sumar dianas ante la baja de receptores"
       ],
-      "contexto": "New England se prepara para chocar contra Miami en la semana 8 dentro de un duelo divisional muy esperado. Los Patriots llegan buscando consolidar su ataque aereo a pesar de ausencias importantes en el cuerpo de receptores. Por su parte, la defensiva de Miami necesitara hacer ajustes inmediatos para frenar el avance terrestre y aereo en este compromiso dominical transmitido en vivo.",
-      "fantasy": "Drake Maye es una opcion solida de mariscal de campo para la semana 8 con una proyeccion de 20.9 pts en el modelo. A pesar de las bajas ofensivas de New England, su capacidad para generar jugadas con el brazo y por tierra lo mantiene como QB1 en ligas de 12 equipos. Consideralo un titular seguro en la mayoria de los formatos de fantasy football.",
-      "equipo_impacto": "La ofensiva de New England dependera en gran medida del ritmo que imponga su pasador titular. Sin varios receptores clave activos, el ataque aereo debera apoyarse mas en pases cortos y el juego terrestre para mover las cadenas eficientemente.",
-      "accion": "Alinea a Drake Maye como tu QB titular en la semana 8.",
+      "contexto": "El novato receptor Caleb Douglas ha comenzado a impresionar al cuerpo técnico de los Dolphins con su rendimiento tanto con el balón como sin él. Rumbo al enfrentamiento de la semana 8 frente a los Patriots, el novato ha mostrado un progreso notable que le abre la puerta a un mayor volumen de participación dentro del esquema aéreo de Miami.",
+      "fantasy": "El ascenso de Caleb Douglas lo coloca en el radar para ligas muy profundas de 14 o 16 equipos y formatos dynasty. Con De'Von Achane en IR, Miami busca nuevas armas para mover el balón. Aunque todavía no es momento de alinearlo de titular en la semana 8, vale la pena monitorearlo desde la agencia libre.",
+      "equipo_impacto": "La irrupción de Douglas añade profundidad al cuerpo de receptores de Miami. Su capacidad para generar yardas da variantes al mariscal de campo y reparte la atención de la defensiva secundaria rival.",
+      "accion": "Añádelo a tu lista de seguimiento en ligas profundas de fantasy.",
       "en": {
-        "titulo": "Drake Maye Faces Dolphins in Crucial Week 8 Matchup",
+        "titulo": "Caleb Douglas earning larger role in Dolphins offense",
         "claves": [
-          "Patriots play Dolphins this Sunday in Week 8",
-          "Drake Maye is projected for 20.9 fantasy pts",
-          "Passing game key despite injuries in receiver corps"
+          "Caleb Douglas impresses Dolphins coaches ahead of week 8",
+          "Rookie wideout shows progress on and off the ball",
+          "Intriguing stash candidate for deep and dynasty fantasy leagues"
         ],
-        "contexto": "New England prepares to square off against Miami in Week 8 in a highly anticipated divisional battle. The Patriots enter looking to establish their passing attack despite key absences across the receiving unit. On the other side, Miami's defense must adapt quickly to contain both ground and air play in this Sunday afternoon showdown broadcast live.",
-        "fantasy": "Drake Maye stands out as a solid starting quarterback option for Week 8 with a 20.9 pts projection in our model. Despite offensive absences for New England, his ability to extend plays with his arm and legs keeps him firmly in QB1 territory for 12-team leagues. Treat him as a safe start across most fantasy football formats.",
-        "equipo_impacto": "New England's offense will rely heavily on the tempo set by their starting signal-caller. With multiple key wideouts unavailable, the passing scheme will need to rely more on short completions and ground efficiency to sustain drives.",
-        "accion": "Start Drake Maye as a confident QB1 in Week 8."
+        "contexto": "Rookie wide receiver Caleb Douglas has begun to impress the Dolphins coaching staff with his development both on and off the ball. Heading into the week 8 matchup against the Patriots, the young receiver has shown notable progress that could earn him an increased share of targets in Miami's passing attack.",
+        "fantasy": "The emergence of Caleb Douglas puts him on the radar for deep 14-team or 16-team leagues and dynasty formats. With De'Von Achane on IR, Miami is searching for playmakers to step up. While he is not yet ready to start in week 8 lineups, he is worth monitoring on fantasy waiver wires.",
+        "equipo_impacto": "Douglas' growth adds valuable depth to Miami's receiving corps. His ability to produce creates additional options for the quarterback and forces secondary defenses to adjust their coverage schemes during games.",
+        "accion": "Add Caleb Douglas to your watchlist in deep fantasy leagues."
       },
-      "etiqueta": "START",
+      "etiqueta": "WAIVER",
       "impacto": "SUBE",
-      "equipo": "NE",
+      "equipo": "MIA",
       "equipos": [
-        "NE",
         "MIA"
       ],
       "jugadores": [
-        "11564"
+        "13296"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50342146/dolphins-wr-caleb-douglas-vs-pats-christian-gonzalez",
+          "t": "Miami Dolphins WR Caleb Douglas rounding into form ahead of Pats matchup"
+        }
       ],
       "menciona": []
     }
@@ -228,9 +227,9 @@
     "11783",
     "7561",
     "13294",
-    "12499",
     "WAS",
     "12491",
+    "12499",
     "4037",
     "13286",
     "10219",
@@ -243,9 +242,9 @@
     "11581",
     "12547",
     "8134",
-    "13298",
-    "3214",
     "7042",
+    "3214",
+    "13298",
     "DET"
   ],
   "soltados": [
@@ -263,13 +262,13 @@
     "HOU",
     "9482",
     "11624",
-    "13296",
     "5849",
+    "13296",
     "8132",
     "13330",
-    "9758",
     "3321",
     "5045",
+    "9758",
     "9502",
     "8121",
     "11834",

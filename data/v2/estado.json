@@ -1,12 +1,20 @@
 {
-  "fecha": "2026-11-01T12:13:25.742Z",
+  "fecha": "2026-11-01T13:08:34.156Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.3s] YouTube: 15 nuevos, 20 en total",
-    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[2.9s] ESPN: lesiones 799 · noticias 50",
-    "[2.9s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[3.5s] Fuentes nuevas: 7 · horario normal · toca IA: false",
-    "[4.6s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 359 · semana de juego 8 · IA usada hoy 17/40"
+    "[0.2s] YouTube: 15 nuevos, 20 en total",
+    "[0.9s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[2.7s] ESPN: lesiones 799 · noticias 50",
+    "[2.8s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[3.1s] Fuentes nuevas: 15 · horario normal · toca IA: true",
+    "[3.2s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[26.1s] IA OK con gemini-3.6-flash",
+    "[26.1s] Descartada: Saquon Barkley se queda en Eagles tras descartarse traspaso → duplicada",
+    "[26.1s] Noticias nuevas verificadas: 1",
+    "[46.3s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
+    "[52.8s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
+    "[56.4s] IA OK con gemini-3.5-flash-lite",
+    "[56.4s] Resumen semana 8",
+    "[56.4s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 360 · semana de juego 8 · IA usada hoy 19/40"
   ]
 }
