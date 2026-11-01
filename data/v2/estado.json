@@ -1,22 +1,15 @@
 {
-  "fecha": "2026-11-01T17:23:11.344Z",
+  "fecha": "2026-11-01T17:55:39.908Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.3s] YouTube: 15 nuevos, 20 en total",
-    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[2.5s] ESPN: lesiones 799 · noticias 50",
-    "[2.6s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[3.2s] Fuentes nuevas: 10 · horario pico · toca IA: true",
-    "[3.3s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[23.9s] IA OK con gemini-3.6-flash",
-    "[23.9s] Noticias nuevas verificadas: 1",
-    "[27.1s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[55.7s] IA OK con gemini-3.5-flash",
-    "[55.7s] Blog: ¿Arrancar o sentar a Trevor Lawrence en la semana 8? / Should you start Trevor Lawrence in Week 8?",
-    "[55.9s] Modelo sin cuota hoy gemini-3.6-flash 429",
-    "[56.0s] Modelo sin cuota hoy gemini-3.5-flash 429",
-    "[86.6s] IA OK con gemini-3.5-flash-lite",
-    "[86.6s] Blog: Lesión de Cam Skattebo: ¿juega en la semana 8 y qué hacer? / Cam Skattebo injury update: Week 8 status and fantasy advice",
-    "[86.6s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 364 · semana de juego 8 · IA usada hoy 29/40"
+    "[0.2s] YouTube: 15 nuevos, 20 en total",
+    "[0.8s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[2.3s] ESPN: lesiones 799 · noticias 50",
+    "[2.3s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[3.0s] Fuentes nuevas: 3 · horario pico · toca IA: true",
+    "[3.1s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[5.4s] Gemini respuesta inválida gemini-3.5-flash-lite STOP {\n  \"noticias\": [\n    {\n      \"titulo\": \"Browns y Steelers chocan por la cima divisional\",\n      \"claves\": [\n        \"Duelo clave en la AFC North en semana 8\",\n",
+    "[5.4s] Noticias nuevas verificadas: 0",
+    "[6.4s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 364 · semana de juego 8 · IA usada hoy 30/40"
   ]
 }
