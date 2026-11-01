@@ -1,15 +1,16 @@
 {
-  "fecha": "2026-11-01T17:55:39.908Z",
+  "fecha": "2026-11-01T18:32:15.052Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 15 nuevos, 20 en total",
-    "[0.8s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[2.3s] ESPN: lesiones 799 · noticias 50",
-    "[2.3s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[3.0s] Fuentes nuevas: 3 · horario pico · toca IA: true",
-    "[3.1s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[5.4s] Gemini respuesta inválida gemini-3.5-flash-lite STOP {\n  \"noticias\": [\n    {\n      \"titulo\": \"Browns y Steelers chocan por la cima divisional\",\n      \"claves\": [\n        \"Duelo clave en la AFC North en semana 8\",\n",
-    "[5.4s] Noticias nuevas verificadas: 0",
-    "[6.4s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 364 · semana de juego 8 · IA usada hoy 30/40"
+    "[0.5s] YouTube: 15 nuevos, 20 en total",
+    "[1.4s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[3.4s] ESPN: lesiones 799 · noticias 50",
+    "[3.5s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[4.1s] Fuentes nuevas: 5 · horario pico · toca IA: true",
+    "[4.3s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[29.7s] IA OK con gemini-3.5-flash-lite",
+    "[29.7s] Descartada: Jonathan Taylor genera dudas sobre su futuro en Colts → duplicada",
+    "[29.7s] Noticias nuevas verificadas: 2",
+    "[30.7s] Listo: 2 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 366 · semana de juego 8 · IA usada hoy 31/40"
   ]
 }
