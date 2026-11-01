@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-01T04:41:27.593Z",
-  "ultimaIA": "2026-11-01T03:54:13.195Z",
+  "actualizado": "2026-11-01T05:28:17.178Z",
+  "ultimaIA": "2026-11-01T05:28:17.178Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,33 +14,33 @@
   ],
   "noticias": [
     {
-      "id": "n20261101035400",
-      "fecha": "2026-11-01T03:54:13.195Z",
+      "id": "n20261101052800",
+      "fecha": "2026-11-01T05:28:17.178Z",
       "semana": 8,
-      "titulo": "Darian Mensah brilla con 3 TD ante North Carolina",
+      "titulo": "Miami vence a North Carolina en Chapel Hill",
       "claves": [
-        "Darian Mensah completó 22/29 pases para 274 yardas y 3 TD.",
-        "Miami mantuvo su paso perfecto al superar 38-35 a North Carolina.",
-        "Mark Fletcher Jr. aportó 43 yardas en 13 acarreos para el triunfo."
+        "Miami consigue importante triunfo como visitante en Chapel Hill.",
+        "El análisis del juego revela altibajos en el ataque.",
+        "Impacto directo en la evaluación de activos fantasy."
       ],
-      "contexto": "Los Miami Hurricanes mantuvieron su invicto tras superar 38-35 a North Carolina en un duelo electrizante. El mariscal de campo Darian Mensah lució impecable al completar 22/29 pases para 274 yardas, registrando 3 TD y 0 INT. El ataque terrestre dependió de Mark Fletcher Jr., quien sumó 43 yardas en 13 acarreos. Miami resolvió el encuentro apretado en Chapel Hill para sostener su buen momento en la campaña.",
-      "fantasy": "Para ligas de formato CFF o seguimiento de novatos universitarios en Dynasty, Darian Mensah consolida su valor tras firmar 3 TD y 274 yardas sin entregas de balón. Su precisión de 22/29 pases demuestra madurez bajo presión. Mark Fletcher Jr. tuvo un volumen moderado de 13 acarreos y 43 yardas, manteniéndose como una opción secundaria en formatos universitarios donde la producción aérea domina.",
-      "equipo_impacto": "El ataque de Miami lució eficiente a través del aire con las 274 yardas de Darian Mensah, mientras Mark Fletcher Jr. ofreció balance relativo con sus 13 acarreos y 43 yardas en la victoria 38-35.",
-      "accion": "Monitorea a Darian Mensah en formatos universitarios o Dynasty tras su actuación de 3 TD.",
+      "contexto": "Miami logró una victoria como visitante frente a North Carolina en Chapel Hill, un resultado relevante para evaluar el rendimiento colectivo del equipo en la recta actual. Aunque consiguieron el triunfo fuera de casa, el análisis profundo del encuentro deja ver aspectos positivos y dudas operativas en su esquema ofensivo. Este tipo de triunfos apretados refleja patrones clave de ejecución que influyen directamente en la valoración fantasy de sus piezas principales para la semana 8.",
+      "fantasy": "La victoria apretada de Miami muestra inconsistencias en el volumen ofensivo que deben monitorearse en ligas profundas. Para los formatos de fantasy, el rendimiento colectivo en partidos de visita suele ajustar las expectativas de producción semanal. Es recomendable evaluar con cautela a los receptores y corredores del ataque en semanas venideras, priorizando opciones con mayor volumen garantizado mientras se consolida la eficiencia del equipo en escenarios complicados como Chapel Hill.",
+      "equipo_impacto": "El triunfo en Chapel Hill afianza a Miami en la tabla, pero exhibe áreas de mejora en la protección y consistencia. Sus compañeros en el ataque verán variaciones en la distribución de toques si el plan de juego prioriza el control de reloj sobre la explosividad.",
+      "accion": "Monitorea la distribución de volumen en el ataque de Miami antes de definir alineaciones en la semana 8.",
       "en": {
-        "titulo": "Darian Mensah Shines With 3 TDs Against North Carolina",
+        "titulo": "Miami Wins Road Battle Against North Carolina",
         "claves": [
-          "Darian Mensah completed 22/29 passes for 274 yards and 3 TDs.",
-          "Miami remained undefeated with a 38-35 win over North Carolina.",
-          "Mark Fletcher Jr. added 43 rushing yards on 13 carries."
+          "Miami claims key road victory at Chapel Hill.",
+          "Game analysis reveals mixed results for offensive performance.",
+          "Direct impact on fantasy valuations for upcoming weeks."
         ],
-        "contexto": "The Miami Hurricanes preserved their undefeated record with a tight 38-35 victory over North Carolina. Quarterback Darian Mensah was highly efficient, completing 22/29 passes for 274 yards, 3 TDs, and 0 INTs. On the ground, Mark Fletcher Jr. handled 13 carries for 43 yards. Miami managed to close out the competitive contest in Chapel Hill to maintain their momentum this season.",
-        "fantasy": "In CFF leagues or Dynasty prospect tracking, Darian Mensah boosts his stock after generating 3 TDs and 274 passing yards without turnovers. His 22/29 completion line highlights efficiency in high-volume spots. Mark Fletcher Jr. provided modest production with 13 carries for 43 yards, remaining a situational option in college fantasy formats where passing output took priority in this matchup.",
-        "equipo_impacto": "Miami's offense was propelled by Darian Mensah's 274 passing yards and 3 TDs, while Mark Fletcher Jr. provided ground balance with 13 carries for 43 yards in the 38-35 win.",
-        "accion": "Target Darian Mensah in CFF and Dynasty formats following his 3 TD performance."
+        "contexto": "Miami earned a road victory against North Carolina in Chapel Hill, securing a crucial result to evaluate the team's overall trajectory. While they managed to get the win away from home, a deeper look into the contest reveals both positive signs and operational concerns within their offensive scheme. These hard-fought road wins highlight key execution patterns that directly impact the fantasy evaluation of their primary offensive assets moving forward into upcoming match-ups.",
+        "fantasy": "Miami's narrow victory highlights offensive volume inconsistencies that need monitoring in deeper leagues. For fantasy football formats, team performance in tough road environments often recalibrates weekly scoring projections. It is advisable to approach their skill-position players with caution in upcoming weeks, prioritizing targets with guaranteed volume while the team works to establish consistent efficiency in challenging road games like Chapel Hill.",
+        "equipo_impacto": "The road victory in Chapel Hill stabilizes Miami's record while exposing areas needing adjustment in execution. Surrounding skill players may experience shifts in touch distribution if game scripts favor clock management over big-play explosiveness.",
+        "accion": "Monitor volume trends in Miami's offense before finalizing your week 8 lineup decisions."
       },
       "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
+      "impacto": "NEUTRO",
       "equipo": "MIA",
       "equipos": [
         "MIA"
@@ -49,8 +49,8 @@
       "fuentes": [
         {
           "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/recap-miami-survives-north-carolina-034126681.html",
-          "t": "Recap: Miami survives North Carolina 38-35"
+          "u": "https://sports.yahoo.com/articles/good-bad-ugly-north-carolina-043211689.html",
+          "t": "The Good, The Bad, and The Ugly: North Carolina Tar Heels 2026 Edition"
         }
       ],
       "menciona": []
