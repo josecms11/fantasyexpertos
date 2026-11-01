@@ -1,20 +1,16 @@
 {
-  "fecha": "2026-11-01T03:56:39.929Z",
+  "fecha": "2026-11-01T04:42:18.535Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 0 nuevos, 20 en total",
     "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[3.8s] ESPN: lesiones 799 · noticias 50",
-    "[3.8s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[4.2s] Fuentes nuevas: 1 · horario pico · toca IA: true",
-    "[4.3s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[24.3s] IA OK con gemini-3.6-flash",
-    "[24.3s] Noticias nuevas verificadas: 1",
-    "[77.6s] Gemini respuesta inválida gemini-3.6-flash MAX_TOKENS {\n  \"titulo\": \"Jordan Love y Chuba Hubbard destacan en la Semana 8\",\n  \"claves\": [\n    \"Jordan Love entregó 22.5 pts y se consolida como QB1 confiable en fantas",
-    "[120.2s] IA OK con gemini-3.6-flash",
-    "[120.2s] Blog: ¿Vale la pena agregar a Samaje Perine en la Semana 8? / Should you pick up Samaje Perine in Week 8?",
-    "[150.6s] IA OK con gemini-3.6-flash",
-    "[150.6s] Blog descartado por verificación: Jayden Daniels → matchup contradice la calificación (FÁCIL)",
-    "[150.6s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 355 · semana de juego 8 · IA usada hoy 10/40"
+    "[3.1s] ESPN: lesiones 799 · noticias 50",
+    "[3.1s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[4.0s] Fuentes nuevas: 0 · horario normal · toca IA: false",
+    "[5.2s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[28.8s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
+    "[54.1s] IA OK con gemini-3.5-flash",
+    "[54.1s] Resumen semana 8",
+    "[54.1s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 355 · semana de juego 8 · IA usada hoy 11/40"
   ]
 }
