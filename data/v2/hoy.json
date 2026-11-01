@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-01T16:14:00.320Z",
-  "ultimaIA": "2026-11-01T15:36:44.055Z",
+  "actualizado": "2026-11-01T16:53:00.123Z",
+  "ultimaIA": "2026-11-01T16:53:00.123Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,45 +14,51 @@
   ],
   "noticias": [
     {
-      "id": "n20261101153600",
-      "fecha": "2026-11-01T15:36:44.055Z",
+      "id": "n20261101165300",
+      "fecha": "2026-11-01T16:53:00.123Z",
       "semana": 8,
-      "titulo": "Emeka Egbuka queda fuera para la semana 8",
+      "titulo": "Aaron Rodgers busca revancha divisional ante los Browns",
       "claves": [
-        "Receptor descartado por lesión en pie",
-        "Baja confirmada para la semana 8",
-        "Ajustar alineación de fantasy hoy"
+        "Pittsburgh recibe a Cleveland en duelo vital por el Norte.",
+        "Los Browns ganaron el primer choque en la semana 4.",
+        "El liderato divisional de la AFC Norte está en juego."
       ],
-      "contexto": "El receptor novato de Tampa Bay, Emeka Egbuka, fue declarado inactivo oficialmente para el partido de la semana 8 tras sufrir una molestia en el pie. Esta baja confirmada deja 1 hueco importante en el cuerpo de receptores del equipo antes de su compromiso del domingo frente a su rival, obligando a los entrenadores a ajustar su plan aéreo.",
-      "fantasy": "Con Emeka Egbuka fuera para la semana 8, los dueños de fantasy deben mandarlo a la banca de inmediato. Esta ausencia elimina su producción semanal en ligas formato PPR y estándar, abriendo volumen de pases para otros receptores de la plantilla en matchups profundos. No arriesgues 0 puntos en tu alineación titular y muévelo a la banca hoy.",
-      "equipo_impacto": "La ausencia de Egbuka restringe las opciones aéreas de Buccaneers en la semana 8. El ataque deberá redistribuir las dianas entre los demás receptores y alas cerradas para mantener el avance por aire.",
-      "accion": "Sienta a Emeka Egbuka en todas tus ligas hoy mismo.",
+      "contexto": "Aaron Rodgers y los Steelers reciben a Cleveland en la semana 8 con el liderato de la AFC Norte en disputa. Los Browns se llevaron el primer enfrentamiento directo durante la semana 4, pero ahora la contienda se traslada a Pittsburgh. Este choque divisional definirá el rumbo de la división y pondrá a prueba el ataque aéreo local frente a una defensiva rival que ya demostró saber frenarlos previamente esta temporada.",
+      "fantasy": "Para efectos de fantasy football, Rodgers se mantiene como una opción de Superflex o QB2 en ligas profundas de 12 o más equipos. Tras caer en la semana 4 contra este mismo rival, la proyección exige cautela frente al pass rush visitante. Si dependes del veterano mariscal en la semana 8, considera sus limitaciones de movilidad ante una defensiva agresiva que suele presionar constantemente al mariscal de campo.",
+      "equipo_impacto": "El esquema ofensivo de Pittsburgh requerirá ajustes en protección de pase tras lo sucedido en la semana 4. Sin receptores estelares por lesiones en el roster, Rodgers dependerá del juego terrestre y pases cortos para mover las cadenas ante Cleveland.",
+      "accion": "Alinea a Rodgers únicamente como QB2 o Superflex en la semana 8.",
       "en": {
-        "titulo": "Emeka Egbuka ruled out for Week 8",
+        "titulo": "Aaron Rodgers seeks division revenge against the Browns",
         "claves": [
-          "Receiver ruled out with foot injury",
-          "Confirmed inactive for Week 8 matchup",
-          "Adjust fantasy lineups immediately today"
+          "Pittsburgh hosts Cleveland in a vital AFC North clash.",
+          "The Browns won their first meeting back in Week 4.",
+          "First place in the AFC North is on the line."
         ],
-        "contexto": "Tampa Bay rookie wide receiver Emeka Egbuka has been officially ruled out for Week 8 due to a foot injury. His confirmed absence leaves 1 major void in the passing attack ahead of Sunday's game, forcing the coaching staff to adjust their game plan through the air.",
-        "fantasy": "With Emeka Egbuka ruled out for Week 8, fantasy managers must bench him immediately. His absence removes all fantasy value in PPR and standard formats for this week, while opening target volume for secondary options in deep leagues. Avoid scoring 0 points and move him to your bench today.",
-        "equipo_impacto": "Egbuka's absence thins out the Buccaneers receiving options in Week 8. The offense will need to redistribute passing targets among remaining wideouts and tight ends to move the ball.",
-        "accion": "Bench Emeka Egbuka in all fantasy leagues today."
+        "contexto": "Aaron Rodgers and the Steelers host Cleveland in Week 8 with first place in the AFC North on the line. The Browns won the first matchup back in Week 4, but the rivalry now moves to Pittsburgh. This divisional contest will define the standings and test the home passing game against a defense that already proved it can contain them earlier this season.",
+        "fantasy": "For fantasy football purposes, Rodgers remains a Superflex or QB2 option in deeper 12-team leagues. After struggling in Week 4 against this same defense, managers should exercise caution regarding his ceiling in Week 8. If you rely on the veteran quarterback, expect a modest floor given his limited mobility against an aggressive pass rush that pressures the pocket continuously.",
+        "equipo_impacto": "Pittsburgh's offensive scheme needs better pass protection after their Week 4 loss. With receiving depth impacted by injuries, Rodgers will rely heavily on the ground game and quick short passes to move the chains against Cleveland.",
+        "accion": "Start Rodgers strictly as a QB2 or Superflex option in Week 8."
       },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "TB",
+      "etiqueta": "START",
+      "impacto": "NEUTRO",
+      "equipo": "PIT",
       "equipos": [
-        "TB"
+        "PIT",
+        "CLE"
       ],
       "jugadores": [
-        "12514"
+        "96"
       ],
       "fuentes": [
         {
-          "m": "ESPN",
-          "u": "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50289130/fantasy-football-injuries-nfl-week-8-inactive-active",
-          "t": "Fantasy football Week 8 inactives: Chase, Barkley to play; Brown, Egbuka out"
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/betting/news/browns-vs-steelers-odds-picks-prediction-spread-line-start-time-nfl-week-8-betting-preview-best-bets/",
+          "t": "\n                        Browns vs. Steelers odds, picks, prediction, spread, line: Start time, NFL Week 8 betting preview, best bets\n      "
+        },
+        {
+          "m": "Yahoo Sports",
+          "u": "https://sports.yahoo.com/nfl/live/steelers-browns-score-live-updates-inactives-highlights-stats-where-to-watch-162920682.html",
+          "t": "Browns vs. Steelers live updates, inactives, where to watch: AFC North lead on the line as Aaron Rodgers, Pittsburgh host Cleveland"
         }
       ],
       "menciona": []
@@ -72,10 +78,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "8137",
-      "estatus": "Duda"
-    },
-    {
       "id": "2133",
       "estatus": "Fuera"
     },
@@ -93,7 +95,7 @@
     },
     {
       "id": "8155",
-      "estatus": "Duda"
+      "estatus": "Fuera"
     },
     {
       "id": "2216",
@@ -126,10 +128,6 @@
     {
       "id": "4137",
       "estatus": "Fuera"
-    },
-    {
-      "id": "5947",
-      "estatus": "Duda"
     },
     {
       "id": "11589",
@@ -168,14 +166,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "10236",
-      "estatus": "Duda"
-    },
-    {
-      "id": "4983",
-      "estatus": "Duda"
-    },
-    {
       "id": "6819",
       "estatus": "Fuera"
     },
@@ -204,10 +194,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "7567",
-      "estatus": "Duda"
-    },
-    {
       "id": "5892",
       "estatus": "Fuera"
     },
@@ -218,16 +204,36 @@
     {
       "id": "13286",
       "estatus": "Fuera"
+    },
+    {
+      "id": "8188",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "8676",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "9508",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "10222",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12484",
+      "estatus": "Fuera"
     }
   ],
   "agregados": [
-    "13424",
     "6130",
+    "13424",
     "4147",
     "11783",
     "WAS",
-    "13294",
     "12491",
+    "13294",
     "7561",
     "12499",
     "4037",
@@ -237,8 +243,8 @@
     "11637",
     "12498",
     "11647",
-    "13150",
     "9756",
+    "13150",
     "12547",
     "7042",
     "DET",
@@ -264,15 +270,15 @@
     "5849",
     "13330",
     "11624",
-    "8132",
     "5045",
-    "13296",
+    "8132",
     "9758",
+    "13296",
     "8121",
-    "3321",
     "9502",
     "5012",
-    "11581"
+    "3321",
+    "1166"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
