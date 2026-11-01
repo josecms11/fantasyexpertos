@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-10-31T23:38:24.878Z",
-  "ultimaIA": "2026-10-31T16:37:32.814Z",
+  "actualizado": "2026-11-01T00:11:17.309Z",
+  "ultimaIA": "2026-11-01T00:11:17.309Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,45 +14,85 @@
   ],
   "noticias": [
     {
-      "id": "n20261031163700",
-      "fecha": "2026-10-31T16:37:32.814Z",
+      "id": "n20261101001100",
+      "fecha": "2026-11-01T00:11:17.309Z",
       "semana": 8,
-      "titulo": "Micah Parsons apunta a la semana 12",
+      "titulo": "Derwin James Jr. pasa a reserva de lesionados",
       "claves": [
-        "Micah Parsons apunta al juego de semana 12",
-        "Regresaría contra los Rams en Thanksgiving Eve",
-        "Fuera desde su rotura de ligamento en 2024"
+        "Recaída en lesión de isquiotibial margina a Derwin James Jr.",
+        "Chargers pierden a su safety estelar al menos 4 semanas",
+        "Impacto directo negativo para la defensiva secundaria de Chargers"
       ],
-      "contexto": "El estelar defensivo Micah Parsons tiene en la mira la semana 12 para su esperado regreso a los emparrillados con Green Bay, apuntando específicamente al duelo de Thanksgiving Eve frente a los Rams. El pass rusher no ha visto acción desde que sufrió una grave lesión de ligamento cruzado anterior durante la semana 15 de la temporada pasada.",
-      "fantasy": "Para los managers de fantasy football en ligas profundas o de dynasty, este reporte da esperanza de contar pronto con un elemento diferencial en el departamento defensivo. Aunque no estará disponible para la semana 8, su inminente retorno obliga a monitorear el mercado de waivers defensivos con anticipación.",
-      "equipo_impacto": "La defensiva de los Packers recibirá un impulso anímico y táctico masivo cuando Parsons vuelva al emparrillado, elevando la presión sobre los mariscales rivales y beneficiando indirectamente el tiempo de posesión de la ofensiva.",
-      "accion": "Monitorea su estatus en ligas IDP de cara a su posible reaparición.",
+      "contexto": "Los Angeles Chargers sufrieron un duro golpe en su defensiva secundaria tras colocar al safety estelar Derwin James Jr. en la reserva de lesionados. El jugador tuvo un serio retroceso durante la rehabilitación de su lesión en el isquiotibial. Con este movimiento, James estará fuera de combate al menos durante los próximos 4 partidos de la franquicia californiana, complicando el esquema defensivo del equipo en momentos clave del calendario regular.",
+      "fantasy": "La baja de Derwin James Jr. reduce de inmediato el atractivo de Chargers D/ST en ligas tradicionales de fantasy football. Sin su presencia patrullando el centro del campo, los mariscales de campo y alas cerradas contrarios ganan un valor sustancial en matchups semanales. En formatos IDP, debes cortarlo o moverlo al espacio IR de inmediato para buscar un reemplazo libre disponible en la agencia libre hoy mismo.",
+      "equipo_impacto": "El perímetro de Los Angeles Chargers pierde a su líder vocal y defensivo principal. La ausencia de James obliga al coordinador defensivo a hacer ajustes drásticos, dejando huecos explotables en la cobertura profunda y afectando la contención terrestre desde la tercera línea.",
+      "accion": "Mueve a Derwin James Jr. a tu casilla de IR o suéltalo si no tienes espacio en ligas IDP.",
       "en": {
-        "titulo": "Micah Parsons targeting Week 12 return",
+        "titulo": "Derwin James Jr. placed on injured reserve",
         "claves": [
-          "Micah Parsons eyes Week 12 return",
-          "Targeting Rams game on Thanksgiving Eve",
-          "Out since suffering torn ACL last season"
+          "Hamstring rehab setback sends Derwin James Jr. to IR",
+          "Chargers lose star safety for at least 4 games",
+          "Direct downgrade for Los Angeles Chargers secondary defense"
         ],
-        "contexto": "Star pass rusher Micah Parsons is reportedly eyeing a Week 12 return for Green Bay's Thanksgiving Eve matchup against the Rams. He has been sidelined since tearing his ACL in Week 15 of last season.",
-        "fantasy": "For fantasy managers in IDP leagues, this timeline offers a clear target to prepare for a major defensive reinforcement down the stretch.",
-        "equipo_impacto": "The Packers defense will get a massive boost to their pass rush once he returns to the field.",
-        "accion": "Monitor his recovery for upcoming IDP lineup decisions.",
-        "en": "Monitor his recovery for upcoming IDP lineup decisions."
+        "contexto": "The Los Angeles Chargers suffered a major setback in their defensive secondary after placing star safety Derwin James Jr. on injured reserve. The playmaker experienced a serious complication during his hamstring rehabilitation process. With this official transaction, James is set to miss at least the next 4 games of the regular season, forcing significant adjustments to the defensive game plan during a crucial stretch of the schedule.",
+        "fantasy": "The loss of Derwin James Jr. immediately downgrades Chargers D/ST across all fantasy football formats. Without his elite versatility in the secondary, opposing quarterbacks and tight ends get a notable boost in weekly matchups. For IDP league managers, James must be moved directly into your IR slot or dropped to stream a viable starting replacement off the waiver wire right away.",
+        "equipo_impacto": "The Los Angeles Chargers secondary loses its defensive anchor and primary leader. Missing James forces coverage adjustments, creating clear vulnerabilities in deep pass coverage and run support from the secondary.",
+        "accion": "Move Derwin James Jr. to your IR slot or drop him immediately in IDP leagues."
       },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "GB",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "LAC",
       "equipos": [
-        "GB",
-        "LAR"
+        "LAC"
       ],
       "jugadores": [],
       "fuentes": [
         {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/nfl/article/packers-micah-parsons-reportedly-eyeing-week-12-return-for-thanksgiving-eve-game-against-rams-145129348.html",
-          "t": "Packers&#39; Micah Parsons reportedly eyeing Week 12 return for Thanksgiving Eve game against Rams"
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50340504/chargers-safety-james-hamstring-placed-injured-reserve",
+          "t": "Derwin James placed on injured reserve after hamstring rehab setback"
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261101001101",
+      "fecha": "2026-11-01T00:11:17.309Z",
+      "semana": 8,
+      "titulo": "T'Vondre Sweat va a reserva de lesionados",
+      "claves": [
+        "T'Vondre Sweat sufre esguince de rodilla con New York Jets",
+        "Nose tackle titular pasará al menos 4 semanas fuera",
+        "Defensa terrestre de los Jets pierde fortaleza en la trinchera"
+      ],
+      "contexto": "New York Jets hicieron oficial el movimiento este sábado al enviar al nose tackle titular T'Vondre Sweat a la reserva de lesionados. El liniero defensivo sufrió un esguince de rodilla que lo mantendrá alejado de los emparrillados durante los próximos 4 juegos como mínimo. Sweat había sido una pieza fundamental en el centro de la línea defensiva para frenar el ataque terrestre de los rivales.",
+      "fantasy": "Este movimiento debilita considerablemente la unidad defensiva New York Jets D/ST para las siguientes semanas. La ausencia de Sweat abre espacios importantes por el centro, beneficiando directamente a los corredores rivales que enfrenten a New York. Si tenías a los Jets como tu defensiva titular fantasy, considera seriamente buscar opciones en la agencia libre, mientras que los RBs rivales suben su techo en proyecciones semanales.",
+      "equipo_impacto": "La trinchera defensiva de New York Jets pierde un peso pesado en el esquema contra la carrera. Sin Sweat ocupando bloqueos dobles, los apoyadores tendrán mayor dificultad para atacar huecos y realizar tacleadas limpias.",
+      "accion": "Evita arrancar a Jets D/ST y beneficia a los corredores que jueguen contra New York.",
+      "en": {
+        "titulo": "T'Vondre Sweat placed on injured reserve",
+        "claves": [
+          "T'Vondre Sweat suffers knee sprain with New York Jets",
+          "Starting nose tackle to miss at least 4 weeks",
+          "Jets run defense loses vital interior trench anchor"
+        ],
+        "contexto": "The New York Jets made it official on Saturday by placing starting nose tackle T'Vondre Sweat on injured reserve. The defensive lineman suffered a knee sprain that will keep him sidelined for at least the next 4 games. Sweat had established himself as an essential piece inside the defensive line, absorbing double teams and locking down opposing rushing attacks.",
+        "fantasy": "This roster move significantly weakens the New York Jets D/ST unit for upcoming matchups. Sweat's absence creates prime interior running lanes, providing a clear boost to opposing running backs facing New York. If you rely on the Jets defense in fantasy, consider streaming alternatives on waivers, while opposing ground attacks gain notable upside in weekly projections.",
+        "equipo_impacto": "The New York Jets defensive line loses a major physical force against the run. Without Sweat eating up double blocks, linebackers will face tougher paths to hit gaps and make clean stops.",
+        "accion": "Bench Jets D/ST and start opposing running backs facing New York's defense."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "NYJ",
+      "equipos": [
+        "NYJ"
+      ],
+      "jugadores": [],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50339066/tvondre-sweat-placed-injured-reserve-knee-injury",
+          "t": "T'Vondre Sweat placed on injured reserve with knee injury"
         }
       ],
       "menciona": []
@@ -262,8 +302,8 @@
     "HOU",
     "9482",
     "11624",
-    "5849",
     "13296",
+    "5849",
     "8132",
     "13330",
     "11581",
@@ -275,11 +315,11 @@
     "4035"
   ],
   "duelo": {
-    "a": "Puka Nacua",
-    "b": "CeeDee Lamb",
-    "veredicto": "Arranca a Puka Nacua (21.9 pts proyectados) sobre CeeDee Lamb (19.7 pts). Nacua domina en volumen de pases cortos y Lamb encara a una defensiva de Arizona que históricamente frena en seco el ataque aéreo de Dallas."
+    "a": "Jahmyr Gibbs",
+    "b": "Bijan Robinson",
+    "veredicto": "Arranca a Jahmyr Gibbs sobre Bijan Robinson en semana 8. Gibbs supera en proyecciones con 23.7 pts PPR frente a 20.4 pts de Bijan, manteniendo un volumen explosivo por aire y tierra inigualable este fin de semana."
   },
-  "dueloFecha": "2026-10-31T00:17:32.702Z",
+  "dueloFecha": "2026-11-01T00:11:17.309Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
