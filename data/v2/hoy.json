@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-01T13:50:50.792Z",
-  "ultimaIA": "2026-11-01T13:07:40.573Z",
+  "actualizado": "2026-11-01T14:24:02.122Z",
+  "ultimaIA": "2026-11-01T14:24:02.122Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,45 +14,51 @@
   ],
   "noticias": [
     {
-      "id": "n20261101130701",
-      "fecha": "2026-11-01T13:07:40.573Z",
+      "id": "n20261101142401",
+      "fecha": "2026-11-01T14:24:02.122Z",
       "semana": 8,
-      "titulo": "Caleb Douglas gana protagonismo en la ofensiva de Dolphins",
+      "titulo": "Saquon Barkley confirmado para jugar tras rumores de cambio",
       "claves": [
-        "Caleb Douglas destaca en entrenamientos previo a la semana 8",
-        "Gana la confianza del cuerpo técnico de los Dolphins",
-        "Oportunidad de sumar dianas ante la baja de receptores"
+        "Confirmado totalmente para alinear en el juego de semana 8.",
+        "Eagles aclaran postura sobre el estelar corredor rumbo al deadline.",
+        "Titular indiscutible en fantasy tras bajas clave en ofensiva."
       ],
-      "contexto": "El novato receptor Caleb Douglas ha comenzado a impresionar al cuerpo técnico de los Dolphins con su rendimiento tanto con el balón como sin él. Rumbo al enfrentamiento de la semana 8 frente a los Patriots, el novato ha mostrado un progreso notable que le abre la puerta a un mayor volumen de participación dentro del esquema aéreo de Miami.",
-      "fantasy": "El ascenso de Caleb Douglas lo coloca en el radar para ligas muy profundas de 14 o 16 equipos y formatos dynasty. Con De'Von Achane en IR, Miami busca nuevas armas para mover el balón. Aunque todavía no es momento de alinearlo de titular en la semana 8, vale la pena monitorearlo desde la agencia libre.",
-      "equipo_impacto": "La irrupción de Douglas añade profundidad al cuerpo de receptores de Miami. Su capacidad para generar yardas da variantes al mariscal de campo y reparte la atención de la defensiva secundaria rival.",
-      "accion": "Añádelo a tu lista de seguimiento en ligas profundas de fantasy.",
+      "contexto": "Ante los constantes rumores sobre la fecha límite de traspasos fijada para el 10 de noviembre, los Eagles enviaron un mensaje rotundo al confirmar que Saquon Barkley está listo para jugar en la semana 8 contra Washington. En medio de un ataque mermado por las ausencias de Jalen Hurts y DeVonta Smith, Barkley se consolida como la pieza central indiscutible del esquema ofensivo de Filadelfia.",
+      "fantasy": "Con las ausencias por lesión en el ataque aéreo de Filadelfia, Barkley absorberá una dosis masiva de toques tanto por tierra como en pases cortos. En formatos PPR y estándar es un RB1 absoluto de elite para la semana 8. Si tenías dudas por los rumores de traspaso, queda completamente descartada cualquier restricción y debes alinearlo con total confianza en todas tus ligas.",
+      "equipo_impacto": "La presencia de Barkley sostiene todo el plan de juego de Filadelfia, aliviando la presión sobre el mariscal de campo suplente tras la baja de Hurts a reserva de lesionados.",
+      "accion": "Arranca a Saquon Barkley en el 100% de tus alineaciones fantasy este domingo.",
       "en": {
-        "titulo": "Caleb Douglas earning larger role in Dolphins offense",
+        "titulo": "Saquon Barkley active for Week 8 amid trade talk",
         "claves": [
-          "Caleb Douglas impresses Dolphins coaches ahead of week 8",
-          "Rookie wideout shows progress on and off the ball",
-          "Intriguing stash candidate for deep and dynasty fantasy leagues"
+          "Fully cleared and confirmed to play in Week 8.",
+          "Eagles send clear message regarding trade deadline rumors.",
+          "Elite RB1 start with key Philadelphia starters ruled out."
         ],
-        "contexto": "Rookie wide receiver Caleb Douglas has begun to impress the Dolphins coaching staff with his development both on and off the ball. Heading into the week 8 matchup against the Patriots, the young receiver has shown notable progress that could earn him an increased share of targets in Miami's passing attack.",
-        "fantasy": "The emergence of Caleb Douglas puts him on the radar for deep 14-team or 16-team leagues and dynasty formats. With De'Von Achane on IR, Miami is searching for playmakers to step up. While he is not yet ready to start in week 8 lineups, he is worth monitoring on fantasy waiver wires.",
-        "equipo_impacto": "Douglas' growth adds valuable depth to Miami's receiving corps. His ability to produce creates additional options for the quarterback and forces secondary defenses to adjust their coverage schemes during games.",
-        "accion": "Add Caleb Douglas to your watchlist in deep fantasy leagues."
+        "contexto": "Amid persistent trade rumors leading into the Nov. 10 deadline, Philadelphia sent a strong signal by confirming Saquon Barkley will play in Week 8 against Washington. With quarterback Jalen Hurts on IR and DeVonta Smith sidelined, Barkley firmly stands as the single most critical element of the Eagles offensive game plan.",
+        "fantasy": "With injuries crippling Philadelphia's passing attack, Barkley is set to absorb a monster workload through carries and short targets. He operates as an unquestioned elite RB1 in all PPR and standard leagues for Week 8. Any trade distraction concerns are officially cleared, making him a must-start across all fantasy formats.",
+        "equipo_impacto": "Barkley's active status anchors Philadelphia's entire offensive scheme, taking immense pressure off the backup quarterback with Hurts missing time on IR.",
+        "accion": "Start Saquon Barkley in 100% of your fantasy lineups this Sunday."
       },
-      "etiqueta": "WAIVER",
+      "etiqueta": "START",
       "impacto": "SUBE",
-      "equipo": "MIA",
+      "equipo": "PHI",
       "equipos": [
-        "MIA"
+        "PHI",
+        "WAS"
       ],
       "jugadores": [
-        "13296"
+        "4866"
       ],
       "fuentes": [
         {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50342146/dolphins-wr-caleb-douglas-vs-pats-christian-gonzalez",
-          "t": "Miami Dolphins WR Caleb Douglas rounding into form ahead of Pats matchup"
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/saquon-barkley-trade-rumors-eagles/",
+          "t": "\n                        Saquon Barkley trade rumors: Eagles send a clear message about RB&#039;s future in Philadelphia\n                   "
+        },
+        {
+          "m": "Yahoo Sports",
+          "u": "https://sports.yahoo.com/nfl/live/nfl-scores-news-live-updates-week-8-schedule-inactives-highlights-stats-where-to-watch-140132612.html",
+          "t": "Week 8 NFL schedule, scores, live updates: A.J. Brown questionable; Lamar Jackson, Saquon Barkley to play"
         }
       ],
       "menciona": []
@@ -231,21 +237,21 @@
     "12491",
     "12499",
     "4037",
-    "13286",
     "TB",
+    "13286",
     "10219",
     "11637",
     "12498",
     "13150",
-    "9756",
     "11647",
+    "9756",
     "12547",
     "11581",
-    "8134",
     "7042",
     "DET",
+    "8134",
     "3214",
-    "13298"
+    "JAX"
   ],
   "soltados": [
     "8129",
@@ -264,13 +270,13 @@
     "11624",
     "5849",
     "13330",
-    "13296",
     "8132",
+    "13296",
     "9758",
     "5045",
     "3321",
-    "9502",
     "8121",
+    "9502",
     "5012",
     "11834"
   ],
