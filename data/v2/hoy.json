@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-01T16:53:00.123Z",
-  "ultimaIA": "2026-11-01T16:53:00.123Z",
+  "actualizado": "2026-11-01T17:21:47.324Z",
+  "ultimaIA": "2026-11-01T17:21:47.324Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,51 +14,44 @@
   ],
   "noticias": [
     {
-      "id": "n20261101165300",
-      "fecha": "2026-11-01T16:53:00.123Z",
+      "id": "n20261101172100",
+      "fecha": "2026-11-01T17:21:47.324Z",
       "semana": 8,
-      "titulo": "Aaron Rodgers busca revancha divisional ante los Browns",
+      "titulo": "Rumores colocan a Josh Sweat en la mira de Cowboys",
       "claves": [
-        "Pittsburgh recibe a Cleveland en duelo vital por el Norte.",
-        "Los Browns ganaron el primer choque en la semana 4.",
-        "El liderato divisional de la AFC Norte está en juego."
+        "Josh Sweat registra 2 sacks al llegar a la semana 8",
+        "Cowboys destacan como destino potencial antes del cierre de canjes",
+        "Un traspaso impulsaría el valor fantasy de Cowboys D/ST"
       ],
-      "contexto": "Aaron Rodgers y los Steelers reciben a Cleveland en la semana 8 con el liderato de la AFC Norte en disputa. Los Browns se llevaron el primer enfrentamiento directo durante la semana 4, pero ahora la contienda se traslada a Pittsburgh. Este choque divisional definirá el rumbo de la división y pondrá a prueba el ataque aéreo local frente a una defensiva rival que ya demostró saber frenarlos previamente esta temporada.",
-      "fantasy": "Para efectos de fantasy football, Rodgers se mantiene como una opción de Superflex o QB2 en ligas profundas de 12 o más equipos. Tras caer en la semana 4 contra este mismo rival, la proyección exige cautela frente al pass rush visitante. Si dependes del veterano mariscal en la semana 8, considera sus limitaciones de movilidad ante una defensiva agresiva que suele presionar constantemente al mariscal de campo.",
-      "equipo_impacto": "El esquema ofensivo de Pittsburgh requerirá ajustes en protección de pase tras lo sucedido en la semana 4. Sin receptores estelares por lesiones en el roster, Rodgers dependerá del juego terrestre y pases cortos para mover las cadenas ante Cleveland.",
-      "accion": "Alinea a Rodgers únicamente como QB2 o Superflex en la semana 8.",
+      "contexto": "Los rumores de canjes en la NFL cobran fuerza y el cazador de mariscales Josh Sweat destaca en los reportes. Con 2 sacks acumulados en la temporada al entrar a la semana 8, los Cowboys figuran como destino potencial para sumar ayuda en la presión defensiva. La defensiva de Dallas busca reforzar su rotación antes del cierre del periodo de traspasos.",
+      "fantasy": "Un movimiento hacia Dallas potenciaría de inmediato a la unidad Cowboys D/ST, mejorando sus capturas proyectadas en formatos defensivos tradicionales. En formatos IDP, Josh Sweat se consolida como opción DL2 o DL3 según el enfrentamiento. Si permanece con los Cardinals en la semana 8, su valor fantasy se mantiene neutral debido al rendimiento general del equipo.",
+      "equipo_impacto": "La llegada de Josh Sweat le daría a Dallas un presionador de pasador experimentado para complementar su esquema. Para Arizona, perderlo implicaría menos presión al QB contrario, bajando el atractivo de Cardinals D/ST.",
+      "accion": "Monitorea la fecha de canjes y considera guardar a Cowboys D/ST si buscas presión al QB.",
       "en": {
-        "titulo": "Aaron Rodgers seeks division revenge against the Browns",
+        "titulo": "Josh Sweat Trade Rumors Link Pass Rusher to Cowboys",
         "claves": [
-          "Pittsburgh hosts Cleveland in a vital AFC North clash.",
-          "The Browns won their first meeting back in Week 4.",
-          "First place in the AFC North is on the line."
+          "Josh Sweat has 2 sacks entering Week 8 action",
+          "Cowboys listed among potential trade destinations for pass rusher",
+          "Potential move would boost Cowboys D/ST fantasy value"
         ],
-        "contexto": "Aaron Rodgers and the Steelers host Cleveland in Week 8 with first place in the AFC North on the line. The Browns won the first matchup back in Week 4, but the rivalry now moves to Pittsburgh. This divisional contest will define the standings and test the home passing game against a defense that already proved it can contain them earlier this season.",
-        "fantasy": "For fantasy football purposes, Rodgers remains a Superflex or QB2 option in deeper 12-team leagues. After struggling in Week 4 against this same defense, managers should exercise caution regarding his ceiling in Week 8. If you rely on the veteran quarterback, expect a modest floor given his limited mobility against an aggressive pass rush that pressures the pocket continuously.",
-        "equipo_impacto": "Pittsburgh's offensive scheme needs better pass protection after their Week 4 loss. With receiving depth impacted by injuries, Rodgers will rely heavily on the ground game and quick short passes to move the chains against Cleveland.",
-        "accion": "Start Rodgers strictly as a QB2 or Superflex option in Week 8."
+        "contexto": "NFL trade rumors are heating up, and pass rusher Josh Sweat is a prominent target. Heading into Week 8 with 2 sacks on the season, the Cowboys have emerged as a potential landing spot to bolster their defensive line. Dallas is looking to upgrade its edge rush before the upcoming NFL trade deadline.",
+        "fantasy": "A potential move to Dallas would immediately upgrade Cowboys D/ST in standard fantasy football leagues by boosting their sack upside. In IDP formats, Josh Sweat remains a solid DL3 option with DL2 potential depending on matchups. If he stays with Arizona for Week 8, his fantasy ceiling remains limited by team context.",
+        "equipo_impacto": "Adding Josh Sweat would provide Dallas with an experienced edge defender for their rotation. Conversely, losing him would weaken Arizona's pass rush, further lowering the fantasy appeal of Cardinals D/ST.",
+        "accion": "Monitor trade deadline news and keep Cowboys D/ST on your radar."
       },
-      "etiqueta": "START",
-      "impacto": "NEUTRO",
-      "equipo": "PIT",
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "DAL",
       "equipos": [
-        "PIT",
-        "CLE"
+        "DAL",
+        "ARI"
       ],
-      "jugadores": [
-        "96"
-      ],
+      "jugadores": [],
       "fuentes": [
         {
           "m": "CBS Sports",
-          "u": "https://www.cbssports.com/betting/news/browns-vs-steelers-odds-picks-prediction-spread-line-start-time-nfl-week-8-betting-preview-best-bets/",
-          "t": "\n                        Browns vs. Steelers odds, picks, prediction, spread, line: Start time, NFL Week 8 betting preview, best bets\n      "
-        },
-        {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/nfl/live/steelers-browns-score-live-updates-inactives-highlights-stats-where-to-watch-162920682.html",
-          "t": "Browns vs. Steelers live updates, inactives, where to watch: AFC North lead on the line as Aaron Rodgers, Pittsburgh host Cleveland"
+          "u": "https://www.cbssports.com/nfl/news/josh-sweat-trade-rumors-cowboys-potential-landing-spots/",
+          "t": "\n                        Josh Sweat trade rumors: Cowboys among potential landing spots for Cardinals pass rusher\n                    "
         }
       ],
       "menciona": []
@@ -214,15 +207,15 @@
       "estatus": "Fuera"
     },
     {
+      "id": "11579",
+      "estatus": "Fuera"
+    },
+    {
       "id": "9508",
       "estatus": "Fuera"
     },
     {
       "id": "10222",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "12484",
       "estatus": "Fuera"
     }
   ],
@@ -234,22 +227,22 @@
     "WAS",
     "12491",
     "13294",
-    "7561",
     "12499",
+    "7561",
     "4037",
     "TB",
     "10219",
     "13286",
-    "11637",
     "12498",
+    "11637",
     "11647",
     "9756",
-    "13150",
     "12547",
+    "13150",
     "7042",
     "DET",
-    "8134",
     "JAX",
+    "8134",
     "3214",
     "13298"
   ],
@@ -258,12 +251,12 @@
     "11435",
     "7561",
     "6130",
-    "12489",
     "3271",
+    "12489",
     "10235",
     "12718",
-    "12457",
     "CLE",
+    "12457",
     "HOU",
     "8122",
     "9482",
@@ -271,14 +264,14 @@
     "13330",
     "11624",
     "5045",
-    "8132",
     "9758",
-    "13296",
+    "8132",
     "8121",
+    "13296",
     "9502",
-    "5012",
     "3321",
-    "1166"
+    "5012",
+    "11581"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
