@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-01T10:22:47.049Z",
-  "ultimaIA": "2026-11-01T09:03:47.552Z",
+  "actualizado": "2026-11-01T11:03:01.060Z",
+  "ultimaIA": "2026-11-01T11:03:01.060Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,47 +14,47 @@
   ],
   "noticias": [
     {
-      "id": "n20261101090300",
-      "fecha": "2026-11-01T09:03:47.552Z",
+      "id": "n20261101110300",
+      "fecha": "2026-11-01T11:03:01.060Z",
       "semana": 8,
-      "titulo": "Breece Hall y Jets buscan recuperarse ante Raiders",
-      "claves": [
-        "Jets intentan romper mala racha en duelo de semana 8",
-        "Breece Hall reporta estatus en duda por lesión de cuadríceps",
-        "Enfrentamiento clave para definir el rumbo ofensivo de New York"
-      ],
-      "contexto": "Los New York Jets buscan retomar el camino de la victoria cuando enfrenten a Las Vegas Raiders en este choque de la semana 8. El conjunto neoyorquino necesita ajustar piezas urgentemente tras tropiezos recientes. Además, la ofensiva monitorea de cerca el estado físico de Breece Hall, quien llega con estatus en duda por una molestia en el cuadríceps sufrida en días recientes.",
-      "fantasy": "Para fines de fantasy football, este duelo directo marca un punto de inflexión. Si Breece Hall logra vestirse y jugar a pesar de su estatus de cuestionable, se mantiene como una opción utilizable en formatos PPR y estándar. Sin embargo, su limitación física exige tener un respaldo listo en la banca en caso de que su carga de toques disminuya significativamente durante el partido.",
-      "equipo_impacto": "El ataque de New York requiere establecer el juego terrestre desde la primera mitad para quitarle presión a su pasador. Enfrentar a Las Vegas representa una oportunidad idónea para corregir errores y balancear la distribución de toques en el campo.",
-      "accion": "Monitorea el reporte de activos 90 minutos antes del juego para definir si alineas a Breece Hall.",
-      "en": {
-        "titulo": "Breece Hall and Jets Look to Bounce Back",
-        "claves": [
-          "Jets target a win in Week 8 against Raiders",
-          "Breece Hall is questionable with a quadriceps injury",
-          "Key matchup to stabilize New York offensive production"
-        ],
-        "contexto": "The New York Jets are aiming to get back on the winning track as they prepare to face the Las Vegas Raiders in Week 8. New York urgently needs to correct course after recent setbacks. Additionally, the offense is closely watching Breece Hall, who enters the game listed as questionable due to a quadriceps issue.",
-        "fantasy": "From a fantasy football perspective, this Week 8 game is crucial. If Breece Hall is active despite his questionable tag, he remains a viable option in PPR and standard leagues. However, his quadriceps injury means fantasy managers must have a contingency plan ready in case his workload is limited.",
-        "equipo_impacto": "New York needs to establish its ground game early to relieve pressure on the passing attack. Facing Las Vegas provides a favorable setup to fix mistakes and balance their offensive distribution.",
-        "accion": "Monitor the inactive list 90 minutes before kickoff before starting Breece Hall."
-      },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "NYJ",
-      "equipos": [
-        "NYJ",
-        "LV"
-      ],
-      "jugadores": [
-        "8155"
-      ],
       "fuentes": [
         {
           "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/york-jets-vs-las-vegas-080033602.html",
-          "t": "New York Jets vs Las Vegas Raiders: Five Questions with Silver and Black Pride"
+          "u": "https://sports.yahoo.com/articles/patriots-vs-dolphins-watch-week-100000061.html",
+          "t": "Patriots vs. Dolphins: How to watch the Week 8 game on Sunday"
         }
+      ],
+      "titulo": "Drake Maye lidia duelo crucial ante Dolphins en semana 8",
+      "claves": [
+        "Patriots se miden a Dolphins este domingo en semana 8",
+        "Drake Maye proyecta 20.9 pts fantasy contra defensa rival",
+        "Pase de anotacion es clave ante bajas en ataque"
+      ],
+      "contexto": "New England se prepara para chocar contra Miami en la semana 8 dentro de un duelo divisional muy esperado. Los Patriots llegan buscando consolidar su ataque aereo a pesar de ausencias importantes en el cuerpo de receptores. Por su parte, la defensiva de Miami necesitara hacer ajustes inmediatos para frenar el avance terrestre y aereo en este compromiso dominical transmitido en vivo.",
+      "fantasy": "Drake Maye es una opcion solida de mariscal de campo para la semana 8 con una proyeccion de 20.9 pts en el modelo. A pesar de las bajas ofensivas de New England, su capacidad para generar jugadas con el brazo y por tierra lo mantiene como QB1 en ligas de 12 equipos. Consideralo un titular seguro en la mayoria de los formatos de fantasy football.",
+      "equipo_impacto": "La ofensiva de New England dependera en gran medida del ritmo que imponga su pasador titular. Sin varios receptores clave activos, el ataque aereo debera apoyarse mas en pases cortos y el juego terrestre para mover las cadenas eficientemente.",
+      "accion": "Alinea a Drake Maye como tu QB titular en la semana 8.",
+      "en": {
+        "titulo": "Drake Maye Faces Dolphins in Crucial Week 8 Matchup",
+        "claves": [
+          "Patriots play Dolphins this Sunday in Week 8",
+          "Drake Maye is projected for 20.9 fantasy pts",
+          "Passing game key despite injuries in receiver corps"
+        ],
+        "contexto": "New England prepares to square off against Miami in Week 8 in a highly anticipated divisional battle. The Patriots enter looking to establish their passing attack despite key absences across the receiving unit. On the other side, Miami's defense must adapt quickly to contain both ground and air play in this Sunday afternoon showdown broadcast live.",
+        "fantasy": "Drake Maye stands out as a solid starting quarterback option for Week 8 with a 20.9 pts projection in our model. Despite offensive absences for New England, his ability to extend plays with his arm and legs keeps him firmly in QB1 territory for 12-team leagues. Treat him as a safe start across most fantasy football formats.",
+        "equipo_impacto": "New England's offense will rely heavily on the tempo set by their starting signal-caller. With multiple key wideouts unavailable, the passing scheme will need to rely more on short completions and ground efficiency to sustain drives.",
+        "accion": "Start Drake Maye as a confident QB1 in Week 8."
+      },
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "NE",
+      "equipos": [
+        "NE",
+        "MIA"
+      ],
+      "jugadores": [
+        "11564"
       ],
       "menciona": []
     }
@@ -267,9 +267,9 @@
     "5849",
     "8132",
     "13330",
-    "5045",
     "3321",
     "9758",
+    "5045",
     "9502",
     "11581",
     "8121",
