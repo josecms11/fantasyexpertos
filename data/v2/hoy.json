@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-01T08:15:33.409Z",
-  "ultimaIA": "2026-11-01T07:24:26.736Z",
+  "actualizado": "2026-11-01T09:03:47.552Z",
+  "ultimaIA": "2026-11-01T09:03:47.552Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,46 +14,47 @@
   ],
   "noticias": [
     {
-      "id": "n20261101072400",
-      "fecha": "2026-11-01T07:24:26.736Z",
+      "id": "n20261101090300",
+      "fecha": "2026-11-01T09:03:47.552Z",
       "semana": 8,
-      "titulo": "DeeJay Dallas asciende al roster activo de Vikings",
+      "titulo": "Breece Hall y Jets buscan recuperarse ante Raiders",
       "claves": [
-        "Vikings elevan a DeeJay Dallas desde la escuadra de prácticas.",
-        "El movimiento ocurre antes del duelo de la semana 8.",
-        "Dallas aporta profundidad al backfield y a equipos especiales."
+        "Jets intentan romper mala racha en duelo de semana 8",
+        "Breece Hall reporta estatus en duda por lesión de cuadríceps",
+        "Enfrentamiento clave para definir el rumbo ofensivo de New York"
       ],
-      "contexto": "Los Minnesota Vikings elevaron oficialmente al corredor DeeJay Dallas desde la escuadra de prácticas de cara al duelo de la semana 8 este domingo. La franquicia realizó esta incorporación de último minuto a su plantilla activa para asegurar mayor profundidad en su backfield y aportar versatilidad en los equipos especiales. Con este ajuste en el roster, Dallas buscará tener minutos de juego inmediatos y responder en las oportunidades que le otorgue el cuerpo técnico.",
-      "fantasy": "En ligas de fantasy football, el valor de DeeJay Dallas se mantiene muy limitado al corto plazo. Al ser una elevación desde la escuadra de prácticas para la semana 8, solo tiene relevancia directa en formatos extremadamente profundos de 16 o más equipos o en ligas con retorno de patadas. No recomendamos sumarlo inmediatamente en waivers de ligas estándar de 10 o 12 equipos, a menos que busques volumen desesperado en tu banca.",
-      "equipo_impacto": "La llegada de DeeJay Dallas brinda tranquilidad al esquema de Minnesota en equipos especiales y suma una variante extra en la rotación de corredores. Los Vikings refuerzan su plantilla sin alterar drásticamente la jerarquía de acarreos para el partido del domingo en la semana 8.",
-      "accion": "Mantén a DeeJay Dallas fuera de tus alineaciones y solo monitorea su uso en ligas de 16 equipos.",
+      "contexto": "Los New York Jets buscan retomar el camino de la victoria cuando enfrenten a Las Vegas Raiders en este choque de la semana 8. El conjunto neoyorquino necesita ajustar piezas urgentemente tras tropiezos recientes. Además, la ofensiva monitorea de cerca el estado físico de Breece Hall, quien llega con estatus en duda por una molestia en el cuadríceps sufrida en días recientes.",
+      "fantasy": "Para fines de fantasy football, este duelo directo marca un punto de inflexión. Si Breece Hall logra vestirse y jugar a pesar de su estatus de cuestionable, se mantiene como una opción utilizable en formatos PPR y estándar. Sin embargo, su limitación física exige tener un respaldo listo en la banca en caso de que su carga de toques disminuya significativamente durante el partido.",
+      "equipo_impacto": "El ataque de New York requiere establecer el juego terrestre desde la primera mitad para quitarle presión a su pasador. Enfrentar a Las Vegas representa una oportunidad idónea para corregir errores y balancear la distribución de toques en el campo.",
+      "accion": "Monitorea el reporte de activos 90 minutos antes del juego para definir si alineas a Breece Hall.",
+      "en": {
+        "titulo": "Breece Hall and Jets Look to Bounce Back",
+        "claves": [
+          "Jets target a win in Week 8 against Raiders",
+          "Breece Hall is questionable with a quadriceps injury",
+          "Key matchup to stabilize New York offensive production"
+        ],
+        "contexto": "The New York Jets are aiming to get back on the winning track as they prepare to face the Las Vegas Raiders in Week 8. New York urgently needs to correct course after recent setbacks. Additionally, the offense is closely watching Breece Hall, who enters the game listed as questionable due to a quadriceps issue.",
+        "fantasy": "From a fantasy football perspective, this Week 8 game is crucial. If Breece Hall is active despite his questionable tag, he remains a viable option in PPR and standard leagues. However, his quadriceps injury means fantasy managers must have a contingency plan ready in case his workload is limited.",
+        "equipo_impacto": "New York needs to establish its ground game early to relieve pressure on the passing attack. Facing Las Vegas provides a favorable setup to fix mistakes and balance their offensive distribution.",
+        "accion": "Monitor the inactive list 90 minutes before kickoff before starting Breece Hall."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "NEUTRO",
+      "equipo": "NYJ",
+      "equipos": [
+        "NYJ",
+        "LV"
+      ],
+      "jugadores": [
+        "8155"
+      ],
       "fuentes": [
         {
           "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/vikings-elevate-deejay-dallas-practice-053526515.html",
-          "t": "Vikings Elevate DeeJay Dallas from Practice Squad"
+          "u": "https://sports.yahoo.com/articles/york-jets-vs-las-vegas-080033602.html",
+          "t": "New York Jets vs Las Vegas Raiders: Five Questions with Silver and Black Pride"
         }
-      ],
-      "en": {
-        "titulo": "Vikings elevate DeeJay Dallas from practice squad",
-        "claves": [
-          "Vikings elevate DeeJay Dallas from the practice squad.",
-          "Roster move made ahead of Sunday in week 8.",
-          "Dallas adds depth to backfield and special teams."
-        ],
-        "contexto": "The Minnesota Vikings officially elevated running back DeeJay Dallas from their practice squad ahead of Sunday's game in week 8. This last-minute roster addition provides Minnesota with extra backfield depth and immediate support on special teams units. Dallas now has the opportunity to dress and contribute on the active roster for this week's contest, offering the coaching staff another viable option if rotation adjustments are needed during the game.",
-        "fantasy": "From a fantasy football perspective, DeeJay Dallas carries minimal standalone value right now. As a practice squad elevation for week 8, his impact is strictly confined to deeper leagues with 16 or more teams or formats that reward return yards. Standard 10-team or 12-team managers should pass on adding him from the waiver wire, keeping him strictly on the radar until a clear fantasy workload actually materializes.",
-        "equipo_impacto": "Adding DeeJay Dallas gives Minnesota added flexibility on special teams and backfield insurance. It stabilizes the roster for week 8 without disrupting the primary touches distributed among the main skill players.",
-        "accion": "Leave DeeJay Dallas on waivers in standard fantasy leagues for week 8."
-      },
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "MIN",
-      "equipos": [
-        "MIN"
-      ],
-      "jugadores": [
-        "6931"
       ],
       "menciona": []
     }
@@ -224,8 +225,8 @@
     "13424",
     "6130",
     "4147",
-    "7561",
     "11783",
+    "7561",
     "13294",
     "12499",
     "WAS",
@@ -233,8 +234,8 @@
     "4037",
     "13286",
     "10219",
-    "13150",
     "TB",
+    "13150",
     "12498",
     "11637",
     "9756",
@@ -267,9 +268,9 @@
     "8132",
     "13330",
     "5045",
-    "9502",
-    "9758",
     "3321",
+    "9758",
+    "9502",
     "11581",
     "8121",
     "11834"

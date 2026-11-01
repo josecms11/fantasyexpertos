@@ -1,12 +1,19 @@
 {
-  "fecha": "2026-11-01T08:15:34.891Z",
+  "fecha": "2026-11-01T09:04:58.954Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 15 nuevos, 20 en total",
-    "[0.8s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[1.5s] ESPN: lesiones 799 · noticias 50",
-    "[1.6s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[2.2s] Fuentes nuevas: 1 · horario normal · toca IA: false",
-    "[3.1s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 357 · semana de juego 8 · IA usada hoy 13/40"
+    "[0.3s] YouTube: 15 nuevos, 20 en total",
+    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[2.0s] ESPN: lesiones 799 · noticias 50",
+    "[2.0s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[2.7s] Fuentes nuevas: 1 · horario normal · toca IA: true",
+    "[2.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[18.5s] IA OK con gemini-3.6-flash",
+    "[18.5s] Noticias nuevas verificadas: 1",
+    "[47.0s] IA OK con gemini-3.6-flash",
+    "[47.0s] Blog: ¿Arrancar o sentar a Jayden Daniels en la semana 8? / Should you start Jayden Daniels in Week 8?",
+    "[73.5s] IA OK con gemini-3.6-flash",
+    "[73.5s] Blog: ¿Vale la pena agregar a Elic Ayomanor en la semana 8? / Should you pick up Elic Ayomanor in Week 8?",
+    "[73.5s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 358 · semana de juego 8 · IA usada hoy 16/40"
   ]
 }
