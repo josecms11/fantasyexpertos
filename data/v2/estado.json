@@ -1,23 +1,16 @@
 {
-  "fecha": "2026-11-01T01:25:40.325Z",
+  "fecha": "2026-11-01T02:17:19.595Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 0 nuevos, 20 en total",
-    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[2.9s] ESPN: lesiones 799 · noticias 50",
-    "[2.9s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[3.6s] Fuentes nuevas: 1 · horario pico · toca IA: true",
-    "[3.7s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[4.0s] Modelo sin cuota hoy gemini-3.8-flash 429",
-    "[154.0s] Gemini sin respuesta gemini-3.7-flash The operation was aborted due to timeout",
-    "[168.3s] IA OK con gemini-3.6-flash",
-    "[168.3s] Descartada: Saquon Barkley y Eagles acumulan 5 derrotas seguidas → duplicada",
-    "[168.3s] Noticias nuevas verificadas: 0",
-    "[169.6s] Modelo sin cuota hoy gemini-3.7-flash 429",
-    "[190.8s] IA OK con gemini-3.6-flash",
-    "[190.8s] Blog: ¿Arrancar o sentar a Jonathan Taylor en la Semana 8? / Should you start Jonathan Taylor in Week 8?",
-    "[212.7s] IA OK con gemini-3.6-flash",
-    "[212.7s] Blog: Lesión de Carnell Tate: ¿juega en la semana 8 y qué hacer en fantasy? / Carnell Tate injury update: will he play in Week 8? Fantasy impact",
-    "[212.7s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 351 · semana de juego 8 · IA usada hoy 4/40"
+    "[0.1s] YouTube: 0 nuevos, 20 en total",
+    "[0.8s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[2.3s] ESPN: lesiones 799 · noticias 50",
+    "[2.8s] Auto-ajuste FX: {\"hl\":6,\"mEf\":30,\"mTd\":120,\"aPrev\":0.2} error 4.805 → 4.796",
+    "[2.8s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[3.8s] Fuentes nuevas: 1 · horario pico · toca IA: true",
+    "[3.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[28.1s] IA OK con gemini-3.6-flash",
+    "[28.1s] Noticias nuevas verificadas: 1",
+    "[29.3s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 352 · semana de juego 8 · IA usada hoy 5/40"
   ]
 }

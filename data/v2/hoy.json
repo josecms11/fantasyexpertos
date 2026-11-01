@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-01T01:22:10.584Z",
-  "ultimaIA": "2026-11-01T00:11:17.309Z",
+  "actualizado": "2026-11-01T02:16:53.153Z",
+  "ultimaIA": "2026-11-01T02:16:53.153Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,85 +14,44 @@
   ],
   "noticias": [
     {
-      "id": "n20261101001100",
-      "fecha": "2026-11-01T00:11:17.309Z",
+      "id": "n20261101021600",
+      "fecha": "2026-11-01T02:16:53.153Z",
       "semana": 8,
-      "titulo": "Derwin James Jr. pasa a reserva de lesionados",
+      "titulo": "Cardinals ajustan roster con buenas noticias ante Cowboys",
       "claves": [
-        "Recaída en lesión de isquiotibial margina a Derwin James Jr.",
-        "Chargers pierden a su safety estelar al menos 4 semanas",
-        "Impacto directo negativo para la defensiva secundaria de Chargers"
+        "Arizona realiza movimientos en el roster previo al choque ante Cowboys.",
+        "Buenas noticias en el reporte médico motivan al equipo de Arizona.",
+        "Ajustes de plantilla aclaran el panorama fantasy para la semana 8."
       ],
-      "contexto": "Los Angeles Chargers sufrieron un duro golpe en su defensiva secundaria tras colocar al safety estelar Derwin James Jr. en la reserva de lesionados. El jugador tuvo un serio retroceso durante la rehabilitación de su lesión en el isquiotibial. Con este movimiento, James estará fuera de combate al menos durante los próximos 4 partidos de la franquicia californiana, complicando el esquema defensivo del equipo en momentos clave del calendario regular.",
-      "fantasy": "La baja de Derwin James Jr. reduce de inmediato el atractivo de Chargers D/ST en ligas tradicionales de fantasy football. Sin su presencia patrullando el centro del campo, los mariscales de campo y alas cerradas contrarios ganan un valor sustancial en matchups semanales. En formatos IDP, debes cortarlo o moverlo al espacio IR de inmediato para buscar un reemplazo libre disponible en la agencia libre hoy mismo.",
-      "equipo_impacto": "El perímetro de Los Angeles Chargers pierde a su líder vocal y defensivo principal. La ausencia de James obliga al coordinador defensivo a hacer ajustes drásticos, dejando huecos explotables en la cobertura profunda y afectando la contención terrestre desde la tercera línea.",
-      "accion": "Mueve a Derwin James Jr. a tu casilla de IR o suéltalo si no tienes espacio en ligas IDP.",
+      "contexto": "Los Arizona Cardinals realizaron movimientos en su plantilla activa justo antes de medirse a Dallas Cowboys en la semana 8. El equipo de Arizona recibió reportes positivos en su departamento médico tras enfrentar múltiples bajas en semanas recientes. Con ausencias confirmadas en la lista de lesionados, estos ajustes buscan darle estabilidad al esquema ofensivo y defensivo del conjunto de la NFC Oeste en un duelo crucial de temporada regular.",
+      "fantasy": "Estos movimientos benefician la claridad del backfield y cuerpo de receptores de los Cardinals para la semana 8. Al tener certezas tras los reportes médicos, los usuarios de fantasy football pueden tomar mejores decisiones para sus alineaciones titulares. Mantén atención a las cargas de trabajo de los corredores disponibles y evalúa si tus opciones de Arizona tienen enfrentamientos favorables para sumar puntos clave en formatos PPR y estándar en este choque semanal.",
+      "equipo_impacto": "El ajuste de plantilla le da flexibilidad a la ofensiva de Arizona para distribuir balones. La rotación de corredores y receptores gana profundidad en un momento crítico del calendario de la temporada 8 de la NFL.",
+      "accion": "Revisa el reporte final de alineaciones de Cardinals antes del kickoff de la semana 8.",
       "en": {
-        "titulo": "Derwin James Jr. placed on injured reserve",
+        "titulo": "Cardinals Adjust Roster With Good News Before Cowboys",
         "claves": [
-          "Hamstring rehab setback sends Derwin James Jr. to IR",
-          "Chargers lose star safety for at least 4 games",
-          "Direct downgrade for Los Angeles Chargers secondary defense"
+          "Arizona makes roster moves prior to matchup against Cowboys.",
+          "Positive injury updates bring optimism to Cardinals squad.",
+          "Roster clarity helps fantasy managers navigate week 8 decisions."
         ],
-        "contexto": "The Los Angeles Chargers suffered a major setback in their defensive secondary after placing star safety Derwin James Jr. on injured reserve. The playmaker experienced a serious complication during his hamstring rehabilitation process. With this official transaction, James is set to miss at least the next 4 games of the regular season, forcing significant adjustments to the defensive game plan during a crucial stretch of the schedule.",
-        "fantasy": "The loss of Derwin James Jr. immediately downgrades Chargers D/ST across all fantasy football formats. Without his elite versatility in the secondary, opposing quarterbacks and tight ends get a notable boost in weekly matchups. For IDP league managers, James must be moved directly into your IR slot or dropped to stream a viable starting replacement off the waiver wire right away.",
-        "equipo_impacto": "The Los Angeles Chargers secondary loses its defensive anchor and primary leader. Missing James forces coverage adjustments, creating clear vulnerabilities in deep pass coverage and run support from the secondary.",
-        "accion": "Move Derwin James Jr. to your IR slot or drop him immediately in IDP leagues."
+        "contexto": "The Arizona Cardinals made several roster adjustments prior to their week 8 matchup against the Dallas Cowboys. Arizona received encouraging injury news regarding their active squad after dealing with multiple health issues in recent weeks. With key pieces currently on reserve, these late adjustments aim to provide depth and execution for the NFC West franchise during a critical stage of the regular season calendar.",
+        "fantasy": "These roster adjustments provide much needed clarity for fantasy football managers deciding on Cardinals players for week 8. With updated medical reports, you can make informed decisions for your starting lineups in both PPR and standard formats. Monitor workload distribution closely to determine which active options can deliver viable production in competitive matchup decisions this week.",
+        "equipo_impacto": "The roster adjustments give Arizona extra depth across key offensive positions. Stabilizing the active rotation helps the coaching staff maintain offensive rhythm against Dallas during this week 8 matchup.",
+        "accion": "Check final active rosters for Cardinals players before week 8 kickoff."
       },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "LAC",
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "ARI",
       "equipos": [
-        "LAC"
+        "ARI",
+        "DAL"
       ],
       "jugadores": [],
       "fuentes": [
         {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50340504/chargers-safety-james-hamstring-placed-injured-reserve",
-          "t": "Derwin James placed on injured reserve after hamstring rehab setback"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261101001101",
-      "fecha": "2026-11-01T00:11:17.309Z",
-      "semana": 8,
-      "titulo": "T'Vondre Sweat va a reserva de lesionados",
-      "claves": [
-        "T'Vondre Sweat sufre esguince de rodilla con New York Jets",
-        "Nose tackle titular pasará al menos 4 semanas fuera",
-        "Defensa terrestre de los Jets pierde fortaleza en la trinchera"
-      ],
-      "contexto": "New York Jets hicieron oficial el movimiento este sábado al enviar al nose tackle titular T'Vondre Sweat a la reserva de lesionados. El liniero defensivo sufrió un esguince de rodilla que lo mantendrá alejado de los emparrillados durante los próximos 4 juegos como mínimo. Sweat había sido una pieza fundamental en el centro de la línea defensiva para frenar el ataque terrestre de los rivales.",
-      "fantasy": "Este movimiento debilita considerablemente la unidad defensiva New York Jets D/ST para las siguientes semanas. La ausencia de Sweat abre espacios importantes por el centro, beneficiando directamente a los corredores rivales que enfrenten a New York. Si tenías a los Jets como tu defensiva titular fantasy, considera seriamente buscar opciones en la agencia libre, mientras que los RBs rivales suben su techo en proyecciones semanales.",
-      "equipo_impacto": "La trinchera defensiva de New York Jets pierde un peso pesado en el esquema contra la carrera. Sin Sweat ocupando bloqueos dobles, los apoyadores tendrán mayor dificultad para atacar huecos y realizar tacleadas limpias.",
-      "accion": "Evita arrancar a Jets D/ST y beneficia a los corredores que jueguen contra New York.",
-      "en": {
-        "titulo": "T'Vondre Sweat placed on injured reserve",
-        "claves": [
-          "T'Vondre Sweat suffers knee sprain with New York Jets",
-          "Starting nose tackle to miss at least 4 weeks",
-          "Jets run defense loses vital interior trench anchor"
-        ],
-        "contexto": "The New York Jets made it official on Saturday by placing starting nose tackle T'Vondre Sweat on injured reserve. The defensive lineman suffered a knee sprain that will keep him sidelined for at least the next 4 games. Sweat had established himself as an essential piece inside the defensive line, absorbing double teams and locking down opposing rushing attacks.",
-        "fantasy": "This roster move significantly weakens the New York Jets D/ST unit for upcoming matchups. Sweat's absence creates prime interior running lanes, providing a clear boost to opposing running backs facing New York. If you rely on the Jets defense in fantasy, consider streaming alternatives on waivers, while opposing ground attacks gain notable upside in weekly projections.",
-        "equipo_impacto": "The New York Jets defensive line loses a major physical force against the run. Without Sweat eating up double blocks, linebackers will face tougher paths to hit gaps and make clean stops.",
-        "accion": "Bench Jets D/ST and start opposing running backs facing New York's defense."
-      },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "NYJ",
-      "equipos": [
-        "NYJ"
-      ],
-      "jugadores": [],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50339066/tvondre-sweat-placed-injured-reserve-knee-injury",
-          "t": "T'Vondre Sweat placed on injured reserve with knee injury"
+          "m": "Yahoo Sports",
+          "u": "https://sports.yahoo.com/articles/cardinals-roster-moves-prior-cowboys-011333793.html",
+          "t": "Cardinals make roster moves prior to Cowboys game"
         }
       ],
       "menciona": []
@@ -270,8 +229,8 @@
     "12499",
     "WAS",
     "4037",
-    "13286",
     "12491",
+    "13286",
     "13150",
     "12498",
     "10219",
@@ -279,26 +238,26 @@
     "11637",
     "9756",
     "11647",
-    "8134",
     "11581",
+    "8134",
     "13298",
     "12457",
     "9480",
     "JAX",
-    "13296"
+    "3214"
   ],
   "soltados": [
     "8129",
-    "7561",
     "11435",
+    "7561",
     "3271",
     "12489",
     "12457",
     "10235",
     "6130",
     "12718",
-    "8122",
     "CLE",
+    "8122",
     "HOU",
     "9482",
     "11624",
@@ -309,10 +268,10 @@
     "11581",
     "5045",
     "9502",
-    "9758",
     "3321",
+    "9758",
     "13424",
-    "4035"
+    "11834"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
