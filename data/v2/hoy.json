@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-01T03:06:27.641Z",
-  "ultimaIA": "2026-11-01T03:06:27.641Z",
+  "actualizado": "2026-11-01T03:54:13.195Z",
+  "ultimaIA": "2026-11-01T03:54:13.195Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,87 +14,43 @@
   ],
   "noticias": [
     {
-      "id": "n20261101030600",
-      "fecha": "2026-11-01T03:06:27.641Z",
+      "id": "n20261101035400",
+      "fecha": "2026-11-01T03:54:13.195Z",
       "semana": 8,
-      "titulo": "Ja'Marr Chase jugará en la semana 8",
+      "titulo": "Darian Mensah brilla con 3 TD ante North Carolina",
       "claves": [
-        "Ja'Marr Chase libre de la lista de inactivos.",
-        "Proyecta 17.0 puntos PPR en la semana 8.",
-        "Mantiene estatus de receptor estelar de élite."
+        "Darian Mensah completó 22/29 pases para 274 yardas y 3 TD.",
+        "Miami mantuvo su paso perfecto al superar 38-35 a North Carolina.",
+        "Mark Fletcher Jr. aportó 43 yardas en 13 acarreos para el triunfo."
       ],
-      "contexto": "Ja'Marr Chase superó los reportes de inactivos y está listo para tener actividad en la semana 8 según los últimos informes oficiales. El receptor estelar de Cincinnati se perfila para recibir volumen completo tras quedar descartada su presencia en la lista de bajas previas al inicio de la jornada. Esto aclara el panorama para la ofensiva aérea antes de su enfrentamiento dominical.",
-      "fantasy": "Chase se mantiene como WR1 indiscutible en todos los formatos fantasy, con una proyección de 17.0 puntos en PPR para la semana 8. Su disponibilidad elimina la incertidumbre para quienes lo tienen en su alineación titular en ligas de 10 o 12 equipos. No dudes en alinearlo inmediatamente; su techo de anotación sigue entre los mejores 5 receptores de la liga cada semana.",
-      "equipo_impacto": "La presencia de Chase beneficia a Joe Burrow al mantener a su blanco primario en el campo. La defensa rival no podrá enfocarse solo en receptores secundarios, abriendo espacios en la zona roja para todo el ataque.",
-      "accion": "Alinea a Ja'Marr Chase como tu WR1 titular en todos los formatos fantasy esta semana 8.",
+      "contexto": "Los Miami Hurricanes mantuvieron su invicto tras superar 38-35 a North Carolina en un duelo electrizante. El mariscal de campo Darian Mensah lució impecable al completar 22/29 pases para 274 yardas, registrando 3 TD y 0 INT. El ataque terrestre dependió de Mark Fletcher Jr., quien sumó 43 yardas en 13 acarreos. Miami resolvió el encuentro apretado en Chapel Hill para sostener su buen momento en la campaña.",
+      "fantasy": "Para ligas de formato CFF o seguimiento de novatos universitarios en Dynasty, Darian Mensah consolida su valor tras firmar 3 TD y 274 yardas sin entregas de balón. Su precisión de 22/29 pases demuestra madurez bajo presión. Mark Fletcher Jr. tuvo un volumen moderado de 13 acarreos y 43 yardas, manteniéndose como una opción secundaria en formatos universitarios donde la producción aérea domina.",
+      "equipo_impacto": "El ataque de Miami lució eficiente a través del aire con las 274 yardas de Darian Mensah, mientras Mark Fletcher Jr. ofreció balance relativo con sus 13 acarreos y 43 yardas en la victoria 38-35.",
+      "accion": "Monitorea a Darian Mensah en formatos universitarios o Dynasty tras su actuación de 3 TD.",
       "en": {
-        "titulo": "Ja'Marr Chase Active for Week 8 Action",
+        "titulo": "Darian Mensah Shines With 3 TDs Against North Carolina",
         "claves": [
-          "Ja'Marr Chase cleared to play in Week 8.",
-          "Projected for 17.0 PPR points this week.",
-          "Remains an elite fantasy wide receiver option."
+          "Darian Mensah completed 22/29 passes for 274 yards and 3 TDs.",
+          "Miami remained undefeated with a 38-35 win over North Carolina.",
+          "Mark Fletcher Jr. added 43 rushing yards on 13 carries."
         ],
-        "contexto": "Ja'Marr Chase avoided the inactive list and is set to play in Week 8 according to official pregame reports. The star receiver is expected to see his full workload without limitations following confirmation of his availability. This resolves any remaining lineup questions for fantasy managers relying on Cincinnati's passing attack heading into Sunday's game.",
-        "fantasy": "Chase remains an elite WR1 in all fantasy formats, carrying a projection of 17.0 PPR points for Week 8. His active status removes pregame volatility for managers in 10-team and 12-team leagues. Lock him into your starting lineup immediately; his high target volume and touchdown potential keep him among the highest-ceiling wideouts in fantasy football every week.",
-        "equipo_impacto": "Chase being active heavily boosts Joe Burrow by maintaining his primary target on the field. Opposing defenses cannot double-team secondary options, opening up efficient passing lanes across the entire field.",
-        "accion": "Start Ja'Marr Chase as your WR1 in all fantasy leagues for Week 8."
-      },
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "CIN",
-      "equipos": [
-        "CIN"
-      ],
-      "jugadores": [
-        "7564"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50289130/fantasy-football-injuries-nfl-week-8-inactive-active",
-          "t": "Fantasy football Week 8 inactives: Chase, Price to play; Brown, Egbuka out"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261101030601",
-      "fecha": "2026-11-01T03:06:27.641Z",
-      "semana": 8,
-      "titulo": "Defensa de Cowboys permite 20 puntos por 14 juegos",
-      "claves": [
-        "Récord de franquicia con 14 juegos permitiendo 20 puntos.",
-        "Gran oportunidad fantasy para los ataques rivales.",
-        "Defensiva de Cowboys pierde todo valor fantasy."
-      ],
-      "contexto": "Dallas estableció un récord de franquicia al hilar 14 partidos consecutivos permitiendo 20 o más puntos a sus rivales. A pesar de autonombrarse la mejor ofensiva posible, la unidad defensiva de los Cowboys sigue cediendo demasiadas libertades en el terreno de juego. Esta tendencia negativa se ha consolidado semana a semana y genera serias dudas sobre su efectividad en la temporada 2024.",
-      "fantasy": "Esta racha convierte a los Cowboys en un enfrentamiento sumamente favorable para cualquier ofensiva rival. Sube el valor fantasy de los mariscales de campo, receptores y corredores opuestos en formatos PPR y estándar. Por otro lado, la defensiva D/ST de Dallas debe permanecer en el alambre de waivers o en la banca en la semana 8, ya que su suelo de puntos fantasy es extremadamente bajo.",
-      "equipo_impacto": "El ataque de Dallas se ve obligado a anotar en cada posesión para mantenerse competitivo. Esto incrementa el volumen de pases y las oportunidades de anotación para sus estelares ofensivos en cada encuentro.",
-      "accion": "Evita alinear a la defensiva de Cowboys y aprovecha a los jugadores ofensivos que los enfrenten en la semana 8.",
-      "en": {
-        "titulo": "Cowboys Defense Allows 20 Points in 14 Straight",
-        "claves": [
-          "Franchise record with 14 straight games allowing 20+ points.",
-          "Opposing offensive players receive major fantasy boosts.",
-          "Dallas D/ST becomes unusable in fantasy lineups."
-        ],
-        "contexto": "Dallas has set a franchise record by allowing 20 or more points in 14 consecutive games. Despite internal confidence in their offensive firepower, the defensive unit continues to surrender massive production to opponents. This long-term trend highlights severe defensive vulnerabilities that directly impact game flow and scoring opportunities on a weekly basis.",
-        "fantasy": "This defensive slump makes Dallas one of the most favorable matchups for opposing fantasy stars. Opposing quarterbacks, running backs, and wide receivers see immediate upgrades in PPR and standard formats. Meanwhile, the Cowboys D/ST should be avoided or dropped to the waiver wire for Week 8, as their floor remains dangerously low due to consistent scoring allowed.",
-        "equipo_impacto": "The Dallas offense is forced into high-scoring shootouts every single week. This desperate game script constantly inflates passing attempts, target volume, and overall fantasy production for their key offensive playmakers.",
-        "accion": "Bench the Cowboys D/ST and start offensive players facing Dallas in Week 8."
+        "contexto": "The Miami Hurricanes preserved their undefeated record with a tight 38-35 victory over North Carolina. Quarterback Darian Mensah was highly efficient, completing 22/29 passes for 274 yards, 3 TDs, and 0 INTs. On the ground, Mark Fletcher Jr. handled 13 carries for 43 yards. Miami managed to close out the competitive contest in Chapel Hill to maintain their momentum this season.",
+        "fantasy": "In CFF leagues or Dynasty prospect tracking, Darian Mensah boosts his stock after generating 3 TDs and 274 passing yards without turnovers. His 22/29 completion line highlights efficiency in high-volume spots. Mark Fletcher Jr. provided modest production with 13 carries for 43 yards, remaining a situational option in college fantasy formats where passing output took priority in this matchup.",
+        "equipo_impacto": "Miami's offense was propelled by Darian Mensah's 274 passing yards and 3 TDs, while Mark Fletcher Jr. provided ground balance with 13 carries for 43 yards in the 38-35 win.",
+        "accion": "Target Darian Mensah in CFF and Dynasty formats following his 3 TD performance."
       },
       "etiqueta": "TENDENCIA",
-      "impacto": "BAJA",
-      "equipo": "DAL",
+      "impacto": "SUBE",
+      "equipo": "MIA",
       "equipos": [
-        "DAL"
+        "MIA"
       ],
       "jugadores": [],
       "fuentes": [
         {
           "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/cowboys-franchise-record-14-straight-024351367.html",
-          "t": "Cowboys have a franchise-record 14 straight games with 20 or more points allowed"
+          "u": "https://sports.yahoo.com/articles/recap-miami-survives-north-carolina-034126681.html",
+          "t": "Recap: Miami survives North Carolina 38-35"
         }
       ],
       "menciona": []
@@ -275,8 +231,8 @@
     "12491",
     "13286",
     "13150",
-    "12498",
     "10219",
+    "12498",
     "TB",
     "11637",
     "9756",
@@ -287,7 +243,7 @@
     "9480",
     "3214",
     "JAX",
-    "12457"
+    "12547"
   ],
   "soltados": [
     "8129",
@@ -296,8 +252,8 @@
     "12489",
     "3271",
     "12457",
-    "10235",
     "6130",
+    "10235",
     "12718",
     "CLE",
     "8122",
@@ -308,9 +264,9 @@
     "5849",
     "8132",
     "13330",
+    "9502",
     "5045",
     "11581",
-    "9502",
     "3321",
     "9758",
     "11834",
