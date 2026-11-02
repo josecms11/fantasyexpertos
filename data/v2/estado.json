@@ -1,12 +1,20 @@
 {
-  "fecha": "2026-11-02T05:34:55.298Z",
+  "fecha": "2026-11-02T06:45:28.928Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.1s] YouTube: 0 nuevos, 20 en total",
-    "[0.7s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[1.5s] ESPN: lesiones 799 · noticias 50",
-    "[1.6s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[2.3s] Fuentes nuevas: 7 · horario normal · toca IA: false",
-    "[3.1s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 371 · semana de juego 8 · IA usada hoy 6/40"
+    "[0.2s] YouTube: 0 nuevos, 20 en total",
+    "[0.9s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[2.2s] ESPN: lesiones 799 · noticias 50",
+    "[2.3s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[2.8s] Fuentes nuevas: 9 · horario normal · toca IA: true",
+    "[3.0s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[153.0s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
+    "[203.9s] IA OK con gemini-3.7-flash",
+    "[203.9s] Noticias nuevas verificadas: 1",
+    "[355.0s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
+    "[505.0s] Gemini sin respuesta gemini-3.7-flash The operation was aborted due to timeout",
+    "[527.5s] IA OK con gemini-3.6-flash",
+    "[527.5s] Resumen semana 8",
+    "[527.5s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 372 · semana de juego 8 · IA usada hoy 8/40"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-02T05:34:53.753Z",
-  "ultimaIA": "2026-11-02T04:34:12.273Z",
+  "actualizado": "2026-11-02T06:36:43.804Z",
+  "ultimaIA": "2026-11-02T06:36:43.804Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,52 +14,52 @@
   ],
   "noticias": [
     {
-      "id": "n20261102043400",
-      "fecha": "2026-11-02T04:34:12.273Z",
+      "id": "n20261102063600",
+      "fecha": "2026-11-02T06:36:43.804Z",
       "semana": 8,
-      "titulo": "Patrick Mahomes sufre costoso tropiezo en zona roja",
+      "titulo": "Jayden Daniels comanda victoria de Commanders ante Eagles",
       "claves": [
-        "Kansas City se quedó en la yarda 4 con 35 segundos restantes.",
-        "Un castigo de Jaylon Moore borró el touchdown del posible triunfo.",
-        "Malcolm Roach selló la victoria de Broncos capturando a Mahomes."
+        "Lanzó para 217 yardas y 1 TD en victoria 27-10.",
+        "Commanders blanqueó a Philadelphia durante los últimos 3 cuartos.",
+        "Se consolida como opción estelar indiscutible de mariscal de campo."
       ],
-      "contexto": "Kansas City y Patrick Mahomes llegaron a la yarda 4 de Denver con 35 segundos por jugar en el reloj, pero fueron frenados en 5 jugadas consecutivas sin poder anotar. Un polémico castigo por procedimiento ilegal sobre Jaylon Moore anuló un touchdown que Andy Reid cuestionó fuertemente. Finalmente, el liniero Malcolm Roach selló el triunfo de Denver con una captura decisiva sobre Mahomes.",
-      "fantasy": "Mahomes se mantiene como titular indiscutible en formatos estándar y Superflex, aunque estas fallas cerca de las diagonales castigan severamente su techo de puntos fantasy. Frente a rivales divisionales complicados, la inestabilidad en zona roja limita su capacidad de competir contra mariscales con gran volumen terrestre como Josh Allen (22.4 pts). Alinea a Mahomes con confianza habitual en semana 8, pero proyecta números más conservadores si la protección falla.",
-      "equipo_impacto": "Las sanciones de la línea ofensiva y la captura final sufrida por Mahomes complican el esquema anotador del head coach Andy Reid, exigiendo ajustes inmediatos en situaciones críticas dentro de las últimas 5 yardas de cara a sus próximos compromisos.",
-      "accion": "Mantén a Patrick Mahomes en tu alineación titular de semana 8 sin dudar.",
+      "contexto": "Washington superó 27-10 a Philadelphia en el juego nocturno de la semana 8. Jayden Daniels lideró la ofensiva de Commanders registrando 217 yardas aéreas y 1 pase de anotación. La defensiva capitalina respaldó la actuación blanqueando a Eagles durante los últimos 3 cuartos del duelo. Daniels demostró enorme aplomo para controlar el reloj y asegurar una victoria divisional clave frente a un rival directo.",
+      "fantasy": "Daniels ratifica su condición de mariscal de campo élite para ligas de 10 y 12 equipos tras proyectar 19.1 pts en la semana 8. Su precisión aérea y criterio para cuidar el ovoide eliminan pérdidas perjudiciales para tu plantilla. Es un titular inamovible en cualquier formato de puntuación, entregando estabilidad y techo competitivo sin importar la exigencia del rival.",
+      "equipo_impacto": "El ataque de Washington opera con ritmo y consistencia bajo el mando de Daniels. Su liderazgo potencia las opciones de Commanders en la NFC Este, impulsando la producción de sus receptores y abriendo espacios terrestres para controlar el desarrollo de cada partido.",
+      "accion": "Alinea a Jayden Daniels en tu cuadro estelar sin vacilar.",
       "en": {
-        "titulo": "Patrick Mahomes suffers costly red zone setback against Denver",
+        "titulo": "Jayden Daniels commands Washington victory over Eagles",
         "claves": [
-          "Kansas City stalled at Denver 4-yard line with 35 seconds left.",
-          "A false start on Jaylon Moore erased the winning touchdown.",
-          "Malcolm Roach sealed Denver win with a sack on Mahomes."
+          "Threw for 217 yards and 1 TD in 27-10 win.",
+          "Commanders shut out Philadelphia over final 3 quarters.",
+          "Solidifies weekly standing as an undisputed fantasy QB1."
         ],
-        "contexto": "Kansas City and Patrick Mahomes moved the ball to the Denver 4-yard line with 35 seconds remaining, but were held out of the end zone on 5 consecutive plays. A controversial false start called on Jaylon Moore wiped out an apparent game-winning score, heavily questioned by Andy Reid. Defensive lineman Malcolm Roach ultimately sealed the Broncos victory by sacking Mahomes on the final attempt.",
-        "fantasy": "Mahomes remains a locked-in starter in 1-QB and Superflex leagues, but recurring red-zone miscues suppress his weekly fantasy ceiling. Against tough divisional schemes, execution issues inside the 5-yard line keep him from outscoring high-floor rushing quarterbacks like Josh Allen (22.4 pts). Keep starting Mahomes across all fantasy formats in week 8, but lower your expectations from elite QB1 overall to a reliable mid-range option.",
-        "equipo_impacto": "Costly offensive line penalties and the game-ending sack taken by Mahomes disrupt Andy Reid's late-game play calling, forcing immediate schematic adjustments inside the 5-yard line ahead of their upcoming schedule.",
-        "accion": "Keep Patrick Mahomes locked in your starting lineup for week 8 without hesitation."
+        "contexto": "Washington defeated Philadelphia 27-10 on Sunday Night Football in Week 8. Jayden Daniels piloted the Commanders offense, compiling 217 passing yards and 1 touchdown pass. The Washington defense stepped up by holding the Eagles scoreless through the final 3 quarters of action. Daniels displayed exceptional composure to manage tempo and close out an essential divisional contest against a top rival.",
+        "fantasy": "Daniels reinforces his standing as an every-week starter in 10-team and 12-team leagues, supported by a 19.1 projection in Week 8. His passing accuracy and ball security protect managers from costly negative plays. Daniels remains a set-and-forget QB1 across all fantasy setups, presenting a sturdy floor alongside weekly top-tier upside regardless of defensive matchups.",
+        "equipo_impacto": "Washington's offense displays outstanding rhythm and balance under Daniels' command. His reliable execution maintains the Commanders in prime divisional contention while boosting target quality for wideouts and opening running lanes across the field.",
+        "accion": "Start Jayden Daniels in all fantasy formats without hesitation."
       },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "KC",
-      "equipos": [
-        "KC",
-        "DEN"
-      ],
-      "jugadores": [
-        "4046"
-      ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50355124/broncos-use-last-second-goal-line-stand-hold-chiefs",
-          "t": "Broncos use last-second goal-line stand to hold off Chiefs"
+          "u": "http://www.espn.com/nfl/recap?gameId=401873035",
+          "t": "Jayden Daniels throws TD pass and Commanders shut out Eagles over final 3 quarters of 27-10 win"
         },
         {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/chiefs-controversial-penalty-andy-reid-broncos/",
-          "t": "\n                        Andy Reid questions controversial false start that erased Chiefs&#039; apparent winning TD\n                    "
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50355502/commanders-dispatch-eagles-27-10-snf",
+          "t": "Commanders dispatch Eagles 27-10 on SNF"
         }
+      ],
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "WAS",
+      "equipos": [
+        "WAS",
+        "PHI"
+      ],
+      "jugadores": [
+        "11566"
       ],
       "menciona": []
     }
@@ -230,25 +230,25 @@
     "6130",
     "11625",
     "11783",
-    "4147",
     "8132",
+    "4147",
     "WAS",
     "13424",
-    "12491",
     "13337",
+    "12491",
     "13294",
     "TB",
     "7042",
     "DET",
     "11647",
     "12547",
-    "10219",
     "4039",
+    "10219",
     "12499",
-    "4037",
-    "3271",
     "1166",
     "7567",
+    "3271",
+    "4037",
     "7561",
     "13150"
   ],
@@ -263,8 +263,8 @@
     "10235",
     "12457",
     "HOU",
-    "CLE",
     "13296",
+    "CLE",
     "13276",
     "12489",
     "11624",
@@ -275,8 +275,8 @@
     "11581",
     "4035",
     "9502",
-    "9482",
     "3321",
+    "9482",
     "9758"
   ],
   "duelo": {
