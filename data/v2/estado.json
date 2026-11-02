@@ -1,20 +1,15 @@
 {
-  "fecha": "2026-11-02T22:25:12.166Z",
+  "fecha": "2026-11-02T23:07:34.820Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 15 nuevos, 20 en total",
-    "[0.9s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[2.4s] ESPN: lesiones 799 · noticias 50",
-    "[2.5s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[3.3s] Fuentes nuevas: 5 · horario pico · toca IA: true",
-    "[3.4s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[9.6s] IA OK con gemini-3.5-flash-lite",
-    "[9.6s] Descartada: Gardner Minshew toma el rol estelar en Arizona → duplicada",
-    "[9.6s] Noticias nuevas verificadas: 1",
-    "[19.6s] IA OK con gemini-3.5-flash-lite",
-    "[19.6s] Blog: Lesión de Jeremiyah Love: ¿juega en la semana 8 y qué hacer en fantasy? / Jeremiyah Love injury update: will he play in Week 8? Fantasy impact",
-    "[25.2s] IA OK con gemini-3.5-flash-lite",
-    "[25.2s] Blog: ¿Vale la pena agregar a Emmett Johnson en la semana 8? / Should you pick up Emmett Johnson in Week 8?",
-    "[25.2s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 395 · semana de juego 8 · IA usada hoy 33/40"
+    "[0.3s] YouTube: 15 nuevos, 20 en total",
+    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[2.8s] ESPN: lesiones 799 · noticias 50",
+    "[2.9s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[3.6s] Fuentes nuevas: 6 · horario pico · toca IA: false",
+    "[4.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[8.1s] IA OK con gemini-3.5-flash-lite",
+    "[8.1s] Resumen semana 8",
+    "[8.1s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 395 · semana de juego 8 · IA usada hoy 34/40"
   ]
 }
