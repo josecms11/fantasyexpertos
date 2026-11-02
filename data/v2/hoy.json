@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-02T07:59:36.766Z",
-  "ultimaIA": "2026-11-02T06:36:43.804Z",
+  "actualizado": "2026-11-02T08:59:17.860Z",
+  "ultimaIA": "2026-11-02T08:59:17.860Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,52 +14,45 @@
   ],
   "noticias": [
     {
-      "id": "n20261102063600",
-      "fecha": "2026-11-02T06:36:43.804Z",
+      "id": "n20261102085900",
+      "fecha": "2026-11-02T08:59:17.860Z",
       "semana": 8,
-      "titulo": "Jayden Daniels comanda victoria de Commanders ante Eagles",
+      "titulo": "Buccaneers vencen a Falcons con 0 yardas aéreas",
       "claves": [
-        "Lanzó para 217 yardas y 1 TD en victoria 27-10.",
-        "Commanders blanqueó a Philadelphia durante los últimos 3 cuartos.",
-        "Se consolida como opción estelar indiscutible de mariscal de campo."
+        "Tampa Bay venció a Atlanta registrando 0 yardas por pase.",
+        "El clima torrencial obligó a 1 plan de juego terrestre total.",
+        "La defensiva de Buccaneers limitó a Falcons para asegurar 1 triunfo."
       ],
-      "contexto": "Washington superó 27-10 a Philadelphia en el juego nocturno de la semana 8. Jayden Daniels lideró la ofensiva de Commanders registrando 217 yardas aéreas y 1 pase de anotación. La defensiva capitalina respaldó la actuación blanqueando a Eagles durante los últimos 3 cuartos del duelo. Daniels demostró enorme aplomo para controlar el reloj y asegurar una victoria divisional clave frente a un rival directo.",
-      "fantasy": "Daniels ratifica su condición de mariscal de campo élite para ligas de 10 y 12 equipos tras proyectar 19.1 pts en la semana 8. Su precisión aérea y criterio para cuidar el ovoide eliminan pérdidas perjudiciales para tu plantilla. Es un titular inamovible en cualquier formato de puntuación, entregando estabilidad y techo competitivo sin importar la exigencia del rival.",
-      "equipo_impacto": "El ataque de Washington opera con ritmo y consistencia bajo el mando de Daniels. Su liderazgo potencia las opciones de Commanders en la NFC Este, impulsando la producción de sus receptores y abriendo espacios terrestres para controlar el desarrollo de cada partido.",
-      "accion": "Alinea a Jayden Daniels en tu cuadro estelar sin vacilar.",
+      "contexto": "En 1 partido marcado por 1 fuerte aguacero contra los Atlanta Falcons, Tampa Bay Buccaneers decidió prescindir por completo del juego aéreo. El equipo de Tampa Bay terminó el encuentro con 0 yardas por pase y aun así logró amarrar 1 victoria. La estrategia terrestre extrema demostró ser efectiva bajo las condiciones climáticas adversas, permitiendo que Buccaneers consiguiera 1 triunfo histórico sin depender del aire en la semana 8.",
+      "fantasy": "Este volumen de 0 yardas por pase liquida el techo fantasy de los receptores de Buccaneers cuando el clima es inclemente. Sin embargo, convierte al ataque terrestre en 1 opción de volumen puro. Si juegas en formatos PPR, las semanas de lluvia extrema bajan el valor de los pases a 0 puntos esperados. La defensiva Buccaneers D/ST sube de bonos al controlar el reloj y limitar oportunidades rivales en estos escenarios.",
+      "equipo_impacto": "El esquema de Tampa Bay prioriza totalmente el control del balón por tierra en clima adverso. Atlanta Falcons sufrió para ajustar ante 1 rival que eliminó el pase por 4 cuartos, dejando a su propia ofensiva con pocas oportunidades para remontar el marcador.",
+      "accion": "Monitorea el clima antes de alinear receptores de Tampa Bay en semanas con lluvia intensa.",
       "en": {
-        "titulo": "Jayden Daniels commands Washington victory over Eagles",
+        "titulo": "Buccaneers beat Falcons with 0 passing yards",
         "claves": [
-          "Threw for 217 yards and 1 TD in 27-10 win.",
-          "Commanders shut out Philadelphia over final 3 quarters.",
-          "Solidifies weekly standing as an undisputed fantasy QB1."
+          "Tampa Bay defeated Atlanta while logging 0 passing yards.",
+          "Heavy downpour forced a 100% run-heavy game plan.",
+          "Buccaneers defense shut down Falcons to secure 1 win."
         ],
-        "contexto": "Washington defeated Philadelphia 27-10 on Sunday Night Football in Week 8. Jayden Daniels piloted the Commanders offense, compiling 217 passing yards and 1 touchdown pass. The Washington defense stepped up by holding the Eagles scoreless through the final 3 quarters of action. Daniels displayed exceptional composure to manage tempo and close out an essential divisional contest against a top rival.",
-        "fantasy": "Daniels reinforces his standing as an every-week starter in 10-team and 12-team leagues, supported by a 19.1 projection in Week 8. His passing accuracy and ball security protect managers from costly negative plays. Daniels remains a set-and-forget QB1 across all fantasy setups, presenting a sturdy floor alongside weekly top-tier upside regardless of defensive matchups.",
-        "equipo_impacto": "Washington's offense displays outstanding rhythm and balance under Daniels' command. His reliable execution maintains the Commanders in prime divisional contention while boosting target quality for wideouts and opening running lanes across the field.",
-        "accion": "Start Jayden Daniels in all fantasy formats without hesitation."
+        "contexto": "In a game impacted by a severe downpour against the Atlanta Falcons, the Tampa Bay Buccaneers completely abandoned the passing game. Tampa Bay finished the matchup with 0 passing yards and still managed to secure 1 victory. The extreme ground strategy proved successful under adverse weather conditions, allowing the Buccaneers to earn 1 historic win without relying on the air attack in week 8.",
+        "fantasy": "Logging 0 passing yards destroys the fantasy ceiling for Tampa Bay pass-catchers in heavy rain games. However, it boosts the ground attack into 1 high-volume option. In PPR formats, severe weather drops passing projections to 0 expected value. The Buccaneers D/ST gains value by controlling game flow and limiting opponent scoring opportunities in these low-scoring environments.",
+        "equipo_impacto": "Tampa Bay's offensive scheme completely prioritizes ground control in bad weather. The Atlanta Falcons struggled to adapt against an opponent that eliminated passing for 4 quarters, leaving their own offense with minimal possessions to mount a comeback.",
+        "accion": "Monitor weather forecasts before starting Tampa Bay wide receivers in heavy rain conditions."
       },
+      "etiqueta": "TENDENCIA",
+      "impacto": "NEUTRO",
+      "equipo": "TB",
+      "equipos": [
+        "TB",
+        "ATL"
+      ],
+      "jugadores": [],
       "fuentes": [
         {
-          "m": "ESPN",
-          "u": "http://www.espn.com/nfl/recap?gameId=401873035",
-          "t": "Jayden Daniels throws TD pass and Commanders shut out Eagles over final 3 quarters of 27-10 win"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50355502/commanders-dispatch-eagles-27-10-snf",
-          "t": "Commanders dispatch Eagles 27-10 on SNF"
+          "m": "Yahoo Sports",
+          "u": "https://sports.yahoo.com/articles/zero-passing-yards-one-win-080035656.html",
+          "t": "Zero passing yards, one win. Did the Bucs just reinvent the NFL in all the wrong ways?"
         }
-      ],
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "WAS",
-      "equipos": [
-        "WAS",
-        "PHI"
-      ],
-      "jugadores": [
-        "11566"
       ],
       "menciona": []
     }
@@ -233,8 +226,8 @@
     "8132",
     "WAS",
     "4147",
-    "13424",
     "13337",
+    "13424",
     "12491",
     "13294",
     "TB",
@@ -245,8 +238,8 @@
     "4039",
     "10219",
     "1166",
-    "12499",
     "7567",
+    "12499",
     "3271",
     "4037",
     "7561",
@@ -264,8 +257,8 @@
     "12457",
     "13296",
     "HOU",
-    "CLE",
     "13276",
+    "CLE",
     "12489",
     "11624",
     "5012",
