@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-02T15:42:26.890Z",
-  "ultimaIA": "2026-11-02T15:42:26.890Z",
+  "actualizado": "2026-11-02T16:44:24.608Z",
+  "ultimaIA": "2026-11-02T16:44:24.608Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,85 +14,85 @@
   ],
   "noticias": [
     {
-      "id": "n20261102154200",
-      "fecha": "2026-11-02T15:42:26.890Z",
+      "id": "n20261102164400",
+      "fecha": "2026-11-02T16:44:24.608Z",
       "semana": 8,
-      "titulo": "DaVon Hamilton fuera el resto de la temporada",
+      "titulo": "Aaron Glenn confía en su puesto tras 3 derrotas",
       "claves": [
-        "DaVon Hamilton sufrió desgarro de cuadríceps en semana 8.",
-        "El tackle defensivo de Jaguars se perderá todo el año.",
-        "Golpe duro para la defensiva terrestre de Jacksonville."
+        "Jets acumulan 3 derrotas consecutivas en el inicio de temporada.",
+        "El entrenador Aaron Glenn mantiene la calma sobre su futuro.",
+        "La incertidumbre técnica puede afectar el rendimiento fantasy de NYJ."
       ],
-      "contexto": "El tackle defensivo de los Jaguars, DaVon Hamilton, quedará fuera por lo que resta de la temporada tras sufrir un desgarro en el cuadríceps. La baja del liniero de Jacksonville representa un duro impacto para la unidad defensiva, perdiendo a su ancla principal en la trinchera contra el acarreo. El equipo deberá buscar ajustes internos inmediatos para cubrir esa vacante en la línea frontal.",
-      "fantasy": "La baja de Hamilton castiga a la defensiva D/ST de Jaguars y beneficia a los corredores rivales. Alinea con mayor confianza a los RBs que enfrenten a Jacksonville en las siguientes semanas. Los corredores contrarios suben en proyecciones a RB1 o RB2 sólido tanto en ligas PPR como en formato estándar gracias al espacio adicional que cederá la trinchera.",
-      "equipo_impacto": "La defensiva de Jacksonville pierde solidez interior, obligando a los apoyadores a absorber más bloqueos y permitiendo mayores acarreos a las ofensivas rivales.",
-      "accion": "Ataca a la defensiva de Jaguars alineando a los RBs titulares rivales.",
+      "contexto": "El entrenador principal de Jets, Aaron Glenn, declaró el lunes que no le preocupa su estabilidad laboral pese a atravesar una racha de 3 derrotas seguidas. La presión sobre la franquicia de Nueva York ha aumentado tras este mal arranque de temporada. Sin embargo, Glenn se mantiene firme en que puede revertir el mal momento del equipo y generar un cambio positivo en las siguientes semanas de competición.",
+      "fantasy": "Un equipo envuelto en 3 derrotas consecutivas e inestabilidad en el cuerpo técnico representa un riesgo para los activos fantasy de Jets. Sin Breece Hall fuera por lesión de cuadríceps, la ofensiva puede volverse predecible y poco productiva. Esto impacta negativamente el valor de la defensiva Jets D/ST y genera cautela al considerar iniciar a sus receptores o corredores suplentes en formatos PPR y estándar durante la semana 8.",
+      "equipo_impacto": "La continuidad de Aaron Glenn busca traer calma al vestidor de Jets tras 3 tropiezos. La falta de resultados colectivos exige ajustes inmediatos en el esquema para evitar descensos continuos en la efectividad ofensiva de la escuadra.",
+      "accion": "Mantén en la banca a los jugadores secundarios de Jets hasta ver mejoría ofensiva.",
       "en": {
-        "titulo": "DaVon Hamilton likely out for remainder of season",
+        "titulo": "Aaron Glenn confident in job despite 3 straight losses",
         "claves": [
-          "DaVon Hamilton suffered a torn quad in Week 8.",
-          "Jaguars defensive tackle expected to miss rest of season.",
-          "Major blow to Jacksonville run defense unit moving forward."
+          "Jets suffer a 3-game losing streak this season.",
+          "Head coach Aaron Glenn remains calm about job security.",
+          "Coaching instability presents potential fantasy risks for NYJ assets."
         ],
-        "contexto": "Jacksonville Jaguars nose tackle DaVon Hamilton is expected to miss the remainder of the season after suffering a torn quadriceps muscle. The loss of the interior lineman represents a significant blow to Jacksonville's defense, removing their primary anchor against the running game in the trenches. The team must now adjust its rotation along the front line.",
-        "fantasy": "Hamilton's absence weakens the Jaguars D/ST run defense and boosts opposing running backs. Start rival RBs facing Jacksonville with higher confidence in upcoming weeks. Opposing backs get a boost into RB1 or RB2 territory in both PPR and standard formats due to the extra room expected inside the trenches.",
-        "equipo_impacto": "Jacksonville loses interior strength, forcing linebackers to take on more blocks and opening larger rushing lanes for opposing offenses.",
-        "accion": "Target the Jaguars defense by starting opposing primary running backs."
+        "contexto": "Jets head coach Aaron Glenn insisted on Monday that he is not concerned about his job security despite a troubling 3-game losing streak. Pressure is mounting on the New York franchise after a poor start. However, Glenn remains confident in his ability to steer the team in the right direction and turn around their performance over the upcoming weeks of the season.",
+        "fantasy": "A team trapped in a 3-game losing streak creates volatile fantasy outcomes for NYJ assets. With Breece Hall out due to a quadriceps injury, the offense risks becoming stagnant and predictable. This situation lowers the floor for Jets D/ST and warrants caution when deciding whether to start secondary skill players in PPR or standard leagues for Week 8 lineups.",
+        "equipo_impacto": "Aaron Glenn's message aims to stabilize the NYJ locker room following 3 consecutive defeats. Immediate tactical adjustments are necessary to prevent further offensive declines in coming games.",
+        "accion": "Bench secondary Jets options until the offense shows clear signs of recovery."
       },
-      "etiqueta": "LESIÓN",
+      "etiqueta": "TENDENCIA",
       "impacto": "BAJA",
-      "equipo": "JAX",
+      "equipo": "NYJ",
       "equipos": [
-        "JAX"
+        "NYJ"
       ],
       "jugadores": [],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50358564/sources-jaguars-dt-hamilton-torn-quad-likely-season",
-          "t": "Jaguars DT DaVon Hamilton likely out for season with torn quad, sources say"
+          "u": "https://www.espn.com/nfl/story/_/id/50359102/jets-aaron-glenn-says-not-worried-job-security",
+          "t": "Jets' Aaron Glenn says he's not worried about job security amid tough start"
         }
       ],
       "menciona": []
     },
     {
-      "id": "n20261102154201",
-      "fecha": "2026-11-02T15:42:26.890Z",
+      "id": "n20261102164401",
+      "fecha": "2026-11-02T16:44:24.608Z",
       "semana": 8,
-      "titulo": "Saints despiden a T.J. Paganetti tras desastre terrestre",
+      "titulo": "Yaya Diaby sufre lesión y preocupa a Buccaneers",
       "claves": [
-        "T.J. Paganetti fue cesado tras registrar solo 18 yardas.",
-        "Los Saints realizan ajustes durante su semana 8 libre.",
-        "Buscaban solucionar el colapso de su ataque por acarreo."
+        "Yaya Diaby sufre una lesión que enciende alarmas en Tampa Bay.",
+        "La defensiva de Buccaneers busca suplir su impacto en la línea.",
+        "La baja de presión afecta directamente la proyección de Buccaneers D/ST."
       ],
-      "contexto": "Los Saints despidieron al coordinador del juego terrestre, T.J. Paganetti, aprovechando su semana 8 de descanso. La decisión ocurrió después de una actuación vergonzosa donde el equipo acumuló apenas 18 yardas por tierra. La gerencia de New Orleans busca reestructurar su esquema terrestre inmediatamente para salvar la ofensiva en la 2da mitad del año.",
-      "fantasy": "Este movimiento busca revivir a los corredores de Saints tras tocar fondo. Monitorea el reparto de acarreos saliendo de la semana 8 de descanso. Si el nuevo plan simplifica la ejecución, los RBs de New Orleans podrían recuperar valor como opciones de Flex o RB2 en ligas PPR, aunque por ahora generan incertidumbre.",
-      "equipo_impacto": "La línea ofensiva y los corredores sufrirán ajustes esquemáticos. Un mejor juego por tierra ayudará a quitarle presión al mariscal de campo.",
-      "accion": "Mantén a los RBs de Saints en tu banca hasta ver cambios en la semana 9.",
+      "contexto": "La lesión del defensivo Yaya Diaby genera serias dudas sobre la estructura de la defensiva de Buccaneers de cara a los próximos partidos. Diaby ha sido una pieza clave en la presión sobre el mariscal de campo rival. El cuerpo técnico de Tampa Bay analiza el impacto de su ausencia y cómo reestructurar la rotación defensiva para mitigar la pérdida de su estelar cazador de mariscales.",
+      "fantasy": "La baja o limitación de Yaya Diaby afecta directamente el valor de Buccaneers D/ST en ligas fantasy. Sin su capacidad para generar capturas y apresurar pases, la defensiva pierde atractivo, bajando de una proyección destacada de 9.5 pts en semana 8 a una opción más arriesgada. Esto favorece ligeramente a los mariscales y receptores rivales en enfrentamientos semanales, reduciendo el techo de la unidad defensiva de Tampa Bay.",
+      "equipo_impacto": "El esquema defensivo de Buccaneers pierde agresividad en la línea frontal sin Yaya Diaby. El equipo necesitará que otros linieros asuman roles protagónicos para mantener el nivel de presión sobre los mariscales contrarios.",
+      "accion": "Busca alternativas en waivers para reemplazar a Buccaneers D/ST esta semana 8.",
       "en": {
-        "titulo": "Saints fire T.J. Paganetti after rushing collapse",
+        "titulo": "Yaya Diaby injury creates concern for Buccaneers defense",
         "claves": [
-          "T.J. Paganetti fired after Saints rushed for 18 yards.",
-          "New Orleans makes coaching change during Week 8 bye.",
-          "Team seeks immediate answers to fix struggling ground attack."
+          "Yaya Diaby suffers injury, sparking concerns for Tampa Bay.",
+          "Buccaneers defense must adjust front line rotation without him.",
+          "Pass rush absence impacts the fantasy floor for Buccaneers D/ST."
         ],
-        "contexto": "The Saints fired run game coordinator T.J. Paganetti during their Week 8 bye week. The move came following an embarrassing performance in which New Orleans managed just 18 rushing yards. Front office management decided to restructure their rushing concepts immediately to revive the offense for the 2nd half of the season.",
-        "fantasy": "This coaching change aims to boost Saints running backs after hitting rock bottom. Monitor backfield usage coming out of their Week 8 bye. If the new scheme simplifies blocking, New Orleans RBs could regain Flex or RB2 value in PPR leagues, though they remain risky holds for now.",
-        "equipo_impacto": "The offensive line and running back room face schematic adjustments. A functional ground game will relieve pressure on the starting quarterback.",
-        "accion": "Keep Saints RBs on your bench until seeing their Week 9 volume."
+        "contexto": "The injury to defender Yaya Diaby raises major questions regarding the structure of the Buccaneers defense moving forward. Diaby has served as an essential piece for Tampa Bay's pass rush. The coaching staff is now assessing the full impact of his physical setback and determining how to adjust player rotations to replace his productivity on the defensive line.",
+        "fantasy": "Yaya Diaby's injury status directly hurts the overall appeal of Buccaneers D/ST in fantasy football leagues. Without his pass-rushing presence to force sacks and turnovers, Tampa Bay's defensive ceiling drops despite a 9.5 pts projection for Week 8. Opposing quarterbacks and receivers gain a slight boost, making Buccaneers D/ST a riskier starting option in standard and PPR formats.",
+        "equipo_impacto": "Tampa Bay's defensive scheme loses pass-rush pressure along the front line without Yaya Diaby active. Secondary linemen must step up to maintain consistent pressure on opposing quarterbacks.",
+        "accion": "Look for waiver wire streamer options to replace Buccaneers D/ST in Week 8."
       },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "NO",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "TB",
       "equipos": [
-        "NO"
+        "TB"
       ],
       "jugadores": [],
       "fuentes": [
         {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50358473/sources-saints-fire-run-game-coordinator-paris-flop",
-          "t": "Sources: Saints fire run-game coordinator after Paris flop"
+          "m": "Yahoo Sports",
+          "u": "https://sports.yahoo.com/articles/does-yaya-diaby-injury-mean-163239627.html",
+          "t": "What does Yaya Diaby’s injury mean for the Buccaneers?"
         }
       ],
       "menciona": []
@@ -267,14 +267,14 @@
     "13337",
     "11783",
     "WAS",
-    "4147",
     "12491",
-    "13424",
-    "TB",
+    "4147",
     "7042",
+    "TB",
+    "13424",
     "13294",
-    "DET",
     "1166",
+    "DET",
     "4039",
     "7567",
     "11647",
@@ -282,36 +282,36 @@
     "3271",
     "10219",
     "7561",
-    "13150",
     "11610",
-    "11576"
+    "13150",
+    "4993"
   ],
   "soltados": [
     "6130",
-    "8129",
     "11435",
+    "8129",
     "11637",
     "3271",
     "13276",
-    "7561",
     "12718",
-    "13296",
+    "7561",
     "4881",
+    "13296",
     "12457",
     "10235",
     "11624",
-    "HOU",
     "5012",
-    "CLE",
-    "12489",
-    "13424",
     "4037",
-    "11581",
-    "4035",
+    "HOU",
+    "CLE",
     "10213",
-    "9502",
+    "13424",
+    "12489",
+    "11581",
     "6865",
-    "8122"
+    "4035",
+    "9502",
+    "3321"
   ],
   "duelo": {
     "a": "CeeDee Lamb",
