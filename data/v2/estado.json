@@ -1,12 +1,26 @@
 {
-  "fecha": "2026-11-02T12:41:05.702Z",
+  "fecha": "2026-11-02T13:54:34.890Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 15 nuevos, 20 en total",
-    "[0.9s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[2.2s] ESPN: lesiones 799 · noticias 50",
+    "[0.3s] YouTube: 15 nuevos, 20 en total",
+    "[1.1s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[2.3s] ESPN: lesiones 799 · noticias 50",
     "[2.3s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[2.9s] Fuentes nuevas: 1 · horario normal · toca IA: false",
-    "[3.9s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 375 · semana de juego 8 · IA usada hoy 13/40"
+    "[2.7s] Fuentes nuevas: 10 · horario normal · toca IA: true",
+    "[2.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[28.7s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
+    "[29.4s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
+    "[30.9s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
+    "[68.2s] IA OK con gemini-3.5-flash",
+    "[68.2s] Noticias nuevas verificadas: 3",
+    "[70.0s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
+    "[70.8s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
+    "[103.1s] IA OK con gemini-3.6-flash",
+    "[103.1s] Blog: ¿Vale la pena agregar a Adonai Mitchell en la semana 8? / Should you pick up Adonai Mitchell in Week 8?",
+    "[103.5s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
+    "[104.1s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
+    "[135.6s] IA OK con gemini-3.6-flash",
+    "[135.6s] Blog: ¿Arrancar o sentar a Malik Nabers en la semana 8? / Should you start Malik Nabers in Week 8?",
+    "[135.6s] Listo: 3 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 378 · semana de juego 8 · IA usada hoy 16/40"
   ]
 }

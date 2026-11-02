@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-02T12:41:04.103Z",
-  "ultimaIA": "2026-11-02T11:49:30.398Z",
+  "actualizado": "2026-11-02T13:52:21.612Z",
+  "ultimaIA": "2026-11-02T13:52:21.612Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,90 +14,134 @@
   ],
   "noticias": [
     {
-      "id": "n20261102114900",
-      "fecha": "2026-11-02T11:49:30.398Z",
+      "id": "n20261102135200",
+      "fecha": "2026-11-02T13:52:21.612Z",
       "semana": 8,
-      "titulo": "Caleb Williams lidera ofensiva de Bears en semana 8",
+      "titulo": "Jaylen Warren explota con 143 yardas terrestres",
       "claves": [
-        "Ben Johnson diseña esquemas ofensivos creativos para los Bears",
-        "Caleb Williams proyecta 20 pts PPR para la semana 8",
-        "El sistema busca explotar oportunidades en zona de anotación rival"
+        "Empató récord personal con 143 yardas por tierra.",
+        "Cumplió 28 años consolidado como motor ofensivo.",
+        "Mantiene ritmo de estelar en el ataque terrestre."
       ],
-      "contexto": "El coordinador ofensivo Ben Johnson destaca por su capacidad táctica al diseñar jugadas desde joven. Su sistema en Chicago busca potenciar el talento de la ofensiva en la semana 8. Con un esquema agresivo y enfocado en maximizar los recursos terrestres y aéreos, los Bears preparan un plan de juego diseñado para generar jugadas explosivas y mantener la fluidez en cada serie ofensiva durante el partido.",
-      "fantasy": "El volumen proyectado favorece a Caleb Williams, quien registra 20 pts PPR en el modelo FX para la semana 8. En ligas de 12 equipos, Williams se consolida como un QB1 muy confiable gracias a la creatividad de su ataque. Su capacidad para extender jugadas lo convierte en una opción segura para arrancar este fin de semana en cualquier formato de puntuación.",
-      "equipo_impacto": "El esquema de Ben Johnson eleva el potencial de toda la ofensiva en Chicago. Los corredores y receptores reciben balones en espacio abierto, lo que mejora significativamente las oportunidades de anotar en la semana 8.",
-      "accion": "Arranca a Caleb Williams con confianza como tu QB1 en la semana 8.",
+      "contexto": "Jaylen Warren celebró su cumpleaños número 28 firmando una actuación memorable tras acumular 143 yardas por la vía terrestre. Este registro empató la cifra más alta de su carrera y consolidó su estatus como el verdadero motor de la ofensiva de Pittsburgh. El corredor ha mostrado una evolución notable durante la temporada, ganando yardas tras el contacto y adueñándose por completo del volumen terrestre en el esquema del equipo.",
+      "fantasy": "La producción de Jaylen Warren lo establece firmemente como un RB1 indiscutible en formatos PPR y estándar para la segunda mitad de la temporada. Su carga de trabajo masiva le otorga un piso seguro de 15 puntos por semana. Si tienes a Warren en tu plantilla, no busques alternativas; debe ser titular fijo semanal. Quienes busquen cambiar por él encontrarán un precio muy alto tras esta exhibición de 143 yardas terrestres.",
+      "equipo_impacto": "El ascenso de Warren disminuye las oportunidades del resto del backfield de Pittsburgh. La ofensiva depende cada vez más del juego terrestre para establecer el ritmo de partido, lo que alivia la presión sobre el mariscal de campo y mantiene a la defensiva descansada durante los juegos.",
+      "accion": "Alinea a Jaylen Warren como tu RB1 sin dudarlo en todas las ligas.",
       "en": {
-        "titulo": "Caleb Williams leads Bears offense in Week 8",
+        "titulo": "Jaylen Warren explodes for 143 rushing yards",
         "claves": [
-          "Ben Johnson designs creative offensive schemes for Bears",
-          "Caleb Williams projects 20 PPR pts in Week 8",
-          "Offensive system aims to maximize red zone scoring opportunities"
+          "Tied career high with 143 rushing yards.",
+          "Celebrated 28th birthday as team's offensive engine.",
+          "Solidified status as elite fantasy running back."
         ],
-        "contexto": "Offensive coordinator Ben Johnson is known for his tactical ability, having designed plays since middle school. His system in Chicago aims to maximize the offensive talent in Week 8. With an aggressive scheme focused on getting the most out of passing and running plays, the Bears prepare a game plan designed to create explosive plays and sustain drives.",
-        "fantasy": "The projected volume heavily favors Caleb Williams, who projects 20 PPR pts in the FX model for Week 8. In 12-team leagues, Williams cements himself as a reliable QB1 option thanks to creative playcalling. His ability to extend plays makes him a safe start this weekend across all scoring formats.",
-        "equipo_impacto": "Ben Johnson's offensive scheme raises the ceiling for Chicago's entire offense. Running backs and receivers get high-value touches in open space, significantly boosting touchdown opportunities in Week 8.",
-        "accion": "Start Caleb Williams with confidence as your QB1 in Week 8."
+        "contexto": "Jaylen Warren celebrated his 28th birthday by putting up a memorable performance with 143 rushing yards. This total tied his career high and cemented his status as the primary engine of Pittsburgh's offense. The running back has shown remarkable growth throughout the season, consistently earning yards after contact and dominating the backfield touches within the team's offensive scheme.",
+        "fantasy": "Jaylen Warren's production firmly establishes him as an undeniable RB1 in both PPR and standard formats moving forward. His heavy workload provides a safe floor of 15 points per week. If Warren is on your roster, do not overthink it; he is a locked-in weekly starter. Fantasy managers looking to trade for him will face a steep price after this 143-yard rushing performance.",
+        "equipo_impacto": "Warren's rise significantly reduces touch opportunities for the rest of Pittsburgh's backfield. The offense relies heavily on the ground game to establish tempo, relieving pressure on the quarterback while keeping the defense rested on the sideline.",
+        "accion": "Start Jaylen Warren as your locked-in RB1 in all fantasy leagues."
       },
-      "etiqueta": "START",
+      "etiqueta": "TENDENCIA",
       "impacto": "SUBE",
-      "equipo": "CHI",
+      "equipo": "PIT",
       "equipos": [
-        "CHI"
+        "PIT"
       ],
       "jugadores": [
-        "11560"
+        "8228"
       ],
       "fuentes": [
         {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50341080/bears-ben-johnson-playcalling-caleb-williams",
-          "t": "A child playcaller? The Bears' Ben Johnson was born for this"
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/steelers-jaylen-warren-breakout-running-back/",
+          "t": "\n                        Steelers&#039; Jaylen Warren is &#039;on fire&#039;: Why the breakout running back keeps getting better\n           "
         }
       ],
       "menciona": []
     },
     {
-      "id": "n20261102114901",
-      "fecha": "2026-11-02T11:49:30.398Z",
+      "id": "n20261102135201",
+      "fecha": "2026-11-02T13:52:21.612Z",
       "semana": 8,
-      "titulo": "Jaxon Smith-Njigba asume protagonismo aéreo en semana 8",
+      "titulo": "Joe Burrow domina con 6 pases de anotación",
       "claves": [
-        "Rashid Shaheed queda fuera de la semana 8 por lesión",
-        "Jaxon Smith-Njigba proyecta 23.4 pts PPR en el modelo FX",
-        "El ataque aéreo de Seattle concentra su volumen en Smith-Njigba"
+        "Lanzó 6 pases de TD en la semana 8.",
+        "Dominio absoluto en la zona roja rival.",
+        "Proyección fantasy se eleva para el cierre del año."
       ],
-      "contexto": "Con Rashid Shaheed descartado oficialmente por lesión en la rodilla, el ataque aéreo de los Seahawks depende completamente de Jaxon Smith-Njigba para la semana 8. Aunque Shaheed aportaba velocidad tras ser adquirido por el equipo, su ausencia obliga a Seattle a canalizar la gran mayoría de sus envíos hacia Smith-Njigba, convirtiéndolo en la pieza central de la estrategia ofensiva en este importante compromiso.",
-      "fantasy": "Jaxon Smith-Njigba es la proyección WR1 principal de la semana 8 con 23.4 pts PPR. Sin la presencia de Shaheed en el campo, Smith-Njigba acapara un volumen masivo de objetivos en zonas profundas e intermedias. Debes alinearlo como titular indiscutible en ligas PPR, Media PPR y Estándar. Es una opción de elite con un piso y techo sumamente elevados.",
-      "equipo_impacto": "La ausencia de Shaheed resta velocidad vertical a Seattle, pero consolida a Jaxon Smith-Njigba como la opción principal del mariscal de campo. Todo el plan aéreo pasará directamente por sus manos en la semana 8.",
-      "accion": "Arranca a Jaxon Smith-Njigba como tu WR1 estelar en la semana 8.",
+      "contexto": "Joe Burrow firmó una jornada memorable en la semana 8 al conseguir 6 pases de anotación, encabezando la victoria de su equipo con un despliegue aéreo categórico. El mariscal de campo lució totalmente indescifrable para la defensiva contraria, explotando las manos de sus receptores principales y mostrando una precisión impecable dentro de la zona de gol para consolidar uno de sus mejores partidos del año.",
+      "fantasy": "Esta actuación de 6 anotaciones reafirma a Joe Burrow como un QB1 de élite para fantasy football. Su capacidad de explotar en cualquier enfrentamiento le otorga un techo altísimo de más de 30 puntos en semanas donde el juego aéreo toma el control. En ligas Superflex y formatos de 1 QB, Burrow debe permanecer en tu alineación titular de forma permanente sin importar el rival defensivo.",
+      "equipo_impacto": "El rendimiento explosivo de Burrow beneficia directamente la producción de receptores como Ja'Marr Chase, elevando las oportunidades de anotación para todo el cuerpo de receptores. La ofensiva se vuelve mucho más vertical y agresiva.",
+      "accion": "Mantén a Joe Burrow como titular indiscutible en la posición de mariscal.",
       "en": {
-        "titulo": "Jaxon Smith-Njigba takes over Seahawks target share",
+        "titulo": "Joe Burrow dominates with 6 touchdown passes",
         "claves": [
-          "Rashid Shaheed is out for Week 8 with a knee injury",
-          "Jaxon Smith-Njigba projects 23.4 PPR pts in FX model",
-          "Seattle's passing attack concentrates target volume on Smith-Njigba"
+          "Threw 6 touchdown passes in Week 8.",
+          "Showcased total dominance inside the red zone.",
+          "Fantasy ceiling skyrockets for remaining games."
         ],
-        "contexto": "With Rashid Shaheed officially ruled out due to a knee injury, the Seahawks passing attack relies entirely on Jaxon Smith-Njigba for Week 8. Although Shaheed provided deep threat ability after being acquired by Seattle, his absence forces the offense to funnel targets toward Smith-Njigba, making him the focal point of the passing scheme in this key matchup.",
-        "fantasy": "Jaxon Smith-Njigba leads all receivers with 23.4 PPR pts in the Week 8 projections. Without Shaheed on the field, Smith-Njigba absorbs a massive target share in all areas of the field. He is a must-start WR1 in PPR, Half-PPR, and Standard formats with an elite floor and tremendous ceiling.",
-        "equipo_impacto": "Shaheed's absence reduces vertical speed for Seattle, but locks Jaxon Smith-Njigba into a high-volume target share. The entire passing offense will flow directly through him in Week 8.",
-        "accion": "Start Jaxon Smith-Njigba as an elite WR1 in Week 8."
+        "contexto": "Joe Burrow delivered a memorable performance in Week 8 by throwing 6 touchdown passes, leading his team's victory with an authoritative aerial display. The quarterback looked completely unstoppable against the opposing defense, connecting with key receivers and demonstrating pinpoint accuracy inside the red zone to secure one of his finest games of the season.",
+        "fantasy": "This 6-touchdown explosion reaffirms Joe Burrow as an elite QB1 in fantasy football. His ability to hit massive ceilings gives him 30-plus point potential in games dominated by the pass. In both 1-QB and Superflex formats, Burrow must remain in your starting lineup every single week regardless of the defensive matchup.",
+        "equipo_impacto": "Burrow's high-powered performance directly boosts the fantasy output of receivers like Ja'Marr Chase, raising TD opportunities across the entire receiving corps. The offense operates with maximum aggression and verticality.",
+        "accion": "Keep Joe Burrow locked in as your starting quarterback every week."
       },
       "etiqueta": "START",
       "impacto": "SUBE",
-      "equipo": "SEA",
+      "equipo": "CIN",
       "equipos": [
-        "SEA"
+        "CIN"
       ],
       "jugadores": [
-        "9488",
-        "8676"
+        "6770"
       ],
       "fuentes": [
         {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50352650/seattle-seahawks-trade-rashid-shadeed-jaxon-smith-njigba",
-          "t": "Can Seahawks' Rashid Shaheed become a complementary WR to Jaxon Smith-Njigba?"
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/cover-32-nfl-week-8-trade-deadline-jets/",
+          "t": "\n                        Cover 32: Why Jets have every reason to trade Breece Hall, plus Week 8 games balls, gaffes\n                    "
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261102135202",
+      "fecha": "2026-11-02T13:52:21.612Z",
+      "semana": 8,
+      "titulo": "George Pickens suma solo 4 objetivos en colapso",
+      "claves": [
+        "Pickens tuvo solo 4 pases dirigidos ante Arizona.",
+        "Rumores de traspaso aumentan antes de la fecha límite.",
+        "Su volumen reciente genera incertidumbre en fantasy."
+      ],
+      "contexto": "La tensión aumenta en Dallas tras su colapso histórico ante Arizona, donde el receptor George Pickens solo registró 4 objetivos a lo largo del encuentro. Esta baja participación en el plan de juego ha despertado especulaciones sobre su futuro antes de la fecha límite de traspasos en la NFL. El jugador no logró ser el factor determinante que el equipo necesitaba para rescatar el partido ofensivamente.",
+      "fantasy": "La caída a 4 objetivos reduce significativamente la confianza fantasy en George Pickens, desplazándolo a un rango de Flex o WR3 dependiente de anotaciones. En ligas PPR su valor sufre un golpe inmediato por la falta de volumen constante. Si estás evaluando traspasos antes de la fecha límite, mantén el ojo atento a un posible cambio de equipo que pueda recuperar su verdadero valor fantasy.",
+      "equipo_impacto": "La falta de involucramiento de Pickens altera la distribución de pases en Dallas, obligando a buscar otras opciones en el juego aéreo pero limitando la explosividad general de una ofensiva que se vio estancada frente a la defensiva de los Cardinals.",
+      "accion": "Relega a George Pickens a la banca o consideración de Flex esta semana.",
+      "en": {
+        "titulo": "George Pickens sees only 4 targets in collapse",
+        "claves": [
+          "Targeted just 4 times against Arizona.",
+          "Trade deadline rumors intensify surrounding receiver.",
+          "Inconsistent volume lowers weekly fantasy floor."
+        ],
+        "contexto": "Tension is rising in Dallas following their historic collapse against Arizona, where receiver George Pickens recorded just 4 targets throughout the game. This reduced involvement in the game plan has sparked trade deadline speculation regarding his future. The receiver was unable to make an impact, leaving the passing attack searching for answers during a costly loss.",
+        "fantasy": "Dropping to just 4 targets significantly lowers fantasy confidence in George Pickens, pushing him down to a touchdown-dependent WR3 or Flex play. In PPR formats, his value takes an immediate hit due to erratic target volume. If you are active around the trade deadline, monitor potential destination rumors that could revitalize his overall fantasy potential.",
+        "equipo_impacto": "Pickens' lack of targets alters pass distribution in Dallas, forcing the team to seek alternative options downfield while capping the overall ceiling of an offense that stalled against Arizona's defense.",
+        "accion": "Downgrade George Pickens to a risky Flex option for upcoming matchups."
+      },
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "DAL",
+      "equipos": [
+        "DAL",
+        "ARI"
+      ],
+      "jugadores": [
+        "8137"
+      ],
+      "fuentes": [
+        {
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/cowboys-nfl-trade-deadline-george-pickens-destinations/",
+          "t": "\n                        Cowboys should consider trading George Pickens: 5 logical NFL deadline destinations\n                    "
         }
       ],
       "menciona": []
@@ -270,52 +314,52 @@
     "11625",
     "8132",
     "11783",
+    "13337",
     "WAS",
     "4147",
-    "13337",
-    "13424",
     "12491",
+    "13424",
     "TB",
     "13294",
     "7042",
     "DET",
     "11647",
     "4039",
-    "12547",
     "1166",
-    "10219",
     "7567",
+    "12547",
+    "10219",
     "3271",
+    "7561",
     "12499",
     "4037",
-    "7561",
     "13150"
   ],
   "soltados": [
     "8129",
-    "11435",
     "6130",
+    "11435",
     "3271",
     "7561",
     "11637",
     "12718",
     "13276",
     "12457",
-    "10235",
     "13296",
+    "10235",
     "HOU",
     "CLE",
-    "12489",
-    "11624",
     "4881",
+    "11624",
+    "12489",
     "5012",
     "13424",
     "11581",
     "8122",
     "4035",
     "9502",
-    "3321",
     "4037",
+    "3321",
     "9758"
   ],
   "duelo": {
