@@ -1,17 +1,21 @@
 {
-  "fecha": "2026-11-02T00:54:13.104Z",
+  "fecha": "2026-11-02T01:55:56.150Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 0 nuevos, 20 en total",
+    "[0.1s] YouTube: 0 nuevos, 20 en total",
     "[0.9s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[1.9s] ESPN: lesiones 799 · noticias 50",
-    "[2.0s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[2.4s] Fuentes nuevas: 61 · horario pico · toca IA: true",
-    "[2.5s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[79.2s] IA OK con gemini-3.8-flash",
-    "[79.2s] Descartada: Joe Burrow explota con 6 TD ante Titans → duplicada",
-    "[79.2s] Descartada: Vikings prometen más envíos para Justin Jefferson → duplicada",
-    "[79.2s] Noticias nuevas verificadas: 1",
-    "[80.1s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 367 · semana de juego 8 · IA usada hoy 1/40"
+    "[1.8s] ESPN: lesiones 799 · noticias 50",
+    "[1.8s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[2.1s] Fuentes nuevas: 17 · horario pico · toca IA: true",
+    "[2.3s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[67.0s] IA OK con gemini-3.8-flash",
+    "[67.0s] Descartada: Joe Burrow explota con 6 TD totales ante Titans → duplicada",
+    "[67.0s] Noticias nuevas verificadas: 2",
+    "[72.6s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
+    "[139.1s] IA OK con gemini-3.7-flash",
+    "[139.1s] Blog: James Cook III: ¿juega semana 8 y qué hacer en fantasy? / James Cook III Week 8 injury update & fantasy advice",
+    "[224.0s] IA OK con gemini-3.8-flash",
+    "[224.0s] Blog: ¿Vender o aguantar a Devin Singletary? Semana 8 / Should you sell or hold Devin Singletary? Week 8",
+    "[224.0s] Listo: 2 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 369 · semana de juego 8 · IA usada hoy 4/40"
   ]
 }

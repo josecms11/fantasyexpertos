@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-02T00:52:55.008Z",
-  "ultimaIA": "2026-11-02T00:52:55.008Z",
+  "actualizado": "2026-11-02T01:52:13.959Z",
+  "ultimaIA": "2026-11-02T01:52:13.959Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,55 +14,91 @@
   ],
   "noticias": [
     {
-      "id": "n20261102005202",
-      "fecha": "2026-11-02T00:52:55.008Z",
+      "id": "n20261102015201",
+      "fecha": "2026-11-02T01:52:13.959Z",
       "semana": 8,
-      "titulo": "Gardner Minshew abre debate de mariscal en Arizona",
+      "titulo": "Tyler Allgeier se afianza como RB2 o flex",
       "claves": [
-        "Gardner Minshew relevó a Jacoby Brissett en el tercer cuarto.",
-        "Arizona remontó para vencer 33-30 a Dallas en tiempo extra.",
-        "El entrenador Mike LaFleur no definió al titular para semana 9."
+        "Reportado por ESPN como opción sólida de RB2 o flex.",
+        "Registra alta demanda en waivers de ligas estándar y PPR.",
+        "Oportunidad garantizada en el esquema terrestre de los Falcons."
       ],
-      "contexto": "Gardner Minshew revolucionó a la ofensiva de Arizona tras ingresar en el tercer cuarto en lugar de Jacoby Brissett, liderando una vibrante remontada 33-30 en tiempo extra sobre Dallas. Minshew conectó envíos clave con Michael Wilson para igualar el juego y permitir que Chad Ryland definiera con gol de campo. Tras la victoria, el entrenador Mike LaFleur evitó comprometerse con un mariscal titular.",
-      "fantasy": "Si Gardner Minshew asume la titularidad, se convierte de inmediato en una opción viable en ligas Superflex o de 2 QB por su estilo agresivo. Su presencia eleva el valor de Michael Wilson y Trey McBride, proyectado con 18.9 pts FX. Con Brissett la ofensiva lucía estancada; Minshew aporta más empuje vertical y mejora las oportunidades de anotar para todo el ataque aéreo.",
-      "equipo_impacto": "El cambio le dio dinamismo inmediato a Arizona, revitalizando a sus armas aéreas y castigando profundo a la defensiva rival. Los receptores ganan volumen valioso con la mayor agresividad de Minshew en series decisivas.",
-      "accion": "Recluta a Gardner Minshew de la agencia libre en ligas Superflex.",
+      "contexto": "El corredor Tyler Allgeier vuelve a colocarse bajo los reflectores de fantasy tras reportes de ESPN que confirman su papel como una alternativa viable de RB2 o flex. Atlanta continúa involucrándolo activamente en su plan de juego terrestre, otorgándole toques constantes en series importantes y labores de desgaste que complementan la ofensiva. Allgeier figura entre los elementos más reclamados en la agencia libre semanal por su rol establecido.",
+      "fantasy": "Allgeier es viable en ligas de 12 o más equipos en formatos PPR y medio punto por recepción. No necesitas depender exclusivamente de un RB1 dominante para competir si tienes un corredor de piso seguro como él. Su capacidad para acaparar acarreos en situaciones de zona roja y mantener ritmo constante le permite ofrecer números de RB2 de emergencia o un flex respetable frente a descansos y bajas por lesión.",
+      "equipo_impacto": "Atlanta mantiene un esquema terrestre balanceado, quitando carga física excesiva a otros corredores y manteniendo frescura ofensiva para consumir tiempo de posesión sin descuidar la efectividad en primera y segunda oportunidad.",
+      "accion": "Reclámalo de waivers si requieres profundidad inmediata como RB2 o flex.",
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50353468/cardinals-mike-lafleur-noncommittal-starting-qb-gardner-minshew-replaces-jacoby-brissett-win",
-          "t": "Cardinals' LaFleur noncommittal on QB after Minshew replaces Brissett in win"
-        },
-        {
-          "m": "ESPN",
-          "u": "http://www.espn.com/nfl/recap?gameId=401873024",
-          "t": "Chad Ryland kicks winner after PAT miss that forced OT as Cards beat Cowboys 33-30 with wild rally"
+          "u": "https://www.espn.com/video/clip/_/id/50353645/why-tyler-allgeier-reliable-rb2-flex-option-fantasy-managers",
+          "t": "Why Tyler Allgeier is a reliable RB2 or flex option for fantasy managers"
         }
       ],
       "en": {
-        "titulo": "Gardner Minshew sparks Cardinals quarterback controversy in comeback",
+        "titulo": "Tyler Allgeier emerges as reliable RB2 or flex",
         "claves": [
-          "Gardner Minshew replaced Jacoby Brissett during the third quarter.",
-          "Arizona mounted a 33-30 overtime comeback win over Dallas.",
-          "Coach Mike LaFleur refused to name next week's starting quarterback."
+          "Reported by ESPN as reliable RB2 or flex fantasy option.",
+          "High priority waiver wire target across standard and PPR leagues.",
+          "Carves out stable rushing touches in Atlanta offensive scheme."
         ],
-        "contexto": "Gardner Minshew injected life into Arizona's offense after replacing Jacoby Brissett in the third quarter, spearheading a thrilling 33-30 overtime comeback win over Dallas. Minshew delivered clutch passes to Michael Wilson, setting up Chad Ryland's game-winning field goal. Following the victory, head coach Mike LaFleur refused to commit to Brissett, opening the door for an outright quarterback competition moving forward.",
-        "fantasy": "Should Gardner Minshew win the starting job, he enters the radar as a viable streaming option in Superflex and 2-QB formats. His aggressive vertical passing elevates the ceilings of Michael Wilson and elite tight end Trey McBride, who boasts an 18.9 FX projection. Minshew offers far more fantasy upside to Arizona's pass catchers than Brissett's conservative approach.",
-        "equipo_impacto": "The quarterback change completely shifted Arizona's offensive tempo, generating chunk plays and red-zone trips. His gunslinger mentality creates superior scoring opportunities across the board compared to Brissett's slow-moving offense.",
-        "accion": "Stash Gardner Minshew immediately off waivers in all deep Superflex leagues."
+        "contexto": "Running back Tyler Allgeier is firmly in the fantasy spotlight following ESPN reports highlighting his value as a dependable RB2 or flex option. Atlanta continues utilizing him consistently in their rushing rotation, giving him valuable touches and heavy-duty work that anchors the backfield. Allgeier has become one of the most widely added players on waiver wires due to his defined role in the offense.",
+        "fantasy": "Allgeier serves as a great target in 12-team leagues across PPR and half-PPR scoring formats. You do not always need a superstar RB1 when you have a back providing a dependable weekly floor. His consistent involvement between the tackles and potential red-zone looks allows him to function smoothly as an emergency RB2 or high-floor flex starter navigating bye weeks and depth issues.",
+        "equipo_impacto": "Atlanta maintains a balanced ground scheme, easing the workload on backfield mates and sustaining offensive efficiency on early downs to control time of possession throughout games.",
+        "accion": "Target him off waiver wires if you need immediate RB2 or flex depth."
       },
       "etiqueta": "WAIVER",
       "impacto": "SUBE",
-      "equipo": "ARI",
+      "equipo": "ATL",
       "equipos": [
-        "ARI",
-        "DAL"
+        "ATL",
+        "ARI"
       ],
       "jugadores": [
-        "6011",
-        "3257",
-        "10232",
-        "10955"
+        "8132"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261102015202",
+      "fecha": "2026-11-02T01:52:13.959Z",
+      "semana": 8,
+      "titulo": "Tony Pollard eleva su proyección fantasy en Tennessee",
+      "claves": [
+        "ESPN reporta tendencia a la alza en su valor fantasy.",
+        "Monopoliza volumen terrestre clave en el esquema de Titans.",
+        "Opción obligada de alineación como RB2 en ligas competitivas."
+      ],
+      "contexto": "El panorama fantasy de Tony Pollard experimenta un ascenso notable tras la semana 8 según destaca ESPN. El corredor de Titans ha mostrado efectividad consolidando la mayoría de oportunidades ofensivas en Tennessee, acumulando toques determinantes tanto por tierra como en rutas de escape. Con la ofensiva necesitando mover las cadenas y sostener series largas, Pollard se ha convertido en la pieza más confiable del entrenador para liderar el ataque por la vía terrestre.",
+      "fantasy": "Pollard se consolida como un RB2 seguro en ligas estándar y PPR de 10 a 14 equipos. Su tendencia al alza respalda alinearlo como titular semanal sin dudar, beneficiándose del volumen prioritario en series de gol. Quienes adquirieron a Pollard encuentran ahora a un activo con piso estable de 12 a 15 toques por juego, ideal para aspirantes a playoffs que buscan consistencia en su puesto de corredor.",
+      "equipo_impacto": "Tennessee deposita su identidad en la versatilidad de Pollard, lo cual alivia la presión sobre los receptores y balancea el plan de juego para evitar entregas costosas de balón.",
+      "accion": "Alinea a Pollard con plena confianza como un RB2 rentable.",
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50353669/why-tony-pollard-fantasy-outlook-trending-up",
+          "t": "Why Tony Pollard's fantasy outlook is trending up"
+        }
+      ],
+      "en": {
+        "titulo": "Tony Pollard's fantasy outlook trends upward in Tennessee",
+        "claves": [
+          "ESPN reports Pollard's fantasy outlook is pointing upward.",
+          "Secures vital rushing workload in Tennessee Titans offense.",
+          "Clear RB2 starter across competitive fantasy football leagues."
+        ],
+        "contexto": "Tony Pollard's fantasy value is climbing significantly following Week 8 analysis by ESPN. The Titans running back has capitalized on primary offensive work in Tennessee, stacking critical rushing touches and short receiving work out of the backfield. With Tennessee needing sustained drives to remain competitive, Pollard has emerged as the coaching staff's focal ground weapon, driving weekly touches inside an offense leaning heavily on him.",
+        "fantasy": "Pollard locks in as a sturdy RB2 across 10-team, 12-team, and 14-team leagues in standard and PPR formats. His upward fantasy trend supports keeping him firmly in starting lineups, benefiting from heavy touches and high-leverage red-zone opportunities. Managers who roster Pollard enjoy a solid floor of regular touches each week, making him a dependable foundational piece for postseason contenders seeking stability.",
+        "equipo_impacto": "Tennessee leans on Pollard's versatility to establish offensive tempo, taking pressure off the passing game and balancing play-calling to minimize costly mistakes.",
+        "accion": "Start Pollard with full confidence as a productive weekly RB2."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "TEN",
+      "equipos": [
+        "TEN"
+      ],
+      "jugadores": [
+        "5967"
       ],
       "menciona": []
     }
@@ -231,29 +267,29 @@
   ],
   "agregados": [
     "6130",
+    "11625",
     "11783",
     "4147",
-    "11625",
     "WAS",
     "13424",
     "12491",
     "8132",
     "13294",
-    "TB",
     "13337",
-    "11647",
+    "TB",
     "7042",
+    "11647",
     "12547",
     "12499",
-    "4037",
-    "10219",
     "DET",
+    "10219",
+    "4037",
+    "4039",
     "7561",
     "3271",
-    "4039",
     "13150",
     "12498",
-    "9756"
+    "7567"
   ],
   "soltados": [
     "8129",
@@ -264,22 +300,22 @@
     "12718",
     "10235",
     "HOU",
+    "11637",
     "CLE",
     "12457",
-    "11637",
     "12489",
     "13296",
     "5012",
-    "8122",
     "11624",
-    "9482",
-    "13424",
-    "9758",
-    "11581",
-    "9502",
-    "3321",
-    "4035",
+    "8122",
     "13276",
+    "13424",
+    "9482",
+    "11581",
+    "9758",
+    "9502",
+    "4035",
+    "3321",
     "5045"
   ],
   "duelo": {
