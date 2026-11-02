@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-02T10:57:28.788Z",
-  "ultimaIA": "2026-11-02T08:59:17.860Z",
+  "actualizado": "2026-11-02T11:49:30.398Z",
+  "ultimaIA": "2026-11-02T11:49:30.398Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,44 +14,90 @@
   ],
   "noticias": [
     {
-      "id": "n20261102085900",
-      "fecha": "2026-11-02T08:59:17.860Z",
+      "id": "n20261102114900",
+      "fecha": "2026-11-02T11:49:30.398Z",
       "semana": 8,
-      "titulo": "Buccaneers vencen a Falcons con 0 yardas aéreas",
+      "titulo": "Caleb Williams lidera ofensiva de Bears en semana 8",
       "claves": [
-        "Tampa Bay venció a Atlanta registrando 0 yardas por pase.",
-        "El clima torrencial obligó a 1 plan de juego terrestre total.",
-        "La defensiva de Buccaneers limitó a Falcons para asegurar 1 triunfo."
+        "Ben Johnson diseña esquemas ofensivos creativos para los Bears",
+        "Caleb Williams proyecta 20 pts PPR para la semana 8",
+        "El sistema busca explotar oportunidades en zona de anotación rival"
       ],
-      "contexto": "En 1 partido marcado por 1 fuerte aguacero contra los Atlanta Falcons, Tampa Bay Buccaneers decidió prescindir por completo del juego aéreo. El equipo de Tampa Bay terminó el encuentro con 0 yardas por pase y aun así logró amarrar 1 victoria. La estrategia terrestre extrema demostró ser efectiva bajo las condiciones climáticas adversas, permitiendo que Buccaneers consiguiera 1 triunfo histórico sin depender del aire en la semana 8.",
-      "fantasy": "Este volumen de 0 yardas por pase liquida el techo fantasy de los receptores de Buccaneers cuando el clima es inclemente. Sin embargo, convierte al ataque terrestre en 1 opción de volumen puro. Si juegas en formatos PPR, las semanas de lluvia extrema bajan el valor de los pases a 0 puntos esperados. La defensiva Buccaneers D/ST sube de bonos al controlar el reloj y limitar oportunidades rivales en estos escenarios.",
-      "equipo_impacto": "El esquema de Tampa Bay prioriza totalmente el control del balón por tierra en clima adverso. Atlanta Falcons sufrió para ajustar ante 1 rival que eliminó el pase por 4 cuartos, dejando a su propia ofensiva con pocas oportunidades para remontar el marcador.",
-      "accion": "Monitorea el clima antes de alinear receptores de Tampa Bay en semanas con lluvia intensa.",
+      "contexto": "El coordinador ofensivo Ben Johnson destaca por su capacidad táctica al diseñar jugadas desde joven. Su sistema en Chicago busca potenciar el talento de la ofensiva en la semana 8. Con un esquema agresivo y enfocado en maximizar los recursos terrestres y aéreos, los Bears preparan un plan de juego diseñado para generar jugadas explosivas y mantener la fluidez en cada serie ofensiva durante el partido.",
+      "fantasy": "El volumen proyectado favorece a Caleb Williams, quien registra 20 pts PPR en el modelo FX para la semana 8. En ligas de 12 equipos, Williams se consolida como un QB1 muy confiable gracias a la creatividad de su ataque. Su capacidad para extender jugadas lo convierte en una opción segura para arrancar este fin de semana en cualquier formato de puntuación.",
+      "equipo_impacto": "El esquema de Ben Johnson eleva el potencial de toda la ofensiva en Chicago. Los corredores y receptores reciben balones en espacio abierto, lo que mejora significativamente las oportunidades de anotar en la semana 8.",
+      "accion": "Arranca a Caleb Williams con confianza como tu QB1 en la semana 8.",
       "en": {
-        "titulo": "Buccaneers beat Falcons with 0 passing yards",
+        "titulo": "Caleb Williams leads Bears offense in Week 8",
         "claves": [
-          "Tampa Bay defeated Atlanta while logging 0 passing yards.",
-          "Heavy downpour forced a 100% run-heavy game plan.",
-          "Buccaneers defense shut down Falcons to secure 1 win."
+          "Ben Johnson designs creative offensive schemes for Bears",
+          "Caleb Williams projects 20 PPR pts in Week 8",
+          "Offensive system aims to maximize red zone scoring opportunities"
         ],
-        "contexto": "In a game impacted by a severe downpour against the Atlanta Falcons, the Tampa Bay Buccaneers completely abandoned the passing game. Tampa Bay finished the matchup with 0 passing yards and still managed to secure 1 victory. The extreme ground strategy proved successful under adverse weather conditions, allowing the Buccaneers to earn 1 historic win without relying on the air attack in week 8.",
-        "fantasy": "Logging 0 passing yards destroys the fantasy ceiling for Tampa Bay pass-catchers in heavy rain games. However, it boosts the ground attack into 1 high-volume option. In PPR formats, severe weather drops passing projections to 0 expected value. The Buccaneers D/ST gains value by controlling game flow and limiting opponent scoring opportunities in these low-scoring environments.",
-        "equipo_impacto": "Tampa Bay's offensive scheme completely prioritizes ground control in bad weather. The Atlanta Falcons struggled to adapt against an opponent that eliminated passing for 4 quarters, leaving their own offense with minimal possessions to mount a comeback.",
-        "accion": "Monitor weather forecasts before starting Tampa Bay wide receivers in heavy rain conditions."
+        "contexto": "Offensive coordinator Ben Johnson is known for his tactical ability, having designed plays since middle school. His system in Chicago aims to maximize the offensive talent in Week 8. With an aggressive scheme focused on getting the most out of passing and running plays, the Bears prepare a game plan designed to create explosive plays and sustain drives.",
+        "fantasy": "The projected volume heavily favors Caleb Williams, who projects 20 PPR pts in the FX model for Week 8. In 12-team leagues, Williams cements himself as a reliable QB1 option thanks to creative playcalling. His ability to extend plays makes him a safe start this weekend across all scoring formats.",
+        "equipo_impacto": "Ben Johnson's offensive scheme raises the ceiling for Chicago's entire offense. Running backs and receivers get high-value touches in open space, significantly boosting touchdown opportunities in Week 8.",
+        "accion": "Start Caleb Williams with confidence as your QB1 in Week 8."
       },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "TB",
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "CHI",
       "equipos": [
-        "TB",
-        "ATL"
+        "CHI"
       ],
-      "jugadores": [],
+      "jugadores": [
+        "11560"
+      ],
       "fuentes": [
         {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/zero-passing-yards-one-win-080035656.html",
-          "t": "Zero passing yards, one win. Did the Bucs just reinvent the NFL in all the wrong ways?"
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50341080/bears-ben-johnson-playcalling-caleb-williams",
+          "t": "A child playcaller? The Bears' Ben Johnson was born for this"
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261102114901",
+      "fecha": "2026-11-02T11:49:30.398Z",
+      "semana": 8,
+      "titulo": "Jaxon Smith-Njigba asume protagonismo aéreo en semana 8",
+      "claves": [
+        "Rashid Shaheed queda fuera de la semana 8 por lesión",
+        "Jaxon Smith-Njigba proyecta 23.4 pts PPR en el modelo FX",
+        "El ataque aéreo de Seattle concentra su volumen en Smith-Njigba"
+      ],
+      "contexto": "Con Rashid Shaheed descartado oficialmente por lesión en la rodilla, el ataque aéreo de los Seahawks depende completamente de Jaxon Smith-Njigba para la semana 8. Aunque Shaheed aportaba velocidad tras ser adquirido por el equipo, su ausencia obliga a Seattle a canalizar la gran mayoría de sus envíos hacia Smith-Njigba, convirtiéndolo en la pieza central de la estrategia ofensiva en este importante compromiso.",
+      "fantasy": "Jaxon Smith-Njigba es la proyección WR1 principal de la semana 8 con 23.4 pts PPR. Sin la presencia de Shaheed en el campo, Smith-Njigba acapara un volumen masivo de objetivos en zonas profundas e intermedias. Debes alinearlo como titular indiscutible en ligas PPR, Media PPR y Estándar. Es una opción de elite con un piso y techo sumamente elevados.",
+      "equipo_impacto": "La ausencia de Shaheed resta velocidad vertical a Seattle, pero consolida a Jaxon Smith-Njigba como la opción principal del mariscal de campo. Todo el plan aéreo pasará directamente por sus manos en la semana 8.",
+      "accion": "Arranca a Jaxon Smith-Njigba como tu WR1 estelar en la semana 8.",
+      "en": {
+        "titulo": "Jaxon Smith-Njigba takes over Seahawks target share",
+        "claves": [
+          "Rashid Shaheed is out for Week 8 with a knee injury",
+          "Jaxon Smith-Njigba projects 23.4 PPR pts in FX model",
+          "Seattle's passing attack concentrates target volume on Smith-Njigba"
+        ],
+        "contexto": "With Rashid Shaheed officially ruled out due to a knee injury, the Seahawks passing attack relies entirely on Jaxon Smith-Njigba for Week 8. Although Shaheed provided deep threat ability after being acquired by Seattle, his absence forces the offense to funnel targets toward Smith-Njigba, making him the focal point of the passing scheme in this key matchup.",
+        "fantasy": "Jaxon Smith-Njigba leads all receivers with 23.4 PPR pts in the Week 8 projections. Without Shaheed on the field, Smith-Njigba absorbs a massive target share in all areas of the field. He is a must-start WR1 in PPR, Half-PPR, and Standard formats with an elite floor and tremendous ceiling.",
+        "equipo_impacto": "Shaheed's absence reduces vertical speed for Seattle, but locks Jaxon Smith-Njigba into a high-volume target share. The entire passing offense will flow directly through him in Week 8.",
+        "accion": "Start Jaxon Smith-Njigba as an elite WR1 in Week 8."
+      },
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "SEA",
+      "equipos": [
+        "SEA"
+      ],
+      "jugadores": [
+        "9488",
+        "8676"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50352650/seattle-seahawks-trade-rashid-shadeed-jaxon-smith-njigba",
+          "t": "Can Seahawks' Rashid Shaheed become a complementary WR to Jaxon Smith-Njigba?"
         }
       ],
       "menciona": []
@@ -222,20 +268,20 @@
   "agregados": [
     "6130",
     "11625",
-    "11783",
     "8132",
+    "11783",
     "WAS",
     "4147",
     "13337",
     "13424",
     "12491",
-    "13294",
     "TB",
+    "13294",
     "7042",
     "DET",
     "11647",
-    "12547",
     "4039",
+    "12547",
     "10219",
     "1166",
     "7567",
@@ -255,8 +301,8 @@
     "12718",
     "12457",
     "10235",
-    "13296",
     "13276",
+    "13296",
     "HOU",
     "CLE",
     "12489",

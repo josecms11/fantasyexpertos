@@ -1,18 +1,17 @@
 {
-  "fecha": "2026-11-02T10:57:58.225Z",
+  "fecha": "2026-11-02T11:52:29.602Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 15 nuevos, 20 en total",
-    "[0.9s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[1.8s] ESPN: lesiones 799 · noticias 50",
-    "[1.8s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[2.1s] Fuentes nuevas: 1 · horario normal · toca IA: true",
-    "[2.3s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[4.6s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[9.2s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[30.4s] IA OK con gemini-3.6-flash",
-    "[30.4s] Descartada: Dilema con Lamar Jackson sacude a los Ravens → duplicada",
-    "[30.4s] Noticias nuevas verificadas: 0",
-    "[31.3s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 373 · semana de juego 8 · IA usada hoy 12/40"
+    "[0.8s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[2.2s] ESPN: lesiones 799 · noticias 50",
+    "[2.2s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[2.9s] Fuentes nuevas: 5 · horario normal · toca IA: true",
+    "[3.1s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[153.1s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
+    "[153.6s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
+    "[180.5s] IA OK con gemini-3.6-flash",
+    "[180.6s] Noticias nuevas verificadas: 2",
+    "[181.4s] Listo: 2 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 375 · semana de juego 8 · IA usada hoy 13/40"
   ]
 }
