@@ -1,16 +1,21 @@
 {
-  "fecha": "2026-11-02T18:34:27.117Z",
+  "fecha": "2026-11-02T19:30:57.303Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 15 nuevos, 20 en total",
-    "[1.3s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[2.7s] ESPN: lesiones 799 · noticias 50",
-    "[2.8s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[3.4s] Fuentes nuevas: 3 · horario pico · toca IA: true",
-    "[3.5s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[3.7s] Modelo sin cuota hoy gemini-3.6-flash 429",
-    "[24.9s] IA OK con gemini-3.5-flash",
-    "[24.9s] Noticias nuevas verificadas: 1",
-    "[26.0s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 383 · semana de juego 8 · IA usada hoy 24/40"
+    "[0.3s] YouTube: 15 nuevos, 20 en total",
+    "[1.4s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[2.9s] ESPN: lesiones 799 · noticias 50",
+    "[3.0s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[3.4s] Fuentes nuevas: 11 · horario pico · toca IA: true",
+    "[3.6s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[3.9s] Modelo sin cuota hoy gemini-3.5-flash 429",
+    "[6.0s] IA OK con gemini-3.5-flash-lite",
+    "[6.0s] Descartada (sin fuente citada): Cashius Howell causa baja indefinida por cirugía",
+    "[6.0s] Noticias nuevas verificadas: 0",
+    "[13.4s] IA OK con gemini-3.5-flash-lite",
+    "[13.4s] Blog: ¿Vender o aguantar a Keon Coleman? Valor de trade semana 8 / Should you sell or hold Keon Coleman? Week 8 trade value",
+    "[19.0s] IA OK con gemini-3.5-flash-lite",
+    "[19.0s] Blog: ¿Arrancar o sentar a AJ Barner en la semana 8? / Should you start AJ Barner in Week 8?",
+    "[19.0s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 383 · semana de juego 8 · IA usada hoy 27/40"
   ]
 }
