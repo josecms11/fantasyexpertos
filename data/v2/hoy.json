@@ -1,6 +1,6 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-02T19:30:41.324Z",
+  "actualizado": "2026-11-02T20:18:13.809Z",
   "ultimaIA": "2026-11-02T18:34:03.899Z",
   "semana": 8,
   "semanaStats": 8,
@@ -14,49 +14,307 @@
   ],
   "noticias": [
     {
-      "id": "n20261102183400",
-      "fecha": "2026-11-02T18:34:03.899Z",
+      "id": "x20261102201800",
+      "fecha": "2026-11-02T20:18:13.809Z",
       "semana": 8,
-      "titulo": "Mike Washington Jr. emerge como prioridad en waivers",
+      "exclusivo": true,
+      "fuente": "2026-11-02T19:40:12+00:00",
+      "titulo": "Exclusivo FX: Los Chiefs caen dramáticamente ante Denver",
       "claves": [
-        "Objetivo principal en la alambre de reclamos para la semana 9.",
-        "Justin Boone lo destaca entre las mejores opciones de RB disponibles.",
-        "Oportunidad inmediata para reforzar tu banca de cara a la semana 9."
+        "Kansas City pierde en el último segundo"
       ],
-      "contexto": "Rumbo a la semana 9 de la NFL, las opciones en la posición de corredor comienzan a escasear en muchas ligas de fantasy football. Tras el desarrollo de la semana 8, el analista Justin Boone identificó a Mike Washington Jr. como una de las adiciones más destacadas en el alambre de reclamos. Este reporte ubica al corredor como un objetivo prioritario para los mánager que buscan profundidad en su plantilla.",
-      "fantasy": "En formatos PPR y estándar, conseguir volumen terrestre en esta etapa del año es vital. Mike Washington Jr. se posiciona como una pieza valiosa para ser reclamada en waivers antes de la semana 9, especialmente en ligas profundas de 12 o más equipos. Su adición ofrece cobertura inmediata si tienes corredores en semana de descanso o sufriendo molestias físicas, por lo que vale la pena invertir un porcentaje razonable de tu presupuesto FAAB.",
-      "equipo_impacto": "La llegada o ascenso de Mike Washington Jr. en la rotación altera la distribución de acarreos dentro del ataque terrestre. Esto disminuye el valor de los corredores secundarios y estabiliza el backfield de su equipo.",
-      "accion": "Utiliza una prioridad alta de waiver o entre 5% y 10% de tu presupuesto FAAB para contratar a Mike Washington Jr. esta semana.",
       "en": {
-        "titulo": "Mike Washington Jr. emerges as top waiver wire target",
+        "titulo": "Exclusivo FX: Chiefs drop heartbreaker to Denver",
         "claves": [
-          "Top running back target on waiver wire for Week 9.",
-          "Highlighted by Justin Boone as a key addition.",
-          "Adds immediate depth for fantasy rosters in Week 9."
+          "Kansas City loses in final seconds",
+          "Broncos secure 28-24 victory",
+          "Major upset in week 8"
         ],
-        "contexto": "Heading into Week 9 of the NFL season, running back depth is becoming scarce across fantasy football leagues. Following the conclusion of Week 8, fantasy analyst Justin Boone identified Mike Washington Jr. as one of the premier waiver wire additions. This report highlights the running back as a priority pickup for fantasy managers seeking to bolster their rosters ahead of upcoming matchups.",
-        "fantasy": "In both PPR and standard formats, acquiring backfield volume at this stage of the season is critical. Mike Washington Jr. positions himself as a high-value waiver wire target before Week 9, particularly in deep leagues of 12 or more teams. Claiming him provides essential insurance for managers dealing with bye weeks or nagging injuries in their starting lineups.",
-        "equipo_impacto": "The increased role for Mike Washington Jr. shifts the backfield dynamic and alters carry distribution. This move impacts secondary running backs while adding stability to the team's rushing attack.",
-        "accion": "Use a top waiver priority or 5% to 10% of your FAAB budget to claim Mike Washington Jr. this week."
+        "contexto": "In a wild week 8 finish, the Chiefs suffered a painful 24-28 loss against the Broncos in the final seconds. This stumble shakes power rankings and proves no giant is invulnerable.",
+        "fantasy": "Kansas City's offensive stumble lowers the floor for their main fantasy weapons. Monitor how they adjust their game plan to protect starting value.",
+        "equipo_impacto": "The entire offense raises questions after this stumble against a divisional rival that capitalized on key moments.",
+        "accion": "Keep calm with your Kansas City stars but demand answers."
       },
-      "fuentes": [
-        {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/fantasy/article/week-9-fantasy-football-waiver-wire-mike-washington-jr-among-slew-of-good-rb-pickups-to-consider-182552018.html",
-          "t": "Week 9 Fantasy Football Waiver Wire: Mike Washington Jr. among slew of good RB pickups to consider"
-        }
-      ],
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "WAS",
+      "etiqueta": "TENDENCIA",
+      "impacto": "BAJA",
+      "equipo": "KC",
       "equipos": [
-        "WAS",
-        "LV"
+        "KC",
+        "DEN"
+      ],
+      "jugadores": [],
+      "premium": true
+    },
+    {
+      "id": "x20261102201801",
+      "fecha": "2026-11-02T20:18:13.809Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-11-02T19:40:12+00:00",
+      "titulo": "Exclusivo FX: Dallas sufre la peor remontada histórica",
+      "claves": [
+        "Derrota 33-30 ante Arizona en el cuarto cuarto"
+      ],
+      "en": {
+        "titulo": "Exclusivo FX: Dallas suffers worst historic collapse",
+        "claves": [
+          "33-30 fourth quarter loss to Arizona",
+          "Gardner Minshew started for Cardinals",
+          "Michael Wilson played without ribs"
+        ],
+        "contexto": "Dallas lived a nightmare in week 8 by squandering a lead and suffering the worst fourth-quarter comeback in their history in a 33-30 loss to the Cardinals, led by starter Gardner Minshew and a tough Michael Wilson playing without ribs.",
+        "fantasy": "Dallas' defensive collapse triggers red alarms for their fantasy units. On Arizona's side, value ticks up thanks to collective heroism despite injuries.",
+        "equipo_impacto": "The Cowboys display alarming fragility in game-closing moments that hurts overall team confidence.",
+        "accion": "Consider selling secondary Dallas pieces before panic tanks their value."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "BAJA",
+      "equipo": "DAL",
+      "equipos": [
+        "DAL",
+        "ARI"
       ],
       "jugadores": [
-        "13305"
+        "10232",
+        "6011"
       ],
-      "menciona": []
+      "premium": true
+    },
+    {
+      "id": "x20261102201802",
+      "fecha": "2026-11-02T20:18:13.809Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-11-02T19:40:12+00:00",
+      "titulo": "Exclusivo FX: Récord histórico sin pases completos",
+      "claves": [
+        "Buccaneers ganan 16-0 a Falcons"
+      ],
+      "en": {
+        "titulo": "Exclusivo FX: Historic win without a completed pass",
+        "claves": [
+          "Buccaneers beat Falcons 16-0",
+          "First win without a complete pass since 1974",
+          "Total ground and defensive dominance"
+        ],
+        "contexto": "The Buccaneers secured a bizarre 16-0 victory over the Falcons in week 8 without completing a single pass, repeating a historic feat that hadn't happened in the NFL since 1974 thanks to an entirely ground and defense-based performance.",
+        "fantasy": "This atypical game completely plummets the value of involved pass-catchers, elevating only defenses and running backs.",
+        "equipo_impacto": "Tampa Bay proves it can win in eccentric ways, though the aerial offense remains completely questioned.",
+        "accion": "Avoid starting Tampa Bay receivers until aerial life signs appear."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "NEUTRO",
+      "equipo": "TB",
+      "equipos": [
+        "TB",
+        "ATL"
+      ],
+      "jugadores": [],
+      "premium": true
+    },
+    {
+      "id": "x20261102201803",
+      "fecha": "2026-11-02T20:18:13.809Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-11-02T19:40:12+00:00",
+      "titulo": "Exclusivo FX: AJ Brown causa baja por una semana",
+      "claves": [
+        "Queda fuera por un partido mínimo"
+      ],
+      "en": {
+        "titulo": "Exclusivo FX: AJ Brown sidelined for one week",
+        "claves": [
+          "Out for a minimum of one game",
+          "Sensitive absence for the aerial attack",
+          "Monitor recovery for week 9"
+        ],
+        "contexto": "The medical report confirms AJ Brown will be sidelined for a minimum of 1 game, missing his team's next matchup and forcing a reorganization of the aerial offensive strategy.",
+        "fantasy": "His absence temporarily drops offensive expectations in fantasy leagues, forcing managers to look for emergency waiver or bench options.",
+        "equipo_impacto": "The offense loses its main outside anchor, demanding a larger role from other wideouts and the ground game.",
+        "accion": "Bench him and find an urgent substitute for this week."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "PHI",
+      "equipos": [
+        "PHI",
+        "NE"
+      ],
+      "jugadores": [
+        "5859"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261102201804",
+      "fecha": "2026-11-02T20:18:13.809Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-11-02T19:40:12+00:00",
+      "titulo": "Exclusivo FX: Michael Pittman prolonga su ausencia",
+      "claves": [
+        "Seguirá fuera mínimo 2 semanas más"
+      ],
+      "en": {
+        "titulo": "Exclusivo FX: Michael Pittman prolongs his absence",
+        "claves": [
+          "Will remain out for at least 2 more weeks",
+          "Injury halts his fantasy production",
+          "Prolonged absence for the offense"
+        ],
+        "contexto": "Bad news for managers relying on Michael Pittman, as the official report indicates he will miss a minimum of 2 more weeks of action due to physical issues.",
+        "fantasy": "His prolonged absence destroys any weekly lineup depending on his consistency, forcing managers to seek a long-term replacement in competitive leagues.",
+        "equipo_impacto": "The Colts passing game loses its safety blanket, forcing the offense to redesign passing routes.",
+        "accion": "Keep Pittman in your injured reserve spot if your league allows it."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "IND",
+      "equipos": [
+        "IND",
+        "PIT"
+      ],
+      "jugadores": [
+        "6819"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261102201805",
+      "fecha": "2026-11-02T20:18:13.809Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-11-02T19:40:12+00:00",
+      "titulo": "Exclusivo FX: Breece Hall listo para regresar",
+      "claves": [
+        "Regresa oficialmente en la semana 9"
+      ],
+      "en": {
+        "titulo": "Exclusivo FX: Breece Hall ready to return",
+        "claves": [
+          "Officially returns in week 9",
+          "Excellent news for fantasy managers",
+          "Regains full workload"
+        ],
+        "contexto": "The outlook shines bright with Breece Hall, confirmed to return to the gridiron in week 9 after overcoming his recent physical ailments.",
+        "fantasy": "His return injects a massive dose of projected points to any lineup, reclaiming his untouchable status among top running backs.",
+        "equipo_impacto": "The Jets ground attack recovers its backbone and greatest offensive threat for the rest of the season.",
+        "accion": "Get ready to activate him in your week 9 starting lineup."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "SUBE",
+      "equipo": "NYJ",
+      "equipos": [
+        "NYJ"
+      ],
+      "jugadores": [
+        "8155"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261102201806",
+      "fecha": "2026-11-02T20:18:13.809Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-11-02T19:40:12+00:00",
+      "titulo": "Exclusivo FX: Mack Hollins vuelve a los entrenamientos",
+      "claves": [
+        "Regresa a practicar esta semana"
+      ],
+      "en": {
+        "titulo": "Exclusivo FX: Mack Hollins returns to practice",
+        "claves": [
+          "Returns to practice this week",
+          "Health status trending positively",
+          "Stepping stone toward final clearance"
+        ],
+        "contexto": "Mack Hollins takes an important step by reporting back to practices this week, showing encouraging progress in his recovery process.",
+        "fantasy": "His looming return doesn't immediately shake fantasy leagues, but puts him on the radar as depth for deep formats.",
+        "equipo_impacto": "He brings physical presence and experience to the receiving corps and special teams for upcoming games.",
+        "accion": "Monitor his practice participation before considering him on waivers."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "NEUTRO",
+      "equipo": "BUF",
+      "equipos": [
+        "BUF",
+        "NE"
+      ],
+      "jugadores": [
+        "4177"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261102201807",
+      "fecha": "2026-11-02T20:18:13.809Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-11-02T19:40:12+00:00",
+      "titulo": "Exclusivo FX: David Montgomery fuera y Woody Marks titular",
+      "claves": [
+        "Montgomery se pierde su 3er partido seguido"
+      ],
+      "en": {
+        "titulo": "Exclusivo FX: David Montgomery out, Woody Marks starts",
+        "claves": [
+          "Montgomery misses 3rd straight game",
+          "Woody Marks takes over starting duties",
+          "Golden opportunity in the backfield"
+        ],
+        "contexto": "It is confirmed that David Montgomery will miss his third consecutive game due to injury, leaving the main backfield spot vacant for Woody Marks to take over as starter.",
+        "fantasy": "Montgomery's absence temporarily drops his lineup value, while instantly boosting Woody Marks as an attractive emergency option for this slate.",
+        "equipo_impacto": "The ground attack restructures with a new face tasked with carrying the ball and chewing up the clock.",
+        "accion": "Start Woody Marks if you need an urgent patch at running back."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "DET",
+      "equipos": [
+        "DET",
+        "HOU"
+      ],
+      "jugadores": [
+        "5892",
+        "12474"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261102201808",
+      "fecha": "2026-11-02T20:18:13.809Z",
+      "semana": 8,
+      "exclusivo": true,
+      "fuente": "2026-11-02T19:40:12+00:00",
+      "titulo": "Exclusivo FX: Travis Etienne entrena y vuelve en semana 9",
+      "claves": [
+        "Ya practica con el equipo"
+      ],
+      "en": {
+        "titulo": "Exclusivo FX: Travis Etienne practices and returns week 9",
+        "claves": [
+          "Already practicing with the team",
+          "Confirmed return for week 9",
+          "Total relief for his offense"
+        ],
+        "contexto": "Excellent news with Travis Etienne, who is already actively practicing and has his return secured for next week 9.",
+        "fantasy": "His looming return restores peace of mind to managers who weathered his absence, immediately placing him back among top weekly options.",
+        "equipo_impacto": "The offense recovers its main ground engine and a constant threat in short reception plays.",
+        "accion": "Keep him ready on your roster to activate in week 9."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "SUBE",
+      "equipo": "JAX",
+      "equipos": [
+        "JAX",
+        "NO"
+      ],
+      "jugadores": [
+        "7543"
+      ],
+      "premium": true
     }
   ],
   "lesionados": [
@@ -229,23 +487,23 @@
     "11783",
     "1166",
     "7042",
-    "4039",
     "DET",
+    "7567",
+    "4039",
+    "4993",
+    "TB",
     "WAS",
     "12491",
-    "7567",
-    "TB",
-    "4993",
-    "13294",
-    "3271",
     "11610",
     "8135",
-    "12547",
-    "7561",
+    "3271",
+    "13294",
     "13424",
+    "7561",
+    "HOU",
     "8161",
-    "11603",
-    "11647"
+    "13345",
+    "11603"
   ],
   "soltados": [
     "11637",
@@ -253,26 +511,26 @@
     "4881",
     "11435",
     "3271",
-    "6130",
     "12718",
-    "8129",
     "13296",
+    "8129",
+    "6130",
     "12457",
     "4037",
     "10213",
-    "7561",
     "11624",
+    "7561",
     "5012",
     "8408",
     "6865",
     "7553",
-    "10235",
     "13424",
-    "4147",
-    "4454",
     "WAS",
+    "4454",
+    "4147",
+    "10235",
     "11581",
-    "4035"
+    "8110"
   ],
   "duelo": {
     "a": "CeeDee Lamb",
