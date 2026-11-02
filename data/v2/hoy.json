@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-02T03:32:03.167Z",
-  "ultimaIA": "2026-11-02T02:39:33.187Z",
+  "actualizado": "2026-11-02T04:34:12.273Z",
+  "ultimaIA": "2026-11-02T04:34:12.273Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,47 +14,51 @@
   ],
   "noticias": [
     {
-      "id": "n20261102023900",
-      "fecha": "2026-11-02T02:39:33.187Z",
+      "id": "n20261102043400",
+      "fecha": "2026-11-02T04:34:12.273Z",
       "semana": 8,
-      "titulo": "Matthew Stafford lidera remontada de Rams sobre Chargers",
+      "titulo": "Patrick Mahomes sufre costoso tropiezo en zona roja",
       "claves": [
-        "Los Rams superaron un inicio lento para vencer 24-9 a Chargers.",
-        "Matthew Stafford comandó el ataque ofensivo para sellar el triunfo.",
-        "La defensiva forzó un balón suelto clave a Justin Herbert."
+        "Kansas City se quedó en la yarda 4 con 35 segundos restantes.",
+        "Un castigo de Jaylon Moore borró el touchdown del posible triunfo.",
+        "Malcolm Roach selló la victoria de Broncos capturando a Mahomes."
       ],
-      "contexto": "Los Angeles Rams superaron un inicio complicado para vencer 24-9 a Los Angeles Chargers. Matthew Stafford logró ajustar el ataque tras un arranque lento, guiando la remontada del equipo. La jugada defensiva clave llegó cuando Aaron Donald recuperó un balón suelto provocado a Justin Herbert en campo abierto, asegurando la ventaja definitiva para la escuadra de los Rams en este duelo angelino.",
-      "fantasy": "Matthew Stafford mantiene un valor estable como mariscal titular en fantasy, respaldado por una proyección de 19.2 pts en la semana 8. Su capacidad para sostener series ofensivas favorece directamente la producción de sus receptores. Por parte de los Chargers, los errores y la baja efectividad reducen el techo fantasy de Justin Herbert, situándolo como una opción de riesgo semanal ante defensivas agresivas.",
-      "equipo_impacto": "La victoria consolida la química ofensiva de los Rams al corregir errores temprano en el partido. En contraste, los Chargers continúan sufriendo por la falta de protección a Justin Herbert y los errores entregando el ovoide.",
-      "accion": "Alinea a Matthew Stafford con confianza como mariscal titular en tu alineación.",
+      "contexto": "Kansas City y Patrick Mahomes llegaron a la yarda 4 de Denver con 35 segundos por jugar en el reloj, pero fueron frenados en 5 jugadas consecutivas sin poder anotar. Un polémico castigo por procedimiento ilegal sobre Jaylon Moore anuló un touchdown que Andy Reid cuestionó fuertemente. Finalmente, el liniero Malcolm Roach selló el triunfo de Denver con una captura decisiva sobre Mahomes.",
+      "fantasy": "Mahomes se mantiene como titular indiscutible en formatos estándar y Superflex, aunque estas fallas cerca de las diagonales castigan severamente su techo de puntos fantasy. Frente a rivales divisionales complicados, la inestabilidad en zona roja limita su capacidad de competir contra mariscales con gran volumen terrestre como Josh Allen (22.4 pts). Alinea a Mahomes con confianza habitual en semana 8, pero proyecta números más conservadores si la protección falla.",
+      "equipo_impacto": "Las sanciones de la línea ofensiva y la captura final sufrida por Mahomes complican el esquema anotador del head coach Andy Reid, exigiendo ajustes inmediatos en situaciones críticas dentro de las últimas 5 yardas de cara a sus próximos compromisos.",
+      "accion": "Mantén a Patrick Mahomes en tu alineación titular de semana 8 sin dudar.",
       "en": {
-        "titulo": "Matthew Stafford Leads Rams Comeback Victory Over Chargers",
+        "titulo": "Patrick Mahomes suffers costly red zone setback against Denver",
         "claves": [
-          "Rams overcome slow start to defeat Chargers 24-9.",
-          "Matthew Stafford adjusted after early struggles to secure win.",
-          "Defense forced crucial Justin Herbert fumble during the match."
+          "Kansas City stalled at Denver 4-yard line with 35 seconds left.",
+          "A false start on Jaylon Moore erased the winning touchdown.",
+          "Malcolm Roach sealed Denver win with a sack on Mahomes."
         ],
-        "contexto": "The Los Angeles Rams overcame a slow start to defeat the winless Los Angeles Chargers 24-9. Matthew Stafford adjusted the offensive rhythm after early struggles, driving the team to a decisive victory. A key defensive play occurred when Aaron Donald sprinted after a loose fumble by Justin Herbert with open field ahead, cementing the Rams control over their crosstown rival.",
-        "fantasy": "Matthew Stafford solidifies his place as a reliable fantasy starter, backed by a 19.2 pts projection for Week 8. His ability to sustain long drives elevates the ceiling of his primary pass catchers. Conversely, Justin Herbert faces a lower fantasy ceiling due to turnover issues and persistent pressure, making him a risky option against aggressive defenses.",
-        "equipo_impacto": "The win reinforces the Rams offensive execution after making effective mid-game adjustments. Meanwhile, the Chargers continue to struggle with pass protection for Justin Herbert and costly turnovers during key offensive possessions.",
-        "accion": "Start Matthew Stafford with confidence as your fantasy starting quarterback."
+        "contexto": "Kansas City and Patrick Mahomes moved the ball to the Denver 4-yard line with 35 seconds remaining, but were held out of the end zone on 5 consecutive plays. A controversial false start called on Jaylon Moore wiped out an apparent game-winning score, heavily questioned by Andy Reid. Defensive lineman Malcolm Roach ultimately sealed the Broncos victory by sacking Mahomes on the final attempt.",
+        "fantasy": "Mahomes remains a locked-in starter in 1-QB and Superflex leagues, but recurring red-zone miscues suppress his weekly fantasy ceiling. Against tough divisional schemes, execution issues inside the 5-yard line keep him from outscoring high-floor rushing quarterbacks like Josh Allen (22.4 pts). Keep starting Mahomes across all fantasy formats in week 8, but lower your expectations from elite QB1 overall to a reliable mid-range option.",
+        "equipo_impacto": "Costly offensive line penalties and the game-ending sack taken by Mahomes disrupt Andy Reid's late-game play calling, forcing immediate schematic adjustments inside the 5-yard line ahead of their upcoming schedule.",
+        "accion": "Keep Patrick Mahomes locked in your starting lineup for week 8 without hesitation."
       },
       "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "LAR",
+      "impacto": "NEUTRO",
+      "equipo": "KC",
       "equipos": [
-        "LAR",
-        "LAC"
+        "KC",
+        "DEN"
       ],
       "jugadores": [
-        "421",
-        "6797"
+        "4046"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "http://www.espn.com/nfl/recap?gameId=401873032",
-          "t": "Matthew Stafford and Rams overcome slow start, rally past winless Chargers 24-9"
+          "u": "https://www.espn.com/nfl/story/_/id/50355124/broncos-use-last-second-goal-line-stand-hold-chiefs",
+          "t": "Broncos use last-second goal-line stand to hold off Chiefs"
+        },
+        {
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/chiefs-controversial-penalty-andy-reid-broncos/",
+          "t": "\n                        Andy Reid questions controversial false start that erased Chiefs&#039; apparent winning TD\n                    "
         }
       ],
       "menciona": []
@@ -228,25 +232,25 @@
     "11783",
     "4147",
     "WAS",
-    "13424",
     "8132",
+    "13424",
     "12491",
     "13337",
     "13294",
     "TB",
     "7042",
     "11647",
-    "12547",
     "DET",
-    "12499",
+    "12547",
     "10219",
-    "4037",
+    "12499",
     "4039",
-    "3271",
+    "4037",
     "7561",
-    "13150",
+    "3271",
+    "1166",
     "7567",
-    "1166"
+    "13150"
   ],
   "soltados": [
     "8129",
@@ -257,8 +261,8 @@
     "12718",
     "11637",
     "10235",
-    "HOU",
     "12457",
+    "HOU",
     "CLE",
     "13296",
     "12489",
@@ -268,12 +272,12 @@
     "8122",
     "13424",
     "11581",
-    "9482",
     "4035",
     "9502",
+    "9482",
+    "4881",
     "9758",
-    "3321",
-    "4881"
+    "3321"
   ],
   "duelo": {
     "a": "CeeDee Lamb",

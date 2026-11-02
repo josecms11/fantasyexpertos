@@ -1,12 +1,17 @@
 {
-  "fecha": "2026-11-02T03:32:04.385Z",
+  "fecha": "2026-11-02T04:36:15.361Z",
   "log": [
     "[0.0s] Inicio",
     "[0.2s] YouTube: 0 nuevos, 20 en total",
-    "[0.7s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[1.9s] ESPN: lesiones 799 · noticias 50",
-    "[1.9s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[2.3s] Fuentes nuevas: 0 · horario pico · toca IA: false",
-    "[3.2s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 370 · semana de juego 8 · IA usada hoy 5/40"
+    "[0.9s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[8.2s] ESPN: lesiones 799 · noticias 50",
+    "[8.2s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[8.8s] Fuentes nuevas: 7 · horario normal · toca IA: true",
+    "[8.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[11.5s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
+    "[130.2s] IA OK con gemini-3.7-flash",
+    "[130.2s] Descartada: Harrison Butker genera dudas tras costosa falla con Chiefs → duplicada",
+    "[130.2s] Noticias nuevas verificadas: 1",
+    "[131.3s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 371 · semana de juego 8 · IA usada hoy 6/40"
   ]
 }
