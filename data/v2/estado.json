@@ -1,26 +1,17 @@
 {
-  "fecha": "2026-11-02T14:50:35.207Z",
+  "fecha": "2026-11-02T15:46:27.510Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 15 nuevos, 20 en total",
-    "[0.8s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
-    "[2.4s] ESPN: lesiones 799 · noticias 50",
-    "[2.9s] Auto-ajuste FX: {\"hl\":6,\"mEf\":30,\"mTd\":120,\"aPrev\":0.2} error 4.791 → 4.784",
-    "[2.9s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[3.8s] Fuentes nuevas: 1 · horario pico · toca IA: true",
-    "[3.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[24.4s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[24.8s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[26.7s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[32.2s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
-    "[33.0s] IA OK con gemini-3.5-flash-lite",
-    "[33.0s] Noticias nuevas verificadas: 0",
-    "[41.0s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[41.3s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[43.3s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[85.9s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
-    "[89.9s] IA OK con gemini-3.5-flash-lite",
-    "[89.9s] Resumen semana 8",
-    "[89.9s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 378 · semana de juego 8 · IA usada hoy 18/40"
+    "[0.3s] YouTube: 15 nuevos, 20 en total",
+    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[2.1s] ESPN: lesiones 799 · noticias 50",
+    "[2.2s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
+    "[2.4s] Fuentes nuevas: 14 · horario pico · toca IA: true",
+    "[2.6s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[152.6s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
+    "[206.2s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
+    "[241.7s] IA OK con gemini-3.6-flash",
+    "[241.7s] Noticias nuevas verificadas: 2",
+    "[242.8s] Listo: 2 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 380 · semana de juego 8 · IA usada hoy 19/40"
   ]
 }
