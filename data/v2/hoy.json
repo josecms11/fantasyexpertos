@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-02T01:52:13.959Z",
-  "ultimaIA": "2026-11-02T01:52:13.959Z",
+  "actualizado": "2026-11-02T02:39:33.187Z",
+  "ultimaIA": "2026-11-02T02:39:33.187Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,91 +14,48 @@
   ],
   "noticias": [
     {
-      "id": "n20261102015201",
-      "fecha": "2026-11-02T01:52:13.959Z",
+      "id": "n20261102023900",
+      "fecha": "2026-11-02T02:39:33.187Z",
       "semana": 8,
-      "titulo": "Tyler Allgeier se afianza como RB2 o flex",
+      "titulo": "Matthew Stafford lidera remontada de Rams sobre Chargers",
       "claves": [
-        "Reportado por ESPN como opción sólida de RB2 o flex.",
-        "Registra alta demanda en waivers de ligas estándar y PPR.",
-        "Oportunidad garantizada en el esquema terrestre de los Falcons."
+        "Los Rams superaron un inicio lento para vencer 24-9 a Chargers.",
+        "Matthew Stafford comandó el ataque ofensivo para sellar el triunfo.",
+        "La defensiva forzó un balón suelto clave a Justin Herbert."
       ],
-      "contexto": "El corredor Tyler Allgeier vuelve a colocarse bajo los reflectores de fantasy tras reportes de ESPN que confirman su papel como una alternativa viable de RB2 o flex. Atlanta continúa involucrándolo activamente en su plan de juego terrestre, otorgándole toques constantes en series importantes y labores de desgaste que complementan la ofensiva. Allgeier figura entre los elementos más reclamados en la agencia libre semanal por su rol establecido.",
-      "fantasy": "Allgeier es viable en ligas de 12 o más equipos en formatos PPR y medio punto por recepción. No necesitas depender exclusivamente de un RB1 dominante para competir si tienes un corredor de piso seguro como él. Su capacidad para acaparar acarreos en situaciones de zona roja y mantener ritmo constante le permite ofrecer números de RB2 de emergencia o un flex respetable frente a descansos y bajas por lesión.",
-      "equipo_impacto": "Atlanta mantiene un esquema terrestre balanceado, quitando carga física excesiva a otros corredores y manteniendo frescura ofensiva para consumir tiempo de posesión sin descuidar la efectividad en primera y segunda oportunidad.",
-      "accion": "Reclámalo de waivers si requieres profundidad inmediata como RB2 o flex.",
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50353645/why-tyler-allgeier-reliable-rb2-flex-option-fantasy-managers",
-          "t": "Why Tyler Allgeier is a reliable RB2 or flex option for fantasy managers"
-        }
-      ],
+      "contexto": "Los Angeles Rams superaron un inicio complicado para vencer 24-9 a Los Angeles Chargers. Matthew Stafford logró ajustar el ataque tras un arranque lento, guiando la remontada del equipo. La jugada defensiva clave llegó cuando Aaron Donald recuperó un balón suelto provocado a Justin Herbert en campo abierto, asegurando la ventaja definitiva para la escuadra de los Rams en este duelo angelino.",
+      "fantasy": "Matthew Stafford mantiene un valor estable como mariscal titular en fantasy, respaldado por una proyección de 19.2 pts en la semana 8. Su capacidad para sostener series ofensivas favorece directamente la producción de sus receptores. Por parte de los Chargers, los errores y la baja efectividad reducen el techo fantasy de Justin Herbert, situándolo como una opción de riesgo semanal ante defensivas agresivas.",
+      "equipo_impacto": "La victoria consolida la química ofensiva de los Rams al corregir errores temprano en el partido. En contraste, los Chargers continúan sufriendo por la falta de protección a Justin Herbert y los errores entregando el ovoide.",
+      "accion": "Alinea a Matthew Stafford con confianza como mariscal titular en tu alineación.",
       "en": {
-        "titulo": "Tyler Allgeier emerges as reliable RB2 or flex",
+        "titulo": "Matthew Stafford Leads Rams Comeback Victory Over Chargers",
         "claves": [
-          "Reported by ESPN as reliable RB2 or flex fantasy option.",
-          "High priority waiver wire target across standard and PPR leagues.",
-          "Carves out stable rushing touches in Atlanta offensive scheme."
+          "Rams overcome slow start to defeat Chargers 24-9.",
+          "Matthew Stafford adjusted after early struggles to secure win.",
+          "Defense forced crucial Justin Herbert fumble during the match."
         ],
-        "contexto": "Running back Tyler Allgeier is firmly in the fantasy spotlight following ESPN reports highlighting his value as a dependable RB2 or flex option. Atlanta continues utilizing him consistently in their rushing rotation, giving him valuable touches and heavy-duty work that anchors the backfield. Allgeier has become one of the most widely added players on waiver wires due to his defined role in the offense.",
-        "fantasy": "Allgeier serves as a great target in 12-team leagues across PPR and half-PPR scoring formats. You do not always need a superstar RB1 when you have a back providing a dependable weekly floor. His consistent involvement between the tackles and potential red-zone looks allows him to function smoothly as an emergency RB2 or high-floor flex starter navigating bye weeks and depth issues.",
-        "equipo_impacto": "Atlanta maintains a balanced ground scheme, easing the workload on backfield mates and sustaining offensive efficiency on early downs to control time of possession throughout games.",
-        "accion": "Target him off waiver wires if you need immediate RB2 or flex depth."
-      },
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "ATL",
-      "equipos": [
-        "ATL",
-        "ARI"
-      ],
-      "jugadores": [
-        "8132"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261102015202",
-      "fecha": "2026-11-02T01:52:13.959Z",
-      "semana": 8,
-      "titulo": "Tony Pollard eleva su proyección fantasy en Tennessee",
-      "claves": [
-        "ESPN reporta tendencia a la alza en su valor fantasy.",
-        "Monopoliza volumen terrestre clave en el esquema de Titans.",
-        "Opción obligada de alineación como RB2 en ligas competitivas."
-      ],
-      "contexto": "El panorama fantasy de Tony Pollard experimenta un ascenso notable tras la semana 8 según destaca ESPN. El corredor de Titans ha mostrado efectividad consolidando la mayoría de oportunidades ofensivas en Tennessee, acumulando toques determinantes tanto por tierra como en rutas de escape. Con la ofensiva necesitando mover las cadenas y sostener series largas, Pollard se ha convertido en la pieza más confiable del entrenador para liderar el ataque por la vía terrestre.",
-      "fantasy": "Pollard se consolida como un RB2 seguro en ligas estándar y PPR de 10 a 14 equipos. Su tendencia al alza respalda alinearlo como titular semanal sin dudar, beneficiándose del volumen prioritario en series de gol. Quienes adquirieron a Pollard encuentran ahora a un activo con piso estable de 12 a 15 toques por juego, ideal para aspirantes a playoffs que buscan consistencia en su puesto de corredor.",
-      "equipo_impacto": "Tennessee deposita su identidad en la versatilidad de Pollard, lo cual alivia la presión sobre los receptores y balancea el plan de juego para evitar entregas costosas de balón.",
-      "accion": "Alinea a Pollard con plena confianza como un RB2 rentable.",
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50353669/why-tony-pollard-fantasy-outlook-trending-up",
-          "t": "Why Tony Pollard's fantasy outlook is trending up"
-        }
-      ],
-      "en": {
-        "titulo": "Tony Pollard's fantasy outlook trends upward in Tennessee",
-        "claves": [
-          "ESPN reports Pollard's fantasy outlook is pointing upward.",
-          "Secures vital rushing workload in Tennessee Titans offense.",
-          "Clear RB2 starter across competitive fantasy football leagues."
-        ],
-        "contexto": "Tony Pollard's fantasy value is climbing significantly following Week 8 analysis by ESPN. The Titans running back has capitalized on primary offensive work in Tennessee, stacking critical rushing touches and short receiving work out of the backfield. With Tennessee needing sustained drives to remain competitive, Pollard has emerged as the coaching staff's focal ground weapon, driving weekly touches inside an offense leaning heavily on him.",
-        "fantasy": "Pollard locks in as a sturdy RB2 across 10-team, 12-team, and 14-team leagues in standard and PPR formats. His upward fantasy trend supports keeping him firmly in starting lineups, benefiting from heavy touches and high-leverage red-zone opportunities. Managers who roster Pollard enjoy a solid floor of regular touches each week, making him a dependable foundational piece for postseason contenders seeking stability.",
-        "equipo_impacto": "Tennessee leans on Pollard's versatility to establish offensive tempo, taking pressure off the passing game and balancing play-calling to minimize costly mistakes.",
-        "accion": "Start Pollard with full confidence as a productive weekly RB2."
+        "contexto": "The Los Angeles Rams overcame a slow start to defeat the winless Los Angeles Chargers 24-9. Matthew Stafford adjusted the offensive rhythm after early struggles, driving the team to a decisive victory. A key defensive play occurred when Aaron Donald sprinted after a loose fumble by Justin Herbert with open field ahead, cementing the Rams control over their crosstown rival.",
+        "fantasy": "Matthew Stafford solidifies his place as a reliable fantasy starter, backed by a 19.2 pts projection for Week 8. His ability to sustain long drives elevates the ceiling of his primary pass catchers. Conversely, Justin Herbert faces a lower fantasy ceiling due to turnover issues and persistent pressure, making him a risky option against aggressive defenses.",
+        "equipo_impacto": "The win reinforces the Rams offensive execution after making effective mid-game adjustments. Meanwhile, the Chargers continue to struggle with pass protection for Justin Herbert and costly turnovers during key offensive possessions.",
+        "accion": "Start Matthew Stafford with confidence as your fantasy starting quarterback."
       },
       "etiqueta": "TENDENCIA",
       "impacto": "SUBE",
-      "equipo": "TEN",
+      "equipo": "LAR",
       "equipos": [
-        "TEN"
+        "LAR",
+        "LAC"
       ],
       "jugadores": [
-        "5967"
+        "421",
+        "6797"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "http://www.espn.com/nfl/recap?gameId=401873032",
+          "t": "Matthew Stafford and Rams overcome slow start, rally past winless Chargers 24-9"
+        }
       ],
       "menciona": []
     }
@@ -274,22 +231,22 @@
     "13424",
     "12491",
     "8132",
-    "13294",
     "13337",
+    "13294",
     "TB",
     "7042",
     "11647",
     "12547",
-    "12499",
     "DET",
+    "12499",
     "10219",
     "4037",
     "4039",
-    "7561",
     "3271",
+    "7561",
     "13150",
-    "12498",
-    "7567"
+    "7567",
+    "1166"
   ],
   "soltados": [
     "8129",
@@ -299,16 +256,16 @@
     "3271",
     "12718",
     "10235",
-    "HOU",
     "11637",
+    "HOU",
     "CLE",
     "12457",
     "12489",
     "13296",
     "5012",
     "11624",
-    "8122",
     "13276",
+    "8122",
     "13424",
     "9482",
     "11581",
