@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-02T21:02:20.114Z",
-  "ultimaIA": "2026-11-02T21:02:20.114Z",
+  "actualizado": "2026-11-02T21:42:10.367Z",
+  "ultimaIA": "2026-11-02T21:42:10.367Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,45 +14,46 @@
   ],
   "noticias": [
     {
-      "id": "n20261102210200",
-      "fecha": "2026-11-02T21:02:20.114Z",
+      "id": "n20261102214200",
+      "fecha": "2026-11-02T21:42:10.367Z",
       "semana": 8,
-      "titulo": "Brandon Aiyuk contrata a agente para volver",
+      "titulo": "Kyler Murray en duda por lesión en isquiotibiales",
       "claves": [
-        "Brandon Aiyuk contrata al agente Drew Rosenhaus",
-        "El receptor busca regresar a los emparrillados pronto",
-        "No ha jugado en un partido de NFL desde 2024"
+        "Kyler Murray presenta molestias en el isquiotibial",
+        "Su disponibilidad genera incertidumbre para la semana 9",
+        "Los Vikings evalúan su evolución médica"
       ],
-      "contexto": "El receptor abierto Brandon Aiyuk decidió contratar al conocido agente Drew Rosenhaus con el objetivo claro de solucionar su situación contractual y regresar a la actividad en la NFL. Aiyuk no ha visto acción en un encuentro oficial desde 2024, lo que ha mantenido a los fantasy managers especulando sobre su futuro inmediato y su real estado físico para competir al máximo nivel este año.",
-      "fantasy": "Por ahora, Brandon Aiyuk se mantiene fuera de cualquier alineación viable en ligas de fantasy football debido a su inactividad prolongada y estatus incierto. No arriesgues un puesto en tu plantilla de cara a la semana 8 esperando milagros. Monitorea los reportes de los próximos días, pero consérvalo en la banca o déjalo en la agencia libre hasta que exista confirmación real de su regreso a los entrenamientos completos y un rol definido.",
-      "equipo_impacto": "La posible integración de Brandon Aiyuk sacudirá la jerarquía ofensiva del equipo, obligando a los demás receptores a reajustar sus porcentajes de participación y reduciendo los objetivos disponibles para el resto de las opciones aéreas en el esquema semanal.",
-      "accion": "Mantén a Brandon Aiyuk congelado en tu banca hasta nuevo aviso y no gastes recursos de waivers.",
+      "contexto": "El mariscal de campo Kyler Murray se encuentra con estatus cuestionable debido a una molestia en el isquiotibial, lo que pone en entredicho su participación para el próximo compromiso del equipo frente a los Bills. El cuerpo técnico mantiene una vigilancia estrecha sobre su recuperación física.",
+      "fantasy": "La incertidumbre sobre Kyler Murray obliga a buscar alternativas de emergencia en ligas superflex y de formato profundo para la semana 9. Si no logra recuperarse a tiempo, su ausencia restará dinamismo a la ofensiva y afectará las proyecciones de sus receptores.",
+      "equipo_impacto": "Una posible ausencia del mariscal titular obligaría al cuerpo técnico a ajustar el plan de juego ofensivo y modificar el reparto de oportunidades para el resto de los jugadores.",
+      "accion": "Monitorea los reportes de práctica de Kyler Murray y asegura un pasador suplente en tu plantilla por precaución.",
       "en": {
-        "titulo": "Brandon Aiyuk hires agent to return",
+        "titulo": "Kyler Murray questionable with hamstring injury",
         "claves": [
-          "Brandon Aiyuk hires agent Drew Rosenhaus",
-          "Wide receiver aims to return to NFL action",
-          "Has not played in an NFL game since 2024"
+          "Kyler Murray is dealing with hamstring soreness",
+          "His status for week 9 remains uncertain",
+          "The team is monitoring his daily recovery"
         ],
-        "contexto": "Wide receiver Brandon Aiyuk has hired prominent agent Drew Rosenhaus with the clear goal of resolving his situation and returning to the NFL field. Aiyuk has not played in an official game since 2024, keeping fantasy managers guessing about his future and actual readiness to compete at a high level.",
-        "fantasy": "Brandon Aiyuk remains completely unviable for fantasy lineups in week 8 due to his prolonged absence and uncertain status. Do not risk a roster spot expecting miracles right away. Monitor upcoming reports closely, but keep him safely on your bench or waiver wire until there is concrete confirmation of a full return.",
-        "equipo_impacto": "Aiyuk's potential integration will shake up the offensive hierarchy, forcing other wideouts to adjust their snap shares and reducing available targets for the rest of the passing game.",
-        "accion": "Keep Brandon Aiyuk frozen on your bench and do not burn any waiver priority on him yet."
+        "contexto": "Quarterback Kyler Murray's availability is currently up in the air due to a sore hamstring, creating doubt for the upcoming matchup against the Bills. The coaching staff is closely monitoring his physical progress.",
+        "fantasy": "The uncertainty surrounding Kyler Murray forces managers in superflex and deep leagues to look for emergency alternatives for week 9. If he cannot play, his absence will hurt the offense's ceiling and lower his pass-catchers' projections.",
+        "equipo_impacto": "A potential absence from the starting quarterback would force the coaching staff to alter the offensive game plan and adjust opportunities for skill players.",
+        "accion": "Monitor Kyler Murray's practice participation and secure a backup quarterback on your roster just in case."
       },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "SF",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "MIN",
       "equipos": [
-        "SF"
+        "MIN",
+        "BUF"
       ],
       "jugadores": [
-        "6803"
+        "5849"
       ],
       "fuentes": [
         {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/nfl/article/brandon-aiyuk-hires-drew-rosenhaus-in-attempt-to-get-wideout-back-to-work-and-playing-again-in-the-nfl-204338966.html",
-          "t": "Brandon Aiyuk hires Drew Rosenhaus in attempt to get wideout &#39;back to work and playing again in the NFL&#39;"
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50361004/vikings-uncertain-qb-kyler-murray-status-vs-bills",
+          "t": "Vikings uncertain of QB Kyler Murray's status vs. Bills due to sore hamstring"
         }
       ],
       "menciona": []
@@ -227,51 +228,51 @@
     "6130",
     "11783",
     "1166",
-    "7042",
     "DET",
+    "7042",
     "7567",
     "4993",
-    "4039",
     "TB",
     "8135",
+    "4039",
     "11610",
-    "WAS",
     "HOU",
     "13424",
-    "7561",
     "13345",
-    "12491",
-    "13294",
+    "12469",
+    "13286",
+    "WAS",
+    "7561",
     "8161",
-    "11729",
-    "12469"
+    "11563",
+    "2020"
   ],
   "soltados": [
     "11637",
-    "13276",
     "4881",
-    "11435",
+    "13276",
     "3271",
+    "11435",
     "12718",
     "13296",
-    "8129",
     "12457",
-    "6130",
+    "8129",
+    "11624",
     "4037",
     "10213",
-    "11624",
-    "7561",
     "5012",
+    "7561",
+    "6130",
     "8408",
-    "7553",
     "WAS",
+    "7553",
     "4147",
     "13424",
     "4454",
     "10235",
+    "3214",
     "11581",
-    "13298",
-    "4035"
+    "13298"
   ],
   "duelo": {
     "a": "Josh Allen",
