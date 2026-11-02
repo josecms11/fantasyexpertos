@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-01T23:57:15.148Z",
-  "ultimaIA": "2026-11-01T18:31:47.869Z",
+  "actualizado": "2026-11-02T00:52:55.008Z",
+  "ultimaIA": "2026-11-02T00:52:55.008Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,94 +14,55 @@
   ],
   "noticias": [
     {
-      "id": "n20261101183100",
-      "fecha": "2026-11-01T18:31:47.869Z",
+      "id": "n20261102005202",
+      "fecha": "2026-11-02T00:52:55.008Z",
       "semana": 8,
-      "titulo": "Jauan Jennings rechazó traspaso para seguir con Vikings",
+      "titulo": "Gardner Minshew abre debate de mariscal en Arizona",
       "claves": [
-        "Jauan Jennings rechazó un cambio a los 49ers",
-        "Prefirió mantenerse en los invictos Vikings",
-        "Solo registra cuatro recepciones en la temporada"
+        "Gardner Minshew relevó a Jacoby Brissett en el tercer cuarto.",
+        "Arizona remontó para vencer 33-30 a Dallas en tiempo extra.",
+        "El entrenador Mike LaFleur no definió al titular para semana 9."
       ],
-      "contexto": "Jauan Jennings decidió rechazar un traspaso que lo llevaría de regreso con los 49ers, a pesar de que los Vikings ya tenían la estructura del acuerdo lista. El veterano receptor prefirió quedarse en Minnesota a pesar de sumar únicamente cuatro recepciones en la campaña.",
-      "fantasy": "El impacto en fantasy es totalmente nulo ya que su rol es marginal. No lo consideres en ninguna liga ni formato para la semana 8.",
-      "equipo_impacto": "La ofensiva de los Vikings se mantiene sin cambios y el cuerpo de receptores conserva la misma jerarquía.",
-      "accion": "Déjalo completamente fuera de tus alineaciones y de la agencia libre.",
-      "en": {
-        "titulo": "Jauan Jennings declined trade to stay with Vikings",
-        "claves": [
-          "Jauan Jennings turned down a 49ers trade",
-          "He chose to stay with the undefeated Vikings",
-          "He has only four catches this season"
-        ],
-        "contexto": "Jauan Jennings declined a trade that would have sent him back to the 49ers, even though the Vikings had a deal framework in place. The veteran receiver chose to stay in Minnesota despite having only four catches this season.",
-        "fantasy": "The fantasy impact is completely neutral since his role is minimal. Do not consider him in any league or format for week 8.",
-        "equipo_impacto": "The Vikings offense remains unchanged and the receiving corps keeps its current pecking order.",
-        "accion": "Keep him completely out of your lineups and the waiver wire."
-      },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "MIN",
-      "equipos": [
-        "MIN",
-        "SF"
-      ],
-      "jugadores": [
-        "7049",
-        "8183"
-      ],
+      "contexto": "Gardner Minshew revolucionó a la ofensiva de Arizona tras ingresar en el tercer cuarto en lugar de Jacoby Brissett, liderando una vibrante remontada 33-30 en tiempo extra sobre Dallas. Minshew conectó envíos clave con Michael Wilson para igualar el juego y permitir que Chad Ryland definiera con gol de campo. Tras la victoria, el entrenador Mike LaFleur evitó comprometerse con un mariscal titular.",
+      "fantasy": "Si Gardner Minshew asume la titularidad, se convierte de inmediato en una opción viable en ligas Superflex o de 2 QB por su estilo agresivo. Su presencia eleva el valor de Michael Wilson y Trey McBride, proyectado con 18.9 pts FX. Con Brissett la ofensiva lucía estancada; Minshew aporta más empuje vertical y mejora las oportunidades de anotar para todo el ataque aéreo.",
+      "equipo_impacto": "El cambio le dio dinamismo inmediato a Arizona, revitalizando a sus armas aéreas y castigando profundo a la defensiva rival. Los receptores ganan volumen valioso con la mayor agresividad de Minshew en series decisivas.",
+      "accion": "Recluta a Gardner Minshew de la agencia libre en ligas Superflex.",
       "fuentes": [
         {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/vikings-jauan-jennings-declined-trade-to-49ers/",
-          "t": "\n                        Jauan Jennings declined trade to return to 49ers after Vikings had framework set, per report\n                    "
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50353468/cardinals-mike-lafleur-noncommittal-starting-qb-gardner-minshew-replaces-jacoby-brissett-win",
+          "t": "Cardinals' LaFleur noncommittal on QB after Minshew replaces Brissett in win"
+        },
+        {
+          "m": "ESPN",
+          "u": "http://www.espn.com/nfl/recap?gameId=401873024",
+          "t": "Chad Ryland kicks winner after PAT miss that forced OT as Cards beat Cowboys 33-30 with wild rally"
         }
       ],
-      "menciona": []
-    },
-    {
-      "id": "n20261101183102",
-      "fecha": "2026-11-01T18:31:47.869Z",
-      "semana": 8,
-      "titulo": "Lamar Jackson sufrió lesión en el pulgar",
-      "claves": [
-        "Lamar Jackson sufrió lesión en la jugada inicial",
-        "Se reportó como cuestionable para regresar",
-        "Duelo estelar ante Josh Allen y los Bills"
-      ],
-      "contexto": "Lamar Jackson encendió las alarmas al sufrir una lesión en el pulgar durante la primera jugada ofensiva del partido de los Ravens contra los Bills, quedando inicialmente en duda para regresar al emparrillado.",
-      "fantasy": "Monitorea su estatus de última hora para evaluar su disponibilidad real, lo cual afecta el techo ofensivo de Baltimore en ligas de fantasía.",
-      "equipo_impacto": "La ofensiva de los Ravens sufre un golpe masivo y altera drásticamente el plan de juego frente a los Bills.",
-      "accion": "Revisa los reportes de última hora antes de que inicie su encuentro.",
       "en": {
-        "titulo": "Lamar Jackson suffered thumb injury against Bills",
+        "titulo": "Gardner Minshew sparks Cardinals quarterback controversy in comeback",
         "claves": [
-          "Lamar Jackson suffered a thumb injury on first play",
-          "He was listed as questionable to return",
-          "High-profile matchup against Josh Allen and the Bills"
+          "Gardner Minshew replaced Jacoby Brissett during the third quarter.",
+          "Arizona mounted a 33-30 overtime comeback win over Dallas.",
+          "Coach Mike LaFleur refused to name next week's starting quarterback."
         ],
-        "contexto": "Lamar Jackson raised alarms by suffering a thumb injury on the very first offensive play of the Ravens game against the Bills, initially leaving his return in question.",
-        "fantasy": "Monitor his late-breaking status to evaluate his actual availability, which heavily impacts Baltimore's fantasy ceiling.",
-        "equipo_impacto": "The Ravens offense takes a massive hit and drastically changes the game plan against the Bills.",
-        "accion": "Check the final status reports before kickoff."
+        "contexto": "Gardner Minshew injected life into Arizona's offense after replacing Jacoby Brissett in the third quarter, spearheading a thrilling 33-30 overtime comeback win over Dallas. Minshew delivered clutch passes to Michael Wilson, setting up Chad Ryland's game-winning field goal. Following the victory, head coach Mike LaFleur refused to commit to Brissett, opening the door for an outright quarterback competition moving forward.",
+        "fantasy": "Should Gardner Minshew win the starting job, he enters the radar as a viable streaming option in Superflex and 2-QB formats. His aggressive vertical passing elevates the ceilings of Michael Wilson and elite tight end Trey McBride, who boasts an 18.9 FX projection. Minshew offers far more fantasy upside to Arizona's pass catchers than Brissett's conservative approach.",
+        "equipo_impacto": "The quarterback change completely shifted Arizona's offensive tempo, generating chunk plays and red-zone trips. His gunslinger mentality creates superior scoring opportunities across the board compared to Brissett's slow-moving offense.",
+        "accion": "Stash Gardner Minshew immediately off waivers in all deep Superflex leagues."
       },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "BAL",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "ARI",
       "equipos": [
-        "BAL",
-        "BUF"
+        "ARI",
+        "DAL"
       ],
       "jugadores": [
-        "4881",
-        "4984"
-      ],
-      "fuentes": [
-        {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/nfl/live/ravens-bills-score-live-updates-inactives-highlights-stats-where-to-watch-lamar-jackson-playing-week-8-164317183.html",
-          "t": "Ravens vs. Bills score, live updates: Lamar Jackson suffers thumb injury on Baltimore&#39;s first offensive play, questionable to return"
-        }
+        "6011",
+        "3257",
+        "10232",
+        "10955"
       ],
       "menciona": []
     }
@@ -229,7 +190,7 @@
     },
     {
       "id": "3214",
-      "estatus": "Duda"
+      "estatus": "Fuera"
     },
     {
       "id": "8142",
@@ -270,30 +231,29 @@
   ],
   "agregados": [
     "6130",
-    "4147",
     "11783",
-    "13424",
-    "WAS",
+    "4147",
     "11625",
+    "WAS",
+    "13424",
     "12491",
-    "13294",
     "8132",
+    "13294",
     "TB",
+    "13337",
     "11647",
-    "12499",
-    "12547",
     "7042",
+    "12547",
+    "12499",
     "4037",
     "10219",
     "DET",
-    "13337",
     "7561",
     "3271",
-    "12498",
     "4039",
     "13150",
-    "9756",
-    "13286"
+    "12498",
+    "9756"
   ],
   "soltados": [
     "8129",
@@ -302,32 +262,32 @@
     "7561",
     "3271",
     "12718",
-    "HOU",
     "10235",
+    "HOU",
     "CLE",
     "12457",
-    "12489",
     "11637",
+    "12489",
     "13296",
-    "8122",
-    "9482",
     "5012",
-    "9758",
+    "8122",
     "11624",
+    "9482",
     "13424",
-    "5045",
-    "3321",
+    "9758",
     "11581",
     "9502",
-    "8121",
-    "4035"
+    "3321",
+    "4035",
+    "13276",
+    "5045"
   ],
   "duelo": {
-    "a": "Jahmyr Gibbs",
-    "b": "Bijan Robinson",
-    "veredicto": "Arranca a Jahmyr Gibbs sobre Bijan Robinson en semana 8. Gibbs supera en proyecciones con 23.7 pts PPR frente a 20.4 pts de Bijan, manteniendo un volumen explosivo por aire y tierra inigualable este fin de semana."
+    "a": "CeeDee Lamb",
+    "b": "Malik Nabers",
+    "veredicto": "Arranca a CeeDee Lamb. Con proyección de 19.9 pts frente a los 18.1 pts de Malik Nabers, Lamb mantiene mayor volumen garantizado y mejor contexto anotador para liderar tu alineación en semana 8."
   },
-  "dueloFecha": "2026-11-01T00:11:17.309Z",
+  "dueloFecha": "2026-11-02T00:52:55.008Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
