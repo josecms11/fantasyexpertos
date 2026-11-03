@@ -1,15 +1,14 @@
 {
-  "fecha": "2026-11-03T21:27:18.237Z",
+  "fecha": "2026-11-03T22:16:20.877Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 15 nuevos, 20 en total",
-    "[1.0s] Sleeper: 3233 activos, semana 9 · proyecciones S9: 9420",
-    "[2.5s] ESPN: lesiones 799 · noticias 50",
-    "[2.5s] Modelo FX v3 : 445 proyecciones propias para la semana 9",
-    "[3.0s] Fuentes nuevas: 6 · horario pico · toca IA: false",
-    "[4.4s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[28.2s] Gemini respuesta inválida gemini-3.5-flash-lite STOP [\n  {\n    \"titulo\": \"Bears aplastan a Seahawks y dominan MNF\",\n    \"claves\": [\n      \"Victoria contundente por 34-17 sobre Seattle\",\n      \"D'Andre Swift y Cale",
-    "[28.2s] Notas del archivo corregidas por estatus o protagonista: 1",
-    "[28.2s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 401 · semana de juego 9 · IA usada hoy 36/40"
+    "[0.4s] YouTube: 15 nuevos, 20 en total",
+    "[1.1s] Sleeper: 3233 activos, semana 9 · proyecciones S9: 9420",
+    "[2.0s] ESPN: lesiones 799 · noticias 50",
+    "[2.0s] Modelo FX v3 : 444 proyecciones propias para la semana 9",
+    "[2.5s] Fuentes nuevas: 12 · horario pico · toca IA: false",
+    "[3.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[51.4s] Gemini respuesta inválida gemini-3.5-flash-lite STOP [\n  {\n    \"titulo\": \"Bears aplastan a Seahawks y dominan MNF\",\n    \"claves\": [\n      \"Victoria contundente por 34-17 sobre Seattle\",\n      \"Show absoluto de D'S",
+    "[51.4s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 401 · semana de juego 9 · IA usada hoy 37/40"
   ]
 }
