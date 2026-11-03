@@ -1,15 +1,17 @@
 {
-  "fecha": "2026-11-03T06:00:52.300Z",
+  "fecha": "2026-11-03T07:04:54.021Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 0 nuevos, 20 en total",
+    "[0.1s] YouTube: 0 nuevos, 20 en total",
     "[0.8s] Sleeper: 3233 activos, semana 9 · proyecciones S9: 9420",
-    "[1.6s] ESPN: lesiones 799 · noticias 50",
-    "[1.7s] Modelo FX v3 : 445 proyecciones propias para la semana 9",
-    "[2.0s] Fuentes nuevas: 1 · horario normal · toca IA: true",
-    "[2.2s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[4.6s] IA OK con gemini-3.5-flash-lite",
-    "[4.6s] Noticias nuevas verificadas: 1",
-    "[5.4s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 399 · semana de juego 9 · IA usada hoy 7/40"
+    "[1.9s] ESPN: lesiones 799 · noticias 50",
+    "[1.9s] Modelo FX v3 : 445 proyecciones propias para la semana 9",
+    "[2.6s] Fuentes nuevas: 1 · horario normal · toca IA: false",
+    "[3.5s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[10.2s] IA OK con gemini-3.5-flash-lite",
+    "[10.2s] Blog: Lesión de Kyle Monangai: ¿juega en la semana 9 y fantasy? / Kyle Monangai injury update: will he play Week 9 fantasy?",
+    "[16.5s] IA OK con gemini-3.5-flash-lite",
+    "[16.5s] Blog: ¿Vender o aguantar a Lamar Jackson? Valor de trade semana 9 / Should you sell or hold Lamar Jackson? Week 9 trade value",
+    "[16.5s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 399 · semana de juego 9 · IA usada hoy 9/40"
   ]
 }
