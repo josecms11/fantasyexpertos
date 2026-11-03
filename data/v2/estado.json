@@ -1,12 +1,19 @@
 {
-  "fecha": "2026-11-03T11:48:04.463Z",
+  "fecha": "2026-11-03T12:40:11.962Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.3s] YouTube: 15 nuevos, 20 en total",
+    "[0.2s] YouTube: 15 nuevos, 20 en total",
     "[0.9s] Sleeper: 3233 activos, semana 9 · proyecciones S9: 9420",
-    "[2.9s] ESPN: lesiones 799 · noticias 50",
-    "[3.0s] Modelo FX v3 : 445 proyecciones propias para la semana 9",
-    "[3.6s] Fuentes nuevas: 10 · horario normal · toca IA: false",
-    "[4.6s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 400 · semana de juego 9 · IA usada hoy 13/40"
+    "[2.0s] ESPN: lesiones 799 · noticias 50",
+    "[2.1s] Modelo FX v3 : 445 proyecciones propias para la semana 9",
+    "[2.5s] Fuentes nuevas: 19 · horario normal · toca IA: true",
+    "[2.6s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[4.9s] Gemini respuesta inválida gemini-3.5-flash-lite STOP {\n  \"noticias\": [\n    {\n      \"titulo\": \"Gardner Minshew asume titularidad en Arizona\",\n      \"claves\": [\n        \"Gardner Minshew toma las riendas ofensivas en",
+    "[4.9s] Noticias nuevas verificadas: 0",
+    "[12.3s] IA OK con gemini-3.5-flash-lite",
+    "[12.3s] Blog: ¿Arrancar o sentar a Ja'Marr Chase en la semana 9? / Should you start Ja'Marr Chase in Week 9?",
+    "[17.8s] IA OK con gemini-3.5-flash-lite",
+    "[17.8s] Blog: Lesión de James Conner: ¿juega en la semana 9 y qué hacer en fantasy? / James Conner injury update: will he play in Week 9? Fantasy impact",
+    "[17.8s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 400 · semana de juego 9 · IA usada hoy 16/40"
   ]
 }
