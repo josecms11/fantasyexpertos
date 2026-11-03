@@ -1,14 +1,20 @@
 {
-  "fecha": "2026-11-03T22:16:20.877Z",
+  "fecha": "2026-11-03T23:02:42.958Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.4s] YouTube: 15 nuevos, 20 en total",
-    "[1.1s] Sleeper: 3233 activos, semana 9 · proyecciones S9: 9420",
-    "[2.0s] ESPN: lesiones 799 · noticias 50",
-    "[2.0s] Modelo FX v3 : 444 proyecciones propias para la semana 9",
-    "[2.5s] Fuentes nuevas: 12 · horario pico · toca IA: false",
-    "[3.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[51.4s] Gemini respuesta inválida gemini-3.5-flash-lite STOP [\n  {\n    \"titulo\": \"Bears aplastan a Seahawks y dominan MNF\",\n    \"claves\": [\n      \"Victoria contundente por 34-17 sobre Seattle\",\n      \"Show absoluto de D'S",
-    "[51.4s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 401 · semana de juego 9 · IA usada hoy 37/40"
+    "[0.3s] YouTube: 15 nuevos, 20 en total",
+    "[1.0s] Sleeper: 3233 activos, semana 9 · proyecciones S9: 9420",
+    "[2.4s] ESPN: lesiones 799 · noticias 50",
+    "[2.5s] Modelo FX v3 : 444 proyecciones propias para la semana 9",
+    "[2.7s] Fuentes nuevas: 22 · horario pico · toca IA: false",
+    "[3.8s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[12.7s] Modelo saturado, pruebo otro gemini-3.5-flash-lite 503",
+    "[13.6s] Modelo saturado, pruebo otro gemini-3.1-flash-lite 503",
+    "[13.7s] Modelo sin cuota hoy gemini-2.5-flash 404",
+    "[13.8s] Modelo sin cuota hoy gemini-2.5-flash-lite 404",
+    "[14.2s] Modelo saturado, pruebo otro gemini-flash-latest 503",
+    "[14.3s] Modelo sin cuota hoy gemini-omni-1.1-flash 429",
+    "[22.2s] Gemini respuesta inválida gemini-flash-lite-latest STOP [\n  {\n    \"titulo\": \"Bears arrollan Seahawks y acechan su división\",\n    \"claves\": [\n      \"Chicago aplasta con marcador de 34-17\",\n      \"Swift y Caleb dan sho",
+    "[22.3s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 401 · semana de juego 9 · IA usada hoy 38/40"
   ]
 }
