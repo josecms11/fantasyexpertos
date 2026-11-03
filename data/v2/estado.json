@@ -1,25 +1,12 @@
 {
-  "fecha": "2026-11-03T01:30:15.205Z",
+  "fecha": "2026-11-03T02:23:46.013Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 0 nuevos, 20 en total",
-    "[0.8s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
+    "[0.3s] YouTube: 0 nuevos, 20 en total",
+    "[1.0s] Sleeper: 3233 activos, semana 8 · proyecciones S8: 9418",
     "[2.4s] ESPN: lesiones 799 · noticias 50",
-    "[2.5s] Modelo FX v3 : 445 proyecciones propias para la semana 8",
-    "[2.8s] Fuentes nuevas: 4 · horario pico · toca IA: true",
-    "[2.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[3.5s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[4.1s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[24.4s] IA OK con gemini-3.6-flash",
-    "[24.4s] Noticias nuevas verificadas: 2",
-    "[25.6s] Modelo sin cuota hoy gemini-3.8-flash 429",
-    "[25.7s] Modelo sin cuota hoy gemini-3.7-flash 429",
-    "[25.9s] Modelo sin cuota hoy gemini-3.6-flash 429",
-    "[26.0s] Modelo sin cuota hoy gemini-3.5-flash 429",
-    "[32.0s] IA OK con gemini-3.5-flash-lite",
-    "[32.0s] Blog: ¿Arrancar o sentar a Jordan Love en la semana 8? / Should you start Jordan Love in Week 8?",
-    "[36.9s] IA OK con gemini-3.5-flash-lite",
-    "[36.9s] Blog: ¿Vale la pena agregar a Lions D/ST en la semana 8? / Should you pick up Lions D/ST in Week 8?",
-    "[36.9s] Listo: 2 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 398 · semana de juego 8 · IA usada hoy 4/40"
+    "[2.4s] Modelo FX v3 : 446 proyecciones propias para la semana 8",
+    "[2.8s] Fuentes nuevas: 0 · horario pico · toca IA: false",
+    "[3.6s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 398 · semana de juego 8 · IA usada hoy 4/40"
   ]
 }
