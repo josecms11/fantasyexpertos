@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-02T23:43:11.611Z",
-  "ultimaIA": "2026-11-02T22:24:49.393Z",
+  "actualizado": "2026-11-03T00:19:21.381Z",
+  "ultimaIA": "2026-11-03T00:19:21.381Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,57 +14,46 @@
   ],
   "noticias": [
     {
-      "id": "n20261102222400",
-      "fecha": "2026-11-02T22:24:49.393Z",
+      "id": "n20261103001900",
+      "fecha": "2026-11-03T00:19:21.381Z",
       "semana": 8,
-      "titulo": "Caleb Williams choca contra dura defensiva en Seattle",
+      "titulo": "Jeremiyah Love sufre nueva lesión de tobillo",
       "claves": [
-        "Caleb Williams proyectado con 20 puntos para la semana 8",
-        "Los Bears visitan a la defensiva de Seattle",
-        "Prueba de fuego para la ofensiva aérea"
+        "Mike LaFleur confirmó lesión en otra zona del tobillo.",
+        "Queda descartado con estatus Out para la semana 8.",
+        "Arizona sufre bajas críticas en todo su comité terrestre."
       ],
-      "contexto": "Los Bears llegan con una ofensiva enrachada para medirse ante Seattle en el partido de lunes por la noche. Es un duelo complejo porque enfrente estará una de las unidades defensivas más duras de toda la liga, lo que pondrá a prueba el verdadero nivel del joven mariscal en territorio hostil.",
-      "fantasy": "Con una proyección sólida de 20 puntos, Williams se mantiene como titular confiable en ligas de formato estándar y superflex para la semana 8, aunque debes moderar expectativas ante un rival que concede pocos espacios.",
-      "equipo_impacto": "El esquema ofensivo de Chicago deberá ejecutar con máxima precisión y depender de ajustes rápidos para superar la presión constante de la defensiva rival.",
-      "accion": "Mantén a Caleb Williams en tu alineación inicial pero monitorea el desarrollo del encuentro.",
-      "en": {
-        "titulo": "Caleb Williams faces tough test against Seattle",
-        "claves": [
-          "Caleb Williams projected for 20 points in week 8",
-          "Bears travel to face elite Seattle defense",
-          "Major test for Chicago surging offense"
-        ],
-        "contexto": "The Bears bring their surging offense into Seattle for a tough Monday night matchup against one of the league's top defensive units, presenting a severe road test for the young quarterback.",
-        "fantasy": "With a solid 20-point projection, Williams remains a trustworthy starter in standard and superflex leagues for week 8, though expectations should be tempered against a stout secondary.",
-        "equipo_impacto": "Chicago's offensive scheme will need precise execution and quick reads to neutralize heavy defensive pressure.",
-        "accion": "Keep Caleb Williams in your starting lineup while tempering explosive upside expectations.",
-        "etiqueta": "TENDENCIA",
-        "impacto": "NEUTRO",
-        "equipo": "CHI",
-        "equipos": [
-          "CHI",
-          "SEA"
-        ],
-        "jugadores": [
-          "Caleb Williams"
-        ]
-      },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "CHI",
-      "equipos": [
-        "CHI",
-        "SEA"
-      ],
-      "jugadores": [
-        "11560"
-      ],
+      "contexto": "El corredor novato de Arizona sufrió un percance físico durante el triunfo del domingo contra Dallas. El entrenador en jefe Mike LaFleur reveló que la molestia de Jeremiyah Love se ubica en una zona completamente nueva de su tobillo, lo cual complica su disponibilidad inmediata. La franquicia confirmó que el novato queda fuera con etiqueta de Out para la semana 8 tras este nuevo revés médico en su temporada.",
+      "fantasy": "Pierdes a una pieza de rotación con perfil dinámico. Love está oficialmente Out, así que debes moverlo directo a tu banca o colocarlo en la reserva de lesionados. Con James Conner y Trey Benson también marginados en la lista de lesionados, Arizona carece de profundidad terrestre confiable. En ligas de 12 o más equipos, busca en waivers alternativas disponibles para apuntalar tu alineación titular esta jornada.",
+      "equipo_impacto": "La ofensiva de Arizona pierde explosividad terrestre tras este duro golpe. Sin Love y con el resto de la rotación titular lastimada, el ataque tendrá que apoyarse mucho más en el juego aéreo y en pases cortos hacia el ala cerrada Trey McBride.",
+      "accion": "Mueve a Jeremiyah Love a tu puesto de lesionado o a la banca y busca urgentemente un corredor en waivers para la semana 8.",
       "fuentes": [
         {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/seahawks-vs-bears-how-to-watch-prediction-odds-caleb-williams/",
-          "t": "\n                        Seahawks vs. Bears prediction: Caleb Williams faces toughest test yet in Seattle defense\n                    "
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50361618/cardinals-lafleur-love-injury-new-portion-ankle",
+          "t": "Cardinals' Mike LaFleur: Jeremiyah Love's injury to 'new portion' of his ankle"
         }
+      ],
+      "en": {
+        "titulo": "Jeremiyah Love suffers new ankle injury",
+        "claves": [
+          "Mike LaFleur confirmed injury to new ankle area.",
+          "Officially ruled Out for upcoming Week 8 matchup.",
+          "Arizona backfield depth severely depleted by multiple injuries."
+        ],
+        "contexto": "Cardinals rookie running back Jeremiyah Love sustained a fresh setback during Sunday's victory against Dallas. Head coach Mike LaFleur noted that Love injured a new portion of his ankle, complicating his short-term availability. Following the team evaluation, Love has officially been listed as Out for Week 8 action, dealing another major blow to Arizona's offensive backfield.",
+        "fantasy": "Fantasy managers lose a dynamic depth piece for Week 8. With Love designated as Out, stash him immediately in your IR slot or move him to your bench. Considering James Conner and Trey Benson are already sidelined on injured reserve, Arizona's backfield depth is wiped out. In leagues with 12 or more teams, you should hit the waiver wire to secure spot starters.",
+        "equipo_impacto": "Arizona's ground attack loses critical playmaking ability. Without Love and their regular backfield contributors, the Cardinals will lean heavier on pass concepts, funneling more short targets toward tight end Trey McBride in Week 8.",
+        "accion": "Slide Jeremiyah Love into your IR slot or bench and target replacement running backs on the Week 8 waiver wire immediately."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "ARI",
+      "equipos": [
+        "ARI"
+      ],
+      "jugadores": [
+        "13287"
       ],
       "menciona": []
     }
@@ -180,7 +169,7 @@
     },
     {
       "id": "5854",
-      "estatus": "Duda"
+      "estatus": "Fuera"
     },
     {
       "id": "8129",
@@ -241,47 +230,47 @@
     "1166",
     "7042",
     "4993",
-    "7567",
     "8135",
+    "7567",
     "TB",
     "4039",
     "11610",
     "HOU",
     "13286",
     "13345",
-    "13424",
     "8161",
+    "13424",
     "12469",
     "11563",
-    "7561",
-    "12540"
+    "12540",
+    "6650"
   ],
   "soltados": [
     "11637",
     "4881",
     "13276",
-    "3271",
     "11435",
+    "3271",
     "12718",
     "12457",
     "13296",
-    "11624",
     "8129",
+    "11624",
     "4037",
+    "4454",
     "10213",
     "5012",
-    "4454",
     "7561",
+    "12711",
     "6130",
     "WAS",
     "8408",
     "7553",
     "3214",
     "10235",
-    "4147",
     "9230",
-    "13424",
-    "11581"
+    "4147",
+    "13424"
   ],
   "duelo": {
     "a": "Josh Allen",
