@@ -1,21 +1,16 @@
 {
-  "fecha": "2026-11-03T15:32:25.150Z",
+  "fecha": "2026-11-03T16:26:14.574Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.4s] YouTube: 15 nuevos, 20 en total",
+    "[0.3s] YouTube: 15 nuevos, 20 en total",
     "[1.2s] Sleeper: 3233 activos, semana 9 · proyecciones S9: 9420",
     "[2.3s] ESPN: lesiones 799 · noticias 50",
-    "[3.1s] Auto-ajuste FX: {\"hl\":8,\"mEf\":30,\"mTd\":220,\"aPrev\":0.2} error 4.804 → 4.791",
-    "[3.1s] Modelo FX v3 : 445 proyecciones propias para la semana 9",
-    "[4.0s] Fuentes nuevas: 5 · horario pico · toca IA: true",
-    "[4.1s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[154.1s] Gemini sin respuesta gemini-3.5-flash-lite The operation was aborted due to timeout",
-    "[157.0s] IA OK con gemini-3.1-flash-lite",
-    "[157.0s] Noticias nuevas verificadas: 1",
-    "[218.8s] Gemini respuesta inválida gemini-3.5-flash-lite STOP {\n  \"es\": {\n    \"titulo\": \"¿Vale la pena agregar a Gardner Minshew II en la semana 9?\",\n    \"descripcion\": \"Analizamos si debes fichar a Gardner Minshew II para",
-    "[218.8s] Blog: respuesta incompleta para Gardner Minshew II",
-    "[245.5s] IA OK con gemini-3.5-flash-lite",
-    "[245.5s] Blog: ¿Arrancar o sentar a Tyler Shough en la semana 9? / Should you start Tyler Shough in Week 9?",
-    "[245.5s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 401 · semana de juego 9 · IA usada hoy 21/40"
+    "[2.4s] Modelo FX v3 : 445 proyecciones propias para la semana 9",
+    "[2.7s] Fuentes nuevas: 6 · horario pico · toca IA: true",
+    "[2.8s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[5.0s] IA OK con gemini-3.5-flash-lite",
+    "[5.0s] Descartada: Malik Willis perfila como gran opción para semana 9 → duplicada",
+    "[5.0s] Noticias nuevas verificadas: 0",
+    "[5.9s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 401 · semana de juego 9 · IA usada hoy 22/40"
   ]
 }
