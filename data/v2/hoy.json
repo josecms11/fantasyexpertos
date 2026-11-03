@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-03T14:42:31.973Z",
-  "ultimaIA": "2026-11-03T10:59:15.650Z",
+  "actualizado": "2026-11-03T15:28:22.744Z",
+  "ultimaIA": "2026-11-03T15:28:22.744Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,49 +14,52 @@
   ],
   "noticias": [
     {
-      "id": "n20261103105900",
-      "fecha": "2026-11-03T10:59:15.650Z",
+      "id": "n20261103152800",
+      "fecha": "2026-11-03T15:28:22.744Z",
       "semana": 9,
-      "titulo": "Jeffrey Simmons brilla en su debut con Bears",
+      "titulo": "Ravens consideran a Kedon Slovis para semana 9",
       "claves": [
-        "Jeffrey Simmons logra un sack y seis tacleadas",
-        "Chicago hilvana su tercera victoria consecutiva",
-        "El defensivo gana el balón del juego"
+        "Lamar Jackson y Tyler Huntley descartados",
+        "Joe Fagnano reportado con lesión",
+        "Slovis es opción emergente"
       ],
-      "contexto": "En su debut con los Bears de Chicago, el defensivo Jeffrey Simmons tuvo una actuación estelar al registrar un sack, seis tacleadas con tres de ellas para pérdida y un pase desviado. Su impacto ayudó a que el equipo consiguiera su tercera victoria consecutiva, llevándose además el reconocimiento como el jugador del partido en este sólido inicio con su nueva escuadra.",
-      "fantasy": "Para el fantasy football, la defensiva de Chicago gana un peso enorme de cara a la semana 9 tras la llegada y explosión inmediata de Simmons. Si juegas en ligas de IDP o buscas una unidad defensiva confiable para este tramo de la temporada, los Bears se convierten en una opción muy atractiva en el tablero general.",
-      "equipo_impacto": "La incorporación de Simmons fortalece notablemente la frontal defensiva de Chicago, elevando el nivel de presión sobre los mariscales rivales y dando mayor solidez a todo el esquema colectivo en el campo.",
-      "accion": "Monitorea a la defensiva de Chicago en el waiver wire si buscas solidez para la semana 9.",
+      "contexto": "Ante la crisis de quarterbacks en Baltimore, la situación es crítica. Con Lamar Jackson y Tyler Huntley fuera de acción por lesiones, y el suplente Joe Fagnano lidiando con una molestia en el tobillo, el equipo ha tenido que buscar alternativas de emergencia. Kedon Slovis surge como el nombre principal para tomar las riendas de la ofensiva en el duelo de la semana 9 frente a los Jaguars.",
+      "fantasy": "Evita a toda costa cualquier receptor o ala cerrada de los Ravens para esta semana. La incertidumbre bajo el centro desploma el techo de puntos de todo el equipo. Si tenías a Lamar Jackson, busca urgentemente un reemplazo en waivers, ya que el riesgo de una actuación ofensiva nula es altísimo.",
+      "equipo_impacto": "La ofensiva de Baltimore pierde toda su capacidad de amenaza aérea y terrestre estructurada. Los compañeros de posición verán una reducción drástica en su volumen de juego y eficiencia general.",
+      "accion": "Sienta a todos tus jugadores de Ravens esta semana hasta ver quién inicia.",
       "en": {
-        "titulo": "Jeffrey Simmons shines in Bears debut",
+        "titulo": "Ravens consider Kedon Slovis for Week 9",
         "claves": [
-          "Jeffrey Simmons records a sack and six tackles",
-          "Chicago wins its third straight game",
-          "Defensive lineman earns the game ball"
+          "Lamar Jackson and Tyler Huntley ruled out",
+          "Joe Fagnano dealing with ankle injury",
+          "Slovis is an emergency option"
         ],
-        "contexto": "In his debut with the Chicago Bears, defensive lineman Jeffrey Simmons delivered a stellar performance by recording a sack, six tackles with three for loss, and a deflected pass. His impact helped secure the team's third consecutive victory, earning him the game ball in his strong start with the new squad.",
-        "fantasy": "For fantasy football, the Chicago defense gains immense value heading week 9 following Simmons' arrival and immediate explosion. If you play in IDP leagues or need a reliable defensive unit for this stretch of the season, the Bears become a very attractive option on the waiver wire.",
-        "equipo_impacto": "Simmons' addition significantly strengthens Chicago's defensive front, elevating the pressure on opposing quarterbacks and providing greater overall solidity to the team's scheme on the field.",
-        "accion": "Monitor the Chicago defense on the waiver wire if you need stability for week 9."
+        "contexto": "The Ravens are in a quarterback crisis. With Lamar Jackson and Tyler Huntley sidelined, and backup Joe Fagnano battling an ankle injury, the team is scrambling. Kedon Slovis has emerged as the primary candidate to lead the offense for the Week 9 showdown against the Jaguars.",
+        "fantasy": "Avoid all Ravens pass catchers this week. The uncertainty at QB tanks the upside for the entire roster. If you relied on Lamar Jackson, find an immediate replacement on waivers as the risk of a total offensive collapse is significant.",
+        "equipo_impacto": "The Baltimore offense loses all structured passing and rushing threats. Teammates will see a drastic reduction in volume and overall efficiency.",
+        "accion": "Bench all Ravens players this week until the starter is confirmed."
       },
-      "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "CHI",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "BAL",
       "equipos": [
-        "CHI",
-        "SEA"
+        "BAL",
+        "JAX"
       ],
-      "jugadores": [],
+      "jugadores": [
+        "11648",
+        "4881",
+        "7083",
+        "13350"
+      ],
       "fuentes": [
         {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50367539/dt-jeffrey-simons-immediate-boon-chicago-bears-defense-win-seattle-seahawks",
-          "t": "Sweet Home Chicago: Simmons stymies Darnold, Seahawks in Bears debut"
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/ravens-add-starting-qb-kedon-slovis-week-9/",
+          "t": "\n                        Ravens add possible starting QB just two days ahead of Week 9 showdown with Jaguars\n                    "
         }
       ],
-      "menciona": [
-        "4943"
-      ]
+      "menciona": []
     }
   ],
   "lesionados": [
@@ -89,23 +92,19 @@
       "estatus": "Duda"
     },
     {
-      "id": "8167",
-      "estatus": "Duda"
-    },
-    {
       "id": "8112",
       "estatus": "Duda"
     },
     {
-      "id": "2133",
-      "estatus": "Fuera"
+      "id": "8167",
+      "estatus": "Duda"
     },
     {
       "id": "4881",
       "estatus": "Fuera"
     },
     {
-      "id": "12508",
+      "id": "2133",
       "estatus": "Fuera"
     },
     {
@@ -115,6 +114,10 @@
     {
       "id": "10232",
       "estatus": "Duda"
+    },
+    {
+      "id": "12508",
+      "estatus": "Fuera"
     },
     {
       "id": "8155",
@@ -153,15 +156,19 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12490",
-      "estatus": "Duda"
-    },
-    {
       "id": "7083",
       "estatus": "Fuera"
     },
     {
+      "id": "12490",
+      "estatus": "Duda"
+    },
+    {
       "id": "11589",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "5854",
       "estatus": "Fuera"
     },
     {
@@ -173,32 +180,20 @@
       "estatus": "Duda"
     },
     {
-      "id": "5872",
-      "estatus": "Fuera"
+      "id": "12474",
+      "estatus": "Duda"
     },
     {
       "id": "8129",
       "estatus": "Fuera"
     },
     {
-      "id": "12474",
-      "estatus": "Duda"
-    },
-    {
-      "id": "5854",
+      "id": "5872",
       "estatus": "Fuera"
     },
     {
       "id": "4983",
       "estatus": "Duda"
-    },
-    {
-      "id": "8142",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "3214",
-      "estatus": "Fuera"
     },
     {
       "id": "13287",
@@ -209,11 +204,19 @@
       "estatus": "Fuera"
     },
     {
-      "id": "6819",
+      "id": "3214",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "8142",
       "estatus": "Fuera"
     },
     {
       "id": "4177",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "6819",
       "estatus": "Fuera"
     },
     {
@@ -237,15 +240,15 @@
     "8135",
     "7567",
     "1166",
-    "NO",
     "SF",
+    "NO",
     "2020",
     "11729",
-    "13286",
     "NYG",
+    "13286",
     "12545",
-    "12469",
     "13305",
+    "12469",
     "10219"
   ],
   "soltados": [
@@ -261,12 +264,12 @@
     "12718",
     "7561",
     "5012",
-    "12457",
     "CLE",
+    "12457",
     "4037",
     "13286",
-    "8129",
     "1945",
+    "8129",
     "13296",
     "9480",
     "3214",
