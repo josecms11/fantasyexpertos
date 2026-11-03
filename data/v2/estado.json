@@ -1,16 +1,17 @@
 {
-  "fecha": "2026-11-03T16:26:14.574Z",
+  "fecha": "2026-11-03T17:26:07.545Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.3s] YouTube: 15 nuevos, 20 en total",
-    "[1.2s] Sleeper: 3233 activos, semana 9 · proyecciones S9: 9420",
-    "[2.3s] ESPN: lesiones 799 · noticias 50",
-    "[2.4s] Modelo FX v3 : 445 proyecciones propias para la semana 9",
-    "[2.7s] Fuentes nuevas: 6 · horario pico · toca IA: true",
-    "[2.8s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[5.0s] IA OK con gemini-3.5-flash-lite",
-    "[5.0s] Descartada: Malik Willis perfila como gran opción para semana 9 → duplicada",
-    "[5.0s] Noticias nuevas verificadas: 0",
-    "[5.9s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 401 · semana de juego 9 · IA usada hoy 22/40"
+    "[0.2s] YouTube: 15 nuevos, 20 en total",
+    "[0.9s] Sleeper: 3233 activos, semana 9 · proyecciones S9: 9420",
+    "[1.9s] ESPN: lesiones 799 · noticias 50",
+    "[1.9s] Modelo FX v3 : 444 proyecciones propias para la semana 9",
+    "[2.4s] Fuentes nuevas: 10 · horario pico · toca IA: true",
+    "[2.5s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[58.4s] IA OK con gemini-3.5-flash-lite",
+    "[58.4s] Descartada (sin fuente citada): Texans D/ST destaca en la mira para semana 9",
+    "[58.4s] Noticias nuevas verificadas: 0",
+    "[100.6s] Gemini respuesta inválida gemini-3.5-flash-lite STOP [\n  {\n    \"titulo\": \"Bears aplastan a Seahawks 34-17 en MNF\",\n    \"claves\": [\n      \"Chicago domina a Seattle con marcador 34-17\",\n      \"Swift y Caleb lideran ",
+    "[100.6s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 401 · semana de juego 9 · IA usada hoy 24/40"
   ]
 }
