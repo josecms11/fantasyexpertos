@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-03T00:19:21.381Z",
-  "ultimaIA": "2026-11-03T00:19:21.381Z",
+  "actualizado": "2026-11-03T01:29:40.767Z",
+  "ultimaIA": "2026-11-03T01:29:40.767Z",
   "semana": 8,
   "semanaStats": 8,
   "temporada": "2026",
@@ -14,47 +14,92 @@
   ],
   "noticias": [
     {
-      "id": "n20261103001900",
-      "fecha": "2026-11-03T00:19:21.381Z",
+      "id": "n20261103012900",
+      "fecha": "2026-11-03T01:29:40.767Z",
       "semana": 8,
-      "titulo": "Jeremiyah Love sufre nueva lesión de tobillo",
-      "claves": [
-        "Mike LaFleur confirmó lesión en otra zona del tobillo.",
-        "Queda descartado con estatus Out para la semana 8.",
-        "Arizona sufre bajas críticas en todo su comité terrestre."
-      ],
-      "contexto": "El corredor novato de Arizona sufrió un percance físico durante el triunfo del domingo contra Dallas. El entrenador en jefe Mike LaFleur reveló que la molestia de Jeremiyah Love se ubica en una zona completamente nueva de su tobillo, lo cual complica su disponibilidad inmediata. La franquicia confirmó que el novato queda fuera con etiqueta de Out para la semana 8 tras este nuevo revés médico en su temporada.",
-      "fantasy": "Pierdes a una pieza de rotación con perfil dinámico. Love está oficialmente Out, así que debes moverlo directo a tu banca o colocarlo en la reserva de lesionados. Con James Conner y Trey Benson también marginados en la lista de lesionados, Arizona carece de profundidad terrestre confiable. En ligas de 12 o más equipos, busca en waivers alternativas disponibles para apuntalar tu alineación titular esta jornada.",
-      "equipo_impacto": "La ofensiva de Arizona pierde explosividad terrestre tras este duro golpe. Sin Love y con el resto de la rotación titular lastimada, el ataque tendrá que apoyarse mucho más en el juego aéreo y en pases cortos hacia el ala cerrada Trey McBride.",
-      "accion": "Mueve a Jeremiyah Love a tu puesto de lesionado o a la banca y busca urgentemente un corredor en waivers para la semana 8.",
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50361618/cardinals-lafleur-love-injury-new-portion-ankle",
-          "t": "Cardinals' Mike LaFleur: Jeremiyah Love's injury to 'new portion' of his ankle"
+          "u": "https://www.espn.com/nfl/story/_/id/50362530/ravens-qb-joe-fagnano-ankle-chance-play-thursday",
+          "t": "Ravens QB Joe Fagnano (ankle) has chance to play Thursday, per Jesse Minter"
         }
       ],
+      "titulo": "Joe Fagnano busca jugar el jueves tras lesión",
+      "claves": [
+        "Entrenador Jesse Minter reporta opción de jugar el jueves.",
+        "Mariscal sufre dolencia en el tobillo tras semana 7.",
+        "Situación crítica bajo centro para el ataque de Baltimore."
+      ],
+      "contexto": "El entrenador en jefe Jesse Minter confirmó que el mariscal de campo de Ravens, Joe Fagnano, mantiene la posibilidad de alinear el jueves por la noche. Fagnano padece una dolencia en el tobillo que compromete su disponibilidad en semana 8. El cuerpo técnico evaluará su evolución física en los entrenamientos previos para determinar si toma el mando de la ofensiva.",
+      "fantasy": "Mantén a Fagnano fuera de tus alineaciones titulares por el alto riesgo de recaída y limitaciones de movilidad. Su ausencia o presencia condiciona directamente el volumen aéreo de receptores como Zay Flowers (proyectado con 17.1 pts) y el ala cerrada Isaiah Likely (13.7 pts). En ligas Superflex o de 2 QB, busca opciones de emergencia en waivers si no practica al 100%.",
+      "equipo_impacto": "La presencia de Fagnano mantiene cierta estabilidad estructural en el esquema aéreo de Baltimore. Si queda fuera, el plan de juego dependerá totalmente del ataque terrestre y ajustes de emergencia en la bolsa de protección.",
+      "accion": "Busca alternativas de mariscal en waivers si dependes de la ofensiva aérea de Baltimore este jueves.",
       "en": {
-        "titulo": "Jeremiyah Love suffers new ankle injury",
+        "titulo": "Joe Fagnano targets Thursday return despite ankle injury",
         "claves": [
-          "Mike LaFleur confirmed injury to new ankle area.",
-          "Officially ruled Out for upcoming Week 8 matchup.",
-          "Arizona backfield depth severely depleted by multiple injuries."
+          "Coach Jesse Minter says he has a chance Thursday.",
+          "Quarterback dealing with ankle issue after week 7.",
+          "Critical situation under center for the Baltimore offense."
         ],
-        "contexto": "Cardinals rookie running back Jeremiyah Love sustained a fresh setback during Sunday's victory against Dallas. Head coach Mike LaFleur noted that Love injured a new portion of his ankle, complicating his short-term availability. Following the team evaluation, Love has officially been listed as Out for Week 8 action, dealing another major blow to Arizona's offensive backfield.",
-        "fantasy": "Fantasy managers lose a dynamic depth piece for Week 8. With Love designated as Out, stash him immediately in your IR slot or move him to your bench. Considering James Conner and Trey Benson are already sidelined on injured reserve, Arizona's backfield depth is wiped out. In leagues with 12 or more teams, you should hit the waiver wire to secure spot starters.",
-        "equipo_impacto": "Arizona's ground attack loses critical playmaking ability. Without Love and their regular backfield contributors, the Cardinals will lean heavier on pass concepts, funneling more short targets toward tight end Trey McBride in Week 8.",
-        "accion": "Slide Jeremiyah Love into your IR slot or bench and target replacement running backs on the Week 8 waiver wire immediately."
+        "contexto": "Head coach Jesse Minter confirmed that Ravens quarterback Joe Fagnano still has a chance to play on Thursday night. Fagnano is dealing with an ankle injury that puts his availability for week 8 in question. The coaching staff will evaluate his physical progress during short week practices before deciding if he can start under center.",
+        "fantasy": "Keep Fagnano on your bench due to high risk of reinjury and mobility limitations. His availability directly impacts the aerial volume for targets like Zay Flowers (projected at 17.1 pts) and tight end Isaiah Likely (13.7 pts). In Superflex or 2 QB leagues, look for emergency options on the waiver wire if he does not practice fully.",
+        "equipo_impacto": "Fagnano's presence maintains baseline stability for Baltimore's passing scheme. If ruled out, the game plan will rely entirely on the ground attack and emergency adjustments in the pocket.",
+        "accion": "Look for QB waiver alternatives if you rely on Baltimore's passing game this Thursday."
       },
       "etiqueta": "LESIÓN",
       "impacto": "BAJA",
-      "equipo": "ARI",
+      "equipo": "BAL",
       "equipos": [
-        "ARI"
+        "BAL",
+        "NYG"
       ],
       "jugadores": [
-        "13287"
+        "13350",
+        "9997",
+        "8131"
       ],
+      "menciona": []
+    },
+    {
+      "id": "n20261103012901",
+      "fecha": "2026-11-03T01:29:40.767Z",
+      "semana": 8,
+      "fuentes": [
+        {
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/nfl-reinstates-james-pearce-jr-after-eight-game-suspension-falcons/",
+          "t": "\n                        NFL reinstates James Pearce Jr. after eight-game suspension: Why EDGE returns at critical time for Falcons\n        "
+        }
+      ],
+      "titulo": "Falcons recuperan a James Pearce tras cumplir suspensión",
+      "claves": [
+        "Defensivo reinstalado tras cumplir 8 juegos de castigo.",
+        "Refuerzo clave en la presión de mariscal para Atlanta.",
+        "Impulso significativo para Falcons D/ST en semana 8."
+      ],
+      "contexto": "La NFL reinstaló oficialmente al apoyador exterior James Pearce Jr. tras cumplir una suspensión de 8 partidos. El cazador de mariscales regresa en un momento crucial para Atlanta, aportando capacidad de captura inmediata a una unidad defensiva que busca consolidar el liderato en su división durante la segunda mitad de la campaña.",
+      "fantasy": "La llegada de Pearce eleva el valor fantasy de Falcons D/ST, unidad proyectada con 7.6 pts en semana 8. En formatos IDP, Pearce se convierte en una adición especulativa de waiver con alto potencial de capturas. Su presión constante al mariscal rival provocará errores, aumentando las oportunidades de balones sueltos e intercepciones para la secundaria.",
+      "equipo_impacto": "Atlanta fortalece sustancialmente su rotación en la línea defensiva, reduciendo la fatiga de los linieros titulares y elevando el porcentaje general de capturas del equipo en situaciones de pase.",
+      "accion": "Añade a Falcons D/ST como opción de streaming defensivo si necesitas capturas y jugadas grandes.",
+      "en": {
+        "titulo": "Falcons activate James Pearce Jr. following eight-game suspension",
+        "claves": [
+          "Defensive end reinstated after serving 8-game suspension.",
+          "Key pass rush reinforcement for Atlanta's front line.",
+          "Major boost for Falcons D/ST in week 8."
+        ],
+        "contexto": "The NFL officially reinstated edge rusher James Pearce Jr. after he served an 8-game suspension. The pass rusher returns at a crucial moment for Atlanta, providing immediate sack capability to a defensive unit aiming to capture top positioning in their division during the second half of the campaign.",
+        "fantasy": "Pearce's addition boosts the fantasy upside of Falcons D/ST, a unit projected for 7.6 pts in week 8. In IDP formats, Pearce becomes a high-upside waiver addition for sack production. His pass rush pressure should force opposing quarterbacks into mistakes, increasing turnover opportunities for the secondary.",
+        "equipo_impacto": "Atlanta strengthens its defensive line rotation, reducing snap counts for starters and raising the team's overall sack rate on passing downs.",
+        "accion": "Add Falcons D/ST as a streaming option if you need sacks and big play potential."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "ATL",
+      "equipos": [
+        "ATL"
+      ],
+      "jugadores": [],
       "menciona": []
     }
   ],
@@ -160,6 +205,10 @@
       "estatus": "Fuera"
     },
     {
+      "id": "5947",
+      "estatus": "Duda"
+    },
+    {
       "id": "11589",
       "estatus": "Fuera"
     },
@@ -174,6 +223,10 @@
     {
       "id": "8129",
       "estatus": "Fuera"
+    },
+    {
+      "id": "12490",
+      "estatus": "Duda"
     },
     {
       "id": "12474",
@@ -210,14 +263,6 @@
     {
       "id": "12533",
       "estatus": "Fuera"
-    },
-    {
-      "id": "9486",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "8205",
-      "estatus": "Fuera"
     }
   ],
   "agregados": [
@@ -227,21 +272,21 @@
     "6130",
     "11783",
     "DET",
-    "1166",
     "7042",
-    "4993",
+    "1166",
     "8135",
+    "4993",
     "7567",
     "TB",
-    "4039",
+    "13286",
     "11610",
     "HOU",
-    "13286",
-    "13345",
+    "4039",
     "8161",
-    "13424",
     "12469",
+    "13424",
     "11563",
+    "13345",
     "12540",
     "6650"
   ],
@@ -254,23 +299,23 @@
     "12718",
     "12457",
     "13296",
-    "8129",
     "11624",
-    "4037",
     "4454",
-    "10213",
-    "5012",
-    "7561",
+    "8129",
     "12711",
-    "6130",
+    "4037",
+    "5012",
+    "10213",
     "WAS",
+    "7561",
     "8408",
-    "7553",
-    "3214",
-    "10235",
+    "6130",
     "9230",
+    "7553",
+    "10235",
+    "3214",
     "4147",
-    "13424"
+    "NE"
   ],
   "duelo": {
     "a": "Josh Allen",
