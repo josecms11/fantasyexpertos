@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-03T10:08:22.761Z",
-  "ultimaIA": "2026-11-03T06:00:48.545Z",
+  "actualizado": "2026-11-03T10:59:15.650Z",
+  "ultimaIA": "2026-11-03T10:59:15.650Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,30 +14,30 @@
   ],
   "noticias": [
     {
-      "id": "n20261103060000",
-      "fecha": "2026-11-03T06:00:48.545Z",
+      "id": "n20261103105900",
+      "fecha": "2026-11-03T10:59:15.650Z",
       "semana": 9,
-      "titulo": "Luther Burden III anota en serie inicial",
+      "titulo": "Jeffrey Simmons brilla en su debut con Bears",
       "claves": [
-        "Luther Burden III sumó 65 yardas aéreas",
-        "Atrapó 7 recepciones en total",
-        "Conectó un touchdown en la primera serie"
+        "Jeffrey Simmons logra un sack y seis tacleadas",
+        "Chicago hilvana su tercera victoria consecutiva",
+        "El defensivo gana el balón del juego"
       ],
-      "contexto": "Durante el partido de lunes por la noche en Seattle, Luther Burden III tuvo una actuación destacada al registrar 65 yardas en sus 7 recepciones. Lo más importante para su valor fue que se hizo presente en las diagonales desde la serie ofensiva inaugural de los Bears.",
-      "fantasy": "Su impacto en fantasy es directo en ligas profundas o formatos PPR, donde el volumen de recepciones siempre otorga un piso seguro. Sube como opción interesante para la semana 9 si necesitas un flex de emergencia.",
-      "equipo_impacto": "Esta participación constante en el esquema ofensivo consolida a Luther Burden III como una pieza de confianza dentro del ataque aéreo de Chicago.",
-      "accion": "Vigila su porcentaje de snaps y consideralo como parche en ligas PPR.",
+      "contexto": "En su debut con los Bears de Chicago, el defensivo Jeffrey Simmons tuvo una actuación estelar al registrar un sack, seis tacleadas con tres de ellas para pérdida y un pase desviado. Su impacto ayudó a que el equipo consiguiera su tercera victoria consecutiva, llevándose además el reconocimiento como el jugador del partido en este sólido inicio con su nueva escuadra.",
+      "fantasy": "Para el fantasy football, la defensiva de Chicago gana un peso enorme de cara a la semana 9 tras la llegada y explosión inmediata de Simmons. Si juegas en ligas de IDP o buscas una unidad defensiva confiable para este tramo de la temporada, los Bears se convierten en una opción muy atractiva en el tablero general.",
+      "equipo_impacto": "La incorporación de Simmons fortalece notablemente la frontal defensiva de Chicago, elevando el nivel de presión sobre los mariscales rivales y dando mayor solidez a todo el esquema colectivo en el campo.",
+      "accion": "Monitorea a la defensiva de Chicago en el waiver wire si buscas solidez para la semana 9.",
       "en": {
-        "titulo": "Luther Burden III scores on opening drive",
+        "titulo": "Jeffrey Simmons shines in Bears debut",
         "claves": [
-          "Luther Burden III totaled 65 receiving yards",
-          "He caught seven passes in the game",
-          "Scored a touchdown on the opening drive"
+          "Jeffrey Simmons records a sack and six tackles",
+          "Chicago wins its third straight game",
+          "Defensive lineman earns the game ball"
         ],
-        "contexto": "During the Monday night game in Seattle, Luther Burden III delivered a strong performance with 65 yards on seven receptions. Most importantly for his fantasy value, he found the end zone during Chicago's opening offensive possession.",
-        "fantasy": "His fantasy impact is felt most in deeper leagues and PPR formats where reception volume provides a safe floor. He rises as an interesting flex option for week 9 if you need a plug-and-play receiver.",
-        "equipo_impacto": "This steady involvement in the offensive scheme solidifies Luther Burden III as a reliable piece within Chicago's passing attack.",
-        "accion": "Monitor his snap share and consider him as a PPR depth option."
+        "contexto": "In his debut with the Chicago Bears, defensive lineman Jeffrey Simmons delivered a stellar performance by recording a sack, six tackles with three for loss, and a deflected pass. His impact helped secure the team's third consecutive victory, earning him the game ball in his strong start with the new squad.",
+        "fantasy": "For fantasy football, the Chicago defense gains immense value heading week 9 following Simmons' arrival and immediate explosion. If you play in IDP leagues or need a reliable defensive unit for this stretch of the season, the Bears become a very attractive option on the waiver wire.",
+        "equipo_impacto": "Simmons' addition significantly strengthens Chicago's defensive front, elevating the pressure on opposing quarterbacks and providing greater overall solidity to the team's scheme on the field.",
+        "accion": "Monitor the Chicago defense on the waiver wire if you need stability for week 9."
       },
       "etiqueta": "TENDENCIA",
       "impacto": "SUBE",
@@ -46,17 +46,17 @@
         "CHI",
         "SEA"
       ],
-      "jugadores": [
-        "12519"
-      ],
+      "jugadores": [],
       "fuentes": [
         {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/luther-burden-iii-gets-scoring-053700997.html",
-          "t": "Luther Burden III gets the scoring started in Seattle"
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50367539/dt-jeffrey-simons-immediate-boon-chicago-bears-defense-win-seattle-seahawks",
+          "t": "Sweet Home Chicago: Simmons stymies Darnold, Seahawks in Bears debut"
         }
       ],
-      "menciona": []
+      "menciona": [
+        "4943"
+      ]
     }
   ],
   "lesionados": [
@@ -239,12 +239,12 @@
     "8161",
     "13286",
     "TB",
-    "12469",
     "11729",
-    "12540",
+    "12469",
     "NO",
-    "10219",
     "SF",
+    "12540",
+    "10219",
     "2020",
     "13305"
   ],
@@ -255,8 +255,8 @@
     "11637",
     "13276",
     "NE",
-    "3271",
     "12711",
+    "3271",
     "12718",
     "4454",
     "12457",
@@ -266,14 +266,14 @@
     "8129",
     "7561",
     "13286",
-    "11624",
     "CLE",
+    "11624",
     "10213",
     "3214",
-    "8408",
     "9480",
+    "8408",
     "4035",
-    "9230"
+    "7553"
   ],
   "duelo": {
     "a": "Josh Allen",
