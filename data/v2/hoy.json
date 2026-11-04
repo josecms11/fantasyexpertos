@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-04T06:18:12.861Z",
-  "ultimaIA": "2026-11-04T05:17:16.631Z",
+  "actualizado": "2026-11-04T07:40:55.789Z",
+  "ultimaIA": "2026-11-04T07:40:55.789Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,43 +14,43 @@
   ],
   "noticias": [
     {
-      "id": "n20261104051700",
-      "fecha": "2026-11-04T05:17:16.631Z",
+      "id": "n20261104074000",
+      "fecha": "2026-11-04T07:40:55.789Z",
       "semana": 9,
-      "titulo": "Malachi Lawrence se perderá varias semanas por lesión",
-      "claves": [
-        "Malachi Lawrence estará fuera de los emparrillados por varias semanas.",
-        "Caleb Downs y P.J. Locke entraron al protocolo de conmoción cerebral.",
-        "La defensiva de Denver pierde profundidad clave para la semana 9."
-      ],
-      "contexto": "Reportes médicos confirmaron que Malachi Lawrence podría perderse varias semanas de acción tras sufrir una lesión. Al mismo tiempo, la secundaria del equipo sufrió un duro golpe con el ingreso de Caleb Downs y P.J. Locke al protocolo de conmociones de la NFL. Ambas situaciones dejan a la defensiva mermada de cara al enfrentamiento de la semana 9, obligando al cuerpo técnico a reorganizar su rotación defensiva de manera inmediata.",
-      "fantasy": "En ligas IDP, debes enviar a la banca o cortar de inmediato a Malachi Lawrence por su ausencia prolongada. Para la defensiva de Broncos D/ST, proyectada en 7.4 pts para la semana 9, las bajas simultáneas de Downs y Locke restan solidez en cobertura y tackleo. Si dependes de esta unidad en ligas estándar de 12 equipos, considera opciones con mejor suelo como Vikings D/ST o Jaguars D/ST disponibles.",
-      "equipo_impacto": "Denver sufre un desgaste severo en su rotación defensiva. Sin Lawrence en la trinchera y con Downs y Locke comprometidos en la secundaria, los rivales encontrarán mayores espacios tanto por aire como por tierra en la semana 9.",
-      "accion": "Corta a Malachi Lawrence en ligas IDP y evita alinear a Broncos D/ST esta semana 9.",
-      "en": {
-        "titulo": "Malachi Lawrence to miss multiple weeks with injury",
-        "claves": [
-          "Malachi Lawrence is expected to miss multiple weeks with injury.",
-          "Caleb Downs and P.J. Locke are in concussion protocol.",
-          "Denver defense loses key depth heading into Week 9."
-        ],
-        "contexto": "Medical updates confirmed that Malachi Lawrence could be sidelined for multiple weeks due to injury. Simultaneously, the secondary took a massive hit as Caleb Downs and P.J. Locke both entered the NFL concussion protocol. These combined setbacks severely compromise defensive depth ahead of Week 9, forcing the coaching staff to scramble and adjust positional rotations across the front and secondary in upcoming practices.",
-        "fantasy": "In IDP formats, managers should immediately bench or drop Malachi Lawrence given his multi-week absence. For Broncos D/ST, projected at 7.4 pts in Week 9, losing both Downs and Locke creates major vulnerabilities in tackling and coverage. If you are relying on this defensive unit in standard 12-team leagues, look at safer waiver streaming options such as Vikings D/ST or Jaguars D/ST.",
-        "equipo_impacto": "Denver faces significant attrition across its defensive unit. Missing Lawrence up front alongside Downs and Locke in the secondary creates exploitable passing seams and running lanes for opposing offenses in Week 9.",
-        "accion": "Cut Malachi Lawrence in IDP leagues and avoid starting Broncos D/ST in Week 9."
-      },
       "fuentes": [
         {
           "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/malachi-lawrence-might-miss-multiple-045311668.html",
-          "t": "Malachi Lawrence might miss multiple weeks"
+          "u": "https://sports.yahoo.com/articles/gardner-johnson-released-bills-spitting-071748773.html",
+          "t": "Gardner-Johnson released by Bills after spitting ban"
         }
       ],
-      "etiqueta": "LESIÓN",
+      "titulo": "Bills cortan a CJ Gardner-Johnson tras suspensión",
+      "claves": [
+        "Buffalo corta al safety tras cumplir 1 juego de suspensión",
+        "Incidente por escupir precipita su salida de los Bills",
+        "Debilita la profundidad de la secundaria de Buffalo"
+      ],
+      "contexto": "Los Buffalo Bills tomaron una decisión drástica y cortaron al safety CJ Gardner-Johnson tras cumplir 1 juego de suspensión impuesta por la liga por escupir en dirección a un oponente. La gerencia no toleró la indisciplina y prefirió rescindir su contrato de inmediato, dejando un hueco importante en la profundidad de la secundaria del equipo de cara a la semana 9.",
+      "fantasy": "La baja de Gardner-Johnson resta solidez y juego físico a la secundaria de Buffalo D/ST, lo que baja ligeramente su valor fantasy frente a pases profundos. Por otro lado, esto favorece sutilmente a los mariscales de campo y receptores rivales que enfrenten a los Bills en las próximas semanas. Aunque la defensiva de Buffalo se mantiene utilizable por su capacidad de generar capturas, pierde potencial para concretar interceptaciones.",
+      "equipo_impacto": "La defensiva de los Bills pierde un titular agresivo en la secundaria. La carga de trabajo aumentará para los safeties de reserva, afectando la comunicación en esquemas de cobertura profunda y debilitando la protección contra jugadas explosivas por aire.",
+      "accion": "Mantén a Buffalo D/ST como opción titular sólida, pero monitorea enfrentamientos contra ofensivas aéreas potentes.",
+      "en": {
+        "titulo": "Bills release CJ Gardner-Johnson following suspension",
+        "claves": [
+          "Buffalo releases safety after serving 1-game suspension",
+          "Spitting incident leads to immediate release from Bills",
+          "Negatively impacts Buffalo D/ST secondary in fantasy"
+        ],
+        "contexto": "The Buffalo Bills made a drastic move by releasing safety CJ Gardner-Johnson right after he served a 1-game suspension for spitting toward an opponent. Team management refused to tolerate the disciplinary issue and chose to cut ties immediately, leaving a significant gap in the secondary's depth heading into Week 9.",
+        "fantasy": "Losing Gardner-Johnson reduces physical play and depth in Buffalo D/ST's secondary, slightly lowering their fantasy ceiling against deep passing attacks. Conversely, this gives a minor boost to opposing quarterbacks and wide receivers facing the Bills in coming weeks. While Buffalo D/ST remains startable due to pass-rush potential, their interception upside takes a hit without his playmaker presence in the defensive backfield.",
+        "equipo_impacto": "The Bills' defense loses an aggressive starter in the secondary. Additional snaps will fall on backup safeties, which could hinder communication in deep coverage and weaken their defense against explosive aerial plays.",
+        "accion": "Keep Buffalo D/ST as a solid starting option, but monitor matchups against potent passing offenses."
+      },
+      "etiqueta": "TENDENCIA",
       "impacto": "BAJA",
-      "equipo": "DEN",
+      "equipo": "BUF",
       "equipos": [
-        "DEN"
+        "BUF"
       ],
       "jugadores": [],
       "menciona": []
@@ -226,8 +226,8 @@
     "13337",
     "HOU",
     "DET",
-    "7042",
     "10219",
+    "7042",
     "4993",
     "8161",
     "11783",
@@ -239,11 +239,11 @@
     "12469",
     "11729",
     "NYG",
-    "SF",
     "7567",
+    "SF",
     "7561",
-    "1166",
-    "13305"
+    "13305",
+    "1166"
   ],
   "soltados": [
     "11435",
@@ -260,16 +260,16 @@
     "5012",
     "12718",
     "8129",
-    "7561",
     "5849",
-    "4037",
     "9480",
+    "7561",
+    "4037",
     "12457",
     "10235",
     "TB",
     "3214",
-    "PIT",
     "11581",
+    "PIT",
     "4147"
   ],
   "duelo": {
