@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-04T16:30:47.596Z",
-  "ultimaIA": "2026-11-04T16:30:47.596Z",
+  "actualizado": "2026-11-04T17:26:46.757Z",
+  "ultimaIA": "2026-11-04T17:26:46.757Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,46 +14,95 @@
   ],
   "noticias": [
     {
-      "id": "n20261104163000",
-      "fecha": "2026-11-04T16:30:47.596Z",
+      "id": "n20261104172600",
+      "fecha": "2026-11-04T17:26:46.757Z",
       "semana": 9,
-      "titulo": "Derrick Henry surge como objetivo de Giants",
+      "titulo": "Greg Dulcich se perfila como opción en la semana 9",
       "claves": [
-        "Giants buscan reforzar ataque terrestre para playoffs",
-        "Derrick Henry es candidato principal en rumores",
-        "Movimiento impactaría el volumen de acarreos en NY"
+        "Dulcich aparece como alternativa viable para la posición de ala cerrada",
+        "Analistas evalúan su desempeño para la jornada actual",
+        "Opción interesante para ligas profundas o streaming"
       ],
-      "contexto": "Reportes indican que los Giants están explorando el mercado para adquirir un corredor de impacto antes de la fecha límite. Derrick Henry aparece como el nombre principal para potenciar una ofensiva que busca desesperadamente un impulso hacia la postemporada, según Yahoo Sports.",
-      "fantasy": "Si el cambio se concreta, Henry se convertiría instantáneamente en un RB1 de alto volumen. Su llegada reduciría drásticamente el valor de cualquier otro corredor en el roster de los Giants. Mantente atento a las noticias para ajustar tus waivers.",
-      "equipo_impacto": "La llegada de un corredor de élite como Henry cambiaría la identidad ofensiva de los Giants, permitiendo un juego terrestre más dominante y quitando presión a su QB.",
-      "accion": "Monitorea los reportes de cambios; si posees a otros RBs de Giants, considera venderlos antes de que el valor caiga.",
+      "contexto": "Ante la escasez de opciones confiables en la posición de ala cerrada para la semana 9, el análisis de ESPN coloca a Greg Dulcich en el radar como una alternativa de streaming para los mánagers que buscan cubrir ausencias o lesiones en su alineación titular.",
+      "fantasy": "Impacto directo en ligas profundas o formatos donde escasean las alas cerradas viables. No sustituye a opciones de élite como Trey McBride o Brock Bowers, pero sube su valor como parche temporal si necesitas un sustituto de emergencia en la semana 9.",
+      "equipo_impacto": "Su uso intermitente en la ofensiva le abre una rendija de oportunidad para sumar recepciones clave, aunque sigue dependiendo del volumen general de su ofensiva.",
+      "accion": "Considera a Greg Dulcich únicamente como opción de streaming en caso de emergencia en tu alineación.",
       "en": {
-        "titulo": "Derrick Henry emerges as Giants trade target",
+        "titulo": "Greg Dulcich emerges as Week 9 streaming option",
         "claves": [
-          "Giants seeking ground attack boost for playoff push",
-          "Derrick Henry is primary candidate in trade rumors",
-          "Move would drastically impact NY backfield volume"
+          "Dulcich enters the streaming conversation for tight ends",
+          "Analysts evaluate his outlook for the upcoming slate",
+          "Viable emergency option in deeper fantasy formats"
         ],
-        "contexto": "Reports suggest the Giants are exploring the market for an impact running back ahead of the deadline. Derrick Henry is the primary name linked to the team to bolster an offense looking for a playoff spark, per Yahoo Sports.",
-        "fantasy": "If traded, Henry becomes an immediate high-volume RB1. His arrival would significantly tank the value of other Giants' backs. Stay alert to news to adjust your waiver wire strategy.",
-        "equipo_impacto": "Adding an elite back like Henry would shift the Giants' offensive identity, allowing for a more dominant ground game and relieving pressure on their QB.",
-        "accion": "Monitor trade reports closely; if you roster other Giants RBs, consider selling before their value drops."
+        "contexto": "With tight end reliability fluctuating, recent reports highlight Greg Dulcich as a streaming candidate for fantasy managers scouring the waiver wire to fill roster gaps during week 9.",
+        "fantasy": "Boosts his profile slightly for deep leagues or streaming needs. He won't replace elite options like Trey McBride, but he becomes a serviceable plug-and-play if you are caught without a starter.",
+        "equipo_impacto": "His occasional offensive involvement gives him a slight bump in projection, though he remains dependent on game script.",
+        "accion": "Monitor Dulcich as a last-resort streaming option for your tight end spot this week."
       },
-      "etiqueta": "TENDENCIA",
+      "etiqueta": "WAIVER",
       "impacto": "SUBE",
-      "equipo": "NYG",
+      "equipo": "DEN",
       "equipos": [
-        "NYG",
-        "BAL"
+        "DEN",
+        "MIA",
+        "ARI",
+        "LV"
       ],
       "jugadores": [
-        "3198"
+        "8172",
+        "8130",
+        "11604"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50379880/why-greg-dulcich-streaming-te-option-week-9",
+          "t": "Why Greg Dulcich is a streaming TE option in Week 9"
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261104172601",
+      "fecha": "2026-11-04T17:26:46.757Z",
+      "semana": 9,
+      "titulo": "Dylan Laube gana reconocimiento en equipos especiales",
+      "claves": [
+        "Laube nombrado jugador de equipos especiales de la AFC",
+        "Destaca tras jugadas clave en el duelo reciente",
+        "Impacto limitado en ligas tradicionales de ataque"
+      ],
+      "contexto": "El corredor de los Raiders, Dylan Laube, fue nombrado el jugador de la semana de equipos especiales en la AFC tras destacar en el enfrentamiento contra los Jets en el MetLife Stadium, rompiendo la sequía sin devoluciones de kickoff para anotación de la temporada.",
+      "fantasy": "Impacto nulo para la gran mayoría de las ligas de fantasy football estándar y PPR, ya que sus aportes se concentran en equipos especiales. Solo cobra relevancia en ligas muy específicas que otorgan puntos directos por regresos de patada.",
+      "equipo_impacto": "Su buen momento fortalece la unidad de equipos especiales de Las Vegas, aunque su rol ofensivo como corredor sigue siendo secundario y sin peso real en el esquema semanal.",
+      "accion": "Ignora a Dylan Laube en waivers a menos que tu liga premie los puntos por regresos de patada.",
+      "en": {
+        "titulo": "Dylan Laube wins AFC special teams honors",
+        "claves": [
+          "Laube earns AFC special teams player of the week",
+          "Standout performance sparks excitement in special teams",
+          "Minimal direct impact on standard fantasy leagues"
+        ],
+        "contexto": "Raiders running back Dylan Laube captured AFC special teams player of the week honors following a standout performance against the Jets that featured a breakthrough kickoff return for a touchdown.",
+        "fantasy": "Provides zero fantasy relevance in standard or PPR leagues since his value is tied entirely to special teams. Only worth monitoring in leagues with return yardage scoring.",
+        "equipo_impacto": "His recognition elevates Las Vegas' special teams unit, though it does not translate into a heavy offensive workload in the backfield.",
+        "accion": "Leave Dylan Laube on the waiver wire unless your league format counts return yards and touchdowns."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "NEUTRO",
+      "equipo": "LV",
+      "equipos": [
+        "LV",
+        "NYJ"
+      ],
+      "jugadores": [
+        "11574"
       ],
       "fuentes": [
         {
           "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/giants-trade-candidate-rb-derrick-162306557.html",
-          "t": "Giants trade candidate: RB Derrick Henry"
+          "u": "https://sports.yahoo.com/articles/raiders-rb-dylan-laube-named-171623873.html",
+          "t": "Raiders RB Dylan Laube named the AFC special teams player of the week"
         }
       ],
       "menciona": []
@@ -106,6 +155,10 @@
     },
     {
       "id": "10232",
+      "estatus": "Duda"
+    },
+    {
+      "id": "8146",
       "estatus": "Duda"
     },
     {
@@ -215,10 +268,6 @@
     {
       "id": "12533",
       "estatus": "Fuera"
-    },
-    {
-      "id": "12529",
-      "estatus": "Duda"
     }
   ],
   "agregados": [
@@ -239,8 +288,8 @@
     "13286",
     "11610",
     "12469",
-    "8135",
     "NYG",
+    "8135",
     "7561",
     "11729",
     "4035",
@@ -268,8 +317,8 @@
     "4037",
     "TB",
     "10235",
-    "12457",
     "11581",
+    "12457",
     "7561",
     "PIT",
     "13150",
