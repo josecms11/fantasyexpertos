@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-04T02:22:18.083Z",
-  "ultimaIA": "2026-11-04T01:30:26.649Z",
+  "actualizado": "2026-11-04T03:14:56.414Z",
+  "ultimaIA": "2026-11-04T03:14:56.414Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,45 +14,46 @@
   ],
   "noticias": [
     {
-      "id": "n20261104013000",
-      "fecha": "2026-11-04T01:30:26.649Z",
+      "id": "n20261104031400",
+      "fecha": "2026-11-04T03:14:56.414Z",
       "semana": 9,
-      "titulo": "Russell Wilson negocia para dirigir a NC State",
+      "titulo": "Vic Fangio considera robo llegada de J.J. McCarthy",
       "claves": [
-        "El exmariscal de Seahawks fue entrevistado para entrenador en jefe.",
-        "Su paso por los micrófonos de CBS podría terminar muy pronto.",
-        "Cierra cualquier opción de regresar a jugar en la NFL."
+        "Vic Fangio afirmó que J.J. McCarthy fue un gran robo.",
+        "El mariscal de campo llegó proveniente de Vikings en septiembre.",
+        "McCarthy asume un rol principal en el ataque neoyorquino."
       ],
-      "contexto": "El exmariscal de campo de Seahawks, Russell Wilson, sostuvo una entrevista formal para convertirse en el nuevo entrenador en jefe de NC State a nivel colegial. Tras alejarse de los emparrillados de la NFL y tomar un rol como analista en el escritorio de televisión con CBS, su etapa en los medios parece que será bastante corta si concreta su llegada al futbol americano universitario en este nuevo capítulo profesional como estratega.",
-      "fantasy": "Cualquier dueño en ligas de dinastía o formatos Superflex que mantuviera una remota esperanza de un regreso a los emparrillados debe soltarlo de inmediato. Wilson tiene la mira puesta en dirigir y no volverá a colocarse las hombreras ni a sumar puntos en las semanas por venir. No vale nada en rosters activos ni en reservas; es momento de liberar esa plaza de banca para añadir talento joven o piezas que sí aporten números reales.",
-      "equipo_impacto": "La noticia reafirma que Seattle y el resto de la liga continúan sus proyectos sin considerar a Wilson. Los Seahawks mantienen su esquema ofensivo actual sin distracciones ni rumores nostálgicos del pasado, mientras Wilson busca construir su propio legado en la banda colegial en lugar de buscar contratos como veterano de emergencia.",
-      "accion": "Córtalo sin dudar en formatos de dinastía para abrir espacio en tu banca.",
+      "contexto": "El coordinador defensivo Vic Fangio declaró públicamente que la llegada del mariscal de campo J.J. McCarthy a New York fue una verdadera ganga para la franquicia. McCarthy llegó traspasado desde Minnesota a finales de septiembre, cambiando de equipo a media temporada. Los elogios de Fangio confirman la confianza de la organización en el joven pasador, quien toma el mando del ataque neoyorquino en la semana 9.",
+      "fantasy": "En formatos Superflex y ligas de 12 o 14 equipos, J.J. McCarthy incrementa considerablemente su valor de fantasy football. Con Jaxson Dart en la lista de lesionados por rotura de menisco, McCarthy queda como el pasador titular indiscutido de la escuadra. Su estatus sube a opción de streaming utilizable en la semana 9, representando una adición prioritaria en la banca para dueños necesitados de mariscales.",
+      "equipo_impacto": "La titularidad de McCarthy aporta estabilidad al juego aéreo de New York. Su presencia beneficia directamente la producción del estelar receptor Malik Nabers, manteniendo el volumen de pases constante para todo el ataque de los Giants en las próximas semanas.",
+      "accion": "Reclama a J.J. McCarthy de la agencia libre en ligas Superflex para reforzar tu posición de QB en la semana 9.",
       "en": {
-        "titulo": "Russell Wilson interviews for NC State coaching job",
+        "titulo": "Vic Fangio Calls J.J. McCarthy a Steal for Giants",
         "claves": [
-          "Former Seahawks quarterback interviewed for NC State head coaching role.",
-          "Wilson could quickly depart his current analyst role at CBS.",
-          "Any speculation of an NFL playing return is officially over."
+          "Vic Fangio called J.J. McCarthy a steal for New York.",
+          "The quarterback arrived via trade from Minnesota in late September.",
+          "McCarthy takes over as starter for the Giants offensive unit."
         ],
-        "contexto": "Former Seahawks quarterback Russell Wilson has officially interviewed for the head coaching position at NC State. After stepping away from the NFL gridiron and working as a studio analyst on the CBS desk, Wilson could make a swift exit from broadcasting. Moving into college coaching marks a completely fresh direction for his football career, confirming his days under center in professional football are firmly behind him.",
-        "fantasy": "Any fantasy managers holding onto Wilson in deep dynasty formats or Superflex stashes hoping for a miraculous midseason NFL comeback can finally cut ties. Wilson is focused on pursuing coaching opportunities and will not take another snap or generate fantasy production. Free up that roster spot immediately and use the bench space to speculate on available waiver wire depth or promising young prospects with active roles.",
-        "equipo_impacto": "This interview confirms Seattle and any other quarterback-needy NFL franchises are not viable landing spots for Wilson. The Seahawks are fully committed to their current roster trajectory, leaving Wilson's era firmly in the history books while he prepares to build a college coaching resume.",
-        "accion": "Drop him across all deep dynasty formats to free up valuable bench space."
+        "contexto": "Defensive coordinator Vic Fangio publicly praised quarterback J.J. McCarthy, stating his trade acquisition by New York was an absolute steal. McCarthy arrived via trade from Minnesota in late September. Fangio's supportive comments reflect high internal confidence in the young quarterback as he officially takes leadership of the team's passing attack heading into week 9 of the current regular season.",
+        "fantasy": "In Superflex setups and deep 12 or 14-team leagues, J.J. McCarthy sees a significant rise in overall fantasy value. With rookie Jaxson Dart on IR due to a meniscus tear, McCarthy steps in as the primary starting option under center. His fantasy stock rises to an immediate waiver wire priority and viable QB2 streaming option for week 9 fantasy matchups.",
+        "equipo_impacto": "McCarthy taking over under center stabilizes New York's passing game going forward. His distribution should maintain steady target share and fantasy output for star wideout Malik Nabers and the rest of the Giants pass catchers.",
+        "accion": "Add J.J. McCarthy off waivers immediately in Superflex leagues for quarterback depth in week 9."
       },
-      "etiqueta": "TENDENCIA",
-      "impacto": "BAJA",
-      "equipo": "SEA",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "NYG",
       "equipos": [
-        "SEA"
+        "NYG",
+        "MIN"
       ],
       "jugadores": [
-        "1234"
+        "11565"
       ],
       "fuentes": [
         {
           "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/former-seahawks-quarterback-russell-wilson-010147178.html",
-          "t": "Former Seahawks quarterback Russell Wilson interviews for NC State head coaching job"
+          "u": "https://sports.yahoo.com/articles/vic-fangio-j-j-mccarthy-025246470.html",
+          "t": "Vic Fangio: J.J. McCarthy was a &quot;steal&quot; for the Giants"
         }
       ],
       "menciona": []
@@ -223,8 +224,8 @@
   "agregados": [
     "11625",
     "8132",
-    "6011",
     "6130",
+    "6011",
     "13337",
     "HOU",
     "DET",
@@ -235,12 +236,12 @@
     "11783",
     "11610",
     "2020",
-    "8135",
     "NO",
+    "8135",
     "13286",
     "12469",
-    "SF",
     "11729",
+    "SF",
     "NYG",
     "7567",
     "1166",
@@ -255,8 +256,8 @@
     "4881",
     "11637",
     "4454",
-    "13276",
     "3271",
+    "13276",
     "CLE",
     "1945",
     "5012",
@@ -270,9 +271,9 @@
     "10235",
     "3214",
     "TB",
-    "11581",
     "PIT",
-    "13286"
+    "11581",
+    "4147"
   ],
   "duelo": {
     "a": "Josh Allen",
