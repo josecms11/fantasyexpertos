@@ -1,28 +1,13 @@
 {
-  "fecha": "2026-11-04T03:16:24.344Z",
+  "fecha": "2026-11-04T04:15:09.958Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.1s] YouTube: 0 nuevos, 20 en total",
-    "[0.9s] Sleeper: 3233 activos, semana 9 · proyecciones S9: 9420",
-    "[3.6s] ESPN: lesiones 799 · noticias 50",
-    "[3.6s] Modelo FX v3 : 444 proyecciones propias para la semana 9",
-    "[3.8s] Fuentes nuevas: 2 · horario pico · toca IA: true",
-    "[3.9s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[6.6s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[8.1s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[31.8s] IA OK con gemini-3.6-flash",
-    "[31.9s] Noticias nuevas verificadas: 1",
-    "[33.3s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[34.1s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[36.2s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[38.3s] Modelo saturado, pruebo otro gemini-3.5-flash 503",
-    "[44.8s] IA OK con gemini-3.5-flash-lite",
-    "[44.8s] Blog: Lesión de Bhayshul Tuten: ¿juega en la semana 9? / Bhayshul Tuten injury update: Week 9 outlook",
-    "[45.1s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[56.4s] Modelo saturado, pruebo otro gemini-3.7-flash 503",
-    "[57.6s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
-    "[91.5s] IA OK con gemini-3.5-flash",
-    "[91.5s] Blog: ¿Vale la pena agregar a Texans D/ST en la semana 9? / Should you pick up Texans D/ST in Week 9?",
-    "[91.6s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 408 · semana de juego 9 · IA usada hoy 9/40"
+    "[0.3s] YouTube: 0 nuevos, 20 en total",
+    "[1.2s] Sleeper: 3233 activos, semana 9 · proyecciones S9: 9420",
+    "[3.8s] ESPN: lesiones 799 · noticias 50",
+    "[4.8s] Auto-ajuste FX: {\"hl\":6,\"mEf\":30,\"mTd\":160,\"aPrev\":0.2} error 4.823 → 4.815",
+    "[4.8s] Modelo FX v3 : 444 proyecciones propias para la semana 9",
+    "[5.3s] Fuentes nuevas: 1 · horario normal · toca IA: false",
+    "[6.4s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 408 · semana de juego 9 · IA usada hoy 9/40"
   ]
 }
