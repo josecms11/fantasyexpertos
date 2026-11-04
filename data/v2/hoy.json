@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-04T19:24:38.296Z",
-  "ultimaIA": "2026-11-04T18:20:14.650Z",
+  "actualizado": "2026-11-04T20:17:33.128Z",
+  "ultimaIA": "2026-11-04T20:17:33.128Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,46 +14,140 @@
   ],
   "noticias": [
     {
-      "id": "n20261104182000",
-      "fecha": "2026-11-04T18:20:14.650Z",
+      "id": "n20261104201700",
+      "fecha": "2026-11-04T20:17:33.128Z",
       "semana": 9,
-      "titulo": "Garrett Wilson en protocolo y Breece Hall apunta a volver",
+      "titulo": "Ravens fuma pipa de la paz con Jacoby Brissett",
       "claves": [
-        "Garrett Wilson ingresó al protocolo de conmociones",
-        "Breece Hall apunta a regresar en la semana 9",
-        "Situación de lesiones monitoreada de cerca por fantasy"
+        "Baltimore adquiere a Jacoby Brissett vía intercambio.",
+        "Llega para solucionar crisis de lesiones en quarterbacks.",
+        "El equipo se encontraba sin mariscales sanos."
       ],
-      "contexto": "El receptor abierto de los Jets, Garrett Wilson, se encuentra ingresado en el protocolo de conmociones cerebrales tras las recientes prácticas, mientras que el corredor estelar Breece Hall muestra señales positivas y está encaminado para volver a la acción en la semana 9.",
-      "fantasy": "La posible ausencia de Garrett Wilson reduce el techo ofensivo de los Jets, obligando a buscar alternativas en ligas profundas. Por su parte, el regreso de Breece Hall lo posiciona de inmediato como titular indiscutible en formatos PPR para la semana 9.",
-      "equipo_impacto": "La ofensiva de los Jets depende enormemente de la salud de sus playmaker estelares para sostener el ataque terrestre y aéreo en esta mitad de temporada.",
-      "accion": "Monitorea el estatus de Garrett Wilson y alista a Breece Hall en tu alineación titular si recibe el alta médica.",
+      "contexto": "Ante la plaga de lesiones que dejó fuera a Lamar Jackson y a otros mariscales en Baltimore, la directiva no tuvo de otra más que moverse rápido en el mercado. Los Ravens amarraron un traspaso para incorporar a Jacoby Brissett procedente de los Cardinals, buscando un poco de estabilidad en la posición más importante del emparrillado de cara a la semana 9.",
+      "fantasy": "La llegada de Jacoby Brissett a los Ravens es un alivio total para el valor fantasy de receptores y alas cerradas en Baltimore, quienes corrían el riesgo de jugar con opciones muy limitadas. Aunque no lo coloques como titular automático en tus ligas de formato estándar, su presencia rescata el piso de producción de la ofensiva aérea.",
+      "equipo_impacto": "Esta movida reordena el vestidor de Baltimore por completo, dándole un brazo con experiencia a una ofensiva que urgía de dirección tras perder a sus piezas principales por lesión.",
+      "accion": "Monitorea la adaptación de Jacoby Brissett antes de arriesgarte a alinear piezas secundarias de los Ravens.",
       "en": {
-        "titulo": "Garrett Wilson in protocol, Breece Hall trending back",
+        "titulo": "Ravens trade for Jacoby Brissett amid crisis",
         "claves": [
-          "Garrett Wilson entered concussion protocol",
-          "Breece Hall trending toward returning in week 9",
-          "Injury updates heavily monitored for fantasy managers"
+          "Baltimore acquires Jacoby Brissett via trade.",
+          "He arrives to solve the quarterback injury crisis.",
+          "The team was left without healthy signal-callers."
         ],
-        "contexto": "Jets wide receiver Garrett Wilson has entered the concussion protocol following recent practices, while star running back Breece Hall is showing positive signs and is trending toward a return for week 9.",
-        "fantasy": "Garrett Wilson's potential absence caps the Jets' offensive upside, forcing managers to look for streaming options in deeper leagues. Meanwhile, Breece Hall's return instantly locks him back into starting lineups for PPR formats in week 9.",
-        "equipo_impacto": "The Jets' offense heavily relies on the health of their star playmakers to sustain both their ground and aerial attacks through the middle of the season.",
-        "accion": "Monitor Garrett Wilson's practice participation and plug Breece Hall into your starting lineup if cleared to play."
+        "contexto": "Facing a severe wave of injuries that sidelined Lamar Jackson and other QBs in Baltimore, the front office quickly worked the market. The Ravens finalized a trade to bring in veteran quarterback Jacoby Brissett from the Cardinals, securing much-needed stability under center heading into week 9.",
+        "fantasy": "Jacoby Brissett's arrival in Baltimore rescues the fantasy floors of the team's pass-catchers who were otherwise facing disaster. While he isn't an every-week auto-start in standard leagues, his presence salvages the value of the aerial attack.",
+        "equipo_impacto": "This move completely reorganizes Baltimore's roster, providing an experienced arm to an offense desperately seeking direction after major injuries.",
+        "accion": "Monitor Jacoby Brissett's quick integration before trusting secondary Ravens pieces in your lineup."
       },
-      "etiqueta": "LESIÓN",
+      "etiqueta": "TENDENCIA",
       "impacto": "NEUTRO",
-      "equipo": "NYJ",
+      "equipo": "BAL",
       "equipos": [
-        "NYJ"
+        "BAL",
+        "ARI"
       ],
       "jugadores": [
-        "8146",
-        "8155"
+        "3257",
+        "4881",
+        "7083"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50380113/jets-wr-wilson-protocol-rb-hall-trending-return",
-          "t": "Jets' Garrett Wilson in concussion protocol, Breece Hall trending toward return"
+          "u": "https://www.espn.com/nfl/story/_/id/50043471/2026-trade-deadline-updates-latest-news-deals-terms",
+          "t": "2026 NFL trade deadline updates: Jacoby Brissett, Jeffery Simmons on the move"
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261104201701",
+      "fecha": "2026-11-04T20:17:33.128Z",
+      "semana": 9,
+      "titulo": "Drew Lock toma los controles en Seattle",
+      "claves": [
+        "Sam Darnold fuera por lesión en el cuádriceps.",
+        "Drew Lock será titular ante los Cardinals.",
+        "Lock lidera con molestia en el codo."
+      ],
+      "contexto": "Se confirmó lo peor en Seattle para la semana 9: el mariscal Sam Darnold fue descartado por el cuerpo técnico debido a un problema en el cuádriceps que lo mantendrá evaluado semana a semana. Ante este panorama, Drew Lock tomará los controles de la ofensiva para medirse ante Arizona, cargando además con una ligera molestia en el codo.",
+      "fantasy": "La baja de Sam Darnold golpea las expectativas de los receptores de Seattle para esta semana. Si contabas con el ataque aéreo de los Seahawks, el factor Drew Lock añade volatilidad; mejor busca alternativas más seguras en el waiver si tu liga es sumamente competitiva.",
+      "equipo_impacto": "La ofensiva de Seattle cambia su ritmo drásticamente con un mariscal suplente que deberá apoyarse mucho en el juego terrestre para no regalar balones.",
+      "accion": "Sienta a los jugadores secundarios de Seattle y busca mejores opciones para tu alineación de semana 9.",
+      "en": {
+        "titulo": "Drew Lock steps in as Seahawks starter",
+        "claves": [
+          "Sam Darnold ruled out with quad injury.",
+          "Drew Lock to start against the Cardinals.",
+          "Lock is dealing with an elbow issue."
+        ],
+        "contexto": "The worst-case scenario hit Seattle ahead of week 9 as quarterback Sam Darnold was ruled out by the coaching staff due to a quad injury keeping him week-to-week. Consequently, Drew Lock will step in to lead the offense against Arizona, despite managing an elbow issue of his own.",
+        "fantasy": "Sam Darnold's absence deals a heavy blow to Seattle's passing upside this week. Drew Lock under center introduces volatility, so you should look for safer alternatives on waivers if your league is competitive.",
+        "equipo_impacto": "Seattle's offense shifts gears drastically with a backup quarterback who must rely heavily on the ground game to avoid costly turnovers.",
+        "accion": "Bench secondary Seattle options and seek safer plays for your week 9 lineup."
+      },
+      "etiqueta": "START",
+      "impacto": "BAJA",
+      "equipo": "SEA",
+      "equipos": [
+        "SEA",
+        "ARI"
+      ],
+      "jugadores": [
+        "5854",
+        "4943"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50380783/the-pat-mcafee-show-reacts-darnold-being-ruled-vs-arizona",
+          "t": "'The Pat McAfee Show' reacts to Darnold being ruled out vs. Arizona"
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261104201702",
+      "fecha": "2026-11-04T20:17:33.128Z",
+      "semana": 9,
+      "titulo": "Joe Milton recibe la estafeta con Eagles",
+      "claves": [
+        "Joe Milton será el mariscal titular ante Giants.",
+        "Reemplaza a Tanner McKee en Philadelphia.",
+        "Los Eagles buscan salir de mala racha."
+      ],
+      "contexto": "En busca de desesperadas soluciones a su bache ofensivo, los Eagles sacudieron su alineación para la semana 9. Reportes indican que la franquicia mandará a la banca a Tanner McKee para otorgarle la titularidad a Joe Milton en el duelo divisional contra los Giants, convirtiéndolo en el tercer mariscal distinto que prueba Philadelphia este año.",
+      "fantasy": "Para efectos de fantasy, la ofensiva de Philadelphia es un terreno minado en este momento. La irrupción de Joe Milton como titular es una apuesta sumamente arriesgada en ligas tradicionales; es mejor mantenerlo en la banca y observar cómo opera este nuevo engranaje antes de arriesgar tu semana.",
+      "equipo_impacto": "Philadelphia intenta un cambio drástico de dinámica en el eje de su ataque, buscando despertar a un equipo sumido en una larga racha perdedora.",
+      "accion": "Evita alinear a Joe Milton y congela el uso de las piezas ofensivas de los Eagles.",
+      "en": {
+        "titulo": "Joe Milton gets the nod for Eagles",
+        "claves": [
+          "Joe Milton to start at QB vs Giants.",
+          "He replaces Tanner McKee in Philadelphia.",
+          "Eagles seek spark to break slump."
+        ],
+        "contexto": "Desperate for offensive answers during their slump, the Eagles shook up their depth chart for week 9. Reports indicate Philadelphia is benching Tanner McKee to hand the starting quarterback job to Joe Milton for the divisional clash against the Giants.",
+        "fantasy": "For fantasy purposes, Philadelphia's offense is a complete minefield right now. Joe Milton starting is a massive gamble in traditional leagues; keep him on your bench and see how this new puzzle operates first.",
+        "equipo_impacto": "Philadelphia attempts a drastic shift in the engine of their attack, desperately trying to wake up a squad stuck in a tough skid.",
+        "accion": "Avoid starting Joe Milton and freeze any heavy reliance on Eagles offensive pieces."
+      },
+      "etiqueta": "START",
+      "impacto": "NEUTRO",
+      "equipo": "PHI",
+      "equipos": [
+        "PHI",
+        "NYG"
+      ],
+      "jugadores": [
+        "11557",
+        "9230"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50380724/sources-eagles-turn-joe-milton-starting-qb-vs-giants",
+          "t": "Sources: Slumping Eagles turn to Joe Milton as starting QB vs. Giants"
         }
       ],
       "menciona": []
@@ -169,10 +263,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "5947",
-      "estatus": "Duda"
-    },
-    {
       "id": "5872",
       "estatus": "Duda"
     },
@@ -219,12 +309,16 @@
     {
       "id": "8205",
       "estatus": "Fuera"
+    },
+    {
+      "id": "12533",
+      "estatus": "Fuera"
     }
   ],
   "agregados": [
     "11625",
-    "8132",
     "6130",
+    "8132",
     "13337",
     "6011",
     "DET",
@@ -238,13 +332,13 @@
     "13286",
     "11783",
     "12469",
-    "11610",
     "NYG",
-    "8135",
+    "11610",
     "7561",
+    "8135",
+    "11557",
     "11729",
     "4035",
-    "7567",
     "1166",
     "1479"
   ],
@@ -255,21 +349,21 @@
     "NE",
     "3271",
     "11637",
-    "13276",
     "4881",
+    "13276",
     "CLE",
-    "4454",
+    "9230",
     "12718",
     "1945",
+    "4454",
     "5012",
     "9480",
     "8129",
     "5849",
-    "4037",
     "10235",
+    "4037",
     "TB",
     "11581",
-    "9230",
     "12457",
     "7561",
     "13150",
