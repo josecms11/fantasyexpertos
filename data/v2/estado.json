@@ -1,22 +1,12 @@
 {
-  "fecha": "2026-11-04T21:59:43.664Z",
+  "fecha": "2026-11-04T22:45:35.551Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.3s] YouTube: 15 nuevos, 22 en total",
+    "[0.2s] YouTube: 15 nuevos, 22 en total",
     "[1.2s] Sleeper: 3233 activos, semana 9 · proyecciones S9: 9420",
-    "[2.8s] ESPN: lesiones 799 · noticias 50",
-    "[2.8s] Modelo FX v3 : 443 proyecciones propias para la semana 9",
-    "[3.5s] Fuentes nuevas: 9 · horario pico · toca IA: true",
-    "[3.6s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[9.0s] Modelo saturado, pruebo otro gemini-3.8-flash 503",
-    "[11.4s] IA OK con gemini-3.5-flash-lite",
-    "[11.4s] Noticias nuevas verificadas: 1",
-    "[12.4s] Modelo sin cuota hoy gemini-3.8-flash 429",
-    "[13.2s] Modelo saturado, pruebo otro gemini-3.5-flash-lite 503",
-    "[68.3s] IA OK con gemini-3.1-flash-lite",
-    "[68.3s] Blog descartado por verificación: Saints D/ST → matchup contradice la calificación (FÁCIL)",
-    "[73.9s] IA OK con gemini-3.5-flash-lite",
-    "[73.9s] Blog: Lesión de Sam Darnold: ¿juega en la semana 9 y qué hacer en fantasy? / Sam Darnold injury update: will he play in Week 9? Fantasy impact",
-    "[73.9s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 424 · semana de juego 9 · IA usada hoy 32/40"
+    "[3.0s] ESPN: lesiones 799 · noticias 50",
+    "[3.0s] Modelo FX v3 : 444 proyecciones propias para la semana 9",
+    "[3.3s] Fuentes nuevas: 7 · horario pico · toca IA: false",
+    "[4.3s] Listo: 0 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 424 · semana de juego 9 · IA usada hoy 32/40"
   ]
 }
