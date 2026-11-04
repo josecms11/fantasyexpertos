@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-04T15:35:50.540Z",
-  "ultimaIA": "2026-11-04T15:35:50.540Z",
+  "actualizado": "2026-11-04T16:30:47.596Z",
+  "ultimaIA": "2026-11-04T16:30:47.596Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,47 +14,46 @@
   ],
   "noticias": [
     {
-      "id": "n20261104153500",
-      "fecha": "2026-11-04T15:35:50.540Z",
+      "id": "n20261104163000",
+      "fecha": "2026-11-04T16:30:47.596Z",
       "semana": 9,
-      "titulo": "Deshaun Watson entra a protocolo de conmociones",
+      "titulo": "Derrick Henry surge como objetivo de Giants",
       "claves": [
-        "Deshaun Watson presenta síntomas de conmoción",
-        "Estatus en duda para la semana 9",
-        "Shedeur Sanders listo para relevar"
+        "Giants buscan reforzar ataque terrestre para playoffs",
+        "Derrick Henry es candidato principal en rumores",
+        "Movimiento impactaría el volumen de acarreos en NY"
       ],
-      "contexto": "El mariscal de campo de los Browns, Deshaun Watson, superó una evaluación inicial el domingo pero comenzó a manifestar síntomas la noche del lunes, lo que obligó al equipo a ingresarlo en el protocolo de conmociones. Su disponibilidad para el compromiso de la semana 9 contra los Saints se mantiene completamente en el aire.",
-      "fantasy": "Esta situación desploma el valor ofensivo de Cleveland en fantasy football. Si eres mánager en ligas superflex o de dos quarterbacks, debes monitorear de cerca el reporte de lesionados y tener listo un plan de emergencia en caso de que quede descartado de última hora.",
-      "equipo_impacto": "La posible ausencia de Watson abre la puerta para que Shedeur Sanders tome los controles de la ofensiva de los Browns frente a Nueva Orleans, modificando drásticamente el flujo de juego y la confianza en los receptores del equipo.",
-      "accion": "Busca una opción alternativa en tu waiver wire si dependías de Deshaun Watson para esta jornada.",
+      "contexto": "Reportes indican que los Giants están explorando el mercado para adquirir un corredor de impacto antes de la fecha límite. Derrick Henry aparece como el nombre principal para potenciar una ofensiva que busca desesperadamente un impulso hacia la postemporada, según Yahoo Sports.",
+      "fantasy": "Si el cambio se concreta, Henry se convertiría instantáneamente en un RB1 de alto volumen. Su llegada reduciría drásticamente el valor de cualquier otro corredor en el roster de los Giants. Mantente atento a las noticias para ajustar tus waivers.",
+      "equipo_impacto": "La llegada de un corredor de élite como Henry cambiaría la identidad ofensiva de los Giants, permitiendo un juego terrestre más dominante y quitando presión a su QB.",
+      "accion": "Monitorea los reportes de cambios; si posees a otros RBs de Giants, considera venderlos antes de que el valor caiga.",
       "en": {
-        "titulo": "Deshaun Watson enters concussion protocol",
+        "titulo": "Derrick Henry emerges as Giants trade target",
         "claves": [
-          "Deshaun Watson shows concussion symptoms",
-          "Status in question for week 9",
-          "Shedeur Sanders ready to step in"
+          "Giants seeking ground attack boost for playoff push",
+          "Derrick Henry is primary candidate in trade rumors",
+          "Move would drastically impact NY backfield volume"
         ],
-        "contexto": "Browns quarterback Deshaun Watson cleared an initial evaluation on Sunday but began experiencing symptoms on Monday night, forcing the team to place him in the concussion protocol. His availability for the Week 9 matchup against the Saints remains completely up in the air.",
-        "fantasy": "This situation tanks the offensive value of Cleveland in fantasy football. If you are a manager in superflex or two-quarterback leagues, you must closely monitor the injury report and have an emergency backup plan ready just in case he is ruled out.",
-        "equipo_impacto": "Watson's potential absence opens the door for Shedeur Sanders to take the reins of the Browns offense against New Orleans, drastically altering the game flow and confidence in the team's pass-catchers.",
-        "accion": "Look for an alternative option on your waiver wire if you were depending on Deshaun Watson this week."
+        "contexto": "Reports suggest the Giants are exploring the market for an impact running back ahead of the deadline. Derrick Henry is the primary name linked to the team to bolster an offense looking for a playoff spark, per Yahoo Sports.",
+        "fantasy": "If traded, Henry becomes an immediate high-volume RB1. His arrival would significantly tank the value of other Giants' backs. Stay alert to news to adjust your waiver wire strategy.",
+        "equipo_impacto": "Adding an elite back like Henry would shift the Giants' offensive identity, allowing for a more dominant ground game and relieving pressure on their QB.",
+        "accion": "Monitor trade reports closely; if you roster other Giants RBs, consider selling before their value drops."
       },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "CLE",
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "NYG",
       "equipos": [
-        "CLE",
-        "NO"
+        "NYG",
+        "BAL"
       ],
       "jugadores": [
-        "4017",
-        "12524"
+        "3198"
       ],
       "fuentes": [
         {
-          "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50378943/shedeur-sanders-opportunity-show-do",
-          "t": "Jason McCourty: This is Shedeur Sanders' opportunity to show what he can do"
+          "m": "Yahoo Sports",
+          "u": "https://sports.yahoo.com/articles/giants-trade-candidate-rb-derrick-162306557.html",
+          "t": "Giants trade candidate: RB Derrick Henry"
         }
       ],
       "menciona": []
@@ -234,20 +233,20 @@
     "7042",
     "8161",
     "4993",
-    "2020",
     "NO",
+    "2020",
     "11783",
     "13286",
     "11610",
     "12469",
     "8135",
     "NYG",
-    "11729",
     "7561",
+    "11729",
     "4035",
     "7567",
-    "SF",
-    "CHI"
+    "CHI",
+    "1166"
   ],
   "soltados": [
     "11435",
