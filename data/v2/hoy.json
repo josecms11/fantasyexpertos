@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-04T17:26:46.757Z",
-  "ultimaIA": "2026-11-04T17:26:46.757Z",
+  "actualizado": "2026-11-04T18:20:14.650Z",
+  "ultimaIA": "2026-11-04T18:20:14.650Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,95 +14,46 @@
   ],
   "noticias": [
     {
-      "id": "n20261104172600",
-      "fecha": "2026-11-04T17:26:46.757Z",
+      "id": "n20261104182000",
+      "fecha": "2026-11-04T18:20:14.650Z",
       "semana": 9,
-      "titulo": "Greg Dulcich se perfila como opción en la semana 9",
+      "titulo": "Garrett Wilson en protocolo y Breece Hall apunta a volver",
       "claves": [
-        "Dulcich aparece como alternativa viable para la posición de ala cerrada",
-        "Analistas evalúan su desempeño para la jornada actual",
-        "Opción interesante para ligas profundas o streaming"
+        "Garrett Wilson ingresó al protocolo de conmociones",
+        "Breece Hall apunta a regresar en la semana 9",
+        "Situación de lesiones monitoreada de cerca por fantasy"
       ],
-      "contexto": "Ante la escasez de opciones confiables en la posición de ala cerrada para la semana 9, el análisis de ESPN coloca a Greg Dulcich en el radar como una alternativa de streaming para los mánagers que buscan cubrir ausencias o lesiones en su alineación titular.",
-      "fantasy": "Impacto directo en ligas profundas o formatos donde escasean las alas cerradas viables. No sustituye a opciones de élite como Trey McBride o Brock Bowers, pero sube su valor como parche temporal si necesitas un sustituto de emergencia en la semana 9.",
-      "equipo_impacto": "Su uso intermitente en la ofensiva le abre una rendija de oportunidad para sumar recepciones clave, aunque sigue dependiendo del volumen general de su ofensiva.",
-      "accion": "Considera a Greg Dulcich únicamente como opción de streaming en caso de emergencia en tu alineación.",
+      "contexto": "El receptor abierto de los Jets, Garrett Wilson, se encuentra ingresado en el protocolo de conmociones cerebrales tras las recientes prácticas, mientras que el corredor estelar Breece Hall muestra señales positivas y está encaminado para volver a la acción en la semana 9.",
+      "fantasy": "La posible ausencia de Garrett Wilson reduce el techo ofensivo de los Jets, obligando a buscar alternativas en ligas profundas. Por su parte, el regreso de Breece Hall lo posiciona de inmediato como titular indiscutible en formatos PPR para la semana 9.",
+      "equipo_impacto": "La ofensiva de los Jets depende enormemente de la salud de sus playmaker estelares para sostener el ataque terrestre y aéreo en esta mitad de temporada.",
+      "accion": "Monitorea el estatus de Garrett Wilson y alista a Breece Hall en tu alineación titular si recibe el alta médica.",
       "en": {
-        "titulo": "Greg Dulcich emerges as Week 9 streaming option",
+        "titulo": "Garrett Wilson in protocol, Breece Hall trending back",
         "claves": [
-          "Dulcich enters the streaming conversation for tight ends",
-          "Analysts evaluate his outlook for the upcoming slate",
-          "Viable emergency option in deeper fantasy formats"
+          "Garrett Wilson entered concussion protocol",
+          "Breece Hall trending toward returning in week 9",
+          "Injury updates heavily monitored for fantasy managers"
         ],
-        "contexto": "With tight end reliability fluctuating, recent reports highlight Greg Dulcich as a streaming candidate for fantasy managers scouring the waiver wire to fill roster gaps during week 9.",
-        "fantasy": "Boosts his profile slightly for deep leagues or streaming needs. He won't replace elite options like Trey McBride, but he becomes a serviceable plug-and-play if you are caught without a starter.",
-        "equipo_impacto": "His occasional offensive involvement gives him a slight bump in projection, though he remains dependent on game script.",
-        "accion": "Monitor Dulcich as a last-resort streaming option for your tight end spot this week."
+        "contexto": "Jets wide receiver Garrett Wilson has entered the concussion protocol following recent practices, while star running back Breece Hall is showing positive signs and is trending toward a return for week 9.",
+        "fantasy": "Garrett Wilson's potential absence caps the Jets' offensive upside, forcing managers to look for streaming options in deeper leagues. Meanwhile, Breece Hall's return instantly locks him back into starting lineups for PPR formats in week 9.",
+        "equipo_impacto": "The Jets' offense heavily relies on the health of their star playmakers to sustain both their ground and aerial attacks through the middle of the season.",
+        "accion": "Monitor Garrett Wilson's practice participation and plug Breece Hall into your starting lineup if cleared to play."
       },
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "DEN",
+      "etiqueta": "LESIÓN",
+      "impacto": "NEUTRO",
+      "equipo": "NYJ",
       "equipos": [
-        "DEN",
-        "MIA",
-        "ARI",
-        "LV"
+        "NYJ"
       ],
       "jugadores": [
-        "8172",
-        "8130",
-        "11604"
+        "8146",
+        "8155"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50379880/why-greg-dulcich-streaming-te-option-week-9",
-          "t": "Why Greg Dulcich is a streaming TE option in Week 9"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261104172601",
-      "fecha": "2026-11-04T17:26:46.757Z",
-      "semana": 9,
-      "titulo": "Dylan Laube gana reconocimiento en equipos especiales",
-      "claves": [
-        "Laube nombrado jugador de equipos especiales de la AFC",
-        "Destaca tras jugadas clave en el duelo reciente",
-        "Impacto limitado en ligas tradicionales de ataque"
-      ],
-      "contexto": "El corredor de los Raiders, Dylan Laube, fue nombrado el jugador de la semana de equipos especiales en la AFC tras destacar en el enfrentamiento contra los Jets en el MetLife Stadium, rompiendo la sequía sin devoluciones de kickoff para anotación de la temporada.",
-      "fantasy": "Impacto nulo para la gran mayoría de las ligas de fantasy football estándar y PPR, ya que sus aportes se concentran en equipos especiales. Solo cobra relevancia en ligas muy específicas que otorgan puntos directos por regresos de patada.",
-      "equipo_impacto": "Su buen momento fortalece la unidad de equipos especiales de Las Vegas, aunque su rol ofensivo como corredor sigue siendo secundario y sin peso real en el esquema semanal.",
-      "accion": "Ignora a Dylan Laube en waivers a menos que tu liga premie los puntos por regresos de patada.",
-      "en": {
-        "titulo": "Dylan Laube wins AFC special teams honors",
-        "claves": [
-          "Laube earns AFC special teams player of the week",
-          "Standout performance sparks excitement in special teams",
-          "Minimal direct impact on standard fantasy leagues"
-        ],
-        "contexto": "Raiders running back Dylan Laube captured AFC special teams player of the week honors following a standout performance against the Jets that featured a breakthrough kickoff return for a touchdown.",
-        "fantasy": "Provides zero fantasy relevance in standard or PPR leagues since his value is tied entirely to special teams. Only worth monitoring in leagues with return yardage scoring.",
-        "equipo_impacto": "His recognition elevates Las Vegas' special teams unit, though it does not translate into a heavy offensive workload in the backfield.",
-        "accion": "Leave Dylan Laube on the waiver wire unless your league format counts return yards and touchdowns."
-      },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "LV",
-      "equipos": [
-        "LV",
-        "NYJ"
-      ],
-      "jugadores": [
-        "11574"
-      ],
-      "fuentes": [
-        {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/raiders-rb-dylan-laube-named-171623873.html",
-          "t": "Raiders RB Dylan Laube named the AFC special teams player of the week"
+          "u": "https://www.espn.com/nfl/story/_/id/50380113/jets-wr-wilson-protocol-rb-hall-trending-return",
+          "t": "Jets' Garrett Wilson in concussion protocol, Breece Hall trending toward return"
         }
       ],
       "menciona": []
@@ -281,13 +232,13 @@
     "10219",
     "7042",
     "8161",
-    "4993",
     "NO",
     "2020",
-    "11783",
+    "4993",
     "13286",
-    "11610",
+    "11783",
     "12469",
+    "11610",
     "NYG",
     "8135",
     "7561",
@@ -295,7 +246,7 @@
     "4035",
     "7567",
     "CHI",
-    "1166"
+    "1479"
   ],
   "soltados": [
     "11435",
@@ -304,16 +255,16 @@
     "NE",
     "3271",
     "11637",
-    "4881",
     "13276",
+    "4881",
     "CLE",
     "4454",
     "1945",
     "12718",
     "5012",
     "9480",
-    "8129",
     "5849",
+    "8129",
     "4037",
     "TB",
     "10235",
