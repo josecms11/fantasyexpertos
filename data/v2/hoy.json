@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-04T21:11:41.109Z",
-  "ultimaIA": "2026-11-04T21:11:41.109Z",
+  "actualizado": "2026-11-04T21:58:32.576Z",
+  "ultimaIA": "2026-11-04T21:58:32.576Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,45 +14,46 @@
   ],
   "noticias": [
     {
-      "id": "n20261104211100",
-      "fecha": "2026-11-04T21:11:41.109Z",
+      "id": "n20261104215800",
+      "fecha": "2026-11-04T21:58:32.576Z",
       "semana": 9,
-      "titulo": "Jameson Williams se perfila como titular indispensable",
+      "titulo": "Cam Skattebo en duda por molestia en isquiotibiales",
       "claves": [
-        "Análisis de expertos para la semana 9",
-        "Alto valor proyectado en alineaciones",
-        "Opción segura en fantasy"
+        "Cam Skattebo sigue sin entrenar con Giants",
+        "Molestia en isquiotibiales pone en riesgo su actividad",
+        "Podría perderse el duelo de la semana 9"
       ],
-      "contexto": "De cara a los partidos de la semana 9, los analistas recomiendan asegurar la titularidad de Jameson Williams en los planteles de fantasy football gracias a su rol protagónico y reciente proyección favorable dentro del esquema ofensivo de su equipo, convirtiéndolo en una pieza codiciada.",
-      "fantasy": "Su inclusión en el once inicial elevará el piso de puntos en ligas PPR y estándar. Conviene mantenerlo activo y evitar dejarlo en la banca para aprovechar su potencial explosivo en esta jornada clave.",
-      "equipo_impacto": "Su presencia constante obliga a la defensiva rival a replegarse, abriendo espacios valiosos para el resto de los compañeros en el ataque aéreo y terrestre.",
-      "accion": "Asegúrate de colocarlo en tu alineación titular de inmediato.",
+      "contexto": "Los New York Giants enfrentan un panorama complicado de cara a su próximo compromiso en la semana 9, ya que su corredor principal Cam Skattebo sigue sin participar en las prácticas debido a una molestia en los isquiotibiales. El reporte oficial lo mantiene con estatus questionable, lo que enciende las alarmas en el cuerpo técnico ante la posibilidad de no contar con su ofensiva terrestre estelar frente a los Philadelphia Eagles.",
+      "fantasy": "Impacto directo en fantasy: la ausencia de Cam Skattebo desploma sus acciones y obliga a buscar alternativas de emergencia en ligas estándar y PPR. Si eres mánager afectado, monitorea de cerca su evolución, aunque lo más prudente es tener un plan de respaldo en la banca para esta semana 9 y evitar sorpresas de última hora en tu alineación titular.",
+      "equipo_impacto": "La baja temporal del corredor principal altera el esquema ofensivo de los Giants y obliga a replantear el uso del backfield frente a los Eagles, mermando las opciones terrestres del equipo de Nueva York.",
+      "accion": "Saca a Cam Skattebo de tu alineación titular de inmediato y busca un parche de emergencia en el mercado de agentes libres.",
       "en": {
-        "titulo": "Jameson Williams shapes up as essential starter",
+        "titulo": "Cam Skattebo questionable with hamstring injury",
         "claves": [
-          "Expert analysis for week 9",
-          "High projected value in lineups",
-          "Safe fantasy option"
+          "Cam Skattebo misses practice for Giants",
+          "Hamstring injury threatens Week 9 status",
+          "Giants could miss leading rusher vs Eagles"
         ],
-        "contexto": "Heading into Week 9 matchups, analysts recommend securing Jameson Williams as a starter in fantasy football rosters due to his prominent role and favorable projected outlook within his offense.",
-        "fantasy": "His inclusion in the starting lineup will raise the scoring floor in PPR and standard leagues. Keep him active and avoid the bench to maximize his explosive potential.",
-        "equipo_impacto": "His consistent presence forces opposing defenses to drop back, opening valuable space for teammates in both the passing and running games.",
-        "accion": "Make sure to plug him into your starting lineup right away."
+        "contexto": "The New York Giants face a cloudy backfield situation ahead of Week 9 as leading rusher Cam Skattebo remains sidelined from practice due to a hamstring injury. He holds a questionable tag, putting his availability in serious jeopardy for the upcoming matchup against the Philadelphia Eagles.",
+        "fantasy": "Fantasy impact: Skattebo's absence tanks his value and forces managers in standard and PPR formats to scramble for last-minute replacements. Monitor his final status closely, but prepare a bench contingency plan to avoid zeroes in your starting lineup for week 9.",
+        "equipo_impacto": "The potential absence of the top rusher severely disrupts the Giants' offensive game plan and forces adjustments in the backfield against Philadelphia.",
+        "accion": "Bench Cam Skattebo right now and secure a reliable replacement from your waiver wire."
       },
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "DET",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "NYG",
       "equipos": [
-        "DET"
+        "NYG",
+        "PHI"
       ],
       "jugadores": [
-        "8148"
+        "12481"
       ],
       "fuentes": [
         {
-          "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50379937/why-dopp-likes-jameson-williams-lineup-lock-week-9",
-          "t": "Why Dopp likes Jameson Williams as a lineup lock in Week 9"
+          "m": "Yahoo Sports",
+          "u": "https://sports.yahoo.com/articles/giants-injury-cam-skattebo-abdul-212454400.html",
+          "t": "Giants injury update: Cam Skattebo, Abdul Carter still not practicing"
         }
       ],
       "menciona": []
@@ -120,6 +121,10 @@
       "estatus": "Duda"
     },
     {
+      "id": "8137",
+      "estatus": "Duda"
+    },
+    {
       "id": "8155",
       "estatus": "Duda"
     },
@@ -128,11 +133,19 @@
       "estatus": "Duda"
     },
     {
+      "id": "10229",
+      "estatus": "Duda"
+    },
+    {
       "id": "7543",
       "estatus": "Fuera"
     },
     {
       "id": "12514",
+      "estatus": "Duda"
+    },
+    {
+      "id": "1466",
       "estatus": "Duda"
     },
     {
@@ -206,18 +219,6 @@
     {
       "id": "6819",
       "estatus": "Fuera"
-    },
-    {
-      "id": "4177",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "9486",
-      "estatus": "Duda"
-    },
-    {
-      "id": "8205",
-      "estatus": "Fuera"
     }
   ],
   "agregados": [
@@ -225,9 +226,9 @@
     "6130",
     "8132",
     "13337",
-    "6011",
     "DET",
     "10219",
+    "6011",
     "HOU",
     "8161",
     "NO",
@@ -235,10 +236,10 @@
     "2020",
     "4993",
     "13286",
-    "11783",
     "11557",
-    "12469",
+    "11783",
     "NYG",
+    "12469",
     "11610",
     "7561",
     "8135",
@@ -260,8 +261,8 @@
     "CLE",
     "12718",
     "1945",
-    "4454",
     "5012",
+    "4454",
     "9480",
     "8129",
     "5849",
@@ -270,8 +271,8 @@
     "TB",
     "11581",
     "12457",
-    "7561",
     "13150",
+    "7561",
     "PIT"
   ],
   "duelo": {
