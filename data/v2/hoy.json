@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-04T14:41:57.932Z",
-  "ultimaIA": "2026-11-04T14:41:57.932Z",
+  "actualizado": "2026-11-04T15:35:50.540Z",
+  "ultimaIA": "2026-11-04T15:35:50.540Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,89 +14,49 @@
   ],
   "noticias": [
     {
-      "id": "n20261104144100",
-      "fecha": "2026-11-04T14:41:57.932Z",
+      "id": "n20261104153500",
+      "fecha": "2026-11-04T15:35:50.540Z",
       "semana": 9,
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50378134/sources-ravens-qb-tyler-snoop-huntley-season",
-          "t": "Sources: Ravens QB Huntley (turf toe) to miss rest of 2026 season"
-        }
-      ],
-      "titulo": "Tyler Huntley fuera todo el año por lesión",
+      "titulo": "Deshaun Watson entra a protocolo de conmociones",
       "claves": [
-        "Tyler Huntley fuera por turf toe",
-        "Baja definitiva para Baltimore en 2026",
-        "Crisis total en la posición de QB"
+        "Deshaun Watson presenta síntomas de conmoción",
+        "Estatus en duda para la semana 9",
+        "Shedeur Sanders listo para relevar"
       ],
-      "contexto": "Reportes de ESPN confirman que el mariscal de campo de Baltimore, Tyler Snoop Huntley, sufrió una lesión de turf toe que lo dejará fuera el resto de la temporada 2026. La baja se suma a la ausencia de Lamar Jackson por fractura de pulgar, dejando al equipo sin sus 2 pasadores principales para encarar los próximos compromisos de la campaña.",
-      "fantasy": "Pérdida devastadora en ligas Superflex y 2QB. Sin Huntley ni Jackson, los receptores como Zay Flowers y Mark Andrews pierden casi todo su techo fantasy. El ataque terrestre sufrirá ante defensas encajonadas en la caja. Si tienes activos aéreos de Baltimore en tu plantilla, considera sentarlos o buscar traspasos de urgencia para rescatar valor.",
-      "equipo_impacto": "Golpea duramente la estructura ofensiva de Baltimore. La falta de estabilidad bajo el centro reduce el volumen aéreo y castiga la eficiencia de todo el ataque de los Ravens en 2026.",
-      "accion": "Sienta o busca traspasar de inmediato a las armas aéreas de Baltimore.",
+      "contexto": "El mariscal de campo de los Browns, Deshaun Watson, superó una evaluación inicial el domingo pero comenzó a manifestar síntomas la noche del lunes, lo que obligó al equipo a ingresarlo en el protocolo de conmociones. Su disponibilidad para el compromiso de la semana 9 contra los Saints se mantiene completamente en el aire.",
+      "fantasy": "Esta situación desploma el valor ofensivo de Cleveland en fantasy football. Si eres mánager en ligas superflex o de dos quarterbacks, debes monitorear de cerca el reporte de lesionados y tener listo un plan de emergencia en caso de que quede descartado de última hora.",
+      "equipo_impacto": "La posible ausencia de Watson abre la puerta para que Shedeur Sanders tome los controles de la ofensiva de los Browns frente a Nueva Orleans, modificando drásticamente el flujo de juego y la confianza en los receptores del equipo.",
+      "accion": "Busca una opción alternativa en tu waiver wire si dependías de Deshaun Watson para esta jornada.",
       "en": {
-        "titulo": "Tyler Huntley out for season with turf toe",
+        "titulo": "Deshaun Watson enters concussion protocol",
         "claves": [
-          "Tyler Huntley out with turf toe",
-          "Season ending injury for Baltimore",
-          "Major QB crisis in Baltimore"
+          "Deshaun Watson shows concussion symptoms",
+          "Status in question for week 9",
+          "Shedeur Sanders ready to step in"
         ],
-        "contexto": "ESPN reports confirm Baltimore quarterback Tyler Snoop Huntley suffered a season-ending turf toe injury. This absence compounds the loss of Lamar Jackson due to a thumb injury, leaving the team without their top 2 signal-callers to face the remainder of the 2026 campaign.",
-        "fantasy": "Devastating loss in Superflex and 2QB formats. Without Huntley or Jackson, pass-catchers see their fantasy ceiling plummet. Opposing defenses will stack the box against the run game. If you hold Baltimore receivers or tight ends, consider benching them or exploring trade options immediately to rescue value.",
-        "equipo_impacto": "Heavily impacts Baltimore's overall offensive efficiency. The severe lack of quarterback depth severely reduces passing volume and overall scoring potential across the roster in 2026.",
-        "accion": "Bench or trade away Baltimore passing game weapons immediately."
+        "contexto": "Browns quarterback Deshaun Watson cleared an initial evaluation on Sunday but began experiencing symptoms on Monday night, forcing the team to place him in the concussion protocol. His availability for the Week 9 matchup against the Saints remains completely up in the air.",
+        "fantasy": "This situation tanks the offensive value of Cleveland in fantasy football. If you are a manager in superflex or two-quarterback leagues, you must closely monitor the injury report and have an emergency backup plan ready just in case he is ruled out.",
+        "equipo_impacto": "Watson's potential absence opens the door for Shedeur Sanders to take the reins of the Browns offense against New Orleans, drastically altering the game flow and confidence in the team's pass-catchers.",
+        "accion": "Look for an alternative option on your waiver wire if you were depending on Deshaun Watson this week."
       },
       "etiqueta": "LESIÓN",
       "impacto": "BAJA",
-      "equipo": "BAL",
+      "equipo": "CLE",
       "equipos": [
-        "BAL"
+        "CLE",
+        "NO"
       ],
       "jugadores": [
-        "7083"
+        "4017",
+        "12524"
       ],
-      "menciona": []
-    },
-    {
-      "id": "n20261104144101",
-      "fecha": "2026-11-04T14:41:57.932Z",
-      "semana": 9,
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50378427/source-commanders-javon-kinlaw-knee-surgery-season",
-          "t": "Source: Commanders lose another DL with Kinlaw out for season after knee surgery"
+          "u": "https://www.espn.com/video/clip/_/id/50378943/shedeur-sanders-opportunity-show-do",
+          "t": "Jason McCourty: This is Shedeur Sanders' opportunity to show what he can do"
         }
       ],
-      "titulo": "Javon Kinlaw fuera el resto del año",
-      "claves": [
-        "Javon Kinlaw operado de la rodilla",
-        "Washington pierde a otro liniero titular",
-        "Baja clave en la defensiva terrestre"
-      ],
-      "contexto": "El liniero defensivo de Washington, Javon Kinlaw, se sometió a una cirugía de rodilla que puso fin a su temporada 2026. Esta representa la baja de un 2 liniero titular para el equipo en menos de 1 semana, lo que debilita significativamente el frente defensivo del conjunto capitalino según reportó Adam Schefter de ESPN.",
-      "fantasy": "Golpea de forma directa a la unidad Commanders D/ST, la cual se vuelve inviable para arrancar en la mayoría de los formatos. Por el contrario, beneficia notablemente a los corredores rivales que enfrenten a Washington, elevando sus proyecciones de yardas por tierra y anotaciones semana a semana en todas las ligas.",
-      "equipo_impacto": "Deteriora gravemente el frente defensivo de los Commanders. La pérdida de 2 titulares en solo 1 semana facilita el trabajo terrestre para las líneas ofensivas rivales de Washington.",
-      "accion": "Evita arrancar a la defensiva de Washington y alinea RBs rivales.",
-      "en": {
-        "titulo": "Javon Kinlaw out for season after surgery",
-        "claves": [
-          "Javon Kinlaw undergoes knee surgery",
-          "Washington loses second defensive lineman",
-          "Major blow to Commanders front line"
-        ],
-        "contexto": "Washington defensive lineman Javon Kinlaw underwent season-ending knee surgery, as reported by ESPN's Adam Schefter. This marks the second starting defensive lineman lost by the team in less than 1 week, severely weakening the interior of their defensive front for the rest of the 2026 season.",
-        "fantasy": "Directly hurts the Commanders D/ST fantasy value, making them unstartable in most leagues. Conversely, it creates favorable matchup opportunities for opposing running backs facing Washington, boosting their projected rushing totals and touchdown upside each week in all formats.",
-        "equipo_impacto": "Severely compromises Washington's defensive line depth. Losing 2 key starters in 1 week gives opposing offensive lines a major physical advantage.",
-        "accion": "Avoid starting Washington D/ST and fire up opposing RBs."
-      },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "WAS",
-      "equipos": [
-        "WAS"
-      ],
-      "jugadores": [],
       "menciona": []
     }
   ],
@@ -107,6 +67,10 @@
     },
     {
       "id": "421",
+      "estatus": "Duda"
+    },
+    {
+      "id": "4017",
       "estatus": "Duda"
     },
     {
@@ -256,10 +220,6 @@
     {
       "id": "12529",
       "estatus": "Duda"
-    },
-    {
-      "id": "8121",
-      "estatus": "Fuera"
     }
   ],
   "agregados": [
@@ -287,7 +247,7 @@
     "4035",
     "7567",
     "SF",
-    "1166"
+    "CHI"
   ],
   "soltados": [
     "11435",
@@ -298,8 +258,8 @@
     "11637",
     "4881",
     "13276",
-    "4454",
     "CLE",
+    "4454",
     "1945",
     "12718",
     "5012",
@@ -310,8 +270,8 @@
     "TB",
     "10235",
     "12457",
-    "7561",
     "11581",
+    "7561",
     "PIT",
     "13150",
     "4147"
