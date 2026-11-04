@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-04T04:15:08.349Z",
-  "ultimaIA": "2026-11-04T03:14:56.414Z",
+  "actualizado": "2026-11-04T05:17:16.631Z",
+  "ultimaIA": "2026-11-04T05:17:16.631Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,48 +14,45 @@
   ],
   "noticias": [
     {
-      "id": "n20261104031400",
-      "fecha": "2026-11-04T03:14:56.414Z",
+      "id": "n20261104051700",
+      "fecha": "2026-11-04T05:17:16.631Z",
       "semana": 9,
-      "titulo": "Vic Fangio considera robo llegada de J.J. McCarthy",
+      "titulo": "Malachi Lawrence se perderá varias semanas por lesión",
       "claves": [
-        "Vic Fangio afirmó que J.J. McCarthy fue un gran robo.",
-        "El mariscal de campo llegó proveniente de Vikings en septiembre.",
-        "McCarthy asume un rol principal en el ataque neoyorquino."
+        "Malachi Lawrence estará fuera de los emparrillados por varias semanas.",
+        "Caleb Downs y P.J. Locke entraron al protocolo de conmoción cerebral.",
+        "La defensiva de Denver pierde profundidad clave para la semana 9."
       ],
-      "contexto": "El coordinador defensivo Vic Fangio declaró públicamente que la llegada del mariscal de campo J.J. McCarthy a New York fue una verdadera ganga para la franquicia. McCarthy llegó traspasado desde Minnesota a finales de septiembre, cambiando de equipo a media temporada. Los elogios de Fangio confirman la confianza de la organización en el joven pasador, quien toma el mando del ataque neoyorquino en la semana 9.",
-      "fantasy": "En formatos Superflex y ligas de 12 o 14 equipos, J.J. McCarthy incrementa considerablemente su valor de fantasy football. Con Jaxson Dart en la lista de lesionados por rotura de menisco, McCarthy queda como el pasador titular indiscutido de la escuadra. Su estatus sube a opción de streaming utilizable en la semana 9, representando una adición prioritaria en la banca para dueños necesitados de mariscales.",
-      "equipo_impacto": "La titularidad de McCarthy aporta estabilidad al juego aéreo de New York. Su presencia beneficia directamente la producción del estelar receptor Malik Nabers, manteniendo el volumen de pases constante para todo el ataque de los Giants en las próximas semanas.",
-      "accion": "Reclama a J.J. McCarthy de la agencia libre en ligas Superflex para reforzar tu posición de QB en la semana 9.",
+      "contexto": "Reportes médicos confirmaron que Malachi Lawrence podría perderse varias semanas de acción tras sufrir una lesión. Al mismo tiempo, la secundaria del equipo sufrió un duro golpe con el ingreso de Caleb Downs y P.J. Locke al protocolo de conmociones de la NFL. Ambas situaciones dejan a la defensiva mermada de cara al enfrentamiento de la semana 9, obligando al cuerpo técnico a reorganizar su rotación defensiva de manera inmediata.",
+      "fantasy": "En ligas IDP, debes enviar a la banca o cortar de inmediato a Malachi Lawrence por su ausencia prolongada. Para la defensiva de Broncos D/ST, proyectada en 7.4 pts para la semana 9, las bajas simultáneas de Downs y Locke restan solidez en cobertura y tackleo. Si dependes de esta unidad en ligas estándar de 12 equipos, considera opciones con mejor suelo como Vikings D/ST o Jaguars D/ST disponibles.",
+      "equipo_impacto": "Denver sufre un desgaste severo en su rotación defensiva. Sin Lawrence en la trinchera y con Downs y Locke comprometidos en la secundaria, los rivales encontrarán mayores espacios tanto por aire como por tierra en la semana 9.",
+      "accion": "Corta a Malachi Lawrence en ligas IDP y evita alinear a Broncos D/ST esta semana 9.",
       "en": {
-        "titulo": "Vic Fangio Calls J.J. McCarthy a Steal for Giants",
+        "titulo": "Malachi Lawrence to miss multiple weeks with injury",
         "claves": [
-          "Vic Fangio called J.J. McCarthy a steal for New York.",
-          "The quarterback arrived via trade from Minnesota in late September.",
-          "McCarthy takes over as starter for the Giants offensive unit."
+          "Malachi Lawrence is expected to miss multiple weeks with injury.",
+          "Caleb Downs and P.J. Locke are in concussion protocol.",
+          "Denver defense loses key depth heading into Week 9."
         ],
-        "contexto": "Defensive coordinator Vic Fangio publicly praised quarterback J.J. McCarthy, stating his trade acquisition by New York was an absolute steal. McCarthy arrived via trade from Minnesota in late September. Fangio's supportive comments reflect high internal confidence in the young quarterback as he officially takes leadership of the team's passing attack heading into week 9 of the current regular season.",
-        "fantasy": "In Superflex setups and deep 12 or 14-team leagues, J.J. McCarthy sees a significant rise in overall fantasy value. With rookie Jaxson Dart on IR due to a meniscus tear, McCarthy steps in as the primary starting option under center. His fantasy stock rises to an immediate waiver wire priority and viable QB2 streaming option for week 9 fantasy matchups.",
-        "equipo_impacto": "McCarthy taking over under center stabilizes New York's passing game going forward. His distribution should maintain steady target share and fantasy output for star wideout Malik Nabers and the rest of the Giants pass catchers.",
-        "accion": "Add J.J. McCarthy off waivers immediately in Superflex leagues for quarterback depth in week 9."
+        "contexto": "Medical updates confirmed that Malachi Lawrence could be sidelined for multiple weeks due to injury. Simultaneously, the secondary took a massive hit as Caleb Downs and P.J. Locke both entered the NFL concussion protocol. These combined setbacks severely compromise defensive depth ahead of Week 9, forcing the coaching staff to scramble and adjust positional rotations across the front and secondary in upcoming practices.",
+        "fantasy": "In IDP formats, managers should immediately bench or drop Malachi Lawrence given his multi-week absence. For Broncos D/ST, projected at 7.4 pts in Week 9, losing both Downs and Locke creates major vulnerabilities in tackling and coverage. If you are relying on this defensive unit in standard 12-team leagues, look at safer waiver streaming options such as Vikings D/ST or Jaguars D/ST.",
+        "equipo_impacto": "Denver faces significant attrition across its defensive unit. Missing Lawrence up front alongside Downs and Locke in the secondary creates exploitable passing seams and running lanes for opposing offenses in Week 9.",
+        "accion": "Cut Malachi Lawrence in IDP leagues and avoid starting Broncos D/ST in Week 9."
       },
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "NYG",
-      "equipos": [
-        "NYG",
-        "MIN"
-      ],
-      "jugadores": [
-        "11565"
-      ],
       "fuentes": [
         {
           "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/vic-fangio-j-j-mccarthy-025246470.html",
-          "t": "Vic Fangio: J.J. McCarthy was a &quot;steal&quot; for the Giants"
+          "u": "https://sports.yahoo.com/articles/malachi-lawrence-might-miss-multiple-045311668.html",
+          "t": "Malachi Lawrence might miss multiple weeks"
         }
       ],
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "DEN",
+      "equipos": [
+        "DEN"
+      ],
+      "jugadores": [],
       "menciona": []
     }
   ],
@@ -230,9 +227,9 @@
     "HOU",
     "DET",
     "7042",
+    "10219",
     "4993",
     "8161",
-    "10219",
     "11783",
     "11610",
     "2020",
@@ -255,8 +252,8 @@
     "NE",
     "4881",
     "11637",
-    "4454",
     "3271",
+    "4454",
     "13276",
     "CLE",
     "1945",
@@ -269,8 +266,8 @@
     "9480",
     "12457",
     "10235",
-    "3214",
     "TB",
+    "3214",
     "PIT",
     "11581",
     "4147"
