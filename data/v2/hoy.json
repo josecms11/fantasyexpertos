@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-04T11:40:21.853Z",
-  "ultimaIA": "2026-11-04T10:47:07.981Z",
+  "actualizado": "2026-11-04T12:28:58.711Z",
+  "ultimaIA": "2026-11-04T12:28:58.711Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,49 +14,51 @@
   ],
   "noticias": [
     {
-      "id": "n20261104104700",
-      "fecha": "2026-11-04T10:47:07.981Z",
+      "id": "n20261104122800",
+      "fecha": "2026-11-04T12:28:58.711Z",
       "semana": 9,
-      "titulo": "Actualización de San Francisco 49ers para semana 9",
+      "titulo": "Aaron Glenn confirma a Breece Hall como titular indiscutible",
       "claves": [
-        "Noticias diarias de San Francisco 49ers",
-        "Reporte previo a la fecha límite",
-        "Información relevante para fantasy en semana 9"
+        "Breece Hall mantiene su rol principal",
+        "Braelon Allen sumó yardas destacadas",
+        "Regresa tras cinco juegos de ausencia"
       ],
-      "contexto": "A menos de una semana de la fecha límite de cambios, se han dado a conocer nuevos reportes sobre la situación actual de los San Francisco 49ers de cara a los compromisos de la semana 9 de la temporada.",
-      "fantasy": "Es fundamental monitorear los reportes de los San Francisco 49ers para tomar las mejores decisiones en tus alineaciones y movimientos de waivers en ligas fantasy.",
-      "equipo_impacto": "Los movimientos y estatus de los jugadores de los San Francisco 49ers definen la estrategia a seguir para los managers en la semana 9.",
-      "accion": "Revisa el estatus final de los jugadores de los San Francisco 49ers antes de alinear.",
+      "contexto": "El entrenador Aaron Glenn confirmó que Breece Hall sigue siendo el corredor titular de los Jets, a pesar de la notable producción de Braelon Allen durante las 5 semanas que Hall estuvo fuera de acción debido a su lesión en el cuadriceps.",
+      "fantasy": "Mantiene un valor alto en ligas PPR y estándar para la semana 9. Con su regreso confirmado tras figurar como questionable, debes asegurarte de colocarlo en tu alineación titular sin dudarlo.",
+      "equipo_impacto": "La ofensiva terrestre de los Jets recupera su jerarquía principal, relegando a Braelon Allen a un papel de respaldo secundario a pesar de su buen rendimiento previo.",
+      "accion": "Asegúrate de colocar a Breece Hall en tu cuadro titular para la semana 9.",
       "en": {
-        "titulo": "San Francisco 49ers update for week 9",
+        "titulo": "Aaron Glenn confirms Breece Hall as starter",
         "claves": [
-          "Daily San Francisco 49ers news",
-          "Report prior to trade deadline",
-          "Relevant fantasy info for week 9"
+          "Breece Hall retains his primary role",
+          "Braelon Allen showed strong production",
+          "Returns after a five-game absence"
         ],
-        "contexto": "Less than a week until the trade deadline, new reports have emerged regarding the current situation of the San Francisco 49ers heading into week 9.",
-        "fantasy": "It is crucial to monitor San Francisco 49ers reports to make the best decisions for your fantasy lineups and waiver moves.",
-        "equipo_impacto": "The status and moves of San Francisco 49ers players shape the strategy for fantasy managers in week 9.",
-        "accion": "Check the final status of San Francisco 49ers players before locking in your lineups.",
-        "en": "Check the final status of San Francisco 49ers players before locking in your lineups."
+        "contexto": "Coach Aaron Glenn confirmed that Breece Hall remains the starting running back for the Jets, despite the notable production from Braelon Allen during Hall's 5-game absence due to a quadriceps injury.",
+        "fantasy": "He retains high value in PPR and standard leagues for week 9. With his return confirmed after being listed as questionable, you must lock him into your starting lineup without hesitation.",
+        "equipo_impacto": "The Jets rushing offense recovers its primary hierarchy, relegating Braelon Allen to a secondary backup role despite his previous strong performance.",
+        "accion": "Make sure to start Breece Hall in your lineup for week 9."
       },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "SF",
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "NYJ",
       "equipos": [
-        "SF"
+        "NYJ",
+        "TB"
       ],
-      "jugadores": [],
+      "jugadores": [
+        "8155",
+        "11576",
+        "11584"
+      ],
       "fuentes": [
         {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/golden-nuggets-less-week-until-100000285.html",
-          "t": "Golden Nuggets: Less than a week until the trade deadline"
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50360481/jets-breece-hall-starter-braelon-allen",
+          "t": "Aaron Glenn says Breece Hall is Jets' starter despite Braelon Allen's emergence"
         }
       ],
-      "menciona": [
-        "4034"
-      ]
+      "menciona": []
     }
   ],
   "lesionados": [
@@ -225,8 +227,8 @@
     "11625",
     "8132",
     "6130",
-    "6011",
     "13337",
+    "6011",
     "HOU",
     "DET",
     "10219",
@@ -234,8 +236,8 @@
     "8161",
     "4993",
     "11783",
-    "2020",
     "NO",
+    "2020",
     "11610",
     "13286",
     "8135",
@@ -267,9 +269,9 @@
     "5849",
     "4037",
     "7561",
+    "TB",
     "12457",
     "10235",
-    "TB",
     "PIT",
     "11581",
     "3214",
