@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-04T00:20:49.250Z",
-  "ultimaIA": "2026-11-03T15:28:22.744Z",
+  "actualizado": "2026-11-04T01:30:26.649Z",
+  "ultimaIA": "2026-11-04T01:30:26.649Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,180 +14,48 @@
   ],
   "noticias": [
     {
-      "id": "x20261104002000",
-      "fecha": "2026-11-04T00:20:49.250Z",
+      "id": "n20261104013000",
+      "fecha": "2026-11-04T01:30:26.649Z",
       "semana": 9,
-      "exclusivo": true,
-      "fuente": "2026-11-03T16:16:34+00:00",
-      "titulo": "Caleb Williams y D'Andre Swift aplastan a Seattle",
+      "titulo": "Russell Wilson negocia para dirigir a NC State",
       "claves": [
-        "Chicago venció 34-17 a Seahawks en el juego de lunes por la noche."
+        "El exmariscal de Seahawks fue entrevistado para entrenador en jefe.",
+        "Su paso por los micrófonos de CBS podría terminar muy pronto.",
+        "Cierra cualquier opción de regresar a jugar en la NFL."
       ],
+      "contexto": "El exmariscal de campo de Seahawks, Russell Wilson, sostuvo una entrevista formal para convertirse en el nuevo entrenador en jefe de NC State a nivel colegial. Tras alejarse de los emparrillados de la NFL y tomar un rol como analista en el escritorio de televisión con CBS, su etapa en los medios parece que será bastante corta si concreta su llegada al futbol americano universitario en este nuevo capítulo profesional como estratega.",
+      "fantasy": "Cualquier dueño en ligas de dinastía o formatos Superflex que mantuviera una remota esperanza de un regreso a los emparrillados debe soltarlo de inmediato. Wilson tiene la mira puesta en dirigir y no volverá a colocarse las hombreras ni a sumar puntos en las semanas por venir. No vale nada en rosters activos ni en reservas; es momento de liberar esa plaza de banca para añadir talento joven o piezas que sí aporten números reales.",
+      "equipo_impacto": "La noticia reafirma que Seattle y el resto de la liga continúan sus proyectos sin considerar a Wilson. Los Seahawks mantienen su esquema ofensivo actual sin distracciones ni rumores nostálgicos del pasado, mientras Wilson busca construir su propio legado en la banda colegial en lugar de buscar contratos como veterano de emergencia.",
+      "accion": "Córtalo sin dudar en formatos de dinastía para abrir espacio en tu banca.",
       "en": {
-        "titulo": "Caleb Williams and D'Andre Swift Crush Seattle",
+        "titulo": "Russell Wilson interviews for NC State coaching job",
         "claves": [
-          "Chicago defeated the Seahawks 34-17 on Monday Night Football.",
-          "Bears move within just 1 game of their division lead.",
-          "D'Andre Swift and Caleb Williams led the offense with dominant performances."
+          "Former Seahawks quarterback interviewed for NC State head coaching role.",
+          "Wilson could quickly depart his current analyst role at CBS.",
+          "Any speculation of an NFL playing return is officially over."
         ],
-        "contexto": "The Chicago Bears made a massive statement by crushing the former champion Seattle Seahawks 34-17 on Monday Night Football. With this win, Chicago sits just 1 game behind the division lead. Caleb Williams and D'Andre Swift put on a complete offensive show to secure a decisive victory over a direct conference rival.",
-        "fantasy": "Caleb Williams solidifies his value as a reliable QB1 in 12-team leagues after this offensive showcase. D'Andre Swift locks himself in as a solid weekly RB1 thanks to consistent volume. For owners of Seahawks players, it's time to adjust expectations as their defense surrendered 34 pts and the offense struggled.",
-        "equipo_impacto": "The Bears offense gains huge confidence with this elite rushing and passing performance. In Seattle, the loss exposes severe defensive cracks that hurt the entire team's game script.",
-        "accion": "Start Caleb Williams and D'Andre Swift with complete confidence in your starting lineups."
+        "contexto": "Former Seahawks quarterback Russell Wilson has officially interviewed for the head coaching position at NC State. After stepping away from the NFL gridiron and working as a studio analyst on the CBS desk, Wilson could make a swift exit from broadcasting. Moving into college coaching marks a completely fresh direction for his football career, confirming his days under center in professional football are firmly behind him.",
+        "fantasy": "Any fantasy managers holding onto Wilson in deep dynasty formats or Superflex stashes hoping for a miraculous midseason NFL comeback can finally cut ties. Wilson is focused on pursuing coaching opportunities and will not take another snap or generate fantasy production. Free up that roster spot immediately and use the bench space to speculate on available waiver wire depth or promising young prospects with active roles.",
+        "equipo_impacto": "This interview confirms Seattle and any other quarterback-needy NFL franchises are not viable landing spots for Wilson. The Seahawks are fully committed to their current roster trajectory, leaving Wilson's era firmly in the history books while he prepares to build a college coaching resume.",
+        "accion": "Drop him across all deep dynasty formats to free up valuable bench space."
       },
       "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "CHI",
+      "impacto": "BAJA",
+      "equipo": "SEA",
       "equipos": [
-        "CHI",
         "SEA"
       ],
       "jugadores": [
-        "11560",
-        "6790"
+        "1234"
       ],
-      "premium": true
-    },
-    {
-      "id": "x20261104002001",
-      "fecha": "2026-11-04T00:20:49.250Z",
-      "semana": 9,
-      "exclusivo": true,
-      "fuente": "2026-11-03T16:16:34+00:00",
-      "titulo": "Lamar Jackson fuera de 8 a 11 semanas",
-      "claves": [
-        "Lamar Jackson estará fuera de 8 a 11 semanas por lesión."
+      "fuentes": [
+        {
+          "m": "Yahoo Sports",
+          "u": "https://sports.yahoo.com/articles/former-seahawks-quarterback-russell-wilson-010147178.html",
+          "t": "Former Seahawks quarterback Russell Wilson interviews for NC State head coaching job"
+        }
       ],
-      "en": {
-        "titulo": "Lamar Jackson Out 8 to 11 Weeks",
-        "claves": [
-          "Lamar Jackson will miss 8 to 11 weeks due to a hand injury.",
-          "Tyler Huntley was also injured, leaving the QB room completely depleted.",
-          "Joe Fagnano will start at QB for the Ravens on Thursday night."
-        ],
-        "contexto": "Devastating news in Baltimore after confirmation that Lamar Jackson suffered a severe hand injury that will sideline him for 8 to 11 weeks. To make matters worse, Tyler Huntley was also injured, leaving the Ravens with just 1 healthy QB on the roster. Due to this emergency, Joe Fagnano will start under center this Thursday night.",
-        "fantasy": "Lamar Jackson must go straight to your IR slot or be dropped in leagues without IR. The fantasy value of Baltimore receivers and running backs takes a massive hit with Joe Fagnano under center. Fagnano is only a desperate streaming option in 2-QB Superflex leagues, while the running game must carry the offense.",
-        "equipo_impacto": "The Ravens lose their ultimate playmaker for at least 8 weeks. The entire offensive scheme changes drastically with Joe Fagnano as the only healthy quarterback available.",
-        "accion": "Move Lamar Jackson to your IR slot and bench Baltimore wide receivers."
-      },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "BAL",
-      "equipos": [
-        "BAL"
-      ],
-      "jugadores": [
-        "4881",
-        "7083",
-        "13350"
-      ],
-      "premium": true
-    },
-    {
-      "id": "x20261104002002",
-      "fecha": "2026-11-04T00:20:49.250Z",
-      "semana": 9,
-      "exclusivo": true,
-      "fuente": "2026-11-03T16:16:34+00:00",
-      "titulo": "Jeremiah Love a IR y Michael Wilson jugará lesionado",
-      "claves": [
-        "Jeremiah Love iría a IR y estará fuera mínimo 4 semanas."
-      ],
-      "en": {
-        "titulo": "Jeremiah Love to IR and Michael Wilson Plays Injured",
-        "claves": [
-          "Jeremiah Love is likely heading to IR, out for at least 4 weeks.",
-          "Michael Wilson will play this week despite suffering 2 broken ribs.",
-          "Critical medical updates will heavily impact fantasy lineup decisions this week."
-        ],
-        "contexto": "The medical report brings contrasting news for 2 key offensive players. Jeremiah Love is expected to be placed on Injured Reserve (IR), ruling him out for at least 4 weeks. Meanwhile, Michael Wilson is dealing with 2 broken ribs, but all signs indicate he will play this week despite the severe pain.",
-        "fantasy": "Jeremiah Love must not be started under any circumstances and should go straight to your IR slot. As for Michael Wilson, exercise extreme caution in 12-team leagues; even though he is playing with 2 broken ribs, there is a high risk of in-game re-injury. Look for healthier floor options on your bench if available.",
-        "equipo_impacto": "Jeremiah Love's 4-week absence opens up touches in the backfield rotation. Meanwhile, Michael Wilson's tough decision to play keeps defensive attention on the perimeter.",
-        "accion": "Move Jeremiah Love to IR and bench Michael Wilson if you have safer options."
-      },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "ARI",
-      "equipos": [
-        "ARI"
-      ],
-      "jugadores": [
-        "10232"
-      ],
-      "premium": true
-    },
-    {
-      "id": "x20261104002003",
-      "fecha": "2026-11-04T00:20:49.250Z",
-      "semana": 9,
-      "exclusivo": true,
-      "fuente": "2026-11-03T16:16:34+00:00",
-      "titulo": "Jonathan Taylor lidera rumores previo al fecha límite",
-      "claves": [
-        "La fecha límite de cambios de la NFL es el 10 de noviembre."
-      ],
-      "en": {
-        "titulo": "Jonathan Taylor Leads Trade Rumors Before Deadline",
-        "claves": [
-          "The NFL trade deadline is set for November 10.",
-          "Jonathan Taylor emerges as a top target in trade deadline rumors.",
-          "Josh Downs and George Pickens are also generating significant trade interest."
-        ],
-        "contexto": "With the NFL trade deadline approaching on November 10, the trade market is heating up rapidly. Reports indicate that star running back Jonathan Taylor is among the top names being discussed. Additionally, receivers Josh Downs and George Pickens are involved in trade rumors that could drastically change their fantasy outlook for the 2nd half of the season.",
-        "fantasy": "Monitor these 3 players closely in your fantasy leagues. If Jonathan Taylor gets traded to a contender, his RB1 upside will skyrocket immediately. As for Josh Downs and George Pickens, a change of scenery before November 10 could boost their target volume significantly if they land in more explosive passing offenses.",
-        "equipo_impacto": "A trade involving Jonathan Taylor or George Pickens would completely reshape their current teams' touch distribution, opening up golden opportunities for backup running backs and secondary wide receivers.",
-        "accion": "Try buying low on Jonathan Taylor or George Pickens before the trade deadline."
-      },
-      "etiqueta": "TRADE",
-      "impacto": "NEUTRO",
-      "equipo": "IND",
-      "equipos": [
-        "IND",
-        "PIT",
-        "DAL"
-      ],
-      "jugadores": [
-        "6813",
-        "9500",
-        "8137"
-      ],
-      "premium": true
-    },
-    {
-      "id": "x20261104002004",
-      "fecha": "2026-11-04T00:20:49.250Z",
-      "semana": 9,
-      "exclusivo": true,
-      "fuente": "2026-11-03T16:16:34+00:00",
-      "titulo": "Lamar Jackson y 4 equipos entran en pánico",
-      "claves": [
-        "Baltimore Ravens entra en crisis tras la baja de 8 a 11 semanas de Lamar."
-      ],
-      "en": {
-        "titulo": "Lamar Jackson and 4 Teams Enter Total Panic",
-        "claves": [
-          "Baltimore Ravens hit crisis mode following Lamar Jackson's 8 to 11 week injury.",
-          "Las Vegas Raiders and Philadelphia Eagles show serious performance red flags.",
-          "Dallas Cowboys round out the group of 4 teams under maximum pressure."
-        ],
-        "contexto": "The panic button has been officially hit for 4 NFL franchises heading into the 2nd half of the season. The Baltimore Ravens lead the group after losing Lamar Jackson for 8 to 11 weeks. Joining them are the Las Vegas Raiders, Philadelphia Eagles, and Dallas Cowboys, all struggling with inconsistencies that threaten to derail their regular season goals.",
-        "fantasy": "It is time to make tough decisions if you rely on players from the Ravens, Raiders, Eagles, or Cowboys. In Baltimore, sell what you can following Lamar Jackson's injury. For Eagles and Cowboys players, evaluate trade offers before their market values drop further if struggles continue into Week 8.",
-        "equipo_impacto": "All 4 franchises face critical weeks to right the ship. Mounting pressure will directly affect offensive play-calling and overall efficiency.",
-        "accion": "Sell secondary Ravens assets and explore trade offers for Eagles and Cowboys players."
-      },
-      "etiqueta": "TENDENCIA",
-      "impacto": "BAJA",
-      "equipo": "BAL",
-      "equipos": [
-        "BAL",
-        "LV",
-        "PHI",
-        "DAL"
-      ],
-      "jugadores": [
-        "4881"
-      ],
-      "premium": true
+      "menciona": []
     }
   ],
   "lesionados": [
@@ -364,14 +232,14 @@
     "4993",
     "8161",
     "11783",
-    "11610",
     "10219",
+    "11610",
     "2020",
     "8135",
     "NO",
-    "SF",
     "13286",
     "12469",
+    "SF",
     "7567",
     "11729",
     "NYG",
@@ -385,26 +253,26 @@
     "12711",
     "NE",
     "4881",
-    "4454",
     "11637",
+    "4454",
     "13276",
     "3271",
     "CLE",
     "1945",
     "5012",
     "12718",
-    "7561",
     "8129",
+    "7561",
     "4037",
-    "9480",
     "5849",
+    "9480",
     "12457",
-    "3214",
     "10235",
+    "3214",
     "13286",
     "TB",
     "11581",
-    "13296"
+    "PIT"
   ],
   "duelo": {
     "a": "Josh Allen",
