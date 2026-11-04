@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-04T08:39:02.872Z",
-  "ultimaIA": "2026-11-04T07:40:55.789Z",
+  "actualizado": "2026-11-04T10:47:07.981Z",
+  "ultimaIA": "2026-11-04T10:47:07.981Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,46 +14,49 @@
   ],
   "noticias": [
     {
-      "id": "n20261104074000",
-      "fecha": "2026-11-04T07:40:55.789Z",
+      "id": "n20261104104700",
+      "fecha": "2026-11-04T10:47:07.981Z",
       "semana": 9,
+      "titulo": "Actualización de San Francisco 49ers para semana 9",
+      "claves": [
+        "Noticias diarias de San Francisco 49ers",
+        "Reporte previo a la fecha límite",
+        "Información relevante para fantasy en semana 9"
+      ],
+      "contexto": "A menos de una semana de la fecha límite de cambios, se han dado a conocer nuevos reportes sobre la situación actual de los San Francisco 49ers de cara a los compromisos de la semana 9 de la temporada.",
+      "fantasy": "Es fundamental monitorear los reportes de los San Francisco 49ers para tomar las mejores decisiones en tus alineaciones y movimientos de waivers en ligas fantasy.",
+      "equipo_impacto": "Los movimientos y estatus de los jugadores de los San Francisco 49ers definen la estrategia a seguir para los managers en la semana 9.",
+      "accion": "Revisa el estatus final de los jugadores de los San Francisco 49ers antes de alinear.",
+      "en": {
+        "titulo": "San Francisco 49ers update for week 9",
+        "claves": [
+          "Daily San Francisco 49ers news",
+          "Report prior to trade deadline",
+          "Relevant fantasy info for week 9"
+        ],
+        "contexto": "Less than a week until the trade deadline, new reports have emerged regarding the current situation of the San Francisco 49ers heading into week 9.",
+        "fantasy": "It is crucial to monitor San Francisco 49ers reports to make the best decisions for your fantasy lineups and waiver moves.",
+        "equipo_impacto": "The status and moves of San Francisco 49ers players shape the strategy for fantasy managers in week 9.",
+        "accion": "Check the final status of San Francisco 49ers players before locking in your lineups.",
+        "en": "Check the final status of San Francisco 49ers players before locking in your lineups."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "NEUTRO",
+      "equipo": "SF",
+      "equipos": [
+        "SF"
+      ],
+      "jugadores": [],
       "fuentes": [
         {
           "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/gardner-johnson-released-bills-spitting-071748773.html",
-          "t": "Gardner-Johnson released by Bills after spitting ban"
+          "u": "https://sports.yahoo.com/articles/golden-nuggets-less-week-until-100000285.html",
+          "t": "Golden Nuggets: Less than a week until the trade deadline"
         }
       ],
-      "titulo": "Bills cortan a CJ Gardner-Johnson tras suspensión",
-      "claves": [
-        "Buffalo corta al safety tras cumplir 1 juego de suspensión",
-        "Incidente por escupir precipita su salida de los Bills",
-        "Debilita la profundidad de la secundaria de Buffalo"
-      ],
-      "contexto": "Los Buffalo Bills tomaron una decisión drástica y cortaron al safety CJ Gardner-Johnson tras cumplir 1 juego de suspensión impuesta por la liga por escupir en dirección a un oponente. La gerencia no toleró la indisciplina y prefirió rescindir su contrato de inmediato, dejando un hueco importante en la profundidad de la secundaria del equipo de cara a la semana 9.",
-      "fantasy": "La baja de Gardner-Johnson resta solidez y juego físico a la secundaria de Buffalo D/ST, lo que baja ligeramente su valor fantasy frente a pases profundos. Por otro lado, esto favorece sutilmente a los mariscales de campo y receptores rivales que enfrenten a los Bills en las próximas semanas. Aunque la defensiva de Buffalo se mantiene utilizable por su capacidad de generar capturas, pierde potencial para concretar interceptaciones.",
-      "equipo_impacto": "La defensiva de los Bills pierde un titular agresivo en la secundaria. La carga de trabajo aumentará para los safeties de reserva, afectando la comunicación en esquemas de cobertura profunda y debilitando la protección contra jugadas explosivas por aire.",
-      "accion": "Mantén a Buffalo D/ST como opción titular sólida, pero monitorea enfrentamientos contra ofensivas aéreas potentes.",
-      "en": {
-        "titulo": "Bills release CJ Gardner-Johnson following suspension",
-        "claves": [
-          "Buffalo releases safety after serving 1-game suspension",
-          "Spitting incident leads to immediate release from Bills",
-          "Negatively impacts Buffalo D/ST secondary in fantasy"
-        ],
-        "contexto": "The Buffalo Bills made a drastic move by releasing safety CJ Gardner-Johnson right after he served a 1-game suspension for spitting toward an opponent. Team management refused to tolerate the disciplinary issue and chose to cut ties immediately, leaving a significant gap in the secondary's depth heading into Week 9.",
-        "fantasy": "Losing Gardner-Johnson reduces physical play and depth in Buffalo D/ST's secondary, slightly lowering their fantasy ceiling against deep passing attacks. Conversely, this gives a minor boost to opposing quarterbacks and wide receivers facing the Bills in coming weeks. While Buffalo D/ST remains startable due to pass-rush potential, their interception upside takes a hit without his playmaker presence in the defensive backfield.",
-        "equipo_impacto": "The Bills' defense loses an aggressive starter in the secondary. Additional snaps will fall on backup safeties, which could hinder communication in deep coverage and weaken their defense against explosive aerial plays.",
-        "accion": "Keep Buffalo D/ST as a solid starting option, but monitor matchups against potent passing offenses."
-      },
-      "etiqueta": "TENDENCIA",
-      "impacto": "BAJA",
-      "equipo": "BUF",
-      "equipos": [
-        "BUF"
-      ],
-      "jugadores": [],
-      "menciona": []
+      "menciona": [
+        "4034"
+      ]
     }
   ],
   "lesionados": [
@@ -237,11 +240,11 @@
     "8135",
     "13286",
     "12469",
-    "11729",
     "NYG",
+    "11729",
     "7567",
-    "SF",
     "7561",
+    "SF",
     "1166",
     "13305"
   ],
@@ -253,23 +256,23 @@
     "4881",
     "11637",
     "3271",
-    "4454",
     "13276",
+    "4454",
     "CLE",
     "1945",
-    "12718",
     "5012",
+    "12718",
     "8129",
     "9480",
     "5849",
-    "7561",
     "4037",
+    "7561",
     "12457",
     "10235",
     "TB",
-    "3214",
     "PIT",
     "11581",
+    "3214",
     "4147"
   ],
   "duelo": {
