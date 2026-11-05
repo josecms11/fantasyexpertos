@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-04T23:27:20.083Z",
-  "ultimaIA": "2026-11-04T21:58:32.576Z",
+  "actualizado": "2026-11-05T00:09:51.548Z",
+  "ultimaIA": "2026-11-05T00:09:51.548Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,46 +14,87 @@
   ],
   "noticias": [
     {
-      "id": "n20261104215800",
-      "fecha": "2026-11-04T21:58:32.576Z",
+      "id": "n20261105000900",
+      "fecha": "2026-11-05T00:09:51.548Z",
       "semana": 9,
-      "titulo": "Cam Skattebo en duda por molestia en isquiotibiales",
+      "titulo": "Bhayshul Tuten catalogado como decisión a la hora del juego",
       "claves": [
-        "Cam Skattebo sigue sin entrenar con Giants",
-        "Molestia en isquiotibiales pone en riesgo su actividad",
-        "Podría perderse el duelo de la semana 9"
+        "El corredor presenta molestias en el tobillo previo al partido.",
+        "Su participación oficial dependerá de las pruebas físicas antes del juego.",
+        "Mantiene el estatus de cuestionable para la semana 9."
       ],
-      "contexto": "Los New York Giants enfrentan un panorama complicado de cara a su próximo compromiso en la semana 9, ya que su corredor principal Cam Skattebo sigue sin participar en las prácticas debido a una molestia en los isquiotibiales. El reporte oficial lo mantiene con estatus questionable, lo que enciende las alarmas en el cuerpo técnico ante la posibilidad de no contar con su ofensiva terrestre estelar frente a los Philadelphia Eagles.",
-      "fantasy": "Impacto directo en fantasy: la ausencia de Cam Skattebo desploma sus acciones y obliga a buscar alternativas de emergencia en ligas estándar y PPR. Si eres mánager afectado, monitorea de cerca su evolución, aunque lo más prudente es tener un plan de respaldo en la banca para esta semana 9 y evitar sorpresas de última hora en tu alineación titular.",
-      "equipo_impacto": "La baja temporal del corredor principal altera el esquema ofensivo de los Giants y obliga a replantear el uso del backfield frente a los Eagles, mermando las opciones terrestres del equipo de Nueva York.",
-      "accion": "Saca a Cam Skattebo de tu alineación titular de inmediato y busca un parche de emergencia en el mercado de agentes libres.",
+      "contexto": "El novato corredor de los Jaguars, Bhayshul Tuten, llega al partido estelar con etiqueta de decisión a la hora del juego. El corredor padece 1 molestia en el tobillo sufrida en días recientes y el cuerpo técnico evaluará su estado físico justo antes de iniciar la semana 9. Su disponibilidad condicionará la rotación de acarreos en el ataque terrestre del equipo.",
+      "fantasy": "Para ligas fantasy en formatos PPR y estándar, la incertidumbre sobre Bhayshul Tuten obliga a buscar 1 reemplazo de emergencia. Si compites en ligas de 12 o 14 equipos, monitorea los reportes 90 minutos antes del inicio del juego. De no uniformarse, su volumen de acarreos se repartirá entre los demás corredores, reduciendo su techo fantasy a 0 pts.",
+      "equipo_impacto": "La posible ausencia de Bhayshul Tuten altera la rotación terrestre de Jacksonville para el duelo de la semana 9. Sin su presencia en jugadas de tercera oportunidad, los demás corredores asumirán 1 mayor carga de trabajo terrestre ante 1 defensiva rival muy agresiva.",
+      "accion": "Asegura 1 corredor de respaldo en la agencia libre antes del inicio del partido.",
       "en": {
-        "titulo": "Cam Skattebo questionable with hamstring injury",
+        "titulo": "Bhayshul Tuten tagged as game time decision for Thursday",
         "claves": [
-          "Cam Skattebo misses practice for Giants",
-          "Hamstring injury threatens Week 9 status",
-          "Giants could miss leading rusher vs Eagles"
+          "The running back suffers an ankle injury before the game.",
+          "His official playing status depends on pregame physical warmups.",
+          "He remains officially listed as questionable for Week 9."
         ],
-        "contexto": "The New York Giants face a cloudy backfield situation ahead of Week 9 as leading rusher Cam Skattebo remains sidelined from practice due to a hamstring injury. He holds a questionable tag, putting his availability in serious jeopardy for the upcoming matchup against the Philadelphia Eagles.",
-        "fantasy": "Fantasy impact: Skattebo's absence tanks his value and forces managers in standard and PPR formats to scramble for last-minute replacements. Monitor his final status closely, but prepare a bench contingency plan to avoid zeroes in your starting lineup for week 9.",
-        "equipo_impacto": "The potential absence of the top rusher severely disrupts the Giants' offensive game plan and forces adjustments in the backfield against Philadelphia.",
-        "accion": "Bench Cam Skattebo right now and secure a reliable replacement from your waiver wire."
+        "contexto": "Jaguars rookie running back Bhayshul Tuten enters the prime time matchup listed as 1 game time decision. The back suffers from 1 ankle issue sustained in recent days and coaching staff will test his physical condition right before Week 9 kicks off. His availability dictates the backfield rotation and rush distribution for Jacksonville.",
+        "fantasy": "In PPR and standard fantasy leagues, uncertainty around Bhayshul Tuten forces managers to secure 1 quick backup plan. In 12 or 14 team leagues, check inactive reports 90 minutes before kickoff. If inactive, his touches shift to remaining backs, leaving his fantasy output at 0 pts for this week.",
+        "equipo_impacto": "Bhayshul Tuten missing time alters Jacksonville running back rotation for Week 9. Without his presence on 3rd down passing plays, secondary backs must handle 1 heavier workload against 1 aggressive opposing defense.",
+        "accion": "Bench Tuten and grab 1 replacement option off waivers before kickoff."
       },
       "etiqueta": "LESIÓN",
       "impacto": "BAJA",
-      "equipo": "NYG",
+      "equipo": "JAX",
       "equipos": [
-        "NYG",
-        "PHI"
+        "JAX"
       ],
       "jugadores": [
-        "12481"
+        "12490"
       ],
       "fuentes": [
         {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/giants-injury-cam-skattebo-abdul-212454400.html",
-          "t": "Giants injury update: Cam Skattebo, Abdul Carter still not practicing"
+          "m": "ESPN",
+          "u": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
+          "t": "Fantasy buzz: Wilson in protocol, Tuten GTD for TNF, four teams make QB changes"
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261105000901",
+      "fecha": "2026-11-05T00:09:51.548Z",
+      "semana": 9,
+      "titulo": "Packers abren ventana de prácticas para Micah Parsons",
+      "claves": [
+        "Green Bay activó la ventana de 21 días para entrenar.",
+        "El defensivo estrella continúa registrado en la lista PUP.",
+        "El equipo no fijó 1 fecha definitiva para su retorno."
+      ],
+      "contexto": "Los Packers abrieron oficialmente la ventana de 21 días de prácticas para Micah Parsons mientras continúa en la lista PUP. Aunque el cazamariscales regresó a los entrenamientos con el equipo, la gerencia prefiere no dar 1 fecha exacta para su reaparición en la semana 9 o posterior. Su recuperación avanza tras perderse varios juegos por lesión.",
+      "fantasy": "El regreso de Micah Parsons representa 1 impulso de calidad para la defensiva de Green Bay en fantasy football. En formatos IDP sube de inmediato como 1 defensivo dominante en capturas de mariscal. Para ligas tradicionales, la unidad Packers D/ST tiene proyectados 8.2 pts en la semana 9, cifra que crecerá cuando salga de la lista PUP.",
+      "equipo_impacto": "La reincorporación de Micah Parsons transforma la presión al pasador en Green Bay. Su presencia en la línea defensiva provocará 1 mayor cantidad de capturas y balones sueltos para beneficio del equipo.",
+      "accion": "Agrega a la defensiva Packers D/ST en tu liga antes de su regreso oficial.",
+      "en": {
+        "titulo": "Packers open practice window for pass rusher Micah Parsons",
+        "claves": [
+          "Green Bay designated 21 day practice window for Parsons.",
+          "The star pass rusher remains listed on PUP list.",
+          "Coaching staff provided no set date for actual return."
+        ],
+        "contexto": "The Packers officially opened the 21 day practice window for Micah Parsons while he stays on the PUP list. Although the elite pass rusher returned to workouts with teammates, leadership declined to set 1 firm return date for Week 9 or beyond. His rehabilitation moves forward after missing multiple games with injury.",
+        "fantasy": "The eventual return of Micah Parsons provides 1 huge boost for Green Bay defense in fantasy football. In IDP formats, he rises immediately as 1 elite sack producer. In standard leagues, Packers D/ST projects for 8.2 pts in Week 9, 1 figure set to increase once activated from PUP.",
+        "equipo_impacto": "The addition of Micah Parsons changes the pass rush dynamic in Green Bay. His active presence on the defensive line will create 1 higher rate of sacks and turnover opportunities for teammates.",
+        "accion": "Stash Packers D/ST now before Parsons officially gets activated."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "GB",
+      "equipos": [
+        "GB"
+      ],
+      "jugadores": [],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50382457/packers-open-parsons-practice-window-mum-return",
+          "t": "Packers open Micah Parsons' practice window; still mum on return"
         }
       ],
       "menciona": []
@@ -234,8 +275,8 @@
     "NO",
     "7042",
     "2020",
-    "4993",
     "11557",
+    "4993",
     "13286",
     "11783",
     "NYG",
@@ -253,12 +294,12 @@
     "WAS",
     "12711",
     "NE",
-    "3271",
     "9230",
+    "3271",
     "11637",
     "4881",
-    "13276",
     "CLE",
+    "13276",
     "12718",
     "1945",
     "5012",
@@ -270,8 +311,8 @@
     "TB",
     "4037",
     "11581",
-    "12457",
     "13150",
+    "12457",
     "7561",
     "PIT"
   ],
