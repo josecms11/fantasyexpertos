@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-05T07:58:22.784Z",
-  "ultimaIA": "2026-11-05T00:09:51.548Z",
+  "actualizado": "2026-11-05T16:23:47.184Z",
+  "ultimaIA": "2026-11-05T16:23:47.184Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,87 +14,107 @@
   ],
   "noticias": [
     {
-      "id": "n20261105000900",
-      "fecha": "2026-11-05T00:09:51.548Z",
+      "id": "n20261105162300",
+      "fecha": "2026-11-05T16:23:47.184Z",
       "semana": 9,
-      "titulo": "Bhayshul Tuten catalogado como decisión a la hora del juego",
+      "titulo": "Joe Fagnano asume titularidad en Ravens ante Jaguars",
       "claves": [
-        "El corredor presenta molestias en el tobillo previo al partido.",
-        "Su participación oficial dependerá de las pruebas físicas antes del juego.",
-        "Mantiene el estatus de cuestionable para la semana 9."
+        "Lamar Jackson fuera por lesión en pulgar",
+        "Fagnano lidera ofensiva de Baltimore en semana 9",
+        "Jaguars llegan como favoritos por 10 puntos"
       ],
-      "contexto": "El novato corredor de los Jaguars, Bhayshul Tuten, llega al partido estelar con etiqueta de decisión a la hora del juego. El corredor padece 1 molestia en el tobillo sufrida en días recientes y el cuerpo técnico evaluará su estado físico justo antes de iniciar la semana 9. Su disponibilidad condicionará la rotación de acarreos en el ataque terrestre del equipo.",
-      "fantasy": "Para ligas fantasy en formatos PPR y estándar, la incertidumbre sobre Bhayshul Tuten obliga a buscar 1 reemplazo de emergencia. Si compites en ligas de 12 o 14 equipos, monitorea los reportes 90 minutos antes del inicio del juego. De no uniformarse, su volumen de acarreos se repartirá entre los demás corredores, reduciendo su techo fantasy a 0 pts.",
-      "equipo_impacto": "La posible ausencia de Bhayshul Tuten altera la rotación terrestre de Jacksonville para el duelo de la semana 9. Sin su presencia en jugadas de tercera oportunidad, los demás corredores asumirán 1 mayor carga de trabajo terrestre ante 1 defensiva rival muy agresiva.",
-      "accion": "Asegura 1 corredor de respaldo en la agencia libre antes del inicio del partido.",
+      "contexto": "Ante la baja confirmada de Lamar Jackson por una lesión en el pulgar, los Ravens han recurrido a su tercer quarterback, Joe Fagnano, para el duelo de jueves por la noche contra Jacksonville. La ofensiva de Baltimore atraviesa un momento crítico, lo que ha convertido a los Jaguars en favoritos por 10 puntos en las casas de apuestas para este enfrentamiento divisional.",
+      "fantasy": "El impacto es devastador para los skill players de Baltimore. La incertidumbre bajo centro baja el techo de producción de todo el equipo. Evita alinear a receptores de Ravens si tienes opciones más estables, ya que la ofensiva podría ser inoperante ante una defensa de Jacksonville que buscará capitalizar la falta de experiencia del novato Fagnano.",
+      "equipo_impacto": "La ausencia de Jackson y la entrada de Fagnano obligan a un esquema más conservador. Se espera mayor carga terrestre para intentar proteger al joven QB, aunque la efectividad está en duda.",
+      "accion": "Mantén a tus receptores de Ravens en la banca esta semana.",
       "en": {
-        "titulo": "Bhayshul Tuten tagged as game time decision for Thursday",
+        "titulo": "Joe Fagnano takes over Ravens QB1 duties",
         "claves": [
-          "The running back suffers an ankle injury before the game.",
-          "His official playing status depends on pregame physical warmups.",
-          "He remains officially listed as questionable for Week 9."
+          "Lamar Jackson out with thumb injury",
+          "Fagnano to start Thursday night vs Jaguars",
+          "Jaguars are 10-point road favorites"
         ],
-        "contexto": "Jaguars rookie running back Bhayshul Tuten enters the prime time matchup listed as 1 game time decision. The back suffers from 1 ankle issue sustained in recent days and coaching staff will test his physical condition right before Week 9 kicks off. His availability dictates the backfield rotation and rush distribution for Jacksonville.",
-        "fantasy": "In PPR and standard fantasy leagues, uncertainty around Bhayshul Tuten forces managers to secure 1 quick backup plan. In 12 or 14 team leagues, check inactive reports 90 minutes before kickoff. If inactive, his touches shift to remaining backs, leaving his fantasy output at 0 pts for this week.",
-        "equipo_impacto": "Bhayshul Tuten missing time alters Jacksonville running back rotation for Week 9. Without his presence on 3rd down passing plays, secondary backs must handle 1 heavier workload against 1 aggressive opposing defense.",
-        "accion": "Bench Tuten and grab 1 replacement option off waivers before kickoff."
+        "contexto": "With Lamar Jackson sidelined due to a thumb injury, the Ravens are turning to third-string quarterback Joe Fagnano for Thursday night's game against the Jaguars. Baltimore's offense is in disarray, leading oddsmakers to favor Jacksonville by 10 points in this matchup.",
+        "fantasy": "This is a major downgrade for all Baltimore skill players. With the offense in flux, avoid starting Ravens pass-catchers if you have viable alternatives, as Fagnano's lack of experience could lead to a stagnant offensive performance.",
+        "equipo_impacto": "Expect a more conservative game plan with a heavier reliance on the run game to protect the rookie quarterback.",
+        "accion": "Bench your Ravens wide receivers this week."
       },
-      "etiqueta": "LESIÓN",
+      "etiqueta": "START",
       "impacto": "BAJA",
-      "equipo": "JAX",
+      "equipo": "BAL",
       "equipos": [
+        "BAL",
         "JAX"
       ],
       "jugadores": [
-        "12490"
+        "13350",
+        "4881"
       ],
       "fuentes": [
         {
-          "m": "ESPN",
-          "u": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-          "t": "Fantasy buzz: Wilson in protocol, Tuten GTD for TNF, four teams make QB changes"
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/betting/news/jaguars-vs-ravens-odds-picks-nfl-week-9-prediction-best-bets-player-props-for-thursday-night-football/",
+          "t": "\n                        Jaguars vs. Ravens odds, picks, NFL Week 9 prediction: Best bets, player props for Thursday Night Football\n        "
+        },
+        {
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/ravens-vs-jaguars-how-to-watch-odds-spread-prediction/",
+          "t": "\n                        Ravens vs. Jaguars: Does Lamar Jackson-less Baltimore have any chance in &#039;TNF&#039; matchup?\n                 "
+        },
+        {
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/super-bowl-stock-report-week-9-jeffery-simmons-bears-ravens/",
+          "t": "\n                        Week 9 Super Bowl stock report: Jeffery Simmons trade legitimizes Bears, QB injuries tank Ravens\n                  "
         }
       ],
       "menciona": []
     },
     {
-      "id": "n20261105000901",
-      "fecha": "2026-11-05T00:09:51.548Z",
+      "id": "n20261105162301",
+      "fecha": "2026-11-05T16:23:47.184Z",
       "semana": 9,
-      "titulo": "Packers abren ventana de prácticas para Micah Parsons",
+      "titulo": "Derrick Henry en duda para fantasy semana 9",
       "claves": [
-        "Green Bay activó la ventana de 21 días para entrenar.",
-        "El defensivo estrella continúa registrado en la lista PUP.",
-        "El equipo no fijó 1 fecha definitiva para su retorno."
+        "Ofensiva de Ravens colapsa sin Lamar Jackson",
+        "Henry sufre por ineficiencia de su equipo",
+        "Recomendación es evaluar opciones de banca"
       ],
-      "contexto": "Los Packers abrieron oficialmente la ventana de 21 días de prácticas para Micah Parsons mientras continúa en la lista PUP. Aunque el cazamariscales regresó a los entrenamientos con el equipo, la gerencia prefiere no dar 1 fecha exacta para su reaparición en la semana 9 o posterior. Su recuperación avanza tras perderse varios juegos por lesión.",
-      "fantasy": "El regreso de Micah Parsons representa 1 impulso de calidad para la defensiva de Green Bay en fantasy football. En formatos IDP sube de inmediato como 1 defensivo dominante en capturas de mariscal. Para ligas tradicionales, la unidad Packers D/ST tiene proyectados 8.2 pts en la semana 9, cifra que crecerá cuando salga de la lista PUP.",
-      "equipo_impacto": "La reincorporación de Micah Parsons transforma la presión al pasador en Green Bay. Su presencia en la línea defensiva provocará 1 mayor cantidad de capturas y balones sueltos para beneficio del equipo.",
-      "accion": "Agrega a la defensiva Packers D/ST en tu liga antes de su regreso oficial.",
+      "contexto": "La situación de los Ravens es alarmante tras la confirmación de la baja de Lamar Jackson. Analistas sugieren que la ineficacia ofensiva del equipo podría arrastrar el valor de Derrick Henry, quien ha sido un pilar, pero cuya productividad depende ahora de un ataque que carece de amenaza aérea creíble para abrir espacios.",
+      "fantasy": "Henry baja de categoría para esta semana. Aunque sigue siendo el caballo de batalla, enfrentar defensas cargando la caja contra un QB suplente limita su techo a menos de 10 pts. Si tienes un RB con mejor situación de QB, considera sentar al 'King' por esta semana 9.",
+      "equipo_impacto": "El equipo se vuelve unidimensional. Los rivales no respetarán el pase, complicando los acarreos de Henry en situaciones de corto yardaje.",
+      "accion": "Busca alternativas de RB si tu liga es profunda.",
       "en": {
-        "titulo": "Packers open practice window for pass rusher Micah Parsons",
+        "titulo": "Derrick Henry's fantasy value takes a hit",
         "claves": [
-          "Green Bay designated 21 day practice window for Parsons.",
-          "The star pass rusher remains listed on PUP list.",
-          "Coaching staff provided no set date for actual return."
+          "Ravens offense struggling without Jackson",
+          "Henry faces stacked boxes and inefficiency",
+          "Consider benching if you have depth"
         ],
-        "contexto": "The Packers officially opened the 21 day practice window for Micah Parsons while he stays on the PUP list. Although the elite pass rusher returned to workouts with teammates, leadership declined to set 1 firm return date for Week 9 or beyond. His rehabilitation moves forward after missing multiple games with injury.",
-        "fantasy": "The eventual return of Micah Parsons provides 1 huge boost for Green Bay defense in fantasy football. In IDP formats, he rises immediately as 1 elite sack producer. In standard leagues, Packers D/ST projects for 8.2 pts in Week 9, 1 figure set to increase once activated from PUP.",
-        "equipo_impacto": "The addition of Micah Parsons changes the pass rush dynamic in Green Bay. His active presence on the defensive line will create 1 higher rate of sacks and turnover opportunities for teammates.",
-        "accion": "Stash Packers D/ST now before Parsons officially gets activated."
+        "contexto": "With Lamar Jackson out, the Ravens' offense is in disarray. Analysts are questioning whether fantasy managers should bench Derrick Henry, as the lack of a passing threat will likely result in opposing defenses stacking the box against him.",
+        "fantasy": "Henry is a risky start this week. His ceiling is significantly capped by the QB situation, making him a touchdown-dependent play. Consider benching him for RBs in more stable offensive environments.",
+        "equipo_impacto": "The offense becomes one-dimensional, making it difficult for Henry to find running lanes against stacked fronts.",
+        "accion": "Look for RB alternatives if you have depth on your bench."
       },
-      "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "GB",
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "BAL",
       "equipos": [
-        "GB"
+        "BAL"
       ],
-      "jugadores": [],
+      "jugadores": [
+        "3198",
+        "4881"
+      ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50382457/packers-open-parsons-practice-window-mum-return",
-          "t": "Packers open Micah Parsons' practice window; still mum on return"
+          "u": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
+          "t": "Fantasy buzz: Sit Henry? Start Dulcich? Matchup tips for 'TNF' and Week 9"
+        },
+        {
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-why-ravens-should-trade-derrick-henry/",
+          "t": "\n                        Why Ravens should trade Derrick Henry: Don&#039;t let Baltimore&#039;s QB woes drag down &#039;King Henry&#039;\n   "
         }
       ],
       "menciona": []
@@ -265,63 +285,63 @@
   "agregados": [
     "11625",
     "6130",
-    "DET",
     "10219",
     "11557",
-    "NO",
+    "DET",
     "8161",
-    "13337",
+    "NO",
     "2020",
-    "7042",
-    "HOU",
-    "4993",
-    "13286",
-    "6011",
-    "NYG",
-    "7561",
+    "13337",
     "12524",
+    "7042",
+    "7561",
+    "4993",
+    "HOU",
+    "13286",
     "11783",
+    "6011",
+    "5854",
     "11610",
-    "8132",
+    "NYG",
     "12469",
-    "4035",
-    "8135",
-    "11729",
-    "1166"
+    "8132",
+    "1166",
+    "1479",
+    "4035"
   ],
   "soltados": [
     "11435",
-    "WAS",
     "9230",
+    "WAS",
     "12711",
     "NE",
     "3271",
     "11637",
-    "1945",
     "4881",
-    "CLE",
-    "12718",
-    "5012",
-    "13276",
+    "4943",
+    "1945",
     "10235",
+    "12718",
+    "CLE",
+    "5012",
     "11581",
-    "TB",
-    "9480",
     "8129",
     "5849",
+    "13276",
     "13150",
+    "TB",
+    "9480",
+    "4017",
     "4037",
-    "4943",
     "4454",
-    "PIT",
     "3321"
   ],
   "duelo": {
-    "a": "Ja'Marr Chase",
-    "b": "Amon-Ra St. Brown",
-    "veredicto": "Arranca a Ja'Marr Chase con 18.8 pts proyectados sobre Amon-Ra St. Brown con 18.7 pts. Chase ofrece un techo más elevado gracias a su habilidad para generar jugadas explosivas tras la recepción."
+    "a": "Jahmyr Gibbs",
+    "b": "Christian McCaffrey",
+    "veredicto": "Arranca a Jahmyr Gibbs. Con 23.4 pts proyectados y un rol consolidado, es la opción más segura frente a la incertidumbre de McCaffrey, quien sigue lidiando con molestias en la pantorrilla."
   },
-  "dueloFecha": "2026-11-04T14:41:57.932Z",
+  "dueloFecha": "2026-11-05T16:23:47.184Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
