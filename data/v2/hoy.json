@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-05T16:23:47.184Z",
-  "ultimaIA": "2026-11-05T16:23:47.184Z",
+  "actualizado": "2026-11-05T22:10:20.265Z",
+  "ultimaIA": "2026-11-05T22:10:20.265Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,107 +14,307 @@
   ],
   "noticias": [
     {
-      "id": "n20261105162300",
-      "fecha": "2026-11-05T16:23:47.184Z",
+      "id": "x20261105221000",
+      "fecha": "2026-11-05T22:10:20.265Z",
       "semana": 9,
-      "titulo": "Joe Fagnano asume titularidad en Ravens ante Jaguars",
+      "exclusivo": true,
+      "fuente": "2026-11-05T17:52:32+00:00",
+      "titulo": "Previa Semana 9: Ravens vs Jaguars",
       "claves": [
-        "Lamar Jackson fuera por lesión en pulgar",
-        "Fagnano lidera ofensiva de Baltimore en semana 9",
-        "Jaguars llegan como favoritos por 10 puntos"
+        "Ravens y Jaguars protagonizan el TNF"
       ],
-      "contexto": "Ante la baja confirmada de Lamar Jackson por una lesión en el pulgar, los Ravens han recurrido a su tercer quarterback, Joe Fagnano, para el duelo de jueves por la noche contra Jacksonville. La ofensiva de Baltimore atraviesa un momento crítico, lo que ha convertido a los Jaguars en favoritos por 10 puntos en las casas de apuestas para este enfrentamiento divisional.",
-      "fantasy": "El impacto es devastador para los skill players de Baltimore. La incertidumbre bajo centro baja el techo de producción de todo el equipo. Evita alinear a receptores de Ravens si tienes opciones más estables, ya que la ofensiva podría ser inoperante ante una defensa de Jacksonville que buscará capitalizar la falta de experiencia del novato Fagnano.",
-      "equipo_impacto": "La ausencia de Jackson y la entrada de Fagnano obligan a un esquema más conservador. Se espera mayor carga terrestre para intentar proteger al joven QB, aunque la efectividad está en duda.",
-      "accion": "Mantén a tus receptores de Ravens en la banca esta semana.",
       "en": {
-        "titulo": "Joe Fagnano takes over Ravens QB1 duties",
+        "titulo": "Week 9 Preview: Ravens vs Jaguars",
         "claves": [
-          "Lamar Jackson out with thumb injury",
-          "Fagnano to start Thursday night vs Jaguars",
-          "Jaguars are 10-point road favorites"
+          "Ravens and Jaguars in TNF",
+          "Jacoby Brissett joins Baltimore",
+          "Brissett starts on the bench"
         ],
-        "contexto": "With Lamar Jackson sidelined due to a thumb injury, the Ravens are turning to third-string quarterback Joe Fagnano for Thursday night's game against the Jaguars. Baltimore's offense is in disarray, leading oddsmakers to favor Jacksonville by 10 points in this matchup.",
-        "fantasy": "This is a major downgrade for all Baltimore skill players. With the offense in flux, avoid starting Ravens pass-catchers if you have viable alternatives, as Fagnano's lack of experience could lead to a stagnant offensive performance.",
-        "equipo_impacto": "Expect a more conservative game plan with a heavier reliance on the run game to protect the rookie quarterback.",
-        "accion": "Bench your Ravens wide receivers this week."
+        "contexto": "Week 9 features a high-impact matchup between Jacksonville and Baltimore. The biggest news is Jacoby Brissett joining the Ravens, though he will begin on the bench. This move raises questions about Baltimore's QB depth for the remainder of the season.",
+        "fantasy": "Brissett's arrival doesn't change the value of current Baltimore starters. Keep your Ravens QB and WRs in your lineups, as no volume changes are expected. In deep 2-QB leagues, monitor his status in case of a future starting role change.",
+        "equipo_impacto": "Brissett provides a veteran safety net for Baltimore's offense. Receivers will need to adapt if he takes the field, but for now, the offensive hierarchy remains unchanged.",
+        "accion": "Keep your Baltimore and Jacksonville starters in your lineup."
       },
-      "etiqueta": "START",
-      "impacto": "BAJA",
+      "etiqueta": "TENDENCIA",
+      "impacto": "NEUTRO",
       "equipo": "BAL",
       "equipos": [
         "BAL",
+        "JAX",
+        "ARI"
+      ],
+      "jugadores": [
+        "3257"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261105221001",
+      "fecha": "2026-11-05T22:10:20.265Z",
+      "semana": 9,
+      "exclusivo": true,
+      "fuente": "2026-11-05T17:52:32+00:00",
+      "titulo": "TRADE: Derrick Henry a los Patriots",
+      "claves": [
+        "Henry podría reencontrarse con Vrabel"
+      ],
+      "en": {
+        "titulo": "TRADE: Derrick Henry to the Patriots",
+        "claves": [
+          "Henry could reunite with Vrabel",
+          "Proposed deal includes TreVeyon Henderson",
+          "Trade involves multiple draft picks"
+        ],
+        "contexto": "Rumors suggest a massive move: Derrick Henry could join the New England Patriots to reunite with former coach Mike Vrabel. The proposal includes sending RB TreVeyon Henderson and draft picks to acquire the star runner for an immediate ground attack boost.",
+        "fantasy": "If the trade happens, Henry's value rises as the focal point in New England. TreVeyon Henderson would see an immediate value spike in a new system. Monitor this situation, as it alters the RB1 and RB2 landscape in dynasty and redraft leagues.",
+        "equipo_impacto": "Henry's arrival would transform the Patriots' offensive identity. For the team acquiring Henderson, it adds youth and versatile talent to the backfield.",
+        "accion": "Monitor the reports; if you own Henry, prepare for a volume increase."
+      },
+      "etiqueta": "TRADE",
+      "impacto": "SUBE",
+      "equipo": "NE",
+      "equipos": [
+        "NE",
+        "TEN",
+        "BAL"
+      ],
+      "jugadores": [
+        "3198",
+        "12529"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261105221002",
+      "fecha": "2026-11-05T22:10:20.265Z",
+      "semana": 9,
+      "exclusivo": true,
+      "fuente": "2026-11-05T17:52:32+00:00",
+      "titulo": "TRADE: Jonathan Taylor busca contendientes",
+      "claves": [
+        "Agente negocia con equipos de playoffs"
+      ],
+      "en": {
+        "titulo": "TRADE: Jonathan Taylor eyes contenders",
+        "claves": [
+          "Agent talks with playoff contenders",
+          "Packers, Giants, Broncos, Vikings interested",
+          "Taylor seeks a championship-caliber team"
+        ],
+        "contexto": "Jonathan Taylor's agent is in talks with potential playoff contenders. Interested teams include the Packers, Giants, Broncos, and Vikings. Taylor is looking for a move to an offense that allows him to compete for a championship.",
+        "fantasy": "A move to any of these teams makes Taylor an elite RB. If he lands with the Vikings or Packers, his market value will skyrocket. Hold him if you have him, or buy now before the trade becomes official.",
+        "equipo_impacto": "Any team acquiring Taylor will see an instant boost in rushing efficiency and red-zone threat. Current backfield partners will see their roles significantly reduced.",
+        "accion": "Buy Jonathan Taylor before his trade is confirmed."
+      },
+      "etiqueta": "TRADE",
+      "impacto": "SUBE",
+      "equipo": "IND",
+      "equipos": [
+        "IND",
+        "GB",
+        "NYG",
+        "DEN",
+        "MIN"
+      ],
+      "jugadores": [
+        "6813"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261105221003",
+      "fecha": "2026-11-05T22:10:20.265Z",
+      "semana": 9,
+      "exclusivo": true,
+      "fuente": "2026-11-05T17:52:32+00:00",
+      "titulo": "TRADE: Tony Pollard y Brian Thomas Jr.",
+      "claves": [
+        "Pollard en la mira tras rumores"
+      ],
+      "en": {
+        "titulo": "TRADE: Tony Pollard and Brian Thomas Jr.",
+        "claves": [
+          "Pollard mentioned in trade rumors",
+          "Brian Thomas Jr. attracts interest",
+          "Commanders, Chiefs, Seahawks pursuing WR"
+        ],
+        "contexto": "The trade market heats up with Tony Pollard in exit rumors. Meanwhile, WR Brian Thomas Jr. is the primary target for three contenders: the Washington Commanders, Kansas City Chiefs, and Seattle Seahawks, all looking to bolster their WR corps before the deadline.",
+        "fantasy": "Brian Thomas Jr.'s value rises if he lands with an elite QB like in Kansas City. Pollard remains a volatile option; his value depends on becoming a lead back. Consider selling if the hype gets too high.",
+        "equipo_impacto": "Thomas Jr.'s arrival in KC or Washington would shift the target hierarchy, reducing volume for secondary receivers. Pollard would directly impact the usage of the receiving team's current RBs.",
+        "accion": "Buy Brian Thomas Jr. if you need WR depth with a high ceiling."
+      },
+      "etiqueta": "TRADE",
+      "impacto": "SUBE",
+      "equipo": "TEN",
+      "equipos": [
+        "TEN",
+        "WAS",
+        "KC",
+        "SEA",
         "JAX"
       ],
       "jugadores": [
-        "13350",
-        "4881"
+        "5967",
+        "11631"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261105221004",
+      "fecha": "2026-11-05T22:10:20.265Z",
+      "semana": 9,
+      "exclusivo": true,
+      "fuente": "2026-11-05T17:52:32+00:00",
+      "titulo": "TRADE: Jerry Jeudy y Dallas Goedert",
+      "claves": [
+        "Jeudy y Goedert en el bloque"
+      ],
+      "en": {
+        "titulo": "TRADE: Jerry Jeudy and Dallas Goedert",
+        "claves": [
+          "Jeudy and Goedert on the block",
+          "Players looking for bigger roles",
+          "Teams evaluating offers for both"
+        ],
+        "contexto": "Jerry Jeudy and Dallas Goedert appear as key pieces in trade rumors. Both are being evaluated by teams looking to upgrade their WR and TE positions. Uncertainty about their immediate future makes them high-risk, high-reward assets in fantasy.",
+        "fantasy": "Jeudy needs a change of scenery to regain WR2/3 relevance. Goedert could become a top-10 TE if moved to a team with a need at the position. Keep both on your watchlist, but don't start them until their destination is confirmed.",
+        "equipo_impacto": "Their departure would open up targets in their current teams, benefiting secondary receivers or TEs. Their arrival in a new team will immediately alter the target distribution.",
+        "accion": "Hold Jeudy and Goedert on your roster, but be patient with their production."
+      },
+      "etiqueta": "TRADE",
+      "impacto": "NEUTRO",
+      "equipo": "CLE",
+      "equipos": [
+        "CLE",
+        "PHI"
+      ],
+      "jugadores": [
+        "6783",
+        "5022"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261105221005",
+      "fecha": "2026-11-05T22:10:20.265Z",
+      "semana": 9,
+      "exclusivo": true,
+      "fuente": "2026-11-05T17:52:32+00:00",
+      "titulo": "TRADE: Josh Sweat en la mira",
+      "claves": [
+        "Sweat negocia con Cardinals, Packers y Dallas"
+      ],
+      "en": {
+        "titulo": "TRADE: Josh Sweat in the spotlight",
+        "claves": [
+          "Sweat in talks with Cardinals, Packers, Dallas",
+          "Defensive player a priority for contenders",
+          "Trade aims to bolster pass rush"
+        ],
+        "contexto": "Defensive player Josh Sweat is in active talks with the Arizona Cardinals, Green Bay Packers, and Dallas Cowboys. Teams are desperately looking to bolster their pass rush and see Sweat as the ideal piece to close the season. Negotiations are advanced, and a resolution is expected soon.",
+        "fantasy": "While an IDP player, his arrival in Dallas or Green Bay could raise the fantasy ceiling for those team defenses. If you play in IDP leagues, Sweat is an asset to follow, as his productivity could increase in a more aggressive scheme.",
+        "equipo_impacto": "His integration will strengthen the pass rush, making the Cardinals, Packers, or Cowboys defenses more valuable in fantasy. This could lead to more turnovers and sacks.",
+        "accion": "If you play IDP, add Josh Sweat to your watchlist immediately."
+      },
+      "etiqueta": "TRADE",
+      "impacto": "SUBE",
+      "equipo": "PHI",
+      "equipos": [
+        "PHI",
+        "ARI",
+        "GB",
+        "DAL"
+      ],
+      "jugadores": [],
+      "premium": true
+    },
+    {
+      "id": "n20261105221000",
+      "fecha": "2026-11-05T22:10:20.265Z",
+      "semana": 9,
+      "titulo": "Carson Wentz asume titularidad en Vikings ante Bills",
+      "claves": [
+        "Kyler Murray fuera por lesión en isquiotibiales",
+        "Wentz titular confirmado para semana 9",
+        "Expertos recomiendan cautela con receptores de Minnesota"
+      ],
+      "contexto": "Ante la lesión de isquiotibiales que mantiene fuera a Kyler Murray, los Vikings han oficializado que Carson Wentz tomará los controles de la ofensiva para el enfrentamiento del lunes por la noche contra los Buffalo Bills. Esta decisión marca un cambio importante en la jerarquía del equipo, dejando a Murray fuera de actividad tras un rendimiento inconsistente.",
+      "fantasy": "El cambio a Wentz genera incertidumbre. Aunque es un veterano probado, su impacto en los receptores de Minnesota es una incógnita. La recomendación de los expertos es evitar alinear a los receptores de Vikings en esta semana 9 hasta ver cómo fluye la ofensiva bajo su mando. En ligas profundas, Wentz es apenas una opción de emergencia.",
+      "equipo_impacto": "La ofensiva de Minnesota busca estabilidad. La llegada de Wentz podría cambiar el esquema de pase, afectando la consistencia de los objetivos aéreos en un duelo complicado contra la defensiva de Buffalo.",
+      "accion": "Sienta a tus receptores de Vikings esta semana hasta confirmar la química con Wentz.",
+      "en": {
+        "titulo": "Carson Wentz named starter for Vikings against Bills",
+        "claves": [
+          "Kyler Murray ruled out with hamstring injury",
+          "Wentz confirmed as Week 9 starter",
+          "Experts advise caution with Vikings wide receivers"
+        ],
+        "contexto": "With Kyler Murray sidelined by a hamstring injury, the Vikings have officially named Carson Wentz as the starter for Monday night's game against the Buffalo Bills. This move signals a significant shift in the team's hierarchy after Murray's recent underperformance.",
+        "fantasy": "The switch to Wentz brings uncertainty. While he is a proven veteran, his impact on Vikings receivers is unknown. Experts suggest benching Minnesota's wideouts for Week 9 until their chemistry is proven. In deep leagues, Wentz is only a desperation play.",
+        "equipo_impacto": "Minnesota's offense seeks stability. Wentz's arrival could alter the passing scheme, affecting the consistency of targets against a tough Buffalo defense.",
+        "accion": "Bench your Vikings receivers this week until their connection with Wentz is established."
+      },
+      "etiqueta": "START",
+      "impacto": "BAJA",
+      "equipo": "MIN",
+      "equipos": [
+        "MIN",
+        "BUF"
+      ],
+      "jugadores": [
+        "3161",
+        "5849"
       ],
       "fuentes": [
         {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/betting/news/jaguars-vs-ravens-odds-picks-nfl-week-9-prediction-best-bets-player-props-for-thursday-night-football/",
-          "t": "\n                        Jaguars vs. Ravens odds, picks, NFL Week 9 prediction: Best bets, player props for Thursday Night Football\n        "
-        },
-        {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/ravens-vs-jaguars-how-to-watch-odds-spread-prediction/",
-          "t": "\n                        Ravens vs. Jaguars: Does Lamar Jackson-less Baltimore have any chance in &#039;TNF&#039; matchup?\n                 "
-        },
-        {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/super-bowl-stock-report-week-9-jeffery-simmons-bears-ravens/",
-          "t": "\n                        Week 9 Super Bowl stock report: Jeffery Simmons trade legitimizes Bears, QB injuries tank Ravens\n                  "
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50390770/should-vikings-stick-wentz-murray-rest-season",
+          "t": "Should Vikings stick with Wentz over Murray for rest of season?"
         }
       ],
       "menciona": []
     },
     {
-      "id": "n20261105162301",
-      "fecha": "2026-11-05T16:23:47.184Z",
+      "id": "n20261105221001",
+      "fecha": "2026-11-05T22:10:20.265Z",
       "semana": 9,
-      "titulo": "Derrick Henry en duda para fantasy semana 9",
+      "titulo": "Jonathan Taylor mantiene firmeza ante rumores de cambio",
       "claves": [
-        "Ofensiva de Ravens colapsa sin Lamar Jackson",
-        "Henry sufre por ineficiencia de su equipo",
-        "Recomendación es evaluar opciones de banca"
+        "Taylor acostumbrado a especulaciones sobre su futuro",
+        "Colts en negociaciones activas antes de fecha límite",
+        "Jugador busca claridad tras semanas de incertidumbre"
       ],
-      "contexto": "La situación de los Ravens es alarmante tras la confirmación de la baja de Lamar Jackson. Analistas sugieren que la ineficacia ofensiva del equipo podría arrastrar el valor de Derrick Henry, quien ha sido un pilar, pero cuya productividad depende ahora de un ataque que carece de amenaza aérea creíble para abrir espacios.",
-      "fantasy": "Henry baja de categoría para esta semana. Aunque sigue siendo el caballo de batalla, enfrentar defensas cargando la caja contra un QB suplente limita su techo a menos de 10 pts. Si tienes un RB con mejor situación de QB, considera sentar al 'King' por esta semana 9.",
-      "equipo_impacto": "El equipo se vuelve unidimensional. Los rivales no respetarán el pase, complicando los acarreos de Henry en situaciones de corto yardaje.",
-      "accion": "Busca alternativas de RB si tu liga es profunda.",
+      "contexto": "Jonathan Taylor ha reconocido que las conversaciones sobre su salida de los Indianapolis Colts se han vuelto parte de su rutina diaria. A pesar de los constantes rumores que lo vinculan con otros equipos, incluyendo los Cowboys, el corredor se mantiene enfocado mientras la directiva explora opciones antes de que cierre el periodo de transferencias de la NFL.",
+      "fantasy": "La situación de Taylor es volátil. Aunque su talento es indiscutible, el riesgo de un cambio de equipo a mitad de temporada podría afectar su volumen de acarreos o su rol en zona roja dependiendo del esquema. Por ahora, sigue siendo una pieza clave en tu alineación titular, pero mantente atento a cualquier noticia de último minuto.",
+      "equipo_impacto": "La posible salida de Taylor obligaría a los Colts a reorganizar su ataque terrestre, otorgando más peso a sus corredores secundarios y alterando el equilibrio ofensivo del equipo.",
+      "accion": "Mantén a Taylor en tu alineación titular, pero monitorea los reportes de cambios.",
       "en": {
-        "titulo": "Derrick Henry's fantasy value takes a hit",
+        "titulo": "Jonathan Taylor unfazed by ongoing trade rumors",
         "claves": [
-          "Ravens offense struggling without Jackson",
-          "Henry faces stacked boxes and inefficiency",
-          "Consider benching if you have depth"
+          "Taylor used to trade speculation",
+          "Colts in active talks ahead of deadline",
+          "Player seeking finality after weeks of uncertainty"
         ],
-        "contexto": "With Lamar Jackson out, the Ravens' offense is in disarray. Analysts are questioning whether fantasy managers should bench Derrick Henry, as the lack of a passing threat will likely result in opposing defenses stacking the box against him.",
-        "fantasy": "Henry is a risky start this week. His ceiling is significantly capped by the QB situation, making him a touchdown-dependent play. Consider benching him for RBs in more stable offensive environments.",
-        "equipo_impacto": "The offense becomes one-dimensional, making it difficult for Henry to find running lanes against stacked fronts.",
-        "accion": "Look for RB alternatives if you have depth on your bench."
+        "contexto": "Jonathan Taylor has admitted that trade talk has become his 'regular scheduled programming.' Despite constant rumors linking him to other teams, including the Cowboys, the running back remains focused while the Colts front office explores options before the NFL trade deadline.",
+        "fantasy": "Taylor's situation is volatile. While his talent is clear, the risk of a mid-season trade could affect his workload or red-zone role depending on the new scheme. For now, he remains a must-start, but stay alert for breaking news.",
+        "equipo_impacto": "A potential trade would force the Colts to reorganize their ground game, putting more pressure on secondary backs and shifting the team's offensive balance.",
+        "accion": "Keep Taylor in your starting lineup but monitor trade reports closely."
       },
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "BAL",
+      "etiqueta": "TENDENCIA",
+      "impacto": "NEUTRO",
+      "equipo": "IND",
       "equipos": [
-        "BAL"
+        "IND",
+        "DAL"
       ],
       "jugadores": [
-        "3198",
-        "4881"
+        "6813"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-          "t": "Fantasy buzz: Sit Henry? Start Dulcich? Matchup tips for 'TNF' and Week 9"
-        },
-        {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-why-ravens-should-trade-derrick-henry/",
-          "t": "\n                        Why Ravens should trade Derrick Henry: Don&#039;t let Baltimore&#039;s QB woes drag down &#039;King Henry&#039;\n   "
+          "u": "http://www.espn.com/nfl/preview?gameId=401873040",
+          "t": "Jonathan Taylor turns trade talk into 'regular scheduled programming' as Colts and Cowboys meet"
         }
       ],
       "menciona": []
@@ -131,6 +331,10 @@
     },
     {
       "id": "4017",
+      "estatus": "Duda"
+    },
+    {
+      "id": "11632",
       "estatus": "Duda"
     },
     {
@@ -194,15 +398,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "10229",
-      "estatus": "Duda"
-    },
-    {
-      "id": "12514",
-      "estatus": "Duda"
-    },
-    {
-      "id": "1466",
+      "id": "12506",
       "estatus": "Duda"
     },
     {
@@ -262,6 +458,10 @@
       "estatus": "Fuera"
     },
     {
+      "id": "10236",
+      "estatus": "Duda"
+    },
+    {
       "id": "5872",
       "estatus": "Duda"
     },
@@ -283,31 +483,31 @@
     }
   ],
   "agregados": [
-    "11625",
-    "6130",
     "10219",
-    "11557",
+    "6130",
+    "11625",
     "DET",
+    "3161",
     "8161",
+    "11557",
     "NO",
     "2020",
     "13337",
-    "12524",
-    "7042",
     "7561",
     "4993",
-    "HOU",
+    "7042",
     "13286",
     "11783",
-    "6011",
-    "5854",
+    "3286",
+    "12524",
     "11610",
+    "HOU",
     "NYG",
     "12469",
-    "8132",
-    "1166",
     "1479",
-    "4035"
+    "13414",
+    "9758",
+    "1166"
   ],
   "soltados": [
     "11435",
@@ -315,26 +515,26 @@
     "WAS",
     "12711",
     "NE",
+    "5849",
     "3271",
-    "11637",
     "4881",
-    "4943",
+    "11637",
     "1945",
     "10235",
-    "12718",
+    "11581",
     "CLE",
     "5012",
-    "11581",
+    "12718",
     "8129",
-    "5849",
-    "13276",
     "13150",
-    "TB",
     "9480",
+    "TB",
+    "4943",
+    "13276",
     "4017",
+    "PIT",
     "4037",
-    "4454",
-    "3321"
+    "4454"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
