@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-06T21:59:25.352Z",
-  "ultimaIA": "2026-11-06T16:57:22.492Z",
+  "actualizado": "2026-11-07T01:47:26.337Z",
+  "ultimaIA": "2026-11-07T01:47:26.337Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,100 +14,144 @@
   ],
   "noticias": [
     {
-      "id": "n20261106165700",
-      "fecha": "2026-11-06T16:57:22.492Z",
+      "id": "n20261107014700",
+      "fecha": "2026-11-07T01:47:26.337Z",
       "semana": 9,
-      "titulo": "TreVeyon Henderson reporta síntomas neurológicos inexplicables",
+      "titulo": "Christian McCaffrey listo para dominar en la semana 9",
       "claves": [
-        "Pruebas médicas muestran síntomas neurológicos sin causa clara.",
-        "Estatus en duda para la semana 9 con New England.",
-        "Riesgo elevado para alineaciones de fantasy football."
+        "Corredor estelar entrenó al 100% previo al domingo",
+        "Proyección FX de 20.8 pts PPR en semana 9",
+        "San Francisco recupera piezas clave en semana 9"
       ],
-      "contexto": "El corredor de los Patriots, TreVeyon Henderson, dio positivo en pruebas tras presentar síntomas neurológicos de origen desconocido. El jugador de 1er año permanece en constante evaluación médica rumbo a la semana 9, lo que genera dudas sobre su disponibilidad inmediata tras no tener un diagnóstico 100% claro por parte del cuerpo médico en New England.",
-      "fantasy": "Con estatus de cuestionable en la semana 9, Henderson representa un riesgo elevado para tu alineación titular. Si compites en formatos PPR o estándar de 12 equipos, lo ideal es dejarlo en la banca hasta tener claridad total. Busca opciones de respaldo en el alambre de waivers de inmediato para proteger tu roster.",
-      "equipo_impacto": "El ataque terrestre de New England pierde estabilidad sin certeza sobre su estatus para la semana 9. El esquema ofensivo deberá redistribuir los acarreos si el novato no recibe el alta médica definitiva antes del arranque del partido.",
-      "accion": "Mueve a Henderson a la banca en la semana 9 y asegura un reemplazo.",
+      "contexto": "Christian McCaffrey reportó listo y sin restricciones para el enfrentamiento de la semana 9 frente a Raiders. El cuerpo técnico de 49ers confirmó que el corredor estelar practicó completo, disipando cualquier duda tras semanas complicadas para la ofensiva. San Francisco también recupera a Nick Bosa en la defensiva tras estar fuera desde la semana 2, lo que brinda estabilidad general al planteamiento del equipo.",
+      "fantasy": "Con una proyección PPR de 20.8 pts por el modelo FX para la semana 9, McCaffrey se mantiene como un RB1 indiscutible en todos los formatos. No dudes en colocarlo en tu alineación titular en ligas formato PPR, estándar o Dynasty. Su volumen en el juego terrestre y recepción mantendrá un suelo elevado frente a una defensiva de Raiders vulnerable a corredores receptores.",
+      "equipo_impacto": "La presencia de McCaffrey alivia la carga para el mariscal de campo Brock Purdy y abre carriles de pase. La línea ofensiva recupera ritmo mientras el ataque terrestre vuelve a ser el motor principal de San Francisco.",
+      "accion": "Pon a Christian McCaffrey en tu alineación titular inmediatamente para la semana 9.",
       "en": {
-        "titulo": "TreVeyon Henderson affected by unexplained neurological symptoms",
+        "titulo": "Christian McCaffrey cleared for full workload Week 9",
         "claves": [
-          "Henderson undergoing medical tests for unexplained neurological symptoms.",
-          "Rookie RB status uncertain ahead of week 9.",
-          "High risk option for fantasy football lineups."
+          "Star running back logged full practice on Friday",
+          "Projects for 20.8 PPR points in Week 9",
+          "San Francisco gets key starters back in Week 9"
         ],
-        "contexto": "Patriots running back TreVeyon Henderson returned positive results following tests for unexplained neurological symptoms. The 1st year player remains under medical evaluation leading into week 9, creating significant uncertainty regarding his availability for New England as doctors work to determine a clear diagnosis.",
-        "fantasy": "Listed as questionable for week 9, Henderson carries high risk for your starting lineup. In 12 team PPR or standard formats, move him to the bench until complete clarity emerges. Target immediate backfield coverage on the waiver wire for week 9 to protect your roster.",
-        "equipo_impacto": "New England's ground attack loses stability without certainty around Henderson's week 9 status. The offensive scheme will need to reallocate touches if the rookie is not cleared before kickoff.",
-        "accion": "Bench Henderson for week 9 and secure a backup."
+        "contexto": "Christian McCaffrey was cleared with no physical limitations for the Week 9 matchup against the Raiders. San Francisco's coaching staff confirmed the star running back practiced fully, clearing up any injury doubts. The 49ers also get back defensive end Nick Bosa, who missed action since Week 2, offering overall team stability heading into Sunday.",
+        "fantasy": "Boasting a 20.8 PPR point projection from the FX model in Week 9, McCaffrey remains an elite RB1 across all fantasy formats. Lock him into your starting lineup in PPR, standard, and dynasty leagues. His dual-threat workload offers an exceptionally high floor and massive ceiling against a vulnerable Las Vegas Raiders defense.",
+        "equipo_impacto": "McCaffrey's return takes immense pressure off quarterback Brock Purdy and stretches opposing defenses. San Francisco's offensive line regains rhythm as the rushing attack re-establishes itself as the team's primary offensive engine.",
+        "accion": "Start Christian McCaffrey as an elite RB1 with full confidence in Week 9."
       },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "NE",
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "SF",
       "equipos": [
-        "NE"
+        "SF",
+        "LV"
       ],
       "jugadores": [
-        "12529"
+        "4034",
+        "8183"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50400016/patriots-treveyon-henderson-affected-neurological-symptoms",
-          "t": "Patriots' TreVeyon Henderson affected by neurological symptoms"
+          "u": "https://www.espn.com/nfl/story/_/id/50402463/nick-bosa-back-christian-mccaffrey-good-go-niners",
+          "t": "Nick Bosa back, Christian McCaffrey good to go for Niners"
         }
       ],
       "menciona": []
     },
     {
-      "id": "n20261106165701",
-      "fecha": "2026-11-06T16:57:22.492Z",
+      "id": "n20261107014701",
+      "fecha": "2026-11-07T01:47:26.337Z",
       "semana": 9,
-      "titulo": "Kirk Cousins emerge como opción top 10 semanal",
+      "titulo": "Malik Nabers sin restricciones para la semana 9",
       "claves": [
-        "Cousins se posiciona entre 10 mejores QBs semanales.",
-        "Excelente opción de streaming para semana 9.",
-        "Proyección sólida en ligas de 10 y 12 equipos."
+        "El receptor novato entrenó al 100% previo al duelo",
+        "Proyección FX de 18.0 pts PPR en semana 9",
+        "Asume carga principal ante baja de Cam Skattebo"
       ],
-      "contexto": "Kirk Cousins se consolida como una de las opciones más atractivas en la posición de mariscal de campo para la semana 9. El pasador de Atlanta ha mostrado consistencia en la distribución del balón, convirtiéndose en una recomendación de alto valor para los analistas de fantasy football de cara a su próximo compromiso en el calendario.",
-      "fantasy": "Si enfrentas semanas de descanso o lesiones en la posición de mariscal, Cousins sube a rango de titular en ligas de 10 y 12 equipos. Su volumen de pases proyectado en la semana 9 le otorga un piso seguro de 15 pts o más en formatos de puntuación estándar con 6 pts por TD.",
-      "equipo_impacto": "La consolidación de Cousins beneficia directamente al grupo de receptores de Atlanta en la semana 9. El ritmo de juego aéreo se mantiene en constante ascenso, elevando el valor fantasy de sus objetivos principales dentro de la plantilla.",
-      "accion": "Alinea a Cousins como tu mariscal titular en la semana 9.",
+      "contexto": "El receptor Malik Nabers fue catalogado como listo sin limitaciones físicas para el duelo divisional de la semana 9 entre Giants y Eagles. Tras semanas de seguimiento cuidadoso, el cuerpo médico de Nueva York dio luz verde al egresado de LSU. Mientras Cam Skattebo se perfila como duda casi descartada por lesión de isquiotibiales, Nabers concentrará el objetivo principal en el esquema aéreo de los Giants.",
+      "fantasy": "Malik Nabers ingresa a la semana 9 con proyecciones de 18.0 pts PPR en el modelo FX, consolidándose como opción WR1 en formatos PPR y Half-PPR. Su participación no tendrá restricciones de jugadas, lo que incrementa sustancialmente su techo de puntos frente a la secundaria de Philadelphia. Es un elemento infaltable en ligas de 10 o 12 equipos para el fin de semana.",
+      "equipo_impacto": "Sin Cam Skattebo en el terreno, el ataque de Giants dependerá fuertemente del brazo del mariscal y la capacidad de Nabers para generar yardas tras la recepción, monopolizando los targets del equipo.",
+      "accion": "Arranca a Malik Nabers como tu WR1 o WR2 con total confianza en la semana 9.",
       "en": {
-        "titulo": "Kirk Cousins shapes up as top 10 QB option",
+        "titulo": "Malik Nabers expects full go for Week 9",
         "claves": [
-          "Cousins emerges as a top 10 QB choice for week 9.",
-          "Strong streaming target for 10 and 12 team leagues.",
-          "Consistent passing volume provides solid fantasy floor."
+          "Rookie wide receiver fully cleared for divisional matchup",
+          "Projects for 18.0 PPR points in Week 9",
+          "Set to dominate targets with Cam Skattebo doubtful"
         ],
-        "contexto": "Kirk Cousins consolidates his spot as a premier streaming candidate at quarterback for week 9. The Atlanta passer has shown steady ball distribution, making him a high value recommendation across fantasy football formats heading into his upcoming matchup on the schedule.",
-        "fantasy": "If facing bye weeks or injuries at quarterback, Cousins rises to QB1 status in 10 and 12 team leagues. His projected passing volume in week 9 provides a safe floor of 15+ pts in standard scoring formats with 6 pts per TD.",
-        "equipo_impacto": "Cousins' steady play directly boosts Atlanta's pass catchers for week 9. The aerial rhythm remains on the rise, elevating overall fantasy upside across the offense's top targets.",
-        "accion": "Start Cousins as your QB1 in week 9."
+        "contexto": "Wide receiver Malik Nabers has been cleared with zero physical limitations for the Giants' Week 9 divisional showdown against the Eagles. New York's medical staff gave the LSU product the green light after a full practice session. With Cam Skattebo expected to sit out due to a hamstring injury, Nabers will command primary target volume.",
+        "fantasy": "Malik Nabers enters Week 9 with an 18.0 PPR point projection from the FX model, solidifying his status as a high-end WR1 in PPR and Half-PPR formats. Operating without snap restrictions drastically boosts his fantasy floor and ceiling against Philadelphia. He is a mandatory start in 10-team and 12-team leagues.",
+        "equipo_impacto": "With Cam Skattebo unlikely to play, New York's offense will lean heavily on Nabers to create yards after the catch, allowing him to dominate target share in the passing game.",
+        "accion": "Lock Malik Nabers into your lineup as a high-end WR option for Week 9."
       },
       "etiqueta": "START",
       "impacto": "SUBE",
-      "equipo": "ATL",
+      "equipo": "NYG",
       "equipos": [
-        "ATL",
-        "LV"
+        "NYG",
+        "PHI"
       ],
       "jugadores": [
-        "1166"
+        "11632",
+        "12481"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50400106/why-kirk-cousins-top-10-qb-option-week-fantasy",
-          "t": "Why Kirk Cousins is a top-10 QB option this week in fantasy"
+          "u": "https://www.espn.com/nfl/story/_/id/50402162/giants-cam-skattebo-doubtful-vs-eagles-nabers-full-go",
+          "t": "Giants' Cam Skattebo doubtful vs. Eagles; Malik Nabers 'full go'"
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261107014702",
+      "fecha": "2026-11-07T01:47:26.337Z",
+      "semana": 9,
+      "titulo": "Matthew Stafford entrena completo para la semana 9",
+      "claves": [
+        "Pasador veterano practicó al 100% el viernes sin molestias",
+        "Lidera el ataque angelino listo para la semana 9",
+        "Impulsa el valor de Puka Nacua en fantasy"
+      ],
+      "contexto": "El veterano mariscal de campo de Rams, Matthew Stafford, practicó al 100% sin limitaciones este viernes, quedando totalmente listo para encarar la semana 9 de la NFL. Stafford superó cualquier molestia física previa y liderará a la ofensiva angelina en su siguiente compromiso. Su presencia asegura continuidad y dinamismo en un ataque que busca consolidarse dentro de la carrera por los playoffs.",
+      "fantasy": "Aunque Stafford no figura en el top 8 de proyecciones para QBs de FX esta semana 9, su disponibilidad eleva enormemente el techo de Puka Nacua, quien proyecta 22 pts PPR. En ligas Superflex o de 2 QBs es un titular obligatorio, mientras que en ligas de 1 QB funciona como un streaming sólido según el enfrentamiento directo.",
+      "equipo_impacto": "La confirmación de Stafford estabiliza el esquema ofensivo de Los Angeles, garantizando distribución precisa de pases para sus receptores principales y manteniendo la fluidez del ataque por aire en la semana 9.",
+      "accion": "Alinea a Matthew Stafford en formatos Superflex o considera sus receptores como pilares fantasy.",
+      "en": {
+        "titulo": "Matthew Stafford fully cleared for Week 9 action",
+        "claves": [
+          "Rams quarterback logged full practice without limitations on Friday",
+          "Ready to command starting offense in Week 9",
+          "Boosts fantasy ceiling for wide receiver Puka Nacua"
+        ],
+        "contexto": "Rams veteran quarterback Matthew Stafford logged a full practice on Friday with no physical limitations, clearing him completely for Week 9. Stafford cleared up lingering health concerns and will command Los Angeles' starting offense. His full availability provides needed stability as the team looks to maintain momentum in their playoff push.",
+        "fantasy": "While Stafford sits outside FX model top 8 QB projections for Week 9, his presence significantly elevates wide receiver Puka Nacua, who projects at 22.0 PPR points. Stafford is a mandatory starter in Superflex and 2-QB formats, while offering solid streamer viability in standard 1-QB leagues depending on matchup demands.",
+        "equipo_impacto": "Stafford's active status stabilizes Los Angeles' offensive system, ensuring efficient pass distribution to primary wide receivers while maintaining consistent overall passing game rhythm throughout Week 9.",
+        "accion": "Start Matthew Stafford in Superflex formats and fire up your Rams pass catchers."
+      },
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "LAR",
+      "equipos": [
+        "LAR"
+      ],
+      "jugadores": [
+        "421",
+        "9493"
+      ],
+      "fuentes": [
+        {
+          "m": "Yahoo Sports",
+          "u": "https://sports.yahoo.com/articles/matthew-stafford-ready-week-9-011822176.html",
+          "t": "Matthew Stafford ready to go for Week 9"
         }
       ],
       "menciona": []
     }
   ],
   "lesionados": [
-    {
-      "id": "4034",
-      "estatus": "Duda"
-    },
     {
       "id": "7547",
       "estatus": "Duda"
@@ -145,10 +189,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "10232",
-      "estatus": "Duda"
-    },
-    {
       "id": "12508",
       "estatus": "Fuera"
     },
@@ -166,7 +206,7 @@
     },
     {
       "id": "2216",
-      "estatus": "Duda"
+      "estatus": "Fuera"
     },
     {
       "id": "12514",
@@ -205,24 +245,16 @@
       "estatus": "Fuera"
     },
     {
-      "id": "5854",
-      "estatus": "Duda"
-    },
-    {
       "id": "12489",
       "estatus": "Fuera"
     },
     {
       "id": "8129",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "10236",
       "estatus": "Duda"
     },
     {
       "id": "5872",
-      "estatus": "Duda"
+      "estatus": "Fuera"
     },
     {
       "id": "4983",
@@ -263,61 +295,77 @@
     {
       "id": "8205",
       "estatus": "Fuera"
+    },
+    {
+      "id": "12529",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "8121",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "11637",
+      "estatus": "Duda"
+    },
+    {
+      "id": "5892",
+      "estatus": "Fuera"
     }
   ],
   "agregados": [
     "6130",
-    "3161",
-    "3286",
     "11625",
-    "DET",
-    "2020",
-    "10219",
-    "8161",
-    "NO",
+    "3286",
+    "3161",
     "13276",
+    "DET",
+    "12491",
+    "NO",
+    "8161",
     "13337",
+    "13150",
+    "2020",
     "11610",
-    "4993",
     "7561",
     "11783",
-    "13150",
+    "4993",
+    "12487",
     "13286",
-    "12491",
-    "7042",
-    "NYG",
     "12469",
     "1479",
     "13414",
-    "12487",
-    "HOU"
+    "NYG",
+    "5995",
+    "12524",
+    "10219"
   ],
   "soltados": [
     "11435",
-    "10219",
     "5849",
+    "10219",
     "WAS",
-    "12711",
+    "8129",
     "9230",
     "3271",
     "11637",
-    "1945",
-    "4881",
-    "NE",
     "11581",
-    "10235",
-    "8129",
-    "CLE",
-    "5012",
+    "NE",
+    "8135",
     "9480",
+    "10235",
+    "4881",
+    "CLE",
     "12718",
-    "TB",
-    "PIT",
+    "1945",
+    "13424",
     "4037",
-    "4017",
-    "LV",
+    "5012",
     "11834",
-    "3321"
+    "TB",
+    "7561",
+    "3321",
+    "13296"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
