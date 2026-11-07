@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-07T18:59:55.765Z",
-  "ultimaIA": "2026-11-07T18:59:55.765Z",
+  "actualizado": "2026-11-07T22:39:24.140Z",
+  "ultimaIA": "2026-11-07T22:39:24.140Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,106 +14,93 @@
   ],
   "noticias": [
     {
-      "id": "n20261107185900",
-      "fecha": "2026-11-07T18:59:55.765Z",
+      "id": "n20261107223900",
+      "fecha": "2026-11-07T22:39:24.140Z",
       "semana": 9,
-      "titulo": "Shedeur Sanders asume como QB titular en los Browns",
+      "titulo": "Saints activan a Jordyn Tyson tras superar su lesión",
       "claves": [
-        "Deshaun Watson libró protocolo pero Sanders iniciará en la semana 9.",
-        "Sanders tendrá su juego 1 como titular ante la defensiva de Saints.",
-        "El pasador novato busca aprovechar la oportunidad bajo el centro de Cleveland."
+        "Saints activan a Jordyn Tyson de reserva de lesionados.",
+        "El receptor enfrentará a los Browns tras superar su molestia.",
+        "New Orleans cortó al corredor Kendre Miller en el movimiento."
       ],
-      "contexto": "Deshaun Watson libró el protocolo de conmociones de la NFL, pero se mantiene en duda para el choque de la semana 9. Ante esta situación, la directiva y el cuerpo técnico decidieron darle el ovoide al novato Shedeur Sanders para comandar el ataque frente a los Saints. El mariscal disputará su juego 1 como titular en la campaña 2024 rodeado de alta expectativa.",
-      "fantasy": "Para ligas Superflex o de 2 QB, Shedeur Sanders se convierte en un waiver wire de emergencia con techo incógnito. No esperes números de elite de inmediato ante una defensiva de New Orleans que llega motivada tras sus declaraciones. Mantén a Deshaun Watson en la banca si logra vestirse. En formatos de 1 QB estándar, Sanders permanece como un jugador a monitorear sin necesidad de alinearlo este domingo.",
-      "equipo_impacto": "La ofensiva de Cleveland recibe un giro completo con el estilo de Sanders. Receptores y alas cerradas sufren incertidumbre en la química aérea inicial, mientras que el juego terrestre podría asumir mayor carga para proteger al mariscal novato en sus pases iniciales del año.",
-      "accion": "Suma a Shedeur Sanders únicamente si juegas en formatos Superflex o ligas profundas.",
+      "contexto": "Los Saints activaron al receptor novato Jordyn Tyson y al tackle izquierdo Kelvin Banks Jr. desde la lista de lesionados antes del partido de la semana 9 contra los Browns. Tyson aparece en el reporte de estatus como cuestionable por una lesión en el isquiotibial. Para hacer espacio en la plantilla activa, el equipo decidió cortar al corredor Kendre Miller previo al encuentro dominical.",
+      "fantasy": "El regreso de Jordyn Tyson ofrece profundidad al ataque aéreo de New Orleans en ligas de 12 o más equipos, aunque su estatus de cuestionable exige precaución. No es opción inmediata para alinear en la semana 9 si tienes alternativas más seguras en tu roster. Chris Olave proyecta 17.6 pts PPR este fin de semana, mientras que Tyson debe permanecer en la banca o ser vigilado desde la agencia libre.",
+      "equipo_impacto": "La activación del tackle Kelvin Banks refuerza la protección del pasador ante la defensiva de Cleveland. Con la salida de Kendre Miller, el volumen del backfield se concentra más en los corredores activos, beneficiando la estabilidad terrestre de New Orleans.",
+      "accion": "Mantén a Jordyn Tyson en la banca o en la lista de reservas mientras confirmas su volumen de juego.",
       "en": {
-        "titulo": "Shedeur Sanders named Browns starting QB for Week 9",
+        "titulo": "Saints activate Jordyn Tyson ahead of Week 9",
         "claves": [
-          "Deshaun Watson cleared protocol but Sanders gets the Week 9 start.",
-          "Sanders makes his first start of the season facing the Saints.",
-          "Rookie quarterback looks to capitalize on Cleveland starting job opportunity."
+          "Saints activated rookie WR Jordyn Tyson from injured reserve.",
+          "Tyson faces the Browns despite being listed as questionable.",
+          "New Orleans released running back Kendre Miller in corresponding move."
         ],
-        "contexto": "Deshaun Watson cleared NFL concussion protocol, yet remains listed as questionable for Week 9. Cleveland opted to hand the starting quarterback duties to rookie Shedeur Sanders against the New Orleans Saints. Sanders will make his very first start of the season, stepping into the spotlight under center as the Browns evaluate their passing game.",
-        "fantasy": "In Superflex or 2-QB formats, Shedeur Sanders becomes a speculative waiver claim with unknown upside. Do not expect elite production right away against a New Orleans defense motivated by recent comments. Keep Deshaun Watson stashed on your bench if active. In standard 1-QB leagues, Sanders is merely a watch-list candidate rather than a viable starting option this week.",
-        "equipo_impacto": "Cleveland's offense faces a transitional phase with Sanders taking reps. Pass catchers will experience initial chemistry hurdles, likely forcing the coaching staff to rely more heavily on the running game to shield the young signal-caller.",
-        "accion": "Add Shedeur Sanders only as emergency depth in Superflex or deep leagues."
+        "contexto": "The Saints activated rookie wide receiver Jordyn Tyson and left tackle Kelvin Banks Jr. from injured reserve ahead of their Week 9 matchup against the Browns. Tyson is listed as questionable on the official injury report with a hamstring issue. To clear a roster spot for these activations, New Orleans officially released running back Kendre Miller prior to Sunday's game.",
+        "fantasy": "Jordyn Tyson adds depth to the New Orleans passing attack in 12-team leagues, but his questionable status requires fantasy managers to be cautious. He is not a recommended starter for Week 9 until his target share stabilizes. Chris Olave projects for 17.6 PPR pts this week, making Tyson a stash candidate on the bench or a waiver target to watch.",
+        "equipo_impacto": "Activating left tackle Kelvin Banks strengthens the Saints' pass protection against Cleveland. The departure of Kendre Miller streamlines the backfield touches, providing more clarity and structural stability for New Orleans' running game.",
+        "accion": "Keep Jordyn Tyson stashed on your bench until his target share increases."
       },
       "etiqueta": "WAIVER",
-      "impacto": "NEUTRO",
-      "equipo": "CLE",
+      "impacto": "SUBE",
+      "equipo": "NO",
       "equipos": [
-        "CLE",
-        "NO"
+        "NO",
+        "CLE"
       ],
       "jugadores": [
-        "12524",
-        "4017"
+        "13281",
+        "8144",
+        "9757"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50409705/browns-qb-deshaun-watson-concussion-protocol",
-          "t": "Browns QB Deshaun Watson out of concussion protocol"
-        },
-        {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/saints-motivated-to-face-browns-shedeur-sanders/",
-          "t": "\n                        Saints motivated to face &#039;smiling&#039; Shedeur Sanders after Browns QB offers bulletin board material\n       "
-        },
-        {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/fantasy/article/nfl-injury-tracker-week-9-latest-news-fantasy-implications-as-49ers-mike-evans-deebo-samuel-out-deshaun-watson-clears-concussion-protocol-but-shedeur-sanders-will-start-for-browns-180454816.html",
-          "t": "NFL injury tracker Week 9: Latest news, fantasy implications as 49ers&#39; Mike Evans, Deebo Samuel out; Deshaun Watson clears concussion pr"
+          "u": "https://www.espn.com/nfl/story/_/id/50410541/sources-saints-activate-wr-jordyn-tyson-lt-kelvin-banks",
+          "t": "Saints activate WR Jordyn Tyson, LT Kelvin Banks, cut RB Kendre Miller"
         }
       ],
       "menciona": []
     },
     {
-      "id": "n20261107185901",
-      "fecha": "2026-11-07T18:59:55.765Z",
+      "id": "n20261107223901",
+      "fecha": "2026-11-07T22:39:24.140Z",
       "semana": 9,
-      "titulo": "Justin Herbert se mantiene en Chargers pese a 0-7",
+      "titulo": "Jauan Jennings rechaza traspaso y reafirma su compromiso",
       "claves": [
-        "Los Chargers mantendrán a Justin Herbert tras un arranque de 0-7.",
-        "Herbert lidera la NFL en intercepciones tras 7 semanas iniciales.",
-        "La gerencia rechaza ofertas de traspaso por sus estrellas ofensivas."
+        "Jauan Jennings rechaza opción de regresar a 49ers vía canje.",
+        "Receptor reporta baja producción con Vikings pero prefiere quedarse.",
+        "Descartado para semana 9 por lesión en la pantorrilla."
       ],
-      "contexto": "A pesar de acumular un doloroso récord de 0-7 en el arranque de la temporada, Los Angeles Chargers decidieron cerrar la puerta a traspasos de sus figuras principales, incluyendo a Justin Herbert. El pasador atraviesa un momento complicado al registrar el peor QBR de la liga y liderar la NFL en intercepciones tras 7 partidos disputados.",
-      "fantasy": "Justin Herbert cae bruscamente a la categoría de QB2 o banca en ligas de 12 equipos. Su rendimiento bajo el centro genera dudas constantes y su volumen de entregas castiga severamente en los sistemas de puntuación tradicionales. Si posees mejores alternativas con enfrentamientos favorables en la semana 9, deja a Herbert fuera de tus alineaciones titulares hasta observar un repunte real en su efectividad.",
-      "equipo_impacto": "La postura de la gerencia mantiene la estructura ofensiva intacta, pero el vestidor acumula frustración por los malos resultados. El ataque aéreo seguirá sufriendo imprecisiones mientras la línea ofensiva y el esquema no consigan proteger mejor a su mariscal de campo.",
-      "accion": "Banca a Justin Herbert en tu liga hasta que reduzca sus entregas.",
+      "contexto": "El receptor de los Vikings, Jauan Jennings, declaró que rechazó la oportunidad de regresar a 49ers mediante un canje, priorizando permanecer en Minnesota. Jennings afirmó estar contento con el equipo pese a registrar poca producción ofensiva esta temporada. Actualmente el jugador está clasificado como descartado para el partido de la semana 9 debido a una lesión en la pantorrilla que le impedirá tener actividad.",
+      "fantasy": "Al estar fuera para la semana 9 por lesión, no debes considerar a Jauan Jennings en ninguna alineación fantasy. En ligas profundas de 14 equipos su valor cae significativamente por su bajo rendimiento y su condición médica. Con Jennings descartado, las opciones aéreas de Minnesota se reconfiguran, mientras la defensiva de Vikings proyecta 10.9 pts en el modelo FX para este fin de semana.",
+      "equipo_impacto": "La permanencia de Jennings brinda continuidad al cuerpo de receptores de Minnesota a largo plazo. Sin embargo, su ausencia en la semana 9 obliga al coordinador ofensivo a repartir sus dianas entre los demás receptores disponibles.",
+      "accion": "Mantén a Jauan Jennings fuera de tu alineación en la semana 9.",
       "en": {
-        "titulo": "Chargers retaining Justin Herbert despite 0-7 start",
+        "titulo": "Jauan Jennings rejects trade offer to remain with Vikings",
         "claves": [
-          "Chargers will retain Justin Herbert following a 0-7 season start.",
-          "Herbert leads the NFL in interceptions through 7 games.",
-          "Front office rejects trade offers for key offensive stars."
+          "Jauan Jennings rejected trade return to the 49ers.",
+          "Receiver prefers staying in Minnesota despite low production.",
+          "Jennings is ruled out for Week 9 with calf injury."
         ],
-        "contexto": "Despite a disastrous 0-7 start to the season, the Los Angeles Chargers decided not to trade away their cornerstone players, keeping quarterback Justin Herbert in place. Herbert is enduring a brutal stretch, currently holding the league's lowest QBR and leading the NFL in interceptions through 7 games played.",
-        "fantasy": "Justin Herbert drops to QB2 status or a bench hold in standard 12-team leagues. His inconsistent play and high turnover rate heavily damage fantasy floors each week. Unless you lack suitable streamer options for Week 9, keep Herbert benched until he demonstrates better ball security and efficiency under center.",
-        "equipo_impacto": "Holding onto key players stabilizes the roster structure, but frustration remains high amid an 0-7 record. The passing offense will continue struggling unless protection improves and turnovers are minimized.",
-        "accion": "Bench Justin Herbert in fantasy leagues until his turnover issues improve."
+        "contexto": "Vikings wide receiver Jauan Jennings stated he turned down the chance to return to the 49ers via trade, choosing to stay in Minnesota. Jennings expressed satisfaction with his current team despite struggling to generate fantasy output this season. However, he has been officially ruled out for Week 9 due to a calf injury that keeps him off the field.",
+        "fantasy": "Since Jauan Jennings is ruled out for Week 9, fantasy managers must leave him on the bench across all formats. His fantasy value remains low in 12-team leagues due to limited production and injury status. With Jennings unavailable, Minnesota's passing game relies on other targets, while Vikings D/ST projects for 10.9 PPR pts in Week 9.",
+        "equipo_impacto": "Jennings' decision to stay maintains long-term continuity in Minnesota's receiver room. His absence in Week 9 forces the offense to redistribute targets among healthy receivers against their upcoming opponent.",
+        "accion": "Leave Jauan Jennings on your bench or waiver wire for Week 9."
       },
       "etiqueta": "SIT",
       "impacto": "BAJA",
-      "equipo": "LAC",
+      "equipo": "MIN",
       "equipos": [
-        "LAC"
+        "MIN",
+        "SF"
       ],
       "jugadores": [
-        "6797"
+        "7049"
       ],
       "fuentes": [
         {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/rams-quentin-lake-apologizes-justin-herbert-deli-meat-remarks-chargers/",
-          "t": "\n                        Rams&#039; Quentin Lake apologizes to Justin Herbert for &#039;deli meat&#039; remarks, Chargers not moving QB via "
-        },
-        {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/trade-deadline-chargers-to-retain-khalil-mack-top-offensive-players-despite-0-7-record/",
-          "t": "\n                        Chargers not interested in Khalil Mack trade, will retain top offensive players despite 0-7 record, per report\n    "
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50411320/jennings-rebuffing-return-49ers-love-where-at",
+          "t": "Vikings WR Jauan Jennings on rebuffing return to 49ers: 'I love where I'm at'"
         }
       ],
       "menciona": []
@@ -142,7 +129,7 @@
     },
     {
       "id": "5849",
-      "estatus": "Duda"
+      "estatus": "Fuera"
     },
     {
       "id": "4943",
@@ -225,10 +212,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4983",
-      "estatus": "Duda"
-    },
-    {
       "id": "5927",
       "estatus": "Fuera"
     },
@@ -242,7 +225,7 @@
     },
     {
       "id": "4177",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "12533",
@@ -269,15 +252,19 @@
       "estatus": "Fuera"
     },
     {
-      "id": "11637",
-      "estatus": "Duda"
-    },
-    {
       "id": "5892",
       "estatus": "Fuera"
     },
     {
       "id": "4033",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "4454",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12711",
       "estatus": "Fuera"
     }
   ],
@@ -285,55 +272,55 @@
     "6130",
     "3286",
     "11625",
-    "13276",
     "12491",
     "13603",
+    "13276",
     "3161",
     "13150",
+    "4035",
     "NO",
     "DET",
-    "13337",
     "8161",
+    "13337",
     "7561",
-    "11610",
-    "4993",
-    "12487",
+    "11579",
     "12634",
-    "11783",
-    "2020",
-    "8119",
+    "4993",
     "NYG",
-    "12524",
     "12469",
-    "4035",
-    "13414"
+    "2020",
+    "11610",
+    "11783",
+    "8119",
+    "4663",
+    "12524"
   ],
   "soltados": [
     "8129",
     "11435",
     "5849",
+    "9757",
     "8135",
     "9230",
     "11637",
-    "3271",
-    "WAS",
     "12487",
-    "10219",
+    "WAS",
+    "3271",
+    "8154",
     "11581",
     "10235",
     "7561",
-    "NE",
     "12718",
-    "9480",
+    "10219",
+    "NE",
     "13424",
+    "9480",
     "4037",
-    "4881",
-    "CLE",
     "13296",
+    "CLE",
+    "4881",
     "11834",
-    "3321",
-    "5012",
-    "13337"
+    "3321"
   ],
   "duelo": {
     "a": "Josh Allen",
