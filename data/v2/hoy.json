@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-07T01:47:26.337Z",
-  "ultimaIA": "2026-11-07T01:47:26.337Z",
+  "actualizado": "2026-11-07T07:50:58.334Z",
+  "ultimaIA": "2026-11-07T07:50:58.334Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,138 +14,45 @@
   ],
   "noticias": [
     {
-      "id": "n20261107014700",
-      "fecha": "2026-11-07T01:47:26.337Z",
+      "id": "n20261107075000",
+      "fecha": "2026-11-07T07:50:58.334Z",
       "semana": 9,
-      "titulo": "Christian McCaffrey listo para dominar en la semana 9",
+      "titulo": "Brandon Aiyuk se reúne con la directiva de 49ers",
       "claves": [
-        "Corredor estelar entrenó al 100% previo al domingo",
-        "Proyección FX de 20.8 pts PPR en semana 9",
-        "San Francisco recupera piezas clave en semana 9"
+        "Reunión el 6 de noviembre entre 49ers, Aiyuk y Drew Rosenhaus.",
+        "Jugador continúa registrado como DNR por lesión grave de rodilla.",
+        "Situación contractual y médica sin resolución clara para semana 9."
       ],
-      "contexto": "Christian McCaffrey reportó listo y sin restricciones para el enfrentamiento de la semana 9 frente a Raiders. El cuerpo técnico de 49ers confirmó que el corredor estelar practicó completo, disipando cualquier duda tras semanas complicadas para la ofensiva. San Francisco también recupera a Nick Bosa en la defensiva tras estar fuera desde la semana 2, lo que brinda estabilidad general al planteamiento del equipo.",
-      "fantasy": "Con una proyección PPR de 20.8 pts por el modelo FX para la semana 9, McCaffrey se mantiene como un RB1 indiscutible en todos los formatos. No dudes en colocarlo en tu alineación titular en ligas formato PPR, estándar o Dynasty. Su volumen en el juego terrestre y recepción mantendrá un suelo elevado frente a una defensiva de Raiders vulnerable a corredores receptores.",
-      "equipo_impacto": "La presencia de McCaffrey alivia la carga para el mariscal de campo Brock Purdy y abre carriles de pase. La línea ofensiva recupera ritmo mientras el ataque terrestre vuelve a ser el motor principal de San Francisco.",
-      "accion": "Pon a Christian McCaffrey en tu alineación titular inmediatamente para la semana 9.",
+      "contexto": "Los 49ers de San Francisco sostuvieron una reunión presencial este viernes 6 de noviembre con su receptor estrella Brandon Aiyuk y su agente Drew Rosenhaus. El encuentro busca destrabar el drama contractual y médico alrededor del jugador. Aiyuk se mantiene en estatus DNR tras sufrir rupturas de ligamento cruzado anterior y colateral medial en su rodilla, complicando su panorama con la franquicia californiana en este tramo de la temporada.",
+      "fantasy": "Para fines de fantasy en la semana 9, Brandon Aiyuk no es una opción utilizable al estar catalogado como DNR por su severa lesión de rodilla (ACL y MCL). Mantén al receptor fuera de tus alineaciones titulares en ligas PPR y Estándar. Su ausencia constante mantiene el volumen aéreo en otras armas de San Francisco, mientras la gerencia aclara el futuro del receptor para formatos Dynasty.",
+      "equipo_impacto": "El panorama aéreo de San Francisco recae en sus titulares disponibles. Sin Aiyuk en el campo, el volumen de pases se distribuye intensamente entre las opciones activas del esquema de Kyle Shanahan para encarar los compromisos del calendario.",
+      "accion": "Déjalo fuera de tu alineación titular para la semana 9.",
       "en": {
-        "titulo": "Christian McCaffrey cleared for full workload Week 9",
+        "titulo": "Brandon Aiyuk Meets With 49ers Front Office",
         "claves": [
-          "Star running back logged full practice on Friday",
-          "Projects for 20.8 PPR points in Week 9",
-          "San Francisco gets key starters back in Week 9"
+          "Meeting held Nov 6 with Aiyuk and agent Drew Rosenhaus.",
+          "Receiver remains listed as DNR with severe knee injury.",
+          "No clear fantasy timeline established for week 9 rosterers."
         ],
-        "contexto": "Christian McCaffrey was cleared with no physical limitations for the Week 9 matchup against the Raiders. San Francisco's coaching staff confirmed the star running back practiced fully, clearing up any injury doubts. The 49ers also get back defensive end Nick Bosa, who missed action since Week 2, offering overall team stability heading into Sunday.",
-        "fantasy": "Boasting a 20.8 PPR point projection from the FX model in Week 9, McCaffrey remains an elite RB1 across all fantasy formats. Lock him into your starting lineup in PPR, standard, and dynasty leagues. His dual-threat workload offers an exceptionally high floor and massive ceiling against a vulnerable Las Vegas Raiders defense.",
-        "equipo_impacto": "McCaffrey's return takes immense pressure off quarterback Brock Purdy and stretches opposing defenses. San Francisco's offensive line regains rhythm as the rushing attack re-establishes itself as the team's primary offensive engine.",
-        "accion": "Start Christian McCaffrey as an elite RB1 with full confidence in Week 9."
+        "contexto": "The San Francisco 49ers met on Friday, Nov 6, with wide receiver Brandon Aiyuk and his agent, Drew Rosenhaus. The summit focused on navigating the ongoing contract and health narrative surrounding the pass-catcher. Currently listed as DNR due to ACL and MCL knee tears, Aiyuk's immediate playing prospects and long-term standing with the franchise remain uncertain as the team moves through the regular season schedule.",
+        "fantasy": "From a week 9 fantasy perspective, Brandon Aiyuk has zero immediate value while carrying the DNR status due to his serious ACL and MCL knee injury. He must stay out of redraft starting lineups across all scoring formats, including PPR. Fantasy managers in dynasty leagues should monitor these front-office discussions closely, while redraft owners look elsewhere for target volume in San Francisco's passing game.",
+        "equipo_impacto": "San Francisco's aerial attack relies entirely on available options without Aiyuk. Kyle Shanahan's offense continues to funnel targets toward active playmakers as negotiations and medical evaluations play out off the field.",
+        "accion": "Keep Brandon Aiyuk off your active week 9 fantasy lineup."
       },
-      "etiqueta": "START",
-      "impacto": "SUBE",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
       "equipo": "SF",
       "equipos": [
-        "SF",
-        "LV"
+        "SF"
       ],
       "jugadores": [
-        "4034",
-        "8183"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50402463/nick-bosa-back-christian-mccaffrey-good-go-niners",
-          "t": "Nick Bosa back, Christian McCaffrey good to go for Niners"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261107014701",
-      "fecha": "2026-11-07T01:47:26.337Z",
-      "semana": 9,
-      "titulo": "Malik Nabers sin restricciones para la semana 9",
-      "claves": [
-        "El receptor novato entrenó al 100% previo al duelo",
-        "Proyección FX de 18.0 pts PPR en semana 9",
-        "Asume carga principal ante baja de Cam Skattebo"
-      ],
-      "contexto": "El receptor Malik Nabers fue catalogado como listo sin limitaciones físicas para el duelo divisional de la semana 9 entre Giants y Eagles. Tras semanas de seguimiento cuidadoso, el cuerpo médico de Nueva York dio luz verde al egresado de LSU. Mientras Cam Skattebo se perfila como duda casi descartada por lesión de isquiotibiales, Nabers concentrará el objetivo principal en el esquema aéreo de los Giants.",
-      "fantasy": "Malik Nabers ingresa a la semana 9 con proyecciones de 18.0 pts PPR en el modelo FX, consolidándose como opción WR1 en formatos PPR y Half-PPR. Su participación no tendrá restricciones de jugadas, lo que incrementa sustancialmente su techo de puntos frente a la secundaria de Philadelphia. Es un elemento infaltable en ligas de 10 o 12 equipos para el fin de semana.",
-      "equipo_impacto": "Sin Cam Skattebo en el terreno, el ataque de Giants dependerá fuertemente del brazo del mariscal y la capacidad de Nabers para generar yardas tras la recepción, monopolizando los targets del equipo.",
-      "accion": "Arranca a Malik Nabers como tu WR1 o WR2 con total confianza en la semana 9.",
-      "en": {
-        "titulo": "Malik Nabers expects full go for Week 9",
-        "claves": [
-          "Rookie wide receiver fully cleared for divisional matchup",
-          "Projects for 18.0 PPR points in Week 9",
-          "Set to dominate targets with Cam Skattebo doubtful"
-        ],
-        "contexto": "Wide receiver Malik Nabers has been cleared with zero physical limitations for the Giants' Week 9 divisional showdown against the Eagles. New York's medical staff gave the LSU product the green light after a full practice session. With Cam Skattebo expected to sit out due to a hamstring injury, Nabers will command primary target volume.",
-        "fantasy": "Malik Nabers enters Week 9 with an 18.0 PPR point projection from the FX model, solidifying his status as a high-end WR1 in PPR and Half-PPR formats. Operating without snap restrictions drastically boosts his fantasy floor and ceiling against Philadelphia. He is a mandatory start in 10-team and 12-team leagues.",
-        "equipo_impacto": "With Cam Skattebo unlikely to play, New York's offense will lean heavily on Nabers to create yards after the catch, allowing him to dominate target share in the passing game.",
-        "accion": "Lock Malik Nabers into your lineup as a high-end WR option for Week 9."
-      },
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "NYG",
-      "equipos": [
-        "NYG",
-        "PHI"
-      ],
-      "jugadores": [
-        "11632",
-        "12481"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50402162/giants-cam-skattebo-doubtful-vs-eagles-nabers-full-go",
-          "t": "Giants' Cam Skattebo doubtful vs. Eagles; Malik Nabers 'full go'"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261107014702",
-      "fecha": "2026-11-07T01:47:26.337Z",
-      "semana": 9,
-      "titulo": "Matthew Stafford entrena completo para la semana 9",
-      "claves": [
-        "Pasador veterano practicó al 100% el viernes sin molestias",
-        "Lidera el ataque angelino listo para la semana 9",
-        "Impulsa el valor de Puka Nacua en fantasy"
-      ],
-      "contexto": "El veterano mariscal de campo de Rams, Matthew Stafford, practicó al 100% sin limitaciones este viernes, quedando totalmente listo para encarar la semana 9 de la NFL. Stafford superó cualquier molestia física previa y liderará a la ofensiva angelina en su siguiente compromiso. Su presencia asegura continuidad y dinamismo en un ataque que busca consolidarse dentro de la carrera por los playoffs.",
-      "fantasy": "Aunque Stafford no figura en el top 8 de proyecciones para QBs de FX esta semana 9, su disponibilidad eleva enormemente el techo de Puka Nacua, quien proyecta 22 pts PPR. En ligas Superflex o de 2 QBs es un titular obligatorio, mientras que en ligas de 1 QB funciona como un streaming sólido según el enfrentamiento directo.",
-      "equipo_impacto": "La confirmación de Stafford estabiliza el esquema ofensivo de Los Angeles, garantizando distribución precisa de pases para sus receptores principales y manteniendo la fluidez del ataque por aire en la semana 9.",
-      "accion": "Alinea a Matthew Stafford en formatos Superflex o considera sus receptores como pilares fantasy.",
-      "en": {
-        "titulo": "Matthew Stafford fully cleared for Week 9 action",
-        "claves": [
-          "Rams quarterback logged full practice without limitations on Friday",
-          "Ready to command starting offense in Week 9",
-          "Boosts fantasy ceiling for wide receiver Puka Nacua"
-        ],
-        "contexto": "Rams veteran quarterback Matthew Stafford logged a full practice on Friday with no physical limitations, clearing him completely for Week 9. Stafford cleared up lingering health concerns and will command Los Angeles' starting offense. His full availability provides needed stability as the team looks to maintain momentum in their playoff push.",
-        "fantasy": "While Stafford sits outside FX model top 8 QB projections for Week 9, his presence significantly elevates wide receiver Puka Nacua, who projects at 22.0 PPR points. Stafford is a mandatory starter in Superflex and 2-QB formats, while offering solid streamer viability in standard 1-QB leagues depending on matchup demands.",
-        "equipo_impacto": "Stafford's active status stabilizes Los Angeles' offensive system, ensuring efficient pass distribution to primary wide receivers while maintaining consistent overall passing game rhythm throughout Week 9.",
-        "accion": "Start Matthew Stafford in Superflex formats and fire up your Rams pass catchers."
-      },
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "LAR",
-      "equipos": [
-        "LAR"
-      ],
-      "jugadores": [
-        "421",
-        "9493"
+        "6803"
       ],
       "fuentes": [
         {
           "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/matthew-stafford-ready-week-9-011822176.html",
-          "t": "Matthew Stafford ready to go for Week 9"
+          "u": "https://sports.yahoo.com/articles/brandon-aiyuk-returning-49ers-latest-061646461.html",
+          "t": "Is Brandon Aiyuk returning to 49ers? Latest on NFL&#39;s greatest soap opera"
         }
       ],
       "menciona": []
@@ -169,15 +76,15 @@
       "estatus": "Fuera"
     },
     {
+      "id": "4881",
+      "estatus": "Fuera"
+    },
+    {
       "id": "5849",
       "estatus": "Duda"
     },
     {
       "id": "4943",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "4881",
       "estatus": "Fuera"
     },
     {
@@ -189,12 +96,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12508",
-      "estatus": "Fuera"
-    },
-    {
       "id": "8137",
       "estatus": "Duda"
+    },
+    {
+      "id": "12508",
+      "estatus": "Fuera"
     },
     {
       "id": "8146",
@@ -253,16 +160,16 @@
       "estatus": "Duda"
     },
     {
+      "id": "13287",
+      "estatus": "Fuera"
+    },
+    {
       "id": "5872",
       "estatus": "Fuera"
     },
     {
       "id": "4983",
       "estatus": "Duda"
-    },
-    {
-      "id": "13287",
-      "estatus": "Fuera"
     },
     {
       "id": "5927",
@@ -281,11 +188,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "6819",
+      "id": "12533",
       "estatus": "Fuera"
     },
     {
-      "id": "12533",
+      "id": "6819",
       "estatus": "Fuera"
     },
     {
@@ -317,55 +224,55 @@
     "6130",
     "11625",
     "3286",
-    "3161",
     "13276",
-    "DET",
     "12491",
-    "NO",
-    "8161",
-    "13337",
+    "3161",
+    "DET",
     "13150",
-    "2020",
+    "NO",
+    "13337",
+    "8161",
     "11610",
     "7561",
+    "13603",
     "11783",
+    "2020",
     "4993",
     "12487",
-    "13286",
     "12469",
-    "1479",
     "13414",
-    "NYG",
-    "5995",
-    "12524",
-    "10219"
+    "12634",
+    "8119",
+    "1479",
+    "13286",
+    "NYG"
   ],
   "soltados": [
     "11435",
+    "8129",
     "5849",
     "10219",
-    "WAS",
-    "8129",
     "9230",
+    "WAS",
     "3271",
     "11637",
+    "8135",
     "11581",
     "NE",
-    "8135",
     "9480",
     "10235",
-    "4881",
-    "CLE",
     "12718",
-    "1945",
+    "4881",
+    "7561",
+    "CLE",
     "13424",
     "4037",
-    "5012",
     "11834",
-    "TB",
-    "7561",
+    "12487",
+    "5012",
+    "13296",
     "3321",
-    "13296"
+    "13337"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
