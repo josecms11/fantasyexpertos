@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-08T01:51:18.128Z",
-  "ultimaIA": "2026-11-08T01:51:18.128Z",
+  "actualizado": "2026-11-08T08:16:39.312Z",
+  "ultimaIA": "2026-11-08T08:16:39.312Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,46 +14,90 @@
   ],
   "noticias": [
     {
-      "id": "n20261108015100",
-      "fecha": "2026-11-08T01:51:18.128Z",
+      "id": "n20261108081600",
+      "fecha": "2026-11-08T08:16:39.312Z",
       "semana": 9,
-      "titulo": "Dyami Brown a reserva de lesionados en Washington",
+      "titulo": "Bears Enfrentan el Ataque Terrestre de Buccaneers",
       "claves": [
-        "Commanders colocan al receptor Dyami Brown en lista de lesionados.",
-        "Baja sensible que reduce aún más la rotación aérea de Washington.",
-        "Jer'Zhan Newton fue activado al roster principal del equipo."
+        "Chicago busca contener la carrera de Tampa Bay en semana 9",
+        "Bears se mantienen en la cima de la NFC Norte",
+        "Duelo clave para las defensivas en formatos de fantasy PPR"
       ],
-      "contexto": "Los Washington Commanders anunciaron movimientos en su plantilla previo a la semana 9, colocando al receptor Dyami Brown en la lista de lesionados. Al mismo tiempo, la organización activó al liniero defensivo Jer'Zhan Newton. La baja de Brown agrava la crisis de receptores en Washington, sumándose a las ausencias ya confirmadas de Terry McLaurin en IR y Treylon Burks descartado, dejando al cuerpo de receptores sumamente mermado.",
-      "fantasy": "Dyami Brown debe ser cortado de inmediato en ligas estándar de 10 y 12 equipos, o colocado en tu espacio de IR si juegas en formatos dynasty profundos. Su ausencia forzará una redistribución de volumen aéreo en Washington. El valor de los pasadores del equipo sufre una baja considerable ante la falta de armas perimetrales confiables para afrontar la semana 9.",
-      "equipo_impacto": "La ofensiva de Commanders pierde otra pieza en el juego aéreo tras la baja de Brown. Con Terry McLaurin y Jacory Croskey-Merritt fuera, la defensiva recibe aire fresco con Jer'Zhan Newton, pero el ataque tendrá que apoyarse en formaciones pesadas.",
-      "accion": "Corta a Dyami Brown en ligas redraft para liberar espacio en tu banca hoy mismo.",
+      "contexto": "Chicago llega a la semana 9 liderando la NFC Norte y con la meta de frenar el ataque por tierra de Tampa Bay. El choque entre Bears y Buccaneers representa una batalla táctica donde la defensiva de Chicago busca dominar la trinchera para proteger el liderato divisional. Este duelo establece las condiciones para definir el ritmo ofensivo de ambos equipos en la mitad de la temporada 2025.",
+      "fantasy": "El planteamiento defensivo impacta las proyecciones de los corredores y defensivas en ligas fantasy. Buccaneers D/ST proyecta 10.3 pts en la semana 9, reflejando un duelo cerrado en la trinchera. Para managers en formatos PPR y estandar, la capacidad de Chicago para frenar los acarreos obliga a vigilar de cerca las alineaciones titulares. Mantener precaucion con los corredores involucrados en enfrentamientos divisionales de alta exigencia resulta fundamental esta semana.",
+      "equipo_impacto": "La estrategia de Chicago busca forzar al rival a soltar el balon por aire, modificando el plan de juego de Tampa Bay. Si los Bears controlan la linea de golpeo, su propia ofensiva tendra mejor posicion de campo durante 4 cuartos.",
+      "accion": "Evalua las opciones en tu banca antes de colocar corredores en duelos terrestres complicados para la semana 9.",
+      "en": {
+        "titulo": "Bears Face Buccaneers Ground Game in Week 9",
+        "claves": [
+          "Chicago aims to limit Tampa Bay rushing attack in Week 9",
+          "Bears remain atop the NFC North standings",
+          "Key matchup for fantasy defenses in PPR formats"
+        ],
+        "contexto": "Chicago enters Week 9 leading the NFC North with the goal of halting Tampa Bay's ground attack. The matchup between the Bears and Buccaneers features a tactical battle where Chicago's defense intends to control the trenches and protect its division lead. This contest sets the stage for defining the offensive flow for both teams midway through the 2025 season.",
+        "fantasy": "The defensive scheme impacts projections for running backs and defenses across fantasy leagues. Buccaneers D/ST is projected for 10.3 pts in Week 9, signaling a tight battle upfront. For managers in PPR and standard formats, Chicago's focus on stopping the run requires careful review of starting lineups. Proceed with caution when starting running backs in high-stakes divisional matchups this week.",
+        "equipo_impacto": "Chicago's strategy aims to force the opponent into passing situations, altering Tampa Bay's game plan. Controlling the line of scrimmage will provide the Bears with superior field position throughout 4 quarters.",
+        "accion": "Evaluate your bench options before starting running backs facing tough ground matchups in Week 9."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "NEUTRO",
+      "equipo": "CHI",
+      "equipos": [
+        "CHI",
+        "TB"
+      ],
+      "jugadores": [],
+      "fuentes": [
+        {
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/bears-vs-buccaneers-odds-prediction-where-to-watch/",
+          "t": "\n                        Bears vs. Buccaneers: Chicago looks to tame Tampa&#039;s running game while staying atop the NFC North\n            "
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261108081601",
+      "fecha": "2026-11-08T08:16:39.312Z",
+      "semana": 9,
+      "titulo": "Blueprint de Receptores para la Semana 9",
+      "claves": [
+        "Analisis estrategico de receptores para la semana 9",
+        "Proyecciones elevadas para receptores estelares en ligas PPR",
+        "Guia fundamental para configurar alineaciones titulares de fantasy"
+      ],
+      "contexto": "El analista Hayden Winks presento el esquema estrategico para la posicion de receptor abierto en la semana 9. Esta guia detalla los factores clave para evaluar a los receptores en fantasy football, analizando duelos directos y proyecciones de volumen de pases. La informacion resulta crucial para tomar decisiones informadas en un punto critico de la temporada donde cada victoria cuenta para acceder a playoffs.",
+      "fantasy": "El analisis de receptores permite optimizar alineaciones en formatos PPR y estandar. Jugadores como Jaxon Smith-Njigba con 23 pts proyectados y Puka Nacua con 22.1 pts lideran el radar ofensivo de la semana 9. Sin embargo, managers con Amon-Ra St. Brown deben monitorear su estatus de Cuestionable por costillas. Comparar el volumen de targets frente a las defensivas secundarias rivales ayuda a maximizar la produccion de puntos semanales.",
+      "equipo_impacto": "La distribucion de pases modifica el valor de los receptores 1 y 2 en los esquemas ofensivos. Evaluar las tendencias de passeo ayuda a prever el rendimiento de todo el cuerpo de receptores.",
+      "accion": "Revisa las proyecciones y reportes de salud de tus receptores antes de fijar tu alineacion de semana 9.",
+      "en": {
+        "titulo": "Wide Receiver Blueprint for Week 9 Fantasy",
+        "claves": [
+          "Strategic wide receiver analysis published for Week 9",
+          "High projections for star receivers in PPR formats",
+          "Essential guide for setting your fantasy starting lineups"
+        ],
+        "contexto": "Fantasy analyst Hayden Winks delivered the strategic blueprint for the wide receiver position in Week 9. This guide outlines key factors for evaluating wideouts in fantasy football, examining matchup dynamics and projected target volume. The information is critical for making informed decisions at a pivotal stage of the season where securing victories is essential for playoff contention.",
+        "fantasy": "Analyzing wide receivers helps optimize lineups across PPR and standard formats. Players like Jaxon Smith-Njigba with 23 projected pts and Puka Nacua with 22.1 pts lead the offensive board for Week 9. However, managers holding Amon-Ra St. Brown must monitor his Questionable status due to ribs. Comparing target share against opposing secondary defenses maximizes weekly point output.",
+        "equipo_impacto": "Target distribution alters the fantasy value of number 1 and 2 wideouts within offensive schemes. Evaluating passing trends helps predict overall performance across entire receiving corps.",
+        "accion": "Check wide receiver projections and health status before finalizing your Week 9 lineup."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "NEUTRO",
+      "equipo": "DET",
+      "equipos": [
+        "DET",
+        "SEA",
+        "LAR",
+        "DAL"
+      ],
+      "jugadores": [],
       "fuentes": [
         {
           "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/washington-commanders-roster-moves-jer-190937968.html",
-          "t": "Commanders Roster Moves: Jer&#39;Zhan Newton activated, Dyami Brown to IR"
+          "u": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-hayden-winks-wr-blueprint-for-week-9-201635405.html",
+          "t": "Fantasy Football Rankings: Hayden Winks&#39; WR Blueprint for Week 9"
         }
-      ],
-      "en": {
-        "titulo": "Dyami Brown Placed on Injured Reserve by Commanders",
-        "claves": [
-          "Commanders placed wide receiver Dyami Brown on injured reserve.",
-          "Washington activates defensive lineman Jer'Zhan Newton to active roster.",
-          "Brown must be dropped across standard fantasy leagues immediately."
-        ],
-        "contexto": "The Washington Commanders announced roster moves ahead of week 9, officially placing wide receiver Dyami Brown on injured reserve. In a corresponding move, the franchise activated defensive lineman Jer'Zhan Newton from injured reserve. Brown's placement on IR severely depletes Washington's pass-catching corps, compounding existing issues with Terry McLaurin already sidelined on IR and Treylon Burks ruled out with a foot injury for this upcoming slate.",
-        "fantasy": "Brown is an immediate drop in all standard 10-team and 12-team leagues, warranting an IR stash only in very deep dynasty formats. With multiple perimeter weapons now sidelined, Washington's offensive efficiency takes a clear downgrade. Expect lower passing ceilings overall, making Washington's passing game difficult to trust in week 9 lineups while targets consolidate among remaining secondary depth options across fantasy rosters.",
-        "equipo_impacto": "Washington's offense suffers another blow out wide without Brown to stretch opposing secondaries. While Jer'Zhan Newton's activation bolsters the defensive interior, the offense must lean heavily on condensed formations and remaining depth pieces to sustain drives moving forward.",
-        "accion": "Drop Dyami Brown immediately in all redraft leagues to open up a valuable bench spot."
-      },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "WAS",
-      "equipos": [
-        "WAS"
-      ],
-      "jugadores": [
-        "7587"
       ],
       "menciona": []
     }
@@ -223,26 +267,26 @@
   "agregados": [
     "6130",
     "3286",
+    "11579",
     "11625",
     "13603",
-    "12491",
     "4035",
-    "11579",
+    "12491",
+    "NO",
     "13276",
     "3161",
     "13150",
-    "NO",
+    "7608",
     "8161",
     "DET",
-    "13337",
-    "7561",
     "NYG",
-    "12469",
-    "12634",
-    "7608",
-    "4993",
-    "2020",
+    "13337",
     "13281",
+    "7561",
+    "12469",
+    "2020",
+    "4993",
+    "12634",
     "11610",
     "4663",
     "8119"
@@ -252,27 +296,27 @@
     "11435",
     "9757",
     "5849",
-    "9230",
     "8154",
+    "9230",
     "11637",
-    "8135",
     "WAS",
+    "8135",
     "3271",
-    "12487",
     "11581",
     "10235",
     "12718",
     "7561",
-    "10219",
     "13424",
-    "NE",
-    "13296",
+    "12487",
     "11834",
-    "4037",
+    "NE",
+    "10219",
+    "13296",
     "CLE",
+    "4037",
+    "3321",
     "9480",
-    "4881",
-    "3321"
+    "9502"
   ],
   "duelo": {
     "a": "Josh Allen",
