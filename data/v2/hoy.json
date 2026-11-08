@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-08T15:23:02.350Z",
-  "ultimaIA": "2026-11-08T15:23:02.350Z",
+  "actualizado": "2026-11-08T19:51:14.974Z",
+  "ultimaIA": "2026-11-08T19:51:14.974Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,45 +14,95 @@
   ],
   "noticias": [
     {
-      "id": "n20261108152300",
-      "fecha": "2026-11-08T15:23:02.350Z",
+      "id": "n20261108195100",
+      "fecha": "2026-11-08T19:51:14.974Z",
       "semana": 9,
-      "titulo": "Sam Darnold podría perderse también la semana 10",
+      "titulo": "George Pickens queda inactivo ante los Colts",
       "claves": [
-        "Sam Darnold descartado para la semana 9",
-        "Lesión de cuádriceps amenaza su semana 10",
-        "Impacto negativo en el ataque de Seahawks"
+        "George Pickens descartado oficialmente por lesión de isquiotibiales",
+        "CeeDee Lamb absorberá volumen masivo de targets",
+        "Ryan Flournoy sube como opción desesperada en ligas profundas"
       ],
-      "contexto": "El mariscal de campo de Seattle Seahawks, Sam Darnold, quedó oficialmente fuera para el partido de la semana 9 contra Arizona Cardinals tras sufrir lesión de cuádriceps. Diversos reportes señalan que el pasador titular está en riesgo serio de perderse también el choque de la semana 10 ante Las Vegas Raiders mientras recibe tratamiento médico.",
-      "fantasy": "Al estar en estatus de OUT para la semana 9 y en duda para la semana 10, Sam Darnold no puede ser alineado en ligas de fantasy football. Su ausencia disminuye el techo de Jaxon Smith-Njigba en formatos PPR al perder eficiencia en pases profundos. Si juegas en ligas Superflex, debes buscar inmediatamente su reemplazo en waivers.",
-      "equipo_impacto": "La baja de Sam Darnold obliga a Seattle a recargar el volumen ofensivo en acarreos de Kenneth Walker III durante la semana 9. El esquema aéreo perderá explosividad vertical mientras permanezca el pasador suplente al mando de Seahawks.",
-      "accion": "Mueve a Sam Darnold a tu banca o espacio de lesionados y busca 1 mariscal sustituto.",
+      "contexto": "Dallas confirmó la baja de George Pickens para el choque de la semana 9 frente a Indianapolis tras no recuperarse de su problema en los isquiotibiales. El receptor no logró superar las molestias físicas previas al encuentro dominical y el cuerpo técnico prefirió guardarlo. Su ausencia deja a la ofensiva de Dak Prescott sin su principal amenaza de perímetro para medirse a una secundaria de Colts que concede yardas.",
+      "fantasy": "Mueve de inmediato a George Pickens a tu banca o puesto de lesionados; no sumará puntos en la semana 9. Esta baja catapulta a CeeDee Lamb como un receptor de calibre top 3 general proyectado en 19.3 pts en PPR. En formatos dynasty o ligas de 14 equipos, Ryan Flournoy y Jalen Tolbert ganan valor como parches de emergencia, mientras que Jake Ferguson verá un incremento directo en pases dentro de zona roja.",
+      "equipo_impacto": "La ofensiva de Dallas pierde dinamismo profundo pero concentrará el juego aéreo en CeeDee Lamb y Jake Ferguson. Dak Prescott deberá soltar el balón más rápido ante la presión de Indianapolis, beneficiando trayectorias cortas y pases pantalla.",
+      "accion": "Sienta de inmediato a George Pickens en todas tus ligas y asegura a Ryan Flournoy si buscas un reemplazo de emergencia.",
       "en": {
-        "titulo": "Sam Darnold in jeopardy for Week 10 game",
+        "titulo": "George Pickens Ruled Inactive Against The Colts",
         "claves": [
-          "Sam Darnold ruled out for Week 9",
-          "Quadriceps injury threatens Week 10 status",
-          "Seahawks passing offense takes major hit"
+          "George Pickens officially sidelined due to hamstring injury",
+          "CeeDee Lamb set for monster target volume today",
+          "Ryan Flournoy emerges as desperate deep league flex"
         ],
-        "contexto": "Seattle Seahawks quarterback Sam Darnold is officially out for Week 9 against Arizona Cardinals due to a quadriceps injury. Reports indicate the starting passer is also in serious danger of missing Week 10 against Las Vegas Raiders while undergoing medical evaluation.",
-        "fantasy": "With an official OUT status for Week 9 and questionable projection for Week 10, Sam Darnold cannot be started in fantasy leagues. His absence caps Jaxon Smith-Njigba's ceiling in PPR formats due to lost downfield efficiency. In Superflex leagues, target 1 replacement QB on waivers immediately.",
-        "equipo_impacto": "Darnold's absence forces Seattle to shift offensive volume onto Kenneth Walker III in Week 9. The passing game loses vertical firepower until the starter returns.",
-        "accion": "Move Sam Darnold to your bench or IR slot and grab 1 starting quarterback."
+        "contexto": "Dallas officially ruled wide receiver George Pickens out for Week 9 against Indianapolis due to a lingering hamstring injury. Pickens failed pregame fitness tests, prompting the coaching staff to deactivate him for Sunday's matchup. His absence leaves quarterback Dak Prescott without his primary downfield weapon against a vulnerable Colts secondary, shifting the entire offensive game plan heavily toward intermediate concepts.",
+        "fantasy": "Move George Pickens straight to your bench or injured reserve slot; he produces zero fantasy points this week. His absence locks CeeDee Lamb into elite top-tier status, projected for 19.3 PPR points with massive target volume. In deeper formats and 14-team leagues, Ryan Flournoy and Jalen Tolbert offer desperate flex appeal, while tight end Jake Ferguson receives a noticeable boost in red-zone opportunities.",
+        "equipo_impacto": "Dallas loses vertical stretch capabilities without Pickens on the outside. Dak Prescott will be forced to distribute targets heavily between CeeDee Lamb and tight ends, relying on quicker rhythm throws to neutralize the Colts' defensive front.",
+        "accion": "Bench George Pickens immediately across all fantasy formats and elevate CeeDee Lamb with total confidence."
       },
       "etiqueta": "LESIÓN",
       "impacto": "BAJA",
-      "equipo": "SEA",
+      "equipo": "DAL",
       "equipos": [
-        "SEA"
+        "DAL",
+        "IND"
       ],
       "jugadores": [
-        "4943"
+        "8137",
+        "6786",
+        "3294"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50400897/sources-seahawks-sam-darnold-danger-missing-week-10",
-          "t": "Sources: Seahawks' Sam Darnold in jeopardy of missing Week 10 game vs. Raiders"
+          "u": "https://www.espn.com/nfl/story/_/id/50421090/cowboys-wr-pickens-cb-porter-lb-overshown-inactive-vs-colts",
+          "t": "Cowboys WR Pickens, CB Porter, LB Overshown inactive against Colts"
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261108195102",
+      "fecha": "2026-11-08T19:51:14.974Z",
+      "semana": 9,
+      "titulo": "Odell Beckham Jr. activado al roster de Vikings",
+      "claves": [
+        "Odell Beckham Jr. firma en roster activo de Minnesota",
+        "Listo para debutar este lunes frente a Buffalo",
+        "Emerge como opción especulativa en ligas muy profundas"
+      ],
+      "contexto": "Minnesota firmó oficialmente a Odell Beckham Jr. en su plantilla de 53 jugadores, dejándolo listo para debutar este lunes por la noche frente a los Bills. El veterano receptor llega para aportar profundidad en un cuerpo de receptores mermado por las lesiones de Jauan Jennings y Demond Claiborne, además de las ausencias ofensivas. Con Carson Wentz tomando los controles del equipo, Minnesota busca experiencia y manos seguras en momentos cruciales del encuentro.",
+      "fantasy": "No arranques a Odell Beckham Jr. en la semana 9; su rol será limitado mientras se adapta al esquema ofensivo de Minnesota. Su verdadero valor reside en ligas muy profundas de 14 o 16 equipos como una adición especulativa de waivers para la banca. Si demuestra química con Carson Wentz y gana rutas saliendo desde el slot, podría convertirse en un receptor de posesión viable para la segunda mitad del calendario fantasy.",
+      "equipo_impacto": "La incorporación de Beckham ofrece un receptor de rutas veterano para Carson Wentz en situaciones de tercer down, quitándole presión a los objetivos secundarios de la ofensiva aérea de Minnesota.",
+      "accion": "Monitorea la participación de Odell Beckham Jr. en waivers y solo agrégalo como apuesta profunda para tu banca.",
+      "en": {
+        "titulo": "Odell Beckham Jr. Added To Vikings Active Roster",
+        "claves": [
+          "Odell Beckham Jr. signed to Vikings active roster",
+          "Available for Monday night showdown against Buffalo Bills",
+          "Speculative bench stash strictly in very deep leagues"
+        ],
+        "contexto": "Minnesota officially signed veteran wide receiver Odell Beckham Jr. to their 53-man roster, clearing the way for his team debut on Monday night against the Buffalo Bills. With Jauan Jennings ruled out due to a calf injury and several offensive contributors sidelined, the Vikings added Beckham to provide depth and reliable hands for newly installed starting quarterback Carson Wentz in a high-stakes matchup.",
+        "fantasy": "Do not start Odell Beckham Jr. in Week 9 lineups; his snap share will likely be capped in his first game action. However, he represents an intriguing speculative waiver stash in 14-team or dynasty formats. If Beckham quickly builds chemistry with Carson Wentz and establishes himself in 3-receiver sets, he could provide depth scoring during the upcoming fantasy playoff push as a rotational possession target.",
+        "equipo_impacto": "Beckham provides veteran experience and route precision on third downs for quarterback Carson Wentz, stabilizing a depleted wide receiver room without disrupting the core offensive identity against Buffalo.",
+        "accion": "Stash Odell Beckham Jr. on your bench only in very deep leagues while monitoring his snap share Monday night."
+      },
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "MIN",
+      "equipos": [
+        "MIN",
+        "BUF"
+      ],
+      "jugadores": [
+        "2078",
+        "3161",
+        "7049"
+      ],
+      "fuentes": [
+        {
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/vikings-signing-odell-beckham-jr-giants/",
+          "t": "\n                        Odell Beckham Jr. set to make Vikings debut after signing to 53-man roster, per report\n                    "
         }
       ],
       "menciona": []
@@ -60,12 +110,8 @@
   ],
   "lesionados": [
     {
-      "id": "7547",
-      "estatus": "Duda"
-    },
-    {
       "id": "4017",
-      "estatus": "Duda"
+      "estatus": "Fuera"
     },
     {
       "id": "6904",
@@ -100,11 +146,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "8137",
-      "estatus": "Duda"
+      "id": "8146",
+      "estatus": "Fuera"
     },
     {
-      "id": "8146",
+      "id": "8137",
       "estatus": "Fuera"
     },
     {
@@ -120,10 +166,6 @@
       "estatus": "Duda"
     },
     {
-      "id": "9230",
-      "estatus": "Duda"
-    },
-    {
       "id": "13279",
       "estatus": "Fuera"
     },
@@ -133,7 +175,7 @@
     },
     {
       "id": "12481",
-      "estatus": "Duda"
+      "estatus": "Fuera"
     },
     {
       "id": "12534",
@@ -154,6 +196,10 @@
     {
       "id": "12489",
       "estatus": "Fuera"
+    },
+    {
+      "id": "7526",
+      "estatus": "Duda"
     },
     {
       "id": "5872",
@@ -218,34 +264,38 @@
     {
       "id": "12711",
       "estatus": "Fuera"
+    },
+    {
+      "id": "8676",
+      "estatus": "Fuera"
     }
   ],
   "agregados": [
     "6130",
     "3286",
     "11579",
+    "11783",
     "4035",
-    "11625",
     "NO",
+    "11625",
     "13603",
-    "12491",
-    "3161",
     "13150",
-    "7608",
-    "13276",
-    "8161",
+    "3161",
     "NYG",
-    "DET",
+    "12491",
+    "8161",
+    "13276",
     "2020",
+    "DET",
+    "7608",
     "12469",
+    "11610",
     "13281",
     "7561",
+    "13286",
     "13337",
-    "4993",
-    "11610",
-    "4663",
-    "12634",
-    "13286"
+    "9756",
+    "7567"
   ],
   "soltados": [
     "8129",
@@ -253,26 +303,26 @@
     "9757",
     "5849",
     "WAS",
-    "8154",
-    "9230",
     "11637",
     "11581",
+    "8154",
+    "9230",
     "3271",
-    "10235",
-    "8135",
-    "12718",
-    "NE",
-    "13424",
     "11834",
-    "7561",
+    "NE",
+    "10235",
+    "13424",
+    "12718",
+    "8135",
     "CLE",
-    "10219",
-    "13296",
-    "4037",
-    "12487",
-    "DET",
+    "7561",
     "1945",
-    "TB"
+    "13281",
+    "DET",
+    "TB",
+    "4037",
+    "3321",
+    "13296"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
