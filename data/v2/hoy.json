@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-07T22:39:24.140Z",
-  "ultimaIA": "2026-11-07T22:39:24.140Z",
+  "actualizado": "2026-11-08T01:51:18.128Z",
+  "ultimaIA": "2026-11-08T01:51:18.128Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,94 +14,46 @@
   ],
   "noticias": [
     {
-      "id": "n20261107223900",
-      "fecha": "2026-11-07T22:39:24.140Z",
+      "id": "n20261108015100",
+      "fecha": "2026-11-08T01:51:18.128Z",
       "semana": 9,
-      "titulo": "Saints activan a Jordyn Tyson tras superar su lesión",
+      "titulo": "Dyami Brown a reserva de lesionados en Washington",
       "claves": [
-        "Saints activan a Jordyn Tyson de reserva de lesionados.",
-        "El receptor enfrentará a los Browns tras superar su molestia.",
-        "New Orleans cortó al corredor Kendre Miller en el movimiento."
+        "Commanders colocan al receptor Dyami Brown en lista de lesionados.",
+        "Baja sensible que reduce aún más la rotación aérea de Washington.",
+        "Jer'Zhan Newton fue activado al roster principal del equipo."
       ],
-      "contexto": "Los Saints activaron al receptor novato Jordyn Tyson y al tackle izquierdo Kelvin Banks Jr. desde la lista de lesionados antes del partido de la semana 9 contra los Browns. Tyson aparece en el reporte de estatus como cuestionable por una lesión en el isquiotibial. Para hacer espacio en la plantilla activa, el equipo decidió cortar al corredor Kendre Miller previo al encuentro dominical.",
-      "fantasy": "El regreso de Jordyn Tyson ofrece profundidad al ataque aéreo de New Orleans en ligas de 12 o más equipos, aunque su estatus de cuestionable exige precaución. No es opción inmediata para alinear en la semana 9 si tienes alternativas más seguras en tu roster. Chris Olave proyecta 17.6 pts PPR este fin de semana, mientras que Tyson debe permanecer en la banca o ser vigilado desde la agencia libre.",
-      "equipo_impacto": "La activación del tackle Kelvin Banks refuerza la protección del pasador ante la defensiva de Cleveland. Con la salida de Kendre Miller, el volumen del backfield se concentra más en los corredores activos, beneficiando la estabilidad terrestre de New Orleans.",
-      "accion": "Mantén a Jordyn Tyson en la banca o en la lista de reservas mientras confirmas su volumen de juego.",
-      "en": {
-        "titulo": "Saints activate Jordyn Tyson ahead of Week 9",
-        "claves": [
-          "Saints activated rookie WR Jordyn Tyson from injured reserve.",
-          "Tyson faces the Browns despite being listed as questionable.",
-          "New Orleans released running back Kendre Miller in corresponding move."
-        ],
-        "contexto": "The Saints activated rookie wide receiver Jordyn Tyson and left tackle Kelvin Banks Jr. from injured reserve ahead of their Week 9 matchup against the Browns. Tyson is listed as questionable on the official injury report with a hamstring issue. To clear a roster spot for these activations, New Orleans officially released running back Kendre Miller prior to Sunday's game.",
-        "fantasy": "Jordyn Tyson adds depth to the New Orleans passing attack in 12-team leagues, but his questionable status requires fantasy managers to be cautious. He is not a recommended starter for Week 9 until his target share stabilizes. Chris Olave projects for 17.6 PPR pts this week, making Tyson a stash candidate on the bench or a waiver target to watch.",
-        "equipo_impacto": "Activating left tackle Kelvin Banks strengthens the Saints' pass protection against Cleveland. The departure of Kendre Miller streamlines the backfield touches, providing more clarity and structural stability for New Orleans' running game.",
-        "accion": "Keep Jordyn Tyson stashed on your bench until his target share increases."
-      },
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "NO",
-      "equipos": [
-        "NO",
-        "CLE"
-      ],
-      "jugadores": [
-        "13281",
-        "8144",
-        "9757"
-      ],
+      "contexto": "Los Washington Commanders anunciaron movimientos en su plantilla previo a la semana 9, colocando al receptor Dyami Brown en la lista de lesionados. Al mismo tiempo, la organización activó al liniero defensivo Jer'Zhan Newton. La baja de Brown agrava la crisis de receptores en Washington, sumándose a las ausencias ya confirmadas de Terry McLaurin en IR y Treylon Burks descartado, dejando al cuerpo de receptores sumamente mermado.",
+      "fantasy": "Dyami Brown debe ser cortado de inmediato en ligas estándar de 10 y 12 equipos, o colocado en tu espacio de IR si juegas en formatos dynasty profundos. Su ausencia forzará una redistribución de volumen aéreo en Washington. El valor de los pasadores del equipo sufre una baja considerable ante la falta de armas perimetrales confiables para afrontar la semana 9.",
+      "equipo_impacto": "La ofensiva de Commanders pierde otra pieza en el juego aéreo tras la baja de Brown. Con Terry McLaurin y Jacory Croskey-Merritt fuera, la defensiva recibe aire fresco con Jer'Zhan Newton, pero el ataque tendrá que apoyarse en formaciones pesadas.",
+      "accion": "Corta a Dyami Brown en ligas redraft para liberar espacio en tu banca hoy mismo.",
       "fuentes": [
         {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50410541/sources-saints-activate-wr-jordyn-tyson-lt-kelvin-banks",
-          "t": "Saints activate WR Jordyn Tyson, LT Kelvin Banks, cut RB Kendre Miller"
+          "m": "Yahoo Sports",
+          "u": "https://sports.yahoo.com/articles/washington-commanders-roster-moves-jer-190937968.html",
+          "t": "Commanders Roster Moves: Jer&#39;Zhan Newton activated, Dyami Brown to IR"
         }
       ],
-      "menciona": []
-    },
-    {
-      "id": "n20261107223901",
-      "fecha": "2026-11-07T22:39:24.140Z",
-      "semana": 9,
-      "titulo": "Jauan Jennings rechaza traspaso y reafirma su compromiso",
-      "claves": [
-        "Jauan Jennings rechaza opción de regresar a 49ers vía canje.",
-        "Receptor reporta baja producción con Vikings pero prefiere quedarse.",
-        "Descartado para semana 9 por lesión en la pantorrilla."
-      ],
-      "contexto": "El receptor de los Vikings, Jauan Jennings, declaró que rechazó la oportunidad de regresar a 49ers mediante un canje, priorizando permanecer en Minnesota. Jennings afirmó estar contento con el equipo pese a registrar poca producción ofensiva esta temporada. Actualmente el jugador está clasificado como descartado para el partido de la semana 9 debido a una lesión en la pantorrilla que le impedirá tener actividad.",
-      "fantasy": "Al estar fuera para la semana 9 por lesión, no debes considerar a Jauan Jennings en ninguna alineación fantasy. En ligas profundas de 14 equipos su valor cae significativamente por su bajo rendimiento y su condición médica. Con Jennings descartado, las opciones aéreas de Minnesota se reconfiguran, mientras la defensiva de Vikings proyecta 10.9 pts en el modelo FX para este fin de semana.",
-      "equipo_impacto": "La permanencia de Jennings brinda continuidad al cuerpo de receptores de Minnesota a largo plazo. Sin embargo, su ausencia en la semana 9 obliga al coordinador ofensivo a repartir sus dianas entre los demás receptores disponibles.",
-      "accion": "Mantén a Jauan Jennings fuera de tu alineación en la semana 9.",
       "en": {
-        "titulo": "Jauan Jennings rejects trade offer to remain with Vikings",
+        "titulo": "Dyami Brown Placed on Injured Reserve by Commanders",
         "claves": [
-          "Jauan Jennings rejected trade return to the 49ers.",
-          "Receiver prefers staying in Minnesota despite low production.",
-          "Jennings is ruled out for Week 9 with calf injury."
+          "Commanders placed wide receiver Dyami Brown on injured reserve.",
+          "Washington activates defensive lineman Jer'Zhan Newton to active roster.",
+          "Brown must be dropped across standard fantasy leagues immediately."
         ],
-        "contexto": "Vikings wide receiver Jauan Jennings stated he turned down the chance to return to the 49ers via trade, choosing to stay in Minnesota. Jennings expressed satisfaction with his current team despite struggling to generate fantasy output this season. However, he has been officially ruled out for Week 9 due to a calf injury that keeps him off the field.",
-        "fantasy": "Since Jauan Jennings is ruled out for Week 9, fantasy managers must leave him on the bench across all formats. His fantasy value remains low in 12-team leagues due to limited production and injury status. With Jennings unavailable, Minnesota's passing game relies on other targets, while Vikings D/ST projects for 10.9 PPR pts in Week 9.",
-        "equipo_impacto": "Jennings' decision to stay maintains long-term continuity in Minnesota's receiver room. His absence in Week 9 forces the offense to redistribute targets among healthy receivers against their upcoming opponent.",
-        "accion": "Leave Jauan Jennings on your bench or waiver wire for Week 9."
+        "contexto": "The Washington Commanders announced roster moves ahead of week 9, officially placing wide receiver Dyami Brown on injured reserve. In a corresponding move, the franchise activated defensive lineman Jer'Zhan Newton from injured reserve. Brown's placement on IR severely depletes Washington's pass-catching corps, compounding existing issues with Terry McLaurin already sidelined on IR and Treylon Burks ruled out with a foot injury for this upcoming slate.",
+        "fantasy": "Brown is an immediate drop in all standard 10-team and 12-team leagues, warranting an IR stash only in very deep dynasty formats. With multiple perimeter weapons now sidelined, Washington's offensive efficiency takes a clear downgrade. Expect lower passing ceilings overall, making Washington's passing game difficult to trust in week 9 lineups while targets consolidate among remaining secondary depth options across fantasy rosters.",
+        "equipo_impacto": "Washington's offense suffers another blow out wide without Brown to stretch opposing secondaries. While Jer'Zhan Newton's activation bolsters the defensive interior, the offense must lean heavily on condensed formations and remaining depth pieces to sustain drives moving forward.",
+        "accion": "Drop Dyami Brown immediately in all redraft leagues to open up a valuable bench spot."
       },
-      "etiqueta": "SIT",
+      "etiqueta": "LESIÓN",
       "impacto": "BAJA",
-      "equipo": "MIN",
+      "equipo": "WAS",
       "equipos": [
-        "MIN",
-        "SF"
+        "WAS"
       ],
       "jugadores": [
-        "7049"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50411320/jennings-rebuffing-return-49ers-love-where-at",
-          "t": "Vikings WR Jauan Jennings on rebuffing return to 49ers: 'I love where I'm at'"
-        }
+        "7587"
       ],
       "menciona": []
     }
@@ -144,12 +96,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "8137",
-      "estatus": "Duda"
-    },
-    {
       "id": "12508",
       "estatus": "Fuera"
+    },
+    {
+      "id": "8137",
+      "estatus": "Duda"
     },
     {
       "id": "8146",
@@ -272,54 +224,54 @@
     "6130",
     "3286",
     "11625",
-    "12491",
     "13603",
+    "12491",
+    "4035",
+    "11579",
     "13276",
     "3161",
     "13150",
-    "4035",
     "NO",
-    "DET",
     "8161",
+    "DET",
     "13337",
     "7561",
-    "11579",
-    "12634",
-    "4993",
     "NYG",
     "12469",
+    "12634",
+    "7608",
+    "4993",
     "2020",
+    "13281",
     "11610",
-    "11783",
-    "8119",
     "4663",
-    "12524"
+    "8119"
   ],
   "soltados": [
     "8129",
     "11435",
-    "5849",
     "9757",
-    "8135",
+    "5849",
     "9230",
+    "8154",
     "11637",
-    "12487",
+    "8135",
     "WAS",
     "3271",
-    "8154",
+    "12487",
     "11581",
     "10235",
-    "7561",
     "12718",
+    "7561",
     "10219",
-    "NE",
     "13424",
-    "9480",
-    "4037",
+    "NE",
     "13296",
-    "CLE",
-    "4881",
     "11834",
+    "4037",
+    "CLE",
+    "9480",
+    "4881",
     "3321"
   ],
   "duelo": {
