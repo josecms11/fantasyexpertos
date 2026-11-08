@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-08T08:16:39.312Z",
-  "ultimaIA": "2026-11-08T08:16:39.312Z",
+  "actualizado": "2026-11-08T15:23:02.350Z",
+  "ultimaIA": "2026-11-08T15:23:02.350Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,89 +14,45 @@
   ],
   "noticias": [
     {
-      "id": "n20261108081600",
-      "fecha": "2026-11-08T08:16:39.312Z",
+      "id": "n20261108152300",
+      "fecha": "2026-11-08T15:23:02.350Z",
       "semana": 9,
-      "titulo": "Bears Enfrentan el Ataque Terrestre de Buccaneers",
+      "titulo": "Sam Darnold podría perderse también la semana 10",
       "claves": [
-        "Chicago busca contener la carrera de Tampa Bay en semana 9",
-        "Bears se mantienen en la cima de la NFC Norte",
-        "Duelo clave para las defensivas en formatos de fantasy PPR"
+        "Sam Darnold descartado para la semana 9",
+        "Lesión de cuádriceps amenaza su semana 10",
+        "Impacto negativo en el ataque de Seahawks"
       ],
-      "contexto": "Chicago llega a la semana 9 liderando la NFC Norte y con la meta de frenar el ataque por tierra de Tampa Bay. El choque entre Bears y Buccaneers representa una batalla táctica donde la defensiva de Chicago busca dominar la trinchera para proteger el liderato divisional. Este duelo establece las condiciones para definir el ritmo ofensivo de ambos equipos en la mitad de la temporada 2025.",
-      "fantasy": "El planteamiento defensivo impacta las proyecciones de los corredores y defensivas en ligas fantasy. Buccaneers D/ST proyecta 10.3 pts en la semana 9, reflejando un duelo cerrado en la trinchera. Para managers en formatos PPR y estandar, la capacidad de Chicago para frenar los acarreos obliga a vigilar de cerca las alineaciones titulares. Mantener precaucion con los corredores involucrados en enfrentamientos divisionales de alta exigencia resulta fundamental esta semana.",
-      "equipo_impacto": "La estrategia de Chicago busca forzar al rival a soltar el balon por aire, modificando el plan de juego de Tampa Bay. Si los Bears controlan la linea de golpeo, su propia ofensiva tendra mejor posicion de campo durante 4 cuartos.",
-      "accion": "Evalua las opciones en tu banca antes de colocar corredores en duelos terrestres complicados para la semana 9.",
+      "contexto": "El mariscal de campo de Seattle Seahawks, Sam Darnold, quedó oficialmente fuera para el partido de la semana 9 contra Arizona Cardinals tras sufrir lesión de cuádriceps. Diversos reportes señalan que el pasador titular está en riesgo serio de perderse también el choque de la semana 10 ante Las Vegas Raiders mientras recibe tratamiento médico.",
+      "fantasy": "Al estar en estatus de OUT para la semana 9 y en duda para la semana 10, Sam Darnold no puede ser alineado en ligas de fantasy football. Su ausencia disminuye el techo de Jaxon Smith-Njigba en formatos PPR al perder eficiencia en pases profundos. Si juegas en ligas Superflex, debes buscar inmediatamente su reemplazo en waivers.",
+      "equipo_impacto": "La baja de Sam Darnold obliga a Seattle a recargar el volumen ofensivo en acarreos de Kenneth Walker III durante la semana 9. El esquema aéreo perderá explosividad vertical mientras permanezca el pasador suplente al mando de Seahawks.",
+      "accion": "Mueve a Sam Darnold a tu banca o espacio de lesionados y busca 1 mariscal sustituto.",
       "en": {
-        "titulo": "Bears Face Buccaneers Ground Game in Week 9",
+        "titulo": "Sam Darnold in jeopardy for Week 10 game",
         "claves": [
-          "Chicago aims to limit Tampa Bay rushing attack in Week 9",
-          "Bears remain atop the NFC North standings",
-          "Key matchup for fantasy defenses in PPR formats"
+          "Sam Darnold ruled out for Week 9",
+          "Quadriceps injury threatens Week 10 status",
+          "Seahawks passing offense takes major hit"
         ],
-        "contexto": "Chicago enters Week 9 leading the NFC North with the goal of halting Tampa Bay's ground attack. The matchup between the Bears and Buccaneers features a tactical battle where Chicago's defense intends to control the trenches and protect its division lead. This contest sets the stage for defining the offensive flow for both teams midway through the 2025 season.",
-        "fantasy": "The defensive scheme impacts projections for running backs and defenses across fantasy leagues. Buccaneers D/ST is projected for 10.3 pts in Week 9, signaling a tight battle upfront. For managers in PPR and standard formats, Chicago's focus on stopping the run requires careful review of starting lineups. Proceed with caution when starting running backs in high-stakes divisional matchups this week.",
-        "equipo_impacto": "Chicago's strategy aims to force the opponent into passing situations, altering Tampa Bay's game plan. Controlling the line of scrimmage will provide the Bears with superior field position throughout 4 quarters.",
-        "accion": "Evaluate your bench options before starting running backs facing tough ground matchups in Week 9."
+        "contexto": "Seattle Seahawks quarterback Sam Darnold is officially out for Week 9 against Arizona Cardinals due to a quadriceps injury. Reports indicate the starting passer is also in serious danger of missing Week 10 against Las Vegas Raiders while undergoing medical evaluation.",
+        "fantasy": "With an official OUT status for Week 9 and questionable projection for Week 10, Sam Darnold cannot be started in fantasy leagues. His absence caps Jaxon Smith-Njigba's ceiling in PPR formats due to lost downfield efficiency. In Superflex leagues, target 1 replacement QB on waivers immediately.",
+        "equipo_impacto": "Darnold's absence forces Seattle to shift offensive volume onto Kenneth Walker III in Week 9. The passing game loses vertical firepower until the starter returns.",
+        "accion": "Move Sam Darnold to your bench or IR slot and grab 1 starting quarterback."
       },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "CHI",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "SEA",
       "equipos": [
-        "CHI",
-        "TB"
+        "SEA"
       ],
-      "jugadores": [],
+      "jugadores": [
+        "4943"
+      ],
       "fuentes": [
         {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/bears-vs-buccaneers-odds-prediction-where-to-watch/",
-          "t": "\n                        Bears vs. Buccaneers: Chicago looks to tame Tampa&#039;s running game while staying atop the NFC North\n            "
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261108081601",
-      "fecha": "2026-11-08T08:16:39.312Z",
-      "semana": 9,
-      "titulo": "Blueprint de Receptores para la Semana 9",
-      "claves": [
-        "Analisis estrategico de receptores para la semana 9",
-        "Proyecciones elevadas para receptores estelares en ligas PPR",
-        "Guia fundamental para configurar alineaciones titulares de fantasy"
-      ],
-      "contexto": "El analista Hayden Winks presento el esquema estrategico para la posicion de receptor abierto en la semana 9. Esta guia detalla los factores clave para evaluar a los receptores en fantasy football, analizando duelos directos y proyecciones de volumen de pases. La informacion resulta crucial para tomar decisiones informadas en un punto critico de la temporada donde cada victoria cuenta para acceder a playoffs.",
-      "fantasy": "El analisis de receptores permite optimizar alineaciones en formatos PPR y estandar. Jugadores como Jaxon Smith-Njigba con 23 pts proyectados y Puka Nacua con 22.1 pts lideran el radar ofensivo de la semana 9. Sin embargo, managers con Amon-Ra St. Brown deben monitorear su estatus de Cuestionable por costillas. Comparar el volumen de targets frente a las defensivas secundarias rivales ayuda a maximizar la produccion de puntos semanales.",
-      "equipo_impacto": "La distribucion de pases modifica el valor de los receptores 1 y 2 en los esquemas ofensivos. Evaluar las tendencias de passeo ayuda a prever el rendimiento de todo el cuerpo de receptores.",
-      "accion": "Revisa las proyecciones y reportes de salud de tus receptores antes de fijar tu alineacion de semana 9.",
-      "en": {
-        "titulo": "Wide Receiver Blueprint for Week 9 Fantasy",
-        "claves": [
-          "Strategic wide receiver analysis published for Week 9",
-          "High projections for star receivers in PPR formats",
-          "Essential guide for setting your fantasy starting lineups"
-        ],
-        "contexto": "Fantasy analyst Hayden Winks delivered the strategic blueprint for the wide receiver position in Week 9. This guide outlines key factors for evaluating wideouts in fantasy football, examining matchup dynamics and projected target volume. The information is critical for making informed decisions at a pivotal stage of the season where securing victories is essential for playoff contention.",
-        "fantasy": "Analyzing wide receivers helps optimize lineups across PPR and standard formats. Players like Jaxon Smith-Njigba with 23 projected pts and Puka Nacua with 22.1 pts lead the offensive board for Week 9. However, managers holding Amon-Ra St. Brown must monitor his Questionable status due to ribs. Comparing target share against opposing secondary defenses maximizes weekly point output.",
-        "equipo_impacto": "Target distribution alters the fantasy value of number 1 and 2 wideouts within offensive schemes. Evaluating passing trends helps predict overall performance across entire receiving corps.",
-        "accion": "Check wide receiver projections and health status before finalizing your Week 9 lineup."
-      },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "DET",
-      "equipos": [
-        "DET",
-        "SEA",
-        "LAR",
-        "DAL"
-      ],
-      "jugadores": [],
-      "fuentes": [
-        {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-hayden-winks-wr-blueprint-for-week-9-201635405.html",
-          "t": "Fantasy Football Rankings: Hayden Winks&#39; WR Blueprint for Week 9"
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50400897/sources-seahawks-sam-darnold-danger-missing-week-10",
+          "t": "Sources: Seahawks' Sam Darnold in jeopardy of missing Week 10 game vs. Raiders"
         }
       ],
       "menciona": []
@@ -120,10 +76,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4881",
-      "estatus": "Fuera"
-    },
-    {
       "id": "5849",
       "estatus": "Fuera"
     },
@@ -133,6 +85,10 @@
     },
     {
       "id": "2133",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "4881",
       "estatus": "Fuera"
     },
     {
@@ -152,11 +108,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "7543",
+      "id": "2216",
       "estatus": "Fuera"
     },
     {
-      "id": "2216",
+      "id": "7543",
       "estatus": "Fuera"
     },
     {
@@ -200,11 +156,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "13287",
+      "id": "5872",
       "estatus": "Fuera"
     },
     {
-      "id": "5872",
+      "id": "13287",
       "estatus": "Fuera"
     },
     {
@@ -224,11 +180,11 @@
       "estatus": "Duda"
     },
     {
-      "id": "12533",
+      "id": "6819",
       "estatus": "Fuera"
     },
     {
-      "id": "6819",
+      "id": "12533",
       "estatus": "Fuera"
     },
     {
@@ -240,11 +196,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12529",
+      "id": "8121",
       "estatus": "Fuera"
     },
     {
-      "id": "8121",
+      "id": "12529",
       "estatus": "Fuera"
     },
     {
@@ -268,62 +224,62 @@
     "6130",
     "3286",
     "11579",
-    "11625",
-    "13603",
     "4035",
-    "12491",
+    "11625",
     "NO",
-    "13276",
+    "13603",
+    "12491",
     "3161",
     "13150",
     "7608",
+    "13276",
     "8161",
-    "DET",
     "NYG",
-    "13337",
+    "DET",
+    "2020",
+    "12469",
     "13281",
     "7561",
-    "12469",
-    "2020",
+    "13337",
     "4993",
-    "12634",
     "11610",
     "4663",
-    "8119"
+    "12634",
+    "13286"
   ],
   "soltados": [
     "8129",
     "11435",
     "9757",
     "5849",
+    "WAS",
     "8154",
     "9230",
     "11637",
-    "WAS",
-    "8135",
-    "3271",
     "11581",
+    "3271",
     "10235",
+    "8135",
     "12718",
-    "7561",
-    "13424",
-    "12487",
-    "11834",
     "NE",
+    "13424",
+    "11834",
+    "7561",
+    "CLE",
     "10219",
     "13296",
-    "CLE",
     "4037",
-    "3321",
-    "9480",
-    "9502"
+    "12487",
+    "DET",
+    "1945",
+    "TB"
   ],
   "duelo": {
-    "a": "Josh Allen",
-    "b": "Joe Burrow",
-    "veredicto": "Arranca a Josh Allen por su proyección superior de 22.4 puntos frente a los 20.9 de Joe Burrow en la semana 9."
+    "a": "Jahmyr Gibbs",
+    "b": "Christian McCaffrey",
+    "veredicto": "Arranca a Jahmyr Gibbs sobre Christian McCaffrey. Gibbs proyecta 23.6 pts PPR en la semana 9 superando los 21.0 pts de McCaffrey, impulsado por su alto volumen terrestre y recepción de pases."
   },
-  "dueloFecha": "2026-11-07T14:28:56.218Z",
+  "dueloFecha": "2026-11-08T15:23:02.350Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
