@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-09T10:26:02.151Z",
-  "ultimaIA": "2026-11-09T10:26:02.151Z",
+  "actualizado": "2026-11-09T20:58:03.052Z",
+  "ultimaIA": "2026-11-09T20:58:03.052Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,192 +14,467 @@
   ],
   "noticias": [
     {
-      "id": "n20261109102600",
-      "fecha": "2026-11-09T10:26:02.151Z",
+      "id": "x20261109205800",
+      "fecha": "2026-11-09T20:58:03.052Z",
       "semana": 9,
-      "titulo": "Josh Jacobs sufre fractura en dedo de mano",
+      "exclusivo": true,
+      "fuente": "2026-11-09T18:22:38+00:00",
+      "titulo": "Resultados de la semana 9 en la NFL",
       "claves": [
-        "Fractura en dedo anular derecho al dar stiff-arm",
-        "Estatus en duda para el juego de semana 9",
-        "Emanuel Wilson tomaría el volumen si Jacobs no juega"
+        "14 partidos disputados en la jornada 9"
       ],
-      "contexto": "Josh Jacobs sufrió una fractura en el dedo anular de la mano derecha al intentar frenar a un defensivo con un stiff-arm en el triunfo de Packers. El corredor declaró no estar seguro de jugar en la semana 9 contra Vikings. Su disponibilidad dependerá de la tolerancia al dolor y su capacidad para sujetar el balón sin riesgo de fumble.",
-      "fantasy": "Jacobs queda en estatus cuestionable para la semana 9. Si queda fuera, Emanuel Wilson asumirá la titularidad con volumen terrestre considerable, convirtiéndose en una opción valiosa de RB2 o Flex en ligas PPR y estándar. Si tienes a Jacobs en tu plantilla, debes sumar a Wilson inmediatamente desde waivers para cubrir la posición antes del domingo.",
-      "equipo_impacto": "La ofensiva de Green Bay perdería a su corredor estelar. Jordan Love tendría que cargar con mayor volumen aéreo, mientras Emanuel Wilson compartiría el backfield con los suplentes para mantener el balance.",
-      "accion": "Añade a Emanuel Wilson de inmediato desde waivers como protección.",
       "en": {
-        "titulo": "Josh Jacobs suffers broken finger in right hand",
+        "titulo": "NFL Week 9 Game Results Recap",
         "claves": [
-          "Broken ring finger suffered on a stiff arm attempt",
-          "Status in question for Week 9 divisional matchup",
-          "Emanuel Wilson set for expanded workload if Jacobs sits"
+          "14 games played in Week 9 action",
+          "Jaguars, Texans, and 49ers secure blowouts",
+          "Saints defeat Browns in extra time"
         ],
-        "contexto": "Josh Jacobs broke the ring finger on his right hand while attempting a stiff-arm in the Packers win. The running back is unsure if he can suit up for the Week 9 game against the Vikings. His availability will depend on pain tolerance and his ability to secure the football without fumble risks.",
-        "fantasy": "Jacobs is listed as questionable for Week 9. If he misses time, Emanuel Wilson will take over lead back duties with significant touch volume, making him a solid RB2 or Flex option in PPR and standard formats. Jacobs managers must target Wilson on waivers immediately as an insurance policy.",
-        "equipo_impacto": "Green Bay's offense would lose its primary ground weapon. Jordan Love would carry a heavier passing load while Emanuel Wilson splits snaps with backfield rotational players to maintain balance.",
-        "accion": "Add Emanuel Wilson off waivers immediately as insurance for Jacobs."
+        "contexto": "Week 9 delivered surprises across 14 intense matchups. Jaguars crushed Ravens 33-10, Texans topped Chargers 44-22, and Packers beat Patriots 45-27. In close games, Saints beat Browns 23-22 in OT, while Bears edged Buccaneers 27-24. 49ers dominated Raiders 38-17 and Chiefs defeated Jets 35-12.",
+        "fantasy": "Week 9 altered projections across multiple fantasy football leagues. Ground performances from Texans and 49ers pushed starters past 25.0 pts in PPR formats. Conversely, Ravens setback slowed down their stars. Analyzing touch trends in teams like Jaguars and Packers is critical before setting Week 10 lineups.",
+        "equipo_impacto": "Team performances showcase Texans and 49ers as high-volume offensive powerhouses. Losing teams from Week 9 will look to adjust tactical schemes ahead of the regular season stretch.",
+        "accion": "Check Week 9 box scores to identify touch volume before making waiver claims."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "NEUTRO",
+      "equipo": "HOU",
+      "equipos": [
+        "HOU",
+        "JAX",
+        "BAL",
+        "CIN",
+        "ATL",
+        "DAL",
+        "IND",
+        "LAR",
+        "WAS",
+        "NO",
+        "CLE",
+        "KC",
+        "NYJ",
+        "NYG",
+        "PHI",
+        "DEN",
+        "CAR",
+        "LAC",
+        "SF",
+        "LV",
+        "GB",
+        "NE",
+        "SEA",
+        "ARI",
+        "CHI",
+        "TB"
+      ],
+      "jugadores": [],
+      "premium": true
+    },
+    {
+      "id": "x20261109205801",
+      "fecha": "2026-11-09T20:58:03.052Z",
+      "semana": 9,
+      "exclusivo": true,
+      "fuente": "2026-11-09T18:22:38+00:00",
+      "titulo": "Eagles adquiere a Jessie Bates desde los Falcons",
+      "claves": [
+        "Jessie Bates III traspasado a Philadelphia Eagles"
+      ],
+      "en": {
+        "titulo": "Eagles Acquire Jessie Bates From Falcons",
+        "claves": [
+          "Jessie Bates III traded to Philadelphia Eagles",
+          "Falcons deal safety with 1 day until deadline",
+          "Eagles boost secondary for late season stretch"
+        ],
+        "contexto": "With just 1 day until the NFL trade deadline, the Eagles struck a deal to acquire defensive back Jessie Bates III from the Falcons. Philadelphia immediately upgrades its secondary with an elite playmaker for the late-season push, while Atlanta gains draft assets for the franchise's immediate future.",
+        "fantasy": "The arrival of Jessie Bates III significantly boosts the Eagles defense (DST) value in traditional and IDP formats. In IDP leagues, Bates cements himself as a top-tier DB1 in an aggressive defensive system. For the Falcons defense, losing Bates lowers their fantasy ceiling for the rest of 2024.",
+        "equipo_impacto": "Philadelphia improves defensive depth in the secondary, reducing passing yards allowed to opposing receivers. Atlanta loses its defensive leader and will struggle in deep coverage.",
+        "accion": "Add the Eagles defense or Jessie Bates III in IDP leagues immediately."
+      },
+      "etiqueta": "TRADE",
+      "impacto": "SUBE",
+      "equipo": "PHI",
+      "equipos": [
+        "PHI",
+        "ATL"
+      ],
+      "jugadores": [],
+      "premium": true
+    },
+    {
+      "id": "x20261109205802",
+      "fecha": "2026-11-09T20:58:03.052Z",
+      "semana": 9,
+      "exclusivo": true,
+      "fuente": "2026-11-09T18:22:38+00:00",
+      "titulo": "Jonathan Taylor protagoniza rumores antes del trade deadline",
+      "claves": [
+        "Colts evalúa ofertas por Jonathan Taylor"
+      ],
+      "en": {
+        "titulo": "Jonathan Taylor Headlines Trade Deadline Rumors",
+        "claves": [
+          "Colts evaluating offers for Jonathan Taylor",
+          "1 day remaining before trade deadline closes",
+          "Fantasy value hinges on potential destination"
+        ],
+        "contexto": "With 1 day remaining before the NFL trade deadline expires, Jonathan Taylor's name is heavily featured in trade rumors. The Colts are evaluating last-minute offers for the star running back before the trade window closes, keeping the entire league on high alert.",
+        "fantasy": "Jonathan Taylor's situation requires full monitoring in PPR and Standard formats. If traded to a contender with a stronger offensive line, his value could rise to an elite RB1 averaging over 18.0 pts per game. If he stays with the Colts, he maintains his usual heavy touch volume per contest.",
+        "equipo_impacto": "A potential trade of Jonathan Taylor would leave the Colts rushing workload to the backup backfield. For an acquiring team, it brings instant offensive punch inside the red zone.",
+        "accion": "Hold Jonathan Taylor on your roster and explore high-end trade offers if seeking an RB1."
+      },
+      "etiqueta": "TRADE",
+      "impacto": "NEUTRO",
+      "equipo": "IND",
+      "equipos": [
+        "IND"
+      ],
+      "jugadores": [
+        "6813"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261109205803",
+      "fecha": "2026-11-09T20:58:03.052Z",
+      "semana": 9,
+      "exclusivo": true,
+      "fuente": "2026-11-09T18:22:38+00:00",
+      "titulo": "Derrick Henry genera especulaciones en el trade deadline",
+      "claves": [
+        "Derrick Henry involucrado en rumores de canje"
+      ],
+      "en": {
+        "titulo": "Derrick Henry Sparks Trade Deadline Speculation",
+        "claves": [
+          "Derrick Henry subject of trade rumors",
+          "1 day left to trade in NFL",
+          "Contenders looking to bolster ground attack"
+        ],
+        "contexto": "With only 1 day remaining to finalize NFL trades, rumors swirl regarding a potential move for Derrick Henry. Multiple franchises have inquired about the veteran running back's availability before the deadline, seeking to power up their rushing attack for the second half of the season.",
+        "fantasy": "Fantasy managers owning Derrick Henry must stay alert. If traded to a contender with high red zone frequency, his value remains a dominant RB1 projecting at least 1.0 TD per game. Should he remain on his current team, he stays a locked-in ground anchor across all formats.",
+        "equipo_impacto": "Losing Derrick Henry would reshape the ground identity of his current squad. Conversely, any team acquiring him gains a lethal threat for short-yardage and goal-line situations.",
+        "accion": "Hold Derrick Henry on your roster while waiting for the NFL trade deadline."
+      },
+      "etiqueta": "TRADE",
+      "impacto": "NEUTRO",
+      "equipo": "BAL",
+      "equipos": [
+        "BAL"
+      ],
+      "jugadores": [
+        "3198"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261109205804",
+      "fecha": "2026-11-09T20:58:03.052Z",
+      "semana": 9,
+      "exclusivo": true,
+      "fuente": "2026-11-09T18:22:38+00:00",
+      "titulo": "Rhamondre Stevenson se perdería el juego en Múnich",
+      "claves": [
+        "Rhamondre Stevenson sufre lesión en la rodilla"
+      ],
+      "en": {
+        "titulo": "Rhamondre Stevenson Set to Miss Munich Game",
+        "claves": [
+          "Rhamondre Stevenson suffers knee injury",
+          "Doubtful for Munich matchup against Lions",
+          "Patriots backfield adjusting rotation"
+        ],
+        "contexto": "Rhamondre Stevenson sustained a knee injury that severely jeopardizes his participation in the upcoming Patriots vs. Lions game in Munich. The New England running back is not expected to play in the international contest, leaving a significant void in the team's rushing attack.",
+        "fantasy": "Rhamondre Stevenson's likely absence impacts fantasy leagues in PPR and Standard formats. His absence opens up room for the backup running back to see at least 15 carries and red zone touches. If you own Stevenson, move him to your bench for this international week.",
+        "equipo_impacto": "New England loses its main running back for the Germany game, forcing the offensive coordinator to adjust the game plan and rely more on the pass or secondary back.",
+        "accion": "Bench Rhamondre Stevenson and target his direct backup on waivers."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "NE",
+      "equipos": [
+        "NE",
+        "DET"
+      ],
+      "jugadores": [
+        "7611"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261109205805",
+      "fecha": "2026-11-09T20:58:03.052Z",
+      "semana": 9,
+      "exclusivo": true,
+      "fuente": "2026-11-09T18:22:38+00:00",
+      "titulo": "Patrick Mahomes lesionado del brazo y en duda",
+      "claves": [
+        "Patrick Mahomes reporta molestia en su brazo"
+      ],
+      "en": {
+        "titulo": "Patrick Mahomes Arm Injury Leaves Status Uncertain",
+        "claves": [
+          "Patrick Mahomes deals with arm injury",
+          "Status questionable for upcoming week",
+          "Chiefs evaluating star QB daily"
+        ],
+        "contexto": "Patrick Mahomes suffered an arm injury during recent action, leaving his availability uncertain for upcoming days. Kansas City's star quarterback will undergo medical evaluation to determine the severity of the issue ahead of the next scheduled contest.",
+        "fantasy": "Patrick Mahomes' injury status triggers alarms in 1 QB and Superflex leagues. If unable to play, he will score 0.0 pts, forcing managers to look for waiver options immediately. Additionally, Chiefs wide receivers and tight ends lose upside without their starting QB under center.",
+        "equipo_impacto": "Kansas City's offense would lose its leader and big-play creator. The backup quarterback would take first-team reps during weekly practice sessions.",
+        "accion": "Pickup a backup QB on waivers in case Patrick Mahomes is ruled out."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "KC",
+      "equipos": [
+        "KC"
+      ],
+      "jugadores": [
+        "4046"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261109205806",
+      "fecha": "2026-11-09T20:58:03.052Z",
+      "semana": 9,
+      "exclusivo": true,
+      "fuente": "2026-11-09T18:22:38+00:00",
+      "titulo": "Drew Lock jugará lesionado mientras Sam Darnold queda fuera",
+      "claves": [
+        "Drew Lock sufre lesión de oblicuo pero jugará"
+      ],
+      "en": {
+        "titulo": "Drew Lock Playing Hurt While Sam Darnold Out",
+        "claves": [
+          "Drew Lock playing through oblique injury",
+          "Sam Darnold officially ruled out",
+          "Quarterback changes coming for next game"
+        ],
+        "contexto": "Drew Lock suffered an oblique injury, but medical reports indicate he is healthy enough to play the next contest. Conversely, Sam Darnold has been officially ruled OUT due to injury, shifting quarterback depth charts heading into the next match.",
+        "fantasy": "Drew Lock becomes an emergency option for Superflex or deep 2 QB formats, though his oblique injury may limit mobility and cap projection at 12.0 pts. Sam Darnold must be moved to your bench or IR slot immediately after being ruled out.",
+        "equipo_impacto": "Drew Lock's availability maintains passing scheme continuity, whereas Sam Darnold's absence forces his team to trust their direct backup.",
+        "accion": "Bench or IR Sam Darnold and consider Drew Lock only in Superflex leagues."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "NEUTRO",
+      "equipo": "MIN",
+      "equipos": [
+        "MIN",
+        "NYG",
+        "SEA"
+      ],
+      "jugadores": [
+        "5854",
+        "4943"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261109205807",
+      "fecha": "2026-11-09T20:58:03.052Z",
+      "semana": 9,
+      "exclusivo": true,
+      "fuente": "2026-11-09T18:22:38+00:00",
+      "titulo": "Cam Skattebo está listo para regresar a la cancha",
+      "claves": [
+        "Cam Skattebo completó su proceso de recuperación"
+      ],
+      "en": {
+        "titulo": "Cam Skattebo Cleared and Ready to Return",
+        "claves": [
+          "Cam Skattebo finishes rehab process",
+          "Available to return to action this week",
+          "Adds versatility in rushing and passing games"
+        ],
+        "contexto": "Cam Skattebo has completed his rehabilitation process and is ready to rejoin team activities. The versatile running back overcame his physical issues and will be available to take on rushing and receiving work in the offensive rotation starting this week.",
+        "fantasy": "Cam Skattebo's return provides a valuable addition for deep PPR and dynasty league rosters. His ability to gain yards after contact and involvement in the passing game offers a floor of 8.0 to 10.0 pts with red zone touch potential.",
+        "equipo_impacto": "Skattebo's return adds physical versatility to the backfield and relieves workload pressure on other running backs in 3rd down and short-yardage situations.",
+        "accion": "Claim Cam Skattebo on waivers if you need running back depth."
+      },
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "ARI",
+      "equipos": [
+        "ARI",
+        "NYG"
+      ],
+      "jugadores": [
+        "12481"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261109205808",
+      "fecha": "2026-11-09T20:58:03.052Z",
+      "semana": 9,
+      "exclusivo": true,
+      "fuente": "2026-11-09T18:22:38+00:00",
+      "titulo": "Josh Jacobs sufre lesión de dedo y perdería 1 juego",
+      "claves": [
+        "Josh Jacobs padece una molestia en el dedo"
+      ],
+      "en": {
+        "titulo": "Josh Jacobs Finger Injury Could Cost 1 Game",
+        "claves": [
+          "Josh Jacobs dealing with finger injury",
+          "Could miss 1 game as precautionary measure",
+          "Packers monitoring physical state daily"
+        ],
+        "contexto": "Josh Jacobs sustained a finger injury during recent team activities, and there is a possibility he could sit out 1 game. Green Bay's coaching staff will monitor his daily progress to decide whether to suit him up or grant him rest this week.",
+        "fantasy": "Josh Jacobs' potential 1 game absence directly impacts managers starting him as an RB1 in PPR and Standard formats. If ruled out, he loses his typical 15.0 pts projection. His backup on the Packers becomes a top waiver target with instant flex starter upside.",
+        "equipo_impacto": "Without Josh Jacobs on the field, the Packers would split carries among reserve running backs, shifting the run-pass balance of the offensive game plan.",
+        "accion": "Prepare a replacement for Josh Jacobs in your lineup and secure his backup on waivers."
       },
       "etiqueta": "LESIÓN",
       "impacto": "BAJA",
       "equipo": "GB",
       "equipos": [
-        "GB",
-        "MIN",
-        "SEA"
+        "GB"
       ],
       "jugadores": [
-        "5850",
-        "11435",
-        "6804"
+        "5850"
       ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50429092/packers-josh-jacobs-dealing-fractured-finger",
-          "t": "Packers' Josh Jacobs dealing with broken finger, status for Vikings tilt TBD"
-        }
-      ],
-      "menciona": []
+      "premium": true
     },
     {
-      "id": "n20261109102601",
-      "fecha": "2026-11-09T10:26:02.151Z",
+      "id": "x20261109205809",
+      "fecha": "2026-11-09T20:58:03.052Z",
       "semana": 9,
-      "titulo": "Tank Dell explota con 105 yardas y 1 TD",
+      "exclusivo": true,
+      "fuente": "2026-11-09T18:22:38+00:00",
+      "titulo": "Terrance Ferguson se perderá varias semanas por lesión",
       "claves": [
-        "Acumula 105 yardas y 1 TD en semana 9",
-        "Supera por completo la grave lesión de rodilla previa",
-        "Asume protagonismo por ausencias en el cuerpo de receptores"
+        "Terrance Ferguson sufre lesión de gravedad"
       ],
-      "contexto": "Tank Dell firmó un brillante desempeño en su segundo encuentro tras superar una grave lesión de rodilla. El receptor abierto sumó 105 yardas en recepciones y 1 TD en la victoria de Texans. Dell lució explosivo en cada ruta ejecutada y mostró una sincronía perfecta con C.J. Stroud durante las series ofensivas del partido.",
-      "fantasy": "Dell sube de inmediato a categoría WR2 con techo de WR1 en formatos PPR y medio PPR. Con Jaylen Higgins y Jaylin Noel colocados en reserva de lesionados, el volumen de pases continuará concentrado en Dell para la semana 9. Si sigue disponible en waivers de tu liga, debe ser la adición prioritaria de la semana.",
-      "equipo_impacto": "El ataque aéreo de Houston recupera dinamismo profundo. C.J. Stroud recupera a su objetivo preferido para estirar el campo, lo que abre huecos en zonas intermedias para todo el esquema ofensivo.",
-      "accion": "Reclama a Tank Dell en waivers e insértalo en tu alineación.",
       "en": {
-        "titulo": "Tank Dell shines with 105 yards and 1 TD",
+        "titulo": "Terrance Ferguson Out Several Weeks With Injury",
         "claves": [
-          "Racks up 105 receiving yards and 1 TD in Week 9",
-          "Proves fully recovered from previous major knee injury",
-          "Steps up as primary target amid Houston receiver injuries"
+          "Terrance Ferguson suffers severe injury",
+          "Expected out for multiple weeks",
+          "Significant blow to passing attack"
         ],
-        "contexto": "Tank Dell delivered a standout performance in his second game back from a severe knee injury. The wide receiver recorded 105 receiving yards and 1 TD in the Texans victory. Dell showed sharp route running and explosive speed, rekindling his strong downfield connection with quarterback C.J. Stroud throughout the contest.",
-        "fantasy": "Dell rises to WR2 status with WR1 ceiling in PPR and half-PPR formats. With Jaylen Higgins and Jaylin Noel on injured reserve, passing volume will remain heavily concentrated on Dell in Week 9. If he remains available on your league's waiver wire, he should be your top priority.",
-        "equipo_impacto": "Houston's passing game regains deep-threat capability. C.J. Stroud gets back his preferred big-play target to stretch defenses, opening up intermediate lanes across the field for the entire offense.",
-        "accion": "Claim Tank Dell on waivers and insert him into your lineup."
+        "contexto": "Terrance Ferguson suffered a severe injury that will keep him sidelined for several weeks. The tight end will miss upcoming games, presenting an extended setback among target options for his offense during the midseason stretch.",
+        "fantasy": "Fantasy managers relying on Terrance Ferguson must find a replacement on waivers immediately. Being out for multiple weeks means 0.0 pts while occupying a valuable roster spot, making him a prime IR stash or drop candidate.",
+        "equipo_impacto": "Terrance Ferguson's injury reduces middle-of-the-field passing options, forcing the team to deploy more blocking-oriented tight ends.",
+        "accion": "Move Terrance Ferguson to IR or drop him to waivers to free up roster space."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "DEN",
+      "equipos": [
+        "DEN",
+        "LAR"
+      ],
+      "jugadores": [
+        "12487"
+      ],
+      "premium": true
+    },
+    {
+      "id": "n20261109205800",
+      "fecha": "2026-11-09T20:58:03.052Z",
+      "semana": 9,
+      "titulo": "Audric Estime emerge como reclamo top en waivers",
+      "claves": [
+        "Audric Estime lidera las adiciones de waivers rumbo a la semana 10.",
+        "El corredor de Broncos suma valor tras aumentar su volumen terrestre.",
+        "Disponible en la mayoría de ligas de fantasy football."
+      ],
+      "contexto": "Analistas de fantasy destacan a Audric Estime como uno de los nombres más cotizados en el mercado de agentes libres para la semana 10. Denver ha comenzado a rotar más a sus corredores en las últimas semanas y Estime ha mostrado capacidad para generar yardas tras el contacto. Su reciente carga de trabajo indica un papel creciente dentro del ataque terrestre de los Broncos en la 2ª mitad del calendario.",
+      "fantasy": "Estime sube de valor como una adición prioritaria en formatos PPR y Estándar. Es ideal para ligas profundas de 12 o 14 equipos donde la profundidad en el backfield es escasa. Si buscas asegurar un corredor con potencial de tocar el balón 10 o 12 veces por juego, gasta entre 8% y 12% de tu presupuesto FAAB por él antes de que su costo aumente en la semana 10.",
+      "equipo_impacto": "La inclusión de Estime le da a Denver mayor potencia entre las tacleadas. Esto complementa el esquema ofensivo, reduciendo la presión sobre el juego aéreo y compartiendo acarreos en situaciones de corto avance.",
+      "accion": "Utiliza de 8% a 12% de tu FAAB para reclamar a Audric Estime esta semana.",
+      "en": {
+        "titulo": "Audric Estime emerges as top waiver wire pickup",
+        "claves": [
+          "Audric Estime leads waiver wire targets heading into Week 10.",
+          "Broncos running back gains value following increased rushing volume.",
+          "Available across most fantasy football leagues right now."
+        ],
+        "contexto": "Fantasy analysts highlight Audric Estime as one of the most coveted waiver wire names for Week 10. Denver has begun rotating its running backs more in recent weeks, and Estime has shown an ability to generate yards after contact. His recent workload indicates a growing role within the Broncos rushing attack for the 2nd half of the season.",
+        "fantasy": "Estime rises in value as a priority addition in PPR and Standard formats. He is ideal for deep 12 or 14-team leagues where backfield depth is scarce. If you are looking to secure a running back with potential for 10 to 12 touches per game, spend between 8% and 12% of your FAAB budget on him before his cost rises in Week 10.",
+        "equipo_impacto": "Estime's inclusion gives Denver greater power between the tackles. This complements the offensive scheme, reducing pressure on the passing game and sharing carries in short-yardage situations during critical drives.",
+        "accion": "Use 8% to 12% of your FAAB to claim Audric Estime this week."
       },
       "etiqueta": "WAIVER",
       "impacto": "SUBE",
-      "equipo": "HOU",
+      "equipo": "DEN",
       "equipos": [
-        "HOU"
+        "DEN",
+        "NO"
       ],
       "jugadores": [
-        "9502",
-        "9758"
+        "11579"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50428998/grateful-tank-dell-105-receiving-yards-2nd-game-back-knee-injury",
-          "t": "'Grateful' Tank Dell has 105 receiving yards in 2nd game back from knee injury"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261109102602",
-      "fecha": "2026-11-09T10:26:02.151Z",
-      "semana": 9,
-      "titulo": "Drew Lock supera lesión oblicua en triunfo de Seahawks",
-      "claves": [
-        "Sufrió dolencia en el oblicuo durante el 3er cuarto",
-        "Consumó el triunfo 17-3 en relevo de Sam Darnold",
-        "Sam Darnold descartado para la semana 9 por cuadríceps"
-      ],
-      "contexto": "Drew Lock fue el pasador titular ante la baja de Sam Darnold por lesión de cuadríceps y guió a Seattle al triunfo 17-3 sobre Cardinals. A pesar de llegar tocado del codo de lanzar y sufrir una dolencia en el oblicuo en el 3er cuarto, Lock finalizó el encuentro en el campo para sellar la victoria.",
-      "fantasy": "Lock figura como cuestionable para la semana 9 por la molestia en el oblicuo. En ligas Superflex o de 2 QB funciona solo como parche de emergencia de bajo techo. Jaxon Smith-Njigba sostiene valor de WR1 elite por volumen de pases cortos, pero la ofensiva limita el potencial de anotar de sus receptores.",
-      "equipo_impacto": "Seattle mantendrá un plan de juego conservador apoyado en su defensiva. Kenneth Walker III mantendrá un volumen de acarreos masivo para proteger a su mariscal de campo mermado físicamente.",
-      "accion": "Mantén a Lock únicamente en la banca para ligas Superflex.",
-      "en": {
-        "titulo": "Drew Lock plays through oblique injury in Seahawks win",
-        "claves": [
-          "Suffered oblique injury during 3rd quarter of play",
-          "Secured 17-3 victory filling in for Sam Darnold",
-          "Sam Darnold ruled out for Week 9 with quadriceps injury"
-        ],
-        "contexto": "Drew Lock started in place of the injured Sam Darnold (out with a quadriceps issue) and led Seattle to a 17-3 victory over the Cardinals. Despite fighting through a throwing elbow ailment and sustaining an oblique injury in the 3rd quarter, Lock stayed on the field to finish out the win.",
-        "fantasy": "Lock is questionable for Week 9 with the oblique issue. In Superflex or 2-QB leagues, he remains a low-ceiling emergency starter option. Jaxon Smith-Njigba holds elite WR1 value through short target volume, but the overall offense limits passing touchdown upside for all Seattle receivers under Lock's physical limitations.",
-        "equipo_impacto": "Seattle will lean heavily on a conservative game plan backed by defense. Kenneth Walker III will handle a massive rushing workload to protect his banged-up quarterback on offense.",
-        "accion": "Keep Lock on your bench unless playing in Superflex leagues."
-      },
-      "etiqueta": "LESIÓN",
-      "impacto": "NEUTRO",
-      "equipo": "SEA",
-      "equipos": [
-        "SEA",
-        "ARI",
-        "KC"
-      ],
-      "jugadores": [
-        "5854",
-        "4943",
-        "9488",
-        "8151"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50429192/drew-lock-overcomes-oblique-injury-seahawks-top-cardinals",
-          "t": "Drew Lock overcomes oblique injury in fill-in start for Sam Darnold, Seahawks"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261109102603",
-      "fecha": "2026-11-09T10:26:02.151Z",
-      "semana": 9,
-      "titulo": "Calvin Ridley involucrado en incidente en aeropuerto de Nashville",
-      "claves": [
-        "Reportan altercado en el aeropuerto internacional de Nashville",
-        "El receptor protagoniza rumores de traspaso en la NFL",
-        "Incertidumbre sobre posibles sanciones en las próximas horas"
-      ],
-      "contexto": "Calvin Ridley estuvo involucrado en un incidente dentro del Aeropuerto Internacional de Nashville este fin de semana, según reportes de ESPN. Los detalles específicos del hecho no han sido revelados por las autoridades ni por el equipo. Este suceso ocurre mientras el receptor es objeto de múltiples rumores de traspaso en la liga.",
-      "fantasy": "Momentos de incertidumbre para los dueños de Ridley en fantasy football. En ligas PPR conviene mantenerlo en la banca a la espera de un pronunciamiento oficial sobre disciplina o un posible cambio de equipo. Si Ridley es traspasado a un aspirante al título con un QB superior, su valor fantasy podría dispararse radicalmente.",
-      "equipo_impacto": "Situación complicada para la ofensiva de Tennessee. Con Carnell Tate fuera por lesión de hombro, perder a Ridley dejaría al equipo con severas carencias en la posición de receptor abierto.",
-      "accion": "Pausa cualquier oferta de canje por Ridley hasta conocer más detalles.",
-      "en": {
-        "titulo": "Calvin Ridley involved in airport incident in Nashville",
-        "claves": [
-          "Reported incident at Nashville International Airport over weekend",
-          "Wide receiver remains subject of NFL trade rumors",
-          "Uncertainty surrounds potential discipline or team action"
-        ],
-        "contexto": "Calvin Ridley was involved in an incident at Nashville International Airport over the weekend, according to ESPN reports. Specific details regarding the event have not been released by authorities or the team. This situation unfolds as the wide receiver continues to be mentioned in trade rumors ahead of the deadline.",
-        "fantasy": "Uncertainty surrounds Ridley for fantasy football managers. In PPR formats, keep him benched until official word emerges regarding discipline or a potential trade. If Ridley is dealt to a contender with an upgraded quarterback situation, his fantasy value could see a significant boost in the second half.",
-        "equipo_impacto": "This creates a major distraction for Tennessee's passing attack. With Carnell Tate out due to a shoulder injury, losing Ridley would leave the team severely depleted at wide receiver.",
-        "accion": "Hold off on trading for Ridley until details are clarified."
-      },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "TEN",
-      "equipos": [
-        "TEN"
-      ],
-      "jugadores": [
-        "4981"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50429795/titans-wr-ridley-involved-incident-nashville-airport",
-          "t": "Titans WR Calvin Ridley involved in incident at Nashville airport"
+          "u": "https://www.espn.com/video/clip/_/id/50433783/audric-es-hot-waiver-add-week-10",
+          "t": "Clay: Audric Estime a 'hot waiver add' in Week 10"
         },
         {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/titans-calvin-ridley-involved-in-incident-nashville-airport/",
-          "t": "\n                        Titans&#039; Calvin Ridley involved in &#039;incident&#039; at Nashville International Airport, per report\n        "
+          "m": "ESPN",
+          "u": "https://www.espn.com/fantasy/football/story/_/page/FFWaiverWirePickUp-50431710/fantasy-football-waivers-free-agent-pickups-nfl-week-10",
+          "t": "Fantasy football free agent pickups: Douglas, Rodgers, Estime lead top options"
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261109205802",
+      "fecha": "2026-11-09T20:58:03.052Z",
+      "semana": 9,
+      "titulo": "Jessie Bates III llega a Jaguars reforzando su defensiva",
+      "claves": [
+        "Falcons traspasan al safety Jessie Bates III a los Jaguars.",
+        "Jacksonville también añade al tacle defensivo Davon Godchaux.",
+        "Jaguars D/ST eleva su proyección a 9.2 pts en semana 9."
+      ],
+      "contexto": "Los Jaguars reforzaron agresivamente su defensiva antes del cierre de traspasos de la NFL, adquiriendo al destacado safety Jessie Bates III desde los Falcons y al tacle defensivo Davon Godchaux de los Saints. Atlanta prefirió obtener valor a cambio de Bates antes de la agencia libre. Esta doble incorporación fortalece inmediatamente la secundaria y el frente defensivo de Jacksonville rumbo a la recta final del torneo.",
+      "fantasy": "La unidad defensiva de Jaguars D/ST sube de valor fantasy de forma considerable. Con 9.2 pts proyectados en la semana 9, se posicionan como una opción top en ligas de 12 equipos y ligas de streaming defensivo. La llegada de un especialista en intercepciones como Bates aumenta el techo de capturas y entregas de balón forzadas para los esquemas D/ST e IDP.",
+      "equipo_impacto": "Jacksonville soluciona huecos profundos en cobertura y contención terrestre. Por su parte, la defensiva de Atlanta pierde a su líder secundario, lo que podría bajar su efectividad general contra pases profundos.",
+      "accion": "Alinea o reclama a Jaguars D/ST si necesitas una defensiva sólida esta semana.",
+      "en": {
+        "titulo": "Jessie Bates III joins Jaguars boosting secondary defense",
+        "claves": [
+          "Falcons trade safety Jessie Bates III to the Jaguars.",
+          "Jacksonville also acquires defensive tackle Davon Godchaux.",
+          "Jaguars D/ST raises projection to 9.2 pts in Week 9."
+        ],
+        "contexto": "The Jaguars aggressively bolstered their defense ahead of the NFL trade deadline, acquiring star safety Jessie Bates III from the Falcons and defensive tackle Davon Godchaux from the Saints. Atlanta preferred getting value for Bates prior to free agency. This double acquisition immediately strengthens Jacksonville's secondary and defensive front heading into the stretch run.",
+        "fantasy": "The Jaguars D/ST unit rises significantly in fantasy value. With 9.2 projected pts in Week 9, they position themselves as a top streaming option in 12-team leagues. The arrival of an interception specialist like Bates raises the ceiling for sacks and takeaways forced in both D/ST and IDP formats.",
+        "equipo_impacto": "Jacksonville fixes deep coverage and run containment holes. Meanwhile, Atlanta's defense loses its secondary leader, which could lower their overall effectiveness against deep passes in upcoming matchups.",
+        "accion": "Start or claim Jaguars D/ST if you need a solid defense this week."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "JAX",
+      "equipos": [
+        "JAX",
+        "ATL"
+      ],
+      "jugadores": [],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50043542/2026-trade-deadline-grades-latest-best-worst-deals",
+          "t": "NFL trade deadline grades: Deals for Jessie Bates III, Davon Godchaux, more"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50432490/jaguars-trade-jessie-bates-iii-falcons-draft",
+          "t": "How does Jessie Bates III help the Jaguars defense? Are Falcons still contending?"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50432366/schefter-confirms-falcons-trading-safety-jessie-bates-iii-jaguars",
+          "t": "Schefter confirms Falcons trading safety Jessie Bates III to the Jaguars"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50432277/sources-jaguars-get-jessie-bates-iii-trade-falcons",
+          "t": "Jaguars bolster defense, trade for safety Jessie Bates, DT Davon Godchaux"
         }
       ],
       "menciona": []
@@ -253,6 +528,10 @@
     {
       "id": "7525",
       "estatus": "Fuera"
+    },
+    {
+      "id": "8161",
+      "estatus": "Duda"
     },
     {
       "id": "12508",
@@ -361,72 +640,68 @@
     {
       "id": "12533",
       "estatus": "Fuera"
-    },
-    {
-      "id": "9486",
-      "estatus": "Fuera"
     }
   ],
   "agregados": [
-    "6130",
-    "3286",
     "9502",
     "11579",
-    "11783",
     "12491",
-    "NO",
-    "4035",
-    "11625",
-    "3161",
-    "2020",
-    "13150",
-    "7567",
-    "13276",
-    "NYG",
-    "12634",
-    "13286",
-    "8161",
-    "9758",
     "2505",
+    "9758",
+    "12634",
+    "12492",
+    "13424",
     "12524",
+    "3161",
+    "7567",
+    "5995",
+    "13296",
+    "13286",
+    "6130",
+    "11783",
+    "6039",
+    "3286",
+    "TB",
     "9756",
-    "DET",
-    "12469",
-    "13603"
+    "13298",
+    "9228",
+    "8134",
+    "13276",
+    "12545"
   ],
   "soltados": [
-    "8129",
-    "11435",
-    "9757",
     "11625",
-    "5849",
-    "11834",
-    "11581",
-    "WAS",
-    "11637",
-    "3271",
     "6130",
-    "NE",
+    "11435",
+    "11834",
     "8161",
-    "7561",
-    "DET",
+    "8129",
     "3286",
-    "13281",
-    "TB",
-    "9230",
-    "10235",
-    "9482",
-    "9480",
+    "11610",
+    "9757",
     "11783",
-    "1945",
-    "8135"
+    "7561",
+    "NE",
+    "3271",
+    "11637",
+    "DET",
+    "9480",
+    "4035",
+    "5849",
+    "9482",
+    "11581",
+    "6650",
+    "11628",
+    "2020",
+    "NO",
+    "10219"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
     "b": "Christian McCaffrey",
-    "veredicto": "Arranca a Jahmyr Gibbs sobre Christian McCaffrey. Gibbs proyecta 23.6 pts PPR en la semana 9 superando los 21.0 pts de McCaffrey, impulsado por su alto volumen terrestre y recepción de pases."
+    "veredicto": "Arranca a Jahmyr Gibbs por su proyección de 23.4 pts PPR frente a los 20.8 pts de Christian McCaffrey en la semana 9. Gibbs presenta un volumen explosivo ideal para ganar tu enfrentamiento semanal."
   },
-  "dueloFecha": "2026-11-08T15:23:02.350Z",
+  "dueloFecha": "2026-11-09T20:58:03.052Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
