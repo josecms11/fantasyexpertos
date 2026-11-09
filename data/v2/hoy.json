@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-09T02:45:12.282Z",
-  "ultimaIA": "2026-11-09T02:45:12.282Z",
+  "actualizado": "2026-11-09T10:26:02.151Z",
+  "ultimaIA": "2026-11-09T10:26:02.151Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,33 +14,126 @@
   ],
   "noticias": [
     {
-      "id": "n20261109024500",
-      "fecha": "2026-11-09T02:45:12.282Z",
+      "id": "n20261109102600",
+      "fecha": "2026-11-09T10:26:02.151Z",
       "semana": 9,
-      "titulo": "Kenneth Walker III domina y apaga dudas en semana 9",
+      "titulo": "Josh Jacobs sufre fractura en dedo de mano",
       "claves": [
-        "Lideró los puntajes fantasy de la tarde en la semana 9.",
-        "Disipó dudas sobre la división de acarreo en el ataque terrestre.",
-        "Se consolida como un RB1 de élite tras la victoria 17-3."
+        "Fractura en dedo anular derecho al dar stiff-arm",
+        "Estatus en duda para el juego de semana 9",
+        "Emanuel Wilson tomaría el volumen si Jacobs no juega"
       ],
-      "contexto": "Kenneth Walker III firmó una actuación espectacular en la semana 9 para liderar a todos los corredores en fantasy. Tras varias jornadas donde se cuestionaba su volumen de toques y el reparto en el backfield de Seattle, el egresado de Michigan State demostró por qué es una fuerza ofensiva imparable en el triunfo 17-3 sobre los Cardinals, disipando cualquier duda entre los dueños de su carta.",
-      "fantasy": "Esta exhibición mete de lleno a Kenneth Walker III en el top 5 de RB1 semana a semana. Con la proyección del modelo FX marcando 19.0 pts en formato PPR, Walker debe ser titular indiscutible en ligas Redraft y Dynasty sin importar el rival. Suben sus acciones mientras mantenga este ritmo de trabajo en Seattle, convirtiéndolo en un activo intocable que debes mantener alineado.",
-      "equipo_impacto": "La explosividad de Kenneth Walker III le quita presión a la ofensiva aérea de Seattle. Al establecer el control terrestre, abre espacios para receptores como Jaxon Smith-Njigba y le da fluidez al ataque.",
-      "accion": "Mantén a Kenneth Walker III alineado semanalmente como tu RB1 estelar sin dudarlo.",
+      "contexto": "Josh Jacobs sufrió una fractura en el dedo anular de la mano derecha al intentar frenar a un defensivo con un stiff-arm en el triunfo de Packers. El corredor declaró no estar seguro de jugar en la semana 9 contra Vikings. Su disponibilidad dependerá de la tolerancia al dolor y su capacidad para sujetar el balón sin riesgo de fumble.",
+      "fantasy": "Jacobs queda en estatus cuestionable para la semana 9. Si queda fuera, Emanuel Wilson asumirá la titularidad con volumen terrestre considerable, convirtiéndose en una opción valiosa de RB2 o Flex en ligas PPR y estándar. Si tienes a Jacobs en tu plantilla, debes sumar a Wilson inmediatamente desde waivers para cubrir la posición antes del domingo.",
+      "equipo_impacto": "La ofensiva de Green Bay perdería a su corredor estelar. Jordan Love tendría que cargar con mayor volumen aéreo, mientras Emanuel Wilson compartiría el backfield con los suplentes para mantener el balance.",
+      "accion": "Añade a Emanuel Wilson de inmediato desde waivers como protección.",
       "en": {
-        "titulo": "Kenneth Walker III dominates and erases Week 9 doubts",
+        "titulo": "Josh Jacobs suffers broken finger in right hand",
         "claves": [
-          "Led Sunday afternoon fantasy scoring in Week 9.",
-          "Cleared up concerns regarding backfield workload split.",
-          "Solidified elite RB1 status following 17-3 win over Arizona."
+          "Broken ring finger suffered on a stiff arm attempt",
+          "Status in question for Week 9 divisional matchup",
+          "Emanuel Wilson set for expanded workload if Jacobs sits"
         ],
-        "contexto": "Kenneth Walker III delivered a monster performance in Week 9 to lead all Sunday afternoon fantasy running backs. Following weeks of speculation regarding his workload split in the Seattle backfield, the Michigan State product proved why he is an unstoppable offensive force in a 17-3 win against the Cardinals, erasing all fantasy manager concerns.",
-        "fantasy": "This performance vaults Kenneth Walker III right back into top 5 RB1 status on a weekly basis. With the FX model projecting 19.0 pts in PPR format, Walker is a non-negotiable starter in both Redraft and Dynasty leagues regardless of the matchup. His fantasy value is trending up as long as he maintains this heavy volume in Seattle.",
-        "equipo_impacto": "The explosiveness of Kenneth Walker III relieves immense pressure from Seattle's passing attack. Establishing a dominant ground game opens up passing lanes for receivers like Jaxon Smith-Njigba.",
-        "accion": "Keep Kenneth Walker III locked into your lineup as a firm weekly RB1."
+        "contexto": "Josh Jacobs broke the ring finger on his right hand while attempting a stiff-arm in the Packers win. The running back is unsure if he can suit up for the Week 9 game against the Vikings. His availability will depend on pain tolerance and his ability to secure the football without fumble risks.",
+        "fantasy": "Jacobs is listed as questionable for Week 9. If he misses time, Emanuel Wilson will take over lead back duties with significant touch volume, making him a solid RB2 or Flex option in PPR and standard formats. Jacobs managers must target Wilson on waivers immediately as an insurance policy.",
+        "equipo_impacto": "Green Bay's offense would lose its primary ground weapon. Jordan Love would carry a heavier passing load while Emanuel Wilson splits snaps with backfield rotational players to maintain balance.",
+        "accion": "Add Emanuel Wilson off waivers immediately as insurance for Jacobs."
       },
-      "etiqueta": "START",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "GB",
+      "equipos": [
+        "GB",
+        "MIN",
+        "SEA"
+      ],
+      "jugadores": [
+        "5850",
+        "11435",
+        "6804"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50429092/packers-josh-jacobs-dealing-fractured-finger",
+          "t": "Packers' Josh Jacobs dealing with broken finger, status for Vikings tilt TBD"
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261109102601",
+      "fecha": "2026-11-09T10:26:02.151Z",
+      "semana": 9,
+      "titulo": "Tank Dell explota con 105 yardas y 1 TD",
+      "claves": [
+        "Acumula 105 yardas y 1 TD en semana 9",
+        "Supera por completo la grave lesión de rodilla previa",
+        "Asume protagonismo por ausencias en el cuerpo de receptores"
+      ],
+      "contexto": "Tank Dell firmó un brillante desempeño en su segundo encuentro tras superar una grave lesión de rodilla. El receptor abierto sumó 105 yardas en recepciones y 1 TD en la victoria de Texans. Dell lució explosivo en cada ruta ejecutada y mostró una sincronía perfecta con C.J. Stroud durante las series ofensivas del partido.",
+      "fantasy": "Dell sube de inmediato a categoría WR2 con techo de WR1 en formatos PPR y medio PPR. Con Jaylen Higgins y Jaylin Noel colocados en reserva de lesionados, el volumen de pases continuará concentrado en Dell para la semana 9. Si sigue disponible en waivers de tu liga, debe ser la adición prioritaria de la semana.",
+      "equipo_impacto": "El ataque aéreo de Houston recupera dinamismo profundo. C.J. Stroud recupera a su objetivo preferido para estirar el campo, lo que abre huecos en zonas intermedias para todo el esquema ofensivo.",
+      "accion": "Reclama a Tank Dell en waivers e insértalo en tu alineación.",
+      "en": {
+        "titulo": "Tank Dell shines with 105 yards and 1 TD",
+        "claves": [
+          "Racks up 105 receiving yards and 1 TD in Week 9",
+          "Proves fully recovered from previous major knee injury",
+          "Steps up as primary target amid Houston receiver injuries"
+        ],
+        "contexto": "Tank Dell delivered a standout performance in his second game back from a severe knee injury. The wide receiver recorded 105 receiving yards and 1 TD in the Texans victory. Dell showed sharp route running and explosive speed, rekindling his strong downfield connection with quarterback C.J. Stroud throughout the contest.",
+        "fantasy": "Dell rises to WR2 status with WR1 ceiling in PPR and half-PPR formats. With Jaylen Higgins and Jaylin Noel on injured reserve, passing volume will remain heavily concentrated on Dell in Week 9. If he remains available on your league's waiver wire, he should be your top priority.",
+        "equipo_impacto": "Houston's passing game regains deep-threat capability. C.J. Stroud gets back his preferred big-play target to stretch defenses, opening up intermediate lanes across the field for the entire offense.",
+        "accion": "Claim Tank Dell on waivers and insert him into your lineup."
+      },
+      "etiqueta": "WAIVER",
       "impacto": "SUBE",
+      "equipo": "HOU",
+      "equipos": [
+        "HOU"
+      ],
+      "jugadores": [
+        "9502",
+        "9758"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50428998/grateful-tank-dell-105-receiving-yards-2nd-game-back-knee-injury",
+          "t": "'Grateful' Tank Dell has 105 receiving yards in 2nd game back from knee injury"
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261109102602",
+      "fecha": "2026-11-09T10:26:02.151Z",
+      "semana": 9,
+      "titulo": "Drew Lock supera lesión oblicua en triunfo de Seahawks",
+      "claves": [
+        "Sufrió dolencia en el oblicuo durante el 3er cuarto",
+        "Consumó el triunfo 17-3 en relevo de Sam Darnold",
+        "Sam Darnold descartado para la semana 9 por cuadríceps"
+      ],
+      "contexto": "Drew Lock fue el pasador titular ante la baja de Sam Darnold por lesión de cuadríceps y guió a Seattle al triunfo 17-3 sobre Cardinals. A pesar de llegar tocado del codo de lanzar y sufrir una dolencia en el oblicuo en el 3er cuarto, Lock finalizó el encuentro en el campo para sellar la victoria.",
+      "fantasy": "Lock figura como cuestionable para la semana 9 por la molestia en el oblicuo. En ligas Superflex o de 2 QB funciona solo como parche de emergencia de bajo techo. Jaxon Smith-Njigba sostiene valor de WR1 elite por volumen de pases cortos, pero la ofensiva limita el potencial de anotar de sus receptores.",
+      "equipo_impacto": "Seattle mantendrá un plan de juego conservador apoyado en su defensiva. Kenneth Walker III mantendrá un volumen de acarreos masivo para proteger a su mariscal de campo mermado físicamente.",
+      "accion": "Mantén a Lock únicamente en la banca para ligas Superflex.",
+      "en": {
+        "titulo": "Drew Lock plays through oblique injury in Seahawks win",
+        "claves": [
+          "Suffered oblique injury during 3rd quarter of play",
+          "Secured 17-3 victory filling in for Sam Darnold",
+          "Sam Darnold ruled out for Week 9 with quadriceps injury"
+        ],
+        "contexto": "Drew Lock started in place of the injured Sam Darnold (out with a quadriceps issue) and led Seattle to a 17-3 victory over the Cardinals. Despite fighting through a throwing elbow ailment and sustaining an oblique injury in the 3rd quarter, Lock stayed on the field to finish out the win.",
+        "fantasy": "Lock is questionable for Week 9 with the oblique issue. In Superflex or 2-QB leagues, he remains a low-ceiling emergency starter option. Jaxon Smith-Njigba holds elite WR1 value through short target volume, but the overall offense limits passing touchdown upside for all Seattle receivers under Lock's physical limitations.",
+        "equipo_impacto": "Seattle will lean heavily on a conservative game plan backed by defense. Kenneth Walker III will handle a massive rushing workload to protect his banged-up quarterback on offense.",
+        "accion": "Keep Lock on your bench unless playing in Superflex leagues."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "NEUTRO",
       "equipo": "SEA",
       "equipos": [
         "SEA",
@@ -48,125 +141,65 @@
         "KC"
       ],
       "jugadores": [
-        "8151",
-        "9488"
+        "5854",
+        "4943",
+        "9488",
+        "8151"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50428624/kenneth-walker-iii-alleviates-workload-concerns-huge-performance",
-          "t": "Kenneth Walker III alleviates workload concerns with huge performance"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-          "t": "Fantasy buzz: Week 9 scoring leaders through Sunday's 4 p.m. ET games"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50392903/nfl-week-9-fantasy-football-winners-losers-injuries-rankings",
-          "t": "Week 9 winners and losers: Lamb, Walker come up big, Gibbs, Taylor disappoint"
+          "u": "https://www.espn.com/nfl/story/_/id/50429192/drew-lock-overcomes-oblique-injury-seahawks-top-cardinals",
+          "t": "Drew Lock overcomes oblique injury in fill-in start for Sam Darnold, Seahawks"
         }
       ],
       "menciona": []
     },
     {
-      "id": "n20261109024501",
-      "fecha": "2026-11-09T02:45:12.282Z",
+      "id": "n20261109102603",
+      "fecha": "2026-11-09T10:26:02.151Z",
       "semana": 9,
-      "titulo": "C.J. Stroud lanza 5 TD pese a enfermedad en paliza",
+      "titulo": "Calvin Ridley involucrado en incidente en aeropuerto de Nashville",
       "claves": [
-        "C.J. Stroud sumó 5 TD tras lidiar con escalofríos durante la semana.",
-        "Houston aplastó 44-22 a unos Chargers golpeados e ineficientes.",
-        "Justin Herbert sufrió una lesión en el dedo medio de la mano izquierda."
+        "Reportan altercado en el aeropuerto internacional de Nashville",
+        "El receptor protagoniza rumores de traspaso en la NFL",
+        "Incertidumbre sobre posibles sanciones en las próximas horas"
       ],
-      "contexto": "C.J. Stroud tuvo su propio partido memorable en la semana 9. Pese a entrenar muy poco y despertar con escalofríos el día del encuentro, el mariscal de campo de Houston lució imparable al lanzar 5 TD en la paliza 44-22 sobre los Chargers. En contraste, Justin Herbert sufrió 8 capturas, lanzó 1 intercepción y dejó el juego por molestia en el dedo medio izquierdo.",
-      "fantasy": "El valor de C.J. Stroud sube de forma drástica en ligas PPR y Superflex tras demostrar un techo fantasy de élite absoluta cuando entra en ritmo. Por su parte, Justin Herbert entra a la lista de duda (Questionable) y su valor baja considerablemente por las 8 capturas recibidas por juego. Si tienes a Herbert, busca opciones de respaldo en waivers hoy mismo.",
-      "equipo_impacto": "El recital de C.J. Stroud eleva el techo de las armas pasadoras de Houston en la semana 9. En Los Angeles Chargers, la protección es un problema serio que limita a todo el equipo.",
-      "accion": "Pon a C.J. Stroud como titular seguro y busca cobertura en waivers para Justin Herbert.",
+      "contexto": "Calvin Ridley estuvo involucrado en un incidente dentro del Aeropuerto Internacional de Nashville este fin de semana, según reportes de ESPN. Los detalles específicos del hecho no han sido revelados por las autoridades ni por el equipo. Este suceso ocurre mientras el receptor es objeto de múltiples rumores de traspaso en la liga.",
+      "fantasy": "Momentos de incertidumbre para los dueños de Ridley en fantasy football. En ligas PPR conviene mantenerlo en la banca a la espera de un pronunciamiento oficial sobre disciplina o un posible cambio de equipo. Si Ridley es traspasado a un aspirante al título con un QB superior, su valor fantasy podría dispararse radicalmente.",
+      "equipo_impacto": "Situación complicada para la ofensiva de Tennessee. Con Carnell Tate fuera por lesión de hombro, perder a Ridley dejaría al equipo con severas carencias en la posición de receptor abierto.",
+      "accion": "Pausa cualquier oferta de canje por Ridley hasta conocer más detalles.",
       "en": {
-        "titulo": "C.J. Stroud throws 5 TDs despite illness in blowout",
+        "titulo": "Calvin Ridley involved in airport incident in Nashville",
         "claves": [
-          "C.J. Stroud recorded 5 TDs despite battling illness all week.",
-          "Houston routed the struggling Chargers 44-22 in Week 9.",
-          "Justin Herbert exited with a left middle finger injury."
+          "Reported incident at Nashville International Airport over weekend",
+          "Wide receiver remains subject of NFL trade rumors",
+          "Uncertainty surrounds potential discipline or team action"
         ],
-        "contexto": "C.J. Stroud put together his own iconic performance in Week 9. Despite practicing minimally and waking up with chills on game day, Houston's quarterback was unstoppable, throwing 5 TDs in a 44-22 blowout win over the Chargers. Meanwhile, Justin Herbert took 8 sacks, threw 1 interception, and left early due to a left middle finger injury.",
-        "fantasy": "C.J. Stroud's fantasy stock rises dramatically in PPR and Superflex formats after showing an elite scoring ceiling when clicking. On the flip side, Justin Herbert remains Questionable and his value takes a hit due to ongoing pass protection issues causing 8 sacks per contest. Herbert owners should secure waiver wire insurance immediately.",
-        "equipo_impacto": "Stroud's career game boosts the ceiling for Houston's entire passing game entering the 2nd half of the season. For the Chargers, poor protection continues to hamper offensive output.",
-        "accion": "Start C.J. Stroud with confidence and secure QB coverage on waivers for Justin Herbert."
+        "contexto": "Calvin Ridley was involved in an incident at Nashville International Airport over the weekend, according to ESPN reports. Specific details regarding the event have not been released by authorities or the team. This situation unfolds as the wide receiver continues to be mentioned in trade rumors ahead of the deadline.",
+        "fantasy": "Uncertainty surrounds Ridley for fantasy football managers. In PPR formats, keep him benched until official word emerges regarding discipline or a potential trade. If Ridley is dealt to a contender with an upgraded quarterback situation, his fantasy value could see a significant boost in the second half.",
+        "equipo_impacto": "This creates a major distraction for Tennessee's passing attack. With Carnell Tate out due to a shoulder injury, losing Ridley would leave the team severely depleted at wide receiver.",
+        "accion": "Hold off on trading for Ridley until details are clarified."
       },
       "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "HOU",
+      "impacto": "NEUTRO",
+      "equipo": "TEN",
       "equipos": [
-        "HOU",
-        "LAC"
+        "TEN"
       ],
       "jugadores": [
-        "9758",
-        "6797"
+        "4981"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50428280/herbert-injures-finger-chargers-loss-testing",
-          "t": "Herbert to undergo testing after exiting Chargers' 44-22 loss with finger injury"
+          "u": "https://www.espn.com/nfl/story/_/id/50429795/titans-wr-ridley-involved-incident-nashville-airport",
+          "t": "Titans WR Calvin Ridley involved in incident at Nashville airport"
         },
         {
-          "m": "ESPN",
-          "u": "http://www.espn.com/nfl/recap?gameId=401873046",
-          "t": "C.J. Stroud tosses 5 TD passes as Texans rout winless Chargers 44-22. LA finally scores a TD"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261109024502",
-      "fecha": "2026-11-09T02:45:12.282Z",
-      "semana": 9,
-      "titulo": "Jordan Love brilla con 4 TD en victoria de Packers",
-      "claves": [
-        "Jordan Love generó 4 TD en la paliza 45-27 ante New England.",
-        "La defensiva de Green Bay provocó 4 entregas de balón decisivas.",
-        "El pasador firmó una de las mejores actuaciones de su carrera."
-      ],
-      "contexto": "Jordan Love entregó un recital ofensivo en la semana 9 al registrar 4 TD totales durante la victoria 45-27 de los Green Bay Packers sobre New England. Respaldado por una defensiva que forzó 4 entregas de balón a los Patriots, Love manejó los tiempos con efectividad y concretó pases profundos para sellar un triunfo contundente que confirma el nivel del pasador.",
-      "fantasy": "La actuación de Jordan Love reafirma su lugar como un QB1 de alto impacto en todos los formatos fantasy para la semana 9. Su capacidad para generar producción en zona de anotación eleva drásticamente su piso semanal. Si estás disputando un boleto a playoffs en ligas de 12 equipos, Love representa una opción titular fija que mantendrá a tu equipo competitivo.",
-      "equipo_impacto": "El rendimiento de Jordan Love impulsa el valor de todo el cuerpo de receptores de los Packers. Su distribución de balón genera oportunidades constantes de anotación para sus compañeros de ataque.",
-      "accion": "Alinea a Jordan Love como QB1 de confianza para la semana 9 y en adelante.",
-      "en": {
-        "titulo": "Jordan Love shines with 4 TDs in Packers victory",
-        "claves": [
-          "Jordan Love accounted for 4 TDs in 45-27 win over Patriots.",
-          "Green Bay's defense forced 4 critical turnovers in Week 9.",
-          "The quarterback delivered one of the best games of his career."
-        ],
-        "contexto": "Jordan Love put on an offensive show in Week 9, accounting for 4 total TDs during Green Bay's 45-27 victory over the New England Patriots. Backed by a defense that generated 4 turnovers, Love executed efficiently from the pocket and hit key deep shots to seal an impressive win that highlighted his development.",
-        "fantasy": "Love's dominant outing confirms his position as a high-end QB1 in all fantasy formats. His ability to produce multiple scoring plays raises both his floor and ceiling each week. Fantasy managers fighting for a playoff spot in 12-team leagues can comfortably lock Love in as an everyday starter moving forward.",
-        "equipo_impacto": "Love's top-tier play elevates the overall ceiling for Green Bay's receiving corps. His willingness to spread the ball around keeps all primary Packers pass-catchers involved in scoring territory.",
-        "accion": "Lock Jordan Love in as a high-upside QB1 for Week 9 and beyond."
-      },
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "GB",
-      "equipos": [
-        "GB",
-        "NE"
-      ],
-      "jugadores": [
-        "6804"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "http://www.espn.com/nfl/recap?gameId=401873049",
-          "t": "Jordan Love accounts for 4 touchdowns, Packers force 4 turnovers in 45-27 win over Patriots"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50427757/game-highlights",
-          "t": "Green Bay Packers vs. New England Patriots: Game Highlights"
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/titans-calvin-ridley-involved-in-incident-nashville-airport/",
+          "t": "\n                        Titans&#039; Calvin Ridley involved in &#039;incident&#039; at Nashville International Airport, per report\n        "
         }
       ],
       "menciona": []
@@ -190,11 +223,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "5850",
+      "id": "6797",
       "estatus": "Duda"
     },
     {
-      "id": "6797",
+      "id": "5850",
       "estatus": "Duda"
     },
     {
@@ -210,11 +243,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "2133",
+      "id": "4881",
       "estatus": "Fuera"
     },
     {
-      "id": "4881",
+      "id": "2133",
       "estatus": "Fuera"
     },
     {
@@ -234,12 +267,16 @@
       "estatus": "Fuera"
     },
     {
+      "id": "7543",
+      "estatus": "Fuera"
+    },
+    {
       "id": "2216",
       "estatus": "Fuera"
     },
     {
-      "id": "7543",
-      "estatus": "Fuera"
+      "id": "12519",
+      "estatus": "Duda"
     },
     {
       "id": "11565",
@@ -286,11 +323,11 @@
       "estatus": "Duda"
     },
     {
-      "id": "12489",
+      "id": "7526",
       "estatus": "Fuera"
     },
     {
-      "id": "7526",
+      "id": "12489",
       "estatus": "Fuera"
     },
     {
@@ -328,65 +365,61 @@
     {
       "id": "9486",
       "estatus": "Fuera"
-    },
-    {
-      "id": "8205",
-      "estatus": "Fuera"
     }
   ],
   "agregados": [
     "6130",
     "3286",
+    "9502",
     "11579",
     "11783",
-    "9502",
+    "12491",
     "NO",
     "4035",
     "11625",
-    "12491",
     "3161",
     "2020",
     "13150",
-    "NYG",
-    "13276",
-    "13603",
-    "8161",
     "7567",
-    "DET",
-    "13286",
-    "12469",
-    "9756",
+    "13276",
+    "NYG",
     "12634",
+    "13286",
+    "8161",
+    "9758",
+    "2505",
     "12524",
-    "11610",
-    "9758"
+    "9756",
+    "DET",
+    "12469",
+    "13603"
   ],
   "soltados": [
     "8129",
     "11435",
     "9757",
-    "5849",
     "11625",
-    "11581",
+    "5849",
     "11834",
+    "11581",
     "WAS",
     "11637",
     "3271",
+    "6130",
     "NE",
-    "9230",
+    "8161",
     "7561",
     "DET",
+    "3286",
     "13281",
     "TB",
+    "9230",
     "10235",
-    "8161",
-    "6130",
+    "9482",
+    "9480",
+    "11783",
     "1945",
-    "8135",
-    "12718",
-    "8154",
-    "3286",
-    "13424"
+    "8135"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
