@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-08T23:17:04.977Z",
-  "ultimaIA": "2026-11-08T23:17:04.977Z",
+  "actualizado": "2026-11-09T02:45:12.282Z",
+  "ultimaIA": "2026-11-09T02:45:12.282Z",
   "semana": 9,
   "semanaStats": 9,
   "temporada": "2026",
@@ -14,156 +14,159 @@
   ],
   "noticias": [
     {
-      "id": "n20261108231700",
-      "fecha": "2026-11-08T23:17:04.977Z",
+      "id": "n20261109024500",
+      "fecha": "2026-11-09T02:45:12.282Z",
       "semana": 9,
-      "titulo": "Puka Nacua evita lesión de ACL tras molestia articular",
+      "titulo": "Kenneth Walker III domina y apaga dudas en semana 9",
       "claves": [
-        "Rams descartan rotura de ACL para Nacua",
-        "Se someterá a exámenes adicionales el lunes",
-        "Proyecta 22.0 pts PPR en semana 9"
+        "Lideró los puntajes fantasy de la tarde en la semana 9.",
+        "Disipó dudas sobre la división de acarreo en el ataque terrestre.",
+        "Se consolida como un RB1 de élite tras la victoria 17-3."
       ],
-      "contexto": "Puka Nacua abandonó el partido de la semana 9 frente a los Commanders debido a una lesión de rodilla al final del juego. De acuerdo con reportes de los Rams, el equipo descarta un desgarro de ligamento cruzado anterior (ACL). El receptor se someterá a resonancias el lunes para precisar la magnitud exacta de la molestia y confirmar si existen daños estructurales.",
-      "fantasy": "Al estar catalogado como Questionable por esta dolencia en la rodilla, Nacua debe permanecer en tu plantilla titular mientras no sea descartado oficialmente. El modelo FX lo proyecta con 22.0 pts PPR, consolidándolo como una opción WR1 dominante. Si los estudios confirman que evitó una lesión grave, mantendrá su estatus alto en todas las ligas. Ten un receptor de respaldo en banca por prevención.",
-      "equipo_impacto": "La ofensiva de los Rams depende del volumen de Nacua en el juego aéreo. Sin Davante Adams disponible en el plantel por estar en IR, perder a su receptor estrella alteraría dramáticamente la distribución de pases del equipo.",
-      "accion": "Mantén a Puka Nacua en tu alineación y monitorea sus reportes médicos.",
+      "contexto": "Kenneth Walker III firmó una actuación espectacular en la semana 9 para liderar a todos los corredores en fantasy. Tras varias jornadas donde se cuestionaba su volumen de toques y el reparto en el backfield de Seattle, el egresado de Michigan State demostró por qué es una fuerza ofensiva imparable en el triunfo 17-3 sobre los Cardinals, disipando cualquier duda entre los dueños de su carta.",
+      "fantasy": "Esta exhibición mete de lleno a Kenneth Walker III en el top 5 de RB1 semana a semana. Con la proyección del modelo FX marcando 19.0 pts en formato PPR, Walker debe ser titular indiscutible en ligas Redraft y Dynasty sin importar el rival. Suben sus acciones mientras mantenga este ritmo de trabajo en Seattle, convirtiéndolo en un activo intocable que debes mantener alineado.",
+      "equipo_impacto": "La explosividad de Kenneth Walker III le quita presión a la ofensiva aérea de Seattle. Al establecer el control terrestre, abre espacios para receptores como Jaxon Smith-Njigba y le da fluidez al ataque.",
+      "accion": "Mantén a Kenneth Walker III alineado semanalmente como tu RB1 estelar sin dudarlo.",
       "en": {
-        "titulo": "Puka Nacua Avoids ACL Tear Following Late Knee Injury",
+        "titulo": "Kenneth Walker III dominates and erases Week 9 doubts",
         "claves": [
-          "Rams initial tests rule out ACL tear for Nacua",
-          "Undergoing further imaging on Monday to confirm status",
-          "Projected for 22.0 PPR points in Week 9"
+          "Led Sunday afternoon fantasy scoring in Week 9.",
+          "Cleared up concerns regarding backfield workload split.",
+          "Solidified elite RB1 status following 17-3 win over Arizona."
         ],
-        "contexto": "Puka Nacua left the Week 9 game against the Commanders with a late-game knee injury. The Rams do not believe Nacua suffered a torn ACL, but MRI scans on Monday will tell more about his exact status and confirm whether structural damage exists.",
-        "fantasy": "Since Nacua is listed as Questionable with this knee injury, keep him in your starting lineup as long as he is active. The FX model projects him for 22.0 PPR points, maintaining his elite WR1 status. If imaging confirms no severe damage, his fantasy outlook remains top-tier across all formats. Have a bench WR ready just in case.",
-        "equipo_impacto": "The Rams offense relies heavily on Nacua in the passing game. With Davante Adams currently on IR, losing their top receiver would drastically shift target distribution for the team.",
-        "accion": "Keep Puka Nacua in your lineup and monitor practice reports."
-      },
-      "etiqueta": "LESIÓN",
-      "impacto": "NEUTRO",
-      "equipo": "LAR",
-      "equipos": [
-        "LAR",
-        "WAS"
-      ],
-      "jugadores": [
-        "9493"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50425853/sources-rams-puka-nacua-undergo-tests-knee",
-          "t": "Sources: Puka Nacua set for tests on late-game knee injury; Rams believe ACL OK"
-        },
-        {
-          "m": "ESPN",
-          "u": "http://www.espn.com/nfl/recap?gameId=401873043",
-          "t": "Puka Nacua, Myles Garrett lead Rams to 20-13 win over Commanders"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261108231701",
-      "fecha": "2026-11-08T23:17:04.977Z",
-      "semana": 9,
-      "titulo": "Javonte Williams brilla con 101 yardas y 1 TD",
-      "claves": [
-        "101 yardas por tierra en la semana 9",
-        "Anotó el TD del triunfo restando 1:08",
-        "Cowboys superan 27-23 a los Colts"
-      ],
-      "contexto": "Javonte Williams lideró el ataque terrestre de los Cowboys en la victoria 27-23 sobre los Colts en la semana 9. El corredor sumó 101 yardas por tierra y anotó el TD definitivo en un acarreo de 1 yarda a 1:08 del final. Williams fue clave para asegurar el triunfo y evitar otro colapso en el cuarto periodo del equipo de Dallas.",
-      "fantasy": "El desempeño de Williams refuerza su perfil como RB2 confiable en formatos PPR y estándar. Acumular 101 yardas y asegurar los acarreos dentro de la zona de gol le otorga un piso semanal muy seguro en ligas de 10 y 12 equipos. Su volumen terrestre sostenido eleva su proyección semanal en fantasy football durante la segunda mitad del calendario regular.",
-      "equipo_impacto": "Williams asume la carga principal del juego por tierra en Dallas. Su capacidad para cerrar partidos le quita presión al ataque aéreo del equipo, equilibrando el plan de juego ofensivo.",
-      "accion": "Alinea a Javonte Williams como tu RB2 titular para las siguientes semanas.",
-      "en": {
-        "titulo": "Javonte Williams Shines With 101 Yards and 1 TD",
-        "claves": [
-          "101 rushing yards in Week 9 victory",
-          "Scored go-ahead 1-yard TD with 1:08 remaining",
-          "Cowboys defeat Colts 27-23"
-        ],
-        "contexto": "Javonte Williams led the Cowboys rushing attack in a 27-23 victory over the Colts in Week 9. The running back produced 101 rushing yards and scored the game-winning touchdown on a 1-yard run with 1:08 left in the game, helping Dallas cap off a late drive and secure the win.",
-        "fantasy": "Williams' strong game solidifies his standing as a dependable RB2 in PPR and standard formats. Recording 101 rushing yards alongside goal-line carries provides a stable weekly floor in 10-team and 12-team leagues. His heavy involvement on the ground boosts his fantasy value for the rest of the season.",
-        "equipo_impacto": "Williams commands the lead rushing role in Dallas. His ability to finish drives relieves pressure on the passing attack, creating a balanced offensive scheme.",
-        "accion": "Start Javonte Williams as a solid RB2 option in your lineups."
+        "contexto": "Kenneth Walker III delivered a monster performance in Week 9 to lead all Sunday afternoon fantasy running backs. Following weeks of speculation regarding his workload split in the Seattle backfield, the Michigan State product proved why he is an unstoppable offensive force in a 17-3 win against the Cardinals, erasing all fantasy manager concerns.",
+        "fantasy": "This performance vaults Kenneth Walker III right back into top 5 RB1 status on a weekly basis. With the FX model projecting 19.0 pts in PPR format, Walker is a non-negotiable starter in both Redraft and Dynasty leagues regardless of the matchup. His fantasy value is trending up as long as he maintains this heavy volume in Seattle.",
+        "equipo_impacto": "The explosiveness of Kenneth Walker III relieves immense pressure from Seattle's passing attack. Establishing a dominant ground game opens up passing lanes for receivers like Jaxon Smith-Njigba.",
+        "accion": "Keep Kenneth Walker III locked into your lineup as a firm weekly RB1."
       },
       "etiqueta": "START",
       "impacto": "SUBE",
-      "equipo": "DAL",
+      "equipo": "SEA",
       "equipos": [
-        "DAL",
-        "IND"
+        "SEA",
+        "ARI",
+        "KC"
       ],
       "jugadores": [
-        "7588"
+        "8151",
+        "9488"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "http://www.espn.com/nfl/recap?gameId=401873040",
-          "t": "Javonte Williams' late TD run helps Cowboys avoid another 4th-quarter collapse and beat Colts 27-23"
+          "u": "https://www.espn.com/video/clip/_/id/50428624/kenneth-walker-iii-alleviates-workload-concerns-huge-performance",
+          "t": "Kenneth Walker III alleviates workload concerns with huge performance"
         },
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50425145/game-highlights",
-          "t": "Dallas Cowboys vs. Indianapolis Colts: Game Highlights"
+          "u": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
+          "t": "Fantasy buzz: Week 9 scoring leaders through Sunday's 4 p.m. ET games"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50392903/nfl-week-9-fantasy-football-winners-losers-injuries-rankings",
+          "t": "Week 9 winners and losers: Lamb, Walker come up big, Gibbs, Taylor disappoint"
         }
       ],
       "menciona": []
     },
     {
-      "id": "n20261108231702",
-      "fecha": "2026-11-08T23:17:04.977Z",
+      "id": "n20261109024501",
+      "fecha": "2026-11-09T02:45:12.282Z",
       "semana": 9,
-      "titulo": "Patrick Mahomes preocupa por dolencia en el codo",
+      "titulo": "C.J. Stroud lanza 5 TD pese a enfermedad en paliza",
       "claves": [
-        "Salió lesionado del codo ante los Jets",
-        "Chiefs buscan canje por un receptor",
-        "Proyección de 19.1 pts para la semana 9"
+        "C.J. Stroud sumó 5 TD tras lidiar con escalofríos durante la semana.",
+        "Houston aplastó 44-22 a unos Chargers golpeados e ineficientes.",
+        "Justin Herbert sufrió una lesión en el dedo medio de la mano izquierda."
       ],
-      "contexto": "Patrick Mahomes sufrió una dolencia en el codo derecho tras un strip-sack en el partido de la semana 9 donde Kansas City venció 35-12 a los Jets. Tras el impacto, el pasador figura como Questionable en el reporte oficial. Asimismo, el gerente general Brett Veach confirmó que los Chiefs buscan activamente realizar un canje por un receptor antes de la fecha límite.",
-      "fantasy": "La molestia en el codo genera cautela alrededor de Mahomes en fantasy football. Aunque mantiene una proyección de 19.1 pts, su estatus de Questionable obliga a monitorearlo de cerca. Si la directiva concreta el traspaso por un nuevo receptor, el potencial aéreo de Mahomes subiría de cara a la segunda mitad de la temporada en ligas de 1 QB.",
-      "equipo_impacto": "Un eventual canje por un receptor aportaría profundidad al cuerpo de pases de Kansas City. La protección en el bolsillo resultará prioritaria para evitar más golpes en el brazo de Mahomes.",
-      "accion": "Busca una opción de QB en la agencia libre por precaución.",
+      "contexto": "C.J. Stroud tuvo su propio partido memorable en la semana 9. Pese a entrenar muy poco y despertar con escalofríos el día del encuentro, el mariscal de campo de Houston lució imparable al lanzar 5 TD en la paliza 44-22 sobre los Chargers. En contraste, Justin Herbert sufrió 8 capturas, lanzó 1 intercepción y dejó el juego por molestia en el dedo medio izquierdo.",
+      "fantasy": "El valor de C.J. Stroud sube de forma drástica en ligas PPR y Superflex tras demostrar un techo fantasy de élite absoluta cuando entra en ritmo. Por su parte, Justin Herbert entra a la lista de duda (Questionable) y su valor baja considerablemente por las 8 capturas recibidas por juego. Si tienes a Herbert, busca opciones de respaldo en waivers hoy mismo.",
+      "equipo_impacto": "El recital de C.J. Stroud eleva el techo de las armas pasadoras de Houston en la semana 9. En Los Angeles Chargers, la protección es un problema serio que limita a todo el equipo.",
+      "accion": "Pon a C.J. Stroud como titular seguro y busca cobertura en waivers para Justin Herbert.",
       "en": {
-        "titulo": "Patrick Mahomes Questionable With Elbow Injury",
+        "titulo": "C.J. Stroud throws 5 TDs despite illness in blowout",
         "claves": [
-          "Hurt elbow on a strip-sack against Jets",
-          "Chiefs actively seeking WR trade",
-          "Projected for 19.1 fantasy points in Week 9"
+          "C.J. Stroud recorded 5 TDs despite battling illness all week.",
+          "Houston routed the struggling Chargers 44-22 in Week 9.",
+          "Justin Herbert exited with a left middle finger injury."
         ],
-        "contexto": "Patrick Mahomes suffered a right elbow injury following a strip-sack during Kansas City's 35-12 victory against the Jets in Week 9. Mahomes is listed as Questionable on the injury status report. Meanwhile, general manager Brett Veach confirmed that the Chiefs are actively looking to trade for a wide receiver before the deadline.",
-        "fantasy": "The elbow injury creates caution for Mahomes fantasy managers. While he maintains a 19.1 fantasy point projection, his Questionable status requires close monitoring. Should Kansas City complete a trade for a wide receiver, Mahomes' ceiling in 1-QB leagues will increase significantly for the second half of the year.",
-        "equipo_impacto": "Adding a new wide receiver via trade would bolster Kansas City's thin pass-catching corps. Pass protection becomes a top priority to keep Mahomes safe from additional hits.",
-        "accion": "Add a backup quarterback from waiver wire as insurance."
+        "contexto": "C.J. Stroud put together his own iconic performance in Week 9. Despite practicing minimally and waking up with chills on game day, Houston's quarterback was unstoppable, throwing 5 TDs in a 44-22 blowout win over the Chargers. Meanwhile, Justin Herbert took 8 sacks, threw 1 interception, and left early due to a left middle finger injury.",
+        "fantasy": "C.J. Stroud's fantasy stock rises dramatically in PPR and Superflex formats after showing an elite scoring ceiling when clicking. On the flip side, Justin Herbert remains Questionable and his value takes a hit due to ongoing pass protection issues causing 8 sacks per contest. Herbert owners should secure waiver wire insurance immediately.",
+        "equipo_impacto": "Stroud's career game boosts the ceiling for Houston's entire passing game entering the 2nd half of the season. For the Chargers, poor protection continues to hamper offensive output.",
+        "accion": "Start C.J. Stroud with confidence and secure QB coverage on waivers for Justin Herbert."
       },
-      "etiqueta": "LESIÓN",
-      "impacto": "NEUTRO",
-      "equipo": "KC",
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "HOU",
       "equipos": [
-        "KC",
-        "NYJ"
+        "HOU",
+        "LAC"
       ],
       "jugadores": [
-        "4046"
+        "9758",
+        "6797"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50425874/what-kind-fantasy-qb-patrick-mahomes-right-now",
-          "t": "What kind of fantasy QB is Patrick Mahomes right now?"
+          "u": "https://www.espn.com/nfl/story/_/id/50428280/herbert-injures-finger-chargers-loss-testing",
+          "t": "Herbert to undergo testing after exiting Chargers' 44-22 loss with finger injury"
         },
         {
           "m": "ESPN",
-          "u": "http://www.espn.com/nfl/recap?gameId=401873045",
-          "t": "Kenneth Walker scores 3 TDs as the Chiefs roll past the woeful Jets 35-12 to end their 2-game skid"
+          "u": "http://www.espn.com/nfl/recap?gameId=401873046",
+          "t": "C.J. Stroud tosses 5 TD passes as Texans rout winless Chargers 44-22. LA finally scores a TD"
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261109024502",
+      "fecha": "2026-11-09T02:45:12.282Z",
+      "semana": 9,
+      "titulo": "Jordan Love brilla con 4 TD en victoria de Packers",
+      "claves": [
+        "Jordan Love generó 4 TD en la paliza 45-27 ante New England.",
+        "La defensiva de Green Bay provocó 4 entregas de balón decisivas.",
+        "El pasador firmó una de las mejores actuaciones de su carrera."
+      ],
+      "contexto": "Jordan Love entregó un recital ofensivo en la semana 9 al registrar 4 TD totales durante la victoria 45-27 de los Green Bay Packers sobre New England. Respaldado por una defensiva que forzó 4 entregas de balón a los Patriots, Love manejó los tiempos con efectividad y concretó pases profundos para sellar un triunfo contundente que confirma el nivel del pasador.",
+      "fantasy": "La actuación de Jordan Love reafirma su lugar como un QB1 de alto impacto en todos los formatos fantasy para la semana 9. Su capacidad para generar producción en zona de anotación eleva drásticamente su piso semanal. Si estás disputando un boleto a playoffs en ligas de 12 equipos, Love representa una opción titular fija que mantendrá a tu equipo competitivo.",
+      "equipo_impacto": "El rendimiento de Jordan Love impulsa el valor de todo el cuerpo de receptores de los Packers. Su distribución de balón genera oportunidades constantes de anotación para sus compañeros de ataque.",
+      "accion": "Alinea a Jordan Love como QB1 de confianza para la semana 9 y en adelante.",
+      "en": {
+        "titulo": "Jordan Love shines with 4 TDs in Packers victory",
+        "claves": [
+          "Jordan Love accounted for 4 TDs in 45-27 win over Patriots.",
+          "Green Bay's defense forced 4 critical turnovers in Week 9.",
+          "The quarterback delivered one of the best games of his career."
+        ],
+        "contexto": "Jordan Love put on an offensive show in Week 9, accounting for 4 total TDs during Green Bay's 45-27 victory over the New England Patriots. Backed by a defense that generated 4 turnovers, Love executed efficiently from the pocket and hit key deep shots to seal an impressive win that highlighted his development.",
+        "fantasy": "Love's dominant outing confirms his position as a high-end QB1 in all fantasy formats. His ability to produce multiple scoring plays raises both his floor and ceiling each week. Fantasy managers fighting for a playoff spot in 12-team leagues can comfortably lock Love in as an everyday starter moving forward.",
+        "equipo_impacto": "Love's top-tier play elevates the overall ceiling for Green Bay's receiving corps. His willingness to spread the ball around keeps all primary Packers pass-catchers involved in scoring territory.",
+        "accion": "Lock Jordan Love in as a high-upside QB1 for Week 9 and beyond."
+      },
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "GB",
+      "equipos": [
+        "GB",
+        "NE"
+      ],
+      "jugadores": [
+        "6804"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "http://www.espn.com/nfl/recap?gameId=401873049",
+          "t": "Jordan Love accounts for 4 touchdowns, Packers force 4 turnovers in 45-27 win over Patriots"
         },
         {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/chiefs-looking-to-trade-for-wide-receiver-nfl-trade-deadline/",
-          "t": "\n                        Chiefs looking to trade for wide receiver, GM Brett Veach tells NFL on CBS&#039; Tracy Wolfson\n                    "
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50427757/game-highlights",
+          "t": "Green Bay Packers vs. New England Patriots: Game Highlights"
         }
       ],
       "menciona": []
@@ -188,6 +191,10 @@
     },
     {
       "id": "5850",
+      "estatus": "Duda"
+    },
+    {
+      "id": "6797",
       "estatus": "Duda"
     },
     {
@@ -235,15 +242,15 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12514",
-      "estatus": "Duda"
-    },
-    {
       "id": "11565",
       "estatus": "Duda"
     },
     {
       "id": "13279",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "7611",
       "estatus": "Fuera"
     },
     {
@@ -256,7 +263,7 @@
     },
     {
       "id": "12534",
-      "estatus": "Duda"
+      "estatus": "Fuera"
     },
     {
       "id": "4137",
@@ -272,6 +279,10 @@
     },
     {
       "id": "13298",
+      "estatus": "Duda"
+    },
+    {
+      "id": "5854",
       "estatus": "Duda"
     },
     {
@@ -321,14 +332,6 @@
     {
       "id": "8205",
       "estatus": "Fuera"
-    },
-    {
-      "id": "8121",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "12529",
-      "estatus": "Fuera"
     }
   ],
   "agregados": [
@@ -336,54 +339,54 @@
     "3286",
     "11579",
     "11783",
-    "4035",
-    "NO",
-    "11625",
-    "3161",
-    "13150",
-    "13603",
-    "2020",
-    "NYG",
-    "12491",
-    "8161",
-    "13276",
-    "DET",
     "9502",
-    "12469",
+    "NO",
+    "4035",
+    "11625",
+    "12491",
+    "3161",
+    "2020",
+    "13150",
+    "NYG",
+    "13276",
+    "13603",
+    "8161",
     "7567",
-    "7608",
+    "DET",
     "13286",
+    "12469",
     "9756",
+    "12634",
+    "12524",
     "11610",
-    "13281",
-    "12524"
+    "9758"
   ],
   "soltados": [
     "8129",
     "11435",
     "9757",
     "5849",
-    "WAS",
+    "11625",
     "11581",
     "11834",
+    "WAS",
     "11637",
     "3271",
-    "11625",
-    "9230",
     "NE",
-    "10235",
-    "8154",
-    "13281",
+    "9230",
     "7561",
-    "12718",
-    "13424",
-    "8135",
-    "1945",
     "DET",
+    "13281",
     "TB",
-    "CLE",
-    "3321",
-    "4037"
+    "10235",
+    "8161",
+    "6130",
+    "1945",
+    "8135",
+    "12718",
+    "8154",
+    "3286",
+    "13424"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
