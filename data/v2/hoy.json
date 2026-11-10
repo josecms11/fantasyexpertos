@@ -1,512 +1,81 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-10T03:23:28.801Z",
-  "ultimaIA": "2026-11-10T03:23:28.801Z",
-  "semana": 9,
-  "semanaStats": 9,
+  "actualizado": "2026-11-10T11:29:34.023Z",
+  "ultimaIA": "2026-11-10T11:29:34.023Z",
+  "semana": 10,
+  "semanaStats": 10,
   "temporada": "2026",
   "semanas": [
-    5,
     6,
     7,
     8,
-    9
+    9,
+    10
   ],
   "noticias": [
     {
-      "id": "x20261110032300",
-      "fecha": "2026-11-10T03:23:28.801Z",
-      "semana": 9,
-      "exclusivo": true,
-      "fuente": "2026-11-10T00:50:16+00:00",
-      "titulo": "Michael Wilson fuera todo el año por lesión",
+      "id": "n20261110112900",
+      "fecha": "2026-11-10T11:29:34.023Z",
+      "semana": 10,
+      "titulo": "Carson Wentz deja dudas cruciales en Minnesota",
       "claves": [
-        "Sufrirá baja definitiva por el resto de la temporada."
+        "Carson Wentz tuvo una actuación históricamente floja ante los Bills",
+        "Kevin O'Connell evitó confirmar si buscarán un pasador",
+        "La ofensiva de Minnesota genera enorme incertidumbre en fantasy"
       ],
+      "contexto": "Tras una presentación para el olvido por parte de Carson Wentz en el partido de lunes por la noche frente a los Bills, el entrenador Kevin O'Connell fue cuestionado sobre la posibilidad de sumar un mariscal de campo mediante un intercambio antes del cierre de traspasos. El timonel decidió desviar el cuestionamiento y dejó la responsabilidad en manos de la gerencia general.",
+      "fantasy": "El terrible desempeño de Carson Wentz desploma por completo las expectativas para cualquier arma ofensiva de Minnesota en la semana 10. Si dependías de este ataque, es momento de buscar alternativas en el waiver wire o en tu banca, ya que el impacto negativo en tus alineaciones de fantasy es innegable.",
+      "equipo_impacto": "La escuadra vikinga se encuentra en una encrucijada total en la posición más importante del emparrillado, lo que disminuye el techo de puntos para todo el sistema ofensivo y pone en alerta roja a los managers.",
+      "accion": "Sienta de inmediato a Carson Wentz y evita cualquier activo ofensivo secundario de Minnesota en la semana 10.",
       "en": {
-        "titulo": "Michael Wilson out for season with injury",
+        "titulo": "Carson Wentz leaves crucial questions in Minnesota",
         "claves": [
-          "Out for remainder of season with severe injury.",
-          "Loses all fantasy value immediately in redraft leagues.",
-          "Opens target volume for other Cardinals wide receivers."
+          "Carson Wentz struggled historically against the Bills",
+          "Kevin O'Connell deferred questions about a potential QB trade",
+          "Minnesota's offense generates massive fantasy uncertainty"
         ],
-        "contexto": "Cardinals wide receiver Michael Wilson is out for the remainder of the campaign after suffering a severe injury. The team medical staff confirmed he will not return to the field this year. This news hits Arizona's passing offense hard, losing one of its primary targets in the passing game for the rest of the regular season schedule.",
-        "fantasy": "In redraft formats you must drop him immediately to free agency. His value drops to 0 pts in traditional leagues. In dynasty leagues it is worth moving him to the IR spot if space is available. The remaining receivers on the team see an increase in opportunities, as target volume will be redistributed in coming weeks.",
-        "equipo_impacto": "Wilson's absence leaves Arizona without a key starting wide receiver. The quarterback will have to spread passes among secondary options on the roster to compensate for his missing target.",
-        "accion": "Drop Michael Wilson immediately in all your redraft fantasy leagues."
+        "contexto": "Following a historically poor performance by Carson Wentz on Monday night against the Bills, head coach Kevin O'Connell was asked if the team might trade for a quarterback before the deadline. The coach deferred the question to the front office.",
+        "fantasy": "Wentz's brutal outing tanks expectations for Minnesota's skill players in week 10. If you rely on this offense, pivot immediately to streaming options or bench your Vikings assets.",
+        "equipo_impacto": "The team faces a total crossroad at the quarterback position, capping the fantasy ceiling for the entire offensive system.",
+        "accion": "Sit Carson Wentz and avoid secondary Minnesota offensive options for week 10.",
+        "etiqueta": "SIT",
+        "impacto": "BAJA",
+        "equipo": "MIN",
+        "equipos": [
+          "MIN",
+          "BUF"
+        ],
+        "jugadores": [
+          "Carson Wentz",
+          "Josh Allen"
+        ]
       },
-      "etiqueta": "LESIÓN",
+      "etiqueta": "SIT",
       "impacto": "BAJA",
-      "equipo": "ARI",
+      "equipo": "MIN",
       "equipos": [
-        "ARI"
+        "MIN",
+        "BUF"
       ],
       "jugadores": [
-        "10232"
-      ],
-      "premium": true
-    },
-    {
-      "id": "x20261110032301",
-      "fecha": "2026-11-10T03:23:28.801Z",
-      "semana": 9,
-      "exclusivo": true,
-      "fuente": "2026-11-10T00:50:16+00:00",
-      "titulo": "Puka Nacua a IR mínimo 4 semanas fuera",
-      "claves": [
-        "Irá a la lista de lesionados al menos 4 semanas."
-      ],
-      "en": {
-        "titulo": "Puka Nacua to IR minimum 4 weeks out",
-        "claves": [
-          "Placed on injured reserve for at least 4 weeks.",
-          "Move him to your IR spot immediately on platforms.",
-          "Unavailable for starting fantasy lineups in the short term."
-        ],
-        "contexto": "The Rams placed Puka Nacua on injured reserve. The wide receiver will be out a minimum of 4 weeks while recovering his physical health. The coaching staff will monitor his progress before reactivating him on the active roster, leaving a major hole in the team's passing attack during this crucial stretch of the schedule.",
-        "fantasy": "You cannot start him under any circumstances while on IR. Move him to the injured reserve slot on your fantasy platform and search for a temporary replacement on waivers. In redraft leagues his value is frozen for 4 weeks, while in dynasty he remains an untouchable asset during his active rehabilitation process.",
-        "equipo_impacto": "The Rams lose their most explosive receiving weapon for 4 weeks. The quarterback will be forced to diversify passes toward secondary receivers to keep the passing attack afloat during this upcoming stretch.",
-        "accion": "Move Puka Nacua to your IR slot and claim a waiver replacement."
-      },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "LAR",
-      "equipos": [
-        "LAR"
-      ],
-      "jugadores": [
-        "9493"
-      ],
-      "premium": true
-    },
-    {
-      "id": "x20261110032302",
-      "fecha": "2026-11-10T03:23:28.801Z",
-      "semana": 9,
-      "exclusivo": true,
-      "fuente": "2026-11-10T00:50:16+00:00",
-      "titulo": "Mike Evans fuera mínimo 1 semana más",
-      "claves": [
-        "Lesión en el talón de Aquiles lo deja fuera."
-      ],
-      "en": {
-        "titulo": "Mike Evans out minimum 1 more week",
-        "claves": [
-          "Achilles injury keeps him sidelined for upcoming games.",
-          "Will miss minimum 1 more week of field action.",
-          "Keep him benched until official practice status updates."
-        ],
-        "contexto": "Receiver Mike Evans will miss at least 1 more week of play due to a lingering Achilles tendon issue. The Buccaneers medical staff will keep the veteran in active recovery until he completely overcomes the physical discomfort preventing him from practicing normally with the rest of the roster throughout this week.",
-        "fantasy": "Under no circumstances should you start him for your matchup this week. His out status forces you to bench him in redraft and PPR fantasy formats. If you need a starting receiver, look on waivers for players with steady target volume while Evans completes his physical rehabilitation program with the team.",
-        "equipo_impacto": "Tampa Bay will miss its star red zone wide receiver. Other offensive options on the team must absorb a higher share of targets over the upcoming schedule.",
-        "accion": "Bench Mike Evans for at least 1 more week across all formats."
-      },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "TB",
-      "equipos": [
-        "TB",
-        "SF"
-      ],
-      "jugadores": [
-        "2216"
-      ],
-      "premium": true
-    },
-    {
-      "id": "x20261110032303",
-      "fecha": "2026-11-10T03:23:28.801Z",
-      "semana": 9,
-      "exclusivo": true,
-      "fuente": "2026-11-10T00:50:16+00:00",
-      "titulo": "Deebo Samuel podría regresar a jugar esta semana",
-      "claves": [
-        "Supera molestia en el isquiotibial para volver al campo."
-      ],
-      "en": {
-        "titulo": "Deebo Samuel could return to play this week",
-        "claves": [
-          "Overcoming hamstring injury to get back on field.",
-          "Could play this week depending on practice reports.",
-          "Increases start value across fantasy football formats."
-        ],
-        "contexto": "Wide receiver Deebo Samuel shows significant progress in his recovery from a hamstring injury and could return to action this week. The 49ers evaluated his status in recent practices, leaving the door open for him to take offensive snaps in the upcoming game if he suffers no physical setbacks during training.",
-        "fantasy": "His return projects a direct positive impact on your fantasy lineups. If final injury reports confirm active participation, he instantly upgrades to a start option in PPR and standard formats. Pay close attention to practice reports before kickoff to ensure he plays without snap count restrictions on game day.",
-        "equipo_impacto": "San Francisco regains an explosive playmaker in both the passing and rushing games. The 49ers offense gains tactical versatility and red zone dynamism with his return.",
-        "accion": "Monitor practice reports and prepare Deebo Samuel to start this week."
-      },
-      "etiqueta": "LESIÓN",
-      "impacto": "SUBE",
-      "equipo": "SF",
-      "equipos": [
-        "SF"
-      ],
-      "jugadores": [
-        "5872"
-      ],
-      "premium": true
-    },
-    {
-      "id": "x20261110032304",
-      "fecha": "2026-11-10T03:23:28.801Z",
-      "semana": 9,
-      "exclusivo": true,
-      "fuente": "2026-11-10T00:50:16+00:00",
-      "titulo": "George Pickens regresa esta semana tras superar lesión",
-      "claves": [
-        "Supera lesión de isquiotibial y vuelve esta semana."
-      ],
-      "en": {
-        "titulo": "George Pickens returns this week after injury",
-        "claves": [
-          "Overcomes hamstring injury to return to action.",
-          "Ready for offensive snaps in the upcoming game.",
-          "Upgrades to viable starter status in fantasy lineups."
-        ],
-        "contexto": "Wide receiver George Pickens has overcome the hamstring issue that kept him off the gridiron and is reported ready to return to play this week. The coaching staff confirmed his full reintegration into team activities, allowing him to resume his starting role in the offense for the upcoming matchup.",
-        "fantasy": "Great news for fantasy owners awaiting his return. Pickens goes straight back into starting conversations in PPR and deep leagues. His presence guarantees deep target volume and a high point ceiling in your lineup this week. Double check for any snap limitations prior to kickoff time on Sunday.",
-        "equipo_impacto": "The Steelers regain their primary wide receiver to stretch opposing defenses. The quarterback gets his top deep threat back to move the chains downfield.",
-        "accion": "Reinsert George Pickens into your starting fantasy lineup this week."
-      },
-      "etiqueta": "LESIÓN",
-      "impacto": "SUBE",
-      "equipo": "PIT",
-      "equipos": [
-        "PIT",
-        "DAL"
-      ],
-      "jugadores": [
-        "8137"
-      ],
-      "premium": true
-    },
-    {
-      "id": "x20261110032305",
-      "fecha": "2026-11-10T03:23:28.801Z",
-      "semana": 9,
-      "exclusivo": true,
-      "fuente": "2026-11-10T00:50:16+00:00",
-      "titulo": "Cam Skattebo regresa esta semana tras lesión muscular",
-      "claves": [
-        "Superó molestia de isquiotibial y vuelve a jugar."
-      ],
-      "en": {
-        "titulo": "Cam Skattebo returns this week after injury",
-        "claves": [
-          "Cleared hamstring injury and returns to gameplay.",
-          "Reintegrated into practice for active game participation.",
-          "Regains flex value in deep fantasy football rosters."
-        ],
-        "contexto": "Running back Cam Skattebo is fully ready to return to the gridiron this week after recovering from a hamstring injury. After passing medical evaluations and completing full practice sessions, the running back will be available to join the backfield rotation in the team's upcoming scheduled game of the season.",
-        "fantasy": "With his return confirmed this week, Skattebo regains value in deep running back fantasy leagues. If you need backfield depth due to injuries or bye weeks, his availability offers a viable option to cover bench spots or flex positions depending on your roster settings for this week.",
-        "equipo_impacto": "The rushing attack gets back a physical runner capable of gaining tough yards after contact. His presence helps refresh the backfield carry rotation for the upcoming contest.",
-        "accion": "Consider Cam Skattebo as a solid bench depth option this week."
-      },
-      "etiqueta": "LESIÓN",
-      "impacto": "SUBE",
-      "equipo": "ARI",
-      "equipos": [
-        "ARI",
-        "NYG"
-      ],
-      "jugadores": [
-        "12481"
-      ],
-      "premium": true
-    },
-    {
-      "id": "x20261110032306",
-      "fecha": "2026-11-10T03:23:28.801Z",
-      "semana": 9,
-      "exclusivo": true,
-      "fuente": "2026-11-10T00:50:16+00:00",
-      "titulo": "Josh Jacobs fuera mínimo 1 partido por cirugía",
-      "claves": [
-        "Pasó por cirugía en el dedo de la mano."
-      ],
-      "en": {
-        "titulo": "Josh Jacobs out minimum 1 game after surgery",
-        "claves": [
-          "Underwent finger surgery requiring recovery time.",
-          "Will miss at least 1 upcoming game this week.",
-          "Bench immediately across all fantasy football formats."
-        ],
-        "contexto": "Green Bay running back Josh Jacobs underwent finger surgery and will be sidelined for at least 1 game. The surgical procedure requires proper healing time to prevent ball-handling issues, leaving the Packers ground attack without its lead back for the immediate matchup on the schedule.",
-        "fantasy": "Direct negative impact in fantasy leagues. Do not place Josh Jacobs in your starting lineup this week as he is ruled out for at least 1 game. Move him to your bench in all redraft formats and immediately target the team's backup running back on waivers to capture vacant touches.",
-        "equipo_impacto": "Green Bay loses its starting running back in the backfield. The Packers offense will be forced to rotate backup runners to keep the ground production moving during his absence.",
-        "accion": "Bench Josh Jacobs this week and pick up his backup immediately."
-      },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "GB",
-      "equipos": [
-        "GB"
-      ],
-      "jugadores": [
-        "5850"
-      ],
-      "premium": true
-    },
-    {
-      "id": "x20261110032307",
-      "fecha": "2026-11-10T03:23:28.801Z",
-      "semana": 9,
-      "exclusivo": true,
-      "fuente": "2026-11-10T00:50:16+00:00",
-      "titulo": "Gardner Minshew fuera toda la temporada por codo",
-      "claves": [
-        "Sufre lesión grave en el codo de lanzar."
-      ],
-      "en": {
-        "titulo": "Gardner Minshew out for season with elbow injury",
-        "claves": [
-          "Suffered severe season-ending elbow injury.",
-          "Ruled out for remainder of regular season games.",
-          "Drop immediately in single-quarterback fantasy leagues."
-        ],
-        "contexto": "Las Vegas quarterback Gardner Minshew is out for the rest of the season after the severity of his elbow injury was confirmed. The Raiders passer will be unable to throw for the remainder of the campaign, forcing the organization to restructure the quarterback position for upcoming matchups.",
-        "fantasy": "In 1-QB leagues you must drop Gardner Minshew immediately to free agency as his value drops to 0 pts this year. In Superflex or 2-QB formats, move him to an IR slot only in dynasty leagues; otherwise, clear that bench spot to acquire an active starting quarterback from waivers.",
-        "equipo_impacto": "The Raiders face a complete change at starting quarterback. The backup passer will take command of the team's aerial attack for the rest of the year.",
-        "accion": "Drop Gardner Minshew immediately across all your fantasy leagues."
-      },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "LV",
-      "equipos": [
-        "LV",
-        "ARI"
-      ],
-      "jugadores": [
-        "6011"
-      ],
-      "premium": true
-    },
-    {
-      "id": "x20261110032308",
-      "fecha": "2026-11-10T03:23:28.801Z",
-      "semana": 9,
-      "exclusivo": true,
-      "fuente": "2026-11-10T00:50:16+00:00",
-      "titulo": "Jacksonville Jaguars refuerza su defensiva mediante canje oficial",
-      "claves": [
-        "Jacksonville cierra canje estratégico para reforzar su defensiva."
-      ],
-      "en": {
-        "titulo": "Jacksonville Jaguars bolster defense through trade",
-        "claves": [
-          "Jacksonville completes trade to reinforce defensive unit.",
-          "Move focused on improving pass rush and coverage.",
-          "Boosts fantasy appeal for Jaguars defense unit."
-        ],
-        "contexto": "The Jacksonville Jaguars completed an important trade acquisition to bolster their defensive unit. The franchise seeks to solidify its defense and address vulnerabilities shown in recent weeks, strengthening both coverage and pass rush ahead of a crucial stretch in the NFL regular season schedule.",
-        "fantasy": "This trade improves the fantasy outlook for the Jacksonville defense (DST). If you need a defensive unit on waivers or for weekly streaming, the Jaguars become a significantly more attractive target thanks to new additions, offering increased sack potential and takeaway opportunity in upcoming matchups.",
-        "equipo_impacto": "Jacksonville's defense gains depth and individual playmaker talent. The team's defensive scheme will have better tools to disrupt opponent offenses and generate big plays.",
-        "accion": "Consider the Jaguars defense as a top weekly streaming option."
-      },
-      "etiqueta": "TRADE",
-      "impacto": "SUBE",
-      "equipo": "JAC",
-      "equipos": [
-        "JAC"
-      ],
-      "jugadores": [],
-      "premium": true
-    },
-    {
-      "id": "x20261110032309",
-      "fecha": "2026-11-10T03:23:28.801Z",
-      "semana": 9,
-      "exclusivo": true,
-      "fuente": "2026-11-10T00:50:16+00:00",
-      "titulo": "Receptores clave a reclamar en waivers esta semana",
-      "claves": [
-        "Jordyn Tyson destaca como objetivo aéreo en Saints."
-      ],
-      "en": {
-        "titulo": "Key wide receivers to claim on waivers this week",
-        "claves": [
-          "Jordyn Tyson emerges as target option for Saints.",
-          "Tank Dell brings explosive potential to Texans offense.",
-          "Jordan Watkins seeks target opportunity with 49ers."
-        ],
-        "contexto": "Free agency provides intriguing options at the wide receiver position. Jordyn Tyson of the Saints, Tank Dell of the Texans, and Jordan Watkins of the 49ers stand out as attractive waiver claims for fantasy managers dealing with injuries or bye weeks on their rosters in recent weeks.",
-        "fantasy": "Prioritize your waiver claims based on roster needs. Tank Dell offers high explosive ceiling in Houston, Jordyn Tyson gains target share in New Orleans, and Jordan Watkins serves as a deep stash in San Francisco. Target them in PPR formats and 12-team leagues to bolster receiving depth.",
-        "equipo_impacto": "The Saints, Texans, and 49ers add active depth to their receiving corps. The presence of these wideouts gives their quarterbacks additional targets in the passing game.",
-        "accion": "Target Jordyn Tyson, Tank Dell, or Jordan Watkins on waivers."
-      },
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "NO",
-      "equipos": [
-        "NO",
-        "HOU",
-        "SF"
-      ],
-      "jugadores": [
-        "13281",
-        "9502",
-        "12634"
-      ],
-      "premium": true
-    },
-    {
-      "id": "x20261110032310",
-      "fecha": "2026-11-10T03:23:28.801Z",
-      "semana": 9,
-      "exclusivo": true,
-      "fuente": "2026-11-10T00:50:16+00:00",
-      "titulo": "Corredores a buscar en waivers para tu backfield",
-      "claves": [
-        "Corey Kiner suma oportunidades terrestres con Patriots."
-      ],
-      "en": {
-        "titulo": "Running backs to target on waivers this week",
-        "claves": [
-          "Corey Kiner gains rushing opportunities with Patriots.",
-          "Audric Estime competes for backfield touches with Saints.",
-          "Immediate depth options to bolster running back rosters."
-        ],
-        "contexto": "When searching for running back depth, Corey Kiner of the Patriots and Audric Estime of the Saints emerge as waiver wire targets in fantasy leagues. Both players aim to maximize touch volume to establish consistent roles within the rushing schemes of their respective franchises.",
-        "fantasy": "If your roster suffers from running back injuries or bye weeks, Kiner and Estime are valuable waiver adds. In 12 to 14-team formats, they provide meaningful bench depth. Claiming them today secures affordable backfield insurance against unexpected lineup disruptions during upcoming weeks.",
-        "equipo_impacto": "The Patriots and Saints add physical options to their rushing attacks. Incorporating Kiner and Estime helps distribute backfield touches across their running back rotations.",
-        "accion": "Claim Corey Kiner and Audric Estime on waivers for depth."
-      },
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "NE",
-      "equipos": [
-        "NE",
-        "NO"
-      ],
-      "jugadores": [
-        "12491",
-        "11579"
-      ],
-      "premium": true
-    },
-    {
-      "id": "x20261110032311",
-      "fecha": "2026-11-10T03:23:28.801Z",
-      "semana": 9,
-      "exclusivo": true,
-      "fuente": "2026-11-10T00:50:16+00:00",
-      "titulo": "Alas cerradas para reclamar en waivers esta semana",
-      "claves": [
-        "Darren Waller figura como blanco en zona roja con Panthers."
-      ],
-      "en": {
-        "titulo": "Tight ends to claim on waivers this week",
-        "claves": [
-          "Darren Waller targets red zone usage with Panthers.",
-          "Juwan Johnson offers consistent target volume with Saints.",
-          "Ideal streaming solutions for fantasy tight end spots."
-        ],
-        "contexto": "The tight end position offers attractive waiver streaming options in Darren Waller of the Panthers and Juwan Johnson of the Saints. Both tight ends enter fantasy relevance due to their red zone involvement and reliable safety-valve roles for their respective quarterbacks during game action.",
-        "fantasy": "If you need to fix your tight end position, Waller and Johnson are top priority waiver claims today. In PPR and TE-premium formats, both provide a solid floor of receptions and yardage. Spend a reasonable portion of FAAB budget or waiver priority to secure their production for upcoming matchups.",
-        "equipo_impacto": "The Panthers and Saints strengthen middle-of-the-field passing concepts. Waller and Johnson provide veteran experience and reliable hands to convert critical third downs.",
-        "accion": "Add Darren Waller or Juwan Johnson from waivers today."
-      },
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "CAR",
-      "equipos": [
-        "CAR",
-        "NO"
-      ],
-      "jugadores": [
-        "2505",
-        "7002"
-      ],
-      "premium": true
-    },
-    {
-      "id": "n20261110032300",
-      "fecha": "2026-11-10T03:23:28.801Z",
-      "semana": 9,
-      "titulo": "Gardner Minshew sufre rotura de UCL y se despide",
-      "claves": [
-        "Gardner Minshew sufre lesión en el UCL derecho",
-        "Podría requerir cirugía que termine su temporada",
-        "Carson Beck se perfila para tomar la titularidad"
-      ],
-      "contexto": "El mariscal de campo de los Cardinals, Gardner Minshew, sufrió una grave lesión en el ligamento colateral ulnar de su brazo derecho. Los reportes indican que la dolencia requerirá una intervención quirúrgica que lo alejará de los emparrillados por el resto de la temporada, un golpe devastador para la ofensiva de Arizona.",
-      "fantasy": "La baja de Gardner Minshew destruye cualquier valor residual en ligas profundas o Superflex. Carson Beck toma el mando de la ofensiva, por lo que debes buscarlo en waivers solo en formatos muy profundos de dos quarterbacks mientras se confirma su desempeño.",
-      "equipo_impacto": "La ofensiva de los Cardinals pierde el timón, afectando directamente las pocas aspiraciones de sus receptores y obligando a un replanteamiento total en el esquema aéreo de Arizona.",
-      "accion": "Saca a Gardner Minshew de tu escuadra y busca opciones de emergencia en la agencia libre.",
-      "en": {
-        "titulo": "Gardner Minshew suffers torn UCL and season-ending injury",
-        "claves": [
-          "Gardner Minshew suffers right UCL injury",
-          "Expected to need season-ending surgery",
-          "Carson Beck in line to start"
-        ],
-        "contexto": "Cardinals quarterback Gardner Minshew suffered a severe right UCL injury that will likely require season-ending surgery, dealing a major blow to Arizona's offense.",
-        "fantasy": "Minshew loses all fantasy value in Superflex formats. Carson Beck steps in as the starter and becomes an emergency waiver wire target in deep leagues.",
-        "equipo_impacto": "The Cardinals offense loses its commander, severely limiting the upside of the remaining skill position players in Arizona.",
-        "accion": "Drop Gardner Minshew immediately and look for available quarterback depth on waivers.",
-        "en": "Drop Gardner Minshew immediately and look for available quarterback depth on waivers."
-      },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "ARI",
-      "equipos": [
-        "ARI"
-      ],
-      "jugadores": [
-        "6011",
-        "13272",
-        "10232"
+        "3161",
+        "4984"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-          "t": "Fantasy buzz: Rams' Puka Nacua likely heading to IR, Cardinals' Michael Wilson out for season"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261110032303",
-      "fecha": "2026-11-10T03:23:28.801Z",
-      "semana": 9,
-      "titulo": "Justin Herbert da negativo en radiografías de dedo",
-      "claves": [
-        "Justin Herbert sufrió golpe en dedo medio izquierdo",
-        "Jim Harbaugh confirma radiografías negativas",
-        "Mariscal listo para continuar sin fractura"
-      ],
-      "contexto": "El mariscal de campo de los Chargers, Justin Herbert, encendió las alarmas tras lastimarse el dedo medio de la mano izquierda. Sin embargo, el entrenador Jim Harbaugh informó que las radiografías descartaron cualquier tipo de fractura.",
-      "fantasy": "Las noticias son sumamente positivas para los fantasy managers, ya que Justin Herbert podrá mantenerse activo sin mayor riesgo de perderse partidos por esta lesión, conservando su estatus como titular semanal.",
-      "equipo_impacto": "La ofensiva de los Chargers respira aliviada al mantener a su mariscal titular en los controles sin interrupciones mayores.",
-      "accion": "Mantén a Justin Herbert en tu alineación titular con absoluta confianza para la semana 9.",
-      "en": {
-        "titulo": "Justin Herbert negative X-rays bring positive news",
-        "claves": [
-          "Justin Herbert injured left middle finger",
-          "Jim Harbaugh confirms negative X-rays",
-          "Quarterback avoids any fracture"
-        ],
-        "contexto": "Chargers quarterback Justin Herbert scared fantasy managers with a finger injury, but coach Jim Harbaugh announced that X-rays came back negative for a fracture.",
-        "fantasy": "This is great news for fantasy rosters, as Justin Herbert avoids a multi-week absence and remains a safe weekly starter.",
-        "equipo_impacto": "The Chargers offense breathes a sigh of relief keeping their franchise quarterback under center.",
-        "accion": "Keep Justin Herbert locked into your starting lineup for week 9.",
-        "en": "Keep Justin Herbert locked into your starting lineup for week 9."
-      },
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "LAC",
-      "equipos": [
-        "LAC"
-      ],
-      "jugadores": [
-        "6797"
-      ],
-      "fuentes": [
+          "u": "https://www.espn.com/nfl/story/_/id/50440119/vikings-kevin-oconnell-defers-qb-trade-question-gm-poor-mnf-outing-carson-wentz",
+          "t": "Vikings left at QB crossroads after Carson Wentz's poor MNF showing vs. Bills"
+        },
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50437202/chargers-harbaugh-says-x-rays-herbert-finger-negative",
-          "t": "Chargers' Jim Harbaugh says X-rays on QB Justin Herbert's finger negative"
+          "u": "http://www.espn.com/nfl/recap?gameId=401873051",
+          "t": "Josh Allen and the Bills move to 7-1 with a 23-6 win over the sputtering Vikings"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50439406/josh-allen-bills-outlast-vikings-23-6-mnf",
+          "t": "Josh Allen, Bills outlast Vikings 23-6 on MNF"
         }
       ],
       "menciona": []
@@ -530,16 +99,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "6797",
-      "estatus": "Duda"
-    },
-    {
-      "id": "5850",
-      "estatus": "Fuera"
-    },
-    {
       "id": "9226",
       "estatus": "Fuera"
+    },
+    {
+      "id": "6797",
+      "estatus": "Duda"
     },
     {
       "id": "5849",
@@ -554,15 +119,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "8161",
-      "estatus": "Duda"
-    },
-    {
       "id": "4881",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "7525",
       "estatus": "Fuera"
     },
     {
@@ -570,15 +127,27 @@
       "estatus": "Fuera"
     },
     {
-      "id": "10232",
-      "estatus": "Fuera"
-    },
-    {
       "id": "8146",
       "estatus": "Fuera"
     },
     {
+      "id": "7525",
+      "estatus": "Fuera"
+    },
+    {
       "id": "8137",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "10232",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "8161",
+      "estatus": "Duda"
+    },
+    {
+      "id": "5850",
       "estatus": "Fuera"
     },
     {
@@ -590,10 +159,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "11565",
-      "estatus": "Duda"
-    },
-    {
       "id": "12519",
       "estatus": "Duda"
     },
@@ -602,7 +167,19 @@
       "estatus": "Fuera"
     },
     {
+      "id": "11565",
+      "estatus": "Duda"
+    },
+    {
+      "id": "5854",
+      "estatus": "Duda"
+    },
+    {
       "id": "5859",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12481",
       "estatus": "Fuera"
     },
     {
@@ -610,8 +187,8 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12481",
-      "estatus": "Fuera"
+      "id": "13298",
+      "estatus": "Duda"
     },
     {
       "id": "12534",
@@ -630,31 +207,19 @@
       "estatus": "Fuera"
     },
     {
-      "id": "13298",
-      "estatus": "Duda"
-    },
-    {
       "id": "12489",
       "estatus": "Fuera"
     },
     {
-      "id": "7526",
-      "estatus": "Fuera"
+      "id": "6011",
+      "estatus": "Duda"
     },
     {
       "id": "5872",
       "estatus": "Fuera"
     },
     {
-      "id": "5854",
-      "estatus": "Duda"
-    },
-    {
       "id": "11635",
-      "estatus": "Duda"
-    },
-    {
-      "id": "6011",
       "estatus": "Duda"
     },
     {
@@ -672,6 +237,10 @@
     {
       "id": "11624",
       "estatus": "Fuera"
+    },
+    {
+      "id": "7526",
+      "estatus": "Fuera"
     }
   ],
   "agregados": [
@@ -681,52 +250,50 @@
     "11579",
     "2505",
     "12634",
+    "7562",
     "9758",
     "12492",
     "13424",
-    "7562",
     "13296",
     "5995",
-    "12524",
-    "11783",
-    "3161",
     "8116",
-    "TB",
-    "13276",
-    "6130",
+    "BAL",
     "JAX",
+    "12524",
+    "13281",
+    "3271",
+    "11783",
+    "12545",
+    "9228",
     "13286",
-    "13298",
-    "8134",
-    "9756",
-    "9228"
+    "13276",
+    "GB"
   ],
   "soltados": [
     "10232",
-    "11625",
     "6130",
+    "11625",
     "11834",
     "11435",
     "8161",
-    "3286",
-    "7561",
-    "11610",
-    "8129",
     "DET",
-    "6011",
-    "11637",
-    "9480",
-    "11783",
-    "NE",
-    "4037",
-    "9482",
-    "3271",
     "6650",
-    "10219",
-    "NO",
-    "11628",
     "2020",
-    "4035"
+    "3286",
+    "6011",
+    "NO",
+    "11610",
+    "11637",
+    "8129",
+    "NE",
+    "9480",
+    "10219",
+    "3161",
+    "4037",
+    "11783",
+    "9482",
+    "4035",
+    "11628"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
