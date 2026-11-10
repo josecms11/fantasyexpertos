@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-10T18:46:56.812Z",
-  "ultimaIA": "2026-11-10T11:29:34.023Z",
+  "actualizado": "2026-11-10T23:46:10.377Z",
+  "ultimaIA": "2026-11-10T23:46:10.377Z",
   "semana": 10,
   "semanaStats": 10,
   "temporada": "2026",
@@ -14,68 +14,116 @@
   ],
   "noticias": [
     {
-      "id": "n20261110112900",
-      "fecha": "2026-11-10T11:29:34.023Z",
+      "id": "n20261110234600",
+      "fecha": "2026-11-10T23:46:10.377Z",
       "semana": 10,
-      "titulo": "Carson Wentz deja dudas cruciales en Minnesota",
+      "titulo": "Kirk Cousins regresa a Minnesota tras canje con Raiders",
       "claves": [
-        "Carson Wentz tuvo una actuación históricamente floja ante los Bills",
-        "Kevin O'Connell evitó confirmar si buscarán un pasador",
-        "La ofensiva de Minnesota genera enorme incertidumbre en fantasy"
+        "Minnesota entrega 1 selección de 3ª ronda de 2027 por Cousins",
+        "Cousins vuelve a liderar el ataque aéreo de Vikings",
+        "Gana valor inmediato como QB2 para formatos Superflex"
       ],
-      "contexto": "Tras una presentación para el olvido por parte de Carson Wentz en el partido de lunes por la noche frente a los Bills, el entrenador Kevin O'Connell fue cuestionado sobre la posibilidad de sumar un mariscal de campo mediante un intercambio antes del cierre de traspasos. El timonel decidió desviar el cuestionamiento y dejó la responsabilidad en manos de la gerencia general.",
-      "fantasy": "El terrible desempeño de Carson Wentz desploma por completo las expectativas para cualquier arma ofensiva de Minnesota en la semana 10. Si dependías de este ataque, es momento de buscar alternativas en el waiver wire o en tu banca, ya que el impacto negativo en tus alineaciones de fantasy es innegable.",
-      "equipo_impacto": "La escuadra vikinga se encuentra en una encrucijada total en la posición más importante del emparrillado, lo que disminuye el techo de puntos para todo el sistema ofensivo y pone en alerta roja a los managers.",
-      "accion": "Sienta de inmediato a Carson Wentz y evita cualquier activo ofensivo secundario de Minnesota en la semana 10.",
+      "contexto": "Los Vikings acordaron el traspaso para adquirir al mariscal de campo Kirk Cousins desde los Raiders, enviando a cambio 1 selección de 3ª ronda del draft de 2027. La urgencia en Minnesota por estabilizar la posición de QB tras distintas complicaciones aceleró las negociaciones antes de la fecha límite de canjes. Cousins se reencuentra con un esquema ofensivo que conoce perfectamente para la recta final.",
+      "fantasy": "El valor de Cousins sube de inmediato en ligas Superflex y de 2 QB, posicionándose como 1 opción titular semanal. Su llegada beneficia enormemente a sus receptores, devolviendo consistencia a la producción aérea. En ligas de 1 QB pasa a ser 1 gran transmisor de pases desde la banca con potencial de titularidad según el enfrentamiento. Debes buscarlo si necesitas estabilidad en la posición.",
+      "equipo_impacto": "Cousins le da 1 giro de 180 grados a la ofensiva de Minnesota, elevando el techo de sus receptores estelares. En los Raiders, esto deja el camino libre para reestructurar la posición de pasador el resto del año.",
+      "accion": "Reclama o cotiza a Kirk Cousins de inmediato en ligas Superflex para reforzar tu posición de mariscal de campo.",
       "en": {
-        "titulo": "Carson Wentz leaves crucial questions in Minnesota",
+        "titulo": "Kirk Cousins returns to Vikings following Raiders trade",
         "claves": [
-          "Carson Wentz struggled historically against the Bills",
-          "Kevin O'Connell deferred questions about a potential QB trade",
-          "Minnesota's offense generates massive fantasy uncertainty"
+          "Minnesota trades 1 2027 3rd round pick for Cousins",
+          "Cousins rejoins the Vikings offense for remainder of season",
+          "Instant QB2 upgrade in Superflex and 2 QB leagues"
         ],
-        "contexto": "Following a historically poor performance by Carson Wentz on Monday night against the Bills, head coach Kevin O'Connell was asked if the team might trade for a quarterback before the deadline. The coach deferred the question to the front office.",
-        "fantasy": "Wentz's brutal outing tanks expectations for Minnesota's skill players in week 10. If you rely on this offense, pivot immediately to streaming options or bench your Vikings assets.",
-        "equipo_impacto": "The team faces a total crossroad at the quarterback position, capping the fantasy ceiling for the entire offensive system.",
-        "accion": "Sit Carson Wentz and avoid secondary Minnesota offensive options for week 10.",
-        "etiqueta": "SIT",
-        "impacto": "BAJA",
-        "equipo": "MIN",
-        "equipos": [
-          "MIN",
-          "BUF"
-        ],
-        "jugadores": [
-          "Carson Wentz",
-          "Josh Allen"
-        ]
+        "contexto": "The Vikings completed a deal to acquire quarterback Kirk Cousins from the Raiders in exchange for 1 2027 3rd round draft pick. Minnesota moved quickly before the deadline to solve their quarterback instability. Cousins returns to a familiar offensive system where he previously produced elite numbers, giving the team a proven veteran passer for the playoff push.",
+        "fantasy": "Cousins gets a significant fantasy boost, jumping directly into QB2 status in Superflex and 2 QB formats. His presence restores top tier fantasy value to all Minnesota wide receivers and tight ends. In standard 1 QB leagues, he becomes 1 high end streamer with solid matchup flexibility. Target him now if you need reliable quarterback depth.",
+        "equipo_impacto": "Cousins completely stabilizes Minnesota's passing attack, elevating the floor and ceiling for every skill player. For Las Vegas, this trade officially hands over the offense to their remaining roster.",
+        "accion": "Add Kirk Cousins immediately in Superflex formats as a steady starting quarterback option."
       },
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
       "equipo": "MIN",
       "equipos": [
         "MIN",
-        "BUF"
+        "LV"
       ],
       "jugadores": [
-        "3161",
-        "4984"
+        "1166"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50440119/vikings-kevin-oconnell-defers-qb-trade-question-gm-poor-mnf-outing-carson-wentz",
-          "t": "Vikings left at QB crossroads after Carson Wentz's poor MNF showing vs. Bills"
+          "u": "https://www.espn.com/nfl/story/_/id/50444528/kirk-cousins-trade-minnesota-vikings-las-vegas-raiders",
+          "t": "What the Kirk Cousins trade means for the Vikings and the Raiders"
         },
         {
           "m": "ESPN",
-          "u": "http://www.espn.com/nfl/recap?gameId=401873051",
-          "t": "Josh Allen and the Bills move to 7-1 with a 23-6 win over the sputtering Vikings"
+          "u": "https://www.espn.com/nfl/story/_/id/50043542/2026-trade-deadline-grades-latest-best-worst-deals",
+          "t": "NFL trade deadline grades: Deals for Kirk Cousins, Josh Downs, Ryan Neuzil"
         },
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50439406/josh-allen-bills-outlast-vikings-23-6-mnf",
-          "t": "Josh Allen, Bills outlast Vikings 23-6 on MNF"
+          "u": "https://www.espn.com/nfl/story/_/id/50043471/2026-trade-deadline-updates-latest-news-deals-terms",
+          "t": "2026 NFL trade deadline updates: Josh Downs, Kirk Cousins on the move"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50444360/sources-vikings-id-qb-kirk-cousins-prime-trade-target",
+          "t": "Vikings reunite with QB Kirk Cousins, send 3rd-round pick to Raiders"
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261110234602",
+      "fecha": "2026-11-10T23:46:10.377Z",
+      "semana": 10,
+      "titulo": "Keenan Allen llega a 49ers para reforzar receptores",
+      "claves": [
+        "San Francisco completa canje con Colts por Keenan Allen",
+        "Allen aporta experiencia en 1 cuerpo mermado por lesiones",
+        "Aumenta su valor PPR como opción Flex titular semanal"
+      ],
+      "contexto": "Los 49ers concretaron un canje antes de la fecha límite para traer al veterano receptor Keenan Allen desde los Colts. La gerencia de San Francisco reaccionó ante la plaga de lesiones que golpeó a sus receptores titulares en semanas recientes. Allen llega para ser un objetivo confiable en rutas intermedias dentro de un sistema caracterizado por generar yardas después del atrapa.",
+      "fantasy": "El valor de Keenan Allen sube significativamente, en especial en formatos PPR y de 10 o 12 equipos. Pasa de ser una pieza secundaria a tener la oportunidad de capturar un volumen alto de pase en San Francisco. Considera a Allen como una opción sólida de WR3 o Flex con potencial de 6 a 8 recepciones por juego.",
+      "equipo_impacto": "Allen asume el rol de receptor de posesión principal en San Francisco, brindando seguridad en terceras oportunidades. Esto beneficia a la ofensiva al mantener vivas las series ofensivas y repartir la cobertura defensiva.",
+      "accion": "Cotiza o alinea a Keenan Allen como un WR3 / Flex seguro en formatos PPR desde esta misma semana.",
+      "en": {
+        "titulo": "Keenan Allen arrives to bolster 49ers offense",
+        "claves": [
+          "San Francisco acquires veteran Keenan Allen from Colts",
+          "Allen fills critical void in injury plagued receiver room",
+          "Boosts PPR fantasy floor into WR3 or Flex range"
+        ],
+        "contexto": "The 49ers finalized a trade before the deadline to bring in veteran wide receiver Keenan Allen from the Colts. San Francisco acted decisively to address severe depth issues caused by injuries across their receiving corps. Allen arrives to provide immediate reliability on intermediate routes within an efficient offensive structure.",
+        "fantasy": "Allen receives a noticeable fantasy boost, especially in PPR scoring and 10 or 12 team leagues. Moving into an offense that needs target earners, he steps into a path for consistent targets. View Allen as a strong WR3 or Flex start capable of demanding 6 to 8 targets per game.",
+        "equipo_impacto": "Allen instantly steps in as San Francisco's primary possession receiver on key 3rd downs. His veteran presence stabilizes the passing attack and helps sustain long drives for the entire offense.",
+        "accion": "Target Keenan Allen in trades or start him as a solid PPR Flex immediately."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "SF",
+      "equipos": [
+        "SF",
+        "IND"
+      ],
+      "jugadores": [
+        "1479"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/fantasy/football/story/_/id/50359951/nfl-trade-deadline-2026-fantasy-football-impacts",
+          "t": "Fantasy impacts of the NFL trade deadline: Breaking down fantasy-relevant moves"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50444620/rich-eisen-reacts-49ers-trade-keenan-allen",
+          "t": "'Great move': Rich Eisen reacts to 49ers' trade for Keenan Allen"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50444457/sources-49ers-acquire-keenan-allen-trade-colts",
+          "t": "49ers trade for Colts' Keenan Allen to bolster injury-plagued WR room"
         }
       ],
       "menciona": []
@@ -144,7 +192,7 @@
     },
     {
       "id": "8161",
-      "estatus": "Duda"
+      "estatus": "Fuera"
     },
     {
       "id": "5850",
@@ -244,55 +292,55 @@
     }
   ],
   "agregados": [
-    "9502",
     "12491",
+    "9502",
     "12718",
     "2505",
+    "13269",
     "11579",
     "7562",
-    "12634",
     "BAL",
-    "5995",
     "8116",
+    "12634",
+    "5995",
+    "12494",
+    "3271",
     "9758",
     "12492",
     "13296",
-    "3271",
     "JAX",
-    "13424",
-    "GB",
-    "11539",
-    "13281",
-    "3286",
-    "12545",
     "96",
+    "11539",
+    "3286",
+    "GB",
+    "9500",
+    "12545",
     "9228",
-    "8134"
+    "13281"
   ],
   "soltados": [
     "10232",
+    "8161",
     "6130",
     "11625",
+    "13424",
     "6650",
     "11435",
-    "8161",
     "2020",
     "DET",
     "11834",
+    "5849",
     "NO",
     "NE",
-    "3161",
     "11637",
     "8129",
-    "4037",
     "10219",
-    "3286",
-    "9756",
-    "11610",
-    "5849",
+    "4037",
     "4035",
+    "11610",
+    "3286",
     "11783",
-    "9482"
+    "9756"
   ],
   "duelo": {
     "a": "Javonte Williams",
