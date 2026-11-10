@@ -1,6 +1,6 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-10T11:29:34.023Z",
+  "actualizado": "2026-11-10T18:46:56.812Z",
   "ultimaIA": "2026-11-10T11:29:34.023Z",
   "semana": 10,
   "semanaStats": 10,
@@ -111,15 +111,19 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4943",
-      "estatus": "Fuera"
-    },
-    {
       "id": "2133",
       "estatus": "Fuera"
     },
     {
+      "id": "4943",
+      "estatus": "Fuera"
+    },
+    {
       "id": "4881",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "7525",
       "estatus": "Fuera"
     },
     {
@@ -128,10 +132,6 @@
     },
     {
       "id": "8146",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "7525",
       "estatus": "Fuera"
     },
     {
@@ -163,15 +163,15 @@
       "estatus": "Duda"
     },
     {
+      "id": "5854",
+      "estatus": "Duda"
+    },
+    {
       "id": "13279",
       "estatus": "Fuera"
     },
     {
       "id": "11565",
-      "estatus": "Duda"
-    },
-    {
-      "id": "5854",
       "estatus": "Duda"
     },
     {
@@ -187,12 +187,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "13298",
-      "estatus": "Duda"
-    },
-    {
       "id": "12534",
       "estatus": "Fuera"
+    },
+    {
+      "id": "13298",
+      "estatus": "Duda"
     },
     {
       "id": "4137",
@@ -211,20 +211,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "6011",
-      "estatus": "Duda"
-    },
-    {
       "id": "5872",
       "estatus": "Fuera"
     },
     {
       "id": "11635",
       "estatus": "Duda"
-    },
-    {
-      "id": "8142",
-      "estatus": "Fuera"
     },
     {
       "id": "13287",
@@ -235,72 +227,79 @@
       "estatus": "Fuera"
     },
     {
+      "id": "7526",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "8142",
+      "estatus": "Fuera"
+    },
+    {
       "id": "11624",
       "estatus": "Fuera"
     },
     {
-      "id": "7526",
-      "estatus": "Fuera"
+      "id": "8210",
+      "estatus": "Duda"
     }
   ],
   "agregados": [
     "9502",
     "12491",
     "12718",
-    "11579",
     "2505",
-    "12634",
+    "11579",
     "7562",
-    "9758",
-    "12492",
-    "13424",
-    "13296",
+    "12634",
+    "BAL",
     "5995",
     "8116",
-    "BAL",
-    "JAX",
-    "12524",
-    "13281",
+    "9758",
+    "12492",
+    "13296",
     "3271",
-    "11783",
+    "JAX",
+    "13424",
+    "GB",
+    "11539",
+    "13281",
+    "3286",
     "12545",
+    "96",
     "9228",
-    "13286",
-    "13276",
-    "GB"
+    "8134"
   ],
   "soltados": [
     "10232",
     "6130",
     "11625",
-    "11834",
+    "6650",
     "11435",
     "8161",
-    "DET",
-    "6650",
     "2020",
-    "3286",
-    "6011",
+    "DET",
+    "11834",
     "NO",
-    "11610",
+    "NE",
+    "3161",
     "11637",
     "8129",
-    "NE",
-    "9480",
-    "10219",
-    "3161",
     "4037",
-    "11783",
-    "9482",
+    "10219",
+    "3286",
+    "9756",
+    "11610",
+    "5849",
     "4035",
-    "11628"
+    "11783",
+    "9482"
   ],
   "duelo": {
-    "a": "Jahmyr Gibbs",
-    "b": "Christian McCaffrey",
-    "veredicto": "Arranca a Jahmyr Gibbs por su proyección de 23.4 pts PPR frente a los 20.8 pts de Christian McCaffrey en la semana 9. Gibbs presenta un volumen explosivo ideal para ganar tu enfrentamiento semanal."
+    "a": "Javonte Williams",
+    "b": "Bucky Irving",
+    "veredicto": "Arranca a Bucky Irving. Con 16.9 pts proyectados, mantiene una mayor consistencia y eficiencia en el ataque de Tampa, mientras que Williams (16.4 pts) enfrenta una defensa más volátil."
   },
-  "dueloFecha": "2026-11-09T20:58:03.052Z",
+  "dueloFecha": "2026-11-10T18:46:56.812Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
