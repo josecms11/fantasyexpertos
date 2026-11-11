@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-11T03:10:13.388Z",
-  "ultimaIA": "2026-11-11T03:10:13.388Z",
+  "actualizado": "2026-11-11T10:57:46.814Z",
+  "ultimaIA": "2026-11-11T10:57:46.814Z",
   "semana": 10,
   "semanaStats": 10,
   "temporada": "2026",
@@ -14,108 +14,47 @@
   ],
   "noticias": [
     {
-      "id": "n20261111031000",
-      "fecha": "2026-11-11T03:10:13.388Z",
+      "id": "n20261111105700",
+      "fecha": "2026-11-11T10:57:46.814Z",
       "semana": 10,
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50447756/raiders-name-fernando-mendoza-starting-qb-trading-kirk-cousins",
-          "t": "Raiders name Fernando Mendoza starting QB after trading Kirk Cousins"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/fantasy/football/story/_/page/FFWaiverWirePickUp-50431710/fantasy-football-waivers-free-agent-pickups-nfl-week-10",
-          "t": "Fantasy football free agent pickups: Mendoza, Douglas, Estime among top options"
-        }
-      ],
-      "titulo": "Fernando Mendoza es nombrado QB1 en Las Vegas",
+      "titulo": "Bijan Robinson permanece en Falcons tras ofertas de Giants",
       "claves": [
-        "Fernando Mendoza asume la titularidad en la semana 10",
-        "Kirk Cousins fue enviado a Vikings mediante canje oficial",
-        "Opción prioritaria en waivers para ligas Superflex y 2 QB"
+        "Giants intentó canjear por el corredor estelar antes del límite.",
+        "El alto costo exigido por Falcons frenó cualquier negociación definitiva.",
+        "Mantiene volumen élite proyectado con 20.2 puntos en semana 10."
       ],
-      "contexto": "Tras el movimiento que mandó a Kirk Cousins a Minnesota, la directiva de Las Vegas oficializó a Fernando Mendoza como su quarterback titular. El pick 1 del draft asume las riendas de la ofensiva de cara a la semana 10. ESPN reporta que el novato se convierte de inmediato en uno de los objetivos más buscados en la agencia libre de fantasy football.",
-      "fantasy": "En formatos Superflex y ligas de 2 QB, Mendoza pasa a ser una adición obligatoria esta semana. Su valor en ligas de 1 QB sigue siendo limitado a un reemplazo por descanso, pero su volumen de pases proyectado le otorga un techo interesante. Si necesitas ayuda en la posición de pasador, gasta entre 8 % y 12 % de tu presupuesto FAAB para sumarlo.",
-      "equipo_impacto": "La llegada de Mendoza cambia la dinámica del ataque aéreo en Las Vegas. Los receptores principales tendrán un ajuste en su volumen de objetivos, mientras el novato busca adaptarse al ritmo de juego de la NFL tras la salida del veterano pasador.",
-      "accion": "Reclama a Fernando Mendoza en waivers si juegas en Superflex.",
+      "contexto": "De acuerdo con reportes de ESPN, New York Giants intentó realizar un canje por Bijan Robinson antes de la fecha límite de transferencias. Sin embargo, el alto precio solicitado por Atlanta frenó cualquier posibilidad de acuerdo. La directiva neoyorquina buscaba reforzar su ofensiva terrestre, pero las pretensiones de los Falcons mantuvieron intacto a su corredor estelar para encarar la recta final de la temporada regular sin modificaciones en su plantilla.",
+      "fantasy": "Esta permanencia consolida a Bijan Robinson como un RB1 indiscutible en todos los formatos de fantasy, especialmente en PPR y ligas de 10 o 12 equipos. Con una proyección estelar de 20.2 puntos para la semana 10, esquiva la incertidumbre de aprender un nuevo esquema ofensivo a mitad de año. Su cuota de toques terrestres y recepciones sigue intacta, ofreciendo un piso confiable de 15 toques semanales y techo de élite.",
+      "equipo_impacto": "Los Falcons reafirman su confianza plena en el rol protagónico de Bijan Robinson para comandar el ataque terrestre. Por su parte, New York Giants no logra sumar talento probado a su backfield tras no concretar acuerdos, lo que obliga a su ofensiva a depender totalmente del personal actual en su plantilla.",
+      "accion": "Mantén a Bijan Robinson como titular inamovible en tu alineación de la semana 10.",
       "en": {
-        "titulo": "Fernando Mendoza named Raiders starting QB for Week 10",
+        "titulo": "Bijan Robinson stays in Atlanta following Giants trade interest",
         "claves": [
-          "Fernando Mendoza takes over as starting QB in Week 10",
-          "Kirk Cousins traded to Vikings opening the starting role",
-          "Top waiver wire target for Superflex and 2 QB formats"
+          "Giants inquired about the star running back before the trade deadline.",
+          "Atlanta's steep asking price completely shut down any potential deal.",
+          "Remains an elite RB1 projected for 20.2 points in Week 10."
         ],
-        "contexto": "Following the trade sending Kirk Cousins to Minnesota, Las Vegas officially named Fernando Mendoza as their starting quarterback. The top pick in the draft takes over the offense heading into Week 10. ESPN reports that the rookie immediately becomes one of the most sought-after free agent targets in fantasy football leagues across all formats this week.",
-        "fantasy": "In Superflex and 2 QB formats, Mendoza becomes a mandatory waiver pickup this week. His value in 1 QB leagues remains limited to a bye-week filler, but his projected pass volume gives him an intriguing ceiling. If you need quarterback help, allocate around 8 % to 12 % of your FAAB budget to secure him on your roster today.",
-        "equipo_impacto": "Mendoza's promotion alters the passing dynamic in Las Vegas. Primary receivers will experience a volume adjustment as the rookie adapts to NFL speed following the departure of the veteran passer.",
-        "accion": "Claim Fernando Mendoza off waivers if playing in Superflex leagues."
-      },
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "LV",
-      "equipos": [
-        "LV",
-        "MIN"
-      ],
-      "jugadores": [
-        "13269",
-        "1166"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261111031001",
-      "fecha": "2026-11-11T03:10:13.388Z",
-      "semana": 10,
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50448300/patrick-brittany-mahomes-fourth-child-announcement",
-          "t": "Patrick and Brittany Mahomes announce baby No. 4 on NFL trade deadline day"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50043471/2026-trade-deadline-updates-latest-news-deals-terms",
-          "t": "2026 NFL trade deadline updates: Kirk Cousins, Josh Downs on the move"
-        },
-        {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-aftermath-vikings-chiefs-improve/",
-          "t": "\n                        NFL trade deadline aftermath: Which teams improved, which teams should have made moves\n                    "
-        }
-      ],
-      "titulo": "Josh Downs llega a Chiefs tras canje en fecha límite",
-      "claves": [
-        "Josh Downs se une a Kansas City vía canje oficial",
-        "Kansas City refuerza su grupo de receptores para semana 10",
-        "Patrick Mahomes recibe nueva arma en el ataque aéreo"
-      ],
-      "contexto": "En el último día de canjes de la NFL, los Kansas City Chiefs concretaron la adquisición del receptor Josh Downs. El movimiento se dio en una jornada bastante movida para la franquicia, donde ocurrieron 6 canjes en las últimas horas del periodo permitido por la liga. Kansas City busca darle más opciones a su ataque aéreo a partir de la semana 10.",
-      "fantasy": "Downs ve un incremento claro en su valor de fantasy football al unirse al esquema de Kansas City. En ligas formato PPR y Half-PPR se convierte en una opción sólida de FLEX o WR3 con margen de crecimiento conforme se adapte al libro de jugadas. Si estaba disponible en la agencia libre de tu liga, vale la pena buscarlo de inmediato.",
-      "equipo_impacto": "La adición de Downs le ofrece al cuerpo de receptores de Kansas City una amenaza rápida en rutas cortas e intermedias. Esto abre espacios para las alas cerradas y quita presión sobre el resto de las armas ofensivas del equipo de cara a la segunda mitad del torneo.",
-      "accion": "Agrega a Josh Downs en tus ligas PPR si está libre.",
-      "en": {
-        "titulo": "Josh Downs traded to Chiefs at NFL trade deadline",
-        "claves": [
-          "Josh Downs joins Kansas City via official trade deal",
-          "Kansas City bolsters receiver corps ahead of Week 10",
-          "Patrick Mahomes gains new weapon in the passing game"
-        ],
-        "contexto": "On the NFL trade deadline day, the Kansas City Chiefs completed a trade to acquire receiver Josh Downs. The move came during a busy day across the league that featured 6 trades in the final hours of the deadline window. Kansas City aims to provide additional options for their passing attack starting in Week 10.",
-        "fantasy": "Downs sees a clear boost in fantasy football value by joining Kansas City's system. In PPR and Half-PPR formats, he becomes a solid FLEX or WR3 option with upside as he learns the playbook. If he is available on your league's waiver wire, he is worth targeting immediately to bolster your wide receiver depth.",
-        "equipo_impacto": "Adding Downs provides Kansas City's receiving corps with a quick threat on short and intermediate routes. This creates spacing for tight ends and relieves pressure on the remaining offensive weapons heading into the second half of the season.",
-        "accion": "Add Josh Downs in PPR leagues if available on waivers."
+        "contexto": "According to reports from ESPN, the New York Giants explored trade possibilities for Bijan Robinson prior to the trade deadline. However, Atlanta's extremely steep asking price prevented any move from happening. New York sought a top-tier running back to bolster its roster, but the Falcons refused to part with their superstar, ensuring Robinson stays firmly established as the central pillar of Atlanta's offensive backfield for the remainder of the season.",
+        "fantasy": "Staying in Atlanta secures Bijan Robinson as an undisputed top-tier RB1 across all fantasy formats, especially in PPR and 10 or 12-team leagues. Projected for 20.2 points in Week 10, he avoids the disruption of learning a completely new offensive scheme midseason. Fantasy managers retain his massive rushing volume and passing-down usage without committee concerns, guaranteeing a reliable weekly floor of at least 15 touches alongside an elite ceiling.",
+        "equipo_impacto": "Atlanta reasserts its complete commitment to Bijan Robinson as the centerpiece of its ground attack. Meanwhile, the New York Giants fail to upgrade their backfield after trade talks collapsed, leaving their offensive unit forced to rely solely on their current depth chart heading into the second half of the season.",
+        "accion": "Keep Bijan Robinson locked in as an unbenchable starter in your Week 10 lineups."
       },
       "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "KC",
+      "impacto": "NEUTRO",
+      "equipo": "ATL",
       "equipos": [
-        "KC"
+        "ATL",
+        "NYG"
       ],
       "jugadores": [
-        "9500",
-        "4046"
+        "9509"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50450311/why-giants-trade-attempts-just-happen",
+          "t": "Why Giants' trade attempts 'just didn't happen'"
+        }
       ],
       "menciona": []
     }
@@ -131,7 +70,7 @@
     },
     {
       "id": "4017",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "6904",
@@ -147,14 +86,14 @@
     },
     {
       "id": "5849",
+      "estatus": "Duda"
+    },
+    {
+      "id": "4943",
       "estatus": "Fuera"
     },
     {
       "id": "2133",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "4943",
       "estatus": "Fuera"
     },
     {
@@ -171,11 +110,11 @@
     },
     {
       "id": "8146",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "8137",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "10232",
@@ -191,7 +130,7 @@
     },
     {
       "id": "2216",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "7543",
@@ -207,31 +146,19 @@
     },
     {
       "id": "13279",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "11565",
       "estatus": "Duda"
     },
     {
       "id": "5859",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "12481",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "7611",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "12534",
       "estatus": "Fuera"
-    },
-    {
-      "id": "13298",
-      "estatus": "Duda"
     },
     {
       "id": "4137",
@@ -251,7 +178,7 @@
     },
     {
       "id": "5872",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "11635",
@@ -266,20 +193,32 @@
       "estatus": "Fuera"
     },
     {
-      "id": "7526",
-      "estatus": "Fuera"
-    },
-    {
       "id": "8142",
       "estatus": "Fuera"
     },
     {
-      "id": "11624",
+      "id": "7526",
       "estatus": "Fuera"
     },
     {
-      "id": "8210",
+      "id": "11624",
       "estatus": "Duda"
+    },
+    {
+      "id": "6819",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12533",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "9486",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "8205",
+      "estatus": "Fuera"
     }
   ],
   "agregados": [
@@ -287,50 +226,50 @@
     "9502",
     "12718",
     "13269",
-    "2505",
     "11579",
+    "2505",
     "7562",
     "12494",
     "BAL",
     "8116",
+    "3271",
+    "6427",
     "5995",
     "12634",
-    "3271",
-    "9758",
     "96",
-    "12492",
     "3286",
+    "12492",
     "11539",
+    "9500",
+    "9758",
     "JAX",
     "13296",
-    "9500",
     "GB",
     "12545",
-    "9228",
     "7042"
   ],
   "soltados": [
     "10232",
-    "8161",
-    "6130",
     "13424",
+    "6130",
+    "8161",
     "11625",
     "6650",
     "11435",
-    "2020",
     "DET",
+    "2020",
     "5849",
-    "11834",
     "NO",
+    "11834",
     "NE",
     "8129",
-    "11637",
-    "10219",
-    "4037",
     "4035",
+    "10219",
+    "11637",
     "11610",
+    "4037",
     "3286",
-    "11783",
+    "11624",
     "9482"
   ],
   "duelo": {

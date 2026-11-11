@@ -159,15 +159,15 @@
     }
   },
   "params": {
-    "fecha": "2026-11-10T18:46:56.793Z",
+    "fecha": "2026-11-11T10:57:46.796Z",
     "valores": {
       "hl": 8,
       "mEf": 30,
       "mTd": 160,
       "aPrev": 0.2
     },
-    "error": 4.678,
-    "errorAntes": 4.684,
+    "error": 4.659,
+    "errorAntes": 4.664,
     "semanas": [
       5,
       6,
