@@ -1,6 +1,6 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-11T10:57:46.814Z",
+  "actualizado": "2026-11-11T18:32:37.532Z",
   "ultimaIA": "2026-11-11T10:57:46.814Z",
   "semana": 10,
   "semanaStats": 10,
@@ -66,10 +66,6 @@
     },
     {
       "id": "4046",
-      "estatus": "Duda"
-    },
-    {
-      "id": "4017",
       "estatus": "Duda"
     },
     {
@@ -149,6 +145,10 @@
       "estatus": "Duda"
     },
     {
+      "id": "13346",
+      "estatus": "Duda"
+    },
+    {
       "id": "5859",
       "estatus": "Duda"
     },
@@ -167,6 +167,10 @@
     {
       "id": "7083",
       "estatus": "Fuera"
+    },
+    {
+      "id": "13276",
+      "estatus": "Duda"
     },
     {
       "id": "11589",
@@ -193,11 +197,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "8142",
+      "id": "7526",
       "estatus": "Fuera"
     },
     {
-      "id": "7526",
+      "id": "8142",
       "estatus": "Fuera"
     },
     {
@@ -215,69 +219,65 @@
     {
       "id": "9486",
       "estatus": "Fuera"
-    },
-    {
-      "id": "8205",
-      "estatus": "Fuera"
     }
   ],
   "agregados": [
     "12491",
-    "9502",
     "12718",
+    "9502",
     "13269",
+    "7562",
     "11579",
     "2505",
-    "7562",
     "12494",
     "BAL",
+    "6427",
     "8116",
     "3271",
-    "6427",
     "5995",
-    "12634",
-    "96",
-    "3286",
-    "12492",
     "11539",
+    "IND",
+    "3286",
+    "96",
     "9500",
+    "9756",
+    "12492",
+    "12634",
+    "7042",
     "9758",
-    "JAX",
-    "13296",
-    "GB",
-    "12545",
-    "7042"
+    "8134",
+    "JAX"
   ],
   "soltados": [
     "10232",
     "13424",
     "6130",
     "8161",
-    "11625",
     "6650",
-    "11435",
-    "DET",
-    "2020",
+    "11625",
     "5849",
+    "2020",
+    "DET",
+    "11435",
     "NO",
     "11834",
+    "4035",
     "NE",
     "8129",
-    "4035",
+    "11624",
     "10219",
-    "11637",
     "11610",
     "4037",
+    "11637",
     "3286",
-    "11624",
     "9482"
   ],
   "duelo": {
-    "a": "Javonte Williams",
-    "b": "Bucky Irving",
-    "veredicto": "Arranca a Bucky Irving. Con 16.9 pts proyectados, mantiene una mayor consistencia y eficiencia en el ataque de Tampa, mientras que Williams (16.4 pts) enfrenta una defensa más volátil."
+    "a": "Jahmyr Gibbs",
+    "b": "Christian McCaffrey",
+    "veredicto": "Arranca a Jahmyr Gibbs en la semana 10. Con 22.5 pts proyectados frente a 20.8 pts de McCaffrey, su volumen por aire y efectividad en zona roja lo colocan por encima en formatos PPR."
   },
-  "dueloFecha": "2026-11-10T18:46:56.812Z",
+  "dueloFecha": "2026-11-11T18:32:37.532Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
