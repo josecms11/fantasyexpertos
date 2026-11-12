@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-11T18:32:37.532Z",
-  "ultimaIA": "2026-11-11T10:57:46.814Z",
+  "actualizado": "2026-11-12T00:58:10.032Z",
+  "ultimaIA": "2026-11-12T00:58:10.032Z",
   "semana": 10,
   "semanaStats": 10,
   "temporada": "2026",
@@ -14,46 +14,144 @@
   ],
   "noticias": [
     {
-      "id": "n20261111105700",
-      "fecha": "2026-11-11T10:57:46.814Z",
+      "id": "n20261112005800",
+      "fecha": "2026-11-12T00:58:10.032Z",
       "semana": 10,
-      "titulo": "Bijan Robinson permanece en Falcons tras ofertas de Giants",
+      "titulo": "Carson Beck es nombrado QB1 titular de Cardinals",
       "claves": [
-        "Giants intentó canjear por el corredor estelar antes del límite.",
-        "El alto costo exigido por Falcons frenó cualquier negociación definitiva.",
-        "Mantiene volumen élite proyectado con 20.2 puntos en semana 10."
+        "Carson Beck será el titular de Arizona en la semana 10.",
+        "El novato reemplaza al lesionado Gardner Minshew contra la defensiva de Rams.",
+        "El entrenador de Cardinals destaca su profesionalismo dentro del equipo."
       ],
-      "contexto": "De acuerdo con reportes de ESPN, New York Giants intentó realizar un canje por Bijan Robinson antes de la fecha límite de transferencias. Sin embargo, el alto precio solicitado por Atlanta frenó cualquier posibilidad de acuerdo. La directiva neoyorquina buscaba reforzar su ofensiva terrestre, pero las pretensiones de los Falcons mantuvieron intacto a su corredor estelar para encarar la recta final de la temporada regular sin modificaciones en su plantilla.",
-      "fantasy": "Esta permanencia consolida a Bijan Robinson como un RB1 indiscutible en todos los formatos de fantasy, especialmente en PPR y ligas de 10 o 12 equipos. Con una proyección estelar de 20.2 puntos para la semana 10, esquiva la incertidumbre de aprender un nuevo esquema ofensivo a mitad de año. Su cuota de toques terrestres y recepciones sigue intacta, ofreciendo un piso confiable de 15 toques semanales y techo de élite.",
-      "equipo_impacto": "Los Falcons reafirman su confianza plena en el rol protagónico de Bijan Robinson para comandar el ataque terrestre. Por su parte, New York Giants no logra sumar talento probado a su backfield tras no concretar acuerdos, lo que obliga a su ofensiva a depender totalmente del personal actual en su plantilla.",
-      "accion": "Mantén a Bijan Robinson como titular inamovible en tu alineación de la semana 10.",
+      "contexto": "Tras la lesión de codo de Gardner Minshew que lo dejó fuera todo el año, Arizona nombró oficialmente al novato Carson Beck como su mariscal de campo titular para la semana 10 frente a Los Angeles Rams. El entrenador en jefe elogió que Beck ha trabajado como un profesional desde su llegada. Este nombramiento convierte al pasador en el 3er QB titular que utiliza el equipo en solo 3 semanas consecutivas.",
+      "fantasy": "En formatos Superflex o ligas de 2 QB, Beck entra en el radar de reclamaciones como una opción de urgencia para la semana 10, pero con un techo bastante limitado frente a una captura intensa. En ligas de 1 QB no debe ser reclamado. La inestabilidad en la posición de pasador reduce las proyecciones semanales de todos los receptores de Arizona, bajando su valor ofensivo en formatos PPR.",
+      "equipo_impacto": "La ofensiva de Cardinals busca desesperadamente estabilidad tras usar 3 mariscales distintos en 3 semanas. La línea ofensiva deberá ajustar protecciones para cuidar al novato ante el constante acoso defensivo rival.",
+      "accion": "Déjalo en la agencia libre en 1 QB y solo úsalo por emergencia en Superflex.",
       "en": {
-        "titulo": "Bijan Robinson stays in Atlanta following Giants trade interest",
+        "titulo": "Carson Beck named starting QB for Cardinals",
         "claves": [
-          "Giants inquired about the star running back before the trade deadline.",
-          "Atlanta's steep asking price completely shut down any potential deal.",
-          "Remains an elite RB1 projected for 20.2 points in Week 10."
+          "Carson Beck named Arizona starting quarterback for Week 10.",
+          "The rookie replaces injured Gardner Minshew against Rams defense.",
+          "Cardinals head coach praised Beck professional approach since arriving."
         ],
-        "contexto": "According to reports from ESPN, the New York Giants explored trade possibilities for Bijan Robinson prior to the trade deadline. However, Atlanta's extremely steep asking price prevented any move from happening. New York sought a top-tier running back to bolster its roster, but the Falcons refused to part with their superstar, ensuring Robinson stays firmly established as the central pillar of Atlanta's offensive backfield for the remainder of the season.",
-        "fantasy": "Staying in Atlanta secures Bijan Robinson as an undisputed top-tier RB1 across all fantasy formats, especially in PPR and 10 or 12-team leagues. Projected for 20.2 points in Week 10, he avoids the disruption of learning a completely new offensive scheme midseason. Fantasy managers retain his massive rushing volume and passing-down usage without committee concerns, guaranteeing a reliable weekly floor of at least 15 touches alongside an elite ceiling.",
-        "equipo_impacto": "Atlanta reasserts its complete commitment to Bijan Robinson as the centerpiece of its ground attack. Meanwhile, the New York Giants fail to upgrade their backfield after trade talks collapsed, leaving their offensive unit forced to rely solely on their current depth chart heading into the second half of the season.",
-        "accion": "Keep Bijan Robinson locked in as an unbenchable starter in your Week 10 lineups."
+        "contexto": "Following the season-ending elbow injury to Gardner Minshew, Arizona officially named rookie Carson Beck as their starting quarterback for Week 10 against the Los Angeles Rams. The head coach praised Beck for acting like a professional since his arrival. This announcement makes Beck the 3rd starting quarterback used by the team in just 3 consecutive weeks.",
+        "fantasy": "In Superflex or 2 QB leagues, Beck enters waiver consideration as an emergency option for Week 10, though he carries a low floor against a tough pass rush. In 1 QB formats he should remain untouched. The constant instability at quarterback lowers the weekly upside for all Arizona receivers, dimming their fantasy output in PPR formats.",
+        "equipo_impacto": "Arizona's offense desperately seeks stability after deploying 3 different quarterbacks over 3 weeks. The offensive line must adjust protections to shield the rookie from heavy defensive pressure.",
+        "accion": "Leave him on waivers in 1 QB leagues and only use him in Superflex emergencies."
       },
-      "etiqueta": "TENDENCIA",
+      "etiqueta": "WAIVER",
       "impacto": "NEUTRO",
-      "equipo": "ATL",
+      "equipo": "ARI",
       "equipos": [
-        "ATL",
-        "NYG"
+        "ARI",
+        "LAR"
       ],
       "jugadores": [
-        "9509"
+        "13272"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50450311/why-giants-trade-attempts-just-happen",
-          "t": "Why Giants' trade attempts 'just didn't happen'"
+          "u": "https://www.espn.com/video/clip/_/id/50455241/carson-beck-pro-here",
+          "t": "Cardinals coach: Carson Beck's been a pro since he's been here"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50455074/cardinals-start-rookie-qb-carson-beck-rams",
+          "t": "Cardinals to start rookie QB Carson Beck against Rams"
+        },
+        {
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/cardinals-starting-qb-carson-beck-2026/",
+          "t": "\n                        Cardinals name Carson Beck starting QB: Rookie faces Aaron Donald, Myles Garrett in NFL debut\n                    "
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261112005801",
+      "fecha": "2026-11-12T00:58:10.032Z",
+      "semana": 10,
+      "titulo": "Sean McVay prevé regreso pronto de Davante Adams",
+      "claves": [
+        "Sean McVay confía en tener a Davante Adams más pronto que tarde.",
+        "El receptor de Rams sigue recuperándose de una lesión de isquiotibiales.",
+        "Adams permanece actualmente colocado en la lista de reservas lesionados."
+      ],
+      "contexto": "El entrenador en jefe Sean McVay expresó optimismo sobre la rehabilitación del receptor Davante Adams, indicando que esperan contar con él de vuelta más pronto que tarde. Adams sufrió una molestia severa en los isquiotibiales que lo llevó a la reserva de lesionados en fechas recientes. El cuerpo técnico confía en que los avances médicos le permitan reintegrarse a las prácticas en el corto plazo.",
+      "fantasy": "Debido a su estatus en la lista de lesionados, Adams no puede alinearse para la semana 10 bajo ninguna circunstancia. Sin embargo, este reporte positivo reafirma que debes mantenerlo amarrado en tu reserva o banca en ligas PPR y Estándar. Evita venderlo a bajo precio en intercambios, ya que recuperará su valor de WR1 o WR2 de élite inmediatamente al ser activado al roster principal.",
+      "equipo_impacto": "El eventual retorno de Adams devolverá potencia vertical a Rams, liberando coberturas dobles sobre sus compañeros receptores y mejorando de forma notable la efectividad del ataque en la zona roja durante la semana 10 y posteriores.",
+      "accion": "Conserva a Adams en tu casilla de IR y rechaza ofertas de cambio desfavorables.",
+      "en": {
+        "titulo": "Sean McVay foresees Davante Adams returning soon",
+        "claves": [
+          "Sean McVay optimistic Davante Adams returns sooner than later.",
+          "Rams wide receiver continues recovering from a hamstring injury.",
+          "Adams currently remains placed on the injured reserve list."
+        ],
+        "contexto": "Head coach Sean McVay expressed optimism regarding wide receiver Davante Adams' rehabilitation, stating the team expects him back sooner than later. Adams suffered a hamstring injury that placed him on injured reserve in recent weeks. The coaching staff remains confident that medical progress will allow him to return to practice in the near future.",
+        "fantasy": "Due to his status on injured reserve, Adams cannot be started for Week 10 under any circumstances. However, this positive update confirms you must stash him in your IR spot or bench in PPR and Standard formats. Avoid selling him cheap in trades, as he will immediately regain elite WR1 or WR2 status once activated to the main roster.",
+        "equipo_impacto": "Adams' eventual return will restore vertical firepower to the Rams, freeing up double coverage on fellow receivers and noticeably boosting red zone efficiency in Week 10 and beyond.",
+        "accion": "Keep Adams in your IR slot and reject lowball trade offers."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "LAR",
+      "equipos": [
+        "LAR"
+      ],
+      "jugadores": [
+        "2133"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50455318/mcvay-rams-optimistic-wr-adams-return-sooner-later",
+          "t": "Sean McVay: Rams optimistic WR Davante Adams will return 'sooner than later'"
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261112005802",
+      "fecha": "2026-11-12T00:58:10.032Z",
+      "semana": 10,
+      "titulo": "Ravens firman al pateador veterano Riley Patterson",
+      "claves": [
+        "Baltimore firma a Riley Patterson tras una práctica realizada el miércoles.",
+        "Patterson se convierte en el 3er pateador de Ravens esta temporada.",
+        "Tyler Loop quedó marginado tras ingresar a la lista de lesionados."
+      ],
+      "contexto": "Los Baltimore Ravens hicieron oficial la contratación del pateador veterano Riley Patterson después de realizar un entrenamiento de evaluación el miércoles. La contratación responde a la baja de Tyler Loop, quien fue enviado a la reserva de lesionados por una molestia en la ingle. De esta forma, Patterson se convierte en el 3er especialista en patadas de lugar que integra la plantilla de Baltimore en la campaña.",
+      "fantasy": "Patterson entra directamente en el mapa de fantasy para ligas de 12 o más equipos por integrar una ofensiva con proyecciones elevadas. Con una estimación cercana a 9.5 pts para la posición en Baltimore durante la semana 10, se consolida como una alternativa atractiva en waivers si requieres cubrir suspensiones, descansos o bajas por lesión en la posición de pateador dentro de tu alineación.",
+      "equipo_impacto": "Baltimore asegura estabilidad inmediata en el grupo de colegiales tras la lesión de Loop, garantizando efectividad en intentos de punto extra y goles de campo clave para el cierre de juegos.",
+      "accion": "Reclámalo desde waivers únicamente si necesitas solucionar la posición de pateador hoy.",
+      "en": {
+        "titulo": "Ravens sign veteran kicker Riley Patterson",
+        "claves": [
+          "Baltimore signs Riley Patterson following a Wednesday tryout session.",
+          "Patterson becomes the 3rd kicker for Ravens this season.",
+          "Tyler Loop was sidelined after landing on injured reserve."
+        ],
+        "contexto": "The Baltimore Ravens officially signed veteran kicker Riley Patterson after hosting him for a tryout workout on Wednesday. The move comes as Tyler Loop was placed on injured reserve due to a groin issue. Consequently, Patterson becomes the 3rd placekicker to join Baltimore's roster during the current campaign.",
+        "fantasy": "Patterson enters the fantasy radar in 12-team leagues or deeper due to joining a high-scoring offense. With a projection around 9.5 pts for the Baltimore kicker spot in Week 10, he represents a solid streaming candidate on waivers if you need to cover bye weeks or injuries at the kicker position on your roster.",
+        "equipo_impacto": "Baltimore secures immediate stability on special teams following Loop's injury, ensuring reliability on extra points and crucial field goal attempts for upcoming close contests.",
+        "accion": "Claim him off waivers only if you need to fix your kicker spot today."
+      },
+      "etiqueta": "WAIVER",
+      "impacto": "NEUTRO",
+      "equipo": "BAL",
+      "equipos": [
+        "BAL"
+      ],
+      "jugadores": [
+        "7922"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50456455/source-ravens-now-third-kicker-sign-riley-patterson",
+          "t": "Source: Ravens, now on third kicker, sign journeyman Riley Patterson"
         }
       ],
       "menciona": []
@@ -62,10 +160,14 @@
   "lesionados": [
     {
       "id": "9493",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "7547",
       "estatus": "Duda"
     },
     {
-      "id": "4046",
+      "id": "3163",
       "estatus": "Duda"
     },
     {
@@ -81,6 +183,10 @@
       "estatus": "Duda"
     },
     {
+      "id": "4881",
+      "estatus": "Fuera"
+    },
+    {
       "id": "5849",
       "estatus": "Duda"
     },
@@ -93,23 +199,15 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4881",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "7525",
-      "estatus": "Fuera"
-    },
-    {
       "id": "12508",
       "estatus": "Fuera"
     },
     {
-      "id": "8146",
+      "id": "8137",
       "estatus": "Duda"
     },
     {
-      "id": "8137",
+      "id": "8146",
       "estatus": "Duda"
     },
     {
@@ -117,7 +215,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "8161",
+      "id": "7525",
       "estatus": "Fuera"
     },
     {
@@ -125,27 +223,15 @@
       "estatus": "Fuera"
     },
     {
-      "id": "2216",
-      "estatus": "Duda"
+      "id": "8161",
+      "estatus": "Fuera"
     },
     {
       "id": "7543",
       "estatus": "Fuera"
     },
     {
-      "id": "12519",
-      "estatus": "Duda"
-    },
-    {
-      "id": "5854",
-      "estatus": "Duda"
-    },
-    {
-      "id": "13279",
-      "estatus": "Duda"
-    },
-    {
-      "id": "13346",
+      "id": "2216",
       "estatus": "Duda"
     },
     {
@@ -153,16 +239,36 @@
       "estatus": "Duda"
     },
     {
+      "id": "13346",
+      "estatus": "Duda"
+    },
+    {
+      "id": "12519",
+      "estatus": "Duda"
+    },
+    {
+      "id": "13279",
+      "estatus": "Duda"
+    },
+    {
+      "id": "12506",
+      "estatus": "Duda"
+    },
+    {
       "id": "7611",
       "estatus": "Duda"
     },
     {
-      "id": "12534",
-      "estatus": "Fuera"
+      "id": "5854",
+      "estatus": "Duda"
     },
     {
       "id": "4137",
       "estatus": "Fuera"
+    },
+    {
+      "id": "4035",
+      "estatus": "Duda"
     },
     {
       "id": "7083",
@@ -173,8 +279,16 @@
       "estatus": "Duda"
     },
     {
+      "id": "12534",
+      "estatus": "Fuera"
+    },
+    {
       "id": "11589",
       "estatus": "Fuera"
+    },
+    {
+      "id": "5947",
+      "estatus": "Duda"
     },
     {
       "id": "12489",
@@ -185,39 +299,23 @@
       "estatus": "Duda"
     },
     {
-      "id": "11635",
+      "id": "9502",
       "estatus": "Duda"
     },
     {
-      "id": "13287",
-      "estatus": "Fuera"
+      "id": "12474",
+      "estatus": "Duda"
     },
     {
-      "id": "5927",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "7526",
-      "estatus": "Fuera"
+      "id": "11635",
+      "estatus": "Duda"
     },
     {
       "id": "8142",
       "estatus": "Fuera"
     },
     {
-      "id": "11624",
-      "estatus": "Duda"
-    },
-    {
-      "id": "6819",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "12533",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "9486",
+      "id": "5927",
       "estatus": "Fuera"
     }
   ],
@@ -225,52 +323,52 @@
     "12491",
     "12718",
     "9502",
-    "13269",
     "7562",
     "11579",
     "2505",
+    "13269",
+    "6427",
     "12494",
     "BAL",
-    "6427",
     "8116",
-    "3271",
-    "5995",
-    "11539",
     "IND",
+    "3271",
+    "11539",
+    "5995",
     "3286",
     "96",
-    "9500",
     "9756",
+    "7042",
+    "8134",
     "12492",
     "12634",
-    "7042",
     "9758",
-    "8134",
+    "3155",
     "JAX"
   ],
   "soltados": [
-    "10232",
     "13424",
+    "10232",
     "6130",
     "8161",
     "6650",
-    "11625",
-    "5849",
     "2020",
+    "5849",
+    "11625",
     "DET",
     "11435",
     "NO",
-    "11834",
     "4035",
     "NE",
-    "8129",
+    "11834",
     "11624",
+    "8129",
     "10219",
     "11610",
     "4037",
     "11637",
-    "3286",
-    "9482"
+    "9482",
+    "3286"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
