@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-12T08:10:21.041Z",
-  "ultimaIA": "2026-11-12T08:10:21.041Z",
+  "actualizado": "2026-11-12T16:48:19.964Z",
+  "ultimaIA": "2026-11-12T16:48:19.964Z",
   "semana": 10,
   "semanaStats": 10,
   "temporada": "2026",
@@ -14,93 +14,105 @@
   ],
   "noticias": [
     {
-      "id": "n20261112081000",
-      "fecha": "2026-11-12T08:10:21.041Z",
+      "id": "n20261112164800",
+      "fecha": "2026-11-12T16:48:19.964Z",
       "semana": 10,
-      "titulo": "Jordan Love enfrenta un duelo complicado en semana 10",
+      "titulo": "Joe Burrow asalta la cima por el MVP NFL",
       "claves": [
-        "El mariscal de campo de Packers baja en los rankings fantasy.",
-        "Enfrenta un emparejamiento defensivo desfavorable en la semana 10.",
-        "Su proyección para este partido se ubica en 18.6 pts."
+        "Burrow superó a Josh Allen en momios del MVP",
+        "Proyecta 21.2 pts de modelo en semana 10",
+        "Estatus de QB1 indiscutible en cualquier formato fantasy"
       ],
-      "contexto": "Jordan Love llega a la semana 10 enfrentando un panorama complicado en cuanto a emparejamientos fantasy. Los análisis de enfrentamientos de la liga señalan que el mariscal de campo de Green Bay tiene un duelo desfavorable contra la defensiva rival. Esto reduce sus probabilidades de generar volumen masivo de puntos en el juego aéreo, obligando a los entrenadores virtuales a revaluar su posición en la alineación titular.",
-      "fantasy": "Jordan Love baja en el ranking de mariscales de campo para ligas de 10 y 12 equipos. Con una proyección de 18.6 pts en formato PPR, pasa de ser un titular indiscutible a una opción de riesgo moderado o QB2 en formatos Superflex. Si tienes una alternativa con un duelo más favorable en la semana 10, es recomendable considerar sentarlo frente a defensivas agresivas que limitan el pase.",
-      "equipo_impacto": "Sin Josh Jacobs disponible por lesión, el ataque de Green Bay recae más en el brazo de Jordan Love. Sin embargo, ante una defensiva complicada, el ritmo ofensivo de los Packers podría desacelerarse, afectando las oportunidades en la zona roja para todo el cuerpo de receptores del equipo.",
-      "accion": "Evalúa opciones alternativas en el puesto de QB si buscas asegurar un piso alto en semana 10.",
+      "contexto": "Tras completar 9 semanas a un nivel deslumbrante, Joe Burrow rebasó a Josh Allen en las casas de apuestas para colocarse como el máximo favorito al galardón de Jugador Más Valioso de la NFL. Los reportes de CBS Sports señalan que el quarterback de Cincinnati comanda una de las ofensivas más productivas rumbo a la semana 10, sosteniendo un ritmo anotador imparable que lo tiene peleando en lo más alto de todas las métricas.",
+      "fantasy": "Para fantasy football, Burrow es una auténtica mina de oro semanal. Con 21.2 pts proyectados por el modelo FX en semana 10 frente a Pittsburgh, se ubica como el QB2 global indiscutible. En ligas de 10 y 12 equipos de 1 QB debes alinearlo sin dudar, mientras que en formatos Superflex consolida un piso de 20 pts que asegura victorias, maximizando el techo de Ja'Marr Chase y Tee Higgins semanalmente.",
+      "equipo_impacto": "La precisión de Burrow mantiene a Cincinnati en ritmo de postemporada pese al acecho divisional. Tanto Ja'Marr Chase como Tee Higgins gozan de volumen de élite constante gracias a la efectividad de su pasador.",
+      "accion": "Mantén a Burrow inamovible en tu alineación titular como un QB1 de absoluto calibre élite.",
       "en": {
-        "titulo": "Jordan Love Faces Tough Matchup in Week 10",
+        "titulo": "Joe Burrow claims top spot in NFL MVP race",
         "claves": [
-          "Packers quarterback drops in Week 10 fantasy matchup rankings.",
-          "Faces a challenging defensive matchup during this week's game.",
-          "Projected for 18.6 pts in fantasy matchups for Week 10."
+          "Burrow surpasses Josh Allen in midseason MVP odds",
+          "FX model projects 21.2 pts in Week 10",
+          "Undisputed weekly elite QB1 across all fantasy leagues"
         ],
-        "contexto": "Jordan Love enters Week 10 facing a challenging situation regarding fantasy matchups. The latest matchup rankings indicate that Green Bay's quarterback faces a tough defensive opponent in this game. This situation reduces his odds of producing massive passing volume, forcing fantasy managers to carefully reevaluate his position in starting lineups for Week 10.",
-        "fantasy": "Jordan Love falls in quarterback rankings for 10-team and 12-team leagues. Projected for 18.6 pts in PPR format, he shifts from a must-start option into a moderate-risk play or QB2 in Superflex formats. If you have an alternative quarterback with a much better matchup in Week 10, consider benching him against aggressive pass defenses.",
-        "equipo_impacto": "With Josh Jacobs unavailable due to injury, Green Bay's offense relies more heavily on Jordan Love's arm. However, against a tough defense, the Packers' offensive rhythm could slow down, impacting red-zone opportunities across the receiving corps.",
-        "accion": "Consider alternative quarterback options if you need a high scoring floor in Week 10."
+        "contexto": "Following 9 dominant weeks, Joe Burrow has overtaken Josh Allen as the betting favorite to win NFL MVP honors. Reports from CBS Sports confirm the Bengals quarterback leads one of the league's most potent scoring units entering Week 10, fueling Cincinnati with relentless passing production that ranks among the very best across all statistical categories.",
+        "fantasy": "Burrow remains a week-winning cornerstone in fantasy football. Projected for 21.2 pts by FX projections in Week 10 against Pittsburgh, he stands as the overall QB2. Start him confidently in 10-team and 12-team leagues, while in Superflex setups he guarantees a 20-point floor that elevates Ja'Marr Chase and Tee Higgins every Sunday.",
+        "equipo_impacto": "Burrow's surgical rhythm fuels Cincinnati's high-flying offense in a tight AFC race. Chase and Higgins remain automatic must-starts benefiting directly from top-tier target quality.",
+        "accion": "Lock Burrow into your starting lineup as an elite, matchup-proof QB1.",
+        "fuentes": [
+          7,
+          17
+        ]
       },
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "GB",
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "CIN",
       "equipos": [
-        "GB"
+        "CIN",
+        "PIT"
       ],
       "jugadores": [
-        "6804"
+        "6770",
+        "7564",
+        "6801"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/fantasy/football/story/_/id/50446940/fantasy-football-rankings-best-worst-matchup-qb-rb-wr-te",
-          "t": "Fantasy football matchup ranks: Upgrade Ollie Gordon II, downgrade Jordan Love"
+          "u": "https://www.espn.com/nfl/story/_/id/50452792/2026-midseason-awards-ranking-mvp-rookies-coaches-barnwell",
+          "t": "2026 NFL midseason award rankings: MVP picks, top rookies, OPOY, DPOY, coaches"
+        },
+        {
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/nfl-mvp-odds-week-10-joe-burrow-josh-allen-brock-purdy/",
+          "t": "\n                        NFL MVP odds: Joe Burrow surpasses Josh Allen for top spot entering Week 10\n                    "
         }
       ],
       "menciona": []
     },
     {
-      "id": "n20261112081001",
-      "fecha": "2026-11-12T08:10:21.041Z",
+      "id": "n20261112164801",
+      "fecha": "2026-11-12T16:48:19.964Z",
       "semana": 10,
-      "titulo": "Broncos cancelan el canje por el linebacker Daiyan Henley",
+      "titulo": "Watson y Golden acechan récord histórico en Green Bay",
       "claves": [
-        "Denver anunció que la transacción con Chargers no se concretará.",
-        "Daiyan Henley permanecerá en la plantilla de Los Angeles.",
-        "Impacta la rotación defensiva de ambas escuadras en semana 10."
+        "Dupla proyecta sumar 3,000 yardas combinadas esta campaña",
+        "Ataque aéreo de Green Bay produce yardas constantes",
+        "Watson gana atractivo como titular WR2 en fantasy"
       ],
-      "contexto": "Denver Broncos anunció oficialmente que el canje pactado con Los Angeles Chargers para adquirir al linebacker Daiyan Henley no será finalizado. Apenas 24 horas después de alcanzarse un acuerdo inicial entre ambas franquicias, el equipo de Denver decidió echar atrás la transacción. Con esto, Henley se queda sorpresivamente en el plantel de los Chargers para encarar la recta final de la temporada regular.",
-      "fantasy": "En ligas con formato IDP (Individual Defensive Players), la permanencia de Daiyan Henley en Chargers mantiene su valor constante como apoyador titular. Para formatos tradicionales, la defensiva de Broncos D/ST no recibe el refuerzo esperado en el centro del campo, mientras que Chargers D/ST (proyectada con 9.5 pts) conserva a uno de sus tacleadores clave para enfrentar los compromisos de la semana 10 en la NFL.",
-      "equipo_impacto": "Los Chargers mantienen la estabilidad en el segundo nivel de su defensiva, conservando un titular en el esquema. Para los Broncos, el fallo en concretar el traspaso deja un hueco en la profundidad de apoyadores que deberán cubrir con personal propio.",
-      "accion": "Mantén a Daiyan Henley en alineaciones IDP y no modifiques tus expectativas sobre Chargers D/ST.",
+      "contexto": "La ofensiva aérea de Green Bay encontró un dinamismo temible a mitad de temporada. De acuerdo con ESPN, la dupla de receptores conformada por Christian Watson y el novato Matthew Golden mantiene un ritmo estadístico proyectado para combinarse por 3,000 yardas por recepción en 2026. Este volumen masivo sostiene al ataque profundo de Packers como uno de los esquemas más explosivos y confiables de toda la conferencia.",
+      "fantasy": "Con Jayden Reed fuera en lista de lesionados por cuello, Watson emerge con solidez en ligas PPR de 12 equipos como un WR2 o FLEX de gran techo. Golden, por su parte, se perfila como un excelente stash para waivers o ligas profundas de 14 escuadras. Su volumen conjunto asegura oportunidades constantes en zona roja y jugadas grandes en duelos de tiroteo.",
+      "equipo_impacto": "Green Bay recarga su volumen aéreo sobre Watson y Golden para generar separación constante en trayectorias verticales, compensando ausencias y facilitando lecturas en campo abierto.",
+      "accion": "Alinea a Watson como tu WR2 o FLEX en formatos de 12 equipos.",
       "en": {
-        "titulo": "Broncos Call Off Trade for Linebacker Daiyan Henley",
+        "titulo": "Watson and Golden chase 3,000 combined receiving yards",
         "claves": [
-          "Denver announced trade with Chargers will not be finalized.",
-          "Daiyan Henley will remain on the Los Angeles roster.",
-          "Defensive rotation for both franchises remains unchanged in Week 10."
+          "Packers duo on pace for 3,000 combined receiving yards",
+          "Green Bay pass game consistently generating explosive plays",
+          "Watson solidifies weekly WR2 value in fantasy leagues"
         ],
-        "contexto": "The Denver Broncos officially announced that the trade with the Los Angeles Chargers to acquire linebacker Daiyan Henley will not be finalized. Just 24 hours after reaching an initial agreement, Denver called off the deal. Consequently, Henley surprisingly stays on the Chargers roster to face the remainder of the regular season.",
-        "fantasy": "In Individual Defensive Player (IDP) formats, Daiyan Henley remaining with the Chargers keeps his fantasy value steady as a starting linebacker. For traditional formats, Broncos D/ST misses out on an expected defensive upgrade, while Chargers D/ST (projected for 9.5 pts) keeps a key tackler for Week 10 matchups.",
-        "equipo_impacto": "The Chargers maintain stability at linebacker, keeping an established contributor in their defensive system. For the Broncos, failing to complete the trade leaves a depth void at linebacker that they must address internally.",
-        "accion": "Keep Daiyan Henley in IDP lineups and maintain standard expectations for Chargers D/ST."
+        "contexto": "Green Bay's passing attack has hit full stride at midseason. According to ESPN, Christian Watson and Matthew Golden are on pace to combine for 3,000 receiving yards in 2026. This electric chemistry establishes the Packers as one of the most dangerous deep-threat offenses in the league heading into Week 10.",
+        "fantasy": "With Jayden Reed on injured reserve, Watson commands consistent target volume and shapes up as an upside WR2 or strong FLEX in 12-team PPR leagues. Golden remains an intriguing waiver wire stash in deeper 14-team setups, benefiting from steady deep targets and valuable red-zone design.",
+        "equipo_impacto": "Watson and Golden keep defensive secondaries honest with downfield speed, opening up lanes for Green Bay's passing attack despite key injuries across the roster.",
+        "accion": "Start Watson with confidence as a high-ceiling WR2 or FLEX option.",
+        "fuentes": [
+          9
+        ]
       },
       "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "DEN",
+      "impacto": "SUBE",
+      "equipo": "GB",
       "equipos": [
-        "DEN",
-        "LAC"
+        "GB"
       ],
-      "jugadores": [],
+      "jugadores": [
+        "8167",
+        "12501"
+      ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50459330/broncos-say-trade-chargers-lb-henley-not-finalized",
-          "t": "Broncos say trade with Chargers for LB Henley 'will not be finalized'"
-        },
-        {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/broncos-announce-trade-chargers-daiyan-060035563.html",
-          "t": "Broncos announce trade for Chargers&#39; Daiyan Henley &#39;will not be finalized&#39;"
+          "u": "https://www.espn.com/nfl/story/_/id/50455566/packers-christian-watson-matthew-golden-3000-yards",
+          "t": "Does Packers' Christian Watson + Matthew Golden = 3,000 yards?"
         }
       ],
       "menciona": []
@@ -132,10 +144,6 @@
       "estatus": "Duda"
     },
     {
-      "id": "4881",
-      "estatus": "Fuera"
-    },
-    {
       "id": "5849",
       "estatus": "Duda"
     },
@@ -148,19 +156,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12508",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "8137",
-      "estatus": "Duda"
-    },
-    {
-      "id": "8146",
-      "estatus": "Duda"
-    },
-    {
-      "id": "10232",
+      "id": "4881",
       "estatus": "Fuera"
     },
     {
@@ -168,7 +164,19 @@
       "estatus": "Fuera"
     },
     {
-      "id": "5850",
+      "id": "12508",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "8146",
+      "estatus": "Duda"
+    },
+    {
+      "id": "8137",
+      "estatus": "Duda"
+    },
+    {
+      "id": "10232",
       "estatus": "Fuera"
     },
     {
@@ -176,7 +184,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "7543",
+      "id": "5850",
       "estatus": "Fuera"
     },
     {
@@ -184,7 +192,19 @@
       "estatus": "Duda"
     },
     {
-      "id": "5859",
+      "id": "7543",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12519",
+      "estatus": "Duda"
+    },
+    {
+      "id": "5854",
+      "estatus": "Duda"
+    },
+    {
+      "id": "13279",
       "estatus": "Duda"
     },
     {
@@ -192,11 +212,7 @@
       "estatus": "Duda"
     },
     {
-      "id": "12519",
-      "estatus": "Duda"
-    },
-    {
-      "id": "13279",
+      "id": "5859",
       "estatus": "Duda"
     },
     {
@@ -208,16 +224,12 @@
       "estatus": "Duda"
     },
     {
-      "id": "5854",
-      "estatus": "Duda"
+      "id": "12534",
+      "estatus": "Fuera"
     },
     {
       "id": "4137",
       "estatus": "Fuera"
-    },
-    {
-      "id": "4035",
-      "estatus": "Duda"
     },
     {
       "id": "7083",
@@ -228,15 +240,15 @@
       "estatus": "Duda"
     },
     {
-      "id": "12534",
-      "estatus": "Fuera"
+      "id": "4035",
+      "estatus": "Duda"
     },
     {
       "id": "11589",
       "estatus": "Fuera"
     },
     {
-      "id": "5947",
+      "id": "9502",
       "estatus": "Duda"
     },
     {
@@ -244,11 +256,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "5872",
-      "estatus": "Duda"
-    },
-    {
-      "id": "9502",
+      "id": "12490",
       "estatus": "Duda"
     },
     {
@@ -256,16 +264,20 @@
       "estatus": "Duda"
     },
     {
-      "id": "11635",
+      "id": "5947",
       "estatus": "Duda"
     },
     {
-      "id": "8142",
-      "estatus": "Fuera"
+      "id": "5872",
+      "estatus": "Duda"
     },
     {
-      "id": "13287",
-      "estatus": "Fuera"
+      "id": "5844",
+      "estatus": "Duda"
+    },
+    {
+      "id": "11635",
+      "estatus": "Duda"
     }
   ],
   "agregados": [
@@ -273,59 +285,59 @@
     "12718",
     "7562",
     "2505",
-    "9502",
-    "13269",
-    "11579",
     "6427",
+    "13269",
     "IND",
-    "BAL",
+    "9502",
+    "11579",
     "11539",
     "5995",
+    "BAL",
     "3271",
-    "8116",
     "3286",
-    "12494",
-    "7042",
-    "96",
     "8134",
+    "7042",
     "9756",
-    "5119",
+    "96",
+    "12494",
+    "8116",
     "10219",
-    "3155",
-    "12545",
-    "9758"
+    "5119",
+    "NYG",
+    "13298",
+    "11637"
   ],
   "soltados": [
     "6130",
     "10232",
-    "13424",
     "6650",
-    "2020",
-    "8161",
-    "DET",
-    "5849",
+    "13424",
     "11435",
+    "2020",
+    "5849",
+    "DET",
+    "8161",
     "11625",
     "NE",
-    "NO",
     "4035",
+    "650",
+    "NO",
+    "8129",
     "11624",
     "11834",
-    "650",
-    "8129",
     "4037",
     "TB",
+    "11581",
     "9482",
-    "11610",
-    "10219",
-    "11637"
+    "5012",
+    "11610"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
     "b": "Christian McCaffrey",
-    "veredicto": "Arranca a Jahmyr Gibbs en la semana 10. Con 22.5 pts proyectados frente a 20.8 pts de McCaffrey, su volumen por aire y efectividad en zona roja lo colocan por encima en formatos PPR."
+    "veredicto": "Arranca a Jahmyr Gibbs en semana 10. Proyecta 22.5 pts frente a los 20.8 pts de Christian McCaffrey en el modelo FX, aprovechando su explosividad en juego terrestre y recepciones para darte un techo más alto."
   },
-  "dueloFecha": "2026-11-11T18:32:37.532Z",
+  "dueloFecha": "2026-11-12T16:48:19.964Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
