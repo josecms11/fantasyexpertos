@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-12T00:58:10.032Z",
-  "ultimaIA": "2026-11-12T00:58:10.032Z",
+  "actualizado": "2026-11-12T08:10:21.041Z",
+  "ultimaIA": "2026-11-12T08:10:21.041Z",
   "semana": 10,
   "semanaStats": 10,
   "temporada": "2026",
@@ -14,144 +14,93 @@
   ],
   "noticias": [
     {
-      "id": "n20261112005800",
-      "fecha": "2026-11-12T00:58:10.032Z",
+      "id": "n20261112081000",
+      "fecha": "2026-11-12T08:10:21.041Z",
       "semana": 10,
-      "titulo": "Carson Beck es nombrado QB1 titular de Cardinals",
+      "titulo": "Jordan Love enfrenta un duelo complicado en semana 10",
       "claves": [
-        "Carson Beck será el titular de Arizona en la semana 10.",
-        "El novato reemplaza al lesionado Gardner Minshew contra la defensiva de Rams.",
-        "El entrenador de Cardinals destaca su profesionalismo dentro del equipo."
+        "El mariscal de campo de Packers baja en los rankings fantasy.",
+        "Enfrenta un emparejamiento defensivo desfavorable en la semana 10.",
+        "Su proyección para este partido se ubica en 18.6 pts."
       ],
-      "contexto": "Tras la lesión de codo de Gardner Minshew que lo dejó fuera todo el año, Arizona nombró oficialmente al novato Carson Beck como su mariscal de campo titular para la semana 10 frente a Los Angeles Rams. El entrenador en jefe elogió que Beck ha trabajado como un profesional desde su llegada. Este nombramiento convierte al pasador en el 3er QB titular que utiliza el equipo en solo 3 semanas consecutivas.",
-      "fantasy": "En formatos Superflex o ligas de 2 QB, Beck entra en el radar de reclamaciones como una opción de urgencia para la semana 10, pero con un techo bastante limitado frente a una captura intensa. En ligas de 1 QB no debe ser reclamado. La inestabilidad en la posición de pasador reduce las proyecciones semanales de todos los receptores de Arizona, bajando su valor ofensivo en formatos PPR.",
-      "equipo_impacto": "La ofensiva de Cardinals busca desesperadamente estabilidad tras usar 3 mariscales distintos en 3 semanas. La línea ofensiva deberá ajustar protecciones para cuidar al novato ante el constante acoso defensivo rival.",
-      "accion": "Déjalo en la agencia libre en 1 QB y solo úsalo por emergencia en Superflex.",
+      "contexto": "Jordan Love llega a la semana 10 enfrentando un panorama complicado en cuanto a emparejamientos fantasy. Los análisis de enfrentamientos de la liga señalan que el mariscal de campo de Green Bay tiene un duelo desfavorable contra la defensiva rival. Esto reduce sus probabilidades de generar volumen masivo de puntos en el juego aéreo, obligando a los entrenadores virtuales a revaluar su posición en la alineación titular.",
+      "fantasy": "Jordan Love baja en el ranking de mariscales de campo para ligas de 10 y 12 equipos. Con una proyección de 18.6 pts en formato PPR, pasa de ser un titular indiscutible a una opción de riesgo moderado o QB2 en formatos Superflex. Si tienes una alternativa con un duelo más favorable en la semana 10, es recomendable considerar sentarlo frente a defensivas agresivas que limitan el pase.",
+      "equipo_impacto": "Sin Josh Jacobs disponible por lesión, el ataque de Green Bay recae más en el brazo de Jordan Love. Sin embargo, ante una defensiva complicada, el ritmo ofensivo de los Packers podría desacelerarse, afectando las oportunidades en la zona roja para todo el cuerpo de receptores del equipo.",
+      "accion": "Evalúa opciones alternativas en el puesto de QB si buscas asegurar un piso alto en semana 10.",
       "en": {
-        "titulo": "Carson Beck named starting QB for Cardinals",
+        "titulo": "Jordan Love Faces Tough Matchup in Week 10",
         "claves": [
-          "Carson Beck named Arizona starting quarterback for Week 10.",
-          "The rookie replaces injured Gardner Minshew against Rams defense.",
-          "Cardinals head coach praised Beck professional approach since arriving."
+          "Packers quarterback drops in Week 10 fantasy matchup rankings.",
+          "Faces a challenging defensive matchup during this week's game.",
+          "Projected for 18.6 pts in fantasy matchups for Week 10."
         ],
-        "contexto": "Following the season-ending elbow injury to Gardner Minshew, Arizona officially named rookie Carson Beck as their starting quarterback for Week 10 against the Los Angeles Rams. The head coach praised Beck for acting like a professional since his arrival. This announcement makes Beck the 3rd starting quarterback used by the team in just 3 consecutive weeks.",
-        "fantasy": "In Superflex or 2 QB leagues, Beck enters waiver consideration as an emergency option for Week 10, though he carries a low floor against a tough pass rush. In 1 QB formats he should remain untouched. The constant instability at quarterback lowers the weekly upside for all Arizona receivers, dimming their fantasy output in PPR formats.",
-        "equipo_impacto": "Arizona's offense desperately seeks stability after deploying 3 different quarterbacks over 3 weeks. The offensive line must adjust protections to shield the rookie from heavy defensive pressure.",
-        "accion": "Leave him on waivers in 1 QB leagues and only use him in Superflex emergencies."
+        "contexto": "Jordan Love enters Week 10 facing a challenging situation regarding fantasy matchups. The latest matchup rankings indicate that Green Bay's quarterback faces a tough defensive opponent in this game. This situation reduces his odds of producing massive passing volume, forcing fantasy managers to carefully reevaluate his position in starting lineups for Week 10.",
+        "fantasy": "Jordan Love falls in quarterback rankings for 10-team and 12-team leagues. Projected for 18.6 pts in PPR format, he shifts from a must-start option into a moderate-risk play or QB2 in Superflex formats. If you have an alternative quarterback with a much better matchup in Week 10, consider benching him against aggressive pass defenses.",
+        "equipo_impacto": "With Josh Jacobs unavailable due to injury, Green Bay's offense relies more heavily on Jordan Love's arm. However, against a tough defense, the Packers' offensive rhythm could slow down, impacting red-zone opportunities across the receiving corps.",
+        "accion": "Consider alternative quarterback options if you need a high scoring floor in Week 10."
       },
-      "etiqueta": "WAIVER",
-      "impacto": "NEUTRO",
-      "equipo": "ARI",
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "GB",
       "equipos": [
-        "ARI",
-        "LAR"
+        "GB"
       ],
       "jugadores": [
-        "13272"
+        "6804"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50455241/carson-beck-pro-here",
-          "t": "Cardinals coach: Carson Beck's been a pro since he's been here"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50455074/cardinals-start-rookie-qb-carson-beck-rams",
-          "t": "Cardinals to start rookie QB Carson Beck against Rams"
-        },
-        {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/cardinals-starting-qb-carson-beck-2026/",
-          "t": "\n                        Cardinals name Carson Beck starting QB: Rookie faces Aaron Donald, Myles Garrett in NFL debut\n                    "
+          "u": "https://www.espn.com/fantasy/football/story/_/id/50446940/fantasy-football-rankings-best-worst-matchup-qb-rb-wr-te",
+          "t": "Fantasy football matchup ranks: Upgrade Ollie Gordon II, downgrade Jordan Love"
         }
       ],
       "menciona": []
     },
     {
-      "id": "n20261112005801",
-      "fecha": "2026-11-12T00:58:10.032Z",
+      "id": "n20261112081001",
+      "fecha": "2026-11-12T08:10:21.041Z",
       "semana": 10,
-      "titulo": "Sean McVay prevé regreso pronto de Davante Adams",
+      "titulo": "Broncos cancelan el canje por el linebacker Daiyan Henley",
       "claves": [
-        "Sean McVay confía en tener a Davante Adams más pronto que tarde.",
-        "El receptor de Rams sigue recuperándose de una lesión de isquiotibiales.",
-        "Adams permanece actualmente colocado en la lista de reservas lesionados."
+        "Denver anunció que la transacción con Chargers no se concretará.",
+        "Daiyan Henley permanecerá en la plantilla de Los Angeles.",
+        "Impacta la rotación defensiva de ambas escuadras en semana 10."
       ],
-      "contexto": "El entrenador en jefe Sean McVay expresó optimismo sobre la rehabilitación del receptor Davante Adams, indicando que esperan contar con él de vuelta más pronto que tarde. Adams sufrió una molestia severa en los isquiotibiales que lo llevó a la reserva de lesionados en fechas recientes. El cuerpo técnico confía en que los avances médicos le permitan reintegrarse a las prácticas en el corto plazo.",
-      "fantasy": "Debido a su estatus en la lista de lesionados, Adams no puede alinearse para la semana 10 bajo ninguna circunstancia. Sin embargo, este reporte positivo reafirma que debes mantenerlo amarrado en tu reserva o banca en ligas PPR y Estándar. Evita venderlo a bajo precio en intercambios, ya que recuperará su valor de WR1 o WR2 de élite inmediatamente al ser activado al roster principal.",
-      "equipo_impacto": "El eventual retorno de Adams devolverá potencia vertical a Rams, liberando coberturas dobles sobre sus compañeros receptores y mejorando de forma notable la efectividad del ataque en la zona roja durante la semana 10 y posteriores.",
-      "accion": "Conserva a Adams en tu casilla de IR y rechaza ofertas de cambio desfavorables.",
+      "contexto": "Denver Broncos anunció oficialmente que el canje pactado con Los Angeles Chargers para adquirir al linebacker Daiyan Henley no será finalizado. Apenas 24 horas después de alcanzarse un acuerdo inicial entre ambas franquicias, el equipo de Denver decidió echar atrás la transacción. Con esto, Henley se queda sorpresivamente en el plantel de los Chargers para encarar la recta final de la temporada regular.",
+      "fantasy": "En ligas con formato IDP (Individual Defensive Players), la permanencia de Daiyan Henley en Chargers mantiene su valor constante como apoyador titular. Para formatos tradicionales, la defensiva de Broncos D/ST no recibe el refuerzo esperado en el centro del campo, mientras que Chargers D/ST (proyectada con 9.5 pts) conserva a uno de sus tacleadores clave para enfrentar los compromisos de la semana 10 en la NFL.",
+      "equipo_impacto": "Los Chargers mantienen la estabilidad en el segundo nivel de su defensiva, conservando un titular en el esquema. Para los Broncos, el fallo en concretar el traspaso deja un hueco en la profundidad de apoyadores que deberán cubrir con personal propio.",
+      "accion": "Mantén a Daiyan Henley en alineaciones IDP y no modifiques tus expectativas sobre Chargers D/ST.",
       "en": {
-        "titulo": "Sean McVay foresees Davante Adams returning soon",
+        "titulo": "Broncos Call Off Trade for Linebacker Daiyan Henley",
         "claves": [
-          "Sean McVay optimistic Davante Adams returns sooner than later.",
-          "Rams wide receiver continues recovering from a hamstring injury.",
-          "Adams currently remains placed on the injured reserve list."
+          "Denver announced trade with Chargers will not be finalized.",
+          "Daiyan Henley will remain on the Los Angeles roster.",
+          "Defensive rotation for both franchises remains unchanged in Week 10."
         ],
-        "contexto": "Head coach Sean McVay expressed optimism regarding wide receiver Davante Adams' rehabilitation, stating the team expects him back sooner than later. Adams suffered a hamstring injury that placed him on injured reserve in recent weeks. The coaching staff remains confident that medical progress will allow him to return to practice in the near future.",
-        "fantasy": "Due to his status on injured reserve, Adams cannot be started for Week 10 under any circumstances. However, this positive update confirms you must stash him in your IR spot or bench in PPR and Standard formats. Avoid selling him cheap in trades, as he will immediately regain elite WR1 or WR2 status once activated to the main roster.",
-        "equipo_impacto": "Adams' eventual return will restore vertical firepower to the Rams, freeing up double coverage on fellow receivers and noticeably boosting red zone efficiency in Week 10 and beyond.",
-        "accion": "Keep Adams in your IR slot and reject lowball trade offers."
+        "contexto": "The Denver Broncos officially announced that the trade with the Los Angeles Chargers to acquire linebacker Daiyan Henley will not be finalized. Just 24 hours after reaching an initial agreement, Denver called off the deal. Consequently, Henley surprisingly stays on the Chargers roster to face the remainder of the regular season.",
+        "fantasy": "In Individual Defensive Player (IDP) formats, Daiyan Henley remaining with the Chargers keeps his fantasy value steady as a starting linebacker. For traditional formats, Broncos D/ST misses out on an expected defensive upgrade, while Chargers D/ST (projected for 9.5 pts) keeps a key tackler for Week 10 matchups.",
+        "equipo_impacto": "The Chargers maintain stability at linebacker, keeping an established contributor in their defensive system. For the Broncos, failing to complete the trade leaves a depth void at linebacker that they must address internally.",
+        "accion": "Keep Daiyan Henley in IDP lineups and maintain standard expectations for Chargers D/ST."
       },
       "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "LAR",
-      "equipos": [
-        "LAR"
-      ],
-      "jugadores": [
-        "2133"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50455318/mcvay-rams-optimistic-wr-adams-return-sooner-later",
-          "t": "Sean McVay: Rams optimistic WR Davante Adams will return 'sooner than later'"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261112005802",
-      "fecha": "2026-11-12T00:58:10.032Z",
-      "semana": 10,
-      "titulo": "Ravens firman al pateador veterano Riley Patterson",
-      "claves": [
-        "Baltimore firma a Riley Patterson tras una práctica realizada el miércoles.",
-        "Patterson se convierte en el 3er pateador de Ravens esta temporada.",
-        "Tyler Loop quedó marginado tras ingresar a la lista de lesionados."
-      ],
-      "contexto": "Los Baltimore Ravens hicieron oficial la contratación del pateador veterano Riley Patterson después de realizar un entrenamiento de evaluación el miércoles. La contratación responde a la baja de Tyler Loop, quien fue enviado a la reserva de lesionados por una molestia en la ingle. De esta forma, Patterson se convierte en el 3er especialista en patadas de lugar que integra la plantilla de Baltimore en la campaña.",
-      "fantasy": "Patterson entra directamente en el mapa de fantasy para ligas de 12 o más equipos por integrar una ofensiva con proyecciones elevadas. Con una estimación cercana a 9.5 pts para la posición en Baltimore durante la semana 10, se consolida como una alternativa atractiva en waivers si requieres cubrir suspensiones, descansos o bajas por lesión en la posición de pateador dentro de tu alineación.",
-      "equipo_impacto": "Baltimore asegura estabilidad inmediata en el grupo de colegiales tras la lesión de Loop, garantizando efectividad en intentos de punto extra y goles de campo clave para el cierre de juegos.",
-      "accion": "Reclámalo desde waivers únicamente si necesitas solucionar la posición de pateador hoy.",
-      "en": {
-        "titulo": "Ravens sign veteran kicker Riley Patterson",
-        "claves": [
-          "Baltimore signs Riley Patterson following a Wednesday tryout session.",
-          "Patterson becomes the 3rd kicker for Ravens this season.",
-          "Tyler Loop was sidelined after landing on injured reserve."
-        ],
-        "contexto": "The Baltimore Ravens officially signed veteran kicker Riley Patterson after hosting him for a tryout workout on Wednesday. The move comes as Tyler Loop was placed on injured reserve due to a groin issue. Consequently, Patterson becomes the 3rd placekicker to join Baltimore's roster during the current campaign.",
-        "fantasy": "Patterson enters the fantasy radar in 12-team leagues or deeper due to joining a high-scoring offense. With a projection around 9.5 pts for the Baltimore kicker spot in Week 10, he represents a solid streaming candidate on waivers if you need to cover bye weeks or injuries at the kicker position on your roster.",
-        "equipo_impacto": "Baltimore secures immediate stability on special teams following Loop's injury, ensuring reliability on extra points and crucial field goal attempts for upcoming close contests.",
-        "accion": "Claim him off waivers only if you need to fix your kicker spot today."
-      },
-      "etiqueta": "WAIVER",
       "impacto": "NEUTRO",
-      "equipo": "BAL",
+      "equipo": "DEN",
       "equipos": [
-        "BAL"
+        "DEN",
+        "LAC"
       ],
-      "jugadores": [
-        "7922"
-      ],
+      "jugadores": [],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50456455/source-ravens-now-third-kicker-sign-riley-patterson",
-          "t": "Source: Ravens, now on third kicker, sign journeyman Riley Patterson"
+          "u": "https://www.espn.com/nfl/story/_/id/50459330/broncos-say-trade-chargers-lb-henley-not-finalized",
+          "t": "Broncos say trade with Chargers for LB Henley 'will not be finalized'"
+        },
+        {
+          "m": "Yahoo Sports",
+          "u": "https://sports.yahoo.com/articles/broncos-announce-trade-chargers-daiyan-060035563.html",
+          "t": "Broncos announce trade for Chargers&#39; Daiyan Henley &#39;will not be finalized&#39;"
         }
       ],
       "menciona": []
@@ -315,60 +264,61 @@
       "estatus": "Fuera"
     },
     {
-      "id": "5927",
+      "id": "13287",
       "estatus": "Fuera"
     }
   ],
   "agregados": [
     "12491",
     "12718",
-    "9502",
     "7562",
-    "11579",
     "2505",
+    "9502",
     "13269",
+    "11579",
     "6427",
-    "12494",
-    "BAL",
-    "8116",
     "IND",
-    "3271",
+    "BAL",
     "11539",
     "5995",
+    "3271",
+    "8116",
     "3286",
-    "96",
-    "9756",
+    "12494",
     "7042",
+    "96",
     "8134",
-    "12492",
-    "12634",
-    "9758",
+    "9756",
+    "5119",
+    "10219",
     "3155",
-    "JAX"
+    "12545",
+    "9758"
   ],
   "soltados": [
-    "13424",
-    "10232",
     "6130",
-    "8161",
+    "10232",
+    "13424",
     "6650",
     "2020",
-    "5849",
-    "11625",
+    "8161",
     "DET",
+    "5849",
     "11435",
+    "11625",
+    "NE",
     "NO",
     "4035",
-    "NE",
-    "11834",
     "11624",
+    "11834",
+    "650",
     "8129",
-    "10219",
-    "11610",
     "4037",
-    "11637",
+    "TB",
     "9482",
-    "3286"
+    "11610",
+    "10219",
+    "11637"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
