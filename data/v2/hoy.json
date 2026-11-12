@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-12T16:48:19.964Z",
-  "ultimaIA": "2026-11-12T16:48:19.964Z",
+  "actualizado": "2026-11-12T22:28:39.526Z",
+  "ultimaIA": "2026-11-12T22:28:39.526Z",
   "semana": 10,
   "semanaStats": 10,
   "temporada": "2026",
@@ -14,105 +14,90 @@
   ],
   "noticias": [
     {
-      "id": "n20261112164800",
-      "fecha": "2026-11-12T16:48:19.964Z",
+      "id": "n20261112222800",
+      "fecha": "2026-11-12T22:28:39.526Z",
       "semana": 10,
-      "titulo": "Joe Burrow asalta la cima por el MVP NFL",
+      "titulo": "Jonathan Taylor se enfoca en liderar a los Colts",
       "claves": [
-        "Burrow superó a Josh Allen en momios del MVP",
-        "Proyecta 21.2 pts de modelo en semana 10",
-        "Estatus de QB1 indiscutible en cualquier formato fantasy"
+        "El cierre de canjes finalizó sin movimientos para el corredor estrella.",
+        "Jonathan Taylor asume el rol de líder principal en el ataque.",
+        "Mantiene una proyección sólida de 17.3 puntos PPR para semana 10."
       ],
-      "contexto": "Tras completar 9 semanas a un nivel deslumbrante, Joe Burrow rebasó a Josh Allen en las casas de apuestas para colocarse como el máximo favorito al galardón de Jugador Más Valioso de la NFL. Los reportes de CBS Sports señalan que el quarterback de Cincinnati comanda una de las ofensivas más productivas rumbo a la semana 10, sosteniendo un ritmo anotador imparable que lo tiene peleando en lo más alto de todas las métricas.",
-      "fantasy": "Para fantasy football, Burrow es una auténtica mina de oro semanal. Con 21.2 pts proyectados por el modelo FX en semana 10 frente a Pittsburgh, se ubica como el QB2 global indiscutible. En ligas de 10 y 12 equipos de 1 QB debes alinearlo sin dudar, mientras que en formatos Superflex consolida un piso de 20 pts que asegura victorias, maximizando el techo de Ja'Marr Chase y Tee Higgins semanalmente.",
-      "equipo_impacto": "La precisión de Burrow mantiene a Cincinnati en ritmo de postemporada pese al acecho divisional. Tanto Ja'Marr Chase como Tee Higgins gozan de volumen de élite constante gracias a la efectividad de su pasador.",
-      "accion": "Mantén a Burrow inamovible en tu alineación titular como un QB1 de absoluto calibre élite.",
+      "contexto": "Tras el cierre del periodo de canjes en la NFL, Jonathan Taylor declaró que deja atrás todos los rumores sobre su futuro. El corredor de los Colts confirmó que su enfoque total está en ser el líder del equipo para el cierre de temporada. Con la especulación terminada, Indianápolis confía en mantener su esquema ofensivo centrado en el ataque terrestre para encarar la semana 10.",
+      "fantasy": "El fin de la incertidumbre le da tranquilidad a los dueños fantasy que cuentan con Jonathan Taylor. Al ser el pilar absoluto del ataque terrestre, mantiene su valor como un RB1 de volumen garantizado en todos los formatos. Para la semana 10, el modelo lo proyecta con 17.3 puntos PPR. Es un titular inamovible en ligas estándar y PPR que no debes mandar a la banca bajo ninguna circunstancia.",
+      "equipo_impacto": "La permanencia de Jonathan Taylor estabiliza el ataque de Indianápolis. Su volumen de acarreos quita presión al mariscal de campo y mantiene el equilibrio táctico. Con la fecha límite superada, el backfield le pertenece por completo sin amenaza de compartir toques significativos.",
+      "accion": "Alinea a Jonathan Taylor como tu RB1 titular con total confianza en la semana 10.",
       "en": {
-        "titulo": "Joe Burrow claims top spot in NFL MVP race",
+        "titulo": "Jonathan Taylor Focuses on Leading Colts After Trade Deadline",
         "claves": [
-          "Burrow surpasses Josh Allen in midseason MVP odds",
-          "FX model projects 21.2 pts in Week 10",
-          "Undisputed weekly elite QB1 across all fantasy leagues"
+          "Trade deadline ends with no moves for the star running back.",
+          "Jonathan Taylor takes on the main leadership role in the offense.",
+          "Holds a solid 17.3 PPR point projection for Week 10."
         ],
-        "contexto": "Following 9 dominant weeks, Joe Burrow has overtaken Josh Allen as the betting favorite to win NFL MVP honors. Reports from CBS Sports confirm the Bengals quarterback leads one of the league's most potent scoring units entering Week 10, fueling Cincinnati with relentless passing production that ranks among the very best across all statistical categories.",
-        "fantasy": "Burrow remains a week-winning cornerstone in fantasy football. Projected for 21.2 pts by FX projections in Week 10 against Pittsburgh, he stands as the overall QB2. Start him confidently in 10-team and 12-team leagues, while in Superflex setups he guarantees a 20-point floor that elevates Ja'Marr Chase and Tee Higgins every Sunday.",
-        "equipo_impacto": "Burrow's surgical rhythm fuels Cincinnati's high-flying offense in a tight AFC race. Chase and Higgins remain automatic must-starts benefiting directly from top-tier target quality.",
-        "accion": "Lock Burrow into your starting lineup as an elite, matchup-proof QB1.",
-        "fuentes": [
-          7,
-          17
-        ]
+        "contexto": "Following the NFL trade deadline, Jonathan Taylor stated he is putting all rumors about his future behind him. The Colts running back confirmed his sole focus is on being the team leader for the remainder of the season. With all speculation finished, Indianapolis plans to keep its offensive scheme centered around a strong ground attack as they head into Week 10.",
+        "fantasy": "The end of trade uncertainty provides peace of mind for fantasy managers holding Jonathan Taylor. As the primary engine of the ground game, he retains high-end RB1 status with guaranteed volume across all league formats. The model projects him for 17.3 PPR points in Week 10. He remains a lock in your starting lineup for both standard and PPR scoring systems.",
+        "equipo_impacto": "Keeping Jonathan Taylor stabilizes the entire Indianapolis offensive unit. His high carry volume takes pressure off the quarterback while maintaining balanced play-calling. With the trade deadline passed, this backfield belongs entirely to him without any threat of losing touches.",
+        "accion": "Start Jonathan Taylor as your clear RB1 with complete confidence in Week 10."
       },
       "etiqueta": "TENDENCIA",
       "impacto": "SUBE",
-      "equipo": "CIN",
+      "equipo": "IND",
       "equipos": [
-        "CIN",
-        "PIT"
+        "IND"
       ],
       "jugadores": [
-        "6770",
-        "7564",
-        "6801"
+        "6813"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50452792/2026-midseason-awards-ranking-mvp-rookies-coaches-barnwell",
-          "t": "2026 NFL midseason award rankings: MVP picks, top rookies, OPOY, DPOY, coaches"
-        },
-        {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/nfl-mvp-odds-week-10-joe-burrow-josh-allen-brock-purdy/",
-          "t": "\n                        NFL MVP odds: Joe Burrow surpasses Josh Allen for top spot entering Week 10\n                    "
+          "u": "https://www.espn.com/nfl/story/_/id/50463938/still-colts-jonathan-taylor-focused-being-leader",
+          "t": "Jonathan Taylor focused on being leader for Colts with trade deadline drama over"
         }
       ],
       "menciona": []
     },
     {
-      "id": "n20261112164801",
-      "fecha": "2026-11-12T16:48:19.964Z",
+      "id": "n20261112222801",
+      "fecha": "2026-11-12T22:28:39.526Z",
       "semana": 10,
-      "titulo": "Watson y Golden acechan récord histórico en Green Bay",
+      "titulo": "DeMario Douglas gana valor fantasy ante lesión de A.J. Brown",
       "claves": [
-        "Dupla proyecta sumar 3,000 yardas combinadas esta campaña",
-        "Ataque aéreo de Green Bay produce yardas constantes",
-        "Watson gana atractivo como titular WR2 en fantasy"
+        "A.J. Brown llega cuestionable a la semana 10 por molestia de rodilla.",
+        "DeMario Douglas apunta a recibir mayor volumen de dianas en pase.",
+        "Opción atractiva en ligas PPR y formatos con múltiples receptores titulares."
       ],
-      "contexto": "La ofensiva aérea de Green Bay encontró un dinamismo temible a mitad de temporada. De acuerdo con ESPN, la dupla de receptores conformada por Christian Watson y el novato Matthew Golden mantiene un ritmo estadístico proyectado para combinarse por 3,000 yardas por recepción en 2026. Este volumen masivo sostiene al ataque profundo de Packers como uno de los esquemas más explosivos y confiables de toda la conferencia.",
-      "fantasy": "Con Jayden Reed fuera en lista de lesionados por cuello, Watson emerge con solidez en ligas PPR de 12 equipos como un WR2 o FLEX de gran techo. Golden, por su parte, se perfila como un excelente stash para waivers o ligas profundas de 14 escuadras. Su volumen conjunto asegura oportunidades constantes en zona roja y jugadas grandes en duelos de tiroteo.",
-      "equipo_impacto": "Green Bay recarga su volumen aéreo sobre Watson y Golden para generar separación constante en trayectorias verticales, compensando ausencias y facilitando lecturas en campo abierto.",
-      "accion": "Alinea a Watson como tu WR2 o FLEX en formatos de 12 equipos.",
+      "contexto": "El estado físico de A.J. Brown tiene en alerta a los Patriots rumbo a la semana 10, tras ser reportado como cuestionable debido a una lesión de rodilla. Esta situación abre la oportunidad directa para que DeMario Douglas tome el rol principal en el juego aéreo. Si el veterano no logra vestirse el domingo, el volumen de pases en las rutas cortas e intermedias se concentrará en el joven receptor.",
+      "fantasy": "DeMario Douglas eleva de forma inmediata su proyección para la semana 10 si A.J. Brown queda inactivo. En formatos PPR su valor se dispara como un WR3 o flex con piso seguro, gracias a su capacidad de generar yardas tras la atrapada. Mantén un ojo atento a los reportes del domingo por la mañana; si el titular no juega, Douglas debe estar en tu alineación sin dudarlo.",
+      "equipo_impacto": "Sin A.J. Brown al 100 por ciento, la ofensiva aérea de New England requiere que DeMario Douglas gane separaciones rápidas. Esto beneficia las lecturas cortas del mariscal de campo Drake Maye, proyectado con 20.4 puntos para la semana 10, manteniendo la fluidez del ataque.",
+      "accion": "Considera a DeMario Douglas como opción flex de calidad si A.J. Brown es descartado.",
       "en": {
-        "titulo": "Watson and Golden chase 3,000 combined receiving yards",
+        "titulo": "DeMario Douglas Gains Fantasy Value With A.J. Brown Questionable",
         "claves": [
-          "Packers duo on pace for 3,000 combined receiving yards",
-          "Green Bay pass game consistently generating explosive plays",
-          "Watson solidifies weekly WR2 value in fantasy leagues"
+          "A.J. Brown is listed as questionable for Week 10 with knee injury.",
+          "DeMario Douglas is in line for increased targets in the passing game.",
+          "High-upside option in PPR scoring and deep receiver league lineups."
         ],
-        "contexto": "Green Bay's passing attack has hit full stride at midseason. According to ESPN, Christian Watson and Matthew Golden are on pace to combine for 3,000 receiving yards in 2026. This electric chemistry establishes the Packers as one of the most dangerous deep-threat offenses in the league heading into Week 10.",
-        "fantasy": "With Jayden Reed on injured reserve, Watson commands consistent target volume and shapes up as an upside WR2 or strong FLEX in 12-team PPR leagues. Golden remains an intriguing waiver wire stash in deeper 14-team setups, benefiting from steady deep targets and valuable red-zone design.",
-        "equipo_impacto": "Watson and Golden keep defensive secondaries honest with downfield speed, opening up lanes for Green Bay's passing attack despite key injuries across the roster.",
-        "accion": "Start Watson with confidence as a high-ceiling WR2 or FLEX option.",
-        "fuentes": [
-          9
-        ]
+        "contexto": "The health status of A.J. Brown has New England on high alert heading into Week 10, as he is officially questionable with a knee issue. This uncertainty opens a clear path for DeMario Douglas to step into the lead target role in the passing attack. If the veteran wideout is unable to play, short and intermediate targets will shift heavily toward the young receiver.",
+        "fantasy": "DeMario Douglas gets an immediate boost in fantasy stock for Week 10 if A.J. Brown is ruled out. In PPR leagues, his value climbs to a reliable WR3 or flex starter due to his target volume and yards-after-catch upside. Track inactive reports on Sunday morning closely; if the primary receiver sits, Douglas becomes a solid starting option in your lineup.",
+        "equipo_impacto": "Without a fully healthy A.J. Brown, New England needs DeMario Douglas to create quick separation on short routes. This helps quarterback Drake Maye, projected for 20.4 points in Week 10, maintain efficient rhythm across the middle of the field.",
+        "accion": "Plug in DeMario Douglas as a strong flex choice if A.J. Brown is inactive."
       },
-      "etiqueta": "TENDENCIA",
+      "etiqueta": "WAIVER",
       "impacto": "SUBE",
-      "equipo": "GB",
+      "equipo": "NE",
       "equipos": [
-        "GB"
+        "NE"
       ],
       "jugadores": [
-        "8167",
-        "12501"
+        "9501",
+        "5859"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50455566/packers-christian-watson-matthew-golden-3000-yards",
-          "t": "Does Packers' Christian Watson + Matthew Golden = 3,000 yards?"
+          "u": "https://www.espn.com/video/clip/_/id/50462343/how-aj-brown-status-affects-demario-douglas-fantasy-stock-week-10",
+          "t": "How A.J. Brown's status affects DeMario Douglas' fantasy stock in Week 10"
         }
       ],
       "menciona": []
@@ -125,10 +110,6 @@
     },
     {
       "id": "7547",
-      "estatus": "Duda"
-    },
-    {
-      "id": "3163",
       "estatus": "Duda"
     },
     {
@@ -173,6 +154,10 @@
     },
     {
       "id": "8137",
+      "estatus": "Duda"
+    },
+    {
+      "id": "5967",
       "estatus": "Duda"
     },
     {
@@ -240,16 +225,8 @@
       "estatus": "Duda"
     },
     {
-      "id": "4035",
-      "estatus": "Duda"
-    },
-    {
       "id": "11589",
       "estatus": "Fuera"
-    },
-    {
-      "id": "9502",
-      "estatus": "Duda"
     },
     {
       "id": "12489",
@@ -260,11 +237,11 @@
       "estatus": "Duda"
     },
     {
-      "id": "12474",
+      "id": "5947",
       "estatus": "Duda"
     },
     {
-      "id": "5947",
+      "id": "12474",
       "estatus": "Duda"
     },
     {
@@ -278,6 +255,14 @@
     {
       "id": "11635",
       "estatus": "Duda"
+    },
+    {
+      "id": "13287",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "5927",
+      "estatus": "Fuera"
     }
   ],
   "agregados": [
@@ -286,26 +271,26 @@
     "7562",
     "2505",
     "6427",
-    "13269",
     "IND",
-    "9502",
-    "11579",
-    "11539",
     "5995",
-    "BAL",
+    "13269",
+    "11539",
+    "11579",
+    "9502",
     "3271",
-    "3286",
-    "8134",
+    "BAL",
     "7042",
+    "8134",
     "9756",
-    "96",
-    "12494",
-    "8116",
     "10219",
-    "5119",
+    "3286",
     "NYG",
+    "96",
+    "5119",
+    "12494",
+    "4177",
     "13298",
-    "11637"
+    "9480"
   ],
   "soltados": [
     "6130",
@@ -317,20 +302,20 @@
     "5849",
     "DET",
     "8161",
-    "11625",
     "NE",
+    "11625",
     "4035",
     "650",
     "NO",
     "8129",
-    "11624",
     "11834",
+    "11581",
     "4037",
     "TB",
-    "11581",
-    "9482",
+    "11624",
     "5012",
-    "11610"
+    "9482",
+    "13150"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
