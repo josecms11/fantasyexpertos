@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-13T10:18:50.558Z",
-  "ultimaIA": "2026-11-13T10:18:50.558Z",
+  "actualizado": "2026-11-13T17:53:54.274Z",
+  "ultimaIA": "2026-11-13T17:53:54.274Z",
   "semana": 10,
   "semanaStats": 10,
   "temporada": "2026",
@@ -14,62 +14,91 @@
   ],
   "noticias": [
     {
-      "id": "n20261113101800",
-      "fecha": "2026-11-13T10:18:50.558Z",
+      "id": "n20261113175300",
+      "fecha": "2026-11-13T17:53:54.274Z",
       "semana": 10,
-      "titulo": "Jayden Daniels supera 2 intercepciones y vence a Giants",
+      "titulo": "Zach Charbonnet surge como opción sólida en semana 10",
       "claves": [
-        "Commanders vencieron 24-21 a Giants en inicio de semana 10",
-        "Jayden Daniels lanzó 2 intercepciones en el 4to cuarto del juego",
-        "Washington mantiene sus aspiraciones vivas dentro de la NFC Este"
+        "Enfrentamiento favorable contra la defensiva de Las Vegas.",
+        "Analistas proyectan volumen constante para el corredor.",
+        "Opción atractiva para flex o RB2 en semana 10."
       ],
-      "contexto": "Washington logró un triunfo dramático 24-21 sobre los Giants en el arranque de la semana 10 en TNF. A pesar de que Jayden Daniels sufrió 2 intercepciones en el 4to periodo que complicaron el panorama, los Commanders reaccionaron a tiempo. La victoria mantiene vivas las esperanzas de Washington en la NFC Este y frena el paso de New York en un cierre apretado.",
-      "fantasy": "A pesar de sufrir 2 robos de balón en la entrega final del juego, Jayden Daniels rescata valor en formatos Superflex y ligas de 12 equipos por su volumen terrestre y aéreo. Sin embargo, perder receptores clave afecta su techo semanal. Mantén a Daniels como una opción QB1 baja o QB2 sólida mientras ajusta la precisión en momentos decisivos de la temporada fantasy.",
-      "equipo_impacto": "La ofensiva de Washington demostró resiliencia pese a los 2 errores de Jayden Daniels. La victoria 24-21 ayuda a consolidar la confianza del grupo en momentos de máxima presión ante rivales directos de división.",
-      "accion": "Mantén a Jayden Daniels como tu QB1 titular en duelos favorables de fantasy.",
+      "contexto": "El especialista de ESPN, Mike Clay, alineará con confianza a Zach Charbonnet en la semana 10 frente a Las Vegas. El corredor de los Seahawks llega con una oportunidad ideal para capitalizar toques en el terreno de juego. Con la rotación ofensiva de Seattle ajustándose, Charbonnet se perfila para asumir un rol protagonista en el ataque terrestre del equipo de la NFC Oeste.",
+      "fantasy": "Charbonnet sube de valor en formatos PPR y de puntos estándar para la semana 10. Su duelo ante una defensiva vulnerable lo posiciona como un RB2 seguro o una opción de flex de alto techo. Si buscas asegurar puntos terrestres estables, su volumen proyectado te da la tranquilidad necesaria para incluirlo en tu alineación sin dudarlo demasiado.",
+      "equipo_impacto": "La presencia de Charbonnet equilibra el esquema de Seattle, quitando presión al juego aéreo. Kenneth Walker III mantendrá su cuota, pero el reparto de acarreos dentro de la zona redonda favorece el impacto global de los Seahawks.",
+      "accion": "Alinea a Zach Charbonnet como RB2 o flex en tus ligas de fantasy esta semana 10.",
+      "en": {
+        "titulo": "Zach Charbonnet emerges as solid Week 10 option",
+        "claves": [
+          "Favorable matchup against the Las Vegas defense.",
+          "Analysts project steady volume for the running back.",
+          "Attractive flex or RB2 option for Week 10."
+        ],
+        "contexto": "ESPN analyst Mike Clay is confidently locking Zach Charbonnet into lineups for Week 10 against Las Vegas. The Seahawks running back enters a prime spot to capitalize on touches. As Seattle's offensive rotation settles in, Charbonnet is primed to take on a prominent role in the ground game for the NFC West squad.",
+        "fantasy": "Charbonnet rises in PPR and standard formats for Week 10. Facing a vulnerable defense makes him a safe RB2 or high-ceiling flex play in all league types. If you need reliable rushing production, his projected volume provides full confidence to put him directly into your starting lineup without hesitating.",
+        "equipo_impacto": "Charbonnet's presence balances Seattle's game plan, taking pressure off the passing attack. Kenneth Walker III maintains his workload, but efficient backfield touches boost the overall output for the Seahawks.",
+        "accion": "Start Zach Charbonnet as an RB2 or flex in your fantasy leagues for Week 10."
+      },
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "SEA",
+      "equipos": [
+        "SEA"
+      ],
+      "jugadores": [
+        "9753"
+      ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50466279/new-york-giants-washington-commanders-week-10-tnf",
-          "t": "Commanders keep NFC East hopes alive with win over Giants"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50468530/commanders-outlast-giants-24-21-nfc-east-tnf-thriller",
-          "t": "Commanders outlast Giants 24-21 in NFC East TNF thriller"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50463340/thursday-night-football-commanders-giants-highlights",
-          "t": "Week 10 TNF: Look back at the Commanders-Giants highlights"
-        },
-        {
-          "m": "ESPN",
-          "u": "http://www.espn.com/nfl/recap?gameId=401873052",
-          "t": "Jayden Daniels and Commanders rally to stun the Giants 24-21 and keep their hopes alive"
+          "u": "https://www.espn.com/video/clip/_/id/50472265/why-mike-clay-locking-zach-charbonnet-lineup-vs-las-vegas",
+          "t": "Why Mike Clay is locking Zach Charbonnet into his lineup vs. Las Vegas"
         }
       ],
+      "menciona": []
+    },
+    {
+      "id": "n20261113175301",
+      "fecha": "2026-11-13T17:53:54.274Z",
+      "semana": 10,
+      "titulo": "Isaiah Likely destaca como ala cerrada titular en semana 10",
+      "claves": [
+        "Gran actuación en el juego de jueves por la noche.",
+        "Consolidado como blanco clave en el esquema ofensivo.",
+        "Proyección sólida de 13.3 pts PPR en semana 10."
+      ],
+      "contexto": "Tras una destacada actuación en el juego de jueves por la noche, Isaiah Likely reafirma su estatus dentro del ataque aéreo de Baltimore. El ala cerrada respondió a la exigencia sumando yardas cruciales y recepciones de impacto. Los analistas destacan que su involucramiento reciente no fue casualidad, sino el reflejo de un papel cada vez más amplio en la ofensiva de su equipo durante esta semana 10.",
+      "fantasy": "Likely sube como ala cerrada titular indiscutible en formatos PPR y ligas profundas. Con una proyección de 13.3 pts para la semana 10, ofrece un piso seguro y un techo interesante por sus oportunidades en zona de anotación. Si careces de un TE1 de élite, es una solución confiable para tu alineación estelar.",
+      "equipo_impacto": "El surgimiento de Likely le da variantes tácticas a Baltimore. Su habilidad para conseguir yardas tras la recepción libera espacios para los receptores abiertos y mantiene vivas las series ofensivas del conjunto.",
+      "accion": "Coloca a Isaiah Likely en tu alineación titular de TE para la semana 10.",
       "en": {
-        "titulo": "Jayden Daniels overcomes 2 picks to beat Giants",
+        "titulo": "Isaiah Likely shines as starting tight end option",
         "claves": [
-          "Commanders beat Giants 24-21 in Week 10 TNF matchup",
-          "Jayden Daniels threw 2 4th quarter interceptions in victory",
-          "Washington keeps NFC East division hopes alive with close win"
+          "Strong performance on Thursday Night Football.",
+          "Established as a key target in the passing scheme.",
+          "Solid projection of 13.3 PPR pts in Week 10."
         ],
-        "contexto": "Washington secured a dramatic 24-21 victory over the Giants to kick off Week 10 on TNF. Despite Jayden Daniels throwing 2 interceptions in the 4th quarter that put the game in jeopardy, the Commanders held on for the win. The victory keeps Washington's NFC East hopes alive while handing New York a tough division loss down the stretch.",
-        "fantasy": "Despite the 2 turnovers late in the game, Jayden Daniels remains a viable starter in Superflex and 12-team fantasy formats due to his rushing and passing workload. However, missing key targets limits his high ceiling. Treat Daniels as a low-end QB1 or solid QB2 option in standard fantasy leagues moving forward this season.",
-        "equipo_impacto": "Washington's offense showed resilience by overcoming Jayden Daniels' 2 late turnovers. The 24-21 division win builds momentum for the unit, stabilizing the overall fantasy value of key skill position players.",
-        "accion": "Keep Jayden Daniels locked into your lineups as a starting QB1 option."
+        "contexto": "Following a strong Thursday Night Football performance, Isaiah Likely reaffirms his status within Baltimore's passing attack. The tight end responded with crucial yardage and impactful catches. Analysts note his recent involvement was no fluke, but rather a reflection of an expanding target share in his team's offense heading into Week 10.",
+        "fantasy": "Likely climbs into auto-start territory at tight end for PPR and deep fantasy formats. Boasting a projection of 13.3 PPR pts for Week 10, he offers a stable floor alongside touchdown upside. If you lack an elite TE1, he serves as a reliable lineup solution.",
+        "equipo_impacto": "Likely's emergence adds valuable tactical options for Baltimore's offensive unit. His playmaking ability after the catch creates open space for wide receivers while consistently sustaining critical drives for the entire offense.",
+        "accion": "Insert Isaiah Likely into your starting tight end slot for Week 10."
       },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "WAS",
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "BAL",
       "equipos": [
-        "WAS",
+        "BAL",
         "NYG"
       ],
       "jugadores": [
-        "11566"
+        "8131"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
+          "t": "Fantasy buzz: Likely, Skattebo come up big on TNF but only one is an auto-start"
+        }
       ],
       "menciona": []
     }
@@ -156,12 +185,12 @@
       "estatus": "Duda"
     },
     {
-      "id": "13279",
+      "id": "13346",
       "estatus": "Duda"
     },
     {
-      "id": "13346",
-      "estatus": "Duda"
+      "id": "13279",
+      "estatus": "Fuera"
     },
     {
       "id": "5859",
@@ -186,10 +215,6 @@
     {
       "id": "7083",
       "estatus": "Fuera"
-    },
-    {
-      "id": "13276",
-      "estatus": "Duda"
     },
     {
       "id": "11589",
@@ -234,33 +259,37 @@
     {
       "id": "10236",
       "estatus": "Duda"
+    },
+    {
+      "id": "8142",
+      "estatus": "Fuera"
     }
   ],
   "agregados": [
-    "12718",
     "2505",
-    "12491",
+    "12718",
     "7562",
+    "12491",
     "5995",
-    "IND",
     "10219",
+    "IND",
     "6427",
+    "8134",
     "11539",
     "13269",
-    "8134",
-    "7042",
     "9756",
+    "7042",
     "5119",
+    "4177",
+    "13296",
     "11579",
     "3271",
-    "NYG",
-    "BAL",
     "9502",
-    "4177",
+    "NYG",
     "96",
-    "4663",
+    "BAL",
     "13298",
-    "13296",
+    "4663",
     "9480"
   ],
   "soltados": [
@@ -270,8 +299,8 @@
     "2020",
     "11435",
     "5849",
-    "13424",
     "650",
+    "13424",
     "DET",
     "8161",
     "NE",
@@ -279,21 +308,21 @@
     "8129",
     "4035",
     "TB",
-    "NO",
     "11834",
     "11581",
+    "3271",
+    "NO",
     "5012",
     "4037",
-    "3271",
     "13150",
     "9482"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
     "b": "Christian McCaffrey",
-    "veredicto": "Arranca a Jahmyr Gibbs en semana 10. Proyecta 22.5 pts frente a los 20.8 pts de Christian McCaffrey en el modelo FX, aprovechando su explosividad en juego terrestre y recepciones para darte un techo más alto."
+    "veredicto": "Arranca a Jahmyr Gibbs sobre Christian McCaffrey en la semana 10. Gibbs proyecta 22.5 pts PPR por su explosividad y alto uso aéreo, superando los 20.8 pts de McCaffrey en un duelo de RB1 de élite."
   },
-  "dueloFecha": "2026-11-12T16:48:19.964Z",
+  "dueloFecha": "2026-11-13T17:53:54.274Z",
   "fuentes": [
     "Sleeper",
     "ESPN",

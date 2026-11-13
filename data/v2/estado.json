@@ -1,20 +1,21 @@
 {
-  "fecha": "2026-11-13T10:20:18.629Z",
+  "fecha": "2026-11-13T17:56:08.843Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.3s] YouTube: 15 nuevos, 26 en total",
-    "[1.0s] Sleeper: 3233 activos, semana 10 · proyecciones S10: 9418",
-    "[2.5s] ESPN: lesiones 799 · noticias 50",
-    "[3.5s] Auto-ajuste FX: {\"hl\":8,\"mEf\":30,\"mTd\":160,\"aPrev\":0.2} error 4.680 → 4.675",
-    "[3.5s] Modelo FX v3 : 447 proyecciones propias para la semana 10",
-    "[4.4s] Fuentes nuevas: 8 · horario normal · toca IA: true",
-    "[4.6s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[30.4s] IA OK con gemini-3.6-flash",
-    "[30.4s] Noticias nuevas verificadas: 1",
-    "[62.5s] IA OK con gemini-3.6-flash",
-    "[62.5s] Blog: ¿Vale la pena agregar a Justice Hill en la semana 10? / Should you pick up Justice Hill in Week 10?",
-    "[91.6s] IA OK con gemini-3.6-flash",
-    "[91.6s] Blog: Lesión de Davante Adams: ¿juega en la semana 10 y qué hacer en fantasy? / Davante Adams injury update: will he play Week 10? Fantasy advice",
-    "[91.6s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 506 · semana de juego 10 · IA usada hoy 7/40"
+    "[3.8s] YouTube: 15 nuevos, 26 en total",
+    "[4.4s] Sleeper: 3233 activos, semana 10 · proyecciones S10: 9418",
+    "[5.6s] ESPN: lesiones 799 · noticias 50",
+    "[5.6s] Modelo FX v3 : 447 proyecciones propias para la semana 10",
+    "[6.1s] Fuentes nuevas: 53 · horario pico · toca IA: true",
+    "[6.3s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[32.8s] IA OK con gemini-3.6-flash",
+    "[32.8s] Noticias nuevas verificadas: 2",
+    "[61.3s] IA OK con gemini-3.6-flash",
+    "[61.3s] Resumen semana 10",
+    "[99.8s] IA OK con gemini-3.6-flash",
+    "[99.8s] Blog: ¿Vender o aguantar a Cairo Santos? Valor de trade semana 10 / Should you sell or hold Cairo Santos? Week 10 trade value",
+    "[140.3s] IA OK con gemini-3.6-flash",
+    "[140.3s] Blog: ¿Arrancar o sentar a CeeDee Lamb en la semana 10? / Should you start CeeDee Lamb in Week 10?",
+    "[140.3s] Listo: 2 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 508 · semana de juego 10 · IA usada hoy 11/40"
   ]
 }
