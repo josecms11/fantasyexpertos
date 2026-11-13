@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-13T02:51:28.872Z",
-  "ultimaIA": "2026-11-12T22:28:39.526Z",
+  "actualizado": "2026-11-13T10:18:50.558Z",
+  "ultimaIA": "2026-11-13T10:18:50.558Z",
   "semana": 10,
   "semanaStats": 10,
   "temporada": "2026",
@@ -14,91 +14,62 @@
   ],
   "noticias": [
     {
-      "id": "n20261112222800",
-      "fecha": "2026-11-12T22:28:39.526Z",
+      "id": "n20261113101800",
+      "fecha": "2026-11-13T10:18:50.558Z",
       "semana": 10,
-      "titulo": "Jonathan Taylor se enfoca en liderar a los Colts",
+      "titulo": "Jayden Daniels supera 2 intercepciones y vence a Giants",
       "claves": [
-        "El cierre de canjes finalizó sin movimientos para el corredor estrella.",
-        "Jonathan Taylor asume el rol de líder principal en el ataque.",
-        "Mantiene una proyección sólida de 17.3 puntos PPR para semana 10."
+        "Commanders vencieron 24-21 a Giants en inicio de semana 10",
+        "Jayden Daniels lanzó 2 intercepciones en el 4to cuarto del juego",
+        "Washington mantiene sus aspiraciones vivas dentro de la NFC Este"
       ],
-      "contexto": "Tras el cierre del periodo de canjes en la NFL, Jonathan Taylor declaró que deja atrás todos los rumores sobre su futuro. El corredor de los Colts confirmó que su enfoque total está en ser el líder del equipo para el cierre de temporada. Con la especulación terminada, Indianápolis confía en mantener su esquema ofensivo centrado en el ataque terrestre para encarar la semana 10.",
-      "fantasy": "El fin de la incertidumbre le da tranquilidad a los dueños fantasy que cuentan con Jonathan Taylor. Al ser el pilar absoluto del ataque terrestre, mantiene su valor como un RB1 de volumen garantizado en todos los formatos. Para la semana 10, el modelo lo proyecta con 17.3 puntos PPR. Es un titular inamovible en ligas estándar y PPR que no debes mandar a la banca bajo ninguna circunstancia.",
-      "equipo_impacto": "La permanencia de Jonathan Taylor estabiliza el ataque de Indianápolis. Su volumen de acarreos quita presión al mariscal de campo y mantiene el equilibrio táctico. Con la fecha límite superada, el backfield le pertenece por completo sin amenaza de compartir toques significativos.",
-      "accion": "Alinea a Jonathan Taylor como tu RB1 titular con total confianza en la semana 10.",
+      "contexto": "Washington logró un triunfo dramático 24-21 sobre los Giants en el arranque de la semana 10 en TNF. A pesar de que Jayden Daniels sufrió 2 intercepciones en el 4to periodo que complicaron el panorama, los Commanders reaccionaron a tiempo. La victoria mantiene vivas las esperanzas de Washington en la NFC Este y frena el paso de New York en un cierre apretado.",
+      "fantasy": "A pesar de sufrir 2 robos de balón en la entrega final del juego, Jayden Daniels rescata valor en formatos Superflex y ligas de 12 equipos por su volumen terrestre y aéreo. Sin embargo, perder receptores clave afecta su techo semanal. Mantén a Daniels como una opción QB1 baja o QB2 sólida mientras ajusta la precisión en momentos decisivos de la temporada fantasy.",
+      "equipo_impacto": "La ofensiva de Washington demostró resiliencia pese a los 2 errores de Jayden Daniels. La victoria 24-21 ayuda a consolidar la confianza del grupo en momentos de máxima presión ante rivales directos de división.",
+      "accion": "Mantén a Jayden Daniels como tu QB1 titular en duelos favorables de fantasy.",
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50466279/new-york-giants-washington-commanders-week-10-tnf",
+          "t": "Commanders keep NFC East hopes alive with win over Giants"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50468530/commanders-outlast-giants-24-21-nfc-east-tnf-thriller",
+          "t": "Commanders outlast Giants 24-21 in NFC East TNF thriller"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50463340/thursday-night-football-commanders-giants-highlights",
+          "t": "Week 10 TNF: Look back at the Commanders-Giants highlights"
+        },
+        {
+          "m": "ESPN",
+          "u": "http://www.espn.com/nfl/recap?gameId=401873052",
+          "t": "Jayden Daniels and Commanders rally to stun the Giants 24-21 and keep their hopes alive"
+        }
+      ],
       "en": {
-        "titulo": "Jonathan Taylor Focuses on Leading Colts After Trade Deadline",
+        "titulo": "Jayden Daniels overcomes 2 picks to beat Giants",
         "claves": [
-          "Trade deadline ends with no moves for the star running back.",
-          "Jonathan Taylor takes on the main leadership role in the offense.",
-          "Holds a solid 17.3 PPR point projection for Week 10."
+          "Commanders beat Giants 24-21 in Week 10 TNF matchup",
+          "Jayden Daniels threw 2 4th quarter interceptions in victory",
+          "Washington keeps NFC East division hopes alive with close win"
         ],
-        "contexto": "Following the NFL trade deadline, Jonathan Taylor stated he is putting all rumors about his future behind him. The Colts running back confirmed his sole focus is on being the team leader for the remainder of the season. With all speculation finished, Indianapolis plans to keep its offensive scheme centered around a strong ground attack as they head into Week 10.",
-        "fantasy": "The end of trade uncertainty provides peace of mind for fantasy managers holding Jonathan Taylor. As the primary engine of the ground game, he retains high-end RB1 status with guaranteed volume across all league formats. The model projects him for 17.3 PPR points in Week 10. He remains a lock in your starting lineup for both standard and PPR scoring systems.",
-        "equipo_impacto": "Keeping Jonathan Taylor stabilizes the entire Indianapolis offensive unit. His high carry volume takes pressure off the quarterback while maintaining balanced play-calling. With the trade deadline passed, this backfield belongs entirely to him without any threat of losing touches.",
-        "accion": "Start Jonathan Taylor as your clear RB1 with complete confidence in Week 10."
+        "contexto": "Washington secured a dramatic 24-21 victory over the Giants to kick off Week 10 on TNF. Despite Jayden Daniels throwing 2 interceptions in the 4th quarter that put the game in jeopardy, the Commanders held on for the win. The victory keeps Washington's NFC East hopes alive while handing New York a tough division loss down the stretch.",
+        "fantasy": "Despite the 2 turnovers late in the game, Jayden Daniels remains a viable starter in Superflex and 12-team fantasy formats due to his rushing and passing workload. However, missing key targets limits his high ceiling. Treat Daniels as a low-end QB1 or solid QB2 option in standard fantasy leagues moving forward this season.",
+        "equipo_impacto": "Washington's offense showed resilience by overcoming Jayden Daniels' 2 late turnovers. The 24-21 division win builds momentum for the unit, stabilizing the overall fantasy value of key skill position players.",
+        "accion": "Keep Jayden Daniels locked into your lineups as a starting QB1 option."
       },
       "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "IND",
+      "impacto": "NEUTRO",
+      "equipo": "WAS",
       "equipos": [
-        "IND"
+        "WAS",
+        "NYG"
       ],
       "jugadores": [
-        "6813"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50463938/still-colts-jonathan-taylor-focused-being-leader",
-          "t": "Jonathan Taylor focused on being leader for Colts with trade deadline drama over"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261112222801",
-      "fecha": "2026-11-12T22:28:39.526Z",
-      "semana": 10,
-      "titulo": "DeMario Douglas gana valor fantasy ante lesión de A.J. Brown",
-      "claves": [
-        "A.J. Brown llega cuestionable a la semana 10 por molestia de rodilla.",
-        "DeMario Douglas apunta a recibir mayor volumen de dianas en pase.",
-        "Opción atractiva en ligas PPR y formatos con múltiples receptores titulares."
-      ],
-      "contexto": "El estado físico de A.J. Brown tiene en alerta a los Patriots rumbo a la semana 10, tras ser reportado como cuestionable debido a una lesión de rodilla. Esta situación abre la oportunidad directa para que DeMario Douglas tome el rol principal en el juego aéreo. Si el veterano no logra vestirse el domingo, el volumen de pases en las rutas cortas e intermedias se concentrará en el joven receptor.",
-      "fantasy": "DeMario Douglas eleva de forma inmediata su proyección para la semana 10 si A.J. Brown queda inactivo. En formatos PPR su valor se dispara como un WR3 o flex con piso seguro, gracias a su capacidad de generar yardas tras la atrapada. Mantén un ojo atento a los reportes del domingo por la mañana; si el titular no juega, Douglas debe estar en tu alineación sin dudarlo.",
-      "equipo_impacto": "Sin A.J. Brown al 100 por ciento, la ofensiva aérea de New England requiere que DeMario Douglas gane separaciones rápidas. Esto beneficia las lecturas cortas del mariscal de campo Drake Maye, proyectado con 20.4 puntos para la semana 10, manteniendo la fluidez del ataque.",
-      "accion": "Considera a DeMario Douglas como opción flex de calidad si A.J. Brown es descartado.",
-      "en": {
-        "titulo": "DeMario Douglas Gains Fantasy Value With A.J. Brown Questionable",
-        "claves": [
-          "A.J. Brown is listed as questionable for Week 10 with knee injury.",
-          "DeMario Douglas is in line for increased targets in the passing game.",
-          "High-upside option in PPR scoring and deep receiver league lineups."
-        ],
-        "contexto": "The health status of A.J. Brown has New England on high alert heading into Week 10, as he is officially questionable with a knee issue. This uncertainty opens a clear path for DeMario Douglas to step into the lead target role in the passing attack. If the veteran wideout is unable to play, short and intermediate targets will shift heavily toward the young receiver.",
-        "fantasy": "DeMario Douglas gets an immediate boost in fantasy stock for Week 10 if A.J. Brown is ruled out. In PPR leagues, his value climbs to a reliable WR3 or flex starter due to his target volume and yards-after-catch upside. Track inactive reports on Sunday morning closely; if the primary receiver sits, Douglas becomes a solid starting option in your lineup.",
-        "equipo_impacto": "Without a fully healthy A.J. Brown, New England needs DeMario Douglas to create quick separation on short routes. This helps quarterback Drake Maye, projected for 20.4 points in Week 10, maintain efficient rhythm across the middle of the field.",
-        "accion": "Plug in DeMario Douglas as a strong flex choice if A.J. Brown is inactive."
-      },
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "NE",
-      "equipos": [
-        "NE"
-      ],
-      "jugadores": [
-        "9501",
-        "5859"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50462343/how-aj-brown-status-affects-demario-douglas-fantasy-stock-week-10",
-          "t": "How A.J. Brown's status affects DeMario Douglas' fantasy stock in Week 10"
-        }
+        "11566"
       ],
       "menciona": []
     }
@@ -267,52 +238,52 @@
   ],
   "agregados": [
     "12718",
-    "12491",
     "2505",
+    "12491",
     "7562",
     "5995",
     "IND",
+    "10219",
     "6427",
     "11539",
     "13269",
-    "10219",
     "8134",
     "7042",
     "9756",
+    "5119",
     "11579",
     "3271",
     "NYG",
-    "5119",
-    "9502",
     "BAL",
-    "96",
+    "9502",
     "4177",
+    "96",
     "4663",
     "13298",
-    "9480",
-    "WAS"
+    "13296",
+    "9480"
   ],
   "soltados": [
-    "6650",
     "6130",
+    "6650",
     "10232",
     "2020",
     "11435",
     "5849",
     "13424",
-    "DET",
     "650",
+    "DET",
     "8161",
     "NE",
     "11625",
-    "4035",
     "8129",
-    "NO",
+    "4035",
     "TB",
-    "11581",
+    "NO",
     "11834",
-    "4037",
+    "11581",
     "5012",
+    "4037",
     "3271",
     "13150",
     "9482"
