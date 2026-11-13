@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-13T17:53:54.274Z",
-  "ultimaIA": "2026-11-13T17:53:54.274Z",
+  "actualizado": "2026-11-13T23:12:15.926Z",
+  "ultimaIA": "2026-11-13T23:12:15.926Z",
   "semana": 10,
   "semanaStats": 10,
   "temporada": "2026",
@@ -14,91 +14,137 @@
   ],
   "noticias": [
     {
-      "id": "n20261113175300",
-      "fecha": "2026-11-13T17:53:54.274Z",
+      "id": "n20261113231200",
+      "fecha": "2026-11-13T23:12:15.926Z",
       "semana": 10,
-      "titulo": "Zach Charbonnet surge como opción sólida en semana 10",
+      "titulo": "Philadelphia Eagles liberan a Hollywood Brown tras solicitud",
       "claves": [
-        "Enfrentamiento favorable contra la defensiva de Las Vegas.",
-        "Analistas proyectan volumen constante para el corredor.",
-        "Opción atractiva para flex o RB2 en semana 10."
+        "Eagles cortaron a Hollywood Brown tras pedir su salida en semana 10.",
+        "El receptor tuvo muy poca actividad en la 1ra mitad del año.",
+        "Su valor fantasy es de 0 hasta firmar con otro equipo."
       ],
-      "contexto": "El especialista de ESPN, Mike Clay, alineará con confianza a Zach Charbonnet en la semana 10 frente a Las Vegas. El corredor de los Seahawks llega con una oportunidad ideal para capitalizar toques en el terreno de juego. Con la rotación ofensiva de Seattle ajustándose, Charbonnet se perfila para asumir un rol protagonista en el ataque terrestre del equipo de la NFC Oeste.",
-      "fantasy": "Charbonnet sube de valor en formatos PPR y de puntos estándar para la semana 10. Su duelo ante una defensiva vulnerable lo posiciona como un RB2 seguro o una opción de flex de alto techo. Si buscas asegurar puntos terrestres estables, su volumen proyectado te da la tranquilidad necesaria para incluirlo en tu alineación sin dudarlo demasiado.",
-      "equipo_impacto": "La presencia de Charbonnet equilibra el esquema de Seattle, quitando presión al juego aéreo. Kenneth Walker III mantendrá su cuota, pero el reparto de acarreos dentro de la zona redonda favorece el impacto global de los Seahawks.",
-      "accion": "Alinea a Zach Charbonnet como RB2 o flex en tus ligas de fantasy esta semana 10.",
-      "en": {
-        "titulo": "Zach Charbonnet emerges as solid Week 10 option",
-        "claves": [
-          "Favorable matchup against the Las Vegas defense.",
-          "Analysts project steady volume for the running back.",
-          "Attractive flex or RB2 option for Week 10."
-        ],
-        "contexto": "ESPN analyst Mike Clay is confidently locking Zach Charbonnet into lineups for Week 10 against Las Vegas. The Seahawks running back enters a prime spot to capitalize on touches. As Seattle's offensive rotation settles in, Charbonnet is primed to take on a prominent role in the ground game for the NFC West squad.",
-        "fantasy": "Charbonnet rises in PPR and standard formats for Week 10. Facing a vulnerable defense makes him a safe RB2 or high-ceiling flex play in all league types. If you need reliable rushing production, his projected volume provides full confidence to put him directly into your starting lineup without hesitating.",
-        "equipo_impacto": "Charbonnet's presence balances Seattle's game plan, taking pressure off the passing attack. Kenneth Walker III maintains his workload, but efficient backfield touches boost the overall output for the Seahawks.",
-        "accion": "Start Zach Charbonnet as an RB2 or flex in your fantasy leagues for Week 10."
-      },
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "SEA",
-      "equipos": [
-        "SEA"
-      ],
-      "jugadores": [
-        "9753"
-      ],
+      "contexto": "Eagles liberaron oficialmente a Hollywood Brown tras una petición formal del propio receptor. Brown tuvo una participación casi nula en la ofensiva de Philadelphia durante los 1ros partidos del año. Ante la falta de oportunidades en la 1ra mitad de la temporada, ambas partes decidieron separar caminos en la semana 10.",
+      "fantasy": "En este momento su valor fantasy es de 0. Si jugabas en ligas profundas o formatos dynasty donde aún lo mantenías en la banca, debes cortarlo hoy mismo. Queda como agente libre sin impacto inmediato hasta que firme con un nuevo equipo en la semana 10. Su salida aclara la rotación de pases en Philadelphia.",
+      "equipo_impacto": "La baja de Brown no altera los planes tácticos del ataque aéreo de Eagles, dado que su involucramiento en el campo era mínimo. Los objetivos principales se concentran en las opciones titulares restantes del esquema ofensivo.",
+      "accion": "Corta a Hollywood Brown hoy mismo de tu plantilla fantasy en cualquier formato.",
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50472265/why-mike-clay-locking-zach-charbonnet-lineup-vs-las-vegas",
-          "t": "Why Mike Clay is locking Zach Charbonnet into his lineup vs. Las Vegas"
+          "u": "https://www.espn.com/nfl/story/_/id/50473514/sources-eagles-release-wr-hollywood-brown-per-request",
+          "t": "Eagles release wide receiver Hollywood Brown per request"
+        },
+        {
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/eagles-release-wide-receiver-hollywood-brown-upon-his-request-according-to-report/",
+          "t": "\n                        Eagles release wide receiver Hollywood Brown upon his request, according to report\n                    "
         }
+      ],
+      "en": {
+        "titulo": "Philadelphia Eagles release Hollywood Brown per his request",
+        "claves": [
+          "Eagles released Hollywood Brown following his formal request in Week 10.",
+          "The veteran wide receiver logged minimal playing time this season.",
+          "His fantasy value is 0 until he signs with another franchise."
+        ],
+        "contexto": "The Philadelphia Eagles officially released wide receiver Hollywood Brown after he requested to be let go. Brown saw very limited playing time during the 1st half of the regular season. Given his lack of target volume in the offensive scheme, both sides opted to part ways as Week 10 gets underway.",
+        "fantasy": "His fantasy value is currently 0 across all standard redraft formats. If you were holding him on deep benches or dynasty rosters, he can be safely dropped today. He becomes an unrestricted free agent whose outlook depends entirely on his next destination. His departure frees up roster space without changing target shares.",
+        "equipo_impacto": "Losing Brown changes nothing for the Eagles' passing game, as he was barely utilized on offense. The team's aerial target distribution remains concentrated among the primary remaining options.",
+        "accion": "Drop Hollywood Brown immediately from your fantasy rosters in all redraft leagues."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "BAJA",
+      "equipo": "PHI",
+      "equipos": [
+        "PHI"
+      ],
+      "jugadores": [],
+      "menciona": []
+    },
+    {
+      "id": "n20261113231201",
+      "fecha": "2026-11-13T23:12:15.926Z",
+      "semana": 10,
+      "titulo": "Arizona Cardinals extienden el contrato de Elijah Higgins",
+      "claves": [
+        "Cardinals aseguraron la extensión de contrato de su ala cerrada suplente.",
+        "Arizona supera los $100 millones invertidos en 2 alas cerradas.",
+        "Su rol gana relevancia ante múltiples lesiones en el cuerpo de receptores."
+      ],
+      "contexto": "Arizona Cardinals cerró una extensión de contrato para su ala cerrada suplente, Elijah Higgins. Sumado al acuerdo previo de Trey McBride en 2025, la franquicia ya rebasó los $100 millones en compromisos económicos para sus 2 alas cerradas principales. La directiva apuesta de lleno por alineaciones con 2 alas cerradas en la semana 10.",
+      "fantasy": "Higgins se convierte en una opción interesante en ligas profundas de 14 o más equipos y formatos TE Premium. Aunque Trey McBride domina el volumen principal de pases en Arizona, el nuevo contrato y las lesiones de receptores le aseguran minutos en zona de anotación. Suben sus oportunidades como reserva de alto potencial.",
+      "equipo_impacto": "Cardinals refuerza su esquema con 2 alas cerradas en el campo de juego. Esto le permite al ataque sostener un volumen constante por pase en trayectorias cortas y brindar apoyo directo en el juego por tierra.",
+      "accion": "Agrega a Elijah Higgins en ligas profundas o formatos TE Premium hoy.",
+      "fuentes": [
+        {
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/cardinals-sign-2-tight-end-elijah-higgins-three-year-extension-per-report/",
+          "t": "\n                        Cardinals reportedly extend No. 2 TE Elijah Higgins, going all-in on tight ends amid WR injuries\n                  "
+        }
+      ],
+      "en": {
+        "titulo": "Arizona Cardinals extend tight end Elijah Higgins' contract",
+        "claves": [
+          "Cardinals secured a contract extension for backup tight end Elijah Higgins.",
+          "Arizona has invested over $100 million in 2 top tight ends.",
+          "His offensive role expands due to injuries across the receiving corps."
+        ],
+        "contexto": "The Arizona Cardinals agreed to a contract extension with backup tight end Elijah Higgins. Combined with Trey McBride's 2025 extension, the organization has now committed over $100 million in total contracts to their 2 main tight ends. Arizona is leaning heavily into 2 tight end sets in Week 10 amidst multiple receiver injuries.",
+        "fantasy": "Higgins gains speculative value in deep 14-team leagues and TE Premium formats. While Trey McBride remains the clear alpha tight end in target share, Higgins' commitment and red-zone presence make him a viable depth piece. He does not overtake McBride, but his floor improves as a dependable secondary pass catcher in this offense.",
+        "equipo_impacto": "Arizona reinforces its heavy offensive identity by utilizing 2 tight end personnel packages more frequently on game days. This structural commitment stabilizes their short passing rhythm while offering extra blocking upfront.",
+        "accion": "Add Elijah Higgins today in deep leagues or TE Premium formats."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "ARI",
+      "equipos": [
+        "ARI"
+      ],
+      "jugadores": [
+        "10231"
       ],
       "menciona": []
     },
     {
-      "id": "n20261113175301",
-      "fecha": "2026-11-13T17:53:54.274Z",
+      "id": "n20261113231202",
+      "fecha": "2026-11-13T23:12:15.926Z",
       "semana": 10,
-      "titulo": "Isaiah Likely destaca como ala cerrada titular en semana 10",
+      "titulo": "Lamar Jackson apunta a regresar en la semana 16",
       "claves": [
-        "Gran actuación en el juego de jueves por la noche.",
-        "Consolidado como blanco clave en el esquema ofensivo.",
-        "Proyección sólida de 13.3 pts PPR en semana 10."
+        "Lamar Jackson fue intervenido quirúrgicamente por su lesión en el pulgar.",
+        "Reportes estiman su retorno a las canchas para la semana 16.",
+        "El mariscal sigue descartado en fantasy mientras continúa en lista IR."
       ],
-      "contexto": "Tras una destacada actuación en el juego de jueves por la noche, Isaiah Likely reafirma su estatus dentro del ataque aéreo de Baltimore. El ala cerrada respondió a la exigencia sumando yardas cruciales y recepciones de impacto. Los analistas destacan que su involucramiento reciente no fue casualidad, sino el reflejo de un papel cada vez más amplio en la ofensiva de su equipo durante esta semana 10.",
-      "fantasy": "Likely sube como ala cerrada titular indiscutible en formatos PPR y ligas profundas. Con una proyección de 13.3 pts para la semana 10, ofrece un piso seguro y un techo interesante por sus oportunidades en zona de anotación. Si careces de un TE1 de élite, es una solución confiable para tu alineación estelar.",
-      "equipo_impacto": "El surgimiento de Likely le da variantes tácticas a Baltimore. Su habilidad para conseguir yardas tras la recepción libera espacios para los receptores abiertos y mantiene vivas las series ofensivas del conjunto.",
-      "accion": "Coloca a Isaiah Likely en tu alineación titular de TE para la semana 10.",
-      "en": {
-        "titulo": "Isaiah Likely shines as starting tight end option",
-        "claves": [
-          "Strong performance on Thursday Night Football.",
-          "Established as a key target in the passing scheme.",
-          "Solid projection of 13.3 PPR pts in Week 10."
-        ],
-        "contexto": "Following a strong Thursday Night Football performance, Isaiah Likely reaffirms his status within Baltimore's passing attack. The tight end responded with crucial yardage and impactful catches. Analysts note his recent involvement was no fluke, but rather a reflection of an expanding target share in his team's offense heading into Week 10.",
-        "fantasy": "Likely climbs into auto-start territory at tight end for PPR and deep fantasy formats. Boasting a projection of 13.3 PPR pts for Week 10, he offers a stable floor alongside touchdown upside. If you lack an elite TE1, he serves as a reliable lineup solution.",
-        "equipo_impacto": "Likely's emergence adds valuable tactical options for Baltimore's offensive unit. His playmaking ability after the catch creates open space for wide receivers while consistently sustaining critical drives for the entire offense.",
-        "accion": "Insert Isaiah Likely into your starting tight end slot for Week 10."
-      },
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "BAL",
-      "equipos": [
-        "BAL",
-        "NYG"
-      ],
-      "jugadores": [
-        "8131"
-      ],
+      "contexto": "Tras someterse a una cirugía en el pulgar, el mariscal de campo Lamar Jackson ya tiene una fecha proyectada de regreso. Según reportes recientes, la recuperación de Jackson le permitiría volver a disputar partidos hacia la semana 16 de la temporada. Por el momento permanece registrado en la reserva de lesionados de Baltimore.",
+      "fantasy": "Jackson se mantiene fuera de tus alineaciones y debe guardarse en la casilla IR de tu liga. Si tu equipo está clasificado a playoffs, mantenerlo es clave para las semanas 16 y 17. Si estás al borde de la eliminación, contempla negociarlo por piezas titulares sanas para ganar partidos hoy.",
+      "equipo_impacto": "Baltimore continuará utilizando a su mariscal de campo suplente en la ofensiva por varias semanas más. El plan de juego mantendrá un enfoque terrestre directo mientras Jackson completa su proceso de rehabilitación.",
+      "accion": "Mantén a Lamar Jackson en tu casilla IR si tienes boleto asegurado a playoffs.",
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-          "t": "Fantasy buzz: Likely, Skattebo come up big on TNF but only one is an auto-start"
+          "u": "https://www.espn.com/video/clip/_/id/50474994/when-lamar-jackson-return-field",
+          "t": "When will Lamar Jackson return to the field?"
         }
+      ],
+      "en": {
+        "titulo": "Lamar Jackson projected to return in Week 16",
+        "claves": [
+          "Lamar Jackson underwent surgery for his thumb injury recently.",
+          "Reports project a potential return to action around Week 16.",
+          "The quarterback remains inactive on Injured Reserve for fantasy rosters."
+        ],
+        "contexto": "Following thumb surgery, quarterback Lamar Jackson now has a projected timeline for his return. According to recent reports, Jackson could return to the field as early as Week 16 of the regular season. In the meantime, he remains on Baltimore's Injured Reserve list as he continues his post-surgical recovery process.",
+        "fantasy": "Jackson remains strictly unstartable while on IR, so keep him in your designated IR slot. If you are firmly bound for the fantasy playoffs, holding him for Weeks 16 and 17 is vital. If you are fighting for survival today, explore trading him for immediate starting production to secure a postseason spot.",
+        "equipo_impacto": "Baltimore will rely on its backup quarterback to manage the offense for multiple weeks ahead. The game plan will feature a heavy run focus until Jackson completes his rehabilitation program.",
+        "accion": "Hold Lamar Jackson in your IR slot if your playoff spot is secured."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "BAL",
+      "equipos": [
+        "BAL"
+      ],
+      "jugadores": [
+        "4881"
       ],
       "menciona": []
     }
@@ -113,6 +159,10 @@
       "estatus": "Duda"
     },
     {
+      "id": "8151",
+      "estatus": "Duda"
+    },
+    {
       "id": "6904",
       "estatus": "Fuera"
     },
@@ -121,8 +171,12 @@
       "estatus": "Fuera"
     },
     {
+      "id": "4881",
+      "estatus": "Fuera"
+    },
+    {
       "id": "5849",
-      "estatus": "Duda"
+      "estatus": "Fuera"
     },
     {
       "id": "4943",
@@ -130,14 +184,6 @@
     },
     {
       "id": "2133",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "4881",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "7525",
       "estatus": "Fuera"
     },
     {
@@ -149,19 +195,11 @@
       "estatus": "Duda"
     },
     {
-      "id": "8137",
-      "estatus": "Duda"
-    },
-    {
-      "id": "5967",
-      "estatus": "Duda"
-    },
-    {
       "id": "10232",
       "estatus": "Fuera"
     },
     {
-      "id": "8161",
+      "id": "7525",
       "estatus": "Fuera"
     },
     {
@@ -169,27 +207,15 @@
       "estatus": "Fuera"
     },
     {
-      "id": "2216",
-      "estatus": "Duda"
+      "id": "8161",
+      "estatus": "Fuera"
     },
     {
       "id": "7543",
       "estatus": "Fuera"
     },
     {
-      "id": "12519",
-      "estatus": "Duda"
-    },
-    {
-      "id": "5854",
-      "estatus": "Duda"
-    },
-    {
-      "id": "13346",
-      "estatus": "Duda"
-    },
-    {
-      "id": "13279",
+      "id": "2216",
       "estatus": "Fuera"
     },
     {
@@ -197,16 +223,20 @@
       "estatus": "Duda"
     },
     {
-      "id": "12506",
+      "id": "13346",
       "estatus": "Duda"
+    },
+    {
+      "id": "12519",
+      "estatus": "Duda"
+    },
+    {
+      "id": "13279",
+      "estatus": "Fuera"
     },
     {
       "id": "7611",
       "estatus": "Duda"
-    },
-    {
-      "id": "12534",
-      "estatus": "Fuera"
     },
     {
       "id": "4137",
@@ -214,6 +244,14 @@
     },
     {
       "id": "7083",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "13276",
+      "estatus": "Duda"
+    },
+    {
+      "id": "12534",
       "estatus": "Fuera"
     },
     {
@@ -225,28 +263,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12490",
-      "estatus": "Duda"
-    },
-    {
-      "id": "5947",
-      "estatus": "Duda"
-    },
-    {
-      "id": "12474",
-      "estatus": "Duda"
-    },
-    {
-      "id": "5872",
-      "estatus": "Duda"
-    },
-    {
-      "id": "5844",
-      "estatus": "Duda"
-    },
-    {
       "id": "11635",
       "estatus": "Duda"
+    },
+    {
+      "id": "8142",
+      "estatus": "Fuera"
     },
     {
       "id": "13287",
@@ -257,40 +279,64 @@
       "estatus": "Fuera"
     },
     {
-      "id": "10236",
+      "id": "7526",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "5844",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "6819",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "9756",
       "estatus": "Duda"
     },
     {
-      "id": "8142",
+      "id": "8210",
+      "estatus": "Duda"
+    },
+    {
+      "id": "12529",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "11625",
+      "estatus": "Duda"
+    },
+    {
+      "id": "8121",
       "estatus": "Fuera"
     }
   ],
   "agregados": [
+    "13337",
     "2505",
     "12718",
     "7562",
-    "12491",
     "5995",
+    "12491",
     "10219",
     "IND",
     "6427",
     "8134",
-    "11539",
-    "13269",
     "9756",
+    "13269",
+    "11539",
     "7042",
-    "5119",
-    "4177",
     "13296",
-    "11579",
     "3271",
+    "12540",
+    "5119",
     "9502",
-    "NYG",
+    "4177",
+    "11579",
+    "9480",
     "96",
-    "BAL",
-    "13298",
-    "4663",
-    "9480"
+    "4993",
+    "13298"
   ],
   "soltados": [
     "6130",
@@ -299,23 +345,24 @@
     "2020",
     "11435",
     "5849",
-    "650",
     "13424",
+    "650",
     "DET",
-    "8161",
-    "NE",
     "11625",
-    "8129",
-    "4035",
-    "TB",
-    "11834",
-    "11581",
+    "NE",
+    "8161",
     "3271",
-    "NO",
+    "11834",
+    "4035",
+    "8129",
+    "TB",
+    "11581",
     "5012",
+    "4881",
     "4037",
-    "13150",
-    "9482"
+    "NO",
+    "11637",
+    "3286"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",

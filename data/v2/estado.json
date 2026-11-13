@@ -1,21 +1,21 @@
 {
-  "fecha": "2026-11-13T17:56:08.843Z",
+  "fecha": "2026-11-13T23:14:35.729Z",
   "log": [
     "[0.0s] Inicio",
-    "[3.8s] YouTube: 15 nuevos, 26 en total",
-    "[4.4s] Sleeper: 3233 activos, semana 10 · proyecciones S10: 9418",
-    "[5.6s] ESPN: lesiones 799 · noticias 50",
-    "[5.6s] Modelo FX v3 : 447 proyecciones propias para la semana 10",
-    "[6.1s] Fuentes nuevas: 53 · horario pico · toca IA: true",
-    "[6.3s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[32.8s] IA OK con gemini-3.6-flash",
-    "[32.8s] Noticias nuevas verificadas: 2",
-    "[61.3s] IA OK con gemini-3.6-flash",
-    "[61.3s] Resumen semana 10",
-    "[99.8s] IA OK con gemini-3.6-flash",
-    "[99.8s] Blog: ¿Vender o aguantar a Cairo Santos? Valor de trade semana 10 / Should you sell or hold Cairo Santos? Week 10 trade value",
-    "[140.3s] IA OK con gemini-3.6-flash",
-    "[140.3s] Blog: ¿Arrancar o sentar a CeeDee Lamb en la semana 10? / Should you start CeeDee Lamb in Week 10?",
-    "[140.3s] Listo: 2 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 508 · semana de juego 10 · IA usada hoy 11/40"
+    "[0.2s] YouTube: 15 nuevos, 26 en total",
+    "[0.7s] Sleeper: 3233 activos, semana 10 · proyecciones S10: 9418",
+    "[2.4s] ESPN: lesiones 799 · noticias 50",
+    "[3.2s] Auto-ajuste FX: {\"hl\":8,\"mEf\":40,\"mTd\":160,\"aPrev\":0.3} error 4.696 → 4.696",
+    "[3.2s] Modelo FX v3 : 446 proyecciones propias para la semana 10",
+    "[3.5s] Fuentes nuevas: 33 · horario pico · toca IA: true",
+    "[3.6s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[4.0s] Modelo saturado, pruebo otro gemini-3.6-flash 503",
+    "[36.4s] IA OK con gemini-3.5-flash",
+    "[36.4s] Noticias nuevas verificadas: 3",
+    "[100.1s] Gemini respuesta inválida gemini-3.6-flash MAX_TOKENS {\"es\":{\"titulo\":\"¿Juega Kenneth Walker III en semana 10? Lesión y fantasy\",\"descripcion\":\"Kenneth Walker III reporta lesión de ingle para la semana 10 ante ATL.",
+    "[100.1s] Blog: respuesta incompleta para Kenneth Walker III",
+    "[143.0s] IA OK con gemini-3.6-flash",
+    "[143.0s] Blog: ¿Vale la pena agregar a Emmett Johnson en la semana 10? / Should you pick up Emmett Johnson in Week 10?",
+    "[143.0s] Listo: 3 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 511 · semana de juego 10 · IA usada hoy 14/40"
   ]
 }
