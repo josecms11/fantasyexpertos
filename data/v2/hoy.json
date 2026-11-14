@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-13T23:12:15.926Z",
-  "ultimaIA": "2026-11-13T23:12:15.926Z",
+  "actualizado": "2026-11-14T03:20:28.273Z",
+  "ultimaIA": "2026-11-14T03:20:28.273Z",
   "semana": 10,
   "semanaStats": 10,
   "temporada": "2026",
@@ -14,137 +14,93 @@
   ],
   "noticias": [
     {
-      "id": "n20261113231200",
-      "fecha": "2026-11-13T23:12:15.926Z",
+      "id": "n20261114032000",
+      "fecha": "2026-11-14T03:20:28.273Z",
       "semana": 10,
-      "titulo": "Philadelphia Eagles liberan a Hollywood Brown tras solicitud",
+      "titulo": "Rashid Shaheed regresa con Seahawks para semana 10",
       "claves": [
-        "Eagles cortaron a Hollywood Brown tras pedir su salida en semana 10.",
-        "El receptor tuvo muy poca actividad en la 1ra mitad del año.",
-        "Su valor fantasy es de 0 hasta firmar con otro equipo."
+        "Rashid Shaheed vuelve al emparrillado ante Raiders en semana 10.",
+        "Drew Lock será el mariscal titular por la baja de Sam Darnold.",
+        "La ofensiva aérea recupera una pieza explosiva para abrir el campo rival."
       ],
-      "contexto": "Eagles liberaron oficialmente a Hollywood Brown tras una petición formal del propio receptor. Brown tuvo una participación casi nula en la ofensiva de Philadelphia durante los 1ros partidos del año. Ante la falta de oportunidades en la 1ra mitad de la temporada, ambas partes decidieron separar caminos en la semana 10.",
-      "fantasy": "En este momento su valor fantasy es de 0. Si jugabas en ligas profundas o formatos dynasty donde aún lo mantenías en la banca, debes cortarlo hoy mismo. Queda como agente libre sin impacto inmediato hasta que firme con un nuevo equipo en la semana 10. Su salida aclara la rotación de pases en Philadelphia.",
-      "equipo_impacto": "La baja de Brown no altera los planes tácticos del ataque aéreo de Eagles, dado que su involucramiento en el campo era mínimo. Los objetivos principales se concentran en las opciones titulares restantes del esquema ofensivo.",
-      "accion": "Corta a Hollywood Brown hoy mismo de tu plantilla fantasy en cualquier formato.",
+      "contexto": "Seattle Seahawks confirmó el retorno de Rashid Shaheed para el compromiso de la semana 10 frente a Las Vegas Raiders tras superar sus problemas físicos. El equipo afronta bajas sensibles en su plantilla, entre ellas la ausencia del pasador Sam Darnold por una lesión de cuádriceps. Ante este panorama, Drew Lock tomará los controles de la ofensiva titular, recibiendo el respaldo inmediato del veloz receptor en su visita a territorio de Las Vegas.",
+      "fantasy": "El regreso de Shaheed reactiva su consideración en formatos de 12 o más ligas como una opción de Flex profundo con techo alto. Aunque la presencia de Lock como mariscal titular reduce la consistencia general del ataque aéreo, la capacidad del receptor para generar jugadas grandes sostiene su valor en ligas PPR y estándar. Conviene monitorear cómo se distribuyen los envíos largos en este nuevo esquema ofensivo antes de colocarlo como titular fijo.",
+      "equipo_impacto": "La reincorporación de Shaheed alivia la presión sobre el resto del cuerpo de receptores de Seattle y ofrece una válvula de escape profunda para Drew Lock. Su velocidad obliga a las defensas rivales a retroceder, creando espacios libres en zonas intermedias.",
+      "accion": "Activa a Rashid Shaheed únicamente como opción Flex arriesgada en ligas profundas de 12 o más participantes.",
+      "en": {
+        "titulo": "Rashid Shaheed returns for Seahawks in Week 10",
+        "claves": [
+          "Rashid Shaheed returns to the field against the Raiders in Week 10.",
+          "Drew Lock will start at quarterback in place of injured Sam Darnold.",
+          "Seattle's aerial attack regains explosive speed to stretch opposing defensive coverages."
+        ],
+        "contexto": "The Seattle Seahawks confirmed that Rashid Shaheed will return to the lineup for Week 10 against the Las Vegas Raiders after battling injuries. The franchise faces multiple roster absences, including starting passer Sam Darnold, who remains out due to a quadriceps injury. Consequently, Drew Lock will step in under center once again, gaining an immediate deep threat on the outside as Seattle travels to Las Vegas for this conference matchup.",
+        "fantasy": "Shaheed's return restores his fantasy value as a high-ceiling Flex option in 12-team leagues. While Lock starting at quarterback dampens overall passing efficiency and volume, Shaheed's big-play ability provides sudden upside in both PPR and standard scoring formats. Fantasy managers should treat him as a boom-or-bust starter for Week 10, considering the uncertain target distribution within this adjusted offense under a backup signal-caller.",
+        "equipo_impacto": "Shaheed's field-stretching presence immediately opens up underneath zones for Seattle's pass catchers while giving Lock a trusted deep target. Opposing defenses must respect his speed, lightening defensive boxes and improving spacing across the unit.",
+        "accion": "Insert Rashid Shaheed into lineups only as a volatile Flex option in deeper 12-team fantasy leagues."
+      },
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50473514/sources-eagles-release-wr-hollywood-brown-per-request",
-          "t": "Eagles release wide receiver Hollywood Brown per request"
-        },
-        {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/eagles-release-wide-receiver-hollywood-brown-upon-his-request-according-to-report/",
-          "t": "\n                        Eagles release wide receiver Hollywood Brown upon his request, according to report\n                    "
+          "u": "https://www.espn.com/nfl/story/_/id/50475505/seahawks-raiders-week-10-darnold-lock-shaheed-returns",
+          "t": "Seahawks are hurting with injuries, but two players will return vs. Raiders"
         }
       ],
-      "en": {
-        "titulo": "Philadelphia Eagles release Hollywood Brown per his request",
-        "claves": [
-          "Eagles released Hollywood Brown following his formal request in Week 10.",
-          "The veteran wide receiver logged minimal playing time this season.",
-          "His fantasy value is 0 until he signs with another franchise."
-        ],
-        "contexto": "The Philadelphia Eagles officially released wide receiver Hollywood Brown after he requested to be let go. Brown saw very limited playing time during the 1st half of the regular season. Given his lack of target volume in the offensive scheme, both sides opted to part ways as Week 10 gets underway.",
-        "fantasy": "His fantasy value is currently 0 across all standard redraft formats. If you were holding him on deep benches or dynasty rosters, he can be safely dropped today. He becomes an unrestricted free agent whose outlook depends entirely on his next destination. His departure frees up roster space without changing target shares.",
-        "equipo_impacto": "Losing Brown changes nothing for the Eagles' passing game, as he was barely utilized on offense. The team's aerial target distribution remains concentrated among the primary remaining options.",
-        "accion": "Drop Hollywood Brown immediately from your fantasy rosters in all redraft leagues."
-      },
-      "etiqueta": "TENDENCIA",
-      "impacto": "BAJA",
-      "equipo": "PHI",
-      "equipos": [
-        "PHI"
-      ],
-      "jugadores": [],
-      "menciona": []
-    },
-    {
-      "id": "n20261113231201",
-      "fecha": "2026-11-13T23:12:15.926Z",
-      "semana": 10,
-      "titulo": "Arizona Cardinals extienden el contrato de Elijah Higgins",
-      "claves": [
-        "Cardinals aseguraron la extensión de contrato de su ala cerrada suplente.",
-        "Arizona supera los $100 millones invertidos en 2 alas cerradas.",
-        "Su rol gana relevancia ante múltiples lesiones en el cuerpo de receptores."
-      ],
-      "contexto": "Arizona Cardinals cerró una extensión de contrato para su ala cerrada suplente, Elijah Higgins. Sumado al acuerdo previo de Trey McBride en 2025, la franquicia ya rebasó los $100 millones en compromisos económicos para sus 2 alas cerradas principales. La directiva apuesta de lleno por alineaciones con 2 alas cerradas en la semana 10.",
-      "fantasy": "Higgins se convierte en una opción interesante en ligas profundas de 14 o más equipos y formatos TE Premium. Aunque Trey McBride domina el volumen principal de pases en Arizona, el nuevo contrato y las lesiones de receptores le aseguran minutos en zona de anotación. Suben sus oportunidades como reserva de alto potencial.",
-      "equipo_impacto": "Cardinals refuerza su esquema con 2 alas cerradas en el campo de juego. Esto le permite al ataque sostener un volumen constante por pase en trayectorias cortas y brindar apoyo directo en el juego por tierra.",
-      "accion": "Agrega a Elijah Higgins en ligas profundas o formatos TE Premium hoy.",
-      "fuentes": [
-        {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/cardinals-sign-2-tight-end-elijah-higgins-three-year-extension-per-report/",
-          "t": "\n                        Cardinals reportedly extend No. 2 TE Elijah Higgins, going all-in on tight ends amid WR injuries\n                  "
-        }
-      ],
-      "en": {
-        "titulo": "Arizona Cardinals extend tight end Elijah Higgins' contract",
-        "claves": [
-          "Cardinals secured a contract extension for backup tight end Elijah Higgins.",
-          "Arizona has invested over $100 million in 2 top tight ends.",
-          "His offensive role expands due to injuries across the receiving corps."
-        ],
-        "contexto": "The Arizona Cardinals agreed to a contract extension with backup tight end Elijah Higgins. Combined with Trey McBride's 2025 extension, the organization has now committed over $100 million in total contracts to their 2 main tight ends. Arizona is leaning heavily into 2 tight end sets in Week 10 amidst multiple receiver injuries.",
-        "fantasy": "Higgins gains speculative value in deep 14-team leagues and TE Premium formats. While Trey McBride remains the clear alpha tight end in target share, Higgins' commitment and red-zone presence make him a viable depth piece. He does not overtake McBride, but his floor improves as a dependable secondary pass catcher in this offense.",
-        "equipo_impacto": "Arizona reinforces its heavy offensive identity by utilizing 2 tight end personnel packages more frequently on game days. This structural commitment stabilizes their short passing rhythm while offering extra blocking upfront.",
-        "accion": "Add Elijah Higgins today in deep leagues or TE Premium formats."
-      },
       "etiqueta": "TENDENCIA",
       "impacto": "SUBE",
-      "equipo": "ARI",
+      "equipo": "SEA",
       "equipos": [
-        "ARI"
+        "SEA",
+        "LV"
       ],
       "jugadores": [
-        "10231"
+        "8676",
+        "5854",
+        "4943"
       ],
       "menciona": []
     },
     {
-      "id": "n20261113231202",
-      "fecha": "2026-11-13T23:12:15.926Z",
+      "id": "n20261114032001",
+      "fecha": "2026-11-14T03:20:28.273Z",
       "semana": 10,
-      "titulo": "Lamar Jackson apunta a regresar en la semana 16",
+      "titulo": "Kenneth Walker III sufre molestia en la ingle",
       "claves": [
-        "Lamar Jackson fue intervenido quirúrgicamente por su lesión en el pulgar.",
-        "Reportes estiman su retorno a las canchas para la semana 16.",
-        "El mariscal sigue descartado en fantasy mientras continúa en lista IR."
+        "Kenneth Walker III aparece con etiqueta cuestionable por lesión en la ingle.",
+        "El corredor proyecta 18.6 unidades en formato PPR para semana 10.",
+        "Su disponibilidad dependerá del reporte final antes del inicio del duelo."
       ],
-      "contexto": "Tras someterse a una cirugía en el pulgar, el mariscal de campo Lamar Jackson ya tiene una fecha proyectada de regreso. Según reportes recientes, la recuperación de Jackson le permitiría volver a disputar partidos hacia la semana 16 de la temporada. Por el momento permanece registrado en la reserva de lesionados de Baltimore.",
-      "fantasy": "Jackson se mantiene fuera de tus alineaciones y debe guardarse en la casilla IR de tu liga. Si tu equipo está clasificado a playoffs, mantenerlo es clave para las semanas 16 y 17. Si estás al borde de la eliminación, contempla negociarlo por piezas titulares sanas para ganar partidos hoy.",
-      "equipo_impacto": "Baltimore continuará utilizando a su mariscal de campo suplente en la ofensiva por varias semanas más. El plan de juego mantendrá un enfoque terrestre directo mientras Jackson completa su proceso de rehabilitación.",
-      "accion": "Mantén a Lamar Jackson en tu casilla IR si tienes boleto asegurado a playoffs.",
+      "contexto": "El corredor estelar Kenneth Walker III sufrió una nueva lesión en la ingle de cara al duelo de la semana 10 con Kansas City Chiefs. El parte médico oficial listó al jugador como cuestionable para el cotejo dominical tras presentar estas molestias físicas durante los entrenamientos recientes. El cuerpo técnico mantendrá en constante observación al jugador para verificar si responde favorablemente antes de recibir la autorización definitiva del cuerpo médico para jugar.",
+      "fantasy": "Walker mantiene una sólida proyección de 18.6 puntos en formato PPR dentro de nuestro modelo FX, colocándolo como una opción obligatoria de RB1 si finalmente viste el uniforme. No obstante, al arrastrar la designación de cuestionable, debes preparar una alternativa emergente en tu banca en caso de que sea descartado de último minuto. Si se confirma activo, colócalo de inmediato en tu alineación titular sin dudar de su volumen terrestre habitual.",
+      "equipo_impacto": "Cualquier limitación en los acarreos de Walker obligaría al ataque de Kansas City a recargar la producción en el juego aéreo o recurrir a suplentes terrestres. Su presencia garantiza balance y efectividad dentro de la zona roja.",
+      "accion": "Mantén a Kenneth Walker III en tu alineación inicial, pero asegura un reemplazo confiable por si queda inactivo.",
+      "en": {
+        "titulo": "Kenneth Walker III battles groin injury for Chiefs",
+        "claves": [
+          "Kenneth Walker III is officially listed questionable with a groin issue.",
+          "The running back projects for 18.6 PPR points in Week 10.",
+          "His playing status will be determined before Sunday's kickoff matchup."
+        ],
+        "contexto": "Kansas City Chiefs running back Kenneth Walker III picked up a fresh groin injury ahead of the Week 10 slate. The official injury report designated him as questionable for Sunday after he experienced physical discomfort during recent practice sessions. Kansas City's coaching and medical staff will closely evaluate the running back during pregame warmups to determine whether he is fully cleared to suit up and handle his customary workload.",
+        "fantasy": "Walker remains an elite RB1 with a strong FX model projection of 18.6 PPR points for Week 10 whenever active. However, his questionable tag forces fantasy managers to prepare a contingency plan on their benches. If team officials clear him before kickoff, you should immediately start him in all formats. If he is unexpectedly ruled out, pivot swiftly to a reliable backup option.",
+        "equipo_impacto": "Walker's physical ailment could force the Chiefs to rely more heavily on passing concepts and secondary rushers. Having him healthy on the field ensures offensive balance and vital efficiency in red-zone scoring situations.",
+        "accion": "Keep Kenneth Walker III locked into starting lineups while securing a viable backup runner ready on your bench."
+      },
       "fuentes": [
         {
-          "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50474994/when-lamar-jackson-return-field",
-          "t": "When will Lamar Jackson return to the field?"
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/nfl-week-10-injury-report-chiefs-kenneth-walker-aj-brown/",
+          "t": "\n                        NFL Week 10 injury report: Chiefs&#039; Kenneth Walker has new groin injury, Patriots&#039; A.J. Brown questionable"
         }
       ],
-      "en": {
-        "titulo": "Lamar Jackson projected to return in Week 16",
-        "claves": [
-          "Lamar Jackson underwent surgery for his thumb injury recently.",
-          "Reports project a potential return to action around Week 16.",
-          "The quarterback remains inactive on Injured Reserve for fantasy rosters."
-        ],
-        "contexto": "Following thumb surgery, quarterback Lamar Jackson now has a projected timeline for his return. According to recent reports, Jackson could return to the field as early as Week 16 of the regular season. In the meantime, he remains on Baltimore's Injured Reserve list as he continues his post-surgical recovery process.",
-        "fantasy": "Jackson remains strictly unstartable while on IR, so keep him in your designated IR slot. If you are firmly bound for the fantasy playoffs, holding him for Weeks 16 and 17 is vital. If you are fighting for survival today, explore trading him for immediate starting production to secure a postseason spot.",
-        "equipo_impacto": "Baltimore will rely on its backup quarterback to manage the offense for multiple weeks ahead. The game plan will feature a heavy run focus until Jackson completes his rehabilitation program.",
-        "accion": "Hold Lamar Jackson in your IR slot if your playoff spot is secured."
-      },
       "etiqueta": "LESIÓN",
       "impacto": "BAJA",
-      "equipo": "BAL",
+      "equipo": "KC",
       "equipos": [
-        "BAL"
+        "KC"
       ],
       "jugadores": [
-        "4881"
+        "8151"
       ],
       "menciona": []
     }
@@ -317,52 +273,52 @@
     "12718",
     "7562",
     "5995",
-    "12491",
+    "12540",
     "10219",
-    "IND",
+    "12491",
     "6427",
     "8134",
     "9756",
-    "13269",
-    "11539",
-    "7042",
-    "13296",
+    "IND",
     "3271",
-    "12540",
-    "5119",
+    "13269",
+    "13296",
     "9502",
-    "4177",
-    "11579",
     "9480",
-    "96",
     "4993",
-    "13298"
+    "4177",
+    "7042",
+    "13281",
+    "11539",
+    "11579",
+    "13270",
+    "3214"
   ],
   "soltados": [
     "6130",
-    "6650",
     "10232",
-    "2020",
+    "6650",
+    "13424",
+    "11625",
     "11435",
     "5849",
-    "13424",
-    "650",
+    "10219",
     "DET",
-    "11625",
-    "NE",
-    "8161",
-    "3271",
     "11834",
-    "4035",
-    "8129",
-    "TB",
-    "11581",
-    "5012",
     "4881",
-    "4037",
-    "NO",
+    "4035",
+    "NE",
+    "3271",
+    "2020",
+    "12718",
+    "8161",
+    "3286",
+    "10213",
+    "650",
+    "5012",
+    "11581",
     "11637",
-    "3286"
+    "8129"
   ],
   "duelo": {
     "a": "Jahmyr Gibbs",
