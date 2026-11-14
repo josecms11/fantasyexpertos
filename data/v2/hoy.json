@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-14T16:44:50.796Z",
-  "ultimaIA": "2026-11-14T16:44:50.796Z",
+  "actualizado": "2026-11-14T20:58:10.558Z",
+  "ultimaIA": "2026-11-14T20:58:10.558Z",
   "semana": 10,
   "semanaStats": 10,
   "temporada": "2026",
@@ -14,90 +14,96 @@
   ],
   "noticias": [
     {
-      "id": "n20261114164401",
-      "fecha": "2026-11-14T16:44:50.796Z",
+      "id": "n20261114205800",
+      "fecha": "2026-11-14T20:58:10.558Z",
       "semana": 10,
-      "titulo": "Tee Higgins surge como valor en zona roja",
+      "titulo": "Emmett Johnson asume rol titular en Kansas City",
       "claves": [
-        "Tee Higgins perfila para TD en semana 10",
-        "15.9 pts PPR proyectados ante Steelers",
-        "Gran opción de inicio en semana 10"
+        "Kenneth Walker III queda descartado por lesión de ingle.",
+        "Emmett Johnson apunta a volumen estelar en semana 10.",
+        "Enfrenta a Falcons con potencial de RB1 en fantasy."
       ],
-      "contexto": "De acuerdo con reportes de CBS Sports, Tee Higgins se ubica como una gran oportunidad de valor para anotar en la semana 10 frente a Pittsburgh. Nuestro modelo de proyecciones le otorga 15.9 pts PPR gracias a sus oportunidades constantes en series de gol y pases profundos.",
-      "fantasy": "Higgins se consolida como un WR2 muy confiable con potencial de explotar a rango de WR1 si logra capturar un TD. En ligas de 10 y 12 equipos representa una opción de inicio sumamente sólida dentro de tu puesto de receptor o FLEX para esta semana 10 del torneo fantasy.",
-      "equipo_impacto": "La presencia de Higgins alivia la presión sobre el esquema ofensivo de Cincinnati. Su habilidad en balones divididos cerca de las diagonales ofrece un objetivo confiable que equilibra la distribución de pases en zona de anotación.",
-      "accion": "Inserta a Tee Higgins en tu puesto de WR2 o FLEX para la semana 10.",
+      "contexto": "Con Kenneth Walker III descartado para la semana 10 frente a Falcons debido a una molestia en la ingle, el novato Emmett Johnson asumirá el rol estelar en el backfield de Kansas City. Johnson, quien lideró los reclamos de waivers esta semana, recibe la oportunidad perfecta para comandar el ataque terrestre tras confirmarse la baja del estelar Walker en una semana con múltiples ausencias clave.",
+      "fantasy": "Emmett Johnson sube de inmediato a la categoría de RB2 con volumen de RB1 para formatos PPR y estándar en la semana 10. Si lograste agregarlo en waivers, mételo directo a tu alineación frente a Falcons. Sin Kenneth Walker III disponible, Johnson monopolizará los toques tempranos y acarreos de gol, otorgándote una ventaja decisiva en duelos apretados de media temporada.",
+      "equipo_impacto": "El ataque terrestre de Chiefs dependerá por completo del novato Emmett Johnson. Su dinamismo evitará que la ofensiva se vuelva predecible por aire, abriendo carriles y sosteniendo series ofensivas largas sin Walker.",
+      "accion": "Alinea a Emmett Johnson como un RB2 sólido en semana 10.",
       "en": {
-        "titulo": "Tee Higgins offers high touchdown value in Week 10",
+        "titulo": "Emmett Johnson takes over Chiefs backfield Week 10",
         "claves": [
-          "Tee Higgins prime red zone target Week 10",
-          "Projected for 15.9 PPR pts vs Steelers",
-          "Solid WR2 start across fantasy leagues"
+          "Kenneth Walker III ruled out with groin injury.",
+          "Emmett Johnson expected to handle lead backfield duties.",
+          "High-upside RB2 start against Falcons in Week 10."
         ],
-        "contexto": "CBS Sports identifies Tee Higgins as a high value touchdown target for Week 10 against Pittsburgh. Our model projects him for 15.9 PPR pts based on high leverage red zone opportunities and deep targets.",
-        "fantasy": "Higgins steps up as a reliable WR2 with upside into WR1 territory if he catches a TD. He is a solid start in 10 team and 12 team leagues in your WR or FLEX spot for Week 10.",
-        "equipo_impacto": "Higgins provides a reliable big bodied target near the end zone, giving the offense versatile scoring options inside the 20 yard line.",
-        "accion": "Start Tee Higgins in your WR2 or FLEX spot for Week 10."
+        "contexto": "With Kenneth Walker III officially ruled out for Week 10 against the Falcons due to a groin injury, rookie Emmett Johnson is set to take over starting duties in Kansas City's backfield. Johnson, among the most popular waiver additions this week, steps into a prime opportunity to control early downs and red-zone work after Walker was sidelined.",
+        "fantasy": "Johnson immediately jumps into the high-end RB2 conversation with RB1 upside in PPR and standard formats for Week 10. If you secured him off waivers, slide him directly into your starting lineup against Atlanta. Without Kenneth Walker III on the field, Johnson should monopolize primary backfield touches and high-value red-zone carries for fantasy managers.",
+        "equipo_impacto": "Kansas City's rushing attack now hinges entirely on rookie Emmett Johnson. His presence should maintain offensive balance, keep drives moving, and sustain red-zone efficiency while Walker recovers from his groin injury.",
+        "accion": "Start Emmett Johnson with full confidence as an upside RB2 this week."
       },
       "etiqueta": "START",
       "impacto": "SUBE",
-      "equipo": "CIN",
+      "equipo": "KC",
       "equipos": [
-        "CIN",
-        "PIT"
+        "KC",
+        "ATL"
       ],
       "jugadores": [
-        "6801"
+        "13337",
+        "8151"
       ],
       "fuentes": [
         {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/nfl-week-10-anytime-td-best-bets-chris-olave-jonathan-taylor/",
-          "t": "\n                        NFL week 10 anytime TD best bets: Look for Chris Olave, Jonathan Taylor to find the end zone\n                    "
+          "m": "ESPN",
+          "u": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
+          "t": "Fantasy buzz: Does Emmett Johnson have RB1 upside while Kenneth Walker III sits?"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50480529/chiefs-kenneth-walker-iii-groin-sit-sources-say",
+          "t": "Chiefs' Kenneth Walker III (groin) to sit out vs. Falcons"
         }
       ],
       "menciona": []
     },
     {
-      "id": "n20261114164402",
-      "fecha": "2026-11-14T16:44:50.796Z",
+      "id": "n20261114205801",
+      "fecha": "2026-11-14T20:58:10.558Z",
       "semana": 10,
-      "titulo": "Amon-Ra St. Brown encabeza duelo internacional en Munich",
+      "titulo": "Xavier Legette es activado por Panthers en semana 10",
       "claves": [
-        "Amon-Ra St. Brown listo para semana 10",
-        "Proyección de 18.8 pts PPR",
-        "Estatus questionable monitoreado por costillas"
+        "Xavier Legette fue activado tras superar lesión de rodilla.",
+        "Fuera de acción desde el triunfo en semana 2.",
+        "Regresa al cuerpo de receptores de Carolina Panthers."
       ],
-      "contexto": "ESPN destaca el choque internacional en Munich donde participará Amon-Ra St. Brown en la semana 10. A pesar de figurar como questionable por una molestia en las costillas, la estrella de Detroit mantiene una proyección estelar de 18.8 pts PPR según nuestro modelo de pronósticos.",
-      "fantasy": "Mientras sea ratificado como activo antes del encuentro, St. Brown debe estar en tu alineación como un WR1 de elite. Monitorea los reportes de lesionados del domingo por la mañana debido a su dolencia en las costillas antes de definir tu roster final de la semana 10.",
-      "equipo_impacto": "La presencia de St. Brown sobre el emparrillado mueve las cadenas constantemente, abriendo espacios para el ataque terrestre y permitiendo que la ofensiva opere con mayor efectividad en series dentro de la zona roja enemiga.",
-      "accion": "Confirma su titularidad el domingo por la mañana y arráncalo si juega en semana 10.",
+      "contexto": "Carolina Panthers activó al receptor novato Xavier Legette de la reserva de lesionados antes de encarar la semana 10. Legette permanecía fuera desde la semana 2, cuando sufrió una lesión de rodilla en el triunfo sobre Falcons. Su regreso a la nómina activa marca un paso relevante en su proceso, reintegrándose a los entrenamientos y a la dinámica aérea de la franquicia.",
+      "fantasy": "Xavier Legette gana valor a futuro en ligas profundas de 12 o 14 equipos, pero debe quedarse en tu banca en semana 10. Viene de un parón largo desde semana 2 y su tiempo de juego inicial podría ser limitado. No lo arriesgues todavía como titular, pero sí vigila de cerca su participación de rutas y química en zona roja.",
+      "equipo_impacto": "Carolina recupera una amenaza física en el perímetro para estirar el campo rival. Su retorno abrirá espacios interiores para el resto de los receptores y diversificará el plan de juego aéreo del equipo.",
+      "accion": "Mantén a Xavier Legette en la banca mientras demuestra ritmo de juego.",
       "en": {
-        "titulo": "Amon-Ra St. Brown set for Munich international game",
+        "titulo": "Panthers activate Xavier Legette from injured reserve",
         "claves": [
-          "Amon-Ra St. Brown headlines Week 10 game",
-          "Projected for 18.8 PPR pts",
-          "Questionable tag due to rib injury"
+          "Xavier Legette activated from injured reserve before Week 10.",
+          "Sidelined since suffering a knee injury in Week 2.",
+          "Panthers regain an athletic target for their passing attack."
         ],
-        "contexto": "ESPN highlights Amon-Ra St. Brown's international matchup in Munich for Week 10. Despite his questionable tag with a rib issue, our FX model projects him for 18.8 PPR pts.",
-        "fantasy": "As long as he is active prior to kickoff, St. Brown remains an elite WR1 start. Keep an eye on Sunday morning inactive lists regarding his rib injury before finalizing your lineup for Week 10.",
-        "equipo_impacto": "St. Brown's presence moves the chains consistently for Detroit, creating lighter boxes for the running game and opening up the offense.",
-        "accion": "Check Sunday morning reports and start Amon-Ra St. Brown if active for Week 10."
+        "contexto": "The Carolina Panthers activated rookie wide receiver Xavier Legette from injured reserve ahead of Week 10 action. Legette had been sidelined since Week 2, when he suffered a knee injury during a victory over the Falcons. His return to the active roster is a major step forward, restoring a key piece to Carolina's passing game after a multi-week absence.",
+        "fantasy": "Legette gains long-term appeal in 12-team or 14-team leagues, but fantasy managers must keep him on the bench for Week 10. Coming off an extended absence since Week 2, his snap count and route participation could be capped. Stash him for depth, but wait for confirmed target share before trusting him in starting lineups.",
+        "equipo_impacto": "Carolina adds a physical perimeter receiver capable of stretching opposing defenses. His return provides quarterback support, takes pressure off fellow pass catchers, and creates more explosive downfield passing opportunities.",
+        "accion": "Keep Xavier Legette stashed on your bench until his snaps ramp up."
       },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "DET",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "CAR",
       "equipos": [
-        "DET"
+        "CAR"
       ],
       "jugadores": [
-        "7547"
+        "11626"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50475710/nfl-germany-lions-amon-ra-st-brown-munich",
-          "t": "Untold stories of Detroit Lions WR Amon-Ra St. Brown's German upbringing"
+          "u": "https://www.espn.com/nfl/story/_/id/50481450/panthers-xavier-legette-week-2-activated-ir",
+          "t": "Panthers WR Xavier Legette, out since Week 2 with knee injury, activated from IR"
         }
       ],
       "menciona": []
@@ -267,56 +273,56 @@
   ],
   "agregados": [
     "13337",
-    "2505",
     "12540",
-    "7562",
-    "12718",
+    "2505",
     "5995",
+    "7562",
     "3271",
     "10219",
-    "6427",
+    "12718",
     "12491",
+    "6427",
     "9480",
-    "8134",
     "3214",
     "4993",
-    "9756",
-    "13296",
-    "12499",
     "9502",
+    "8134",
+    "13296",
     "IND",
-    "13269",
-    "13281",
-    "13270",
     "12700",
-    "4177",
-    "8122"
+    "12499",
+    "8122",
+    "9756",
+    "9479",
+    "13269",
+    "13270",
+    "13281"
   ],
   "soltados": [
     "6130",
-    "13424",
     "11625",
+    "13424",
     "10232",
-    "10219",
+    "11435",
     "6650",
     "5849",
-    "11435",
     "12718",
-    "11834",
+    "10219",
     "4035",
-    "4881",
+    "11834",
     "3286",
     "11783",
     "10213",
-    "3271",
-    "11628",
-    "11581",
-    "DET",
-    "NE",
     "13276",
+    "11581",
+    "11628",
     "11637",
+    "DET",
+    "4881",
+    "NE",
     "5012",
-    "9480"
+    "11576",
+    "3271"
   ],
   "duelo": {
     "a": "Brock Purdy",
