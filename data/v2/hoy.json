@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-14T10:42:45.106Z",
-  "ultimaIA": "2026-11-14T10:42:45.106Z",
+  "actualizado": "2026-11-14T16:44:50.796Z",
+  "ultimaIA": "2026-11-14T16:44:50.796Z",
   "semana": 10,
   "semanaStats": 10,
   "temporada": "2026",
@@ -14,44 +14,90 @@
   ],
   "noticias": [
     {
-      "id": "n20261114104200",
-      "fecha": "2026-11-14T10:42:45.106Z",
+      "id": "n20261114164401",
+      "fecha": "2026-11-14T16:44:50.796Z",
       "semana": 10,
-      "titulo": "Drew Mestemaker busca consolidar su perfil rumbo al Heisman",
+      "titulo": "Tee Higgins surge como valor en zona roja",
       "claves": [
-        "Drew Mestemaker está a 1 victoria de entrar a la carrera Heisman",
-        "Oklahoma State enfrentará a Texas Tech en la semana 11",
-        "Su valor en ligas Dynasty sube rumbo al Draft NFL"
+        "Tee Higgins perfila para TD en semana 10",
+        "15.9 pts PPR proyectados ante Steelers",
+        "Gran opción de inicio en semana 10"
       ],
-      "contexto": "Drew Mestemaker está a 1 victoria de meterse de lleno a la conversación por el Trofeo Heisman. El pasador de Oklahoma State busca dar el campanazo ante Texas Tech en la semana 11 del colegial. El triunfo de este calibre no solo impulsaría a su universidad, sino que colocaría sus números individuales en los reflectores nacionales rumbo al Draft NFL. Mestemaker ha mostrado nivel elite y este duelo será clave para su evaluación profesional.",
-      "fantasy": "Para ligas Dynasty y formatos C2C (College to Canton), el valor de Drew Mestemaker va en aumento constante. Su actuación en la semana 11 ante Texas Tech definirá si escala al top 5 de pasadores en el próximo Draft NFL. Si mantienes espacio en el taxi squad de tu liga Dynasty, monitorear su perfil desde hoy te dará 1 ventaja enorme antes de que su valor se dispare en los borradores de novatos del próximo año.",
-      "equipo_impacto": "El ataque de Oklahoma State depende por completo del ritmo que imponga Drew Mestemaker. 1 victoria en la semana 11 consolidará el esquema ofensivo del equipo, elevando las proyecciones de sus receptores principales a 1 nivel mucho más competitivo de cara a la recta final del calendario colegial.",
-      "accion": "Agrégalo a tu lista de seguimiento en ligas Dynasty antes de la semana 11.",
+      "contexto": "De acuerdo con reportes de CBS Sports, Tee Higgins se ubica como una gran oportunidad de valor para anotar en la semana 10 frente a Pittsburgh. Nuestro modelo de proyecciones le otorga 15.9 pts PPR gracias a sus oportunidades constantes en series de gol y pases profundos.",
+      "fantasy": "Higgins se consolida como un WR2 muy confiable con potencial de explotar a rango de WR1 si logra capturar un TD. En ligas de 10 y 12 equipos representa una opción de inicio sumamente sólida dentro de tu puesto de receptor o FLEX para esta semana 10 del torneo fantasy.",
+      "equipo_impacto": "La presencia de Higgins alivia la presión sobre el esquema ofensivo de Cincinnati. Su habilidad en balones divididos cerca de las diagonales ofrece un objetivo confiable que equilibra la distribución de pases en zona de anotación.",
+      "accion": "Inserta a Tee Higgins en tu puesto de WR2 o FLEX para la semana 10.",
       "en": {
-        "titulo": "Drew Mestemaker aims to boost Heisman case in Week 11",
+        "titulo": "Tee Higgins offers high touchdown value in Week 10",
         "claves": [
-          "Drew Mestemaker is 1 win away from Heisman trophy conversation",
-          "Oklahoma State plays Texas Tech in a crucial Week 11 matchup",
-          "Stock rises significantly for Dynasty and C2C fantasy leagues"
+          "Tee Higgins prime red zone target Week 10",
+          "Projected for 15.9 PPR pts vs Steelers",
+          "Solid WR2 start across fantasy leagues"
         ],
-        "contexto": "Drew Mestemaker is just 1 win away from entering the Heisman Trophy conversation. The Oklahoma State quarterback aims to lead his team to an upset victory against Texas Tech in Week 11. A high-profile win of this magnitude would not only boost his college program but also place his individual performance directly under the national spotlight ahead of the upcoming NFL Draft. Mestemaker continues to demonstrate elite upside.",
-        "fantasy": "For managers in Dynasty and C2C (College to Canton) formats, Drew Mestemaker is gaining significant traction. His performance in Week 11 against Texas Tech will play a pivotal role in determining whether he climbs into top-tier rookie draft status. Keeping close tabs on his profile right now provides 1 distinct strategic edge before his stock surges further in upcoming rookie drafts next season.",
-        "equipo_impacto": "Oklahoma State's offense relies heavily on the tempo set by Drew Mestemaker. Securing 1 major victory in Week 11 will solidify the team's offensive game plan, lifting the overall fantasy outlook for his surrounding playmakers as they navigate the closing stretch of the season.",
-        "accion": "Add him to your Dynasty watchlist immediately ahead of Week 11."
+        "contexto": "CBS Sports identifies Tee Higgins as a high value touchdown target for Week 10 against Pittsburgh. Our model projects him for 15.9 PPR pts based on high leverage red zone opportunities and deep targets.",
+        "fantasy": "Higgins steps up as a reliable WR2 with upside into WR1 territory if he catches a TD. He is a solid start in 10 team and 12 team leagues in your WR or FLEX spot for Week 10.",
+        "equipo_impacto": "Higgins provides a reliable big bodied target near the end zone, giving the offense versatile scoring options inside the 20 yard line.",
+        "accion": "Start Tee Higgins in your WR2 or FLEX spot for Week 10."
       },
-      "etiqueta": "TENDENCIA",
+      "etiqueta": "START",
       "impacto": "SUBE",
-      "equipo": "OKST",
+      "equipo": "CIN",
       "equipos": [
-        "OKST",
-        "TTU"
+        "CIN",
+        "PIT"
       ],
-      "jugadores": [],
+      "jugadores": [
+        "6801"
+      ],
       "fuentes": [
         {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/drew-mestemaker-one-win-away-100703900.html",
-          "t": "Drew Mestemaker is one win away from crashing the Heisman race"
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/nfl-week-10-anytime-td-best-bets-chris-olave-jonathan-taylor/",
+          "t": "\n                        NFL week 10 anytime TD best bets: Look for Chris Olave, Jonathan Taylor to find the end zone\n                    "
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261114164402",
+      "fecha": "2026-11-14T16:44:50.796Z",
+      "semana": 10,
+      "titulo": "Amon-Ra St. Brown encabeza duelo internacional en Munich",
+      "claves": [
+        "Amon-Ra St. Brown listo para semana 10",
+        "Proyección de 18.8 pts PPR",
+        "Estatus questionable monitoreado por costillas"
+      ],
+      "contexto": "ESPN destaca el choque internacional en Munich donde participará Amon-Ra St. Brown en la semana 10. A pesar de figurar como questionable por una molestia en las costillas, la estrella de Detroit mantiene una proyección estelar de 18.8 pts PPR según nuestro modelo de pronósticos.",
+      "fantasy": "Mientras sea ratificado como activo antes del encuentro, St. Brown debe estar en tu alineación como un WR1 de elite. Monitorea los reportes de lesionados del domingo por la mañana debido a su dolencia en las costillas antes de definir tu roster final de la semana 10.",
+      "equipo_impacto": "La presencia de St. Brown sobre el emparrillado mueve las cadenas constantemente, abriendo espacios para el ataque terrestre y permitiendo que la ofensiva opere con mayor efectividad en series dentro de la zona roja enemiga.",
+      "accion": "Confirma su titularidad el domingo por la mañana y arráncalo si juega en semana 10.",
+      "en": {
+        "titulo": "Amon-Ra St. Brown set for Munich international game",
+        "claves": [
+          "Amon-Ra St. Brown headlines Week 10 game",
+          "Projected for 18.8 PPR pts",
+          "Questionable tag due to rib injury"
+        ],
+        "contexto": "ESPN highlights Amon-Ra St. Brown's international matchup in Munich for Week 10. Despite his questionable tag with a rib issue, our FX model projects him for 18.8 PPR pts.",
+        "fantasy": "As long as he is active prior to kickoff, St. Brown remains an elite WR1 start. Keep an eye on Sunday morning inactive lists regarding his rib injury before finalizing your lineup for Week 10.",
+        "equipo_impacto": "St. Brown's presence moves the chains consistently for Detroit, creating lighter boxes for the running game and opening up the offense.",
+        "accion": "Check Sunday morning reports and start Amon-Ra St. Brown if active for Week 10."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "NEUTRO",
+      "equipo": "DET",
+      "equipos": [
+        "DET"
+      ],
+      "jugadores": [
+        "7547"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50475710/nfl-germany-lions-amon-ra-st-brown-munich",
+          "t": "Untold stories of Detroit Lions WR Amon-Ra St. Brown's German upbringing"
         }
       ],
       "menciona": []
@@ -63,11 +109,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "7547",
-      "estatus": "Duda"
+      "id": "8151",
+      "estatus": "Fuera"
     },
     {
-      "id": "8151",
+      "id": "7547",
       "estatus": "Duda"
     },
     {
@@ -79,11 +125,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4881",
+      "id": "5849",
       "estatus": "Fuera"
     },
     {
-      "id": "5849",
+      "id": "2133",
       "estatus": "Fuera"
     },
     {
@@ -91,7 +137,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "2133",
+      "id": "4881",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "7525",
       "estatus": "Fuera"
     },
     {
@@ -107,7 +157,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "7525",
+      "id": "8161",
       "estatus": "Fuera"
     },
     {
@@ -115,7 +165,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "8161",
+      "id": "2216",
       "estatus": "Fuera"
     },
     {
@@ -123,11 +173,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "2216",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "5859",
+      "id": "12519",
       "estatus": "Duda"
     },
     {
@@ -135,16 +181,20 @@
       "estatus": "Duda"
     },
     {
-      "id": "12519",
-      "estatus": "Duda"
-    },
-    {
       "id": "13279",
       "estatus": "Fuera"
     },
     {
+      "id": "5859",
+      "estatus": "Duda"
+    },
+    {
       "id": "7611",
       "estatus": "Duda"
+    },
+    {
+      "id": "12534",
+      "estatus": "Fuera"
     },
     {
       "id": "4137",
@@ -159,10 +209,6 @@
       "estatus": "Duda"
     },
     {
-      "id": "12534",
-      "estatus": "Fuera"
-    },
-    {
       "id": "11589",
       "estatus": "Fuera"
     },
@@ -171,12 +217,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "11635",
-      "estatus": "Duda"
+      "id": "5844",
+      "estatus": "Fuera"
     },
     {
-      "id": "8142",
-      "estatus": "Fuera"
+      "id": "11635",
+      "estatus": "Duda"
     },
     {
       "id": "13287",
@@ -191,8 +237,16 @@
       "estatus": "Fuera"
     },
     {
-      "id": "5844",
+      "id": "8142",
       "estatus": "Fuera"
+    },
+    {
+      "id": "8210",
+      "estatus": "Duda"
+    },
+    {
+      "id": "11625",
+      "estatus": "Duda"
     },
     {
       "id": "6819",
@@ -203,19 +257,11 @@
       "estatus": "Duda"
     },
     {
-      "id": "8210",
-      "estatus": "Duda"
-    },
-    {
-      "id": "12529",
+      "id": "12533",
       "estatus": "Fuera"
     },
     {
-      "id": "11625",
-      "estatus": "Duda"
-    },
-    {
-      "id": "8121",
+      "id": "9486",
       "estatus": "Fuera"
     }
   ],
@@ -223,61 +269,61 @@
     "13337",
     "2505",
     "12540",
-    "12718",
     "7562",
+    "12718",
     "5995",
-    "10219",
     "3271",
-    "12491",
+    "10219",
     "6427",
+    "12491",
+    "9480",
     "8134",
+    "3214",
+    "4993",
     "9756",
     "13296",
-    "IND",
-    "9480",
-    "13269",
-    "4993",
-    "9502",
-    "3214",
     "12499",
+    "9502",
+    "IND",
+    "13269",
     "13281",
-    "4177",
     "13270",
-    "7042",
-    "11579"
+    "12700",
+    "4177",
+    "8122"
   ],
   "soltados": [
     "6130",
-    "10232",
     "13424",
     "11625",
+    "10232",
+    "10219",
     "6650",
     "5849",
-    "10219",
     "11435",
-    "4881",
     "12718",
     "11834",
     "4035",
+    "4881",
     "3286",
+    "11783",
+    "10213",
     "3271",
+    "11628",
+    "11581",
     "DET",
     "NE",
-    "10213",
-    "11783",
-    "11581",
-    "11628",
+    "13276",
     "11637",
     "5012",
-    "8161",
-    "2020"
+    "9480"
   ],
   "duelo": {
-    "a": "Jahmyr Gibbs",
-    "b": "Christian McCaffrey",
-    "veredicto": "Arranca a Jahmyr Gibbs sobre Christian McCaffrey en la semana 10. Gibbs proyecta 22.5 pts PPR por su explosividad y alto uso aéreo, superando los 20.8 pts de McCaffrey en un duelo de RB1 de élite."
+    "a": "Brock Purdy",
+    "b": "Caleb Williams",
+    "veredicto": "Arranca a Brock Purdy con 19.6 pts proyectados sobre Caleb Williams con 19.2 pts en semana 10. Purdy ofrece un piso más seguro de puntos y mejor eficiencia ofensiva en zona roja para asegurar tu triunfo."
   },
-  "dueloFecha": "2026-11-13T17:53:54.274Z",
+  "dueloFecha": "2026-11-14T16:44:50.796Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
