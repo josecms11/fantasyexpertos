@@ -1,6 +1,6 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-15T07:40:34.816Z",
+  "actualizado": "2026-11-15T14:58:46.058Z",
   "ultimaIA": "2026-11-15T07:40:34.816Z",
   "semana": 10,
   "semanaStats": 10,
@@ -65,10 +65,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "7547",
-      "estatus": "Duda"
-    },
-    {
       "id": "8151",
       "estatus": "Fuera"
     },
@@ -129,10 +125,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "5859",
-      "estatus": "Duda"
-    },
-    {
       "id": "13346",
       "estatus": "Duda"
     },
@@ -143,10 +135,6 @@
     {
       "id": "13279",
       "estatus": "Fuera"
-    },
-    {
-      "id": "7611",
-      "estatus": "Duda"
     },
     {
       "id": "4137",
@@ -219,6 +207,18 @@
     {
       "id": "8121",
       "estatus": "Fuera"
+    },
+    {
+      "id": "8205",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12533",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "9486",
+      "estatus": "Fuera"
     }
   ],
   "agregados": [
@@ -231,55 +231,55 @@
     "7562",
     "12491",
     "9502",
-    "12700",
-    "6427",
     "13296",
     "IND",
+    "12700",
     "8122",
-    "4993",
     "9480",
-    "12718",
+    "6427",
     "12499",
-    "3214",
-    "8134",
+    "4993",
     "9479",
-    "9756",
-    "13270",
+    "8134",
+    "3214",
+    "12718",
     "13286",
+    "9756",
+    "6865",
     "13269"
   ],
   "soltados": [
     "6130",
     "10232",
     "11625",
+    "12491",
     "11435",
-    "13424",
     "6650",
+    "13424",
     "4035",
-    "12718",
     "11834",
+    "12718",
     "5849",
     "11579",
-    "3286",
-    "11783",
-    "11581",
-    "10213",
-    "13276",
-    "10219",
     "NE",
     "DET",
-    "11637",
+    "3286",
+    "11581",
+    "11783",
+    "10213",
     "5012",
-    "12491",
+    "11637",
+    "13276",
     "4037",
+    "10219",
     "3271"
   ],
   "duelo": {
     "a": "Brock Purdy",
     "b": "Caleb Williams",
-    "veredicto": "Arranca a Brock Purdy con 19.6 pts proyectados sobre Caleb Williams con 19.2 pts en semana 10. Purdy ofrece un piso más seguro de puntos y mejor eficiencia ofensiva en zona roja para asegurar tu triunfo."
+    "veredicto": "Arranca a Brock Purdy con 19.5 pts proyectados sobre Caleb Williams con 19.1 pts. Purdy ofrece mayor estabilidad de yardas aéreas y un piso más seguro en semana 10."
   },
-  "dueloFecha": "2026-11-14T16:44:50.796Z",
+  "dueloFecha": "2026-11-15T14:58:46.058Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
