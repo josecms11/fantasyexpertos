@@ -1,5 +1,7 @@
 {
   "dia": "2026-11-15",
-  "usadas": 3,
-  "bloqueado": null
+  "usadas": 6,
+  "bloqueado": {
+    "gemini-3.7-flash": 429
+  }
 }

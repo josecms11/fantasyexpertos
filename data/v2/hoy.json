@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-15T00:56:42.949Z",
-  "ultimaIA": "2026-11-15T00:56:42.949Z",
+  "actualizado": "2026-11-15T07:40:34.816Z",
+  "ultimaIA": "2026-11-15T07:40:34.816Z",
   "semana": 10,
   "semanaStats": 10,
   "temporada": "2026",
@@ -14,94 +14,49 @@
   ],
   "noticias": [
     {
-      "id": "n20261115005600",
-      "fecha": "2026-11-15T00:56:42.949Z",
+      "id": "n20261115074000",
+      "fecha": "2026-11-15T07:40:34.816Z",
       "semana": 10,
-      "titulo": "Travis Etienne Jr. es activado de IR por Saints",
+      "titulo": "Defensa de Steelers se perfila estelar en semana 10",
       "claves": [
-        "Saints activan a Travis Etienne Jr. de la reserva de lesionados.",
-        "Enfrenta a Carolina Panthers en duelo divisional de semana 10.",
-        "Estatus oficial marca etiqueta de cuestionable por el tendón de corva."
+        "Duelo estelar de semana 10 por el liderato de la AFC Norte.",
+        "Pittsburgh ganó el primer choque divisional ante Cincinnati en semana 3.",
+        "Steelers D/ST proyecta 10.2 pts en el modelo FX."
       ],
-      "contexto": "New Orleans Saints activó al corredor Travis Etienne Jr. de la reserva de lesionados antes de su enfrentamiento ante Carolina Panthers. El corredor arrastra una molestia en el tendón de la corva y figura como cuestionable en los reportes de estatus. Tras perderse varios juegos por lesión, el equipo de Nueva Orleans finalmente lo incorpora a su plantel activo para el compromiso de la semana 10 de la NFL.",
-      "fantasy": "El valor de Travis Etienne Jr. sube en formatos PPR, estándar y ligas dynasty con su activación de la lista de reservas lesionados. Sin embargo, al mantener etiqueta de cuestionable para la semana 10, colocarlo en tu alineación inicial representa cierto riesgo de volumen limitado. En ligas de 10 y 12 equipos, perfila como una opción flexible o RB2 si los reportes previos al juego confirman su participación activa ante Carolina.",
-      "equipo_impacto": "El regreso de Travis Etienne Jr. reconfigura el ataque terrestre de New Orleans Saints. Su presencia alivia la carga de los otros corredores y brinda una opción versátil tanto por tierra como por aire, complicando la defensiva de Carolina Panthers en este choque divisional.",
-      "accion": "Monitorea los reportes de inactivos 90 minutos antes del juego y alinéalo como RB2 o Flex si es confirmado activo.",
+      "contexto": "Pittsburgh Steelers y Cincinnati Bengals chocarán en Sunday Night Football durante la semana 10 disputando la cima de la AFC Norte. Los Steelers ya ganaron el primer enfrentamiento divisional en la semana 3, estableciendo un antecedente favorable. Este duelo clave de revancha coloca a Pittsburgh bajo los reflectores estelares en horario estelar, con ambos equipos peleando el liderato absoluto de la división en un partido crucial de temporada regular.",
+      "fantasy": "La unidad de Steelers D/ST luce como una opción titular sólida para la semana 10, proyectando 10.2 pts según el modelo FX en ligas estándar y formatos PPR de 10 o 12 equipos. Tras haber superado a Cincinnati en la semana 3, su perfil sube notablemente para este choque decisivo por el liderato. Por su parte, Bengals D/ST proyecta 8 pts en este mismo encuentro, ubicándose en un escalón secundario para alineaciones principales.",
+      "equipo_impacto": "Pittsburgh busca barrer la serie ante un rival divisional para adueñarse de la AFC Norte. El triunfo previo en la semana 3 otorga confianza al planteamiento táctico, mientras que Cincinnati llega obligado a ajustar cuentas en terreno hostil para evitar ceder el control del liderato en la división.",
+      "accion": "Alinea a Steelers D/ST con confianza en tu defensiva para la semana 10.",
       "fuentes": [
         {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50483551/saints-rb-travis-etienne-activated-ir-game-vs-panthers",
-          "t": "Saints RB Travis Etienne Jr. activated off IR for game vs. Panthers"
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/bengals-vs-steelers-prediction-odds-how-to-watch/",
+          "t": "\n                        Bengals vs. Steelers prediction: AFC North rivals to battle for first place in the division on &#039;SNF&#039;\n    "
         }
       ],
       "en": {
-        "titulo": "Saints activate RB Travis Etienne Jr. off IR",
+        "titulo": "Steelers D/ST stands out in crucial Week 10",
         "claves": [
-          "New Orleans Saints activated Travis Etienne Jr. from injured reserve.",
-          "He prepares to face Carolina Panthers in week 10.",
-          "Listed as questionable due to a nagging hamstring injury."
+          "Week 10 battle on SNF for first place in AFC North.",
+          "Pittsburgh defeated Cincinnati back in their Week 3 matchup.",
+          "Steelers D/ST is projected for 10.2 pts in FX model."
         ],
-        "contexto": "The New Orleans Saints activated running back Travis Etienne Jr. off injured reserve ahead of their divisional matchup against the Carolina Panthers. The running back is managing a hamstring issue and remains listed as questionable. After missing time on injured reserve, the Saints officially brought him back to the active 53-man roster, providing a huge boost for this week 10 contest.",
-        "fantasy": "Etienne's fantasy outlook rises across PPR, half-PPR, and dynasty leagues now that he is officially off injured reserve. Given his questionable tag for week 10, managers must weigh snap count concerns before locking him in. In 10-team and 12-team leagues, he projects as a viable RB2 or high-ceiling Flex option if pregame warmups show no setbacks against the Panthers.",
-        "equipo_impacto": "Etienne's return stabilizes the New Orleans Saints backfield rotation. His dual-threat capabilities on early downs and passing situations balance out the ground attack, forcing the Carolina Panthers defensive front to respect both inside zone runs and screen passes.",
-        "accion": "Verify his active status 90 minutes before kickoff and start him as an RB2 or Flex if active."
+        "contexto": "Pittsburgh Steelers and Cincinnati Bengals square off on Sunday Night Football in Week 10 to battle for first place in the AFC North. Pittsburgh already won the first matchup between these two teams back in Week 3, providing a solid divisional baseline. This high-stakes rematch puts Pittsburgh under the national spotlight as both franchises battle to take command of the division race entering the second half of the regular season.",
+        "fantasy": "Steelers D/ST emerges as a strong starting unit for Week 10, carrying a projection of 10.2 pts in the FX model for 10-team and 12-team leagues. Having defeated Cincinnati back in Week 3, Pittsburgh's defensive floor climbs heading into this critical division showdown. Meanwhile, Bengals D/ST is projected for 8 pts, which leaves them as a riskier streaming consideration in most fantasy formats.",
+        "equipo_impacto": "Pittsburgh aims to complete a season sweep against their divisional opponent to cement AFC North control. Their Week 3 win reinforces their tactical edge, whereas Cincinnati must adapt quickly on the road to keep from dropping valuable ground in the divisional standings.",
+        "accion": "Start Steelers D/ST with confidence in your Week 10 fantasy matchups."
       },
-      "etiqueta": "LESIÓN",
+      "etiqueta": "START",
       "impacto": "SUBE",
-      "equipo": "NO",
+      "equipo": "PIT",
       "equipos": [
-        "NO",
-        "CAR"
+        "PIT",
+        "CIN"
       ],
-      "jugadores": [
-        "7543"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261115005601",
-      "fecha": "2026-11-15T00:56:42.949Z",
-      "semana": 10,
-      "titulo": "Patriots envían a TreVeyon Henderson a lesionados",
-      "claves": [
-        "New England coloca a TreVeyon Henderson en reserva de lesionados.",
-        "Enfrenta una enfermedad neurológica no especificada según los reportes.",
-        "Rhamondre Stevenson gana volumen mientras figura como cuestionable en semana 10."
-      ],
-      "contexto": "New England Patriots colocó al corredor novato TreVeyon Henderson en la lista de reservas lesionados debido a una enfermedad neurológica no explicada. El estatus oficial de la liga confirmó su baja obligatoria por enfermedad, lo que dejará fuera al corredor durante múltiples semanas. Esta situación complica el panorama del backfield de New England, que también reporta a Rhamondre Stevenson con etiqueta de cuestionable por un problema en la rodilla para la semana 10.",
-      "fantasy": "El valor de TreVeyon Henderson cae a cero inmediato en formatos redraft para la semana 10 tras su ingreso a IR. En ligas dynasty debes retenerlo en el espacio de lesionados, pero en ligas estándar y PPR de 10 a 12 equipos puede ser recortado si necesitas espacio en la banca. Rhamondre Stevenson sube en proyección de toques, aunque su estado de cuestionable obliga a buscar alternativas en la agencia libre.",
-      "equipo_impacto": "La ausencia de TreVeyon Henderson deja desprotegido el juego terrestre de New England Patriots. Sin Henderson en el campo, el cuerpo técnico tendrá que apoyarse al máximo en Rhamondre Stevenson y elevar corredores suplentes para enfrentar las próximas semanas del calendario 2024.",
-      "accion": "Mueve a TreVeyon Henderson a tu espacio de reserva de lesionados o córtalo en ligas redraft de 10 equipos.",
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50483113/patriots-place-rb-henderson-ir-unexplained-illness",
-          "t": "Patriots place RB TreVeyon Henderson on IR with still unexplained illness"
-        }
-      ],
-      "en": {
-        "titulo": "Patriots place RB TreVeyon Henderson on injured reserve",
-        "claves": [
-          "New England placed rookie TreVeyon Henderson on injured reserve.",
-          "The running back is dealing with an unexplained neurological illness.",
-          "Rhamondre Stevenson sees increased workload despite questionable knee injury."
-        ],
-        "contexto": "The New England Patriots placed rookie running back TreVeyon Henderson on injured reserve due to an unexplained neurological illness. The official league status report confirmed his designation under illness, sidelining him for at least 4 games. Henderson's sudden departure leaves a major void in New England's offensive backfield while teammate Rhamondre Stevenson also battles a knee ailment listed as questionable heading into week 10.",
-        "fantasy": "Henderson's fantasy value plummets in redraft formats for week 10 following the IR transaction. Dynasty managers should securely stash him in an IR slot, but in 10-team or 12-team redraft leagues, he is a candidate to drop if bench spots are thin. Meanwhile, Rhamondre Stevenson gains standalone touch volume, though his questionable tag requires fantasy managers to maintain backup plans ready on waivers.",
-        "equipo_impacto": "Henderson's absence severely tests New England's depth chart at running back. The coaching staff must lean heavily on Rhamondre Stevenson while promoting depth options to shoulder touches and protect offensive coordinator play-calling over the coming weeks.",
-        "accion": "Move TreVeyon Henderson into your IR slot or drop him in shallow redraft leagues."
-      },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "NE",
-      "equipos": [
-        "NE"
-      ],
-      "jugadores": [
-        "12529",
-        "7611"
-      ],
-      "menciona": []
+      "jugadores": [],
+      "menciona": [
+        "PIT"
+      ]
     }
   ],
   "lesionados": [
@@ -110,12 +65,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "8151",
-      "estatus": "Fuera"
-    },
-    {
       "id": "7547",
       "estatus": "Duda"
+    },
+    {
+      "id": "8151",
+      "estatus": "Fuera"
     },
     {
       "id": "6904",
@@ -123,6 +78,10 @@
     },
     {
       "id": "9226",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "4881",
       "estatus": "Fuera"
     },
     {
@@ -138,14 +97,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4881",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "7525",
-      "estatus": "Fuera"
-    },
-    {
       "id": "12508",
       "estatus": "Fuera"
     },
@@ -158,7 +109,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "8161",
+      "id": "7525",
       "estatus": "Fuera"
     },
     {
@@ -166,7 +117,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "2216",
+      "id": "8161",
       "estatus": "Fuera"
     },
     {
@@ -174,15 +125,7 @@
       "estatus": "Duda"
     },
     {
-      "id": "12519",
-      "estatus": "Duda"
-    },
-    {
-      "id": "13346",
-      "estatus": "Duda"
-    },
-    {
-      "id": "13279",
+      "id": "2216",
       "estatus": "Fuera"
     },
     {
@@ -190,12 +133,20 @@
       "estatus": "Duda"
     },
     {
-      "id": "7611",
+      "id": "13346",
       "estatus": "Duda"
     },
     {
-      "id": "12534",
+      "id": "12519",
+      "estatus": "Duda"
+    },
+    {
+      "id": "13279",
       "estatus": "Fuera"
+    },
+    {
+      "id": "7611",
+      "estatus": "Duda"
     },
     {
       "id": "4137",
@@ -210,6 +161,10 @@
       "estatus": "Duda"
     },
     {
+      "id": "12534",
+      "estatus": "Fuera"
+    },
+    {
       "id": "11589",
       "estatus": "Fuera"
     },
@@ -218,12 +173,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "5844",
-      "estatus": "Fuera"
-    },
-    {
       "id": "11635",
       "estatus": "Duda"
+    },
+    {
+      "id": "8142",
+      "estatus": "Fuera"
     },
     {
       "id": "13287",
@@ -238,16 +193,8 @@
       "estatus": "Fuera"
     },
     {
-      "id": "8142",
+      "id": "5844",
       "estatus": "Fuera"
-    },
-    {
-      "id": "8210",
-      "estatus": "Duda"
-    },
-    {
-      "id": "11625",
-      "estatus": "Duda"
     },
     {
       "id": "6819",
@@ -258,66 +205,74 @@
       "estatus": "Duda"
     },
     {
-      "id": "12533",
+      "id": "8210",
+      "estatus": "Duda"
+    },
+    {
+      "id": "12529",
       "estatus": "Fuera"
     },
     {
-      "id": "9486",
+      "id": "11625",
+      "estatus": "Duda"
+    },
+    {
+      "id": "8121",
       "estatus": "Fuera"
     }
   ],
   "agregados": [
     "13337",
     "12540",
-    "2505",
     "5995",
+    "2505",
     "10219",
     "3271",
     "7562",
     "12491",
-    "12718",
     "9502",
-    "6427",
     "12700",
+    "6427",
+    "13296",
+    "IND",
     "8122",
     "4993",
-    "IND",
-    "13296",
     "9480",
+    "12718",
+    "12499",
     "3214",
     "8134",
-    "12499",
     "9479",
     "9756",
     "13270",
-    "13269",
-    "13286"
+    "13286",
+    "13269"
   ],
   "soltados": [
     "6130",
-    "11625",
     "10232",
-    "13424",
+    "11625",
     "11435",
+    "13424",
     "6650",
     "4035",
     "12718",
     "11834",
     "5849",
-    "10219",
+    "11579",
     "3286",
     "11783",
     "11581",
-    "11579",
     "10213",
     "13276",
-    "11637",
+    "10219",
     "NE",
-    "12491",
     "DET",
+    "11637",
     "5012",
-    "11576",
-    "4037"
+    "12491",
+    "4037",
+    "3271"
   ],
   "duelo": {
     "a": "Brock Purdy",
