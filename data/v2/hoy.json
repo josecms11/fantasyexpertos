@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-14T20:58:10.558Z",
-  "ultimaIA": "2026-11-14T20:58:10.558Z",
+  "actualizado": "2026-11-15T00:56:42.949Z",
+  "ultimaIA": "2026-11-15T00:56:42.949Z",
   "semana": 10,
   "semanaStats": 10,
   "temporada": "2026",
@@ -14,97 +14,92 @@
   ],
   "noticias": [
     {
-      "id": "n20261114205800",
-      "fecha": "2026-11-14T20:58:10.558Z",
+      "id": "n20261115005600",
+      "fecha": "2026-11-15T00:56:42.949Z",
       "semana": 10,
-      "titulo": "Emmett Johnson asume rol titular en Kansas City",
+      "titulo": "Travis Etienne Jr. es activado de IR por Saints",
       "claves": [
-        "Kenneth Walker III queda descartado por lesión de ingle.",
-        "Emmett Johnson apunta a volumen estelar en semana 10.",
-        "Enfrenta a Falcons con potencial de RB1 en fantasy."
+        "Saints activan a Travis Etienne Jr. de la reserva de lesionados.",
+        "Enfrenta a Carolina Panthers en duelo divisional de semana 10.",
+        "Estatus oficial marca etiqueta de cuestionable por el tendón de corva."
       ],
-      "contexto": "Con Kenneth Walker III descartado para la semana 10 frente a Falcons debido a una molestia en la ingle, el novato Emmett Johnson asumirá el rol estelar en el backfield de Kansas City. Johnson, quien lideró los reclamos de waivers esta semana, recibe la oportunidad perfecta para comandar el ataque terrestre tras confirmarse la baja del estelar Walker en una semana con múltiples ausencias clave.",
-      "fantasy": "Emmett Johnson sube de inmediato a la categoría de RB2 con volumen de RB1 para formatos PPR y estándar en la semana 10. Si lograste agregarlo en waivers, mételo directo a tu alineación frente a Falcons. Sin Kenneth Walker III disponible, Johnson monopolizará los toques tempranos y acarreos de gol, otorgándote una ventaja decisiva en duelos apretados de media temporada.",
-      "equipo_impacto": "El ataque terrestre de Chiefs dependerá por completo del novato Emmett Johnson. Su dinamismo evitará que la ofensiva se vuelva predecible por aire, abriendo carriles y sosteniendo series ofensivas largas sin Walker.",
-      "accion": "Alinea a Emmett Johnson como un RB2 sólido en semana 10.",
-      "en": {
-        "titulo": "Emmett Johnson takes over Chiefs backfield Week 10",
-        "claves": [
-          "Kenneth Walker III ruled out with groin injury.",
-          "Emmett Johnson expected to handle lead backfield duties.",
-          "High-upside RB2 start against Falcons in Week 10."
-        ],
-        "contexto": "With Kenneth Walker III officially ruled out for Week 10 against the Falcons due to a groin injury, rookie Emmett Johnson is set to take over starting duties in Kansas City's backfield. Johnson, among the most popular waiver additions this week, steps into a prime opportunity to control early downs and red-zone work after Walker was sidelined.",
-        "fantasy": "Johnson immediately jumps into the high-end RB2 conversation with RB1 upside in PPR and standard formats for Week 10. If you secured him off waivers, slide him directly into your starting lineup against Atlanta. Without Kenneth Walker III on the field, Johnson should monopolize primary backfield touches and high-value red-zone carries for fantasy managers.",
-        "equipo_impacto": "Kansas City's rushing attack now hinges entirely on rookie Emmett Johnson. His presence should maintain offensive balance, keep drives moving, and sustain red-zone efficiency while Walker recovers from his groin injury.",
-        "accion": "Start Emmett Johnson with full confidence as an upside RB2 this week."
-      },
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "KC",
-      "equipos": [
-        "KC",
-        "ATL"
-      ],
-      "jugadores": [
-        "13337",
-        "8151"
-      ],
+      "contexto": "New Orleans Saints activó al corredor Travis Etienne Jr. de la reserva de lesionados antes de su enfrentamiento ante Carolina Panthers. El corredor arrastra una molestia en el tendón de la corva y figura como cuestionable en los reportes de estatus. Tras perderse varios juegos por lesión, el equipo de Nueva Orleans finalmente lo incorpora a su plantel activo para el compromiso de la semana 10 de la NFL.",
+      "fantasy": "El valor de Travis Etienne Jr. sube en formatos PPR, estándar y ligas dynasty con su activación de la lista de reservas lesionados. Sin embargo, al mantener etiqueta de cuestionable para la semana 10, colocarlo en tu alineación inicial representa cierto riesgo de volumen limitado. En ligas de 10 y 12 equipos, perfila como una opción flexible o RB2 si los reportes previos al juego confirman su participación activa ante Carolina.",
+      "equipo_impacto": "El regreso de Travis Etienne Jr. reconfigura el ataque terrestre de New Orleans Saints. Su presencia alivia la carga de los otros corredores y brinda una opción versátil tanto por tierra como por aire, complicando la defensiva de Carolina Panthers en este choque divisional.",
+      "accion": "Monitorea los reportes de inactivos 90 minutos antes del juego y alinéalo como RB2 o Flex si es confirmado activo.",
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-          "t": "Fantasy buzz: Does Emmett Johnson have RB1 upside while Kenneth Walker III sits?"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50480529/chiefs-kenneth-walker-iii-groin-sit-sources-say",
-          "t": "Chiefs' Kenneth Walker III (groin) to sit out vs. Falcons"
+          "u": "https://www.espn.com/nfl/story/_/id/50483551/saints-rb-travis-etienne-activated-ir-game-vs-panthers",
+          "t": "Saints RB Travis Etienne Jr. activated off IR for game vs. Panthers"
         }
+      ],
+      "en": {
+        "titulo": "Saints activate RB Travis Etienne Jr. off IR",
+        "claves": [
+          "New Orleans Saints activated Travis Etienne Jr. from injured reserve.",
+          "He prepares to face Carolina Panthers in week 10.",
+          "Listed as questionable due to a nagging hamstring injury."
+        ],
+        "contexto": "The New Orleans Saints activated running back Travis Etienne Jr. off injured reserve ahead of their divisional matchup against the Carolina Panthers. The running back is managing a hamstring issue and remains listed as questionable. After missing time on injured reserve, the Saints officially brought him back to the active 53-man roster, providing a huge boost for this week 10 contest.",
+        "fantasy": "Etienne's fantasy outlook rises across PPR, half-PPR, and dynasty leagues now that he is officially off injured reserve. Given his questionable tag for week 10, managers must weigh snap count concerns before locking him in. In 10-team and 12-team leagues, he projects as a viable RB2 or high-ceiling Flex option if pregame warmups show no setbacks against the Panthers.",
+        "equipo_impacto": "Etienne's return stabilizes the New Orleans Saints backfield rotation. His dual-threat capabilities on early downs and passing situations balance out the ground attack, forcing the Carolina Panthers defensive front to respect both inside zone runs and screen passes.",
+        "accion": "Verify his active status 90 minutes before kickoff and start him as an RB2 or Flex if active."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "SUBE",
+      "equipo": "NO",
+      "equipos": [
+        "NO",
+        "CAR"
+      ],
+      "jugadores": [
+        "7543"
       ],
       "menciona": []
     },
     {
-      "id": "n20261114205801",
-      "fecha": "2026-11-14T20:58:10.558Z",
+      "id": "n20261115005601",
+      "fecha": "2026-11-15T00:56:42.949Z",
       "semana": 10,
-      "titulo": "Xavier Legette es activado por Panthers en semana 10",
+      "titulo": "Patriots envían a TreVeyon Henderson a lesionados",
       "claves": [
-        "Xavier Legette fue activado tras superar lesión de rodilla.",
-        "Fuera de acción desde el triunfo en semana 2.",
-        "Regresa al cuerpo de receptores de Carolina Panthers."
+        "New England coloca a TreVeyon Henderson en reserva de lesionados.",
+        "Enfrenta una enfermedad neurológica no especificada según los reportes.",
+        "Rhamondre Stevenson gana volumen mientras figura como cuestionable en semana 10."
       ],
-      "contexto": "Carolina Panthers activó al receptor novato Xavier Legette de la reserva de lesionados antes de encarar la semana 10. Legette permanecía fuera desde la semana 2, cuando sufrió una lesión de rodilla en el triunfo sobre Falcons. Su regreso a la nómina activa marca un paso relevante en su proceso, reintegrándose a los entrenamientos y a la dinámica aérea de la franquicia.",
-      "fantasy": "Xavier Legette gana valor a futuro en ligas profundas de 12 o 14 equipos, pero debe quedarse en tu banca en semana 10. Viene de un parón largo desde semana 2 y su tiempo de juego inicial podría ser limitado. No lo arriesgues todavía como titular, pero sí vigila de cerca su participación de rutas y química en zona roja.",
-      "equipo_impacto": "Carolina recupera una amenaza física en el perímetro para estirar el campo rival. Su retorno abrirá espacios interiores para el resto de los receptores y diversificará el plan de juego aéreo del equipo.",
-      "accion": "Mantén a Xavier Legette en la banca mientras demuestra ritmo de juego.",
-      "en": {
-        "titulo": "Panthers activate Xavier Legette from injured reserve",
-        "claves": [
-          "Xavier Legette activated from injured reserve before Week 10.",
-          "Sidelined since suffering a knee injury in Week 2.",
-          "Panthers regain an athletic target for their passing attack."
-        ],
-        "contexto": "The Carolina Panthers activated rookie wide receiver Xavier Legette from injured reserve ahead of Week 10 action. Legette had been sidelined since Week 2, when he suffered a knee injury during a victory over the Falcons. His return to the active roster is a major step forward, restoring a key piece to Carolina's passing game after a multi-week absence.",
-        "fantasy": "Legette gains long-term appeal in 12-team or 14-team leagues, but fantasy managers must keep him on the bench for Week 10. Coming off an extended absence since Week 2, his snap count and route participation could be capped. Stash him for depth, but wait for confirmed target share before trusting him in starting lineups.",
-        "equipo_impacto": "Carolina adds a physical perimeter receiver capable of stretching opposing defenses. His return provides quarterback support, takes pressure off fellow pass catchers, and creates more explosive downfield passing opportunities.",
-        "accion": "Keep Xavier Legette stashed on your bench until his snaps ramp up."
-      },
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "CAR",
-      "equipos": [
-        "CAR"
-      ],
-      "jugadores": [
-        "11626"
-      ],
+      "contexto": "New England Patriots colocó al corredor novato TreVeyon Henderson en la lista de reservas lesionados debido a una enfermedad neurológica no explicada. El estatus oficial de la liga confirmó su baja obligatoria por enfermedad, lo que dejará fuera al corredor durante múltiples semanas. Esta situación complica el panorama del backfield de New England, que también reporta a Rhamondre Stevenson con etiqueta de cuestionable por un problema en la rodilla para la semana 10.",
+      "fantasy": "El valor de TreVeyon Henderson cae a cero inmediato en formatos redraft para la semana 10 tras su ingreso a IR. En ligas dynasty debes retenerlo en el espacio de lesionados, pero en ligas estándar y PPR de 10 a 12 equipos puede ser recortado si necesitas espacio en la banca. Rhamondre Stevenson sube en proyección de toques, aunque su estado de cuestionable obliga a buscar alternativas en la agencia libre.",
+      "equipo_impacto": "La ausencia de TreVeyon Henderson deja desprotegido el juego terrestre de New England Patriots. Sin Henderson en el campo, el cuerpo técnico tendrá que apoyarse al máximo en Rhamondre Stevenson y elevar corredores suplentes para enfrentar las próximas semanas del calendario 2024.",
+      "accion": "Mueve a TreVeyon Henderson a tu espacio de reserva de lesionados o córtalo en ligas redraft de 10 equipos.",
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50481450/panthers-xavier-legette-week-2-activated-ir",
-          "t": "Panthers WR Xavier Legette, out since Week 2 with knee injury, activated from IR"
+          "u": "https://www.espn.com/nfl/story/_/id/50483113/patriots-place-rb-henderson-ir-unexplained-illness",
+          "t": "Patriots place RB TreVeyon Henderson on IR with still unexplained illness"
         }
+      ],
+      "en": {
+        "titulo": "Patriots place RB TreVeyon Henderson on injured reserve",
+        "claves": [
+          "New England placed rookie TreVeyon Henderson on injured reserve.",
+          "The running back is dealing with an unexplained neurological illness.",
+          "Rhamondre Stevenson sees increased workload despite questionable knee injury."
+        ],
+        "contexto": "The New England Patriots placed rookie running back TreVeyon Henderson on injured reserve due to an unexplained neurological illness. The official league status report confirmed his designation under illness, sidelining him for at least 4 games. Henderson's sudden departure leaves a major void in New England's offensive backfield while teammate Rhamondre Stevenson also battles a knee ailment listed as questionable heading into week 10.",
+        "fantasy": "Henderson's fantasy value plummets in redraft formats for week 10 following the IR transaction. Dynasty managers should securely stash him in an IR slot, but in 10-team or 12-team redraft leagues, he is a candidate to drop if bench spots are thin. Meanwhile, Rhamondre Stevenson gains standalone touch volume, though his questionable tag requires fantasy managers to maintain backup plans ready on waivers.",
+        "equipo_impacto": "Henderson's absence severely tests New England's depth chart at running back. The coaching staff must lean heavily on Rhamondre Stevenson while promoting depth options to shoulder touches and protect offensive coordinator play-calling over the coming weeks.",
+        "accion": "Move TreVeyon Henderson into your IR slot or drop him in shallow redraft leagues."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "NE",
+      "equipos": [
+        "NE"
+      ],
+      "jugadores": [
+        "12529",
+        "7611"
       ],
       "menciona": []
     }
@@ -135,11 +130,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "2133",
+      "id": "4943",
       "estatus": "Fuera"
     },
     {
-      "id": "4943",
+      "id": "2133",
       "estatus": "Fuera"
     },
     {
@@ -176,7 +171,7 @@
     },
     {
       "id": "7543",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "12519",
@@ -276,53 +271,53 @@
     "12540",
     "2505",
     "5995",
-    "7562",
-    "3271",
     "10219",
-    "12718",
+    "3271",
+    "7562",
     "12491",
+    "12718",
+    "9502",
     "6427",
+    "12700",
+    "8122",
+    "4993",
+    "IND",
+    "13296",
     "9480",
     "3214",
-    "4993",
-    "9502",
     "8134",
-    "13296",
-    "IND",
-    "12700",
     "12499",
-    "8122",
-    "9756",
     "9479",
-    "13269",
+    "9756",
     "13270",
-    "13281"
+    "13269",
+    "13286"
   ],
   "soltados": [
     "6130",
     "11625",
-    "13424",
     "10232",
+    "13424",
     "11435",
     "6650",
-    "5849",
-    "12718",
-    "10219",
     "4035",
+    "12718",
     "11834",
+    "5849",
+    "10219",
     "3286",
     "11783",
+    "11581",
+    "11579",
     "10213",
     "13276",
-    "11581",
-    "11628",
     "11637",
-    "DET",
-    "4881",
     "NE",
+    "12491",
+    "DET",
     "5012",
     "11576",
-    "3271"
+    "4037"
   ],
   "duelo": {
     "a": "Brock Purdy",
