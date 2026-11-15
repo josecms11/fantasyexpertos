@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-15T14:58:46.058Z",
-  "ultimaIA": "2026-11-15T07:40:34.816Z",
+  "actualizado": "2026-11-15T20:17:45.735Z",
+  "ultimaIA": "2026-11-15T20:17:45.735Z",
   "semana": 10,
   "semanaStats": 10,
   "temporada": "2026",
@@ -14,54 +14,113 @@
   ],
   "noticias": [
     {
-      "id": "n20261115074000",
-      "fecha": "2026-11-15T07:40:34.816Z",
+      "id": "n20261115201700",
+      "fecha": "2026-11-15T20:17:45.735Z",
       "semana": 10,
-      "titulo": "Defensa de Steelers se perfila estelar en semana 10",
+      "titulo": "Jahmyr Gibbs brilla con 2 TD en Alemania",
       "claves": [
-        "Duelo estelar de semana 10 por el liderato de la AFC Norte.",
-        "Pittsburgh ganó el primer choque divisional ante Cincinnati en semana 3.",
-        "Steelers D/ST proyecta 10.2 pts en el modelo FX."
+        "Logra 2 anotaciones terrestres en la victoria en Múnich.",
+        "Establece récord histórico de la NFL en suelo alemán.",
+        "Se consolida como un corredor de élite en fantasy."
       ],
-      "contexto": "Pittsburgh Steelers y Cincinnati Bengals chocarán en Sunday Night Football durante la semana 10 disputando la cima de la AFC Norte. Los Steelers ya ganaron el primer enfrentamiento divisional en la semana 3, estableciendo un antecedente favorable. Este duelo clave de revancha coloca a Pittsburgh bajo los reflectores estelares en horario estelar, con ambos equipos peleando el liderato absoluto de la división en un partido crucial de temporada regular.",
-      "fantasy": "La unidad de Steelers D/ST luce como una opción titular sólida para la semana 10, proyectando 10.2 pts según el modelo FX en ligas estándar y formatos PPR de 10 o 12 equipos. Tras haber superado a Cincinnati en la semana 3, su perfil sube notablemente para este choque decisivo por el liderato. Por su parte, Bengals D/ST proyecta 8 pts en este mismo encuentro, ubicándose en un escalón secundario para alineaciones principales.",
-      "equipo_impacto": "Pittsburgh busca barrer la serie ante un rival divisional para adueñarse de la AFC Norte. El triunfo previo en la semana 3 otorga confianza al planteamiento táctico, mientras que Cincinnati llega obligado a ajustar cuentas en terreno hostil para evitar ceder el control del liderato en la división.",
-      "accion": "Alinea a Steelers D/ST con confianza en tu defensiva para la semana 10.",
+      "contexto": "Jahmyr Gibbs dominó en la victoria 35-10 de Detroit Lions sobre New England Patriots en Múnich. El corredor logró 2 anotaciones terrestres y sumó una actuación histórica que reafirma su estatus como uno de los activos más valiosos en fantasy football. Su capacidad de explotar en el juego terrestre mantuvo a la ofensiva imparable durante la semana 10 de la NFL.",
+      "fantasy": "Gibbs cotiza como RB1 de élite absoluto en formatos PPR, medio PPR y estándar. Con proyecciones constantes sobre 20.0 pts semanales, su volumen en zona roja y efectividad lo colocan en la conversación por el MVP de fantasy. Suben sus bonos en ligas Dynasty y Redraft. No hay motivo para moverlo de tu alineación titular bajo ninguna circunstancia en la semana 11.",
+      "equipo_impacto": "El impacto de Gibbs alivia la carga de la ofensiva de Lions, consolidando un ataque equilibrado que beneficia el ritmo de Detroit. La línea ofensiva continúa creando huecos masivos para sus acarreos.",
+      "accion": "Mantén a Jahmyr Gibbs firmemente en tu alineación titular como un RB1 de élite.",
+      "en": {
+        "titulo": "Jahmyr Gibbs shines with 2 TDs in Germany",
+        "claves": [
+          "Scores 2 rushing touchdowns in victory at Munich.",
+          "Sets historic NFL record during international matchup in Germany.",
+          "Consolidates status as an elite fantasy football running back."
+        ],
+        "contexto": "Jahmyr Gibbs dominated in the Detroit Lions 35-10 victory over the New England Patriots in Munich. The running back found the end zone 2 times on the ground and delivered a historic performance that reaffirms his standing as a top fantasy football asset. His explosive playmaking kept Detroit offense moving effectively throughout Week 10 of the NFL season.",
+        "fantasy": "Gibbs ranks as an elite RB1 across PPR, half-PPR, and standard scoring formats. Projecting regularly around 20.0 pts per game, his goal-line usage and efficiency place him squarely in the fantasy MVP discussion. His value rises significantly in both Dynasty and Redraft leagues. Keep him locked into starting lineups regardless of matchup in Week 11.",
+        "equipo_impacto": "Gibbs performance stabilizes Detroit backfield, taking pressure off the passing game and sustaining long drives for the offense. The Lions offensive line continues creating massive lanes for all his runs.",
+        "accion": "Keep Jahmyr Gibbs locked into your starting lineup every week as an elite RB1."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "DET",
+      "equipos": [
+        "DET",
+        "NE"
+      ],
+      "jugadores": [
+        "9221"
+      ],
       "fuentes": [
         {
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50492437/jahmyr-gibbs-definition-fantasy-mvp",
+          "t": "Michael Florio: Jahmyr Gibbs the definition of a fantasy MVP"
+        },
+        {
+          "m": "ESPN",
+          "u": "http://www.espn.com/nfl/recap?gameId=401873053",
+          "t": "St. Brown and Gibbs score 2 TDs each in Lions' 35-10 rout over Patriots after Maye injured in Munich"
+        },
+        {
           "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/bengals-vs-steelers-prediction-odds-how-to-watch/",
-          "t": "\n                        Bengals vs. Steelers prediction: AFC North rivals to battle for first place in the division on &#039;SNF&#039;\n    "
+          "u": "https://www.cbssports.com/nfl/news/lions-jahmyr-gibbs-ties-nfl-record-germany-patriots/",
+          "t": "\n                        Lions running back Jahmyr Gibbs makes NFL history during Germany game vs. Patriots\n                    "
         }
       ],
-      "en": {
-        "titulo": "Steelers D/ST stands out in crucial Week 10",
-        "claves": [
-          "Week 10 battle on SNF for first place in AFC North.",
-          "Pittsburgh defeated Cincinnati back in their Week 3 matchup.",
-          "Steelers D/ST is projected for 10.2 pts in FX model."
-        ],
-        "contexto": "Pittsburgh Steelers and Cincinnati Bengals square off on Sunday Night Football in Week 10 to battle for first place in the AFC North. Pittsburgh already won the first matchup between these two teams back in Week 3, providing a solid divisional baseline. This high-stakes rematch puts Pittsburgh under the national spotlight as both franchises battle to take command of the division race entering the second half of the regular season.",
-        "fantasy": "Steelers D/ST emerges as a strong starting unit for Week 10, carrying a projection of 10.2 pts in the FX model for 10-team and 12-team leagues. Having defeated Cincinnati back in Week 3, Pittsburgh's defensive floor climbs heading into this critical division showdown. Meanwhile, Bengals D/ST is projected for 8 pts, which leaves them as a riskier streaming consideration in most fantasy formats.",
-        "equipo_impacto": "Pittsburgh aims to complete a season sweep against their divisional opponent to cement AFC North control. Their Week 3 win reinforces their tactical edge, whereas Cincinnati must adapt quickly on the road to keep from dropping valuable ground in the divisional standings.",
-        "accion": "Start Steelers D/ST with confidence in your Week 10 fantasy matchups."
-      },
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "PIT",
-      "equipos": [
-        "PIT",
-        "CIN"
+      "menciona": []
+    },
+    {
+      "id": "n20261115201701",
+      "fecha": "2026-11-15T20:17:45.735Z",
+      "semana": 10,
+      "titulo": "Baker Mayfield en duda por lesión en el pie",
+      "claves": [
+        "Reporta molestia en pie y tobillo tras la semana 10.",
+        "Su disponibilidad para el juego de semana 11 está en riesgo.",
+        "Estatus oficial se mantiene como Questionable según los reportes."
       ],
-      "jugadores": [],
-      "menciona": [
-        "PIT"
-      ]
+      "contexto": "El mariscal de campo de Tampa Bay Buccaneers, Baker Mayfield, genera incertidumbre rumbo al duelo de la semana 11 frente a Detroit Lions tras sufrir una lesión en la zona del pie y tobillo. Aunque el equipo evalúa su evolución día a día, su presencia en el campo está bajo observación médica constante para determinar si podrá arrancar como titular.",
+      "fantasy": "Mayfield baja a la categoría de QB2 de riesgo mientras siga en duda. En ligas Superflex o de 2 QB se debe buscar un reemplazo de respaldo en el alambre de waivers inmediatamente. Si no juega, cae el valor fantasy de sus receptores principales al perder estabilidad en los pases. Monitorea los reportes de práctica antes de la semana 11.",
+      "equipo_impacto": "Una eventual ausencia de Mayfield cambiaría drásticamente el plan de juego de Tampa Bay, obligándolos a depender más del juego terrestre y pases cortos de seguridad con el mariscal suplente en el campo.",
+      "accion": "Asegura un mariscal suplente en waivers si dependes de Baker Mayfield en la semana 11.",
+      "en": {
+        "titulo": "Baker Mayfield status uncertain due to foot injury",
+        "claves": [
+          "Suffered foot and ankle injury following Week 10 action.",
+          "Status for upcoming Week 11 game remains in question.",
+          "Officially listed as Questionable on Tampa Bay injury report."
+        ],
+        "contexto": "Tampa Bay Buccaneers quarterback Baker Mayfield faces uncertainty heading into Week 11 against the Detroit Lions after sustaining an injury to his foot and ankle area. The coaching staff is monitoring his progress daily, making his availability for the upcoming contest unclear until further medical evaluation takes place before the next matchup.",
+        "fantasy": "Mayfield drops to a risky QB2 option while dealing with the injury. Fantasy managers in Superflex or 2-QB formats should secure a backup option on waiver wires immediately. An absence would also lower the fantasy ceiling of Tampa Bay pass catchers due to reduced efficiency. Monitor practice reports throughout Week 11.",
+        "equipo_impacto": "Missing Mayfield would alter the Tampa Bay offensive system drastically, forcing a heavier reliance on the running game and quick check-downs under a backup quarterback taking snaps.",
+        "accion": "Pick up a backup quarterback on waivers if you rely on Baker Mayfield in Week 11."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "TB",
+      "equipos": [
+        "TB",
+        "DET"
+      ],
+      "jugadores": [
+        "4892"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50486637/sources-baker-mayfield-status-uncertain-vs-lions",
+          "t": "Sources: Baker Mayfield's status uncertain for Bucs' Week 11 game vs. Lions"
+        }
+      ],
+      "menciona": []
     }
   ],
   "lesionados": [
     {
       "id": "9493",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "11564",
       "estatus": "Fuera"
     },
     {
@@ -77,8 +136,8 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4881",
-      "estatus": "Fuera"
+      "id": "1373",
+      "estatus": "Duda"
     },
     {
       "id": "5849",
@@ -93,15 +152,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12508",
+      "id": "4881",
       "estatus": "Fuera"
     },
     {
-      "id": "8146",
-      "estatus": "Duda"
-    },
-    {
-      "id": "10232",
+      "id": "12508",
       "estatus": "Fuera"
     },
     {
@@ -109,7 +164,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "5850",
+      "id": "10232",
       "estatus": "Fuera"
     },
     {
@@ -117,23 +172,39 @@
       "estatus": "Fuera"
     },
     {
-      "id": "7543",
-      "estatus": "Duda"
+      "id": "5850",
+      "estatus": "Fuera"
     },
     {
       "id": "2216",
       "estatus": "Fuera"
     },
     {
-      "id": "13346",
-      "estatus": "Duda"
-    },
-    {
       "id": "12519",
       "estatus": "Duda"
     },
     {
+      "id": "4892",
+      "estatus": "Duda"
+    },
+    {
+      "id": "1466",
+      "estatus": "Duda"
+    },
+    {
       "id": "13279",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "5859",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "13276",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12534",
       "estatus": "Fuera"
     },
     {
@@ -145,14 +216,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "13276",
-      "estatus": "Duda"
-    },
-    {
-      "id": "12534",
-      "estatus": "Fuera"
-    },
-    {
       "id": "11589",
       "estatus": "Fuera"
     },
@@ -161,15 +224,19 @@
       "estatus": "Fuera"
     },
     {
-      "id": "11635",
+      "id": "12474",
       "estatus": "Duda"
     },
     {
-      "id": "8142",
+      "id": "5844",
       "estatus": "Fuera"
     },
     {
-      "id": "13287",
+      "id": "11635",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "8142",
       "estatus": "Fuera"
     },
     {
@@ -181,7 +248,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "5844",
+      "id": "13287",
       "estatus": "Fuera"
     },
     {
@@ -189,27 +256,15 @@
       "estatus": "Fuera"
     },
     {
-      "id": "9756",
-      "estatus": "Duda"
-    },
-    {
       "id": "8210",
       "estatus": "Duda"
     },
     {
-      "id": "12529",
+      "id": "9756",
       "estatus": "Fuera"
-    },
-    {
-      "id": "11625",
-      "estatus": "Duda"
     },
     {
       "id": "8121",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "8205",
       "estatus": "Fuera"
     },
     {
@@ -229,50 +284,49 @@
     "10219",
     "3271",
     "7562",
-    "12491",
     "9502",
     "13296",
     "IND",
-    "12700",
-    "8122",
-    "9480",
-    "6427",
     "12499",
+    "9480",
     "4993",
+    "13269",
+    "12700",
     "9479",
     "8134",
-    "3214",
+    "8122",
+    "13424",
     "12718",
-    "13286",
-    "9756",
+    "6427",
+    "12961",
     "6865",
-    "13269"
+    "13286",
+    "12491"
   ],
   "soltados": [
     "6130",
-    "10232",
-    "11625",
     "12491",
-    "11435",
     "6650",
-    "13424",
+    "11435",
+    "10232",
+    "9756",
+    "11625",
     "4035",
+    "5849",
+    "13424",
+    "11579",
     "11834",
     "12718",
-    "5849",
-    "11579",
-    "NE",
-    "DET",
-    "3286",
-    "11581",
-    "11783",
-    "10213",
-    "5012",
-    "11637",
-    "13276",
+    "2020",
     "4037",
-    "10219",
-    "3271"
+    "5012",
+    "8129",
+    "TB",
+    "3286",
+    "3271",
+    "11581",
+    "13276",
+    "11783"
   ],
   "duelo": {
     "a": "Brock Purdy",
