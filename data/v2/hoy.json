@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-16T08:21:47.159Z",
-  "ultimaIA": "2026-11-16T08:21:47.159Z",
+  "actualizado": "2026-11-16T15:56:52.240Z",
+  "ultimaIA": "2026-11-16T15:56:52.240Z",
   "semana": 10,
   "semanaStats": 10,
   "temporada": "2026",
@@ -14,100 +14,104 @@
   ],
   "noticias": [
     {
-      "id": "n20261116082100",
-      "fecha": "2026-11-16T08:21:47.159Z",
+      "id": "n20261116155600",
+      "fecha": "2026-11-16T15:56:52.240Z",
       "semana": 10,
-      "titulo": "Jaxon Smith-Njigba destroza a Raiders con 171 yardas",
+      "titulo": "Drake Maye sufre grave lesión de tobillo",
       "claves": [
-        "Líder receptor de la NFL con 171 yardas en 8 recepciones.",
-        "Consiguió 144 yardas durante el 3er cuarto del partido dominical.",
-        "Proyecta 22.7 pts en modelo FX para la semana 10."
+        "Fractura de tobillo deja a Maye fuera en 2026.",
+        "Evaluaciones médicas en Alemania confirman gravedad de lesión.",
+        "Pérdida total de valor fantasy en mariscal de New England."
       ],
-      "contexto": "Jaxon Smith-Njigba confirmó su estatus como el receptor líder de la NFL tras comandar la victoria de Seattle 21-13 sobre Raiders. El estelar receptor atrapó 8 pases para 171 yardas totales, explotando con 144 yardas únicamente en el 3er cuarto. Dicha racha ofensiva revirtió una desventaja de 3 puntos al descanso y ratificó su enorme volumen dentro del esquema aéreo de Seahawks en la semana 10.",
-      "fantasy": "JSN es un WR1 indiscutible en formatos PPR y ligas estándar tras registrar techos muy elevados. Nuestro modelo FX lo proyecta con 22.7 pts en la semana 10, colocándolo en el puesto 1 general de los receptores. Su alto volumen de pases y capacidad para generar yardas tras la recepción lo convierten en una pieza fija rumbo a playoffs, sin importar la dificultad del rival.",
-      "equipo_impacto": "El ataque aéreo de Seahawks depende directamente de Smith-Njigba. Su dominio en rutas intermedias castiga las coberturas dobles de los rivales, liberando espacios clave por pase y vía terrestre para la ofensiva de Seattle.",
-      "accion": "Alinea a Jaxon Smith-Njigba como titular indiscutible en tu alineación de fantasy.",
-      "en": {
-        "titulo": "Jaxon Smith-Njigba torches Raiders with 171 receiving yards",
-        "claves": [
-          "NFL leading receiver caught 8 passes for 171 yards.",
-          "Exploded for 144 receiving yards in 3rd quarter alone.",
-          "Projected for 22.7 fantasy points in FX Week 10 model."
-        ],
-        "contexto": "Jaxon Smith-Njigba cemented his status as the NFL leading receiver by propelling Seattle to a 21-13 comeback victory against the Raiders. The standout wideout reeled in 8 catches for 171 yards, with an astonishing 144 yards coming in the 3rd quarter alone. This dominant surge erased a 3-point halftime deficit, proving he is the undisputed engine driving this Seahawks aerial attack every single week.",
-        "fantasy": "Smith-Njigba is locked in as an elite WR1 across all PPR and standard formats. The FX model projects him for 22.7 pts in Week 10, ranking him as the top wide receiver overall. His massive target share and big-play ability give him an elite weekly ceiling, making him an automatic every-week starter that you simply cannot bench under any circumstance.",
-        "equipo_impacto": "Seattle passing offense completely revolves around Smith-Njigba. Defenses shifting coverage his way frees up underneath space for complimentary playmakers and lightens defensive fronts for the running game.",
-        "accion": "Start Jaxon Smith-Njigba as an unquestioned WR1 every single week."
-      },
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "SEA",
-      "equipos": [
-        "SEA",
-        "LV"
-      ],
-      "jugadores": [
-        "9488"
-      ],
+      "contexto": "El mariscal de campo de Patriots, Drake Maye, sufrió una fuerte lesión de tobillo en el duelo de la semana 10 ante Lions. Reportes confirman la sospecha de una fractura que terminaría con su temporada 2026. Maye permaneció en Alemania para someterse a estudios médicos adicionales que evaluaron el daño exacto en su articulación.",
+      "fantasy": "Drake Maye debe ser colocado en la reserva de lesionados o liberado en ligas de 1 QB donde no tengas espacios de IR. Su baja de larga duración afecta directamente a todo el ataque aéreo de Patriots en formatos PPR y estándar. Ningún receptor de New England mantiene un techo elevado sin su pasador titular.",
+      "equipo_impacto": "La ofensiva de New England pierde a su pasador estelar, lo que obligará a ajustar el plan de juego en las próximas semanas. Los rivales enfocarán su atención en frenar el ataque terrestre.",
+      "accion": "Envía a Drake Maye a tu casilla de IR inmediatamente.",
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50498326/jaxon-smith-njigba-144-yard-third-quarter-sparks-seahawks-offense-win-raiders",
-          "t": "Jaxon Smith-Njigba's 144-yard quarter sparks Seahawks in win over Raiders"
+          "u": "https://www.espn.com/video/clip/_/id/50501221/drake-maye-injury-likely-season-ending",
+          "t": "Adam Schefter: Drake Maye's injury is likely season-ending"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50500352/patriots-qb-drake-maye-leg-miss-extended-sources-say",
+          "t": "Sources: Patriots fear Drake Maye has broken ankle, could miss rest of season"
+        },
+        {
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/drake-maye-injury-update-patriots-qb-ankle-out-for-season/",
+          "t": "\n                        Drake Maye injury update: Patriots reportedly fear QB fractured ankle, could miss rest of season\n                  "
         }
+      ],
+      "en": {
+        "titulo": "Drake Maye suffers serious ankle injury",
+        "claves": [
+          "Ankle fracture leaves Maye out in 2026.",
+          "Medical evaluations in Germany confirm injury severity.",
+          "Total loss of fantasy value for New England quarterback."
+        ],
+        "contexto": "Patriots quarterback Drake Maye suffered a severe ankle injury in the Week 10 matchup against the Lions. Reports confirm fears of a fracture that could end his 2026 season. Maye remained in Germany to undergo additional medical tests to evaluate the exact extent of the damage to his ankle.",
+        "fantasy": "Drake Maye must be moved to IR or dropped in 1 QB leagues if you lack IR spots. His long-term absence directly harms the entire Patriots passing attack in PPR and standard formats. No New England receiver maintains a high ceiling without their starting quarterback.",
+        "equipo_impacto": "New England's offense loses its star passer, forcing adjustments to their game plan in coming weeks. Opponents will now focus heavily on stopping the ground attack.",
+        "accion": "Move Drake Maye to your IR slot immediately."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "NE",
+      "equipos": [
+        "NE"
+      ],
+      "jugadores": [
+        "11564"
       ],
       "menciona": []
     },
     {
-      "id": "n20261116082101",
-      "fecha": "2026-11-16T08:21:47.159Z",
+      "id": "n20261116155601",
+      "fecha": "2026-11-16T15:56:52.240Z",
       "semana": 10,
-      "titulo": "Brock Purdy lidera exhibición de 584 yardas con 49ers",
+      "titulo": "Aidan Hutchinson queda fuera por rotura de ligamentos",
       "claves": [
-        "San Francisco generó 584 yardas totales en paliza sobre Cowboys.",
-        "Proyecta 22.6 pts en modelo FX para la semana 10.",
-        "Se consolida como un QB1 indiscutible en ligas de fantasy."
+        "Rotura de ligamento cruzado anterior confirma baja en 2026.",
+        "Lesión sufrida durante el partido de la semana 10.",
+        "Golpe severo para la unidad defensiva de Detroit."
       ],
-      "contexto": "Brock Purdy silenció las críticas sobre su sistema tras liderar un aplastante festival ofensivo de 584 yardas totales frente a Dallas. El quarterback de San Francisco operó con enorme precisión, repartiendo envíos para Christian McCaffrey y Deebo Samuel. Los 49ers exhibieron un ataque letal que desmanteló a la defensiva rival, demostrando que Purdy es el motor estelar y no solamente un administrador del balón.",
-      "fantasy": "Purdy se afianza como un QB1 de élite para ligas de 10 y 12 equipos sin importar el formato. Con una proyección de 22.6 pts en el modelo FX para la semana 10, se ubica como el mariscal número 2 del ranking semanal. Su eficiencia en zona roja con sus receptores estrella le otorga un piso sólido de 18 pts y un techo de 25 pts.",
-      "equipo_impacto": "El gran nivel de Purdy maximiza la producción de Christian McCaffrey y el resto de receptores de San Francisco. Su toma de decisiones obliga a los rivales a retroceder y abre huecos constantes en el juego terrestre.",
-      "accion": "Alinea a Brock Purdy en tu equipo titular de fantasy esta semana 10.",
-      "en": {
-        "titulo": "Brock Purdy drives 49ers to 584-yard offensive explosion",
-        "claves": [
-          "San Francisco piled up 584 total yards against Dallas Cowboys.",
-          "Projected for 22.6 fantasy points in FX Week 10 model.",
-          "Establishes himself as a must-start elite QB1 every matchup."
-        ],
-        "contexto": "Brock Purdy silenced the game-manager narrative once and for all by engineering a ruthless 584-yard offensive explosion against the Cowboys. San Francisco signal-caller operated with pinpoint accuracy, distributing big plays to Christian McCaffrey and Deebo Samuel across all levels. The 49ers displayed an unstoppable offensive rhythm that shredded Dallas, cementing Purdy status as a legitimate franchise centerpiece and MVP-caliber playmaker.",
-        "fantasy": "Purdy enters must-start QB1 territory across all 10-team and 12-team leagues. The FX model projects him for 22.6 pts in Week 10, trailing only Josh Allen at the quarterback position. His elite efficiency, combined with San Francisco potent scoring threats, provides a steady floor around 18 pts alongside a realistic top-3 positional ceiling every time he plays.",
-        "equipo_impacto": "Purdy flawless execution raises the weekly fantasy ceilings of Christian McCaffrey and Deebo Samuel. His distribution keeps defensive backs on their heels and prevents opponents from stacking the box.",
-        "accion": "Fire up Brock Purdy as an elite starting quarterback without hesitation."
-      },
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "SF",
-      "equipos": [
-        "SF",
-        "DAL"
-      ],
-      "jugadores": [
-        "8183",
-        "4034",
-        "5872"
-      ],
+      "contexto": "El cazador de cabezas estrella de Lions, Aidan Hutchinson, se perderá el resto de la temporada 2026 tras sufrir una rotura de ligamento cruzado anterior en la rodilla derecha durante la semana 10. Las pruebas iniciales confirmaron la severidad del daño en el ligamento, dejando a la defensiva de Detroit sin su mejor presionador de mariscales.",
+      "fantasy": "La pérdida de Hutchinson reduce significativamente el valor fantasy de la defensiva de Lions (D/ST). Aunque proyectan 8.2 pts en la semana 10, su capacidad para generar capturas y forzar balones sueltos cae drásticamente. En ligas con formato IDP, Hutchinson debe ser soltado o colocado en IR de inmediato por los managers.",
+      "equipo_impacto": "La defensiva de Detroit pierde a su líder en capturas y referente frontal. Los mariscales rivales dispondrán de más tiempo en la bolsa de protección durante los siguientes compromisos.",
+      "accion": "Banca o libera a la defensiva D/ST de Lions ante rivales complicados.",
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50498373/49ers-put-big-numbers-victory-cowboys",
-          "t": "49ers put up big numbers vs. Cowboys, tout 'incredibly dangerous' offense"
+          "u": "https://www.espn.com/nfl/story/_/id/50501291/sources-aidan-hutchinson-season-torn-acl",
+          "t": "Sources: Lions' Aidan Hutchinson out for season with knee injury"
         },
         {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/brock-purdy-once-dismissed-system-080253732.html",
-          "t": "Brock Purdy was once dismissed as a system guy. Now he is THE guy"
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50501190/did-aidan-hutchinson-celebration-lead-injury",
+          "t": "Did Aidan Hutchinson's celebration lead to his injury?"
         }
       ],
+      "en": {
+        "titulo": "Aidan Hutchinson out with ACL tear",
+        "claves": [
+          "ACL tear confirms absence for 2026 season.",
+          "Injury sustained during Week 10 game.",
+          "Major blow to Detroit defensive unit."
+        ],
+        "contexto": "Lions star pass rusher Aidan Hutchinson will miss the rest of the 2026 season after suffering a torn ACL in his right knee during Week 10. Initial tests confirmed the severity of the ligament damage, leaving Detroit's defense without its premier pass rusher.",
+        "fantasy": "Losing Hutchinson significantly lowers the fantasy value of the Lions D/ST. Although projected for 8.2 pts in Week 10, their ability to generate sacks and force turnovers drops dramatically. In IDP formats, Hutchinson must be dropped or placed on IR immediately by fantasy managers.",
+        "equipo_impacto": "Detroit's defense loses its primary pass rusher and vocal leader. Opposing quarterbacks will get significantly more time in the pocket, which weakens the entire secondary and overall defensive unit stability going forward.",
+        "accion": "Bench or drop the Lions D/ST against tough matchups."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "DET",
+      "equipos": [
+        "DET"
+      ],
+      "jugadores": [],
       "menciona": []
     }
   ],
@@ -274,64 +278,64 @@
     }
   ],
   "agregados": [
-    "12540",
     "5995",
-    "13337",
     "9754",
-    "2505",
+    "13337",
+    "12540",
     "13424",
-    "7562",
-    "3271",
-    "13269",
     "13281",
     "10218",
-    "10219",
+    "13269",
     "11783",
-    "13296",
-    "4993",
-    "9479",
-    "9502",
+    "2505",
+    "7562",
     "9482",
-    "12499",
-    "12700",
-    "9480",
+    "3271",
+    "13296",
     "4017",
-    "IND",
+    "4993",
+    "13414",
+    "12700",
+    "9479",
+    "12499",
+    "12492",
+    "10219",
     "TB",
-    "13414"
+    "9480",
+    "9758"
   ],
   "soltados": [
     "12491",
     "6130",
     "9756",
-    "6650",
-    "11435",
-    "10232",
     "13276",
-    "11579",
     "10219",
+    "11579",
+    "11435",
+    "6650",
+    "10232",
     "11834",
-    "5849",
-    "11625",
-    "10213",
     "11635",
-    "3286",
     "2505",
+    "10213",
     "11624",
-    "12718",
-    "11637",
+    "3286",
     "7562",
-    "4037",
-    "4035",
+    "5849",
     "12540",
-    "5012"
+    "9502",
+    "11637",
+    "12718",
+    "11625",
+    "12545",
+    "4037"
   ],
   "duelo": {
-    "a": "Brock Purdy",
-    "b": "Caleb Williams",
-    "veredicto": "Arranca a Brock Purdy con 19.5 pts proyectados sobre Caleb Williams con 19.1 pts. Purdy ofrece mayor estabilidad de yardas aéreas y un piso más seguro en semana 10."
+    "a": "CeeDee Lamb",
+    "b": "Ja'Marr Chase",
+    "veredicto": "Arranca a CeeDee Lamb sobre Ja'Marr Chase en la semana 10. Lamb proyecta 20.1 pts PPR frente a los 19.8 pts de Chase, ofreciendo mayor volumen semanal y un piso más elevado para tu alineación titular."
   },
-  "dueloFecha": "2026-11-15T14:58:46.058Z",
+  "dueloFecha": "2026-11-16T15:56:52.240Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
