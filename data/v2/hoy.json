@@ -1,7 +1,7 @@
 {
   "modelo": "FX v3",
-  "actualizado": "2026-11-15T20:17:45.735Z",
-  "ultimaIA": "2026-11-15T20:17:45.735Z",
+  "actualizado": "2026-11-16T00:02:10.045Z",
+  "ultimaIA": "2026-11-16T00:02:10.045Z",
   "semana": 10,
   "semanaStats": 10,
   "temporada": "2026",
@@ -14,102 +14,160 @@
   ],
   "noticias": [
     {
-      "id": "n20261115201700",
-      "fecha": "2026-11-15T20:17:45.735Z",
+      "id": "n20261116000200",
+      "fecha": "2026-11-16T00:02:10.045Z",
       "semana": 10,
-      "titulo": "Jahmyr Gibbs brilla con 2 TD en Alemania",
+      "titulo": "Brock Bowers sufre lesión de tobillo ante Seahawks",
       "claves": [
-        "Logra 2 anotaciones terrestres en la victoria en Múnich.",
-        "Establece récord histórico de la NFL en suelo alemán.",
-        "Se consolida como un corredor de élite en fantasy."
+        "Abandonó en el 1er cuarto por lesión en tobillo derecho.",
+        "Fue descartado del partido y catalogado oficialmente como Out.",
+        "Golpe demoledor para quienes contaban con su producción estelar."
       ],
-      "contexto": "Jahmyr Gibbs dominó en la victoria 35-10 de Detroit Lions sobre New England Patriots en Múnich. El corredor logró 2 anotaciones terrestres y sumó una actuación histórica que reafirma su estatus como uno de los activos más valiosos en fantasy football. Su capacidad de explotar en el juego terrestre mantuvo a la ofensiva imparable durante la semana 10 de la NFL.",
-      "fantasy": "Gibbs cotiza como RB1 de élite absoluto en formatos PPR, medio PPR y estándar. Con proyecciones constantes sobre 20.0 pts semanales, su volumen en zona roja y efectividad lo colocan en la conversación por el MVP de fantasy. Suben sus bonos en ligas Dynasty y Redraft. No hay motivo para moverlo de tu alineación titular bajo ninguna circunstancia en la semana 11.",
-      "equipo_impacto": "El impacto de Gibbs alivia la carga de la ofensiva de Lions, consolidando un ataque equilibrado que beneficia el ritmo de Detroit. La línea ofensiva continúa creando huecos masivos para sus acarreos.",
-      "accion": "Mantén a Jahmyr Gibbs firmemente en tu alineación titular como un RB1 de élite.",
+      "contexto": "El ala cerrada estelar de Las Vegas Raiders, Brock Bowers, tuvo que abandonar el encuentro contra Seattle Seahawks durante el 1er cuarto tras lastimarse el tobillo derecho. El equipo médico confirmó rápidamente que no regresaría al campo y quedó catalogado como descartado (Out). Esta baja prematura frena en seco el enorme ritmo que traía en su año de novato, dejando al ataque aéreo del equipo sin su válvula de escape predilecta.",
+      "fantasy": "Bowers está oficialmente Out, por lo que debes sentarlo sin dudarlo en todos los formatos de fantasy football, ya sean ligas Redraft, Dinastía o DFS. Su ausencia abre un hueco gigantesco en la posición de tight end, donde proyectaba 17.5 pts PPR. Si requieres un parche urgente para la semana 10, voltea a ver a Tyler Warren o Harold Fannin Jr. en waivers para cubrir la posición mientras se define la gravedad.",
+      "equipo_impacto": "Sin Bowers disponible, la ofensiva aérea de Raiders pierde a su principal generador de yardas tras la recepción. El mariscal novato Fernando Mendoza se queda sin su objetivo más seguro por el centro del campo, obligando a involucrar más a los receptores abiertos en rutas cortas.",
+      "accion": "Mueve de inmediato a Brock Bowers a tu reserva de lesionados y busca un ala cerrada disponible en waivers.",
       "en": {
-        "titulo": "Jahmyr Gibbs shines with 2 TDs in Germany",
+        "titulo": "Brock Bowers suffers ankle injury against Seahawks",
         "claves": [
-          "Scores 2 rushing touchdowns in victory at Munich.",
-          "Sets historic NFL record during international matchup in Germany.",
-          "Consolidates status as an elite fantasy football running back."
+          "Exited during the 1st quarter with a right ankle injury.",
+          "Officially ruled out, creating an immediate void at tight end.",
+          "Huge setback for fantasy managers relying on his high ceiling."
         ],
-        "contexto": "Jahmyr Gibbs dominated in the Detroit Lions 35-10 victory over the New England Patriots in Munich. The running back found the end zone 2 times on the ground and delivered a historic performance that reaffirms his standing as a top fantasy football asset. His explosive playmaking kept Detroit offense moving effectively throughout Week 10 of the NFL season.",
-        "fantasy": "Gibbs ranks as an elite RB1 across PPR, half-PPR, and standard scoring formats. Projecting regularly around 20.0 pts per game, his goal-line usage and efficiency place him squarely in the fantasy MVP discussion. His value rises significantly in both Dynasty and Redraft leagues. Keep him locked into starting lineups regardless of matchup in Week 11.",
-        "equipo_impacto": "Gibbs performance stabilizes Detroit backfield, taking pressure off the passing game and sustaining long drives for the offense. The Lions offensive line continues creating massive lanes for all his runs.",
-        "accion": "Keep Jahmyr Gibbs locked into your starting lineup every week as an elite RB1."
+        "contexto": "Las Vegas Raiders star tight end Brock Bowers was ruled out against the Seattle Seahawks after suffering a right ankle injury in the opening quarter. The medical staff quickly confirmed his early exit. This setback abruptly pauses the rookie's productive momentum, stripping the offense of its most dependable target over the middle and leaving Las Vegas searching for answers in the passing game on short notice.",
+        "fantasy": "With Bowers designated as Out, fantasy managers must bench him across all formats, including Redraft and Dynasty leagues. His absence removes an elite weekly ceiling at a thin tight end position where he projected for 17.5 PPR pts. If you need a waiver replacement, consider targeting available options like Tyler Warren or Harold Fannin Jr. to keep your starting lineup competitive.",
+        "equipo_impacto": "Without Bowers on the field, the Raiders lose their primary mismatch nightmare in coverage. Rookie quarterback Fernando Mendoza loses his most reliable safety valve, forcing Las Vegas to funnel targets toward perimeter wideouts and running backs.",
+        "accion": "Move Brock Bowers straight to your IR slot and immediately secure a tight end on waivers."
       },
-      "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "DET",
-      "equipos": [
-        "DET",
-        "NE"
-      ],
-      "jugadores": [
-        "9221"
-      ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50492437/jahmyr-gibbs-definition-fantasy-mvp",
-          "t": "Michael Florio: Jahmyr Gibbs the definition of a fantasy MVP"
-        },
-        {
-          "m": "ESPN",
-          "u": "http://www.espn.com/nfl/recap?gameId=401873053",
-          "t": "St. Brown and Gibbs score 2 TDs each in Lions' 35-10 rout over Patriots after Maye injured in Munich"
-        },
-        {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/lions-jahmyr-gibbs-ties-nfl-record-germany-patriots/",
-          "t": "\n                        Lions running back Jahmyr Gibbs makes NFL history during Germany game vs. Patriots\n                    "
+          "u": "https://www.espn.com/nfl/story/_/id/50495181/raiders-lose-te-brock-bowers-ankle-injury-vs-seahawks",
+          "t": "Raiders lose TE Brock Bowers to ankle injury vs. Seahawks"
         }
+      ],
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "LV",
+      "equipos": [
+        "LV",
+        "SEA"
+      ],
+      "jugadores": [
+        "11604",
+        "13269"
       ],
       "menciona": []
     },
     {
-      "id": "n20261115201701",
-      "fecha": "2026-11-15T20:17:45.735Z",
+      "id": "n20261116000201",
+      "fecha": "2026-11-16T00:02:10.045Z",
       "semana": 10,
-      "titulo": "Baker Mayfield en duda por lesión en el pie",
+      "titulo": "Patrick Mahomes explota con 5 TD ante Falcons",
       "claves": [
-        "Reporta molestia en pie y tobillo tras la semana 10.",
-        "Su disponibilidad para el juego de semana 11 está en riesgo.",
-        "Estatus oficial se mantiene como Questionable según los reportes."
+        "Lanzó 5 pases de anotación en victoria contundente 35-13.",
+        "Consiguió su mejor partido fantasy en años comandando la ofensiva.",
+        "Mantiene su estatus de mariscal indiscutible en alineaciones titulares."
       ],
-      "contexto": "El mariscal de campo de Tampa Bay Buccaneers, Baker Mayfield, genera incertidumbre rumbo al duelo de la semana 11 frente a Detroit Lions tras sufrir una lesión en la zona del pie y tobillo. Aunque el equipo evalúa su evolución día a día, su presencia en el campo está bajo observación médica constante para determinar si podrá arrancar como titular.",
-      "fantasy": "Mayfield baja a la categoría de QB2 de riesgo mientras siga en duda. En ligas Superflex o de 2 QB se debe buscar un reemplazo de respaldo en el alambre de waivers inmediatamente. Si no juega, cae el valor fantasy de sus receptores principales al perder estabilidad en los pases. Monitorea los reportes de práctica antes de la semana 11.",
-      "equipo_impacto": "Una eventual ausencia de Mayfield cambiaría drásticamente el plan de juego de Tampa Bay, obligándolos a depender más del juego terrestre y pases cortos de seguridad con el mariscal suplente en el campo.",
-      "accion": "Asegura un mariscal suplente en waivers si dependes de Baker Mayfield en la semana 11.",
+      "contexto": "Patrick Mahomes firmó su partido más dominante en años durante la paliza 35-13 de Kansas City Chiefs sobre Atlanta Falcons en la semana 10. El mariscal estelar destrozó a la defensiva rival repartiendo el ovoide por doquier para culminar con 5 pases de anotación. Apoyado además en 101 yardas terrestres del novato Emmett Johnson, el ataque de Kansas City lució sumamente rejuvenecido y letal, despejando cualquier duda sobre su potencial ofensivo.",
+      "fantasy": "Esta exhibición categórica ratifica que debes mantener la fe y seguir alineando a Patrick Mahomes en cualquier formato de fantasy football, ya sea ligas estándar, PPR o Superflex. Con 5 TD demostró que su techo de puntos sigue intacto entre la élite de mariscales. Su rendimiento eleva inmediatamente las acciones de todo el juego aéreo de Kansas City, garantizando producción estelar de cara a la recta final y los playoffs de fantasy.",
+      "equipo_impacto": "El resurgir anotador de Mahomes beneficia a todas las piezas aéreas del vestidor. A pesar de que Travis Kelce figura cuestionable por lesión de tobillo, la distribución múltiple y eficiente de Mahomes mantiene alta la expectativa de puntos de todo el grupo de Kansas City.",
+      "accion": "Mantén a Patrick Mahomes firmemente como tu QB1 titular indiscutible en todas tus alineaciones.",
       "en": {
-        "titulo": "Baker Mayfield status uncertain due to foot injury",
+        "titulo": "Patrick Mahomes explodes with 5 touchdowns against Falcons",
         "claves": [
-          "Suffered foot and ankle injury following Week 10 action.",
-          "Status for upcoming Week 11 game remains in question.",
-          "Officially listed as Questionable on Tampa Bay injury report."
+          "Tossed 5 touchdown passes in a dominant 35-13 rout.",
+          "Delivered his highest fantasy scoring game in several years.",
+          "Reaffirms his elite weekly status across all fantasy formats."
         ],
-        "contexto": "Tampa Bay Buccaneers quarterback Baker Mayfield faces uncertainty heading into Week 11 against the Detroit Lions after sustaining an injury to his foot and ankle area. The coaching staff is monitoring his progress daily, making his availability for the upcoming contest unclear until further medical evaluation takes place before the next matchup.",
-        "fantasy": "Mayfield drops to a risky QB2 option while dealing with the injury. Fantasy managers in Superflex or 2-QB formats should secure a backup option on waiver wires immediately. An absence would also lower the fantasy ceiling of Tampa Bay pass catchers due to reduced efficiency. Monitor practice reports throughout Week 11.",
-        "equipo_impacto": "Missing Mayfield would alter the Tampa Bay offensive system drastically, forcing a heavier reliance on the running game and quick check-downs under a backup quarterback taking snaps.",
-        "accion": "Pick up a backup quarterback on waivers if you rely on Baker Mayfield in Week 11."
+        "contexto": "Patrick Mahomes delivered his biggest performance in years as the Kansas City Chiefs overpowered the Atlanta Falcons 35-13 in Week 10. The elite quarterback sliced through the opposing secondary, distributing the ball efficiently and finishing with 5 touchdown passes. Complemented by rookie Emmett Johnson rushing for 101 yards, Kansas City's offensive unit looked fast, sharp, and revitalized, erasing recent doubts regarding their ceiling and efficiency this season.",
+        "fantasy": "Mahomes proved why fantasy managers must keep riding his hot hand as an elite QB1 in all formats, including standard, PPR, and Superflex. A 5-touchdown outing demonstrates that his monster weekly ceiling remains elite. Even with injuries around him, his efficiency elevates Kansas City's scoring environment, making him an untouchable starter heading down the stretch toward the fantasy football playoffs.",
+        "equipo_impacto": "Mahomes operating at full throttle boosts every weapon in the Chiefs offense. Even as Travis Kelce battles an ankle issue, Mahomes spreads targets quickly, keeping defensive units off-balance and sustaining long scoring drives consistently.",
+        "accion": "Lock Patrick Mahomes into your QB1 slot and enjoy high-ceiling fantasy production weekly."
       },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "TB",
-      "equipos": [
-        "TB",
-        "DET"
-      ],
-      "jugadores": [
-        "4892"
-      ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50486637/sources-baker-mayfield-status-uncertain-vs-lions",
-          "t": "Sources: Baker Mayfield's status uncertain for Bucs' Week 11 game vs. Lions"
+          "u": "https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50494331/nfl-week-10-fantasy-football-winners-losers-injuries-rankings-more",
+          "t": "Week 10 winners and losers: Mahomes has biggest game in years; Taylor struggles"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50494330/why-fantasy-managers-keep-riding-hot-hand-patrick-mahomes",
+          "t": "Why fantasy managers should keep riding the hot hand with Patrick Mahomes"
+        },
+        {
+          "m": "ESPN",
+          "u": "http://www.espn.com/nfl/recap?gameId=401873058",
+          "t": "Mahomes throws 5 TD passes and rookie Johnson runs for 101 yards as Chiefs overwhelm Falcons 35-13"
         }
+      ],
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "KC",
+      "equipos": [
+        "KC",
+        "ATL"
+      ],
+      "jugadores": [
+        "4046",
+        "13337",
+        "1466"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261116000202",
+      "fecha": "2026-11-16T00:02:10.045Z",
+      "semana": 10,
+      "titulo": "Trevor Lawrence se consagra como QB1 indiscutible semanal",
+      "claves": [
+        "Guió a Jacksonville en victoria 40-23 sobre Tennessee Titans.",
+        "Acumula 6 victorias en los últimos 7 partidos disputados.",
+        "Se coloca como titular obligado en todas las ligas fantasy."
+      ],
+      "contexto": "Trevor Lawrence continúa encendido y comandó a Jacksonville Jaguars a una contundente victoria 40-23 frente a Tennessee Titans en un auténtico tiroteo ofensivo. El pasador sumó su 6to triunfo en los últimos 7 encuentros, mostrando una enorme madurez en la toma de decisiones y elevando a toda la ofensiva. Con lecturas precisas y efectividad implacable en zona roja, Lawrence ha transformado el ataque de Jacksonville en una máquina productiva imparable en este 2026.",
+      "fantasy": "El rendimiento de Lawrence lo catapulta como un QB1 obligatorio semana a semana en ligas de 10 y 12 equipos, además de formatos Superflex o dinastía. Poner 40 puntos en la pizarra refleja un volumen y estabilidad que pocos mariscales ofrecen actualmente. Si lo estabas alternando según los enfrentamientos en el calendario, es momento de dejarlo fijo en tu alineación titular sin importar el rival que tenga enfrente.",
+      "equipo_impacto": "El ascenso de Lawrence eleva el valor de todas sus armas aéreas en Jacksonville. Al mantener posesiones largas y alta eficiencia anotadora, el mariscal maximiza las oportunidades para sus receptores y permite que el ataque juegue con ventaja constante en el marcador.",
+      "accion": "Alinea a Trevor Lawrence sin dudar cada semana como tu mariscal titular indiscutible.",
+      "en": {
+        "titulo": "Trevor Lawrence cements every-week must-start QB1 status",
+        "claves": [
+          "Led Jacksonville to a decisive 40-23 victory over Tennessee.",
+          "Captured a 6th victory across his past 7 games.",
+          "Emerges as an automatic starter in all fantasy formats."
+        ],
+        "contexto": "Trevor Lawrence put on another clinic, leading the Jacksonville Jaguars past the Tennessee Titans 40-23 in an offensive shootout. The quarterback guided Jacksonville to their 6th victory in 7 games, elevating the entire unit with poised decision-making and pinpoint accuracy downfield. Lawrence has developed full command of the playbook, turning the Jaguars into a prolific scoring attack capable of hanging big numbers against divisional opponents consistently.",
+        "fantasy": "Lawrence has officially entered must-start fantasy QB territory every single week. Whether playing in 10-team, 12-team, or Superflex leagues, putting up 40 offensive points signals elite volume and floor. Fantasy managers who were streaming him based on matchups can now comfortably lock him into their active lineup regardless of opponent, as his weekly ceiling continues climbing toward top-tier fantasy production.",
+        "equipo_impacto": "Lawrence's stellar play lifts the fantasy value of every receiving option in Jacksonville. By sustaining scoring drives and striking through the air, he keeps defensive coordinators guessing and generates frequent red-zone scoring chances for his supporting cast.",
+        "accion": "Start Trevor Lawrence with complete confidence as your locked-in weekly QB1."
+      },
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50494901/trevor-lawrence-needs-must-start-fantasy-qb-every-week",
+          "t": "Adam Rank: Trevor Lawrence needs to be a must-start fantasy QB every week"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50494007/jags-come-top-offensive-shootout-titans",
+          "t": "Jags come out on top in offensive shootout with Titans"
+        },
+        {
+          "m": "ESPN",
+          "u": "http://www.espn.com/nfl/recap?gameId=401873057",
+          "t": "Trevor Lawrence lights up the Titans as the Jaguars roll 40-23 for a sixth win in 7 games"
+        }
+      ],
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "JAX",
+      "equipos": [
+        "JAX",
+        "TEN"
+      ],
+      "jugadores": [
+        "7523"
       ],
       "menciona": []
     }
@@ -128,6 +186,10 @@
       "estatus": "Fuera"
     },
     {
+      "id": "11604",
+      "estatus": "Fuera"
+    },
+    {
       "id": "6904",
       "estatus": "Fuera"
     },
@@ -137,7 +199,7 @@
     },
     {
       "id": "1373",
-      "estatus": "Duda"
+      "estatus": "Fuera"
     },
     {
       "id": "5849",
@@ -150,6 +212,10 @@
     {
       "id": "2133",
       "estatus": "Fuera"
+    },
+    {
+      "id": "8112",
+      "estatus": "Duda"
     },
     {
       "id": "4881",
@@ -200,6 +266,10 @@
       "estatus": "Fuera"
     },
     {
+      "id": "8126",
+      "estatus": "Duda"
+    },
+    {
       "id": "13276",
       "estatus": "Fuera"
     },
@@ -225,7 +295,7 @@
     },
     {
       "id": "12474",
-      "estatus": "Duda"
+      "estatus": "Fuera"
     },
     {
       "id": "5844",
@@ -244,11 +314,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "7526",
+      "id": "13287",
       "estatus": "Fuera"
     },
     {
-      "id": "13287",
+      "id": "7526",
       "estatus": "Fuera"
     },
     {
@@ -262,18 +332,6 @@
     {
       "id": "9756",
       "estatus": "Fuera"
-    },
-    {
-      "id": "8121",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "12533",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "9486",
-      "estatus": "Fuera"
     }
   ],
   "agregados": [
@@ -281,51 +339,52 @@
     "12540",
     "5995",
     "2505",
-    "10219",
     "3271",
     "7562",
-    "9502",
+    "10219",
+    "9754",
+    "13269",
     "13296",
+    "9502",
+    "13424",
+    "4993",
+    "9479",
     "IND",
     "12499",
-    "9480",
-    "4993",
-    "13269",
     "12700",
-    "9479",
-    "8134",
-    "8122",
-    "13424",
+    "9480",
+    "13281",
     "12718",
-    "6427",
+    "11783",
+    "10218",
+    "8134",
     "12961",
-    "6865",
-    "13286",
-    "12491"
+    "TB"
   ],
   "soltados": [
-    "6130",
     "12491",
+    "6130",
     "6650",
     "11435",
     "10232",
     "9756",
     "11625",
-    "4035",
     "5849",
-    "13424",
     "11579",
+    "13276",
     "11834",
+    "4035",
     "12718",
+    "10219",
+    "13424",
     "2020",
     "4037",
     "5012",
-    "8129",
     "TB",
     "3286",
+    "10213",
+    "11637",
     "3271",
-    "11581",
-    "13276",
     "11783"
   ],
   "duelo": {
