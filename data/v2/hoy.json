@@ -1,7 +1,7 @@
 {
-  "modelo": "FX v3",
-  "actualizado": "2026-11-16T06:13:25.253Z",
-  "ultimaIA": "2026-11-16T06:13:25.253Z",
+  "modelo": "FX v4",
+  "actualizado": "2026-11-16T08:21:47.159Z",
+  "ultimaIA": "2026-11-16T08:21:47.159Z",
   "semana": 10,
   "semanaStats": 10,
   "temporada": "2026",
@@ -14,32 +14,77 @@
   ],
   "noticias": [
     {
-      "id": "n20261116061300",
-      "fecha": "2026-11-16T06:13:25.253Z",
+      "id": "n20261116082100",
+      "fecha": "2026-11-16T08:21:47.159Z",
       "semana": 10,
-      "titulo": "Christian McCaffrey explota con 2 TD de recepción",
+      "titulo": "Jaxon Smith-Njigba destroza a Raiders con 171 yardas",
       "claves": [
-        "Anotó recepciones de anotación de 74 y 66 yardas",
-        "Encabezó la victoria de San Francisco 46 a 40",
-        "Mantiene su estatus de RB1 de élite semana a semana"
+        "Líder receptor de la NFL con 171 yardas en 8 recepciones.",
+        "Consiguió 144 yardas durante el 3er cuarto del partido dominical.",
+        "Proyecta 22.7 pts en modelo FX para la semana 10."
       ],
-      "contexto": "Christian McCaffrey protagonizó una actuación espectacular en la victoria 46-40 de 49ers sobre Cowboys en la semana 10. El corredor estrella atrapó 2 pases de anotación de 74 y 66 yardas, aprovechando esquemas diseñados por Kyle Shanahan. Su capacidad para generar jugadas explosivas impulsó a San Francisco en un duelo de alta puntuación, consolidando su impacto total en el ataque de su equipo.",
-      "fantasy": "Con proyecciones de 21.3 pts en formato PPR para las siguientes jornadas, McCaffrey se afirma como el RB1 indiscutible en todo tipo de ligas. Su uso masivo en el juego aéreo incrementa su valor en formatos PPR y de puntos medios. No hay motivo para dejarlo en la banca; debes alinearlo semanalmente como titular inamovible en tus ligas de fantasy football.",
-      "equipo_impacto": "La presencia de McCaffrey alivia la carga para el mariscal Brock Purdy y abre espacios en la secundaria rival. Sus recepciones profundas reducen la atención defensiva sobre otros receptores del equipo, manteniendo a 49ers como una de las ofensivas más peligrosas de la liga.",
-      "accion": "Mantén a Christian McCaffrey como titular fijo semana a semana en todas tus alineaciones.",
+      "contexto": "Jaxon Smith-Njigba confirmó su estatus como el receptor líder de la NFL tras comandar la victoria de Seattle 21-13 sobre Raiders. El estelar receptor atrapó 8 pases para 171 yardas totales, explotando con 144 yardas únicamente en el 3er cuarto. Dicha racha ofensiva revirtió una desventaja de 3 puntos al descanso y ratificó su enorme volumen dentro del esquema aéreo de Seahawks en la semana 10.",
+      "fantasy": "JSN es un WR1 indiscutible en formatos PPR y ligas estándar tras registrar techos muy elevados. Nuestro modelo FX lo proyecta con 22.7 pts en la semana 10, colocándolo en el puesto 1 general de los receptores. Su alto volumen de pases y capacidad para generar yardas tras la recepción lo convierten en una pieza fija rumbo a playoffs, sin importar la dificultad del rival.",
+      "equipo_impacto": "El ataque aéreo de Seahawks depende directamente de Smith-Njigba. Su dominio en rutas intermedias castiga las coberturas dobles de los rivales, liberando espacios clave por pase y vía terrestre para la ofensiva de Seattle.",
+      "accion": "Alinea a Jaxon Smith-Njigba como titular indiscutible en tu alineación de fantasy.",
       "en": {
-        "titulo": "Christian McCaffrey shines with 2 receiving TDs",
+        "titulo": "Jaxon Smith-Njigba torches Raiders with 171 receiving yards",
         "claves": [
-          "Scored receiving touchdowns of 74 and 66 yards",
-          "Led San Francisco to a 46-40 win",
-          "Solidifies his status as elite overall RB1"
+          "NFL leading receiver caught 8 passes for 171 yards.",
+          "Exploded for 144 receiving yards in 3rd quarter alone.",
+          "Projected for 22.7 fantasy points in FX Week 10 model."
         ],
-        "contexto": "Christian McCaffrey delivered a monster performance in the 49ers 46-40 victory over the Cowboys in Week 10. The star running back caught 2 long touchdown passes of 74 and 66 yards, executing Kyle Shanahan designed plays to perfection. His explosive big-play ability powered San Francisco through a high-scoring thriller, reinforcing his massive role in the offensive game plan.",
-        "fantasy": "Projected for 21.3 PPR points heading forward, McCaffrey remains an undisputed top-tier RB1 across all fantasy formats. His heavy target volume in the passing attack elevates his floor and ceiling immensely in PPR leagues. He is a locked-in must-start player in every single fantasy matchup without question.",
-        "equipo_impacto": "McCaffrey's versatility lightens the pressure on quarterback Brock Purdy and creates open passing lanes downfield. His threat in space keeps opposing defenses honest, benefiting the entire San Francisco offensive unit.",
-        "accion": "Lock Christian McCaffrey into your starting lineup every single week."
+        "contexto": "Jaxon Smith-Njigba cemented his status as the NFL leading receiver by propelling Seattle to a 21-13 comeback victory against the Raiders. The standout wideout reeled in 8 catches for 171 yards, with an astonishing 144 yards coming in the 3rd quarter alone. This dominant surge erased a 3-point halftime deficit, proving he is the undisputed engine driving this Seahawks aerial attack every single week.",
+        "fantasy": "Smith-Njigba is locked in as an elite WR1 across all PPR and standard formats. The FX model projects him for 22.7 pts in Week 10, ranking him as the top wide receiver overall. His massive target share and big-play ability give him an elite weekly ceiling, making him an automatic every-week starter that you simply cannot bench under any circumstance.",
+        "equipo_impacto": "Seattle passing offense completely revolves around Smith-Njigba. Defenses shifting coverage his way frees up underneath space for complimentary playmakers and lightens defensive fronts for the running game.",
+        "accion": "Start Jaxon Smith-Njigba as an unquestioned WR1 every single week."
       },
-      "etiqueta": "TENDENCIA",
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "SEA",
+      "equipos": [
+        "SEA",
+        "LV"
+      ],
+      "jugadores": [
+        "9488"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50498326/jaxon-smith-njigba-144-yard-third-quarter-sparks-seahawks-offense-win-raiders",
+          "t": "Jaxon Smith-Njigba's 144-yard quarter sparks Seahawks in win over Raiders"
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261116082101",
+      "fecha": "2026-11-16T08:21:47.159Z",
+      "semana": 10,
+      "titulo": "Brock Purdy lidera exhibición de 584 yardas con 49ers",
+      "claves": [
+        "San Francisco generó 584 yardas totales en paliza sobre Cowboys.",
+        "Proyecta 22.6 pts en modelo FX para la semana 10.",
+        "Se consolida como un QB1 indiscutible en ligas de fantasy."
+      ],
+      "contexto": "Brock Purdy silenció las críticas sobre su sistema tras liderar un aplastante festival ofensivo de 584 yardas totales frente a Dallas. El quarterback de San Francisco operó con enorme precisión, repartiendo envíos para Christian McCaffrey y Deebo Samuel. Los 49ers exhibieron un ataque letal que desmanteló a la defensiva rival, demostrando que Purdy es el motor estelar y no solamente un administrador del balón.",
+      "fantasy": "Purdy se afianza como un QB1 de élite para ligas de 10 y 12 equipos sin importar el formato. Con una proyección de 22.6 pts en el modelo FX para la semana 10, se ubica como el mariscal número 2 del ranking semanal. Su eficiencia en zona roja con sus receptores estrella le otorga un piso sólido de 18 pts y un techo de 25 pts.",
+      "equipo_impacto": "El gran nivel de Purdy maximiza la producción de Christian McCaffrey y el resto de receptores de San Francisco. Su toma de decisiones obliga a los rivales a retroceder y abre huecos constantes en el juego terrestre.",
+      "accion": "Alinea a Brock Purdy en tu equipo titular de fantasy esta semana 10.",
+      "en": {
+        "titulo": "Brock Purdy drives 49ers to 584-yard offensive explosion",
+        "claves": [
+          "San Francisco piled up 584 total yards against Dallas Cowboys.",
+          "Projected for 22.6 fantasy points in FX Week 10 model.",
+          "Establishes himself as a must-start elite QB1 every matchup."
+        ],
+        "contexto": "Brock Purdy silenced the game-manager narrative once and for all by engineering a ruthless 584-yard offensive explosion against the Cowboys. San Francisco signal-caller operated with pinpoint accuracy, distributing big plays to Christian McCaffrey and Deebo Samuel across all levels. The 49ers displayed an unstoppable offensive rhythm that shredded Dallas, cementing Purdy status as a legitimate franchise centerpiece and MVP-caliber playmaker.",
+        "fantasy": "Purdy enters must-start QB1 territory across all 10-team and 12-team leagues. The FX model projects him for 22.6 pts in Week 10, trailing only Josh Allen at the quarterback position. His elite efficiency, combined with San Francisco potent scoring threats, provides a steady floor around 18 pts alongside a realistic top-3 positional ceiling every time he plays.",
+        "equipo_impacto": "Purdy flawless execution raises the weekly fantasy ceilings of Christian McCaffrey and Deebo Samuel. His distribution keeps defensive backs on their heels and prevents opponents from stacking the box.",
+        "accion": "Fire up Brock Purdy as an elite starting quarterback without hesitation."
+      },
+      "etiqueta": "START",
       "impacto": "SUBE",
       "equipo": "SF",
       "equipos": [
@@ -47,68 +92,20 @@
         "DAL"
       ],
       "jugadores": [
-        "4034"
+        "8183",
+        "4034",
+        "5872"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50494331/nfl-week-10-fantasy-football-winners-losers-injuries-rankings-more",
-          "t": "Week 10 winners and losers: McCaffrey, Gibbs and Mahomes dominate Sunday"
+          "u": "https://www.espn.com/nfl/story/_/id/50498373/49ers-put-big-numbers-victory-cowboys",
+          "t": "49ers put up big numbers vs. Cowboys, tout 'incredibly dangerous' offense"
         },
         {
-          "m": "ESPN",
-          "u": "http://www.espn.com/nfl/recap?gameId=401873063",
-          "t": "McCaffrey's TDs of 74 and 66 yards and Samuel's 70-yard score help 49ers beat Cowboys 46-40"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261116061301",
-      "fecha": "2026-11-16T06:13:25.253Z",
-      "semana": 10,
-      "titulo": "Fernando Mendoza sufre en su primer inicio NFL",
-      "claves": [
-        "Completó 17 de 29 pases para 143 yardas",
-        "Sufrió 6 capturas en la derrota 21 a 13",
-        "Registró un rating de mariscal de 71.5 puntos"
-      ],
-      "contexto": "El novato Fernando Mendoza tuvo su primer inicio en la NFL con Raiders durante la derrota 21-13 frente a Seahawks. Mendoza completó 17 de 29 envíos para 143 yardas y finalizó con un rating de 71.5 pts. La defensiva de Seattle lo presionó constantemente, registrando 6 capturas y limitando los avances profundos del mariscal en su debut como titular.",
-      "fantasy": "Mendoza no representa una opción confiable en ligas de 1 QB y solo tiene valor marginal en formatos Superflex o de 2 QB como alternativa de emergencia. La falta de armas tras la lesión de Brock Bowers reduce drásticamente su techo ofensivo. Debes mantenerlo fuera de tu alineación en semanas posteriores hasta ver una evolución clara en sus métricas.",
-      "equipo_impacto": "La constante presión sufrida por Mendoza evidencia serios problemas en la línea ofensiva de Raiders. Esta inestabilidad frena la producción general del ataque y complica las oportunidades de anotar para los receptores de Las Vegas.",
-      "accion": "Deja a Fernando Mendoza en la banca en todos los formatos.",
-      "en": {
-        "titulo": "Fernando Mendoza struggles in first NFL start",
-        "claves": [
-          "Completed 17 of 29 passes for 143 yards",
-          "Sacked 6 times in 21-13 loss",
-          "Posted a passer rating of 71.5"
-        ],
-        "contexto": "Rookie Fernando Mendoza made his first career NFL start for the Raiders in a 21-13 loss to the Seahawks. Mendoza completed 17 of 29 passes for 143 yards while recording a 71.5 passer rating. Seattle's defense generated consistent pressure, sacking him 6 times and neutralizing Las Vegas downfield passing attempts throughout the game.",
-        "fantasy": "Mendoza is not a viable starting option in 1 QB leagues and holds minimal value strictly in Superflex or 2 QB formats as a deep desperation play. Without elite targets available, his fantasy ceiling remains capped. Keep him on your bench or waiver wire until he demonstrates consistent production and better pocket protection.",
-        "equipo_impacto": "The 6 sacks surrendered highlight glaring protection issues along the Raiders offensive line. This vulnerability limits the overall rhythm of the offense and dampens fantasy prospects across the entire receiving corps.",
-        "accion": "Leave Fernando Mendoza on the bench across all formats."
-      },
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "LV",
-      "equipos": [
-        "LV",
-        "SEA"
-      ],
-      "jugadores": [
-        "13269"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50498040/raiders-fernando-mendoza-vows-learn-first-nfl-start",
-          "t": "Raiders' Fernando Mendoza vows to learn from first NFL start, a loss to Seahawks"
-        },
-        {
-          "m": "ESPN",
-          "u": "http://www.espn.com/nfl/recap?gameId=401873062",
-          "t": "Seahawks beat Raiders 21-13 as Drew Lock throws for 2 TDs and Seattle sacks Fernando Mendoza 6 times"
+          "m": "Yahoo Sports",
+          "u": "https://sports.yahoo.com/articles/brock-purdy-once-dismissed-system-080253732.html",
+          "t": "Brock Purdy was once dismissed as a system guy. Now he is THE guy"
         }
       ],
       "menciona": []
@@ -116,7 +113,7 @@
   ],
   "lesionados": [
     {
-      "id": "9493",
+      "id": "8151",
       "estatus": "Fuera"
     },
     {
@@ -124,7 +121,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "8151",
+      "id": "9493",
       "estatus": "Fuera"
     },
     {
@@ -132,44 +129,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "6904",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "9226",
-      "estatus": "Fuera"
-    },
-    {
       "id": "1373",
       "estatus": "Fuera"
     },
     {
-      "id": "5849",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "4943",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "2133",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "8112",
+      "id": "12519",
       "estatus": "Duda"
-    },
-    {
-      "id": "4881",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "12508",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "7525",
-      "estatus": "Fuera"
     },
     {
       "id": "10232",
@@ -180,36 +145,76 @@
       "estatus": "Fuera"
     },
     {
-      "id": "5850",
+      "id": "2133",
       "estatus": "Fuera"
+    },
+    {
+      "id": "4943",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "8112",
+      "estatus": "Duda"
     },
     {
       "id": "2216",
       "estatus": "Fuera"
     },
     {
-      "id": "12519",
-      "estatus": "Duda"
+      "id": "5844",
+      "estatus": "Fuera"
     },
     {
-      "id": "4892",
-      "estatus": "Duda"
+      "id": "6904",
+      "estatus": "Fuera"
     },
     {
-      "id": "1466",
-      "estatus": "Duda"
+      "id": "7526",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "4881",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12474",
+      "estatus": "Fuera"
     },
     {
       "id": "13279",
       "estatus": "Fuera"
     },
     {
-      "id": "5859",
+      "id": "5849",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "1466",
+      "estatus": "Duda"
+    },
+    {
+      "id": "11435",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "7525",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12489",
       "estatus": "Fuera"
     },
     {
       "id": "8126",
       "estatus": "Duda"
+    },
+    {
+      "id": "12536",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12711",
+      "estatus": "Fuera"
     },
     {
       "id": "13276",
@@ -220,7 +225,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4137",
+      "id": "8121",
       "estatus": "Fuera"
     },
     {
@@ -228,31 +233,15 @@
       "estatus": "Fuera"
     },
     {
-      "id": "11589",
+      "id": "4892",
+      "estatus": "Duda"
+    },
+    {
+      "id": "8110",
       "estatus": "Fuera"
     },
     {
-      "id": "12489",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "12474",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "5844",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "11635",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "8142",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "5927",
+      "id": "9756",
       "estatus": "Fuera"
     },
     {
@@ -260,11 +249,15 @@
       "estatus": "Fuera"
     },
     {
-      "id": "7526",
+      "id": "9486",
       "estatus": "Fuera"
     },
     {
-      "id": "6819",
+      "id": "8154",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "4454",
       "estatus": "Fuera"
     },
     {
@@ -272,62 +265,66 @@
       "estatus": "Duda"
     },
     {
-      "id": "9756",
+      "id": "11635",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "5927",
       "estatus": "Fuera"
     }
   ],
   "agregados": [
     "12540",
-    "13337",
     "5995",
+    "13337",
     "9754",
     "2505",
-    "3271",
-    "7562",
     "13424",
+    "7562",
+    "3271",
     "13269",
     "13281",
-    "10219",
     "10218",
+    "10219",
     "11783",
     "13296",
     "4993",
-    "9502",
     "9479",
+    "9502",
+    "9482",
     "12499",
     "12700",
     "9480",
-    "9482",
-    "IND",
     "4017",
+    "IND",
     "TB",
     "13414"
   ],
   "soltados": [
     "12491",
     "6130",
-    "6650",
     "9756",
+    "6650",
     "11435",
     "10232",
     "13276",
     "11579",
-    "11834",
     "10219",
+    "11834",
     "5849",
     "11625",
     "10213",
-    "3286",
     "11635",
+    "3286",
     "2505",
-    "12718",
     "11624",
+    "12718",
     "11637",
-    "4035",
     "7562",
     "4037",
-    "5012",
-    "2020"
+    "4035",
+    "12540",
+    "5012"
   ],
   "duelo": {
     "a": "Brock Purdy",
