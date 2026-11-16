@@ -21,6 +21,8 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           SUPABASE_SECRET: ${{ secrets.SUPABASE_SECRET }}
+      - name: Imágenes para compartir
+        run: npm i --no-save --no-package-lock --silent @resvg/resvg-js@2.6.2 upng-js@2.1.0 && node scripts/imagenes.mjs || echo "imágenes con errores"
       - name: Páginas para Google (SEO)
         run: node scripts/paginas.mjs || echo "páginas con errores"
       - name: Newsletter semanal
@@ -28,7 +30,7 @@ jobs:
       - run: |
           git config user.name "fx-bot"
           git config user.email "fx-bot@users.noreply.github.com"
-          git add -A data jugador noticia equipo blog en rankings precision sitemap.xml robots.txt
+          git add -A data jugador noticia equipo blog en rankings precision liga creadores widget index.html assets/og sitemap.xml robots.txt
           git commit -m "Contenido automático $(date -u +%FT%TZ)" || exit 0
           git pull --rebase -X ours origin main || true
           git push

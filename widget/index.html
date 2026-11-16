@@ -1,0 +1,18 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><title>Rankings · Fantasy Expertos</title>
+<style>*{box-sizing:border-box}body{margin:0;font:14px/1.35 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#0A1A10;color:#E8F2EA}.w{border:1px solid #1f4a30;border-radius:12px;overflow:hidden}
+.h{display:flex;align-items:center;gap:10px;padding:12px 14px;background:#0f2417;border-bottom:1px solid #1f4a30}.h b{font-size:16px;letter-spacing:.3px}.h small{display:block;color:#8FB89A;font-size:11px}.h svg{flex:none}
+.t{display:flex;gap:4px;padding:8px 10px;flex-wrap:wrap;border-bottom:1px solid #1f4a30}.t button{font:inherit;font-size:12px;font-weight:700;background:none;border:1px solid #2b5c3d;color:#B9D3C1;border-radius:7px;padding:4px 9px;cursor:pointer}.t button.on{background:#5BC489;color:#0A1A10;border-color:#5BC489}
+ol{list-style:none;margin:0;padding:0;max-height:380px;overflow:auto}li{display:grid;grid-template-columns:26px 1fr auto;gap:8px;align-items:center;padding:7px 14px;border-bottom:1px solid #132e1e}li i{font-style:normal;color:#F2C94C;font-weight:800}li a{color:#fff;text-decoration:none;font-weight:600}li a:hover{text-decoration:underline}li small{display:block;color:#8FB89A;font-size:11px;font-weight:400}li em{font-style:normal;font-weight:800;color:#5BC489}
+.f{display:flex;justify-content:space-between;gap:8px;padding:10px 14px;font-size:12px;background:#0f2417}.f a{color:#5BC489;font-weight:700;text-decoration:none}</style></head>
+<body><div class="w"><div class="h"><svg width="34" height="23" viewBox="20 55 150 100" aria-hidden="true"><polygon points="69,58.5 166.5,58.5 153.5,82.2 83.5,82.2 49,151.7 23.7,151.7" fill="#E8E8E8"/><polygon points="90.5,94.5 146.2,94.5 133,118 79.2,118" fill="#4A9A68"/></svg><div><b id="ti">Rankings</b><small id="st"></small></div></div><div class="t" id="tb"></div><ol id="ls"></ol>
+<div class="f"><span id="fm"></span><a id="vm" target="_blank" rel="noopener">fantasyexpertos.app ›</a></div></div>
+<script>
+const q=new URLSearchParams(location.search),EN=q.get('lang')==='en';let pos=(q.get('pos')||'RB').toUpperCase(),fmt=Math.max(0,['ppr','half','std'].indexOf((q.get('fmt')||'ppr').toLowerCase())),D=null;
+const R='https://fantasyexpertos.app/',e=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function pinta(){if(!D)return;const L=D.pos[pos]||[];document.getElementById('ti').textContent=(EN?'Week '+D.semana+' '+pos+' rankings':'Rankings '+pos+' · semana '+D.semana);document.getElementById('st').textContent=(EN?'FX Model projection · ':'Proyección Modelo FX · ')+['PPR','Half PPR','STD'][fmt];
+document.getElementById('tb').innerHTML=Object.keys(D.pos).map(p=>'<button class="'+(p===pos?'on':'')+'" data-p="'+p+'">'+p+'</button>').join('');
+document.getElementById('ls').innerHTML=L.map((j,i)=>'<li><i>'+(i+1)+'</i><span><a href="'+R+j[4]+'" target="_blank" rel="noopener">'+e(j[0])+'</a><small>'+e(j[1])+' '+e(j[2])+'</small></span><em>'+(j[3][fmt]??j[3][0]).toFixed(1)+'</em></li>').join('');
+document.getElementById('fm').textContent=EN?'Updated daily':'Se actualiza a diario';const vm=document.getElementById('vm');vm.href=R+(EN?'en/':'')+'rankings/'+pos.toLowerCase()+'/';vm.textContent=(EN?'Full ranking':'Ranking completo')+' ›';}
+document.getElementById('tb').onclick=ev=>{const b=ev.target.closest('button');if(b){pos=b.dataset.p;pinta();}};
+fetch(R+'data/v2/widget.json?v='+Math.floor(Date.now()/36e5)).then(r=>r.json()).then(d=>{D=d;if(!D.pos[pos])pos='RB';pinta();});
+</script></body></html>

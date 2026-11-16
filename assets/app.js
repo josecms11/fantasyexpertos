@@ -454,6 +454,7 @@ function inicio() {
         <div class="plist">${tresYpro(D.soltados.slice(0, 6).map(id => J[id] && prow(J[id], `<span class="bar down"><i style="width:${pct(J[id].drop, 'drop')}%"></i></span>${fxPill(J[id])}`)).filter(Boolean), tx(`Ve los ${D.soltados.length} que bajan y suelta a tiempo`, `See all ${D.soltados.length} fallers and drop in time`))}</div></div>
     </section>
     ${duelo()}
+    ${prHome()}
     <section class="block" data-chip="S${semActual()} · ${FMTS[FMT]}"><div class="head"><div><h2>Rankings de la semana ${semActual()}</h2><p class="hsub">Top 3 por proyección ${FMTS[FMT]}, solo jugadores que sí juegan.</p></div><a class="all" href="#/posicion/QB">Rankings ›</a></div><div class="grid hubs6 stagger">${hubs}</div></section>
     ${fxtv()}
     <section class="block" data-chip="${G.length ? G.length * 2 : 32} JUEGAN · S${semActual()}"><div class="head"><div><h2>Los 32 equipos</h2><p class="hsub">Récord, rival de la semana, calendario y plantel de fantasy.</p></div><a class="all" href="#/equipos">Ver todos ›</a></div>${teamGrid()}</section>
@@ -1510,7 +1511,8 @@ const sleeperGet = async u => { const r = await fetch('https://api.sleeper.app/v
 const SLOT_OK = { QB: ['QB'], RB: ['RB'], WR: ['WR'], TE: ['TE'], K: ['K'], DEF: ['DEF'], FLEX: ['RB', 'WR', 'TE'], WRRB_FLEX: ['RB', 'WR'], REC_FLEX: ['WR', 'TE'], SUPER_FLEX: ['QB', 'RB', 'WR', 'TE'] };
 const SLOT_TXT = { FLEX: 'FLEX', WRRB_FLEX: 'W/R', REC_FLEX: 'W/T', SUPER_FLEX: 'SFLEX' };
 const POS_BASE = ['QB', 'RB', 'RB', 'WR', 'WR', 'TE', 'FLEX', 'K', 'DEF'];
-const fmtL = () => LIGA && LIGA.fmt != null ? LIGA.fmt : FMT;
+let _fmtPub = null;
+const fmtL = () => _fmtPub != null ? _fmtPub : LIGA && LIGA.fmt != null ? LIGA.fmt : FMT;
 const pL = j => !j || !juega(j) ? 0 : j.proy && j.proy[fmtL()] != null ? j.proy[fmtL()] : (j.prom || 0) * .9;
 const fiL = j => { const u = (j.log || []).filter(l => l.f && l.f[fmtL()] != null).slice(-5).map(l => l.f[fmtL()]); return u.length >= 2 ? [Math.min(...u), Math.max(...u)] : null; };
 
@@ -1862,8 +1864,8 @@ function precisionVista() {
   const S = Object.entries(_modelo.semanas || {}).sort((a, b) => +a[0] - +b[0]), gana = S.filter(([, x]) => x.maeFX <= x.maeRef).length, p = _modelo.params;
   return `<div class="page">${crumbs([['', tx('Precisión', 'Accuracy')]])}<div class="wrap"><section class="block"><div class="head"><div><h2>${tx('Precisión del Modelo FX', 'FX Model accuracy')}</h2><p class="hsub">${tx('Cada semana comparamos cada proyección con lo que el jugador realmente hizo. Menos error = proyecciones más precisas.', 'Every week we compare each projection with what the player actually scored. Lower error = more accurate projections.')}</p></div></div>
     <div class="kpis"><div class="kpi"><b class="n">${S.length ? S[S.length - 1][1].maeFX : '–'}</b><span>${tx('Error promedio última semana (pts)', 'Average error last week (pts)')}</span></div><div class="kpi"><b class="n">${gana}/${S.length}</b><span>${tx('Semanas más precisos que la referencia', 'Weeks more accurate than the reference')}</span></div><div class="kpi"><b class="n">${p ? p.error : '–'}</b><span>${tx('Error tras la última calibración', 'Error after latest calibration')}</span></div></div>
-    <div class="card scroll" style="margin-top:18px"><table class="tbl"><thead><tr><th>${tx('SEMANA', 'WEEK')}</th><th>${tx('JUGADORES', 'PLAYERS')}</th><th>${tx('ERROR FX', 'FX ERROR')}</th><th>${tx('ERROR REFERENCIA', 'REFERENCE ERROR')}</th><th>${tx('MÁS PRECISO', 'MORE ACCURATE')}</th></tr></thead><tbody>${S.map(([w, x]) => `<tr><td class="n">${w}</td><td class="n">${x.n}</td><td class="n hl">${x.maeFX}</td><td class="n">${x.maeRef}</td><td>${x.maeFX <= x.maeRef ? '<b style="color:var(--accent)">Modelo FX</b>' : tx('Referencia', 'Reference')}</td></tr>`).join('')}</tbody></table></div>
-    <p class="hsub" style="margin-top:14px">${tx('El modelo se recalibra solo cada 12 horas contra las semanas ya jugadas, sin ver el resultado de la semana que proyecta.', 'The model recalibrates itself every 12 hours against weeks already played, without seeing the result of the week it projects.')}</p></section></div></div>`;
+    <div class="card scroll" style="margin-top:18px"><table class="tbl"><thead><tr><th>${tx('SEMANA', 'WEEK')}</th><th>${tx('MODELO', 'MODEL')}</th><th>${tx('JUGADORES', 'PLAYERS')}</th><th>${tx('ERROR FX', 'FX ERROR')}</th><th>${tx('ERROR REFERENCIA', 'REFERENCE ERROR')}</th><th>${tx('MÁS PRECISO', 'MORE ACCURATE')}</th></tr></thead><tbody>${S.map(([w, x]) => `<tr><td class="n">${w}</td><td>${esc(x.version || 'FX v3')}</td><td class="n">${x.n}</td><td class="n hl">${x.maeFX}</td><td class="n">${x.maeRef}</td><td>${x.maeFX <= x.maeRef ? '<b style="color:var(--accent)">Modelo FX</b>' : tx('Referencia', 'Reference')}</td></tr>`).join('')}</tbody></table></div>
+    ${p && p.mezErr && p.mezErr.total ? `<p class="hsub" style="margin-top:14px">${tx(`Modelo actual FX v4: combina la proyección propia con el consenso del mercado, con un peso por posición elegido a prueba. En las semanas ya jugadas su error es ${p.mezErr.total.mix} contra ${p.mezErr.total.ref} de la referencia.`, `Current model FX v4: blends our own projection with the market consensus, weighted per position by testing. On weeks already played its error is ${p.mezErr.total.mix} vs ${p.mezErr.total.ref} for the reference.`)}</p>` : ''}<p class="hsub" style="margin-top:14px">${tx('El modelo se recalibra solo cada 12 horas contra las semanas ya jugadas, sin ver el resultado de la semana que proyecta.', 'The model recalibrates itself every 12 hours against weeks already played, without seeing the result of the week it projects.')}</p></section></div></div>`;
 }
 function premiumHub(tab = '') {
   titulo('FX PRO');
@@ -1919,12 +1921,78 @@ document.addEventListener('input', e => {
     .map(j => `<div class="cg-res">${helmet(j.team, j.num, 26)}<span><b>${esc(j.n)}</b><small>${esc(j.pos)} · ${esc(j.team)}</small></span><button type="button" class="btn sm" data-cg-add="${j.id}" ${ya.has(j.id) ? 'disabled' : ''}>${ya.has(j.id) ? '✓' : '+'}</button></div>`).join('');
 });
 
+
+/* ---------- Power Ranking FX de cualquier liga (gratis, para compartir con toda la liga) ---------- */
+const _pr = {}; let _prOpc = null;
+const prLid = v => { const m = String(v || '').match(/(\d{12,})/); return m ? m[1] : null; };
+async function cargaPR(lid) {
+  const [lg, rs, us] = await Promise.all([sleeperGet('league/' + lid), sleeperGet(`league/${lid}/rosters`), sleeperGet(`league/${lid}/users`)]);
+  if (!lg || !rs) throw new Error('liga');
+  const nom = Object.fromEntries((us || []).map(x => [x.user_id, (x.metadata && x.metadata.team_name) || x.display_name]));
+  const rec = (lg.scoring_settings || {}).rec, fmt = rec >= 1 ? 0 : rec >= .5 ? 1 : 2, slots = (lg.roster_positions || POS_BASE).filter(x => SLOT_OK[x]);
+  let mu = []; try { mu = await sleeperGet(`league/${lid}/matchups/${semActual()}`) || []; } catch (e) {}
+  _fmtPub = fmt;
+  try {
+    const eq = rs.map(r => { const ids = (r.players || []).filter(id => J[id]), al = alineacion(ids, slots), st = r.settings || {};
+      const ros = ids.map(id => J[id]).reduce((a, j) => a + valorROS(j).valor, 0), mejor = al.tit.filter(x => x.j).sort((a, b) => edo(b.j).fin - edo(a.j).fin)[0];
+      const debil = al.tit.filter(x => SLOT_OK[x.s] && !['K', 'DEF'].includes(x.s)).sort((a, b) => (a.j ? edo(a.j).fin : -1) - (b.j ? edo(b.j).fin : -1))[0];
+      return { rid: r.roster_id, n: nom[r.owner_id] || tx('Equipo ', 'Team ') + r.roster_id, w: st.wins || 0, l: st.losses || 0, t: st.ties || 0, pf: (st.fpts || 0) + (st.fpts_decimal || 0) / 100,
+        proy: Math.round(al.total * 10) / 10, ros, mejor: mejor && mejor.j, debil: debil && debil.s ? { s: debil.s, j: debil.j } : null }; });
+    const rk = (k, inv) => { const o = [...eq].sort((a, b) => inv ? a[k] - b[k] : b[k] - a[k]); o.forEach((x, i) => x['r_' + k] = i + 1); };
+    eq.forEach(x => x.pct = (x.w + x.t / 2) / Math.max(1, x.w + x.l + x.t)); rk('proy'); rk('ros'); rk('pct'); rk('pf');
+    eq.forEach(x => x.score = x.r_proy * .35 + x.r_ros * .35 + x.r_pct * .15 + x.r_pf * .15); eq.sort((a, b) => a.score - b.score);
+    const maxR = Math.max(1, ...eq.map(x => x.ros));
+    const byR = Object.fromEntries(eq.map(x => [x.rid, x])), duelos = {};
+    mu.forEach(m => { if (m.matchup_id != null) (duelos[m.matchup_id] = duelos[m.matchup_id] || []).push(m); });
+    const D2 = Object.values(duelos).filter(d => d.length === 2 && byR[d[0].roster_id] && byR[d[1].roster_id]).map(([a, b]) => {
+      const A = byR[a.roster_id], B = byR[b.roster_id], pa = A.proy, pb = B.proy, z = (pa - pb) / Math.max(8, Math.sqrt(pa + pb) * 2.2), pA = 1 / (1 + Math.exp(-1.6 * z));
+      return { A, B, pA: Math.round(pA * 100), ptsA: a.points, ptsB: b.points }; }).sort((x, y) => Math.abs(x.pA - 50) - Math.abs(y.pA - 50));
+    return { lid, nombre: lg.name, n: lg.total_rosters, fmt, eq, maxR, duelos: D2, sem: semActual(), fecha: Date.now() };
+  } finally { _fmtPub = null; }
+}
+function prShare(lid, nombre) {
+  const url = `https://fantasyexpertos.app/liga/?id=${lid}`, txt = tx(`Power Ranking FX de ${nombre}, semana ${semActual()}: ¿quién manda en la liga?`, `${nombre} FX Power Ranking, week ${semActual()}: who runs the league?`);
+  return `<div class="pr-share"><a class="btn" href="https://wa.me/?text=${encodeURIComponent(txt + ' ' + url)}" target="_blank" rel="noopener" data-pr-sh="whatsapp">WhatsApp</a><a class="btn ghost" href="https://twitter.com/intent/tweet?text=${encodeURIComponent(txt)}&url=${encodeURIComponent(url)}" target="_blank" rel="noopener" data-pr-sh="x">X</a><button type="button" class="btn ghost" data-pr-copia="${url}">${tx('Copiar link', 'Copy link')}</button></div>`;
+}
+function ligaPR(lid) {
+  titulo(tx('Power Ranking de tu liga', 'Your league Power Ranking'));
+  const intro = `<section class="block pr-in"><div class="head"><div><h1 class="pr-h1">${tx('Power Ranking de tu liga', 'Your league Power Ranking')}</h1><p class="hsub">${tx('Pega el link de tu liga de Sleeper o tu usuario. En 10 segundos tienes el ranking de todos los equipos con el Modelo FX: quién es favorito esta semana, quién tiene el mejor plantel para el resto de la temporada y el punto débil de cada uno. Gratis, para mandarlo al grupo de la liga.', 'Paste your Sleeper league link or your username. In 10 seconds you get every team ranked by the FX Model: who is favored this week, who has the best roster for the rest of the season and each team\'s weak spot. Free, made to send to your league chat.')}</p></div>${sello()}</div>
+    <form class="cg-f" data-pr="buscar"><input name="q" placeholder="${tx('Link o ID de la liga, o usuario de Sleeper', 'League link or ID, or Sleeper username')}" autocomplete="off" required><button class="btn" type="submit">${tx('Ver Power Ranking', 'See Power Ranking')}</button></form><p class="cg-msg" id="pr-msg"></p>
+    <div class="cg-ligas">${_prOpc ? _prOpc.map(l => `<a class="cg-liga" href="#/liga/${l.league_id}"><b>${esc(l.name)}</b><small>${l.total_rosters} ${tx('equipos', 'teams')}</small></a>`).join('') : ''}</div></section>`;
+  if (!lid) return `<div class="page">${crumbs([['', tx('Power Ranking de liga', 'League Power Ranking')]])}<div class="wrap">${intro}</div></div>`;
+  const d = _pr[lid];
+  if (!d) { _pr[lid] = 'cargando'; cargaPR(lid).then(x => { _pr[lid] = x; mide('power_ranking', { equipos: x.n }); }).catch(() => { _pr[lid] = 'error'; }).finally(() => { if (location.hash.includes(lid) || (window.FX_RUTA || '').includes('liga')) repinta(); }); }
+  if (!d || d === 'cargando') return cargador(tx('ARMANDO EL RANKING', 'BUILDING THE RANKING'));
+  if (d === 'error') return `<div class="page"><div class="wrap">${intro}<div class="empty">${tx('No pudimos abrir esa liga. Revisa el link o el ID.', 'We could not open that league. Check the link or ID.')}</div></div></div>`;
+  const yo = LIGA && LIGA.lid === lid ? LIGA.rid : null, fm = FMTS[d.fmt];
+  const fila = (x, i) => `<div class="pr-row${x.rid === yo ? ' yo' : ''}"><span class="pr-n n">${i + 1}</span><div class="pr-eq"><b>${esc(x.n)}</b><small>${x.w}-${x.l}${x.t ? '-' + x.t : ''} · ${n1(x.pf)} ${tx('pts a favor', 'pts for')}</small></div>
+    <div class="pr-st"><span><em class="n">${n1(x.proy)}</em><small>${tx('proy. semana', 'proj. week')}</small></span><span class="pr-bar" title="${tx('Fuerza resto de temporada', 'Rest-of-season strength')}"><i style="width:${Math.round(x.ros / d.maxR * 100)}%"></i><small>${tx('Resto de temporada', 'Rest of season')}</small></span></div>
+    <div class="pr-x">${x.mejor ? `<span><small>${tx('Figura', 'Star')}</small><a href="#/jugador/${x.mejor.id}">${esc(x.mejor.n)}</a></span>` : ''}${x.debil ? `<span class="mal"><small>${tx('Punto débil', 'Weak spot')}</small>${esc(x.debil.s.replace('SUPER_FLEX', 'SFLEX'))}${x.debil.j ? ' · ' + esc(x.debil.j.n) : ' · ' + tx('vacío', 'empty')}</span>` : ''}</div></div>`;
+  const duelo = x => `<div class="pr-du"><span class="${x.pA >= 50 ? 'fav' : ''}"><b>${esc(x.A.n)}</b><em class="n">${n1(x.A.proy)}</em></span><span class="pr-p"><i style="width:${x.pA}%"></i><small class="n">${x.pA}% · ${100 - x.pA}%</small></span><span class="${x.pA < 50 ? 'fav' : ''}"><b>${esc(x.B.n)}</b><em class="n">${n1(x.B.proy)}</em></span></div>`;
+  return `<div class="page">${crumbs([['#/liga', tx('Power Ranking de liga', 'League Power Ranking')], ['', d.nombre]])}<div class="wrap">
+    <section class="block" data-chip="S${d.sem} · ${fm}"><div class="head"><div><small class="pv-k">POWER RANKING FX</small><h1 class="pr-h1">${esc(d.nombre)}</h1><p class="hsub">${tx(`${d.n} equipos · semana ${d.sem} · ${fm}. Mezcla la proyección de esta semana, la fuerza del plantel para el resto de la temporada, el récord y los puntos a favor.`, `${d.n} teams · week ${d.sem} · ${fm}. Blends this week's projection, rest-of-season roster strength, record and points for.`)}</p></div>${sello()}</div>
+    ${prShare(lid, d.nombre)}<div class="pr-list stagger">${d.eq.map(fila).join('')}</div></section>
+    ${d.duelos.length ? `<section class="block" data-chip="${d.duelos.length} ${tx('DUELOS', 'MATCHUPS')}"><div class="head"><div><h2>${tx('Duelos de la semana', 'This week\'s matchups')}</h2><p class="hsub">${tx('Probabilidad de ganar con la alineación óptima de cada equipo. El más parejo va primero.', 'Win probability with each team\'s optimal lineup. Closest first.')}</p></div></div><div class="pr-dus">${d.duelos.map(duelo).join('')}</div></section>` : ''}
+    <section class="block"><div class="pv-lock neon"><div><b>${tx('¿Cuál es tu equipo?', 'Which team is yours?')}</b><p>${tx('Con FX PRO conectas tu equipo y te damos la alineación óptima, los waivers que te faltan y los trades que te convienen contra los demás de esta liga.', 'With FX PRO you connect your team and get your optimal lineup, the waivers you need and the trades that work against the rest of this league.')}</p></div>${ctaPrem(tx('Ver FX PRO', 'See FX PRO'))}</div></section>
+    <section class="block">${intro.replace('<h1 class="pr-h1">', '<h2>').replace('</h1>', '</h2>').replace(/<p class="hsub">[\s\S]*?<\/p>/, '')}</section></div></div>`;
+}
+document.addEventListener('submit', async e => {
+  const f = e.target.closest('form[data-pr="buscar"]'); if (!f) return; e.preventDefault();
+  const v = f.q.value.trim(), lid = prLid(v), msg = t => { const m = document.getElementById('pr-msg'); if (m) m.textContent = t; };
+  if (lid) { location.hash = '#/liga/' + lid; return; }
+  msg(tx('Buscando ligas…', 'Finding leagues…'));
+  try { const { ls } = await importaSleeper(v); if (ls.length === 1) { location.hash = '#/liga/' + ls[0].league_id; return; } _prOpc = ls; repinta(); }
+  catch (er) { msg(er.message && !/^\d+$/.test(er.message) ? er.message : tx('No encontramos esa liga ni ese usuario.', 'We could not find that league or user.')); }
+});
+document.addEventListener('click', e => { const b = e.target.closest('[data-pr-copia]'); if (b) { navigator.clipboard && navigator.clipboard.writeText(b.dataset.prCopia); b.textContent = tx('¡Copiado!', 'Copied!'); mide('power_ranking_compartir', { red: 'copiar' }); } const a = e.target.closest('[data-pr-sh]'); if (a) mide('power_ranking_compartir', { red: a.dataset.prSh }); });
+const prHome = () => `<section class="block"><a class="card pr-cta neon" href="#/liga"><small class="pv-k">${tx('GRATIS · PARA COMISIONADOS', 'FREE · FOR COMMISSIONERS')}</small><b>${tx('Power Ranking de tu liga', 'Your league Power Ranking')}</b><span>${tx('Pega el link de tu liga de Sleeper y mándale al grupo quién manda esta semana.', 'Paste your Sleeper league link and send the group who runs the league this week.')}</span><em>${tx('Armar el ranking', 'Build the ranking')} ›</em></a></section>`;
+
 function router() {
   const [ruta, qs] = ((location.hash || window.FX_RUTA || '').slice(1) || '/').split('?');
   const q = new URLSearchParams(qs || ''), [, seccion, a, b] = ruta.split('/');
   const R = { '': () => inicio(), blog: () => a ? blogNota(a) : blogLista(), noticias: () => noticias(q), reportajes: () => noticias(q), noticia: () => noticia(a), reportaje: () => noticia(a), jugador: () => jugador(a), comparar: () => comparar(a, b), posicion: () => posicion(a),
     equipos: () => equipos(), equipo: () => equipo(a), partidos: () => partidos(q), partido: () => partido(a), lideres: () => lideres(q), media: () => media(), exclusivo: () => exclusivo(), premium: () => premiumHub(a || ''), temporada: () => temporada(), semana: () => semana(a), tendencias: () => esPremium() && LIGA && (LIGA.jugadores || []).length ? premiumHub('tendencias') : tendencias(), lesionados: () => lesionados(q),
-    cuenta: () => cuenta(q), herramientas: () => premiumHub(''), trade: () => esPremium() && LIGA && (LIGA.jugadores || []).length ? premiumHub('trades') : trade(q), privacidad: () => privacidad(), precision: () => precisionVista(), baja: () => baja(q) };
+    cuenta: () => cuenta(q), herramientas: () => premiumHub(''), trade: () => esPremium() && LIGA && (LIGA.jugadores || []).length ? premiumHub('trades') : trade(q), privacidad: () => privacidad(), precision: () => precisionVista(), liga: () => ligaPR(a || (window.FX_RUTA === '#/liga' && !location.hash ? prLid(new URLSearchParams(location.search).get('id')) : null)), baja: () => baja(q) };
   app.innerHTML = (R[seccion || ''] || noEncontrado)();
   if (ruta !== _rutaPrev) { _rutaPrev = ruta; app.classList.remove('entra'); void app.offsetWidth; app.classList.add('entra'); }
   scrollTo({ top: 0 });

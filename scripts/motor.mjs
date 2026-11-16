@@ -244,7 +244,10 @@ const jugadores = [...set].map(k => {
    Volumen esperado (targets, acarreos, yardas de pase) ponderado por recencia × eficiencia del jugador
    regresada a la media de su posición (los TD, que son lo más ruidoso, se regresan mucho más). K y DEF: promedio
    ponderado con regresión. Parámetros elegidos con backtest S4-S7 2026 (scripts de auditoría).                      */
-const FX = { version: 'FX v3', hl: 8, mEf: 40, mTd: 160, aPrev: 0.3 };
+const FX = { version: 'FX v4', hl: 8, mEf: 40, mTd: 160, aPrev: 0.3 };
+/* v4: el modelo propio se combina con el consenso del mercado; el peso por posición lo decide el backtest (MEZ). */
+const MEZ = {};
+const FUERA = new Set(['Out', 'IR', 'PUP', 'Sus', 'Suspended', 'NA', 'DNR']);
 /* v3: la temporada anterior entra como "juegos previos" con peso aPrev (mitad si cambió de equipo); la actual pesa más
    y domina conforme avanza el año. Backtest S3-S7: error medio 4.79 vs 4.87 sin historia (scripts de auditoría). */
 const PREVIA = await (async () => {
@@ -285,18 +288,36 @@ function proyFX(j, W, T) {
    (sin ver el resultado de la semana que proyecta) y se queda con la de menor error. Nunca inventa: solo reajusta pesos. */
 {
   const MF = DIR + '/modelo.json', Mx = leer(MF, { semanas: {} }), base = { hl: FX.hl, mEf: FX.mEf, mTd: FX.mTd, aPrev: FX.aPrev };
-  if (Mx.params && Date.now() - Date.parse(Mx.params.fecha || 0) < 12 * 3600e3) Object.assign(FX, Mx.params.valores);
+  if (Mx.params && Mx.params.mezcla && Date.now() - Date.parse(Mx.params.fecha || 0) < 12 * 3600e3) { Object.assign(FX, Mx.params.valores); Object.assign(MEZ, Mx.params.mezcla); }
   else if (semJuego >= 5) {
     const sems = []; for (let w = Math.max(3, semJuego - 5); w < semJuego; w++) sems.push(w);
     const prueba = () => { let e = 0, n = 0; for (const W of sems) { const T = tasasPos(jugadores, W); for (const j of jugadores) { if (j.pos === 'K' || j.pos === 'DEF') continue; const act = j.log.find(l => l.w === W && l.f && l.f[0] != null); if (!act || j.log.filter(l => l.w < W && l.f).length < 2) continue; const pr = proyFX(j, W, T); if (!pr) continue; e += Math.abs(pr[0] - act.f[0]); n++; } } return n ? e / n : 99; };
     let mejor = { ...base, err: prueba() }; const inicial = mejor.err;
     for (const hl of [6, 8, 11]) for (const mEf of [30, 40, 60]) for (const mTd of [120, 160, 220]) for (const aPrev of [.2, .3, .4]) { Object.assign(FX, { hl, mEf, mTd, aPrev }); const err = prueba(); if (err < mejor.err - .005) mejor = { hl, mEf, mTd, aPrev, err }; }
     const { err, ...valores } = mejor; Object.assign(FX, valores);
-    Mx.params = { fecha: new Date().toISOString(), valores, error: +err.toFixed(3), errorAntes: +inicial.toFixed(3), semanas: sems };
-    guardar(MF, Mx, true); log('Auto-ajuste FX:', JSON.stringify(valores), 'error', inicial.toFixed(3), '→', err.toFixed(3));
+    // v4: combinación con el consenso del mercado. Por posición busca el peso que minimiza el error en las semanas ya jugadas.
+    const mezcla = {}, mezErr = {};
+    try {
+      const REF = {}; for (const W of sems) REF[W] = proyeccionesDe(await get(`https://api.sleeper.app/v1/projections/nfl/regular/${s.temporada}/${W}`));
+      const filas = []; for (const W of sems) { const T = tasasPos(jugadores, W); for (const j of jugadores) { const act = j.log.find(l => l.w === W && l.f && l.f[0] != null); if (!act || j.log.filter(l => l.w < W && l.f).length < 2) continue; const fx = proyFX(j, W, T), r = REF[W][j.id] && REF[W][j.id].pts_ppr; if (!fx || r == null) continue; filas.push({ pos: j.pos, fx: fx[0], r, a: act.f[0] }); } }
+      for (const ps of POS) { const L = filas.filter(x => x.pos === ps); if (L.length < 30) continue; let best = { w: 1, e: 99 };
+        for (let k = 0; k <= 20; k++) { const w = k / 20, e = L.reduce((t, x) => t + Math.abs(w * x.fx + (1 - w) * x.r - x.a), 0) / L.length; if (e < best.e) best = { w, e }; }
+        mezcla[ps] = best.w; mezErr[ps] = { n: L.length, fx: +(L.reduce((t, x) => t + Math.abs(x.fx - x.a), 0) / L.length).toFixed(3), ref: +(L.reduce((t, x) => t + Math.abs(x.r - x.a), 0) / L.length).toFixed(3), mix: +best.e.toFixed(3) }; }
+      if (filas.length) { const tot = k => +(filas.reduce((t, x) => t + Math.abs((k === 'mix' ? (mezcla[x.pos] ?? 1) * x.fx + (1 - (mezcla[x.pos] ?? 1)) * x.r : x[k]) - x.a), 0) / filas.length).toFixed(3); mezErr.total = { n: filas.length, fx: tot('fx'), ref: tot('r'), mix: tot('mix') }; }
+    } catch (e) { log('Mezcla FX: error', e.message); }
+    Object.assign(MEZ, mezcla);
+    Mx.params = { fecha: new Date().toISOString(), valores, mezcla, mezErr, error: +err.toFixed(3), errorAntes: +inicial.toFixed(3), semanas: sems };
+    guardar(MF, Mx, true); log('Auto-ajuste FX:', JSON.stringify(valores), 'error', inicial.toFixed(3), '→', err.toFixed(3), '· mezcla', JSON.stringify(mezcla), JSON.stringify(mezErr.total || {}));
   }
 }
-{ const T = tasasPos(jugadores, semJuego); for (const j of jugadores) j.proy = proyFX(j, semJuego, T); }
+function proyFinal(j, W, T, R) {
+  const fx = proyFX(j, W, T), r = R && R[j.id], w = MEZ[j.pos] ?? 1;
+  const rv = r && r.pts_ppr != null ? [r.pts_ppr, r.pts_half_ppr ?? r.pts_ppr, r.pts_std ?? r.pts_ppr] : null;
+  if (!fx) return rv ? rv.map(v => r1(Math.max(0, v))) : null;
+  if (!rv || w >= 1) return fx;
+  return fx.map((v, i) => r1(Math.max(0, w * v + (1 - w) * rv[i])));
+}
+{ const T = tasasPos(jugadores, semJuego); for (const j of jugadores) { j.proy = proyFinal(j, semJuego, T, PW); if (j.proy && FUERA.has(j.inj)) j.proy = [0, 0, 0]; const c = cal[j.team]; if (j.proy && j.pos !== 'DEF' && c && !c[semJuego]) j.proy = [0, 0, 0]; } }
 log('Modelo', FX.version, ':', jugadores.filter(j => j.proy).length, 'proyecciones propias para la semana', semJuego);
 const J = Object.fromEntries(jugadores.map(j => [j.id, j]));
 const porNombre = {}; jugadores.forEach(j => { porNombre[norm(j.n)] = j.id; });
@@ -560,13 +581,13 @@ try {
   if (Wc >= 3 && !(M.semanas[Wc] && M.semanas[Wc].cerrada)) {
     const ref = proyeccionesDe(await get(`https://api.sleeper.app/v1/projections/nfl/regular/${s.temporada}/${Wc}`)), T = tasasPos(jugadores, Wc);
     const filas = jugadores.map(j => { const act = (j.log.find(l => l.w === Wc && l.f) || {}).f; const prev = j.log.filter(l => l.w < Wc && l.f).length;
-      const fx = proyFX(j, Wc, T), r = ref[j.id] && ref[j.id].pts_ppr; return act && prev >= 2 && fx && r != null ? { pos: j.pos, act: act[0], fx: fx[0], r } : null; }).filter(Boolean);
+      const fx = proyFinal(j, Wc, T, ref), r = ref[j.id] && ref[j.id].pts_ppr; return act && prev >= 2 && fx && r != null ? { pos: j.pos, act: act[0], fx: fx[0], r } : null; }).filter(Boolean);
     const mae = k => Math.round(filas.reduce((a, x) => a + Math.abs(x[k] - x.act), 0) / Math.max(1, filas.length) * 100) / 100;
     const rk = v => { const o = v.map((x, i) => [x, i]).sort((a, b) => a[0] - b[0]), r = []; o.forEach(([, i], k) => r[i] = k); return r; };
     const sp = (L, k) => { const n = L.length; if (n < 6) return null; const a = rk(L.map(x => x[k])), b = rk(L.map(x => x.act)); return Math.round((1 - 6 * a.reduce((t, x, i) => t + (x - b[i]) ** 2, 0) / (n * (n * n - 1))) * 1000) / 1000; };
     const porPos = Object.fromEntries(POS.map(ps => { const L = filas.filter(x => x.pos === ps); return [ps, { n: L.length, spearmanFX: sp(L, 'fx'), spearmanRef: sp(L, 'r') }]; }));
     const juegosPend = Object.values(cal).some(t => t[Wc] && !t[Wc].fin);
-    if (filas.length) { M.version = FX.version; M.semanas[Wc] = { n: filas.length, maeFX: mae('fx'), maeRef: mae('r'), porPos, cerrada: !juegosPend, fecha: new Date().toISOString() }; guardar(DIR + '/modelo.json', M, true); log('Precisión S' + Wc + ': error FX', mae('fx'), '· referencia', mae('r'), '· n', filas.length); }
+    if (filas.length) { M.version = FX.version; M.semanas[Wc] = { version: FX.version, n: filas.length, maeFX: mae('fx'), maeRef: mae('r'), porPos, cerrada: !juegosPend, fecha: new Date().toISOString() }; guardar(DIR + '/modelo.json', M, true); log('Precisión S' + Wc + ': error FX', mae('fx'), '· referencia', mae('r'), '· n', filas.length); }
   }
 } catch (e) { log('Precisión del modelo: error', e.message); }
 guardar(DIR + '/jugadores.json', jugadores);
