@@ -1292,9 +1292,9 @@ function cuenta(q = new URLSearchParams()) {
   const favs = [...FAV].map(id => J[id]).filter(Boolean).sort((a, b) => b.pEst - a.pEst);
   if (q.get('pago') && !esPremium()) esperaPago();
   const hasta = PERFIL && PERFIL.premium_hasta ? new Date(PERFIL.premium_hasta).toLocaleDateString('es-MX', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
-  const tPrem = esPremium() ? `<div class="card prem-card"><h3>★ FX PRO</h3><p>${PERFIL.premium_tipo === 'temporada' ? 'Pase de temporada' : 'Suscripción mensual'}${hasta ? (PERFIL.premium_tipo === 'temporada' ? ' · válido hasta el ' : ' · próxima renovación: ') + hasta : ''}</p><p><a class="btn sm" href="#/premium">Leer el Exclusivo</a>${PAGO.portal && PERFIL.premium_tipo !== 'temporada' ? ` <a class="btn ghost sm" href="${PAGO.portal}" target="_blank" rel="noopener">Administrar o cancelar</a>` : ''}</p></div>`
+  const tPrem = esPremium() ? `<div class="card prem-card"><h3>★ FX PRO</h3><p>${PERFIL.premium_tipo === 'temporada' ? 'Pase de temporada' : PERFIL.premium_tipo === 'creador' ? 'Acceso de creador' : 'Suscripción mensual'}${hasta ? (PERFIL.premium_tipo !== 'mensual' ? ' · válido hasta el ' : ' · próxima renovación: ') + hasta : ''}</p><p><a class="btn sm" href="#/premium">Leer el Exclusivo</a>${PAGO.portal && PERFIL.premium_tipo === 'mensual' ? ` <a class="btn ghost sm" href="${PAGO.portal}" target="_blank" rel="noopener">Administrar o cancelar</a>` : ''}</p></div>`
     : q.get('pago') ? `<div class="card prem-card"><h3>★ Activando tu PRO…</h3><p class="px blink" style="color:var(--gold)">CONFIRMANDO PAGO</p><p class="sub">Tarda unos segundos.</p></div>`
-    : `<div class="card prem-card"><h3>★ Hazte PRO</h3><p class="sub">Desbloquea todas las notas exclusivas de nuestra red de reporteros.</p>${(PAGO.mes || PAGO.temporada) ? planes() : '<small class="muro-pie">Las suscripciones abren en unos días.</small>'}</div>`;
+    : `<div class="card prem-card"><h3>★ Hazte PRO</h3><p class="sub">Desbloquea todas las notas exclusivas de nuestra red de reporteros.</p>${(PAGO.mes || PAGO.temporada) ? planes() : '<small class="muro-pie">Las suscripciones abren en unos días.</small>'}<form class="cg-f codigo-f" data-codigo><input name="c" placeholder="${tx('¿Tienes un código? Escríbelo aquí', 'Have a code? Enter it here')}" autocomplete="off" required><button class="btn ghost" type="submit">${tx('Canjear', 'Redeem')}</button></form><p class="cg-msg" id="codigo-msg"></p></div>`;
   return `<div class="page">${crumbs([['', 'Mi cuenta']])}<div class="wrap narrowish"><section class="block">
     <div class="head"><div><h2>Hola, ${esc((PERFIL && PERFIL.nombre) || '')}</h2><p class="hsub">${esc(YO.email || '')}</p></div><button class="btn ghost sm" type="button" id="salir">Cerrar sesión</button></div>
     ${tPrem}
@@ -1987,6 +1987,16 @@ document.addEventListener('submit', async e => {
 document.addEventListener('click', e => { const b = e.target.closest('[data-pr-copia]'); if (b) { navigator.clipboard && navigator.clipboard.writeText(b.dataset.prCopia); b.textContent = tx('¡Copiado!', 'Copied!'); mide('power_ranking_compartir', { red: 'copiar' }); } const a = e.target.closest('[data-pr-sh]'); if (a) mide('power_ranking_compartir', { red: a.dataset.prSh }); });
 const prHome = () => `<section class="block"><a class="card pr-cta neon" href="#/liga"><small class="pv-k">${tx('GRATIS · PARA COMISIONADOS', 'FREE · FOR COMMISSIONERS')}</small><b>${tx('Power Ranking de tu liga', 'Your league Power Ranking')}</b><span>${tx('Pega el link de tu liga de Sleeper y mándale al grupo quién manda esta semana.', 'Paste your Sleeper league link and send the group who runs the league this week.')}</span><em>${tx('Armar el ranking', 'Build the ranking')} ›</em></a></section>`;
 
+document.addEventListener('submit', async e => {
+  const f = e.target.closest('form[data-codigo]'); if (!f) return; e.preventDefault();
+  const m = document.getElementById('codigo-msg'), di = t => { if (m) m.textContent = t; };
+  if (!SB || !YO) return di(tx('Entra a tu cuenta primero.', 'Sign in first.'));
+  di(tx('Revisando…', 'Checking…'));
+  const { data, error } = await SB.rpc('canjear_codigo', { c: f.c.value });
+  if (error) return di(tx('No se pudo canjear. Intenta de nuevo.', 'Could not redeem. Try again.'));
+  const R = { ok: tx('¡Listo! Ya eres PRO.', 'Done! You are PRO now.'), no_existe: tx('Ese código no existe.', 'That code does not exist.'), ya_usado: tx('Ya usaste ese código.', 'You already used that code.'), agotado: tx('Ese código ya se usó o venció.', 'That code was used or expired.'), sin_sesion: tx('Entra a tu cuenta primero.', 'Sign in first.') };
+  di(R[data] || R.no_existe); if (data === 'ok') { mide('codigo_canjeado'); await cargaPerfil(); }
+});
 function router() {
   const [ruta, qs] = ((location.hash || window.FX_RUTA || '').slice(1) || '/').split('?');
   const q = new URLSearchParams(qs || ''), [, seccion, a, b] = ruta.split('/');
