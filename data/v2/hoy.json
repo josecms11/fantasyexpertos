@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-16T15:56:52.240Z",
-  "ultimaIA": "2026-11-16T15:56:52.240Z",
+  "actualizado": "2026-11-17T00:04:50.554Z",
+  "ultimaIA": "2026-11-17T00:04:50.554Z",
   "semana": 10,
   "semanaStats": 10,
   "temporada": "2026",
@@ -14,104 +14,91 @@
   ],
   "noticias": [
     {
-      "id": "n20261116155600",
-      "fecha": "2026-11-16T15:56:52.240Z",
+      "id": "n20261117000400",
+      "fecha": "2026-11-17T00:04:50.554Z",
       "semana": 10,
-      "titulo": "Drake Maye sufre grave lesión de tobillo",
+      "titulo": "Drake London libró el protocolo de conmoción en Atlanta",
       "claves": [
-        "Fractura de tobillo deja a Maye fuera en 2026.",
-        "Evaluaciones médicas en Alemania confirman gravedad de lesión.",
-        "Pérdida total de valor fantasy en mariscal de New England."
+        "Drake London superó las pruebas tras salir en la semana 9.",
+        "El receptor estrella no presentó síntomas graves tras revisión médica.",
+        "Mantiene su perfil de receptor WR1 para la semana 10."
       ],
-      "contexto": "El mariscal de campo de Patriots, Drake Maye, sufrió una fuerte lesión de tobillo en el duelo de la semana 10 ante Lions. Reportes confirman la sospecha de una fractura que terminaría con su temporada 2026. Maye permaneció en Alemania para someterse a estudios médicos adicionales que evaluaron el daño exacto en su articulación.",
-      "fantasy": "Drake Maye debe ser colocado en la reserva de lesionados o liberado en ligas de 1 QB donde no tengas espacios de IR. Su baja de larga duración afecta directamente a todo el ataque aéreo de Patriots en formatos PPR y estándar. Ningún receptor de New England mantiene un techo elevado sin su pasador titular.",
-      "equipo_impacto": "La ofensiva de New England pierde a su pasador estelar, lo que obligará a ajustar el plan de juego en las próximas semanas. Los rivales enfocarán su atención en frenar el ataque terrestre.",
-      "accion": "Envía a Drake Maye a tu casilla de IR inmediatamente.",
+      "contexto": "El receptor de los Falcons abandonó el duelo del domingo ante los Chiefs en los minutos finales para ser evaluado por una posible conmoción. Sin embargo, los exámenes médicos confirmaron que Drake London quedó completamente limpio y sin restricciones. Esta noticia elimina la incertidumbre para la ofensiva aérea de Atlanta en la semana 10, asegurando a su objetivo principal en el esquema ofensivo tras la revisión obligatoria.",
+      "fantasy": "Con su alta médica, London se consolida como un titular inamovible en ligas PPR y formato estándar para la semana 10. Si bien aparece registrado con estatus cuestionable en el reporte oficial por el golpe en la cabeza, haber superado el protocolo te da la luz verde para alinearlo en tu alineación titular. Su volumen constante de blancos lo mantiene como una opción WR1 de alto techo contra cualquier defensiva.",
+      "equipo_impacto": "El regreso limpio de London evita que la carga pase a Darnell Mooney o Ray-Ray McCloud como receptores principales. Kirk Cousins conserva a su objetivo más confiable en tercer down y zona roja, manteniendo la fluidez del ataque aéreo de los Falcons de cara a su siguiente compromiso.",
+      "accion": "Alinea a Drake London como tu WR1 titular sin dudarlo esta semana.",
+      "en": {
+        "titulo": "Drake London clears concussion protocol for Week 10",
+        "claves": [
+          "Drake London cleared tests after leaving during Week 9.",
+          "The star wideout showed no lasting symptoms after medical review.",
+          "Remains a solid WR1 option for Week 10 fantasy lineups."
+        ],
+        "contexto": "The Falcons wide receiver left Sunday's game against the Chiefs late in the fourth quarter to be evaluated for a potential head injury. However, medical testing cleared Drake London completely without any lingering restrictions. This update removes fantasy uncertainty for Atlanta's passing attack in Week 10, ensuring their top wideout is ready to roll after undergoing the mandatory league protocols.",
+        "fantasy": "Having cleared protocol, London remains a must-start WR1 across all PPR and standard fantasy leagues in Week 10. Although officially listed as questionable on the injury report due to his head injury, passing the evaluation gives fantasy managers full clearance to lock him into starting lineups. His high target volume guarantees a high ceiling every single week.",
+        "equipo_impacto": "London's clean bill of health prevents extra target burden from falling onto Darnell Mooney or secondary options. Kirk Cousins keeps his most reliable target on third downs and inside the red zone, preserving Atlanta's offensive rhythm.",
+        "accion": "Start Drake London as your locked-in WR1 in all fantasy formats."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "ATL",
+      "equipos": [
+        "ATL"
+      ],
+      "jugadores": [
+        "8112"
+      ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50501221/drake-maye-injury-likely-season-ending",
-          "t": "Adam Schefter: Drake Maye's injury is likely season-ending"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50500352/patriots-qb-drake-maye-leg-miss-extended-sources-say",
-          "t": "Sources: Patriots fear Drake Maye has broken ankle, could miss rest of season"
-        },
-        {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/drake-maye-injury-update-patriots-qb-ankle-out-for-season/",
-          "t": "\n                        Drake Maye injury update: Patriots reportedly fear QB fractured ankle, could miss rest of season\n                  "
+          "u": "https://www.espn.com/nfl/story/_/id/50503127/falcons-drake-london-cleared-being-checked-concussion",
+          "t": "Falcons WR Drake London cleared after being checked for concussion"
         }
-      ],
-      "en": {
-        "titulo": "Drake Maye suffers serious ankle injury",
-        "claves": [
-          "Ankle fracture leaves Maye out in 2026.",
-          "Medical evaluations in Germany confirm injury severity.",
-          "Total loss of fantasy value for New England quarterback."
-        ],
-        "contexto": "Patriots quarterback Drake Maye suffered a severe ankle injury in the Week 10 matchup against the Lions. Reports confirm fears of a fracture that could end his 2026 season. Maye remained in Germany to undergo additional medical tests to evaluate the exact extent of the damage to his ankle.",
-        "fantasy": "Drake Maye must be moved to IR or dropped in 1 QB leagues if you lack IR spots. His long-term absence directly harms the entire Patriots passing attack in PPR and standard formats. No New England receiver maintains a high ceiling without their starting quarterback.",
-        "equipo_impacto": "New England's offense loses its star passer, forcing adjustments to their game plan in coming weeks. Opponents will now focus heavily on stopping the ground attack.",
-        "accion": "Move Drake Maye to your IR slot immediately."
-      },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "NE",
-      "equipos": [
-        "NE"
-      ],
-      "jugadores": [
-        "11564"
       ],
       "menciona": []
     },
     {
-      "id": "n20261116155601",
-      "fecha": "2026-11-16T15:56:52.240Z",
+      "id": "n20261117000401",
+      "fecha": "2026-11-17T00:04:50.554Z",
       "semana": 10,
-      "titulo": "Aidan Hutchinson queda fuera por rotura de ligamentos",
+      "titulo": "Jordan Addison requiere cirugía e iría a lesionados",
       "claves": [
-        "Rotura de ligamento cruzado anterior confirma baja en 2026.",
-        "Lesión sufrida durante el partido de la semana 10.",
-        "Golpe severo para la unidad defensiva de Detroit."
+        "Jordan Addison necesita operación en el pulgar tras la semana 9.",
+        "El receptor de Minnesota es candidato a ir a lista de lesionados.",
+        "Queda fuera para la semana 10 y perderá múltiples semanas."
       ],
-      "contexto": "El cazador de cabezas estrella de Lions, Aidan Hutchinson, se perderá el resto de la temporada 2026 tras sufrir una rotura de ligamento cruzado anterior en la rodilla derecha durante la semana 10. Las pruebas iniciales confirmaron la severidad del daño en el ligamento, dejando a la defensiva de Detroit sin su mejor presionador de mariscales.",
-      "fantasy": "La pérdida de Hutchinson reduce significativamente el valor fantasy de la defensiva de Lions (D/ST). Aunque proyectan 8.2 pts en la semana 10, su capacidad para generar capturas y forzar balones sueltos cae drásticamente. En ligas con formato IDP, Hutchinson debe ser soltado o colocado en IR de inmediato por los managers.",
-      "equipo_impacto": "La defensiva de Detroit pierde a su líder en capturas y referente frontal. Los mariscales rivales dispondrán de más tiempo en la bolsa de protección durante los siguientes compromisos.",
-      "accion": "Banca o libera a la defensiva D/ST de Lions ante rivales complicados.",
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50501291/sources-aidan-hutchinson-season-torn-acl",
-          "t": "Sources: Lions' Aidan Hutchinson out for season with knee injury"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50501190/did-aidan-hutchinson-celebration-lead-injury",
-          "t": "Did Aidan Hutchinson's celebration lead to his injury?"
-        }
-      ],
+      "contexto": "El entrenador Kevin O'Connell confirmó este lunes que el receptor de los Vikings, Jordan Addison, requiere una intervención quirúrgica en el pulgar. El egresado de USC sufrió la molestia durante el último encuentro y los diagnósticos señalan que deberá pasar por el quirófano, convirtiéndolo en un candidato inmediato para ser colocado en la lista de lesionados por los próximos compromisos del equipo en la temporada 2024.",
+      "fantasy": "Con estatus oficial fuera para la semana 10 por la lesión de pulgar, Jordan Addison debe salir inmediatamente de tu alineación titular. Si se confirma su paso a la lista de lesionados, se perderá al menos 4 partidos consecutivos. En ligas cortas de 10 equipos sin casillas de lesionados, Addison se convierte en un candidato directo para ser liberado en la agencia libre para buscar variantes disponibles.",
+      "equipo_impacto": "La ausencia de Addison deja a Justin Jefferson con una concentración todavía mayor de pases en el ataque de Minnesota. Receptores secundarios deberán asumir un rol más protagónico para complementar la ofensiva aérea del equipo comandada por Sam Darnold mientras Addison se recupera de la operación.",
+      "accion": "Banca o corta a Jordan Addison según el espacio de lesionados en tu liga.",
       "en": {
-        "titulo": "Aidan Hutchinson out with ACL tear",
+        "titulo": "Jordan Addison needs thumb surgery, candidate for IR",
         "claves": [
-          "ACL tear confirms absence for 2026 season.",
-          "Injury sustained during Week 10 game.",
-          "Major blow to Detroit defensive unit."
+          "Jordan Addison requires thumb surgery following Week 9 action.",
+          "The Vikings receiver is a prime candidate for injured reserve.",
+          "Ruled out for Week 10 and facing a multi-week absence."
         ],
-        "contexto": "Lions star pass rusher Aidan Hutchinson will miss the rest of the 2026 season after suffering a torn ACL in his right knee during Week 10. Initial tests confirmed the severity of the ligament damage, leaving Detroit's defense without its premier pass rusher.",
-        "fantasy": "Losing Hutchinson significantly lowers the fantasy value of the Lions D/ST. Although projected for 8.2 pts in Week 10, their ability to generate sacks and force turnovers drops dramatically. In IDP formats, Hutchinson must be dropped or placed on IR immediately by fantasy managers.",
-        "equipo_impacto": "Detroit's defense loses its primary pass rusher and vocal leader. Opposing quarterbacks will get significantly more time in the pocket, which weakens the entire secondary and overall defensive unit stability going forward.",
-        "accion": "Bench or drop the Lions D/ST against tough matchups."
+        "contexto": "Vikings head coach Kevin O'Connell announced Monday that wide receiver Jordan Addison needs thumb surgery after sustaining an injury during their last game. Medical evaluations determined that an operation is necessary, making the playmaker a primary candidate to be placed on injured reserve. This setback forces Minnesota to adjust their receiving corps for the upcoming stretch of the 2024 season.",
+        "fantasy": "Officially ruled out for Week 10 with a thumb issue, Jordan Addison must be benched in all fantasy formats immediately. If Minnesota places him on IR, he will miss at least 4 consecutive games. In smaller 10-team redraft leagues without dedicated IR spots, Addison can be safely dropped to clear roster space for available waiver wire targets.",
+        "equipo_impacto": "Addison's absence forces even more target consolidation toward Justin Jefferson in Minnesota's passing game. Secondary receivers will need to step up into larger roles to support the offense while Addison recovers from surgery.",
+        "accion": "Bench or drop Jordan Addison based on your league's IR spot availability."
       },
       "etiqueta": "LESIÓN",
       "impacto": "BAJA",
-      "equipo": "DET",
+      "equipo": "MIN",
       "equipos": [
-        "DET"
+        "MIN"
       ],
-      "jugadores": [],
+      "jugadores": [
+        "9756"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50503437/vikings-wr-jordan-addison-needs-thumb-surgery",
+          "t": "Vikings WR Jordan Addison needs thumb surgery, is candidate for IR"
+        }
+      ],
       "menciona": []
     }
   ],
@@ -278,57 +265,58 @@
     }
   ],
   "agregados": [
-    "5995",
     "9754",
-    "13337",
-    "12540",
     "13424",
     "13281",
     "10218",
-    "13269",
-    "11783",
-    "2505",
-    "7562",
+    "5995",
     "9482",
-    "3271",
-    "13296",
-    "4017",
-    "4993",
-    "13414",
-    "12700",
-    "9479",
-    "12499",
+    "11783",
+    "13337",
     "12492",
-    "10219",
+    "13414",
+    "4017",
+    "12700",
+    "13296",
+    "9758",
     "TB",
+    "DET",
+    "12499",
+    "1166",
+    "4035",
+    "2505",
+    "13264",
+    "13269",
     "9480",
-    "9758"
+    "11563",
+    "4993"
   ],
   "soltados": [
     "12491",
     "6130",
-    "9756",
     "13276",
     "10219",
-    "11579",
-    "11435",
-    "6650",
-    "10232",
-    "11834",
-    "11635",
-    "2505",
-    "10213",
-    "11624",
-    "3286",
     "7562",
-    "5849",
-    "12540",
+    "2505",
+    "9756",
+    "3286",
+    "10213",
+    "11579",
+    "11834",
     "9502",
+    "11624",
+    "12540",
+    "8132",
+    "2747",
     "11637",
-    "12718",
-    "11625",
+    "11635",
     "12545",
-    "4037"
+    "12718",
+    "NE",
+    "11435",
+    "10232",
+    "5995",
+    "4993"
   ],
   "duelo": {
     "a": "CeeDee Lamb",
