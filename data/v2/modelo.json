@@ -1,5 +1,5 @@
 {
-  "version": "FX v3",
+  "version": "FX v4",
   "semanas": {
     "6": {
       "n": 309,
@@ -156,6 +156,46 @@
       },
       "cerrada": true,
       "fecha": "2026-11-10T11:37:21.839Z"
+    },
+    "10": {
+      "version": "FX v4",
+      "n": 309,
+      "maeFX": 4.84,
+      "maeRef": 4.79,
+      "porPos": {
+        "QB": {
+          "n": 25,
+          "spearmanFX": 0.428,
+          "spearmanRef": 0.43
+        },
+        "RB": {
+          "n": 67,
+          "spearmanFX": 0.754,
+          "spearmanRef": 0.737
+        },
+        "WR": {
+          "n": 98,
+          "spearmanFX": 0.517,
+          "spearmanRef": 0.53
+        },
+        "TE": {
+          "n": 66,
+          "spearmanFX": 0.49,
+          "spearmanRef": 0.495
+        },
+        "K": {
+          "n": 25,
+          "spearmanFX": -0.081,
+          "spearmanRef": -0.088
+        },
+        "DEF": {
+          "n": 28,
+          "spearmanFX": 0.458,
+          "spearmanRef": 0.458
+        }
+      },
+      "cerrada": true,
+      "fecha": "2026-11-17T07:56:09.757Z"
     }
   },
   "params": {

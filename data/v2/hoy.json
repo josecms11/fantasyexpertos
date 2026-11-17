@@ -1,102 +1,58 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-17T00:04:50.554Z",
-  "ultimaIA": "2026-11-17T00:04:50.554Z",
-  "semana": 10,
-  "semanaStats": 10,
+  "actualizado": "2026-11-17T07:48:11.820Z",
+  "ultimaIA": "2026-11-17T07:48:11.820Z",
+  "semana": 11,
+  "semanaStats": 11,
   "temporada": "2026",
   "semanas": [
-    6,
     7,
     8,
     9,
-    10
+    10,
+    11
   ],
   "noticias": [
     {
-      "id": "n20261117000400",
-      "fecha": "2026-11-17T00:04:50.554Z",
-      "semana": 10,
-      "titulo": "Drake London libró el protocolo de conmoción en Atlanta",
+      "id": "n20261117074801",
+      "fecha": "2026-11-17T07:48:11.820Z",
+      "semana": 11,
+      "titulo": "Geno Smith evita daño mayor en el tobillo",
       "claves": [
-        "Drake London superó las pruebas tras salir en la semana 9.",
-        "El receptor estrella no presentó síntomas graves tras revisión médica.",
-        "Mantiene su perfil de receptor WR1 para la semana 10."
+        "Geno Smith se somete a estudios médicos tras lesión",
+        "Los exámenes descartan problemas graves en el tobillo izquierdo",
+        "El mariscal de los Jets esquiva una ausencia prolongada"
       ],
-      "contexto": "El receptor de los Falcons abandonó el duelo del domingo ante los Chiefs en los minutos finales para ser evaluado por una posible conmoción. Sin embargo, los exámenes médicos confirmaron que Drake London quedó completamente limpio y sin restricciones. Esta noticia elimina la incertidumbre para la ofensiva aérea de Atlanta en la semana 10, asegurando a su objetivo principal en el esquema ofensivo tras la revisión obligatoria.",
-      "fantasy": "Con su alta médica, London se consolida como un titular inamovible en ligas PPR y formato estándar para la semana 10. Si bien aparece registrado con estatus cuestionable en el reporte oficial por el golpe en la cabeza, haber superado el protocolo te da la luz verde para alinearlo en tu alineación titular. Su volumen constante de blancos lo mantiene como una opción WR1 de alto techo contra cualquier defensiva.",
-      "equipo_impacto": "El regreso limpio de London evita que la carga pase a Darnell Mooney o Ray-Ray McCloud como receptores principales. Kirk Cousins conserva a su objetivo más confiable en tercer down y zona roja, manteniendo la fluidez del ataque aéreo de los Falcons de cara a su siguiente compromiso.",
-      "accion": "Alinea a Drake London como tu WR1 titular sin dudarlo esta semana.",
+      "contexto": "Tras encender las alarmas por un problema físico en el tobillo izquierdo, el mariscal de campo de los Jets, Geno Smith, se sometió a pruebas médicas. Las evaluaciones de imagen descartaron daños estructurales mayores, evitando lo que pudo ser una baja de larga duración para la franquicia neoyorquina.",
+      "fantasy": "Para los formatos de fantasy football, esta noticia mitiga el riesgo de un colapso total en la ofensiva de los Jets. Aunque hay que vigilar su evolución durante los entrenamientos previos a la próxima jornada, evita por ahora un desastre absoluto en las ligas profundas que dependían de su presencia.",
+      "equipo_impacto": "La continuidad potencial de Smith en los controles mantiene la estabilidad mínima en el esquema ofensivo, evitando que el equipo tenga que recurrir de emergencia a opciones menos experimentadas bajo el centro.",
+      "accion": "Mantén a Geno en tu radar pero espera confirmación de prácticas completas.",
       "en": {
-        "titulo": "Drake London clears concussion protocol for Week 10",
+        "titulo": "Geno Smith avoids major ankle damage",
         "claves": [
-          "Drake London cleared tests after leaving during Week 9.",
-          "The star wideout showed no lasting symptoms after medical review.",
-          "Remains a solid WR1 option for Week 10 fantasy lineups."
+          "Geno Smith undergoes medical tests after injury",
+          "Scans rule out major issues in left ankle",
+          "Jets quarterback avoids prolonged absence"
         ],
-        "contexto": "The Falcons wide receiver left Sunday's game against the Chiefs late in the fourth quarter to be evaluated for a potential head injury. However, medical testing cleared Drake London completely without any lingering restrictions. This update removes fantasy uncertainty for Atlanta's passing attack in Week 10, ensuring their top wideout is ready to roll after undergoing the mandatory league protocols.",
-        "fantasy": "Having cleared protocol, London remains a must-start WR1 across all PPR and standard fantasy leagues in Week 10. Although officially listed as questionable on the injury report due to his head injury, passing the evaluation gives fantasy managers full clearance to lock him into starting lineups. His high target volume guarantees a high ceiling every single week.",
-        "equipo_impacto": "London's clean bill of health prevents extra target burden from falling onto Darnell Mooney or secondary options. Kirk Cousins keeps his most reliable target on third downs and inside the red zone, preserving Atlanta's offensive rhythm.",
-        "accion": "Start Drake London as your locked-in WR1 in all fantasy formats."
-      },
-      "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "ATL",
-      "equipos": [
-        "ATL"
-      ],
-      "jugadores": [
-        "8112"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50503127/falcons-drake-london-cleared-being-checked-concussion",
-          "t": "Falcons WR Drake London cleared after being checked for concussion"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261117000401",
-      "fecha": "2026-11-17T00:04:50.554Z",
-      "semana": 10,
-      "titulo": "Jordan Addison requiere cirugía e iría a lesionados",
-      "claves": [
-        "Jordan Addison necesita operación en el pulgar tras la semana 9.",
-        "El receptor de Minnesota es candidato a ir a lista de lesionados.",
-        "Queda fuera para la semana 10 y perderá múltiples semanas."
-      ],
-      "contexto": "El entrenador Kevin O'Connell confirmó este lunes que el receptor de los Vikings, Jordan Addison, requiere una intervención quirúrgica en el pulgar. El egresado de USC sufrió la molestia durante el último encuentro y los diagnósticos señalan que deberá pasar por el quirófano, convirtiéndolo en un candidato inmediato para ser colocado en la lista de lesionados por los próximos compromisos del equipo en la temporada 2024.",
-      "fantasy": "Con estatus oficial fuera para la semana 10 por la lesión de pulgar, Jordan Addison debe salir inmediatamente de tu alineación titular. Si se confirma su paso a la lista de lesionados, se perderá al menos 4 partidos consecutivos. En ligas cortas de 10 equipos sin casillas de lesionados, Addison se convierte en un candidato directo para ser liberado en la agencia libre para buscar variantes disponibles.",
-      "equipo_impacto": "La ausencia de Addison deja a Justin Jefferson con una concentración todavía mayor de pases en el ataque de Minnesota. Receptores secundarios deberán asumir un rol más protagónico para complementar la ofensiva aérea del equipo comandada por Sam Darnold mientras Addison se recupera de la operación.",
-      "accion": "Banca o corta a Jordan Addison según el espacio de lesionados en tu liga.",
-      "en": {
-        "titulo": "Jordan Addison needs thumb surgery, candidate for IR",
-        "claves": [
-          "Jordan Addison requires thumb surgery following Week 9 action.",
-          "The Vikings receiver is a prime candidate for injured reserve.",
-          "Ruled out for Week 10 and facing a multi-week absence."
-        ],
-        "contexto": "Vikings head coach Kevin O'Connell announced Monday that wide receiver Jordan Addison needs thumb surgery after sustaining an injury during their last game. Medical evaluations determined that an operation is necessary, making the playmaker a primary candidate to be placed on injured reserve. This setback forces Minnesota to adjust their receiving corps for the upcoming stretch of the 2024 season.",
-        "fantasy": "Officially ruled out for Week 10 with a thumb issue, Jordan Addison must be benched in all fantasy formats immediately. If Minnesota places him on IR, he will miss at least 4 consecutive games. In smaller 10-team redraft leagues without dedicated IR spots, Addison can be safely dropped to clear roster space for available waiver wire targets.",
-        "equipo_impacto": "Addison's absence forces even more target consolidation toward Justin Jefferson in Minnesota's passing game. Secondary receivers will need to step up into larger roles to support the offense while Addison recovers from surgery.",
-        "accion": "Bench or drop Jordan Addison based on your league's IR spot availability."
+        "contexto": "After raising alarms with a left ankle issue, Jets quarterback Geno Smith underwent medical evaluations. Imaging tests ruled out major structural damage, avoiding what could have been a lengthy absence for the New York franchise.",
+        "fantasy": "For fantasy football formats, this news mitigates the risk of a total collapse in the Jets offense. Although his progress during practices ahead of the next slate must be monitored, it currently prevents an absolute disaster in deeper leagues relying on him.",
+        "equipo_impacto": "Smith's potential continuity under center maintains minimal stability within the offensive scheme, preventing the team from having to resort to emergency, less experienced options at quarterback.",
+        "accion": "Keep Geno on your radar but await full practice confirmation."
       },
       "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "MIN",
+      "impacto": "NEUTRO",
+      "equipo": "NYJ",
       "equipos": [
-        "MIN"
+        "NYJ"
       ],
       "jugadores": [
-        "9756"
+        "1373"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50503437/vikings-wr-jordan-addison-needs-thumb-surgery",
-          "t": "Vikings WR Jordan Addison needs thumb surgery, is candidate for IR"
+          "u": "https://www.espn.com/nfl/story/_/id/50506147/jets-qb-geno-smith-avoided-major-ankle-injury",
+          "t": "Sources: Jets QB Geno Smith avoided major ankle injury, testing shows"
         }
       ],
       "menciona": []
@@ -124,7 +80,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12519",
+      "id": "8112",
       "estatus": "Duda"
     },
     {
@@ -144,12 +100,16 @@
       "estatus": "Fuera"
     },
     {
-      "id": "8112",
+      "id": "4892",
       "estatus": "Duda"
     },
     {
       "id": "2216",
       "estatus": "Fuera"
+    },
+    {
+      "id": "12519",
+      "estatus": "Duda"
     },
     {
       "id": "5844",
@@ -180,12 +140,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "1466",
-      "estatus": "Duda"
-    },
-    {
       "id": "11435",
       "estatus": "Fuera"
+    },
+    {
+      "id": "1466",
+      "estatus": "Duda"
     },
     {
       "id": "7525",
@@ -194,10 +154,6 @@
     {
       "id": "12489",
       "estatus": "Fuera"
-    },
-    {
-      "id": "8126",
-      "estatus": "Duda"
     },
     {
       "id": "12536",
@@ -212,6 +168,14 @@
       "estatus": "Fuera"
     },
     {
+      "id": "8126",
+      "estatus": "Duda"
+    },
+    {
+      "id": "8210",
+      "estatus": "Duda"
+    },
+    {
       "id": "12534",
       "estatus": "Fuera"
     },
@@ -224,10 +188,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4892",
-      "estatus": "Duda"
-    },
-    {
       "id": "8110",
       "estatus": "Fuera"
     },
@@ -236,11 +196,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "13287",
+      "id": "9486",
       "estatus": "Fuera"
     },
     {
-      "id": "9486",
+      "id": "13287",
       "estatus": "Fuera"
     },
     {
@@ -252,10 +212,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "8210",
-      "estatus": "Duda"
-    },
-    {
       "id": "11635",
       "estatus": "Fuera"
     },
@@ -265,58 +221,57 @@
     }
   ],
   "agregados": [
-    "9754",
+    "10218",
+    "9482",
     "13424",
     "13281",
-    "10218",
-    "5995",
-    "9482",
     "11783",
-    "13337",
+    "5012",
+    "9754",
     "12492",
+    "5995",
+    "DET",
+    "13337",
     "13414",
     "4017",
     "12700",
     "13296",
-    "9758",
-    "TB",
-    "DET",
     "12499",
+    "6650",
+    "TB",
+    "12533",
+    "9758",
     "1166",
-    "4035",
-    "2505",
-    "13264",
-    "13269",
-    "9480",
     "11563",
-    "4993"
+    "9480",
+    "2505",
+    "4035"
   ],
   "soltados": [
     "12491",
     "6130",
     "13276",
-    "10219",
-    "7562",
     "2505",
     "9756",
-    "3286",
-    "10213",
+    "10219",
     "11579",
+    "3286",
     "11834",
+    "12540",
     "9502",
     "11624",
-    "12540",
-    "8132",
+    "10213",
     "2747",
-    "11637",
-    "11635",
-    "12545",
     "12718",
+    "BAL",
+    "3271",
+    "12545",
+    "8132",
     "NE",
-    "11435",
-    "10232",
-    "5995",
-    "4993"
+    "11637",
+    "9754",
+    "IND",
+    "5995"
   ],
   "duelo": {
     "a": "CeeDee Lamb",
