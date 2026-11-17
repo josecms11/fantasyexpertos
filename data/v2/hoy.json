@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-17T07:48:11.820Z",
-  "ultimaIA": "2026-11-17T07:48:11.820Z",
+  "actualizado": "2026-11-17T17:06:47.399Z",
+  "ultimaIA": "2026-11-17T17:06:47.399Z",
   "semana": 11,
   "semanaStats": 11,
   "temporada": "2026",
@@ -14,45 +14,46 @@
   ],
   "noticias": [
     {
-      "id": "n20261117074801",
-      "fecha": "2026-11-17T07:48:11.820Z",
+      "id": "n20261117170600",
+      "fecha": "2026-11-17T17:06:47.399Z",
       "semana": 11,
-      "titulo": "Geno Smith evita daño mayor en el tobillo",
+      "titulo": "Jordyn Tyson es la prioridad en waivers",
       "claves": [
-        "Geno Smith se somete a estudios médicos tras lesión",
-        "Los exámenes descartan problemas graves en el tobillo izquierdo",
-        "El mariscal de los Jets esquiva una ausencia prolongada"
+        "Jordyn Tyson lidera recomendaciones de expertos",
+        "Gran oportunidad para añadir profundidad en receptores",
+        "Alta prioridad en ligas profundas"
       ],
-      "contexto": "Tras encender las alarmas por un problema físico en el tobillo izquierdo, el mariscal de campo de los Jets, Geno Smith, se sometió a pruebas médicas. Las evaluaciones de imagen descartaron daños estructurales mayores, evitando lo que pudo ser una baja de larga duración para la franquicia neoyorquina.",
-      "fantasy": "Para los formatos de fantasy football, esta noticia mitiga el riesgo de un colapso total en la ofensiva de los Jets. Aunque hay que vigilar su evolución durante los entrenamientos previos a la próxima jornada, evita por ahora un desastre absoluto en las ligas profundas que dependían de su presencia.",
-      "equipo_impacto": "La continuidad potencial de Smith en los controles mantiene la estabilidad mínima en el esquema ofensivo, evitando que el equipo tenga que recurrir de emergencia a opciones menos experimentadas bajo el centro.",
-      "accion": "Mantén a Geno en tu radar pero espera confirmación de prácticas completas.",
+      "contexto": "El receptor Jordyn Tyson ha emergido como el objetivo número 1 en el mercado de agentes libres para la semana 11 según Field Yates. Su reciente producción y volumen de juego lo colocan por encima de otras opciones disponibles, convirtiéndolo en la adición más codiciada para los managers que buscan reforzar su plantilla en la recta final de la temporada.",
+      "fantasy": "Impacto inmediato en ligas de formato profundo y dinastías. Tyson debe ser tu prioridad número 1 si necesitas un receptor con potencial de titularidad semanal. Su ascenso en las preferencias de los expertos sugiere que su participación seguirá aumentando, lo que lo vuelve una pieza clave para cubrir lesiones o semanas de descanso en tu alineación.",
+      "equipo_impacto": "Su integración en la rotación ofensiva ofrece una válvula de escape necesaria, ayudando a diversificar las amenazas aéreas del equipo y quitando presión a los receptores principales.",
+      "accion": "Gasta tu prioridad de waivers o un porcentaje importante de tu presupuesto FAAB en Jordyn Tyson.",
       "en": {
-        "titulo": "Geno Smith avoids major ankle damage",
+        "titulo": "Jordyn Tyson is the top waiver target",
         "claves": [
-          "Geno Smith undergoes medical tests after injury",
-          "Scans rule out major issues in left ankle",
-          "Jets quarterback avoids prolonged absence"
+          "Jordyn Tyson leads expert waiver recommendations",
+          "Great opportunity for receiver depth",
+          "High priority in deep leagues"
         ],
-        "contexto": "After raising alarms with a left ankle issue, Jets quarterback Geno Smith underwent medical evaluations. Imaging tests ruled out major structural damage, avoiding what could have been a lengthy absence for the New York franchise.",
-        "fantasy": "For fantasy football formats, this news mitigates the risk of a total collapse in the Jets offense. Although his progress during practices ahead of the next slate must be monitored, it currently prevents an absolute disaster in deeper leagues relying on him.",
-        "equipo_impacto": "Smith's potential continuity under center maintains minimal stability within the offensive scheme, preventing the team from having to resort to emergency, less experienced options at quarterback.",
-        "accion": "Keep Geno on your radar but await full practice confirmation."
+        "contexto": "Wide receiver Jordyn Tyson has emerged as the number 1 waiver wire target for Week 11 according to Field Yates. His recent production and usage make him the most coveted addition for managers looking to bolster their rosters during the final stretch of the season.",
+        "fantasy": "Immediate impact in deep leagues and dynasty formats. Tyson should be your number 1 priority if you need a receiver with weekly starting potential. His rise in expert rankings suggests his role will continue to grow, making him a key piece to cover injuries or bye weeks.",
+        "equipo_impacto": "His integration into the offensive rotation provides a necessary outlet, helping to diversify the team's aerial threats and relieving pressure on primary receivers.",
+        "accion": "Use your waiver priority or a significant portion of your FAAB budget on Jordyn Tyson."
       },
-      "etiqueta": "LESIÓN",
-      "impacto": "NEUTRO",
-      "equipo": "NYJ",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "DEN",
       "equipos": [
-        "NYJ"
+        "DEN",
+        "NO"
       ],
       "jugadores": [
-        "1373"
+        "13281"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50506147/jets-qb-geno-smith-avoided-major-ankle-injury",
-          "t": "Sources: Jets QB Geno Smith avoided major ankle injury, testing shows"
+          "u": "https://www.espn.com/video/clip/_/id/50511322/why-jordyn-tyson-field-yates-no-1-waiver-wire-pickup",
+          "t": "Why Jordyn Tyson is Field Yates' No. 1 waiver wire pickup"
         }
       ],
       "menciona": []
@@ -108,10 +109,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12519",
-      "estatus": "Duda"
-    },
-    {
       "id": "5844",
       "estatus": "Fuera"
     },
@@ -122,6 +119,10 @@
     {
       "id": "7526",
       "estatus": "Fuera"
+    },
+    {
+      "id": "12519",
+      "estatus": "Duda"
     },
     {
       "id": "4881",
@@ -221,64 +222,64 @@
     }
   ],
   "agregados": [
-    "10218",
     "9482",
+    "10218",
     "13424",
-    "13281",
     "11783",
+    "13281",
     "5012",
-    "9754",
     "12492",
-    "5995",
     "DET",
-    "13337",
-    "13414",
-    "4017",
-    "12700",
-    "13296",
-    "12499",
     "6650",
-    "TB",
-    "12533",
-    "9758",
-    "1166",
     "11563",
-    "9480",
-    "2505",
-    "4035"
+    "12499",
+    "5995",
+    "13414",
+    "2020",
+    "12533",
+    "13296",
+    "13337",
+    "TB",
+    "12700",
+    "5892",
+    "9754",
+    "1166",
+    "9758",
+    "11625",
+    "2505"
   ],
   "soltados": [
     "12491",
     "6130",
-    "13276",
     "2505",
     "9756",
+    "2747",
+    "13276",
+    "BAL",
+    "12718",
+    "3271",
     "10219",
-    "11579",
     "3286",
+    "11579",
     "11834",
     "12540",
+    "IND",
+    "NE",
     "9502",
     "11624",
-    "10213",
-    "2747",
-    "12718",
-    "BAL",
-    "3271",
+    "CLE",
     "12545",
-    "8132",
-    "NE",
-    "11637",
+    "10213",
+    "7553",
     "9754",
-    "IND",
-    "5995"
+    "NYG"
   ],
   "duelo": {
-    "a": "CeeDee Lamb",
-    "b": "Ja'Marr Chase",
-    "veredicto": "Arranca a CeeDee Lamb sobre Ja'Marr Chase en la semana 10. Lamb proyecta 20.1 pts PPR frente a los 19.8 pts de Chase, ofreciendo mayor volumen semanal y un piso más elevado para tu alineación titular."
+    "a": "Bucky Irving",
+    "b": "Javonte Williams",
+    "veredicto": "Arranca a Bucky Irving. Con una proyección de 16.8 pts frente a los 17.5 pts de Williams, Irving ha mostrado mayor consistencia en una ofensiva que depende de su capacidad para generar yardas tras el contacto."
   },
-  "dueloFecha": "2026-11-16T15:56:52.240Z",
+  "dueloFecha": "2026-11-17T17:06:47.399Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
