@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-17T17:06:47.399Z",
-  "ultimaIA": "2026-11-17T17:06:47.399Z",
+  "actualizado": "2026-11-17T23:49:51.055Z",
+  "ultimaIA": "2026-11-17T23:49:51.055Z",
   "semana": 11,
   "semanaStats": 11,
   "temporada": "2026",
@@ -14,46 +14,93 @@
   ],
   "noticias": [
     {
-      "id": "n20261117170600",
-      "fecha": "2026-11-17T17:06:47.399Z",
+      "id": "n20261117234900",
+      "fecha": "2026-11-17T23:49:51.055Z",
       "semana": 11,
-      "titulo": "Jordyn Tyson es la prioridad en waivers",
+      "titulo": "Dak Prescott es opción obligada en semana 11",
       "claves": [
-        "Jordyn Tyson lidera recomendaciones de expertos",
-        "Gran oportunidad para añadir profundidad en receptores",
-        "Alta prioridad en ligas profundas"
+        "Confianza total en Prescott para semana 11",
+        "Ofensiva de Dallas necesita repuntar urgentemente",
+        "Análisis favorece su uso en formatos estándar"
       ],
-      "contexto": "El receptor Jordyn Tyson ha emergido como el objetivo número 1 en el mercado de agentes libres para la semana 11 según Field Yates. Su reciente producción y volumen de juego lo colocan por encima de otras opciones disponibles, convirtiéndolo en la adición más codiciada para los managers que buscan reforzar su plantilla en la recta final de la temporada.",
-      "fantasy": "Impacto inmediato en ligas de formato profundo y dinastías. Tyson debe ser tu prioridad número 1 si necesitas un receptor con potencial de titularidad semanal. Su ascenso en las preferencias de los expertos sugiere que su participación seguirá aumentando, lo que lo vuelve una pieza clave para cubrir lesiones o semanas de descanso en tu alineación.",
-      "equipo_impacto": "Su integración en la rotación ofensiva ofrece una válvula de escape necesaria, ayudando a diversificar las amenazas aéreas del equipo y quitando presión a los receptores principales.",
-      "accion": "Gasta tu prioridad de waivers o un porcentaje importante de tu presupuesto FAAB en Jordyn Tyson.",
+      "contexto": "Tras la histórica debacle defensiva donde Dallas permitió 584 yardas contra 49ers, la presión sobre el equipo es máxima. ESPN destaca que, a pesar del caos organizativo y las dudas sobre el coordinador defensivo, Dak Prescott se mantiene como una pieza fundamental para los managers de fantasy esta semana, siendo una opción de alto valor por su volumen de juego.",
+      "fantasy": "Dak Prescott debe estar en tu alineación titular. Con una proyección de 21.8 pts, el QB de Cowboys ofrece un suelo seguro y potencial de techo alto. En ligas de 10 a 12 equipos, es un inicio automático mientras el equipo intenta estabilizar su crisis interna. Capitaliza su necesidad de lanzar para mantenerse competitivos.",
+      "equipo_impacto": "La inestabilidad en el staff de coacheo pone presión directa sobre la ofensiva para cargar con el peso del equipo. La falta de una defensa confiable obliga a Prescott a mantener un ritmo de pase elevado.",
+      "accion": "Mantén a Dak Prescott como tu QB titular sin dudarlo esta semana.",
       "en": {
-        "titulo": "Jordyn Tyson is the top waiver target",
+        "titulo": "Dak Prescott is a must-start in Week 11",
         "claves": [
-          "Jordyn Tyson leads expert waiver recommendations",
-          "Great opportunity for receiver depth",
-          "High priority in deep leagues"
+          "Full confidence in Prescott for Week 11",
+          "Dallas offense needs to bounce back urgently",
+          "Analysis favors starting him in standard formats"
         ],
-        "contexto": "Wide receiver Jordyn Tyson has emerged as the number 1 waiver wire target for Week 11 according to Field Yates. His recent production and usage make him the most coveted addition for managers looking to bolster their rosters during the final stretch of the season.",
-        "fantasy": "Immediate impact in deep leagues and dynasty formats. Tyson should be your number 1 priority if you need a receiver with weekly starting potential. His rise in expert rankings suggests his role will continue to grow, making him a key piece to cover injuries or bye weeks.",
-        "equipo_impacto": "His integration into the offensive rotation provides a necessary outlet, helping to diversify the team's aerial threats and relieving pressure on primary receivers.",
-        "accion": "Use your waiver priority or a significant portion of your FAAB budget on Jordyn Tyson."
+        "contexto": "Following the historic defensive collapse where Dallas allowed 584 yards to the 49ers, pressure is at an all-time high. ESPN highlights that despite organizational chaos and defensive coordinator doubts, Dak Prescott remains a key fantasy asset this week, offering high value through passing volume.",
+        "fantasy": "Dak Prescott should be in your starting lineup. With a 21.8 pts projection, the Cowboys QB offers a safe floor and high ceiling. In 10-12 team leagues, he is an automatic start while the team navigates internal turmoil. Capitalize on their need to throw to stay competitive.",
+        "equipo_impacto": "Coaching staff instability places direct pressure on the offense to carry the team. Lack of a reliable defense forces Prescott to maintain a high passing pace.",
+        "accion": "Keep Dak Prescott as your starting QB without hesitation this week."
       },
-      "etiqueta": "WAIVER",
+      "etiqueta": "START",
       "impacto": "SUBE",
-      "equipo": "DEN",
+      "equipo": "DAL",
       "equipos": [
-        "DEN",
-        "NO"
+        "DAL",
+        "SF"
       ],
       "jugadores": [
-        "13281"
+        "3294"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50511322/why-jordyn-tyson-field-yates-no-1-waiver-wire-pickup",
-          "t": "Why Jordyn Tyson is Field Yates' No. 1 waiver wire pickup"
+          "u": "https://www.espn.com/video/clip/_/id/50514056/why-fantasy-managers-utilize-dak-prescott-week-11",
+          "t": "Why fantasy managers should utilize Dak Prescott in Week 11"
+        },
+        {
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/jerry-jones-cowboys-talking-about-change-defensive-coordinator-christian-parker/",
+          "t": "\n                        Jerry Jones says Cowboys &#039;talking about&#039; change at defensive coordinator, their fifth in five seasons\n   "
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261117234901",
+      "fecha": "2026-11-17T23:49:51.055Z",
+      "semana": 11,
+      "titulo": "Azeez Al-Shaair fuera 4 partidos por lesión",
+      "claves": [
+        "Líder defensivo de Texans a lista de lesionados",
+        "Cirugía necesaria tras grave lesión de ingle",
+        "Defensa de Houston pierde pieza clave"
+      ],
+      "contexto": "La defensa de los Texans sufre un golpe sensible. El linebacker Azeez Al-Shaair fue enviado a la lista de lesionados (IR) debido a una lesión severa en la ingle que requerirá cirugía. Se perderá un mínimo de 4 partidos, dejando un hueco importante en el centro de la unidad defensiva de Houston en un momento crítico de la temporada.",
+      "fantasy": "Para quienes juegan en ligas IDP, la ausencia de Al-Shaair es significativa. Pierdes a uno de los líderes en tackleadas del equipo. Busca opciones en el waiver wire para cubrir su producción, ya que el impacto en la consistencia de la defensa de Texans podría ser notable a corto plazo.",
+      "equipo_impacto": "Houston pierde a su capitán defensivo y principal ejecutor de tackleadas. La unidad deberá ajustar roles rápidamente para compensar su baja durante el siguiente mes de competencia.",
+      "accion": "Si juegas IDP, busca un reemplazo inmediato para la posición de linebacker.",
+      "en": {
+        "titulo": "Azeez Al-Shaair out 4 games with injury",
+        "claves": [
+          "Texans defensive leader hits injured reserve",
+          "Surgery required following severe groin injury",
+          "Houston defense loses key playmaker"
+        ],
+        "contexto": "The Texans defense takes a major hit. Linebacker Azeez Al-Shaair has been placed on injured reserve (IR) due to a severe groin injury requiring surgery. He will miss at least 4 games, leaving a significant void in the heart of Houston's defensive unit at a critical time.",
+        "fantasy": "For IDP league managers, Al-Shaair's absence is significant. You lose one of the team's top tacklers. Look for waiver wire options to cover his production, as the impact on the Texans' defensive consistency could be notable in the short term.",
+        "equipo_impacto": "Houston loses its defensive captain and primary tackler. The unit must adjust roles quickly to compensate for his absence over the next month.",
+        "accion": "If you play IDP, look for an immediate replacement at linebacker."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "HOU",
+      "equipos": [
+        "HOU"
+      ],
+      "jugadores": [],
+      "fuentes": [
+        {
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/texans-azeez-al-shaair-injury-surgery-ir-2026/",
+          "t": "\n                        Texans&#039; Azeez Al-Shaair reportedly facing surgery after move to injured reserve\n                    "
         }
       ],
       "menciona": []
@@ -101,10 +148,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4892",
-      "estatus": "Duda"
-    },
-    {
       "id": "2216",
       "estatus": "Fuera"
     },
@@ -125,8 +168,16 @@
       "estatus": "Duda"
     },
     {
+      "id": "8126",
+      "estatus": "Fuera"
+    },
+    {
       "id": "4881",
       "estatus": "Fuera"
+    },
+    {
+      "id": "4892",
+      "estatus": "Duda"
     },
     {
       "id": "12474",
@@ -167,10 +218,6 @@
     {
       "id": "13276",
       "estatus": "Fuera"
-    },
-    {
-      "id": "8126",
-      "estatus": "Duda"
     },
     {
       "id": "8210",
@@ -224,55 +271,55 @@
   "agregados": [
     "9482",
     "10218",
-    "13424",
     "11783",
-    "13281",
     "5012",
+    "13424",
     "12492",
+    "13281",
     "DET",
-    "6650",
-    "11563",
     "12499",
-    "5995",
-    "13414",
-    "2020",
+    "11563",
+    "6650",
     "12533",
+    "2020",
+    "13414",
     "13296",
-    "13337",
+    "5892",
+    "5995",
+    "11625",
     "TB",
     "12700",
-    "5892",
-    "9754",
     "1166",
+    "13337",
+    "5045",
     "9758",
-    "11625",
     "2505"
   ],
   "soltados": [
     "12491",
     "6130",
     "2505",
-    "9756",
     "2747",
-    "13276",
-    "BAL",
     "12718",
+    "BAL",
+    "9756",
     "3271",
-    "10219",
+    "13276",
     "3286",
     "11579",
+    "10219",
     "11834",
-    "12540",
     "IND",
     "NE",
+    "12540",
     "9502",
     "11624",
     "CLE",
     "12545",
-    "10213",
     "7553",
-    "9754",
-    "NYG"
+    "NYG",
+    "10213",
+    "9754"
   ],
   "duelo": {
     "a": "Bucky Irving",
