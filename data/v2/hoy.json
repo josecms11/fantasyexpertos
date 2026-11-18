@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-17T23:49:51.055Z",
-  "ultimaIA": "2026-11-17T23:49:51.055Z",
+  "actualizado": "2026-11-18T04:45:30.255Z",
+  "ultimaIA": "2026-11-18T04:45:30.255Z",
   "semana": 11,
   "semanaStats": 11,
   "temporada": "2026",
@@ -14,96 +14,93 @@
   ],
   "noticias": [
     {
-      "id": "n20261117234900",
-      "fecha": "2026-11-17T23:49:51.055Z",
+      "id": "n20261118044500",
+      "fecha": "2026-11-18T04:45:30.255Z",
       "semana": 11,
-      "titulo": "Dak Prescott es opción obligada en semana 11",
+      "titulo": "Caleb Williams busca revancha tras su semana de descanso",
       "claves": [
-        "Confianza total en Prescott para semana 11",
-        "Ofensiva de Dallas necesita repuntar urgentemente",
-        "Análisis favorece su uso en formatos estándar"
+        "Aprovechó el descanso para sanar su lesión de isquiotibial",
+        "Superó el trágico juego de 4 intercepciones en semana 9",
+        "Proyecta 20.4 pts PPR para la semana 11"
       ],
-      "contexto": "Tras la histórica debacle defensiva donde Dallas permitió 584 yardas contra 49ers, la presión sobre el equipo es máxima. ESPN destaca que, a pesar del caos organizativo y las dudas sobre el coordinador defensivo, Dak Prescott se mantiene como una pieza fundamental para los managers de fantasy esta semana, siendo una opción de alto valor por su volumen de juego.",
-      "fantasy": "Dak Prescott debe estar en tu alineación titular. Con una proyección de 21.8 pts, el QB de Cowboys ofrece un suelo seguro y potencial de techo alto. En ligas de 10 a 12 equipos, es un inicio automático mientras el equipo intenta estabilizar su crisis interna. Capitaliza su necesidad de lanzar para mantenerse competitivos.",
-      "equipo_impacto": "La inestabilidad en el staff de coacheo pone presión directa sobre la ofensiva para cargar con el peso del equipo. La falta de una defensa confiable obliga a Prescott a mantener un ritmo de pase elevado.",
-      "accion": "Mantén a Dak Prescott como tu QB titular sin dudarlo esta semana.",
+      "contexto": "El mariscal de campo de Chicago Bears, Caleb Williams, aprovechó la semana de descanso para sanar una molestia en el isquiotibial y dejar atrás el trago amargo de su actuación con 4 intercepciones. Williams regresa enfocado para encarar la semana 11 con renovada energía. Tras tomarse un respiro físico y mental, el novato busca estabilizar el ataque aéreo del equipo en el tramo decisivo de la temporada.",
+      "fantasy": "Caleb Williams se mantiene como una opción sólida de QB1 de rango medio para la semana 11 con una proyección de 20.4 pts PPR. El descanso le ayudó a recuperar movilidad, factor clave para producir puntos por tierra. Con Kyle Monangai descartado en la lista de estatus y Luther Burden III tocado, Williams absorberá mayor responsabilidad ofensiva. Es un arranque confiable en formatos Superflex y ligas de 12 equipos.",
+      "equipo_impacto": "El ataque de Chicago recupera dinamismo con Williams totalmente sano. D'Andre Swift, proyectado con 17 pts PPR, se beneficia en el juego terrestre y como válvula de escape, mientras el cuerpo de receptores busca mayor consistencia.",
+      "accion": "Arráncalo como QB1 en tu alineación de la semana 11.",
       "en": {
-        "titulo": "Dak Prescott is a must-start in Week 11",
+        "titulo": "Caleb Williams looks to bounce back after bye week",
         "claves": [
-          "Full confidence in Prescott for Week 11",
-          "Dallas offense needs to bounce back urgently",
-          "Analysis favors starting him in standard formats"
+          "Rested his ailing hamstring during the bye week",
+          "Put his 4-interception week 9 game behind him",
+          "Projected for 20.4 PPR pts in week 11"
         ],
-        "contexto": "Following the historic defensive collapse where Dallas allowed 584 yards to the 49ers, pressure is at an all-time high. ESPN highlights that despite organizational chaos and defensive coordinator doubts, Dak Prescott remains a key fantasy asset this week, offering high value through passing volume.",
-        "fantasy": "Dak Prescott should be in your starting lineup. With a 21.8 pts projection, the Cowboys QB offers a safe floor and high ceiling. In 10-12 team leagues, he is an automatic start while the team navigates internal turmoil. Capitalize on their need to throw to stay competitive.",
-        "equipo_impacto": "Coaching staff instability places direct pressure on the offense to carry the team. Lack of a reliable defense forces Prescott to maintain a high passing pace.",
-        "accion": "Keep Dak Prescott as your starting QB without hesitation this week."
+        "contexto": "Chicago Bears quarterback Caleb Williams used the bye week to heal his hamstring injury and move past his 4-interception performance. Williams returns focused for week 11 with renewed energy. After taking a physical and mental breather, the rookie aims to stabilize the team's passing attack during a crucial stretch of the season.",
+        "fantasy": "Caleb Williams remains a solid mid-range QB1 option for week 11 with a projection of 20.4 PPR pts. The rest helped him regain mobility, a key factor for his rushing floor. With Kyle Monangai ruled out (Toe) and Luther Burden III questionable, Williams will shoulder more offensive weight. He is a confident start in Superflex and 12-team leagues.",
+        "equipo_impacto": "Chicago's offense regains dynamism with a fully healthy Williams. D'Andre Swift, projected for 17 PPR pts, benefits in both the run and pass games, while the receiving corps seeks more consistency.",
+        "accion": "Start him as a QB1 in your week 11 lineup."
       },
       "etiqueta": "START",
       "impacto": "SUBE",
-      "equipo": "DAL",
+      "equipo": "CHI",
       "equipos": [
-        "DAL",
-        "SF"
+        "CHI"
       ],
       "jugadores": [
-        "3294"
+        "11560"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50514056/why-fantasy-managers-utilize-dak-prescott-week-11",
-          "t": "Why fantasy managers should utilize Dak Prescott in Week 11"
-        },
-        {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/jerry-jones-cowboys-talking-about-change-defensive-coordinator-christian-parker/",
-          "t": "\n                        Jerry Jones says Cowboys &#039;talking about&#039; change at defensive coordinator, their fifth in five seasons\n   "
+          "u": "https://www.espn.com/nfl/story/_/id/50515291/bears-caleb-williams-moved-4-interception-game-frustration-lingers",
+          "t": "Bears QB Caleb Williams has moved on from 4-INT game, but frustration lingers"
         }
       ],
       "menciona": []
     },
     {
-      "id": "n20261117234901",
-      "fecha": "2026-11-17T23:49:51.055Z",
+      "id": "n20261118044501",
+      "fecha": "2026-11-18T04:45:30.255Z",
       "semana": 11,
-      "titulo": "Azeez Al-Shaair fuera 4 partidos por lesión",
+      "titulo": "Jesse Minter busca encender el juego terrestre de Ravens",
       "claves": [
-        "Líder defensivo de Texans a lista de lesionados",
-        "Cirugía necesaria tras grave lesión de ingle",
-        "Defensa de Houston pierde pieza clave"
+        "El entrenador Jesse Minter exige resultados inmediatos en carrera",
+        "Baltimore busca recuperar su identidad física en semana 11",
+        "Isaiah Likely lidera las proyecciones con 14.8 pts PPR"
       ],
-      "contexto": "La defensa de los Texans sufre un golpe sensible. El linebacker Azeez Al-Shaair fue enviado a la lista de lesionados (IR) debido a una lesión severa en la ingle que requerirá cirugía. Se perderá un mínimo de 4 partidos, dejando un hueco importante en el centro de la unidad defensiva de Houston en un momento crítico de la temporada.",
-      "fantasy": "Para quienes juegan en ligas IDP, la ausencia de Al-Shaair es significativa. Pierdes a uno de los líderes en tackleadas del equipo. Busca opciones en el waiver wire para cubrir su producción, ya que el impacto en la consistencia de la defensa de Texans podría ser notable a corto plazo.",
-      "equipo_impacto": "Houston pierde a su capitán defensivo y principal ejecutor de tackleadas. La unidad deberá ajustar roles rápidamente para compensar su baja durante el siguiente mes de competencia.",
-      "accion": "Si juegas IDP, busca un reemplazo inmediato para la posición de linebacker.",
+      "contexto": "El entrenador de Baltimore Ravens, Jesse Minter, declaró que el equipo trabaja intensamente para reactivar su juego terrestre tras actuaciones irregulares. Minter enfatizó que las palabras no bastan y demanda una ejecución física en la línea. Con el mariscal Lamar Jackson en lista de lesionados por lesión de pulgar, la ofensiva requiere establecer la carrera para quitarle presión al ataque en la semana 11.",
+      "fantasy": "El enfoque terrestre busca elevar el volumen de acarreos en Baltimore. Sin embargo, con Lamar Jackson en IR, las defensas rivales llenarán la caja defensiva, complicando los espacios. El ala cerrada Isaiah Likely se beneficia en trayectorias cortas y lidera al equipo con una proyección de 14.8 pts PPR. Los corredores quedan alineables únicamente en el lugar de FLEX para ligas profundas de 12 o más equipos.",
+      "equipo_impacto": "La ofensiva de Baltimore intenta cambiar su dinámica en las trincheras. La línea ofensiva enfrentará mayor exigencia para abrir huecos, incrementando la dependencia en pases cortos hacia alas cerradas como Isaiah Likely.",
+      "accion": "Mantén a Isaiah Likely como tu TE1 titular esta semana 11.",
       "en": {
-        "titulo": "Azeez Al-Shaair out 4 games with injury",
+        "titulo": "Jesse Minter aims to jump-start Ravens running game",
         "claves": [
-          "Texans defensive leader hits injured reserve",
-          "Surgery required following severe groin injury",
-          "Houston defense loses key playmaker"
+          "Coach Jesse Minter demands immediate results on the ground",
+          "Baltimore seeks to reclaim its physical identity in week 11",
+          "Isaiah Likely leads team projections with 14.8 PPR pts"
         ],
-        "contexto": "The Texans defense takes a major hit. Linebacker Azeez Al-Shaair has been placed on injured reserve (IR) due to a severe groin injury requiring surgery. He will miss at least 4 games, leaving a significant void in the heart of Houston's defensive unit at a critical time.",
-        "fantasy": "For IDP league managers, Al-Shaair's absence is significant. You lose one of the team's top tacklers. Look for waiver wire options to cover his production, as the impact on the Texans' defensive consistency could be notable in the short term.",
-        "equipo_impacto": "Houston loses its defensive captain and primary tackler. The unit must adjust roles quickly to compensate for his absence over the next month.",
-        "accion": "If you play IDP, look for an immediate replacement at linebacker."
+        "contexto": "Baltimore Ravens coach Jesse Minter stated that the team is working hard to jump-start its running game following inconsistent outings. Minter emphasized that talk is cheap and demanded physical execution at the line of scrimmage. With quarterback Lamar Jackson on IR due to a thumb injury, the offense needs to establish the run to relieve pressure in week 11.",
+        "fantasy": "The run-heavy focus aims to boost carries in Baltimore. However, with Lamar Jackson on IR, opposing defenses will stack the box, limiting running lanes. Tight end Isaiah Likely benefits on short routes and leads the team with a 14.8 PPR pts projection. Running backs remain risky FLEX plays in deeper 12-team leagues.",
+        "equipo_impacto": "Baltimore's offense attempts to reshape its dynamic in the trenches. The offensive line faces greater pressure to create lanes, increasing reliance on short passes to tight ends like Isaiah Likely.",
+        "accion": "Keep Isaiah Likely in your starting lineup as a TE1 for week 11."
       },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "HOU",
+      "etiqueta": "TENDENCIA",
+      "impacto": "NEUTRO",
+      "equipo": "BAL",
       "equipos": [
-        "HOU"
+        "BAL",
+        "NYG"
       ],
       "jugadores": [],
       "fuentes": [
         {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/texans-azeez-al-shaair-injury-surgery-ir-2026/",
-          "t": "\n                        Texans&#039; Azeez Al-Shaair reportedly facing surgery after move to injured reserve\n                    "
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50516834/minter-ravens-working-jump-start-running-game-talk-cheap",
+          "t": "Minter: Ravens working to jump-start running game, but 'talk is cheap'"
         }
       ],
-      "menciona": []
+      "menciona": [
+        "8131"
+      ]
     }
   ],
   "lesionados": [
@@ -264,49 +261,49 @@
       "estatus": "Fuera"
     },
     {
-      "id": "5927",
-      "estatus": "Fuera"
+      "id": "10218",
+      "estatus": "Duda"
     }
   ],
   "agregados": [
     "9482",
     "10218",
+    "12492",
     "11783",
     "5012",
     "13424",
-    "12492",
-    "13281",
     "DET",
+    "13281",
     "12499",
-    "11563",
-    "6650",
     "12533",
+    "11563",
     "2020",
+    "6650",
     "13414",
-    "13296",
     "5892",
+    "13296",
     "5995",
     "11625",
-    "TB",
-    "12700",
-    "1166",
-    "13337",
     "5045",
+    "12700",
+    "TB",
+    "12534",
+    "1166",
     "9758",
-    "2505"
+    "7567"
   ],
   "soltados": [
     "12491",
     "6130",
     "2505",
-    "2747",
     "12718",
+    "3271",
+    "2747",
     "BAL",
     "9756",
-    "3271",
-    "13276",
     "3286",
     "11579",
+    "13276",
     "10219",
     "11834",
     "IND",
@@ -315,11 +312,11 @@
     "9502",
     "11624",
     "CLE",
-    "12545",
     "7553",
+    "12545",
     "NYG",
-    "10213",
-    "9754"
+    "3214",
+    "10213"
   ],
   "duelo": {
     "a": "Bucky Irving",
