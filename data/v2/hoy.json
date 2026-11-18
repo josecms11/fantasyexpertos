@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-18T04:45:30.255Z",
-  "ultimaIA": "2026-11-18T04:45:30.255Z",
+  "actualizado": "2026-11-18T13:30:02.376Z",
+  "ultimaIA": "2026-11-18T13:30:02.376Z",
   "semana": 11,
   "semanaStats": 11,
   "temporada": "2026",
@@ -14,114 +14,55 @@
   ],
   "noticias": [
     {
-      "id": "n20261118044500",
-      "fecha": "2026-11-18T04:45:30.255Z",
+      "id": "n20261118133000",
+      "fecha": "2026-11-18T13:30:02.376Z",
       "semana": 11,
-      "titulo": "Caleb Williams busca revancha tras su semana de descanso",
+      "titulo": "Mason McCormick evita cirugía de tobillo tras lesión",
       "claves": [
-        "Aprovechó el descanso para sanar su lesión de isquiotibial",
-        "Superó el trágico juego de 4 intercepciones en semana 9",
-        "Proyecta 20.4 pts PPR para la semana 11"
+        "Guard de Steelers no requiere operación",
+        "Evitó fractura tras salir en carrito",
+        "Buena noticia para línea ofensiva"
       ],
-      "contexto": "El mariscal de campo de Chicago Bears, Caleb Williams, aprovechó la semana de descanso para sanar una molestia en el isquiotibial y dejar atrás el trago amargo de su actuación con 4 intercepciones. Williams regresa enfocado para encarar la semana 11 con renovada energía. Tras tomarse un respiro físico y mental, el novato busca estabilizar el ataque aéreo del equipo en el tramo decisivo de la temporada.",
-      "fantasy": "Caleb Williams se mantiene como una opción sólida de QB1 de rango medio para la semana 11 con una proyección de 20.4 pts PPR. El descanso le ayudó a recuperar movilidad, factor clave para producir puntos por tierra. Con Kyle Monangai descartado en la lista de estatus y Luther Burden III tocado, Williams absorberá mayor responsabilidad ofensiva. Es un arranque confiable en formatos Superflex y ligas de 12 equipos.",
-      "equipo_impacto": "El ataque de Chicago recupera dinamismo con Williams totalmente sano. D'Andre Swift, proyectado con 17 pts PPR, se beneficia en el juego terrestre y como válvula de escape, mientras el cuerpo de receptores busca mayor consistencia.",
-      "accion": "Arráncalo como QB1 en tu alineación de la semana 11.",
+      "contexto": "El guardia de los Steelers, Mason McCormick, recibió noticias alentadoras tras abandonar el campo en carrito la semana pasada. Fuentes confirmaron que no sufrió fractura y no necesitará pasar por el quirófano para reparar su tobillo. Aunque su estatus a corto plazo sigue siendo monitoreado, el evitar una cirugía mayor es un alivio crítico para la continuidad de la ofensiva de Pittsburgh.",
+      "fantasy": "Impacto en fantasy: Esta noticia estabiliza ligeramente el valor de los corredores y el QB de los Steelers. Una línea ofensiva intacta permite mejores bloqueos para el juego terrestre y mayor tiempo de protección en el bolsillo. Mantén la confianza en tus activos de Pittsburgh, ya que la ausencia de McCormick habría sido un golpe duro para la eficiencia global del ataque.",
+      "equipo_impacto": "La salud de McCormick es vital para mantener la protección de bolsillo y los carriles de carrera. Su recuperación sin cirugía ayuda a que el grupo se mantenga cohesionado.",
+      "accion": "Mantén a tus jugadores de Steelers en tu alineación sin preocupaciones adicionales.",
       "en": {
-        "titulo": "Caleb Williams looks to bounce back after bye week",
+        "titulo": "Mason McCormick avoids ankle surgery after injury",
         "claves": [
-          "Rested his ailing hamstring during the bye week",
-          "Put his 4-interception week 9 game behind him",
-          "Projected for 20.4 PPR pts in week 11"
+          "Steelers guard does not need surgery",
+          "No fracture found after cart-off",
+          "Positive news for offensive line"
         ],
-        "contexto": "Chicago Bears quarterback Caleb Williams used the bye week to heal his hamstring injury and move past his 4-interception performance. Williams returns focused for week 11 with renewed energy. After taking a physical and mental breather, the rookie aims to stabilize the team's passing attack during a crucial stretch of the season.",
-        "fantasy": "Caleb Williams remains a solid mid-range QB1 option for week 11 with a projection of 20.4 PPR pts. The rest helped him regain mobility, a key factor for his rushing floor. With Kyle Monangai ruled out (Toe) and Luther Burden III questionable, Williams will shoulder more offensive weight. He is a confident start in Superflex and 12-team leagues.",
-        "equipo_impacto": "Chicago's offense regains dynamism with a fully healthy Williams. D'Andre Swift, projected for 17 PPR pts, benefits in both the run and pass games, while the receiving corps seeks more consistency.",
-        "accion": "Start him as a QB1 in your week 11 lineup."
+        "contexto": "Steelers guard Mason McCormick received encouraging news after leaving the field on a cart last week. Sources confirmed he did not suffer a fracture and will not require surgery to repair his ankle. While his short-term status is still being monitored, avoiding major surgery is a critical relief for the continuity of Pittsburgh's offense.",
+        "fantasy": "Fantasy impact: This news slightly stabilizes the value of Pittsburgh's running backs and QB. An intact offensive line allows for better run blocking and more time in the pocket. Keep confidence in your Pittsburgh assets, as McCormick's absence would have been a significant blow to the overall offensive efficiency.",
+        "equipo_impacto": "McCormick's health is vital for pocket protection and run lanes. His recovery without surgery helps the group stay cohesive.",
+        "accion": "Keep your Steelers players in your lineup without additional concerns."
       },
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "CHI",
-      "equipos": [
-        "CHI"
-      ],
-      "jugadores": [
-        "11560"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50515291/bears-caleb-williams-moved-4-interception-game-frustration-lingers",
-          "t": "Bears QB Caleb Williams has moved on from 4-INT game, but frustration lingers"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261118044501",
-      "fecha": "2026-11-18T04:45:30.255Z",
-      "semana": 11,
-      "titulo": "Jesse Minter busca encender el juego terrestre de Ravens",
-      "claves": [
-        "El entrenador Jesse Minter exige resultados inmediatos en carrera",
-        "Baltimore busca recuperar su identidad física en semana 11",
-        "Isaiah Likely lidera las proyecciones con 14.8 pts PPR"
-      ],
-      "contexto": "El entrenador de Baltimore Ravens, Jesse Minter, declaró que el equipo trabaja intensamente para reactivar su juego terrestre tras actuaciones irregulares. Minter enfatizó que las palabras no bastan y demanda una ejecución física en la línea. Con el mariscal Lamar Jackson en lista de lesionados por lesión de pulgar, la ofensiva requiere establecer la carrera para quitarle presión al ataque en la semana 11.",
-      "fantasy": "El enfoque terrestre busca elevar el volumen de acarreos en Baltimore. Sin embargo, con Lamar Jackson en IR, las defensas rivales llenarán la caja defensiva, complicando los espacios. El ala cerrada Isaiah Likely se beneficia en trayectorias cortas y lidera al equipo con una proyección de 14.8 pts PPR. Los corredores quedan alineables únicamente en el lugar de FLEX para ligas profundas de 12 o más equipos.",
-      "equipo_impacto": "La ofensiva de Baltimore intenta cambiar su dinámica en las trincheras. La línea ofensiva enfrentará mayor exigencia para abrir huecos, incrementando la dependencia en pases cortos hacia alas cerradas como Isaiah Likely.",
-      "accion": "Mantén a Isaiah Likely como tu TE1 titular esta semana 11.",
-      "en": {
-        "titulo": "Jesse Minter aims to jump-start Ravens running game",
-        "claves": [
-          "Coach Jesse Minter demands immediate results on the ground",
-          "Baltimore seeks to reclaim its physical identity in week 11",
-          "Isaiah Likely leads team projections with 14.8 PPR pts"
-        ],
-        "contexto": "Baltimore Ravens coach Jesse Minter stated that the team is working hard to jump-start its running game following inconsistent outings. Minter emphasized that talk is cheap and demanded physical execution at the line of scrimmage. With quarterback Lamar Jackson on IR due to a thumb injury, the offense needs to establish the run to relieve pressure in week 11.",
-        "fantasy": "The run-heavy focus aims to boost carries in Baltimore. However, with Lamar Jackson on IR, opposing defenses will stack the box, limiting running lanes. Tight end Isaiah Likely benefits on short routes and leads the team with a 14.8 PPR pts projection. Running backs remain risky FLEX plays in deeper 12-team leagues.",
-        "equipo_impacto": "Baltimore's offense attempts to reshape its dynamic in the trenches. The offensive line faces greater pressure to create lanes, increasing reliance on short passes to tight ends like Isaiah Likely.",
-        "accion": "Keep Isaiah Likely in your starting lineup as a TE1 for week 11."
-      },
-      "etiqueta": "TENDENCIA",
+      "etiqueta": "LESIÓN",
       "impacto": "NEUTRO",
-      "equipo": "BAL",
+      "equipo": "PIT",
       "equipos": [
-        "BAL",
-        "NYG"
+        "PIT"
       ],
       "jugadores": [],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50516834/minter-ravens-working-jump-start-running-game-talk-cheap",
-          "t": "Minter: Ravens working to jump-start running game, but 'talk is cheap'"
+          "u": "https://www.espn.com/nfl/story/_/id/50519701/sources-steelers-g-mccormick-need-surgery-ankle",
+          "t": "Sources: Steelers G Mason McCormick avoided fracture, won't need ankle surgery"
         }
       ],
-      "menciona": [
-        "8131"
-      ]
+      "menciona": []
     }
   ],
   "lesionados": [
-    {
-      "id": "8151",
-      "estatus": "Fuera"
-    },
     {
       "id": "11564",
       "estatus": "Fuera"
     },
     {
       "id": "9493",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "11604",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "1373",
       "estatus": "Fuera"
     },
     {
@@ -137,6 +78,10 @@
       "estatus": "Fuera"
     },
     {
+      "id": "8151",
+      "estatus": "Duda"
+    },
+    {
       "id": "2133",
       "estatus": "Fuera"
     },
@@ -145,24 +90,16 @@
       "estatus": "Fuera"
     },
     {
-      "id": "2216",
-      "estatus": "Fuera"
+      "id": "1373",
+      "estatus": "Duda"
     },
     {
-      "id": "5844",
-      "estatus": "Fuera"
+      "id": "11604",
+      "estatus": "Duda"
     },
     {
       "id": "6904",
       "estatus": "Fuera"
-    },
-    {
-      "id": "7526",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "12519",
-      "estatus": "Duda"
     },
     {
       "id": "8126",
@@ -173,31 +110,27 @@
       "estatus": "Fuera"
     },
     {
+      "id": "7525",
+      "estatus": "Duda"
+    },
+    {
       "id": "4892",
       "estatus": "Duda"
     },
     {
-      "id": "12474",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "13279",
-      "estatus": "Fuera"
+      "id": "2216",
+      "estatus": "Duda"
     },
     {
       "id": "5849",
       "estatus": "Fuera"
     },
     {
-      "id": "11435",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "1466",
+      "id": "13279",
       "estatus": "Duda"
     },
     {
-      "id": "7525",
+      "id": "11435",
       "estatus": "Fuera"
     },
     {
@@ -209,20 +142,24 @@
       "estatus": "Fuera"
     },
     {
+      "id": "11635",
+      "estatus": "Duda"
+    },
+    {
       "id": "12711",
       "estatus": "Fuera"
     },
     {
-      "id": "13276",
-      "estatus": "Fuera"
+      "id": "7526",
+      "estatus": "Duda"
     },
     {
-      "id": "8210",
+      "id": "12474",
       "estatus": "Duda"
     },
     {
       "id": "12534",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "8121",
@@ -233,15 +170,19 @@
       "estatus": "Fuera"
     },
     {
+      "id": "5844",
+      "estatus": "Duda"
+    },
+    {
+      "id": "13276",
+      "estatus": "Duda"
+    },
+    {
       "id": "8110",
       "estatus": "Fuera"
     },
     {
       "id": "9756",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "9486",
       "estatus": "Fuera"
     },
     {
@@ -257,40 +198,52 @@
       "estatus": "Fuera"
     },
     {
-      "id": "11635",
+      "id": "5927",
       "estatus": "Fuera"
     },
     {
-      "id": "10218",
-      "estatus": "Duda"
+      "id": "8188",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12533",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "11630",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "5850",
+      "estatus": "Fuera"
     }
   ],
   "agregados": [
     "9482",
     "10218",
     "12492",
-    "11783",
     "5012",
-    "13424",
     "DET",
-    "13281",
+    "11783",
+    "13424",
     "12499",
+    "13281",
     "12533",
-    "11563",
     "2020",
+    "11563",
     "6650",
     "13414",
     "5892",
     "13296",
     "5995",
+    "12540",
     "11625",
     "5045",
     "12700",
     "TB",
     "12534",
-    "1166",
-    "9758",
-    "7567"
+    "7567",
+    "2505"
   ],
   "soltados": [
     "12491",
@@ -299,19 +252,19 @@
     "12718",
     "3271",
     "2747",
-    "BAL",
     "9756",
-    "3286",
+    "BAL",
     "11579",
+    "3286",
+    "11834",
     "13276",
     "10219",
-    "11834",
     "IND",
     "NE",
-    "12540",
     "9502",
     "11624",
     "CLE",
+    "12540",
     "7553",
     "12545",
     "NYG",
@@ -319,11 +272,11 @@
     "10213"
   ],
   "duelo": {
-    "a": "Bucky Irving",
-    "b": "Javonte Williams",
-    "veredicto": "Arranca a Bucky Irving. Con una proyección de 16.8 pts frente a los 17.5 pts de Williams, Irving ha mostrado mayor consistencia en una ofensiva que depende de su capacidad para generar yardas tras el contacto."
+    "a": "Joe Burrow",
+    "b": "Dak Prescott",
+    "veredicto": "Arranca a Joe Burrow. Con una proyección de 25.7 pts frente a los 21.8 pts de Prescott, Burrow se perfila como una opción más explosiva y consistente para tu alineación de semana 11."
   },
-  "dueloFecha": "2026-11-17T17:06:47.399Z",
+  "dueloFecha": "2026-11-18T13:30:02.376Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
