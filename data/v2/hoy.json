@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-18T13:30:02.376Z",
-  "ultimaIA": "2026-11-18T13:30:02.376Z",
+  "actualizado": "2026-11-18T21:33:10.646Z",
+  "ultimaIA": "2026-11-18T21:33:10.646Z",
   "semana": 11,
   "semanaStats": 11,
   "temporada": "2026",
@@ -14,43 +14,155 @@
   ],
   "noticias": [
     {
-      "id": "n20261118133000",
-      "fecha": "2026-11-18T13:30:02.376Z",
+      "id": "x20261118213300",
+      "fecha": "2026-11-18T21:33:10.646Z",
       "semana": 11,
-      "titulo": "Mason McCormick evita cirugía de tobillo tras lesión",
+      "exclusivo": true,
+      "fuente": "2026-11-18T16:09:48+00:00",
+      "titulo": "Previa Semana 11: Duelos decisivos en camino",
       "claves": [
-        "Guard de Steelers no requiere operación",
-        "Evitó fractura tras salir en carrito",
-        "Buena noticia para línea ofensiva"
+        "Jueves de NFL con choque estelar"
       ],
-      "contexto": "El guardia de los Steelers, Mason McCormick, recibió noticias alentadoras tras abandonar el campo en carrito la semana pasada. Fuentes confirmaron que no sufrió fractura y no necesitará pasar por el quirófano para reparar su tobillo. Aunque su estatus a corto plazo sigue siendo monitoreado, el evitar una cirugía mayor es un alivio crítico para la continuidad de la ofensiva de Pittsburgh.",
-      "fantasy": "Impacto en fantasy: Esta noticia estabiliza ligeramente el valor de los corredores y el QB de los Steelers. Una línea ofensiva intacta permite mejores bloqueos para el juego terrestre y mayor tiempo de protección en el bolsillo. Mantén la confianza en tus activos de Pittsburgh, ya que la ausencia de McCormick habría sido un golpe duro para la eficiencia global del ataque.",
-      "equipo_impacto": "La salud de McCormick es vital para mantener la protección de bolsillo y los carriles de carrera. Su recuperación sin cirugía ayuda a que el grupo se mantenga cohesionado.",
-      "accion": "Mantén a tus jugadores de Steelers en tu alineación sin preocupaciones adicionales.",
       "en": {
-        "titulo": "Mason McCormick avoids ankle surgery after injury",
+        "titulo": "Week 11 Preview: Decisive matchups ahead",
         "claves": [
-          "Steelers guard does not need surgery",
-          "No fracture found after cart-off",
-          "Positive news for offensive line"
+          "TNF kicks off the action",
+          "Sunday full of divisional clashes",
+          "Set your Week 11 lineups"
         ],
-        "contexto": "Steelers guard Mason McCormick received encouraging news after leaving the field on a cart last week. Sources confirmed he did not suffer a fracture and will not require surgery to repair his ankle. While his short-term status is still being monitored, avoiding major surgery is a critical relief for the continuity of Pittsburgh's offense.",
-        "fantasy": "Fantasy impact: This news slightly stabilizes the value of Pittsburgh's running backs and QB. An intact offensive line allows for better run blocking and more time in the pocket. Keep confidence in your Pittsburgh assets, as McCormick's absence would have been a significant blow to the overall offensive efficiency.",
-        "equipo_impacto": "McCormick's health is vital for pocket protection and run lanes. His recovery without surgery helps the group stay cohesive.",
-        "accion": "Keep your Steelers players in your lineup without additional concerns."
+        "contexto": "We reach Week 11 with a schedule demanding immediate attention. Thursday starts the action with TNF, followed by a Sunday slate full of playoff-defining divisional matchups. It is time to adjust strategies and check injury reports before the initial kickoff.",
+        "fantasy": "Week 11 is vital for playoff positioning. Monitor Sunday game times for last-minute changes. If you have players in early games, ensure you have bench alternatives ready in case of late injury reports.",
+        "equipo_impacto": "Teams are adjusting tactical schemes for the final stretch. Players with defined roles will see increased workloads as rosters consolidate after 10 weeks of wear.",
+        "accion": "Review your lineups against this week's schedule."
       },
-      "etiqueta": "LESIÓN",
+      "etiqueta": "TENDENCIA",
       "impacto": "NEUTRO",
-      "equipo": "PIT",
+      "equipo": "NFL",
       "equipos": [
-        "PIT"
+        "NFL"
       ],
       "jugadores": [],
+      "premium": true
+    },
+    {
+      "id": "x20261118213301",
+      "fecha": "2026-11-18T21:33:10.646Z",
+      "semana": 11,
+      "exclusivo": true,
+      "fuente": "2026-11-18T16:09:48+00:00",
+      "titulo": "Alerta de lesiones: Mayfield y Bowers fuera",
+      "claves": [
+        "Baker Mayfield descartado contra Lions"
+      ],
+      "en": {
+        "titulo": "Injury Alert: Mayfield and Bowers out",
+        "claves": [
+          "Baker Mayfield out vs Lions",
+          "Brock Bowers out due to injury",
+          "Wandale Robinson to IR for 4 weeks"
+        ],
+        "contexto": "Week 11 hits fantasy rosters hard. Baker Mayfield will not play against the Lions, while tight end Brock Bowers is also out. Additionally, Wandale Robinson has been placed on IR for 4 weeks, complicating depth at skill positions.",
+        "fantasy": "If you counted on Mayfield or Bowers, seek immediate waiver replacements. Robinson is a significant loss; do not keep him on your active roster if you lack IR spots. Look for options that ensure target volume this Sunday.",
+        "equipo_impacto": "Absences force coaches to improvise with rotation players and rookies, which often alters offensive rhythm and pass distribution during the game.",
+        "accion": "Remove Mayfield, Bowers, and Robinson from your starting lineup."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "TB",
+      "equipos": [
+        "TB",
+        "DET",
+        "LV",
+        "NYG",
+        "TEN"
+      ],
+      "jugadores": [
+        "4892",
+        "11604",
+        "8126"
+      ],
+      "premium": true
+    },
+    {
+      "id": "x20261118213302",
+      "fecha": "2026-11-18T21:33:10.646Z",
+      "semana": 11,
+      "exclusivo": true,
+      "fuente": "2026-11-18T16:09:48+00:00",
+      "titulo": "Waivers: Opciones de emergencia para la semana 11",
+      "claves": [
+        "Michael Mayer y Mendoza disponibles"
+      ],
+      "en": {
+        "titulo": "Waivers: Emergency options for Week 11",
+        "claves": [
+          "Michael Mayer and Mendoza available",
+          "Mark Andrews and Brissett as options",
+          "Strange stands out vs Giants"
+        ],
+        "contexto": "With injuries mounting, the waiver wire offers alternatives. Michael Mayer and Mendoza are names to consider in deep leagues. Mark Andrews, alongside Brissett, seeks more prominence, while Strange profiles as an interesting option against the Giants this week.",
+        "fantasy": "Prioritize players with higher target volume. If you need a TE, Andrews remains the name with higher pedigree. Strange could have a favorable matchup if the Giants' defense allows short passes over the middle.",
+        "equipo_impacto": "These players must prove they can absorb the game volume left by injured starters to maintain their offenses' competitiveness.",
+        "accion": "Add these players if you are struggling with roster depth."
+      },
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "LV",
+      "equipos": [
+        "LV",
+        "BAL",
+        "NE",
+        "NYG"
+      ],
+      "jugadores": [
+        "9482",
+        "5012"
+      ],
+      "premium": true
+    },
+    {
+      "id": "n20261118213300",
+      "fecha": "2026-11-18T21:33:10.646Z",
+      "semana": 11,
+      "titulo": "Joe Milton se mantiene como mariscal titular de Eagles",
+      "claves": [
+        "Joe Milton recibe la titularidad para la semana 11",
+        "Sean Mannion continuará como el responsable de la ofensiva",
+        "Nick Sirianni confirmó los movimientos de cara al partido"
+      ],
+      "contexto": "El entrenador en jefe Nick Sirianni confirmó que Joe Milton repetirá en los controles como mariscal de campo titular para el enfrentamiento de la semana 11 contra los Steelers. Además, Sean Mannion se mantendrá a cargo del diseño y llamado de jugadas ofensivas para este compromiso.",
+      "fantasy": "La continuidad de Joe Milton bajo el centro genera dudas profundas en ligas de fantasy. Con Sean Mannion manejando la ofensiva y enfrentando a una defensiva dura como la de los Steelers, lo más prudente es mantenerlo en la banca en la mayoría de los formatos estándar.",
+      "equipo_impacto": "Esta estructura ofensiva busca estabilidad ante la ausencia de piezas clave, obligando al resto de los receptores y corredores de Eagles a depender de la ejecución bajo un esquema conservador.",
+      "accion": "Manda a la banca a Joe Milton y busca mejores opciones en el mercado de fichajes para tu alineación de la semana 11.",
+      "en": {
+        "titulo": "Joe Milton remains starting quarterback for Eagles",
+        "claves": [
+          "Joe Milton gets the start for Week 11",
+          "Sean Mannion will continue calling offensive plays",
+          "Nick Sirianni confirmed the team decisions"
+        ],
+        "contexto": "Head coach Nick Sirianni confirmed that quarterback Joe Milton will start again in Week 11 against the Steelers. Meanwhile, Sean Mannion will remain in his role as the offensive playcaller for the upcoming matchup.",
+        "fantasy": "Joe Milton's continued presence under center raises major fantasy concerns. With Sean Mannion calling plays against a tough Steelers defense, fantasy managers should keep him on the bench across standard formats.",
+        "equipo_impacto": "This offensive structure aims for stability in the absence of key players, forcing skill-position teammates to rely on execution within a conservative scheme.",
+        "accion": "Bench Joe Milton and look for alternative streaming options on your waiver wire for Week 11.",
+        "en": "Bench Joe Milton and look for alternative streaming options on your waiver wire for Week 11."
+      },
+      "etiqueta": "START",
+      "impacto": "BAJA",
+      "equipo": "PHI",
+      "equipos": [
+        "PHI",
+        "PIT"
+      ],
+      "jugadores": [
+        "11557",
+        "2394"
+      ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50519701/sources-steelers-g-mccormick-need-surgery-ankle",
-          "t": "Sources: Steelers G Mason McCormick avoided fracture, won't need ankle surgery"
+          "u": "https://www.espn.com/video/clip/_/id/50523042/joe-milton-getting-starting-qb-nod-week-11",
+          "t": "Nick Sirianni: Joe Milton getting starting QB nod in Week 11"
         }
       ],
       "menciona": []
@@ -110,10 +222,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "7525",
-      "estatus": "Duda"
-    },
-    {
       "id": "4892",
       "estatus": "Duda"
     },
@@ -122,8 +230,20 @@
       "estatus": "Duda"
     },
     {
+      "id": "12474",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "7525",
+      "estatus": "Duda"
+    },
+    {
       "id": "5849",
       "estatus": "Fuera"
+    },
+    {
+      "id": "12490",
+      "estatus": "Duda"
     },
     {
       "id": "13279",
@@ -154,11 +274,7 @@
       "estatus": "Duda"
     },
     {
-      "id": "12474",
-      "estatus": "Duda"
-    },
-    {
-      "id": "12534",
+      "id": "5947",
       "estatus": "Duda"
     },
     {
@@ -170,11 +286,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "5844",
+      "id": "13276",
       "estatus": "Duda"
     },
     {
-      "id": "13276",
+      "id": "5844",
       "estatus": "Duda"
     },
     {
@@ -198,6 +314,10 @@
       "estatus": "Fuera"
     },
     {
+      "id": "2505",
+      "estatus": "Duda"
+    },
+    {
       "id": "5927",
       "estatus": "Fuera"
     },
@@ -208,68 +328,60 @@
     {
       "id": "12533",
       "estatus": "Fuera"
-    },
-    {
-      "id": "11630",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "5850",
-      "estatus": "Fuera"
     }
   ],
   "agregados": [
-    "9482",
     "10218",
+    "9482",
+    "DET",
     "12492",
     "5012",
-    "DET",
+    "12499",
     "11783",
     "13424",
-    "12499",
-    "13281",
     "12533",
     "2020",
-    "11563",
-    "6650",
-    "13414",
-    "5892",
-    "13296",
-    "5995",
     "12540",
-    "11625",
+    "13281",
+    "11563",
+    "5892",
+    "13414",
+    "6650",
+    "5995",
     "5045",
+    "13296",
+    "11625",
     "12700",
     "TB",
+    "2505",
     "12534",
-    "7567",
-    "2505"
+    "7567"
   ],
   "soltados": [
     "12491",
     "6130",
-    "2505",
     "12718",
-    "3271",
+    "2505",
     "2747",
+    "3271",
     "9756",
-    "BAL",
-    "11579",
-    "3286",
     "11834",
-    "13276",
+    "3286",
+    "11579",
+    "BAL",
+    "NE",
     "10219",
     "IND",
-    "NE",
-    "9502",
+    "13276",
     "11624",
     "CLE",
-    "12540",
+    "9502",
     "7553",
     "12545",
     "NYG",
-    "3214",
-    "10213"
+    "10213",
+    "12540",
+    "3214"
   ],
   "duelo": {
     "a": "Joe Burrow",
