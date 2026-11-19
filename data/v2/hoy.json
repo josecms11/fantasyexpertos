@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-19T02:46:27.948Z",
-  "ultimaIA": "2026-11-19T02:46:27.948Z",
+  "actualizado": "2026-11-19T10:47:59.059Z",
+  "ultimaIA": "2026-11-19T10:47:59.059Z",
   "semana": 11,
   "semanaStats": 11,
   "temporada": "2026",
@@ -14,46 +14,45 @@
   ],
   "noticias": [
     {
-      "id": "n20261119024600",
-      "fecha": "2026-11-19T02:46:27.948Z",
+      "id": "n20261119104700",
+      "fecha": "2026-11-19T10:47:59.059Z",
       "semana": 11,
-      "titulo": "Cam Skattebo frena sus saltos acrobáticos tras lesión",
+      "titulo": "A.J. Brown queda fuera por lesión de isquiotibial",
       "claves": [
-        "Cam Skattebo deja los backflips tras lesión de Hutchinson",
-        "Aidan Hutchinson sufrió lesión de rodilla celebrando un sack",
-        "Decisión busca evitar lesiones absurdas en festejos"
+        "Brown sufrió una lesión de isquiotibial contra Lions en semana 10.",
+        "Estará fuera un tiempo considerable tras confirmarse la gravedad del problema.",
+        "Aparece oficialmente como descartado y no alineable en semana 11."
       ],
-      "contexto": "El corredor de los Giants, Cam Skattebo, anunció que dejará de hacer backflips en sus celebraciones tras ver la grave lesión de rodilla que sufrió el defensivo Aidan Hutchinson, quien se lastimó al saltar para festejar un sack. Es una medida de precaución para cuidar su físico y evitar perderse juegos clave de la temporada.",
-      "fantasy": "Para efectos de fantasy football, esto no altera el volumen de juego ni las proyecciones de Cam Skattebo en la semana 11. Puedes mantenerlo alineado con confianza en tus ligas principales sin preocuparte por bajas por culpa de sus festejos.",
-      "equipo_impacto": "La decisión protege a la ofensiva de los Giants de perder a una pieza importante por distracciones o accidentes en los festejos, manteniendo la estabilidad del grupo.",
-      "accion": "Alinea con normalidad a Cam Skattebo en tu alineación titular de la semana 11.",
+      "contexto": "A.J. Brown encendió las alarmas en el cuerpo técnico tras lastimarse el isquiotibial durante el compromiso de la semana 10 ante los Lions. Los reportes recientes confirman que el estelar receptor estará fuera un tiempo razonable. Su ausencia deja un hueco enorme en el plan de juego ofensivo de New England, confirmando su estatus oficial de descartado para este próximo enfrentamiento mientras el equipo evalúa el tiempo exacto que requerirá su rehabilitación física.",
+      "fantasy": "La baja de Brown representa un golpe durísimo para cualquier alineación de fantasy football. Con estatus oficial de fuera, es momento obligatorio de mandarlo a la banca o colocarlo en la reserva de lesionados. Esta ausencia abre volumen inmediato para otras armas aéreas del equipo en formatos profundos o PPR. Si compites en ligas de 10 o 12 equipos, necesitas buscar un reemplazo confiable en waivers para cubrir sus números habituales de WR1.",
+      "equipo_impacto": "Sin su receptor principal disponible, New England pierde a su principal amenaza vertical. Los esquemas rivales ahora podrán congestionar la caja y presionar a los suplentes, obligando al resto de los receptores a asumir un volumen de pases mucho más exigente en las próximas semanas.",
+      "accion": "Mueve de inmediato a Brown a tu banca o espacio de lesionados y busca un receptor en waivers.",
       "en": {
-        "titulo": "Cam Skattebo halts backflips after Hutchinson injury",
+        "titulo": "A.J. Brown out for extended period with hamstring",
         "claves": [
-          "Cam Skattebo stops backflips after Hutchinson's knee injury",
-          "Aidan Hutchinson suffered a serious injury during a sack celebration",
-          "Decision aims to prevent foolish celebration injuries"
+          "Brown suffered a hamstring injury against the Lions in Week 10.",
+          "Reports confirm the receiver will be sidelined for a while.",
+          "Officially ruled out and must be benched for Week 11."
         ],
-        "contexto": "Giants running back Cam Skattebo announced he will stop doing backflips after witnessing the severe knee injury suffered by Lions defensive end Aidan Hutchinson while celebrating a sack. It is a strict precautionary measure to protect his health.",
-        "fantasy": "For fantasy football purposes, this does not impact Cam Skattebo's workload or weekly projections for week 11. You can keep him locked into your starting lineups without worries.",
-        "equipo_impacto": "This decision protects the Giants' offense from losing a key contributor due to an avoidable celebration accident, keeping the roster stable.",
-        "accion": "Start Cam Skattebo normally in your week 11 fantasy lineup."
+        "contexto": "A.J. Brown raised major concerns after suffering a hamstring injury during the Week 10 clash against the Lions. Recent reports confirm that the star wideout will be sidelined for a little while. His absence leaves a massive void in New England's offensive game plan, cementing his official Out designation for the upcoming contest while the organization continues to evaluate the exact recovery timeline needed for his return to full health.",
+        "fantasy": "Losing Brown is a massive setback for contending fantasy rosters heading into Week 11. With his Out status confirmed, you must immediately stash him on your bench or IR slot. His absence unlocks additional target volume for secondary options across PPR formats, though replacing his WR1 ceiling is nearly impossible. Fantasy managers in 10 or 12 team leagues must scour the waiver wire right now to find a reliable short-term flex alternative.",
+        "equipo_impacto": "Without their top weapon on the outside, New England loses their primary downfield separator. Opposing defenses can now compress coverage inside the box, forcing secondary receivers to handle elevated target shares against tighter coverage shells moving forward.",
+        "accion": "Move Brown to your bench or injured reserve immediately and secure a waiver wire replacement."
       },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "NYG",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "NE",
       "equipos": [
-        "NYG",
-        "DET"
+        "NE"
       ],
       "jugadores": [
-        "12481"
+        "5859"
       ],
       "fuentes": [
         {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50524576/rb-skattebo-nix-backflips-wake-hutchinson-injury",
-          "t": "Giants RB Cam Skattebo to nix backflips in wake of Aidan Hutchinson's injury"
+          "m": "Yahoo Sports",
+          "u": "https://sports.yahoo.com/articles/j-brown-reportedly-little-while-103021348.html",
+          "t": "A.J. Brown reportedly ‘out a little while’ with hamstring injury"
         }
       ],
       "menciona": []
@@ -113,20 +112,20 @@
       "estatus": "Fuera"
     },
     {
-      "id": "2216",
-      "estatus": "Duda"
-    },
-    {
       "id": "4892",
       "estatus": "Duda"
     },
     {
-      "id": "7525",
+      "id": "2216",
       "estatus": "Duda"
     },
     {
       "id": "12474",
       "estatus": "Fuera"
+    },
+    {
+      "id": "7525",
+      "estatus": "Duda"
     },
     {
       "id": "13281",
@@ -222,64 +221,64 @@
     }
   ],
   "agregados": [
-    "10218",
     "DET",
+    "10218",
     "9482",
     "12492",
-    "5012",
-    "12499",
-    "13424",
     "12540",
-    "11783",
     "2020",
-    "12533",
+    "12499",
+    "5012",
+    "13424",
+    "11783",
     "11563",
-    "13281",
+    "12533",
     "5995",
     "6650",
+    "TB",
     "5892",
     "5045",
+    "4147",
     "13414",
-    "TB",
-    "11625",
-    "12700",
-    "13296",
-    "12534",
+    "13281",
     "PIT",
-    "4147"
+    "2505",
+    "12534",
+    "9480",
+    "12700"
   ],
   "soltados": [
     "12491",
     "6130",
     "2747",
     "2505",
+    "NE",
     "12718",
+    "11834",
     "3271",
     "9756",
-    "11834",
-    "NE",
     "3286",
-    "11579",
-    "BAL",
-    "10219",
     "IND",
     "CLE",
+    "10219",
     "11624",
-    "13276",
+    "BAL",
+    "11579",
     "9502",
     "7553",
-    "12545",
+    "13276",
+    "6083",
     "NYG",
+    "12545",
     "10213",
-    "3214",
-    "NO"
+    "13545"
   ],
   "duelo": {
-    "a": "Joe Burrow",
-    "b": "Dak Prescott",
-    "veredicto": "Arranca a Joe Burrow. Con una proyección de 25.7 pts frente a los 21.8 pts de Prescott, Burrow se perfila como una opción más explosiva y consistente para tu alineación de semana 11."
+    "a": "Ja'Marr Chase",
+    "b": "CeeDee Lamb",
+    "veredicto": "Arranca a Ja'Marr Chase sobre CeeDee Lamb en semana 11. Con una proyección de 21.5 pts frente a 20.8 pts, el volumen de pases largos y juego explosivo inclinan la balanza a su favor."
   },
-  "dueloFecha": "2026-11-18T13:30:02.376Z",
+  "dueloFecha": "2026-11-19T10:47:59.059Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
