@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-19T10:47:59.059Z",
-  "ultimaIA": "2026-11-19T10:47:59.059Z",
+  "actualizado": "2026-11-19T19:11:55.294Z",
+  "ultimaIA": "2026-11-19T19:11:55.294Z",
   "semana": 11,
   "semanaStats": 11,
   "temporada": "2026",
@@ -14,45 +14,92 @@
   ],
   "noticias": [
     {
-      "id": "n20261119104700",
-      "fecha": "2026-11-19T10:47:59.059Z",
+      "id": "n20261119191100",
+      "fecha": "2026-11-19T19:11:55.294Z",
       "semana": 11,
-      "titulo": "A.J. Brown queda fuera por lesión de isquiotibial",
+      "titulo": "Kyle McCord será titular ante Bills en semana 11",
       "claves": [
-        "Brown sufrió una lesión de isquiotibial contra Lions en semana 10.",
-        "Estará fuera un tiempo considerable tras confirmarse la gravedad del problema.",
-        "Aparece oficialmente como descartado y no alineable en semana 11."
+        "Kyle McCord reemplaza al lesionado Malik Willis",
+        "Dolphins enfrentan a una defensa de Bills dominante",
+        "Expectativas bajas para la ofensiva de Miami"
       ],
-      "contexto": "A.J. Brown encendió las alarmas en el cuerpo técnico tras lastimarse el isquiotibial durante el compromiso de la semana 10 ante los Lions. Los reportes recientes confirman que el estelar receptor estará fuera un tiempo razonable. Su ausencia deja un hueco enorme en el plan de juego ofensivo de New England, confirmando su estatus oficial de descartado para este próximo enfrentamiento mientras el equipo evalúa el tiempo exacto que requerirá su rehabilitación física.",
-      "fantasy": "La baja de Brown representa un golpe durísimo para cualquier alineación de fantasy football. Con estatus oficial de fuera, es momento obligatorio de mandarlo a la banca o colocarlo en la reserva de lesionados. Esta ausencia abre volumen inmediato para otras armas aéreas del equipo en formatos profundos o PPR. Si compites en ligas de 10 o 12 equipos, necesitas buscar un reemplazo confiable en waivers para cubrir sus números habituales de WR1.",
-      "equipo_impacto": "Sin su receptor principal disponible, New England pierde a su principal amenaza vertical. Los esquemas rivales ahora podrán congestionar la caja y presionar a los suplentes, obligando al resto de los receptores a asumir un volumen de pases mucho más exigente en las próximas semanas.",
-      "accion": "Mueve de inmediato a Brown a tu banca o espacio de lesionados y busca un receptor en waivers.",
+      "contexto": "Ante la lesión de Malik Willis, los Dolphins han confirmado que Kyle McCord tomará los controles de la ofensiva para el enfrentamiento de la semana 11 frente a Buffalo. El equipo de Miami busca navegar esta baja crítica mientras enfrentan a una defensiva de los Bills que llega en un momento de gran inercia, dominando incluso contra quarterbacks suplentes.",
+      "fantasy": "Evita a cualquier jugador de los Dolphins en tus alineaciones. La entrada de McCord contra una defensa de élite como la de Buffalo reduce drásticamente el techo de puntos para receptores y corredores de Miami. Solo úsalos en ligas muy profundas si no tienes otra opción viable.",
+      "equipo_impacto": "La ofensiva de Miami pierde dinamismo y capacidad de respuesta. El resto de los compañeros sufrirán al tener una producción limitada por la falta de experiencia del nuevo QB titular.",
+      "accion": "Sienta a todos tus jugadores de Dolphins esta semana.",
       "en": {
-        "titulo": "A.J. Brown out for extended period with hamstring",
+        "titulo": "Kyle McCord to start against Bills in Week 11",
         "claves": [
-          "Brown suffered a hamstring injury against the Lions in Week 10.",
-          "Reports confirm the receiver will be sidelined for a while.",
-          "Officially ruled out and must be benched for Week 11."
+          "Kyle McCord replaces injured Malik Willis",
+          "Dolphins face a rolling Bills defense",
+          "Low expectations for Miami's offense"
         ],
-        "contexto": "A.J. Brown raised major concerns after suffering a hamstring injury during the Week 10 clash against the Lions. Recent reports confirm that the star wideout will be sidelined for a little while. His absence leaves a massive void in New England's offensive game plan, cementing his official Out designation for the upcoming contest while the organization continues to evaluate the exact recovery timeline needed for his return to full health.",
-        "fantasy": "Losing Brown is a massive setback for contending fantasy rosters heading into Week 11. With his Out status confirmed, you must immediately stash him on your bench or IR slot. His absence unlocks additional target volume for secondary options across PPR formats, though replacing his WR1 ceiling is nearly impossible. Fantasy managers in 10 or 12 team leagues must scour the waiver wire right now to find a reliable short-term flex alternative.",
-        "equipo_impacto": "Without their top weapon on the outside, New England loses their primary downfield separator. Opposing defenses can now compress coverage inside the box, forcing secondary receivers to handle elevated target shares against tighter coverage shells moving forward.",
-        "accion": "Move Brown to your bench or injured reserve immediately and secure a waiver wire replacement."
+        "contexto": "With Malik Willis injured, the Dolphins have confirmed Kyle McCord will take over the offense for the Week 11 matchup against Buffalo. Miami is navigating this critical absence while facing a Bills defense that is currently rolling and dominating even against backup quarterbacks.",
+        "fantasy": "Avoid all Dolphins players in your lineups. McCord's debut against an elite defense like Buffalo's drastically lowers the scoring ceiling for Miami's pass catchers and running backs. Only start them in deep leagues if you have no other viable options.",
+        "equipo_impacto": "Miami's offense loses dynamism and playmaking ability. Teammates will struggle due to the limited upside of the new starting quarterback.",
+        "accion": "Bench all your Dolphins players this week."
       },
-      "etiqueta": "LESIÓN",
+      "etiqueta": "SIT",
       "impacto": "BAJA",
-      "equipo": "NE",
+      "equipo": "MIA",
       "equipos": [
-        "NE"
+        "MIA",
+        "BUF"
       ],
       "jugadores": [
-        "5859"
+        "12494",
+        "8161"
       ],
       "fuentes": [
         {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/articles/j-brown-reportedly-little-while-103021348.html",
-          "t": "A.J. Brown reportedly ‘out a little while’ with hamstring injury"
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50531689/bills-defense-backup-qbs-amani-hooker",
+          "t": "Whether it's against backup QBs or not, the Bills' defense is rolling"
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261119191101",
+      "fecha": "2026-11-19T19:11:55.294Z",
+      "semana": 11,
+      "titulo": "Woody Marks fuera para el duelo de jueves",
+      "claves": [
+        "Woody Marks descartado por protocolo de conmoción",
+        "Texans pierden profundidad clave en el backfield",
+        "Impacto directo en la rotación de corredores"
+      ],
+      "contexto": "El corredor de los Texans, Woody Marks, ha sido oficialmente descartado para el partido de 'Thursday Night Football' contra los Colts debido a una conmoción cerebral. Esta baja obliga a Houston a ajustar su plan de juego terrestre justo antes del inicio de la semana 11, perdiendo una pieza de rotación importante.",
+      "fantasy": "Si contabas con Marks, busca opciones en waivers de último minuto. Su ausencia podría consolidar más acarreos para el resto del backfield de Houston, aunque el riesgo de una ofensiva limitada ante Indianapolis sigue siendo alto.",
+      "equipo_impacto": "La ofensiva terrestre de Houston pierde versatilidad. Los compañeros deberán asumir una mayor carga de trabajo para compensar la ausencia del corredor en este duelo divisional.",
+      "accion": "Busca un reemplazo inmediato si tenías a Marks en tu alineación.",
+      "en": {
+        "titulo": "Woody Marks out for Thursday night game",
+        "claves": [
+          "Woody Marks ruled out with concussion protocol",
+          "Texans lose key backfield depth",
+          "Direct impact on running back rotation"
+        ],
+        "contexto": "Texans running back Woody Marks has been officially ruled out for Thursday Night Football against the Colts due to a concussion. This loss forces Houston to adjust their ground game plan just before the start of Week 11, losing an important rotation piece.",
+        "fantasy": "If you were relying on Marks, look for last-minute waiver wire options. His absence could consolidate more carries for the rest of Houston's backfield, though the risk of a limited offense against Indianapolis remains high.",
+        "equipo_impacto": "Houston's ground attack loses versatility. Teammates will have to take on a heavier workload to compensate for the running back's absence in this divisional clash.",
+        "accion": "Find an immediate replacement if you had Marks in your lineup."
+      },
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "HOU",
+      "equipos": [
+        "HOU",
+        "IND"
+      ],
+      "jugadores": [
+        "12474"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50524890/texans-rule-hunter-marks-colts-rule-ward-starting-ots",
+          "t": "Texans DE Hunter, RB Marks to miss TNF; Colts rule out CB Ward, starting OTs"
         }
       ],
       "menciona": []
@@ -100,6 +147,10 @@
       "estatus": "Duda"
     },
     {
+      "id": "4892",
+      "estatus": "Duda"
+    },
+    {
       "id": "6904",
       "estatus": "Fuera"
     },
@@ -112,20 +163,16 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4892",
+      "id": "2216",
       "estatus": "Duda"
     },
     {
-      "id": "2216",
+      "id": "7525",
       "estatus": "Duda"
     },
     {
       "id": "12474",
       "estatus": "Fuera"
-    },
-    {
-      "id": "7525",
-      "estatus": "Duda"
     },
     {
       "id": "13281",
@@ -223,55 +270,55 @@
   "agregados": [
     "DET",
     "10218",
-    "9482",
-    "12492",
     "12540",
     "2020",
+    "9482",
+    "12492",
     "12499",
-    "5012",
     "13424",
+    "5012",
     "11783",
-    "11563",
-    "12533",
     "5995",
+    "11563",
     "6650",
+    "12533",
     "TB",
-    "5892",
-    "5045",
     "4147",
-    "13414",
-    "13281",
-    "PIT",
-    "2505",
+    "5045",
+    "5892",
     "12534",
+    "12700",
+    "5119",
     "9480",
-    "12700"
+    "11539",
+    "11625",
+    "7567"
   ],
   "soltados": [
-    "12491",
     "6130",
+    "12491",
     "2747",
     "2505",
     "NE",
     "12718",
+    "6083",
     "11834",
     "3271",
-    "9756",
     "3286",
-    "IND",
+    "9756",
     "CLE",
     "10219",
     "11624",
+    "IND",
     "BAL",
     "11579",
-    "9502",
     "7553",
+    "9502",
+    "13545",
+    "10232",
+    "5849",
     "13276",
-    "6083",
-    "NYG",
-    "12545",
-    "10213",
-    "13545"
+    "NYG"
   ],
   "duelo": {
     "a": "Ja'Marr Chase",
