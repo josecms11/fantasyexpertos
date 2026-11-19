@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-18T21:33:10.646Z",
-  "ultimaIA": "2026-11-18T21:33:10.646Z",
+  "actualizado": "2026-11-19T02:46:27.948Z",
+  "ultimaIA": "2026-11-19T02:46:27.948Z",
   "semana": 11,
   "semanaStats": 11,
   "temporada": "2026",
@@ -14,155 +14,46 @@
   ],
   "noticias": [
     {
-      "id": "x20261118213300",
-      "fecha": "2026-11-18T21:33:10.646Z",
+      "id": "n20261119024600",
+      "fecha": "2026-11-19T02:46:27.948Z",
       "semana": 11,
-      "exclusivo": true,
-      "fuente": "2026-11-18T16:09:48+00:00",
-      "titulo": "Previa Semana 11: Duelos decisivos en camino",
+      "titulo": "Cam Skattebo frena sus saltos acrobáticos tras lesión",
       "claves": [
-        "Jueves de NFL con choque estelar"
+        "Cam Skattebo deja los backflips tras lesión de Hutchinson",
+        "Aidan Hutchinson sufrió lesión de rodilla celebrando un sack",
+        "Decisión busca evitar lesiones absurdas en festejos"
       ],
+      "contexto": "El corredor de los Giants, Cam Skattebo, anunció que dejará de hacer backflips en sus celebraciones tras ver la grave lesión de rodilla que sufrió el defensivo Aidan Hutchinson, quien se lastimó al saltar para festejar un sack. Es una medida de precaución para cuidar su físico y evitar perderse juegos clave de la temporada.",
+      "fantasy": "Para efectos de fantasy football, esto no altera el volumen de juego ni las proyecciones de Cam Skattebo en la semana 11. Puedes mantenerlo alineado con confianza en tus ligas principales sin preocuparte por bajas por culpa de sus festejos.",
+      "equipo_impacto": "La decisión protege a la ofensiva de los Giants de perder a una pieza importante por distracciones o accidentes en los festejos, manteniendo la estabilidad del grupo.",
+      "accion": "Alinea con normalidad a Cam Skattebo en tu alineación titular de la semana 11.",
       "en": {
-        "titulo": "Week 11 Preview: Decisive matchups ahead",
+        "titulo": "Cam Skattebo halts backflips after Hutchinson injury",
         "claves": [
-          "TNF kicks off the action",
-          "Sunday full of divisional clashes",
-          "Set your Week 11 lineups"
+          "Cam Skattebo stops backflips after Hutchinson's knee injury",
+          "Aidan Hutchinson suffered a serious injury during a sack celebration",
+          "Decision aims to prevent foolish celebration injuries"
         ],
-        "contexto": "We reach Week 11 with a schedule demanding immediate attention. Thursday starts the action with TNF, followed by a Sunday slate full of playoff-defining divisional matchups. It is time to adjust strategies and check injury reports before the initial kickoff.",
-        "fantasy": "Week 11 is vital for playoff positioning. Monitor Sunday game times for last-minute changes. If you have players in early games, ensure you have bench alternatives ready in case of late injury reports.",
-        "equipo_impacto": "Teams are adjusting tactical schemes for the final stretch. Players with defined roles will see increased workloads as rosters consolidate after 10 weeks of wear.",
-        "accion": "Review your lineups against this week's schedule."
+        "contexto": "Giants running back Cam Skattebo announced he will stop doing backflips after witnessing the severe knee injury suffered by Lions defensive end Aidan Hutchinson while celebrating a sack. It is a strict precautionary measure to protect his health.",
+        "fantasy": "For fantasy football purposes, this does not impact Cam Skattebo's workload or weekly projections for week 11. You can keep him locked into your starting lineups without worries.",
+        "equipo_impacto": "This decision protects the Giants' offense from losing a key contributor due to an avoidable celebration accident, keeping the roster stable.",
+        "accion": "Start Cam Skattebo normally in your week 11 fantasy lineup."
       },
       "etiqueta": "TENDENCIA",
       "impacto": "NEUTRO",
-      "equipo": "NFL",
+      "equipo": "NYG",
       "equipos": [
-        "NFL"
-      ],
-      "jugadores": [],
-      "premium": true
-    },
-    {
-      "id": "x20261118213301",
-      "fecha": "2026-11-18T21:33:10.646Z",
-      "semana": 11,
-      "exclusivo": true,
-      "fuente": "2026-11-18T16:09:48+00:00",
-      "titulo": "Alerta de lesiones: Mayfield y Bowers fuera",
-      "claves": [
-        "Baker Mayfield descartado contra Lions"
-      ],
-      "en": {
-        "titulo": "Injury Alert: Mayfield and Bowers out",
-        "claves": [
-          "Baker Mayfield out vs Lions",
-          "Brock Bowers out due to injury",
-          "Wandale Robinson to IR for 4 weeks"
-        ],
-        "contexto": "Week 11 hits fantasy rosters hard. Baker Mayfield will not play against the Lions, while tight end Brock Bowers is also out. Additionally, Wandale Robinson has been placed on IR for 4 weeks, complicating depth at skill positions.",
-        "fantasy": "If you counted on Mayfield or Bowers, seek immediate waiver replacements. Robinson is a significant loss; do not keep him on your active roster if you lack IR spots. Look for options that ensure target volume this Sunday.",
-        "equipo_impacto": "Absences force coaches to improvise with rotation players and rookies, which often alters offensive rhythm and pass distribution during the game.",
-        "accion": "Remove Mayfield, Bowers, and Robinson from your starting lineup."
-      },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "TB",
-      "equipos": [
-        "TB",
-        "DET",
-        "LV",
         "NYG",
-        "TEN"
+        "DET"
       ],
       "jugadores": [
-        "4892",
-        "11604",
-        "8126"
-      ],
-      "premium": true
-    },
-    {
-      "id": "x20261118213302",
-      "fecha": "2026-11-18T21:33:10.646Z",
-      "semana": 11,
-      "exclusivo": true,
-      "fuente": "2026-11-18T16:09:48+00:00",
-      "titulo": "Waivers: Opciones de emergencia para la semana 11",
-      "claves": [
-        "Michael Mayer y Mendoza disponibles"
-      ],
-      "en": {
-        "titulo": "Waivers: Emergency options for Week 11",
-        "claves": [
-          "Michael Mayer and Mendoza available",
-          "Mark Andrews and Brissett as options",
-          "Strange stands out vs Giants"
-        ],
-        "contexto": "With injuries mounting, the waiver wire offers alternatives. Michael Mayer and Mendoza are names to consider in deep leagues. Mark Andrews, alongside Brissett, seeks more prominence, while Strange profiles as an interesting option against the Giants this week.",
-        "fantasy": "Prioritize players with higher target volume. If you need a TE, Andrews remains the name with higher pedigree. Strange could have a favorable matchup if the Giants' defense allows short passes over the middle.",
-        "equipo_impacto": "These players must prove they can absorb the game volume left by injured starters to maintain their offenses' competitiveness.",
-        "accion": "Add these players if you are struggling with roster depth."
-      },
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "LV",
-      "equipos": [
-        "LV",
-        "BAL",
-        "NE",
-        "NYG"
-      ],
-      "jugadores": [
-        "9482",
-        "5012"
-      ],
-      "premium": true
-    },
-    {
-      "id": "n20261118213300",
-      "fecha": "2026-11-18T21:33:10.646Z",
-      "semana": 11,
-      "titulo": "Joe Milton se mantiene como mariscal titular de Eagles",
-      "claves": [
-        "Joe Milton recibe la titularidad para la semana 11",
-        "Sean Mannion continuará como el responsable de la ofensiva",
-        "Nick Sirianni confirmó los movimientos de cara al partido"
-      ],
-      "contexto": "El entrenador en jefe Nick Sirianni confirmó que Joe Milton repetirá en los controles como mariscal de campo titular para el enfrentamiento de la semana 11 contra los Steelers. Además, Sean Mannion se mantendrá a cargo del diseño y llamado de jugadas ofensivas para este compromiso.",
-      "fantasy": "La continuidad de Joe Milton bajo el centro genera dudas profundas en ligas de fantasy. Con Sean Mannion manejando la ofensiva y enfrentando a una defensiva dura como la de los Steelers, lo más prudente es mantenerlo en la banca en la mayoría de los formatos estándar.",
-      "equipo_impacto": "Esta estructura ofensiva busca estabilidad ante la ausencia de piezas clave, obligando al resto de los receptores y corredores de Eagles a depender de la ejecución bajo un esquema conservador.",
-      "accion": "Manda a la banca a Joe Milton y busca mejores opciones en el mercado de fichajes para tu alineación de la semana 11.",
-      "en": {
-        "titulo": "Joe Milton remains starting quarterback for Eagles",
-        "claves": [
-          "Joe Milton gets the start for Week 11",
-          "Sean Mannion will continue calling offensive plays",
-          "Nick Sirianni confirmed the team decisions"
-        ],
-        "contexto": "Head coach Nick Sirianni confirmed that quarterback Joe Milton will start again in Week 11 against the Steelers. Meanwhile, Sean Mannion will remain in his role as the offensive playcaller for the upcoming matchup.",
-        "fantasy": "Joe Milton's continued presence under center raises major fantasy concerns. With Sean Mannion calling plays against a tough Steelers defense, fantasy managers should keep him on the bench across standard formats.",
-        "equipo_impacto": "This offensive structure aims for stability in the absence of key players, forcing skill-position teammates to rely on execution within a conservative scheme.",
-        "accion": "Bench Joe Milton and look for alternative streaming options on your waiver wire for Week 11.",
-        "en": "Bench Joe Milton and look for alternative streaming options on your waiver wire for Week 11."
-      },
-      "etiqueta": "START",
-      "impacto": "BAJA",
-      "equipo": "PHI",
-      "equipos": [
-        "PHI",
-        "PIT"
-      ],
-      "jugadores": [
-        "11557",
-        "2394"
+        "12481"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50523042/joe-milton-getting-starting-qb-nod-week-11",
-          "t": "Nick Sirianni: Joe Milton getting starting QB nod in Week 11"
+          "u": "https://www.espn.com/nfl/story/_/id/50524576/rb-skattebo-nix-backflips-wake-hutchinson-injury",
+          "t": "Giants RB Cam Skattebo to nix backflips in wake of Aidan Hutchinson's injury"
         }
       ],
       "menciona": []
@@ -222,11 +113,15 @@
       "estatus": "Fuera"
     },
     {
+      "id": "2216",
+      "estatus": "Duda"
+    },
+    {
       "id": "4892",
       "estatus": "Duda"
     },
     {
-      "id": "2216",
+      "id": "7525",
       "estatus": "Duda"
     },
     {
@@ -234,7 +129,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "7525",
+      "id": "13281",
       "estatus": "Duda"
     },
     {
@@ -274,12 +169,20 @@
       "estatus": "Duda"
     },
     {
+      "id": "13296",
+      "estatus": "Duda"
+    },
+    {
       "id": "5947",
       "estatus": "Duda"
     },
     {
       "id": "8121",
       "estatus": "Fuera"
+    },
+    {
+      "id": "10236",
+      "estatus": "Duda"
     },
     {
       "id": "7083",
@@ -316,72 +219,60 @@
     {
       "id": "2505",
       "estatus": "Duda"
-    },
-    {
-      "id": "5927",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "8188",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "12533",
-      "estatus": "Fuera"
     }
   ],
   "agregados": [
     "10218",
-    "9482",
     "DET",
+    "9482",
     "12492",
     "5012",
     "12499",
-    "11783",
     "13424",
-    "12533",
-    "2020",
     "12540",
-    "13281",
+    "11783",
+    "2020",
+    "12533",
     "11563",
-    "5892",
-    "13414",
-    "6650",
+    "13281",
     "5995",
+    "6650",
+    "5892",
     "5045",
-    "13296",
+    "13414",
+    "TB",
     "11625",
     "12700",
-    "TB",
-    "2505",
+    "13296",
     "12534",
-    "7567"
+    "PIT",
+    "4147"
   ],
   "soltados": [
     "12491",
     "6130",
-    "12718",
-    "2505",
     "2747",
+    "2505",
+    "12718",
     "3271",
     "9756",
     "11834",
+    "NE",
     "3286",
     "11579",
     "BAL",
-    "NE",
     "10219",
     "IND",
-    "13276",
-    "11624",
     "CLE",
+    "11624",
+    "13276",
     "9502",
     "7553",
     "12545",
     "NYG",
     "10213",
-    "12540",
-    "3214"
+    "3214",
+    "NO"
   ],
   "duelo": {
     "a": "Joe Burrow",
