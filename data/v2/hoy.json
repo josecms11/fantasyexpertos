@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-20T08:40:43.116Z",
-  "ultimaIA": "2026-11-20T08:40:43.116Z",
+  "actualizado": "2026-11-20T17:18:55.458Z",
+  "ultimaIA": "2026-11-20T17:18:55.458Z",
   "semana": 11,
   "semanaStats": 11,
   "temporada": "2026",
@@ -14,151 +14,47 @@
   ],
   "noticias": [
     {
-      "id": "n20261120084000",
-      "fecha": "2026-11-20T08:40:43.116Z",
+      "id": "n20261120171802",
+      "fecha": "2026-11-20T17:18:55.458Z",
       "semana": 11,
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50538998/cj-stroud-stays-groove-texans-blowout-colts",
-          "t": "C.J. Stroud stays in 'groove' with another 3-TD night in Texans' blowout of Colts"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50536733/texans-colts-thursday-night-football-cj-stroud-defense",
-          "t": "C.J. Stroud, defense star as Texans get critical win over Colts on TNF"
-        },
-        {
-          "m": "ESPN",
-          "u": "http://www.espn.com/nfl/recap?gameId=401873066",
-          "t": "C.J. Stroud throws for 3 TDs as the Texans roll past the Colts 26-3"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50537710/texans-improve-4-6-easy-win-colts",
-          "t": "Texans improve to 4-6 with easy win over the Colts"
-        }
-      ],
-      "titulo": "C.J. Stroud mantiene racha de 3 TD",
+      "titulo": "Bhayshul Tuten se afianza como titular en Jaguars",
       "claves": [
-        "3er juego seguido con 3 TD",
-        "Victoria 26-3 sobre Colts en TNF",
-        "Sumó 194 yardas por aire"
+        "Tuten ocupa el lugar 14 en yardas terrestres en la NFL.",
+        "Figura como Questionable por tobillo para el duelo ante Giants.",
+        "Se adueñó del backfield tras un primer año de bajo perfil."
       ],
-      "contexto": "C.J. Stroud firmó otra sólida actuación el jueves por la noche al lanzar 3 TD en el triunfo 26-3 de HOU sobre IND. A pesar de registrar solo 194 yardas aéreas, el mariscal de campo de 2º año mantuvo el control del juego. Fue su 3er partido consecutivo logrando al menos 3 pases de anotación, guiando a su equipo a su 4ª victoria en 6 juegos para poner su récord en 4-6.",
-      "fantasy": "El rendimiento de Stroud lo consolida como un QB1 confiable en formatos de 12 equipos. Su capacidad para generar 3 TD semanales compensa partidos con bajo volumen de yardas. En ligas PPR y Superflex se mantiene firme en tu alineación titular. Suben sus receptores primarios por la alta eficiencia en zona roja, manteniéndolo con una proyección constante sobre los 20 pts semanales para el cierre de temporada.",
-      "equipo_impacto": "El ataque aéreo de HOU demuestra efectividad clínica en zona de anotación. La química de Stroud impulsa el valor de todo el cuerpo de receptores, afianzando la ofensiva de HOU como una unidad peligrosa para la recta final del calendario.",
-      "accion": "Mantén a C.J. Stroud como tu QB1 titular sin dudarlo para la recta final.",
+      "contexto": "Tras un primer año discreto, Bhayshul Tuten se convirtió en el corredor 1 definitivo de Jaguars en esta campaña. El egresado se ubica en el puesto 14 de la NFL en yardas por tierra previo al juego de semana 11 frente a Giants. No obstante, llega tocado a la jornada al ser reportado como Questionable por una molestia en el tobillo.",
+      "fantasy": "Tuten ha ganado valor como opción de Flex o RB2 en ligas PPR y estándar gracias a su carga de trabajo. Si supera la prueba física del tobillo en la semana 11, ofrece un piso sólido de toques en un duelo favorable contra Giants. En formatos dinastía su valor se ha disparado, consolidándose como la opción principal por tierra de Jacksonville.",
+      "equipo_impacto": "Su desarrollo ha dado estabilidad a la ofensiva de Jaguars, liberando de presión el ataque aéreo. Si no juega, el volumen terrestre se repartirá entre los suplentes.",
+      "accion": "Mantén a Tuten como opción de Flex si aprueba sus pruebas físicas del tobillo.",
       "en": {
-        "titulo": "C.J. Stroud keeps 3 TD streak alive",
+        "titulo": "Bhayshul Tuten claims clear lead back role for Jaguars",
         "claves": [
-          "3rd straight game with 3 TDs",
-          "26-3 victory over Colts on TNF",
-          "Threw for 194 yards in win"
+          "Tuten ranks 14th in NFL rushing yards entering Week 11.",
+          "Listed as Questionable with ankle injury facing the Giants.",
+          "Established lead back status after a quiet rookie campaign."
         ],
-        "contexto": "C.J. Stroud delivered another strong performance on Thursday night, throwing 3 TDs in HOU's 26-3 win over IND. Despite passing for just 194 yards, the 2nd-year quarterback controlled the game throughout. It marked his 3rd consecutive contest with at least 3 touchdown passes, leading his team to their 4th win in 6 games to move their record to 4-6.",
-        "fantasy": "Stroud's recent form solidifies him as a reliable QB1 option in 12-team leagues. His ability to deliver 3 TDs weekly offsets games with lower passing yardage. In PPR and Superflex formats, keep him locked into your starting lineup. His primary wideouts get a boost from high red-zone efficiency, keeping his weekly projection above 20 pts.",
-        "equipo_impacto": "HOU's passing offense is showing clinical efficiency inside the red zone. Stroud's chemistry elevates the fantasy value of all pass catchers, establishing HOU as a dangerous unit for the rest of the season.",
-        "accion": "Keep C.J. Stroud locked in as your starting QB1 for the stretch run."
+        "contexto": "After a quiet rookie campaign, Bhayshul Tuten has emerged as the clear No. 1 running back for the Jaguars this season. He ranks 14th in the NFL in rushing yards entering Sunday's Week 11 game against the Giants. However, his availability is monitored after being tagged as Questionable due to an ankle injury.",
+        "fantasy": "Tuten has solidified his standing as a viable RB2 or Flex starter in PPR and standard formats based on volume. If cleared from his ankle injury for Week 11, he offers a dependable floor against the Giants. His dynasty trajectory has surged significantly as Jacksonville's primary option on the ground.",
+        "equipo_impacto": "His emergence brings balance to Jacksonville's offense, reducing pressure on the passing game. If sidelined, backfield touches will split among secondary options.",
+        "accion": "Keep Tuten in your Flex spot if he passes pre-game ankle checks."
       },
-      "etiqueta": "START",
+      "etiqueta": "LESIÓN",
       "impacto": "SUBE",
-      "equipo": "HOU",
+      "equipo": "JAX",
       "equipos": [
-        "HOU",
-        "IND"
+        "JAX",
+        "NYG"
       ],
       "jugadores": [
-        "9758"
+        "12490"
       ],
-      "menciona": []
-    },
-    {
-      "id": "n20261120084001",
-      "fecha": "2026-11-20T08:40:43.116Z",
-      "semana": 11,
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50539065/titans-calvin-ridley-assault-charge-airport-incident",
-          "t": "Titans' Calvin Ridley facing misdemeanor assault charge over airport incident"
+          "u": "https://www.espn.com/nfl/story/_/id/50535497/jacksonville-jaguars-bhayshul-tuten-rb-stats-fantasy",
+          "t": "How Bhayshul Tuten became the clear No. 1 running back for the Jaguars"
         }
-      ],
-      "titulo": "Calvin Ridley enfrenta cargos por agresión leve",
-      "claves": [
-        "Incidente en aeropuerto el 7 nov",
-        "Cargo por agresión en Nashville",
-        "Estatus legal en desarrollo actualmente"
-      ],
-      "contexto": "El receptor de TEN, Calvin Ridley, enfrenta un cargo por falta menor de agresión tras un incidente ocurrido el 7 nov en el Aeropuerto Internacional de Nashville. Las autoridades locales notificaron el proceso legal en su contra tras los hechos reportados. Por el momento, el equipo y la liga evalúan la situación mientras se deslindan responsabilidades legales de este caso en curso.",
-      "fantasy": "Aunque por ahora Ridley sigue disponible y sin sanción inmediata de la NFL, la situación legal genera incertidumbre. Su valor en fantasy football se mantiene en terreno inestable en ligas PPR y Estándar. Es aconsejable monitorear de cerca los reportes disciplinarios por si la liga aplica una suspensión sorpresa. Mientras no haya castigo oficial, se mantiene como una opción WR3 de riesgo moderado.",
-      "equipo_impacto": "La ofensiva de TEN podría sufrir distracciones fuera del campo. De haber una sanción posterior, el volumen de pases se redistribuiría entre los demás receptores sanos de la plantilla en las siguientes semanas.",
-      "accion": "Monitorea los reportes de la NFL pero mantenlo activo si necesitas WR3.",
-      "en": {
-        "titulo": "Calvin Ridley faces misdemeanor assault charge",
-        "claves": [
-          "Airport incident on Nov 7",
-          "Misdemeanor assault charge in Nashville",
-          "Legal status currently developing"
-        ],
-        "contexto": "TEN wide receiver Calvin Ridley is facing a misdemeanor assault charge following an incident on Nov 7 at Nashville International Airport. Local authorities filed charges after reviewing the reported events. Both the team and the league are currently monitoring the legal situation as due process unfolds for the veteran receiver in week 11.",
-        "fantasy": "While Ridley remains active without an immediate NFL suspension, this legal trouble introduces fantasy risk. His value stays uncertain across PPR and Standard leagues. Fantasy managers should monitor league discipline reports closely in case a sudden suspension occurs. Until official action is taken, treat him as a risky WR3 option in lineups.",
-        "equipo_impacto": "TEN's offense faces potential off-field distractions. If a future league suspension is handed down, target volume would shift toward other healthy receivers on the roster in coming weeks.",
-        "accion": "Monitor NFL news closely but keep Ridley active if you need WR3 depth."
-      },
-      "etiqueta": "TENDENCIA",
-      "impacto": "BAJA",
-      "equipo": "TEN",
-      "equipos": [
-        "TEN"
-      ],
-      "jugadores": [
-        "4981"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261120084002",
-      "fecha": "2026-11-20T08:40:43.116Z",
-      "semana": 11,
-      "fuentes": [
-        {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/bengals-duo-could-break-nfl-record-jamarr-chase-tee-higgins-historic-pace/",
-          "t": "\n                        Bengals duo could break NFL record that has stood for 31 years: Ja&#039;Marr Chase and Tee Higgins on historic pace"
-        }
-      ],
-      "titulo": "Ja'Marr Chase y Tee Higgins hacen historia",
-      "claves": [
-        "Paso histórico en la NFL",
-        "Aspiran a récord de 31 años",
-        "Dupla estelar con los Bengals"
-      ],
-      "contexto": "La dupla de receptores de CIN, formada por Ja'Marr Chase y Tee Higgins, está registrando un ritmo histórico en la presente campaña. Ambos estelares están en posición de romper un récord de la NFL que ha permanecido intacto durante 31 años. Su producción constante ha sostenido el ataque aéreo del equipo, consolidándose como la pareja de receptores más dominante de la liga actual.",
-      "fantasy": "El impacto en fantasy es masivo para ambos receptores en cualquier formato. Chase se afianza como un WR1 elite del top 3 global, mientras que Higgins se sostiene firmemente como un WR1/WR2 de altísimo techo semanal. Su alto volumen de objetivos y capacidad en zona de anotación garantizan producción estelar en ligas PPR y Estándar, por lo que debes alinearlos sin pensarlo cada semana.",
-      "equipo_impacto": "La ofensiva aérea de CIN depende enteramente del dominio de este par. Su capacidad para separar esquemas defensivos eleva drásticamente el potencial anotador del equipo semana a semana.",
-      "accion": "Alinea siempre a Chase y Higgins como titulares indiscutibles en tus ligas.",
-      "en": {
-        "titulo": "Ja'Marr Chase and Tee Higgins chasing history",
-        "claves": [
-          "Historic pace in the NFL",
-          "Targeting 31-year-old league record",
-          "Dominant duo for the Bengals"
-        ],
-        "contexto": "CIN wide receiver duo Ja'Marr Chase and Tee Higgins are producing at a historic pace this season. Both star receivers are currently positioned to break an NFL record that has stood for 31 years. Their elite production has sustained the team's passing attack, cementing them as the most dominant receiving tandem in football today.",
-        "fantasy": "The fantasy impact is massive for both wideouts across all scoring formats. Chase remains an elite WR1 in the overall top 3, while Higgins stands firm as a high-ceiling WR1/WR2. Their heavy target volume and red-zone presence guarantee elite production in PPR and Standard leagues, making both mandatory starts every week.",
-        "equipo_impacto": "CIN's passing attack relies entirely on the dominance of this wideout pair. Their ability to shred defensive coverages dramatically raises the team's overall scoring potential every single week.",
-        "accion": "Start both Chase and Higgins with absolute confidence in all fantasy formats."
-      },
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "CIN",
-      "equipos": [
-        "CIN"
-      ],
-      "jugadores": [
-        "7564",
-        "6801"
       ],
       "menciona": []
     }
@@ -265,6 +161,10 @@
       "estatus": "Fuera"
     },
     {
+      "id": "13276",
+      "estatus": "Fuera"
+    },
+    {
       "id": "7526",
       "estatus": "Duda"
     },
@@ -290,10 +190,6 @@
     },
     {
       "id": "5844",
-      "estatus": "Duda"
-    },
-    {
-      "id": "13276",
       "estatus": "Duda"
     },
     {
@@ -331,26 +227,26 @@
     "2020",
     "10218",
     "9482",
-    "12492",
-    "12499",
-    "13424",
     "5995",
-    "5012",
-    "11783",
+    "12492",
     "10219",
+    "12499",
+    "5012",
+    "13424",
+    "11783",
     "6650",
     "11563",
     "TB",
-    "4147",
     "12533",
+    "4147",
     "11539",
     "12700",
     "5045",
+    "11625",
     "5119",
-    "9480",
     "13269",
-    "6528",
-    "12534"
+    "9480",
+    "6528"
   ],
   "soltados": [
     "2747",
@@ -358,25 +254,25 @@
     "NE",
     "12491",
     "6083",
-    "2505",
     "CLE",
     "3271",
     "12718",
+    "2505",
     "11834",
-    "9756",
-    "11624",
-    "13545",
-    "3286",
-    "IND",
-    "10219",
-    "10232",
     "13424",
+    "9756",
+    "13545",
+    "11624",
+    "3286",
+    "10232",
+    "IND",
+    "13276",
     "5849",
+    "10219",
     "7553",
     "SEA",
     "11435",
-    "BAL",
-    "1433"
+    "9482"
   ],
   "duelo": {
     "a": "Ja'Marr Chase",
