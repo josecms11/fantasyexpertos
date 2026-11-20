@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-19T19:11:55.294Z",
-  "ultimaIA": "2026-11-19T19:11:55.294Z",
+  "actualizado": "2026-11-20T01:17:19.590Z",
+  "ultimaIA": "2026-11-20T01:17:19.590Z",
   "semana": 11,
   "semanaStats": 11,
   "temporada": "2026",
@@ -14,92 +14,50 @@
   ],
   "noticias": [
     {
-      "id": "n20261119191100",
-      "fecha": "2026-11-19T19:11:55.294Z",
+      "id": "n20261120011700",
+      "fecha": "2026-11-20T01:17:19.590Z",
       "semana": 11,
-      "titulo": "Kyle McCord será titular ante Bills en semana 11",
+      "titulo": "Puka Nacua es suspendido 3 partidos por la NFL",
       "claves": [
-        "Kyle McCord reemplaza al lesionado Malik Willis",
-        "Dolphins enfrentan a una defensa de Bills dominante",
-        "Expectativas bajas para la ofensiva de Miami"
+        "Suspendido 3 partidos por violar políticas de conducta personal",
+        "Cumplirá el castigo mientras permanece en la lista de lesionados",
+        "Impacto directo y negativo para playoffs en ligas de fantasy"
       ],
-      "contexto": "Ante la lesión de Malik Willis, los Dolphins han confirmado que Kyle McCord tomará los controles de la ofensiva para el enfrentamiento de la semana 11 frente a Buffalo. El equipo de Miami busca navegar esta baja crítica mientras enfrentan a una defensiva de los Bills que llega en un momento de gran inercia, dominando incluso contra quarterbacks suplentes.",
-      "fantasy": "Evita a cualquier jugador de los Dolphins en tus alineaciones. La entrada de McCord contra una defensa de élite como la de Buffalo reduce drásticamente el techo de puntos para receptores y corredores de Miami. Solo úsalos en ligas muy profundas si no tienes otra opción viable.",
-      "equipo_impacto": "La ofensiva de Miami pierde dinamismo y capacidad de respuesta. El resto de los compañeros sufrirán al tener una producción limitada por la falta de experiencia del nuevo QB titular.",
-      "accion": "Sienta a todos tus jugadores de Dolphins esta semana.",
+      "contexto": "La NFL sancionó al receptor de los Rams, Puka Nacua, con una suspensión de 3 partidos tras violar la política de conducta personal de la liga. El jugador ya se encontraba en la lista de lesionados reservada (IR) debido a una lesión de ligamento colateral medial (MCL) en la rodilla. Nacua deberá cumplir la sanción de manera simultánea o posterior a su recuperación física.",
+      "fantasy": "Esta noticia liquida el valor de Puka Nacua para el cierre de la temporada 2024. Al estar en IR y ahora suspendido 3 juegos, su retorno útil para los playoffs de fantasy queda prácticamente descartado. Si estás en ligas redraft sin lugar en IR, es momento de cortarlo para liberar un espacio clave en la banca. En ligas dynasty su valor cae considerablemente a corto plazo.",
+      "equipo_impacto": "Con Davante Adams también en IR por el isquiotibial y Nacua fuera, la ofensiva aérea de Rams queda completamente desmantelada. Demarcus Robinson y los receptores secundarios verán un incremento de objetivos, aunque el ataque perderá muchísima explosividad.",
+      "accion": "Corta a Puka Nacua en ligas redraft si necesitas espacio en tu banca.",
       "en": {
-        "titulo": "Kyle McCord to start against Bills in Week 11",
+        "titulo": "Puka Nacua Handed 3 Game Suspension by NFL",
         "claves": [
-          "Kyle McCord replaces injured Malik Willis",
-          "Dolphins face a rolling Bills defense",
-          "Low expectations for Miami's offense"
+          "Suspended 3 games for personal conduct policy violation",
+          "Currently on injured reserve with MCL knee injury",
+          "Devastating blow to his 2024 fantasy football outlook"
         ],
-        "contexto": "With Malik Willis injured, the Dolphins have confirmed Kyle McCord will take over the offense for the Week 11 matchup against Buffalo. Miami is navigating this critical absence while facing a Bills defense that is currently rolling and dominating even against backup quarterbacks.",
-        "fantasy": "Avoid all Dolphins players in your lineups. McCord's debut against an elite defense like Buffalo's drastically lowers the scoring ceiling for Miami's pass catchers and running backs. Only start them in deep leagues if you have no other viable options.",
-        "equipo_impacto": "Miami's offense loses dynamism and playmaking ability. Teammates will struggle due to the limited upside of the new starting quarterback.",
-        "accion": "Bench all your Dolphins players this week."
+        "contexto": "The NFL has suspended Rams wide receiver Puka Nacua for 3 games due to a violation of the league's personal conduct policy. Nacua was already on injured reserve suffering from an MCL knee injury. The suspension further delays any potential return to action this season, creating a massive hurdle for both the team and fantasy managers relying on his late-season activation.",
+        "fantasy": "This suspension effectively wipes out Nacua's fantasy value for the remainder of the redraft season. Given his IR status paired with a 3-game suspension, he will not be viable for the fantasy playoffs. In redraft leagues, he can safely be dropped if roster space is needed. Dynasty managers must hold, but his 2024 contribution is now essentially zero.",
+        "equipo_impacto": "With Davante Adams on IR and Nacua now sidelined by suspension and injury, the Rams passing game loses its primary weapons. Secondary targets like Demarcus Robinson will see increased targets, but the overall offensive ceiling takes a severe hit.",
+        "accion": "Drop Puka Nacua in redraft formats if you need bench space."
       },
       "etiqueta": "SIT",
       "impacto": "BAJA",
-      "equipo": "MIA",
+      "equipo": "LAR",
       "equipos": [
-        "MIA",
-        "BUF"
+        "LAR"
       ],
       "jugadores": [
-        "12494",
-        "8161"
+        "9493"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50531689/bills-defense-backup-qbs-amani-hooker",
-          "t": "Whether it's against backup QBs or not, the Bills' defense is rolling"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261119191101",
-      "fecha": "2026-11-19T19:11:55.294Z",
-      "semana": 11,
-      "titulo": "Woody Marks fuera para el duelo de jueves",
-      "claves": [
-        "Woody Marks descartado por protocolo de conmoción",
-        "Texans pierden profundidad clave en el backfield",
-        "Impacto directo en la rotación de corredores"
-      ],
-      "contexto": "El corredor de los Texans, Woody Marks, ha sido oficialmente descartado para el partido de 'Thursday Night Football' contra los Colts debido a una conmoción cerebral. Esta baja obliga a Houston a ajustar su plan de juego terrestre justo antes del inicio de la semana 11, perdiendo una pieza de rotación importante.",
-      "fantasy": "Si contabas con Marks, busca opciones en waivers de último minuto. Su ausencia podría consolidar más acarreos para el resto del backfield de Houston, aunque el riesgo de una ofensiva limitada ante Indianapolis sigue siendo alto.",
-      "equipo_impacto": "La ofensiva terrestre de Houston pierde versatilidad. Los compañeros deberán asumir una mayor carga de trabajo para compensar la ausencia del corredor en este duelo divisional.",
-      "accion": "Busca un reemplazo inmediato si tenías a Marks en tu alineación.",
-      "en": {
-        "titulo": "Woody Marks out for Thursday night game",
-        "claves": [
-          "Woody Marks ruled out with concussion protocol",
-          "Texans lose key backfield depth",
-          "Direct impact on running back rotation"
-        ],
-        "contexto": "Texans running back Woody Marks has been officially ruled out for Thursday Night Football against the Colts due to a concussion. This loss forces Houston to adjust their ground game plan just before the start of Week 11, losing an important rotation piece.",
-        "fantasy": "If you were relying on Marks, look for last-minute waiver wire options. His absence could consolidate more carries for the rest of Houston's backfield, though the risk of a limited offense against Indianapolis remains high.",
-        "equipo_impacto": "Houston's ground attack loses versatility. Teammates will have to take on a heavier workload to compensate for the running back's absence in this divisional clash.",
-        "accion": "Find an immediate replacement if you had Marks in your lineup."
-      },
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "HOU",
-      "equipos": [
-        "HOU",
-        "IND"
-      ],
-      "jugadores": [
-        "12474"
-      ],
-      "fuentes": [
+          "u": "https://www.espn.com/video/clip/_/id/50534152/schefter-confirms-puka-nacua-serve-3-game-suspension",
+          "t": "Schefter confirms Puka Nacua to serve 3-game suspension"
+        },
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50524890/texans-rule-hunter-marks-colts-rule-ward-starting-ots",
-          "t": "Texans DE Hunter, RB Marks to miss TNF; Colts rule out CB Ward, starting OTs"
+          "u": "https://www.espn.com/nfl/story/_/id/50533560/rams-wr-puka-nacua-serve-3-game-suspension-ir",
+          "t": "Rams WR Puka Nacua to serve 3-game suspension while on IR"
         }
       ],
       "menciona": []
@@ -164,10 +122,6 @@
     },
     {
       "id": "2216",
-      "estatus": "Duda"
-    },
-    {
-      "id": "7525",
       "estatus": "Duda"
     },
     {
@@ -265,6 +219,10 @@
     {
       "id": "2505",
       "estatus": "Duda"
+    },
+    {
+      "id": "13272",
+      "estatus": "Duda"
     }
   ],
   "agregados": [
@@ -273,52 +231,52 @@
     "12540",
     "2020",
     "9482",
+    "13424",
     "12492",
     "12499",
-    "13424",
     "5012",
     "11783",
     "5995",
     "11563",
     "6650",
-    "12533",
     "TB",
+    "10219",
+    "12533",
     "4147",
-    "5045",
-    "5892",
-    "12534",
     "12700",
+    "5045",
+    "11539",
     "5119",
     "9480",
-    "11539",
-    "11625",
-    "7567"
+    "12534",
+    "6528",
+    "5892"
   ],
   "soltados": [
+    "2747",
     "6130",
     "12491",
-    "2747",
-    "2505",
     "NE",
-    "12718",
+    "2505",
     "6083",
-    "11834",
+    "12718",
     "3271",
-    "3286",
-    "9756",
     "CLE",
-    "10219",
-    "11624",
+    "11834",
     "IND",
+    "9756",
+    "3286",
+    "11624",
+    "13545",
+    "10219",
+    "10232",
+    "7553",
+    "5849",
     "BAL",
     "11579",
-    "7553",
-    "9502",
-    "13545",
-    "10232",
-    "5849",
-    "13276",
-    "NYG"
+    "11435",
+    "SEA",
+    "WAS"
   ],
   "duelo": {
     "a": "Ja'Marr Chase",
