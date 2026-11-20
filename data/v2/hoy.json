@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-20T17:18:55.458Z",
-  "ultimaIA": "2026-11-20T17:18:55.458Z",
+  "actualizado": "2026-11-20T23:12:33.828Z",
+  "ultimaIA": "2026-11-20T23:12:33.828Z",
   "semana": 11,
   "semanaStats": 11,
   "temporada": "2026",
@@ -14,52 +14,119 @@
   ],
   "noticias": [
     {
-      "id": "n20261120171802",
-      "fecha": "2026-11-20T17:18:55.458Z",
+      "id": "n20261120231200",
+      "fecha": "2026-11-20T23:12:33.828Z",
       "semana": 11,
-      "titulo": "Bhayshul Tuten se afianza como titular en Jaguars",
+      "titulo": "Anthony Richardson toma la titularidad tras despido de Jones",
       "claves": [
-        "Tuten ocupa el lugar 14 en yardas terrestres en la NFL.",
-        "Figura como Questionable por tobillo para el duelo ante Giants.",
-        "Se adueñó del backfield tras un primer año de bajo perfil."
+        "Colts cortaron formalmente a Daniel Jones en semana 11.",
+        "Anthony Richardson Sr. asume el puesto de mariscal titular.",
+        "El valor de Jonathan Taylor y receptores cambia drásticamente."
       ],
-      "contexto": "Tras un primer año discreto, Bhayshul Tuten se convirtió en el corredor 1 definitivo de Jaguars en esta campaña. El egresado se ubica en el puesto 14 de la NFL en yardas por tierra previo al juego de semana 11 frente a Giants. No obstante, llega tocado a la jornada al ser reportado como Questionable por una molestia en el tobillo.",
-      "fantasy": "Tuten ha ganado valor como opción de Flex o RB2 en ligas PPR y estándar gracias a su carga de trabajo. Si supera la prueba física del tobillo en la semana 11, ofrece un piso sólido de toques en un duelo favorable contra Giants. En formatos dinastía su valor se ha disparado, consolidándose como la opción principal por tierra de Jacksonville.",
-      "equipo_impacto": "Su desarrollo ha dado estabilidad a la ofensiva de Jaguars, liberando de presión el ataque aéreo. Si no juega, el volumen terrestre se repartirá entre los suplentes.",
-      "accion": "Mantén a Tuten como opción de Flex si aprueba sus pruebas físicas del tobillo.",
+      "contexto": "Indianapolis decidió cortar a Daniel Jones tras 11 partidos complicados bajo el mando de Shane Steichen. La gerencia prefirió no buscar canjes en la fecha límite y resolvió entregar el ataque a Anthony Richardson Sr. de forma inmediata para el cierre de 2026. Con este movimiento, los Colts buscan evaluar su futuro bajo centro y reactivar una ofensiva que lució estancada las últimas semanas.",
+      "fantasy": "Richardson ofrece un techo alto en ligas de 1 QB o Superflex gracias a su movilidad terrestre, elevándose al rango de QB2 con potencial de QB1 semanal. Sin embargo, su inconsistencia aérea reduce el piso de los receptores abiertos en formatos PPR. Por tierra, Jonathan Taylor mantiene volumen élite (16.3 pts proyectados), aunque Richardson competirá por anotaciones en zona roja dentro de la yarda 5 rival.",
+      "equipo_impacto": "El plan de juego de Steichen será más terrestre y vertical con Richardson. La línea ofensiva enfrentará menos hombres en cobertura profunda, abriendo huecos para acarreos diseñados de mariscal y pase play-action.",
+      "accion": "Reclama a Anthony Richardson Sr. en waivers si necesitas un mariscal suplente con techo atlético elevado.",
       "en": {
-        "titulo": "Bhayshul Tuten claims clear lead back role for Jaguars",
+        "titulo": "Anthony Richardson takes over after Colts cut Jones",
         "claves": [
-          "Tuten ranks 14th in NFL rushing yards entering Week 11.",
-          "Listed as Questionable with ankle injury facing the Giants.",
-          "Established lead back status after a quiet rookie campaign."
+          "Colts officially released Daniel Jones in week 11.",
+          "Anthony Richardson Sr. takes over as starting quarterback.",
+          "Fantasy outlook changes for Jonathan Taylor and receivers."
         ],
-        "contexto": "After a quiet rookie campaign, Bhayshul Tuten has emerged as the clear No. 1 running back for the Jaguars this season. He ranks 14th in the NFL in rushing yards entering Sunday's Week 11 game against the Giants. However, his availability is monitored after being tagged as Questionable due to an ankle injury.",
-        "fantasy": "Tuten has solidified his standing as a viable RB2 or Flex starter in PPR and standard formats based on volume. If cleared from his ankle injury for Week 11, he offers a dependable floor against the Giants. His dynasty trajectory has surged significantly as Jacksonville's primary option on the ground.",
-        "equipo_impacto": "His emergence brings balance to Jacksonville's offense, reducing pressure on the passing game. If sidelined, backfield touches will split among secondary options.",
-        "accion": "Keep Tuten in your Flex spot if he passes pre-game ankle checks."
+        "contexto": "Indianapolis cut Daniel Jones after a challenging 11-game stretch under head coach Shane Steichen. The front office decided against a trade deadline deal and turned the offense over to Anthony Richardson Sr. for the rest of 2026. With this move, the Colts are evaluating their future under center while trying to revive a passing attack that completely stalled over recent weeks.",
+        "fantasy": "Richardson brings an explosive ceiling in 1-QB and Superflex formats due to his rushing ability, instantly grading as a high-end QB2 with weekly QB1 upside. His passing variance slightly dings the efficiency of outside receivers in PPR scoring. Meanwhile, Jonathan Taylor keeps high-end volume (projected 16.3 pts), even if Richardson takes away red zone carries near the goal line in short-yardage downs.",
+        "equipo_impacto": "Steichen will lean heavily into designed quarterback keepers, option packages, and play-action deep shots. Opposing defenses must now stack 8 defenders in the box, freeing rushing lanes while testing single-coverage secondaries downfield.",
+        "accion": "Target Anthony Richardson Sr. on waivers right now if you need quarterback upside for playoff pushes."
       },
-      "etiqueta": "LESIÓN",
+      "etiqueta": "WAIVER",
       "impacto": "SUBE",
-      "equipo": "JAX",
+      "equipo": "IND",
       "equipos": [
-        "JAX",
-        "NYG"
+        "IND"
       ],
       "jugadores": [
-        "12490"
+        "9229",
+        "5870",
+        "6813"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50535497/jacksonville-jaguars-bhayshul-tuten-rb-stats-fantasy",
-          "t": "How Bhayshul Tuten became the clear No. 1 running back for the Jaguars"
+          "u": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
+          "t": "Fantasy buzz: Does anything change in Indy with Richardson under center?"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50542311/shane-steichen-announces-daniel-jones-release-colts",
+          "t": "Shane Steichen announces Daniel Jones' release from Colts"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50542310/colts-couldve-shouldve-traded-him",
+          "t": "Schefter on Daniel Jones’ release: Colts ‘could’ve and should’ve traded him’"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50542293/colts-release-qb-daniel-jones-blowout-loss-texans",
+          "t": "Colts cut QB Daniel Jones, turn to Anthony Richardson Sr. for next start"
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261120231201",
+      "fecha": "2026-11-20T23:12:33.828Z",
+      "semana": 11,
+      "titulo": "Dalton Kincaid figura en duda para la semana 11",
+      "claves": [
+        "Dalton Kincaid está catalogado como doubtful por pulgar y tobillo.",
+        "Es el líder receptor de Bills en la campaña 2026.",
+        "Josh Allen pierde su válvula de escape principal en semana 11."
+      ],
+      "contexto": "Los Buffalo Bills catalogaron al ala cerrada titular Dalton Kincaid como doubtful de cara al enfrentamiento divisional frente a Miami Dolphins. Kincaid, quien lidera a la plantilla en yardas y recepciones este año, arrastra dolencias de pulgar y tobillo que le impidieron entrenar al parejo del grupo. El cuerpo técnico de Sean McDermott no arriesgará a su principal arma aérea en semana 11 salvo sorpresa mayúscula.",
+      "fantasy": "Kincaid no debe alinearse en ligas de fantasía este domingo. Su ausencia deja un vacío severo en la posición de tight end, donde promediaba números sólidos. Josh Allen (proyectado con 24 pts) tendrá que apoyarse más en James Cook III (18.4 pts) en el juego corto y buscar opciones alternas. Si tienes a Kincaid en tu alineación titular, busca de inmediato un sustituto en el alambre de agentes libres.",
+      "equipo_impacto": "Sin Kincaid, Buffalo rotará personal más pesado con 2 alas cerradas de bloqueo. Miami concentrará su cobertura secundaria en frenar los disparos profundos, forzando a los Bills a correr con mayor frecuencia.",
+      "accion": "Mueve a Dalton Kincaid a tu banca y busca un ala cerrada disponible en waivers de inmediato.",
+      "en": {
+        "titulo": "Dalton Kincaid doubtful to play against Dolphins",
+        "claves": [
+          "Dalton Kincaid is listed as doubtful with thumb and ankle injuries.",
+          "Buffalo's leading pass catcher will likely sit out in week 11.",
+          "Josh Allen loses his most trusted safety valve over the middle."
+        ],
+        "contexto": "The Buffalo Bills listed starting tight end Dalton Kincaid as doubtful ahead of Sunday's divisional game against the Miami Dolphins. Kincaid, who leads Buffalo in receptions and receiving yardage this season, missed practice time while managing thumb and ankle problems. Sean McDermott's staff plans to take a cautious approach with their top target, making his presence on the field in week 11 highly unlikely.",
+        "fantasy": "Kincaid must be benched across all fantasy formats this weekend. His expected absence leaves a massive void at tight end, forcing fantasy managers to pivot immediately. Josh Allen (24 projected pts) will lean even more on James Cook III (18.4 pts) in the short passing game. If Kincaid is locked in your starting lineup, hit waivers now for a streaming replacement before kickoff.",
+        "equipo_impacto": "Without Kincaid, Buffalo must employ heavier 2-tight-end sets to establish the line of scrimmage. Miami will crowd deeper coverage zones, demanding that Josh Allen lean heavily on checkdowns and designed rushes.",
+        "accion": "Bench Dalton Kincaid immediately and secure a replacement off your waiver wire for week 11."
+      },
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "BUF",
+      "equipos": [
+        "BUF",
+        "MIA"
+      ],
+      "jugadores": [
+        "10236",
+        "4984",
+        "8138"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50543381/bills-te-dalton-kincaid-doubtful-play-vs-dolphins",
+          "t": "Bills TE Dalton Kincaid doubtful to play vs. Dolphins"
         }
       ],
       "menciona": []
     }
   ],
   "lesionados": [
+    {
+      "id": "8151",
+      "estatus": "Fuera"
+    },
     {
       "id": "11564",
       "estatus": "Fuera"
@@ -81,20 +148,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "8151",
-      "estatus": "Duda"
-    },
-    {
       "id": "2133",
       "estatus": "Fuera"
     },
     {
       "id": "4943",
       "estatus": "Fuera"
-    },
-    {
-      "id": "1373",
-      "estatus": "Duda"
     },
     {
       "id": "11604",
@@ -125,16 +184,8 @@
       "estatus": "Fuera"
     },
     {
-      "id": "13281",
-      "estatus": "Duda"
-    },
-    {
       "id": "5849",
       "estatus": "Fuera"
-    },
-    {
-      "id": "12490",
-      "estatus": "Duda"
     },
     {
       "id": "11435",
@@ -165,18 +216,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "7526",
-      "estatus": "Duda"
-    },
-    {
-      "id": "13296",
-      "estatus": "Duda"
-    },
-    {
-      "id": "5947",
-      "estatus": "Duda"
-    },
-    {
       "id": "8121",
       "estatus": "Fuera"
     },
@@ -189,10 +228,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "5844",
-      "estatus": "Duda"
-    },
-    {
       "id": "8110",
       "estatus": "Fuera"
     },
@@ -201,7 +236,15 @@
       "estatus": "Fuera"
     },
     {
+      "id": "8136",
+      "estatus": "Duda"
+    },
+    {
       "id": "13287",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "9486",
       "estatus": "Fuera"
     },
     {
@@ -217,62 +260,82 @@
       "estatus": "Duda"
     },
     {
+      "id": "11608",
+      "estatus": "Fuera"
+    },
+    {
       "id": "13272",
       "estatus": "Duda"
+    },
+    {
+      "id": "13424",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "5927",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "8188",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12533",
+      "estatus": "Fuera"
     }
   ],
   "agregados": [
     "DET",
     "12540",
     "2020",
-    "10218",
     "9482",
     "5995",
     "12492",
+    "10218",
     "10219",
-    "12499",
     "5012",
-    "13424",
+    "12499",
+    "11625",
     "11783",
     "6650",
     "11563",
-    "TB",
+    "13424",
     "12533",
-    "4147",
-    "11539",
+    "TB",
     "12700",
-    "5045",
-    "11625",
-    "5119",
-    "13269",
+    "4147",
     "9480",
-    "6528"
+    "5045",
+    "11539",
+    "13269",
+    "2505",
+    "7567"
   ],
   "soltados": [
     "2747",
     "6130",
     "NE",
     "12491",
+    "13424",
     "6083",
-    "CLE",
     "3271",
+    "13276",
     "12718",
     "2505",
+    "CLE",
     "11834",
-    "13424",
     "9756",
-    "13545",
-    "11624",
-    "3286",
-    "10232",
-    "IND",
-    "13276",
-    "5849",
+    "9493",
     "10219",
+    "11624",
+    "13545",
+    "3286",
+    "10218",
+    "10232",
+    "5849",
     "7553",
-    "SEA",
-    "11435",
-    "9482"
+    "9482",
+    "11435"
   ],
   "duelo": {
     "a": "Ja'Marr Chase",
