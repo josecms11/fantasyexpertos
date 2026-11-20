@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-20T01:17:19.590Z",
-  "ultimaIA": "2026-11-20T01:17:19.590Z",
+  "actualizado": "2026-11-20T08:40:43.116Z",
+  "ultimaIA": "2026-11-20T08:40:43.116Z",
   "semana": 11,
   "semanaStats": 11,
   "temporada": "2026",
@@ -14,51 +14,151 @@
   ],
   "noticias": [
     {
-      "id": "n20261120011700",
-      "fecha": "2026-11-20T01:17:19.590Z",
+      "id": "n20261120084000",
+      "fecha": "2026-11-20T08:40:43.116Z",
       "semana": 11,
-      "titulo": "Puka Nacua es suspendido 3 partidos por la NFL",
-      "claves": [
-        "Suspendido 3 partidos por violar políticas de conducta personal",
-        "Cumplirá el castigo mientras permanece en la lista de lesionados",
-        "Impacto directo y negativo para playoffs en ligas de fantasy"
-      ],
-      "contexto": "La NFL sancionó al receptor de los Rams, Puka Nacua, con una suspensión de 3 partidos tras violar la política de conducta personal de la liga. El jugador ya se encontraba en la lista de lesionados reservada (IR) debido a una lesión de ligamento colateral medial (MCL) en la rodilla. Nacua deberá cumplir la sanción de manera simultánea o posterior a su recuperación física.",
-      "fantasy": "Esta noticia liquida el valor de Puka Nacua para el cierre de la temporada 2024. Al estar en IR y ahora suspendido 3 juegos, su retorno útil para los playoffs de fantasy queda prácticamente descartado. Si estás en ligas redraft sin lugar en IR, es momento de cortarlo para liberar un espacio clave en la banca. En ligas dynasty su valor cae considerablemente a corto plazo.",
-      "equipo_impacto": "Con Davante Adams también en IR por el isquiotibial y Nacua fuera, la ofensiva aérea de Rams queda completamente desmantelada. Demarcus Robinson y los receptores secundarios verán un incremento de objetivos, aunque el ataque perderá muchísima explosividad.",
-      "accion": "Corta a Puka Nacua en ligas redraft si necesitas espacio en tu banca.",
-      "en": {
-        "titulo": "Puka Nacua Handed 3 Game Suspension by NFL",
-        "claves": [
-          "Suspended 3 games for personal conduct policy violation",
-          "Currently on injured reserve with MCL knee injury",
-          "Devastating blow to his 2024 fantasy football outlook"
-        ],
-        "contexto": "The NFL has suspended Rams wide receiver Puka Nacua for 3 games due to a violation of the league's personal conduct policy. Nacua was already on injured reserve suffering from an MCL knee injury. The suspension further delays any potential return to action this season, creating a massive hurdle for both the team and fantasy managers relying on his late-season activation.",
-        "fantasy": "This suspension effectively wipes out Nacua's fantasy value for the remainder of the redraft season. Given his IR status paired with a 3-game suspension, he will not be viable for the fantasy playoffs. In redraft leagues, he can safely be dropped if roster space is needed. Dynasty managers must hold, but his 2024 contribution is now essentially zero.",
-        "equipo_impacto": "With Davante Adams on IR and Nacua now sidelined by suspension and injury, the Rams passing game loses its primary weapons. Secondary targets like Demarcus Robinson will see increased targets, but the overall offensive ceiling takes a severe hit.",
-        "accion": "Drop Puka Nacua in redraft formats if you need bench space."
-      },
-      "etiqueta": "SIT",
-      "impacto": "BAJA",
-      "equipo": "LAR",
-      "equipos": [
-        "LAR"
-      ],
-      "jugadores": [
-        "9493"
-      ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50534152/schefter-confirms-puka-nacua-serve-3-game-suspension",
-          "t": "Schefter confirms Puka Nacua to serve 3-game suspension"
+          "u": "https://www.espn.com/nfl/story/_/id/50538998/cj-stroud-stays-groove-texans-blowout-colts",
+          "t": "C.J. Stroud stays in 'groove' with another 3-TD night in Texans' blowout of Colts"
         },
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50533560/rams-wr-puka-nacua-serve-3-game-suspension-ir",
-          "t": "Rams WR Puka Nacua to serve 3-game suspension while on IR"
+          "u": "https://www.espn.com/nfl/story/_/id/50536733/texans-colts-thursday-night-football-cj-stroud-defense",
+          "t": "C.J. Stroud, defense star as Texans get critical win over Colts on TNF"
+        },
+        {
+          "m": "ESPN",
+          "u": "http://www.espn.com/nfl/recap?gameId=401873066",
+          "t": "C.J. Stroud throws for 3 TDs as the Texans roll past the Colts 26-3"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50537710/texans-improve-4-6-easy-win-colts",
+          "t": "Texans improve to 4-6 with easy win over the Colts"
         }
+      ],
+      "titulo": "C.J. Stroud mantiene racha de 3 TD",
+      "claves": [
+        "3er juego seguido con 3 TD",
+        "Victoria 26-3 sobre Colts en TNF",
+        "Sumó 194 yardas por aire"
+      ],
+      "contexto": "C.J. Stroud firmó otra sólida actuación el jueves por la noche al lanzar 3 TD en el triunfo 26-3 de HOU sobre IND. A pesar de registrar solo 194 yardas aéreas, el mariscal de campo de 2º año mantuvo el control del juego. Fue su 3er partido consecutivo logrando al menos 3 pases de anotación, guiando a su equipo a su 4ª victoria en 6 juegos para poner su récord en 4-6.",
+      "fantasy": "El rendimiento de Stroud lo consolida como un QB1 confiable en formatos de 12 equipos. Su capacidad para generar 3 TD semanales compensa partidos con bajo volumen de yardas. En ligas PPR y Superflex se mantiene firme en tu alineación titular. Suben sus receptores primarios por la alta eficiencia en zona roja, manteniéndolo con una proyección constante sobre los 20 pts semanales para el cierre de temporada.",
+      "equipo_impacto": "El ataque aéreo de HOU demuestra efectividad clínica en zona de anotación. La química de Stroud impulsa el valor de todo el cuerpo de receptores, afianzando la ofensiva de HOU como una unidad peligrosa para la recta final del calendario.",
+      "accion": "Mantén a C.J. Stroud como tu QB1 titular sin dudarlo para la recta final.",
+      "en": {
+        "titulo": "C.J. Stroud keeps 3 TD streak alive",
+        "claves": [
+          "3rd straight game with 3 TDs",
+          "26-3 victory over Colts on TNF",
+          "Threw for 194 yards in win"
+        ],
+        "contexto": "C.J. Stroud delivered another strong performance on Thursday night, throwing 3 TDs in HOU's 26-3 win over IND. Despite passing for just 194 yards, the 2nd-year quarterback controlled the game throughout. It marked his 3rd consecutive contest with at least 3 touchdown passes, leading his team to their 4th win in 6 games to move their record to 4-6.",
+        "fantasy": "Stroud's recent form solidifies him as a reliable QB1 option in 12-team leagues. His ability to deliver 3 TDs weekly offsets games with lower passing yardage. In PPR and Superflex formats, keep him locked into your starting lineup. His primary wideouts get a boost from high red-zone efficiency, keeping his weekly projection above 20 pts.",
+        "equipo_impacto": "HOU's passing offense is showing clinical efficiency inside the red zone. Stroud's chemistry elevates the fantasy value of all pass catchers, establishing HOU as a dangerous unit for the rest of the season.",
+        "accion": "Keep C.J. Stroud locked in as your starting QB1 for the stretch run."
+      },
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "HOU",
+      "equipos": [
+        "HOU",
+        "IND"
+      ],
+      "jugadores": [
+        "9758"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261120084001",
+      "fecha": "2026-11-20T08:40:43.116Z",
+      "semana": 11,
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50539065/titans-calvin-ridley-assault-charge-airport-incident",
+          "t": "Titans' Calvin Ridley facing misdemeanor assault charge over airport incident"
+        }
+      ],
+      "titulo": "Calvin Ridley enfrenta cargos por agresión leve",
+      "claves": [
+        "Incidente en aeropuerto el 7 nov",
+        "Cargo por agresión en Nashville",
+        "Estatus legal en desarrollo actualmente"
+      ],
+      "contexto": "El receptor de TEN, Calvin Ridley, enfrenta un cargo por falta menor de agresión tras un incidente ocurrido el 7 nov en el Aeropuerto Internacional de Nashville. Las autoridades locales notificaron el proceso legal en su contra tras los hechos reportados. Por el momento, el equipo y la liga evalúan la situación mientras se deslindan responsabilidades legales de este caso en curso.",
+      "fantasy": "Aunque por ahora Ridley sigue disponible y sin sanción inmediata de la NFL, la situación legal genera incertidumbre. Su valor en fantasy football se mantiene en terreno inestable en ligas PPR y Estándar. Es aconsejable monitorear de cerca los reportes disciplinarios por si la liga aplica una suspensión sorpresa. Mientras no haya castigo oficial, se mantiene como una opción WR3 de riesgo moderado.",
+      "equipo_impacto": "La ofensiva de TEN podría sufrir distracciones fuera del campo. De haber una sanción posterior, el volumen de pases se redistribuiría entre los demás receptores sanos de la plantilla en las siguientes semanas.",
+      "accion": "Monitorea los reportes de la NFL pero mantenlo activo si necesitas WR3.",
+      "en": {
+        "titulo": "Calvin Ridley faces misdemeanor assault charge",
+        "claves": [
+          "Airport incident on Nov 7",
+          "Misdemeanor assault charge in Nashville",
+          "Legal status currently developing"
+        ],
+        "contexto": "TEN wide receiver Calvin Ridley is facing a misdemeanor assault charge following an incident on Nov 7 at Nashville International Airport. Local authorities filed charges after reviewing the reported events. Both the team and the league are currently monitoring the legal situation as due process unfolds for the veteran receiver in week 11.",
+        "fantasy": "While Ridley remains active without an immediate NFL suspension, this legal trouble introduces fantasy risk. His value stays uncertain across PPR and Standard leagues. Fantasy managers should monitor league discipline reports closely in case a sudden suspension occurs. Until official action is taken, treat him as a risky WR3 option in lineups.",
+        "equipo_impacto": "TEN's offense faces potential off-field distractions. If a future league suspension is handed down, target volume would shift toward other healthy receivers on the roster in coming weeks.",
+        "accion": "Monitor NFL news closely but keep Ridley active if you need WR3 depth."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "BAJA",
+      "equipo": "TEN",
+      "equipos": [
+        "TEN"
+      ],
+      "jugadores": [
+        "4981"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261120084002",
+      "fecha": "2026-11-20T08:40:43.116Z",
+      "semana": 11,
+      "fuentes": [
+        {
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/bengals-duo-could-break-nfl-record-jamarr-chase-tee-higgins-historic-pace/",
+          "t": "\n                        Bengals duo could break NFL record that has stood for 31 years: Ja&#039;Marr Chase and Tee Higgins on historic pace"
+        }
+      ],
+      "titulo": "Ja'Marr Chase y Tee Higgins hacen historia",
+      "claves": [
+        "Paso histórico en la NFL",
+        "Aspiran a récord de 31 años",
+        "Dupla estelar con los Bengals"
+      ],
+      "contexto": "La dupla de receptores de CIN, formada por Ja'Marr Chase y Tee Higgins, está registrando un ritmo histórico en la presente campaña. Ambos estelares están en posición de romper un récord de la NFL que ha permanecido intacto durante 31 años. Su producción constante ha sostenido el ataque aéreo del equipo, consolidándose como la pareja de receptores más dominante de la liga actual.",
+      "fantasy": "El impacto en fantasy es masivo para ambos receptores en cualquier formato. Chase se afianza como un WR1 elite del top 3 global, mientras que Higgins se sostiene firmemente como un WR1/WR2 de altísimo techo semanal. Su alto volumen de objetivos y capacidad en zona de anotación garantizan producción estelar en ligas PPR y Estándar, por lo que debes alinearlos sin pensarlo cada semana.",
+      "equipo_impacto": "La ofensiva aérea de CIN depende enteramente del dominio de este par. Su capacidad para separar esquemas defensivos eleva drásticamente el potencial anotador del equipo semana a semana.",
+      "accion": "Alinea siempre a Chase y Higgins como titulares indiscutibles en tus ligas.",
+      "en": {
+        "titulo": "Ja'Marr Chase and Tee Higgins chasing history",
+        "claves": [
+          "Historic pace in the NFL",
+          "Targeting 31-year-old league record",
+          "Dominant duo for the Bengals"
+        ],
+        "contexto": "CIN wide receiver duo Ja'Marr Chase and Tee Higgins are producing at a historic pace this season. Both star receivers are currently positioned to break an NFL record that has stood for 31 years. Their elite production has sustained the team's passing attack, cementing them as the most dominant receiving tandem in football today.",
+        "fantasy": "The fantasy impact is massive for both wideouts across all scoring formats. Chase remains an elite WR1 in the overall top 3, while Higgins stands firm as a high-ceiling WR1/WR2. Their heavy target volume and red-zone presence guarantee elite production in PPR and Standard leagues, making both mandatory starts every week.",
+        "equipo_impacto": "CIN's passing attack relies entirely on the dominance of this wideout pair. Their ability to shred defensive coverages dramatically raises the team's overall scoring potential every single week.",
+        "accion": "Start both Chase and Higgins with absolute confidence in all fantasy formats."
+      },
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "CIN",
+      "equipos": [
+        "CIN"
+      ],
+      "jugadores": [
+        "7564",
+        "6801"
       ],
       "menciona": []
     }
@@ -141,12 +241,12 @@
       "estatus": "Duda"
     },
     {
-      "id": "13279",
-      "estatus": "Duda"
-    },
-    {
       "id": "11435",
       "estatus": "Fuera"
+    },
+    {
+      "id": "13279",
+      "estatus": "Duda"
     },
     {
       "id": "12489",
@@ -189,11 +289,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "13276",
+      "id": "5844",
       "estatus": "Duda"
     },
     {
-      "id": "5844",
+      "id": "13276",
       "estatus": "Duda"
     },
     {
@@ -227,63 +327,63 @@
   ],
   "agregados": [
     "DET",
-    "10218",
     "12540",
     "2020",
+    "10218",
     "9482",
-    "13424",
     "12492",
     "12499",
+    "13424",
+    "5995",
     "5012",
     "11783",
-    "5995",
-    "11563",
-    "6650",
-    "TB",
     "10219",
-    "12533",
+    "6650",
+    "11563",
+    "TB",
     "4147",
+    "12533",
+    "11539",
     "12700",
     "5045",
-    "11539",
     "5119",
     "9480",
-    "12534",
+    "13269",
     "6528",
-    "5892"
+    "12534"
   ],
   "soltados": [
     "2747",
     "6130",
-    "12491",
     "NE",
-    "2505",
+    "12491",
     "6083",
-    "12718",
-    "3271",
+    "2505",
     "CLE",
+    "3271",
+    "12718",
     "11834",
-    "IND",
     "9756",
-    "3286",
     "11624",
     "13545",
+    "3286",
+    "IND",
     "10219",
     "10232",
-    "7553",
+    "13424",
     "5849",
-    "BAL",
-    "11579",
-    "11435",
+    "7553",
     "SEA",
-    "WAS"
+    "11435",
+    "BAL",
+    "1433"
   ],
   "duelo": {
     "a": "Ja'Marr Chase",
     "b": "CeeDee Lamb",
-    "veredicto": "Arranca a Ja'Marr Chase sobre CeeDee Lamb en semana 11. Con una proyección de 21.5 pts frente a 20.8 pts, el volumen de pases largos y juego explosivo inclinan la balanza a su favor."
+    "veredicto": "Arranca a Ja'Marr Chase sobre CeeDee Lamb en semana 11. Con una proyección de 21.2 pts PPR frente a 20.7 pts, Chase ostenta un ritmo histórico y mejor enfrentamiento para explotar con múltiples TD."
   },
-  "dueloFecha": "2026-11-19T10:47:59.059Z",
+  "dueloFecha": "2026-11-20T08:40:43.116Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
