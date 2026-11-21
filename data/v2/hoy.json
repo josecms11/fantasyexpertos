@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-20T23:12:33.828Z",
-  "ultimaIA": "2026-11-20T23:12:33.828Z",
+  "actualizado": "2026-11-21T03:59:51.321Z",
+  "ultimaIA": "2026-11-21T03:59:51.321Z",
   "semana": 11,
   "semanaStats": 11,
   "temporada": "2026",
@@ -14,110 +14,47 @@
   ],
   "noticias": [
     {
-      "id": "n20261120231200",
-      "fecha": "2026-11-20T23:12:33.828Z",
+      "id": "n20261121035900",
+      "fecha": "2026-11-21T03:59:51.321Z",
       "semana": 11,
-      "titulo": "Anthony Richardson toma la titularidad tras despido de Jones",
+      "titulo": "Joe Burrow entrenó al 100% rumbo al Lunes por la Noche",
       "claves": [
-        "Colts cortaron formalmente a Daniel Jones en semana 11.",
-        "Anthony Richardson Sr. asume el puesto de mariscal titular.",
-        "El valor de Jonathan Taylor y receptores cambia drásticamente."
+        "Entrenó completo por 2 días consecutivos tras superar un malestar",
+        "Declaró estar listo para jugar al 100% en la semana 11",
+        "Enfrentará a Washington Commanders en el duelo estelar del lunes"
       ],
-      "contexto": "Indianapolis decidió cortar a Daniel Jones tras 11 partidos complicados bajo el mando de Shane Steichen. La gerencia prefirió no buscar canjes en la fecha límite y resolvió entregar el ataque a Anthony Richardson Sr. de forma inmediata para el cierre de 2026. Con este movimiento, los Colts buscan evaluar su futuro bajo centro y reactivar una ofensiva que lució estancada las últimas semanas.",
-      "fantasy": "Richardson ofrece un techo alto en ligas de 1 QB o Superflex gracias a su movilidad terrestre, elevándose al rango de QB2 con potencial de QB1 semanal. Sin embargo, su inconsistencia aérea reduce el piso de los receptores abiertos en formatos PPR. Por tierra, Jonathan Taylor mantiene volumen élite (16.3 pts proyectados), aunque Richardson competirá por anotaciones en zona roja dentro de la yarda 5 rival.",
-      "equipo_impacto": "El plan de juego de Steichen será más terrestre y vertical con Richardson. La línea ofensiva enfrentará menos hombres en cobertura profunda, abriendo huecos para acarreos diseñados de mariscal y pase play-action.",
-      "accion": "Reclama a Anthony Richardson Sr. en waivers si necesitas un mariscal suplente con techo atlético elevado.",
+      "contexto": "El mariscal de campo de Bengals, Joe Burrow, participó de forma completa en el entrenamiento por 2 días seguidos. A pesar de haber luchado contra una enfermedad en horas recientes, el pasador confirmó su optimismo de estar al 100% de su capacidad física para el enfrentamiento del lunes por la noche de la semana 11 ante Washington Commanders.",
+      "fantasy": "Burrow es una opción obligada para iniciar en la semana 11 con una proyección de 25.2 pts en fantasy football. Su presencia al 100% eleva de inmediato el techo de receptores como Ja'Marr Chase y Tee Higgins en formatos PPR y estándar. Si lo tienes en tu alineación, no dudes en mantenerlo como tu QB1 sin importar el formato.",
+      "equipo_impacto": "El regreso total de Burrow le devuelve el dinamismo a la ofensiva de Cincinnati. Mejora la eficiencia en zona roja y beneficia el ritmo de juego colectivo para medirse a la defensiva de Commanders en la semana 11.",
+      "accion": "Alinea a Joe Burrow como tu QB1 estelar sin dudas para el juego del lunes.",
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50544261/burrow-practices-again-full-strength-mnf",
+          "t": "Back at practice again, Bengals QB Burrow optimistic he'll be at full strength"
+        }
+      ],
       "en": {
-        "titulo": "Anthony Richardson takes over after Colts cut Jones",
+        "titulo": "Joe Burrow Practiced Fully Ahead of Monday Night Football",
         "claves": [
-          "Colts officially released Daniel Jones in week 11.",
-          "Anthony Richardson Sr. takes over as starting quarterback.",
-          "Fantasy outlook changes for Jonathan Taylor and receivers."
+          "Full practice participant for 2 straight days following illness",
+          "Burrow expects to be at 100% for week 11 matchup",
+          "Bengals face Washington Commanders on Monday Night Football"
         ],
-        "contexto": "Indianapolis cut Daniel Jones after a challenging 11-game stretch under head coach Shane Steichen. The front office decided against a trade deadline deal and turned the offense over to Anthony Richardson Sr. for the rest of 2026. With this move, the Colts are evaluating their future under center while trying to revive a passing attack that completely stalled over recent weeks.",
-        "fantasy": "Richardson brings an explosive ceiling in 1-QB and Superflex formats due to his rushing ability, instantly grading as a high-end QB2 with weekly QB1 upside. His passing variance slightly dings the efficiency of outside receivers in PPR scoring. Meanwhile, Jonathan Taylor keeps high-end volume (projected 16.3 pts), even if Richardson takes away red zone carries near the goal line in short-yardage downs.",
-        "equipo_impacto": "Steichen will lean heavily into designed quarterback keepers, option packages, and play-action deep shots. Opposing defenses must now stack 8 defenders in the box, freeing rushing lanes while testing single-coverage secondaries downfield.",
-        "accion": "Target Anthony Richardson Sr. on waivers right now if you need quarterback upside for playoff pushes."
+        "contexto": "Bengals quarterback Joe Burrow was a full participant in practice for the 2nd straight day despite battling a recent bug. Burrow expressed optimism about being at 100% strength when Cincinnati takes on the Washington Commanders on Monday Night Football in week 11, clearing up any minor concern regarding his availability.",
+        "fantasy": "Burrow is a must-start QB1 option for week 11 with a 25.2 pts projection. His full availability maintains elite fantasy value for top wideouts Ja'Marr Chase and Tee Higgins across all PPR and standard leagues. Keep Burrow locked into your lineup as a high-upside starting quarterback without hesitation.",
+        "equipo_impacto": "Burrow's full health restores maximum potency to the Cincinnati offense. His presence optimizes red-zone efficiency and ensures target volume for his main playmakers against the Commanders defense in week 11.",
+        "accion": "Lock Joe Burrow into your fantasy lineup as a top QB1 for week 11."
       },
-      "etiqueta": "WAIVER",
+      "etiqueta": "START",
       "impacto": "SUBE",
-      "equipo": "IND",
+      "equipo": "CIN",
       "equipos": [
-        "IND"
+        "CIN",
+        "WAS"
       ],
       "jugadores": [
-        "9229",
-        "5870",
-        "6813"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-          "t": "Fantasy buzz: Does anything change in Indy with Richardson under center?"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50542311/shane-steichen-announces-daniel-jones-release-colts",
-          "t": "Shane Steichen announces Daniel Jones' release from Colts"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50542310/colts-couldve-shouldve-traded-him",
-          "t": "Schefter on Daniel Jones’ release: Colts ‘could’ve and should’ve traded him’"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50542293/colts-release-qb-daniel-jones-blowout-loss-texans",
-          "t": "Colts cut QB Daniel Jones, turn to Anthony Richardson Sr. for next start"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261120231201",
-      "fecha": "2026-11-20T23:12:33.828Z",
-      "semana": 11,
-      "titulo": "Dalton Kincaid figura en duda para la semana 11",
-      "claves": [
-        "Dalton Kincaid está catalogado como doubtful por pulgar y tobillo.",
-        "Es el líder receptor de Bills en la campaña 2026.",
-        "Josh Allen pierde su válvula de escape principal en semana 11."
-      ],
-      "contexto": "Los Buffalo Bills catalogaron al ala cerrada titular Dalton Kincaid como doubtful de cara al enfrentamiento divisional frente a Miami Dolphins. Kincaid, quien lidera a la plantilla en yardas y recepciones este año, arrastra dolencias de pulgar y tobillo que le impidieron entrenar al parejo del grupo. El cuerpo técnico de Sean McDermott no arriesgará a su principal arma aérea en semana 11 salvo sorpresa mayúscula.",
-      "fantasy": "Kincaid no debe alinearse en ligas de fantasía este domingo. Su ausencia deja un vacío severo en la posición de tight end, donde promediaba números sólidos. Josh Allen (proyectado con 24 pts) tendrá que apoyarse más en James Cook III (18.4 pts) en el juego corto y buscar opciones alternas. Si tienes a Kincaid en tu alineación titular, busca de inmediato un sustituto en el alambre de agentes libres.",
-      "equipo_impacto": "Sin Kincaid, Buffalo rotará personal más pesado con 2 alas cerradas de bloqueo. Miami concentrará su cobertura secundaria en frenar los disparos profundos, forzando a los Bills a correr con mayor frecuencia.",
-      "accion": "Mueve a Dalton Kincaid a tu banca y busca un ala cerrada disponible en waivers de inmediato.",
-      "en": {
-        "titulo": "Dalton Kincaid doubtful to play against Dolphins",
-        "claves": [
-          "Dalton Kincaid is listed as doubtful with thumb and ankle injuries.",
-          "Buffalo's leading pass catcher will likely sit out in week 11.",
-          "Josh Allen loses his most trusted safety valve over the middle."
-        ],
-        "contexto": "The Buffalo Bills listed starting tight end Dalton Kincaid as doubtful ahead of Sunday's divisional game against the Miami Dolphins. Kincaid, who leads Buffalo in receptions and receiving yardage this season, missed practice time while managing thumb and ankle problems. Sean McDermott's staff plans to take a cautious approach with their top target, making his presence on the field in week 11 highly unlikely.",
-        "fantasy": "Kincaid must be benched across all fantasy formats this weekend. His expected absence leaves a massive void at tight end, forcing fantasy managers to pivot immediately. Josh Allen (24 projected pts) will lean even more on James Cook III (18.4 pts) in the short passing game. If Kincaid is locked in your starting lineup, hit waivers now for a streaming replacement before kickoff.",
-        "equipo_impacto": "Without Kincaid, Buffalo must employ heavier 2-tight-end sets to establish the line of scrimmage. Miami will crowd deeper coverage zones, demanding that Josh Allen lean heavily on checkdowns and designed rushes.",
-        "accion": "Bench Dalton Kincaid immediately and secure a replacement off your waiver wire for week 11."
-      },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "BUF",
-      "equipos": [
-        "BUF",
-        "MIA"
-      ],
-      "jugadores": [
-        "10236",
-        "4984",
-        "8138"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50543381/bills-te-dalton-kincaid-doubtful-play-vs-dolphins",
-          "t": "Bills TE Dalton Kincaid doubtful to play vs. Dolphins"
-        }
+        "6770"
       ],
       "menciona": []
     }
@@ -285,57 +222,57 @@
     }
   ],
   "agregados": [
-    "DET",
     "12540",
-    "2020",
-    "9482",
+    "DET",
+    "11625",
     "5995",
     "12492",
-    "10218",
+    "9482",
     "10219",
     "5012",
+    "2020",
     "12499",
-    "11625",
     "11783",
-    "6650",
-    "11563",
-    "13424",
     "12533",
-    "TB",
-    "12700",
+    "6650",
     "4147",
-    "9480",
+    "7567",
     "5045",
-    "11539",
-    "13269",
+    "9480",
+    "12718",
+    "12700",
     "2505",
-    "7567"
+    "TB",
+    "13337",
+    "11563",
+    "12534",
+    "12487"
   ],
   "soltados": [
-    "2747",
-    "6130",
-    "NE",
-    "12491",
     "13424",
-    "6083",
-    "3271",
-    "13276",
-    "12718",
-    "2505",
-    "CLE",
-    "11834",
-    "9756",
     "9493",
-    "10219",
-    "11624",
-    "13545",
-    "3286",
+    "13276",
+    "6130",
+    "12491",
+    "6083",
     "10218",
-    "10232",
-    "5849",
-    "7553",
+    "2505",
+    "10219",
+    "2747",
+    "NE",
+    "12718",
+    "11834",
+    "3271",
+    "10236",
     "9482",
-    "11435"
+    "9756",
+    "9502",
+    "3286",
+    "11624",
+    "5870",
+    "CLE",
+    "7553",
+    "5849"
   ],
   "duelo": {
     "a": "Ja'Marr Chase",
