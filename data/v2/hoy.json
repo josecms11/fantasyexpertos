@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-21T12:28:18.400Z",
-  "ultimaIA": "2026-11-21T12:28:18.400Z",
+  "actualizado": "2026-11-21T19:41:58.642Z",
+  "ultimaIA": "2026-11-21T19:41:58.642Z",
   "semana": 11,
   "semanaStats": 11,
   "temporada": "2026",
@@ -14,48 +14,91 @@
   ],
   "noticias": [
     {
-      "id": "n20261121122800",
-      "fecha": "2026-11-21T12:28:18.400Z",
+      "id": "n20261121194100",
+      "fecha": "2026-11-21T19:41:58.642Z",
       "semana": 11,
-      "titulo": "Roman Wilson y Michael Pittman Jr. regresan con Steelers",
+      "titulo": "Tony Pollard busca revancha ante Dallas en semana 11",
       "claves": [
-        "Regreso de wide receivers clave para la ofensiva",
-        "DK Metcalf recibirá mayor apoyo aéreo esta semana",
-        "Impulso necesario para el ataque de Pittsburgh"
+        "Enfrentamiento directo contra su exequipo",
+        "Volumen terrestre garantizado en semana 11",
+        "Opción sólida RB2 en formatos PPR"
       ],
-      "contexto": "Los Steelers reciben un impulso vital en su cuerpo de receptores para la semana 11. Según reportes de ESPN, tanto Roman Wilson como Michael Pittman Jr. están listos para reincorporarse al campo, lo que diversificará las opciones de pase para el equipo tras periodos de ausencia por lesiones.",
-      "fantasy": "El regreso de estos jugadores eleva el techo de DK Metcalf, quien ahora enfrentará coberturas menos asfixiantes. En ligas profundas, Pittman Jr. es un flex viable si su carga de trabajo es reportada como normal, mientras que Wilson debe mantenerse en la banca hasta ver su uso real.",
-      "equipo_impacto": "La ofensiva de Pittsburgh gana verticalidad y profundidad, permitiendo que el juego aéreo sea más impredecible y menos dependiente de un solo objetivo.",
-      "accion": "Monitorea el reporte de inactivos 90 minutos antes del kickoff para confirmar su participación.",
-      "en": {
-        "titulo": "Roman Wilson and Michael Pittman Jr. return to Steelers",
-        "claves": [
-          "Key wide receivers return to the offense",
-          "DK Metcalf gets more support this week",
-          "Much-needed boost for Pittsburgh's attack"
-        ],
-        "contexto": "The Steelers get a vital boost to their wide receiver corps for Week 11. According to ESPN, both Roman Wilson and Michael Pittman Jr. are set to return to the field, diversifying the team's passing options after injury-plagued absences.",
-        "fantasy": "This return raises the ceiling for DK Metcalf, who will face less suffocating coverage. In deep leagues, Pittman Jr. is a viable flex if his workload is normal, while Wilson should stay on the bench until his usage is proven.",
-        "equipo_impacto": "Pittsburgh's offense gains verticality and depth, making the passing game more unpredictable and less reliant on a single target.",
-        "accion": "Monitor the inactive list 90 minutes before kickoff to confirm their participation."
-      },
+      "contexto": "Tony Pollard encara un juego especial en la semana 11 al medirse contra su antiguo equipo, los Cowboys. Tras asumir la carga principal del ataque terrestre de Tennessee, el corredor llega con alta motivación para demostrar su valía en un duelo cargado de narrativa y oportunidades en la zona redonda.",
+      "fantasy": "Colócalo con confianza como RB2 o Flex en la semana 11. Con Tyjae Spears fuera de circulación por lesión, Pollard absorbe la gran mayoría de los toques tanto por tierra como por aire. Enfrentar a Dallas le otorga un plus de motivación y potencial de anotar al menos 1 TD en formatos PPR y estándar.",
+      "equipo_impacto": "Eleva el piso ofensivo de Tennessee, aliviando la presión sobre el mariscal titular. La línea ofensiva buscará abrir huecos para establecer el ritmo terrestre desde el primer cuarto.",
+      "accion": "Alinea a Tony Pollard como tu RB2 firme en la semana 11.",
       "fuentes": [
         {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50545137/steelers-receiver-corps-boost-wilson-pittman-week-11",
-          "t": "How Steelers' wide receiver corps gets big boost in Week 11"
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/nfl-week-11-anytime-td-best-bets-mark-andrews/",
+          "t": "\n                        NFL week 11 anytime TD best bets: There&#039;s value on Mark Andrews and a Tony Pollard revenge game\n              "
         }
       ],
-      "etiqueta": "TENDENCIA",
+      "en": {
+        "titulo": "Tony Pollard faces revenge game against Cowboys in Week 11",
+        "claves": [
+          "Direct matchup against his former team",
+          "Guaranteed volume in Week 11",
+          "Solid RB2 option in PPR leagues"
+        ],
+        "contexto": "Tony Pollard enters a highly emotional Week 11 matchup as he faces his former team, the Dallas Cowboys. Serving as Tennessee's primary back, Pollard has high motivation to deliver a strong performance in a game rich with narrative and red-zone opportunity.",
+        "fantasy": "Fire him up confidently as an RB2 or Flex in Week 11. With Tyjae Spears sidelined, Pollard commands the vast majority of touches on the ground and through the air. The revenge game narrative adds extra upside for at least 1 TD across all PPR and standard formats.",
+        "equipo_impacto": "His high workload stabilizes Tennessee's offense, taking pressure off the passing game and giving the Titans a clear identity.",
+        "accion": "Start Tony Pollard as a solid RB2 in all fantasy formats for Week 11."
+      },
+      "etiqueta": "START",
       "impacto": "SUBE",
-      "equipo": "PIT",
+      "equipo": "TEN",
       "equipos": [
-        "PIT"
+        "TEN",
+        "DAL"
       ],
       "jugadores": [
-        "6819",
-        "11630",
-        "5846"
+        "5967"
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261121194101",
+      "fecha": "2026-11-21T19:41:58.642Z",
+      "semana": 11,
+      "titulo": "Mark Andrews gana atractivo de anotación en la semana 11",
+      "claves": [
+        "Objetivo principal en zona roja para Baltimore",
+        "Proyección destacada de TD en semana 11",
+        "Opción titular en ligas PPR y TE Premium"
+      ],
+      "contexto": "Mark Andrews emerge como una de las apuestas de mayor valor para conseguir un TD en la semana 11. A pesar de los ajustes ofensivos en Baltimore, el veterano ala cerrada mantiene un papel estelar dentro de la zona de anotación y busca consolidar su efectividad cerca de la meta rival.",
+      "fantasy": "Si necesitas puntos en la posición de TE, Andrews se posiciona como una opción obligada entre los 10 mejores de la semana 11. Con la proyección PPR del modelo indicando 14.7 pts para Isaiah Likely y un esquema favorable en la zona de gol, Andrews ofrece un techo elevado en ligas de 12 equipos y formatos TE Premium.",
+      "equipo_impacto": "Le da suma seguridad al ataque aéreo de Baltimore en tercera oportunidad y dentro de las últimas 20 yardas, siendo la válvula de escape preferida de toda la ofensiva.",
+      "accion": "Inserta a Mark Andrews en tu alineación titular de TE en semana 11.",
+      "fuentes": [
+        {
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/nfl-week-11-anytime-td-best-bets-mark-andrews/",
+          "t": "\n                        NFL week 11 anytime TD best bets: There&#039;s value on Mark Andrews and a Tony Pollard revenge game\n              "
+        }
+      ],
+      "en": {
+        "titulo": "Mark Andrews gains prime TD appeal for Week 11",
+        "claves": [
+          "Primary red-zone target in Baltimore",
+          "Strong TD upside for Week 11",
+          "Must-start TE in PPR and TE Premium formats"
+        ],
+        "contexto": "Mark Andrews highlights Week 11 as a top touchdown upside play at the tight end position. Despite recent offensive adjustments in Baltimore, the veteran tight end remains a focal point near the end zone as the Ravens look to finish drives inside the 20-yard line.",
+        "fantasy": "Andrews stands out as a strong TE1 option for Week 11. With high-percentage targets near the goal line, he offers strong touchdown equity across all 12-team PPR and TE Premium formats where tight end depth is crucial.",
+        "equipo_impacto": "He secures Baltimore's passing game on third downs and inside the 20, acting as the primary safety valve in crucial situations.",
+        "accion": "Lock Mark Andrews into your starting TE slot for Week 11."
+      },
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "BAL",
+      "equipos": [
+        "BAL"
+      ],
+      "jugadores": [
+        "5012"
       ],
       "menciona": []
     }
@@ -110,12 +153,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4881",
-      "estatus": "Fuera"
-    },
-    {
       "id": "2216",
       "estatus": "Duda"
+    },
+    {
+      "id": "4881",
+      "estatus": "Fuera"
     },
     {
       "id": "12474",
@@ -126,12 +169,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "11435",
-      "estatus": "Fuera"
-    },
-    {
       "id": "13279",
       "estatus": "Duda"
+    },
+    {
+      "id": "11435",
+      "estatus": "Fuera"
     },
     {
       "id": "12489",
@@ -202,10 +245,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "13272",
-      "estatus": "Duda"
-    },
-    {
       "id": "13424",
       "estatus": "Fuera"
     },
@@ -220,59 +259,63 @@
     {
       "id": "12533",
       "estatus": "Fuera"
+    },
+    {
+      "id": "11630",
+      "estatus": "Fuera"
     }
   ],
   "agregados": [
     "12540",
     "11625",
     "5995",
-    "12492",
     "9482",
-    "DET",
-    "10219",
+    "12492",
     "5012",
+    "DET",
     "2020",
-    "12499",
+    "10219",
     "12718",
-    "11783",
-    "12533",
-    "6650",
-    "9480",
-    "4147",
-    "7567",
-    "2505",
-    "5045",
-    "12487",
+    "12499",
     "5906",
+    "12533",
+    "4147",
     "13337",
-    "12700",
-    "TB",
-    "11563"
+    "6650",
+    "7567",
+    "11783",
+    "9480",
+    "2505",
+    "12487",
+    "5045",
+    "13296",
+    "12534",
+    "TB"
   ],
   "soltados": [
     "9493",
     "13276",
-    "13424",
-    "12491",
     "6130",
     "10219",
+    "12491",
+    "13424",
     "6083",
     "2505",
     "10236",
-    "10218",
+    "11834",
     "12718",
     "2747",
-    "NE",
-    "11834",
     "3271",
     "9482",
+    "NE",
+    "10218",
     "9756",
-    "5870",
     "3286",
+    "12700",
     "9502",
-    "11624",
     "7553",
-    "12700"
+    "11624",
+    "10232"
   ],
   "duelo": {
     "a": "Bucky Irving",
