@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-21T03:59:51.321Z",
-  "ultimaIA": "2026-11-21T03:59:51.321Z",
+  "actualizado": "2026-11-21T12:28:18.400Z",
+  "ultimaIA": "2026-11-21T12:28:18.400Z",
   "semana": 11,
   "semanaStats": 11,
   "temporada": "2026",
@@ -14,47 +14,48 @@
   ],
   "noticias": [
     {
-      "id": "n20261121035900",
-      "fecha": "2026-11-21T03:59:51.321Z",
+      "id": "n20261121122800",
+      "fecha": "2026-11-21T12:28:18.400Z",
       "semana": 11,
-      "titulo": "Joe Burrow entrenó al 100% rumbo al Lunes por la Noche",
+      "titulo": "Roman Wilson y Michael Pittman Jr. regresan con Steelers",
       "claves": [
-        "Entrenó completo por 2 días consecutivos tras superar un malestar",
-        "Declaró estar listo para jugar al 100% en la semana 11",
-        "Enfrentará a Washington Commanders en el duelo estelar del lunes"
+        "Regreso de wide receivers clave para la ofensiva",
+        "DK Metcalf recibirá mayor apoyo aéreo esta semana",
+        "Impulso necesario para el ataque de Pittsburgh"
       ],
-      "contexto": "El mariscal de campo de Bengals, Joe Burrow, participó de forma completa en el entrenamiento por 2 días seguidos. A pesar de haber luchado contra una enfermedad en horas recientes, el pasador confirmó su optimismo de estar al 100% de su capacidad física para el enfrentamiento del lunes por la noche de la semana 11 ante Washington Commanders.",
-      "fantasy": "Burrow es una opción obligada para iniciar en la semana 11 con una proyección de 25.2 pts en fantasy football. Su presencia al 100% eleva de inmediato el techo de receptores como Ja'Marr Chase y Tee Higgins en formatos PPR y estándar. Si lo tienes en tu alineación, no dudes en mantenerlo como tu QB1 sin importar el formato.",
-      "equipo_impacto": "El regreso total de Burrow le devuelve el dinamismo a la ofensiva de Cincinnati. Mejora la eficiencia en zona roja y beneficia el ritmo de juego colectivo para medirse a la defensiva de Commanders en la semana 11.",
-      "accion": "Alinea a Joe Burrow como tu QB1 estelar sin dudas para el juego del lunes.",
+      "contexto": "Los Steelers reciben un impulso vital en su cuerpo de receptores para la semana 11. Según reportes de ESPN, tanto Roman Wilson como Michael Pittman Jr. están listos para reincorporarse al campo, lo que diversificará las opciones de pase para el equipo tras periodos de ausencia por lesiones.",
+      "fantasy": "El regreso de estos jugadores eleva el techo de DK Metcalf, quien ahora enfrentará coberturas menos asfixiantes. En ligas profundas, Pittman Jr. es un flex viable si su carga de trabajo es reportada como normal, mientras que Wilson debe mantenerse en la banca hasta ver su uso real.",
+      "equipo_impacto": "La ofensiva de Pittsburgh gana verticalidad y profundidad, permitiendo que el juego aéreo sea más impredecible y menos dependiente de un solo objetivo.",
+      "accion": "Monitorea el reporte de inactivos 90 minutos antes del kickoff para confirmar su participación.",
+      "en": {
+        "titulo": "Roman Wilson and Michael Pittman Jr. return to Steelers",
+        "claves": [
+          "Key wide receivers return to the offense",
+          "DK Metcalf gets more support this week",
+          "Much-needed boost for Pittsburgh's attack"
+        ],
+        "contexto": "The Steelers get a vital boost to their wide receiver corps for Week 11. According to ESPN, both Roman Wilson and Michael Pittman Jr. are set to return to the field, diversifying the team's passing options after injury-plagued absences.",
+        "fantasy": "This return raises the ceiling for DK Metcalf, who will face less suffocating coverage. In deep leagues, Pittman Jr. is a viable flex if his workload is normal, while Wilson should stay on the bench until his usage is proven.",
+        "equipo_impacto": "Pittsburgh's offense gains verticality and depth, making the passing game more unpredictable and less reliant on a single target.",
+        "accion": "Monitor the inactive list 90 minutes before kickoff to confirm their participation."
+      },
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50544261/burrow-practices-again-full-strength-mnf",
-          "t": "Back at practice again, Bengals QB Burrow optimistic he'll be at full strength"
+          "u": "https://www.espn.com/nfl/story/_/id/50545137/steelers-receiver-corps-boost-wilson-pittman-week-11",
+          "t": "How Steelers' wide receiver corps gets big boost in Week 11"
         }
       ],
-      "en": {
-        "titulo": "Joe Burrow Practiced Fully Ahead of Monday Night Football",
-        "claves": [
-          "Full practice participant for 2 straight days following illness",
-          "Burrow expects to be at 100% for week 11 matchup",
-          "Bengals face Washington Commanders on Monday Night Football"
-        ],
-        "contexto": "Bengals quarterback Joe Burrow was a full participant in practice for the 2nd straight day despite battling a recent bug. Burrow expressed optimism about being at 100% strength when Cincinnati takes on the Washington Commanders on Monday Night Football in week 11, clearing up any minor concern regarding his availability.",
-        "fantasy": "Burrow is a must-start QB1 option for week 11 with a 25.2 pts projection. His full availability maintains elite fantasy value for top wideouts Ja'Marr Chase and Tee Higgins across all PPR and standard leagues. Keep Burrow locked into your lineup as a high-upside starting quarterback without hesitation.",
-        "equipo_impacto": "Burrow's full health restores maximum potency to the Cincinnati offense. His presence optimizes red-zone efficiency and ensures target volume for his main playmakers against the Commanders defense in week 11.",
-        "accion": "Lock Joe Burrow into your fantasy lineup as a top QB1 for week 11."
-      },
-      "etiqueta": "START",
+      "etiqueta": "TENDENCIA",
       "impacto": "SUBE",
-      "equipo": "CIN",
+      "equipo": "PIT",
       "equipos": [
-        "CIN",
-        "WAS"
+        "PIT"
       ],
       "jugadores": [
-        "6770"
+        "6819",
+        "11630",
+        "5846"
       ],
       "menciona": []
     }
@@ -223,63 +224,62 @@
   ],
   "agregados": [
     "12540",
-    "DET",
     "11625",
     "5995",
     "12492",
     "9482",
+    "DET",
     "10219",
     "5012",
     "2020",
     "12499",
+    "12718",
     "11783",
     "12533",
     "6650",
+    "9480",
     "4147",
     "7567",
-    "5045",
-    "9480",
-    "12718",
-    "12700",
     "2505",
-    "TB",
+    "5045",
+    "12487",
+    "5906",
     "13337",
-    "11563",
-    "12534",
-    "12487"
+    "12700",
+    "TB",
+    "11563"
   ],
   "soltados": [
-    "13424",
     "9493",
     "13276",
-    "6130",
+    "13424",
     "12491",
-    "6083",
-    "10218",
-    "2505",
+    "6130",
     "10219",
+    "6083",
+    "2505",
+    "10236",
+    "10218",
+    "12718",
     "2747",
     "NE",
-    "12718",
     "11834",
     "3271",
-    "10236",
     "9482",
     "9756",
-    "9502",
-    "3286",
-    "11624",
     "5870",
-    "CLE",
+    "3286",
+    "9502",
+    "11624",
     "7553",
-    "5849"
+    "12700"
   ],
   "duelo": {
-    "a": "Ja'Marr Chase",
-    "b": "CeeDee Lamb",
-    "veredicto": "Arranca a Ja'Marr Chase sobre CeeDee Lamb en semana 11. Con una proyección de 21.2 pts PPR frente a 20.7 pts, Chase ostenta un ritmo histórico y mejor enfrentamiento para explotar con múltiples TD."
+    "a": "Bucky Irving",
+    "b": "Javonte Williams",
+    "veredicto": "Arranca a Bucky Irving (17 pts). Su consistencia en el ataque de Tampa Bay lo hace una opción más segura que Williams frente a las defensivas de esta semana."
   },
-  "dueloFecha": "2026-11-20T08:40:43.116Z",
+  "dueloFecha": "2026-11-21T12:28:18.400Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
