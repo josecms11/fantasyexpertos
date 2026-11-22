@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-22T14:23:32.572Z",
-  "ultimaIA": "2026-11-22T05:57:10.464Z",
+  "actualizado": "2026-11-22T20:47:25.990Z",
+  "ultimaIA": "2026-11-22T20:47:25.990Z",
   "semana": 11,
   "semanaStats": 11,
   "temporada": "2026",
@@ -14,45 +14,90 @@
   ],
   "noticias": [
     {
-      "id": "n20261122055700",
-      "fecha": "2026-11-22T05:57:10.464Z",
+      "id": "n20261122204700",
+      "fecha": "2026-11-22T20:47:25.990Z",
       "semana": 11,
-      "titulo": "Puka Nacua fuera de 4 a 5 meses",
+      "titulo": "DK Metcalf es expulsado en el 3.er cuarto",
       "claves": [
-        "Cirugía de ligamento colateral medial lo deja fuera.",
-        "Baja de 4 a 5 meses; adiós playoffs.",
-        "Corte definitivo en todos los formatos de fantasy redraft."
+        "Expulsado en el 3.er cuarto por conducta antideportiva.",
+        "Sucedió en el duelo de la semana 11 contra Eagles.",
+        "Limitó su producción de puntos en fantasy football."
       ],
-      "contexto": "El receptor de los Rams, Puka Nacua, se sometió a una cirugía en el ligamento colateral medial de su rodilla y enfrentará un tiempo de recuperación estimado entre 4 y 5 meses. Con este pronóstico, Nacua queda completamente descartado para lo que resta de la temporada regular y los playoffs de la NFL, cerrando un año complicado por lesiones.",
-      "fantasy": "Nacua es un corte obligatorio en cualquier liga de formato redraft, ya que su tiempo de recuperación de 4 a 5 meses liquida sus opciones de jugar este año. No gastes un espacio en la banca ni en la reserva de lesionados para él a menos que compitas en formatos dinastía, donde debes retenerlo a largo plazo. Su valor para 2024 es nulo.",
-      "equipo_impacto": "La ofensiva aérea de Los Ángeles pierde a su principal arma por el resto del torneo. Sin Nacua disponible, el volumen de pases tendrá que repartirse entre los receptores sanos del plantel para buscar mantener a flote el ataque aéreo.",
-      "accion": "Corta de inmediato a Puka Nacua en ligas redraft y libera ese espacio en tu plantilla.",
+      "contexto": "DK Metcalf terminó su participación en el partido de la semana 11 frente a Philadelphia Eagles antes de tiempo. El receptor de Steelers fue expulsado durante el 3.er cuarto tras recibir un castigo por conducta antideportiva. La descalificación cortó de tajo su producción en el encuentro y complicó el plan aéreo del ataque de Pittsburgh en la 2.ª mitad del juego.",
+      "fantasy": "Esta expulsión arruinó el rendimiento de la semana 11 para los dueños de DK Metcalf, dejando su total de puntos recortado a la mitad. Para las siguientes semanas, su estatus como WR1 de calidad no cambia, pero hay que vigilar si la liga impone una suspensión. Mientras siga habilitado, debes mantenerlo como titular indiscutible en tus ligas de formato PPR y estándar.",
+      "equipo_impacto": "Sin DK Metcalf en el campo, el volumen de pases de Steelers se repartió entre los receptores secundarios durante el último cuarto. Sin embargo, la ofensiva pierde a su objetivo vertical principal en momentos decisivos del partido.",
+      "accion": "Mantén a DK Metcalf en tu alineación titular la próxima semana.",
       "en": {
-        "titulo": "Puka Nacua out 4-5 months after surgery",
+        "titulo": "DK Metcalf Ejected in Third Quarter vs Eagles",
         "claves": [
-          "MCL knee surgery requires 4 to 5 months recovery.",
-          "Officially ruled out for rest of year and playoffs.",
-          "Must-drop player across all redraft fantasy football formats."
+          "Ejected for unsportsmanlike conduct in Week 11.",
+          "Left the game early in 3rd quarter.",
+          "Limits his fantasy output for the week."
         ],
-        "contexto": "Rams wide receiver Puka Nacua underwent surgery to repair his MCL and faces an estimated recovery timeline of 4 to 5 months, according to sources. This extensive rehabilitation period officially ends his campaign, sidelining him through the remainder of the regular season and the NFL playoffs after an injury-plagued year.",
-        "fantasy": "Nacua is an immediate drop in all redraft fantasy football formats, as a 4 to 5 month recovery window completely eliminates any chance of him playing again this season. There is no reason to burn an IR or bench spot on him outside of dynasty formats, where fantasy managers must continue to hold him.",
-        "equipo_impacto": "The Rams offense takes a devastating blow with Nacua out for the remainder of the year. Los Angeles will be forced to redistribute target volume among their remaining healthy wideouts to keep their passing attack moving forward.",
-        "accion": "Drop Puka Nacua immediately across all redraft leagues to free up a roster spot."
+        "contexto": "Steelers receiver DK Metcalf was ejected in the third quarter of Sunday's game against the Eagles for unsportsmanlike conduct. The disqualification ended his afternoon early and frustrated fantasy managers who were relying on his target volume down the stretch of a key Week 11 matchup against Philadelphia.",
+        "fantasy": "Metcalf's early exit hurt his fantasy output in Week 11, capping his scoring potential. Unless the league hands down a suspension, Metcalf remains a high-end WR1 lock in all formats for upcoming games. Keep him in your lineups unless an official penalty changes his availability.",
+        "equipo_impacto": "Pittsburgh's passing game lost its primary deep threat for the remainder of the second half, forcing targets toward secondary options.",
+        "accion": "Keep DK Metcalf in your starting lineup for next week."
       },
-      "etiqueta": "LESIÓN",
+      "etiqueta": "TENDENCIA",
       "impacto": "BAJA",
-      "equipo": "LAR",
+      "equipo": "PIT",
       "equipos": [
-        "LAR"
+        "PIT",
+        "PHI"
       ],
       "jugadores": [
-        "9493"
+        "5846"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50556613/sources-rams-puka-nacua-4-5-months-knee-surgery",
-          "t": "Sources: Rams' Puka Nacua out 4-5 months after knee surgery, will miss playoffs"
+          "u": "https://www.espn.com/nfl/story/_/id/50564475/steelers-wr-dk-metcalf-ejected-game-eagles",
+          "t": "Steelers WR DK Metcalf ejected from game against Eagles"
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261122204701",
+      "fecha": "2026-11-22T20:47:25.990Z",
+      "semana": 11,
+      "titulo": "Travis Kelce supera a Gronkowski en TD históricos",
+      "claves": [
+        "Superó a Rob Gronkowski en anotaciones totales de TE.",
+        "Se coloca en solitario en el 3.er lugar histórico.",
+        "Incluye touchdowns de temporada regular y postemporada."
+      ],
+      "contexto": "Travis Kelce volvió a escribir su nombre en los libros de récords de la NFL durante la semana 11. El ala cerrada de Kansas City superó a Rob Gronkowski para apoderarse en solitario del 3.er lugar de todos los tiempos en touchdowns totales anotados por un TE, sumando los partidos de temporada regular y postemporada en su carrera profesional.",
+      "fantasy": "El veterano sigue demostrando su valía elite en Fantasy Football. Con 12.7 pts proyectados en la semana 11, Kelce se mantiene como un TE1 inamovible en ligas PPR y formato estándar. Su habilidad constante para encontrar la zona de anotación lo convierte en una opción segura cada semana, consolidando su estatus entre las mejores selecciones de la posición.",
+      "equipo_impacto": "La ofensiva de Chiefs continúa alimentando a su ala cerrada estelar en momentos clave dentro de la zona roja, manteniéndolo como la válvula de escape preferida de Patrick Mahomes en situaciones de anotación.",
+      "accion": "Alinea a Travis Kelce como tu TE1 titular sin dudar.",
+      "en": {
+        "titulo": "Travis Kelce Passes Rob Gronkowski for Historic TDs",
+        "claves": [
+          "Passes Rob Gronkowski for 3rd all-time in TE TDs.",
+          "Includes regular season and playoff total touchdowns.",
+          "Solidifies his elite status in fantasy football."
+        ],
+        "contexto": "Travis Kelce reached another historic milestone in Week 11, passing Rob Gronkowski to stand alone in third place all-time for total touchdowns by a tight end, combined between regular season and playoffs. The Chiefs star continues to build his Hall of Fame resume while delivering high-level production.",
+        "fantasy": "Kelce remains a must-start TE1 across all fantasy formats, projected for 12.7 PPR points in Week 11. His nose for the end zone keeps his fantasy floor and ceiling high every week. Start him with complete confidence in PPR and standard leagues regardless of matchup.",
+        "equipo_impacto": "Kansas City's offense relies heavily on Kelce in the red zone, ensuring he remains Patrick Mahomes' top target in scoring situations.",
+        "accion": "Start Travis Kelce as your set-and-forget TE1."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "KC",
+      "equipos": [
+        "KC"
+      ],
+      "jugadores": [
+        "1466"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50563590/kelce-passes-gronkowski-most-tds-te-including-playoffs",
+          "t": "Travis Kelce passes Rob Gronkowski on TDs by TE list, alone in third all time"
         }
       ],
       "menciona": []
@@ -76,6 +121,10 @@
       "estatus": "Duda"
     },
     {
+      "id": "11604",
+      "estatus": "Fuera"
+    },
+    {
       "id": "8112",
       "estatus": "Duda"
     },
@@ -96,12 +145,8 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4892",
-      "estatus": "Duda"
-    },
-    {
-      "id": "11604",
-      "estatus": "Duda"
+      "id": "10236",
+      "estatus": "Fuera"
     },
     {
       "id": "6904",
@@ -112,12 +157,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "2216",
-      "estatus": "Duda"
-    },
-    {
       "id": "4881",
       "estatus": "Fuera"
+    },
+    {
+      "id": "2216",
+      "estatus": "Duda"
     },
     {
       "id": "12474",
@@ -132,7 +177,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "13279",
+      "id": "4983",
       "estatus": "Duda"
     },
     {
@@ -142,10 +187,6 @@
     {
       "id": "12536",
       "estatus": "Fuera"
-    },
-    {
-      "id": "11635",
-      "estatus": "Duda"
     },
     {
       "id": "12711",
@@ -158,10 +199,6 @@
     {
       "id": "8121",
       "estatus": "Fuera"
-    },
-    {
-      "id": "10236",
-      "estatus": "Duda"
     },
     {
       "id": "7083",
@@ -196,7 +233,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "2505",
+      "id": "7002",
       "estatus": "Duda"
     },
     {
@@ -212,66 +249,74 @@
       "estatus": "Fuera"
     },
     {
-      "id": "6083",
-      "estatus": "Duda"
-    },
-    {
       "id": "8188",
       "estatus": "Fuera"
+    },
+    {
+      "id": "12533",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "5850",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "9504",
+      "estatus": "Duda"
     }
   ],
   "agregados": [
+    "9482",
+    "5906",
     "12540",
     "11625",
     "5995",
-    "5906",
     "11630",
-    "9482",
     "7567",
+    "12498",
     "2020",
-    "12718",
+    "2505",
     "5012",
+    "6650",
     "12492",
     "DET",
-    "6650",
-    "12533",
-    "12499",
+    "12718",
     "4147",
-    "13337",
-    "11783",
-    "2505",
-    "12502",
-    "13296",
+    "4993",
     "9480",
+    "12502",
+    "13269",
+    "6528",
+    "12499",
     "5045",
-    "TB",
+    "13337",
     "5119"
   ],
   "soltados": [
     "9493",
     "6083",
-    "6130",
     "13276",
+    "6130",
     "12491",
-    "2505",
-    "10219",
     "2747",
-    "13424",
     "NE",
-    "11630",
-    "3271",
-    "11834",
-    "12718",
-    "3286",
+    "2505",
     "10236",
-    "9482",
+    "3271",
+    "10219",
+    "12718",
+    "11630",
     "9756",
+    "13424",
+    "11834",
+    "11579",
+    "3286",
     "11624",
-    "12700",
-    "10218",
-    "10232",
+    "9482",
     "CLE",
-    "7553"
+    "7553",
+    "5012",
+    "10232"
   ],
   "duelo": {
     "a": "Joe Burrow",
