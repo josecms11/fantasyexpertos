@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-21T23:56:54.517Z",
-  "ultimaIA": "2026-11-21T23:56:54.517Z",
+  "actualizado": "2026-11-22T05:57:10.464Z",
+  "ultimaIA": "2026-11-22T05:57:10.464Z",
   "semana": 11,
   "semanaStats": 11,
   "temporada": "2026",
@@ -14,53 +14,45 @@
   ],
   "noticias": [
     {
-      "id": "n20261121235600",
-      "fecha": "2026-11-21T23:56:54.517Z",
+      "id": "n20261122055700",
+      "fecha": "2026-11-22T05:57:10.464Z",
       "semana": 11,
-      "titulo": "Josh Johnson será el mariscal titular de Arizona",
+      "titulo": "Puka Nacua fuera de 4 a 5 meses",
       "claves": [
-        "Carson Beck queda descartado por molestias en la espalda baja.",
-        "Josh Johnson tomará los controles ofensivos ante Kansas City.",
-        "Chiefs D/ST se consolida como la mejor opción defensiva semanal."
+        "Cirugía de ligamento colateral medial lo deja fuera.",
+        "Baja de 4 a 5 meses; adiós playoffs.",
+        "Corte definitivo en todos los formatos de fantasy redraft."
       ],
-      "contexto": "Los Cardinals confirmaron que el mariscal novato Carson Beck no jugará este domingo debido a dolencias en la espalda. Ante esta baja, Arizona nombró como titular al veterano de 40 años Josh Johnson para medirse contra Kansas City en la semana 11. Johnson se convertirá en el 4 mariscal de campo abridor de la franquicia en 4 semanas consecutivas, asumiendo su primer duelo del año con su 8 franquicia en la liga.",
-      "fantasy": "Este cambio dinamita el techo de todo el ataque aéreo en Arizona. Josh Johnson es completamente intocable en ligas tradicionales y solo viable como parche de emergencia en formatos Superflex profundos. Trey McBride retiene cierto volumen por necesidad, aunque su eficiencia caerá notablemente frente a Kansas City. Además, la defensiva de Chiefs (proyectada en 12.3 pts) se convierte en una opción estelar de élite para alinear sin dudar este fin de semana.",
-      "equipo_impacto": "La ofensiva de Arizona pierde consistencia y enfrentará problemas serios para sostener series largas. El plan de juego dependerá de entregas rápidas y pases cortos, lo cual reducirá drásticamente el valor de sus receptores abiertos y otorgará ventajas enormes a la presión defensiva rival.",
-      "accion": "Sienta de inmediato a cualquier pasador de Arizona y arranca a la defensiva de Chiefs con total confianza.",
+      "contexto": "El receptor de los Rams, Puka Nacua, se sometió a una cirugía en el ligamento colateral medial de su rodilla y enfrentará un tiempo de recuperación estimado entre 4 y 5 meses. Con este pronóstico, Nacua queda completamente descartado para lo que resta de la temporada regular y los playoffs de la NFL, cerrando un año complicado por lesiones.",
+      "fantasy": "Nacua es un corte obligatorio en cualquier liga de formato redraft, ya que su tiempo de recuperación de 4 a 5 meses liquida sus opciones de jugar este año. No gastes un espacio en la banca ni en la reserva de lesionados para él a menos que compitas en formatos dinastía, donde debes retenerlo a largo plazo. Su valor para 2024 es nulo.",
+      "equipo_impacto": "La ofensiva aérea de Los Ángeles pierde a su principal arma por el resto del torneo. Sin Nacua disponible, el volumen de pases tendrá que repartirse entre los receptores sanos del plantel para buscar mantener a flote el ataque aéreo.",
+      "accion": "Corta de inmediato a Puka Nacua en ligas redraft y libera ese espacio en tu plantilla.",
       "en": {
-        "titulo": "Josh Johnson named Cardinals starting quarterback against Chiefs",
+        "titulo": "Puka Nacua out 4-5 months after surgery",
         "claves": [
-          "Carson Beck was ruled out due to a back injury.",
-          "Veteran Josh Johnson will start under center against Kansas City.",
-          "Chiefs D/ST gains massive upside as a top weekly start."
+          "MCL knee surgery requires 4 to 5 months recovery.",
+          "Officially ruled out for rest of year and playoffs.",
+          "Must-drop player across all redraft fantasy football formats."
         ],
-        "contexto": "The Cardinals officially ruled out rookie quarterback Carson Beck for Sunday's matchup due to a lingering back issue. Facing this setback, Arizona will start 40-year-old veteran Josh Johnson against Kansas City in week 11. Johnson becomes the franchise's 4 starting quarterback over the past 4 consecutive weeks, marking his regular-season debut of the year and his 8 different NFL team where he has taken meaningful snaps under center.",
-        "fantasy": "This quarterback change severely limits the ceiling of Arizona's passing attack. Josh Johnson is virtually unplayable in standard fantasy leagues and only warrants consideration in deep Superflex formats out of pure desperation. While Trey McBride should retain high target volume on underneath routes, his scoring upside drops significantly. Conversely, the Chiefs D/ST (projected at 12.3 pts) becomes a must-start fantasy unit with massive turnover and sack potential.",
-        "equipo_impacto": "Arizona's offensive game plan will likely shrink to quick screens and checkdowns to protect their veteran passer. Without downfield consistency, opposing defenders will crowd the line of scrimmage, severely capping the scoring opportunities for the entire unit.",
-        "accion": "Bench all Arizona quarterbacks immediately and start the Chiefs defense with maximum confidence."
+        "contexto": "Rams wide receiver Puka Nacua underwent surgery to repair his MCL and faces an estimated recovery timeline of 4 to 5 months, according to sources. This extensive rehabilitation period officially ends his campaign, sidelining him through the remainder of the regular season and the NFL playoffs after an injury-plagued year.",
+        "fantasy": "Nacua is an immediate drop in all redraft fantasy football formats, as a 4 to 5 month recovery window completely eliminates any chance of him playing again this season. There is no reason to burn an IR or bench spot on him outside of dynasty formats, where fantasy managers must continue to hold him.",
+        "equipo_impacto": "The Rams offense takes a devastating blow with Nacua out for the remainder of the year. Los Angeles will be forced to redistribute target volume among their remaining healthy wideouts to keep their passing attack moving forward.",
+        "accion": "Drop Puka Nacua immediately across all redraft leagues to free up a roster spot."
       },
       "etiqueta": "LESIÓN",
       "impacto": "BAJA",
-      "equipo": "ARI",
+      "equipo": "LAR",
       "equipos": [
-        "ARI",
-        "KC"
+        "LAR"
       ],
       "jugadores": [
-        "260",
-        "13272",
-        "8130"
+        "9493"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50553035/cardinals-downgrade-qb-carson-beck-josh-johnson-set-start",
-          "t": "Cardinals rule out rookie Carson Beck, turn to 40-year-old Josh Johnson vs. Chiefs"
-        },
-        {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/carson-beck-back-spasms-josh-johnson-force-cardinals-start-fourth-quarterback-four-weeks/",
-          "t": "\n                        Cardinals turn to Josh Johnson"
+          "u": "https://www.espn.com/nfl/story/_/id/50556613/sources-rams-puka-nacua-4-5-months-knee-surgery",
+          "t": "Sources: Rams' Puka Nacua out 4-5 months after knee surgery, will miss playoffs"
         }
       ],
       "menciona": []
@@ -104,11 +96,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "11604",
+      "id": "4892",
       "estatus": "Duda"
     },
     {
-      "id": "4892",
+      "id": "11604",
       "estatus": "Duda"
     },
     {
@@ -232,53 +224,54 @@
     "12540",
     "11625",
     "5995",
+    "5906",
     "9482",
     "12492",
-    "5012",
-    "DET",
-    "5906",
-    "2020",
     "12718",
-    "12499",
-    "12533",
-    "6650",
-    "7567",
-    "4147",
-    "13337",
+    "5012",
     "11630",
+    "2020",
+    "7567",
+    "DET",
+    "6650",
+    "12533",
+    "12499",
+    "13337",
+    "4147",
     "11783",
     "2505",
-    "10219",
+    "13296",
+    "12502",
     "9480",
     "5045",
-    "13296",
     "TB",
-    "12487"
+    "10219"
   ],
   "soltados": [
     "9493",
-    "13276",
-    "6130",
     "6083",
+    "6130",
+    "13276",
     "12491",
     "10219",
-    "13424",
     "2505",
+    "13424",
     "2747",
-    "10236",
     "NE",
     "11834",
     "3271",
     "12718",
-    "9482",
+    "10236",
+    "11630",
     "3286",
-    "10218",
+    "9482",
     "9756",
+    "10218",
     "12700",
     "11624",
     "10232",
-    "9502",
-    "7553"
+    "7553",
+    "12545"
   ],
   "duelo": {
     "a": "Bucky Irving",
