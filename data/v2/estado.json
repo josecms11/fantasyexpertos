@@ -1,22 +1,20 @@
 {
-  "fecha": "2026-11-21T19:53:01.968Z",
+  "fecha": "2026-11-22T00:05:51.123Z",
   "log": [
     "[0.0s] Inicio",
-    "[0.2s] YouTube: 15 nuevos, 30 en total",
-    "[0.9s] Sleeper: 3234 activos, semana 11 · proyecciones S11: 9416",
-    "[2.3s] ESPN: lesiones 799 · noticias 50",
-    "[2.4s] Modelo FX v4 : 449 proyecciones propias para la semana 11",
-    "[2.9s] Fuentes nuevas: 10 · horario pico · toca IA: true",
-    "[3.0s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
-    "[153.0s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
-    "[303.0s] Gemini sin respuesta gemini-3.7-flash The operation was aborted due to timeout",
-    "[366.6s] IA OK con gemini-3.6-flash",
-    "[366.6s] Noticias nuevas verificadas: 2",
-    "[367.7s] Notas del archivo corregidas por estatus o protagonista: 1",
-    "[517.7s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
-    "[665.9s] IA OK con gemini-3.7-flash",
-    "[665.9s] Blog: ¿Arrancar o sentar a Joe Burrow en la semana 11? / Should you start Joe Burrow in Week 11?",
-    "[665.9s] Blog: sin tiempo en esta corrida, sigue en la próxima",
-    "[665.9s] Listo: 2 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 560 · semana de juego 11 · IA usada hoy 9/40"
+    "[0.3s] YouTube: 15 nuevos, 30 en total",
+    "[1.0s] Sleeper: 3234 activos, semana 11 · proyecciones S11: 9416",
+    "[2.2s] ESPN: lesiones 799 · noticias 50",
+    "[2.3s] Modelo FX v4 : 449 proyecciones propias para la semana 11",
+    "[2.6s] Fuentes nuevas: 5 · horario pico · toca IA: true",
+    "[2.7s] Modelos disponibles: gemini-3.8-flash, gemini-3.7-flash, gemini-3.6-flash, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-3.1-flash-lite",
+    "[152.7s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
+    "[211.2s] IA OK con gemini-3.7-flash",
+    "[211.2s] Noticias nuevas verificadas: 1",
+    "[362.3s] Gemini sin respuesta gemini-3.8-flash The operation was aborted due to timeout",
+    "[512.3s] Gemini sin respuesta gemini-3.7-flash The operation was aborted due to timeout",
+    "[538.9s] Gemini respuesta inválida gemini-3.6-flash MAX_TOKENS {\n  \"titulo\": \"Análisis fantasy: Houston domina a Indianápolis en semana 11\",\n  \"claves\": [\n    \"C.J. Stroud lideró a los QBs con 21.5 pts en la paliza sobre Co",
+    "[538.9s] Blog: sin tiempo en esta corrida, sigue en la próxima",
+    "[538.9s] Listo: 1 noticias nuevas (0 exclusivas) · 452 jugadores · archivo 561 · semana de juego 11 · IA usada hoy 11/40"
   ]
 }

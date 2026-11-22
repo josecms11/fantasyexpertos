@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-21T19:41:58.642Z",
-  "ultimaIA": "2026-11-21T19:41:58.642Z",
+  "actualizado": "2026-11-21T23:56:54.517Z",
+  "ultimaIA": "2026-11-21T23:56:54.517Z",
   "semana": 11,
   "semanaStats": 11,
   "temporada": "2026",
@@ -14,91 +14,54 @@
   ],
   "noticias": [
     {
-      "id": "n20261121194100",
-      "fecha": "2026-11-21T19:41:58.642Z",
+      "id": "n20261121235600",
+      "fecha": "2026-11-21T23:56:54.517Z",
       "semana": 11,
-      "titulo": "Tony Pollard busca revancha ante Dallas en semana 11",
+      "titulo": "Josh Johnson será el mariscal titular de Arizona",
       "claves": [
-        "Enfrentamiento directo contra su exequipo",
-        "Volumen terrestre garantizado en semana 11",
-        "Opción sólida RB2 en formatos PPR"
+        "Carson Beck queda descartado por molestias en la espalda baja.",
+        "Josh Johnson tomará los controles ofensivos ante Kansas City.",
+        "Chiefs D/ST se consolida como la mejor opción defensiva semanal."
       ],
-      "contexto": "Tony Pollard encara un juego especial en la semana 11 al medirse contra su antiguo equipo, los Cowboys. Tras asumir la carga principal del ataque terrestre de Tennessee, el corredor llega con alta motivación para demostrar su valía en un duelo cargado de narrativa y oportunidades en la zona redonda.",
-      "fantasy": "Colócalo con confianza como RB2 o Flex en la semana 11. Con Tyjae Spears fuera de circulación por lesión, Pollard absorbe la gran mayoría de los toques tanto por tierra como por aire. Enfrentar a Dallas le otorga un plus de motivación y potencial de anotar al menos 1 TD en formatos PPR y estándar.",
-      "equipo_impacto": "Eleva el piso ofensivo de Tennessee, aliviando la presión sobre el mariscal titular. La línea ofensiva buscará abrir huecos para establecer el ritmo terrestre desde el primer cuarto.",
-      "accion": "Alinea a Tony Pollard como tu RB2 firme en la semana 11.",
-      "fuentes": [
-        {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/nfl-week-11-anytime-td-best-bets-mark-andrews/",
-          "t": "\n                        NFL week 11 anytime TD best bets: There&#039;s value on Mark Andrews and a Tony Pollard revenge game\n              "
-        }
-      ],
+      "contexto": "Los Cardinals confirmaron que el mariscal novato Carson Beck no jugará este domingo debido a dolencias en la espalda. Ante esta baja, Arizona nombró como titular al veterano de 40 años Josh Johnson para medirse contra Kansas City en la semana 11. Johnson se convertirá en el 4 mariscal de campo abridor de la franquicia en 4 semanas consecutivas, asumiendo su primer duelo del año con su 8 franquicia en la liga.",
+      "fantasy": "Este cambio dinamita el techo de todo el ataque aéreo en Arizona. Josh Johnson es completamente intocable en ligas tradicionales y solo viable como parche de emergencia en formatos Superflex profundos. Trey McBride retiene cierto volumen por necesidad, aunque su eficiencia caerá notablemente frente a Kansas City. Además, la defensiva de Chiefs (proyectada en 12.3 pts) se convierte en una opción estelar de élite para alinear sin dudar este fin de semana.",
+      "equipo_impacto": "La ofensiva de Arizona pierde consistencia y enfrentará problemas serios para sostener series largas. El plan de juego dependerá de entregas rápidas y pases cortos, lo cual reducirá drásticamente el valor de sus receptores abiertos y otorgará ventajas enormes a la presión defensiva rival.",
+      "accion": "Sienta de inmediato a cualquier pasador de Arizona y arranca a la defensiva de Chiefs con total confianza.",
       "en": {
-        "titulo": "Tony Pollard faces revenge game against Cowboys in Week 11",
+        "titulo": "Josh Johnson named Cardinals starting quarterback against Chiefs",
         "claves": [
-          "Direct matchup against his former team",
-          "Guaranteed volume in Week 11",
-          "Solid RB2 option in PPR leagues"
+          "Carson Beck was ruled out due to a back injury.",
+          "Veteran Josh Johnson will start under center against Kansas City.",
+          "Chiefs D/ST gains massive upside as a top weekly start."
         ],
-        "contexto": "Tony Pollard enters a highly emotional Week 11 matchup as he faces his former team, the Dallas Cowboys. Serving as Tennessee's primary back, Pollard has high motivation to deliver a strong performance in a game rich with narrative and red-zone opportunity.",
-        "fantasy": "Fire him up confidently as an RB2 or Flex in Week 11. With Tyjae Spears sidelined, Pollard commands the vast majority of touches on the ground and through the air. The revenge game narrative adds extra upside for at least 1 TD across all PPR and standard formats.",
-        "equipo_impacto": "His high workload stabilizes Tennessee's offense, taking pressure off the passing game and giving the Titans a clear identity.",
-        "accion": "Start Tony Pollard as a solid RB2 in all fantasy formats for Week 11."
+        "contexto": "The Cardinals officially ruled out rookie quarterback Carson Beck for Sunday's matchup due to a lingering back issue. Facing this setback, Arizona will start 40-year-old veteran Josh Johnson against Kansas City in week 11. Johnson becomes the franchise's 4 starting quarterback over the past 4 consecutive weeks, marking his regular-season debut of the year and his 8 different NFL team where he has taken meaningful snaps under center.",
+        "fantasy": "This quarterback change severely limits the ceiling of Arizona's passing attack. Josh Johnson is virtually unplayable in standard fantasy leagues and only warrants consideration in deep Superflex formats out of pure desperation. While Trey McBride should retain high target volume on underneath routes, his scoring upside drops significantly. Conversely, the Chiefs D/ST (projected at 12.3 pts) becomes a must-start fantasy unit with massive turnover and sack potential.",
+        "equipo_impacto": "Arizona's offensive game plan will likely shrink to quick screens and checkdowns to protect their veteran passer. Without downfield consistency, opposing defenders will crowd the line of scrimmage, severely capping the scoring opportunities for the entire unit.",
+        "accion": "Bench all Arizona quarterbacks immediately and start the Chiefs defense with maximum confidence."
       },
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "TEN",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "ARI",
       "equipos": [
-        "TEN",
-        "DAL"
+        "ARI",
+        "KC"
       ],
       "jugadores": [
-        "5967"
+        "260",
+        "13272",
+        "8130"
       ],
-      "menciona": []
-    },
-    {
-      "id": "n20261121194101",
-      "fecha": "2026-11-21T19:41:58.642Z",
-      "semana": 11,
-      "titulo": "Mark Andrews gana atractivo de anotación en la semana 11",
-      "claves": [
-        "Objetivo principal en zona roja para Baltimore",
-        "Proyección destacada de TD en semana 11",
-        "Opción titular en ligas PPR y TE Premium"
-      ],
-      "contexto": "Mark Andrews emerge como una de las apuestas de mayor valor para conseguir un TD en la semana 11. A pesar de los ajustes ofensivos en Baltimore, el veterano ala cerrada mantiene un papel estelar dentro de la zona de anotación y busca consolidar su efectividad cerca de la meta rival.",
-      "fantasy": "Si necesitas puntos en la posición de TE, Andrews se posiciona como una opción obligada entre los 10 mejores de la semana 11. Con la proyección PPR del modelo indicando 14.7 pts para Isaiah Likely y un esquema favorable en la zona de gol, Andrews ofrece un techo elevado en ligas de 12 equipos y formatos TE Premium.",
-      "equipo_impacto": "Le da suma seguridad al ataque aéreo de Baltimore en tercera oportunidad y dentro de las últimas 20 yardas, siendo la válvula de escape preferida de toda la ofensiva.",
-      "accion": "Inserta a Mark Andrews en tu alineación titular de TE en semana 11.",
       "fuentes": [
         {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50553035/cardinals-downgrade-qb-carson-beck-josh-johnson-set-start",
+          "t": "Cardinals rule out rookie Carson Beck, turn to 40-year-old Josh Johnson vs. Chiefs"
+        },
+        {
           "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/nfl-week-11-anytime-td-best-bets-mark-andrews/",
-          "t": "\n                        NFL week 11 anytime TD best bets: There&#039;s value on Mark Andrews and a Tony Pollard revenge game\n              "
+          "u": "https://www.cbssports.com/nfl/news/carson-beck-back-spasms-josh-johnson-force-cardinals-start-fourth-quarterback-four-weeks/",
+          "t": "\n                        Cardinals turn to Josh Johnson"
         }
-      ],
-      "en": {
-        "titulo": "Mark Andrews gains prime TD appeal for Week 11",
-        "claves": [
-          "Primary red-zone target in Baltimore",
-          "Strong TD upside for Week 11",
-          "Must-start TE in PPR and TE Premium formats"
-        ],
-        "contexto": "Mark Andrews highlights Week 11 as a top touchdown upside play at the tight end position. Despite recent offensive adjustments in Baltimore, the veteran tight end remains a focal point near the end zone as the Ravens look to finish drives inside the 20-yard line.",
-        "fantasy": "Andrews stands out as a strong TE1 option for Week 11. With high-percentage targets near the goal line, he offers strong touchdown equity across all 12-team PPR and TE Premium formats where tight end depth is crucial.",
-        "equipo_impacto": "He secures Baltimore's passing game on third downs and inside the 20, acting as the primary safety valve in crucial situations.",
-        "accion": "Lock Mark Andrews into your starting TE slot for Week 11."
-      },
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "BAL",
-      "equipos": [
-        "BAL"
-      ],
-      "jugadores": [
-        "5012"
       ],
       "menciona": []
     }
@@ -115,6 +78,10 @@
     {
       "id": "9493",
       "estatus": "Fuera"
+    },
+    {
+      "id": "8150",
+      "estatus": "Duda"
     },
     {
       "id": "8112",
@@ -169,12 +136,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "13279",
-      "estatus": "Duda"
-    },
-    {
       "id": "11435",
       "estatus": "Fuera"
+    },
+    {
+      "id": "13279",
+      "estatus": "Duda"
     },
     {
       "id": "12489",
@@ -259,10 +226,6 @@
     {
       "id": "12533",
       "estatus": "Fuera"
-    },
-    {
-      "id": "11630",
-      "estatus": "Fuera"
     }
   ],
   "agregados": [
@@ -273,49 +236,49 @@
     "12492",
     "5012",
     "DET",
+    "5906",
     "2020",
-    "10219",
     "12718",
     "12499",
-    "5906",
     "12533",
-    "4147",
-    "13337",
     "6650",
     "7567",
+    "4147",
+    "13337",
+    "11630",
     "11783",
-    "9480",
     "2505",
-    "12487",
+    "10219",
+    "9480",
     "5045",
     "13296",
-    "12534",
-    "TB"
+    "TB",
+    "12487"
   ],
   "soltados": [
     "9493",
     "13276",
     "6130",
-    "10219",
-    "12491",
-    "13424",
     "6083",
+    "12491",
+    "10219",
+    "13424",
     "2505",
-    "10236",
-    "11834",
-    "12718",
     "2747",
-    "3271",
-    "9482",
+    "10236",
     "NE",
+    "11834",
+    "3271",
+    "12718",
+    "9482",
+    "3286",
     "10218",
     "9756",
-    "3286",
     "12700",
-    "9502",
-    "7553",
     "11624",
-    "10232"
+    "10232",
+    "9502",
+    "7553"
   ],
   "duelo": {
     "a": "Bucky Irving",
