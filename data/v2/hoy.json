@@ -1,6 +1,6 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-22T05:57:10.464Z",
+  "actualizado": "2026-11-22T14:23:32.572Z",
   "ultimaIA": "2026-11-22T05:57:10.464Z",
   "semana": 11,
   "semanaStats": 11,
@@ -212,11 +212,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "8188",
-      "estatus": "Fuera"
+      "id": "6083",
+      "estatus": "Duda"
     },
     {
-      "id": "12533",
+      "id": "8188",
       "estatus": "Fuera"
     }
   ],
@@ -225,27 +225,27 @@
     "11625",
     "5995",
     "5906",
+    "11630",
     "9482",
-    "12492",
+    "7567",
+    "2020",
     "12718",
     "5012",
-    "11630",
-    "2020",
-    "7567",
+    "12492",
     "DET",
     "6650",
     "12533",
     "12499",
-    "13337",
     "4147",
+    "13337",
     "11783",
     "2505",
-    "13296",
     "12502",
+    "13296",
     "9480",
     "5045",
     "TB",
-    "10219"
+    "5119"
   ],
   "soltados": [
     "9493",
@@ -253,32 +253,32 @@
     "6130",
     "13276",
     "12491",
-    "10219",
     "2505",
-    "13424",
+    "10219",
     "2747",
+    "13424",
     "NE",
-    "11834",
-    "3271",
-    "12718",
-    "10236",
     "11630",
+    "3271",
+    "11834",
+    "12718",
     "3286",
+    "10236",
     "9482",
     "9756",
-    "10218",
-    "12700",
     "11624",
+    "12700",
+    "10218",
     "10232",
-    "7553",
-    "12545"
+    "CLE",
+    "7553"
   ],
   "duelo": {
-    "a": "Bucky Irving",
-    "b": "Javonte Williams",
-    "veredicto": "Arranca a Bucky Irving (17 pts). Su consistencia en el ataque de Tampa Bay lo hace una opción más segura que Williams frente a las defensivas de esta semana."
+    "a": "Joe Burrow",
+    "b": "Dak Prescott",
+    "veredicto": "Arranca a Joe Burrow. Con una proyección de 25.8 pts frente a los 21.2 pts de Prescott, Burrow llega con mayor consistencia y ritmo ofensivo para esta semana."
   },
-  "dueloFecha": "2026-11-21T12:28:18.400Z",
+  "dueloFecha": "2026-11-22T14:23:32.572Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
