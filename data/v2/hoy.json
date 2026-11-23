@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-23T01:09:49.621Z",
-  "ultimaIA": "2026-11-23T01:09:49.621Z",
+  "actualizado": "2026-11-23T09:04:14.743Z",
+  "ultimaIA": "2026-11-23T09:04:14.743Z",
   "semana": 11,
   "semanaStats": 11,
   "temporada": "2026",
@@ -14,137 +14,106 @@
   ],
   "noticias": [
     {
-      "id": "n20261123010900",
-      "fecha": "2026-11-23T01:09:49.621Z",
+      "id": "n20261123090400",
+      "fecha": "2026-11-23T09:04:14.743Z",
       "semana": 11,
-      "titulo": "Jonah Coleman brilla con 111 yardas y 3 TD",
+      "titulo": "Brock Purdy destroza a Vikings con 3 TD",
       "claves": [
-        "Corrió para 111 yardas y 3 TD ante Las Vegas.",
-        "Logró su mejor marca de la temporada en la victoria 38-24.",
-        "Su volumen en la zona roja se dispara para la semana 11."
+        "Lanzó 3 TD en paliza 35-10 sobre Minnesota en México",
+        "Superó la presión defensiva y colocó a 49ers con récord 9-1",
+        "Consolida su valor QB1 alto rumbo al cierre de temporada"
       ],
-      "contexto": "El corredor novato Jonah Coleman tuvo su mejor actuación de la temporada al acumular 111 yardas terrestres y 3 TD en la victoria de Broncos 38-24 sobre Raiders. En un juego emotivo donde Denver rindió homenaje a Tom Jackson, Coleman dominó el ataque terrestre y capitalizó en la zona de anotación para sellar el triunfo.",
-      "fantasy": "Coleman demostró el techo explosivo que tiene en formatos PPR y estándar. Tras conseguir 3 TD y superar las 100 yardas, se consolida como una opción de RB2 o Flex con valor a la alza para la semana 11. Su uso cerca de la línea de gol lo convierte en un objetivo prioritario si necesitas cobertura en tu alineación titular.",
-      "equipo_impacto": "La actuación de Coleman quita presión a Bo Nix y equilibra la ofensiva de Denver. Williams mantendrá cierto volumen, pero Coleman se afirma como el arma principal dentro de la zona de gol.",
-      "accion": "Añádelo de inmediato en waivers si sigue disponible o considéralo como titular en RB2.",
+      "contexto": "Brock Purdy dio una exhibición elite en la semana 11 al comandar la victoria de San Francisco 35-10 sobre Minnesota en la Ciudad de México. El mariscal de campo descifró por completo la defensiva de Vikings, lanzando 3 pases de anotación y llevando a los 49ers a una marca de 9-1 en la campaña. Purdy manejó el partido con serenidad absoluta bajo la presión rival frente a la afición mexicana.",
+      "fantasy": "Brock Purdy se reafirma como un QB1 indiscutible en formatos tradicionales de 12 equipos y ligas Superflex. Tras superar un duelo complicado ante una defensiva agresiva, su techo fantasy sube de cara a las semanas decisivas. Si tenías dudas sobre ponerlo como titular ante rivales dominantes, este juego confirma que debes alinearlo cada semana sin importar el rival, ya que genera puntos constantes en jugadas de zona roja.",
+      "equipo_impacto": "El rendimiento de Purdy eleva el valor de todas las armas aéreas de San Francisco. Mantiene a receptores y alas cerradas en ritmo anotador alto, mientras los 49ers se afianzan como el sembrado 1 de la NFC.",
+      "accion": "Amarra a Brock Purdy en tu alineación titular cada semana.",
       "en": {
-        "titulo": "Jonah Coleman shines with 111 yards and 3 TDs",
+        "titulo": "Brock Purdy Shreds Vikings Defense With 3 TDs",
         "claves": [
-          "Ran for 111 yards and 3 TDs against Las Vegas.",
-          "Set a season high in the 38-24 victory.",
-          "His red zone volume spikes heading into Week 11."
+          "Threw 3 TDs in 35-10 blowout victory against Minnesota",
+          "Overcame defensive pressure to push 49ers to 9-1 record",
+          "Solidifies high-end QB1 value heading into fantasy playoffs"
         ],
-        "contexto": "Rookie running back Jonah Coleman enjoyed his best game of the season, rushing for 111 yards and 3 TDs in Denver's 38-24 victory over the Raiders. On an emotional Sunday honoring Tom Jackson, Coleman spearheaded the ground attack and capitalized on scoring drives to secure the win for the Broncos.",
-        "fantasy": "Coleman demonstrated his high fantasy ceiling across PPR and standard formats. By scoring 3 TDs and topping 100 yards, he solidifies his role as a rising RB2 or Flex starter for Week 11. His goal-line usage makes him a valuable asset if you need running back depth for your starting lineup.",
-        "equipo_impacto": "Coleman's breakout balances Denver's offense and takes pressure off the passing game. While the backfield retains rotation, Coleman takes control of high-value touch opportunities inside the team's red zone.",
-        "accion": "Pick him up off waivers immediately or plug him into your RB2 spot."
-      },
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "DEN",
-      "equipos": [
-        "DEN",
-        "LV"
-      ],
-      "jugadores": [
-        "13345"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "http://www.espn.com/nfl/recap?gameId=401873075",
-          "t": "Jonah Coleman powers Broncos past Raiders 38-24 as Denver honors the late Tom Jackson"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261123010901",
-      "fecha": "2026-11-23T01:09:49.621Z",
-      "semana": 11,
-      "titulo": "Justin Herbert entra al protocolo de conmoción de Chargers",
-      "claves": [
-        "Entró al protocolo de conmoción tras la derrota 27-24.",
-        "Su estatus para la semana 11 queda catalogado como cuestionable.",
-        "Se debe buscar un mariscal de respaldo en waivers."
-      ],
-      "contexto": "El mariscal de campo Justin Herbert ingresó al protocolo de conmoción cerebral tras la derrota de Chargers 27-24 frente a Jets. El equipo confirmó el diagnóstico después del encuentro disputado en Inglewood, donde Los Angeles cayó al recibir anotaciones en las primeras 5 series ofensivas de Nueva York.",
-      "fantasy": "Con Herbert catalogado oficialmente como cuestionable por conmoción, los dueños de fantasy deben tomar medidas preventivas antes de la semana 11. Si no logra superar los protocolos médicos a tiempo, dejará un hueco importante en ligas Superflex y de 12 equipos. No arriesgues tu semana y busca un reemplazo seguro hoy mismo.",
-      "equipo_impacto": "Sin Herbert, la ofensiva de Chargers pierde dinamismo vertical, lo que degradaría el valor fantasy de sus receptores y alas cerradas en caso de no ser dado de alta para la semana 11.",
-      "accion": "Asegura a un mariscal suplente en waivers mientras monitoreas su progreso en los entrenamientos.",
-      "en": {
-        "titulo": "Justin Herbert enters concussion protocol following loss to Jets",
-        "claves": [
-          "Entered concussion protocol after the 27-24 loss.",
-          "Officially listed as questionable ahead of Week 11.",
-          "Fantasy managers must secure a backup quarterback immediately."
-        ],
-        "contexto": "Quarterback Justin Herbert entered the NFL concussion protocol following the Chargers' 27-24 loss to the Jets on Sunday. Los Angeles confirmed the injury after the game in Inglewood, where the team dropped a close contest as New York managed to score on its first 5 offensive drives of the afternoon.",
-        "fantasy": "With Justin Herbert officially listed as questionable due to a concussion, fantasy managers must plan ahead for Week 11. Missing his starting status would create a significant void in Superflex and deep 12-team leagues. Prepare an alternative target from waivers to protect your starting lineup while waiting for updates.",
-        "equipo_impacto": "Without Herbert under center, the Chargers' offense loses vertical dynamism, capping the fantasy upside of wide receivers and tight ends if he is not cleared to play for Week 11.",
-        "accion": "Claim a backup quarterback on waivers while monitoring Herbert's practice participation."
-      },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "LAC",
-      "equipos": [
-        "LAC",
-        "NYJ"
-      ],
-      "jugadores": [
-        "6797"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50567478/chargers-justin-herbert-lands-concussion-protocol",
-          "t": "Chargers' Justin Herbert lands in concussion protocol"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261123010902",
-      "fecha": "2026-11-23T01:09:49.621Z",
-      "semana": 11,
-      "titulo": "Jahmyr Gibbs lidera triunfo de Lions con 2 TD",
-      "claves": [
-        "Anotó 2 TD por tierra en la victoria 31-21.",
-        "Lions consiguieron su sexta victoria consecutiva de la campaña.",
-        "Proyecta 23.4 pts PPR como RB1 élite en semana 11."
-      ],
-      "contexto": "El corredor Jahmyr Gibbs firmó una actuación determinante al anotar 2 TD por tierra en el triunfo de Lions 31-21 sobre Buccaneers. Detroit hiló su sexta victoria consecutiva apoyándose en un ataque balanceado donde Jared Goff también lanzó 2 TD, afianzando a los Lions como una potencia ofensiva en la Conferencia Nacional.",
-      "fantasy": "Gibbs se consolida como uno de los corredores más dominantes del fantasy football. Con sus 2 anotaciones en la jornada y una proyección de 23.4 pts PPR para la semana 11, se mantiene como un titular indiscutible de calibre RB1 en cualquier formato. Su capacidad para generar explosividad lo hace inamovible de tu alineación.",
-      "equipo_impacto": "El rendimiento de Gibbs complementa a la perfección el juego aéreo de Jared Goff, permitiendo a Detroit controlar el reloj de juego y mantener una eficiencia constante en la zona roja rival.",
-      "accion": "Mantén a Gibbs en tu alineación titular como RB1 intocable para la semana 11.",
-      "en": {
-        "titulo": "Jahmyr Gibbs powers Lions win with 2 rushing touchdowns",
-        "claves": [
-          "Scored 2 rushing TDs in 31-21 victory over Buccaneers.",
-          "Lions extended their winning streak to 6 straight games.",
-          "Projected for 23.4 PPR points as elite Week 11 RB1."
-        ],
-        "contexto": "Running back Jahmyr Gibbs delivered a star performance on Sunday, scoring 2 rushing touchdowns in the Lions' 31-21 victory over the Buccaneers. Detroit earned its 6th consecutive win thanks to a balanced offensive effort where quarterback Jared Goff added 2 passing touchdowns to control the game.",
-        "fantasy": "Gibbs solidifies his position among the elite running backs in fantasy football. Following his 2-TD game and carrying a strong projection of 23.4 PPR points for Week 11, he remains a locked-in RB1 across all formats. His home-run ability makes him an intouchable must-start option every single week.",
-        "equipo_impacto": "Gibbs' ground dominance complements Jared Goff's passing attack perfectly, keeping Detroit's offense efficient inside the red zone and extremely difficult for opposing defenses to contain every week.",
-        "accion": "Keep Gibbs locked into your starting lineup as an elite RB1."
+        "contexto": "Brock Purdy put on an elite performance in Week 11, leading San Francisco to a 35-10 blowout victory against Minnesota in Mexico City. The quarterback picked apart the Vikings defense, throwing 3 touchdown passes while guiding the 49ers to a 9-1 record on the season. Purdy managed the game with total poise under heavy pressure in front of the passionate international crowd.",
+        "fantasy": "Brock Purdy solidifies his status as a lock-and-load QB1 in standard 12-team and Superflex leagues. After dismantling a tough defensive unit, his fantasy ceiling rises for the final stretch of the regular season. If you had reservations starting him against top defenses, this performance proves he belongs in your lineup every week due to high touchdown efficiency in the red zone.",
+        "equipo_impacto": "Purdy's strong outing elevates all San Francisco pass-catchers. He keeps wide receivers and tight ends in prime scoring positions while locking down the NFC's top seed.",
+        "accion": "Lock Brock Purdy into your starting lineup every week."
       },
       "etiqueta": "START",
       "impacto": "SUBE",
-      "equipo": "DET",
+      "equipo": "SF",
       "equipos": [
-        "DET",
-        "TB"
+        "SF",
+        "MIN"
       ],
       "jugadores": [
-        "9221",
-        "3163"
+        "8183"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "http://www.espn.com/nfl/recap?gameId=401873072",
-          "t": "Jared Goff throws 2 TDs, Jahmyr Gibbs runs for 2 more and Lions beat Bucs 31-21 for 6th straight win"
+          "u": "https://www.espn.com/nfl/story/_/id/50571034/49ers-brock-purdy-beats-vikings-blitz-hears-mvp-chants-mexico-city",
+          "t": "49ers' Brock Purdy beats Vikings blitz, hears 'MVP' chants in Mexico City"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50525677/49ers-beat-vikings-sunday-night-football-mexico-city-kittle",
+          "t": "49ers make bold statement with blowout win over Vikings, keep NFC's No. 1 seed"
+        },
+        {
+          "m": "ESPN",
+          "u": "http://www.espn.com/nfl/recap?gameId=401873077",
+          "t": "Brock Purdy carves up the Vikings' D with 3 TD passes in the 49ers' 35-10 win in Mexico City"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50569860/49ers-blow-vikings-35-10-mexico-city",
+          "t": "49ers blow out Vikings 35-10 in Mexico City "
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261123090401",
+      "fecha": "2026-11-23T09:04:14.743Z",
+      "semana": 11,
+      "titulo": "Fernando Mendoza lanza 3 TD ante defensiva de Broncos",
+      "claves": [
+        "Completó 18 de 37 pases para 267 yardas y 3 TD",
+        "Sufrió 5 capturas y 16 presiones en la derrota de Raiders",
+        "Lanzó un intercepción devuelta a TD al final del juego"
+      ],
+      "contexto": "En su 2.º juego como titular de Las Vegas, Fernando Mendoza mostró altibajos notables en la derrota ante Denver. El mariscal completó 18 de 37 pases para 267 yardas y 3 TD, pero estuvo bajo constante acoso al recibir 5 capturas y 16 presiones de la defensiva rival. El partido concluyó con un pase interceptado que Denver devolvió hasta la zona de anotación para sellar el juego.",
+      "fantasy": "Aunque los 3 TD le dan cierto atractivo fantasy en ligas profundas de 2 QB o Superflex, Mendoza sigue siendo una opción muy riesgosa. La altísima cantidad de capturas recibidas limita su piso semanal, por lo que únicamente debe ser contemplado como reemplazo de emergencia por semanas de descanso. En ligas de 1 QB debes dejarlo fuera de tu alineación titular.",
+      "equipo_impacto": "La línea ofensiva de Raiders preocupa bastante al permitir 5 capturas, afectando el ritmo del ataque terrestre y aéreo. Mendoza mantiene con vida a sus receptores principales pero arriesga constantemente la posesión.",
+      "accion": "Mantén a Fernando Mendoza solo como opción de emergencia en ligas Superflex.",
+      "en": {
+        "titulo": "Fernando Mendoza Throws 3 TDs Against Broncos Defense",
+        "claves": [
+          "Completed 18 of 37 passes for 267 yards and 3 TDs",
+          "Endured 5 sacks and 16 pressures in loss to Denver",
+          "Threw late game-sealing pick-six under intense pressure"
+        ],
+        "contexto": "Making his 2nd start for Las Vegas, Fernando Mendoza displayed ups and downs in Sunday's loss against Denver. The rookie completed 18 of 37 passes for 267 yards and 3 TDs, but faced relentless pressure after taking 5 sacks and 16 quarterback pressures. The game ended on a sour note as Denver intercepted his late pass for a game-sealing pick-six.",
+        "fantasy": "While 3 TD passes give him streamer intrigue in deep 2-QB or Superflex formats, Mendoza remains a volatile option. The high number of sacks and heavy pressure limit his weekly floor, making him strictly a bye-week filler or emergency option. In standard 1-QB leagues, he belongs on the bench or waiver wire until protection improves significantly.",
+        "equipo_impacto": "The Raiders offensive line allowed 5 sacks, disrupting offensive flow. Mendoza keeps key targets fantasy-relevant but risks turnovers under constant pressure.",
+        "accion": "Keep Fernando Mendoza strictly as a Superflex emergency option."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "NEUTRO",
+      "equipo": "LV",
+      "equipos": [
+        "LV",
+        "DEN"
+      ],
+      "jugadores": [
+        "13269"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50569797/fernando-mendoza-settling-raiders-starting-quarterback",
+          "t": "Despite loss to Broncos, Fernando Mendoza settling in as Raiders' starting QB"
         }
       ],
       "menciona": []
@@ -188,12 +157,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "6797",
-      "estatus": "Duda"
-    },
-    {
       "id": "4943",
       "estatus": "Fuera"
+    },
+    {
+      "id": "6797",
+      "estatus": "Duda"
     },
     {
       "id": "10236",
@@ -244,12 +213,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12711",
-      "estatus": "Fuera"
-    },
-    {
       "id": "11646",
       "estatus": "Duda"
+    },
+    {
+      "id": "12711",
+      "estatus": "Fuera"
     },
     {
       "id": "13276",
@@ -315,29 +284,29 @@
   "agregados": [
     "9482",
     "5906",
-    "12540",
     "5995",
+    "12540",
     "11625",
     "12498",
     "11630",
     "7567",
-    "2020",
-    "2505",
     "4147",
-    "12718",
-    "12492",
+    "2505",
+    "2020",
     "4993",
-    "6650",
-    "5012",
-    "DET",
-    "9480",
     "13269",
+    "12718",
     "4066",
-    "8135",
-    "12502",
     "10219",
+    "6650",
+    "12492",
+    "9480",
+    "5012",
+    "8135",
+    "DET",
     "SF",
-    "5045"
+    "12502",
+    "5119"
   ],
   "soltados": [
     "9493",
@@ -345,24 +314,25 @@
     "13276",
     "6130",
     "12491",
+    "9482",
     "2747",
     "NE",
-    "3271",
-    "10236",
-    "2505",
-    "12718",
-    "10219",
-    "9756",
-    "13424",
-    "11630",
-    "9482",
     "5012",
+    "3271",
+    "12718",
+    "10236",
+    "13424",
+    "2505",
+    "9756",
+    "10219",
+    "11630",
     "11579",
-    "11834",
+    "10218",
+    "5045",
     "CLE",
     "7553",
-    "11624",
-    "10218"
+    "11834",
+    "DET"
   ],
   "duelo": {
     "a": "Joe Burrow",
