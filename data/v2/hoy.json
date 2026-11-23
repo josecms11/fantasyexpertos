@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-22T20:47:25.990Z",
-  "ultimaIA": "2026-11-22T20:47:25.990Z",
+  "actualizado": "2026-11-23T01:09:49.621Z",
+  "ultimaIA": "2026-11-23T01:09:49.621Z",
   "semana": 11,
   "semanaStats": 11,
   "temporada": "2026",
@@ -14,90 +14,137 @@
   ],
   "noticias": [
     {
-      "id": "n20261122204700",
-      "fecha": "2026-11-22T20:47:25.990Z",
+      "id": "n20261123010900",
+      "fecha": "2026-11-23T01:09:49.621Z",
       "semana": 11,
-      "titulo": "DK Metcalf es expulsado en el 3.er cuarto",
+      "titulo": "Jonah Coleman brilla con 111 yardas y 3 TD",
       "claves": [
-        "Expulsado en el 3.er cuarto por conducta antideportiva.",
-        "Sucedió en el duelo de la semana 11 contra Eagles.",
-        "Limitó su producción de puntos en fantasy football."
+        "Corrió para 111 yardas y 3 TD ante Las Vegas.",
+        "Logró su mejor marca de la temporada en la victoria 38-24.",
+        "Su volumen en la zona roja se dispara para la semana 11."
       ],
-      "contexto": "DK Metcalf terminó su participación en el partido de la semana 11 frente a Philadelphia Eagles antes de tiempo. El receptor de Steelers fue expulsado durante el 3.er cuarto tras recibir un castigo por conducta antideportiva. La descalificación cortó de tajo su producción en el encuentro y complicó el plan aéreo del ataque de Pittsburgh en la 2.ª mitad del juego.",
-      "fantasy": "Esta expulsión arruinó el rendimiento de la semana 11 para los dueños de DK Metcalf, dejando su total de puntos recortado a la mitad. Para las siguientes semanas, su estatus como WR1 de calidad no cambia, pero hay que vigilar si la liga impone una suspensión. Mientras siga habilitado, debes mantenerlo como titular indiscutible en tus ligas de formato PPR y estándar.",
-      "equipo_impacto": "Sin DK Metcalf en el campo, el volumen de pases de Steelers se repartió entre los receptores secundarios durante el último cuarto. Sin embargo, la ofensiva pierde a su objetivo vertical principal en momentos decisivos del partido.",
-      "accion": "Mantén a DK Metcalf en tu alineación titular la próxima semana.",
+      "contexto": "El corredor novato Jonah Coleman tuvo su mejor actuación de la temporada al acumular 111 yardas terrestres y 3 TD en la victoria de Broncos 38-24 sobre Raiders. En un juego emotivo donde Denver rindió homenaje a Tom Jackson, Coleman dominó el ataque terrestre y capitalizó en la zona de anotación para sellar el triunfo.",
+      "fantasy": "Coleman demostró el techo explosivo que tiene en formatos PPR y estándar. Tras conseguir 3 TD y superar las 100 yardas, se consolida como una opción de RB2 o Flex con valor a la alza para la semana 11. Su uso cerca de la línea de gol lo convierte en un objetivo prioritario si necesitas cobertura en tu alineación titular.",
+      "equipo_impacto": "La actuación de Coleman quita presión a Bo Nix y equilibra la ofensiva de Denver. Williams mantendrá cierto volumen, pero Coleman se afirma como el arma principal dentro de la zona de gol.",
+      "accion": "Añádelo de inmediato en waivers si sigue disponible o considéralo como titular en RB2.",
       "en": {
-        "titulo": "DK Metcalf Ejected in Third Quarter vs Eagles",
+        "titulo": "Jonah Coleman shines with 111 yards and 3 TDs",
         "claves": [
-          "Ejected for unsportsmanlike conduct in Week 11.",
-          "Left the game early in 3rd quarter.",
-          "Limits his fantasy output for the week."
+          "Ran for 111 yards and 3 TDs against Las Vegas.",
+          "Set a season high in the 38-24 victory.",
+          "His red zone volume spikes heading into Week 11."
         ],
-        "contexto": "Steelers receiver DK Metcalf was ejected in the third quarter of Sunday's game against the Eagles for unsportsmanlike conduct. The disqualification ended his afternoon early and frustrated fantasy managers who were relying on his target volume down the stretch of a key Week 11 matchup against Philadelphia.",
-        "fantasy": "Metcalf's early exit hurt his fantasy output in Week 11, capping his scoring potential. Unless the league hands down a suspension, Metcalf remains a high-end WR1 lock in all formats for upcoming games. Keep him in your lineups unless an official penalty changes his availability.",
-        "equipo_impacto": "Pittsburgh's passing game lost its primary deep threat for the remainder of the second half, forcing targets toward secondary options.",
-        "accion": "Keep DK Metcalf in your starting lineup for next week."
+        "contexto": "Rookie running back Jonah Coleman enjoyed his best game of the season, rushing for 111 yards and 3 TDs in Denver's 38-24 victory over the Raiders. On an emotional Sunday honoring Tom Jackson, Coleman spearheaded the ground attack and capitalized on scoring drives to secure the win for the Broncos.",
+        "fantasy": "Coleman demonstrated his high fantasy ceiling across PPR and standard formats. By scoring 3 TDs and topping 100 yards, he solidifies his role as a rising RB2 or Flex starter for Week 11. His goal-line usage makes him a valuable asset if you need running back depth for your starting lineup.",
+        "equipo_impacto": "Coleman's breakout balances Denver's offense and takes pressure off the passing game. While the backfield retains rotation, Coleman takes control of high-value touch opportunities inside the team's red zone.",
+        "accion": "Pick him up off waivers immediately or plug him into your RB2 spot."
       },
-      "etiqueta": "TENDENCIA",
-      "impacto": "BAJA",
-      "equipo": "PIT",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "DEN",
       "equipos": [
-        "PIT",
-        "PHI"
+        "DEN",
+        "LV"
       ],
       "jugadores": [
-        "5846"
+        "13345"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50564475/steelers-wr-dk-metcalf-ejected-game-eagles",
-          "t": "Steelers WR DK Metcalf ejected from game against Eagles"
+          "u": "http://www.espn.com/nfl/recap?gameId=401873075",
+          "t": "Jonah Coleman powers Broncos past Raiders 38-24 as Denver honors the late Tom Jackson"
         }
       ],
       "menciona": []
     },
     {
-      "id": "n20261122204701",
-      "fecha": "2026-11-22T20:47:25.990Z",
+      "id": "n20261123010901",
+      "fecha": "2026-11-23T01:09:49.621Z",
       "semana": 11,
-      "titulo": "Travis Kelce supera a Gronkowski en TD históricos",
+      "titulo": "Justin Herbert entra al protocolo de conmoción de Chargers",
       "claves": [
-        "Superó a Rob Gronkowski en anotaciones totales de TE.",
-        "Se coloca en solitario en el 3.er lugar histórico.",
-        "Incluye touchdowns de temporada regular y postemporada."
+        "Entró al protocolo de conmoción tras la derrota 27-24.",
+        "Su estatus para la semana 11 queda catalogado como cuestionable.",
+        "Se debe buscar un mariscal de respaldo en waivers."
       ],
-      "contexto": "Travis Kelce volvió a escribir su nombre en los libros de récords de la NFL durante la semana 11. El ala cerrada de Kansas City superó a Rob Gronkowski para apoderarse en solitario del 3.er lugar de todos los tiempos en touchdowns totales anotados por un TE, sumando los partidos de temporada regular y postemporada en su carrera profesional.",
-      "fantasy": "El veterano sigue demostrando su valía elite en Fantasy Football. Con 12.7 pts proyectados en la semana 11, Kelce se mantiene como un TE1 inamovible en ligas PPR y formato estándar. Su habilidad constante para encontrar la zona de anotación lo convierte en una opción segura cada semana, consolidando su estatus entre las mejores selecciones de la posición.",
-      "equipo_impacto": "La ofensiva de Chiefs continúa alimentando a su ala cerrada estelar en momentos clave dentro de la zona roja, manteniéndolo como la válvula de escape preferida de Patrick Mahomes en situaciones de anotación.",
-      "accion": "Alinea a Travis Kelce como tu TE1 titular sin dudar.",
+      "contexto": "El mariscal de campo Justin Herbert ingresó al protocolo de conmoción cerebral tras la derrota de Chargers 27-24 frente a Jets. El equipo confirmó el diagnóstico después del encuentro disputado en Inglewood, donde Los Angeles cayó al recibir anotaciones en las primeras 5 series ofensivas de Nueva York.",
+      "fantasy": "Con Herbert catalogado oficialmente como cuestionable por conmoción, los dueños de fantasy deben tomar medidas preventivas antes de la semana 11. Si no logra superar los protocolos médicos a tiempo, dejará un hueco importante en ligas Superflex y de 12 equipos. No arriesgues tu semana y busca un reemplazo seguro hoy mismo.",
+      "equipo_impacto": "Sin Herbert, la ofensiva de Chargers pierde dinamismo vertical, lo que degradaría el valor fantasy de sus receptores y alas cerradas en caso de no ser dado de alta para la semana 11.",
+      "accion": "Asegura a un mariscal suplente en waivers mientras monitoreas su progreso en los entrenamientos.",
       "en": {
-        "titulo": "Travis Kelce Passes Rob Gronkowski for Historic TDs",
+        "titulo": "Justin Herbert enters concussion protocol following loss to Jets",
         "claves": [
-          "Passes Rob Gronkowski for 3rd all-time in TE TDs.",
-          "Includes regular season and playoff total touchdowns.",
-          "Solidifies his elite status in fantasy football."
+          "Entered concussion protocol after the 27-24 loss.",
+          "Officially listed as questionable ahead of Week 11.",
+          "Fantasy managers must secure a backup quarterback immediately."
         ],
-        "contexto": "Travis Kelce reached another historic milestone in Week 11, passing Rob Gronkowski to stand alone in third place all-time for total touchdowns by a tight end, combined between regular season and playoffs. The Chiefs star continues to build his Hall of Fame resume while delivering high-level production.",
-        "fantasy": "Kelce remains a must-start TE1 across all fantasy formats, projected for 12.7 PPR points in Week 11. His nose for the end zone keeps his fantasy floor and ceiling high every week. Start him with complete confidence in PPR and standard leagues regardless of matchup.",
-        "equipo_impacto": "Kansas City's offense relies heavily on Kelce in the red zone, ensuring he remains Patrick Mahomes' top target in scoring situations.",
-        "accion": "Start Travis Kelce as your set-and-forget TE1."
+        "contexto": "Quarterback Justin Herbert entered the NFL concussion protocol following the Chargers' 27-24 loss to the Jets on Sunday. Los Angeles confirmed the injury after the game in Inglewood, where the team dropped a close contest as New York managed to score on its first 5 offensive drives of the afternoon.",
+        "fantasy": "With Justin Herbert officially listed as questionable due to a concussion, fantasy managers must plan ahead for Week 11. Missing his starting status would create a significant void in Superflex and deep 12-team leagues. Prepare an alternative target from waivers to protect your starting lineup while waiting for updates.",
+        "equipo_impacto": "Without Herbert under center, the Chargers' offense loses vertical dynamism, capping the fantasy upside of wide receivers and tight ends if he is not cleared to play for Week 11.",
+        "accion": "Claim a backup quarterback on waivers while monitoring Herbert's practice participation."
       },
-      "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "KC",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "LAC",
       "equipos": [
-        "KC"
+        "LAC",
+        "NYJ"
       ],
       "jugadores": [
-        "1466"
+        "6797"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50563590/kelce-passes-gronkowski-most-tds-te-including-playoffs",
-          "t": "Travis Kelce passes Rob Gronkowski on TDs by TE list, alone in third all time"
+          "u": "https://www.espn.com/nfl/story/_/id/50567478/chargers-justin-herbert-lands-concussion-protocol",
+          "t": "Chargers' Justin Herbert lands in concussion protocol"
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261123010902",
+      "fecha": "2026-11-23T01:09:49.621Z",
+      "semana": 11,
+      "titulo": "Jahmyr Gibbs lidera triunfo de Lions con 2 TD",
+      "claves": [
+        "Anotó 2 TD por tierra en la victoria 31-21.",
+        "Lions consiguieron su sexta victoria consecutiva de la campaña.",
+        "Proyecta 23.4 pts PPR como RB1 élite en semana 11."
+      ],
+      "contexto": "El corredor Jahmyr Gibbs firmó una actuación determinante al anotar 2 TD por tierra en el triunfo de Lions 31-21 sobre Buccaneers. Detroit hiló su sexta victoria consecutiva apoyándose en un ataque balanceado donde Jared Goff también lanzó 2 TD, afianzando a los Lions como una potencia ofensiva en la Conferencia Nacional.",
+      "fantasy": "Gibbs se consolida como uno de los corredores más dominantes del fantasy football. Con sus 2 anotaciones en la jornada y una proyección de 23.4 pts PPR para la semana 11, se mantiene como un titular indiscutible de calibre RB1 en cualquier formato. Su capacidad para generar explosividad lo hace inamovible de tu alineación.",
+      "equipo_impacto": "El rendimiento de Gibbs complementa a la perfección el juego aéreo de Jared Goff, permitiendo a Detroit controlar el reloj de juego y mantener una eficiencia constante en la zona roja rival.",
+      "accion": "Mantén a Gibbs en tu alineación titular como RB1 intocable para la semana 11.",
+      "en": {
+        "titulo": "Jahmyr Gibbs powers Lions win with 2 rushing touchdowns",
+        "claves": [
+          "Scored 2 rushing TDs in 31-21 victory over Buccaneers.",
+          "Lions extended their winning streak to 6 straight games.",
+          "Projected for 23.4 PPR points as elite Week 11 RB1."
+        ],
+        "contexto": "Running back Jahmyr Gibbs delivered a star performance on Sunday, scoring 2 rushing touchdowns in the Lions' 31-21 victory over the Buccaneers. Detroit earned its 6th consecutive win thanks to a balanced offensive effort where quarterback Jared Goff added 2 passing touchdowns to control the game.",
+        "fantasy": "Gibbs solidifies his position among the elite running backs in fantasy football. Following his 2-TD game and carrying a strong projection of 23.4 PPR points for Week 11, he remains a locked-in RB1 across all formats. His home-run ability makes him an intouchable must-start option every single week.",
+        "equipo_impacto": "Gibbs' ground dominance complements Jared Goff's passing attack perfectly, keeping Detroit's offense efficient inside the red zone and extremely difficult for opposing defenses to contain every week.",
+        "accion": "Keep Gibbs locked into your starting lineup as an elite RB1."
+      },
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "DET",
+      "equipos": [
+        "DET",
+        "TB"
+      ],
+      "jugadores": [
+        "9221",
+        "3163"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "http://www.espn.com/nfl/recap?gameId=401873072",
+          "t": "Jared Goff throws 2 TDs, Jahmyr Gibbs runs for 2 more and Lions beat Bucs 31-21 for 6th straight win"
         }
       ],
       "menciona": []
@@ -141,12 +188,20 @@
       "estatus": "Fuera"
     },
     {
+      "id": "6797",
+      "estatus": "Duda"
+    },
+    {
       "id": "4943",
       "estatus": "Fuera"
     },
     {
       "id": "10236",
       "estatus": "Fuera"
+    },
+    {
+      "id": "3198",
+      "estatus": "Duda"
     },
     {
       "id": "6904",
@@ -161,10 +216,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "2216",
-      "estatus": "Duda"
-    },
-    {
       "id": "12474",
       "estatus": "Fuera"
     },
@@ -175,6 +226,10 @@
     {
       "id": "11435",
       "estatus": "Fuera"
+    },
+    {
+      "id": "4866",
+      "estatus": "Duda"
     },
     {
       "id": "4983",
@@ -191,6 +246,10 @@
     {
       "id": "12711",
       "estatus": "Fuera"
+    },
+    {
+      "id": "11646",
+      "estatus": "Duda"
     },
     {
       "id": "13276",
@@ -251,46 +310,34 @@
     {
       "id": "8188",
       "estatus": "Fuera"
-    },
-    {
-      "id": "12533",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "5850",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "9504",
-      "estatus": "Duda"
     }
   ],
   "agregados": [
     "9482",
     "5906",
     "12540",
-    "11625",
     "5995",
+    "11625",
+    "12498",
     "11630",
     "7567",
-    "12498",
     "2020",
     "2505",
-    "5012",
-    "6650",
-    "12492",
-    "DET",
-    "12718",
     "4147",
+    "12718",
+    "12492",
     "4993",
+    "6650",
+    "5012",
+    "DET",
     "9480",
-    "12502",
     "13269",
-    "6528",
-    "12499",
-    "5045",
-    "13337",
-    "5119"
+    "4066",
+    "8135",
+    "12502",
+    "10219",
+    "SF",
+    "5045"
   ],
   "soltados": [
     "9493",
@@ -300,23 +347,22 @@
     "12491",
     "2747",
     "NE",
-    "2505",
-    "10236",
     "3271",
-    "10219",
+    "10236",
+    "2505",
     "12718",
-    "11630",
+    "10219",
     "9756",
     "13424",
-    "11834",
-    "11579",
-    "3286",
-    "11624",
+    "11630",
     "9482",
+    "5012",
+    "11579",
+    "11834",
     "CLE",
     "7553",
-    "5012",
-    "10232"
+    "11624",
+    "10218"
   ],
   "duelo": {
     "a": "Joe Burrow",
