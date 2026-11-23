@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-23T09:04:14.743Z",
-  "ultimaIA": "2026-11-23T09:04:14.743Z",
+  "actualizado": "2026-11-23T21:15:14.192Z",
+  "ultimaIA": "2026-11-23T21:15:14.192Z",
   "semana": 11,
   "semanaStats": 11,
   "temporada": "2026",
@@ -14,106 +14,100 @@
   ],
   "noticias": [
     {
-      "id": "n20261123090400",
-      "fecha": "2026-11-23T09:04:14.743Z",
+      "id": "n20261123211500",
+      "fecha": "2026-11-23T21:15:14.192Z",
       "semana": 11,
-      "titulo": "Brock Purdy destroza a Vikings con 3 TD",
+      "titulo": "Tommy DeVito asume la titularidad de Patriots en semana 11",
       "claves": [
-        "Lanzó 3 TD en paliza 35-10 sobre Minnesota en México",
-        "Superó la presión defensiva y colocó a 49ers con récord 9-1",
-        "Consolida su valor QB1 alto rumbo al cierre de temporada"
+        "Drake Maye queda fuera por 1 fractura de peroné derecho.",
+        "Mike Vrabel ratificó a Tommy DeVito como el QB1 titular.",
+        "New England no buscará mariscales de campo en el mercado."
       ],
-      "contexto": "Brock Purdy dio una exhibición elite en la semana 11 al comandar la victoria de San Francisco 35-10 sobre Minnesota en la Ciudad de México. El mariscal de campo descifró por completo la defensiva de Vikings, lanzando 3 pases de anotación y llevando a los 49ers a una marca de 9-1 en la campaña. Purdy manejó el partido con serenidad absoluta bajo la presión rival frente a la afición mexicana.",
-      "fantasy": "Brock Purdy se reafirma como un QB1 indiscutible en formatos tradicionales de 12 equipos y ligas Superflex. Tras superar un duelo complicado ante una defensiva agresiva, su techo fantasy sube de cara a las semanas decisivas. Si tenías dudas sobre ponerlo como titular ante rivales dominantes, este juego confirma que debes alinearlo cada semana sin importar el rival, ya que genera puntos constantes en jugadas de zona roja.",
-      "equipo_impacto": "El rendimiento de Purdy eleva el valor de todas las armas aéreas de San Francisco. Mantiene a receptores y alas cerradas en ritmo anotador alto, mientras los 49ers se afianzan como el sembrado 1 de la NFC.",
-      "accion": "Amarra a Brock Purdy en tu alineación titular cada semana.",
+      "contexto": "El entrenador en jefe Mike Vrabel confirmó que Tommy DeVito será el mariscal de campo titular de Patriots para la semana 11. La decisión llega tras confirmarse la baja de Drake Maye por 1 fractura en el peroné derecho. Vrabel aclaró que New England no planea contratar a ningún mariscal externo para suplir la ausencia de su pasador titular durante las siguientes 4 semanas de competencia.",
+      "fantasy": "Para el formato superflex o ligas de 2 QB, Tommy DeVito se convierte en 1 opción de emergencia en la semana 11. No esperes producción de elite, pero te dará un volumen de pase básico. Su presencia reduce el techo de fantasy de los receptores del equipo, mientras que sus corredores tendrán que cargar con mayor cuota terrestre para sostener a la ofensiva.",
+      "equipo_impacto": "El ataque de Patriots baja su potencial aéreo con Tommy DeVito al mando. La línea ofensiva deberá ofrecer máxima protección para evitar pérdidas de balón constantes en las siguientes 4 semanas de competencia.",
+      "accion": "Reclama a Tommy DeVito en ligas superflex únicamente como opción de profundo reemplazo en la semana 11.",
       "en": {
-        "titulo": "Brock Purdy Shreds Vikings Defense With 3 TDs",
+        "titulo": "Tommy DeVito named Patriots starting QB for Week 11",
         "claves": [
-          "Threw 3 TDs in 35-10 blowout victory against Minnesota",
-          "Overcame defensive pressure to push 49ers to 9-1 record",
-          "Solidifies high-end QB1 value heading into fantasy playoffs"
+          "Drake Maye is out due to a fractured right fibula.",
+          "Head coach Mike Vrabel confirmed Tommy DeVito as QB1.",
+          "Patriots will not seek outside quarterback help this season."
         ],
-        "contexto": "Brock Purdy put on an elite performance in Week 11, leading San Francisco to a 35-10 blowout victory against Minnesota in Mexico City. The quarterback picked apart the Vikings defense, throwing 3 touchdown passes while guiding the 49ers to a 9-1 record on the season. Purdy managed the game with total poise under heavy pressure in front of the passionate international crowd.",
-        "fantasy": "Brock Purdy solidifies his status as a lock-and-load QB1 in standard 12-team and Superflex leagues. After dismantling a tough defensive unit, his fantasy ceiling rises for the final stretch of the regular season. If you had reservations starting him against top defenses, this performance proves he belongs in your lineup every week due to high touchdown efficiency in the red zone.",
-        "equipo_impacto": "Purdy's strong outing elevates all San Francisco pass-catchers. He keeps wide receivers and tight ends in prime scoring positions while locking down the NFC's top seed.",
-        "accion": "Lock Brock Purdy into your starting lineup every week."
+        "contexto": "Head coach Mike Vrabel confirmed Tommy DeVito will start at quarterback for the Patriots in Week 11. The decision comes after Drake Maye was ruled out with a fractured right fibula. Vrabel made it clear that New England has no plans to sign an outside quarterback to replace their rookie passer over the coming weeks of the NFL regular season.",
+        "fantasy": "In superflex or 2 QB leagues, Tommy DeVito becomes an emergency waiver pickup for Week 11. Do not expect elite fantasy production, but he offers baseline passing volume. His presence lowers the fantasy ceiling for receiver targets, while the running backs will need to carry a heavier workload on the ground to sustain the offense.",
+        "equipo_impacto": "The Patriots offense lowers its passing ceiling with Tommy DeVito leading the unit. The offensive line must step up protection to avoid costly turnovers over the next few weeks.",
+        "accion": "Add Tommy DeVito in superflex formats only as a deep replacement option for Week 11."
       },
-      "etiqueta": "START",
-      "impacto": "SUBE",
-      "equipo": "SF",
+      "etiqueta": "WAIVER",
+      "impacto": "NEUTRO",
+      "equipo": "NE",
       "equipos": [
-        "SF",
-        "MIN"
+        "NE"
       ],
       "jugadores": [
-        "8183"
+        "11292",
+        "11564"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50571034/49ers-brock-purdy-beats-vikings-blitz-hears-mvp-chants-mexico-city",
-          "t": "49ers' Brock Purdy beats Vikings blitz, hears 'MVP' chants in Mexico City"
+          "u": "https://www.espn.com/video/clip/_/id/50575529/tommy-devito-our-starting-qb",
+          "t": "Mike Vrabel: Tommy DeVito is our starting QB"
         },
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50525677/49ers-beat-vikings-sunday-night-football-mexico-city-kittle",
-          "t": "49ers make bold statement with blowout win over Vikings, keep NFC's No. 1 seed"
-        },
-        {
-          "m": "ESPN",
-          "u": "http://www.espn.com/nfl/recap?gameId=401873077",
-          "t": "Brock Purdy carves up the Vikings' D with 3 TD passes in the 49ers' 35-10 win in Mexico City"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50569860/49ers-blow-vikings-35-10-mexico-city",
-          "t": "49ers blow out Vikings 35-10 in Mexico City "
+          "u": "https://www.espn.com/nfl/story/_/id/50575341/mike-vrabel-patriots-sticking-tommy-devito-qb1",
+          "t": "Vrabel: Patriots sticking with DeVito as QB1, not looking for outside help"
         }
       ],
       "menciona": []
     },
     {
-      "id": "n20261123090401",
-      "fecha": "2026-11-23T09:04:14.743Z",
+      "id": "n20261123211501",
+      "fecha": "2026-11-23T21:15:14.192Z",
       "semana": 11,
-      "titulo": "Fernando Mendoza lanza 3 TD ante defensiva de Broncos",
+      "titulo": "49ers cortan al receptor Brandon Aiyuk en semana 11",
       "claves": [
-        "Completó 18 de 37 pases para 267 yardas y 3 TD",
-        "Sufrió 5 capturas y 16 presiones en la derrota de Raiders",
-        "Lanzó un intercepción devuelta a TD al final del juego"
+        "San Francisco liberó a Brandon Aiyuk tras terminar su exención.",
+        "El receptor se recupera de severa lesión de rodilla izquierda.",
+        "Deebo Samuel y George Kittle mantendrán la mayor carga aérea."
       ],
-      "contexto": "En su 2.º juego como titular de Las Vegas, Fernando Mendoza mostró altibajos notables en la derrota ante Denver. El mariscal completó 18 de 37 pases para 267 yardas y 3 TD, pero estuvo bajo constante acoso al recibir 5 capturas y 16 presiones de la defensiva rival. El partido concluyó con un pase interceptado que Denver devolvió hasta la zona de anotación para sellar el juego.",
-      "fantasy": "Aunque los 3 TD le dan cierto atractivo fantasy en ligas profundas de 2 QB o Superflex, Mendoza sigue siendo una opción muy riesgosa. La altísima cantidad de capturas recibidas limita su piso semanal, por lo que únicamente debe ser contemplado como reemplazo de emergencia por semanas de descanso. En ligas de 1 QB debes dejarlo fuera de tu alineación titular.",
-      "equipo_impacto": "La línea ofensiva de Raiders preocupa bastante al permitir 5 capturas, afectando el ritmo del ataque terrestre y aéreo. Mendoza mantiene con vida a sus receptores principales pero arriesga constantemente la posesión.",
-      "accion": "Mantén a Fernando Mendoza solo como opción de emergencia en ligas Superflex.",
+      "contexto": "San Francisco 49ers anunció la liberación del receptor Brandon Aiyuk este lunes 11 de noviembre, al vencer su periodo de exención de roster. Aiyuk permanece fuera por 1 lesión grave de rodilla con ruptura de ligamento cruzado anterior y colateral medial. El gerente general John Lynch tomó la determinación de prescindir del jugador mientras continúa su rehabilitación médica.",
+      "fantasy": "En ligas de redraft, Brandon Aiyuk debe ser cortado de inmediato en el 100% de los formatos fantasy. Su salida de 49ers consolida a Deebo Samuel y George Kittle como las 2 opciones principales por aire. Jauan Jennings gana valor como el receptor 2 de San Francisco, convirtiéndose en 1 opción viable para el flex en ligas de 12 equipos.",
+      "equipo_impacto": "La ofensiva de 49ers elimina incertidumbres de plantilla y concentra sus pases en George Kittle y Deebo Samuel. Jauan Jennings asume el rol de receptor 2 titular para la semana 11.",
+      "accion": "Corta a Brandon Aiyuk de tu plantilla fantasy hoy mismo si aún lo mantenías en la banca.",
       "en": {
-        "titulo": "Fernando Mendoza Throws 3 TDs Against Broncos Defense",
+        "titulo": "49ers release wide receiver Brandon Aiyuk in Week 11",
         "claves": [
-          "Completed 18 of 37 passes for 267 yards and 3 TDs",
-          "Endured 5 sacks and 16 pressures in loss to Denver",
-          "Threw late game-sealing pick-six under intense pressure"
+          "San Francisco released Brandon Aiyuk as roster exemption ended.",
+          "Aiyuk is recovering from severe ACL and MCL knee injury.",
+          "Deebo Samuel and George Kittle main targets moving forward."
         ],
-        "contexto": "Making his 2nd start for Las Vegas, Fernando Mendoza displayed ups and downs in Sunday's loss against Denver. The rookie completed 18 of 37 passes for 267 yards and 3 TDs, but faced relentless pressure after taking 5 sacks and 16 quarterback pressures. The game ended on a sour note as Denver intercepted his late pass for a game-sealing pick-six.",
-        "fantasy": "While 3 TD passes give him streamer intrigue in deep 2-QB or Superflex formats, Mendoza remains a volatile option. The high number of sacks and heavy pressure limit his weekly floor, making him strictly a bye-week filler or emergency option. In standard 1-QB leagues, he belongs on the bench or waiver wire until protection improves significantly.",
-        "equipo_impacto": "The Raiders offensive line allowed 5 sacks, disrupting offensive flow. Mendoza keeps key targets fantasy-relevant but risks turnovers under constant pressure.",
-        "accion": "Keep Fernando Mendoza strictly as a Superflex emergency option."
+        "contexto": "The San Francisco 49ers announced the release of wide receiver Brandon Aiyuk on Monday, November 11, as his roster exemption period came to an end. Aiyuk remains sidelined recovering from a major knee injury involving his ACL and MCL. General manager John Lynch made the roster move while the receiver continues his lengthy rehabilitation process.",
+        "fantasy": "In redraft fantasy formats, Brandon Aiyuk must be dropped immediately across 100% of leagues. His departure from the 49ers solidifies Deebo Samuel and George Kittle as the top 2 passing options in this offense. Jauan Jennings gains fantasy value as the team's WR2, making him a viable flex target in 12 team PPR leagues.",
+        "equipo_impacto": "The 49ers offense clears roster uncertainty and focuses its target tree on George Kittle and Deebo Samuel. Jauan Jennings steps into a primary WR2 role for Week 11.",
+        "accion": "Drop Brandon Aiyuk from your fantasy roster immediately if he was still on your bench."
       },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "LV",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "SF",
       "equipos": [
-        "LV",
-        "DEN"
+        "SF"
       ],
       "jugadores": [
-        "13269"
+        "6803"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50569797/fernando-mendoza-settling-raiders-starting-quarterback",
-          "t": "Despite loss to Broncos, Fernando Mendoza settling in as Raiders' starting QB"
+          "u": "https://www.espn.com/video/clip/_/id/50575458/next-brandon-aiyuk-release-49ers",
+          "t": "What's next for Brandon Aiyuk after release by 49ers?"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50575346/sources-49ers-releasing-wr-brandon-aiyuk",
+          "t": "Sources: 49ers releasing WR Brandon Aiyuk with roster exemption ending"
         }
       ],
       "menciona": []
@@ -193,6 +187,10 @@
       "estatus": "Fuera"
     },
     {
+      "id": "12490",
+      "estatus": "Duda"
+    },
+    {
       "id": "11435",
       "estatus": "Fuera"
     },
@@ -261,6 +259,10 @@
       "estatus": "Fuera"
     },
     {
+      "id": "11786",
+      "estatus": "Duda"
+    },
+    {
       "id": "7002",
       "estatus": "Duda"
     },
@@ -271,75 +273,67 @@
     {
       "id": "13424",
       "estatus": "Fuera"
-    },
-    {
-      "id": "5927",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "8188",
-      "estatus": "Fuera"
     }
   ],
   "agregados": [
-    "9482",
-    "5906",
     "5995",
-    "12540",
-    "11625",
-    "12498",
-    "11630",
-    "7567",
-    "4147",
-    "2505",
-    "2020",
-    "4993",
-    "13269",
-    "12718",
-    "4066",
     "10219",
-    "6650",
-    "12492",
-    "9480",
-    "5012",
+    "9482",
+    "13269",
+    "12540",
+    "WAS",
+    "12483",
+    "4066",
     "8135",
-    "DET",
+    "12718",
+    "4147",
+    "13317",
     "SF",
-    "12502",
-    "5119"
+    "11635",
+    "8134",
+    "11630",
+    "12533",
+    "NYG",
+    "4993",
+    "11834",
+    "7567",
+    "12498",
+    "TB",
+    "4663",
+    "11625"
   ],
   "soltados": [
-    "9493",
-    "6083",
-    "13276",
-    "6130",
-    "12491",
     "9482",
-    "2747",
-    "NE",
+    "12487",
+    "9493",
     "5012",
-    "3271",
-    "12718",
-    "10236",
     "13424",
-    "2505",
-    "9756",
-    "10219",
-    "11630",
-    "11579",
     "10218",
     "5045",
-    "CLE",
-    "7553",
-    "11834",
-    "DET"
+    "12492",
+    "11783",
+    "11625",
+    "DET",
+    "12499",
+    "6130",
+    "12491",
+    "9502",
+    "12718",
+    "13276",
+    "9480",
+    "13294",
+    "6650",
+    "13414",
+    "8132",
+    "13296",
+    "11563"
   ],
   "duelo": {
     "a": "Joe Burrow",
-    "b": "Dak Prescott",
-    "veredicto": "Arranca a Joe Burrow. Con una proyección de 25.8 pts frente a los 21.2 pts de Prescott, Burrow llega con mayor consistencia y ritmo ofensivo para esta semana."
+    "b": "Josh Allen",
+    "veredicto": "Arranca a Joe Burrow sobre Josh Allen en la semana 11. Burrow proyecta 25.8 pts PPR contra 24.2 pts de Allen, impulsado por el regreso de sus receptores titulares al 100% de su capacidad."
   },
-  "dueloFecha": "2026-11-22T14:23:32.572Z",
+  "dueloFecha": "2026-11-23T21:15:14.192Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
