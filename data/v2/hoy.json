@@ -1,113 +1,125 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-23T21:15:14.192Z",
-  "ultimaIA": "2026-11-23T21:15:14.192Z",
-  "semana": 11,
-  "semanaStats": 11,
+  "actualizado": "2026-11-24T05:21:51.838Z",
+  "ultimaIA": "2026-11-24T05:21:51.838Z",
+  "semana": 12,
+  "semanaStats": 12,
   "temporada": "2026",
   "semanas": [
-    7,
     8,
     9,
     10,
-    11
+    11,
+    12
   ],
   "noticias": [
     {
-      "id": "n20261123211500",
-      "fecha": "2026-11-23T21:15:14.192Z",
-      "semana": 11,
-      "titulo": "Tommy DeVito asume la titularidad de Patriots en semana 11",
+      "id": "n20261124052100",
+      "fecha": "2026-11-24T05:21:51.838Z",
+      "semana": 12,
+      "titulo": "Jayden Daniels lidera remontada dramática de Commanders",
       "claves": [
-        "Drake Maye queda fuera por 1 fractura de peroné derecho.",
-        "Mike Vrabel ratificó a Tommy DeVito como el QB1 titular.",
-        "New England no buscará mariscales de campo en el mercado."
+        "Daniels recorrió 64 yardas en 34 segundos.",
+        "Completó 2 pases clave con el novato Antonio Williams.",
+        "Drew Stevens definió la victoria 22-20 con gol de campo."
       ],
-      "contexto": "El entrenador en jefe Mike Vrabel confirmó que Tommy DeVito será el mariscal de campo titular de Patriots para la semana 11. La decisión llega tras confirmarse la baja de Drake Maye por 1 fractura en el peroné derecho. Vrabel aclaró que New England no planea contratar a ningún mariscal externo para suplir la ausencia de su pasador titular durante las siguientes 4 semanas de competencia.",
-      "fantasy": "Para el formato superflex o ligas de 2 QB, Tommy DeVito se convierte en 1 opción de emergencia en la semana 11. No esperes producción de elite, pero te dará un volumen de pase básico. Su presencia reduce el techo de fantasy de los receptores del equipo, mientras que sus corredores tendrán que cargar con mayor cuota terrestre para sostener a la ofensiva.",
-      "equipo_impacto": "El ataque de Patriots baja su potencial aéreo con Tommy DeVito al mando. La línea ofensiva deberá ofrecer máxima protección para evitar pérdidas de balón constantes en las siguientes 4 semanas de competencia.",
-      "accion": "Reclama a Tommy DeVito en ligas superflex únicamente como opción de profundo reemplazo en la semana 11.",
+      "contexto": "Washington sorprendió a Cincinnati 22-20 en el Lunes por la Noche tras ejecutar una serie ofensiva relámpago de 34 segundos. El mariscal Jayden Daniels conectó 2 pases profundos con el receptor novato Antonio Williams para avanzar 64 yardas. Esta jugada preparó el gol de campo del triunfo convertido por Drew Stevens. Además, Washington activó al corredor Jacory Croskey-Merritt de la lista de lesionados antes del partido.",
+      "fantasy": "Daniels reafirma su categoría de mariscal de élite con 21.9 pts proyectados para la semana 12 en el modelo FX. Es un titular indiscutible en formatos PPR y Superflex. La activación de Croskey-Merritt agrega competencia en el backfield de Commanders, lo que podría dividir los acarreos en las próximas semanas. Mantén a Daniels como tu QB1 sin importar el enfrentamiento.",
+      "equipo_impacto": "La victoria frena la racha de 5 triunfos de Cincinnati y le da a Washington 3 victorias en sus últimos 4 partidos. La ofensiva muestra capacidad para responder bajo presión extrema en momentos cruciales.",
+      "accion": "Alinea a Jayden Daniels con total confianza como mariscal titular en la semana 12.",
       "en": {
-        "titulo": "Tommy DeVito named Patriots starting QB for Week 11",
+        "titulo": "Jayden Daniels leads dramatic Commanders comeback",
         "claves": [
-          "Drake Maye is out due to a fractured right fibula.",
-          "Head coach Mike Vrabel confirmed Tommy DeVito as QB1.",
-          "Patriots will not seek outside quarterback help this season."
+          "Daniels drove 64 yards in 34 seconds.",
+          "Completed 2 big passes to rookie Antonio Williams.",
+          "Drew Stevens kicked game-winning field goal for 22-20 victory."
         ],
-        "contexto": "Head coach Mike Vrabel confirmed Tommy DeVito will start at quarterback for the Patriots in Week 11. The decision comes after Drake Maye was ruled out with a fractured right fibula. Vrabel made it clear that New England has no plans to sign an outside quarterback to replace their rookie passer over the coming weeks of the NFL regular season.",
-        "fantasy": "In superflex or 2 QB leagues, Tommy DeVito becomes an emergency waiver pickup for Week 11. Do not expect elite fantasy production, but he offers baseline passing volume. His presence lowers the fantasy ceiling for receiver targets, while the running backs will need to carry a heavier workload on the ground to sustain the offense.",
-        "equipo_impacto": "The Patriots offense lowers its passing ceiling with Tommy DeVito leading the unit. The offensive line must step up protection to avoid costly turnovers over the next few weeks.",
-        "accion": "Add Tommy DeVito in superflex formats only as a deep replacement option for Week 11."
+        "contexto": "Washington stunned Cincinnati 22-20 on Monday Night Football following a lightning-fast 34-second drive. Quarterback Jayden Daniels hit rookie receiver Antonio Williams on 2 deep passes to gain 64 yards. That set up rookie kicker Drew Stevens for the game-winning field goal. Additionally, Washington activated running back Jacory Croskey-Merritt from injured reserve prior to kickoff.",
+        "fantasy": "Daniels solidifies his status as a top fantasy option with 21.9 projected pts for Week 12 in the FX model. He remains an automatic start in PPR and Superflex leagues. Croskey-Merritt's return adds depth to Washington's backfield, potentially shifting touches in coming weeks. Keep Daniels locked into your QB1 slot regardless of matchup.",
+        "equipo_impacto": "The victory snapped Cincinnati's 5-game winning streak and gave Washington 3 wins in their last 4 games. The Commanders' offense demonstrated high-level execution under pressure in critical moments.",
+        "accion": "Start Jayden Daniels as your QB1 with full confidence for Week 12."
       },
-      "etiqueta": "WAIVER",
-      "impacto": "NEUTRO",
-      "equipo": "NE",
+      "etiqueta": "START",
+      "impacto": "SUBE",
+      "equipo": "WAS",
       "equipos": [
-        "NE"
+        "WAS",
+        "CIN"
       ],
       "jugadores": [
-        "11292",
-        "11564"
+        "11566",
+        "13301",
+        "13968",
+        "12533"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50575529/tommy-devito-our-starting-qb",
-          "t": "Mike Vrabel: Tommy DeVito is our starting QB"
+          "u": "http://www.espn.com/nfl/recap?gameId=401873078",
+          "t": "Jayden Daniels rallies Commanders in final seconds to set up winning kick in 22-20 win over Bengals"
         },
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50575341/mike-vrabel-patriots-sticking-tommy-devito-qb1",
-          "t": "Vrabel: Patriots sticking with DeVito as QB1, not looking for outside help"
+          "u": "https://www.espn.com/video/clip/_/id/50579688/commanders-storm-back-stun-bengals-22-20-mnf",
+          "t": "Commanders storm back, stun Bengals 22-20 on MNF"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50573995/2026-nfl-week-11-washington-commanders-cincinnati-bengals",
+          "t": "Commanders building momentum, halt Bengals' 5-game win streak"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50576561/commanders-rb-jacory-croskey-merritt-activated-ir",
+          "t": "Commanders RB Jacory Croskey-Merritt activated from IR ahead of MNF"
         }
       ],
       "menciona": []
     },
     {
-      "id": "n20261123211501",
-      "fecha": "2026-11-23T21:15:14.192Z",
-      "semana": 11,
-      "titulo": "49ers cortan al receptor Brandon Aiyuk en semana 11",
+      "id": "n20261124052101",
+      "fecha": "2026-11-24T05:21:51.838Z",
+      "semana": 12,
+      "titulo": "Micah Parsons recibe alta médica para debutar con Packers",
       "claves": [
-        "San Francisco liberó a Brandon Aiyuk tras terminar su exención.",
-        "El receptor se recupera de severa lesión de rodilla izquierda.",
-        "Deebo Samuel y George Kittle mantendrán la mayor carga aérea."
+        "Parsons recibe alta médica tras casi 1 año fuera.",
+        "Superó múltiples lesiones de rodilla para volver en semana 12.",
+        "Enfrentará a Rams en su debut de 2026."
       ],
-      "contexto": "San Francisco 49ers anunció la liberación del receptor Brandon Aiyuk este lunes 11 de noviembre, al vencer su periodo de exención de roster. Aiyuk permanece fuera por 1 lesión grave de rodilla con ruptura de ligamento cruzado anterior y colateral medial. El gerente general John Lynch tomó la determinación de prescindir del jugador mientras continúa su rehabilitación médica.",
-      "fantasy": "En ligas de redraft, Brandon Aiyuk debe ser cortado de inmediato en el 100% de los formatos fantasy. Su salida de 49ers consolida a Deebo Samuel y George Kittle como las 2 opciones principales por aire. Jauan Jennings gana valor como el receptor 2 de San Francisco, convirtiéndose en 1 opción viable para el flex en ligas de 12 equipos.",
-      "equipo_impacto": "La ofensiva de 49ers elimina incertidumbres de plantilla y concentra sus pases en George Kittle y Deebo Samuel. Jauan Jennings asume el rol de receptor 2 titular para la semana 11.",
-      "accion": "Corta a Brandon Aiyuk de tu plantilla fantasy hoy mismo si aún lo mantenías en la banca.",
+      "contexto": "El cazador de mariscales Micah Parsons fue autorizado por los médicos para realizar su debut de la temporada con Green Bay en la semana 12 contra Rams. Parsons se perdió casi 1 año completo debido a rehabilitaciones por múltiples lesiones graves en la rodilla. Su adición fortalece de forma inmediata la línea defensiva de Packers para el tramo final del torneo.",
+      "fantasy": "El regreso de Parsons eleva significativamente el atractivo de Packers D/ST en ligas estándar y formatos IDP. Su presencia ejercerá presión sobre el mariscal rival en la semana 12, reduciendo el techo de la ofensiva de Rams. En ligas con defensivos individuales (IDP), Parsons es una adición prioritaria que debes reclamar en el alambre de waivers o alinear si ya lo tienes.",
+      "equipo_impacto": "La defensiva de Green Bay suma una pieza de calibre All-Pro que transforma la presión al pasador. Los rivales tendrán que ajustar sus esquemas de bloqueo para contenerlo.",
+      "accion": "Reclama y alinea a Micah Parsons en ligas IDP o considera a Packers D/ST en semana 12.",
       "en": {
-        "titulo": "49ers release wide receiver Brandon Aiyuk in Week 11",
+        "titulo": "Micah Parsons cleared to make Packers debut",
         "claves": [
-          "San Francisco released Brandon Aiyuk as roster exemption ended.",
-          "Aiyuk is recovering from severe ACL and MCL knee injury.",
-          "Deebo Samuel and George Kittle main targets moving forward."
+          "Parsons cleared by doctors after nearly 1 year out.",
+          "Overcame multiple knee injuries for Week 12 return.",
+          "Will face the Rams in his 2026 debut."
         ],
-        "contexto": "The San Francisco 49ers announced the release of wide receiver Brandon Aiyuk on Monday, November 11, as his roster exemption period came to an end. Aiyuk remains sidelined recovering from a major knee injury involving his ACL and MCL. General manager John Lynch made the roster move while the receiver continues his lengthy rehabilitation process.",
-        "fantasy": "In redraft fantasy formats, Brandon Aiyuk must be dropped immediately across 100% of leagues. His departure from the 49ers solidifies Deebo Samuel and George Kittle as the top 2 passing options in this offense. Jauan Jennings gains fantasy value as the team's WR2, making him a viable flex target in 12 team PPR leagues.",
-        "equipo_impacto": "The 49ers offense clears roster uncertainty and focuses its target tree on George Kittle and Deebo Samuel. Jauan Jennings steps into a primary WR2 role for Week 11.",
-        "accion": "Drop Brandon Aiyuk from your fantasy roster immediately if he was still on your bench."
+        "contexto": "Star pass rusher Micah Parsons has been medically cleared to make his season debut for Green Bay in Week 12 against the Rams. Parsons missed nearly 1 full year recovering from multiple severe knee injuries. His return provides an instant high-impact boost to the Packers' defensive front for the stretch run.",
+        "fantasy": "Parsons' return significantly boosts the upside of Packers D/ST in standard and IDP formats. His pass-rushing presence will pressure opposing quarterbacks in Week 12, lowering the ceiling of the Rams' passing offense. In IDP leagues, Parsons is a top waiver target and an immediate starting option if available on your roster.",
+        "equipo_impacto": "Green Bay gains an All-Pro pass rusher who completely changes their defensive line dynamics. Opposing offensive lines must now adjust their protection schemes to handle his disruption.",
+        "accion": "Add and start Micah Parsons in IDP leagues or stream Packers D/ST in Week 12."
       },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "SF",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "GB",
       "equipos": [
-        "SF"
+        "GB",
+        "LAR"
       ],
-      "jugadores": [
-        "6803"
-      ],
+      "jugadores": [],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50575458/next-brandon-aiyuk-release-49ers",
-          "t": "What's next for Brandon Aiyuk after release by 49ers?"
+          "u": "https://www.espn.com/nfl/story/_/id/50577301/sources-packers-micah-parsons-cleared-return-wednesday",
+          "t": "Sources: Packers' Micah Parsons cleared to make season debut Wednesday vs. Rams"
         },
         {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50575346/sources-49ers-releasing-wr-brandon-aiyuk",
-          "t": "Sources: 49ers releasing WR Brandon Aiyuk with roster exemption ending"
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/micah-parsons-injury-update-packers-return-rams-2026/",
+          "t": "\n                        Micah Parsons injury update: Packers star cleared to make 2026 debut vs. Rams in Week 12\n                    "
         }
       ],
       "menciona": []
@@ -127,16 +139,8 @@
       "estatus": "Fuera"
     },
     {
-      "id": "8150",
-      "estatus": "Duda"
-    },
-    {
       "id": "11604",
       "estatus": "Fuera"
-    },
-    {
-      "id": "8112",
-      "estatus": "Duda"
     },
     {
       "id": "10232",
@@ -155,12 +159,20 @@
       "estatus": "Fuera"
     },
     {
-      "id": "6797",
+      "id": "8150",
       "estatus": "Duda"
     },
     {
       "id": "10236",
       "estatus": "Fuera"
+    },
+    {
+      "id": "8112",
+      "estatus": "Duda"
+    },
+    {
+      "id": "6797",
+      "estatus": "Duda"
     },
     {
       "id": "3198",
@@ -179,6 +191,10 @@
       "estatus": "Fuera"
     },
     {
+      "id": "12490",
+      "estatus": "Duda"
+    },
+    {
       "id": "12474",
       "estatus": "Fuera"
     },
@@ -187,7 +203,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12490",
+      "id": "4866",
       "estatus": "Duda"
     },
     {
@@ -195,7 +211,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4866",
+      "id": "10859",
       "estatus": "Duda"
     },
     {
@@ -211,12 +227,16 @@
       "estatus": "Fuera"
     },
     {
+      "id": "12711",
+      "estatus": "Fuera"
+    },
+    {
       "id": "11646",
       "estatus": "Duda"
     },
     {
-      "id": "12711",
-      "estatus": "Fuera"
+      "id": "5022",
+      "estatus": "Duda"
     },
     {
       "id": "13276",
@@ -225,6 +245,10 @@
     {
       "id": "8121",
       "estatus": "Fuera"
+    },
+    {
+      "id": "11786",
+      "estatus": "Duda"
     },
     {
       "id": "7083",
@@ -237,10 +261,6 @@
     {
       "id": "9756",
       "estatus": "Fuera"
-    },
-    {
-      "id": "8136",
-      "estatus": "Duda"
     },
     {
       "id": "13287",
@@ -259,14 +279,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "11786",
-      "estatus": "Duda"
-    },
-    {
-      "id": "7002",
-      "estatus": "Duda"
-    },
-    {
       "id": "11608",
       "estatus": "Fuera"
     },
@@ -276,57 +288,58 @@
     }
   ],
   "agregados": [
-    "5995",
     "10219",
-    "9482",
+    "5995",
+    "12533",
     "13269",
+    "12483",
     "12540",
     "WAS",
-    "12483",
-    "4066",
-    "8135",
+    "13317",
     "12718",
     "4147",
-    "13317",
-    "SF",
-    "11635",
-    "8134",
-    "11630",
-    "12533",
     "NYG",
-    "4993",
-    "11834",
-    "7567",
-    "12498",
+    "4066",
+    "3271",
     "TB",
-    "4663",
-    "11625"
+    "8134",
+    "11834",
+    "11635",
+    "8135",
+    "11630",
+    "12496",
+    "7567",
+    "CLE",
+    "SF",
+    "13301",
+    "5119"
   ],
   "soltados": [
-    "9482",
     "12487",
-    "9493",
-    "5012",
+    "9482",
     "13424",
+    "5012",
     "10218",
-    "5045",
-    "12492",
-    "11783",
-    "11625",
+    "9493",
     "DET",
+    "12492",
+    "5045",
+    "11625",
+    "11783",
     "12499",
-    "6130",
-    "12491",
     "9502",
-    "12718",
-    "13276",
-    "9480",
-    "13294",
-    "6650",
+    "12491",
+    "6130",
     "13414",
-    "8132",
+    "8136",
+    "9480",
     "13296",
-    "11563"
+    "11563",
+    "12718",
+    "13294",
+    "8132",
+    "11637",
+    "13276"
   ],
   "duelo": {
     "a": "Joe Burrow",

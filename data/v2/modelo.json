@@ -196,6 +196,46 @@
       },
       "cerrada": true,
       "fecha": "2026-11-17T07:56:09.757Z"
+    },
+    "11": {
+      "version": "FX v4",
+      "n": 301,
+      "maeFX": 4.26,
+      "maeRef": 4.21,
+      "porPos": {
+        "QB": {
+          "n": 22,
+          "spearmanFX": 0.143,
+          "spearmanRef": 0.149
+        },
+        "RB": {
+          "n": 63,
+          "spearmanFX": 0.76,
+          "spearmanRef": 0.774
+        },
+        "WR": {
+          "n": 101,
+          "spearmanFX": 0.431,
+          "spearmanRef": 0.454
+        },
+        "TE": {
+          "n": 63,
+          "spearmanFX": 0.499,
+          "spearmanRef": 0.523
+        },
+        "K": {
+          "n": 26,
+          "spearmanFX": -0.226,
+          "spearmanRef": -0.229
+        },
+        "DEF": {
+          "n": 26,
+          "spearmanFX": 0.574,
+          "spearmanRef": 0.58
+        }
+      },
+      "cerrada": true,
+      "fecha": "2026-11-24T05:27:12.096Z"
     }
   },
   "params": {
