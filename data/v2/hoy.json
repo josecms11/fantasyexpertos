@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-24T05:21:51.838Z",
-  "ultimaIA": "2026-11-24T05:21:51.838Z",
+  "actualizado": "2026-11-24T16:03:51.591Z",
+  "ultimaIA": "2026-11-24T16:03:51.591Z",
   "semana": 12,
   "semanaStats": 12,
   "temporada": "2026",
@@ -14,112 +14,91 @@
   ],
   "noticias": [
     {
-      "id": "n20261124052100",
-      "fecha": "2026-11-24T05:21:51.838Z",
+      "id": "n20261124160300",
+      "fecha": "2026-11-24T16:03:51.591Z",
       "semana": 12,
-      "titulo": "Jayden Daniels lidera remontada dramática de Commanders",
+      "titulo": "Chris Rodriguez Jr. emerge como opción de waiver en semana 12",
       "claves": [
-        "Daniels recorrió 64 yardas en 34 segundos.",
-        "Completó 2 pases clave con el novato Antonio Williams.",
-        "Drew Stevens definió la victoria 22-20 con gol de campo."
+        "Commanders ganaron 22-20 a Bengals en el Lunes por la Noche.",
+        "Chris Rodriguez Jr. destaca entre las adiciones más buscadas de la semana 12.",
+        "Washington busca consolidar su ataque terrestre tras la victoria reciente."
       ],
-      "contexto": "Washington sorprendió a Cincinnati 22-20 en el Lunes por la Noche tras ejecutar una serie ofensiva relámpago de 34 segundos. El mariscal Jayden Daniels conectó 2 pases profundos con el receptor novato Antonio Williams para avanzar 64 yardas. Esta jugada preparó el gol de campo del triunfo convertido por Drew Stevens. Además, Washington activó al corredor Jacory Croskey-Merritt de la lista de lesionados antes del partido.",
-      "fantasy": "Daniels reafirma su categoría de mariscal de élite con 21.9 pts proyectados para la semana 12 en el modelo FX. Es un titular indiscutible en formatos PPR y Superflex. La activación de Croskey-Merritt agrega competencia en el backfield de Commanders, lo que podría dividir los acarreos en las próximas semanas. Mantén a Daniels como tu QB1 sin importar el enfrentamiento.",
-      "equipo_impacto": "La victoria frena la racha de 5 triunfos de Cincinnati y le da a Washington 3 victorias en sus últimos 4 partidos. La ofensiva muestra capacidad para responder bajo presión extrema en momentos cruciales.",
-      "accion": "Alinea a Jayden Daniels con total confianza como mariscal titular en la semana 12.",
+      "contexto": "Tras la victoria 22-20 sobre los Bengals en el Lunes por la Noche, los Commanders de Washington dejaron actuaciones destacadas en su ataque. Aunque la ofensiva solo anotó 1 TD en todo el partido, el volumen de toques en el terreno de juego abre oportunidades importantes. Con el cierre de la temporada regular cerca en la semana 12, los corredores del equipo comienzan a ganar un rol con mayor protagonismo.",
+      "fantasy": "Chris Rodriguez Jr. se coloca como uno de los objetivos prioritarios en la agencia libre para la semana 12. En formatos PPR y ligas profundas de 12 o 14 equipos, sumar volumen terrestre es vital. Ante la exigencia de la recta final, su perfil como corredor de poder le da valor como RB3 o flex de emergencia si buscas cubrir ausencias en tu alineación titular.",
+      "equipo_impacto": "El ataque de Washington necesita balancear las repeticiones para proteger a su mariscal de campo. La presencia de Chris Rodriguez Jr. ayuda a sostener sostenidas series ofensivas y consumir reloj, quitando presión en situaciones de gol de campo y tercera oportunidad.",
+      "accion": "Invierte entre 5% y 8% de tu presupuesto FAAB para reclamar a Chris Rodriguez Jr. esta semana 12.",
       "en": {
-        "titulo": "Jayden Daniels leads dramatic Commanders comeback",
+        "titulo": "Chris Rodriguez Jr. emerges as Week 12 waiver target",
         "claves": [
-          "Daniels drove 64 yards in 34 seconds.",
-          "Completed 2 big passes to rookie Antonio Williams.",
-          "Drew Stevens kicked game-winning field goal for 22-20 victory."
+          "Commanders secured a 22-20 MNF victory over the Bengals.",
+          "Chris Rodriguez Jr. becomes a top waiver target for Week 12.",
+          "Washington looks to stabilize its ground game moving forward."
         ],
-        "contexto": "Washington stunned Cincinnati 22-20 on Monday Night Football following a lightning-fast 34-second drive. Quarterback Jayden Daniels hit rookie receiver Antonio Williams on 2 deep passes to gain 64 yards. That set up rookie kicker Drew Stevens for the game-winning field goal. Additionally, Washington activated running back Jacory Croskey-Merritt from injured reserve prior to kickoff.",
-        "fantasy": "Daniels solidifies his status as a top fantasy option with 21.9 projected pts for Week 12 in the FX model. He remains an automatic start in PPR and Superflex leagues. Croskey-Merritt's return adds depth to Washington's backfield, potentially shifting touches in coming weeks. Keep Daniels locked into your QB1 slot regardless of matchup.",
-        "equipo_impacto": "The victory snapped Cincinnati's 5-game winning streak and gave Washington 3 wins in their last 4 games. The Commanders' offense demonstrated high-level execution under pressure in critical moments.",
-        "accion": "Start Jayden Daniels as your QB1 with full confidence for Week 12."
+        "contexto": "Following their 22-20 victory over the Bengals on Monday Night Football, the Washington Commanders produced several notable offensive performances. Even though the team scored only 1 TD during the entire game, the workload distribution creates valuable fantasy opportunities. As Week 12 arrives, the ground attack is gaining traction, opening up room for backfield contributors to stake their claim in the offense.",
+        "fantasy": "Chris Rodriguez Jr. stands out as a high-priority waiver wire addition heading into Week 12. In PPR formats and deeper 12-team or 14-team leagues, securing reliable rushing volume is essential. Given the demands of the fantasy stretch run, his physical running style offers solid RB3 or emergency flex value for fantasy managers dealing with lineup gaps.",
+        "equipo_impacto": "Washington's offense relies on a balanced rushing attack to sustain long drives and protect the quarterback. Adding consistent carries from Chris Rodriguez Jr. helps control game tempo and relieves pressure during critical third-down and red-zone situations.",
+        "accion": "Spend 5% to 8% of your FAAB budget to claim Chris Rodriguez Jr. for Week 12."
       },
-      "etiqueta": "START",
+      "etiqueta": "WAIVER",
       "impacto": "SUBE",
       "equipo": "WAS",
       "equipos": [
         "WAS",
-        "CIN"
+        "JAX"
       ],
       "jugadores": [
-        "11566",
-        "13301",
-        "13968",
-        "12533"
+        "10219"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "http://www.espn.com/nfl/recap?gameId=401873078",
-          "t": "Jayden Daniels rallies Commanders in final seconds to set up winning kick in 22-20 win over Bengals"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50579688/commanders-storm-back-stun-bengals-22-20-mnf",
-          "t": "Commanders storm back, stun Bengals 22-20 on MNF"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50573995/2026-nfl-week-11-washington-commanders-cincinnati-bengals",
-          "t": "Commanders building momentum, halt Bengals' 5-game win streak"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50576561/commanders-rb-jacory-croskey-merritt-activated-ir",
-          "t": "Commanders RB Jacory Croskey-Merritt activated from IR ahead of MNF"
+          "u": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
+          "t": "Fantasy buzz: Two Commanders to pick up coming off MNF win"
         }
       ],
       "menciona": []
     },
     {
-      "id": "n20261124052101",
-      "fecha": "2026-11-24T05:21:51.838Z",
+      "id": "n20261124160301",
+      "fecha": "2026-11-24T16:03:51.591Z",
       "semana": 12,
-      "titulo": "Micah Parsons recibe alta médica para debutar con Packers",
+      "titulo": "Colston Loveland proyecta gran impacto para la semana 12",
       "claves": [
-        "Parsons recibe alta médica tras casi 1 año fuera.",
-        "Superó múltiples lesiones de rodilla para volver en semana 12.",
-        "Enfrentará a Rams en su debut de 2026."
+        "Colston Loveland destaca entre las predicciones audaces de la semana 12.",
+        "El ala cerrada proyecta 12.4 pts PPR según el modelo FX.",
+        "Su participación en el juego de Acción de Gracias incrementa su valor."
       ],
-      "contexto": "El cazador de mariscales Micah Parsons fue autorizado por los médicos para realizar su debut de la temporada con Green Bay en la semana 12 contra Rams. Parsons se perdió casi 1 año completo debido a rehabilitaciones por múltiples lesiones graves en la rodilla. Su adición fortalece de forma inmediata la línea defensiva de Packers para el tramo final del torneo.",
-      "fantasy": "El regreso de Parsons eleva significativamente el atractivo de Packers D/ST en ligas estándar y formatos IDP. Su presencia ejercerá presión sobre el mariscal rival en la semana 12, reduciendo el techo de la ofensiva de Rams. En ligas con defensivos individuales (IDP), Parsons es una adición prioritaria que debes reclamar en el alambre de waivers o alinear si ya lo tienes.",
-      "equipo_impacto": "La defensiva de Green Bay suma una pieza de calibre All-Pro que transforma la presión al pasador. Los rivales tendrán que ajustar sus esquemas de bloqueo para contenerlo.",
-      "accion": "Reclama y alinea a Micah Parsons en ligas IDP o considera a Packers D/ST en semana 12.",
+      "contexto": "Rumbo a los tradicionales encuentros de Acción de Gracias en la semana 12, las proyecciones colocan a Colston Loveland como una de las sorpresas ofensivas más importantes. El ala cerrada ha ganado la confianza de su cuerpo técnico, convirtiéndose en una válvula de escape constante. Con la carga de partidos decisivos en puerta, su involucramiento en el plan de juego promete darle un rol protagónico en el ataque.",
+      "fantasy": "El modelo FX proyecta a Colston Loveland con 12.4 pts en formato PPR para la semana 12, situándolo entre los 5 mejores alas cerradas de la jornada. En ligas de 10 y 12 equipos, su volumen en zona roja lo convierte en un titular indiscutible de TE1. Si necesitas cubrir ausencias o buscas techo de puntos, Loveland ofrece un suelo muy seguro.",
+      "equipo_impacto": "La consolidación de Colston Loveland abre espacios en el centro del campo, liberando de doble cobertura a los receptores abiertos. Su capacidad para ganar yardas tras la recepción le permite al equipo mantener series ofensivas largas y eficientes.",
+      "accion": "Alinea a Colston Loveland como tu TE1 titular sin dudarlo para la semana 12.",
       "en": {
-        "titulo": "Micah Parsons cleared to make Packers debut",
+        "titulo": "Colston Loveland set for strong Week 12 performance",
         "claves": [
-          "Parsons cleared by doctors after nearly 1 year out.",
-          "Overcame multiple knee injuries for Week 12 return.",
-          "Will face the Rams in his 2026 debut."
+          "Colston Loveland emerges as a bold Week 12 fantasy sleeper.",
+          "The tight end is projected for 12.4 PPR pts by FX.",
+          "His Thanksgiving game role significantly boosts his fantasy stock."
         ],
-        "contexto": "Star pass rusher Micah Parsons has been medically cleared to make his season debut for Green Bay in Week 12 against the Rams. Parsons missed nearly 1 full year recovering from multiple severe knee injuries. His return provides an instant high-impact boost to the Packers' defensive front for the stretch run.",
-        "fantasy": "Parsons' return significantly boosts the upside of Packers D/ST in standard and IDP formats. His pass-rushing presence will pressure opposing quarterbacks in Week 12, lowering the ceiling of the Rams' passing offense. In IDP leagues, Parsons is a top waiver target and an immediate starting option if available on your roster.",
-        "equipo_impacto": "Green Bay gains an All-Pro pass rusher who completely changes their defensive line dynamics. Opposing offensive lines must now adjust their protection schemes to handle his disruption.",
-        "accion": "Add and start Micah Parsons in IDP leagues or stream Packers D/ST in Week 12."
+        "contexto": "Heading into the traditional Thanksgiving slate in Week 12, projections highlight Colston Loveland as one of the week's most intriguing offensive weapons. The tight end has earned increased trust within the coaching staff, developing into a reliable safety valve. With critical matchup implications on the line, his expanding role in the game plan positions him for heavy target volume.",
+        "fantasy": "The FX model projects Colston Loveland for 12.4 PPR pts in Week 12, ranking him among the top 5 tight ends for the slate. In 10-team and 12-team leagues, his red-zone targets make him a confident TE1 start. If you need tight end production or a high ceiling, Loveland offers both stability and upside.",
+        "equipo_impacto": "Colston Loveland's emergence creates middle-of-the-field space, pulling defensive attention away from wide receivers. His run-after-catch ability helps sustain long drives, keeping the offensive rhythm fluid throughout the contest.",
+        "accion": "Lock Colston Loveland into your fantasy lineups as a high-end TE1 for Week 12."
       },
-      "etiqueta": "WAIVER",
+      "etiqueta": "TENDENCIA",
       "impacto": "SUBE",
-      "equipo": "GB",
+      "equipo": "DET",
       "equipos": [
-        "GB",
-        "LAR"
+        "DET",
+        "CHI"
       ],
-      "jugadores": [],
+      "jugadores": [
+        "12517"
+      ],
       "fuentes": [
         {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50577301/sources-packers-micah-parsons-cleared-return-wednesday",
-          "t": "Sources: Packers' Micah Parsons cleared to make season debut Wednesday vs. Rams"
-        },
-        {
           "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/micah-parsons-injury-update-packers-return-rams-2026/",
-          "t": "\n                        Micah Parsons injury update: Packers star cleared to make 2026 debut vs. Rams in Week 12\n                    "
+          "u": "https://www.cbssports.com/nfl/news/nfl-week-12-predictions-colston-loveland-thanksgiving/",
+          "t": "\n                        It wouldn&#039;t shock me if ... for NFL Week 12: Colston Loveland feasts on Thanksgiving, Browns RB shines\n       "
         }
       ],
       "menciona": []
@@ -159,7 +138,7 @@
       "estatus": "Fuera"
     },
     {
-      "id": "8150",
+      "id": "12490",
       "estatus": "Duda"
     },
     {
@@ -167,11 +146,15 @@
       "estatus": "Fuera"
     },
     {
-      "id": "8112",
+      "id": "6797",
       "estatus": "Duda"
     },
     {
-      "id": "6797",
+      "id": "8150",
+      "estatus": "Duda"
+    },
+    {
+      "id": "8112",
       "estatus": "Duda"
     },
     {
@@ -187,12 +170,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4881",
-      "estatus": "Fuera"
+      "id": "4866",
+      "estatus": "Duda"
     },
     {
-      "id": "12490",
-      "estatus": "Duda"
+      "id": "4881",
+      "estatus": "Fuera"
     },
     {
       "id": "12474",
@@ -203,16 +186,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4866",
+      "id": "10859",
       "estatus": "Duda"
     },
     {
       "id": "11435",
       "estatus": "Fuera"
-    },
-    {
-      "id": "10859",
-      "estatus": "Duda"
     },
     {
       "id": "4983",
@@ -227,12 +206,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12711",
-      "estatus": "Fuera"
-    },
-    {
       "id": "11646",
       "estatus": "Duda"
+    },
+    {
+      "id": "12711",
+      "estatus": "Fuera"
     },
     {
       "id": "5022",
@@ -289,57 +268,57 @@
   ],
   "agregados": [
     "10219",
+    "WAS",
     "5995",
     "12533",
+    "NYG",
+    "12540",
     "13269",
     "12483",
-    "12540",
-    "WAS",
+    "CLE",
     "13317",
+    "3271",
     "12718",
     "4147",
-    "NYG",
-    "4066",
-    "3271",
+    "4017",
     "TB",
-    "8134",
-    "11834",
-    "11635",
-    "8135",
-    "11630",
     "12496",
-    "7567",
-    "CLE",
-    "SF",
+    "4066",
+    "12469",
     "13301",
-    "5119"
+    "5119",
+    "11834",
+    "13298",
+    "8134",
+    "11635",
+    "NE"
   ],
   "soltados": [
-    "12487",
     "9482",
     "13424",
+    "DET",
+    "12487",
     "5012",
     "10218",
-    "9493",
-    "DET",
     "12492",
-    "5045",
-    "11625",
-    "11783",
     "12499",
+    "11625",
+    "5045",
+    "11783",
     "9502",
-    "12491",
-    "6130",
-    "13414",
-    "8136",
-    "9480",
-    "13296",
+    "9493",
     "11563",
-    "12718",
-    "13294",
-    "8132",
+    "8136",
+    "6130",
+    "12491",
+    "9480",
+    "13414",
+    "2505",
+    "5906",
     "11637",
-    "13276"
+    "BUF",
+    "13296",
+    "6650"
   ],
   "duelo": {
     "a": "Joe Burrow",
