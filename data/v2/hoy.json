@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-25T00:35:45.187Z",
-  "ultimaIA": "2026-11-25T00:35:45.187Z",
+  "actualizado": "2026-11-25T09:07:48.660Z",
+  "ultimaIA": "2026-11-25T09:07:48.660Z",
   "semana": 12,
   "semanaStats": 12,
   "temporada": "2026",
@@ -14,95 +14,57 @@
   ],
   "noticias": [
     {
-      "id": "n20261125003500",
-      "fecha": "2026-11-25T00:35:45.187Z",
+      "id": "n20261125090700",
+      "fecha": "2026-11-25T09:07:48.660Z",
       "semana": 12,
-      "titulo": "D'Andre Swift mantiene la titularidad tras sus acarreos",
+      "titulo": "Steelers sientan a Aaron Rodgers por Mason Rudolph",
       "claves": [
-        "Ben Johnson mantendrá la carga de trabajo de D'Andre Swift.",
-        "El corredor cometió un balón suelto clave en el 4.º cuarto.",
-        "Su volumen se mantiene firme de cara a la semana 12."
+        "Mike McCarthy sentó a Aaron Rodgers para la semana 12.",
+        "Mason Rudolph asumirá la titularidad del equipo ante Broncos.",
+        "Pittsburgh suma 2 derrotas seguidas tras iniciar con 6-2."
       ],
-      "contexto": "El entrenador Ben Johnson confirmó que no reducirá el volumen de D'Andre Swift pese al balón suelto que cometió en el 4.º cuarto ante Saints. El cuerpo técnico mantendrá la confianza en el corredor estelar de Chicago, asegurando que su castigo en la banca no se extenderá durante los próximos partidos de la temporada.",
-      "fantasy": "Noticia dorada para dueños de D'Andre Swift en formatos PPR y estándar. Al no perder toques en la zona roja ni acarreos de 1.er orden, se consolida como un RB2 sólido para la semana 12. No lo remates en intercambios ni lo envíes a la banca; mantén su estatus titular de cara a la recta final de la liga.",
-      "equipo_impacto": "Chicago mantiene la estabilidad en su ataque terrestre. Sin cambios drásticos en la rotación de acarreos, el mariscal de campo y los receptores mantendrán el equilibrio ofensivo para mover las cadenas en la semana 12.",
-      "accion": "Mantén a D'Andre Swift como tu RB2 titular en la semana 12.",
+      "contexto": "Los Steelers tomaron una decisión drástica para la semana 12. El entrenador Mike McCarthy decidió mandar al banquillo al mariscal veterano Aaron Rodgers tras acumular 2 derrotas consecutivas. El equipo había comenzado la campaña con marca de 6-2, pero el bajo rendimiento ofensivo obligó al cuerpo técnico a darle el balón al mariscal de respaldo Mason Rudolph para enfrentar a los Broncos.",
+      "fantasy": "El valor fantasy de Aaron Rodgers cae a 0 puntos mientras esté en la banca, por lo que debes cortarlo o enviarlo a la banca de inmediato en ligas de 1 QB. Mason Rudolph surge como opción desesperada de waiver únicamente en formatos Superflex o ligas de 2 QB. Este movimiento frena el volumen aéreo y genera incertidumbre total en las opciones receptoras de Pittsburgh para la semana 12.",
+      "equipo_impacto": "El ajuste beneficia al juego terrestre si la ofensiva busca proteger a Mason Rudolph. Los receptores pierden consistencia ante el cambio en la bolsa de protección y la falta de química en el campo previo al juego.",
+      "accion": "Manda a Aaron Rodgers a la banca en todas tus ligas y busca mejores alternativas en el waiver.",
       "en": {
-        "titulo": "D'Andre Swift keeps starting role despite fourth quarter fumble",
+        "titulo": "Steelers bench Aaron Rodgers for Mason Rudolph",
         "claves": [
-          "Ben Johnson will maintain D'Andre Swift's workload.",
-          "The running back lost a key fumble in the 4th quarter.",
-          "His volume remains secure heading into Week 12."
+          "Mike McCarthy benched Aaron Rodgers ahead of Week 12.",
+          "Mason Rudolph takes over as starting QB against Broncos.",
+          "Pittsburgh dropped 2 straight games after starting 6-2."
         ],
-        "contexto": "Head coach Ben Johnson confirmed he has no plans to reduce D'Andre Swift's workload despite his 4th quarter fumble against the Saints. Chicago's coaching staff remains confident in their lead running back, ensuring his bench time won't extend into upcoming matchups this season.",
-        "fantasy": "Excellent news for D'Andre Swift managers in PPR and standard formats. Keeping his red-zone touches and primary carry volume locks him in as a solid RB2 for Week 12. Do not panic-trade or bench him; keep him in your starting lineup for the fantasy stretch run.",
-        "equipo_impacto": "Chicago maintains stability in its rushing attack. With no major changes in the backfield rotation, the quarterback and receivers keep their balanced offensive ecosystem to move the chains in Week 12.",
-        "accion": "Keep D'Andre Swift locked into your lineup as an RB2 in Week 12."
+        "contexto": "The Steelers made a major quarterback change ahead of Week 12. Head coach Mike McCarthy decided to bench veteran passer Aaron Rodgers following 2 consecutive losses. Pittsburgh opened the campaign with a strong 6-2 record, but recent offensive struggles forced the coaching staff to name backup quarterback Mason Rudolph as the starter for their upcoming matchup against the Broncos.",
+        "fantasy": "Aaron Rodgers loses all fantasy appeal while sitting on the bench, making him an easy drop in standard 1 QB leagues. Mason Rudolph becomes a emergency waiver option strictly for Superflex and 2 QB setups. This decision lowers the overall passing upside of the offense, bringing heavy volatility to all Pittsburgh pass catchers heading into Week 12 fantasy lineups.",
+        "equipo_impacto": "The offensive scheme may shift toward a heavier ground attack to protect Mason Rudolph. Pittsburgh receivers face a lower floor and reduced efficiency until the new starter establishes rhythm in the passing game.",
+        "accion": "Bench Aaron Rodgers in all formats and look for QB streamer options on waivers."
       },
       "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "CHI",
-      "equipos": [
-        "CHI",
-        "NO"
-      ],
-      "jugadores": [
-        "6790"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50587324/bears-johnson-stick-swift-role-bears-run-game",
-          "t": "Bears' Johnson has no plan to forgo Swift's role in run game despite costly fumbles"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261125003501",
-      "fecha": "2026-11-25T00:35:45.187Z",
-      "semana": 12,
-      "titulo": "Broncos suspenden 1 partido al corredor J.K. Dobbins",
-      "claves": [
-        "Denver suspendió 1 juego a J.K. Dobbins por conducta perjudicial.",
-        "Sean Payton confirmó que el equipo usará su profundidad de corredores.",
-        "Dobbins queda descartado de forma oficial para la semana 12."
-      ],
-      "contexto": "Los Denver Broncos sancionaron al corredor J.K. Dobbins con 1 encuentro fuera por conducta perjudicial contra el equipo. El entrenador Sean Payton declaró que la franquicia echará mano de la profundidad en el backfield para suplir la baja del corredor en el enfrentamiento de la semana 12, ajustando la rotación de acarreos.",
-      "fantasy": "Dobbins debe ir directo al banquillo en la semana 12 tras confirmarse su suspensión de 1 partido. Su ausencia abre oportunidades inmediatas para los corredores suplentes en el alambre de waivers en ligas profundas. Ajusta tus alineaciones si necesitabas su producción para encarar la recta decisiva de tu temporada.",
-      "equipo_impacto": "Sean Payton reconfigurará el ataque terrestre de Denver en la semana 12. La ofensiva dependerá de la rotación entre sus corredores de reserva para sostener el juego por tierra y quitarle presión a la bolsa de protección.",
-      "accion": "Mueve a J.K. Dobbins a tu banca durante la semana 12.",
-      "en": {
-        "titulo": "Broncos suspend running back J.K. Dobbins for 1 game",
-        "claves": [
-          "Denver suspended J.K. Dobbins 1 game for team conduct.",
-          "Sean Payton confirmed relying on running back depth.",
-          "Dobbins is officially ruled out for Week 12."
-        ],
-        "contexto": "The Denver Broncos suspended running back J.K. Dobbins for 1 game due to conduct detrimental to the team. Head coach Sean Payton stated that the franchise will lean on their backfield depth to cover the starter's absence during their Week 12 matchup, restructuring the rushing rotation.",
-        "fantasy": "Dobbins belongs straight on your bench for Week 12 following his 1-game suspension. His absence creates immediate opportunities for backup running backs on waivers in deeper leagues. Adjust your lineups right away if you relied on his fantasy production for your matchup.",
-        "equipo_impacto": "Sean Payton will reconfigure Denver's rushing attack for Week 12. The offense will rely on a committee of backup running backs to sustain the ground game and relieve pressure on the passing attack.",
-        "accion": "Move J.K. Dobbins to your bench for Week 12."
-      },
-      "etiqueta": "SIT",
       "impacto": "BAJA",
-      "equipo": "DEN",
+      "equipo": "PIT",
       "equipos": [
+        "PIT",
         "DEN"
       ],
       "jugadores": [
-        "6806"
+        "96",
+        "4972"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/video/clip/_/id/50586791/depth-rb-wake-jk-dobbins-suspension",
-          "t": "Sean Payton: We'll have depth at RB in wake of J.K. Dobbins suspension"
+          "u": "https://www.espn.com/nfl/story/_/id/50589757/steelers-bench-struggling-qb-aaron-rodgers-start-mason-rudolph",
+          "t": "Steelers bench struggling QB Aaron Rodgers, to start Mason Rudolph"
         },
         {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50586087/broncos-payton-says-rb-dobbins-suspended-one-game",
-          "t": "Broncos' Sean Payton: J.K. Dobbins suspended one game for detrimental conduct"
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/steelers-bench-aaron-rodgers-make-qb-inactive-friday-broncos/",
+          "t": "\n                        Is this how it ends? Steelers bench Aaron Rodgers, turn to Mason Rudolph to start vs. Broncos\n                    "
+        },
+        {
+          "m": "Yahoo Sports",
+          "u": "https://sports.yahoo.com/nfl/article/aaron-rodgers-benching-marks-new-era-for-the-steelers-in-so-many-ways-081632219.html",
+          "t": "Aaron Rodgers&#39; benching marks new era for the Steelers in so many ways"
         }
       ],
       "menciona": []
@@ -110,19 +72,11 @@
   ],
   "lesionados": [
     {
-      "id": "8151",
-      "estatus": "Fuera"
-    },
-    {
       "id": "11564",
       "estatus": "Fuera"
     },
     {
       "id": "9493",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "11604",
       "estatus": "Fuera"
     },
     {
@@ -134,23 +88,19 @@
       "estatus": "Fuera"
     },
     {
-      "id": "2133",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "4943",
-      "estatus": "Fuera"
+      "id": "8151",
+      "estatus": "Duda"
     },
     {
       "id": "12490",
       "estatus": "Duda"
     },
     {
-      "id": "10236",
+      "id": "2133",
       "estatus": "Fuera"
     },
     {
-      "id": "8150",
+      "id": "11604",
       "estatus": "Duda"
     },
     {
@@ -158,11 +108,11 @@
       "estatus": "Duda"
     },
     {
-      "id": "8112",
+      "id": "4943",
       "estatus": "Duda"
     },
     {
-      "id": "3198",
+      "id": "5849",
       "estatus": "Duda"
     },
     {
@@ -170,32 +120,20 @@
       "estatus": "Fuera"
     },
     {
-      "id": "8126",
-      "estatus": "Fuera"
+      "id": "5850",
+      "estatus": "Duda"
     },
     {
-      "id": "4866",
-      "estatus": "Duda"
+      "id": "8126",
+      "estatus": "Fuera"
     },
     {
       "id": "4881",
       "estatus": "Fuera"
     },
     {
-      "id": "12474",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "5849",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "10859",
+      "id": "5859",
       "estatus": "Duda"
-    },
-    {
-      "id": "11435",
-      "estatus": "Fuera"
     },
     {
       "id": "12489",
@@ -206,39 +144,27 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4983",
-      "estatus": "Duda"
-    },
-    {
-      "id": "11646",
-      "estatus": "Duda"
+      "id": "12711",
+      "estatus": "Fuera"
     },
     {
       "id": "13346",
       "estatus": "Duda"
     },
     {
-      "id": "12711",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "5022",
-      "estatus": "Duda"
-    },
-    {
-      "id": "13276",
-      "estatus": "Fuera"
-    },
-    {
       "id": "6806",
       "estatus": "Fuera"
+    },
+    {
+      "id": "13272",
+      "estatus": "Duda"
     },
     {
       "id": "8121",
       "estatus": "Fuera"
     },
     {
-      "id": "11786",
+      "id": "13276",
       "estatus": "Duda"
     },
     {
@@ -246,16 +172,12 @@
       "estatus": "Fuera"
     },
     {
-      "id": "8110",
+      "id": "13287",
       "estatus": "Fuera"
     },
     {
       "id": "9756",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "13287",
-      "estatus": "Fuera"
+      "estatus": "Duda"
     },
     {
       "id": "9486",
@@ -268,6 +190,46 @@
     {
       "id": "4454",
       "estatus": "Fuera"
+    },
+    {
+      "id": "12474",
+      "estatus": "Duda"
+    },
+    {
+      "id": "13424",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "10236",
+      "estatus": "Duda"
+    },
+    {
+      "id": "8110",
+      "estatus": "Duda"
+    },
+    {
+      "id": "5927",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "8188",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "7002",
+      "estatus": "Duda"
+    },
+    {
+      "id": "12529",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "11577",
+      "estatus": "Duda"
+    },
+    {
+      "id": "9504",
+      "estatus": "Duda"
     }
   ],
   "agregados": [
@@ -275,26 +237,25 @@
     "WAS",
     "NYG",
     "5995",
-    "12533",
     "12540",
+    "12533",
     "CLE",
-    "3271",
     "12718",
-    "13317",
-    "13269",
+    "3271",
     "4017",
-    "12483",
+    "13317",
     "12496",
+    "13269",
+    "12483",
     "4147",
     "12469",
     "TB",
+    "NE",
     "4066",
     "13301",
     "13298",
     "5119",
-    "NE",
     "13276",
-    "11834",
     "7611"
   ],
   "soltados": [
@@ -303,26 +264,26 @@
     "13424",
     "5012",
     "12492",
-    "12487",
-    "10218",
     "12499",
     "11625",
-    "5045",
-    "11783",
+    "10218",
     "9502",
+    "12487",
+    "11783",
+    "5045",
+    "96",
     "9493",
     "11563",
     "6130",
     "8136",
     "12491",
-    "9480",
     "2505",
-    "BUF",
     "PIT",
+    "9480",
     "5906",
+    "BUF",
     "11637",
-    "13414",
-    "12185"
+    "4035"
   ],
   "duelo": {
     "a": "Ja'Marr Chase",
