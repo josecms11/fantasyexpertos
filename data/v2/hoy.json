@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-24T16:03:51.591Z",
-  "ultimaIA": "2026-11-24T16:03:51.591Z",
+  "actualizado": "2026-11-25T00:35:45.187Z",
+  "ultimaIA": "2026-11-25T00:35:45.187Z",
   "semana": 12,
   "semanaStats": 12,
   "temporada": "2026",
@@ -14,91 +14,95 @@
   ],
   "noticias": [
     {
-      "id": "n20261124160300",
-      "fecha": "2026-11-24T16:03:51.591Z",
+      "id": "n20261125003500",
+      "fecha": "2026-11-25T00:35:45.187Z",
       "semana": 12,
-      "titulo": "Chris Rodriguez Jr. emerge como opción de waiver en semana 12",
+      "titulo": "D'Andre Swift mantiene la titularidad tras sus acarreos",
       "claves": [
-        "Commanders ganaron 22-20 a Bengals en el Lunes por la Noche.",
-        "Chris Rodriguez Jr. destaca entre las adiciones más buscadas de la semana 12.",
-        "Washington busca consolidar su ataque terrestre tras la victoria reciente."
+        "Ben Johnson mantendrá la carga de trabajo de D'Andre Swift.",
+        "El corredor cometió un balón suelto clave en el 4.º cuarto.",
+        "Su volumen se mantiene firme de cara a la semana 12."
       ],
-      "contexto": "Tras la victoria 22-20 sobre los Bengals en el Lunes por la Noche, los Commanders de Washington dejaron actuaciones destacadas en su ataque. Aunque la ofensiva solo anotó 1 TD en todo el partido, el volumen de toques en el terreno de juego abre oportunidades importantes. Con el cierre de la temporada regular cerca en la semana 12, los corredores del equipo comienzan a ganar un rol con mayor protagonismo.",
-      "fantasy": "Chris Rodriguez Jr. se coloca como uno de los objetivos prioritarios en la agencia libre para la semana 12. En formatos PPR y ligas profundas de 12 o 14 equipos, sumar volumen terrestre es vital. Ante la exigencia de la recta final, su perfil como corredor de poder le da valor como RB3 o flex de emergencia si buscas cubrir ausencias en tu alineación titular.",
-      "equipo_impacto": "El ataque de Washington necesita balancear las repeticiones para proteger a su mariscal de campo. La presencia de Chris Rodriguez Jr. ayuda a sostener sostenidas series ofensivas y consumir reloj, quitando presión en situaciones de gol de campo y tercera oportunidad.",
-      "accion": "Invierte entre 5% y 8% de tu presupuesto FAAB para reclamar a Chris Rodriguez Jr. esta semana 12.",
+      "contexto": "El entrenador Ben Johnson confirmó que no reducirá el volumen de D'Andre Swift pese al balón suelto que cometió en el 4.º cuarto ante Saints. El cuerpo técnico mantendrá la confianza en el corredor estelar de Chicago, asegurando que su castigo en la banca no se extenderá durante los próximos partidos de la temporada.",
+      "fantasy": "Noticia dorada para dueños de D'Andre Swift en formatos PPR y estándar. Al no perder toques en la zona roja ni acarreos de 1.er orden, se consolida como un RB2 sólido para la semana 12. No lo remates en intercambios ni lo envíes a la banca; mantén su estatus titular de cara a la recta final de la liga.",
+      "equipo_impacto": "Chicago mantiene la estabilidad en su ataque terrestre. Sin cambios drásticos en la rotación de acarreos, el mariscal de campo y los receptores mantendrán el equilibrio ofensivo para mover las cadenas en la semana 12.",
+      "accion": "Mantén a D'Andre Swift como tu RB2 titular en la semana 12.",
       "en": {
-        "titulo": "Chris Rodriguez Jr. emerges as Week 12 waiver target",
+        "titulo": "D'Andre Swift keeps starting role despite fourth quarter fumble",
         "claves": [
-          "Commanders secured a 22-20 MNF victory over the Bengals.",
-          "Chris Rodriguez Jr. becomes a top waiver target for Week 12.",
-          "Washington looks to stabilize its ground game moving forward."
+          "Ben Johnson will maintain D'Andre Swift's workload.",
+          "The running back lost a key fumble in the 4th quarter.",
+          "His volume remains secure heading into Week 12."
         ],
-        "contexto": "Following their 22-20 victory over the Bengals on Monday Night Football, the Washington Commanders produced several notable offensive performances. Even though the team scored only 1 TD during the entire game, the workload distribution creates valuable fantasy opportunities. As Week 12 arrives, the ground attack is gaining traction, opening up room for backfield contributors to stake their claim in the offense.",
-        "fantasy": "Chris Rodriguez Jr. stands out as a high-priority waiver wire addition heading into Week 12. In PPR formats and deeper 12-team or 14-team leagues, securing reliable rushing volume is essential. Given the demands of the fantasy stretch run, his physical running style offers solid RB3 or emergency flex value for fantasy managers dealing with lineup gaps.",
-        "equipo_impacto": "Washington's offense relies on a balanced rushing attack to sustain long drives and protect the quarterback. Adding consistent carries from Chris Rodriguez Jr. helps control game tempo and relieves pressure during critical third-down and red-zone situations.",
-        "accion": "Spend 5% to 8% of your FAAB budget to claim Chris Rodriguez Jr. for Week 12."
+        "contexto": "Head coach Ben Johnson confirmed he has no plans to reduce D'Andre Swift's workload despite his 4th quarter fumble against the Saints. Chicago's coaching staff remains confident in their lead running back, ensuring his bench time won't extend into upcoming matchups this season.",
+        "fantasy": "Excellent news for D'Andre Swift managers in PPR and standard formats. Keeping his red-zone touches and primary carry volume locks him in as a solid RB2 for Week 12. Do not panic-trade or bench him; keep him in your starting lineup for the fantasy stretch run.",
+        "equipo_impacto": "Chicago maintains stability in its rushing attack. With no major changes in the backfield rotation, the quarterback and receivers keep their balanced offensive ecosystem to move the chains in Week 12.",
+        "accion": "Keep D'Andre Swift locked into your lineup as an RB2 in Week 12."
       },
-      "etiqueta": "WAIVER",
+      "etiqueta": "TENDENCIA",
       "impacto": "SUBE",
-      "equipo": "WAS",
+      "equipo": "CHI",
       "equipos": [
-        "WAS",
-        "JAX"
+        "CHI",
+        "NO"
       ],
       "jugadores": [
-        "10219"
+        "6790"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-          "t": "Fantasy buzz: Two Commanders to pick up coming off MNF win"
+          "u": "https://www.espn.com/nfl/story/_/id/50587324/bears-johnson-stick-swift-role-bears-run-game",
+          "t": "Bears' Johnson has no plan to forgo Swift's role in run game despite costly fumbles"
         }
       ],
       "menciona": []
     },
     {
-      "id": "n20261124160301",
-      "fecha": "2026-11-24T16:03:51.591Z",
+      "id": "n20261125003501",
+      "fecha": "2026-11-25T00:35:45.187Z",
       "semana": 12,
-      "titulo": "Colston Loveland proyecta gran impacto para la semana 12",
+      "titulo": "Broncos suspenden 1 partido al corredor J.K. Dobbins",
       "claves": [
-        "Colston Loveland destaca entre las predicciones audaces de la semana 12.",
-        "El ala cerrada proyecta 12.4 pts PPR según el modelo FX.",
-        "Su participación en el juego de Acción de Gracias incrementa su valor."
+        "Denver suspendió 1 juego a J.K. Dobbins por conducta perjudicial.",
+        "Sean Payton confirmó que el equipo usará su profundidad de corredores.",
+        "Dobbins queda descartado de forma oficial para la semana 12."
       ],
-      "contexto": "Rumbo a los tradicionales encuentros de Acción de Gracias en la semana 12, las proyecciones colocan a Colston Loveland como una de las sorpresas ofensivas más importantes. El ala cerrada ha ganado la confianza de su cuerpo técnico, convirtiéndose en una válvula de escape constante. Con la carga de partidos decisivos en puerta, su involucramiento en el plan de juego promete darle un rol protagónico en el ataque.",
-      "fantasy": "El modelo FX proyecta a Colston Loveland con 12.4 pts en formato PPR para la semana 12, situándolo entre los 5 mejores alas cerradas de la jornada. En ligas de 10 y 12 equipos, su volumen en zona roja lo convierte en un titular indiscutible de TE1. Si necesitas cubrir ausencias o buscas techo de puntos, Loveland ofrece un suelo muy seguro.",
-      "equipo_impacto": "La consolidación de Colston Loveland abre espacios en el centro del campo, liberando de doble cobertura a los receptores abiertos. Su capacidad para ganar yardas tras la recepción le permite al equipo mantener series ofensivas largas y eficientes.",
-      "accion": "Alinea a Colston Loveland como tu TE1 titular sin dudarlo para la semana 12.",
+      "contexto": "Los Denver Broncos sancionaron al corredor J.K. Dobbins con 1 encuentro fuera por conducta perjudicial contra el equipo. El entrenador Sean Payton declaró que la franquicia echará mano de la profundidad en el backfield para suplir la baja del corredor en el enfrentamiento de la semana 12, ajustando la rotación de acarreos.",
+      "fantasy": "Dobbins debe ir directo al banquillo en la semana 12 tras confirmarse su suspensión de 1 partido. Su ausencia abre oportunidades inmediatas para los corredores suplentes en el alambre de waivers en ligas profundas. Ajusta tus alineaciones si necesitabas su producción para encarar la recta decisiva de tu temporada.",
+      "equipo_impacto": "Sean Payton reconfigurará el ataque terrestre de Denver en la semana 12. La ofensiva dependerá de la rotación entre sus corredores de reserva para sostener el juego por tierra y quitarle presión a la bolsa de protección.",
+      "accion": "Mueve a J.K. Dobbins a tu banca durante la semana 12.",
       "en": {
-        "titulo": "Colston Loveland set for strong Week 12 performance",
+        "titulo": "Broncos suspend running back J.K. Dobbins for 1 game",
         "claves": [
-          "Colston Loveland emerges as a bold Week 12 fantasy sleeper.",
-          "The tight end is projected for 12.4 PPR pts by FX.",
-          "His Thanksgiving game role significantly boosts his fantasy stock."
+          "Denver suspended J.K. Dobbins 1 game for team conduct.",
+          "Sean Payton confirmed relying on running back depth.",
+          "Dobbins is officially ruled out for Week 12."
         ],
-        "contexto": "Heading into the traditional Thanksgiving slate in Week 12, projections highlight Colston Loveland as one of the week's most intriguing offensive weapons. The tight end has earned increased trust within the coaching staff, developing into a reliable safety valve. With critical matchup implications on the line, his expanding role in the game plan positions him for heavy target volume.",
-        "fantasy": "The FX model projects Colston Loveland for 12.4 PPR pts in Week 12, ranking him among the top 5 tight ends for the slate. In 10-team and 12-team leagues, his red-zone targets make him a confident TE1 start. If you need tight end production or a high ceiling, Loveland offers both stability and upside.",
-        "equipo_impacto": "Colston Loveland's emergence creates middle-of-the-field space, pulling defensive attention away from wide receivers. His run-after-catch ability helps sustain long drives, keeping the offensive rhythm fluid throughout the contest.",
-        "accion": "Lock Colston Loveland into your fantasy lineups as a high-end TE1 for Week 12."
+        "contexto": "The Denver Broncos suspended running back J.K. Dobbins for 1 game due to conduct detrimental to the team. Head coach Sean Payton stated that the franchise will lean on their backfield depth to cover the starter's absence during their Week 12 matchup, restructuring the rushing rotation.",
+        "fantasy": "Dobbins belongs straight on your bench for Week 12 following his 1-game suspension. His absence creates immediate opportunities for backup running backs on waivers in deeper leagues. Adjust your lineups right away if you relied on his fantasy production for your matchup.",
+        "equipo_impacto": "Sean Payton will reconfigure Denver's rushing attack for Week 12. The offense will rely on a committee of backup running backs to sustain the ground game and relieve pressure on the passing attack.",
+        "accion": "Move J.K. Dobbins to your bench for Week 12."
       },
-      "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "DET",
+      "etiqueta": "SIT",
+      "impacto": "BAJA",
+      "equipo": "DEN",
       "equipos": [
-        "DET",
-        "CHI"
+        "DEN"
       ],
       "jugadores": [
-        "12517"
+        "6806"
       ],
       "fuentes": [
         {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/nfl-week-12-predictions-colston-loveland-thanksgiving/",
-          "t": "\n                        It wouldn&#039;t shock me if ... for NFL Week 12: Colston Loveland feasts on Thanksgiving, Browns RB shines\n       "
+          "m": "ESPN",
+          "u": "https://www.espn.com/video/clip/_/id/50586791/depth-rb-wake-jk-dobbins-suspension",
+          "t": "Sean Payton: We'll have depth at RB in wake of J.K. Dobbins suspension"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50586087/broncos-payton-says-rb-dobbins-suspended-one-game",
+          "t": "Broncos' Sean Payton: J.K. Dobbins suspended one game for detrimental conduct"
         }
       ],
       "menciona": []
@@ -146,11 +150,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "6797",
+      "id": "8150",
       "estatus": "Duda"
     },
     {
-      "id": "8150",
+      "id": "6797",
       "estatus": "Duda"
     },
     {
@@ -194,10 +198,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "4983",
-      "estatus": "Duda"
-    },
-    {
       "id": "12489",
       "estatus": "Fuera"
     },
@@ -206,7 +206,15 @@
       "estatus": "Fuera"
     },
     {
+      "id": "4983",
+      "estatus": "Duda"
+    },
+    {
       "id": "11646",
+      "estatus": "Duda"
+    },
+    {
+      "id": "13346",
       "estatus": "Duda"
     },
     {
@@ -219,6 +227,10 @@
     },
     {
       "id": "13276",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "6806",
       "estatus": "Fuera"
     },
     {
@@ -256,51 +268,43 @@
     {
       "id": "4454",
       "estatus": "Fuera"
-    },
-    {
-      "id": "11608",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "13424",
-      "estatus": "Fuera"
     }
   ],
   "agregados": [
     "10219",
     "WAS",
+    "NYG",
     "5995",
     "12533",
-    "NYG",
     "12540",
-    "13269",
-    "12483",
     "CLE",
-    "13317",
     "3271",
     "12718",
-    "4147",
+    "13317",
+    "13269",
     "4017",
-    "TB",
+    "12483",
     "12496",
-    "4066",
+    "4147",
     "12469",
+    "TB",
+    "4066",
     "13301",
-    "5119",
-    "11834",
     "13298",
-    "8134",
-    "11635",
-    "NE"
+    "5119",
+    "NE",
+    "13276",
+    "11834",
+    "7611"
   ],
   "soltados": [
     "9482",
-    "13424",
     "DET",
-    "12487",
+    "13424",
     "5012",
-    "10218",
     "12492",
+    "12487",
+    "10218",
     "12499",
     "11625",
     "5045",
@@ -308,24 +312,24 @@
     "9502",
     "9493",
     "11563",
-    "8136",
     "6130",
+    "8136",
     "12491",
     "9480",
-    "13414",
     "2505",
+    "BUF",
+    "PIT",
     "5906",
     "11637",
-    "BUF",
-    "13296",
-    "6650"
+    "13414",
+    "12185"
   ],
   "duelo": {
-    "a": "Joe Burrow",
-    "b": "Josh Allen",
-    "veredicto": "Arranca a Joe Burrow sobre Josh Allen en la semana 11. Burrow proyecta 25.8 pts PPR contra 24.2 pts de Allen, impulsado por el regreso de sus receptores titulares al 100% de su capacidad."
+    "a": "Ja'Marr Chase",
+    "b": "CeeDee Lamb",
+    "veredicto": "Arranca a Ja'Marr Chase con 20.1 pts proyectados sobre los 19.8 pts de CeeDee Lamb en la semana 12. Chase presenta mayor techo explosivo en PPR y un volumen de objetivos más consistente en la zona de anotación."
   },
-  "dueloFecha": "2026-11-23T21:15:14.192Z",
+  "dueloFecha": "2026-11-25T00:35:45.187Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
