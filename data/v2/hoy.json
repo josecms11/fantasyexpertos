@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-26T02:16:11.969Z",
-  "ultimaIA": "2026-11-25T19:13:45.520Z",
+  "actualizado": "2026-11-26T11:04:21.229Z",
+  "ultimaIA": "2026-11-26T11:04:21.229Z",
   "semana": 12,
   "semanaStats": 12,
   "temporada": "2026",
@@ -14,196 +14,57 @@
   ],
   "noticias": [
     {
-      "id": "x20261125191300",
-      "fecha": "2026-11-25T19:13:45.520Z",
+      "id": "n20261126110400",
+      "fecha": "2026-11-26T11:04:21.229Z",
       "semana": 12,
-      "exclusivo": true,
-      "fuente": "2026-11-25T18:41:02+00:00",
-      "titulo": "Reacciones de la semana 11 y top jugadores fantasy",
+      "titulo": "Blake Corum aplasta a Packers con dominante juego terrestre",
       "claves": [
-        "Análisis completo de lo sucedido en la semana 11 fantasy."
+        "Blake Corum lidera la ofensiva terrestre con récord",
+        "Rams suman su quinta victoria consecutiva",
+        "Christian Watson sufre conmoción tras golpe"
       ],
+      "contexto": "Durante la victoria de los Rams 26-13 sobre los Packers en el partido de la víspera de Acción de Gracias, Blake Corum se convirtió en la pieza central del ataque terrestre al sumar la mayor cantidad de acarreos en la era de Sean McVay. El encuentro también dejó saldo negativo en el costado rival con la lesión de Christian Watson.",
+      "fantasy": "Blake Corum sube de categoría de manera contundente para los fantasy managers que buscan volumen en el cierre de temporada, consolidándose como opción sólida en ligas estándar y PPR. Por su parte, Christian Watson queda descartado por protocolo de conmoción para futuras alineaciones.",
+      "equipo_impacto": "El juego terrestre de los Rams toma una nueva dimensión de control, mientras que Green Bay sufre un duro golpe estructural tras permitir 241 yardas por tierra y perder piezas clave.",
+      "accion": "Asegura a Blake Corum en tus waivers si sigue disponible y olvídate de Christian Watson esta semana.",
       "en": {
-        "titulo": "Week 11 reactions and top fantasy players recap",
+        "titulo": "Blake Corum crushes Packers with dominant ground game",
         "claves": [
-          "Complete breakdown of fantasy events from week 11.",
-          "Identification of top fantasy performers from week 11.",
-          "Strategic roster adjustments for the late season push."
+          "Blake Corum leads ground attack with record carries",
+          "Rams secure their 5th straight victory",
+          "Christian Watson exits with a concussion"
         ],
-        "contexto": "In this podcast episode we break down week 11 reactions across the NFL. We evaluate standout performances and production that surprised fantasy managers during their head to head matchups. Reviewing week 11 data helps us determine which trends are truly sustainable and which ones were just 1 single isolated game performance on the field.",
-        "fantasy": "Analyzing week 11 top players is crucial for setting lineups in PPR and Standard formats. Identifying dominant performers from week 11 helps managers make smart trade decisions before deadline week. This assessment highlights opportunities to buy low or sell high across 10 team and 12 team leagues heading into the fantasy playoffs.",
-        "equipo_impacto": "Performances from week 11 reshape offensive hierarchies across multiple teams. Coaching staffs adjust touch distribution after witnessing which players delivered results under pressure in their offensive schemes.",
-        "accion": "Adjust your fantasy lineup based on week 11 player performance."
+        "contexto": "During the Rams' 26-13 win over the Packers on Thanksgiving Eve, Blake Corum spearheaded the ground game with a record number of carries in Sean McVay's tenure. The matchup also brought negative consequences for the opponent with Christian Watson's injury.",
+        "fantasy": "Blake Corum gets a massive fantasy stock boost for managers seeking volume down the stretch, locking in as a solid option in standard and PPR leagues. Meanwhile, Christian Watson must be removed from all starting lineups due to a concussion.",
+        "equipo_impacto": "The Rams' rushing attack establishes absolute control, while Green Bay suffers a structural setback after allowing 241 rushing yards and losing key weapons.",
+        "accion": "Claim Blake Corum off waivers immediately and bench Christian Watson."
       },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "NFL",
+      "etiqueta": "WAIVER",
+      "impacto": "SUBE",
+      "equipo": "LAR",
       "equipos": [
-        "NFL"
-      ],
-      "jugadores": [],
-      "premium": true
-    },
-    {
-      "id": "x20261125191301",
-      "fecha": "2026-11-25T19:13:45.520Z",
-      "semana": 12,
-      "exclusivo": true,
-      "fuente": "2026-11-25T18:41:02+00:00",
-      "titulo": "Previa de la semana 12 con partidos diarios",
-      "claves": [
-        "La semana 12 presenta encuentros programados durante todos los días."
-      ],
-      "en": {
-        "titulo": "Week 12 preview with games every single day",
-        "claves": [
-          "Week 12 features NFL games scheduled on every day.",
-          "Thanksgiving slate includes Bears vs Lions and Chiefs vs Bills.",
-          "Action concludes Monday night with Panthers vs Buccaneers matchup."
-        ],
-        "contexto": "Week 12 arrives with an action packed schedule spread across every day of the week. The games start Wednesday with Packers vs Rams and continue Thanksgiving Thursday with Bears vs Lions, Eagles vs Cowboys, and Chiefs vs Bills. Friday features Steelers vs Broncos, followed by 10 Sunday games and Panthers vs Buccaneers on Monday night.",
-        "fantasy": "Having games daily in week 12 forces fantasy managers to watch roster lock deadlines closely. With matches on Wednesday, Thursday, and Friday, you must set your starting lineup early in PPR and Standard formats. It is essential to double check your active roster before each kickoff so you do not leave bench points unused in week 12.",
-        "equipo_impacto": "The tight week 12 schedule impacts team recovery and physical preparation. Squads playing on short rest like Rams, Packers, Bears, Lions, Eagles, Cowboys, Chiefs, and Bills must manage rotation to prevent fatigue during a demanding stretch.",
-        "accion": "Lock in your fantasy starting lineup early before daily kickoff times."
-      },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "NFL",
-      "equipos": [
-        "NFL",
-        "GB",
         "LAR",
-        "CHI",
-        "DET",
-        "PHI",
-        "DAL",
-        "KC",
-        "BUF",
-        "PIT",
-        "DEN",
-        "NYG",
-        "IND",
-        "ATL",
-        "MIN",
-        "BAL",
-        "HOU",
-        "NO",
-        "CIN",
-        "NYJ",
-        "MIA",
-        "TEN",
-        "JAX",
-        "NE",
-        "LAC",
-        "SEA",
-        "SF",
-        "WAS",
-        "ARI",
-        "LV",
-        "CLE",
-        "CAR",
-        "TB"
-      ],
-      "jugadores": [],
-      "premium": true
-    },
-    {
-      "id": "n20261125191300",
-      "fecha": "2026-11-25T19:13:45.520Z",
-      "semana": 12,
-      "titulo": "Brandon Aiyuk firma con practice squad de Commanders",
-      "claves": [
-        "Brandon Aiyuk acuerda unirse al equipo de prácticas de Commanders.",
-        "Se reúne con Jayden Daniels, su mariscal de época colegial.",
-        "Sin valor fantasy inmediato para la semana 12."
-      ],
-      "contexto": "El receptor Brandon Aiyuk llegó a un acuerdo para integrarse al equipo de prácticas de Commanders, según informó su agente Drew Rosenhaus. El movimiento permite a Aiyuk reunirse con Jayden Daniels, mariscal de campo con quien compartió equipo en la etapa colegial. Tras su salida de 49ers en la semana 11, el egresado de Arizona State busca reconstruir su camino en la NFL dentro de Washington.",
-      "fantasy": "Para efectos de fantasy football en la semana 12, el impacto de Brandon Aiyuk es nulo. Al estar asignado al equipo de prácticas, no debe ser alineado en ningún formato estándar de 10 o 12 equipos. Solamente representa una opción especulativa a largo plazo en ligas muy profundas o dynasty. No comprometas un espacio activo de tu banca por él en este momento.",
-      "equipo_impacto": "La incorporación de Brandon Aiyuk brinda profundidad a largo plazo a la plantilla de Commanders. Sin embargo, no modifica el volumen de pases ni las proyecciones inmediatas de los receptores titulares de Washington para el duelo de la semana 12.",
-      "accion": "Mantén a Brandon Aiyuk fuera de tus alineaciones de semana 12.",
-      "en": {
-        "titulo": "Brandon Aiyuk joins Commanders practice squad",
-        "claves": [
-          "Brandon Aiyuk signs with Washington Commanders practice squad.",
-          "Reunites with former college quarterback Jayden Daniels.",
-          "Zero immediate fantasy value for Week 12 rosters."
-        ],
-        "contexto": "Wide receiver Brandon Aiyuk agreed to join the Commanders practice squad, according to his agent Drew Rosenhaus. The move reunites Aiyuk with Jayden Daniels, his former college quarterback. After being released by the 49ers in Week 11, the Arizona State product aims to rebuild his NFL trajectory with Washington, starting from their practice squad roster.",
-        "fantasy": "For Week 12 fantasy football purposes, Brandon Aiyuk holds zero immediate value. Assigned to the practice squad, he should not be started in any standard 10 or 12 team format. He remains purely a stash option for deep bench or dynasty leagues. Do not sacrifice a valuable active bench spot for him right now.",
-        "equipo_impacto": "Adding Brandon Aiyuk provides depth to the Commanders roster for the future. However, it does not alter the target distribution or fantasy projections for Washington's active pass catchers ahead of Week 12.",
-        "accion": "Keep Brandon Aiyuk off your active Week 12 lineups."
-      },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "WAS",
-      "equipos": [
-        "WAS",
-        "SF"
+        "GB"
       ],
       "jugadores": [
-        "6803"
+        "11586",
+        "8167"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50587341/brandon-aiyuk-commanders-questions",
-          "t": "Commanders and WR Brandon Aiyuk: What to expect, his fit and fantasy impact"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50595281/brandon-aiyuk-finishes-visit-commanders",
-          "t": "Brandon Aiyuk joining Commanders, will reunite with college QB Jayden Daniels"
-        }
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261125191301",
-      "fecha": "2026-11-25T19:13:45.520Z",
-      "semana": 12,
-      "titulo": "Kenneth Walker III descartado para semana 12",
-      "claves": [
-        "Kenneth Walker III queda fuera del partido ante Bills.",
-        "Lesión en la ingle lo margina en la semana 12.",
-        "Jugador descartado totalmente; debes mandarlo a la banca."
-      ],
-      "contexto": "Chiefs descartaron oficialmente al corredor Kenneth Walker III para el enfrentamiento del jueves de la semana 12 ante Bills. Walker III sufrió una lesión en la ingle que le impedirá estar uniforme. La franquicia confirmó su baja este miércoles, dejando la posición golpeada justo antes del inicio de la jornada de fútbol americano de Acción de Gracias.",
-      "fantasy": "Al ser declarado Out por lesión en la ingle, Kenneth Walker III no puede ser considerado bajo ninguna circunstancia para tu alineación titular de semana 12 en ligas PPR, estándar o Half-PPR. Su estatus de descartado obliga a moverlo inmediatamente a la banca o al espacio de lesionados (IR) de tu plataforma de fantasy football para liberar un hueco activo.",
-      "equipo_impacto": "La ausencia de Kenneth Walker III reconfigura las repeticiones en el backfield de Chiefs. Los corredores suplentes deberán asumir la carga terrestre ante la defensiva de Bills en un choque crucial de semana 12.",
-      "accion": "Sienta a Kenneth Walker III y busca un reemplazo de urgencia.",
-      "en": {
-        "titulo": "Kenneth Walker III ruled out for Week 12",
-        "claves": [
-          "Kenneth Walker III ruled out against the Bills.",
-          "Groin injury sidelines the Chiefs running back.",
-          "Must be benched in all fantasy formats immediately."
-        ],
-        "contexto": "The Chiefs officially ruled out running back Kenneth Walker III for Thursday's Week 12 showdown against the Bills. Walker III suffered a groin injury during practice that prevents him from taking the field. The team confirmed his absence on Wednesday, leaving Kansas City without their main back right before the Thanksgiving games kick off.",
-        "fantasy": "With Kenneth Walker III officially ruled out with a groin injury, he cannot be started in any PPR, standard, or Half-PPR fantasy formats for Week 12. Move him directly to your bench or IR slot right now to free up an active roster spot for a waiver replacement before Thursday.",
-        "equipo_impacto": "Kenneth Walker III's absence reshuffles the workload in the Chiefs backfield. Kansas City backup running backs will need to step up and handle touches against the Bills defense in Week 12.",
-        "accion": "Bench Kenneth Walker III and grab a replacement off waivers."
-      },
-      "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
-      "equipo": "KC",
-      "equipos": [
-        "KC",
-        "BUF"
-      ],
-      "jugadores": [
-        "8151"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50594656/chiefs-rb-kenneth-walker-iii-groin-thursday-vs-bills",
-          "t": "Chiefs rule RB Kenneth Walker III (groin) out for showdown vs. Bills"
+          "u": "http://www.espn.com/nfl/recap?gameId=401873079",
+          "t": "Blake Corum leads Rams' dominant rushing attack in their 5th straight win, 26-13 over Packers"
         }
       ],
       "menciona": []
     }
   ],
   "lesionados": [
+    {
+      "id": "8167",
+      "estatus": "Fuera"
+    },
     {
       "id": "8151",
       "estatus": "Fuera"
@@ -241,15 +102,7 @@
       "estatus": "Duda"
     },
     {
-      "id": "8167",
-      "estatus": "Duda"
-    },
-    {
       "id": "5849",
-      "estatus": "Duda"
-    },
-    {
-      "id": "6797",
       "estatus": "Duda"
     },
     {
@@ -257,11 +110,15 @@
       "estatus": "Duda"
     },
     {
-      "id": "8131",
+      "id": "11604",
       "estatus": "Duda"
     },
     {
-      "id": "11604",
+      "id": "6797",
+      "estatus": "Duda"
+    },
+    {
+      "id": "8131",
       "estatus": "Duda"
     },
     {
@@ -297,6 +154,14 @@
       "estatus": "Duda"
     },
     {
+      "id": "3271",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "12506",
+      "estatus": "Duda"
+    },
+    {
       "id": "5859",
       "estatus": "Duda"
     },
@@ -309,10 +174,6 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12506",
-      "estatus": "Duda"
-    },
-    {
       "id": "12711",
       "estatus": "Fuera"
     },
@@ -321,12 +182,12 @@
       "estatus": "Duda"
     },
     {
-      "id": "6806",
-      "estatus": "Fuera"
-    },
-    {
       "id": "5947",
       "estatus": "Duda"
+    },
+    {
+      "id": "6806",
+      "estatus": "Fuera"
     },
     {
       "id": "13272",
@@ -359,72 +220,68 @@
     {
       "id": "9486",
       "estatus": "Fuera"
-    },
-    {
-      "id": "8154",
-      "estatus": "Fuera"
     }
   ],
   "agregados": [
     "WAS",
     "10219",
     "4017",
-    "5995",
-    "NYG",
     "CLE",
     "12718",
-    "12540",
+    "5995",
+    "NYG",
     "4147",
+    "12540",
+    "NE",
+    "1373",
+    "13269",
     "3271",
     "4972",
     "13317",
     "12533",
-    "13269",
-    "NE",
-    "12496",
     "TB",
-    "1373",
     "12469",
-    "12483",
+    "12496",
     "13276",
     "5119",
-    "4066",
     "11565",
-    "JAX"
+    "JAX",
+    "4066",
+    "6650"
   ],
   "soltados": [
     "DET",
-    "9482",
     "96",
+    "9482",
     "13424",
     "5012",
     "12492",
     "12499",
     "11783",
-    "11625",
     "9502",
+    "11625",
+    "11630",
     "10218",
     "6130",
-    "5045",
-    "11630",
-    "8136",
     "9493",
+    "5045",
+    "8136",
     "11563",
+    "11637",
     "2505",
-    "12487",
     "PIT",
     "12491",
-    "11637",
+    "3271",
     "4035",
-    "5906",
-    "2020"
+    "2020",
+    "9756"
   ],
   "duelo": {
-    "a": "Ja'Marr Chase",
-    "b": "CeeDee Lamb",
-    "veredicto": "Arranca a Ja'Marr Chase con 20.1 pts proyectados sobre los 19.8 pts de CeeDee Lamb en la semana 12. Chase presenta mayor techo explosivo en PPR y un volumen de objetivos más consistente en la zona de anotación."
+    "a": "Joe Burrow",
+    "b": "Trevor Lawrence",
+    "veredicto": "Arranca a Joe Burrow por su alto techo proyectado de 22.8 pts y mayor consistencia ofensiva en comparación con Trevor Lawrence."
   },
-  "dueloFecha": "2026-11-25T00:35:45.187Z",
+  "dueloFecha": "2026-11-26T11:04:21.229Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
