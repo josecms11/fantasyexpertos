@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-26T11:04:21.229Z",
-  "ultimaIA": "2026-11-26T11:04:21.229Z",
+  "actualizado": "2026-11-26T20:07:01.755Z",
+  "ultimaIA": "2026-11-26T20:07:01.755Z",
   "semana": 12,
   "semanaStats": 12,
   "temporada": "2026",
@@ -14,47 +14,46 @@
   ],
   "noticias": [
     {
-      "id": "n20261126110400",
-      "fecha": "2026-11-26T11:04:21.229Z",
+      "id": "n20261126200700",
+      "fecha": "2026-11-26T20:07:01.755Z",
       "semana": 12,
-      "titulo": "Blake Corum aplasta a Packers con dominante juego terrestre",
+      "titulo": "Bears pierden a Colston Loveland por lesión",
       "claves": [
-        "Blake Corum lidera la ofensiva terrestre con récord",
-        "Rams suman su quinta victoria consecutiva",
-        "Christian Watson sufre conmoción tras golpe"
+        "Colston Loveland salió lesionado de la rodilla",
+        "Quedó descartado para el resto del juego",
+        "Impacto directo en la ofensiva de Chicago"
       ],
-      "contexto": "Durante la victoria de los Rams 26-13 sobre los Packers en el partido de la víspera de Acción de Gracias, Blake Corum se convirtió en la pieza central del ataque terrestre al sumar la mayor cantidad de acarreos en la era de Sean McVay. El encuentro también dejó saldo negativo en el costado rival con la lesión de Christian Watson.",
-      "fantasy": "Blake Corum sube de categoría de manera contundente para los fantasy managers que buscan volumen en el cierre de temporada, consolidándose como opción sólida en ligas estándar y PPR. Por su parte, Christian Watson queda descartado por protocolo de conmoción para futuras alineaciones.",
-      "equipo_impacto": "El juego terrestre de los Rams toma una nueva dimensión de control, mientras que Green Bay sufre un duro golpe estructural tras permitir 241 yardas por tierra y perder piezas clave.",
-      "accion": "Asegura a Blake Corum en tus waivers si sigue disponible y olvídate de Christian Watson esta semana.",
+      "contexto": "Durante el partido de la semana 12, el ala cerrada Colston Loveland sufrió una lesión en la rodilla izquierda jugando contra Detroit. El cuerpo médico determinó que no podía continuar, por lo que fue descartado de inmediato para el resto del encuentro, mermando las opciones aéreas de su equipo.",
+      "fantasy": "En ligas de fantasy, esta baja obliga a buscar alternativas urgentes en la posición de ala cerrada si contabas con su participación. Su ausencia reduce las opciones de pase en la ofensiva y altera las proyecciones semanales en formatos PPR y estándar.",
+      "equipo_impacto": "La ofensiva de los Bears pierde profundidad y un blanco confiable en formaciones de múltiples alas cerradas, obligando a ajustar el esquema de reparto de pases entre los receptores disponibles.",
+      "accion": "Manda a la banca a Colston Loveland y busca un reemplazo de emergencia en la agencia libre.",
       "en": {
-        "titulo": "Blake Corum crushes Packers with dominant ground game",
+        "titulo": "Bears lose Colston Loveland to knee injury",
         "claves": [
-          "Blake Corum leads ground attack with record carries",
-          "Rams secure their 5th straight victory",
-          "Christian Watson exits with a concussion"
+          "Colston Loveland exited with a knee injury",
+          "Ruled out for the remainder of the game",
+          "Direct impact on Chicago's passing game"
         ],
-        "contexto": "During the Rams' 26-13 win over the Packers on Thanksgiving Eve, Blake Corum spearheaded the ground game with a record number of carries in Sean McVay's tenure. The matchup also brought negative consequences for the opponent with Christian Watson's injury.",
-        "fantasy": "Blake Corum gets a massive fantasy stock boost for managers seeking volume down the stretch, locking in as a solid option in standard and PPR leagues. Meanwhile, Christian Watson must be removed from all starting lineups due to a concussion.",
-        "equipo_impacto": "The Rams' rushing attack establishes absolute control, while Green Bay suffers a structural setback after allowing 241 rushing yards and losing key weapons.",
-        "accion": "Claim Blake Corum off waivers immediately and bench Christian Watson."
+        "contexto": "During the Week 12 matchup, tight end Colston Loveland suffered a left knee injury against Detroit. The medical staff determined he could not return, ruling him out for the rest of the game and depleting his team's aerial options.",
+        "fantasy": "In fantasy leagues, this injury forces an immediate scramble at tight end if you were relying on him. His absence lowers passing volume expectations and shifts weekly projections in PPR and standard formats.",
+        "equipo_impacto": "The Bears offense loses depth and a reliable target in multiple tight end sets, forcing a readjustment in target distribution among available wide receivers.",
+        "accion": "Bench Colston Loveland and look for an emergency replacement on waivers."
       },
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "LAR",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "CHI",
       "equipos": [
-        "LAR",
-        "GB"
+        "CHI",
+        "DET"
       ],
       "jugadores": [
-        "11586",
-        "8167"
+        "12517"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "http://www.espn.com/nfl/recap?gameId=401873079",
-          "t": "Blake Corum leads Rams' dominant rushing attack in their 5th straight win, 26-13 over Packers"
+          "u": "https://www.espn.com/nfl/story/_/id/50605365/bears-colston-loveland-ruled-vs-lions-knee-injury",
+          "t": "Bears TE Colston Loveland ruled out vs. Lions with knee injury"
         }
       ],
       "menciona": []
@@ -98,6 +97,10 @@
       "estatus": "Fuera"
     },
     {
+      "id": "12517",
+      "estatus": "Fuera"
+    },
+    {
       "id": "9997",
       "estatus": "Duda"
     },
@@ -114,11 +117,11 @@
       "estatus": "Duda"
     },
     {
-      "id": "6797",
+      "id": "8131",
       "estatus": "Duda"
     },
     {
-      "id": "8131",
+      "id": "6797",
       "estatus": "Duda"
     },
     {
@@ -158,16 +161,16 @@
       "estatus": "Fuera"
     },
     {
-      "id": "12506",
-      "estatus": "Duda"
-    },
-    {
       "id": "5859",
       "estatus": "Duda"
     },
     {
       "id": "12489",
       "estatus": "Fuera"
+    },
+    {
+      "id": "12506",
+      "estatus": "Duda"
     },
     {
       "id": "12536",
@@ -216,65 +219,61 @@
     {
       "id": "9756",
       "estatus": "Duda"
-    },
-    {
-      "id": "9486",
-      "estatus": "Fuera"
     }
   ],
   "agregados": [
     "WAS",
-    "10219",
     "4017",
     "CLE",
+    "10219",
     "12718",
     "5995",
+    "NE",
     "NYG",
+    "1373",
     "4147",
     "12540",
-    "NE",
-    "1373",
     "13269",
-    "3271",
-    "4972",
     "13317",
-    "12533",
-    "TB",
-    "12469",
-    "12496",
-    "13276",
-    "5119",
-    "11565",
-    "JAX",
     "4066",
-    "6650"
+    "12533",
+    "12469",
+    "4972",
+    "TB",
+    "11565",
+    "13276",
+    "2505",
+    "5119",
+    "3271",
+    "11586",
+    "13337"
   ],
   "soltados": [
-    "DET",
     "96",
+    "DET",
     "9482",
     "13424",
     "5012",
+    "11783",
+    "3271",
+    "11630",
     "12492",
     "12499",
-    "11783",
-    "9502",
-    "11625",
-    "11630",
-    "10218",
     "6130",
+    "9502",
     "9493",
+    "11625",
+    "10218",
     "5045",
-    "8136",
-    "11563",
     "11637",
-    "2505",
+    "11563",
+    "8136",
     "PIT",
-    "12491",
-    "3271",
     "4035",
-    "2020",
-    "9756"
+    "9756",
+    "5849",
+    "2505",
+    "12491"
   ],
   "duelo": {
     "a": "Joe Burrow",
