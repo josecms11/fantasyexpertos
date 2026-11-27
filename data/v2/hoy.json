@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-26T20:07:01.755Z",
-  "ultimaIA": "2026-11-26T20:07:01.755Z",
+  "actualizado": "2026-11-27T02:49:43.619Z",
+  "ultimaIA": "2026-11-27T02:49:43.619Z",
   "semana": 12,
   "semanaStats": 12,
   "temporada": "2026",
@@ -14,46 +14,152 @@
   ],
   "noticias": [
     {
-      "id": "n20261126200700",
-      "fecha": "2026-11-26T20:07:01.755Z",
+      "id": "n20261127024900",
+      "fecha": "2026-11-27T02:49:43.619Z",
       "semana": 12,
-      "titulo": "Bears pierden a Colston Loveland por lesión",
+      "titulo": "Joe Milton lidera histórica remontada de Eagles ante Cowboys",
       "claves": [
-        "Colston Loveland salió lesionado de la rodilla",
-        "Quedó descartado para el resto del juego",
-        "Impacto directo en la ofensiva de Chicago"
+        "Joe Milton lideró remontada de 21 puntos sobre Cowboys",
+        "Jake Elliott definió el juego con gol de campo de 59 yardas",
+        "Philadelphia se impuso 39-38 en el juego de Acción de Gracias"
       ],
-      "contexto": "Durante el partido de la semana 12, el ala cerrada Colston Loveland sufrió una lesión en la rodilla izquierda jugando contra Detroit. El cuerpo médico determinó que no podía continuar, por lo que fue descartado de inmediato para el resto del encuentro, mermando las opciones aéreas de su equipo.",
-      "fantasy": "En ligas de fantasy, esta baja obliga a buscar alternativas urgentes en la posición de ala cerrada si contabas con su participación. Su ausencia reduce las opciones de pase en la ofensiva y altera las proyecciones semanales en formatos PPR y estándar.",
-      "equipo_impacto": "La ofensiva de los Bears pierde profundidad y un blanco confiable en formaciones de múltiples alas cerradas, obligando a ajustar el esquema de reparto de pases entre los receptores disponibles.",
-      "accion": "Manda a la banca a Colston Loveland y busca un reemplazo de emergencia en la agencia libre.",
+      "contexto": "Los Eagles completaron la remontada más grande en la historia del juego de Acción de Gracias al vencer 39-38 a los Cowboys en la semana 12. Joe Milton tomó los controles de la ofensiva y superó una desventaja de 21 puntos en la segunda mitad. Con apenas 2 segundos en el reloj, Jake Elliott conectó un gol de campo de 59 yardas para sellar el triunfo.",
+      "fantasy": "Joe Milton demostró capacidad para mover el ataque en ausencia de titulares lesionados, ganando valor en ligas de 2 QB o SuperFlex. Su rendimiento mantiene con vida el valor de las armas aéreas de Philadelphia. Por su parte, Jake Elliott se consolida como 1 de los pateadores más confiables de la liga tras meter el intento de 59 yardas en momentos de máxima presión.",
+      "equipo_impacto": "La ofensiva de los Eagles demuestra una gran resiliencia aun sin su mariscal de campo titular. Joe Milton distribuyó bien el balón, manteniendo a la escuadra competitiva y ofreciendo estabilidad a sus compañeros de ataque.",
+      "accion": "Agrega a Joe Milton en formatos SuperFlex si necesitas un QB titular de emergencia.",
       "en": {
-        "titulo": "Bears lose Colston Loveland to knee injury",
+        "titulo": "Joe Milton Leads Historic Eagles Comeback Over Cowboys",
         "claves": [
-          "Colston Loveland exited with a knee injury",
-          "Ruled out for the remainder of the game",
-          "Direct impact on Chicago's passing game"
+          "Joe Milton led 21-point comeback against the Cowboys",
+          "Jake Elliott sealed win with 59-yard field goal",
+          "Philadelphia won 39-38 on Thanksgiving Day"
         ],
-        "contexto": "During the Week 12 matchup, tight end Colston Loveland suffered a left knee injury against Detroit. The medical staff determined he could not return, ruling him out for the rest of the game and depleting his team's aerial options.",
-        "fantasy": "In fantasy leagues, this injury forces an immediate scramble at tight end if you were relying on him. His absence lowers passing volume expectations and shifts weekly projections in PPR and standard formats.",
-        "equipo_impacto": "The Bears offense loses depth and a reliable target in multiple tight end sets, forcing a readjustment in target distribution among available wide receivers.",
-        "accion": "Bench Colston Loveland and look for an emergency replacement on waivers."
+        "contexto": "The Eagles pulled off the largest comeback in Thanksgiving Day history by defeating the Cowboys 39-38 in week 12. Joe Milton took over the offense and overcame a 21-point second-half deficit. With just 2 seconds left on the clock, Jake Elliott kicked a 59-yard field goal to secure the dramatic victory.",
+        "fantasy": "Joe Milton proved he can move the offense in place of injured starters, gaining value in 2-QB or SuperFlex formats. His performance keeps Philadelphia's receiving options viable. Meanwhile, Jake Elliott solidifies his status as a top fantasy kicker after converting a 59-yard attempt under extreme pressure.",
+        "equipo_impacto": "Philadelphia's offense proved resilient without their starting quarterback. Milton distributed the ball well, keeping the team competitive for the fantasy stretch run.",
+        "accion": "Add Joe Milton in SuperFlex formats if you need an emergency starting QB."
+      },
+      "etiqueta": "TENDENCIA",
+      "impacto": "SUBE",
+      "equipo": "PHI",
+      "equipos": [
+        "PHI",
+        "DAL"
+      ],
+      "jugadores": [
+        "11557",
+        "4195"
+      ],
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50605786/cowboys-eagles-thanksgiving-dak-prescott-saquon-barkley",
+          "t": "Joe Milton has huge game as Eagles shock Cowboys"
+        },
+        {
+          "m": "ESPN",
+          "u": "http://www.espn.com/nfl/recap?gameId=401873080",
+          "t": "Jake Elliott's 59-yard field goal with 2 seconds left gives Eagles stunning 39-38 win over Cowboys"
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261127024901",
+      "fecha": "2026-11-27T02:49:43.619Z",
+      "semana": 12,
+      "titulo": "Jaxon Smith-Njigba entrena limitado previo a semana 12",
+      "claves": [
+        "Jaxon Smith-Njigba estuvo limitado el jueves por lesión de tobillo",
+        "Receptor de Seahawks figura como cuestionable para la semana 12",
+        "Proyección del modelo FX lo ubica con 23.2 pts PPR"
+      ],
+      "contexto": "El receptor principal de Seattle, Jaxon Smith-Njigba, volvió a practicar de forma limitada este jueves debido a una molestia en el tobillo. El equipo médico mantendrá bajo observación su evolución de cara al enfrentamiento de la semana 12. Smith-Njigba aparece en el reporte oficial de estatus como cuestionable para el partido del domingo.",
+      "fantasy": "Si salta al campo, Smith-Njigba se mantiene como una opción estelar e infaltable en tus alineaciones titulares. El modelo FX lo proyecta como el WR1 de la semana 12 con 23.2 pts en formato PPR. Si la lesión en el tobillo lo deja fuera a última hora, su ausencia abriría volumen de pases para las demás opciones aéreas de los Seahawks.",
+      "equipo_impacto": "Seattle depende fuertemente de la producción de Jaxon Smith-Njigba en el juego aéreo. Su presencia en el campo abre espacios para todo el ataque de los Seahawks, mientras que su ausencia obligaría a ajustar el esquema ofensivo.",
+      "accion": "Mantén a Jaxon Smith-Njigba en tu alineación pero asegura un reemplazo para el turno vespertino.",
+      "en": {
+        "titulo": "Jaxon Smith-Njigba Limited in Practice Ahead of Week 12",
+        "claves": [
+          "Jaxon Smith-Njigba was limited Thursday with an ankle injury",
+          "Seahawks wide receiver is officially listed as questionable",
+          "FX model projects him with 23.2 PPR points"
+        ],
+        "contexto": "Seattle's top wide receiver, Jaxon Smith-Njigba, was limited in practice again on Thursday due to an ankle issue. The medical staff will continue to monitor his progress ahead of their week 12 matchup. Smith-Njigba is officially listed as questionable on the injury report for Sunday's game.",
+        "fantasy": "If active, Smith-Njigba remains a must-start WR1 in all fantasy lineups. The FX model projects him as the top receiver for week 12 with 23.2 PPR points. If his ankle injury forces a late scratch, his absence would redistribute target volume across Seattle's secondary passing options.",
+        "equipo_impacto": "Seattle relies heavily on Smith-Njigba's production in the passing game. His presence on the field creates space for the entire Seahawks offense, while his absence would force tactical adjustments.",
+        "accion": "Keep Jaxon Smith-Njigba in your lineup but prepare a late-game backup option."
       },
       "etiqueta": "LESIÓN",
-      "impacto": "BAJA",
+      "impacto": "NEUTRO",
+      "equipo": "SEA",
+      "equipos": [
+        "SEA"
+      ],
+      "jugadores": [
+        "9488"
+      ],
+      "fuentes": [
+        {
+          "m": "Yahoo Sports",
+          "u": "https://sports.yahoo.com/nfl/articles/jaxon-smith-njigba-limited-thursday-023446436.html",
+          "t": "Jaxon Smith-Njigba limited on Thursday"
+        }
+      ],
+      "menciona": []
+    },
+    {
+      "id": "n20261127024902",
+      "fecha": "2026-11-27T02:49:43.619Z",
+      "semana": 12,
+      "titulo": "Caleb Williams define agónico triunfo de Bears ante Lions",
+      "claves": [
+        "Caleb Williams lanzó pase de TD restando 3 segundos",
+        "Chicago derrotó 39-35 a Detroit en partido de Acción de Gracias",
+        "Williams acumula proyección de 19.9 pts para semana 12"
+      ],
+      "contexto": "Caleb Williams volvió a vestirse de héroe al conectar un pase de anotación perfecto con Rome Odunze a 3 segundos del final, dándole a Chicago una victoria 39-35 sobre Detroit. El mariscal novato lució sereno en la bolsa de protección durante la serie ofensiva decisiva del juego de Acción de Gracias en la semana 12.",
+      "fantasy": "Caleb Williams consolida su estatus como un QB1 confiable en fantasy football tras su exhibición de 39 pts colectivos en ofensiva. El modelo FX lo ubica con 19.9 pts para la semana 12, respaldado por su capacidad de generar jugadas explosivas en momentos críticos. Rome Odunze también gana valor como receptor de confianza en la zona roja.",
+      "equipo_impacto": "La ofensiva de Chicago eleva considerablemente su techo fantasy bajo el mando de Caleb Williams. El novato está consolidando el dinamismo aéreo del equipo, ofreciendo mayor volumen y consistencia a receptores como Rome Odunze en la recta final.",
+      "accion": "Alinea a Caleb Williams como QB1 confiable en tus ligas de 12 equipos.",
+      "en": {
+        "titulo": "Caleb Williams Seals Dramatic Bears Win Over Lions",
+        "claves": [
+          "Caleb Williams threw game-winning TD with 3 seconds left",
+          "Chicago defeated Detroit 39-35 on Thanksgiving Day",
+          "Williams is projected for 19.9 points in week 12"
+        ],
+        "contexto": "Caleb Williams delivered late-game magic once again, throwing a perfect touchdown pass to Rome Odunze with 3 seconds remaining to give Chicago a 39-35 victory over Detroit. The rookie quarterback remained cool in the pocket during the decisive drive of their Thanksgiving Day matchup in week 12.",
+        "fantasy": "Caleb Williams solidifies his status as a reliable QB1 option in fantasy football following a 39-point offensive explosion. The FX model projects him with 19.9 points for week 12, driven by his clutch playmaking ability. Rome Odunze also boosts his fantasy upside as a trusted red-zone target.",
+        "equipo_impacto": "Chicago's offense elevates its fantasy ceiling under Williams, solidifying their aerial passing attack and raising the floor of target receivers like Rome Odunze down the stretch.",
+        "accion": "Start Caleb Williams as a confident QB1 in your 12-team fantasy leagues."
+      },
+      "etiqueta": "START",
+      "impacto": "SUBE",
       "equipo": "CHI",
       "equipos": [
         "CHI",
         "DET"
       ],
       "jugadores": [
-        "12517"
+        "11560",
+        "11620"
       ],
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50605365/bears-colston-loveland-ruled-vs-lions-knee-injury",
-          "t": "Bears TE Colston Loveland ruled out vs. Lions with knee injury"
+          "u": "https://www.espn.com/nfl/story/_/id/50605750/jahmyr-gibbs-lions-caleb-williams-bears-thanksgiving-game",
+          "t": "Caleb Williams' late TD to Rome Odunze gives Bears dramatic win over Lions"
+        },
+        {
+          "m": "ESPN",
+          "u": "http://www.espn.com/nfl/recap?gameId=401873081",
+          "t": "Caleb Williams' TD pass with 3 seconds left gives Bears 39-35 win over Lions"
+        },
+        {
+          "m": "CBS Sports",
+          "u": "https://www.cbssports.com/nfl/news/nfl-week-12-grades-thanksgiving-bears-earn-b-packers-get-d/",
+          "t": "\n                        NFL Week 12 grades for Thanksgiving: Cowboys choke their way to a &#039;D,&#039; Bears earn &#039;B&#039; for big w"
         }
       ],
       "menciona": []
@@ -85,6 +191,10 @@
       "estatus": "Fuera"
     },
     {
+      "id": "11560",
+      "estatus": "Duda"
+    },
+    {
       "id": "8161",
       "estatus": "Fuera"
     },
@@ -101,7 +211,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "9997",
+      "id": "9487",
+      "estatus": "Duda"
+    },
+    {
+      "id": "4866",
       "estatus": "Duda"
     },
     {
@@ -133,11 +247,19 @@
       "estatus": "Duda"
     },
     {
+      "id": "7525",
+      "estatus": "Duda"
+    },
+    {
       "id": "6904",
       "estatus": "Fuera"
     },
     {
       "id": "8126",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "5022",
       "estatus": "Fuera"
     },
     {
@@ -147,10 +269,6 @@
     {
       "id": "4881",
       "estatus": "Fuera"
-    },
-    {
-      "id": "2449",
-      "estatus": "Duda"
     },
     {
       "id": "5854",
@@ -167,10 +285,6 @@
     {
       "id": "12489",
       "estatus": "Fuera"
-    },
-    {
-      "id": "12506",
-      "estatus": "Duda"
     },
     {
       "id": "12536",
@@ -211,14 +325,6 @@
     {
       "id": "8110",
       "estatus": "Fuera"
-    },
-    {
-      "id": "13287",
-      "estatus": "Fuera"
-    },
-    {
-      "id": "9756",
-      "estatus": "Duda"
     }
   ],
   "agregados": [
@@ -227,53 +333,53 @@
     "CLE",
     "10219",
     "12718",
-    "5995",
     "NE",
-    "NYG",
+    "5995",
     "1373",
+    "4066",
     "4147",
     "12540",
+    "11557",
+    "13322",
+    "NYG",
     "13269",
-    "13317",
-    "4066",
-    "12533",
-    "12469",
-    "4972",
-    "TB",
-    "11565",
-    "13276",
-    "2505",
-    "5119",
-    "3271",
     "11586",
-    "13337"
+    "13317",
+    "2505",
+    "9480",
+    "12533",
+    "5119",
+    "11565",
+    "TB",
+    "12469",
+    "13276"
   ],
   "soltados": [
     "96",
-    "DET",
     "9482",
+    "DET",
     "13424",
-    "5012",
-    "11783",
     "3271",
+    "11783",
+    "5012",
     "11630",
-    "12492",
-    "12499",
     "6130",
+    "12492",
     "9502",
-    "9493",
+    "12499",
+    "6819",
     "11625",
+    "9493",
     "10218",
     "5045",
+    "2505",
     "11637",
     "11563",
     "8136",
-    "PIT",
     "4035",
+    "PIT",
     "9756",
-    "5849",
-    "2505",
-    "12491"
+    "421"
   ],
   "duelo": {
     "a": "Joe Burrow",
