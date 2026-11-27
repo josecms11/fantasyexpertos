@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-27T11:28:57.080Z",
-  "ultimaIA": "2026-11-27T11:28:57.080Z",
+  "actualizado": "2026-11-27T20:14:24.738Z",
+  "ultimaIA": "2026-11-27T20:14:24.738Z",
   "semana": 12,
   "semanaStats": 12,
   "temporada": "2026",
@@ -14,151 +14,56 @@
   ],
   "noticias": [
     {
-      "id": "n20261127112800",
-      "fecha": "2026-11-27T11:28:57.080Z",
+      "id": "n20261127201400",
+      "fecha": "2026-11-27T20:14:24.738Z",
       "semana": 12,
-      "titulo": "Sam Darnold regresa como mariscal titular de Seahawks",
-      "claves": [
-        "Seattle confía en Sam Darnold para enfrentar a 49ers.",
-        "Drew Lock presenta molestias en el codo de lanzar.",
-        "Seahawks buscan afianzar su posición en la semana 12."
-      ],
-      "contexto": "Seattle ha tomado la decisión de encomendar nuevamente la titularidad del ataque a Sam Darnold para el crucial duelo de la semana 12 frente a San Francisco 49ers. Aunque Drew Lock tuvo desempeños aceptables cubriendo la ausencia, actualmente lidia con molestias físicas en el codo. La gerencia y el cuerpo técnico confían en que el egresado de USC retome el ritmo ofensivo ante un rival divisional con marca de 9-1 en la presente campaña.",
-      "fantasy": "El regreso de Sam Darnold estabiliza el valor fantasy del cuerpo de receptores de Seattle en ligas de 12 equipos. Pasa a ser una opción utilizable como QB2 en formatos Superflex y ligas profundas. Su presencia favorece el volumen de pases completados en rutas intermedias, beneficiando la consistencia semanal de sus objetivos principales frente a una defensiva de 49ers que exige precisión constante durante los 4 cuartos.",
-      "equipo_impacto": "La ofensiva de Seattle recupera mayor dinamismo en la bolsa de protección. El receptor Jaxon Smith-Njigba y los corredores del equipo ganan previsibilidad en la distribución del balón frente a San Francisco en este importante duelo.",
-      "accion": "Alinea a Sam Darnold únicamente como QB2 en ligas Superflex para la semana 12.",
+      "titulo": "Parker Washington queda fuera por lesión de hombro",
       "fuentes": [
         {
           "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50609180/why-seahawks-starting-qb-sam-darnold-49ers-week-12",
-          "t": "Why the Seahawks are turning back to quarterback Sam Darnold vs. the 49ers"
-        }
-      ],
-      "en": {
-        "titulo": "Sam Darnold Returns as Seahawks Starting QB",
-        "claves": [
-          "Seattle turns back to Sam Darnold against the 49ers.",
-          "Drew Lock is dealing with an elbow injury issue.",
-          "Seahawks aim to secure crucial week 12 division victory."
-        ],
-        "contexto": "Seattle has decided to hand the starting quarterback duties back to Sam Darnold for their vital week 12 matchup against the 9-1 San Francisco 49ers. While Drew Lock performed admirably while stepping in, he is currently hampered by an elbow issue. Seattle's coaching staff believes Darnold gives the team its highest ceiling to execute the offensive game plan and challenge San Francisco's formidable defense.",
-        "fantasy": "Sam Darnold re-enters the fantasy radar as a serviceable QB2 candidate in Superflex leagues for week 12. His return brings needed passing stability to Seattle's offense, which directly benefits the floor of the surrounding pass catchers. Owners in 1-QB formats should leave him on waivers, but Superflex managers gain a viable starter with solid projection numbers against a tough divisional opponent.",
-        "equipo_impacto": "Seattle's offense gains consistency with Darnold managing the play calling. Receivers like Jaxon Smith-Njigba regain higher target accuracy on intermediate routes against a tough 49ers secondary during this key week 12 NFC West matchup.",
-        "accion": "Alinea a Sam Darnold únicamente como QB2 en ligas Superflex para la semana 12."
-      },
-      "etiqueta": "TENDENCIA",
-      "impacto": "SUBE",
-      "equipo": "SEA",
-      "equipos": [
-        "SEA",
-        "SF"
-      ],
-      "jugadores": [
-        "4943",
-        "5854"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261127112801",
-      "fecha": "2026-11-27T11:28:57.080Z",
-      "semana": 12,
-      "titulo": "Josh Allen sufre en clima extremo ante Chiefs",
-      "claves": [
-        "Josh Allen sumó solo 81 yardas por pase.",
-        "Bills ganan 13-10 con gol de campo agónico.",
-        "Condiciones climáticas afectaron drásticamente el juego aéreo."
-      ],
-      "contexto": "En un duelo marcado por condiciones climáticas severas, Josh Allen registró una de sus actuaciones más limitadas de la temporada al concretar apenas 81 yardas por aire. A pesar de las serias complicaciones para mover el ovoide por la vía aérea, Buffalo se impuso 13-10 a Kansas City gracias a un gol de campo de 57 yardas de Tyler Bass al finalizar el encuentro de la semana 12.",
-      "fantasy": "Aunque Josh Allen tuvo un rendimiento fantasy muy bajo con apenas 81 yardas por pase, su estatus de QB1 de elite no se altera en ligas redraft o dynasty. El clima gélido fue el factor determinante en este partido de bajo marcador. No te pánicoes ni consideres enviarlo a la banca en la semana 12, ya que mantendrá su proyección de 20.6 pts en condiciones normales.",
-      "equipo_impacto": "El ataque aéreo de Buffalo quedó paralizado temporalmente por el clima extremo. Los receptores sufrieron un impacto negativo en yardaje, mientras que el pateador Tyler Bass emergió como héroe tras anotar el gol de campo ganador de 57 yardas.",
-      "accion": "Mantén a Josh Allen como tu QB1 titular sin dudarlo para la semana 12.",
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50609813/bills-qb-josh-allen-struggles-vs-chiefs-grossest-conditions",
-          "t": "Bills QB Josh Allen struggles vs. Chiefs in 'grossest' conditions"
+          "u": "https://www.espn.com/video/clip/_/id/50612051/what-jaguars-do-parker-washington-week-week",
+          "t": "What will Jaguars do with Parker Washington out week-to-week?"
         },
         {
           "m": "ESPN",
-          "u": "http://www.espn.com/nfl/recap?gameId=401873082",
-          "t": "Tyler Bass hits 57-yard field goal as time expires to lift Bills past Chiefs, 13-10"
-        },
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50582828/2026-nfl-buffalo-bills-kansas-city-chiefs-thanksgiving",
-          "t": "Bills edge Chiefs with last-second FG in low-scoring battle"
+          "u": "https://www.espn.com/nfl/story/_/id/50612050/jaguars-wr-parker-washington-shoulder-week-week",
+          "t": "Jaguars WR Parker Washington (shoulder) is 'week-to-week'"
         }
       ],
-      "en": {
-        "titulo": "Josh Allen Struggles in Weather Battle Against Chiefs",
-        "claves": [
-          "Josh Allen passes for just 81 yards in victory.",
-          "Bills top Chiefs 13-10 on last second field goal.",
-          "Severe weather conditions restricted overall passing production."
-        ],
-        "contexto": "In a matchup dominated by severe weather, Josh Allen endured one of his quietest passing games of the year, finishing with just 81 yards through the air. Despite the passing game coming to a near halt, Buffalo managed to edge Kansas City 13-10 thanks to a dramatic 57-yard game-winning field goal by Tyler Bass as time expired in week 12.",
-        "fantasy": "While Josh Allen produced a disappointing fantasy stat line with 81 passing yards, fantasy managers should not overreact. The abysmal weather conditions were the primary cause for the low-scoring contest. Allen remains an elite QB1 option with a projected baseline of 20.6 PPR points. Keep starting him in all formats without hesitation heading into week 12.",
-        "equipo_impacto": "Buffalo's passing attack experienced a temporary freeze due to bad weather. Wide receivers saw reduced floor values, while kicker Tyler Bass provided the deciding points with a clutch 57-yard boot.",
-        "accion": "Keep starting Josh Allen as your set-and-forget QB1 in week 12."
-      },
-      "etiqueta": "TENDENCIA",
-      "impacto": "NEUTRO",
-      "equipo": "BUF",
-      "equipos": [
-        "BUF",
-        "KC"
-      ],
-      "jugadores": [
-        "4984",
-        "7042"
-      ],
-      "menciona": []
-    },
-    {
-      "id": "n20261127112802",
-      "fecha": "2026-11-27T11:28:57.080Z",
-      "semana": 12,
-      "titulo": "Mike Gesicki apunta a rol clave ante Saints",
       "claves": [
-        "Mike Gesicki se perfila como factor para Bengals.",
-        "Cincinnati busca explotar las costuras de la defensiva.",
-        "Excelente opción de waiver para ligas PPR profundas."
+        "El receptor de Jaguars causará baja de 1 a varias semanas.",
+        "Sufrió una lesión de hombro y no jugará ante Titans.",
+        "Jakobi Meyers y Brian Thomas Jr. tendrán mayor volumen."
       ],
-      "contexto": "Los Cincinnati Bengals contemplan a Mike Gesicki como un elemento crucial dentro de su plan de juego ofensivo para enfrentar a New Orleans Saints en la semana 12. El ala cerrada ha mostrado mayor química con Joe Burrow en esquemas de zona dentro del segundo nivel del campo, lo que podría convertirlo en una válvula de escape constante para mantener vivas las series ofensivas de su equipo.",
-      "fantasy": "Mike Gesicki se convierte en una adición de waiver muy atractiva para gerentes necesitados de ayuda en la posición de TE para la semana 12. En ligas PPR de 12 o más equipos, su volumen proyectado de 4 a 6 objetivos lo coloca como una opción sólida de TE2 con potencial de alcanzar doble dígito si logra atrapar 1 pase en la zona de anotación.",
-      "equipo_impacto": "El involucramiento de Gesicki le quita presión a receptores primarios como Ja'Marr Chase, abriendo espacio en la zona roja y brindándole a Joe Burrow una alternativa confiable en 3.er down para mover las cadenas regularmente.",
-      "accion": "Reclama a Mike Gesicki del waiver si necesitas un TE utilizable en semana 12.",
-      "fuentes": [
-        {
-          "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/nfl/articles/3-keys-cincinnati-bengals-victory-111500152.html",
-          "t": "3 keys to a Cincinnati Bengals victory vs. New Orleans Saints"
-        }
-      ],
+      "contexto": "Los Jaguars confirmaron que Parker Washington está fuera semana a semana tras sufrir una lesión de hombro que le impedirá jugar en la semana 12 contra los Titans. El receptor venía ganando protagonismo en el esquema aéreo de Jacksonville, pero el equipo prefiere no arriesgarlo mientras evalúan el tiempo exacto de su recuperación.",
+      "fantasy": "Al estar descartado en el reporte oficial, debes mandar inmediatamente a Parker Washington a la banca o cortarlo si necesitas espacio en la banca de 12 equipos. Su ausencia libera objetivos para Brian Thomas Jr. y el ala cerrada Brenton Strange, mientras que Jakobi Meyers (Cuestionable, tobillo) ganará más rutas si logra jugar este domingo.",
+      "equipo_impacto": "La baja de Washington obliga a Jacksonville a ajustar sus personalizaciones en formaciones de 3 receptores. Brian Thomas Jr. consolidará su rol como arma primaria en el juego aéreo junto a los alas cerradas Evan Engram y Brenton Strange.",
+      "accion": "Banca a Parker Washington e identifica a Brian Thomas Jr. como beneficiario de volumen en semana 12.",
       "en": {
-        "titulo": "Mike Gesicki Poised for Major Role Against Saints",
+        "titulo": "Parker Washington ruled out with shoulder injury",
         "claves": [
-          "Mike Gesicki expected to be key factor for Bengals.",
-          "Cincinnati targets Saints defensive weaknesses over the middle.",
-          "Solid waiver wire target for deep PPR formats."
+          "Jaguars receiver will miss 1 or more weeks with shoulder.",
+          "Injured his shoulder and is ruled out against the Titans.",
+          "Jakobi Meyers and Brian Thomas Jr. see target bump."
         ],
-        "contexto": "The Cincinnati Bengals view tight end Mike Gesicki as a pivotal weapon in their offensive game plan for the upcoming week 12 clash against the New Orleans Saints. Gesicki's ability to soft-spot coverage zones down the seam offers quarterback Joe Burrow a reliable intermediate target to sustain drives and exploit matchups in the middle of the field.",
-        "fantasy": "Mike Gesicki rises as a sneaky waiver wire streaming candidate at tight end for week 12. In 12-team PPR leagues, his projected target share gives him a dependable TE2 floor. If he converts a red-zone target into 1 TD, he can easily deliver TE1 value for managers dealing with injuries or bye weeks.",
-        "equipo_impacto": "Gesicki's increased presence over the middle draws defensive attention away from Ja'Marr Chase, giving Joe Burrow a trusted safety valve on crucial 3rd-down conversions and red-zone situations throughout the game.",
-        "accion": "Pick up Mike Gesicki off waivers if you need a viable TE option in week 12."
+        "contexto": "The Jaguars confirmed that Parker Washington is out week-to-week after suffering a shoulder injury that will sideline him for Week 12 against the Titans. The receiver had been gaining involvement in Jacksonville's passing attack, but the team is playing it safe while evaluating the full timeline for his recovery.",
+        "fantasy": "Since he is ruled out on the official report, you must immediately bench Parker Washington or drop him in 12-team leagues if you need roster space. His absence frees up targets for Brian Thomas Jr. and tight end Brenton Strange, while Jakobi Meyers (Questionable, ankle) will run more routes if cleared to play Sunday.",
+        "equipo_impacto": "Washington's absence forces Jacksonville to adjust its 3-receiver packages. Brian Thomas Jr. will solidify his role as the primary passing option alongside tight ends Evan Engram and Brenton Strange.",
+        "accion": "Bench Parker Washington and fire up Brian Thomas Jr. for extra targets in Week 12."
       },
-      "etiqueta": "WAIVER",
-      "impacto": "SUBE",
-      "equipo": "CIN",
+      "etiqueta": "LESIÓN",
+      "impacto": "BAJA",
+      "equipo": "JAX",
       "equipos": [
-        "CIN",
-        "NO"
+        "JAX",
+        "DEN"
       ],
       "jugadores": [
-        "4993",
-        "7564",
-        "6770"
+        "9487",
+        "11631",
+        "5947",
+        "9480",
+        "4066"
       ],
       "menciona": []
     }
@@ -178,6 +83,10 @@
     },
     {
       "id": "9493",
+      "estatus": "Fuera"
+    },
+    {
+      "id": "9487",
       "estatus": "Fuera"
     },
     {
@@ -207,10 +116,6 @@
     {
       "id": "12517",
       "estatus": "Fuera"
-    },
-    {
-      "id": "9487",
-      "estatus": "Duda"
     },
     {
       "id": "4866",
@@ -249,6 +154,10 @@
       "estatus": "Duda"
     },
     {
+      "id": "7002",
+      "estatus": "Fuera"
+    },
+    {
       "id": "6904",
       "estatus": "Fuera"
     },
@@ -269,16 +178,20 @@
       "estatus": "Fuera"
     },
     {
+      "id": "5947",
+      "estatus": "Duda"
+    },
+    {
+      "id": "8119",
+      "estatus": "Fuera"
+    },
+    {
       "id": "5854",
       "estatus": "Duda"
     },
     {
       "id": "3271",
       "estatus": "Fuera"
-    },
-    {
-      "id": "5859",
-      "estatus": "Duda"
     },
     {
       "id": "12489",
@@ -293,23 +206,15 @@
       "estatus": "Fuera"
     },
     {
-      "id": "5947",
-      "estatus": "Duda"
-    },
-    {
-      "id": "13346",
-      "estatus": "Duda"
+      "id": "13276",
+      "estatus": "Fuera"
     },
     {
       "id": "6806",
       "estatus": "Fuera"
     },
     {
-      "id": "13272",
-      "estatus": "Duda"
-    },
-    {
-      "id": "13276",
+      "id": "13346",
       "estatus": "Duda"
     },
     {
@@ -326,58 +231,58 @@
     }
   ],
   "agregados": [
-    "WAS",
-    "4017",
-    "CLE",
-    "10219",
-    "11557",
     "13322",
-    "NE",
+    "11631",
+    "13394",
+    "11557",
+    "4017",
+    "5947",
+    "10219",
+    "WAS",
     "4066",
+    "12540",
+    "9480",
+    "NE",
+    "CLE",
     "1373",
     "5995",
-    "12540",
     "4147",
     "12718",
     "13269",
-    "NYG",
-    "2505",
+    "12496",
     "13317",
-    "9480",
-    "5119",
-    "11565",
+    "2505",
     "12533",
-    "12469",
-    "TB",
-    "13276",
-    "11586"
+    "11565",
+    "10218",
+    "5119"
   ],
   "soltados": [
     "96",
     "9482",
-    "DET",
     "11783",
     "13424",
-    "3271",
     "6819",
+    "3271",
+    "12492",
+    "13276",
     "5012",
     "11630",
-    "12492",
-    "6130",
     "9502",
-    "12499",
     "2505",
+    "12499",
     "11625",
     "10218",
+    "6130",
     "11637",
-    "9493",
+    "5995",
+    "12540",
     "5045",
+    "9493",
     "11563",
+    "12491",
     "4035",
-    "PIT",
-    "8136",
-    "421",
-    "5849"
+    "421"
   ],
   "duelo": {
     "a": "CeeDee Lamb",
