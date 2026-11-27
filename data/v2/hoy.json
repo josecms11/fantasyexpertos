@@ -1,7 +1,7 @@
 {
   "modelo": "FX v4",
-  "actualizado": "2026-11-27T02:49:43.619Z",
-  "ultimaIA": "2026-11-27T02:49:43.619Z",
+  "actualizado": "2026-11-27T11:28:57.080Z",
+  "ultimaIA": "2026-11-27T11:28:57.080Z",
   "semana": 12,
   "semanaStats": 12,
   "temporada": "2026",
@@ -14,153 +14,151 @@
   ],
   "noticias": [
     {
-      "id": "n20261127024900",
-      "fecha": "2026-11-27T02:49:43.619Z",
+      "id": "n20261127112800",
+      "fecha": "2026-11-27T11:28:57.080Z",
       "semana": 12,
-      "titulo": "Joe Milton lidera histórica remontada de Eagles ante Cowboys",
+      "titulo": "Sam Darnold regresa como mariscal titular de Seahawks",
       "claves": [
-        "Joe Milton lideró remontada de 21 puntos sobre Cowboys",
-        "Jake Elliott definió el juego con gol de campo de 59 yardas",
-        "Philadelphia se impuso 39-38 en el juego de Acción de Gracias"
+        "Seattle confía en Sam Darnold para enfrentar a 49ers.",
+        "Drew Lock presenta molestias en el codo de lanzar.",
+        "Seahawks buscan afianzar su posición en la semana 12."
       ],
-      "contexto": "Los Eagles completaron la remontada más grande en la historia del juego de Acción de Gracias al vencer 39-38 a los Cowboys en la semana 12. Joe Milton tomó los controles de la ofensiva y superó una desventaja de 21 puntos en la segunda mitad. Con apenas 2 segundos en el reloj, Jake Elliott conectó un gol de campo de 59 yardas para sellar el triunfo.",
-      "fantasy": "Joe Milton demostró capacidad para mover el ataque en ausencia de titulares lesionados, ganando valor en ligas de 2 QB o SuperFlex. Su rendimiento mantiene con vida el valor de las armas aéreas de Philadelphia. Por su parte, Jake Elliott se consolida como 1 de los pateadores más confiables de la liga tras meter el intento de 59 yardas en momentos de máxima presión.",
-      "equipo_impacto": "La ofensiva de los Eagles demuestra una gran resiliencia aun sin su mariscal de campo titular. Joe Milton distribuyó bien el balón, manteniendo a la escuadra competitiva y ofreciendo estabilidad a sus compañeros de ataque.",
-      "accion": "Agrega a Joe Milton en formatos SuperFlex si necesitas un QB titular de emergencia.",
+      "contexto": "Seattle ha tomado la decisión de encomendar nuevamente la titularidad del ataque a Sam Darnold para el crucial duelo de la semana 12 frente a San Francisco 49ers. Aunque Drew Lock tuvo desempeños aceptables cubriendo la ausencia, actualmente lidia con molestias físicas en el codo. La gerencia y el cuerpo técnico confían en que el egresado de USC retome el ritmo ofensivo ante un rival divisional con marca de 9-1 en la presente campaña.",
+      "fantasy": "El regreso de Sam Darnold estabiliza el valor fantasy del cuerpo de receptores de Seattle en ligas de 12 equipos. Pasa a ser una opción utilizable como QB2 en formatos Superflex y ligas profundas. Su presencia favorece el volumen de pases completados en rutas intermedias, beneficiando la consistencia semanal de sus objetivos principales frente a una defensiva de 49ers que exige precisión constante durante los 4 cuartos.",
+      "equipo_impacto": "La ofensiva de Seattle recupera mayor dinamismo en la bolsa de protección. El receptor Jaxon Smith-Njigba y los corredores del equipo ganan previsibilidad en la distribución del balón frente a San Francisco en este importante duelo.",
+      "accion": "Alinea a Sam Darnold únicamente como QB2 en ligas Superflex para la semana 12.",
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50609180/why-seahawks-starting-qb-sam-darnold-49ers-week-12",
+          "t": "Why the Seahawks are turning back to quarterback Sam Darnold vs. the 49ers"
+        }
+      ],
       "en": {
-        "titulo": "Joe Milton Leads Historic Eagles Comeback Over Cowboys",
+        "titulo": "Sam Darnold Returns as Seahawks Starting QB",
         "claves": [
-          "Joe Milton led 21-point comeback against the Cowboys",
-          "Jake Elliott sealed win with 59-yard field goal",
-          "Philadelphia won 39-38 on Thanksgiving Day"
+          "Seattle turns back to Sam Darnold against the 49ers.",
+          "Drew Lock is dealing with an elbow injury issue.",
+          "Seahawks aim to secure crucial week 12 division victory."
         ],
-        "contexto": "The Eagles pulled off the largest comeback in Thanksgiving Day history by defeating the Cowboys 39-38 in week 12. Joe Milton took over the offense and overcame a 21-point second-half deficit. With just 2 seconds left on the clock, Jake Elliott kicked a 59-yard field goal to secure the dramatic victory.",
-        "fantasy": "Joe Milton proved he can move the offense in place of injured starters, gaining value in 2-QB or SuperFlex formats. His performance keeps Philadelphia's receiving options viable. Meanwhile, Jake Elliott solidifies his status as a top fantasy kicker after converting a 59-yard attempt under extreme pressure.",
-        "equipo_impacto": "Philadelphia's offense proved resilient without their starting quarterback. Milton distributed the ball well, keeping the team competitive for the fantasy stretch run.",
-        "accion": "Add Joe Milton in SuperFlex formats if you need an emergency starting QB."
+        "contexto": "Seattle has decided to hand the starting quarterback duties back to Sam Darnold for their vital week 12 matchup against the 9-1 San Francisco 49ers. While Drew Lock performed admirably while stepping in, he is currently hampered by an elbow issue. Seattle's coaching staff believes Darnold gives the team its highest ceiling to execute the offensive game plan and challenge San Francisco's formidable defense.",
+        "fantasy": "Sam Darnold re-enters the fantasy radar as a serviceable QB2 candidate in Superflex leagues for week 12. His return brings needed passing stability to Seattle's offense, which directly benefits the floor of the surrounding pass catchers. Owners in 1-QB formats should leave him on waivers, but Superflex managers gain a viable starter with solid projection numbers against a tough divisional opponent.",
+        "equipo_impacto": "Seattle's offense gains consistency with Darnold managing the play calling. Receivers like Jaxon Smith-Njigba regain higher target accuracy on intermediate routes against a tough 49ers secondary during this key week 12 NFC West matchup.",
+        "accion": "Alinea a Sam Darnold únicamente como QB2 en ligas Superflex para la semana 12."
       },
       "etiqueta": "TENDENCIA",
       "impacto": "SUBE",
-      "equipo": "PHI",
+      "equipo": "SEA",
       "equipos": [
-        "PHI",
-        "DAL"
+        "SEA",
+        "SF"
       ],
       "jugadores": [
-        "11557",
-        "4195"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50605786/cowboys-eagles-thanksgiving-dak-prescott-saquon-barkley",
-          "t": "Joe Milton has huge game as Eagles shock Cowboys"
-        },
-        {
-          "m": "ESPN",
-          "u": "http://www.espn.com/nfl/recap?gameId=401873080",
-          "t": "Jake Elliott's 59-yard field goal with 2 seconds left gives Eagles stunning 39-38 win over Cowboys"
-        }
+        "4943",
+        "5854"
       ],
       "menciona": []
     },
     {
-      "id": "n20261127024901",
-      "fecha": "2026-11-27T02:49:43.619Z",
+      "id": "n20261127112801",
+      "fecha": "2026-11-27T11:28:57.080Z",
       "semana": 12,
-      "titulo": "Jaxon Smith-Njigba entrena limitado previo a semana 12",
+      "titulo": "Josh Allen sufre en clima extremo ante Chiefs",
       "claves": [
-        "Jaxon Smith-Njigba estuvo limitado el jueves por lesión de tobillo",
-        "Receptor de Seahawks figura como cuestionable para la semana 12",
-        "Proyección del modelo FX lo ubica con 23.2 pts PPR"
+        "Josh Allen sumó solo 81 yardas por pase.",
+        "Bills ganan 13-10 con gol de campo agónico.",
+        "Condiciones climáticas afectaron drásticamente el juego aéreo."
       ],
-      "contexto": "El receptor principal de Seattle, Jaxon Smith-Njigba, volvió a practicar de forma limitada este jueves debido a una molestia en el tobillo. El equipo médico mantendrá bajo observación su evolución de cara al enfrentamiento de la semana 12. Smith-Njigba aparece en el reporte oficial de estatus como cuestionable para el partido del domingo.",
-      "fantasy": "Si salta al campo, Smith-Njigba se mantiene como una opción estelar e infaltable en tus alineaciones titulares. El modelo FX lo proyecta como el WR1 de la semana 12 con 23.2 pts en formato PPR. Si la lesión en el tobillo lo deja fuera a última hora, su ausencia abriría volumen de pases para las demás opciones aéreas de los Seahawks.",
-      "equipo_impacto": "Seattle depende fuertemente de la producción de Jaxon Smith-Njigba en el juego aéreo. Su presencia en el campo abre espacios para todo el ataque de los Seahawks, mientras que su ausencia obligaría a ajustar el esquema ofensivo.",
-      "accion": "Mantén a Jaxon Smith-Njigba en tu alineación pero asegura un reemplazo para el turno vespertino.",
+      "contexto": "En un duelo marcado por condiciones climáticas severas, Josh Allen registró una de sus actuaciones más limitadas de la temporada al concretar apenas 81 yardas por aire. A pesar de las serias complicaciones para mover el ovoide por la vía aérea, Buffalo se impuso 13-10 a Kansas City gracias a un gol de campo de 57 yardas de Tyler Bass al finalizar el encuentro de la semana 12.",
+      "fantasy": "Aunque Josh Allen tuvo un rendimiento fantasy muy bajo con apenas 81 yardas por pase, su estatus de QB1 de elite no se altera en ligas redraft o dynasty. El clima gélido fue el factor determinante en este partido de bajo marcador. No te pánicoes ni consideres enviarlo a la banca en la semana 12, ya que mantendrá su proyección de 20.6 pts en condiciones normales.",
+      "equipo_impacto": "El ataque aéreo de Buffalo quedó paralizado temporalmente por el clima extremo. Los receptores sufrieron un impacto negativo en yardaje, mientras que el pateador Tyler Bass emergió como héroe tras anotar el gol de campo ganador de 57 yardas.",
+      "accion": "Mantén a Josh Allen como tu QB1 titular sin dudarlo para la semana 12.",
+      "fuentes": [
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50609813/bills-qb-josh-allen-struggles-vs-chiefs-grossest-conditions",
+          "t": "Bills QB Josh Allen struggles vs. Chiefs in 'grossest' conditions"
+        },
+        {
+          "m": "ESPN",
+          "u": "http://www.espn.com/nfl/recap?gameId=401873082",
+          "t": "Tyler Bass hits 57-yard field goal as time expires to lift Bills past Chiefs, 13-10"
+        },
+        {
+          "m": "ESPN",
+          "u": "https://www.espn.com/nfl/story/_/id/50582828/2026-nfl-buffalo-bills-kansas-city-chiefs-thanksgiving",
+          "t": "Bills edge Chiefs with last-second FG in low-scoring battle"
+        }
+      ],
       "en": {
-        "titulo": "Jaxon Smith-Njigba Limited in Practice Ahead of Week 12",
+        "titulo": "Josh Allen Struggles in Weather Battle Against Chiefs",
         "claves": [
-          "Jaxon Smith-Njigba was limited Thursday with an ankle injury",
-          "Seahawks wide receiver is officially listed as questionable",
-          "FX model projects him with 23.2 PPR points"
+          "Josh Allen passes for just 81 yards in victory.",
+          "Bills top Chiefs 13-10 on last second field goal.",
+          "Severe weather conditions restricted overall passing production."
         ],
-        "contexto": "Seattle's top wide receiver, Jaxon Smith-Njigba, was limited in practice again on Thursday due to an ankle issue. The medical staff will continue to monitor his progress ahead of their week 12 matchup. Smith-Njigba is officially listed as questionable on the injury report for Sunday's game.",
-        "fantasy": "If active, Smith-Njigba remains a must-start WR1 in all fantasy lineups. The FX model projects him as the top receiver for week 12 with 23.2 PPR points. If his ankle injury forces a late scratch, his absence would redistribute target volume across Seattle's secondary passing options.",
-        "equipo_impacto": "Seattle relies heavily on Smith-Njigba's production in the passing game. His presence on the field creates space for the entire Seahawks offense, while his absence would force tactical adjustments.",
-        "accion": "Keep Jaxon Smith-Njigba in your lineup but prepare a late-game backup option."
+        "contexto": "In a matchup dominated by severe weather, Josh Allen endured one of his quietest passing games of the year, finishing with just 81 yards through the air. Despite the passing game coming to a near halt, Buffalo managed to edge Kansas City 13-10 thanks to a dramatic 57-yard game-winning field goal by Tyler Bass as time expired in week 12.",
+        "fantasy": "While Josh Allen produced a disappointing fantasy stat line with 81 passing yards, fantasy managers should not overreact. The abysmal weather conditions were the primary cause for the low-scoring contest. Allen remains an elite QB1 option with a projected baseline of 20.6 PPR points. Keep starting him in all formats without hesitation heading into week 12.",
+        "equipo_impacto": "Buffalo's passing attack experienced a temporary freeze due to bad weather. Wide receivers saw reduced floor values, while kicker Tyler Bass provided the deciding points with a clutch 57-yard boot.",
+        "accion": "Keep starting Josh Allen as your set-and-forget QB1 in week 12."
       },
-      "etiqueta": "LESIÓN",
+      "etiqueta": "TENDENCIA",
       "impacto": "NEUTRO",
-      "equipo": "SEA",
+      "equipo": "BUF",
       "equipos": [
-        "SEA"
+        "BUF",
+        "KC"
       ],
       "jugadores": [
-        "9488"
+        "4984",
+        "7042"
       ],
+      "menciona": []
+    },
+    {
+      "id": "n20261127112802",
+      "fecha": "2026-11-27T11:28:57.080Z",
+      "semana": 12,
+      "titulo": "Mike Gesicki apunta a rol clave ante Saints",
+      "claves": [
+        "Mike Gesicki se perfila como factor para Bengals.",
+        "Cincinnati busca explotar las costuras de la defensiva.",
+        "Excelente opción de waiver para ligas PPR profundas."
+      ],
+      "contexto": "Los Cincinnati Bengals contemplan a Mike Gesicki como un elemento crucial dentro de su plan de juego ofensivo para enfrentar a New Orleans Saints en la semana 12. El ala cerrada ha mostrado mayor química con Joe Burrow en esquemas de zona dentro del segundo nivel del campo, lo que podría convertirlo en una válvula de escape constante para mantener vivas las series ofensivas de su equipo.",
+      "fantasy": "Mike Gesicki se convierte en una adición de waiver muy atractiva para gerentes necesitados de ayuda en la posición de TE para la semana 12. En ligas PPR de 12 o más equipos, su volumen proyectado de 4 a 6 objetivos lo coloca como una opción sólida de TE2 con potencial de alcanzar doble dígito si logra atrapar 1 pase en la zona de anotación.",
+      "equipo_impacto": "El involucramiento de Gesicki le quita presión a receptores primarios como Ja'Marr Chase, abriendo espacio en la zona roja y brindándole a Joe Burrow una alternativa confiable en 3.er down para mover las cadenas regularmente.",
+      "accion": "Reclama a Mike Gesicki del waiver si necesitas un TE utilizable en semana 12.",
       "fuentes": [
         {
           "m": "Yahoo Sports",
-          "u": "https://sports.yahoo.com/nfl/articles/jaxon-smith-njigba-limited-thursday-023446436.html",
-          "t": "Jaxon Smith-Njigba limited on Thursday"
+          "u": "https://sports.yahoo.com/nfl/articles/3-keys-cincinnati-bengals-victory-111500152.html",
+          "t": "3 keys to a Cincinnati Bengals victory vs. New Orleans Saints"
         }
       ],
-      "menciona": []
-    },
-    {
-      "id": "n20261127024902",
-      "fecha": "2026-11-27T02:49:43.619Z",
-      "semana": 12,
-      "titulo": "Caleb Williams define agónico triunfo de Bears ante Lions",
-      "claves": [
-        "Caleb Williams lanzó pase de TD restando 3 segundos",
-        "Chicago derrotó 39-35 a Detroit en partido de Acción de Gracias",
-        "Williams acumula proyección de 19.9 pts para semana 12"
-      ],
-      "contexto": "Caleb Williams volvió a vestirse de héroe al conectar un pase de anotación perfecto con Rome Odunze a 3 segundos del final, dándole a Chicago una victoria 39-35 sobre Detroit. El mariscal novato lució sereno en la bolsa de protección durante la serie ofensiva decisiva del juego de Acción de Gracias en la semana 12.",
-      "fantasy": "Caleb Williams consolida su estatus como un QB1 confiable en fantasy football tras su exhibición de 39 pts colectivos en ofensiva. El modelo FX lo ubica con 19.9 pts para la semana 12, respaldado por su capacidad de generar jugadas explosivas en momentos críticos. Rome Odunze también gana valor como receptor de confianza en la zona roja.",
-      "equipo_impacto": "La ofensiva de Chicago eleva considerablemente su techo fantasy bajo el mando de Caleb Williams. El novato está consolidando el dinamismo aéreo del equipo, ofreciendo mayor volumen y consistencia a receptores como Rome Odunze en la recta final.",
-      "accion": "Alinea a Caleb Williams como QB1 confiable en tus ligas de 12 equipos.",
       "en": {
-        "titulo": "Caleb Williams Seals Dramatic Bears Win Over Lions",
+        "titulo": "Mike Gesicki Poised for Major Role Against Saints",
         "claves": [
-          "Caleb Williams threw game-winning TD with 3 seconds left",
-          "Chicago defeated Detroit 39-35 on Thanksgiving Day",
-          "Williams is projected for 19.9 points in week 12"
+          "Mike Gesicki expected to be key factor for Bengals.",
+          "Cincinnati targets Saints defensive weaknesses over the middle.",
+          "Solid waiver wire target for deep PPR formats."
         ],
-        "contexto": "Caleb Williams delivered late-game magic once again, throwing a perfect touchdown pass to Rome Odunze with 3 seconds remaining to give Chicago a 39-35 victory over Detroit. The rookie quarterback remained cool in the pocket during the decisive drive of their Thanksgiving Day matchup in week 12.",
-        "fantasy": "Caleb Williams solidifies his status as a reliable QB1 option in fantasy football following a 39-point offensive explosion. The FX model projects him with 19.9 points for week 12, driven by his clutch playmaking ability. Rome Odunze also boosts his fantasy upside as a trusted red-zone target.",
-        "equipo_impacto": "Chicago's offense elevates its fantasy ceiling under Williams, solidifying their aerial passing attack and raising the floor of target receivers like Rome Odunze down the stretch.",
-        "accion": "Start Caleb Williams as a confident QB1 in your 12-team fantasy leagues."
+        "contexto": "The Cincinnati Bengals view tight end Mike Gesicki as a pivotal weapon in their offensive game plan for the upcoming week 12 clash against the New Orleans Saints. Gesicki's ability to soft-spot coverage zones down the seam offers quarterback Joe Burrow a reliable intermediate target to sustain drives and exploit matchups in the middle of the field.",
+        "fantasy": "Mike Gesicki rises as a sneaky waiver wire streaming candidate at tight end for week 12. In 12-team PPR leagues, his projected target share gives him a dependable TE2 floor. If he converts a red-zone target into 1 TD, he can easily deliver TE1 value for managers dealing with injuries or bye weeks.",
+        "equipo_impacto": "Gesicki's increased presence over the middle draws defensive attention away from Ja'Marr Chase, giving Joe Burrow a trusted safety valve on crucial 3rd-down conversions and red-zone situations throughout the game.",
+        "accion": "Pick up Mike Gesicki off waivers if you need a viable TE option in week 12."
       },
-      "etiqueta": "START",
+      "etiqueta": "WAIVER",
       "impacto": "SUBE",
-      "equipo": "CHI",
+      "equipo": "CIN",
       "equipos": [
-        "CHI",
-        "DET"
+        "CIN",
+        "NO"
       ],
       "jugadores": [
-        "11560",
-        "11620"
-      ],
-      "fuentes": [
-        {
-          "m": "ESPN",
-          "u": "https://www.espn.com/nfl/story/_/id/50605750/jahmyr-gibbs-lions-caleb-williams-bears-thanksgiving-game",
-          "t": "Caleb Williams' late TD to Rome Odunze gives Bears dramatic win over Lions"
-        },
-        {
-          "m": "ESPN",
-          "u": "http://www.espn.com/nfl/recap?gameId=401873081",
-          "t": "Caleb Williams' TD pass with 3 seconds left gives Bears 39-35 win over Lions"
-        },
-        {
-          "m": "CBS Sports",
-          "u": "https://www.cbssports.com/nfl/news/nfl-week-12-grades-thanksgiving-bears-earn-b-packers-get-d/",
-          "t": "\n                        NFL Week 12 grades for Thanksgiving: Cowboys choke their way to a &#039;D,&#039; Bears earn &#039;B&#039; for big w"
-        }
+        "4993",
+        "7564",
+        "6770"
       ],
       "menciona": []
     }
@@ -231,11 +229,11 @@
       "estatus": "Duda"
     },
     {
-      "id": "8131",
+      "id": "6797",
       "estatus": "Duda"
     },
     {
-      "id": "6797",
+      "id": "8131",
       "estatus": "Duda"
     },
     {
@@ -295,11 +293,11 @@
       "estatus": "Fuera"
     },
     {
-      "id": "13346",
+      "id": "5947",
       "estatus": "Duda"
     },
     {
-      "id": "5947",
+      "id": "13346",
       "estatus": "Duda"
     },
     {
@@ -332,61 +330,61 @@
     "4017",
     "CLE",
     "10219",
-    "12718",
-    "NE",
-    "5995",
-    "1373",
-    "4066",
-    "4147",
-    "12540",
     "11557",
     "13322",
-    "NYG",
+    "NE",
+    "4066",
+    "1373",
+    "5995",
+    "12540",
+    "4147",
+    "12718",
     "13269",
-    "11586",
-    "13317",
+    "NYG",
     "2505",
+    "13317",
     "9480",
-    "12533",
     "5119",
     "11565",
-    "TB",
+    "12533",
     "12469",
-    "13276"
+    "TB",
+    "13276",
+    "11586"
   ],
   "soltados": [
     "96",
     "9482",
     "DET",
+    "11783",
     "13424",
     "3271",
-    "11783",
+    "6819",
     "5012",
     "11630",
-    "6130",
     "12492",
+    "6130",
     "9502",
     "12499",
-    "6819",
-    "11625",
-    "9493",
-    "10218",
-    "5045",
     "2505",
+    "11625",
+    "10218",
     "11637",
+    "9493",
+    "5045",
     "11563",
-    "8136",
     "4035",
     "PIT",
-    "9756",
-    "421"
+    "8136",
+    "421",
+    "5849"
   ],
   "duelo": {
-    "a": "Joe Burrow",
-    "b": "Trevor Lawrence",
-    "veredicto": "Arranca a Joe Burrow por su alto techo proyectado de 22.8 pts y mayor consistencia ofensiva en comparación con Trevor Lawrence."
+    "a": "CeeDee Lamb",
+    "b": "Amon-Ra St. Brown",
+    "veredicto": "Arranca a CeeDee Lamb sobre Amon-Ra St. Brown en la semana 12. Lamb proyecta 20.2 pts PPR frente a 19.8 pts de St. Brown, respaldado por un volumen inigualable de objetivos en el ataque aéreo de Dallas."
   },
-  "dueloFecha": "2026-11-26T11:04:21.229Z",
+  "dueloFecha": "2026-11-27T11:28:57.080Z",
   "fuentes": [
     "Sleeper",
     "ESPN",
